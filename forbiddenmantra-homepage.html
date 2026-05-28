@@ -542,28 +542,38 @@ Forbidden Mantra Press
 </div>
 </footer>
 
+```html
 <script>
 function sendHeight() {
-  const height = Math.max(
+  var height = Math.max(
     document.body.scrollHeight,
     document.documentElement.scrollHeight,
     document.body.offsetHeight,
-    document.documentElement.offsetHeight
+    document.documentElement.offsetHeight,
+    document.body.getBoundingClientRect().height
   );
 
   window.parent.postMessage({
-    type: 'resize',
+    type: 'wixHeight',
     height: height
   }, '*');
 }
 
-window.addEventListener('load', sendHeight);
+window.addEventListener('load', function() {
+  sendHeight();
+  setTimeout(sendHeight, 300);
+  setTimeout(sendHeight, 800);
+  setTimeout(sendHeight, 1500);
+  setTimeout(sendHeight, 3000);
+});
+
 window.addEventListener('resize', sendHeight);
-setTimeout(sendHeight, 500);
-setTimeout(sendHeight, 1000);
-setTimeout(sendHeight, 2000);
-setTimeout(sendHeight, 3000);
+
+document.querySelectorAll('img').forEach(function(img) {
+  img.addEventListener('load', sendHeight);
+});
 </script>
+```
 
 </body>
 </html>
