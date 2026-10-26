@@ -1,0 +1,85 @@
+{
+  "_doc": "Cross-promotion registry. Brands, the CLAIMS made about them (each with a verification status and sourcing), and PROMOS that place a brand on a surface. Rendering is done by scripts/promo.mjs, which is independent of the bookstore so other sites can reuse it. A production build (FM_ENV=production) refuses to run while any placed promo is unapproved, has no URL, or relies on an unverified claim or an unauthorised badge. See docs/CROSS-PROMOTION.md.",
+  "schema": 1,
+  "site": { "id": "forbidden-mantra-press", "name": "Forbidden Mantra Press", "utmSource": "forbidden-mantra-press", "utmMedium": "cross-promo" },
+  "brands": {
+    "iosutra": {
+      "name": "IOSutra",
+      "descriptor": "AI-powered business software platform",
+      "relationship": "Owned by the same team as Forbidden Mantra Press, and a separate product from this bookstore.",
+      "url": null,
+      "urlNote": "Not provided. A web search on 2026-10-26 found no IOSutra site (an unrelated company, Sutra.AI, appears in results and must not be used). Set `url` to the real address; it must be https.",
+      "blurb": "IOSutra is our AI-powered business software platform. It is a separate product from this bookstore. Visit IOSutra to see what it does.",
+      "badges": {
+        "nvidiaInception": {
+          "enabled": false,
+          "asset": null,
+          "altText": "NVIDIA Inception Program member",
+          "displayHeightPx": 56,
+          "clearSpacePx": 12,
+          "licenseConfirmed": false,
+          "guidelinesUrl": null,
+          "guidelinesReviewedOn": null,
+          "note": "No authorised badge asset is in this repository and no Inception-specific usage terms were found. Enabling requires ALL of: asset file present under assets-src/partner/, licenseConfirmed=true (written authorisation or the member-portal terms), guidelinesUrl and guidelinesReviewedOn set. Never recreate, redraw, recolour or restyle NVIDIA marks, and do not use NVIDIA's green or imitate its visual style."
+        }
+      }
+    }
+  },
+  "claims": [
+    {
+      "id": "nvidia-inception-membership",
+      "brand": "iosutra",
+      "text": "IOSutra is a member of the NVIDIA Inception program.",
+      "short": "IOSutra is a member of the NVIDIA Inception program.",
+      "status": "owner-asserted",
+      "assertedBy": "site owner, instruction of 2026-10-26",
+      "evidence": null,
+      "verifiedOn": null,
+      "beforeLaunch": [
+        "Confirm in the NVIDIA Inception member portal that IOSutra's membership is current.",
+        "Read the program terms or trademark licence you accepted and confirm this wording and any required attribution are permitted.",
+        "Record the date and what you checked in `evidence`/`verifiedOn`, then set status to \"verified\"."
+      ],
+      "prohibitedVariants": ["powered by NVIDIA", "NVIDIA partner", "NVIDIA-certified", "NVIDIA-backed", "in partnership with NVIDIA", "NVIDIA-approved", "endorsed by NVIDIA"]
+    },
+    {
+      "id": "no-endorsement",
+      "brand": "iosutra",
+      "text": "This membership applies to IOSutra only. It does not extend to Forbidden Mantra Press or this bookstore, and it does not imply that NVIDIA sponsors or endorses either.",
+      "short": "This does not imply NVIDIA sponsors or endorses Forbidden Mantra Press.",
+      "status": "verified",
+      "assertedBy": "site policy",
+      "evidence": "Required separation between the program membership and the bookstore.",
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "id": "nvidia-trademark-notice",
+      "brand": "iosutra",
+      "text": "NVIDIA and NVIDIA Inception are trademarks of NVIDIA Corporation.",
+      "short": "NVIDIA and NVIDIA Inception are trademarks of NVIDIA Corporation.",
+      "status": "needs-confirmation",
+      "assertedBy": "standard trademark attribution, wording not checked against program terms",
+      "evidence": null,
+      "verifiedOn": null,
+      "beforeLaunch": ["Confirm the exact attribution wording the Inception terms require (if any) and update this text."]
+    }
+  ],
+  "externalLinks": {
+    "nvidiaInception": { "label": "About the NVIDIA Inception program", "url": "https://www.nvidia.com/en-us/startups/", "source": "NVIDIA official startups page, found by web search 2026-10-26; not fetched from this environment" }
+  },
+  "promos": [
+    {
+      "id": "iosutra-technology",
+      "brand": "iosutra",
+      "approved": false,
+      "approvalNote": "Preview only. Owner approval needed before production.",
+      "claims": ["nvidia-inception-membership", "no-endorsement", "nvidia-trademark-notice"],
+      "utmCampaign": "iosutra-technology",
+      "placements": {
+        "home": { "enabled": true },
+        "footer": { "enabled": true },
+        "page": { "enabled": true, "path": "technology/" }
+      }
+    }
+  ]
+}

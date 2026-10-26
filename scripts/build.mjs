@@ -8,6 +8,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { slugify } from './lib.mjs';
+import * as promo from './promo.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DATA = process.env.FM_DATA ?? 'data';
@@ -20,6 +21,22 @@ const langReg = rd('data/languages.json');
 const cat = rd(`${DATA}/catalogue.json`);
 const staged = rd(`${DATA}/staged.json`).works;
 const coll = rd(`${DATA}/collections.json`);
+
+// ---------- cross-promotion (scripts/promo.mjs) ----------
+const PROMOS = promo.loadRegistry(path.join(ROOT, process.env.FM_PROMOS ?? 'data/promos.json'));
+const PRODUCTION = process.env.FM_ENV === 'production';
+{
+  const v = promo.validate(PROMOS, { root: ROOT, production: PRODUCTION });
+  v.warnings.forEach((w) => console.warn(`promo warning: ${w}`));
+  if (v.errors.length || v.blockers.length) {
+    [...v.errors.map((e) => `ERROR   ${e}`), ...v.blockers.map((b) => `BLOCKER ${b}`)].forEach((m) => console.error(m));
+    console.error(`\nBuild stopped: ${v.errors.length} error(s), ${v.blockers.length} launch blocker(s) in data/promos.json.`);
+    process.exit(1);
+  }
+}
+const promoView = (placement, id = 'iosutra-technology') => promo.resolve(PROMOS, id, placement, { root: ROOT });
+const promoCtx = { href: (p) => href(p), asset: (f) => `${ROOT_PREFIX}assets/partner/${f}` };
+const placed = (placement) => PROMOS.promos.filter((p) => p.placements?.[placement]?.enabled);
 
 // ---------- languages & interface locales ----------
 const LANG = new Map(langReg.languages.map((l) => [l.code, l]));
@@ -226,7 +243,7 @@ ${page}
     <div><p class="foot-h" data-i18n="foot_browse">${esc(en.foot_browse)}</p><ul>${tax.hubs.map((h) => `<li><a href="${href(`subjects/${h.id}/`)}">${esc(h.name)}</a></li>`).join('')}</ul></div>
     <div><p class="foot-h" data-i18n="foot_store">${esc(en.foot_store)}</p><ul><li><a href="${href('books/')}" data-i18n="foot_all_books">${esc(en.foot_all_books)}</a></li><li><a href="${href('languages/')}" data-i18n="foot_languages">${esc(en.foot_languages)}</a></li><li><a href="${href('press/')}">Forbidden Mantra Press</a></li><li><a href="${href('about/catalogue-standards/')}" data-i18n="foot_verify">${esc(en.foot_verify)}</a></li><li><a href="${href('about/affiliate-disclosure/')}" data-i18n="foot_affiliate">${esc(en.foot_affiliate)}</a></li></ul></div>
   </div>
-  <div class="wrap"><p class="disclosure" lang="en">${esc(cfg.disclosure)}</p><p class="copy">© 2025–2026 Forbidden Mantra Press</p></div>
+  <div class="wrap">${placed('footer').map((p) => promo.renderFooter(promoView('footer', p.id), promoCtx)).join('')}<p class="disclosure" lang="en">${esc(cfg.disclosure)}</p><p class="copy">© 2025–2026 Forbidden Mantra Press</p></div>
 </footer>
 <script src="${ROOT_PREFIX}assets/i18n.js"></script>
 <script src="${ROOT_PREFIX}assets/app.js"></script>
@@ -281,6 +298,7 @@ page('index.html', {
   <p class="lede-sm">${stocked.length === 1 ? `Every verified edition so far is in ${esc(stocked[0].name)}. ` : ''}We add a language to the shelf only when a specific edition has been verified with its own identifier and source. ${unstocked.length} more languages are set up and waiting for verified editions.</p>
   <ul class="langs-home">${stocked.map((l) => `<li><a class="lang-tile" href="${href(`languages/${l.code}/`)}" lang="${l.code}" dir="${l.dir}"><span class="lt-name">${esc(l.endonym)}</span><span class="lt-n">${fmt(nWorks(l.code), 'book', 'books')} · ${fmt(nEds(l.code), 'edition', 'editions')}</span></a></li>`).join('')}</ul>
 </div></section>
+${placed('home').map((p) => promo.renderHome(promoView('home', p.id), promoCtx)).join('')}
 <section class="band alt"><div class="wrap narrow">
   <h2>How the catalogue is built</h2>
   <p>Every listed book has a named source for its title, author, edition and identifier. Books we cannot yet confirm are held back rather than shown. We do not display prices, ratings or bestseller badges unless they come from a source we are permitted to use. <a href="${href('about/catalogue-standards/')}">Read our standards</a>.</p>
@@ -484,6 +502,16 @@ for (const c of coll.collections) {
     title: c.title, desc: c.blurb, crumbs: [['Collections', 'collections/'], [c.title]],
     body: () => `<section class="band"><div class="wrap"><h1>${esc(c.title)}</h1><p class="lede-sm">${esc(c.blurb)}</p>${langChips(ws)}${filterBar(ws, { subjects: false, traditions: false, press: false, q: false })}${grid(ws)}${emptyMsg()}</div></section>`,
   });
+}
+
+// ---------- technology & innovation (cross-promotion) ----------
+for (const p of placed('page')) page(`${p.placements.page.path}index.html`, {
+  title: 'Technology and innovation', crumbs: [['Technology & innovation']], desc: `${PROMOS.brands[p.brand].name}, our ${PROMOS.brands[p.brand].descriptor.toLowerCase()}.`,
+  body: () => promo.renderPage(promoView('page', p.id), promoCtx),
+});
+// authorised partner badge assets are copied only when the gate in scripts/promo.mjs allows them
+for (const b of Object.values(PROMOS.brands)) for (const bd of Object.values(b.badges ?? {})) {
+  if (promo.badgeState(bd, ROOT).ok) { fs.mkdirSync(path.join(OUT, 'assets/partner'), { recursive: true }); fs.copyFileSync(path.join(ROOT, 'assets-src/partner', bd.asset), path.join(OUT, 'assets/partner', bd.asset)); }
 }
 
 // ---------- about ----------

@@ -1,3 +1,14 @@
+# IOSutra technology section update
+
+Preview only; not deployed. Details: `docs/CROSS-PROMOTION.md`.
+- Added a "Technology & innovation" section on the home page, a `/technology/` page and a small footer reference on every page, all driven by `data/promos.json` through the reusable `scripts/promo.mjs`.
+- IOSutra is introduced only as "our AI-powered business software platform". The statement "IOSutra is a member of the NVIDIA Inception program." always appears with a line saying the membership applies to IOSutra only and does not imply NVIDIA sponsors or endorses Forbidden Mantra Press or the bookstore.
+- **Open items, enforced by a production build gate that refuses today:** (1) no IOSutra URL exists in the repo and none could be found by search, so the link is a visible placeholder; (2) the membership is owner-asserted, not independently verified; (3) trademark wording is unconfirmed; (4) the owner has not approved the promo.
+- **Badge not included:** no authorised asset and no Inception-specific usage terms were available. The code can render one only after licence confirmation and a recorded guidelines review; this was tested with a clearly marked test file, never an NVIDIA mark.
+- Tests: 66 new checks pass; the earlier 139 and 95 still pass.
+
+---
+
 # Multilingual update
 
 Preview only; not deployed. Full design notes: `docs/LANGUAGES.md`.
