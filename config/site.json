@@ -1,0 +1,14 @@
+{
+  "name": "Forbidden Mantra Press",
+  "tagline": "A curated bookstore of sacred texts, practice and inner cultivation",
+  "catalogueAsOf": "2026-10-26",
+  "affiliate": {
+    "program": "Amazon Associates",
+    "trackingId": null,
+    "marketplace": "amazon.com",
+    "marketplaceVerified": false,
+    "note": "trackingId must be the Associates *tracking ID* (looks like name-20), NOT the Influencer storefront name. It is read from the AMAZON_TRACKING_ID environment variable at build time if set; never commit credentials.",
+    "legacyStoreLink": "https://amzn.to/4tX3ogd"
+  },
+  "disclosure": "As an Amazon Associate, Forbidden Mantra Press earns from qualifying purchases. Links marked “Amazon” may be affiliate links; buying through them costs you nothing extra."
+}

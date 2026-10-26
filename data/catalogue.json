@@ -1,0 +1,1354 @@
+{
+ "generated": "2026-10-26",
+ "works": [
+  {
+   "id": "the-apocalypse-of-adam",
+   "slug": "the-apocalypse-of-adam",
+   "title": "The Apocalypse of Adam",
+   "subtitle": "",
+   "authors": [
+    "Forbidden Mantra Press"
+   ],
+   "subjects": [
+    "gnosticism",
+    "ancient-texts"
+   ],
+   "tradition": [
+    "gnostic"
+   ],
+   "level": "intermediate",
+   "press": "fmp",
+   "status": "owner-listed",
+   "description": "A presentation of the Nag Hammadi text in which Adam passes on a revelation to his son Seth. It is part of Forbidden Mantra Press’s Nag Hammadi series. The audiobook is narrated by Emily K Patel.",
+   "editions": [
+    {
+     "format": "audiobook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "asin": "B0H8MQN9WK",
+     "retailers": [
+      {
+       "retailer": "amazon",
+       "kind": "product",
+       "url": "https://www.amazon.com/Apocalypse-Adam-Forbidden-Mantra-Press/dp/B0H8MQN9WK",
+       "verification": "seen-in-search-results",
+       "checkedOn": "2026-10-26"
+      }
+     ],
+     "id": "B0H8MQN9WK",
+     "isbn10": null
+    },
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "note": "Print/Kindle edition listed on the owner homepage; ASIN not yet recovered.",
+     "retailers": [],
+     "id": "ed2",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Amazon Audible listing seen in search results",
+     "url": "https://www.amazon.com/Apocalypse-Adam-Forbidden-Mantra-Press/dp/B0H8MQN9WK",
+     "accessed": "2026-10-26",
+     "supports": "audiobook ASIN, narrator"
+    },
+    {
+     "label": "Owner homepage (legacy)",
+     "url": "legacy/forbiddenmantra-homepage.html",
+     "accessed": "2026-10-26",
+     "supports": "title listed"
+    }
+   ],
+   "claims": [],
+   "authorIds": [
+    "forbidden-mantra-press"
+   ]
+  },
+  {
+   "id": "gayatri-mantra",
+   "slug": "gayatri-mantra",
+   "title": "Gayatri Mantra",
+   "subtitle": "Light of Divine Intelligence",
+   "authors": [
+    "Forbidden Mantra Press"
+   ],
+   "subjects": [
+    "sanskrit-mantras",
+    "hinduism"
+   ],
+   "tradition": [
+    "hindu"
+   ],
+   "level": "beginner",
+   "press": "fmp",
+   "status": "owner-listed",
+   "description": "A guide to the Gayatri mantra, one of the best-known Vedic mantras, in the Forbidden Mantra Series.",
+   "editions": [
+    {
+     "format": "audiobook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "asin": "B0H8MDVC72",
+     "retailers": [
+      {
+       "retailer": "amazon",
+       "kind": "product",
+       "url": "https://www.amazon.com/Gayatri-Mantra-Light-Divine-Intelligence/dp/B0H8MDVC72",
+       "verification": "seen-in-search-results",
+       "checkedOn": "2026-10-26"
+      }
+     ],
+     "id": "B0H8MDVC72",
+     "isbn10": null
+    },
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "note": "Kindle edition seen in category listing; ASIN not yet recovered.",
+     "retailers": [],
+     "id": "ed2",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Amazon Audible listing seen in search results",
+     "url": "https://www.amazon.com/Gayatri-Mantra-Light-Divine-Intelligence/dp/B0H8MDVC72",
+     "accessed": "2026-10-26",
+     "supports": "audiobook ASIN"
+    }
+   ],
+   "claims": [],
+   "authorIds": [
+    "forbidden-mantra-press"
+   ]
+  },
+  {
+   "id": "kebra-nagast",
+   "slug": "kebra-nagast",
+   "title": "Kebra Nagast",
+   "subtitle": "",
+   "authors": [
+    "Forbidden Mantra Press"
+   ],
+   "subjects": [
+    "ancient-texts",
+    "mythology",
+    "comparative-religion"
+   ],
+   "tradition": [
+    "christian",
+    "mythic"
+   ],
+   "level": "intermediate",
+   "press": "fmp",
+   "status": "owner-listed",
+   "description": "An edition of the medieval Ethiopian national epic recounting the Queen of Sheba, King Solomon and the lineage of Ethiopian kings. Listed June 2025 in paperback and Kindle.",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": 2025,
+     "retailers": [],
+     "id": "ed1",
+     "isbn10": null
+    },
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": 2025,
+     "retailers": [],
+     "id": "ed2",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Amazon category/search listing summarised via web search",
+     "url": "https://www.amazon.com/kebra-nagast-Books/s?k=the+kebra+nagast&rh=n:283155",
+     "accessed": "2026-10-26",
+     "supports": "title, June 2025 date, formats"
+    }
+   ],
+   "claims": [],
+   "authorIds": [
+    "forbidden-mantra-press"
+   ]
+  },
+  {
+   "id": "weapons-of-the-gods",
+   "slug": "weapons-of-the-gods",
+   "title": "Weapons of the Gods",
+   "subtitle": "An Overview of Astra & Shastra",
+   "authors": [
+    "Forbidden Mantra Press"
+   ],
+   "subjects": [
+    "hinduism",
+    "mythology",
+    "ancient-texts"
+   ],
+   "tradition": [
+    "hindu",
+    "mythic"
+   ],
+   "level": "beginner",
+   "press": "fmp",
+   "status": "owner-listed",
+   "description": "An overview of the divine weapons (astras and shastras) described in Hindu epic literature. Book 1 of the Hindu Epic Series; listed June 2025 in paperback and Kindle.",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": 2025,
+     "retailers": [],
+     "id": "ed1",
+     "isbn10": null
+    },
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": 2025,
+     "retailers": [],
+     "id": "ed2",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Amazon listing summarised via web search",
+     "url": "https://www.amazon.com/Books-Mantra-Press/s?rh=n%3A283155%2Cp_27%3AMantra%2BPress",
+     "accessed": "2026-10-26",
+     "supports": "title, series, June 2025"
+    }
+   ],
+   "claims": [],
+   "authorIds": [
+    "forbidden-mantra-press"
+   ]
+  },
+  {
+   "id": "maha-mrityunjaya-mantra",
+   "slug": "maha-mrityunjaya-mantra",
+   "title": "Maha Mrityunjaya Mantra",
+   "subtitle": "",
+   "authors": [
+    "Forbidden Mantra Press"
+   ],
+   "subjects": [
+    "sanskrit-mantras",
+    "hinduism"
+   ],
+   "tradition": [
+    "hindu"
+   ],
+   "level": "beginner",
+   "press": "fmp",
+   "status": "owner-listed",
+   "description": "A Forbidden Mantra Series guide to the Maha Mrityunjaya mantra, traditionally addressed to Shiva. Kindle edition, May 2025.",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": 2025,
+     "retailers": [],
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Amazon listing summarised via web search",
+     "url": "https://www.amazon.com/Books-Mantra-Press/s?rh=n%3A283155%2Cp_27%3AMantra%2BPress",
+     "accessed": "2026-10-26",
+     "supports": "title, Kindle, May 2025"
+    }
+   ],
+   "claims": [],
+   "authorIds": [
+    "forbidden-mantra-press"
+   ]
+  },
+  {
+   "id": "invoke-the-fierce",
+   "slug": "invoke-the-fierce",
+   "title": "Invoke the Fierce",
+   "subtitle": "Unlocking Strength and Protection with the Durga Mantra",
+   "authors": [
+    "Forbidden Mantra Press"
+   ],
+   "subjects": [
+    "sanskrit-mantras",
+    "hinduism"
+   ],
+   "tradition": [
+    "hindu"
+   ],
+   "level": "beginner",
+   "press": "fmp",
+   "status": "owner-listed",
+   "description": "A guide to the Durga mantra in the Forbidden Mantra Series. A Spanish edition is also reported.",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Amazon listing summarised via web search",
+     "url": "https://www.amazon.in/Kindle-Store-Forbidden-Mantra-Press/s?rh=n:1571277031,p_27:Forbidden%2BMantra%2BPress",
+     "accessed": "2026-10-26",
+     "supports": "title, subtitle"
+    }
+   ],
+   "claims": [],
+   "authorIds": [
+    "forbidden-mantra-press"
+   ]
+  },
+  {
+   "id": "lakshmi-gayatri",
+   "slug": "lakshmi-gayatri",
+   "title": "Lakshmi Gayatri",
+   "subtitle": "",
+   "authors": [
+    "Forbidden Mantra Press"
+   ],
+   "subjects": [
+    "sanskrit-mantras",
+    "hinduism"
+   ],
+   "tradition": [
+    "hindu"
+   ],
+   "level": "beginner",
+   "press": "fmp",
+   "status": "owner-listed",
+   "description": "A Forbidden Mantra Series guide to the Lakshmi Gayatri mantra.",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Amazon listing summarised via web search",
+     "url": "https://www.amazon.com/Books-Mantra-Press/s?rh=n%3A283155%2Cp_27%3AMantra%2BPress",
+     "accessed": "2026-10-26",
+     "supports": "title"
+    }
+   ],
+   "claims": [],
+   "authorIds": [
+    "forbidden-mantra-press"
+   ]
+  },
+  {
+   "id": "om-namah-shivaya",
+   "slug": "om-namah-shivaya",
+   "title": "Om Namah Shivaya",
+   "subtitle": "A Sacred Practice Guide",
+   "authors": [
+    "Forbidden Mantra Press"
+   ],
+   "subjects": [
+    "sanskrit-mantras",
+    "hinduism"
+   ],
+   "tradition": [
+    "hindu"
+   ],
+   "level": "beginner",
+   "press": "fmp",
+   "status": "owner-listed",
+   "description": "A practice guide to the five-syllable Shaiva mantra Om Namah Shivaya. German and Spanish editions are reported but not yet individually identified.",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Amazon.in Kindle listing summarised via web search",
+     "url": "https://www.amazon.in/Kindle-Store-Forbidden-Mantra-Press/s?rh=n:1571277031,p_27:Forbidden%2BMantra%2BPress",
+     "accessed": "2026-10-26",
+     "supports": "title, subtitle"
+    }
+   ],
+   "claims": [],
+   "authorIds": [
+    "forbidden-mantra-press"
+   ]
+  },
+  {
+   "id": "maa-kali-mantras-and-instructions",
+   "slug": "maa-kali-mantras-and-instructions",
+   "title": "Maa Kali Mantras and Instructions",
+   "subtitle": "",
+   "authors": [
+    "Forbidden Mantra Press"
+   ],
+   "subjects": [
+    "sanskrit-mantras",
+    "hinduism"
+   ],
+   "tradition": [
+    "hindu"
+   ],
+   "level": "beginner",
+   "press": "fmp",
+   "status": "owner-listed",
+   "description": "Mantras and practice instructions devoted to Kali, listed as a Google Play e-book.",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [
+      {
+       "retailer": "google-play",
+       "kind": "product",
+       "url": "https://play.google.com/store/books/details/Maa_Kali_Mantras_and_Instructions?id=RlyKEQAAQBAJ&hl=en_US",
+       "verification": "seen-in-search-results",
+       "checkedOn": "2026-10-26"
+      }
+     ],
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Google Play Books listing seen in search results",
+     "url": "https://play.google.com/store/books/details/Maa_Kali_Mantras_and_Instructions?id=RlyKEQAAQBAJ&hl=en_US",
+     "accessed": "2026-10-26",
+     "supports": "title, publisher, retailer URL"
+    }
+   ],
+   "claims": [],
+   "authorIds": [
+    "forbidden-mantra-press"
+   ]
+  },
+  {
+   "id": "mo-pai-nei-kung",
+   "slug": "mo-pai-nei-kung",
+   "title": "Mo Pai Nei Kung",
+   "subtitle": "",
+   "authors": [
+    "Forbidden Mantra Press"
+   ],
+   "subjects": [
+    "mo-pai",
+    "neigong",
+    "qigong"
+   ],
+   "tradition": [
+    "chinese-internal-arts"
+   ],
+   "level": "intermediate",
+   "press": "fmp",
+   "status": "owner-listed",
+   "description": "Listed on the owner homepage as a Forbidden Mantra Press title on internal energy and power cultivation. Edition details have not yet been confirmed; this is separate from the Beginning Mo Pai Nei Kung books by Shifu Lin, which are published by others.",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "note": "Edition details awaiting owner confirmation.",
+     "retailers": [],
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner homepage (legacy)",
+     "url": "legacy/forbiddenmantra-homepage.html",
+     "accessed": "2026-10-26",
+     "supports": "title listed, tags"
+    }
+   ],
+   "claims": [],
+   "authorIds": [
+    "forbidden-mantra-press"
+   ]
+  },
+  {
+   "id": "the-hidden-technology-of-human-power",
+   "slug": "the-hidden-technology-of-human-power",
+   "title": "The Hidden Technology of Human Power",
+   "subtitle": "",
+   "authors": [
+    "Forbidden Mantra Press"
+   ],
+   "subjects": [
+    "subtle-body",
+    "qigong"
+   ],
+   "tradition": [
+    "chinese-internal-arts"
+   ],
+   "level": "intermediate",
+   "press": "fmp",
+   "status": "owner-listed",
+   "description": "Listed on the owner homepage under biofield and energy systems. Edition details have not yet been confirmed.",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "note": "Edition details awaiting owner confirmation.",
+     "retailers": [],
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner homepage (legacy)",
+     "url": "legacy/forbiddenmantra-homepage.html",
+     "accessed": "2026-10-26",
+     "supports": "title listed, tags"
+    }
+   ],
+   "claims": [],
+   "authorIds": [
+    "forbidden-mantra-press"
+   ]
+  },
+  {
+   "id": "forbidden-mantra",
+   "slug": "forbidden-mantra",
+   "title": "Forbidden Mantra",
+   "subtitle": "",
+   "authors": [
+    "Forbidden Mantra Press"
+   ],
+   "subjects": [
+    "sanskrit-mantras"
+   ],
+   "tradition": [
+    "hindu"
+   ],
+   "level": "beginner",
+   "press": "fmp",
+   "status": "owner-listed",
+   "description": "Listed on the owner homepage under mantra and transformation. It may refer to a single book or to the Forbidden Mantra Series; Amazon shows the series as 41 books. Awaiting owner confirmation.",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "note": "Awaiting owner confirmation.",
+     "retailers": [],
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner homepage (legacy)",
+     "url": "legacy/forbiddenmantra-homepage.html",
+     "accessed": "2026-10-26",
+     "supports": "title listed, tags"
+    }
+   ],
+   "claims": [],
+   "authorIds": [
+    "forbidden-mantra-press"
+   ]
+  },
+  {
+   "id": "the-power-of-now",
+   "slug": "the-power-of-now",
+   "title": "The Power of Now",
+   "subtitle": "A Guide to Spiritual Enlightenment",
+   "authors": [
+    "Eckhart Tolle"
+   ],
+   "subjects": [
+    "consciousness",
+    "mindfulness",
+    "emotional-wellbeing"
+   ],
+   "tradition": [
+    "nondual"
+   ],
+   "level": "beginner",
+   "description": "A short, direct introduction to present-moment awareness. Tolle argues that much suffering comes from identification with the thinking mind, and offers simple attention exercises rather than doctrine. A common first book for readers new to contemplative ideas.",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "New World Library",
+     "year": 2004,
+     "isbn13": "9781577314806",
+     "note": "Trade paperback with new preface; page counts differ between listings so none is shown.",
+     "id": "9781577314806",
+     "isbn10": "1577314808"
+    }
+   ],
+   "sources": [
+    {
+     "label": "eBay UK listing (ISBN, title, publisher, year)",
+     "url": "https://www.ebay.co.uk/itm/157683061557",
+     "accessed": "2026-10-26",
+     "supports": "isbn13, title, year"
+    },
+    {
+     "label": "AbeBooks listing",
+     "url": "https://www.abebooks.com/Power-Now-Guide-Spiritual-Enlightenment-Tolle/32249605272/bd",
+     "accessed": "2026-10-26",
+     "supports": "publisher, format"
+    }
+   ],
+   "claims": [
+    {
+     "text": "Seller claim: over 16 million copies sold; New York Times bestseller",
+     "status": "unverified-seller-claim",
+     "display": false
+    }
+   ],
+   "press": null,
+   "status": "verified",
+   "authorIds": [
+    "eckhart-tolle"
+   ]
+  },
+  {
+   "id": "the-untethered-soul",
+   "slug": "the-untethered-soul",
+   "title": "The Untethered Soul",
+   "subtitle": "The Journey Beyond Yourself",
+   "authors": [
+    "Michael A. Singer"
+   ],
+   "subjects": [
+    "consciousness",
+    "mindfulness",
+    "emotional-wellbeing"
+   ],
+   "tradition": [
+    "nondual"
+   ],
+   "level": "beginner",
+   "description": "A reflective guide to observing the inner narrator and releasing habitual emotional patterns. Singer uses plain, secular-leaning language and a progression of short chapters that suit daily reading.",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "New Harbinger Publications / Noetic Books",
+     "year": 2007,
+     "isbn13": "9781572245372",
+     "id": "9781572245372",
+     "isbn10": "1572245379"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Seattle-area library catalogue record",
+     "url": "https://catalog.sbplibrary.org/Record/95364",
+     "accessed": "2026-10-26",
+     "supports": "publisher, year, co-publication"
+    },
+    {
+     "label": "eBay Germany listing",
+     "url": "https://www.ebay.de/itm/157408041689",
+     "accessed": "2026-10-26",
+     "supports": "isbn13, format"
+    }
+   ],
+   "claims": [],
+   "press": null,
+   "status": "verified",
+   "authorIds": [
+    "michael-a-singer"
+   ]
+  },
+  {
+   "id": "when-things-fall-apart",
+   "slug": "when-things-fall-apart",
+   "title": "When Things Fall Apart",
+   "subtitle": "Heart Advice for Difficult Times",
+   "authors": [
+    "Pema Chödrön"
+   ],
+   "subjects": [
+    "buddhism",
+    "emotional-wellbeing",
+    "mindfulness"
+   ],
+   "tradition": [
+    "buddhist"
+   ],
+   "level": "beginner",
+   "description": "Talks by a Tibetan Buddhist nun on staying present with pain, uncertainty and loss. The advice is drawn from the Shambhala/Vajrayana tradition but written for general readers, including those with no Buddhist background.",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Shambhala Publications",
+     "year": 2016,
+     "isbn13": "9781611803433",
+     "note": "20th-anniversary edition with a new afterword.",
+     "id": "9781611803433",
+     "isbn10": "1611803438"
+    },
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Shambhala Publications",
+     "year": 1997,
+     "isbn13": "9780834821002",
+     "note": "Original edition. ISBN reported by Bookshare only; not corroborated by a second source.",
+     "needsSecondSource": true,
+     "id": "9780834821002",
+     "isbn10": "0834821001"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Penguin Random House Shambhala page / Parnassus listing",
+     "url": "https://parnassusbooks.net/book/9781611803433",
+     "accessed": "2026-10-26",
+     "supports": "isbn13, 2016 edition"
+    },
+    {
+     "label": "Bookshare record",
+     "url": "https://bookshare.org/browse/book/2883331",
+     "accessed": "2026-10-26",
+     "supports": "original-edition ISBN"
+    }
+   ],
+   "claims": [],
+   "press": null,
+   "status": "verified",
+   "authorIds": [
+    "pema-chodron"
+   ]
+  },
+  {
+   "id": "when-the-body-says-no",
+   "slug": "when-the-body-says-no",
+   "title": "When the Body Says No",
+   "subtitle": "Exploring the Stress-Disease Connection",
+   "authors": [
+    "Gabor Maté"
+   ],
+   "subjects": [
+    "emotional-wellbeing",
+    "sleep-stress",
+    "holistic-traditions"
+   ],
+   "tradition": [
+    "secular"
+   ],
+   "level": "intermediate",
+   "description": "A physician’s argument that chronic suppression of emotion and long-term stress are linked to illness. It is a clinical-psychological work built on case histories, and it is not a substitute for medical treatment.",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "John Wiley & Sons",
+     "year": 2011,
+     "isbn13": "9780470923351",
+     "id": "9780470923351",
+     "isbn10": "0470923350"
+    },
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "John Wiley & Sons",
+     "year": 2003,
+     "isbn13": "9780471219828",
+     "note": "Earlier edition under a different subtitle, per library record.",
+     "needsSecondSource": true,
+     "id": "9780471219828",
+     "isbn10": "0471219827"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Merrimack Valley library record",
+     "url": "https://discover.merrimacklibrary.org/Record/866904",
+     "accessed": "2026-10-26",
+     "supports": "publisher, ISBNs"
+    },
+    {
+     "label": "Chaucer’s Books listing",
+     "url": "https://chaucersbooks.com/book/9780470923351",
+     "accessed": "2026-10-26",
+     "supports": "isbn13"
+    }
+   ],
+   "claims": [],
+   "press": null,
+   "status": "verified",
+   "authorIds": [
+    "gabor-mate"
+   ]
+  },
+  {
+   "id": "bucklands-complete-book-of-witchcraft",
+   "slug": "bucklands-complete-book-of-witchcraft",
+   "title": "Buckland’s Complete Book of Witchcraft",
+   "subtitle": "",
+   "authors": [
+    "Raymond Buckland"
+   ],
+   "subjects": [
+    "wicca",
+    "witchcraft"
+   ],
+   "tradition": [
+    "wiccan"
+   ],
+   "level": "beginner",
+   "description": "A self-study course in modern Wicca, laid out as a series of lessons. Buckland was an early figure in bringing Gardnerian Wicca to the United States, and the book reflects that initiatory-religion perspective rather than historical witchcraft.",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Llewellyn Publications",
+     "year": 2002,
+     "isbn13": "9780875420509",
+     "note": "Second edition, revised and expanded; Practical Magick series.",
+     "id": "9780875420509",
+     "isbn10": "0875420508"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Arapahoe Library catalogue record",
+     "url": "https://discover.aclib.us/Record/875043",
+     "accessed": "2026-10-26",
+     "supports": "edition, publisher, series"
+    },
+    {
+     "label": "Bookshare record",
+     "url": "https://www.bookshare.org/browse/book/772961",
+     "accessed": "2026-10-26",
+     "supports": "isbn13"
+    }
+   ],
+   "claims": [],
+   "press": null,
+   "status": "verified",
+   "authorIds": [
+    "raymond-buckland"
+   ]
+  },
+  {
+   "id": "wicca",
+   "slug": "wicca",
+   "title": "Wicca",
+   "subtitle": "A Guide for the Solitary Practitioner",
+   "authors": [
+    "Scott Cunningham"
+   ],
+   "subjects": [
+    "wicca",
+    "paganism",
+    "witchcraft"
+   ],
+   "tradition": [
+    "wiccan"
+   ],
+   "level": "beginner",
+   "description": "An introduction to Wicca as a nature-centred religion honouring a Goddess and God, written for people practising alone rather than in a coven. It includes ritual outlines and a model Book of Shadows.",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Llewellyn Publications",
+     "year": 2002,
+     "isbn13": "9780875421186",
+     "note": "Llewellyn’s Practical Magick series. A revised 2004 edition is listed by some libraries.",
+     "id": "9780875421186",
+     "isbn10": "0875421180"
+    }
+   ],
+   "sources": [
+    {
+     "label": "MIT Press Bookstore listing",
+     "url": "https://mitpressbookstore.mit.edu/book/9780875421186",
+     "accessed": "2026-10-26",
+     "supports": "isbn13, publisher"
+    },
+    {
+     "label": "Foyles listing",
+     "url": "https://www.foyles.co.uk/book/wicca/scott-cunningham/9780875421186",
+     "accessed": "2026-10-26",
+     "supports": "publisher, series"
+    }
+   ],
+   "claims": [],
+   "press": null,
+   "status": "verified",
+   "authorIds": [
+    "scott-cunningham"
+   ]
+  },
+  {
+   "id": "encyclopedia-of-5-000-spells",
+   "slug": "encyclopedia-of-5-000-spells",
+   "title": "Encyclopedia of 5,000 Spells",
+   "subtitle": "The Ultimate Reference Book for the Magical Arts",
+   "authors": [
+    "Judika Illes"
+   ],
+   "subjects": [
+    "spells",
+    "witchcraft",
+    "paganism"
+   ],
+   "tradition": [
+    "pagan"
+   ],
+   "level": "beginner",
+   "description": "A very large alphabetical reference of spells, charms and folk-magic traditions drawn from many cultures. It is a compendium for browsing, not a single-tradition system.",
+   "editions": [
+    {
+     "format": "hardcover",
+     "language": "en",
+     "publisher": "HarperOne",
+     "year": 2009,
+     "isbn13": "9780061711237",
+     "id": "9780061711237",
+     "isbn10": "0061711233"
+    },
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "HarperOne",
+     "year": 2011,
+     "isbn13": "9780062047267",
+     "note": "Kindle edition ISBN per Goodreads; ISBN-10 not applicable, so no ASIN-derived link.",
+     "noDerivedLink": true,
+     "needsSecondSource": true,
+     "id": "9780062047267",
+     "isbn10": "0062047264"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Wikipedia: Judika Illes bibliography",
+     "url": "https://en.wikipedia.org/wiki/Judika_Illes",
+     "accessed": "2026-10-26",
+     "supports": "hardcover ISBN"
+    },
+    {
+     "label": "Schuler Books listing",
+     "url": "https://schulerbooks.com/book/9780061711237",
+     "accessed": "2026-10-26",
+     "supports": "isbn13, publisher"
+    },
+    {
+     "label": "Goodreads editions",
+     "url": "https://www.goodreads.com/work/editions/425188-the-element-encyclopedia-of-5000-spells-the-ultimate-reference-book-for",
+     "accessed": "2026-10-26",
+     "supports": "ebook ISBN"
+    }
+   ],
+   "claims": [],
+   "press": null,
+   "status": "verified",
+   "authorIds": [
+    "judika-illes"
+   ]
+  },
+  {
+   "id": "seventy-eight-degrees-of-wisdom",
+   "slug": "seventy-eight-degrees-of-wisdom",
+   "title": "Seventy-Eight Degrees of Wisdom",
+   "subtitle": "A Tarot Journey to Self-Awareness",
+   "authors": [
+    "Rachel Pollack"
+   ],
+   "subjects": [
+    "tarot"
+   ],
+   "tradition": [
+    "western-esoteric"
+   ],
+   "level": "intermediate",
+   "description": "A card-by-card study of the Rider–Waite–Smith tarot that treats the deck as a language of symbols for reflection. It has remained in print since 1980 and is widely used as a foundation text for serious tarot readers.",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Weiser Books",
+     "year": 2019,
+     "isbn13": "9781578636655",
+     "note": "New edition with a new preface.",
+     "id": "9781578636655",
+     "isbn10": "1578636655"
+    },
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Weiser Books",
+     "year": 2019,
+     "isbn13": "9781578637348",
+     "note": "40th-anniversary edition per Kingston Frontenac Public Library record.",
+     "needsSecondSource": true,
+     "id": "9781578637348",
+     "isbn10": "1578637341"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Red Wheel/Weiser publisher page",
+     "url": "https://redwheelweiser.com/?p=108225",
+     "accessed": "2026-10-26",
+     "supports": "title, publisher, 2019 edition"
+    },
+    {
+     "label": "MIT Press Bookstore listing",
+     "url": "https://mitpressbookstore.mit.edu/book/9781578636655",
+     "accessed": "2026-10-26",
+     "supports": "isbn13"
+    },
+    {
+     "label": "Kingston Frontenac library record",
+     "url": "https://www.kfpl.ca/c/catalogue/record/1.558290",
+     "accessed": "2026-10-26",
+     "supports": "40th anniversary ISBN"
+    }
+   ],
+   "claims": [],
+   "press": null,
+   "status": "verified",
+   "authorIds": [
+    "rachel-pollack"
+   ]
+  },
+  {
+   "id": "the-gnostic-gospels",
+   "slug": "the-gnostic-gospels",
+   "title": "The Gnostic Gospels",
+   "subtitle": "",
+   "authors": [
+    "Elaine Pagels"
+   ],
+   "subjects": [
+    "gnosticism",
+    "ancient-texts",
+    "comparative-religion"
+   ],
+   "tradition": [
+    "gnostic"
+   ],
+   "level": "intermediate",
+   "description": "A scholarly but readable study of the Nag Hammadi texts and what they reveal about the diversity of early Christianity. Pagels examines how the texts differ from the writings that became orthodox and why those differences mattered.",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Vintage Books",
+     "year": 1989,
+     "isbn13": "9780679724537",
+     "note": "First published by Random House in 1979.",
+     "id": "9780679724537",
+     "isbn10": "0679724532"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Swan Libraries catalogue record",
+     "url": "https://dgs.swanlibraries.net/Record/a446102",
+     "accessed": "2026-10-26",
+     "supports": "publisher, year, 1979 first edition"
+    },
+    {
+     "label": "Bookshop.org listing (title page only; affiliate link not used)",
+     "url": "https://bookshop.org/p/books/the-gnostic-gospels-elaine-pagels/6719485",
+     "accessed": "2026-10-26",
+     "supports": "award statement"
+    }
+   ],
+   "claims": [
+    {
+     "text": "Won the National Book Award and the National Book Critics Circle Award",
+     "status": "historical-award-per-multiple-listings",
+     "display": true
+    }
+   ],
+   "press": null,
+   "status": "verified",
+   "authorIds": [
+    "elaine-pagels"
+   ]
+  },
+  {
+   "id": "taoist-secrets-of-love",
+   "slug": "taoist-secrets-of-love",
+   "title": "Taoist Secrets of Love",
+   "subtitle": "Cultivating Male Sexual Energy",
+   "authors": [
+    "Mantak Chia",
+    "Michael Winn"
+   ],
+   "subjects": [
+    "taoism",
+    "qigong",
+    "neigong",
+    "holistic-traditions"
+   ],
+   "tradition": [
+    "taoist",
+    "chinese-internal-arts"
+   ],
+   "level": "intermediate",
+   "description": "An early English presentation of Healing Tao practices for sexual-energy cultivation, including the Microcosmic Orbit. It is a modern teaching system adapted from Taoist internal-alchemy ideas, and its health claims are the authors’ own.",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Aurora Press",
+     "year": 1984,
+     "isbn13": "9780943358192",
+     "id": "9780943358192",
+     "isbn10": "0943358191"
+    }
+   ],
+   "sources": [
+    {
+     "label": "AbeBooks listing",
+     "url": "https://www.abebooks.com/9780943358192/Taoist-Secrets-Love-Cultivating-Male-0943358191/plp",
+     "accessed": "2026-10-26",
+     "supports": "isbn13, title"
+    },
+    {
+     "label": "Red Wing Books listing",
+     "url": "https://redwingbooks.com/product/taoseclov/",
+     "accessed": "2026-10-26",
+     "supports": "authors, subtitle"
+    }
+   ],
+   "claims": [],
+   "press": null,
+   "status": "verified",
+   "authorIds": [
+    "mantak-chia",
+    "michael-winn"
+   ]
+  },
+  {
+   "id": "healing-mantras",
+   "slug": "healing-mantras",
+   "title": "Healing Mantras",
+   "subtitle": "Using Sound Affirmations for Personal Power, Creativity, and Healing",
+   "authors": [
+    "Thomas Ashley-Farrand"
+   ],
+   "subjects": [
+    "sanskrit-mantras",
+    "hinduism",
+    "emotional-wellbeing"
+   ],
+   "tradition": [
+    "hindu"
+   ],
+   "level": "beginner",
+   "description": "A practical introduction to Sanskrit mantras for specific intentions, with transliteration and instructions for use. It presents mantra practice in a form accessible to newcomers; readers interested in traditional lineage guidance should consult a teacher.",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Ballantine Wellspring",
+     "year": 1999,
+     "isbn13": "9780345431707",
+     "id": "9780345431707",
+     "isbn10": "0345431707"
+    }
+   ],
+   "sources": [
+    {
+     "label": "BuyBookBook listing",
+     "url": "https://buybookbook.com/products/9780345431707",
+     "accessed": "2026-10-26",
+     "supports": "isbn13"
+    },
+    {
+     "label": "BookPal listing",
+     "url": "https://bookpal.com/healing-mantras-9780345431707/",
+     "accessed": "2026-10-26",
+     "supports": "publisher, year"
+    }
+   ],
+   "claims": [],
+   "press": null,
+   "status": "verified",
+   "authorIds": [
+    "thomas-ashley-farrand"
+   ]
+  }
+ ],
+ "authors": [
+  {
+   "id": "thomas-ashley-farrand",
+   "name": "Thomas Ashley-Farrand",
+   "sortName": "Ashley-Farrand, Thomas",
+   "bio": "American author and teacher of Sanskrit mantra practice.",
+   "workIds": [
+    "healing-mantras"
+   ]
+  },
+  {
+   "id": "raymond-buckland",
+   "name": "Raymond Buckland",
+   "sortName": "Buckland, Raymond",
+   "bio": "English-born author who helped introduce Gardnerian Wicca to the United States and wrote widely on witchcraft and the occult.",
+   "workIds": [
+    "bucklands-complete-book-of-witchcraft"
+   ]
+  },
+  {
+   "id": "mantak-chia",
+   "name": "Mantak Chia",
+   "sortName": "Chia, Mantak",
+   "bio": "Thai-born Taoist teacher and founder of the Healing Tao system, which he has presented to Western students since the 1970s.",
+   "workIds": [
+    "taoist-secrets-of-love"
+   ]
+  },
+  {
+   "id": "pema-chodron",
+   "name": "Pema Chödrön",
+   "sortName": "Chödrön, Pema",
+   "bio": "American Buddhist nun and teacher in the Shambhala tradition, associated with Gampo Abbey in Nova Scotia.",
+   "workIds": [
+    "when-things-fall-apart"
+   ]
+  },
+  {
+   "id": "scott-cunningham",
+   "name": "Scott Cunningham",
+   "sortName": "Cunningham, Scott",
+   "bio": "American author of popular guides to Wicca and magical practice. He died in 1993.",
+   "workIds": [
+    "wicca"
+   ]
+  },
+  {
+   "id": "forbidden-mantra-press",
+   "name": "Forbidden Mantra Press",
+   "sortName": "Forbidden Mantra Press",
+   "bio": null,
+   "workIds": [
+    "the-apocalypse-of-adam",
+    "gayatri-mantra",
+    "kebra-nagast",
+    "weapons-of-the-gods",
+    "maha-mrityunjaya-mantra",
+    "invoke-the-fierce",
+    "lakshmi-gayatri",
+    "om-namah-shivaya",
+    "maa-kali-mantras-and-instructions",
+    "mo-pai-nei-kung",
+    "the-hidden-technology-of-human-power",
+    "forbidden-mantra"
+   ]
+  },
+  {
+   "id": "judika-illes",
+   "name": "Judika Illes",
+   "sortName": "Illes, Judika",
+   "bio": "American author of reference works on magic, spells and witchcraft traditions.",
+   "workIds": [
+    "encyclopedia-of-5-000-spells"
+   ]
+  },
+  {
+   "id": "gabor-mate",
+   "name": "Gabor Maté",
+   "sortName": "Maté, Gabor",
+   "bio": "Hungarian-born Canadian physician and author who writes on stress, trauma and illness.",
+   "workIds": [
+    "when-the-body-says-no"
+   ]
+  },
+  {
+   "id": "elaine-pagels",
+   "name": "Elaine Pagels",
+   "sortName": "Pagels, Elaine",
+   "bio": "Religion professor at Princeton University and author of studies on Gnosticism and early Christianity.",
+   "workIds": [
+    "the-gnostic-gospels"
+   ]
+  },
+  {
+   "id": "rachel-pollack",
+   "name": "Rachel Pollack",
+   "sortName": "Pollack, Rachel",
+   "bio": "American writer and tarot scholar whose Seventy-Eight Degrees of Wisdom became a standard text on the cards.",
+   "workIds": [
+    "seventy-eight-degrees-of-wisdom"
+   ]
+  },
+  {
+   "id": "michael-a-singer",
+   "name": "Michael A. Singer",
+   "sortName": "Singer, Michael A.",
+   "bio": "American author and meditation teacher who writes about observing thought and releasing emotional patterns.",
+   "workIds": [
+    "the-untethered-soul"
+   ]
+  },
+  {
+   "id": "eckhart-tolle",
+   "name": "Eckhart Tolle",
+   "sortName": "Tolle, Eckhart",
+   "bio": "German-born spiritual teacher and author whose books present present-moment awareness in non-sectarian language.",
+   "workIds": [
+    "the-power-of-now"
+   ]
+  },
+  {
+   "id": "michael-winn",
+   "name": "Michael Winn",
+   "sortName": "Winn, Michael",
+   "bio": "American teacher of Taoist practice and co-author of several Healing Tao books.",
+   "workIds": [
+    "taoist-secrets-of-love"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,546 @@
+{
+  "generatedFrom": "web-search corroboration",
+  "checkedOn": "2026-10-26",
+  "works": [
+    {
+      "title": "The Power of Now",
+      "subtitle": "A Guide to Spiritual Enlightenment",
+      "authors": [
+        "Eckhart Tolle"
+      ],
+      "subjects": [
+        "consciousness",
+        "mindfulness",
+        "emotional-wellbeing"
+      ],
+      "tradition": [
+        "nondual"
+      ],
+      "level": "beginner",
+      "description": "A short, direct introduction to present-moment awareness. Tolle argues that much suffering comes from identification with the thinking mind, and offers simple attention exercises rather than doctrine. A common first book for readers new to contemplative ideas.",
+      "editions": [
+        {
+          "format": "paperback",
+          "language": "en",
+          "publisher": "New World Library",
+          "year": 2004,
+          "isbn13": "9781577314806",
+          "note": "Trade paperback with new preface; page counts differ between listings so none is shown."
+        }
+      ],
+      "sources": [
+        {
+          "label": "eBay UK listing (ISBN, title, publisher, year)",
+          "url": "https://www.ebay.co.uk/itm/157683061557",
+          "accessed": "2026-10-26",
+          "supports": "isbn13, title, year"
+        },
+        {
+          "label": "AbeBooks listing",
+          "url": "https://www.abebooks.com/Power-Now-Guide-Spiritual-Enlightenment-Tolle/32249605272/bd",
+          "accessed": "2026-10-26",
+          "supports": "publisher, format"
+        }
+      ],
+      "claims": [
+        {
+          "text": "Seller claim: over 16 million copies sold; New York Times bestseller",
+          "status": "unverified-seller-claim",
+          "display": false
+        }
+      ],
+      "press": null,
+      "status": "verified"
+    },
+    {
+      "title": "The Untethered Soul",
+      "subtitle": "The Journey Beyond Yourself",
+      "authors": [
+        "Michael A. Singer"
+      ],
+      "subjects": [
+        "consciousness",
+        "mindfulness",
+        "emotional-wellbeing"
+      ],
+      "tradition": [
+        "nondual"
+      ],
+      "level": "beginner",
+      "description": "A reflective guide to observing the inner narrator and releasing habitual emotional patterns. Singer uses plain, secular-leaning language and a progression of short chapters that suit daily reading.",
+      "editions": [
+        {
+          "format": "paperback",
+          "language": "en",
+          "publisher": "New Harbinger Publications / Noetic Books",
+          "year": 2007,
+          "isbn13": "9781572245372"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Seattle-area library catalogue record",
+          "url": "https://catalog.sbplibrary.org/Record/95364",
+          "accessed": "2026-10-26",
+          "supports": "publisher, year, co-publication"
+        },
+        {
+          "label": "eBay Germany listing",
+          "url": "https://www.ebay.de/itm/157408041689",
+          "accessed": "2026-10-26",
+          "supports": "isbn13, format"
+        }
+      ],
+      "claims": [],
+      "press": null,
+      "status": "verified"
+    },
+    {
+      "title": "When Things Fall Apart",
+      "subtitle": "Heart Advice for Difficult Times",
+      "authors": [
+        "Pema Chödrön"
+      ],
+      "subjects": [
+        "buddhism",
+        "emotional-wellbeing",
+        "mindfulness"
+      ],
+      "tradition": [
+        "buddhist"
+      ],
+      "level": "beginner",
+      "description": "Talks by a Tibetan Buddhist nun on staying present with pain, uncertainty and loss. The advice is drawn from the Shambhala/Vajrayana tradition but written for general readers, including those with no Buddhist background.",
+      "editions": [
+        {
+          "format": "paperback",
+          "language": "en",
+          "publisher": "Shambhala Publications",
+          "year": 2016,
+          "isbn13": "9781611803433",
+          "note": "20th-anniversary edition with a new afterword."
+        },
+        {
+          "format": "paperback",
+          "language": "en",
+          "publisher": "Shambhala Publications",
+          "year": 1997,
+          "isbn13": "9780834821002",
+          "note": "Original edition. ISBN reported by Bookshare only; not corroborated by a second source.",
+          "needsSecondSource": true
+        }
+      ],
+      "sources": [
+        {
+          "label": "Penguin Random House Shambhala page / Parnassus listing",
+          "url": "https://parnassusbooks.net/book/9781611803433",
+          "accessed": "2026-10-26",
+          "supports": "isbn13, 2016 edition"
+        },
+        {
+          "label": "Bookshare record",
+          "url": "https://bookshare.org/browse/book/2883331",
+          "accessed": "2026-10-26",
+          "supports": "original-edition ISBN"
+        }
+      ],
+      "claims": [],
+      "press": null,
+      "status": "verified"
+    },
+    {
+      "title": "When the Body Says No",
+      "subtitle": "Exploring the Stress-Disease Connection",
+      "authors": [
+        "Gabor Maté"
+      ],
+      "subjects": [
+        "emotional-wellbeing",
+        "sleep-stress",
+        "holistic-traditions"
+      ],
+      "tradition": [
+        "secular"
+      ],
+      "level": "intermediate",
+      "description": "A physician’s argument that chronic suppression of emotion and long-term stress are linked to illness. It is a clinical-psychological work built on case histories, and it is not a substitute for medical treatment.",
+      "editions": [
+        {
+          "format": "paperback",
+          "language": "en",
+          "publisher": "John Wiley & Sons",
+          "year": 2011,
+          "isbn13": "9780470923351"
+        },
+        {
+          "format": "paperback",
+          "language": "en",
+          "publisher": "John Wiley & Sons",
+          "year": 2003,
+          "isbn13": "9780471219828",
+          "note": "Earlier edition under a different subtitle, per library record.",
+          "needsSecondSource": true
+        }
+      ],
+      "sources": [
+        {
+          "label": "Merrimack Valley library record",
+          "url": "https://discover.merrimacklibrary.org/Record/866904",
+          "accessed": "2026-10-26",
+          "supports": "publisher, ISBNs"
+        },
+        {
+          "label": "Chaucer’s Books listing",
+          "url": "https://chaucersbooks.com/book/9780470923351",
+          "accessed": "2026-10-26",
+          "supports": "isbn13"
+        }
+      ],
+      "claims": [],
+      "press": null,
+      "status": "verified"
+    },
+    {
+      "title": "Buckland’s Complete Book of Witchcraft",
+      "subtitle": "",
+      "authors": [
+        "Raymond Buckland"
+      ],
+      "subjects": [
+        "wicca",
+        "witchcraft"
+      ],
+      "tradition": [
+        "wiccan"
+      ],
+      "level": "beginner",
+      "description": "A self-study course in modern Wicca, laid out as a series of lessons. Buckland was an early figure in bringing Gardnerian Wicca to the United States, and the book reflects that initiatory-religion perspective rather than historical witchcraft.",
+      "editions": [
+        {
+          "format": "paperback",
+          "language": "en",
+          "publisher": "Llewellyn Publications",
+          "year": 2002,
+          "isbn13": "9780875420509",
+          "note": "Second edition, revised and expanded; Practical Magick series."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Arapahoe Library catalogue record",
+          "url": "https://discover.aclib.us/Record/875043",
+          "accessed": "2026-10-26",
+          "supports": "edition, publisher, series"
+        },
+        {
+          "label": "Bookshare record",
+          "url": "https://www.bookshare.org/browse/book/772961",
+          "accessed": "2026-10-26",
+          "supports": "isbn13"
+        }
+      ],
+      "claims": [],
+      "press": null,
+      "status": "verified"
+    },
+    {
+      "title": "Wicca",
+      "subtitle": "A Guide for the Solitary Practitioner",
+      "authors": [
+        "Scott Cunningham"
+      ],
+      "subjects": [
+        "wicca",
+        "paganism",
+        "witchcraft"
+      ],
+      "tradition": [
+        "wiccan"
+      ],
+      "level": "beginner",
+      "description": "An introduction to Wicca as a nature-centred religion honouring a Goddess and God, written for people practising alone rather than in a coven. It includes ritual outlines and a model Book of Shadows.",
+      "editions": [
+        {
+          "format": "paperback",
+          "language": "en",
+          "publisher": "Llewellyn Publications",
+          "year": 2002,
+          "isbn13": "9780875421186",
+          "note": "Llewellyn’s Practical Magick series. A revised 2004 edition is listed by some libraries."
+        }
+      ],
+      "sources": [
+        {
+          "label": "MIT Press Bookstore listing",
+          "url": "https://mitpressbookstore.mit.edu/book/9780875421186",
+          "accessed": "2026-10-26",
+          "supports": "isbn13, publisher"
+        },
+        {
+          "label": "Foyles listing",
+          "url": "https://www.foyles.co.uk/book/wicca/scott-cunningham/9780875421186",
+          "accessed": "2026-10-26",
+          "supports": "publisher, series"
+        }
+      ],
+      "claims": [],
+      "press": null,
+      "status": "verified"
+    },
+    {
+      "title": "Encyclopedia of 5,000 Spells",
+      "subtitle": "The Ultimate Reference Book for the Magical Arts",
+      "authors": [
+        "Judika Illes"
+      ],
+      "subjects": [
+        "spells",
+        "witchcraft",
+        "paganism"
+      ],
+      "tradition": [
+        "pagan"
+      ],
+      "level": "beginner",
+      "description": "A very large alphabetical reference of spells, charms and folk-magic traditions drawn from many cultures. It is a compendium for browsing, not a single-tradition system.",
+      "editions": [
+        {
+          "format": "hardcover",
+          "language": "en",
+          "publisher": "HarperOne",
+          "year": 2009,
+          "isbn13": "9780061711237"
+        },
+        {
+          "format": "ebook",
+          "language": "en",
+          "publisher": "HarperOne",
+          "year": 2011,
+          "isbn13": "9780062047267",
+          "note": "Kindle edition ISBN per Goodreads; ISBN-10 not applicable, so no ASIN-derived link.",
+          "noDerivedLink": true,
+          "needsSecondSource": true
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia: Judika Illes bibliography",
+          "url": "https://en.wikipedia.org/wiki/Judika_Illes",
+          "accessed": "2026-10-26",
+          "supports": "hardcover ISBN"
+        },
+        {
+          "label": "Schuler Books listing",
+          "url": "https://schulerbooks.com/book/9780061711237",
+          "accessed": "2026-10-26",
+          "supports": "isbn13, publisher"
+        },
+        {
+          "label": "Goodreads editions",
+          "url": "https://www.goodreads.com/work/editions/425188-the-element-encyclopedia-of-5000-spells-the-ultimate-reference-book-for",
+          "accessed": "2026-10-26",
+          "supports": "ebook ISBN"
+        }
+      ],
+      "claims": [],
+      "press": null,
+      "status": "verified"
+    },
+    {
+      "title": "Seventy-Eight Degrees of Wisdom",
+      "subtitle": "A Tarot Journey to Self-Awareness",
+      "authors": [
+        "Rachel Pollack"
+      ],
+      "subjects": [
+        "tarot"
+      ],
+      "tradition": [
+        "western-esoteric"
+      ],
+      "level": "intermediate",
+      "description": "A card-by-card study of the Rider–Waite–Smith tarot that treats the deck as a language of symbols for reflection. It has remained in print since 1980 and is widely used as a foundation text for serious tarot readers.",
+      "editions": [
+        {
+          "format": "paperback",
+          "language": "en",
+          "publisher": "Weiser Books",
+          "year": 2019,
+          "isbn13": "9781578636655",
+          "note": "New edition with a new preface."
+        },
+        {
+          "format": "paperback",
+          "language": "en",
+          "publisher": "Weiser Books",
+          "year": 2019,
+          "isbn13": "9781578637348",
+          "note": "40th-anniversary edition per Kingston Frontenac Public Library record.",
+          "needsSecondSource": true
+        }
+      ],
+      "sources": [
+        {
+          "label": "Red Wheel/Weiser publisher page",
+          "url": "https://redwheelweiser.com/?p=108225",
+          "accessed": "2026-10-26",
+          "supports": "title, publisher, 2019 edition"
+        },
+        {
+          "label": "MIT Press Bookstore listing",
+          "url": "https://mitpressbookstore.mit.edu/book/9781578636655",
+          "accessed": "2026-10-26",
+          "supports": "isbn13"
+        },
+        {
+          "label": "Kingston Frontenac library record",
+          "url": "https://www.kfpl.ca/c/catalogue/record/1.558290",
+          "accessed": "2026-10-26",
+          "supports": "40th anniversary ISBN"
+        }
+      ],
+      "claims": [],
+      "press": null,
+      "status": "verified"
+    },
+    {
+      "title": "The Gnostic Gospels",
+      "subtitle": "",
+      "authors": [
+        "Elaine Pagels"
+      ],
+      "subjects": [
+        "gnosticism",
+        "ancient-texts",
+        "comparative-religion"
+      ],
+      "tradition": [
+        "gnostic"
+      ],
+      "level": "intermediate",
+      "description": "A scholarly but readable study of the Nag Hammadi texts and what they reveal about the diversity of early Christianity. Pagels examines how the texts differ from the writings that became orthodox and why those differences mattered.",
+      "editions": [
+        {
+          "format": "paperback",
+          "language": "en",
+          "publisher": "Vintage Books",
+          "year": 1989,
+          "isbn13": "9780679724537",
+          "note": "First published by Random House in 1979."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Swan Libraries catalogue record",
+          "url": "https://dgs.swanlibraries.net/Record/a446102",
+          "accessed": "2026-10-26",
+          "supports": "publisher, year, 1979 first edition"
+        },
+        {
+          "label": "Bookshop.org listing (title page only; affiliate link not used)",
+          "url": "https://bookshop.org/p/books/the-gnostic-gospels-elaine-pagels/6719485",
+          "accessed": "2026-10-26",
+          "supports": "award statement"
+        }
+      ],
+      "claims": [
+        {
+          "text": "Won the National Book Award and the National Book Critics Circle Award",
+          "status": "historical-award-per-multiple-listings",
+          "display": true
+        }
+      ],
+      "press": null,
+      "status": "verified"
+    },
+    {
+      "title": "Taoist Secrets of Love",
+      "subtitle": "Cultivating Male Sexual Energy",
+      "authors": [
+        "Mantak Chia",
+        "Michael Winn"
+      ],
+      "subjects": [
+        "taoism",
+        "qigong",
+        "neigong",
+        "holistic-traditions"
+      ],
+      "tradition": [
+        "taoist",
+        "chinese-internal-arts"
+      ],
+      "level": "intermediate",
+      "description": "An early English presentation of Healing Tao practices for sexual-energy cultivation, including the Microcosmic Orbit. It is a modern teaching system adapted from Taoist internal-alchemy ideas, and its health claims are the authors’ own.",
+      "editions": [
+        {
+          "format": "paperback",
+          "language": "en",
+          "publisher": "Aurora Press",
+          "year": 1984,
+          "isbn13": "9780943358192"
+        }
+      ],
+      "sources": [
+        {
+          "label": "AbeBooks listing",
+          "url": "https://www.abebooks.com/9780943358192/Taoist-Secrets-Love-Cultivating-Male-0943358191/plp",
+          "accessed": "2026-10-26",
+          "supports": "isbn13, title"
+        },
+        {
+          "label": "Red Wing Books listing",
+          "url": "https://redwingbooks.com/product/taoseclov/",
+          "accessed": "2026-10-26",
+          "supports": "authors, subtitle"
+        }
+      ],
+      "claims": [],
+      "press": null,
+      "status": "verified"
+    },
+    {
+      "title": "Healing Mantras",
+      "subtitle": "Using Sound Affirmations for Personal Power, Creativity, and Healing",
+      "authors": [
+        "Thomas Ashley-Farrand"
+      ],
+      "subjects": [
+        "sanskrit-mantras",
+        "hinduism",
+        "emotional-wellbeing"
+      ],
+      "tradition": [
+        "hindu"
+      ],
+      "level": "beginner",
+      "description": "A practical introduction to Sanskrit mantras for specific intentions, with transliteration and instructions for use. It presents mantra practice in a form accessible to newcomers; readers interested in traditional lineage guidance should consult a teacher.",
+      "editions": [
+        {
+          "format": "paperback",
+          "language": "en",
+          "publisher": "Ballantine Wellspring",
+          "year": 1999,
+          "isbn13": "9780345431707"
+        }
+      ],
+      "sources": [
+        {
+          "label": "BuyBookBook listing",
+          "url": "https://buybookbook.com/products/9780345431707",
+          "accessed": "2026-10-26",
+          "supports": "isbn13"
+        },
+        {
+          "label": "BookPal listing",
+          "url": "https://bookpal.com/healing-mantras-9780345431707/",
+          "accessed": "2026-10-26",
+          "supports": "publisher, year"
+        }
+      ],
+      "claims": [],
+      "press": null,
+      "status": "verified"
+    }
+  ]
+}

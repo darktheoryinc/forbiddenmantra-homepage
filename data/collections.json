@@ -1,0 +1,22 @@
+{
+  "paths": [
+    {"id":"begin-mindfulness","title":"Begin with Awareness","audience":"Complete beginners","blurb":"Three short, non-sectarian books that move from noticing the mind, to stepping back from it, to staying steady when life is hard.",
+     "steps":[{"work":"the-power-of-now","why":"A brief introduction to present-moment attention, with minimal jargon."},{"work":"the-untethered-soul","why":"Builds on that idea with a practical account of inner patterns and how to let them go."},{"work":"when-things-fall-apart","why":"Adds a Buddhist perspective on staying present with pain rather than avoiding it."}]},
+    {"id":"first-steps-wicca","title":"First Steps in Wicca & Folk Magic","audience":"Curious newcomers","blurb":"Start with a structured course, then a solitary-practice guide, then a broad reference. Note that Wicca is one religion; the reference book covers many traditions of folk magic.",
+     "steps":[{"work":"bucklands-complete-book-of-witchcraft","why":"A lesson-by-lesson introduction to Wicca as a religion."},{"work":"wicca","why":"Cunningham’s guide for practising alone, with ritual outlines."},{"work":"encyclopedia-of-5-000-spells","why":"A browsable reference once you want to explore folk-magic traditions beyond Wicca."}]},
+    {"id":"nag-hammadi-start","title":"Entering the Nag Hammadi Texts","audience":"Readers new to Gnostic literature","blurb":"Read the scholarly context, then a primary text. Gnostic literature is distinct from Hermetic and from orthodox Christian mystical writing.",
+     "steps":[{"work":"the-gnostic-gospels","why":"Explains what the Nag Hammadi library is and why it matters for early Christian history."},{"work":"the-apocalypse-of-adam","why":"A Nag Hammadi text in a Forbidden Mantra Press edition."}]},
+    {"id":"mantra-first-practices","title":"First Mantra Practices","audience":"Practice-minded beginners","blurb":"Begin with a general guide to Sanskrit mantra, then move to individual mantras from the Forbidden Mantra Series. Traditionally some mantras are received from a teacher; the books note this where they say so.",
+     "steps":[{"work":"healing-mantras","why":"A broad introduction with transliterations and instructions."},{"work":"gayatri-mantra","why":"One of the best-known Vedic mantras, in a focused guide."},{"work":"maha-mrityunjaya-mantra","why":"A mantra traditionally addressed to Shiva, studied in its own guide."}]},
+    {"id":"taoist-inner-cultivation","title":"Taoist Inner Cultivation, Carefully","audience":"Readers curious about Taoist energy practice","blurb":"A first look at modern Taoist cultivation. More titles, including classic translations such as the Tao Te Ching, are staged for verification and will join this path.",
+     "steps":[{"work":"taoist-secrets-of-love","why":"A modern Healing Tao presentation of internal-energy practice."}]},
+    {"id":"tarot-foundation","title":"Tarot Foundations","audience":"New and returning tarot readers","blurb":"A single, durable anchor text that rewards re-reading. More tarot titles are staged.",
+     "steps":[{"work":"seventy-eight-degrees-of-wisdom","why":"A card-by-card study that treats tarot as symbolic language."}]}
+  ],
+  "collections": [
+    {"id":"stress-and-the-body","title":"Stress, Emotion & the Body","blurb":"Books that approach inner life and physical wellbeing together, from a physician’s clinical view to contemplative guides.","works":["when-the-body-says-no","when-things-fall-apart","the-untethered-soul","the-power-of-now"]},
+    {"id":"mantra-shelf","title":"The Mantra Shelf","blurb":"Sanskrit mantras explained for practitioners, including the Forbidden Mantra Series.","works":["healing-mantras","gayatri-mantra","maha-mrityunjaya-mantra","invoke-the-fierce","lakshmi-gayatri","om-namah-shivaya","maa-kali-mantras-and-instructions","forbidden-mantra"]},
+    {"id":"modern-witchcraft-wicca","title":"Modern Witchcraft & Wicca","blurb":"The core introductory shelf for readers beginning with Wicca and magical practice.","works":["bucklands-complete-book-of-witchcraft","wicca","encyclopedia-of-5-000-spells","seventy-eight-degrees-of-wisdom"]},
+    {"id":"ancient-texts-shelf","title":"Ancient Texts & Their Readers","blurb":"Primary texts and the scholarship around them: Nag Hammadi, the Kebra Nagast and Hindu epic material.","works":["the-gnostic-gospels","the-apocalypse-of-adam","kebra-nagast","weapons-of-the-gods"]}
+  ]
+}

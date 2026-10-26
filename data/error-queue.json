@@ -1,0 +1,297 @@
+{
+ "generated": "2026-10-26",
+ "items": [
+  {
+   "title": "The Apocalypse of Adam",
+   "authors": [
+    "Forbidden Mantra Press"
+   ],
+   "isbn13": [],
+   "stage": "identifiers",
+   "severity": "warning",
+   "reasons": [
+    "owner-listed paperback edition has no ASIN/ISBN yet; retailer link not verified"
+   ],
+   "origin": "staging/verified/fmp-owner-listed.json"
+  },
+  {
+   "title": "Gayatri Mantra",
+   "authors": [
+    "Forbidden Mantra Press"
+   ],
+   "isbn13": [],
+   "stage": "identifiers",
+   "severity": "warning",
+   "reasons": [
+    "owner-listed ebook edition has no ASIN/ISBN yet; retailer link not verified"
+   ],
+   "origin": "staging/verified/fmp-owner-listed.json"
+  },
+  {
+   "title": "Kebra Nagast",
+   "authors": [
+    "Forbidden Mantra Press"
+   ],
+   "isbn13": [],
+   "stage": "identifiers",
+   "severity": "warning",
+   "reasons": [
+    "owner-listed paperback edition has no ASIN/ISBN yet; retailer link not verified"
+   ],
+   "origin": "staging/verified/fmp-owner-listed.json"
+  },
+  {
+   "title": "Kebra Nagast",
+   "authors": [
+    "Forbidden Mantra Press"
+   ],
+   "isbn13": [],
+   "stage": "identifiers",
+   "severity": "warning",
+   "reasons": [
+    "owner-listed ebook edition has no ASIN/ISBN yet; retailer link not verified"
+   ],
+   "origin": "staging/verified/fmp-owner-listed.json"
+  },
+  {
+   "title": "Weapons of the Gods",
+   "authors": [
+    "Forbidden Mantra Press"
+   ],
+   "isbn13": [],
+   "stage": "identifiers",
+   "severity": "warning",
+   "reasons": [
+    "owner-listed paperback edition has no ASIN/ISBN yet; retailer link not verified"
+   ],
+   "origin": "staging/verified/fmp-owner-listed.json"
+  },
+  {
+   "title": "Weapons of the Gods",
+   "authors": [
+    "Forbidden Mantra Press"
+   ],
+   "isbn13": [],
+   "stage": "identifiers",
+   "severity": "warning",
+   "reasons": [
+    "owner-listed ebook edition has no ASIN/ISBN yet; retailer link not verified"
+   ],
+   "origin": "staging/verified/fmp-owner-listed.json"
+  },
+  {
+   "title": "Maha Mrityunjaya Mantra",
+   "authors": [
+    "Forbidden Mantra Press"
+   ],
+   "isbn13": [],
+   "stage": "identifiers",
+   "severity": "warning",
+   "reasons": [
+    "owner-listed ebook edition has no ASIN/ISBN yet; retailer link not verified"
+   ],
+   "origin": "staging/verified/fmp-owner-listed.json"
+  },
+  {
+   "title": "Invoke the Fierce",
+   "authors": [
+    "Forbidden Mantra Press"
+   ],
+   "isbn13": [],
+   "stage": "identifiers",
+   "severity": "warning",
+   "reasons": [
+    "owner-listed ebook edition has no ASIN/ISBN yet; retailer link not verified"
+   ],
+   "origin": "staging/verified/fmp-owner-listed.json"
+  },
+  {
+   "title": "Lakshmi Gayatri",
+   "authors": [
+    "Forbidden Mantra Press"
+   ],
+   "isbn13": [],
+   "stage": "identifiers",
+   "severity": "warning",
+   "reasons": [
+    "owner-listed ebook edition has no ASIN/ISBN yet; retailer link not verified"
+   ],
+   "origin": "staging/verified/fmp-owner-listed.json"
+  },
+  {
+   "title": "Om Namah Shivaya",
+   "authors": [
+    "Forbidden Mantra Press"
+   ],
+   "isbn13": [],
+   "stage": "identifiers",
+   "severity": "warning",
+   "reasons": [
+    "owner-listed ebook edition has no ASIN/ISBN yet; retailer link not verified"
+   ],
+   "origin": "staging/verified/fmp-owner-listed.json"
+  },
+  {
+   "title": "Maa Kali Mantras and Instructions",
+   "authors": [
+    "Forbidden Mantra Press"
+   ],
+   "isbn13": [],
+   "stage": "identifiers",
+   "severity": "warning",
+   "reasons": [
+    "owner-listed ebook edition has no ASIN/ISBN yet; retailer link not verified"
+   ],
+   "origin": "staging/verified/fmp-owner-listed.json"
+  },
+  {
+   "title": "Mo Pai Nei Kung",
+   "authors": [
+    "Forbidden Mantra Press"
+   ],
+   "isbn13": [],
+   "stage": "identifiers",
+   "severity": "warning",
+   "reasons": [
+    "owner-listed paperback edition has no ASIN/ISBN yet; retailer link not verified"
+   ],
+   "origin": "staging/verified/fmp-owner-listed.json"
+  },
+  {
+   "title": "The Hidden Technology of Human Power",
+   "authors": [
+    "Forbidden Mantra Press"
+   ],
+   "isbn13": [],
+   "stage": "identifiers",
+   "severity": "warning",
+   "reasons": [
+    "owner-listed paperback edition has no ASIN/ISBN yet; retailer link not verified"
+   ],
+   "origin": "staging/verified/fmp-owner-listed.json"
+  },
+  {
+   "title": "Forbidden Mantra",
+   "authors": [
+    "Forbidden Mantra Press"
+   ],
+   "isbn13": [],
+   "stage": "identifiers",
+   "severity": "warning",
+   "reasons": [
+    "owner-listed paperback edition has no ASIN/ISBN yet; retailer link not verified"
+   ],
+   "origin": "staging/verified/fmp-owner-listed.json"
+  },
+  {
+   "title": "The Power of Now",
+   "authors": [
+    "Eckhart Tolle"
+   ],
+   "isbn13": [
+    "9781577314806"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "already published as \"The Power of Now\""
+   ],
+   "origin": "staging/outside-candidates.psv:2"
+  },
+  {
+   "title": "Stillness Speaks",
+   "authors": [
+    "Eckhart Tolle"
+   ],
+   "isbn13": [
+    "9781577314568"
+   ],
+   "stage": "validate",
+   "severity": "error",
+   "reasons": [
+    "ISBN-13 checksum fails: 9781577314568"
+   ],
+   "origin": "staging/outside-candidates.psv:4"
+  },
+  {
+   "title": "Awakening Shakti",
+   "authors": [
+    "Sally Kempton"
+   ],
+   "isbn13": [],
+   "stage": "identifiers",
+   "severity": "warning",
+   "reasons": [
+    "no ISBN-13 supplied; cannot be published until an ISBN/ASIN is confirmed from a source"
+   ],
+   "origin": "staging/outside-candidates.psv:37"
+  },
+  {
+   "title": "Mantras for Everyday Life",
+   "authors": [
+    "Thomas Ashley-Farrand"
+   ],
+   "isbn13": [],
+   "stage": "identifiers",
+   "severity": "warning",
+   "reasons": [
+    "no ISBN-13 supplied; cannot be published until an ISBN/ASIN is confirmed from a source"
+   ],
+   "origin": "staging/outside-candidates.psv:39"
+  },
+  {
+   "title": "Awaken Healing Energy Through the Tao",
+   "authors": [
+    "Mantak Chia"
+   ],
+   "isbn13": [],
+   "stage": "identifiers",
+   "severity": "warning",
+   "reasons": [
+    "no ISBN-13 supplied; cannot be published until an ISBN/ASIN is confirmed from a source"
+   ],
+   "origin": "staging/outside-candidates.psv:49"
+  },
+  {
+   "title": "Healing Love Through the Tao",
+   "authors": [
+    "Mantak Chia"
+   ],
+   "isbn13": [],
+   "stage": "identifiers",
+   "severity": "warning",
+   "reasons": [
+    "no ISBN-13 supplied; cannot be published until an ISBN/ASIN is confirmed from a source"
+   ],
+   "origin": "staging/outside-candidates.psv:50"
+  },
+  {
+   "title": "Beginning Mo Pai Nei Kung",
+   "authors": [
+    "Shifu Lin"
+   ],
+   "isbn13": [],
+   "stage": "identifiers",
+   "severity": "warning",
+   "reasons": [
+    "no ISBN-13 supplied; cannot be published until an ISBN/ASIN is confirmed from a source"
+   ],
+   "origin": "staging/outside-candidates.psv:53"
+  },
+  {
+   "title": "Seventy-Eight Degrees of Wisdom",
+   "authors": [
+    "Rachel Pollack"
+   ],
+   "isbn13": [
+    "9781578636655"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "already published as \"Seventy-Eight Degrees of Wisdom\""
+   ],
+   "origin": "staging/outside-candidates.psv:84"
+  }
+ ]
+}

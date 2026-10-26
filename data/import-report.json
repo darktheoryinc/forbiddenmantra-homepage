@@ -1,0 +1,32 @@
+{
+  "generated": "2026-10-26",
+  "input": {
+    "verifiedRecords": 23,
+    "candidateRows": 100
+  },
+  "published": {
+    "works": 23,
+    "editions": 31,
+    "outsideWorks": 11,
+    "fmpWorks": 12,
+    "authors": 13
+  },
+  "staged": {
+    "works": 97,
+    "withIsbn": 92,
+    "missingIsbn": 5
+  },
+  "errorQueue": {
+    "total": 22,
+    "byStage": {
+      "identifiers": 19,
+      "dedup": 2,
+      "validate": 1
+    },
+    "bySeverity": {
+      "warning": 19,
+      "duplicate": 2,
+      "error": 1
+    }
+  }
+}

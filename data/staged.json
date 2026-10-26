@@ -1,0 +1,3390 @@
+{
+ "generated": "2026-10-26",
+ "note": "Valid candidates. NOT published: ISBNs/titles are unverified until corroborated by a dated source.",
+ "works": [
+  {
+   "title": "A New Earth",
+   "subtitle": "Awakening to Your Life's Purpose",
+   "authors": [
+    "Eckhart Tolle"
+   ],
+   "subjects": [
+    "consciousness",
+    "mindfulness"
+   ],
+   "tradition": [
+    "nondual"
+   ],
+   "level": "beginner",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Penguin",
+     "year": 2008,
+     "isbn13": "9780452289963",
+     "isbn10": "0452289963"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row3",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:3"
+  },
+  {
+   "title": "Living Untethered",
+   "subtitle": "Beyond the Human Predicament",
+   "authors": [
+    "Michael A. Singer"
+   ],
+   "subjects": [
+    "consciousness",
+    "emotional-wellbeing"
+   ],
+   "tradition": [
+    "nondual"
+   ],
+   "level": "beginner",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "New Harbinger",
+     "year": 2022,
+     "isbn13": "9781684039302",
+     "isbn10": "1684039304"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row5",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:5"
+  },
+  {
+   "title": "The Surrender Experiment",
+   "subtitle": "My Journey into Life's Perfection",
+   "authors": [
+    "Michael A. Singer"
+   ],
+   "subjects": [
+    "consciousness",
+    "emotional-wellbeing"
+   ],
+   "tradition": [
+    "nondual"
+   ],
+   "level": "beginner",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Harmony",
+     "year": 2015,
+     "isbn13": "9780804141093",
+     "isbn10": "0804141096"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row6",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:6"
+  },
+  {
+   "title": "The Wisdom of No Escape",
+   "subtitle": "And the Path of Loving-Kindness",
+   "authors": [
+    "Pema Chödrön"
+   ],
+   "subjects": [
+    "buddhism",
+    "mindfulness"
+   ],
+   "tradition": [
+    "buddhist"
+   ],
+   "level": "beginner",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Shambhala",
+     "year": 2018,
+     "isbn13": "9781611806571",
+     "isbn10": "1611806577"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row7",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:7"
+  },
+  {
+   "title": "Start Where You Are",
+   "subtitle": "A Guide to Compassionate Living",
+   "authors": [
+    "Pema Chödrön"
+   ],
+   "subjects": [
+    "buddhism",
+    "emotional-wellbeing"
+   ],
+   "tradition": [
+    "buddhist"
+   ],
+   "level": "beginner",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Shambhala",
+     "year": 2018,
+     "isbn13": "9781611806588",
+     "isbn10": "1611806585"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row8",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:8"
+  },
+  {
+   "title": "Comfortable with Uncertainty",
+   "subtitle": "108 Teachings",
+   "authors": [
+    "Pema Chödrön"
+   ],
+   "subjects": [
+    "buddhism",
+    "mindfulness"
+   ],
+   "tradition": [
+    "buddhist"
+   ],
+   "level": "beginner",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Shambhala",
+     "year": 2018,
+     "isbn13": "9781611806595",
+     "isbn10": "1611806593"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row9",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:9"
+  },
+  {
+   "title": "The Places That Scare You",
+   "subtitle": "A Guide to Fearlessness in Difficult Times",
+   "authors": [
+    "Pema Chödrön"
+   ],
+   "subjects": [
+    "buddhism",
+    "emotional-wellbeing"
+   ],
+   "tradition": [
+    "buddhist"
+   ],
+   "level": "beginner",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Shambhala",
+     "year": 2002,
+     "isbn13": "9781570628825",
+     "isbn10": "1570628823"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row10",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:10"
+  },
+  {
+   "title": "The Myth of Normal",
+   "subtitle": "Trauma, Illness, and Healing in a Toxic Culture",
+   "authors": [
+    "Gabor Maté",
+    "Daniel Maté"
+   ],
+   "subjects": [
+    "emotional-wellbeing",
+    "holistic-traditions"
+   ],
+   "tradition": [
+    "secular"
+   ],
+   "level": "intermediate",
+   "editions": [
+    {
+     "format": "hardcover",
+     "language": "en",
+     "publisher": "Avery",
+     "year": 2022,
+     "isbn13": "9780593083888",
+     "isbn10": "0593083881"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row11",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:11"
+  },
+  {
+   "title": "In the Realm of Hungry Ghosts",
+   "subtitle": "Close Encounters with Addiction",
+   "authors": [
+    "Gabor Maté"
+   ],
+   "subjects": [
+    "emotional-wellbeing"
+   ],
+   "tradition": [
+    "secular"
+   ],
+   "level": "intermediate",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "North Atlantic Books",
+     "year": 2010,
+     "isbn13": "9781556439070",
+     "isbn10": "1556439075"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row12",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:12"
+  },
+  {
+   "title": "Scattered Minds",
+   "subtitle": "A New Look at the Origins and Healing of Attention Deficit Disorder",
+   "authors": [
+    "Gabor Maté"
+   ],
+   "subjects": [
+    "emotional-wellbeing"
+   ],
+   "tradition": [
+    "secular"
+   ],
+   "level": "intermediate",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Wiley",
+     "year": 2011,
+     "isbn13": "9780470923344",
+     "isbn10": "0470923342"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row13",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:13"
+  },
+  {
+   "title": "The Body Keeps the Score",
+   "subtitle": "Brain, Mind, and Body in the Healing of Trauma",
+   "authors": [
+    "Bessel van der Kolk"
+   ],
+   "subjects": [
+    "emotional-wellbeing"
+   ],
+   "tradition": [
+    "secular"
+   ],
+   "level": "intermediate",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Penguin",
+     "year": 2015,
+     "isbn13": "9780143127741",
+     "isbn10": "0143127748"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row14",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:14"
+  },
+  {
+   "title": "Why We Sleep",
+   "subtitle": "Unlocking the Power of Sleep and Dreams",
+   "authors": [
+    "Matthew Walker"
+   ],
+   "subjects": [
+    "sleep-stress",
+    "dreams"
+   ],
+   "tradition": [
+    "secular"
+   ],
+   "level": "beginner",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Scribner",
+     "year": 2018,
+     "isbn13": "9781501144318",
+     "isbn10": "1501144316"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row15",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:15"
+  },
+  {
+   "title": "Full Catastrophe Living",
+   "subtitle": "Using the Wisdom of Your Body and Mind to Face Stress, Pain, and Illness",
+   "authors": [
+    "Jon Kabat-Zinn"
+   ],
+   "subjects": [
+    "mindfulness",
+    "sleep-stress"
+   ],
+   "tradition": [
+    "secular"
+   ],
+   "level": "beginner",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Bantam",
+     "year": 2013,
+     "isbn13": "9780345536938",
+     "isbn10": "0345536932"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row16",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:16"
+  },
+  {
+   "title": "Wherever You Go, There You Are",
+   "subtitle": "Mindfulness Meditation in Everyday Life",
+   "authors": [
+    "Jon Kabat-Zinn"
+   ],
+   "subjects": [
+    "mindfulness"
+   ],
+   "tradition": [
+    "secular"
+   ],
+   "level": "beginner",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Hachette",
+     "year": 2005,
+     "isbn13": "9781401307783",
+     "isbn10": "1401307787"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row17",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:17"
+  },
+  {
+   "title": "Why Zebras Don't Get Ulcers",
+   "subtitle": "",
+   "authors": [
+    "Robert M. Sapolsky"
+   ],
+   "subjects": [
+    "sleep-stress"
+   ],
+   "tradition": [
+    "secular"
+   ],
+   "level": "intermediate",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Holt",
+     "year": 2004,
+     "isbn13": "9780805073690",
+     "isbn10": "0805073698"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row18",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:18"
+  },
+  {
+   "title": "Radical Acceptance",
+   "subtitle": "Embracing Your Life with the Heart of a Buddha",
+   "authors": [
+    "Tara Brach"
+   ],
+   "subjects": [
+    "buddhism",
+    "emotional-wellbeing",
+    "mindfulness"
+   ],
+   "tradition": [
+    "buddhist"
+   ],
+   "level": "beginner",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Bantam",
+     "year": 2004,
+     "isbn13": "9780553380996",
+     "isbn10": "0553380990"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row19",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:19"
+  },
+  {
+   "title": "Self-Compassion",
+   "subtitle": "The Proven Power of Being Kind to Yourself",
+   "authors": [
+    "Kristin Neff"
+   ],
+   "subjects": [
+    "emotional-wellbeing"
+   ],
+   "tradition": [
+    "secular"
+   ],
+   "level": "beginner",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "William Morrow",
+     "year": 2015,
+     "isbn13": "9780061733529",
+     "isbn10": "0061733520"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row20",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:20"
+  },
+  {
+   "title": "The Miracle of Mindfulness",
+   "subtitle": "An Introduction to the Practice of Meditation",
+   "authors": [
+    "Thich Nhat Hanh"
+   ],
+   "subjects": [
+    "mindfulness",
+    "buddhism"
+   ],
+   "tradition": [
+    "buddhist"
+   ],
+   "level": "beginner",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Beacon Press",
+     "year": 1999,
+     "isbn13": "9780807012390",
+     "isbn10": "0807012394"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row21",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:21"
+  },
+  {
+   "title": "Peace Is Every Step",
+   "subtitle": "The Path of Mindfulness in Everyday Life",
+   "authors": [
+    "Thich Nhat Hanh"
+   ],
+   "subjects": [
+    "mindfulness",
+    "buddhism"
+   ],
+   "tradition": [
+    "buddhist"
+   ],
+   "level": "beginner",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Bantam",
+     "year": 1992,
+     "isbn13": "9780553351392",
+     "isbn10": "0553351397"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row22",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:22"
+  },
+  {
+   "title": "The Heart of the Buddha's Teaching",
+   "subtitle": "",
+   "authors": [
+    "Thich Nhat Hanh"
+   ],
+   "subjects": [
+    "buddhism"
+   ],
+   "tradition": [
+    "buddhist"
+   ],
+   "level": "intermediate",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Harmony",
+     "year": 1999,
+     "isbn13": "9780767903691",
+     "isbn10": "0767903692"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row23",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:23"
+  },
+  {
+   "title": "What the Buddha Taught",
+   "subtitle": "",
+   "authors": [
+    "Walpola Rahula"
+   ],
+   "subjects": [
+    "buddhism"
+   ],
+   "tradition": [
+    "buddhist"
+   ],
+   "level": "beginner",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Grove Press",
+     "year": 1974,
+     "isbn13": "9780802130310",
+     "isbn10": "0802130313"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row24",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:24"
+  },
+  {
+   "title": "Zen Mind, Beginner's Mind",
+   "subtitle": "",
+   "authors": [
+    "Shunryu Suzuki"
+   ],
+   "subjects": [
+    "buddhism",
+    "mindfulness"
+   ],
+   "tradition": [
+    "buddhist"
+   ],
+   "level": "beginner",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Shambhala",
+     "year": 2011,
+     "isbn13": "9781590308493",
+     "isbn10": "1590308492"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row25",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:25"
+  },
+  {
+   "title": "The Tibetan Book of Living and Dying",
+   "subtitle": "",
+   "authors": [
+    "Sogyal Rinpoche"
+   ],
+   "subjects": [
+    "buddhism"
+   ],
+   "tradition": [
+    "buddhist"
+   ],
+   "level": "intermediate",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "HarperOne",
+     "year": 2002,
+     "isbn13": "9780062508348",
+     "isbn10": "0062508342"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row26",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:26"
+  },
+  {
+   "title": "The Dhammapada",
+   "subtitle": "",
+   "authors": [
+    "Eknath Easwaran (translator)"
+   ],
+   "subjects": [
+    "buddhism",
+    "ancient-texts"
+   ],
+   "tradition": [
+    "buddhist"
+   ],
+   "level": "intermediate",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Nilgiri Press",
+     "year": 2007,
+     "isbn13": "9781586380205",
+     "isbn10": "1586380206"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row27",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:27"
+  },
+  {
+   "title": "The Wisdom of Insecurity",
+   "subtitle": "A Message for an Age of Anxiety",
+   "authors": [
+    "Alan Watts"
+   ],
+   "subjects": [
+    "emotional-wellbeing",
+    "comparative-religion"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "beginner",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Vintage",
+     "year": 2011,
+     "isbn13": "9780307741202",
+     "isbn10": "0307741206"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row28",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:28"
+  },
+  {
+   "title": "Light on Yoga",
+   "subtitle": "",
+   "authors": [
+    "B.K.S. Iyengar"
+   ],
+   "subjects": [
+    "yoga"
+   ],
+   "tradition": [
+    "hindu"
+   ],
+   "level": "intermediate",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Schocken",
+     "year": 1995,
+     "isbn13": "9780805210316",
+     "isbn10": "0805210318"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row29",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:29"
+  },
+  {
+   "title": "The Yoga Sutras of Patanjali",
+   "subtitle": "A New Edition, Translation, and Commentary",
+   "authors": [
+    "Edwin F. Bryant"
+   ],
+   "subjects": [
+    "yoga",
+    "hinduism",
+    "ancient-texts"
+   ],
+   "tradition": [
+    "hindu"
+   ],
+   "level": "advanced",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "North Point Press",
+     "year": 2009,
+     "isbn13": "9780865477360",
+     "isbn10": "0865477361"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row30",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:30"
+  },
+  {
+   "title": "Autobiography of a Yogi",
+   "subtitle": "",
+   "authors": [
+    "Paramahansa Yogananda"
+   ],
+   "subjects": [
+    "yoga",
+    "hinduism"
+   ],
+   "tradition": [
+    "hindu"
+   ],
+   "level": "beginner",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Self-Realization Fellowship",
+     "year": 1998,
+     "isbn13": "9780876120835",
+     "isbn10": "0876120834"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row31",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:31"
+  },
+  {
+   "title": "The Heart of Yoga",
+   "subtitle": "Developing a Personal Practice",
+   "authors": [
+    "T.K.V. Desikachar"
+   ],
+   "subjects": [
+    "yoga"
+   ],
+   "tradition": [
+    "hindu"
+   ],
+   "level": "intermediate",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Inner Traditions",
+     "year": 1999,
+     "isbn13": "9780892815265",
+     "isbn10": "0892815264"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row32",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:32"
+  },
+  {
+   "title": "The Bhagavad Gita",
+   "subtitle": "",
+   "authors": [
+    "Eknath Easwaran (translator)"
+   ],
+   "subjects": [
+    "hinduism",
+    "ancient-texts",
+    "yoga"
+   ],
+   "tradition": [
+    "hindu"
+   ],
+   "level": "beginner",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Nilgiri Press",
+     "year": 2007,
+     "isbn13": "9781586380199",
+     "isbn10": "1586380192"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row33",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:33"
+  },
+  {
+   "title": "The Upanishads",
+   "subtitle": "",
+   "authors": [
+    "Eknath Easwaran (translator)"
+   ],
+   "subjects": [
+    "hinduism",
+    "ancient-texts"
+   ],
+   "tradition": [
+    "hindu"
+   ],
+   "level": "intermediate",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Nilgiri Press",
+     "year": 2007,
+     "isbn13": "9781586380212",
+     "isbn10": "1586380214"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row34",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:34"
+  },
+  {
+   "title": "The Ramayana",
+   "subtitle": "",
+   "authors": [
+    "R.K. Narayan"
+   ],
+   "subjects": [
+    "hinduism",
+    "mythology",
+    "ancient-texts"
+   ],
+   "tradition": [
+    "hindu"
+   ],
+   "level": "beginner",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Penguin",
+     "year": 2006,
+     "isbn13": "9780143039679",
+     "isbn10": "0143039679"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row35",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:35"
+  },
+  {
+   "title": "Meditation for the Love of It",
+   "subtitle": "Enjoying Your Own Deepest Experience",
+   "authors": [
+    "Sally Kempton"
+   ],
+   "subjects": [
+    "mindfulness",
+    "yoga",
+    "hinduism"
+   ],
+   "tradition": [
+    "hindu"
+   ],
+   "level": "beginner",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Sounds True",
+     "year": 2011,
+     "isbn13": "9781604070057",
+     "isbn10": "1604070056"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row36",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:36"
+  },
+  {
+   "title": "Awakening Shakti",
+   "subtitle": "The Transformative Power of the Goddesses of Yoga",
+   "authors": [
+    "Sally Kempton"
+   ],
+   "subjects": [
+    "tantra",
+    "hinduism",
+    "sanskrit-mantras"
+   ],
+   "tradition": [
+    "tantric"
+   ],
+   "level": "intermediate",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Sounds True",
+     "year": 2013,
+     "isbn13": null,
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row37",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-missing-isbn",
+   "origin": "staging/outside-candidates.psv:37"
+  },
+  {
+   "title": "Shakti Mantras",
+   "subtitle": "Tapping into the Great Goddess Energy Within",
+   "authors": [
+    "Thomas Ashley-Farrand"
+   ],
+   "subjects": [
+    "sanskrit-mantras",
+    "hinduism",
+    "tantra"
+   ],
+   "tradition": [
+    "hindu"
+   ],
+   "level": "beginner",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Ballantine",
+     "year": 2003,
+     "isbn13": "9780345443045",
+     "isbn10": "0345443047"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row38",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:38"
+  },
+  {
+   "title": "Mantras for Everyday Life",
+   "subtitle": "",
+   "authors": [
+    "Thomas Ashley-Farrand"
+   ],
+   "subjects": [
+    "sanskrit-mantras"
+   ],
+   "tradition": [
+    "hindu"
+   ],
+   "level": "beginner",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Sounds True",
+     "year": 2006,
+     "isbn13": null,
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row39",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-missing-isbn",
+   "origin": "staging/outside-candidates.psv:39"
+  },
+  {
+   "title": "The Serpent Power",
+   "subtitle": "",
+   "authors": [
+    "Arthur Avalon (John Woodroffe)"
+   ],
+   "subjects": [
+    "tantra",
+    "subtle-body"
+   ],
+   "tradition": [
+    "tantric"
+   ],
+   "level": "advanced",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Dover",
+     "year": 1974,
+     "isbn13": "9780486230665",
+     "isbn10": "048623066X"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row40",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:40"
+  },
+  {
+   "title": "Eastern Body, Western Mind",
+   "subtitle": "Psychology and the Chakra System as a Path to the Self",
+   "authors": [
+    "Anodea Judith"
+   ],
+   "subjects": [
+    "subtle-body"
+   ],
+   "tradition": [
+    "hindu"
+   ],
+   "level": "intermediate",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Celestial Arts",
+     "year": 2004,
+     "isbn13": "9781587613678",
+     "isbn10": "1587613670"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row41",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:41"
+  },
+  {
+   "title": "Wheels of Life",
+   "subtitle": "The Classic Guide to the Chakra System",
+   "authors": [
+    "Anodea Judith"
+   ],
+   "subjects": [
+    "subtle-body"
+   ],
+   "tradition": [
+    "hindu"
+   ],
+   "level": "beginner",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Llewellyn",
+     "year": 1999,
+     "isbn13": "9781567184020",
+     "isbn10": "1567184022"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row42",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:42"
+  },
+  {
+   "title": "Anatomy of the Spirit",
+   "subtitle": "The Seven Stages of Power and Healing",
+   "authors": [
+    "Caroline Myss"
+   ],
+   "subjects": [
+    "subtle-body",
+    "holistic-traditions"
+   ],
+   "tradition": [
+    "western-esoteric"
+   ],
+   "level": "beginner",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Harmony",
+     "year": 1997,
+     "isbn13": "9780609800126",
+     "isbn10": "0609800124"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row43",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:43"
+  },
+  {
+   "title": "Tao Te Ching",
+   "subtitle": "",
+   "authors": [
+    "Stephen Mitchell (translator)"
+   ],
+   "subjects": [
+    "taoism",
+    "ancient-texts"
+   ],
+   "tradition": [
+    "taoist"
+   ],
+   "level": "beginner",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Harper Perennial",
+     "year": 2006,
+     "isbn13": "9780061142666",
+     "isbn10": "0061142662"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row44",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:44"
+  },
+  {
+   "title": "Tao Te Ching",
+   "subtitle": "A Book About the Way and the Power of the Way",
+   "authors": [
+    "Ursula K. Le Guin (translator)"
+   ],
+   "subjects": [
+    "taoism",
+    "ancient-texts"
+   ],
+   "tradition": [
+    "taoist"
+   ],
+   "level": "beginner",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Shambhala",
+     "year": 2019,
+     "isbn13": "9781590302330",
+     "isbn10": "1590302338"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row45",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:45"
+  },
+  {
+   "title": "Chuang Tzu: Basic Writings",
+   "subtitle": "",
+   "authors": [
+    "Burton Watson (translator)"
+   ],
+   "subjects": [
+    "taoism",
+    "ancient-texts"
+   ],
+   "tradition": [
+    "taoist"
+   ],
+   "level": "intermediate",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Columbia University Press",
+     "year": 2003,
+     "isbn13": "9780231031479",
+     "isbn10": "0231031475"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row46",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:46"
+  },
+  {
+   "title": "The Secret of the Golden Flower",
+   "subtitle": "The Classic Chinese Book of Life",
+   "authors": [
+    "Thomas Cleary (translator)"
+   ],
+   "subjects": [
+    "taoism",
+    "alchemy",
+    "qigong"
+   ],
+   "tradition": [
+    "taoist"
+   ],
+   "level": "advanced",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "HarperOne",
+     "year": 1993,
+     "isbn13": "9780062502247",
+     "isbn10": "0062502247"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row47",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:47"
+  },
+  {
+   "title": "Taoist Yoga",
+   "subtitle": "Alchemy and Immortality",
+   "authors": [
+    "Lu K'uan Yü"
+   ],
+   "subjects": [
+    "taoism",
+    "alchemy",
+    "qigong"
+   ],
+   "tradition": [
+    "taoist"
+   ],
+   "level": "advanced",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Weiser",
+     "year": 2001,
+     "isbn13": "9780877283263",
+     "isbn10": "0877283265"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row48",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:48"
+  },
+  {
+   "title": "Awaken Healing Energy Through the Tao",
+   "subtitle": "The Taoist Secret of Circulating Internal Power",
+   "authors": [
+    "Mantak Chia"
+   ],
+   "subjects": [
+    "qigong",
+    "taoism"
+   ],
+   "tradition": [
+    "taoist"
+   ],
+   "level": "intermediate",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Aurora Press",
+     "year": 1983,
+     "isbn13": null,
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row49",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-missing-isbn",
+   "origin": "staging/outside-candidates.psv:49"
+  },
+  {
+   "title": "Healing Love Through the Tao",
+   "subtitle": "Cultivating Female Sexual Energy",
+   "authors": [
+    "Mantak Chia"
+   ],
+   "subjects": [
+    "qigong",
+    "taoism"
+   ],
+   "tradition": [
+    "taoist"
+   ],
+   "level": "intermediate",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Destiny Books",
+     "year": 2005,
+     "isbn13": null,
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row50",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-missing-isbn",
+   "origin": "staging/outside-candidates.psv:50"
+  },
+  {
+   "title": "The Way of Qigong",
+   "subtitle": "The Art and Science of Chinese Energy Healing",
+   "authors": [
+    "Kenneth S. Cohen"
+   ],
+   "subjects": [
+    "qigong",
+    "holistic-traditions"
+   ],
+   "tradition": [
+    "chinese-internal-arts"
+   ],
+   "level": "beginner",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Ballantine",
+     "year": 1999,
+     "isbn13": "9780345421098",
+     "isbn10": "0345421094"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row51",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:51"
+  },
+  {
+   "title": "The Root of Chinese Qigong",
+   "subtitle": "Secrets of Qigong Training",
+   "authors": [
+    "Yang Jwing-Ming"
+   ],
+   "subjects": [
+    "qigong",
+    "neigong"
+   ],
+   "tradition": [
+    "chinese-internal-arts"
+   ],
+   "level": "intermediate",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "YMAA Publication Center",
+     "year": 1997,
+     "isbn13": "9781886969506",
+     "isbn10": "1886969507"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row52",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:52"
+  },
+  {
+   "title": "Beginning Mo Pai Nei Kung",
+   "subtitle": "Third Expanded Edition",
+   "authors": [
+    "Shifu Lin"
+   ],
+   "subjects": [
+    "mo-pai",
+    "neigong"
+   ],
+   "tradition": [
+    "chinese-internal-arts"
+   ],
+   "level": "beginner",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Lung Hu Shan Publications",
+     "year": null,
+     "isbn13": null,
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row53",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-missing-isbn",
+   "origin": "staging/outside-candidates.psv:53"
+  },
+  {
+   "title": "The World's Religions",
+   "subtitle": "",
+   "authors": [
+    "Huston Smith"
+   ],
+   "subjects": [
+    "comparative-religion"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "beginner",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "HarperOne",
+     "year": 2009,
+     "isbn13": "9780060859428",
+     "isbn10": "0060859423"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row54",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:54"
+  },
+  {
+   "title": "The Perennial Philosophy",
+   "subtitle": "",
+   "authors": [
+    "Aldous Huxley"
+   ],
+   "subjects": [
+    "comparative-religion",
+    "consciousness"
+   ],
+   "tradition": [
+    "perennial"
+   ],
+   "level": "intermediate",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Harper Perennial",
+     "year": 2009,
+     "isbn13": "9780061724947",
+     "isbn10": "0061724947"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row55",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:55"
+  },
+  {
+   "title": "The Varieties of Religious Experience",
+   "subtitle": "",
+   "authors": [
+    "William James"
+   ],
+   "subjects": [
+    "comparative-religion",
+    "consciousness"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "advanced",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Penguin",
+     "year": 1982,
+     "isbn13": "9780140390346",
+     "isbn10": "0140390340"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row56",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:56"
+  },
+  {
+   "title": "The Nag Hammadi Scriptures",
+   "subtitle": "",
+   "authors": [
+    "Marvin Meyer (editor)"
+   ],
+   "subjects": [
+    "gnosticism",
+    "ancient-texts"
+   ],
+   "tradition": [
+    "gnostic"
+   ],
+   "level": "intermediate",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "HarperOne",
+     "year": 2007,
+     "isbn13": "9780061626005",
+     "isbn10": "0061626007"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row57",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:57"
+  },
+  {
+   "title": "The Nag Hammadi Library in English",
+   "subtitle": "",
+   "authors": [
+    "James M. Robinson (editor)"
+   ],
+   "subjects": [
+    "gnosticism",
+    "ancient-texts"
+   ],
+   "tradition": [
+    "gnostic"
+   ],
+   "level": "advanced",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "HarperOne",
+     "year": 1990,
+     "isbn13": "9780060669355",
+     "isbn10": "0060669357"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row58",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:58"
+  },
+  {
+   "title": "Beyond Belief",
+   "subtitle": "The Secret Gospel of Thomas",
+   "authors": [
+    "Elaine Pagels"
+   ],
+   "subjects": [
+    "gnosticism",
+    "comparative-religion"
+   ],
+   "tradition": [
+    "gnostic"
+   ],
+   "level": "intermediate",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Vintage",
+     "year": 2004,
+     "isbn13": "9780375703164",
+     "isbn10": "0375703160"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row59",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:59"
+  },
+  {
+   "title": "Reading Judas",
+   "subtitle": "The Gospel of Judas and the Shaping of Christianity",
+   "authors": [
+    "Elaine Pagels",
+    "Karen L. King"
+   ],
+   "subjects": [
+    "gnosticism",
+    "ancient-texts"
+   ],
+   "tradition": [
+    "gnostic"
+   ],
+   "level": "intermediate",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Penguin",
+     "year": 2008,
+     "isbn13": "9780143115359",
+     "isbn10": "0143115359"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row60",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:60"
+  },
+  {
+   "title": "The Gnostic Religion",
+   "subtitle": "",
+   "authors": [
+    "Hans Jonas"
+   ],
+   "subjects": [
+    "gnosticism"
+   ],
+   "tradition": [
+    "gnostic"
+   ],
+   "level": "advanced",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Beacon Press",
+     "year": 2001,
+     "isbn13": "9780807058015",
+     "isbn10": "0807058017"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row61",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:61"
+  },
+  {
+   "title": "The Cloud of Unknowing",
+   "subtitle": "",
+   "authors": [
+    "Anonymous",
+    "A.C. Spearing (translator)"
+   ],
+   "subjects": [
+    "christian-mysticism",
+    "ancient-texts"
+   ],
+   "tradition": [
+    "christian"
+   ],
+   "level": "intermediate",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Penguin",
+     "year": 2001,
+     "isbn13": "9780140431001",
+     "isbn10": "0140431004"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row62",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:62"
+  },
+  {
+   "title": "Revelations of Divine Love",
+   "subtitle": "",
+   "authors": [
+    "Julian of Norwich"
+   ],
+   "subjects": [
+    "christian-mysticism"
+   ],
+   "tradition": [
+    "christian"
+   ],
+   "level": "intermediate",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Penguin",
+     "year": 1998,
+     "isbn13": "9780140432411",
+     "isbn10": "0140432418"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row63",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:63"
+  },
+  {
+   "title": "Interior Castle",
+   "subtitle": "",
+   "authors": [
+    "Teresa of Avila"
+   ],
+   "subjects": [
+    "christian-mysticism"
+   ],
+   "tradition": [
+    "christian"
+   ],
+   "level": "intermediate",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Image",
+     "year": 1989,
+     "isbn13": "9780385036436",
+     "isbn10": "0385036434"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row64",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:64"
+  },
+  {
+   "title": "Mysticism",
+   "subtitle": "A Study in the Nature and Development of Spiritual Consciousness",
+   "authors": [
+    "Evelyn Underhill"
+   ],
+   "subjects": [
+    "christian-mysticism",
+    "comparative-religion"
+   ],
+   "tradition": [
+    "christian"
+   ],
+   "level": "advanced",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Dover",
+     "year": 2002,
+     "isbn13": "9780486474144",
+     "isbn10": "0486474143"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row65",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:65"
+  },
+  {
+   "title": "Hermetica",
+   "subtitle": "The Greek Corpus Hermeticum and the Latin Asclepius in a New English Translation",
+   "authors": [
+    "Brian P. Copenhaver (translator)"
+   ],
+   "subjects": [
+    "hermeticism",
+    "ancient-texts"
+   ],
+   "tradition": [
+    "hermetic"
+   ],
+   "level": "advanced",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Cambridge University Press",
+     "year": 1995,
+     "isbn13": "9780521425438",
+     "isbn10": "0521425433"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row66",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:66"
+  },
+  {
+   "title": "The Kybalion",
+   "subtitle": "Hermetic Philosophy",
+   "authors": [
+    "Three Initiates"
+   ],
+   "subjects": [
+    "hermeticism"
+   ],
+   "tradition": [
+    "hermetic"
+   ],
+   "level": "beginner",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "TarcherPerigee",
+     "year": 2008,
+     "isbn13": "9781585428748",
+     "isbn10": "1585428744"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row67",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:67"
+  },
+  {
+   "title": "Initiation into Hermetics",
+   "subtitle": "",
+   "authors": [
+    "Franz Bardon"
+   ],
+   "subjects": [
+    "hermeticism"
+   ],
+   "tradition": [
+    "hermetic"
+   ],
+   "level": "advanced",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Merkur Publishing",
+     "year": 2001,
+     "isbn13": "9781885928009",
+     "isbn10": "1885928009"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row68",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:68"
+  },
+  {
+   "title": "The Secret Teachings of All Ages",
+   "subtitle": "",
+   "authors": [
+    "Manly P. Hall"
+   ],
+   "subjects": [
+    "hermeticism",
+    "comparative-religion"
+   ],
+   "tradition": [
+    "western-esoteric"
+   ],
+   "level": "intermediate",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "TarcherPerigee",
+     "year": 2003,
+     "isbn13": "9781585422500",
+     "isbn10": "1585422509"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row69",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:69"
+  },
+  {
+   "title": "Psychology and Alchemy",
+   "subtitle": "",
+   "authors": [
+    "C.G. Jung"
+   ],
+   "subjects": [
+    "alchemy",
+    "consciousness"
+   ],
+   "tradition": [
+    "hermetic"
+   ],
+   "level": "advanced",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Princeton University Press",
+     "year": 1980,
+     "isbn13": "9780691018317",
+     "isbn10": "0691018316"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row70",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:70"
+  },
+  {
+   "title": "Alchemy & Mysticism",
+   "subtitle": "",
+   "authors": [
+    "Alexander Roob"
+   ],
+   "subjects": [
+    "alchemy"
+   ],
+   "tradition": [
+    "hermetic"
+   ],
+   "level": "intermediate",
+   "editions": [
+    {
+     "format": "hardcover",
+     "language": "en",
+     "publisher": "Taschen",
+     "year": 2014,
+     "isbn13": "9783836557825",
+     "isbn10": "3836557827"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row71",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:71"
+  },
+  {
+   "title": "Drawing Down the Moon",
+   "subtitle": "Witches, Druids, Goddess-Worshippers, and Other Pagans in America",
+   "authors": [
+    "Margot Adler"
+   ],
+   "subjects": [
+    "paganism",
+    "wicca",
+    "witchcraft"
+   ],
+   "tradition": [
+    "pagan"
+   ],
+   "level": "intermediate",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Penguin",
+     "year": 2006,
+     "isbn13": "9780143038146",
+     "isbn10": "0143038141"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row72",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:72"
+  },
+  {
+   "title": "The Spiral Dance",
+   "subtitle": "A Rebirth of the Ancient Religion of the Great Goddess",
+   "authors": [
+    "Starhawk"
+   ],
+   "subjects": [
+    "wicca",
+    "paganism",
+    "witchcraft"
+   ],
+   "tradition": [
+    "wiccan"
+   ],
+   "level": "intermediate",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "HarperOne",
+     "year": 1999,
+     "isbn13": "9780062516329",
+     "isbn10": "0062516329"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row73",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:73"
+  },
+  {
+   "title": "The Triumph of the Moon",
+   "subtitle": "A History of Modern Pagan Witchcraft",
+   "authors": [
+    "Ronald Hutton"
+   ],
+   "subjects": [
+    "witchcraft",
+    "wicca",
+    "paganism"
+   ],
+   "tradition": [
+    "wiccan"
+   ],
+   "level": "advanced",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Oxford University Press",
+     "year": 2001,
+     "isbn13": "9780192854490",
+     "isbn10": "0192854496"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row74",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:74"
+  },
+  {
+   "title": "Living Wicca",
+   "subtitle": "A Further Guide for the Solitary Practitioner",
+   "authors": [
+    "Scott Cunningham"
+   ],
+   "subjects": [
+    "wicca"
+   ],
+   "tradition": [
+    "wiccan"
+   ],
+   "level": "beginner",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Llewellyn",
+     "year": 1993,
+     "isbn13": "9780875421841",
+     "isbn10": "0875421849"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row75",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:75"
+  },
+  {
+   "title": "Cunningham's Encyclopedia of Magical Herbs",
+   "subtitle": "",
+   "authors": [
+    "Scott Cunningham"
+   ],
+   "subjects": [
+    "spells",
+    "witchcraft",
+    "holistic-traditions"
+   ],
+   "tradition": [
+    "pagan"
+   ],
+   "level": "beginner",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Llewellyn",
+     "year": 2000,
+     "isbn13": "9780875421223",
+     "isbn10": "0875421229"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row76",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:76"
+  },
+  {
+   "title": "Cunningham's Encyclopedia of Crystal, Gem & Metal Magic",
+   "subtitle": "",
+   "authors": [
+    "Scott Cunningham"
+   ],
+   "subjects": [
+    "spells",
+    "witchcraft"
+   ],
+   "tradition": [
+    "pagan"
+   ],
+   "level": "beginner",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Llewellyn",
+     "year": 2002,
+     "isbn13": "9780875421261",
+     "isbn10": "0875421261"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row77",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:77"
+  },
+  {
+   "title": "Wicca for Life",
+   "subtitle": "The Way of the Craft from Birth to Summerland",
+   "authors": [
+    "Raymond Buckland"
+   ],
+   "subjects": [
+    "wicca"
+   ],
+   "tradition": [
+    "wiccan"
+   ],
+   "level": "beginner",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Citadel",
+     "year": 2000,
+     "isbn13": "9780806522586",
+     "isbn10": "0806522585"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row78",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:78"
+  },
+  {
+   "title": "Buckland's Book of Gypsy Magic",
+   "subtitle": "Travelers' Charms, Spells, and Healings",
+   "authors": [
+    "Raymond Buckland"
+   ],
+   "subjects": [
+    "spells",
+    "witchcraft"
+   ],
+   "tradition": [
+    "pagan"
+   ],
+   "level": "intermediate",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Weiser",
+     "year": 2010,
+     "isbn13": "9781578633630",
+     "isbn10": "157863363X"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row79",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:79"
+  },
+  {
+   "title": "The Weiser Field Guide to Witches",
+   "subtitle": "From Hexes to Hermes, Sorcerers to Sirens",
+   "authors": [
+    "Judika Illes"
+   ],
+   "subjects": [
+    "witchcraft",
+    "mythology"
+   ],
+   "tradition": [
+    "pagan"
+   ],
+   "level": "beginner",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Weiser",
+     "year": 2010,
+     "isbn13": "9781578634125",
+     "isbn10": "1578634121"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row80",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:80"
+  },
+  {
+   "title": "Paganism",
+   "subtitle": "An Introduction to Earth-Centered Religions",
+   "authors": [
+    "Joyce Higginbotham",
+    "River Higginbotham"
+   ],
+   "subjects": [
+    "paganism"
+   ],
+   "tradition": [
+    "pagan"
+   ],
+   "level": "beginner",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Llewellyn",
+     "year": 2002,
+     "isbn13": "9780738702148",
+     "isbn10": "0738702145"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row81",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:81"
+  },
+  {
+   "title": "Tarot for Your Self",
+   "subtitle": "A Workbook for Personal Transformation",
+   "authors": [
+    "Mary K. Greer"
+   ],
+   "subjects": [
+    "tarot"
+   ],
+   "tradition": [
+    "western-esoteric"
+   ],
+   "level": "beginner",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "New Page Books",
+     "year": 2002,
+     "isbn13": "9781564149879",
+     "isbn10": "1564149870"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row82",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:82"
+  },
+  {
+   "title": "Tarot Wisdom",
+   "subtitle": "Spiritual Teachings and Deeper Meanings",
+   "authors": [
+    "Rachel Pollack"
+   ],
+   "subjects": [
+    "tarot"
+   ],
+   "tradition": [
+    "western-esoteric"
+   ],
+   "level": "intermediate",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Llewellyn",
+     "year": 2008,
+     "isbn13": "9780738707921",
+     "isbn10": "0738707929"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row83",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:83"
+  },
+  {
+   "title": "The Inner Sky",
+   "subtitle": "How to Make Wiser Choices for a More Fulfilling Life",
+   "authors": [
+    "Steven Forrest"
+   ],
+   "subjects": [
+    "astrology"
+   ],
+   "tradition": [
+    "western-esoteric"
+   ],
+   "level": "beginner",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Seven Paws Press",
+     "year": 2012,
+     "isbn13": "9781934976432",
+     "isbn10": "1934976431"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row85",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:85"
+  },
+  {
+   "title": "Astrology for the Soul",
+   "subtitle": "",
+   "authors": [
+    "Jan Spiller"
+   ],
+   "subjects": [
+    "astrology"
+   ],
+   "tradition": [
+    "western-esoteric"
+   ],
+   "level": "beginner",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Bantam",
+     "year": 1997,
+     "isbn13": "9780553378535",
+     "isbn10": "0553378538"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row86",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:86"
+  },
+  {
+   "title": "Astrology, Psychology and the Four Elements",
+   "subtitle": "",
+   "authors": [
+    "Stephen Arroyo"
+   ],
+   "subjects": [
+    "astrology"
+   ],
+   "tradition": [
+    "western-esoteric"
+   ],
+   "level": "intermediate",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "CRCS Publications",
+     "year": 1975,
+     "isbn13": "9780916360016",
+     "isbn10": "0916360016"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row87",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:87"
+  },
+  {
+   "title": "Memories, Dreams, Reflections",
+   "subtitle": "",
+   "authors": [
+    "C.G. Jung"
+   ],
+   "subjects": [
+    "dreams",
+    "consciousness"
+   ],
+   "tradition": [
+    "secular"
+   ],
+   "level": "intermediate",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Vintage",
+     "year": 1989,
+     "isbn13": "9780679723950",
+     "isbn10": "0679723951"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row88",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:88"
+  },
+  {
+   "title": "Exploring the World of Lucid Dreaming",
+   "subtitle": "",
+   "authors": [
+    "Stephen LaBerge",
+    "Howard Rheingold"
+   ],
+   "subjects": [
+    "dreams"
+   ],
+   "tradition": [
+    "secular"
+   ],
+   "level": "beginner",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Ballantine",
+     "year": 1991,
+     "isbn13": "9780345373595",
+     "isbn10": "0345373596"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row89",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:89"
+  },
+  {
+   "title": "The Tibetan Yogas of Dream and Sleep",
+   "subtitle": "",
+   "authors": [
+    "Tenzin Wangyal Rinpoche"
+   ],
+   "subjects": [
+    "dreams",
+    "buddhism",
+    "sleep-stress"
+   ],
+   "tradition": [
+    "buddhist"
+   ],
+   "level": "intermediate",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Snow Lion",
+     "year": 1998,
+     "isbn13": "9781559391016",
+     "isbn10": "1559391014"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row90",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:90"
+  },
+  {
+   "title": "I Am That",
+   "subtitle": "Talks with Sri Nisargadatta Maharaj",
+   "authors": [
+    "Nisargadatta Maharaj"
+   ],
+   "subjects": [
+    "consciousness",
+    "hinduism"
+   ],
+   "tradition": [
+    "nondual"
+   ],
+   "level": "intermediate",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Acorn Press",
+     "year": 1990,
+     "isbn13": "9780893860226",
+     "isbn10": "0893860220"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row91",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:91"
+  },
+  {
+   "title": "The Doors of Perception",
+   "subtitle": "",
+   "authors": [
+    "Aldous Huxley"
+   ],
+   "subjects": [
+    "consciousness"
+   ],
+   "tradition": [
+    "secular"
+   ],
+   "level": "intermediate",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Harper Perennial",
+     "year": 2009,
+     "isbn13": "9780061729072",
+     "isbn10": "0061729078"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row92",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:92"
+  },
+  {
+   "title": "Be Here Now",
+   "subtitle": "",
+   "authors": [
+    "Ram Dass"
+   ],
+   "subjects": [
+    "consciousness",
+    "yoga"
+   ],
+   "tradition": [
+    "hindu"
+   ],
+   "level": "beginner",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Crown",
+     "year": 1971,
+     "isbn13": "9780517543054",
+     "isbn10": "0517543052"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row93",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:93"
+  },
+  {
+   "title": "Waking Up",
+   "subtitle": "A Guide to Spirituality Without Religion",
+   "authors": [
+    "Sam Harris"
+   ],
+   "subjects": [
+    "consciousness",
+    "mindfulness"
+   ],
+   "tradition": [
+    "secular"
+   ],
+   "level": "intermediate",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Simon & Schuster",
+     "year": 2015,
+     "isbn13": "9781451636017",
+     "isbn10": "1451636016"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row94",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:94"
+  },
+  {
+   "title": "The Hero with a Thousand Faces",
+   "subtitle": "",
+   "authors": [
+    "Joseph Campbell"
+   ],
+   "subjects": [
+    "mythology",
+    "comparative-religion"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "intermediate",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "New World Library",
+     "year": 2008,
+     "isbn13": "9781577315933",
+     "isbn10": "1577315936"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row95",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:95"
+  },
+  {
+   "title": "The Power of Myth",
+   "subtitle": "",
+   "authors": [
+    "Joseph Campbell",
+    "Bill Moyers"
+   ],
+   "subjects": [
+    "mythology"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "beginner",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Anchor",
+     "year": 1991,
+     "isbn13": "9780385418867",
+     "isbn10": "0385418868"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row96",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:96"
+  },
+  {
+   "title": "Mythology",
+   "subtitle": "Timeless Tales of Gods and Heroes",
+   "authors": [
+    "Edith Hamilton"
+   ],
+   "subjects": [
+    "mythology"
+   ],
+   "tradition": [
+    "mythic"
+   ],
+   "level": "beginner",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Grand Central",
+     "year": 2011,
+     "isbn13": "9780316438520",
+     "isbn10": "0316438529"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row97",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:97"
+  },
+  {
+   "title": "The Epic of Gilgamesh",
+   "subtitle": "",
+   "authors": [
+    "Andrew George (translator)"
+   ],
+   "subjects": [
+    "ancient-texts",
+    "mythology"
+   ],
+   "tradition": [
+    "mythic"
+   ],
+   "level": "intermediate",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Penguin",
+     "year": 2003,
+     "isbn13": "9780140449198",
+     "isbn10": "0140449191"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row98",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:98"
+  },
+  {
+   "title": "The Prose Edda",
+   "subtitle": "",
+   "authors": [
+    "Snorri Sturluson",
+    "Jesse L. Byock (translator)"
+   ],
+   "subjects": [
+    "mythology",
+    "ancient-texts",
+    "paganism"
+   ],
+   "tradition": [
+    "mythic"
+   ],
+   "level": "intermediate",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Penguin",
+     "year": 2005,
+     "isbn13": "9780140447552",
+     "isbn10": "0140447555"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row99",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:99"
+  },
+  {
+   "title": "The Egyptian Book of the Dead",
+   "subtitle": "The Book of Going Forth by Day",
+   "authors": [
+    "Raymond O. Faulkner (translator)"
+   ],
+   "subjects": [
+    "ancient-texts",
+    "mythology"
+   ],
+   "tradition": [
+    "mythic"
+   ],
+   "level": "intermediate",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Chronicle Books",
+     "year": 2015,
+     "isbn13": "9780811864893",
+     "isbn10": "0811864898"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row100",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:100"
+  },
+  {
+   "title": "Popol Vuh",
+   "subtitle": "",
+   "authors": [
+    "Dennis Tedlock (translator)"
+   ],
+   "subjects": [
+    "ancient-texts",
+    "mythology"
+   ],
+   "tradition": [
+    "mythic"
+   ],
+   "level": "intermediate",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Touchstone",
+     "year": 1996,
+     "isbn13": "9780684818450",
+     "isbn10": "0684818450"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Editorial shortlist (candidate; details unverified)",
+     "url": "staging/outside-candidates.psv#row101",
+     "accessed": "2026-10-26",
+     "supports": "candidate only"
+    }
+   ],
+   "status": "staged-needs-verification",
+   "origin": "staging/outside-candidates.psv:101"
+  }
+ ]
+}
