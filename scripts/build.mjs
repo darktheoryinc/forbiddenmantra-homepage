@@ -1,115 +1,194 @@
 #!/usr/bin/env node
 // Static site build:  node scripts/build.mjs   ->  site/
-// Reads data/catalogue.json (from scripts/import.mjs), data/taxonomy.json, data/collections.json, config/site.json.
-// Zero dependencies. Links end in index.html so the output also works from file:// and from any sub-path.
+// Reads <FM_DATA>/catalogue.json (from scripts/import.mjs), data/taxonomy.json, data/languages.json, <FM_DATA>/collections.json,
+// config/site.json and i18n/*.json. Zero dependencies. Links end in index.html so output also works from file:// and sub-paths.
+// Env: FM_DATA (default data), FM_OUT (default site), FM_FIXTURE=1 (marks a test build with fictional records),
+//      AMAZON_TRACKING_ID[_<SUFFIX>] per marketplace (see config/site.json).
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { slugify } from './lib.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const OUT = path.join(ROOT, 'site');
+const DATA = process.env.FM_DATA ?? 'data';
+const OUT = path.join(ROOT, process.env.FM_OUT ?? 'site');
+const FIXTURE = !!process.env.FM_FIXTURE;
 const rd = (p) => JSON.parse(fs.readFileSync(path.join(ROOT, p), 'utf8'));
 const cfg = rd('config/site.json');
 const tax = rd('data/taxonomy.json');
-const cat = rd('data/catalogue.json');
-const staged = rd('data/staged.json').works;
-const coll = rd('data/collections.json');
-const TAG = process.env.AMAZON_TRACKING_ID || cfg.affiliate.trackingId || null;
-const MARKET = cfg.affiliate.marketplace;
+const langReg = rd('data/languages.json');
+const cat = rd(`${DATA}/catalogue.json`);
+const staged = rd(`${DATA}/staged.json`).works;
+const coll = rd(`${DATA}/collections.json`);
 
+// ---------- languages & interface locales ----------
+const LANG = new Map(langReg.languages.map((l) => [l.code, l]));
+const lname = (c) => { const l = LANG.get(c); return l ? (l.endonym === l.name ? l.name : `${l.endonym} · ${l.name}`) : c; };
+const en = rd('i18n/en.json');
+const locales = { en };
+for (const f of fs.readdirSync(path.join(ROOT, 'i18n')).filter((x) => x.endsWith('.json') && x !== 'en.json')) locales[f.slice(0, -5)] = rd(`i18n/${f}`);
+const uiLocales = Object.keys(locales).filter((c) => LANG.has(c));
+const missingKeys = Object.fromEntries(Object.entries(locales).map(([c, d]) => [c, Object.keys(en).filter((k) => !(k in d))]));
+for (const [c, m] of Object.entries(missingKeys)) if (m.length) console.warn(`i18n/${c}.json is missing ${m.length} key(s); English is used as fallback: ${m.join(', ')}`);
 const esc = (s = '') => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
-const workById = new Map(cat.works.map((w) => [w.id, w]));
-const authorById = new Map(cat.authors.map((a) => [a.id, a]));
+const S = (k, tag = 'span') => `<${tag} data-i18n="${k}">${esc(en[k])}</${tag}>`;   // translatable text node
+const A = (attr, k) => `${attr}="${esc(en[k])}" data-i18n-${attr}="${k}"`;          // translatable attribute
+const fill = (s, v) => s.replace(/\{(\w+)\}/g, (_, k) => v[k]);
+
+// ---------- affiliate ----------
+const AFF = cfg.affiliate;
+const tagFor = (m) => {
+  const suffix = m.replace(/^amazon\./, '').toUpperCase().replace(/\./g, '_');
+  return process.env[`AMAZON_TRACKING_ID_${suffix}`] || (m === 'amazon.com' && process.env.AMAZON_TRACKING_ID) || AFF.marketplaces[m]?.trackingId || null;
+};
+const withTag = (url, m) => { const t = tagFor(m); return t && !/[?&]tag=/.test(url) ? `${url}${url.includes('?') ? '&' : '?'}tag=${encodeURIComponent(t)}` : url; };
+const tagStatus = Object.fromEntries(Object.keys(AFF.marketplaces).map((m) => [m, !!tagFor(m)]));
+
+// ---------- model ----------
 const dept = new Map(tax.departments.map((d) => [d.id, d]));
 const hub = new Map(tax.hubs.map((h) => [h.id, h]));
 const trad = new Map(tax.traditions.map((t) => [t.id, t]));
 const PERENNIAL = { id: 'perennial', name: 'Perennial Philosophy', intro: 'Writers who argue that the major mystical traditions share a common core. This is a contested position in academic study, and books in this group are labelled accordingly.' };
-trad.set('perennial', PERENNIAL); tax.traditions.push(PERENNIAL);
+if (!trad.has('perennial')) { trad.set('perennial', PERENNIAL); tax.traditions.push(PERENNIAL); }
+const workById = new Map(cat.works.map((w) => [w.id, w]));
+const edLangs = (e) => [e.language, ...(e.alsoLanguages ?? [])];
+const wLangs = (w) => [...new Set(w.editions.flatMap(edLangs))];
+const FORMAT_ORDER = ['hardcover', 'paperback', 'ebook', 'audiobook'];
+
+const langStats = new Map(langReg.languages.map((l) => [l.code, { works: new Set(), editions: 0, formats: new Set() }]));
+for (const w of cat.works) for (const e of w.editions) for (const c of edLangs(e)) { const s = langStats.get(c) ?? (langStats.set(c, { works: new Set(), editions: 0, formats: new Set() }), langStats.get(c)); s.works.add(w.id); s.editions++; s.formats.add(e.format); }
+const nWorks = (c) => langStats.get(c)?.works.size ?? 0;
+const nEds = (c) => langStats.get(c)?.editions ?? 0;
+const stocked = langReg.languages.filter((l) => nEds(l.code) > 0).sort((a, b) => nWorks(b.code) - nWorks(a.code) || langReg.languages.indexOf(a) - langReg.languages.indexOf(b));
+const unstocked = langReg.languages.filter((l) => nEds(l.code) === 0);
+const totalEditions = cat.works.reduce((n, w) => n + w.editions.length, 0);
 
 // ---------- helpers ----------
 let ROOT_PREFIX = './';
 const href = (p) => `${ROOT_PREFIX}${p}${p.endsWith('/') ? 'index.html' : ''}`;
 const write = (rel, html) => { const f = path.join(OUT, rel); fs.mkdirSync(path.dirname(f), { recursive: true }); fs.writeFileSync(f, html); };
 const depthPrefix = (rel) => '../'.repeat(rel.split('/').length - 1) || './';
-
 const worksIn = (deptId) => cat.works.filter((w) => w.subjects.includes(deptId));
 const worksInHub = (hubId) => cat.works.filter((w) => w.subjects.some((s) => dept.get(s).hubs.includes(hubId)));
 const stagedIn = (deptId) => staged.filter((w) => w.subjects.includes(deptId)).length;
 const stagedInHub = (hubId) => staged.filter((w) => w.subjects.some((s) => dept.get(s).hubs.includes(hubId))).length;
 const primaryHub = (d) => hub.get(dept.get(d).hubs[0]);
 const fmt = (n, one, many) => `${n} ${n === 1 ? one : many}`;
-const isbnFmt = (s) => s;
 
-// ---------- retailer links ----------
-function amazonURL(kind, v, title) {
-  const base = kind === 'dp' ? `https://www.${MARKET}/dp/${v}` : `https://www.${MARKET}/s?k=${encodeURIComponent(v)}&i=stripbooks`;
-  return TAG ? `${base}${base.includes('?') ? '&' : '?'}tag=${encodeURIComponent(TAG)}` : base;
-}
+// ---------- retailer links (marketplace-aware) ----------
+const mkt = (r) => r.marketplace ?? (r.retailer === 'amazon' ? AFF.defaultMarketplace : null);
+const amazonLabel = (m, ed) => (m === 'amazon.com' ? (ed.format === 'audiobook' ? 'Amazon (Audible)' : 'Amazon') : `Amazon.${m.slice(7)}${ed.format === 'audiobook' ? ' (Audible)' : ''}`);
 function retailers(work, ed) {
   const out = [];
   for (const r of ed.retailers ?? []) {
-    let url = r.url;
-    if (r.retailer === 'amazon' && TAG && !/[?&]tag=/.test(url)) url += `${url.includes('?') ? '&' : '?'}tag=${encodeURIComponent(TAG)}`;
-    out.push({ label: r.retailer === 'amazon' ? (ed.format === 'audiobook' ? 'Amazon (Audible)' : 'Amazon') : r.retailer === 'google-play' ? 'Google Play Books' : r.retailer, url, affiliate: r.retailer === 'amazon', status: r.verification === 'seen-in-search-results' ? `Link seen in search results on ${r.checkedOn}; live check pending` : `Verified ${r.checkedOn}` });
+    const m = mkt(r);
+    out.push({ label: r.retailer === 'amazon' ? amazonLabel(m, ed) : r.retailer === 'google-play' ? 'Google Play Books' : r.retailer, url: r.retailer === 'amazon' ? withTag(r.url, m) : r.url, affiliate: r.retailer === 'amazon', market: r.retailer === 'amazon' ? m : null, status: r.verification === 'seen-in-search-results' ? `Link seen in search results on ${r.checkedOn}; live check pending` : `Verified ${r.checkedOn}` });
   }
-  if (!out.some((o) => o.affiliate)) {
+  if (!out.some((o) => o.affiliate) && ed.language === 'en') {
+    const m = AFF.defaultMarketplace;
     if (ed.isbn10 && ['paperback', 'hardcover'].includes(ed.format) && !ed.noDerivedLink)
-      out.push({ label: 'Amazon', url: amazonURL('dp', ed.isbn10), affiliate: true, status: 'Built from the ISBN-10; not yet confirmed live' });
+      out.push({ label: 'Amazon', url: withTag(`https://www.${m}/dp/${ed.isbn10}`, m), affiliate: true, market: m, status: 'Built from the ISBN-10; not yet confirmed live' });
     else if (work.press === 'fmp')
-      out.push({ label: 'Search on Amazon', url: amazonURL('s', `${work.title} ${work.subtitle ?? ''} Forbidden Mantra Press`.replace(/\s+/g, ' ').trim()), affiliate: true, status: 'Search link; edition-specific ASIN still to be added' });
+      out.push({ label: 'Search on Amazon', url: withTag(`https://www.${m}/s?k=${encodeURIComponent(`${work.title} ${work.subtitle ?? ''} Forbidden Mantra Press`.replace(/\s+/g, ' ').trim())}&i=stripbooks`, m), affiliate: true, market: m, status: 'Search link; edition-specific ASIN still to be added' });
   }
-  if (ed.isbn13) out.push({ label: 'Find in a library', url: `https://search.worldcat.org/search?q=bn%3A${ed.isbn13}`, affiliate: false, status: 'Non-commercial WorldCat ISBN lookup' });
+  if (ed.isbn13) out.push({ label: S('btn_library'), labelIsHtml: true, url: `https://search.worldcat.org/search?q=bn%3A${ed.isbn13}`, affiliate: false, library: true, status: 'Non-commercial WorldCat ISBN lookup' });
   return out;
 }
 
 // ---------- components ----------
 function hashHue(s) { let h = 0; for (const c of s) h = (h * 31 + c.charCodeAt(0)) >>> 0; return h % 360; }
-function cover(w, big = false) {
+function cover(w, big = false, title = w.title) {
   const hue = w.press ? 38 : hashHue(w.title);
-  return `<div class="cover${big ? ' cover-lg' : ''}${w.press ? ' cover-fmp' : ''}" style="--h:${hue}" role="img" aria-label="Placeholder cover for ${esc(w.title)}. Official cover art is shown only where a permitted source is connected."><span class="cover-title">${esc(w.title)}</span><span class="cover-author">${esc(w.authors[0])}</span></div>`;
+  return `<div class="cover${big ? ' cover-lg' : ''}${w.press ? ' cover-fmp' : ''}" style="--h:${hue}" role="img" aria-label="Placeholder cover for ${esc(title)}. Official cover art is shown only where a permitted source is connected."><span class="cover-title">${esc(title)}</span><span class="cover-author">${esc(w.authors[0])}</span></div>`;
 }
 const authorLinks = (w) => w.authors.map((n) => `<a href="${href(`authors/${slugify(n)}/`)}">${esc(n)}</a>`).join(', ');
 function searchBlob(w) {
   const ids = w.editions.flatMap((e) => [e.isbn13, e.isbn10, e.asin].filter(Boolean));
-  return [w.title, w.subtitle, ...w.authors, ...w.subjects.map((s) => dept.get(s).name), ...(w.tradition ?? []).map((t) => trad.get(t)?.name), ...w.editions.map((e) => e.publisher), w.press ? 'forbidden mantra press' : '', ...ids].join(' ').toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '');
+  const langs = wLangs(w).flatMap((c) => [LANG.get(c)?.name, LANG.get(c)?.endonym, c.length > 2 ? c : null]);
+  return [w.title, w.subtitle, ...w.editions.flatMap((e) => [e.title, e.subtitle, e.translator]), ...w.authors, ...w.subjects.map((s) => dept.get(s).name), ...(w.tradition ?? []).map((t) => trad.get(t)?.name), ...w.editions.map((e) => e.publisher), ...langs, w.press ? 'forbidden mantra press' : '', ...ids].filter(Boolean).join(' ').toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '');
 }
-function card(w) {
-  const fmts = [...new Set(w.editions.map((e) => e.format))];
-  const langs = [...new Set(w.editions.map((e) => e.language))];
-  return `<article class="card" data-title="${esc(w.title.toLowerCase())}" data-search="${esc(searchBlob(w))}" data-subjects="${w.subjects.join(' ')}" data-hubs="${[...new Set(w.subjects.flatMap((s) => dept.get(s).hubs))].join(' ')}" data-tradition="${(w.tradition ?? []).join(' ')}" data-lang="${langs.join(' ')}" data-format="${fmts.join(' ')}" data-level="${w.level}" data-press="${w.press ? 'fmp' : 'outside'}" data-author="${w.authors.map((a) => a.toLowerCase()).join(' ')}">
-  <a class="card-cover" href="${href(`books/${w.slug}/`)}" tabindex="-1" aria-hidden="true">${cover(w)}</a>
+// ctxLang: render the card as seen from a language page (that language's title/formats; link to its edition group)
+function card(w, ctxLang = null) {
+  const eds = ctxLang ? w.editions.filter((e) => edLangs(e).includes(ctxLang)) : w.editions;
+  const fmts = [...new Set(eds.map((e) => e.format))];
+  const langs = [...new Set(eds.flatMap(edLangs))];
+  const t = (ctxLang && eds.find((e) => e.title)?.title) || w.title;
+  const sub = ctxLang ? (eds.find((e) => e.title)?.subtitle ?? '') : w.subtitle;
+  const dataEd = w.editions.map((e) => ({ l: edLangs(e), f: e.format, t: e.title ?? '' }));
+  const link = href(`books/${w.slug}/`) + (ctxLang ? `#lang-${ctxLang}` : '');
+  return `<article class="card" data-title="${esc(w.title.toLowerCase())}" data-search="${esc(searchBlob(w))}" data-subjects="${w.subjects.join(' ')}" data-hubs="${[...new Set(w.subjects.flatMap((s) => dept.get(s).hubs))].join(' ')}" data-tradition="${(w.tradition ?? []).join(' ')}" data-level="${w.level}" data-press="${w.press ? 'fmp' : 'outside'}" data-author="${w.authors.map((a) => a.toLowerCase()).join(' ')}" data-ed="${esc(JSON.stringify(dataEd))}"${ctxLang ? ` data-ctx="${ctxLang}"` : ''} data-slug="${w.slug}" data-wtitle="${esc(w.title)}">
+  <a class="card-cover" href="${link}" tabindex="-1" aria-hidden="true">${cover(w, false, t)}</a>
   <div class="card-body">
     ${w.press ? '<span class="badge badge-fmp">Forbidden Mantra Press</span>' : ''}
-    <h3 class="card-title"><a href="${href(`books/${w.slug}/`)}">${esc(w.title)}</a></h3>
-    ${w.subtitle ? `<p class="card-sub">${esc(w.subtitle)}</p>` : ''}
+    <h3 class="card-title"><a href="${link}"${t !== w.title ? ` lang="${ctxLang}"` : ''}>${esc(t)}</a></h3>
+    ${sub ? `<p class="card-sub">${esc(sub)}</p>` : ''}
     <p class="card-author">${authorLinks(w)}</p>
-    <p class="card-meta">${fmts.map((f) => tax.formats[f]).join(' · ')} · ${langs.map((l) => tax.languages[l]).join(', ')} · ${tax.levels[w.level].split(' /')[0]}</p>
+    <p class="card-meta">${fmts.map((f) => tax.formats[f]).join(' · ')} · ${langs.map((c) => LANG.get(c)?.name ?? c).join(', ')} · ${tax.levels[w.level].split(' /')[0]}</p>
   </div>
 </article>`;
 }
-const grid = (works, { filterable = true } = {}) => `<div class="grid" ${filterable ? 'data-filterable' : ''}>${works.map(card).join('')}</div>`;
+const grid = (works, { filterable = true, ctxLang = null } = {}) => `<div class="grid" ${filterable ? 'data-filterable' : ''}>${works.map((w) => card(w, ctxLang)).join('')}</div>`;
 
-function filterBar({ subjects = true, traditions = true, press = true } = {}, { q = true } = {}) {
-  const opts = (map) => Object.entries(map).map(([k, v]) => `<option value="${k}">${esc(v)}</option>`).join('');
+function langOptions(ctxWorks) {
+  const n = (c) => ctxWorks.filter((w) => wLangs(w).includes(c)).length;
+  const avail = langReg.languages.filter((l) => n(l.code) > 0).sort((a, b) => n(b.code) - n(a.code) || langReg.languages.indexOf(a) - langReg.languages.indexOf(b));
+  const none = langReg.languages.filter((l) => n(l.code) === 0);
+  const o = (l) => `<option value="${l.code}" data-name="${esc(l.name)}" data-endonym="${esc(l.endonym)}">${esc(lname(l.code))} (${n(l.code)})</option>`;
+  return `<option value="" data-i18n="f_all_lang">${esc(en.f_all_lang)}</option>
+      <optgroup ${A('label', 'f_lang_avail')}>${avail.map(o).join('')}</optgroup>
+      <optgroup ${A('label', 'f_lang_unavail')}>${none.map(o).join('')}</optgroup>`;
+}
+function filterBar(ctx, { subjects = true, traditions = true, press = true, q = true, lang = true } = {}) {
+  const fopts = Object.entries(tax.formats).map(([k, v]) => `<option value="${k}" data-i18n="fmt_${k}">${esc(en['fmt_' + k] ?? v)}</option>`).join('');
+  const lopts = Object.entries(tax.levels).map(([k, v]) => `<option value="${k}" data-i18n="lvl_${k}">${esc(en['lvl_' + k] ?? v)}</option>`).join('');
   return `<form class="filters" role="search" aria-label="Filter books" data-filterbar onsubmit="return false">
-  ${q ? `<label class="f-q"><span>Search title, author, subject or ISBN</span><input type="search" name="q" autocomplete="off" placeholder="e.g. Tolle, tarot, 9781577314806"></label>` : ''}
-  ${subjects ? `<label><span>Subject</span><select name="subject"><option value="">All subjects</option>${tax.departments.map((d) => `<option value="${d.id}">${esc(d.name)}</option>`).join('')}</select></label>` : ''}
-  ${traditions ? `<label><span>Tradition</span><select name="tradition"><option value="">All traditions</option>${tax.traditions.map((t) => `<option value="${t.id}">${esc(t.name)}</option>`).join('')}</select></label>` : ''}
-  <label><span>Language</span><select name="lang"><option value="">Any</option>${opts(tax.languages)}</select></label>
-  <label><span>Format</span><select name="format"><option value="">Any</option>${opts(tax.formats)}</select></label>
-  <label><span>Reading level</span><select name="level"><option value="">Any</option>${opts(tax.levels)}</select></label>
-  ${press ? `<label><span>Source</span><select name="press"><option value="">All books</option><option value="fmp">Forbidden Mantra Press</option><option value="outside">Other publishers</option></select></label>` : ''}
-  <button type="reset" class="btn-link">Clear filters</button>
+  ${q ? `<label class="f-q">${S('f_q')}<input type="search" name="q" autocomplete="off" ${A('placeholder', 'f_q_ph')}></label>` : ''}
+  ${subjects ? `<label>${S('f_subject')}<select name="subject"><option value="" data-i18n="f_all_subjects">${esc(en.f_all_subjects)}</option>${tax.departments.map((d) => `<option value="${d.id}">${esc(d.name)}</option>`).join('')}</select></label>` : ''}
+  ${traditions ? `<label>${S('f_tradition')}<select name="tradition"><option value="" data-i18n="f_all_traditions">${esc(en.f_all_traditions)}</option>${tax.traditions.map((t) => `<option value="${t.id}">${esc(t.name)}</option>`).join('')}</select></label>` : ''}
+  ${lang ? `<label>${S('f_language')}<select name="lang">${langOptions(ctx)}</select></label>` : ''}
+  <label>${S('f_format')}<select name="format"><option value="" data-i18n="f_any">${esc(en.f_any)}</option>${fopts}</select></label>
+  <label>${S('f_level')}<select name="level"><option value="" data-i18n="f_any">${esc(en.f_any)}</option>${lopts}</select></label>
+  ${press ? `<label>${S('f_source')}<select name="press"><option value="" data-i18n="f_all_books">${esc(en.f_all_books)}</option><option value="fmp" data-i18n="f_fmp">${esc(en.f_fmp)}</option><option value="outside" data-i18n="f_outside">${esc(en.f_outside)}</option></select></label>` : ''}
+  <button type="reset" class="btn-link" data-i18n="f_clear">${esc(en.f_clear)}</button>
   <p class="f-count" role="status" aria-live="polite" data-count></p>
 </form>`;
 }
+const emptyMsg = () => `<p class="empty" hidden data-empty><span data-empty-text data-i18n="empty_filters">${esc(en.empty_filters)}</span></p>`;
+const langChips = (works) => {
+  const cs = langReg.languages.map((l) => [l, works.filter((w) => wLangs(w).includes(l.code)).length]).filter(([, n]) => n > 0);
+  return cs.length ? `<p class="lang-chips"><span class="lc-h" data-i18n="f_language">${esc(en.f_language)}</span> ${cs.map(([l, n]) => `<a class="tag" href="?lang=${l.code}" lang="${l.code}">${esc(l.endonym)}<span class="sr"> (${esc(l.name)})</span> <span class="n">${n}</span></a>`).join('')}</p>` : '';
+};
 
-const NAV = [['Subjects', 'subjects/'], ['Traditions', 'traditions/'], ['Authors', 'authors/'], ['Reading paths', 'paths/'], ['Collections', 'collections/'], ['Press', 'press/']];
+// ---------- language menu (header) ----------
+const GLOBE = '<svg class="ic" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>';
+const CHEV = '<svg class="ic chev" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2"/></svg>';
+function langMenu() {
+  return `<div class="langmenu" data-langmenu>
+  <button class="lang-btn" type="button" aria-expanded="false" aria-controls="lang-panel">${GLOBE}<span class="lang-cur" data-ui-code>EN</span><span class="lang-word" data-i18n="lang_btn">${esc(en.lang_btn)}</span>${CHEV}</button>
+  <div id="lang-panel" class="lang-panel" hidden>
+    <section aria-labelledby="lp-site">
+      <h2 id="lp-site" data-i18n="lang_site_h">${esc(en.lang_site_h)}</h2>
+      <p class="lp-note" data-i18n="lang_site_note">${esc(en.lang_site_note)}</p>
+      <ul class="lp-ui">${uiLocales.map((c) => `<li><button type="button" data-ui="${c}" lang="${c}" aria-pressed="${c === 'en'}">${esc(LANG.get(c).endonym)}${langReg.languages.find((l) => l.code === c).interface === 'beta' ? ` <small data-i18n="lang_beta">${esc(en.lang_beta)}</small>` : ''}</button></li>`).join('')}</ul>
+    </section>
+    <section aria-labelledby="lp-books">
+      <h2 id="lp-books" data-i18n="lang_books_h">${esc(en.lang_books_h)}</h2>
+      <p class="lp-note" data-i18n="lang_books_note">${esc(en.lang_books_note)}</p>
+      <ul class="lp-books">${stocked.map((l) => `<li><a href="${href(`languages/${l.code}/`)}" lang="${l.code}" dir="${l.dir}">${esc(l.endonym)}</a><span class="n" data-count-ed="${nEds(l.code)}">${fmt(nEds(l.code), 'edition', 'editions')}</span></li>`).join('')}</ul>
+      <details class="lp-more"><summary><span data-i18n="lang_working_h">${esc(en.lang_working_h)}</span> (${unstocked.length})</summary>
+        <ul class="lp-books dim">${unstocked.map((l) => `<li><a href="${href(`languages/${l.code}/`)}" lang="${l.code}" dir="${l.dir}">${esc(l.endonym)}</a></li>`).join('')}</ul></details>
+      <p class="lp-all"><a href="${href('languages/')}" data-i18n="lang_all_link">${esc(en.lang_all_link)}</a></p>
+    </section>
+  </div>
+</div>`;
+}
+
+const NAV = [['nav_subjects', 'subjects/'], ['nav_traditions', 'traditions/'], ['nav_authors', 'authors/'], ['nav_paths', 'paths/'], ['nav_collections', 'collections/'], ['nav_press', 'press/']];
+const anyUntagged = Object.values(tagStatus).every((v) => !v);
 function layout({ title, rel, desc, body, crumbs = [], jsonld = null, current = '' }) {
   ROOT_PREFIX = depthPrefix(rel);
   const page = body();
-  const bc = crumbs.length ? `<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="${href('')}">Home</a></li>${crumbs.map(([l, u]) => `<li>${u ? `<a href="${href(u)}">${esc(l)}</a>` : `<span aria-current="page">${esc(l)}</span>`}</li>`).join('')}</ol></nav>` : '';
+  const bc = crumbs.length ? `<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="${href('')}" data-i18n="home">${esc(en.home)}</a></li>${crumbs.map(([l, u]) => `<li>${u ? `<a href="${href(u)}">${esc(l)}</a>` : `<span aria-current="page">${esc(l)}</span>`}</li>`).join('')}</ol></nav>` : '';
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -123,56 +202,62 @@ function layout({ title, rel, desc, body, crumbs = [], jsonld = null, current = 
 ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld)}</script>` : ''}
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
-<div class="preview-bar" role="note">Preview build, not published. Catalogue as of ${cfg.catalogueAsOf}. ${TAG ? '' : 'Amazon links carry no Associates tracking ID yet.'}</div>
+<a class="skip" href="#main" data-i18n="skip">${esc(en.skip)}</a>
+${FIXTURE ? '<div class="preview-bar fixture-bar" role="note">TEST FIXTURE BUILD. Every record on this site is fictional and exists only to test multilingual behaviour. Never publish.</div>' : ''}
+<div class="preview-bar" role="note">Preview build, not published. Catalogue as of ${cfg.catalogueAsOf}. ${anyUntagged ? 'Amazon links carry no Associates tracking ID yet.' : ''}</div>
 <header class="site-header">
   <div class="wrap header-in">
     <a class="logo" href="${href('')}">Forbidden Mantra Press</a>
-    <button class="nav-toggle" aria-expanded="false" aria-controls="nav" type="button"><span class="sr">Menu</span><span aria-hidden="true">☰</span></button>
+    ${langMenu()}
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav" type="button"><span class="sr" data-i18n="menu">${esc(en.menu)}</span><span aria-hidden="true">☰</span></button>
     <nav id="nav" class="nav" aria-label="Main">
-      <ul>${NAV.map(([l, u]) => `<li><a href="${href(u)}"${current === u ? ' aria-current="page"' : ''}>${l}</a></li>`).join('')}</ul>
-      <form class="nav-search" action="${href('search/')}" method="get" role="search"><label class="sr" for="q-nav">Search the catalogue</label><input id="q-nav" type="search" name="q" placeholder="Search title, author, ISBN"><button type="submit">Search</button></form>
+      <ul>${NAV.map(([k, u]) => `<li><a href="${href(u)}"${current === u ? ' aria-current="page"' : ''} data-i18n="${k}">${esc(en[k])}</a></li>`).join('')}</ul>
+      <form class="nav-search" action="${href('search/')}" method="get" role="search"><label class="sr" for="q-nav" data-i18n="search_label">${esc(en.search_label)}</label><input id="q-nav" type="search" name="q" ${A('placeholder', 'search_ph')}><button type="submit" data-i18n="search_btn">${esc(en.search_btn)}</button></form>
     </nav>
   </div>
 </header>
-<main id="main" tabindex="-1">
+<main id="main" tabindex="-1" lang="en">
 <div class="wrap">${bc}</div>
 ${page}
 </main>
 <footer class="site-footer">
   <div class="wrap foot-grid">
     <div><p class="foot-brand">Forbidden Mantra Press</p><p>A curated bookstore of sacred texts, practice and inner cultivation.</p></div>
-    <div><p class="foot-h">Browse</p><ul>${tax.hubs.map((h) => `<li><a href="${href(`subjects/${h.id}/`)}">${esc(h.name)}</a></li>`).join('')}</ul></div>
-    <div><p class="foot-h">Store</p><ul><li><a href="${href('books/')}">All books</a></li><li><a href="${href('press/')}">Forbidden Mantra Press</a></li><li><a href="${href('about/catalogue-standards/')}">How we verify books</a></li><li><a href="${href('about/affiliate-disclosure/')}">Affiliate disclosure</a></li></ul></div>
+    <div><p class="foot-h" data-i18n="foot_browse">${esc(en.foot_browse)}</p><ul>${tax.hubs.map((h) => `<li><a href="${href(`subjects/${h.id}/`)}">${esc(h.name)}</a></li>`).join('')}</ul></div>
+    <div><p class="foot-h" data-i18n="foot_store">${esc(en.foot_store)}</p><ul><li><a href="${href('books/')}" data-i18n="foot_all_books">${esc(en.foot_all_books)}</a></li><li><a href="${href('languages/')}" data-i18n="foot_languages">${esc(en.foot_languages)}</a></li><li><a href="${href('press/')}">Forbidden Mantra Press</a></li><li><a href="${href('about/catalogue-standards/')}" data-i18n="foot_verify">${esc(en.foot_verify)}</a></li><li><a href="${href('about/affiliate-disclosure/')}" data-i18n="foot_affiliate">${esc(en.foot_affiliate)}</a></li></ul></div>
   </div>
-  <div class="wrap"><p class="disclosure">${esc(cfg.disclosure)}</p><p class="copy">© 2025–2026 Forbidden Mantra Press</p></div>
+  <div class="wrap"><p class="disclosure" lang="en">${esc(cfg.disclosure)}</p><p class="copy">© 2025–2026 Forbidden Mantra Press</p></div>
 </footer>
+<script src="${ROOT_PREFIX}assets/i18n.js"></script>
 <script src="${ROOT_PREFIX}assets/app.js"></script>
 </body>
 </html>`;
 }
 const page = (rel, opts) => write(rel, layout({ ...opts, rel }));
 
-// ---------- pages ----------
+// ---------- output setup ----------
 fs.rmSync(OUT, { recursive: true, force: true });
 fs.mkdirSync(path.join(OUT, 'assets'), { recursive: true });
 fs.copyFileSync(path.join(ROOT, 'scripts/assets/style.css'), path.join(OUT, 'assets/style.css'));
 fs.copyFileSync(path.join(ROOT, 'scripts/assets/app.js'), path.join(OUT, 'assets/app.js'));
+const i18nOut = { dict: Object.fromEntries(Object.entries(locales).map(([c, d]) => [c, Object.fromEntries(Object.entries(d).filter(([k]) => k !== '_meta'))])), langs: Object.fromEntries(langReg.languages.map((l) => [l.code, { name: l.name, endonym: l.endonym, dir: l.dir }])), ui: uiLocales };
+write('assets/i18n.js', `window.FM_I18N=${JSON.stringify(i18nOut)};`);
 
 const fmpWorks = cat.works.filter((w) => w.press === 'fmp');
 const outside = cat.works.filter((w) => !w.press);
+const langSummary = `${fmt(cat.works.length, 'work', 'works')} · ${fmt(totalEditions, 'edition', 'editions')} · ${fmt(stocked.length, 'language with verified editions', 'languages with verified editions')}`;
 
-// home
+// ---------- home ----------
 page('index.html', {
-  title: 'Forbidden Mantra Press', desc: cfg.tagline, current: '',
+  title: 'Forbidden Mantra Press', desc: cfg.tagline,
   body: () => `
 <section class="hero">
   <div class="wrap">
     <p class="eyebrow">Ancient wisdom · Hidden knowledge · Inner power</p>
     <h1>Forbidden<br>Mantra Press</h1>
     <p class="lede">A curated bookstore of sacred texts, practice and inner cultivation, from our own press and from established authors in every tradition we shelve.</p>
-    <form class="hero-search" action="${href('search/')}" method="get" role="search"><label class="sr" for="q-hero">Search the catalogue</label><input id="q-hero" type="search" name="q" placeholder="Search by title, author, subject or ISBN"><button class="btn" type="submit">Search</button></form>
-    <p class="hero-links"><a class="btn btn-ghost" href="${href('press/')}">Forbidden Mantra Press books</a> <a class="btn btn-ghost" href="${href('books/')}">Browse the catalogue</a> <a class="btn btn-ghost" href="${href('paths/')}">Beginner reading paths</a></p>
+    <form class="hero-search" action="${href('search/')}" method="get" role="search"><label class="sr" for="q-hero" data-i18n="search_label">${esc(en.search_label)}</label><input id="q-hero" type="search" name="q" placeholder="Search by title, author, subject or ISBN"><button class="btn" type="submit" data-i18n="search_btn">${esc(en.search_btn)}</button></form>
+    <p class="hero-links"><a class="btn btn-ghost" href="${href('press/')}">Forbidden Mantra Press books</a> <a class="btn btn-ghost" href="${href('books/')}" data-i18n="foot_all_books">${esc(en.foot_all_books)}</a> <a class="btn btn-ghost" href="${href('paths/')}">Beginner reading paths</a></p>
   </div>
 </section>
 <section class="band"><div class="wrap">
@@ -191,28 +276,67 @@ page('index.html', {
   <div class="split"><h2>Established authors</h2><a href="${href('authors/')}">Authors A–Z →</a></div>
   ${grid(outside.slice(0, 8), { filterable: false })}
 </div></section>
-<section class="band"><div class="wrap narrow">
+<section class="band"><div class="wrap">
+  <div class="split"><h2 data-i18n="lang_books_h">${esc(en.lang_books_h)}</h2><a href="${href('languages/')}" data-i18n="lang_all_link">${esc(en.lang_all_link)}</a></div>
+  <p class="lede-sm">${stocked.length === 1 ? `Every verified edition so far is in ${esc(stocked[0].name)}. ` : ''}We add a language to the shelf only when a specific edition has been verified with its own identifier and source. ${unstocked.length} more languages are set up and waiting for verified editions.</p>
+  <ul class="langs-home">${stocked.map((l) => `<li><a class="lang-tile" href="${href(`languages/${l.code}/`)}" lang="${l.code}" dir="${l.dir}"><span class="lt-name">${esc(l.endonym)}</span><span class="lt-n">${fmt(nWorks(l.code), 'book', 'books')} · ${fmt(nEds(l.code), 'edition', 'editions')}</span></a></li>`).join('')}</ul>
+</div></section>
+<section class="band alt"><div class="wrap narrow">
   <h2>How the catalogue is built</h2>
   <p>Every listed book has a named source for its title, author, edition and identifier. Books we cannot yet confirm are held back rather than shown. We do not display prices, ratings or bestseller badges unless they come from a source we are permitted to use. <a href="${href('about/catalogue-standards/')}">Read our standards</a>.</p>
 </div></section>`,
 });
 
-// all books + search
+// ---------- browse + search ----------
 const browseBody = (heading, intro) => () => `
 <section class="band"><div class="wrap">
   <h1>${heading}</h1><p class="lede-sm">${intro}</p>
-  ${filterBar()}
+  <p class="stats">${langSummary}</p>
+  ${filterBar(cat.works)}
   ${grid(cat.works)}
-  <p class="empty" hidden data-empty>No books match those filters. Try clearing a filter or searching a different spelling.</p>
+  ${emptyMsg()}
   <p class="note">The catalogue is growing. ${staged.length} further outside editions are staged and will be published once each title, edition and identifier is confirmed against a source.</p>
 </div></section>`;
-page('books/index.html', { title: 'All books', desc: 'Browse the full Forbidden Mantra Press catalogue.', crumbs: [['All books']], current: 'books/', body: browseBody('All books', 'Browse by subject, tradition, language, format and reading level, or search by title, author, subject or ISBN.') });
-page('search/index.html', { title: 'Search', desc: 'Search by title, author, subject or ISBN.', crumbs: [['Search']], body: browseBody('Search the catalogue', 'Search by title, author, subject or ISBN. ISBNs can be typed with or without hyphens.') });
+page('books/index.html', { title: 'All books', desc: 'Browse the full Forbidden Mantra Press catalogue.', crumbs: [['All books']], current: 'books/', body: browseBody('All books', 'Browse by subject, tradition, book language, format and reading level, or search by title, author, subject or ISBN.') });
+page('search/index.html', { title: 'Search', desc: 'Search by title, author, subject or ISBN.', crumbs: [['Search']], body: browseBody('Search the catalogue', 'Search by title, author, subject or ISBN. ISBNs can be typed with or without hyphens. Language names work too.') });
 
-// subjects
+// ---------- languages ----------
+const langBlock = (l) => {
+  const n = nWorks(l.code), e = nEds(l.code);
+  return `<li class="lang-row${n ? '' : ' none'}"><a href="${href(`languages/${l.code}/`)}" lang="${l.code}" dir="${l.dir}">${esc(l.endonym)}</a> <span class="ln">${esc(l.name)}</span> <span class="lc">${n ? `${fmt(n, 'work', 'works')} · ${fmt(e, 'edition', 'editions')}` : 'no verified editions yet'}</span> <span class="lui">${l.interface === 'none' ? '' : `website: ${l.interface === 'beta' ? 'beta' : 'complete'}`}</span></li>`;
+};
+page('languages/index.html', {
+  title: 'Languages', crumbs: [['Languages']], desc: 'Books by publication language.',
+  body: () => `<section class="band"><div class="wrap"><h1 data-i18n="foot_languages">${esc(en.foot_languages)}</h1>
+<p class="lede-sm">Two different things are called “language” here. The <strong>website language</strong> (menu in the header) changes menus, labels and buttons. The <strong>book language</strong> is the language an edition is actually published in. Counts below are verified editions only, and a language with zero is shown as not yet available.</p>
+<p class="stats">${langSummary}</p>
+<h2>With verified editions</h2><ul class="lang-list">${stocked.map(langBlock).join('')}</ul>
+${Object.entries(langReg.groups).map(([g, label]) => { const ls = unstocked.filter((l) => l.group === g); return ls.length ? `<h2>${esc(label)}: not yet available</h2><ul class="lang-list">${ls.map(langBlock).join('')}</ul>` : ''; }).join('')}
+</div></section>`,
+});
+for (const l of langReg.languages) {
+  const ws = cat.works.filter((w) => wLangs(w).includes(l.code));
+  const byDept = tax.departments.map((d) => [d, ws.filter((w) => w.subjects.includes(d.id)).length]).filter(([, n]) => n > 0);
+  const stat = langStats.get(l.code);
+  page(`languages/${l.code}/index.html`, {
+    title: `Books in ${l.name}`, desc: ws.length ? `${ws.length} works in ${l.name}.` : `No verified ${l.name} editions yet.`, crumbs: [['Languages', 'languages/'], [l.name]],
+    body: () => `<section class="band"><div class="wrap">
+<p class="eyebrow">${esc(langReg.groups[l.group])}</p>
+<h1><span lang="${l.code}" dir="${l.dir}">${esc(l.endonym)}</span>${l.endonym !== l.name ? ` <small class="h1-sub">${esc(l.name)}</small>` : ''}</h1>
+${ws.length ? `<p class="stats">${fmt(ws.length, 'work', 'works')} · ${fmt(stat.editions, 'edition', 'editions')} · ${[...stat.formats].sort((a, b) => FORMAT_ORDER.indexOf(a) - FORMAT_ORDER.indexOf(b)).map((f) => tax.formats[f]).join(', ')}</p>
+<p class="lede-sm">Each book below has at least one verified edition published in ${esc(l.name)}. Open a book to see that edition’s own ISBN, format and retailer link.</p>
+<h2>By subject</h2><ul class="chips">${byDept.map(([d, n]) => `<li><a href="${href(`topics/${d.id}/`)}?lang=${l.code}">${esc(d.name)}</a> <span>${n}</span></li>`).join('')}</ul>
+<h2>Books</h2>${filterBar(ws, { lang: false })}${grid(ws, { ctxLang: l.code })}${emptyMsg()}`
+ : `<p class="stats">0 works · 0 editions</p>
+<div class="empty" data-lang-empty><p><strong>We have no verified ${esc(l.name)} editions yet.</strong></p><p>A language is shown as available only when a specific edition has been verified with its own ISBN or ASIN, format, retailer link and dated source. We do not infer translations from the English books.</p><p><a class="btn btn-ghost" href="${href('books/')}">Browse all books</a> <a class="btn btn-ghost" href="${href('languages/')}">All languages</a></p></div>`}
+</div></section>`,
+  });
+}
+
+// ---------- subjects ----------
 page('subjects/index.html', {
   title: 'Subjects', crumbs: [['Subjects']], current: 'subjects/', desc: 'Six subject hubs and 29 departments.',
-  body: () => `<section class="band"><div class="wrap"><h1>Subjects</h1>${tax.hubs.map((h) => `<div class="hub-block"><h2><a href="${href(`subjects/${h.id}/`)}">${esc(h.name)}</a></h2><p>${esc(h.tagline)}</p><ul class="chips">${tax.departments.filter((d) => d.hubs.includes(h.id)).map((d) => `<li><a href="${href(`topics/${d.id}/`)}">${esc(d.name)}</a> <span>${worksIn(d.id).length}</span></li>`).join('')}</ul></div>`).join('')}</div></section>`,
+  body: () => `<section class="band"><div class="wrap"><h1 data-i18n="nav_subjects">${esc(en.nav_subjects)}</h1>${tax.hubs.map((h) => `<div class="hub-block"><h2><a href="${href(`subjects/${h.id}/`)}">${esc(h.name)}</a></h2><p>${esc(h.tagline)}</p><ul class="chips">${tax.departments.filter((d) => d.hubs.includes(h.id)).map((d) => `<li><a href="${href(`topics/${d.id}/`)}">${esc(d.name)}</a> <span>${worksIn(d.id).length}</span></li>`).join('')}</ul></div>`).join('')}</div></section>`,
 });
 for (const h of tax.hubs) {
   const ds = tax.departments.filter((d) => d.hubs.includes(h.id));
@@ -225,42 +349,41 @@ for (const h of tax.hubs) {
 <div class="depts">${ds.map((d) => `<a class="dept" href="${href(`topics/${d.id}/`)}"><h3>${esc(d.name)}</h3><p>${esc(d.intro.split('. ')[0])}.</p><span class="hub-n">${fmt(worksIn(d.id).length, 'book', 'books')}${stagedIn(d.id) ? ` · ${stagedIn(d.id)} in review` : ''}</span></a>`).join('')}</div>
 ${fm.length ? `<h2>From Forbidden Mantra Press</h2>${grid(fm, { filterable: false })}` : ''}
 <h2>All books in this hub</h2>
-${ws.length ? filterBar({ subjects: false }, { q: false }) + grid(ws) + '<p class="empty" hidden data-empty>No books match those filters.</p>' : `<p class="note">No books are published in this hub yet. ${stagedInHub(h.id)} are staged for verification.</p>`}
+${ws.length ? langChips(ws) + filterBar(ws, { subjects: false, q: false }) + grid(ws) + emptyMsg() : `<p class="note">No books are published in this hub yet. ${stagedInHub(h.id)} are staged for verification.</p>`}
 </div></section>`,
   });
 }
 for (const d of tax.departments) {
   const ws = worksIn(d.id);
-  const rel = d.related ?? [];
   const sameHub = tax.departments.filter((x) => x.id !== d.id && x.hubs.some((hh) => d.hubs.includes(hh)));
   page(`topics/${d.id}/index.html`, {
     title: d.name, desc: d.intro.split('. ')[0] + '.', crumbs: [['Subjects', 'subjects/'], [primaryHub(d.id).name, `subjects/${primaryHub(d.id).id}/`], [d.name]],
     body: () => `<section class="band"><div class="wrap"><p class="eyebrow">${d.hubs.map((hh) => esc(hub.get(hh).name)).join(' · ')}</p><h1>${esc(d.name)}</h1><p class="lede-sm">${esc(d.intro)}</p>
-${ws.length ? filterBar({ subjects: false }, { q: false }) + grid(ws) + '<p class="empty" hidden data-empty>No books match those filters.</p>' : `<p class="note">No books are published in this department yet. ${stagedIn(d.id) ? `${stagedIn(d.id)} candidate titles are in review.` : 'Candidate titles have not yet been staged.'}</p>`}
+${ws.length ? langChips(ws) + filterBar(ws, { subjects: false, q: false }) + grid(ws) + emptyMsg() : `<p class="note">No books are published in this department yet. ${stagedIn(d.id) ? `${stagedIn(d.id)} candidate titles are in review.` : 'Candidate titles have not yet been staged.'}</p>`}
 <h2>Related departments</h2><ul class="chips">${sameHub.map((x) => `<li><a href="${href(`topics/${x.id}/`)}">${esc(x.name)}</a></li>`).join('')}</ul>
 </div></section>`,
   });
 }
 
-// traditions
+// ---------- traditions ----------
 page('traditions/index.html', {
   title: 'Traditions', crumbs: [['Traditions']], current: 'traditions/', desc: 'Browse by tradition.',
-  body: () => `<section class="band"><div class="wrap"><h1>Traditions</h1><p class="lede-sm">Traditions are kept distinct. A book on Taoist internal alchemy is not filed with Hindu tantra, and Gnostic texts are not mixed with Christian mystical writing. Where a book is a modern adaptation or draws on several sources, its page says so.</p>
+  body: () => `<section class="band"><div class="wrap"><h1 data-i18n="nav_traditions">${esc(en.nav_traditions)}</h1><p class="lede-sm">Traditions are kept distinct. A book on Taoist internal alchemy is not filed with Hindu tantra, and Gnostic texts are not mixed with Christian mystical writing. Where a book is a modern adaptation or draws on several sources, its page says so.</p>
 <div class="depts">${tax.traditions.map((t) => `<a class="dept" href="${href(`traditions/${t.id}/`)}"><h3>${esc(t.name)}</h3><p>${esc(t.intro)}</p><span class="hub-n">${fmt(cat.works.filter((w) => (w.tradition ?? []).includes(t.id)).length, 'book', 'books')}</span></a>`).join('')}</div></div></section>`,
 });
 for (const t of tax.traditions) {
   const ws = cat.works.filter((w) => (w.tradition ?? []).includes(t.id));
   page(`traditions/${t.id}/index.html`, {
     title: t.name, desc: t.intro, crumbs: [['Traditions', 'traditions/'], [t.name]],
-    body: () => `<section class="band"><div class="wrap"><h1>${esc(t.name)}</h1><p class="lede-sm">${esc(t.intro)}</p>${ws.length ? filterBar({ traditions: false }, { q: false }) + grid(ws) + '<p class="empty" hidden data-empty>No books match those filters.</p>' : '<p class="note">No books are published under this tradition yet.</p>'}</div></section>`,
+    body: () => `<section class="band"><div class="wrap"><h1>${esc(t.name)}</h1><p class="lede-sm">${esc(t.intro)}</p>${ws.length ? langChips(ws) + filterBar(ws, { traditions: false, q: false }) + grid(ws) + emptyMsg() : '<p class="note">No books are published under this tradition yet.</p>'}</div></section>`,
   });
 }
 
-// authors
+// ---------- authors ----------
 const letters = [...new Set(cat.authors.map((a) => a.sortName[0].toUpperCase()))];
 page('authors/index.html', {
   title: 'Authors A–Z', crumbs: [['Authors']], current: 'authors/', desc: 'Authors A to Z.',
-  body: () => `<section class="band"><div class="wrap"><h1>Authors A–Z</h1>
+  body: () => `<section class="band"><div class="wrap"><h1>${S('nav_authors')} A–Z</h1>
 <nav class="az" aria-label="Jump to letter">${letters.map((l) => `<a href="#l-${l}">${l}</a>`).join('')}</nav>
 ${letters.map((l) => `<h2 id="l-${l}">${l}</h2><ul class="authors">${cat.authors.filter((a) => a.sortName[0].toUpperCase() === l).map((a) => `<li><a href="${href(`authors/${a.id}/`)}">${esc(a.sortName)}</a> <span>${fmt(a.workIds.length, 'book', 'books')}</span></li>`).join('')}</ul>`).join('')}
 </div></section>`,
@@ -269,65 +392,83 @@ for (const a of cat.authors) {
   const ws = a.workIds.map((id) => workById.get(id));
   page(`authors/${a.id}/index.html`, {
     title: a.name, desc: a.bio ?? `Books by ${a.name}`, crumbs: [['Authors', 'authors/'], [a.name]],
-    body: () => `<section class="band"><div class="wrap"><h1>${esc(a.name)}</h1>${a.bio ? `<p class="lede-sm">${esc(a.bio)}</p>` : '<p class="note">Author profile pending. The author credit on Forbidden Mantra Press titles is being confirmed with the publisher.</p>'}<h2>Books</h2>${grid(ws, { filterable: false })}</div></section>`,
+    body: () => `<section class="band"><div class="wrap"><h1>${esc(a.name)}</h1>${a.bio ? `<p class="lede-sm">${esc(a.bio)}</p>` : '<p class="note">Author profile pending. The author credit on Forbidden Mantra Press titles is being confirmed with the publisher.</p>'}<h2>Books</h2>${langChips(ws)}${filterBar(ws, { subjects: false, traditions: false, press: false, q: false })}${grid(ws)}${emptyMsg()}</div></section>`,
   });
 }
 
-// books
+// ---------- books ----------
+const jsonLdEd = (w, e) => ({ '@type': 'Book', name: e.title ?? w.title, bookFormat: { paperback: 'Paperback', hardcover: 'Hardcover', ebook: 'EBook', audiobook: 'AudiobookFormat' }[e.format], isbn: e.isbn13 || undefined, inLanguage: e.language, translator: e.translator ? { '@type': 'Person', name: e.translator } : undefined, publisher: e.publisher ? { '@type': 'Organization', name: e.publisher } : undefined });
 for (const w of cat.works) {
   const related = cat.works.filter((o) => o.id !== w.id && o.subjects.some((s) => w.subjects.includes(s))).slice(0, 4);
-  const fmts = [...new Set(w.editions.map((e) => e.format))];
+  const groups = [...new Set(w.editions.map((e) => e.language))].map((c) => [c, w.editions.filter((e) => e.language === c).sort((a, b) => FORMAT_ORDER.indexOf(a.format) - FORMAT_ORDER.indexOf(b.format))]);
+  const multi = groups.length > 1;
+  const markets = new Set();
+  const edHtml = (e) => {
+    const rs = retailers(w, e); rs.forEach((r) => r.market && markets.add(r.market));
+    const L = LANG.get(e.language);
+    return `<section class="edition" id="ed-${esc(e.id ?? e.isbn13 ?? e.asin ?? '')}" aria-label="${esc(tax.formats[e.format])} edition, ${esc(L?.name ?? e.language)}" lang="${e.language}" dir="${L?.dir ?? 'ltr'}">
+    <h4><span data-i18n="fmt_${e.format}">${esc(tax.formats[e.format])}</span> · <span lang="en" dir="ltr">${esc(L?.endonym ?? e.language)}${L && L.endonym !== L.name ? ` (${esc(L.name)})` : ''}</span></h4>
+    ${e.title ? `<p class="ed-title">${esc(e.title)}${e.subtitle ? `: <em>${esc(e.subtitle)}</em>` : ''}</p>` : ''}
+    <dl lang="en" dir="ltr">${e.translator ? `<dt data-i18n="l_translator">Translator</dt><dd>${esc(e.translator)}</dd>` : ''}${e.publisher ? `<dt data-i18n="l_publisher">Publisher</dt><dd>${esc(e.publisher)}</dd>` : ''}${e.year ? `<dt data-i18n="l_year">Year</dt><dd>${e.year}</dd>` : ''}${e.isbn13 ? `<dt>ISBN-13</dt><dd>${e.isbn13}</dd>` : ''}${e.isbn10 ? `<dt>ISBN-10</dt><dd>${e.isbn10}</dd>` : ''}${e.asin ? `<dt>ASIN</dt><dd>${e.asin}</dd>` : ''}${e.alsoLanguages?.length ? `<dt>Also in</dt><dd>${e.alsoLanguages.map((c) => esc(LANG.get(c)?.name ?? c)).join(', ')}</dd>` : ''}</dl>
+    ${e.note ? `<p class="note-sm" lang="en" dir="ltr">${esc(e.note)}</p>` : ''}
+    ${e.needsSecondSource ? '<p class="note-sm flag" lang="en" dir="ltr">Identifier reported by a single source; awaiting corroboration.</p>' : ''}
+    <ul class="buy" lang="en" dir="ltr">${rs.some((r) => !r.library) ? '' : '<li class="status">No retailer link verified yet.</li>'}${rs.map((r) => `<li><a class="${r.affiliate ? 'btn' : 'btn btn-ghost'}" href="${esc(r.url)}" target="_blank" rel="${r.affiliate ? 'sponsored ' : ''}noopener noreferrer">${r.labelIsHtml ? r.label : esc(r.label)}<span class="sr"> (opens in a new tab)</span></a><span class="status">${esc(r.status)}</span></li>`).join('') || '<li class="status">No retailer link verified yet.</li>'}</ul>
+  </section>`;
+  };
+  const groupIds = new Set(groups.map(([c]) => c));
+  // secondary languages of bilingual editions (alsoLanguages) get their own anchors so card links like #lang-sa resolve
+  const aliasAnchors = (eds) => [...new Set(eds.flatMap((e) => e.alsoLanguages ?? []))].filter((c) => !groupIds.has(c)).map((c) => `<span id="lang-${c}"></span>`).join('');
+  const editionsHtml = multi
+    ? groups.map(([c, eds]) => `<div class="lang-group" id="lang-${c}">${aliasAnchors(eds)}<h3 class="lg-h"><span lang="${c}" dir="${LANG.get(c)?.dir ?? 'ltr'}">${esc(LANG.get(c)?.endonym ?? c)}</span> <small>${esc(LANG.get(c)?.name ?? c)}</small></h3><div class="editions">${eds.map(edHtml).join('')}</div></div>`).join('')
+    : `<div class="lang-group" id="lang-${groups[0][0]}">${aliasAnchors(groups[0][1])}<div class="editions">${groups[0][1].map(edHtml).join('')}</div></div>`;
+  const edSources = w.editions.filter((e) => e.sources?.length);
   page(`books/${w.slug}/index.html`, {
     title: w.title + (w.subtitle ? `: ${w.subtitle}` : ''), desc: w.description.split('. ')[0] + '.', crumbs: [['All books', 'books/'], [w.title]],
-    jsonld: { '@context': 'https://schema.org', '@type': 'Book', name: w.title, author: w.authors.map((n) => ({ '@type': 'Person', name: n })), inLanguage: 'en', workExample: w.editions.map((e) => ({ '@type': 'Book', bookFormat: { paperback: 'Paperback', hardcover: 'Hardcover', ebook: 'EBook', audiobook: 'AudiobookFormat' }[e.format], isbn: e.isbn13 || undefined, inLanguage: e.language, publisher: e.publisher ? { '@type': 'Organization', name: e.publisher } : undefined })) },
+    jsonld: { '@context': 'https://schema.org', '@type': 'Book', name: w.title, author: w.authors.map((n) => ({ '@type': 'Person', name: n })), inLanguage: [...new Set(w.editions.map((e) => e.language))], workExample: w.editions.map((e) => jsonLdEd(w, e)) },
     body: () => `<article class="band"><div class="wrap book">
   <div class="book-cover">${cover(w, true)}</div>
   <div class="book-main">
     ${w.press ? '<span class="badge badge-fmp">Forbidden Mantra Press</span>' : ''}
     <h1>${esc(w.title)}</h1>${w.subtitle ? `<p class="subtitle">${esc(w.subtitle)}</p>` : ''}
     <p class="byline">by ${authorLinks(w)}</p>
-    <p class="meta-row"><span>${tax.levels[w.level]}</span>${(w.tradition ?? []).map((t) => `<a class="tag" href="${href(`traditions/${t}/`)}">${esc(trad.get(t).name)}</a>`).join('')}</p>
+    <p class="meta-row"><span>${esc(tax.levels[w.level])}</span>${(w.tradition ?? []).map((t) => `<a class="tag" href="${href(`traditions/${t}/`)}">${esc(trad.get(t).name)}</a>`).join('')}</p>
+    ${multi ? `<p class="avail" aria-label="Available languages"><span data-i18n="f_language">${esc(en.f_language)}</span>: ${groups.map(([c]) => `<a class="tag" href="#lang-${c}" lang="${c}">${esc(LANG.get(c)?.endonym ?? c)}</a>`).join('')}</p>` : ''}
     <p class="desc">${esc(w.description)}</p>
     ${w.status === 'owner-listed' ? `<p class="note">Edition details for this title are being confirmed with the publisher. Retailer links marked “search” will be replaced by edition-specific links.</p>` : ''}
     ${(w.claims ?? []).filter((c) => c.display).map((c) => `<p class="claim"><strong>Historical note:</strong> ${esc(c.text)}. <span>Per publisher and bookseller listings; not a current ranking.</span></p>`).join('')}
-    <h2>Subjects</h2>
+    <h2 data-i18n="h_subjects">${esc(en.h_subjects)}</h2>
     <ul class="chips">${w.subjects.map((s) => `<li><a href="${href(`topics/${s}/`)}">${esc(dept.get(s).name)}</a></li>`).join('')}</ul>
   </div>
 </div>
 <div class="wrap">
-  <h2>Editions</h2>
-  <p class="note-sm">Editions of the same work are grouped here. Each has its own identifier and retailer destination.</p>
-  <div class="editions">${w.editions.map((e) => `<section class="edition" aria-label="${esc(tax.formats[e.format])} edition">
-    <h3>${esc(tax.formats[e.format])} · ${esc(tax.languages[e.language])}</h3>
-    <dl>${e.publisher ? `<dt>Publisher</dt><dd>${esc(e.publisher)}</dd>` : ''}${e.year ? `<dt>Year</dt><dd>${e.year}</dd>` : ''}${e.isbn13 ? `<dt>ISBN-13</dt><dd>${e.isbn13}</dd>` : ''}${e.isbn10 ? `<dt>ISBN-10</dt><dd>${e.isbn10}</dd>` : ''}${e.asin ? `<dt>ASIN</dt><dd>${e.asin}</dd>` : ''}</dl>
-    ${e.note ? `<p class="note-sm">${esc(e.note)}</p>` : ''}
-    ${e.needsSecondSource ? '<p class="note-sm flag">Identifier reported by a single source; awaiting corroboration.</p>' : ''}
-    <ul class="buy">${retailers(w, e).map((r) => `<li><a class="${r.affiliate ? 'btn' : 'btn btn-ghost'}" href="${esc(r.url)}" target="_blank" rel="${r.affiliate ? 'sponsored ' : ''}noopener noreferrer">${esc(r.label)}<span class="sr"> (opens in a new tab)</span></a><span class="status">${esc(r.status)}</span></li>`).join('') || '<li class="status">No retailer link verified yet.</li>'}</ul>
-  </section>`).join('')}</div>
+  <h2 data-i18n="h_editions">${esc(en.h_editions)}</h2>
+  <p class="note-sm">Editions of the same work are grouped here${multi ? ', by the language each is published in' : ''}. Each has its own identifier and retailer destination.</p>
+  ${editionsHtml}
   <p class="note-sm">Prices, availability, ratings and cover images are not shown: they appear only through a permitted, maintained source, and none is connected to this preview yet.</p>
-  <details class="sources"><summary>Sources and verification</summary><ul>${w.sources.map((s) => `<li>${/^https?:/.test(s.url) ? `<a href="${esc(s.url)}" rel="noopener noreferrer">${esc(s.label)}</a>` : esc(s.label)}, supports ${esc(s.supports)}; accessed ${s.accessed}.</li>`).join('')}</ul></details>
-  <p class="disclosure sm">${esc(cfg.disclosure)}</p>
-  ${related.length ? `<h2>Related books</h2>${grid(related, { filterable: false })}` : ''}
+  <details class="sources"><summary data-i18n="h_sources">${esc(en.h_sources)}</summary><ul>${w.sources.map((s) => `<li>${/^https?:/.test(s.url) ? `<a href="${esc(s.url)}" rel="noopener noreferrer">${esc(s.label)}</a>` : esc(s.label)}, supports ${esc(s.supports)}; accessed ${s.accessed}.</li>`).join('')}${edSources.flatMap((e) => e.sources.map((s) => `<li>${esc(LANG.get(e.language)?.name ?? e.language)} ${esc(tax.formats[e.format].toLowerCase())} edition: ${/^https?:/.test(s.url) ? `<a href="${esc(s.url)}" rel="noopener noreferrer">${esc(s.label)}</a>` : esc(s.label)}, supports ${esc(s.supports ?? 'edition details')}; accessed ${s.accessed}.</li>`)).join('')}</ul></details>
+  <p class="disclosure sm" lang="en">${esc(cfg.disclosure)}</p>
+  ${[...markets].filter((m) => AFF.marketplaces[m]?.disclosure).map((m) => `<p class="disclosure sm" lang="en">${esc(AFF.marketplaces[m].disclosure)}</p>`).join('')}
+  ${related.length ? `<h2 data-i18n="h_related">${esc(en.h_related)}</h2>${grid(related, { filterable: false })}` : ''}
 </div></article>`,
   });
 }
 
-// press
+// ---------- press ----------
 page('press/index.html', {
   title: 'Forbidden Mantra Press', current: 'press/', crumbs: [['Forbidden Mantra Press']], desc: 'Books from Forbidden Mantra Press.',
   body: () => `<section class="hero hero-sm"><div class="wrap"><p class="eyebrow">Our imprint</p><h1>Forbidden Mantra Press</h1><p class="lede">Sacred texts and practice guides: the Forbidden Mantra Series on Sanskrit mantras, Nag Hammadi and Ethiopian texts, Hindu epic material, and internal-energy cultivation.</p></div></section>
 <section class="band"><div class="wrap">
-  ${filterBar({ press: false }, { q: false })}${grid(fmpWorks)}
-  <p class="empty" hidden data-empty>No books match those filters.</p>
-  <div class="note"><p><strong>Catalogue status.</strong> Amazon lists the Forbidden Mantra Series as 41 books; ${fmpWorks.length} titles are published here so far. The remaining titles, additional formats and the Spanish and German editions are waiting on an export of the Amazon KDP/Author Central catalogue so that each edition gets its own verified link.</p></div>
+  ${langChips(fmpWorks)}${filterBar(fmpWorks, { press: false, q: false })}${grid(fmpWorks)}
+  ${emptyMsg()}
+  <div class="note"><p><strong>Catalogue status.</strong> Amazon lists the Forbidden Mantra Series as 41 books; ${fmpWorks.length} titles are published here so far. The remaining titles, additional formats and the Spanish and German editions that have been reported are waiting on an export of the Amazon KDP/Author Central catalogue so that each edition gets its own verified link. Reported editions are not listed as available until verified.</p></div>
   <p><a class="btn btn-ghost" href="${esc(cfg.affiliate.legacyStoreLink)}" target="_blank" rel="sponsored noopener noreferrer">Visit our Amazon storefront<span class="sr"> (opens in a new tab)</span></a> <span class="status">Existing store link, kept until edition links are complete.</span></p>
 </div></section>`,
 });
 
-// paths + collections
+// ---------- paths + collections ----------
 page('paths/index.html', {
   title: 'Reading paths', current: 'paths/', crumbs: [['Reading paths']], desc: 'Beginner reading paths.',
-  body: () => `<section class="band"><div class="wrap"><h1>Beginner reading paths</h1><p class="lede-sm">Short sequences that tell you what to read first and why. Paths grow as more titles pass verification.</p><div class="paths">${coll.paths.map((p) => `<a class="path" href="${href(`paths/${p.id}/`)}"><p class="eyebrow">${esc(p.audience)}</p><h3>${esc(p.title)}</h3><p>${esc(p.blurb)}</p><span class="hub-n">${fmt(p.steps.length, 'book', 'books')}</span></a>`).join('')}</div></div></section>`,
+  body: () => `<section class="band"><div class="wrap"><h1 data-i18n="nav_paths">${esc(en.nav_paths)}</h1><p class="lede-sm">Short sequences that tell you what to read first and why. Paths grow as more titles pass verification.</p><div class="paths">${coll.paths.map((p) => `<a class="path" href="${href(`paths/${p.id}/`)}"><p class="eyebrow">${esc(p.audience)}</p><h3>${esc(p.title)}</h3><p>${esc(p.blurb)}</p><span class="hub-n">${fmt(p.steps.length, 'book', 'books')}</span></a>`).join('')}</div></div></section>`,
 });
 for (const p of coll.paths) page(`paths/${p.id}/index.html`, {
   title: p.title, desc: p.blurb, crumbs: [['Reading paths', 'paths/'], [p.title]],
@@ -335,31 +476,34 @@ for (const p of coll.paths) page(`paths/${p.id}/index.html`, {
 });
 page('collections/index.html', {
   title: 'Collections', current: 'collections/', crumbs: [['Collections']], desc: 'Curated collections.',
-  body: () => `<section class="band"><div class="wrap"><h1>Curated collections</h1><div class="paths">${coll.collections.map((c) => `<a class="path" href="${href(`collections/${c.id}/`)}"><h3>${esc(c.title)}</h3><p>${esc(c.blurb)}</p><span class="hub-n">${fmt(c.works.length, 'book', 'books')}</span></a>`).join('')}</div></div></section>`,
+  body: () => `<section class="band"><div class="wrap"><h1 data-i18n="nav_collections">${esc(en.nav_collections)}</h1><div class="paths">${coll.collections.map((c) => `<a class="path" href="${href(`collections/${c.id}/`)}"><h3>${esc(c.title)}</h3><p>${esc(c.blurb)}</p><span class="hub-n">${fmt(c.works.length, 'book', 'books')}</span></a>`).join('')}</div></div></section>`,
 });
-for (const c of coll.collections) page(`collections/${c.id}/index.html`, {
-  title: c.title, desc: c.blurb, crumbs: [['Collections', 'collections/'], [c.title]],
-  body: () => `<section class="band"><div class="wrap"><h1>${esc(c.title)}</h1><p class="lede-sm">${esc(c.blurb)}</p>${grid(c.works.map((id) => workById.get(id)), { filterable: false })}</div></section>`,
-});
+for (const c of coll.collections) {
+  const ws = c.works.map((id) => workById.get(id));
+  page(`collections/${c.id}/index.html`, {
+    title: c.title, desc: c.blurb, crumbs: [['Collections', 'collections/'], [c.title]],
+    body: () => `<section class="band"><div class="wrap"><h1>${esc(c.title)}</h1><p class="lede-sm">${esc(c.blurb)}</p>${langChips(ws)}${filterBar(ws, { subjects: false, traditions: false, press: false, q: false })}${grid(ws)}${emptyMsg()}</div></section>`,
+  });
+}
 
-// about
+// ---------- about ----------
 page('about/affiliate-disclosure/index.html', {
   title: 'Affiliate disclosure', crumbs: [['Affiliate disclosure']], desc: 'How we use affiliate links.',
-  body: () => `<section class="band"><div class="wrap narrow prose"><h1>Affiliate disclosure</h1><p>${esc(cfg.disclosure)}</p><p>Buttons marked “Amazon” lead to Amazon.com. When we have an Amazon Associates tracking ID configured, those links include it, and we earn a small commission on qualifying purchases at no cost to you. Links to library lookups are non-commercial.</p><p>We do not show Amazon prices, availability or ratings unless they come through Amazon’s permitted programmes, and then only with the date and time they were retrieved.</p></div></section>`,
+  body: () => `<section class="band"><div class="wrap narrow prose" lang="en"><h1>Affiliate disclosure</h1><p>${esc(cfg.disclosure)}</p><p>Buttons marked “Amazon” lead to an Amazon store. When we have an Amazon Associates tracking ID configured for that store’s marketplace, the link includes it, and we earn a small commission on qualifying purchases at no cost to you. Tracking IDs are specific to each marketplace, so a link to Amazon.de only earns commission when an Amazon.de tracking ID is set. Links to library lookups are non-commercial.</p><p>We do not show Amazon prices, availability or ratings unless they come through Amazon’s permitted programmes, and then only with the date and time they were retrieved. The disclosure appears in English on every page; where an Amazon marketplace requires specific local wording, we add it.</p></div></section>`,
 });
 page('about/catalogue-standards/index.html', {
   title: 'How we verify books', crumbs: [['How we verify books']], desc: 'Catalogue standards.',
-  body: () => `<section class="band"><div class="wrap narrow prose"><h1>How we verify books</h1>
+  body: () => `<section class="band"><div class="wrap narrow prose" lang="en"><h1>How we verify books</h1>
 <p>A book appears in the catalogue only when its title, author, edition and identifier agree across at least one dated source, and its record keeps that source (see “Sources and verification” on each book page).</p>
-<ul><li><strong>Editions are grouped under one work.</strong> Paperback, hardcover, e-book, audiobook and different language editions each keep their own identifier and retailer link.</li>
+<ul><li><strong>Editions of one work are grouped.</strong> Paperback, hardcover, e-book, audiobook and different language editions each keep their own identifier and retailer link.</li>
+<li><strong>Languages are never inferred.</strong> A language counts as available only when a specific edition published in that language has been verified, with its own source. We do not assume a translation exists because the work is popular, and we do not list machine translations as editions.</li>
+<li><strong>Website language is separate from book language.</strong> The website language only changes menus, labels and buttons; book descriptions stay in English. The book language is the language an edition is published in.</li>
 <li><strong>Uncertain records stay unpublished.</strong> Records with a failed ISBN checksum, a missing identifier or conflicting details go to a review queue.</li>
 <li><strong>Descriptions are our own.</strong> We write original summaries and do not copy competing bookstores.</li>
-<li><strong>No unverified claims.</strong> Bestseller badges, ratings and prices appear only when drawn from a source we are permitted to use. Historical honours (such as awards) are labelled as historical and are never presented as current rankings.</li>
+<li><strong>No unverified claims.</strong> Bestseller badges, ratings and prices appear only when drawn from a source we are permitted to use. Historical honours are labelled as historical and are never presented as current rankings.</li>
 <li><strong>Traditions are kept distinct.</strong> Books are placed under the tradition they actually teach.</li></ul></div></section>`,
 });
 
-// machine-readable index for the client (also useful for debugging)
-write('assets/catalogue.json', JSON.stringify({ generated: cat.generated, works: cat.works.length }));
-
+write('assets/catalogue.json', JSON.stringify({ generated: cat.generated, works: cat.works.length, editions: totalEditions, languages: Object.fromEntries(stocked.map((l) => [l.code, { works: nWorks(l.code), editions: nEds(l.code) }])) }));
 const nPages = (function count(d) { return fs.readdirSync(d, { withFileTypes: true }).reduce((n, e) => n + (e.isDirectory() ? count(path.join(d, e.name)) : e.name.endsWith('.html') ? 1 : 0), 0); })(OUT);
-console.log(`built ${nPages} pages -> site/  (works=${cat.works.length}, authors=${cat.authors.length}, tracking ID ${TAG ? 'set' : 'NOT set'})`);
+console.log(`built ${nPages} pages -> ${path.relative(ROOT, OUT)}/  (works=${cat.works.length}, editions=${totalEditions}, authors=${cat.authors.length}, languages with editions=${stocked.length}/${langReg.languages.length}, ui locales=${uiLocales.join(',')}, tracking IDs set for: ${Object.entries(tagStatus).filter(([, v]) => v).map(([k]) => k).join(', ') || 'none'})`);

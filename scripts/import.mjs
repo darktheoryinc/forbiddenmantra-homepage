@@ -7,8 +7,12 @@
 //          data/staged.json          valid but not yet verified candidates (unpublished)
 //          data/error-queue.json     records rejected with reasons (fix the source, re-run)
 //          data/import-report.json   counts for the run
+//          data/staged-editions.json candidate translations/editions of published works (unpublished)
+//          data/edition-leads.json   reported-but-unverified editions (unpublished; never shown as stocked)
 // Rules  : a record is published only if it is in staging/verified, passes validation, and carries >=1 dated source.
+//          Non-English editions additionally need their own dated source per edition (no inferred translations).
 //          Anything uncertain stays unpublished.
+// Env    : FM_STAGING (default staging) and FM_DATA (output dir, default data) let tests run on fixtures.
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -17,7 +21,13 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const rd = (p) => JSON.parse(fs.readFileSync(path.join(ROOT, p), 'utf8'));
 const tax = rd('data/taxonomy.json');
 const bios = rd('data/author-bios.json');
-const TODAY = rd('config/site.json').catalogueAsOf;
+const cfg = rd('config/site.json');
+const TODAY = cfg.catalogueAsOf;
+const STAGING = process.env.FM_STAGING ?? 'staging';
+const DATA = process.env.FM_DATA ?? 'data';
+const langReg = rd('data/languages.json');
+const LANGS = new Set(langReg.languages.map((l) => l.code));
+const MARKETS = new Set(Object.keys(cfg.affiliate.marketplaces));
 
 const deptIds = new Set(tax.departments.map((d) => d.id));
 const tradIds = new Set(tax.traditions.map((t) => t.id));
@@ -55,10 +65,14 @@ function validateWork(w, { requireSources, allowNoId = false }) {
   if (!w.editions?.length) r.push('no editions');
   for (const e of w.editions ?? []) {
     if (!tax.formats[e.format]) r.push(`bad format "${e.format}"`);
-    if (!tax.languages[e.language]) r.push(`bad language "${e.language}"`);
+    if (!LANGS.has(e.language)) r.push(`unknown language code "${e.language}" (add it to data/languages.json)`);
+    for (const x of e.alsoLanguages ?? []) if (!LANGS.has(x)) r.push(`unknown alsoLanguages code "${x}"`);
+    if (e.language !== 'en' && !(e.sources?.length && e.sources.every((x) => x.url && x.accessed))) r.push(`${e.language} edition (${e.format}) needs its own dated source; translated editions are never inferred from the English work`);
+    for (const rt of e.retailers ?? []) if (rt.retailer === 'amazon' && rt.marketplace && !MARKETS.has(rt.marketplace)) r.push(`unknown Amazon marketplace "${rt.marketplace}" (add it to config/site.json)`);
     if (e.isbn13 && !isbn13Valid(e.isbn13)) r.push(`ISBN-13 checksum fails: ${e.isbn13}`);
     if (!allowNoId && !e.isbn13 && !e.asin && !(e.retailers?.length)) r.push(`edition (${e.format}) has no identifier (ISBN/ASIN)`);
   }
+  if (w.originalLanguage && !LANGS.has(w.originalLanguage)) r.push(`unknown originalLanguage "${w.originalLanguage}"`);
   if (requireSources && !(w.sources?.length && w.sources.every((s) => s.url && s.accessed))) r.push('missing dated source/provenance');
   return r;
 }
@@ -78,17 +92,19 @@ function addWork(w, origin) {
   return true;
 }
 
-const verifiedDir = path.join(ROOT, 'staging/verified');
+const verifiedDir = path.join(ROOT, STAGING, 'verified');
 let nVerifiedIn = 0;
 for (const f of fs.readdirSync(verifiedDir).filter((x) => x.endsWith('.json')).sort()) {
-  const doc = rd(`staging/verified/${f}`);
+  const doc = rd(`${STAGING}/verified/${f}`);
   for (const raw of doc.works) {
     nVerifiedIn++;
-    const w = { ...raw, _origin: `staging/verified/${f}` };
+    const w = { ...raw, _origin: `${STAGING}/verified/${f}` };
     const ownerListed = w.status === 'owner-listed';
     const problems = validateWork(w, { requireSources: true, allowNoId: ownerListed });
     if (problems.length) { queue(w, 'validate', problems); continue; }
     if (ownerListed) for (const e of w.editions) if (!e.isbn13 && !e.asin) queue({ ...w, isbn13: null }, 'identifiers', [`owner-listed ${e.format}${e.language !== 'en' ? ' (' + e.language + ')' : ''} edition has no ASIN/ISBN yet; retailer link not verified`], 'warning');
+    const ids = w.editions.map((e) => e.isbn13 ?? e.asin).filter(Boolean);
+    if (new Set(ids).size !== ids.length) { queue(w, 'validate', ['two editions of this work share an identifier']); continue; }
     w.editions = w.editions.map((e, i) => ({ ...e, id: `${e.isbn13 ?? e.asin ?? `ed${i + 1}`}`, isbn10: e.isbn13 ? isbn13to10(e.isbn13) : null }));
     addWork(w, w._origin);
   }
@@ -106,11 +122,30 @@ function parsePSV(text) {
   });
 }
 const staged = [];
+const stagedEditions = [];
 const seenStaged = new Map();
 let nPsv = 0;
-for (const f of fs.readdirSync(path.join(ROOT, 'staging')).filter((x) => x.endsWith('.psv')).sort()) {
-  for (const row of parsePSV(fs.readFileSync(path.join(ROOT, 'staging', f), 'utf8'))) {
+for (const f of fs.readdirSync(path.join(ROOT, STAGING)).filter((x) => x.endsWith('.psv')).sort()) {
+  for (const row of parsePSV(fs.readFileSync(path.join(ROOT, STAGING, f), 'utf8'))) {
     nPsv++;
+    // Optional columns: translationOf (slug of a published work), editionTitle, translator. A row naming translationOf is a
+    // candidate EDITION of that work, never a new work; it is staged for verification, not published.
+    if (row.translationOf) {
+      const parent = [...works.values()].find((x) => slugify(x.title) === row.translationOf);
+      const e = { language: row.language, format: row.format, title: row.editionTitle || null, translator: row.translator || null, publisher: row.publisher, year: row.year ? +row.year : null, isbn13: row.isbn13 || null, sources: [{ label: 'Candidate row (unverified)', url: `${STAGING}/${f}#row${row._row}`, accessed: TODAY, supports: 'candidate only' }] };
+      const rec = { title: row.editionTitle || row.title, authors: parent?.authors ?? [], isbn13: e.isbn13, _origin: `${STAGING}/${f}:${row._row}` };
+      const problems = [];
+      if (!parent) problems.push(`translationOf "${row.translationOf}" is not a published work`);
+      if (!LANGS.has(e.language)) problems.push(`unknown language code "${e.language}"`);
+      if (!tax.formats[e.format]) problems.push(`bad format "${e.format}"`);
+      if (e.isbn13 && !isbn13Valid(e.isbn13)) problems.push(`ISBN-13 checksum fails: ${e.isbn13}`);
+      if (!e.isbn13) problems.push('translated edition needs an ISBN-13 (or ASIN) before it can be staged');
+      if (e.isbn13 && [...works.values()].some((x) => x.editions.some((y) => y.isbn13 === e.isbn13))) problems.push('ISBN already published');
+      const dupEd = parent?.editions.find((x) => x.language === e.language && x.format === e.format);
+      if (!problems.length && dupEd) queue(rec, 'dedup', [`work already has a published ${e.language} ${e.format} edition (${dupEd.isbn13 ?? dupEd.asin ?? 'no id'}); this is a possible duplicate or a new printing to review`], 'duplicate');
+      else if (problems.length) queue(rec, 'validate', problems); else stagedEditions.push({ workId: row.translationOf, edition: e, status: 'staged-needs-verification' });
+      continue;
+    }
     const w = {
       title: row.title, subtitle: row.subtitle, authors: row.authors.split(';').map((a) => a.trim()).filter(Boolean),
       subjects: row.subjects.split(';').filter(Boolean), tradition: row.tradition ? [row.tradition] : [], level: row.level,
@@ -163,18 +198,43 @@ function sortName(n) {
 }
 const authors = [...authorMap.values()].sort((a, b) => a.sortName.localeCompare(b.sortName, 'en'));
 
+// ---------- edition leads (reported, unverified; never published) ----------
+const leadsFile = path.join(ROOT, STAGING, 'edition-leads.json');
+const leads = [];
+if (fs.existsSync(leadsFile)) for (const l of JSON.parse(fs.readFileSync(leadsFile, 'utf8')).leads) {
+  const probs = [];
+  if (!finalWorks.some((w) => w.id === l.workId)) probs.push(`lead references unknown work "${l.workId}"`);
+  if (!LANGS.has(l.language)) probs.push(`unknown language "${l.language}"`);
+  if (!l.source?.url || !l.source?.accessed) probs.push('lead has no dated source');
+  if (probs.length) queue({ title: `lead: ${l.workId}`, authors: [], _origin: leadsFile }, 'leads', probs); else leads.push({ ...l, status: 'reported-unverified' });
+}
+
 const catalogue = { generated: TODAY, works: finalWorks, authors };
-fs.writeFileSync(path.join(ROOT, 'data/catalogue.json'), JSON.stringify(catalogue, null, 1));
-fs.writeFileSync(path.join(ROOT, 'data/staged.json'), JSON.stringify({ generated: TODAY, note: 'Valid candidates. NOT published: ISBNs/titles are unverified until corroborated by a dated source.', works: staged.map(({ _origin, ...r }) => ({ ...r, origin: _origin })) }, null, 1));
-fs.writeFileSync(path.join(ROOT, 'data/error-queue.json'), JSON.stringify({ generated: TODAY, items: errors }, null, 1));
+fs.writeFileSync(path.join(ROOT, DATA, 'catalogue.json'), JSON.stringify(catalogue, null, 1));
+fs.writeFileSync(path.join(ROOT, DATA, 'staged-editions.json'), JSON.stringify({ generated: TODAY, note: 'Candidate editions (translations/other formats) of published works. NOT published.', editions: stagedEditions }, null, 1));
+fs.writeFileSync(path.join(ROOT, DATA, 'edition-leads.json'), JSON.stringify({ generated: TODAY, note: 'Editions reported by a source but not verified. NOT published and NOT counted as stocked.', leads }, null, 1));
+fs.writeFileSync(path.join(ROOT, DATA, 'staged.json'), JSON.stringify({ generated: TODAY, note: 'Valid candidates. NOT published: ISBNs/titles are unverified until corroborated by a dated source.', works: staged.map(({ _origin, ...r }) => ({ ...r, origin: _origin })) }, null, 1));
+fs.writeFileSync(path.join(ROOT, DATA, 'error-queue.json'), JSON.stringify({ generated: TODAY, items: errors }, null, 1));
 
 const outsidePub = finalWorks.filter((w) => !w.press);
+const byLang = {};
+for (const w of finalWorks) for (const e of w.editions) for (const code of [e.language, ...(e.alsoLanguages ?? [])]) {
+  const b = (byLang[code] ??= { editions: 0, works: new Set() });
+  b.editions++; b.works.add(w.id);
+}
+const publishedByLanguage = Object.fromEntries(Object.entries(byLang).sort().map(([k, v]) => [k, { works: v.works.size, editions: v.editions }]));
+const leadsByLanguage = leads.reduce((a, l) => ((a[l.language] = (a[l.language] ?? 0) + 1), a), {});
 const report = {
   generated: TODAY,
   input: { verifiedRecords: nVerifiedIn, candidateRows: nPsv },
   published: { works: finalWorks.length, editions: finalWorks.reduce((n, w) => n + w.editions.length, 0), outsideWorks: outsidePub.length, fmpWorks: finalWorks.length - outsidePub.length, authors: authors.length },
+  publishedByLanguage,
+  languagesRegistered: langReg.languages.length,
+  languagesWithVerifiedEditions: Object.keys(publishedByLanguage).length,
+  stagedEditions: stagedEditions.length,
+  editionLeads: { total: leads.length, byLanguage: leadsByLanguage, note: 'reported but unverified; not published, not counted as stocked' },
   staged: { works: staged.length, withIsbn: staged.filter((s) => s.editions[0].isbn13).length, missingIsbn: staged.filter((s) => !s.editions[0].isbn13).length },
   errorQueue: { total: errors.length, byStage: errors.reduce((a, e) => ((a[e.stage] = (a[e.stage] ?? 0) + 1), a), {}), bySeverity: errors.reduce((a, e) => ((a[e.severity] = (a[e.severity] ?? 0) + 1), a), {}) },
 };
-fs.writeFileSync(path.join(ROOT, 'data/import-report.json'), JSON.stringify(report, null, 2));
+fs.writeFileSync(path.join(ROOT, DATA, 'import-report.json'), JSON.stringify(report, null, 2));
 console.log(JSON.stringify(report, null, 2));

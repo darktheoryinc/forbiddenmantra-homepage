@@ -4,10 +4,119 @@
   "catalogueAsOf": "2026-10-26",
   "affiliate": {
     "program": "Amazon Associates",
-    "trackingId": null,
-    "marketplace": "amazon.com",
+    "defaultMarketplace": "amazon.com",
     "marketplaceVerified": false,
-    "note": "trackingId must be the Associates *tracking ID* (looks like name-20), NOT the Influencer storefront name. It is read from the AMAZON_TRACKING_ID environment variable at build time if set; never commit credentials.",
+    "note": "Tracking IDs are per marketplace and must be the Associates *tracking ID* (looks like name-20), NOT the Influencer storefront name. Whether this account is enrolled in each marketplace programme is unknown (enrolled:null) and must be confirmed in Associates Central. IDs are read at build time from AMAZON_TRACKING_ID_<SUFFIX> (e.g. AMAZON_TRACKING_ID_COM, _CO_UK, _DE, _FR); AMAZON_TRACKING_ID alone is treated as the amazon.com ID. Never commit credentials. `disclosure` overrides the default text for a marketplace where its programme requires specific local wording; null = use the default below until the correct wording is confirmed from that programme's agreement.",
+    "marketplaces": {
+      "amazon.com": {
+        "country": "US",
+        "trackingId": null,
+        "enrolled": null,
+        "disclosure": null
+      },
+      "amazon.co.uk": {
+        "country": "GB",
+        "trackingId": null,
+        "enrolled": null,
+        "disclosure": null
+      },
+      "amazon.ca": {
+        "country": "CA",
+        "trackingId": null,
+        "enrolled": null,
+        "disclosure": null
+      },
+      "amazon.com.au": {
+        "country": "AU",
+        "trackingId": null,
+        "enrolled": null,
+        "disclosure": null
+      },
+      "amazon.de": {
+        "country": "DE",
+        "trackingId": null,
+        "enrolled": null,
+        "disclosure": null
+      },
+      "amazon.fr": {
+        "country": "FR",
+        "trackingId": null,
+        "enrolled": null,
+        "disclosure": null
+      },
+      "amazon.it": {
+        "country": "IT",
+        "trackingId": null,
+        "enrolled": null,
+        "disclosure": null
+      },
+      "amazon.es": {
+        "country": "ES",
+        "trackingId": null,
+        "enrolled": null,
+        "disclosure": null
+      },
+      "amazon.nl": {
+        "country": "NL",
+        "trackingId": null,
+        "enrolled": null,
+        "disclosure": null
+      },
+      "amazon.se": {
+        "country": "SE",
+        "trackingId": null,
+        "enrolled": null,
+        "disclosure": null
+      },
+      "amazon.pl": {
+        "country": "PL",
+        "trackingId": null,
+        "enrolled": null,
+        "disclosure": null
+      },
+      "amazon.com.mx": {
+        "country": "MX",
+        "trackingId": null,
+        "enrolled": null,
+        "disclosure": null
+      },
+      "amazon.com.br": {
+        "country": "BR",
+        "trackingId": null,
+        "enrolled": null,
+        "disclosure": null
+      },
+      "amazon.co.jp": {
+        "country": "JP",
+        "trackingId": null,
+        "enrolled": null,
+        "disclosure": null
+      },
+      "amazon.in": {
+        "country": "IN",
+        "trackingId": null,
+        "enrolled": null,
+        "disclosure": null
+      },
+      "amazon.ae": {
+        "country": "AE",
+        "trackingId": null,
+        "enrolled": null,
+        "disclosure": null
+      },
+      "amazon.sa": {
+        "country": "SA",
+        "trackingId": null,
+        "enrolled": null,
+        "disclosure": null
+      },
+      "amazon.com.tr": {
+        "country": "TR",
+        "trackingId": null,
+        "enrolled": null,
+        "disclosure": null
+      }
+    },
     "legacyStoreLink": "https://amzn.to/4tX3ogd"
   },
   "disclosure": "As an Amazon Associate, Forbidden Mantra Press earns from qualifying purchases. Links marked “Amazon” may be affiliate links; buying through them costs you nothing extra."

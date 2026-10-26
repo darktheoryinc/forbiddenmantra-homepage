@@ -1,0 +1,8 @@
+{
+  "_doc": "Reported editions that are NOT verified: no ISBN/ASIN or retailer URL was seen. They are kept so nothing is lost, never published, and never counted as stocked. Promote a lead by adding a verified edition (with its own source) to the work in staging/verified/.",
+  "leads": [
+    {"workId":"om-namah-shivaya","language":"de","format":"ebook","note":"German Kindle edition reported in an Amazon.in Kindle listing summary; title, ASIN and marketplace not seen.","source":{"label":"Amazon.in Kindle listing summarised via web search","url":"https://www.amazon.in/Kindle-Store-Forbidden-Mantra-Press/s?rh=n:1571277031,p_27:Forbidden%2BMantra%2BPress","accessed":"2026-10-26"}},
+    {"workId":"om-namah-shivaya","language":"es","format":"ebook","note":"Spanish edition reported in search-result summaries; format, title and ASIN not seen.","source":{"label":"Amazon listing summarised via web search","url":"https://www.amazon.com/Books-Mantra-Press/s?rh=n%3A283155%2Cp_27%3AMantra%2BPress","accessed":"2026-10-26"}},
+    {"workId":"invoke-the-fierce","language":"es","format":"ebook","note":"Spanish edition reported in search-result summaries; title and ASIN not seen.","source":{"label":"Amazon listing summarised via web search","url":"https://www.amazon.com/Books-Mantra-Press/s?rh=n%3A283155%2Cp_27%3AMantra%2BPress","accessed":"2026-10-26"}}
+  ]
+}

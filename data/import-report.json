@@ -11,6 +11,23 @@
     "fmpWorks": 12,
     "authors": 13
   },
+  "publishedByLanguage": {
+    "en": {
+      "works": 23,
+      "editions": 31
+    }
+  },
+  "languagesRegistered": 39,
+  "languagesWithVerifiedEditions": 1,
+  "stagedEditions": 0,
+  "editionLeads": {
+    "total": 3,
+    "byLanguage": {
+      "de": 1,
+      "es": 2
+    },
+    "note": "reported but unverified; not published, not counted as stocked"
+  },
   "staged": {
     "works": 97,
     "withIsbn": 92,

@@ -38,54 +38,338 @@
     }
   ],
   "departments": [
-    {"id": "emotional-wellbeing", "name": "Emotional Wellbeing", "hubs": ["wellbeing-health"], "intro": "Books on grief, anxiety, trauma, self-compassion and the stress-illness connection. Some are clinical and some contemplative; the book pages say which, and none replaces professional care."},
-    {"id": "sleep-stress", "name": "Sleep & Stress", "hubs": ["wellbeing-health"], "intro": "Evidence-led guides to rest, recovery and the physiology of stress, plus contemplative approaches to calming the nervous system."},
-    {"id": "holistic-traditions", "name": "Holistic Traditions", "hubs": ["wellbeing-health"], "intro": "Traditional systems that treat body, mind and environment as one whole, such as Ayurveda, Chinese medicine and herbal lore. Entries describe what each tradition claims and are not medical advice."},
-    {"id": "mindfulness", "name": "Mindfulness", "hubs": ["meditation-yoga-mantra", "wellbeing-health"], "intro": "Attention training from secular stress-reduction courses to the Buddhist teachings they grew from. Look for the tradition label to see whether a book is clinical, devotional or both."},
-    {"id": "yoga", "name": "Yoga", "hubs": ["meditation-yoga-mantra"], "intro": "Postural yoga, the classical Yoga Sutras, and the wider philosophy behind them. Modern posture manuals and classical texts are separated so readers can choose by purpose."},
-    {"id": "sanskrit-mantras", "name": "Sanskrit & Mantras", "hubs": ["meditation-yoga-mantra"], "intro": "Guides to the sound, meaning and traditional use of Sanskrit mantras, including the Gayatri, Maha Mrityunjaya and Shakti mantras. Look for notes on pronunciation, lineage and whether initiation is traditionally expected."},
-    {"id": "hinduism", "name": "Hinduism", "hubs": ["religions-sacred-texts", "meditation-yoga-mantra"], "intro": "The Vedic, Upanishadic, epic and devotional literature of Hindu traditions, with accessible translations alongside scholarly introductions."},
-    {"id": "tantra", "name": "Tantra", "hubs": ["religions-sacred-texts", "meditation-yoga-mantra"], "intro": "Tantra is a family of Hindu and Buddhist ritual and contemplative traditions. It is often confused with modern Western 'neo-tantra', so each book is labelled with the approach it takes."},
-    {"id": "buddhism", "name": "Buddhism", "hubs": ["religions-sacred-texts"], "intro": "Theravada, Zen, Tibetan and other Buddhist schools, from foundational teachings to modern commentary. Schools are named so that different lineages are not blended."},
-    {"id": "taoism", "name": "Taoism", "hubs": ["religions-sacred-texts", "energy-inner-cultivation"], "intro": "Philosophical Taoism (Laozi, Zhuangzi), religious Taoism and internal alchemy. The Tao Te Ching and later cultivation manuals are different kinds of literature, and we shelve them accordingly."},
-    {"id": "qigong", "name": "Qigong", "hubs": ["energy-inner-cultivation", "wellbeing-health"], "intro": "Chinese energy-cultivation practices combining movement, breath and attention. Books vary from health-oriented routines to martial and spiritual lineages."},
-    {"id": "neigong", "name": "Neigong", "hubs": ["energy-inner-cultivation"], "intro": "Neigong (nei kung) means 'internal work': training the body's inner structure and energy, often in martial or Taoist-influenced contexts. It overlaps with qigong but is not identical to it."},
-    {"id": "mo-pai", "name": "Mo Pai", "hubs": ["energy-inner-cultivation"], "intro": "Mo Pai is a neigong lineage presented to English readers mainly through the Mo Pai Nei Kung books. Its lineage history comes from the authors' own accounts and has not been independently documented by academic sources."},
-    {"id": "comparative-religion", "name": "Comparative Religion", "hubs": ["religions-sacred-texts", "consciousness-myth-wisdom"], "intro": "Surveys and cross-tradition studies that explain how faiths differ as well as where they converge. A good place to begin if you have not chosen one tradition yet."},
-    {"id": "gnosticism", "name": "Gnosticism", "hubs": ["religions-sacred-texts", "occult-magick-paganism"], "intro": "The Nag Hammadi library and related early Christian-era texts that teach salvation through knowledge (gnosis). Gnosticism is distinct from Hermeticism, though both are often shelved together."},
-    {"id": "christian-mysticism", "name": "Christian Mysticism", "hubs": ["religions-sacred-texts"], "intro": "Contemplative writings from the Desert Fathers through medieval and Carmelite mystics. These are orthodox-tradition works and are not Gnostic."},
-    {"id": "hermeticism", "name": "Hermeticism", "hubs": ["occult-magick-paganism", "religions-sacred-texts"], "intro": "The Hermetica (late-antique Greek and Egyptian-influenced texts) and the traditions built on them. Modern books such as the Kybalion are part of the later reception, not the ancient corpus."},
-    {"id": "alchemy", "name": "Alchemy", "hubs": ["occult-magick-paganism"], "intro": "Practical, spiritual and psychological alchemy. Historical treatises, Taoist internal alchemy and Jungian readings are shelved separately because they answer different questions."},
-    {"id": "witchcraft", "name": "Witchcraft", "hubs": ["occult-magick-paganism"], "intro": "Historical witchcraft, folk magic and modern witchcraft practice. Historical studies and how-to guides are labelled so you know which you are reading."},
-    {"id": "spells", "name": "Spells & Folk Magic", "hubs": ["occult-magick-paganism"], "intro": "Spell collections, charms and reference works on magical practice. Entries describe what the author teaches; the catalogue makes no claims about efficacy."},
-    {"id": "wicca", "name": "Wicca", "hubs": ["occult-magick-paganism"], "intro": "Wicca is a modern initiatory and eclectic religion founded in the twentieth century. It is a specific religion within the broader pagan family, not a synonym for witchcraft or paganism."},
-    {"id": "paganism", "name": "Paganism", "hubs": ["occult-magick-paganism"], "intro": "Contemporary and reconstructionist pagan religions, including Druidry, Heathenry and goddess spirituality, as distinct from Wicca and from the ancient religions they draw on."},
-    {"id": "tarot", "name": "Tarot", "hubs": ["occult-magick-paganism", "consciousness-myth-wisdom"], "intro": "Tarot as symbolic language for reflection and divination. Beginner guides, deep card-by-card studies and history are kept apart."},
-    {"id": "astrology", "name": "Astrology", "hubs": ["occult-magick-paganism"], "intro": "Natal, psychological and traditional astrology. The catalogue reports each author's method and makes no scientific claims for astrology."},
-    {"id": "subtle-body", "name": "Subtle-Body Traditions", "hubs": ["energy-inner-cultivation", "meditation-yoga-mantra"], "intro": "Chakras, nadis, kundalini and related maps of subtle anatomy. These come from Indian yoga and tantra and are often retold in modern Western frameworks; we flag which is which."},
-    {"id": "dreams", "name": "Dreams", "hubs": ["consciousness-myth-wisdom", "wellbeing-health"], "intro": "Dream interpretation, lucid dreaming and contemplative dream yoga, from Freud and Jung to Tibetan Buddhist practice."},
-    {"id": "consciousness", "name": "Consciousness", "hubs": ["consciousness-myth-wisdom", "meditation-yoga-mantra"], "intro": "Non-dual teaching, psychology of religious experience and contemporary writing on awareness. Authors range from spiritual teachers to scientists."},
-    {"id": "ancient-texts", "name": "Ancient Texts", "hubs": ["consciousness-myth-wisdom", "religions-sacred-texts"], "intro": "Primary sources in translation: epics, scriptures, funerary and wisdom literature. Where we know the translator, we name them, because translation choices matter."},
-    {"id": "mythology", "name": "Mythology", "hubs": ["consciousness-myth-wisdom"], "intro": "Myth as story, symbol and comparative field. Classical, Norse, Mesopotamian, Indian and Mesoamerican traditions, with the scholars who interpret them."}
+    {
+      "id": "emotional-wellbeing",
+      "name": "Emotional Wellbeing",
+      "hubs": [
+        "wellbeing-health"
+      ],
+      "intro": "Books on grief, anxiety, trauma, self-compassion and the stress-illness connection. Some are clinical and some contemplative; the book pages say which, and none replaces professional care."
+    },
+    {
+      "id": "sleep-stress",
+      "name": "Sleep & Stress",
+      "hubs": [
+        "wellbeing-health"
+      ],
+      "intro": "Evidence-led guides to rest, recovery and the physiology of stress, plus contemplative approaches to calming the nervous system."
+    },
+    {
+      "id": "holistic-traditions",
+      "name": "Holistic Traditions",
+      "hubs": [
+        "wellbeing-health"
+      ],
+      "intro": "Traditional systems that treat body, mind and environment as one whole, such as Ayurveda, Chinese medicine and herbal lore. Entries describe what each tradition claims and are not medical advice."
+    },
+    {
+      "id": "mindfulness",
+      "name": "Mindfulness",
+      "hubs": [
+        "meditation-yoga-mantra",
+        "wellbeing-health"
+      ],
+      "intro": "Attention training from secular stress-reduction courses to the Buddhist teachings they grew from. Look for the tradition label to see whether a book is clinical, devotional or both."
+    },
+    {
+      "id": "yoga",
+      "name": "Yoga",
+      "hubs": [
+        "meditation-yoga-mantra"
+      ],
+      "intro": "Postural yoga, the classical Yoga Sutras, and the wider philosophy behind them. Modern posture manuals and classical texts are separated so readers can choose by purpose."
+    },
+    {
+      "id": "sanskrit-mantras",
+      "name": "Sanskrit & Mantras",
+      "hubs": [
+        "meditation-yoga-mantra"
+      ],
+      "intro": "Guides to the sound, meaning and traditional use of Sanskrit mantras, including the Gayatri, Maha Mrityunjaya and Shakti mantras. Look for notes on pronunciation, lineage and whether initiation is traditionally expected."
+    },
+    {
+      "id": "hinduism",
+      "name": "Hinduism",
+      "hubs": [
+        "religions-sacred-texts",
+        "meditation-yoga-mantra"
+      ],
+      "intro": "The Vedic, Upanishadic, epic and devotional literature of Hindu traditions, with accessible translations alongside scholarly introductions."
+    },
+    {
+      "id": "tantra",
+      "name": "Tantra",
+      "hubs": [
+        "religions-sacred-texts",
+        "meditation-yoga-mantra"
+      ],
+      "intro": "Tantra is a family of Hindu and Buddhist ritual and contemplative traditions. It is often confused with modern Western 'neo-tantra', so each book is labelled with the approach it takes."
+    },
+    {
+      "id": "buddhism",
+      "name": "Buddhism",
+      "hubs": [
+        "religions-sacred-texts"
+      ],
+      "intro": "Theravada, Zen, Tibetan and other Buddhist schools, from foundational teachings to modern commentary. Schools are named so that different lineages are not blended."
+    },
+    {
+      "id": "taoism",
+      "name": "Taoism",
+      "hubs": [
+        "religions-sacred-texts",
+        "energy-inner-cultivation"
+      ],
+      "intro": "Philosophical Taoism (Laozi, Zhuangzi), religious Taoism and internal alchemy. The Tao Te Ching and later cultivation manuals are different kinds of literature, and we shelve them accordingly."
+    },
+    {
+      "id": "qigong",
+      "name": "Qigong",
+      "hubs": [
+        "energy-inner-cultivation",
+        "wellbeing-health"
+      ],
+      "intro": "Chinese energy-cultivation practices combining movement, breath and attention. Books vary from health-oriented routines to martial and spiritual lineages."
+    },
+    {
+      "id": "neigong",
+      "name": "Neigong",
+      "hubs": [
+        "energy-inner-cultivation"
+      ],
+      "intro": "Neigong (nei kung) means 'internal work': training the body's inner structure and energy, often in martial or Taoist-influenced contexts. It overlaps with qigong but is not identical to it."
+    },
+    {
+      "id": "mo-pai",
+      "name": "Mo Pai",
+      "hubs": [
+        "energy-inner-cultivation"
+      ],
+      "intro": "Mo Pai is a neigong lineage presented to English readers mainly through the Mo Pai Nei Kung books. Its lineage history comes from the authors' own accounts and has not been independently documented by academic sources."
+    },
+    {
+      "id": "comparative-religion",
+      "name": "Comparative Religion",
+      "hubs": [
+        "religions-sacred-texts",
+        "consciousness-myth-wisdom"
+      ],
+      "intro": "Surveys and cross-tradition studies that explain how faiths differ as well as where they converge. A good place to begin if you have not chosen one tradition yet."
+    },
+    {
+      "id": "gnosticism",
+      "name": "Gnosticism",
+      "hubs": [
+        "religions-sacred-texts",
+        "occult-magick-paganism"
+      ],
+      "intro": "The Nag Hammadi library and related early Christian-era texts that teach salvation through knowledge (gnosis). Gnosticism is distinct from Hermeticism, though both are often shelved together."
+    },
+    {
+      "id": "christian-mysticism",
+      "name": "Christian Mysticism",
+      "hubs": [
+        "religions-sacred-texts"
+      ],
+      "intro": "Contemplative writings from the Desert Fathers through medieval and Carmelite mystics. These are orthodox-tradition works and are not Gnostic."
+    },
+    {
+      "id": "hermeticism",
+      "name": "Hermeticism",
+      "hubs": [
+        "occult-magick-paganism",
+        "religions-sacred-texts"
+      ],
+      "intro": "The Hermetica (late-antique Greek and Egyptian-influenced texts) and the traditions built on them. Modern books such as the Kybalion are part of the later reception, not the ancient corpus."
+    },
+    {
+      "id": "alchemy",
+      "name": "Alchemy",
+      "hubs": [
+        "occult-magick-paganism"
+      ],
+      "intro": "Practical, spiritual and psychological alchemy. Historical treatises, Taoist internal alchemy and Jungian readings are shelved separately because they answer different questions."
+    },
+    {
+      "id": "witchcraft",
+      "name": "Witchcraft",
+      "hubs": [
+        "occult-magick-paganism"
+      ],
+      "intro": "Historical witchcraft, folk magic and modern witchcraft practice. Historical studies and how-to guides are labelled so you know which you are reading."
+    },
+    {
+      "id": "spells",
+      "name": "Spells & Folk Magic",
+      "hubs": [
+        "occult-magick-paganism"
+      ],
+      "intro": "Spell collections, charms and reference works on magical practice. Entries describe what the author teaches; the catalogue makes no claims about efficacy."
+    },
+    {
+      "id": "wicca",
+      "name": "Wicca",
+      "hubs": [
+        "occult-magick-paganism"
+      ],
+      "intro": "Wicca is a modern initiatory and eclectic religion founded in the twentieth century. It is a specific religion within the broader pagan family, not a synonym for witchcraft or paganism."
+    },
+    {
+      "id": "paganism",
+      "name": "Paganism",
+      "hubs": [
+        "occult-magick-paganism"
+      ],
+      "intro": "Contemporary and reconstructionist pagan religions, including Druidry, Heathenry and goddess spirituality, as distinct from Wicca and from the ancient religions they draw on."
+    },
+    {
+      "id": "tarot",
+      "name": "Tarot",
+      "hubs": [
+        "occult-magick-paganism",
+        "consciousness-myth-wisdom"
+      ],
+      "intro": "Tarot as symbolic language for reflection and divination. Beginner guides, deep card-by-card studies and history are kept apart."
+    },
+    {
+      "id": "astrology",
+      "name": "Astrology",
+      "hubs": [
+        "occult-magick-paganism"
+      ],
+      "intro": "Natal, psychological and traditional astrology. The catalogue reports each author's method and makes no scientific claims for astrology."
+    },
+    {
+      "id": "subtle-body",
+      "name": "Subtle-Body Traditions",
+      "hubs": [
+        "energy-inner-cultivation",
+        "meditation-yoga-mantra"
+      ],
+      "intro": "Chakras, nadis, kundalini and related maps of subtle anatomy. These come from Indian yoga and tantra and are often retold in modern Western frameworks; we flag which is which."
+    },
+    {
+      "id": "dreams",
+      "name": "Dreams",
+      "hubs": [
+        "consciousness-myth-wisdom",
+        "wellbeing-health"
+      ],
+      "intro": "Dream interpretation, lucid dreaming and contemplative dream yoga, from Freud and Jung to Tibetan Buddhist practice."
+    },
+    {
+      "id": "consciousness",
+      "name": "Consciousness",
+      "hubs": [
+        "consciousness-myth-wisdom",
+        "meditation-yoga-mantra"
+      ],
+      "intro": "Non-dual teaching, psychology of religious experience and contemporary writing on awareness. Authors range from spiritual teachers to scientists."
+    },
+    {
+      "id": "ancient-texts",
+      "name": "Ancient Texts",
+      "hubs": [
+        "consciousness-myth-wisdom",
+        "religions-sacred-texts"
+      ],
+      "intro": "Primary sources in translation: epics, scriptures, funerary and wisdom literature. Where we know the translator, we name them, because translation choices matter."
+    },
+    {
+      "id": "mythology",
+      "name": "Mythology",
+      "hubs": [
+        "consciousness-myth-wisdom"
+      ],
+      "intro": "Myth as story, symbol and comparative field. Classical, Norse, Mesopotamian, Indian and Mesoamerican traditions, with the scholars who interpret them."
+    }
   ],
   "traditions": [
-    {"id": "hindu", "name": "Hindu / Vedic", "intro": "Traditions rooted in the Vedas, Upanishads, epics and devotional movements of the Indian subcontinent."},
-    {"id": "tantric", "name": "Tantric", "intro": "Ritual and contemplative systems found in both Hindu and Buddhist forms, distinct from modern Western neo-tantra."},
-    {"id": "buddhist", "name": "Buddhist", "intro": "Theravada, Mahayana (including Zen) and Vajrayana traditions. Individual books name their school."},
-    {"id": "taoist", "name": "Taoist", "intro": "Philosophical and religious Taoism, including internal alchemy. Modern Healing Tao and related books are presented as contemporary adaptations."},
-    {"id": "chinese-internal-arts", "name": "Chinese Internal Arts", "intro": "Qigong, neigong and related training lineages. Often Taoist-influenced but a separate category from Taoist religion."},
-    {"id": "gnostic", "name": "Gnostic", "intro": "Early Christian-era movements teaching salvation through direct knowledge, documented in the Nag Hammadi codices."},
-    {"id": "christian", "name": "Christian", "intro": "Christian devotional and mystical literature, including contemplative writers of the medieval and Carmelite traditions."},
-    {"id": "hermetic", "name": "Hermetic & Alchemical", "intro": "The Hermetica, medieval and Renaissance alchemy, and later Hermetic revivals."},
-    {"id": "wiccan", "name": "Wiccan", "intro": "Wicca and its offshoots, a twentieth-century religious movement."},
-    {"id": "pagan", "name": "Pagan & Folk Magic", "intro": "Contemporary paganism, folk magic, and witchcraft beyond Wicca."},
-    {"id": "western-esoteric", "name": "Western Esoteric", "intro": "Tarot, astrology, ceremonial magic and related Western occult currents."},
-    {"id": "mythic", "name": "Mythic & Ancient", "intro": "Texts and traditions of ancient civilisations: Mesopotamia, Egypt, Greece, Scandinavia and the Americas."},
-    {"id": "nondual", "name": "Non-dual & Contemplative", "intro": "Teachers presenting awareness practice outside any single institutional religion, or in a non-sectarian form."},
-    {"id": "secular", "name": "Secular / Clinical", "intro": "Psychology, medicine and science-led approaches to wellbeing."},
-    {"id": "comparative", "name": "Comparative", "intro": "Works that survey several traditions side by side."}
+    {
+      "id": "hindu",
+      "name": "Hindu / Vedic",
+      "intro": "Traditions rooted in the Vedas, Upanishads, epics and devotional movements of the Indian subcontinent."
+    },
+    {
+      "id": "tantric",
+      "name": "Tantric",
+      "intro": "Ritual and contemplative systems found in both Hindu and Buddhist forms, distinct from modern Western neo-tantra."
+    },
+    {
+      "id": "buddhist",
+      "name": "Buddhist",
+      "intro": "Theravada, Mahayana (including Zen) and Vajrayana traditions. Individual books name their school."
+    },
+    {
+      "id": "taoist",
+      "name": "Taoist",
+      "intro": "Philosophical and religious Taoism, including internal alchemy. Modern Healing Tao and related books are presented as contemporary adaptations."
+    },
+    {
+      "id": "chinese-internal-arts",
+      "name": "Chinese Internal Arts",
+      "intro": "Qigong, neigong and related training lineages. Often Taoist-influenced but a separate category from Taoist religion."
+    },
+    {
+      "id": "gnostic",
+      "name": "Gnostic",
+      "intro": "Early Christian-era movements teaching salvation through direct knowledge, documented in the Nag Hammadi codices."
+    },
+    {
+      "id": "christian",
+      "name": "Christian",
+      "intro": "Christian devotional and mystical literature, including contemplative writers of the medieval and Carmelite traditions."
+    },
+    {
+      "id": "hermetic",
+      "name": "Hermetic & Alchemical",
+      "intro": "The Hermetica, medieval and Renaissance alchemy, and later Hermetic revivals."
+    },
+    {
+      "id": "wiccan",
+      "name": "Wiccan",
+      "intro": "Wicca and its offshoots, a twentieth-century religious movement."
+    },
+    {
+      "id": "pagan",
+      "name": "Pagan & Folk Magic",
+      "intro": "Contemporary paganism, folk magic, and witchcraft beyond Wicca."
+    },
+    {
+      "id": "western-esoteric",
+      "name": "Western Esoteric",
+      "intro": "Tarot, astrology, ceremonial magic and related Western occult currents."
+    },
+    {
+      "id": "mythic",
+      "name": "Mythic & Ancient",
+      "intro": "Texts and traditions of ancient civilisations: Mesopotamia, Egypt, Greece, Scandinavia and the Americas."
+    },
+    {
+      "id": "nondual",
+      "name": "Non-dual & Contemplative",
+      "intro": "Teachers presenting awareness practice outside any single institutional religion, or in a non-sectarian form."
+    },
+    {
+      "id": "secular",
+      "name": "Secular / Clinical",
+      "intro": "Psychology, medicine and science-led approaches to wellbeing."
+    },
+    {
+      "id": "comparative",
+      "name": "Comparative",
+      "intro": "Works that survey several traditions side by side."
+    }
   ],
-  "languages": {"en": "English", "es": "Spanish", "de": "German"},
-  "formats": {"paperback": "Paperback", "hardcover": "Hardcover", "ebook": "E-book", "audiobook": "Audiobook"},
-  "levels": {"beginner": "Beginner", "intermediate": "Intermediate", "advanced": "Advanced / scholarly"}
+  "formats": {
+    "paperback": "Paperback",
+    "hardcover": "Hardcover",
+    "ebook": "E-book",
+    "audiobook": "Audiobook"
+  },
+  "levels": {
+    "beginner": "Beginner",
+    "intermediate": "Intermediate",
+    "advanced": "Advanced / scholarly"
+  }
 }

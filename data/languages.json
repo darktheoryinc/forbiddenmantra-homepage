@@ -1,0 +1,413 @@
+{
+ "_doc": "Language registry. A language listed here is selectable and has a page, but is shown as 'stocked' only when verified editions exist (counts are computed from data/catalogue.json). `interface`: complete|beta|none (website UI translation, see i18n/). `amazonMarketplaces` are CANDIDATES for future link-building, not statements of availability. To add a language: append an entry here; optionally add i18n/<code>.json.",
+ "groups": {
+  "major": "Major world languages",
+  "southasia": "South Asian languages",
+  "classical": "Classical and scriptural languages"
+ },
+ "languages": [
+  {
+   "code": "en",
+   "name": "English",
+   "endonym": "English",
+   "group": "major",
+   "dir": "ltr",
+   "interface": "complete",
+   "amazonMarketplaces": [
+    "amazon.com",
+    "amazon.co.uk",
+    "amazon.ca",
+    "amazon.com.au",
+    "amazon.in"
+   ]
+  },
+  {
+   "code": "es",
+   "name": "Spanish",
+   "endonym": "Español",
+   "group": "major",
+   "dir": "ltr",
+   "interface": "beta",
+   "amazonMarketplaces": [
+    "amazon.es",
+    "amazon.com.mx",
+    "amazon.com"
+   ]
+  },
+  {
+   "code": "fr",
+   "name": "French",
+   "endonym": "Français",
+   "group": "major",
+   "dir": "ltr",
+   "interface": "beta",
+   "amazonMarketplaces": [
+    "amazon.fr",
+    "amazon.ca"
+   ]
+  },
+  {
+   "code": "de",
+   "name": "German",
+   "endonym": "Deutsch",
+   "group": "major",
+   "dir": "ltr",
+   "interface": "beta",
+   "amazonMarketplaces": [
+    "amazon.de"
+   ]
+  },
+  {
+   "code": "pt",
+   "name": "Portuguese",
+   "endonym": "Português",
+   "group": "major",
+   "dir": "ltr",
+   "interface": "beta",
+   "amazonMarketplaces": [
+    "amazon.com.br"
+   ]
+  },
+  {
+   "code": "it",
+   "name": "Italian",
+   "endonym": "Italiano",
+   "group": "major",
+   "dir": "ltr",
+   "interface": "beta",
+   "amazonMarketplaces": [
+    "amazon.it"
+   ]
+  },
+  {
+   "code": "nl",
+   "name": "Dutch",
+   "endonym": "Nederlands",
+   "group": "major",
+   "dir": "ltr",
+   "interface": "none",
+   "amazonMarketplaces": [
+    "amazon.nl"
+   ]
+  },
+  {
+   "code": "ru",
+   "name": "Russian",
+   "endonym": "Русский",
+   "group": "major",
+   "dir": "ltr",
+   "interface": "none",
+   "amazonMarketplaces": []
+  },
+  {
+   "code": "zh",
+   "name": "Chinese",
+   "endonym": "中文",
+   "group": "major",
+   "dir": "ltr",
+   "interface": "none",
+   "amazonMarketplaces": []
+  },
+  {
+   "code": "ja",
+   "name": "Japanese",
+   "endonym": "日本語",
+   "group": "major",
+   "dir": "ltr",
+   "interface": "none",
+   "amazonMarketplaces": [
+    "amazon.co.jp"
+   ]
+  },
+  {
+   "code": "ko",
+   "name": "Korean",
+   "endonym": "한국어",
+   "group": "major",
+   "dir": "ltr",
+   "interface": "none",
+   "amazonMarketplaces": []
+  },
+  {
+   "code": "ar",
+   "name": "Arabic",
+   "endonym": "العربية",
+   "group": "major",
+   "dir": "rtl",
+   "interface": "beta",
+   "amazonMarketplaces": [
+    "amazon.ae",
+    "amazon.sa"
+   ]
+  },
+  {
+   "code": "tr",
+   "name": "Turkish",
+   "endonym": "Türkçe",
+   "group": "major",
+   "dir": "ltr",
+   "interface": "none",
+   "amazonMarketplaces": [
+    "amazon.com.tr"
+   ]
+  },
+  {
+   "code": "pl",
+   "name": "Polish",
+   "endonym": "Polski",
+   "group": "major",
+   "dir": "ltr",
+   "interface": "none",
+   "amazonMarketplaces": [
+    "amazon.pl"
+   ]
+  },
+  {
+   "code": "uk",
+   "name": "Ukrainian",
+   "endonym": "Українська",
+   "group": "major",
+   "dir": "ltr",
+   "interface": "none",
+   "amazonMarketplaces": []
+  },
+  {
+   "code": "sv",
+   "name": "Swedish",
+   "endonym": "Svenska",
+   "group": "major",
+   "dir": "ltr",
+   "interface": "none",
+   "amazonMarketplaces": [
+    "amazon.se"
+   ]
+  },
+  {
+   "code": "cs",
+   "name": "Czech",
+   "endonym": "Čeština",
+   "group": "major",
+   "dir": "ltr",
+   "interface": "none",
+   "amazonMarketplaces": []
+  },
+  {
+   "code": "ro",
+   "name": "Romanian",
+   "endonym": "Română",
+   "group": "major",
+   "dir": "ltr",
+   "interface": "none",
+   "amazonMarketplaces": []
+  },
+  {
+   "code": "hu",
+   "name": "Hungarian",
+   "endonym": "Magyar",
+   "group": "major",
+   "dir": "ltr",
+   "interface": "none",
+   "amazonMarketplaces": []
+  },
+  {
+   "code": "el",
+   "name": "Greek",
+   "endonym": "Ελληνικά",
+   "group": "major",
+   "dir": "ltr",
+   "interface": "none",
+   "amazonMarketplaces": []
+  },
+  {
+   "code": "he",
+   "name": "Hebrew",
+   "endonym": "עברית",
+   "group": "major",
+   "dir": "rtl",
+   "interface": "none",
+   "amazonMarketplaces": []
+  },
+  {
+   "code": "fa",
+   "name": "Persian",
+   "endonym": "فارسی",
+   "group": "major",
+   "dir": "rtl",
+   "interface": "none",
+   "amazonMarketplaces": []
+  },
+  {
+   "code": "id",
+   "name": "Indonesian",
+   "endonym": "Bahasa Indonesia",
+   "group": "major",
+   "dir": "ltr",
+   "interface": "none",
+   "amazonMarketplaces": []
+  },
+  {
+   "code": "vi",
+   "name": "Vietnamese",
+   "endonym": "Tiếng Việt",
+   "group": "major",
+   "dir": "ltr",
+   "interface": "none",
+   "amazonMarketplaces": []
+  },
+  {
+   "code": "th",
+   "name": "Thai",
+   "endonym": "ไทย",
+   "group": "major",
+   "dir": "ltr",
+   "interface": "none",
+   "amazonMarketplaces": []
+  },
+  {
+   "code": "hi",
+   "name": "Hindi",
+   "endonym": "हिन्दी",
+   "group": "southasia",
+   "dir": "ltr",
+   "interface": "beta",
+   "amazonMarketplaces": [
+    "amazon.in"
+   ]
+  },
+  {
+   "code": "bn",
+   "name": "Bengali",
+   "endonym": "বাংলা",
+   "group": "southasia",
+   "dir": "ltr",
+   "interface": "none",
+   "amazonMarketplaces": [
+    "amazon.in"
+   ]
+  },
+  {
+   "code": "ur",
+   "name": "Urdu",
+   "endonym": "اردو",
+   "group": "southasia",
+   "dir": "rtl",
+   "interface": "none",
+   "amazonMarketplaces": []
+  },
+  {
+   "code": "ta",
+   "name": "Tamil",
+   "endonym": "தமிழ்",
+   "group": "southasia",
+   "dir": "ltr",
+   "interface": "none",
+   "amazonMarketplaces": [
+    "amazon.in"
+   ]
+  },
+  {
+   "code": "te",
+   "name": "Telugu",
+   "endonym": "తెలుగు",
+   "group": "southasia",
+   "dir": "ltr",
+   "interface": "none",
+   "amazonMarketplaces": [
+    "amazon.in"
+   ]
+  },
+  {
+   "code": "mr",
+   "name": "Marathi",
+   "endonym": "मराठी",
+   "group": "southasia",
+   "dir": "ltr",
+   "interface": "none",
+   "amazonMarketplaces": [
+    "amazon.in"
+   ]
+  },
+  {
+   "code": "gu",
+   "name": "Gujarati",
+   "endonym": "ગુજરાતી",
+   "group": "southasia",
+   "dir": "ltr",
+   "interface": "none",
+   "amazonMarketplaces": [
+    "amazon.in"
+   ]
+  },
+  {
+   "code": "kn",
+   "name": "Kannada",
+   "endonym": "ಕನ್ನಡ",
+   "group": "southasia",
+   "dir": "ltr",
+   "interface": "none",
+   "amazonMarketplaces": [
+    "amazon.in"
+   ]
+  },
+  {
+   "code": "ml",
+   "name": "Malayalam",
+   "endonym": "മലയാളം",
+   "group": "southasia",
+   "dir": "ltr",
+   "interface": "none",
+   "amazonMarketplaces": [
+    "amazon.in"
+   ]
+  },
+  {
+   "code": "pa",
+   "name": "Punjabi",
+   "endonym": "ਪੰਜਾਬੀ",
+   "group": "southasia",
+   "dir": "ltr",
+   "interface": "none",
+   "amazonMarketplaces": [
+    "amazon.in"
+   ]
+  },
+  {
+   "code": "sa",
+   "name": "Sanskrit",
+   "endonym": "संस्कृतम्",
+   "group": "classical",
+   "dir": "ltr",
+   "interface": "none",
+   "amazonMarketplaces": [
+    "amazon.in"
+   ]
+  },
+  {
+   "code": "la",
+   "name": "Latin",
+   "endonym": "Latina",
+   "group": "classical",
+   "dir": "ltr",
+   "interface": "none",
+   "amazonMarketplaces": []
+  },
+  {
+   "code": "grc",
+   "name": "Ancient Greek",
+   "endonym": "Ἑλληνική",
+   "group": "classical",
+   "dir": "ltr",
+   "interface": "none",
+   "amazonMarketplaces": []
+  },
+  {
+   "code": "cop",
+   "name": "Coptic",
+   "endonym": "Ⲙⲉⲧⲣⲉⲙⲛ̀ⲭⲏⲙⲓ",
+   "group": "classical",
+   "dir": "ltr",
+   "interface": "none",
+   "amazonMarketplaces": []
+  }
+ ]
+}

@@ -5,7 +5,7 @@
 | Item | State |
 |---|---|
 | Associates **tracking ID** | **Not recovered.** The repository contains none. The only Amazon link is the short link `https://amzn.to/4tX3ogd`, which could not be expanded from the build environment (outbound access to amzn.to and amazon.com was blocked). The "Influencer storefront name" is not assumed to be the tracking ID. |
-| Marketplace | Assumed `amazon.com` in `config/site.json` and flagged `marketplaceVerified: false`. |
+| Marketplace | Default `amazon.com`, flagged `marketplaceVerified: false`. Tracking IDs are now **per marketplace** (18 slots in `config/site.json`); none is set and enrollment per marketplace is unknown. See `docs/LANGUAGES.md`. |
 | Amazon Associates / Creators API | Not connected. No credentials were available and none were requested. |
 
 ## How to recover the tracking ID securely (no passwords in chat)
@@ -13,7 +13,7 @@
 Pick one:
 1. **Fastest:** open `https://amzn.to/4tX3ogd` in a browser where you are signed in to Amazon. In the expanded address, find `tag=` — the value after it (looks like `yourname-20`) is a tracking ID for that link.
 2. **Authoritative:** sign in yourself at Associates Central → Account Settings → *Manage Tracking IDs*. This lists every tracking ID and its marketplace. Copy the one used for this site.
-3. Provide it to the build as an environment variable, never in source: `AMAZON_TRACKING_ID=yourname-20 node scripts/build.mjs`. The tracking ID is not a secret, but Creators API credentials are, and must be stored only in a secret manager or CI secret.
+3. Provide it to the build as an environment variable, never in source: `AMAZON_TRACKING_ID_COM=yourname-20 node scripts/build.mjs` (use `_DE`, `_CO_UK`, `_FR`… for other marketplaces; plain `AMAZON_TRACKING_ID` also works for amazon.com). The tracking ID is not a secret, but Creators API credentials are, and must be stored only in a secret manager or CI secret.
 
 ## Creators API: current eligibility (from web search, to be confirmed in Associates Central)
 
