@@ -34,10 +34,10 @@ for (const p of pages) { let h = decode(fs.readFileSync(p, 'utf8')); h = h.repla
 ok(leaks.length === 0, `NVIDIA is named only in approved wording on all pages${leaks.length ? ' (leaks: ' + leaks.slice(0, 3).join(', ') + ')' : ''}`);
 const banned = reg0.claims.flatMap((c) => c.prohibitedVariants ?? []);
 ok(!pages.some((p) => banned.some((b) => decode(fs.readFileSync(p, 'utf8')).toLowerCase().includes(b.toLowerCase()))), `no prohibited wording anywhere (${banned.length} phrases checked)`);
-const OKFILES = /^(iosutra-wellness-ai\.webp|iosutra-inception-member\.webp|nvidia-inception-program-badge-rgb-1c-blk-for-screen\.svg)$/;
+const OKFILES = /^(iosutra-wellness-ai\.webp|iosutra-inception-member\.webp|nvidia-inception-program-badge-rgb-for-screen\.svg)$/;
 const partner = fs.existsSync(path.join(SITE, 'assets/partner')) ? fs.readdirSync(path.join(SITE, 'assets/partner')) : [];
-const OFFICIAL = 'nvidia-inception-program-badge-rgb-1c-blk-for-screen.svg';
-ok(!/nvidia/i.test(fs.readdirSync(path.join(SITE, 'assets')).join(' ')) && partner.every((f) => OKFILES.test(f)) && [...(home.split('promo-band')[1] ?? '').matchAll(/<img[^>]*src="([^"]+)"/gi)].every((m) => /(iosutra-wellness-ai\.webp|iosutra-inception-member\.webp|nvidia-inception-program-badge-rgb-1c-blk-for-screen\.svg)$/.test(m[1])), 'the only images are the IOSutra artwork and panel and the official NVIDIA badge file');
+const OFFICIAL = 'nvidia-inception-program-badge-rgb-for-screen.svg';
+ok(!/nvidia/i.test(fs.readdirSync(path.join(SITE, 'assets')).join(' ')) && partner.every((f) => OKFILES.test(f)) && [...(home.split('promo-band')[1] ?? '').matchAll(/<img[^>]*src="([^"]+)"/gi)].every((m) => /(iosutra-wellness-ai\.webp|iosutra-inception-member\.webp|nvidia-inception-program-badge-rgb-for-screen\.svg)$/.test(m[1])), 'the only images are the IOSutra artwork and panel and the official NVIDIA badge file');
 ok(Buffer.compare(fs.readFileSync(path.join(SITE, 'assets/partner', OFFICIAL)), fs.readFileSync(path.join(ROOT, 'assets-src/partner', OFFICIAL))) === 0 && reg0.brands.iosutra.badges.nvidiaInception.displayHeightPx <= reg0.brands.iosutra.logo.height, 'official NVIDIA badge is published byte-for-byte unmodified and is displayed no taller than the IOSutra panel');
 ok(!/76b900/i.test(read('assets/style.css') + home), "no NVIDIA green or imitation of NVIDIA's visual style");
 ok(!/sutra\.ai/i.test(pages.map((p) => fs.readFileSync(p, 'utf8')).join('')) && [...new Set(pages.flatMap((p) => [...fs.readFileSync(p, 'utf8').matchAll(/https?:\/\/[^"'\s<]*iosutra[^"'\s<]*/gi)].map((m) => new URL(m[0].replace(/&amp;/g, '&')).origin)))].every((o) => o === 'https://iosutra.com'), 'every IOSutra link goes to https://iosutra.com (the unrelated sutra.ai is not used)');

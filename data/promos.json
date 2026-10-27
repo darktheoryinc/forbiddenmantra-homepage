@@ -18,14 +18,14 @@
       "badges": {
         "nvidiaInception": {
           "enabled": true,
-          "asset": "nvidia-inception-program-badge-rgb-1c-blk-for-screen.svg",
+          "asset": "nvidia-inception-program-badge-rgb-for-screen.svg",
           "altText": "NVIDIA Inception Program badge",
           "displayHeightPx": 99,
           "clearSpacePx": 12,
           "licenseConfirmed": true,
           "guidelinesUrl": "https://www.nvidia.com/en-us/about-nvidia/legal-info/logo-brand-usage/",
           "guidelinesReviewedOn": "2026-10-27",
-          "note": "Official NVIDIA Inception Program badge supplied by the owner from NVIDIA's member resources, copied byte-for-byte (SVG, unmodified; checked with cmp). IMPORTANT: the file supplied is the ONE-COLOUR BLACK variant (nvidia-inception-program-badge-rgb-1c-blk-for-screen.svg), not the full-colour 'nvidia-inception-program-badge-rgb-for-screen.svg' the owner asked for; the full-colour file and the Inception-specific guidelines document were not in the upload. Displayed at the same height as the IOSutra panel (99 px), so never larger, with its own built-in margin plus the site's clear space. licenseConfirmed is owner-asserted. guidelinesUrl is NVIDIA's general logo and brand page, which is all that could be read; the Inception badge guidelines PDF still needs to be checked, including the required trademark attribution wording (the current line, 'NVIDIA and NVIDIA Inception are trademarks of NVIDIA Corporation.', is a standard form and is still marked needs-confirmation). To switch to the full-colour badge, copy that file into assets-src/partner/ and change `asset` here."
+          "note": "Official full-colour NVIDIA Inception Program badge (green #76B900 eye mark, black wordmark, white panel) supplied by the owner from NVIDIA's member resources: nvidia-inception-program-badge-rgb-for-screen.svg, copied byte-for-byte (verified with cmp), never recoloured, cropped or stretched. It replaced the earlier one-colour black file. Displayed at the same height as the IOSutra panel (99 px), so never larger. licenseConfirmed is owner-asserted. guidelinesUrl is NVIDIA's general logo and brand page; the Inception-specific guidelines document and its required trademark attribution wording have still not been supplied (the current attribution line remains marked needs-confirmation)."
         }
       },
       "headline": "Wellness and AI Technology",
