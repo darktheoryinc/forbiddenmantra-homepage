@@ -60,7 +60,7 @@ ok(r.status === 0, `production build succeeds once URL, approval and claims are 
 const ph = read('index.html', PROD);
 ok(!/preview-bar|Preview build/.test(ph) && !/noindex/.test(ph) && /<link rel="canonical" href="https:\/\/shop\.example\.invalid\/">/.test(ph), 'production pages: no preview banner, no noindex, canonical link set');
 ok(/<link rel="canonical" href="https:\/\/shop\.example\.invalid\/books\/wicca\/">/.test(read('books/wicca/index.html', PROD)), 'canonical links use directory-style URLs');
-const sm = read('sitemap.xml', PROD), nPages = (function c(d) { let n = 0; for (const e of fs.readdirSync(d, { withFileTypes: true })) n += e.isDirectory() ? c(path.join(d, e.name)) : e.name === 'index.html' ? 1 : 0; return n; })(PROD);
+const sm = read('sitemap.xml', PROD), nPages = (function c(d) { let n = 0; for (const e of fs.readdirSync(d, { withFileTypes: true })) n += e.isDirectory() ? c(path.join(d, e.name)) : e.name === 'index.html' && path.basename(d) !== 'book' ? 1 : 0; return n; })(PROD);
 ok((sm.match(/<loc>/g) || []).length === nPages && /<loc>https:\/\/shop\.example\.invalid\/books\/wicca\/<\/loc>/.test(sm), `sitemap.xml lists all ${nPages} pages`);
 ok(/Allow: \//.test(read('robots.txt', PROD)) && /Sitemap: https:\/\/shop\.example\.invalid\/sitemap\.xml/.test(read('robots.txt', PROD)), 'production robots.txt allows crawling and names the sitemap');
 ok(/Disallow: \//.test(read('robots.txt')) && /noindex/.test(read('index.html')) && /Preview build/.test(read('index.html')), 'preview build stays closed to crawlers (Disallow, noindex, banner)');

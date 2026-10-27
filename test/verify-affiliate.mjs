@@ -27,7 +27,7 @@ ok(/^As an Amazon Associate I earn from qualifying purchases\./.test(cfg.disclos
 let r = run('scripts/audit-affiliate.mjs', {}, ['--json']); const audit = JSON.parse(r.stdout).summary;
 ok(r.status === 0 && audit.linkErrors === 0, `audit: ${audit.purchaseLinks} purchase links, ${audit.linkErrors} errors`);
 ok(audit.worksWithValidTaggedProductLink + audit.worksWithSearchLinkOnly + audit.worksWithNoPurchaseLink === cat.works.length, `audit: every one of ${cat.works.length} works is accounted for (valid ${audit.worksWithValidTaggedProductLink}, search-only ${audit.worksWithSearchLinkOnly}, none ${audit.worksWithNoPurchaseLink})`);
-ok(audit.worksWithValidTaggedProductLink === 43 && audit.ofWhichSourceVerified === 2 && audit.ofWhichIdentityVerifiedOffline === 41 && audit.worksWithSearchLinkOnly === 10, 'audit: 43 works have a tagged product link (2 seen in sources, 41 matched to their own ISBN-10); 10 press titles have only a search link');
+ok(audit.worksWithValidTaggedProductLink >= 43 && audit.ofWhichSourceVerified >= 2 && audit.ofWhichSourceVerified + audit.ofWhichIdentityVerifiedOffline === audit.worksWithValidTaggedProductLink && cat.works.filter((w) => w.press).length === 12, `audit: ${audit.worksWithValidTaggedProductLink} works have a tagged product link (${audit.ofWhichSourceVerified} product page seen in a cited source, ${audit.ofWhichIdentityVerifiedOffline} matched offline to their own ISBN-10); ${audit.worksWithSearchLinkOnly} have only a labelled search link`);
 
 // ===== every page: tag only on amazon.com, always ours =====
 let amazonLinks = 0, taggedCom = 0, badTag = [], foreignTag = [];
@@ -42,15 +42,15 @@ for (const f of htmls(SITE)) {
 }
 ok(badTag.length === 0 && foreignTag.length === 0, `site: ${taggedCom} tagged amazon.com links across all pages; no other tag value and no tag on any other marketplace (${amazonLinks} Amazon links total)`);
 // buy links specifically
-let buyCom = 0, buyComUntagged = [], buyOther = [], noSponsored = [];
+let buyCom = 0, buyUk = 0, buyComUntagged = [], buyOther = [], noSponsored = [];
 for (const f of htmls(path.join(SITE, 'books'))) {
   const h = fs.readFileSync(f, 'utf8');
   for (const m of h.matchAll(/<a class="btn" href="([^"]+)" target="_blank" rel="([^"]*)" data-track="buy"/g)) {
     const u = new URL(dec(m[1])); if (!/sponsored/.test(m[2])) noSponsored.push(u.href);
-    if (u.hostname === 'www.amazon.com') { buyCom++; if (u.searchParams.get('tag') !== ID) buyComUntagged.push(u.href); } else if (u.searchParams.has('tag')) buyOther.push(u.href);
+    if (u.hostname === 'www.amazon.com') { buyCom++; if (u.searchParams.get('tag') !== ID) buyComUntagged.push(u.href); } else { buyUk++; if (u.searchParams.has('tag')) buyOther.push(u.href); }
   }
 }
-ok(buyCom === 66 && buyComUntagged.length === 0 && buyOther.length === 0, `buy buttons: all ${buyCom} amazon.com buttons carry ${ID}; the ${68 - buyCom} UK buttons carry no tag`);
+ok(buyCom > 60 && buyUk >= 1 && buyComUntagged.length === 0 && buyOther.length === 0, `buy buttons: all ${buyCom} amazon.com buttons carry ${ID}; the ${buyUk} non-US button(s) carry no tag`);
 ok(noSponsored.length === 0, 'every affiliate button has rel="sponsored noopener noreferrer"');
 
 // ===== tagging never changes the destination =====

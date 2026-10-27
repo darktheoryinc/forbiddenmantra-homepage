@@ -70,5 +70,10 @@
  },
  "nav_iosutra": "IOSutra",
  "did_you_mean": "क्या आपका मतलब {q} था?",
- "close_matches": "“{q}” के मिलते-जुलते परिणाम"
+ "close_matches": "“{q}” के मिलते-जुलते परिणाम",
+ "show_more": "और दिखाएँ",
+ "lvl_unrated": "स्तर अभी निर्धारित नहीं",
+ "loading_index": "सूची लोड हो रही है…",
+ "index_error": "सूची लोड नहीं हो सकी।",
+ "count_range": "{n} में से {a} पुस्तकें दिखाई गईं"
 }

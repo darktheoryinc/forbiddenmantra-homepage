@@ -70,5 +70,10 @@
  },
  "nav_iosutra": "IOSutra",
  "did_you_mean": "هل تقصد {q}؟",
- "close_matches": "عرض نتائج قريبة لـ «{q}»"
+ "close_matches": "عرض نتائج قريبة لـ «{q}»",
+ "show_more": "عرض المزيد",
+ "lvl_unrated": "المستوى غير مصنّف بعد",
+ "loading_index": "جارٍ تحميل فهرس الكتالوج…",
+ "index_error": "تعذّر تحميل فهرس الكتالوج.",
+ "count_range": "عرض {a} من {n} كتابًا"
 }

@@ -93,22 +93,72 @@ function addWork(w, origin) {
   return true;
 }
 
+const srcPolicy = rd('config/sources.json').policy;
+const SLD_TLDS = new Set(['co', 'com', 'org', 'net', 'ac', 'gov', 'edu']);
+const hostOf = (u) => { // registrable name, with country suffixes stripped and common ownership merged (see config/sources.json hostOwnerGroups)
+  try {
+    const parts = new URL(u).hostname.replace(/^www\./, '').split('.');
+    let i = parts.length - 1; // drop tld
+    if (i > 0 && SLD_TLDS.has(parts[i - 1]) && parts[i].length === 2) i--; // co.uk, com.au
+    const name = parts[Math.max(0, i - 1)];
+    return srcPolicy.hostOwnerGroups?.[name] ?? name;
+  } catch { return null; }
+};
+let nVerifiedIn = 0, nBatchIn = 0;
+const batchTally = {};
+
+function ingest(raw, origin, { batch = null } = {}) {
+  const w = { ...raw, _origin: origin };
+  const ownerListed = w.status === 'owner-listed';
+  const problems = validateWork(w, { requireSources: true, allowNoId: ownerListed });
+  if (w.series && !(typeof w.series.name === 'string' && w.series.name.trim())) problems.push('series needs a name');
+  if (batch) {
+    // batch works are bulk-verified: identity must be corroborated by >= minDistinctHostsForBatchPublish independent hosts
+    for (const e of w.editions) {
+      const hosts = new Set([...(e.sources ?? [])].map((x) => hostOf(x.url)).filter(Boolean));
+      if (hosts.size < srcPolicy.minDistinctHostsForBatchPublish) problems.push(`edition ${e.isbn13 ?? '(no ISBN)'} needs ${srcPolicy.minDistinctHostsForBatchPublish} independent source hosts of its own; found ${hosts.size}`);
+    }
+    if (w.press) problems.push('batch imports cannot create Forbidden Mantra Press titles');
+    if (!w.editions.every((e) => e.isbn13)) problems.push('batch editions need an ISBN-13');
+  }
+  if (problems.length) { queue(w, 'validate', problems); return; }
+  if (ownerListed) for (const e of w.editions) if (!e.isbn13 && !e.asin) queue({ ...w, isbn13: null }, 'identifiers', [`owner-listed ${e.format}${e.language !== 'en' ? ' (' + e.language + ')' : ''} edition has no ASIN/ISBN yet; retailer link not verified`], 'warning');
+  const ids = w.editions.map((e) => e.isbn13 ?? e.asin).filter(Boolean);
+  if (new Set(ids).size !== ids.length) { queue(w, 'validate', ['two editions of this work share an identifier']); return; }
+  w.editions = w.editions.map((e, i) => ({ ...e, id: `${e.isbn13 ?? e.asin ?? `ed${i + 1}`}`, isbn10: e.isbn13 ? isbn13to10(e.isbn13) : null }));
+  w.provenance ??= { tier: 'hand-verified' };
+  if (addWork(w, w._origin)) batchTally[w.provenance.tier] = (batchTally[w.provenance.tier] ?? 0) + 1;
+}
+
 const verifiedDir = path.join(ROOT, STAGING, 'verified');
-let nVerifiedIn = 0;
 for (const f of fs.readdirSync(verifiedDir).filter((x) => x.endsWith('.json')).sort()) {
   const doc = rd(`${STAGING}/verified/${f}`);
-  for (const raw of doc.works) {
-    nVerifiedIn++;
-    const w = { ...raw, _origin: `${STAGING}/verified/${f}` };
-    const ownerListed = w.status === 'owner-listed';
-    const problems = validateWork(w, { requireSources: true, allowNoId: ownerListed });
-    if (problems.length) { queue(w, 'validate', problems); continue; }
-    if (ownerListed) for (const e of w.editions) if (!e.isbn13 && !e.asin) queue({ ...w, isbn13: null }, 'identifiers', [`owner-listed ${e.format}${e.language !== 'en' ? ' (' + e.language + ')' : ''} edition has no ASIN/ISBN yet; retailer link not verified`], 'warning');
-    const ids = w.editions.map((e) => e.isbn13 ?? e.asin).filter(Boolean);
-    if (new Set(ids).size !== ids.length) { queue(w, 'validate', ['two editions of this work share an identifier']); continue; }
-    w.editions = w.editions.map((e, i) => ({ ...e, id: `${e.isbn13 ?? e.asin ?? `ed${i + 1}`}`, isbn10: e.isbn13 ? isbn13to10(e.isbn13) : null }));
-    addWork(w, w._origin);
-  }
+  for (const raw of doc.works) { nVerifiedIn++; ingest(raw, `${STAGING}/verified/${f}`); }
+}
+
+// ---------- bulk batches: staging/batches/*.json (from reconcile.mjs) and *.vpsv (web-corroborated rows) ----------
+// .vpsv columns: title|subtitle|authors|publisher|year|isbn13|format|language|subjects|tradition|level|series|seriesNo|sources|checked|note
+// Rows sharing title + first author become ONE work with several editions. 'sources' are space-separated URLs; two or more distinct hosts required.
+function vpsvWorks(text, file) {
+  const byKey = new Map();
+  const [head, ...lines] = text.trim().split('\n').filter((l) => !l.startsWith('#'));
+  const cols = head.split('|');
+  lines.forEach((l, i) => {
+    const v = l.split('|'); const r = {}; cols.forEach((c, j) => (r[c] = (v[j] ?? '').trim()));
+    const authors = r.authors.split(';').map((a) => a.trim()).filter(Boolean);
+    const key = `${normTitle(r.title)}|${slugify(authors[0] ?? '')}`;
+    const accessed = r.checked || TODAY;
+    const ed = { language: r.language || 'en', format: r.format, publisher: r.publisher || null, year: r.year ? +r.year : null, isbn13: r.isbn13 || null, ...(r.note ? { note: r.note } : {}), sources: r.sources.split(/\s+/).filter(Boolean).map((url) => ({ label: 'Corroborating record', url, accessed, supports: 'ISBN-13, title, author' })) };
+    if (!byKey.has(key)) byKey.set(key, { title: r.title, subtitle: r.subtitle || '', authors, subjects: r.subjects.split(';').filter(Boolean), tradition: r.tradition ? r.tradition.split(';') : [], level: r.level || 'unrated', series: r.series ? { name: r.series, ...(r.seriesNo ? { number: +r.seriesNo } : {}) } : undefined, description: null, status: 'verified', press: null, claims: [], editions: [], sources: ed.sources, provenance: { tier: 'web-corroborated', method: 'ISBN, title and author seen together on independent hosts', batchFile: file } });
+    byKey.get(key).editions.push(ed);
+  });
+  return [...byKey.values()];
+}
+const batchDir = path.join(ROOT, STAGING, 'batches');
+if (fs.existsSync(batchDir)) for (const f of fs.readdirSync(batchDir).sort()) {
+  const works = f.endsWith('.json') ? rd(`${STAGING}/batches/${f}`).works : f.endsWith('.vpsv') ? vpsvWorks(fs.readFileSync(path.join(batchDir, f), 'utf8'), f) : null;
+  if (!works) continue;
+  for (const raw of works) { nBatchIn++; ingest(raw, `${STAGING}/batches/${f}`, { batch: f }); }
 }
 
 // ---------- ingest bulk candidates (stage only) ----------
@@ -126,7 +176,7 @@ const staged = [];
 const stagedEditions = [];
 const seenStaged = new Map();
 let nPsv = 0;
-for (const f of fs.readdirSync(path.join(ROOT, STAGING)).filter((x) => x.endsWith('.psv')).sort()) {
+for (const f of fs.readdirSync(path.join(ROOT, STAGING)).filter((x) => x.endsWith('.psv') && !x.startsWith('articles-')).sort()) {
   for (const row of parsePSV(fs.readFileSync(path.join(ROOT, STAGING, f), 'utf8'))) {
     nPsv++;
     // Optional columns: translationOf (slug of a published work), editionTitle, translator. A row naming translationOf is a
@@ -228,7 +278,8 @@ const publishedByLanguage = Object.fromEntries(Object.entries(byLang).sort().map
 const leadsByLanguage = leads.reduce((a, l) => ((a[l.language] = (a[l.language] ?? 0) + 1), a), {});
 const report = {
   generated: TODAY,
-  input: { verifiedRecords: nVerifiedIn, candidateRows: nPsv },
+  input: { verifiedRecords: nVerifiedIn, batchRecords: nBatchIn, candidateRows: nPsv },
+  publishedByProvenance: batchTally,
   published: { works: finalWorks.length, editions: finalWorks.reduce((n, w) => n + w.editions.length, 0), outsideWorks: outsidePub.length, fmpWorks: finalWorks.length - outsidePub.length, authors: authors.length },
   publishedByLanguage,
   languagesRegistered: langReg.languages.length,

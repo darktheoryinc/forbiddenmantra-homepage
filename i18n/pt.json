@@ -70,5 +70,10 @@
  },
  "nav_iosutra": "IOSutra",
  "did_you_mean": "Você quis dizer {q}?",
- "close_matches": "Mostrando resultados próximos para “{q}”"
+ "close_matches": "Mostrando resultados próximos para “{q}”",
+ "show_more": "Mostrar mais",
+ "lvl_unrated": "Nível ainda não classificado",
+ "loading_index": "A carregar o índice do catálogo…",
+ "index_error": "Não foi possível carregar o índice do catálogo.",
+ "count_range": "A mostrar {a} de {n} livros"
 }

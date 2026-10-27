@@ -70,6 +70,9 @@
      "supports": "UK edition, publisher"
     }
    ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "j-k-rowling"
    ]
@@ -138,6 +141,9 @@
      "supports": "title, publisher"
     }
    ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "british-library"
    ]
@@ -187,6 +193,9 @@
      "supports": "isbn13, title"
     }
    ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "j-r-r-tolkien"
    ]
@@ -236,6 +245,9 @@
      "supports": "title"
     }
    ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "j-r-r-tolkien"
    ]
@@ -300,6 +312,9 @@
      "supports": "2004 isbn13"
     }
    ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "ursula-k-le-guin"
    ]
@@ -348,6 +363,9 @@
      "supports": "title"
     }
    ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "c-s-lewis"
    ]
@@ -399,6 +417,9 @@
      "supports": "isbn13"
     }
    ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "neil-gaiman",
     "terry-pratchett"
@@ -450,6 +471,9 @@
      "supports": "isbn13, edition"
     }
    ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "neil-gaiman"
    ]
@@ -517,6 +541,9 @@
      "supports": "UK isbn13, title"
     }
    ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "terry-pratchett"
    ]
@@ -577,6 +604,9 @@
      "supports": "isbn13"
     }
    ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "susanna-clarke"
    ]
@@ -641,6 +671,9 @@
      "supports": "hardcover isbn13"
     }
    ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "madeline-miller"
    ]
@@ -689,6 +722,9 @@
      "supports": "isbn13, 2008"
     }
    ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "patrick-rothfuss"
    ]
@@ -737,6 +773,9 @@
      "supports": "isbn13"
     }
    ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "brandon-sanderson"
    ]
@@ -785,6 +824,9 @@
      "supports": "isbn13"
     }
    ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "george-r-r-martin"
    ]
@@ -835,6 +877,9 @@
      "supports": "title"
     }
    ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "t-h-white"
    ]
@@ -892,6 +937,9 @@
      "supports": "Morrow isbn13"
     }
    ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "neil-gaiman"
    ]
@@ -940,6 +988,9 @@
      "supports": "title, author"
     }
    ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "shirley-jackson"
    ]
@@ -988,6 +1039,9 @@
      "supports": "isbn13"
     }
    ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "bram-stoker"
    ]
@@ -1037,6 +1091,9 @@
      "supports": "title"
     }
    ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "mary-shelley"
    ]
@@ -1086,6 +1143,9 @@
      "supports": "isbn13"
     }
    ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "ray-bradbury"
    ]
@@ -1136,6 +1196,9 @@
      "supports": "title"
     }
    ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "mikhail-bulgakov"
    ]
@@ -1184,6 +1247,9 @@
      "supports": "title"
     }
    ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "anne-rice"
    ]
@@ -1234,6 +1300,9 @@
      "supports": "publisher"
     }
    ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "jacob-and-wilhelm-grimm"
    ]
@@ -1299,6 +1368,9 @@
      "supports": "hardcover isbn13"
     }
    ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "neil-gaiman"
    ]
@@ -1351,6 +1423,9 @@
      "supports": "title"
     }
    ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "james-george-frazer"
    ]
@@ -1400,6 +1475,9 @@
      "supports": "translator, price"
     }
    ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "marcus-aurelius"
    ]
@@ -1449,6 +1527,9 @@
      "supports": "title"
     }
    ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "plato"
    ]
@@ -1499,6 +1580,9 @@
      "supports": "title"
     }
    ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "friedrich-nietzsche"
    ]
@@ -1544,6 +1628,9 @@
      "supports": "current-edition isbn13"
     }
    ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "viktor-e-frankl"
    ]
@@ -1594,6 +1681,9 @@
      "supports": "isbn13"
     }
    ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "seneca"
    ]
@@ -1662,6 +1752,9 @@
     }
    ],
    "claims": [],
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "forbidden-mantra-press"
    ]
@@ -1724,6 +1817,9 @@
     }
    ],
    "claims": [],
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "forbidden-mantra-press"
    ]
@@ -1778,6 +1874,9 @@
     }
    ],
    "claims": [],
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "forbidden-mantra-press"
    ]
@@ -1832,6 +1931,9 @@
     }
    ],
    "claims": [],
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "forbidden-mantra-press"
    ]
@@ -1875,6 +1977,9 @@
     }
    ],
    "claims": [],
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "forbidden-mantra-press"
    ]
@@ -1918,6 +2023,9 @@
     }
    ],
    "claims": [],
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "forbidden-mantra-press"
    ]
@@ -1961,6 +2069,9 @@
     }
    ],
    "claims": [],
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "forbidden-mantra-press"
    ]
@@ -2004,6 +2115,9 @@
     }
    ],
    "claims": [],
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "forbidden-mantra-press"
    ]
@@ -2055,6 +2169,9 @@
     }
    ],
    "claims": [],
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "forbidden-mantra-press"
    ]
@@ -2100,6 +2217,9 @@
     }
    ],
    "claims": [],
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "forbidden-mantra-press"
    ]
@@ -2144,6 +2264,9 @@
     }
    ],
    "claims": [],
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "forbidden-mantra-press"
    ]
@@ -2187,6 +2310,9 @@
     }
    ],
    "claims": [],
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "forbidden-mantra-press"
    ]
@@ -2244,6 +2370,9 @@
    ],
    "press": null,
    "status": "verified",
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "eckhart-tolle"
    ]
@@ -2294,6 +2423,9 @@
    "claims": [],
    "press": null,
    "status": "verified",
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "michael-a-singer"
    ]
@@ -2356,6 +2488,9 @@
    "claims": [],
    "press": null,
    "status": "verified",
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "pema-chodron"
    ]
@@ -2417,6 +2552,9 @@
    "claims": [],
    "press": null,
    "status": "verified",
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "gabor-mate"
    ]
@@ -2467,6 +2605,9 @@
    "claims": [],
    "press": null,
    "status": "verified",
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "raymond-buckland"
    ]
@@ -2518,6 +2659,9 @@
    "claims": [],
    "press": null,
    "status": "verified",
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "scott-cunningham"
    ]
@@ -2586,6 +2730,9 @@
    "claims": [],
    "press": null,
    "status": "verified",
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "judika-illes"
    ]
@@ -2652,6 +2799,9 @@
    "claims": [],
    "press": null,
    "status": "verified",
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "rachel-pollack"
    ]
@@ -2709,6 +2859,9 @@
    ],
    "press": null,
    "status": "verified",
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "elaine-pagels"
    ]
@@ -2762,6 +2915,9 @@
    "claims": [],
    "press": null,
    "status": "verified",
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "mantak-chia",
     "michael-winn"
@@ -2813,12 +2969,3342 @@
    "claims": [],
    "press": null,
    "status": "verified",
+   "provenance": {
+    "tier": "hand-verified"
+   },
    "authorIds": [
     "thomas-ashley-farrand"
+   ]
+  },
+  {
+   "id": "autobiography-of-a-yogi",
+   "slug": "autobiography-of-a-yogi",
+   "title": "Autobiography of a Yogi",
+   "subtitle": "",
+   "authors": [
+    "Paramahansa Yogananda"
+   ],
+   "subjects": [
+    "hinduism",
+    "yoga"
+   ],
+   "tradition": [
+    "hindu"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Self-Realization Fellowship",
+     "year": null,
+     "isbn13": "9780876120798",
+     "note": "Listings disagree on whether this printing is mass-market or trade paperback.",
+     "sources": [
+      {
+       "label": "Corroborating record",
+       "url": "https://www.abebooks.com/9780876120798/Autobiography-Yogi-Self-Realization-Fellowship-Paramahansa-0876120796/plp",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.cheapesttextbooks.com/subjects/Autobiography-of-a-Yogi-Self-Realization-Fellowship-9780876120798.html",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      }
+     ],
+     "id": "9780876120798",
+     "isbn10": "0876120796"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Corroborating record",
+     "url": "https://www.abebooks.com/9780876120798/Autobiography-Yogi-Self-Realization-Fellowship-Paramahansa-0876120796/plp",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://www.cheapesttextbooks.com/subjects/Autobiography-of-a-Yogi-Self-Realization-Fellowship-9780876120798.html",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    }
+   ],
+   "provenance": {
+    "tier": "web-corroborated",
+    "method": "ISBN, title and author seen together on independent hosts",
+    "batchFile": "web-2026-10-27-a.vpsv"
+   },
+   "authorIds": [
+    "paramahansa-yogananda"
+   ]
+  },
+  {
+   "id": "the-tibetan-book-of-living-and-dying",
+   "slug": "the-tibetan-book-of-living-and-dying",
+   "title": "The Tibetan Book of Living and Dying",
+   "subtitle": "",
+   "authors": [
+    "Sogyal Rinpoche"
+   ],
+   "subjects": [
+    "buddhism"
+   ],
+   "tradition": [
+    "buddhist"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Rider",
+     "year": null,
+     "isbn13": "9780712657525",
+     "sources": [
+      {
+       "label": "Corroborating record",
+       "url": "https://www.abebooks.com/9780712657525/Tibetan-Book-Living-Dying-SOGYAL-0712657525/plp",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://biblio.co.uk/9780712657525",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      }
+     ],
+     "id": "9780712657525",
+     "isbn10": "0712657525"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Corroborating record",
+     "url": "https://www.abebooks.com/9780712657525/Tibetan-Book-Living-Dying-SOGYAL-0712657525/plp",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://biblio.co.uk/9780712657525",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    }
+   ],
+   "provenance": {
+    "tier": "web-corroborated",
+    "method": "ISBN, title and author seen together on independent hosts",
+    "batchFile": "web-2026-10-27-a.vpsv"
+   },
+   "authorIds": [
+    "sogyal-rinpoche"
+   ]
+  },
+  {
+   "id": "wherever-you-go-there-you-are",
+   "slug": "wherever-you-go-there-you-are",
+   "title": "Wherever You Go, There You Are",
+   "subtitle": "Mindfulness Meditation in Everyday Life",
+   "authors": [
+    "Jon Kabat-Zinn"
+   ],
+   "subjects": [
+    "mindfulness"
+   ],
+   "tradition": [
+    "secular"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Piatkus",
+     "year": null,
+     "isbn13": "9780749925482",
+     "note": "UK edition.",
+     "sources": [
+      {
+       "label": "Corroborating record",
+       "url": "https://www.hachette.co.uk/titles/jon-kabat-zinn/wherever-you-go-there-you-are/9780749925482/",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.amazon.com/Wherever-You-Go-There-Are/dp/0749925485",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      }
+     ],
+     "id": "9780749925482",
+     "isbn10": "0749925485"
+    },
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Balance",
+     "year": 2023,
+     "isbn13": "9780306832017",
+     "note": "New edition with a new introduction and afterword.",
+     "sources": [
+      {
+       "label": "Corroborating record",
+       "url": "https://www.hachettebookgroup.com/titles/jon-kabat-zinn-phd/wherever-you-go-there-you-are/9780306832017/?lens=balance",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.labyrinthbooks.com/wherever-you-go-there-you-are-9780306832017/",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      }
+     ],
+     "id": "9780306832017",
+     "isbn10": "0306832011"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Corroborating record",
+     "url": "https://www.hachette.co.uk/titles/jon-kabat-zinn/wherever-you-go-there-you-are/9780749925482/",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://www.amazon.com/Wherever-You-Go-There-Are/dp/0749925485",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    }
+   ],
+   "provenance": {
+    "tier": "web-corroborated",
+    "method": "ISBN, title and author seen together on independent hosts",
+    "batchFile": "web-2026-10-27-a.vpsv"
+   },
+   "authorIds": [
+    "jon-kabat-zinn"
+   ]
+  },
+  {
+   "id": "be-here-now",
+   "slug": "be-here-now",
+   "title": "Be Here Now",
+   "subtitle": "",
+   "authors": [
+    "Ram Dass"
+   ],
+   "subjects": [
+    "consciousness"
+   ],
+   "tradition": [
+    "hindu"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": null,
+     "year": null,
+     "isbn13": "9780517543054",
+     "note": "Publisher and date are inconsistent across listings, so they are left blank.",
+     "sources": [
+      {
+       "label": "Corroborating record",
+       "url": "https://www.abebooks.com/9780517543054/Now-Ram-0517543052/plp",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.amazon.com/Be-Here-Now-Ram-Dass/dp/0517543052",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.ebay.com/itm/366286171519",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      }
+     ],
+     "id": "9780517543054",
+     "isbn10": "0517543052"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Corroborating record",
+     "url": "https://www.abebooks.com/9780517543054/Now-Ram-0517543052/plp",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://www.amazon.com/Be-Here-Now-Ram-Dass/dp/0517543052",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://www.ebay.com/itm/366286171519",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    }
+   ],
+   "provenance": {
+    "tier": "web-corroborated",
+    "method": "ISBN, title and author seen together on independent hosts",
+    "batchFile": "web-2026-10-27-a.vpsv"
+   },
+   "authorIds": [
+    "ram-dass"
+   ]
+  },
+  {
+   "id": "the-bhagavad-gita",
+   "slug": "the-bhagavad-gita",
+   "title": "The Bhagavad Gita",
+   "subtitle": "",
+   "authors": [
+    "Eknath Easwaran"
+   ],
+   "subjects": [
+    "hinduism"
+   ],
+   "tradition": [
+    "hindu"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Nilgiri Press",
+     "year": 2007,
+     "isbn13": "9781586380199",
+     "note": "Second edition; translation by Eknath Easwaran.",
+     "sources": [
+      {
+       "label": "Corroborating record",
+       "url": "https://www.abebooks.com/9781586380199/Bhagavad-Gita-Easwaran-Eknath-1586380192/plp",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.biblio.com/9781586380199",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://booksrun.com/9781586380199-the-bhagavad-gita-2nd-edition",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      }
+     ],
+     "id": "9781586380199",
+     "isbn10": "1586380192"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Corroborating record",
+     "url": "https://www.abebooks.com/9781586380199/Bhagavad-Gita-Easwaran-Eknath-1586380192/plp",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://www.biblio.com/9781586380199",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://booksrun.com/9781586380199-the-bhagavad-gita-2nd-edition",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    }
+   ],
+   "provenance": {
+    "tier": "web-corroborated",
+    "method": "ISBN, title and author seen together on independent hosts",
+    "batchFile": "web-2026-10-27-a.vpsv"
+   },
+   "authorIds": [
+    "eknath-easwaran"
+   ]
+  },
+  {
+   "id": "the-secret-teachings-of-all-ages",
+   "slug": "the-secret-teachings-of-all-ages",
+   "title": "The Secret Teachings of All Ages",
+   "subtitle": "Reader's Edition",
+   "authors": [
+    "Manly P. Hall"
+   ],
+   "subjects": [
+    "hermeticism",
+    "ceremonial-magic"
+   ],
+   "tradition": [
+    "hermetic"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Tarcher",
+     "year": null,
+     "isbn13": "9781585422500",
+     "sources": [
+      {
+       "label": "Corroborating record",
+       "url": "https://www.abebooks.com/9781585422500/Secret-Teachings-Ages-Readers-Edition-1585422509/plp",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.penguin.com.au/books/the-secret-teachings-of-all-ages-9781585422500",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      }
+     ],
+     "id": "9781585422500",
+     "isbn10": "1585422509"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Corroborating record",
+     "url": "https://www.abebooks.com/9781585422500/Secret-Teachings-Ages-Readers-Edition-1585422509/plp",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://www.penguin.com.au/books/the-secret-teachings-of-all-ages-9781585422500",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    }
+   ],
+   "provenance": {
+    "tier": "web-corroborated",
+    "method": "ISBN, title and author seen together on independent hosts",
+    "batchFile": "web-2026-10-27-a.vpsv"
+   },
+   "authorIds": [
+    "manly-p-hall"
+   ]
+  },
+  {
+   "id": "tarot-for-your-self",
+   "slug": "tarot-for-your-self",
+   "title": "Tarot for Your Self",
+   "subtitle": "A Workbook for Personal Transformation",
+   "authors": [
+    "Mary K. Greer"
+   ],
+   "subjects": [
+    "tarot"
+   ],
+   "tradition": [
+    "western-esoteric"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "New Page Books",
+     "year": null,
+     "isbn13": "9781564145888",
+     "note": "Second edition.",
+     "sources": [
+      {
+       "label": "Corroborating record",
+       "url": "https://us.amazon.com/Tarot-Your-Self-Workbook-Transformation/dp/B008YF97KW",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.ebay.com/itm/236571918626",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      }
+     ],
+     "id": "9781564145888",
+     "isbn10": "1564145883"
+    },
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Weiser Books",
+     "year": null,
+     "isbn13": "9781578636792",
+     "note": "35th Anniversary Edition.",
+     "sources": [
+      {
+       "label": "Corroborating record",
+       "url": "https://www.abebooks.com/9781578636792/Tarot-Workbook-Journey-Mary-Greer-1578636795/plp",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.ebay.com/itm/256976810496",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      }
+     ],
+     "id": "9781578636792",
+     "isbn10": "1578636795"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Corroborating record",
+     "url": "https://us.amazon.com/Tarot-Your-Self-Workbook-Transformation/dp/B008YF97KW",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://www.ebay.com/itm/236571918626",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    }
+   ],
+   "provenance": {
+    "tier": "web-corroborated",
+    "method": "ISBN, title and author seen together on independent hosts",
+    "batchFile": "web-2026-10-27-a.vpsv"
+   },
+   "authorIds": [
+    "mary-k-greer"
+   ]
+  },
+  {
+   "id": "the-four-agreements",
+   "slug": "the-four-agreements",
+   "title": "The Four Agreements",
+   "subtitle": "A Practical Guide to Personal Freedom",
+   "authors": [
+    "Don Miguel Ruiz"
+   ],
+   "subjects": [
+    "personal-growth"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Amber-Allen Publishing",
+     "year": null,
+     "isbn13": "9781878424310",
+     "sources": [
+      {
+       "label": "Corroborating record",
+       "url": "https://www.abebooks.com/9781878424310/Four-Agreements-Practical-Guide-Personal-1878424319/plp",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.awesomebooks.com/book/9781878424310/the-four-agreements",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      }
+     ],
+     "id": "9781878424310",
+     "isbn10": "1878424319"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Corroborating record",
+     "url": "https://www.abebooks.com/9781878424310/Four-Agreements-Practical-Guide-Personal-1878424319/plp",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://www.awesomebooks.com/book/9781878424310/the-four-agreements",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    }
+   ],
+   "provenance": {
+    "tier": "web-corroborated",
+    "method": "ISBN, title and author seen together on independent hosts",
+    "batchFile": "web-2026-10-27-a.vpsv"
+   },
+   "authorIds": [
+    "don-miguel-ruiz"
+   ]
+  },
+  {
+   "id": "the-alchemist",
+   "slug": "the-alchemist",
+   "title": "The Alchemist",
+   "subtitle": "",
+   "authors": [
+    "Paulo Coelho"
+   ],
+   "subjects": [
+    "personal-growth"
+   ],
+   "tradition": [
+    "fiction"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "HarperOne",
+     "year": 2014,
+     "isbn13": "9780062315007",
+     "note": "25th Anniversary Edition. Translated from the Portuguese.",
+     "sources": [
+      {
+       "label": "Corroborating record",
+       "url": "https://www.christianbook.com/the-alchemist-25th-anniversary-edition/9780062315007/pd/315013",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.lovingmebooks.com/store/p76409/The-Alchemist-25th-Anniversary-9780062315007.html",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.ebay.com/itm/296082142972",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      }
+     ],
+     "id": "9780062315007",
+     "isbn10": "0062315005"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Corroborating record",
+     "url": "https://www.christianbook.com/the-alchemist-25th-anniversary-edition/9780062315007/pd/315013",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://www.lovingmebooks.com/store/p76409/The-Alchemist-25th-Anniversary-9780062315007.html",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://www.ebay.com/itm/296082142972",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    }
+   ],
+   "provenance": {
+    "tier": "web-corroborated",
+    "method": "ISBN, title and author seen together on independent hosts",
+    "batchFile": "web-2026-10-27-a.vpsv"
+   },
+   "authorIds": [
+    "paulo-coelho"
+   ]
+  },
+  {
+   "id": "the-kybalion",
+   "slug": "the-kybalion",
+   "title": "The Kybalion",
+   "subtitle": "",
+   "authors": [
+    "Three Initiates"
+   ],
+   "subjects": [
+    "hermeticism"
+   ],
+   "tradition": [
+    "hermetic"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Tarcher Cornerstone Editions",
+     "year": null,
+     "isbn13": "9781585426430",
+     "sources": [
+      {
+       "label": "Corroborating record",
+       "url": "https://us.amazon.com/Kybalion-Tarcher-Cornerstone-Editions/dp/1585426431",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.booksamillion.com/p/Kybalion/Three-Initiates/9781585426430",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      }
+     ],
+     "id": "9781585426430",
+     "isbn10": "1585426431"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Corroborating record",
+     "url": "https://us.amazon.com/Kybalion-Tarcher-Cornerstone-Editions/dp/1585426431",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://www.booksamillion.com/p/Kybalion/Three-Initiates/9781585426430",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    }
+   ],
+   "provenance": {
+    "tier": "web-corroborated",
+    "method": "ISBN, title and author seen together on independent hosts",
+    "batchFile": "web-2026-10-27-b.vpsv"
+   },
+   "authorIds": [
+    "three-initiates"
+   ]
+  },
+  {
+   "id": "the-dhammapada",
+   "slug": "the-dhammapada",
+   "title": "The Dhammapada",
+   "subtitle": "",
+   "authors": [
+    "Eknath Easwaran"
+   ],
+   "subjects": [
+    "buddhism"
+   ],
+   "tradition": [
+    "buddhist"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Nilgiri Press",
+     "year": 2007,
+     "isbn13": "9781586380205",
+     "note": "Second edition; translation by Eknath Easwaran.",
+     "sources": [
+      {
+       "label": "Corroborating record",
+       "url": "https://booksrun.com/9781586380205-the-dhammapada-easwarans-classics-of-indian-spirituality-2nd-edition",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.alibris.com/search/books/isbn/9781586380205",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.ebay.com/itm/365923918950",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      }
+     ],
+     "id": "9781586380205",
+     "isbn10": "1586380206"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Corroborating record",
+     "url": "https://booksrun.com/9781586380205-the-dhammapada-easwarans-classics-of-indian-spirituality-2nd-edition",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://www.alibris.com/search/books/isbn/9781586380205",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://www.ebay.com/itm/365923918950",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    }
+   ],
+   "provenance": {
+    "tier": "web-corroborated",
+    "method": "ISBN, title and author seen together on independent hosts",
+    "batchFile": "web-2026-10-27-b.vpsv"
+   },
+   "authorIds": [
+    "eknath-easwaran"
+   ]
+  },
+  {
+   "id": "zen-mind-beginners-mind",
+   "slug": "zen-mind-beginners-mind",
+   "title": "Zen Mind, Beginner's Mind",
+   "subtitle": "Informal Talks on Zen Meditation and Practice",
+   "authors": [
+    "Shunryu Suzuki"
+   ],
+   "subjects": [
+    "buddhism",
+    "mindfulness"
+   ],
+   "tradition": [
+    "buddhist"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Shambhala",
+     "year": null,
+     "isbn13": "9780834800793",
+     "sources": [
+      {
+       "label": "Corroborating record",
+       "url": "https://www.worldofbooks.com/products/zen-mind-beginner-s-mind-book-shunryu-suzuki-9780834800793",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.ebay.com/itm/226862126734",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      }
+     ],
+     "id": "9780834800793",
+     "isbn10": "0834800799"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Corroborating record",
+     "url": "https://www.worldofbooks.com/products/zen-mind-beginner-s-mind-book-shunryu-suzuki-9780834800793",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://www.ebay.com/itm/226862126734",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    }
+   ],
+   "provenance": {
+    "tier": "web-corroborated",
+    "method": "ISBN, title and author seen together on independent hosts",
+    "batchFile": "web-2026-10-27-b.vpsv"
+   },
+   "authorIds": [
+    "shunryu-suzuki"
+   ]
+  },
+  {
+   "id": "the-miracle-of-mindfulness",
+   "slug": "the-miracle-of-mindfulness",
+   "title": "The Miracle of Mindfulness",
+   "subtitle": "An Introduction to the Practice of Meditation",
+   "authors": [
+    "Thich Nhat Hanh"
+   ],
+   "subjects": [
+    "mindfulness",
+    "buddhism"
+   ],
+   "tradition": [
+    "buddhist"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Beacon Press",
+     "year": 1999,
+     "isbn13": "9780807012390",
+     "sources": [
+      {
+       "label": "Corroborating record",
+       "url": "https://www.worldofbooks.com/products/miracle-of-mindfulness-book-thich-nhat-hanh-9780807012390",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.ebay.com/itm/397207158501",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      }
+     ],
+     "id": "9780807012390",
+     "isbn10": "0807012394"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Corroborating record",
+     "url": "https://www.worldofbooks.com/products/miracle-of-mindfulness-book-thich-nhat-hanh-9780807012390",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://www.ebay.com/itm/397207158501",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    }
+   ],
+   "provenance": {
+    "tier": "web-corroborated",
+    "method": "ISBN, title and author seen together on independent hosts",
+    "batchFile": "web-2026-10-27-b.vpsv"
+   },
+   "authorIds": [
+    "thich-nhat-hanh"
+   ]
+  },
+  {
+   "id": "peace-is-every-step",
+   "slug": "peace-is-every-step",
+   "title": "Peace Is Every Step",
+   "subtitle": "The Path of Mindfulness in Everyday Life",
+   "authors": [
+    "Thich Nhat Hanh"
+   ],
+   "subjects": [
+    "mindfulness",
+    "buddhism"
+   ],
+   "tradition": [
+    "buddhist"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Bantam",
+     "year": 1992,
+     "isbn13": "9780553351392",
+     "sources": [
+      {
+       "label": "Corroborating record",
+       "url": "https://www.abebooks.com/9780553351392/Peace-Step-Path-Mindfulness-Everyday-0553351397/plp",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.betterworldbooks.com/product/detail/peace-is-every-step-the-path-of-mindfulness-in-everyday-life-9780553351392",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      }
+     ],
+     "id": "9780553351392",
+     "isbn10": "0553351397"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Corroborating record",
+     "url": "https://www.abebooks.com/9780553351392/Peace-Step-Path-Mindfulness-Everyday-0553351397/plp",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://www.betterworldbooks.com/product/detail/peace-is-every-step-the-path-of-mindfulness-in-everyday-life-9780553351392",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    }
+   ],
+   "provenance": {
+    "tier": "web-corroborated",
+    "method": "ISBN, title and author seen together on independent hosts",
+    "batchFile": "web-2026-10-27-b.vpsv"
+   },
+   "authorIds": [
+    "thich-nhat-hanh"
+   ]
+  },
+  {
+   "id": "radical-acceptance",
+   "slug": "radical-acceptance",
+   "title": "Radical Acceptance",
+   "subtitle": "Embracing Your Life with the Heart of a Buddha",
+   "authors": [
+    "Tara Brach"
+   ],
+   "subjects": [
+    "mindfulness",
+    "emotional-wellbeing"
+   ],
+   "tradition": [
+    "buddhist"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Bantam",
+     "year": 2004,
+     "isbn13": "9780553380996",
+     "sources": [
+      {
+       "label": "Corroborating record",
+       "url": "https://www.booksamillion.com/p/Radical-Acceptance/Tara-Brach/9780553380996",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.thenile.com.au/books/tara-brach/radical-acceptance/9780553380996",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      }
+     ],
+     "id": "9780553380996",
+     "isbn10": "0553380990"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Corroborating record",
+     "url": "https://www.booksamillion.com/p/Radical-Acceptance/Tara-Brach/9780553380996",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://www.thenile.com.au/books/tara-brach/radical-acceptance/9780553380996",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    }
+   ],
+   "provenance": {
+    "tier": "web-corroborated",
+    "method": "ISBN, title and author seen together on independent hosts",
+    "batchFile": "web-2026-10-27-b.vpsv"
+   },
+   "authorIds": [
+    "tara-brach"
+   ]
+  },
+  {
+   "id": "light-on-yoga",
+   "slug": "light-on-yoga",
+   "title": "Light on Yoga",
+   "subtitle": "The Bible of Modern Yoga",
+   "authors": [
+    "B.K.S. Iyengar"
+   ],
+   "subjects": [
+    "yoga"
+   ],
+   "tradition": [
+    "hindu"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Schocken Books",
+     "year": 1979,
+     "isbn13": "9780805210316",
+     "sources": [
+      {
+       "label": "Corroborating record",
+       "url": "https://www.abebooks.com/9780805210316/Light-Yoga-Bible-Modern-Iyengar-0805210318/plp",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.worldofbooks.com/products/light-on-yoga-book-bks-iyengar-9780805210316",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      }
+     ],
+     "id": "9780805210316",
+     "isbn10": "0805210318"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Corroborating record",
+     "url": "https://www.abebooks.com/9780805210316/Light-Yoga-Bible-Modern-Iyengar-0805210318/plp",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://www.worldofbooks.com/products/light-on-yoga-book-bks-iyengar-9780805210316",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    }
+   ],
+   "provenance": {
+    "tier": "web-corroborated",
+    "method": "ISBN, title and author seen together on independent hosts",
+    "batchFile": "web-2026-10-27-b.vpsv"
+   },
+   "authorIds": [
+    "b-k-s-iyengar"
+   ]
+  },
+  {
+   "id": "the-yoga-sutras-of-patanjali",
+   "slug": "the-yoga-sutras-of-patanjali",
+   "title": "The Yoga Sutras of Patañjali",
+   "subtitle": "A New Edition, Translation, and Commentary",
+   "authors": [
+    "Edwin F. Bryant"
+   ],
+   "subjects": [
+    "yoga",
+    "hinduism"
+   ],
+   "tradition": [
+    "hindu"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "North Point Press",
+     "year": 2009,
+     "isbn13": "9780865477360",
+     "sources": [
+      {
+       "label": "Corroborating record",
+       "url": "https://www.thenile.com.au/books/edwin-bryant/yoga-sutras-of-patanjali/9780865477360",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.worldofbooks.com/products/yoga-sutras-of-patanjali-book-edwin-bryant-9780865477360/",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://cincinnatistate.ecampus.com/yoga-sutras-patajali-new-edition/bk/9780865477360",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      }
+     ],
+     "id": "9780865477360",
+     "isbn10": "0865477361"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Corroborating record",
+     "url": "https://www.thenile.com.au/books/edwin-bryant/yoga-sutras-of-patanjali/9780865477360",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://www.worldofbooks.com/products/yoga-sutras-of-patanjali-book-edwin-bryant-9780865477360/",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://cincinnatistate.ecampus.com/yoga-sutras-patajali-new-edition/bk/9780865477360",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    }
+   ],
+   "provenance": {
+    "tier": "web-corroborated",
+    "method": "ISBN, title and author seen together on independent hosts",
+    "batchFile": "web-2026-10-27-b.vpsv"
+   },
+   "authorIds": [
+    "edwin-f-bryant"
+   ]
+  },
+  {
+   "id": "i-am-that",
+   "slug": "i-am-that",
+   "title": "I Am That",
+   "subtitle": "Talks with Sri Nisargadatta Maharaj",
+   "authors": [
+    "Nisargadatta Maharaj"
+   ],
+   "subjects": [
+    "consciousness",
+    "hinduism"
+   ],
+   "tradition": [
+    "nondual"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Acorn Press",
+     "year": 2012,
+     "isbn13": "9780893860462",
+     "note": "Translated by Maurice Frydman.",
+     "sources": [
+      {
+       "label": "Corroborating record",
+       "url": "https://www.biblio.com/9780893860462",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.abebooks.com/9780893860462/Nisargadatta-Maharaj-Translated-Maurice-Frydman-0893860468/plp",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      }
+     ],
+     "id": "9780893860462",
+     "isbn10": "0893860468"
+    },
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Acorn Press",
+     "year": null,
+     "isbn13": "9780893860226",
+     "note": "Translated by Maurice Frydman. Printing dates vary between listings.",
+     "sources": [
+      {
+       "label": "Corroborating record",
+       "url": "https://www.biblio.com/9780893860226",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.betterworldbooks.com/product/detail/i-am-that-talks-with-sri-nisargadatta-maharaj-9780893860226",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      }
+     ],
+     "id": "9780893860226",
+     "isbn10": "0893860220"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Corroborating record",
+     "url": "https://www.biblio.com/9780893860462",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://www.abebooks.com/9780893860462/Nisargadatta-Maharaj-Translated-Maurice-Frydman-0893860468/plp",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    }
+   ],
+   "provenance": {
+    "tier": "web-corroborated",
+    "method": "ISBN, title and author seen together on independent hosts",
+    "batchFile": "web-2026-10-27-b.vpsv"
+   },
+   "authorIds": [
+    "nisargadatta-maharaj"
+   ]
+  },
+  {
+   "id": "the-tao-of-physics",
+   "slug": "the-tao-of-physics",
+   "title": "The Tao of Physics",
+   "subtitle": "An Exploration of the Parallels Between Modern Physics and Eastern Mysticism",
+   "authors": [
+    "Fritjof Capra"
+   ],
+   "subjects": [
+    "consciousness",
+    "taoism"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Shambhala",
+     "year": null,
+     "isbn13": "9780394731117",
+     "sources": [
+      {
+       "label": "Corroborating record",
+       "url": "https://www.ebay.com/itm/137134921704",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.amazon.com/Tao-Physics-Exploration-Parallels-Mysticism/dp/0394731115",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      }
+     ],
+     "id": "9780394731117",
+     "isbn10": "0394731115"
+    },
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Shambhala",
+     "year": 2000,
+     "isbn13": "9781570625190",
+     "sources": [
+      {
+       "label": "Corroborating record",
+       "url": "https://www.worldofbooks.com/products/tao-of-physics-book-fritjof-capra-9781570625190",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.amazon.in/Tao-Physics-Fritjof-Capra/dp/1570625190",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      }
+     ],
+     "id": "9781570625190",
+     "isbn10": "1570625190"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Corroborating record",
+     "url": "https://www.ebay.com/itm/137134921704",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://www.amazon.com/Tao-Physics-Exploration-Parallels-Mysticism/dp/0394731115",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    }
+   ],
+   "provenance": {
+    "tier": "web-corroborated",
+    "method": "ISBN, title and author seen together on independent hosts",
+    "batchFile": "web-2026-10-27-b.vpsv"
+   },
+   "authorIds": [
+    "fritjof-capra"
+   ]
+  },
+  {
+   "id": "liber-null-and-psychonaut",
+   "slug": "liber-null-and-psychonaut",
+   "title": "Liber Null & Psychonaut",
+   "subtitle": "The Practice of Chaos Magic",
+   "authors": [
+    "Peter J. Carroll"
+   ],
+   "subjects": [
+    "ceremonial-magic"
+   ],
+   "tradition": [
+    "western-esoteric"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Weiser Books",
+     "year": 2022,
+     "isbn13": "9781578637669",
+     "note": "Revised and expanded edition (Weiser Classics).",
+     "sources": [
+      {
+       "label": "Corroborating record",
+       "url": "https://www.thenile.com.au/books/peter-j-carroll/liber-null-psychonaut/9781578637669",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.worldofbooks.com/products/liber-null-psychonaut-book-peter-j-carroll-9781578637669",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      }
+     ],
+     "id": "9781578637669",
+     "isbn10": "157863766X"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Corroborating record",
+     "url": "https://www.thenile.com.au/books/peter-j-carroll/liber-null-psychonaut/9781578637669",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://www.worldofbooks.com/products/liber-null-psychonaut-book-peter-j-carroll-9781578637669",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    }
+   ],
+   "provenance": {
+    "tier": "web-corroborated",
+    "method": "ISBN, title and author seen together on independent hosts",
+    "batchFile": "web-2026-10-27-b.vpsv"
+   },
+   "authorIds": [
+    "peter-j-carroll"
+   ]
+  },
+  {
+   "id": "magick-in-theory-and-practice",
+   "slug": "magick-in-theory-and-practice",
+   "title": "Magick in Theory and Practice",
+   "subtitle": "",
+   "authors": [
+    "Aleister Crowley"
+   ],
+   "subjects": [
+    "ceremonial-magic"
+   ],
+   "tradition": [
+    "western-esoteric"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Dover Publications",
+     "year": 1976,
+     "isbn13": "9780486232959",
+     "sources": [
+      {
+       "label": "Corroborating record",
+       "url": "https://www.biblio.com/9780486232959",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.ebay.com/itm/196061551314",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      }
+     ],
+     "id": "9780486232959",
+     "isbn10": "0486232956"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Corroborating record",
+     "url": "https://www.biblio.com/9780486232959",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://www.ebay.com/itm/196061551314",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    }
+   ],
+   "provenance": {
+    "tier": "web-corroborated",
+    "method": "ISBN, title and author seen together on independent hosts",
+    "batchFile": "web-2026-10-27-b.vpsv"
+   },
+   "authorIds": [
+    "aleister-crowley"
+   ]
+  },
+  {
+   "id": "the-mystical-qabalah",
+   "slug": "the-mystical-qabalah",
+   "title": "The Mystical Qabalah",
+   "subtitle": "",
+   "authors": [
+    "Dion Fortune"
+   ],
+   "subjects": [
+    "ceremonial-magic",
+    "hermeticism"
+   ],
+   "tradition": [
+    "western-esoteric"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Red Wheel/Weiser",
+     "year": null,
+     "isbn13": "9780877285960",
+     "note": "A Western esoteric treatment of the Qabalah rather than a Jewish source text.",
+     "sources": [
+      {
+       "label": "Corroborating record",
+       "url": "https://www.biblio.com/9780877285960",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.amazon.com/Mystical-Qabalah-Dion-Fortune/dp/0877285969",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      }
+     ],
+     "id": "9780877285960",
+     "isbn10": "0877285969"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Corroborating record",
+     "url": "https://www.biblio.com/9780877285960",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://www.amazon.com/Mystical-Qabalah-Dion-Fortune/dp/0877285969",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    }
+   ],
+   "provenance": {
+    "tier": "web-corroborated",
+    "method": "ISBN, title and author seen together on independent hosts",
+    "batchFile": "web-2026-10-27-b.vpsv"
+   },
+   "authorIds": [
+    "dion-fortune"
+   ]
+  },
+  {
+   "id": "drawing-down-the-moon",
+   "slug": "drawing-down-the-moon",
+   "title": "Drawing Down the Moon",
+   "subtitle": "Witches, Druids, Goddess-Worshippers, and Other Pagans in America",
+   "authors": [
+    "Margot Adler"
+   ],
+   "subjects": [
+    "wicca",
+    "paganism"
+   ],
+   "tradition": [
+    "wiccan"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Penguin",
+     "year": 2006,
+     "isbn13": "9780143038191",
+     "note": "Revised and updated edition.",
+     "sources": [
+      {
+       "label": "Corroborating record",
+       "url": "https://www.penguin.com.au/books/drawing-down-the-moon-9780143038191",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.amazon.com/Drawing-Down-Moon-Witches-Goddess-Worshippers/dp/0143038192",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      }
+     ],
+     "id": "9780143038191",
+     "isbn10": "0143038192"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Corroborating record",
+     "url": "https://www.penguin.com.au/books/drawing-down-the-moon-9780143038191",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://www.amazon.com/Drawing-Down-Moon-Witches-Goddess-Worshippers/dp/0143038192",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    }
+   ],
+   "provenance": {
+    "tier": "web-corroborated",
+    "method": "ISBN, title and author seen together on independent hosts",
+    "batchFile": "web-2026-10-27-b.vpsv"
+   },
+   "authorIds": [
+    "margot-adler"
+   ]
+  },
+  {
+   "id": "the-spiral-dance",
+   "slug": "the-spiral-dance",
+   "title": "The Spiral Dance",
+   "subtitle": "A Rebirth of the Ancient Religion of the Goddess",
+   "authors": [
+    "Starhawk"
+   ],
+   "subjects": [
+    "wicca",
+    "witchcraft"
+   ],
+   "tradition": [
+    "wiccan"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "HarperOne",
+     "year": null,
+     "isbn13": "9780062516329",
+     "note": "20th Anniversary Edition.",
+     "sources": [
+      {
+       "label": "Corroborating record",
+       "url": "https://www.booksamillion.com/p/Spiral-Dance/Starhawk/9780062516329",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.strandbooks.com/spiral-dance-the-20th-anniversary-a-rebirth-of-the-ancient-religion-of-the-goddess-20th-anniversary-edition-9780062516329.html",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.harpercollins.ca/9780062516329/spiral-dance-the-20th-anniversary/",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      }
+     ],
+     "id": "9780062516329",
+     "isbn10": "0062516329"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Corroborating record",
+     "url": "https://www.booksamillion.com/p/Spiral-Dance/Starhawk/9780062516329",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://www.strandbooks.com/spiral-dance-the-20th-anniversary-a-rebirth-of-the-ancient-religion-of-the-goddess-20th-anniversary-edition-9780062516329.html",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://www.harpercollins.ca/9780062516329/spiral-dance-the-20th-anniversary/",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    }
+   ],
+   "provenance": {
+    "tier": "web-corroborated",
+    "method": "ISBN, title and author seen together on independent hosts",
+    "batchFile": "web-2026-10-27-b.vpsv"
+   },
+   "authorIds": [
+    "starhawk"
+   ]
+  },
+  {
+   "id": "initiation-into-hermetics",
+   "slug": "initiation-into-hermetics",
+   "title": "Initiation into Hermetics",
+   "subtitle": "The Path of the True Adept",
+   "authors": [
+    "Franz Bardon"
+   ],
+   "subjects": [
+    "hermeticism",
+    "ceremonial-magic"
+   ],
+   "tradition": [
+    "hermetic"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Merkur Publishing",
+     "year": null,
+     "isbn13": "9781885928122",
+     "note": "Publication years vary between listings, so none is given.",
+     "sources": [
+      {
+       "label": "Corroborating record",
+       "url": "https://www.biblio.com/9781885928122",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.worldofbooks.com/products/initiation-into-hermetics-book-franz-bardon-9781885928122/",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.ebay.com/itm/324798394079",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      }
+     ],
+     "id": "9781885928122",
+     "isbn10": "1885928122"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Corroborating record",
+     "url": "https://www.biblio.com/9781885928122",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://www.worldofbooks.com/products/initiation-into-hermetics-book-franz-bardon-9781885928122/",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://www.ebay.com/itm/324798394079",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    }
+   ],
+   "provenance": {
+    "tier": "web-corroborated",
+    "method": "ISBN, title and author seen together on independent hosts",
+    "batchFile": "web-2026-10-27-b.vpsv"
+   },
+   "authorIds": [
+    "franz-bardon"
+   ]
+  },
+  {
+   "id": "modern-magick",
+   "slug": "modern-magick",
+   "title": "Modern Magick",
+   "subtitle": "Twelve Lessons in the High Magickal Arts",
+   "authors": [
+    "Donald Michael Kraig"
+   ],
+   "subjects": [
+    "ceremonial-magic"
+   ],
+   "tradition": [
+    "western-esoteric"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Llewellyn",
+     "year": 2010,
+     "isbn13": "9780738715780",
+     "sources": [
+      {
+       "label": "Corroborating record",
+       "url": "https://www.llewellyn.com/product.php?ean=9780738715780",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.worldofbooks.com/products/modern-magick-book-donald-michael-kraig-9780738715780",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      }
+     ],
+     "id": "9780738715780",
+     "isbn10": "0738715786"
+    },
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Llewellyn",
+     "year": null,
+     "isbn13": "9780875423241",
+     "note": "Earlier edition.",
+     "sources": [
+      {
+       "label": "Corroborating record",
+       "url": "https://www.worldofbooks.com/products/modern-magick-book-donald-michael-kraig-9780875423241",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.amazon.com/Modern-Magick-Lessons-Magickal-Llewellyns/dp/0875423248",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      }
+     ],
+     "id": "9780875423241",
+     "isbn10": "0875423248"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Corroborating record",
+     "url": "https://www.llewellyn.com/product.php?ean=9780738715780",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://www.worldofbooks.com/products/modern-magick-book-donald-michael-kraig-9780738715780",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    }
+   ],
+   "provenance": {
+    "tier": "web-corroborated",
+    "method": "ISBN, title and author seen together on independent hosts",
+    "batchFile": "web-2026-10-27-b.vpsv"
+   },
+   "authorIds": [
+    "donald-michael-kraig"
+   ]
+  },
+  {
+   "id": "the-return-of-the-king",
+   "slug": "the-return-of-the-king",
+   "title": "The Return of the King",
+   "subtitle": "Being the Third Part of The Lord of the Rings",
+   "authors": [
+    "J.R.R. Tolkien"
+   ],
+   "subjects": [
+    "epic-fantasy"
+   ],
+   "tradition": [
+    "fiction"
+   ],
+   "level": "unrated",
+   "series": {
+    "name": "The Lord of the Rings",
+    "number": 3
+   },
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Mariner Books",
+     "year": 2012,
+     "isbn13": "9780547928197",
+     "note": "Revised edition.",
+     "sources": [
+      {
+       "label": "Corroborating record",
+       "url": "https://www.christianbook.com/3-the-return-of-the-king/j-r-r-tolkien/9780547928197/pd/928197",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.ecampus.com/return-king-revised-tolkien-j-r-r/bk/9780547928197",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.abebooks.com/9780547928197/Return-King-Being-Third-Part-054792819X/plp",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      }
+     ],
+     "id": "9780547928197",
+     "isbn10": "054792819X"
+    },
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Mariner Books",
+     "year": null,
+     "isbn13": "9780618002245",
+     "note": "Earlier Mariner paperback; printing year not confirmed.",
+     "sources": [
+      {
+       "label": "Corroborating record",
+       "url": "https://www.biblio.com/9780618002245",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.amazon.com/Return-King-Lord-Rings/dp/0618002243",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      }
+     ],
+     "id": "9780618002245",
+     "isbn10": "0618002243"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Corroborating record",
+     "url": "https://www.christianbook.com/3-the-return-of-the-king/j-r-r-tolkien/9780547928197/pd/928197",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://www.ecampus.com/return-king-revised-tolkien-j-r-r/bk/9780547928197",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://www.abebooks.com/9780547928197/Return-King-Being-Third-Part-054792819X/plp",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    }
+   ],
+   "provenance": {
+    "tier": "web-corroborated",
+    "method": "ISBN, title and author seen together on independent hosts",
+    "batchFile": "web-2026-10-27-c.vpsv"
+   },
+   "authorIds": [
+    "j-r-r-tolkien"
+   ]
+  },
+  {
+   "id": "the-wise-mans-fear",
+   "slug": "the-wise-mans-fear",
+   "title": "The Wise Man's Fear",
+   "subtitle": "",
+   "authors": [
+    "Patrick Rothfuss"
+   ],
+   "subjects": [
+    "epic-fantasy"
+   ],
+   "tradition": [
+    "fiction"
+   ],
+   "level": "unrated",
+   "series": {
+    "name": "The Kingkiller Chronicle",
+    "number": 2
+   },
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "DAW",
+     "year": 2012,
+     "isbn13": "9780756407124",
+     "note": "Trade paperback.",
+     "sources": [
+      {
+       "label": "Corroborating record",
+       "url": "https://www.booksamillion.com/p/Wise-Mans-Fear/Patrick-Rothfuss/9780756407124",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.biblio.com/9780756407124",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      }
+     ],
+     "id": "9780756407124",
+     "isbn10": "0756407125"
+    },
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "DAW",
+     "year": 2013,
+     "isbn13": "9780756407919",
+     "note": "Mass-market paperback.",
+     "sources": [
+      {
+       "label": "Corroborating record",
+       "url": "https://www.booksamillion.com/p/Wise-Mans-Fear/Patrick-Rothfuss/9780756407919",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.amazon.ca/Wise-Mans-Fear-Patrick-Rothfuss/dp/0756407915",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      }
+     ],
+     "id": "9780756407919",
+     "isbn10": "0756407915"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Corroborating record",
+     "url": "https://www.booksamillion.com/p/Wise-Mans-Fear/Patrick-Rothfuss/9780756407124",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://www.biblio.com/9780756407124",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    }
+   ],
+   "provenance": {
+    "tier": "web-corroborated",
+    "method": "ISBN, title and author seen together on independent hosts",
+    "batchFile": "web-2026-10-27-c.vpsv"
+   },
+   "authorIds": [
+    "patrick-rothfuss"
+   ]
+  },
+  {
+   "id": "the-way-of-kings",
+   "slug": "the-way-of-kings",
+   "title": "The Way of Kings",
+   "subtitle": "Book One of the Stormlight Archive",
+   "authors": [
+    "Brandon Sanderson"
+   ],
+   "subjects": [
+    "epic-fantasy"
+   ],
+   "tradition": [
+    "fiction"
+   ],
+   "level": "unrated",
+   "series": {
+    "name": "The Stormlight Archive",
+    "number": 1
+   },
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Tor Books",
+     "year": 2014,
+     "isbn13": "9780765376671",
+     "note": "Trade paperback.",
+     "sources": [
+      {
+       "label": "Corroborating record",
+       "url": "https://www.booksamillion.com/p/Way-Kings/Brandon-Sanderson/9780765376671",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.abebooks.co.uk/9780765376671/Way-Kings-Book-Stormlight-Archive-0765376679/plp",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      }
+     ],
+     "id": "9780765376671",
+     "isbn10": "0765376679"
+    },
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Tor Books",
+     "year": 2011,
+     "isbn13": "9780765365279",
+     "note": "Mass-market paperback.",
+     "sources": [
+      {
+       "label": "Corroborating record",
+       "url": "https://www.amazon.com/Way-Kings-Book-Stormlight-Archive/dp/B0052IG90K",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://bulkbookstore.com/the-way-of-kings-book-one-of-the-stormlight-archive-9780765365279-1",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      }
+     ],
+     "id": "9780765365279",
+     "isbn10": "0765365278"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Corroborating record",
+     "url": "https://www.booksamillion.com/p/Way-Kings/Brandon-Sanderson/9780765376671",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://www.abebooks.co.uk/9780765376671/Way-Kings-Book-Stormlight-Archive-0765376679/plp",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    }
+   ],
+   "provenance": {
+    "tier": "web-corroborated",
+    "method": "ISBN, title and author seen together on independent hosts",
+    "batchFile": "web-2026-10-27-c.vpsv"
+   },
+   "authorIds": [
+    "brandon-sanderson"
+   ]
+  },
+  {
+   "id": "the-eye-of-the-world",
+   "slug": "the-eye-of-the-world",
+   "title": "The Eye of the World",
+   "subtitle": "",
+   "authors": [
+    "Robert Jordan"
+   ],
+   "subjects": [
+    "epic-fantasy"
+   ],
+   "tradition": [
+    "fiction"
+   ],
+   "level": "unrated",
+   "series": {
+    "name": "The Wheel of Time",
+    "number": 1
+   },
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Tor Books",
+     "year": 2000,
+     "isbn13": "9780812579956",
+     "note": "Mass-market paperback.",
+     "sources": [
+      {
+       "label": "Corroborating record",
+       "url": "https://www.biblio.com/9780812579956",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.worldofbooks.com/products/eye-of-the-world-book-robert-jordan-9780812579956",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      }
+     ],
+     "id": "9780812579956",
+     "isbn10": "081257995X"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Corroborating record",
+     "url": "https://www.biblio.com/9780812579956",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://www.worldofbooks.com/products/eye-of-the-world-book-robert-jordan-9780812579956",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    }
+   ],
+   "provenance": {
+    "tier": "web-corroborated",
+    "method": "ISBN, title and author seen together on independent hosts",
+    "batchFile": "web-2026-10-27-c.vpsv"
+   },
+   "authorIds": [
+    "robert-jordan"
+   ]
+  },
+  {
+   "id": "a-clash-of-kings",
+   "slug": "a-clash-of-kings",
+   "title": "A Clash of Kings",
+   "subtitle": "",
+   "authors": [
+    "George R.R. Martin"
+   ],
+   "subjects": [
+    "epic-fantasy"
+   ],
+   "tradition": [
+    "fiction"
+   ],
+   "level": "unrated",
+   "series": {
+    "name": "A Song of Ice and Fire",
+    "number": 2
+   },
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Bantam",
+     "year": 2000,
+     "isbn13": "9780553579901",
+     "note": "Mass-market paperback.",
+     "sources": [
+      {
+       "label": "Corroborating record",
+       "url": "https://www.ebay.com/itm/167534378403",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.worldofbooks.com/products/clash-of-kings-book-george-r-r-martin-9780553579901",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      }
+     ],
+     "id": "9780553579901",
+     "isbn10": "0553579908"
+    },
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Bantam",
+     "year": 2002,
+     "isbn13": "9780553381696",
+     "note": "Trade paperback. Listings differ on the imprint.",
+     "sources": [
+      {
+       "label": "Corroborating record",
+       "url": "https://bulkbookstore.com/a-clash-of-kings-a-song-of-ice-and-fire-book-two-random-house-publishing-group-9780553381696",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.valore.com/products/a-clash-of-kings/9780553381696",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.ebay.com/itm/226352431813",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      }
+     ],
+     "id": "9780553381696",
+     "isbn10": "0553381695"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Corroborating record",
+     "url": "https://www.ebay.com/itm/167534378403",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://www.worldofbooks.com/products/clash-of-kings-book-george-r-r-martin-9780553579901",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    }
+   ],
+   "provenance": {
+    "tier": "web-corroborated",
+    "method": "ISBN, title and author seen together on independent hosts",
+    "batchFile": "web-2026-10-27-c.vpsv"
+   },
+   "authorIds": [
+    "george-r-r-martin"
+   ]
+  },
+  {
+   "id": "the-left-hand-of-darkness",
+   "slug": "the-left-hand-of-darkness",
+   "title": "The Left Hand of Darkness",
+   "subtitle": "",
+   "authors": [
+    "Ursula K. Le Guin"
+   ],
+   "subjects": [
+    "speculative-fiction"
+   ],
+   "tradition": [
+    "fiction"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Ace",
+     "year": null,
+     "isbn13": "9780441007318",
+     "note": "Ace Science Fiction reissue; listings label it a 50th Anniversary Edition.",
+     "sources": [
+      {
+       "label": "Corroborating record",
+       "url": "https://www.amazon.com/Left-Hand-Darkness-Science-Fiction/dp/0441007317",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.campusbooks.com/books/9780441007318-the-left-hand-of-darkness-50th-anniversary-edition-ace-science-fiction",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      }
+     ],
+     "id": "9780441007318",
+     "isbn10": "0441007317"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Corroborating record",
+     "url": "https://www.amazon.com/Left-Hand-Darkness-Science-Fiction/dp/0441007317",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://www.campusbooks.com/books/9780441007318-the-left-hand-of-darkness-50th-anniversary-edition-ace-science-fiction",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    }
+   ],
+   "provenance": {
+    "tier": "web-corroborated",
+    "method": "ISBN, title and author seen together on independent hosts",
+    "batchFile": "web-2026-10-27-c.vpsv"
+   },
+   "authorIds": [
+    "ursula-k-le-guin"
+   ]
+  },
+  {
+   "id": "the-fifth-season",
+   "slug": "the-fifth-season",
+   "title": "The Fifth Season",
+   "subtitle": "",
+   "authors": [
+    "N.K. Jemisin"
+   ],
+   "subjects": [
+    "fantasy"
+   ],
+   "tradition": [
+    "fiction"
+   ],
+   "level": "unrated",
+   "series": {
+    "name": "The Broken Earth",
+    "number": 1
+   },
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Orbit",
+     "year": 2015,
+     "isbn13": "9780316229296",
+     "sources": [
+      {
+       "label": "Corroborating record",
+       "url": "https://www.booksamillion.com/p/Fifth-Season/N-K-Jemisin/9780316229296",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.biblio.com/9780316229296",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.ebay.com/itm/235439646645",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      }
+     ],
+     "id": "9780316229296",
+     "isbn10": "0316229296"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Corroborating record",
+     "url": "https://www.booksamillion.com/p/Fifth-Season/N-K-Jemisin/9780316229296",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://www.biblio.com/9780316229296",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://www.ebay.com/itm/235439646645",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    }
+   ],
+   "provenance": {
+    "tier": "web-corroborated",
+    "method": "ISBN, title and author seen together on independent hosts",
+    "batchFile": "web-2026-10-27-c.vpsv"
+   },
+   "authorIds": [
+    "n-k-jemisin"
+   ]
+  },
+  {
+   "id": "the-blade-itself",
+   "slug": "the-blade-itself",
+   "title": "The Blade Itself",
+   "subtitle": "",
+   "authors": [
+    "Joe Abercrombie"
+   ],
+   "subjects": [
+    "dark-fantasy"
+   ],
+   "tradition": [
+    "fiction"
+   ],
+   "level": "unrated",
+   "series": {
+    "name": "The First Law",
+    "number": 1
+   },
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Gollancz",
+     "year": 2006,
+     "isbn13": "9780575077867",
+     "note": "UK paperback.",
+     "sources": [
+      {
+       "label": "Corroborating record",
+       "url": "https://www.biblio.com/9780575077867",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.abebooks.com/9780575077867/Blade-Book-Abercrombie-Joe-0575077867/plp",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      }
+     ],
+     "id": "9780575077867",
+     "isbn10": "0575077867"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Corroborating record",
+     "url": "https://www.biblio.com/9780575077867",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://www.abebooks.com/9780575077867/Blade-Book-Abercrombie-Joe-0575077867/plp",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    }
+   ],
+   "provenance": {
+    "tier": "web-corroborated",
+    "method": "ISBN, title and author seen together on independent hosts",
+    "batchFile": "web-2026-10-27-c.vpsv"
+   },
+   "authorIds": [
+    "joe-abercrombie"
+   ]
+  },
+  {
+   "id": "storm-front",
+   "slug": "storm-front",
+   "title": "Storm Front",
+   "subtitle": "",
+   "authors": [
+    "Jim Butcher"
+   ],
+   "subjects": [
+    "urban-fantasy"
+   ],
+   "tradition": [
+    "fiction"
+   ],
+   "level": "unrated",
+   "series": {
+    "name": "The Dresden Files",
+    "number": 1
+   },
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": null,
+     "year": 2000,
+     "isbn13": "9780451457813",
+     "note": "Mass-market paperback. Listings give the imprint as Roc or Ace, so none is stated.",
+     "sources": [
+      {
+       "label": "Corroborating record",
+       "url": "https://www.booksamillion.com/p/Storm-Front/Jim-Butcher/9780451457813",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.ebay.com/itm/135218986954",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.amazon.com/Storm-Front-Dresden-Files-Butcher/dp/0451457811",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      }
+     ],
+     "id": "9780451457813",
+     "isbn10": "0451457811"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Corroborating record",
+     "url": "https://www.booksamillion.com/p/Storm-Front/Jim-Butcher/9780451457813",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://www.ebay.com/itm/135218986954",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://www.amazon.com/Storm-Front-Dresden-Files-Butcher/dp/0451457811",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    }
+   ],
+   "provenance": {
+    "tier": "web-corroborated",
+    "method": "ISBN, title and author seen together on independent hosts",
+    "batchFile": "web-2026-10-27-c.vpsv"
+   },
+   "authorIds": [
+    "jim-butcher"
+   ]
+  },
+  {
+   "id": "the-call-of-cthulhu-and-other-weird-stories",
+   "slug": "the-call-of-cthulhu-and-other-weird-stories",
+   "title": "The Call of Cthulhu and Other Weird Stories",
+   "subtitle": "",
+   "authors": [
+    "H.P. Lovecraft"
+   ],
+   "subjects": [
+    "horror",
+    "supernatural-fiction"
+   ],
+   "tradition": [
+    "fiction"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Penguin Classics",
+     "year": null,
+     "isbn13": "9780143106487",
+     "note": "Penguin Classics Deluxe Edition; edited by S. T. Joshi.",
+     "sources": [
+      {
+       "label": "Corroborating record",
+       "url": "https://www.thenile.co.nz/books/hp-lovecraft/the-call-of-cthulhu-and-other-weird-stories-penguin-classic/9780143106487",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.worldofbooks.com/products/call-of-cthulhu-and-other-weird-stories-penguin-classics-deluxe-edition-book-h-p-lovecraft-9780143106487",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.ebay.com/itm/392324840439",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      }
+     ],
+     "id": "9780143106487",
+     "isbn10": "0143106481"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Corroborating record",
+     "url": "https://www.thenile.co.nz/books/hp-lovecraft/the-call-of-cthulhu-and-other-weird-stories-penguin-classic/9780143106487",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://www.worldofbooks.com/products/call-of-cthulhu-and-other-weird-stories-penguin-classics-deluxe-edition-book-h-p-lovecraft-9780143106487",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://www.ebay.com/itm/392324840439",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    }
+   ],
+   "provenance": {
+    "tier": "web-corroborated",
+    "method": "ISBN, title and author seen together on independent hosts",
+    "batchFile": "web-2026-10-27-c.vpsv"
+   },
+   "authorIds": [
+    "h-p-lovecraft"
+   ]
+  },
+  {
+   "id": "we-have-always-lived-in-the-castle",
+   "slug": "we-have-always-lived-in-the-castle",
+   "title": "We Have Always Lived in the Castle",
+   "subtitle": "",
+   "authors": [
+    "Shirley Jackson"
+   ],
+   "subjects": [
+    "supernatural-fiction",
+    "horror"
+   ],
+   "tradition": [
+    "fiction"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Penguin Classics",
+     "year": 2006,
+     "isbn13": "9780143039976",
+     "note": "Penguin Classics Deluxe Edition.",
+     "sources": [
+      {
+       "label": "Corroborating record",
+       "url": "https://oneonta.ecampus.com/we-have-always-lived-castle-penguin/bk/9780143039976",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://bulkbookstore.com/we-have-always-lived-in-the-castle-penguin-classics-deluxe-edition-9780143039976",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.abebooks.com/9780143039976/Always-Lived-Castle-Penguin-Classics-0143039970/plp",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      }
+     ],
+     "id": "9780143039976",
+     "isbn10": "0143039970"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Corroborating record",
+     "url": "https://oneonta.ecampus.com/we-have-always-lived-castle-penguin/bk/9780143039976",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://bulkbookstore.com/we-have-always-lived-in-the-castle-penguin-classics-deluxe-edition-9780143039976",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://www.abebooks.com/9780143039976/Always-Lived-Castle-Penguin-Classics-0143039970/plp",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    }
+   ],
+   "provenance": {
+    "tier": "web-corroborated",
+    "method": "ISBN, title and author seen together on independent hosts",
+    "batchFile": "web-2026-10-27-c.vpsv"
+   },
+   "authorIds": [
+    "shirley-jackson"
+   ]
+  },
+  {
+   "id": "one-hundred-years-of-solitude",
+   "slug": "one-hundred-years-of-solitude",
+   "title": "One Hundred Years of Solitude",
+   "subtitle": "",
+   "authors": [
+    "Gabriel García Márquez"
+   ],
+   "subjects": [
+    "magical-realism"
+   ],
+   "tradition": [
+    "fiction"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Harper Perennial Modern Classics",
+     "year": 2006,
+     "isbn13": "9780060883287",
+     "note": "Translated from the Spanish by Gregory Rabassa.",
+     "sources": [
+      {
+       "label": "Corroborating record",
+       "url": "https://www.biblio.com/9780060883287",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://booksrun.com/9780060883287-one-hundred-years-of-solitude-harper-perennial-modern-classics-reprint-edition",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.abebooks.com/9780060883287/Hundred-Years-Solitude-Novel-Harper-0060883286/plp",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      }
+     ],
+     "id": "9780060883287",
+     "isbn10": "0060883286"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Corroborating record",
+     "url": "https://www.biblio.com/9780060883287",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://booksrun.com/9780060883287-one-hundred-years-of-solitude-harper-perennial-modern-classics-reprint-edition",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://www.abebooks.com/9780060883287/Hundred-Years-Solitude-Novel-Harper-0060883286/plp",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    }
+   ],
+   "provenance": {
+    "tier": "web-corroborated",
+    "method": "ISBN, title and author seen together on independent hosts",
+    "batchFile": "web-2026-10-27-c.vpsv"
+   },
+   "authorIds": [
+    "gabriel-garcia-marquez"
+   ]
+  },
+  {
+   "id": "the-house-of-the-spirits",
+   "slug": "the-house-of-the-spirits",
+   "title": "The House of the Spirits",
+   "subtitle": "A Novel",
+   "authors": [
+    "Isabel Allende"
+   ],
+   "subjects": [
+    "magical-realism"
+   ],
+   "tradition": [
+    "fiction"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Atria Books",
+     "year": 2015,
+     "isbn13": "9781501117015",
+     "note": "Translated from the Spanish.",
+     "sources": [
+      {
+       "label": "Corroborating record",
+       "url": "https://www.booksamillion.com/p/House-Spirits/Isabel-Allende/9781501117015",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.strandbooks.com/the-house-of-the-spirits-9781501117015.html",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.simonandschuster.com/books/The-House-of-the-Spirits/Isabel-Allende/9781501117015",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      }
+     ],
+     "id": "9781501117015",
+     "isbn10": "1501117017"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Corroborating record",
+     "url": "https://www.booksamillion.com/p/House-Spirits/Isabel-Allende/9781501117015",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://www.strandbooks.com/the-house-of-the-spirits-9781501117015.html",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://www.simonandschuster.com/books/The-House-of-the-Spirits/Isabel-Allende/9781501117015",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    }
+   ],
+   "provenance": {
+    "tier": "web-corroborated",
+    "method": "ISBN, title and author seen together on independent hosts",
+    "batchFile": "web-2026-10-27-c.vpsv"
+   },
+   "authorIds": [
+    "isabel-allende"
+   ]
+  },
+  {
+   "id": "kafka-on-the-shore",
+   "slug": "kafka-on-the-shore",
+   "title": "Kafka on the Shore",
+   "subtitle": "",
+   "authors": [
+    "Haruki Murakami"
+   ],
+   "subjects": [
+    "magical-realism"
+   ],
+   "tradition": [
+    "fiction"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Vintage International",
+     "year": 2006,
+     "isbn13": "9781400079278",
+     "note": "Translated from the Japanese by Philip Gabriel.",
+     "sources": [
+      {
+       "label": "Corroborating record",
+       "url": "https://www.betterworldbooks.com/product/detail/kafka-on-the-shore-9781400079278",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://bookpal.com/kafka-on-the-shore-9781400079278/",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.biblio.com/9781400079278",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      }
+     ],
+     "id": "9781400079278",
+     "isbn10": "1400079276"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Corroborating record",
+     "url": "https://www.betterworldbooks.com/product/detail/kafka-on-the-shore-9781400079278",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://bookpal.com/kafka-on-the-shore-9781400079278/",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://www.biblio.com/9781400079278",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    }
+   ],
+   "provenance": {
+    "tier": "web-corroborated",
+    "method": "ISBN, title and author seen together on independent hosts",
+    "batchFile": "web-2026-10-27-c.vpsv"
+   },
+   "authorIds": [
+    "haruki-murakami"
+   ]
+  },
+  {
+   "id": "fahrenheit-451",
+   "slug": "fahrenheit-451",
+   "title": "Fahrenheit 451",
+   "subtitle": "",
+   "authors": [
+    "Ray Bradbury"
+   ],
+   "subjects": [
+    "speculative-fiction"
+   ],
+   "tradition": [
+    "fiction"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Simon & Schuster",
+     "year": 2012,
+     "isbn13": "9781451673319",
+     "sources": [
+      {
+       "label": "Corroborating record",
+       "url": "https://catalog.simonandschuster.com/TitleDetails/TitleDetails.aspx?cid=16215&isbn=9781451673319&ob=0&pn=1&showcart=N",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://bulkbookstore.com/fahrenheit-451-paperback-9781451673319",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://bookpal.com/fahrenheit-451-9781451673319/",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      }
+     ],
+     "id": "9781451673319",
+     "isbn10": "1451673310"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Corroborating record",
+     "url": "https://catalog.simonandschuster.com/TitleDetails/TitleDetails.aspx?cid=16215&isbn=9781451673319&ob=0&pn=1&showcart=N",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://bulkbookstore.com/fahrenheit-451-paperback-9781451673319",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://bookpal.com/fahrenheit-451-9781451673319/",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    }
+   ],
+   "provenance": {
+    "tier": "web-corroborated",
+    "method": "ISBN, title and author seen together on independent hosts",
+    "batchFile": "web-2026-10-27-c.vpsv"
+   },
+   "authorIds": [
+    "ray-bradbury"
+   ]
+  },
+  {
+   "id": "kindred",
+   "slug": "kindred",
+   "title": "Kindred",
+   "subtitle": "",
+   "authors": [
+    "Octavia E. Butler"
+   ],
+   "subjects": [
+    "speculative-fiction"
+   ],
+   "tradition": [
+    "fiction"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Beacon Press",
+     "year": null,
+     "isbn13": "9780807083697",
+     "sources": [
+      {
+       "label": "Corroborating record",
+       "url": "https://www.ebay.com/itm/126656862667",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      },
+      {
+       "label": "Corroborating record",
+       "url": "https://www.abebooks.com/9780807083697/Kindred-Octavia-E-Butler-0807083690/plp",
+       "accessed": "2026-10-27",
+       "supports": "ISBN-13, title, author"
+      }
+     ],
+     "id": "9780807083697",
+     "isbn10": "0807083690"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Corroborating record",
+     "url": "https://www.ebay.com/itm/126656862667",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    },
+    {
+     "label": "Corroborating record",
+     "url": "https://www.abebooks.com/9780807083697/Kindred-Octavia-E-Butler-0807083690/plp",
+     "accessed": "2026-10-27",
+     "supports": "ISBN-13, title, author"
+    }
+   ],
+   "provenance": {
+    "tier": "web-corroborated",
+    "method": "ISBN, title and author seen together on independent hosts",
+    "batchFile": "web-2026-10-27-c.vpsv"
+   },
+   "authorIds": [
+    "octavia-e-butler"
    ]
   }
  ],
  "authors": [
+  {
+   "id": "joe-abercrombie",
+   "name": "Joe Abercrombie",
+   "sortName": "Abercrombie, Joe",
+   "bio": null,
+   "workIds": [
+    "the-blade-itself"
+   ]
+  },
+  {
+   "id": "margot-adler",
+   "name": "Margot Adler",
+   "sortName": "Adler, Margot",
+   "bio": null,
+   "workIds": [
+    "drawing-down-the-moon"
+   ]
+  },
+  {
+   "id": "isabel-allende",
+   "name": "Isabel Allende",
+   "sortName": "Allende, Isabel",
+   "bio": null,
+   "workIds": [
+    "the-house-of-the-spirits"
+   ]
+  },
   {
    "id": "thomas-ashley-farrand",
    "name": "Thomas Ashley-Farrand",
@@ -2838,12 +6324,31 @@
    ]
   },
   {
+   "id": "franz-bardon",
+   "name": "Franz Bardon",
+   "sortName": "Bardon, Franz",
+   "bio": null,
+   "workIds": [
+    "initiation-into-hermetics"
+   ]
+  },
+  {
+   "id": "tara-brach",
+   "name": "Tara Brach",
+   "sortName": "Brach, Tara",
+   "bio": null,
+   "workIds": [
+    "radical-acceptance"
+   ]
+  },
+  {
    "id": "ray-bradbury",
    "name": "Ray Bradbury",
    "sortName": "Bradbury, Ray",
    "bio": "American author of fantasy, horror and science fiction.",
    "workIds": [
-    "something-wicked-this-way-comes"
+    "something-wicked-this-way-comes",
+    "fahrenheit-451"
    ]
   },
   {
@@ -2853,6 +6358,15 @@
    "bio": "The national library of the United Kingdom.",
    "workIds": [
     "harry-potter-a-history-of-magic"
+   ]
+  },
+  {
+   "id": "edwin-f-bryant",
+   "name": "Edwin F. Bryant",
+   "sortName": "Bryant, Edwin F.",
+   "bio": null,
+   "workIds": [
+    "the-yoga-sutras-of-patanjali"
    ]
   },
   {
@@ -2871,6 +6385,42 @@
    "bio": "Russian writer whose novel The Master and Margarita was published after his death.",
    "workIds": [
     "the-master-and-margarita"
+   ]
+  },
+  {
+   "id": "jim-butcher",
+   "name": "Jim Butcher",
+   "sortName": "Butcher, Jim",
+   "bio": null,
+   "workIds": [
+    "storm-front"
+   ]
+  },
+  {
+   "id": "octavia-e-butler",
+   "name": "Octavia E. Butler",
+   "sortName": "Butler, Octavia E.",
+   "bio": null,
+   "workIds": [
+    "kindred"
+   ]
+  },
+  {
+   "id": "fritjof-capra",
+   "name": "Fritjof Capra",
+   "sortName": "Capra, Fritjof",
+   "bio": null,
+   "workIds": [
+    "the-tao-of-physics"
+   ]
+  },
+  {
+   "id": "peter-j-carroll",
+   "name": "Peter J. Carroll",
+   "sortName": "Carroll, Peter J.",
+   "bio": null,
+   "workIds": [
+    "liber-null-and-psychonaut"
    ]
   },
   {
@@ -2901,12 +6451,49 @@
    ]
   },
   {
+   "id": "paulo-coelho",
+   "name": "Paulo Coelho",
+   "sortName": "Coelho, Paulo",
+   "bio": null,
+   "workIds": [
+    "the-alchemist"
+   ]
+  },
+  {
+   "id": "aleister-crowley",
+   "name": "Aleister Crowley",
+   "sortName": "Crowley, Aleister",
+   "bio": null,
+   "workIds": [
+    "magick-in-theory-and-practice"
+   ]
+  },
+  {
    "id": "scott-cunningham",
    "name": "Scott Cunningham",
    "sortName": "Cunningham, Scott",
    "bio": "American author of popular guides to Wicca and magical practice. He died in 1993.",
    "workIds": [
     "wicca"
+   ]
+  },
+  {
+   "id": "ram-dass",
+   "name": "Ram Dass",
+   "sortName": "Dass, Ram",
+   "bio": null,
+   "workIds": [
+    "be-here-now"
+   ]
+  },
+  {
+   "id": "eknath-easwaran",
+   "name": "Eknath Easwaran",
+   "sortName": "Easwaran, Eknath",
+   "bio": null,
+   "workIds": [
+    "the-bhagavad-gita",
+    "the-dhammapada"
    ]
   },
   {
@@ -2927,6 +6514,15 @@
     "mo-pai-nei-kung",
     "the-hidden-technology-of-human-power",
     "forbidden-mantra"
+   ]
+  },
+  {
+   "id": "dion-fortune",
+   "name": "Dion Fortune",
+   "sortName": "Fortune, Dion",
+   "bio": null,
+   "workIds": [
+    "the-mystical-qabalah"
    ]
   },
   {
@@ -2960,6 +6556,15 @@
    ]
   },
   {
+   "id": "mary-k-greer",
+   "name": "Mary K. Greer",
+   "sortName": "Greer, Mary K.",
+   "bio": null,
+   "workIds": [
+    "tarot-for-your-self"
+   ]
+  },
+  {
    "id": "jacob-and-wilhelm-grimm",
    "name": "Jacob and Wilhelm Grimm",
    "sortName": "Grimm, Jacob and Wilhelm",
@@ -2974,7 +6579,27 @@
    "sortName": "Guin, Ursula K. Le",
    "bio": "American author of the Earthsea books and many other works of fantasy and science fiction. She died in 2018.",
    "workIds": [
-    "a-wizard-of-earthsea"
+    "a-wizard-of-earthsea",
+    "the-left-hand-of-darkness"
+   ]
+  },
+  {
+   "id": "manly-p-hall",
+   "name": "Manly P. Hall",
+   "sortName": "Hall, Manly P.",
+   "bio": null,
+   "workIds": [
+    "the-secret-teachings-of-all-ages"
+   ]
+  },
+  {
+   "id": "thich-nhat-hanh",
+   "name": "Thich Nhat Hanh",
+   "sortName": "Hanh, Thich Nhat",
+   "bio": null,
+   "workIds": [
+    "the-miracle-of-mindfulness",
+    "peace-is-every-step"
    ]
   },
   {
@@ -2987,12 +6612,67 @@
    ]
   },
   {
+   "id": "three-initiates",
+   "name": "Three Initiates",
+   "sortName": "Initiates, Three",
+   "bio": null,
+   "workIds": [
+    "the-kybalion"
+   ]
+  },
+  {
+   "id": "b-k-s-iyengar",
+   "name": "B.K.S. Iyengar",
+   "sortName": "Iyengar, B.K.S.",
+   "bio": null,
+   "workIds": [
+    "light-on-yoga"
+   ]
+  },
+  {
    "id": "shirley-jackson",
    "name": "Shirley Jackson",
    "sortName": "Jackson, Shirley",
    "bio": "American author of The Haunting of Hill House. She died in 1965.",
    "workIds": [
-    "the-haunting-of-hill-house"
+    "the-haunting-of-hill-house",
+    "we-have-always-lived-in-the-castle"
+   ]
+  },
+  {
+   "id": "n-k-jemisin",
+   "name": "N.K. Jemisin",
+   "sortName": "Jemisin, N.K.",
+   "bio": null,
+   "workIds": [
+    "the-fifth-season"
+   ]
+  },
+  {
+   "id": "robert-jordan",
+   "name": "Robert Jordan",
+   "sortName": "Jordan, Robert",
+   "bio": null,
+   "workIds": [
+    "the-eye-of-the-world"
+   ]
+  },
+  {
+   "id": "jon-kabat-zinn",
+   "name": "Jon Kabat-Zinn",
+   "sortName": "Kabat-Zinn, Jon",
+   "bio": null,
+   "workIds": [
+    "wherever-you-go-there-you-are"
+   ]
+  },
+  {
+   "id": "donald-michael-kraig",
+   "name": "Donald Michael Kraig",
+   "sortName": "Kraig, Donald Michael",
+   "bio": null,
+   "workIds": [
+    "modern-magick"
    ]
   },
   {
@@ -3005,12 +6685,40 @@
    ]
   },
   {
+   "id": "h-p-lovecraft",
+   "name": "H.P. Lovecraft",
+   "sortName": "Lovecraft, H.P.",
+   "bio": null,
+   "workIds": [
+    "the-call-of-cthulhu-and-other-weird-stories"
+   ]
+  },
+  {
+   "id": "nisargadatta-maharaj",
+   "name": "Nisargadatta Maharaj",
+   "sortName": "Maharaj, Nisargadatta",
+   "bio": null,
+   "workIds": [
+    "i-am-that"
+   ]
+  },
+  {
+   "id": "gabriel-garcia-marquez",
+   "name": "Gabriel García Márquez",
+   "sortName": "Márquez, Gabriel García",
+   "bio": null,
+   "workIds": [
+    "one-hundred-years-of-solitude"
+   ]
+  },
+  {
    "id": "george-r-r-martin",
    "name": "George R.R. Martin",
    "sortName": "Martin, George R.R.",
    "bio": "American author of A Song of Ice and Fire.",
    "workIds": [
-    "a-game-of-thrones"
+    "a-game-of-thrones",
+    "a-clash-of-kings"
    ]
   },
   {
@@ -3029,6 +6737,15 @@
    "bio": "American author of novels retelling Greek myth.",
    "workIds": [
     "circe"
+   ]
+  },
+  {
+   "id": "haruki-murakami",
+   "name": "Haruki Murakami",
+   "sortName": "Murakami, Haruki",
+   "bio": null,
+   "workIds": [
+    "kafka-on-the-shore"
    ]
   },
   {
@@ -3087,12 +6804,22 @@
    ]
   },
   {
+   "id": "sogyal-rinpoche",
+   "name": "Sogyal Rinpoche",
+   "sortName": "Rinpoche, Sogyal",
+   "bio": null,
+   "workIds": [
+    "the-tibetan-book-of-living-and-dying"
+   ]
+  },
+  {
    "id": "patrick-rothfuss",
    "name": "Patrick Rothfuss",
    "sortName": "Rothfuss, Patrick",
    "bio": "American author of the Kingkiller Chronicle.",
    "workIds": [
-    "the-name-of-the-wind"
+    "the-name-of-the-wind",
+    "the-wise-mans-fear"
    ]
   },
   {
@@ -3105,12 +6832,22 @@
    ]
   },
   {
+   "id": "don-miguel-ruiz",
+   "name": "Don Miguel Ruiz",
+   "sortName": "Ruiz, Don Miguel",
+   "bio": null,
+   "workIds": [
+    "the-four-agreements"
+   ]
+  },
+  {
    "id": "brandon-sanderson",
    "name": "Brandon Sanderson",
    "sortName": "Sanderson, Brandon",
    "bio": "American fantasy author of the Mistborn and Stormlight Archive series.",
    "workIds": [
-    "mistborn-the-final-empire"
+    "mistborn-the-final-empire",
+    "the-way-of-kings"
    ]
   },
   {
@@ -3141,6 +6878,15 @@
    ]
   },
   {
+   "id": "starhawk",
+   "name": "Starhawk",
+   "sortName": "Starhawk",
+   "bio": null,
+   "workIds": [
+    "the-spiral-dance"
+   ]
+  },
+  {
    "id": "bram-stoker",
    "name": "Bram Stoker",
    "sortName": "Stoker, Bram",
@@ -3150,13 +6896,23 @@
    ]
   },
   {
+   "id": "shunryu-suzuki",
+   "name": "Shunryu Suzuki",
+   "sortName": "Suzuki, Shunryu",
+   "bio": null,
+   "workIds": [
+    "zen-mind-beginners-mind"
+   ]
+  },
+  {
    "id": "j-r-r-tolkien",
    "name": "J.R.R. Tolkien",
    "sortName": "Tolkien, J.R.R.",
    "bio": "English author and philologist, creator of Middle-earth.",
    "workIds": [
     "the-hobbit",
-    "the-fellowship-of-the-ring"
+    "the-fellowship-of-the-ring",
+    "the-return-of-the-king"
    ]
   },
   {
@@ -3184,6 +6940,15 @@
    "bio": "American teacher of Taoist practice and co-author of several Healing Tao books.",
    "workIds": [
     "taoist-secrets-of-love"
+   ]
+  },
+  {
+   "id": "paramahansa-yogananda",
+   "name": "Paramahansa Yogananda",
+   "sortName": "Yogananda, Paramahansa",
+   "bio": null,
+   "workIds": [
+    "autobiography-of-a-yogi"
    ]
   }
  ]

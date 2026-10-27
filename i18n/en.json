@@ -67,5 +67,10 @@
  "h_sources": "Sources and verification",
  "nav_iosutra": "IOSutra",
  "did_you_mean": "Did you mean {q}?",
- "close_matches": "Showing close matches for “{q}”"
+ "close_matches": "Showing close matches for “{q}”",
+ "lvl_unrated": "Level not yet rated",
+ "show_more": "Show more",
+ "loading_index": "Loading the catalogue index…",
+ "index_error": "The catalogue index could not be loaded. Check your connection and try again.",
+ "count_range": "Showing {a} of {n} books"
 }

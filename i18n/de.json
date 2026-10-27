@@ -70,5 +70,10 @@
  },
  "nav_iosutra": "IOSutra",
  "did_you_mean": "Meinten Sie {q}?",
- "close_matches": "Ähnliche Treffer für „{q}“"
+ "close_matches": "Ähnliche Treffer für „{q}“",
+ "show_more": "Mehr anzeigen",
+ "lvl_unrated": "Stufe noch nicht bewertet",
+ "loading_index": "Katalogindex wird geladen …",
+ "index_error": "Der Katalogindex konnte nicht geladen werden.",
+ "count_range": "{a} von {n} Büchern angezeigt"
 }

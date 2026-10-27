@@ -1,0 +1,92 @@
+{
+  "_doc": "Source registry and compliance policy for catalogue imports. Nothing here is fetched unless a harvest command is run by a person on a networked machine. `termsReviewed` is false until the site owner has read the source's current terms; harvest refuses a source whose terms are unreviewed unless --accept-terms is passed.",
+  "policy": {
+    "minDistinctHostsForBatchPublish": 2,
+    "storeFromSources": [
+      "title",
+      "authors",
+      "isbn13",
+      "publisher",
+      "year",
+      "language",
+      "subjects",
+      "series"
+    ],
+    "neverStore": [
+      "descriptions",
+      "cover images",
+      "prices",
+      "availability",
+      "reviews",
+      "ratings"
+    ],
+    "note": "Descriptions and covers are not copied from any source; book pages use a factual summary built from verified fields unless an original description is supplied.",
+    "hostOwnerGroups": {
+      "_doc": "Hosts under common ownership count as ONE source. Registrable domains are compared after stripping country suffixes (amazon.com and amazon.co.uk are one source).",
+      "abebooks": "amazon",
+      "goodreads": "amazon",
+      "audible": "amazon",
+      "amazon": "amazon",
+      "hachette": "hachette",
+      "littlebrown": "hachette",
+      "hachettebookgroup": "hachette",
+      "biblio": "biblio",
+      "alibris": "alibris",
+      "worldofbooks": "worldofbooks",
+      "awesomebooks": "worldofbooks",
+      "ebay": "ebay"
+    }
+  },
+  "sources": {
+    "openlibrary": {
+      "role": "primary metadata and discovery (subject, author, ISBN lookups)",
+      "baseUrl": "https://openlibrary.org",
+      "auth": "none; send an identifying User-Agent (set FM_CONTACT_EMAIL)",
+      "rateLimit": {
+        "rps": 1,
+        "note": "keep to 1 request/second; bulk work should use the monthly data dumps instead of the API"
+      },
+      "termsReviewed": false,
+      "termsUrl": "https://openlibrary.org/developers/api",
+      "cost": "free",
+      "reachableFromBuildSandbox": false
+    },
+    "googlebooks": {
+      "role": "second-source verifier for ISBN, title, author, publisher, language",
+      "baseUrl": "https://www.googleapis.com/books/v1",
+      "auth": "API key in GOOGLE_BOOKS_API_KEY (free; never commit it)",
+      "rateLimit": {
+        "rps": 2,
+        "dailyQuota": 1000,
+        "note": "default free quota; anonymous calls from the build sandbox returned quota 0"
+      },
+      "termsReviewed": false,
+      "termsUrl": "https://developers.google.com/books/terms",
+      "cost": "free within quota",
+      "displayRestrictions": "Do not republish Google descriptions, covers or preview content.",
+      "reachableFromBuildSandbox": "key required"
+    },
+    "goodbooks10k": {
+      "role": "discovery only: popular-title candidate list. Its ISBNs are never trusted without a second source.",
+      "license": "reported as CC BY-SA 4.0; confirm before redistribution of derived data",
+      "termsReviewed": false,
+      "cost": "free"
+    },
+    "web-search-corroboration": {
+      "role": "hand verification: an ISBN is accepted only when its title and author appear together with it on at least two independent hosts",
+      "termsReviewed": true,
+      "cost": "free"
+    },
+    "publisher-catalogs": {
+      "role": "authoritative per-title check when a publisher offers a public catalogue page",
+      "termsReviewed": false,
+      "cost": "free"
+    },
+    "amazon-creators-api": {
+      "role": "future: price/availability and product-link validation",
+      "status": "not used. Requires qualifying sales history and credentials; see docs/AFFILIATE-AND-DEPLOYMENT.md",
+      "termsReviewed": false,
+      "cost": "free to eligible Associates"
+    }
+  }
+}

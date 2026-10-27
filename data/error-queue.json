@@ -184,6 +184,38 @@
    "origin": "staging/verified/fmp-owner-listed.json"
   },
   {
+   "title": "Siddhartha",
+   "authors": [
+    "Hermann Hesse"
+   ],
+   "isbn13": [
+    "9780811200684",
+    "9780553125290"
+   ],
+   "stage": "validate",
+   "severity": "error",
+   "reasons": [
+    "edition 9780811200684 needs 2 independent source hosts of its own; found 1",
+    "edition 9780553125290 needs 2 independent source hosts of its own; found 1"
+   ],
+   "origin": "staging/batches/web-2026-10-27-a.vpsv"
+  },
+  {
+   "title": "The Prophet",
+   "authors": [
+    "Kahlil Gibran"
+   ],
+   "isbn13": [
+    "9780394404264"
+   ],
+   "stage": "validate",
+   "severity": "error",
+   "reasons": [
+    "edition 9780394404264 needs 2 independent source hosts of its own; found 1"
+   ],
+   "origin": "staging/batches/web-2026-10-27-a.vpsv"
+  },
+  {
    "title": "The Power of Now",
    "authors": [
     "Eckhart Tolle"
@@ -212,6 +244,171 @@
     "ISBN-13 checksum fails: 9781577314568"
    ],
    "origin": "staging/outside-candidates.psv:4"
+  },
+  {
+   "title": "Wherever You Go, There You Are",
+   "authors": [
+    "Jon Kabat-Zinn"
+   ],
+   "isbn13": [
+    "9781401307783"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "possible additional edition of published \"Wherever You Go, There You Are\" (ISBN 9781401307783 not in its edition list)"
+   ],
+   "origin": "staging/outside-candidates.psv:17"
+  },
+  {
+   "title": "Radical Acceptance",
+   "authors": [
+    "Tara Brach"
+   ],
+   "isbn13": [
+    "9780553380996"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "already published as \"Radical Acceptance\""
+   ],
+   "origin": "staging/outside-candidates.psv:19"
+  },
+  {
+   "title": "The Miracle of Mindfulness",
+   "authors": [
+    "Thich Nhat Hanh"
+   ],
+   "isbn13": [
+    "9780807012390"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "already published as \"The Miracle of Mindfulness\""
+   ],
+   "origin": "staging/outside-candidates.psv:21"
+  },
+  {
+   "title": "Peace Is Every Step",
+   "authors": [
+    "Thich Nhat Hanh"
+   ],
+   "isbn13": [
+    "9780553351392"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "already published as \"Peace Is Every Step\""
+   ],
+   "origin": "staging/outside-candidates.psv:22"
+  },
+  {
+   "title": "Zen Mind, Beginner's Mind",
+   "authors": [
+    "Shunryu Suzuki"
+   ],
+   "isbn13": [
+    "9781590308493"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "possible additional edition of published \"Zen Mind, Beginner's Mind\" (ISBN 9781590308493 not in its edition list)"
+   ],
+   "origin": "staging/outside-candidates.psv:25"
+  },
+  {
+   "title": "The Tibetan Book of Living and Dying",
+   "authors": [
+    "Sogyal Rinpoche"
+   ],
+   "isbn13": [
+    "9780062508348"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "possible additional edition of published \"The Tibetan Book of Living and Dying\" (ISBN 9780062508348 not in its edition list)"
+   ],
+   "origin": "staging/outside-candidates.psv:26"
+  },
+  {
+   "title": "The Dhammapada",
+   "authors": [
+    "Eknath Easwaran (translator)"
+   ],
+   "isbn13": [
+    "9781586380205"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "already published as \"The Dhammapada\""
+   ],
+   "origin": "staging/outside-candidates.psv:27"
+  },
+  {
+   "title": "Light on Yoga",
+   "authors": [
+    "B.K.S. Iyengar"
+   ],
+   "isbn13": [
+    "9780805210316"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "already published as \"Light on Yoga\""
+   ],
+   "origin": "staging/outside-candidates.psv:29"
+  },
+  {
+   "title": "The Yoga Sutras of Patanjali",
+   "authors": [
+    "Edwin F. Bryant"
+   ],
+   "isbn13": [
+    "9780865477360"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "already published as \"The Yoga Sutras of Patañjali\""
+   ],
+   "origin": "staging/outside-candidates.psv:30"
+  },
+  {
+   "title": "Autobiography of a Yogi",
+   "authors": [
+    "Paramahansa Yogananda"
+   ],
+   "isbn13": [
+    "9780876120835"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "possible additional edition of published \"Autobiography of a Yogi\" (ISBN 9780876120835 not in its edition list)"
+   ],
+   "origin": "staging/outside-candidates.psv:31"
+  },
+  {
+   "title": "The Bhagavad Gita",
+   "authors": [
+    "Eknath Easwaran (translator)"
+   ],
+   "isbn13": [
+    "9781586380199"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "already published as \"The Bhagavad Gita\""
+   ],
+   "origin": "staging/outside-candidates.psv:33"
   },
   {
    "title": "Awakening Shakti",
@@ -279,6 +476,96 @@
    "origin": "staging/outside-candidates.psv:53"
   },
   {
+   "title": "The Kybalion",
+   "authors": [
+    "Three Initiates"
+   ],
+   "isbn13": [
+    "9781585428748"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "possible additional edition of published \"The Kybalion\" (ISBN 9781585428748 not in its edition list)"
+   ],
+   "origin": "staging/outside-candidates.psv:67"
+  },
+  {
+   "title": "Initiation into Hermetics",
+   "authors": [
+    "Franz Bardon"
+   ],
+   "isbn13": [
+    "9781885928009"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "possible additional edition of published \"Initiation into Hermetics\" (ISBN 9781885928009 not in its edition list)"
+   ],
+   "origin": "staging/outside-candidates.psv:68"
+  },
+  {
+   "title": "The Secret Teachings of All Ages",
+   "authors": [
+    "Manly P. Hall"
+   ],
+   "isbn13": [
+    "9781585422500"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "already published as \"The Secret Teachings of All Ages\""
+   ],
+   "origin": "staging/outside-candidates.psv:69"
+  },
+  {
+   "title": "Drawing Down the Moon",
+   "authors": [
+    "Margot Adler"
+   ],
+   "isbn13": [
+    "9780143038146"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "possible additional edition of published \"Drawing Down the Moon\" (ISBN 9780143038146 not in its edition list)"
+   ],
+   "origin": "staging/outside-candidates.psv:72"
+  },
+  {
+   "title": "The Spiral Dance",
+   "authors": [
+    "Starhawk"
+   ],
+   "isbn13": [
+    "9780062516329"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "already published as \"The Spiral Dance\""
+   ],
+   "origin": "staging/outside-candidates.psv:73"
+  },
+  {
+   "title": "Tarot for Your Self",
+   "authors": [
+    "Mary K. Greer"
+   ],
+   "isbn13": [
+    "9781564149879"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "possible additional edition of published \"Tarot for Your Self\" (ISBN 9781564149879 not in its edition list)"
+   ],
+   "origin": "staging/outside-candidates.psv:82"
+  },
+  {
    "title": "Seventy-Eight Degrees of Wisdom",
    "authors": [
     "Rachel Pollack"
@@ -292,6 +579,36 @@
     "already published as \"Seventy-Eight Degrees of Wisdom\""
    ],
    "origin": "staging/outside-candidates.psv:84"
+  },
+  {
+   "title": "I Am That",
+   "authors": [
+    "Nisargadatta Maharaj"
+   ],
+   "isbn13": [
+    "9780893860226"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "already published as \"I Am That\""
+   ],
+   "origin": "staging/outside-candidates.psv:91"
+  },
+  {
+   "title": "Be Here Now",
+   "authors": [
+    "Ram Dass"
+   ],
+   "isbn13": [
+    "9780517543054"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "already published as \"Be Here Now\""
+   ],
+   "origin": "staging/outside-candidates.psv:93"
   }
  ]
 }

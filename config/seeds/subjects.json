@@ -1,0 +1,1727 @@
+{
+ "_doc": "Seeds for `harvest.mjs discover`. kind: subject|author|series|title. department/tradition/level are EDITORIAL defaults applied to results; reconcile sends anything off-topic to review. Edit freely; add seeds for any author, subject or series.",
+ "seeds": [
+  {
+   "kind": "subject",
+   "value": "yoga",
+   "department": "yoga",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "hatha yoga",
+   "department": "yoga",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "yoga sutras",
+   "department": "yoga",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "kundalini yoga",
+   "department": "yoga",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "yoga philosophy",
+   "department": "yoga",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "mindfulness",
+   "department": "mindfulness",
+   "tradition": "buddhist",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "meditation",
+   "department": "mindfulness",
+   "tradition": "buddhist",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "vipassana",
+   "department": "mindfulness",
+   "tradition": "buddhist",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "zen meditation",
+   "department": "mindfulness",
+   "tradition": "buddhist",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "mantras",
+   "department": "sanskrit-mantras",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "japa",
+   "department": "sanskrit-mantras",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "chanting",
+   "department": "sanskrit-mantras",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "tantra",
+   "department": "tantra",
+   "tradition": "tantric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "tantrism",
+   "department": "tantra",
+   "tradition": "tantric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "hinduism",
+   "department": "hinduism",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "vedanta",
+   "department": "hinduism",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "bhagavad gita",
+   "department": "hinduism",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "upanishads",
+   "department": "hinduism",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "advaita",
+   "department": "hinduism",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "buddhism",
+   "department": "buddhism",
+   "tradition": "buddhist",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "tibetan buddhism",
+   "department": "buddhism",
+   "tradition": "buddhist",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "zen buddhism",
+   "department": "buddhism",
+   "tradition": "buddhist",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "theravada",
+   "department": "buddhism",
+   "tradition": "buddhist",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "mahayana",
+   "department": "buddhism",
+   "tradition": "buddhist",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "buddhist philosophy",
+   "department": "buddhism",
+   "tradition": "buddhist",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "jainism",
+   "department": "jainism",
+   "tradition": "jain",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "sikhism",
+   "department": "sikhism",
+   "tradition": "sikh",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "guru granth sahib",
+   "department": "sikhism",
+   "tradition": "sikh",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "sufism",
+   "department": "islam-sufism",
+   "tradition": "islamic",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "islamic mysticism",
+   "department": "islam-sufism",
+   "tradition": "islamic",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "rumi",
+   "department": "islam-sufism",
+   "tradition": "islamic",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "kabbalah",
+   "department": "judaism-kabbalah",
+   "tradition": "jewish",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "jewish mysticism",
+   "department": "judaism-kabbalah",
+   "tradition": "jewish",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "hasidism",
+   "department": "judaism-kabbalah",
+   "tradition": "jewish",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "taoism",
+   "department": "taoism",
+   "tradition": "taoist",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "daoism",
+   "department": "taoism",
+   "tradition": "taoist",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "tao te ching",
+   "department": "taoism",
+   "tradition": "taoist",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "qigong",
+   "department": "qigong",
+   "tradition": "taoist",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "tai chi",
+   "department": "qigong",
+   "tradition": "taoist",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "neigong",
+   "department": "qigong",
+   "tradition": "taoist",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "comparative religion",
+   "department": "comparative-religion",
+   "tradition": "comparative",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "world religions",
+   "department": "comparative-religion",
+   "tradition": "comparative",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "history of religion",
+   "department": "comparative-religion",
+   "tradition": "comparative",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "mysticism",
+   "department": "comparative-religion",
+   "tradition": "comparative",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "theology",
+   "department": "theology",
+   "tradition": "comparative",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "systematic theology",
+   "department": "theology",
+   "tradition": "comparative",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "gnosticism",
+   "department": "gnosticism",
+   "tradition": "gnostic",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "nag hammadi",
+   "department": "gnosticism",
+   "tradition": "gnostic",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "christian mysticism",
+   "department": "christian-mysticism",
+   "tradition": "christian",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "contemplative prayer",
+   "department": "christian-mysticism",
+   "tradition": "christian",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "hermeticism",
+   "department": "hermeticism",
+   "tradition": "hermetic",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "hermetic philosophy",
+   "department": "hermeticism",
+   "tradition": "hermetic",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "western esotericism",
+   "department": "hermeticism",
+   "tradition": "hermetic",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "alchemy",
+   "department": "alchemy",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "history of alchemy",
+   "department": "alchemy",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "witchcraft",
+   "department": "witchcraft",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "witches",
+   "department": "witchcraft",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "folk magic",
+   "department": "witchcraft",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "spells",
+   "department": "spells",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "magic spells",
+   "department": "spells",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "grimoires",
+   "department": "spells",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "wicca",
+   "department": "wicca",
+   "tradition": "wiccan",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "neopaganism",
+   "department": "wicca",
+   "tradition": "wiccan",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "paganism",
+   "department": "paganism",
+   "tradition": "pagan",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "druidry",
+   "department": "paganism",
+   "tradition": "pagan",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "norse paganism",
+   "department": "paganism",
+   "tradition": "pagan",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "heathenry",
+   "department": "paganism",
+   "tradition": "pagan",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "ceremonial magic",
+   "department": "ceremonial-magic",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "magic (occultism)",
+   "department": "ceremonial-magic",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "golden dawn",
+   "department": "ceremonial-magic",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "thelema",
+   "department": "ceremonial-magic",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "tarot",
+   "department": "tarot",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "tarot cards",
+   "department": "tarot",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "astrology",
+   "department": "astrology",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "horoscopes",
+   "department": "astrology",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "vedic astrology",
+   "department": "astrology",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "divination",
+   "department": "divination",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "i ching",
+   "department": "divination",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "runes",
+   "department": "divination",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "scrying",
+   "department": "divination",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "dreams",
+   "department": "dreams",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "lucid dreaming",
+   "department": "dreams",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "consciousness",
+   "department": "consciousness",
+   "tradition": "nondual",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "nonduality",
+   "department": "consciousness",
+   "tradition": "nondual",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "spirituality",
+   "department": "consciousness",
+   "tradition": "nondual",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "mind and body",
+   "department": "mind-body",
+   "tradition": "comparative",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "breathwork",
+   "department": "mind-body",
+   "tradition": "comparative",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "holistic health",
+   "department": "mind-body",
+   "tradition": "comparative",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "self-help",
+   "department": "personal-growth",
+   "tradition": "comparative",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "personal development",
+   "department": "personal-growth",
+   "tradition": "comparative",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "habit formation",
+   "department": "personal-growth",
+   "tradition": "comparative",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "motivation",
+   "department": "personal-growth",
+   "tradition": "comparative",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "emotions",
+   "department": "emotional-wellbeing",
+   "tradition": "comparative",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "trauma",
+   "department": "emotional-wellbeing",
+   "tradition": "comparative",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "resilience",
+   "department": "emotional-wellbeing",
+   "tradition": "comparative",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "self-compassion",
+   "department": "emotional-wellbeing",
+   "tradition": "comparative",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "stress management",
+   "department": "sleep-stress",
+   "tradition": "comparative",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "sleep",
+   "department": "sleep-stress",
+   "tradition": "comparative",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "ancient egypt",
+   "department": "ancient-civilizations",
+   "tradition": "comparative",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "ancient greece",
+   "department": "ancient-civilizations",
+   "tradition": "comparative",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "mesopotamia",
+   "department": "ancient-civilizations",
+   "tradition": "comparative",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "ancient rome",
+   "department": "ancient-civilizations",
+   "tradition": "comparative",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "indus valley",
+   "department": "ancient-civilizations",
+   "tradition": "comparative",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "maya civilization",
+   "department": "ancient-civilizations",
+   "tradition": "comparative",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "sacred books",
+   "department": "ancient-texts",
+   "tradition": "comparative",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "religious texts",
+   "department": "ancient-texts",
+   "tradition": "comparative",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "egyptian book of the dead",
+   "department": "ancient-texts",
+   "tradition": "comparative",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "dead sea scrolls",
+   "department": "ancient-texts",
+   "tradition": "comparative",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "mythology",
+   "department": "mythology",
+   "tradition": "mythic",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "greek mythology",
+   "department": "mythology",
+   "tradition": "mythic",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "norse mythology",
+   "department": "mythology",
+   "tradition": "mythic",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "celtic mythology",
+   "department": "mythology",
+   "tradition": "mythic",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "egyptian mythology",
+   "department": "mythology",
+   "tradition": "mythic",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "hindu mythology",
+   "department": "mythology",
+   "tradition": "mythic",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "folklore",
+   "department": "folklore-fairy-tales",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "fairy tales",
+   "department": "folklore-fairy-tales",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "legends",
+   "department": "folklore-fairy-tales",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "folk tales",
+   "department": "folklore-fairy-tales",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "philosophy",
+   "department": "philosophy",
+   "tradition": "western-philosophy",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "stoicism",
+   "department": "philosophy",
+   "tradition": "western-philosophy",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "existentialism",
+   "department": "philosophy",
+   "tradition": "western-philosophy",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "ancient philosophy",
+   "department": "philosophy",
+   "tradition": "western-philosophy",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "eastern philosophy",
+   "department": "philosophy",
+   "tradition": "western-philosophy",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "epic fantasy",
+   "department": "epic-fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "high fantasy",
+   "department": "epic-fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "sword and sorcery",
+   "department": "epic-fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "urban fantasy",
+   "department": "urban-fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "contemporary fantasy",
+   "department": "urban-fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "dark fantasy",
+   "department": "dark-fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "grimdark",
+   "department": "dark-fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "fantasy fiction",
+   "department": "fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "fantasy",
+   "department": "fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "magic fiction",
+   "department": "fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "wizards fiction",
+   "department": "fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "dragons fiction",
+   "department": "fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "horror fiction",
+   "department": "horror",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "ghost stories",
+   "department": "horror",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "gothic fiction",
+   "department": "horror",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "vampires",
+   "department": "horror",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "supernatural fiction",
+   "department": "supernatural-fiction",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "occult fiction",
+   "department": "supernatural-fiction",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "weird fiction",
+   "department": "supernatural-fiction",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "magic realism",
+   "department": "magical-realism",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "magical realism",
+   "department": "magical-realism",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "speculative fiction",
+   "department": "speculative-fiction",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "science fiction",
+   "department": "speculative-fiction",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "dystopian fiction",
+   "department": "speculative-fiction",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "paranormal fiction",
+   "department": "paranormal-fiction",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "paranormal romance",
+   "department": "paranormal-fiction",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Thich Nhat Hanh",
+   "department": "mindfulness",
+   "tradition": "buddhist",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Pema Chödrön",
+   "department": "mindfulness",
+   "tradition": "buddhist",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Jack Kornfield",
+   "department": "mindfulness",
+   "tradition": "buddhist",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Sharon Salzberg",
+   "department": "mindfulness",
+   "tradition": "buddhist",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Joseph Goldstein",
+   "department": "mindfulness",
+   "tradition": "buddhist",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Tara Brach",
+   "department": "mindfulness",
+   "tradition": "buddhist",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Paramahansa Yogananda",
+   "department": "hinduism",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Swami Vivekananda",
+   "department": "hinduism",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Ramana Maharshi",
+   "department": "hinduism",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Eknath Easwaran",
+   "department": "hinduism",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Sadhguru",
+   "department": "hinduism",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Deepak Chopra",
+   "department": "hinduism",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Eckhart Tolle",
+   "department": "consciousness",
+   "tradition": "nondual",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Michael Singer",
+   "department": "consciousness",
+   "tradition": "nondual",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Rupert Spira",
+   "department": "consciousness",
+   "tradition": "nondual",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Alan Watts",
+   "department": "consciousness",
+   "tradition": "nondual",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Ram Dass",
+   "department": "consciousness",
+   "tradition": "nondual",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Krishnamurti",
+   "department": "consciousness",
+   "tradition": "nondual",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Scott Cunningham",
+   "department": "witchcraft",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Raymond Buckland",
+   "department": "witchcraft",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Silver RavenWolf",
+   "department": "witchcraft",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Doreen Valiente",
+   "department": "witchcraft",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Starhawk",
+   "department": "witchcraft",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Phyllis Curott",
+   "department": "witchcraft",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Aleister Crowley",
+   "department": "ceremonial-magic",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Israel Regardie",
+   "department": "ceremonial-magic",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Dion Fortune",
+   "department": "ceremonial-magic",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Eliphas Levi",
+   "department": "ceremonial-magic",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Manly P. Hall",
+   "department": "ceremonial-magic",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Donald Michael Kraig",
+   "department": "ceremonial-magic",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "J.R.R. Tolkien",
+   "department": "epic-fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Ursula K. Le Guin",
+   "department": "epic-fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Brandon Sanderson",
+   "department": "epic-fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Robert Jordan",
+   "department": "epic-fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "George R. R. Martin",
+   "department": "epic-fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Patrick Rothfuss",
+   "department": "epic-fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Terry Pratchett",
+   "department": "epic-fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Neil Gaiman",
+   "department": "epic-fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Robin Hobb",
+   "department": "epic-fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "N. K. Jemisin",
+   "department": "epic-fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Terry Brooks",
+   "department": "epic-fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Raymond E. Feist",
+   "department": "epic-fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Guy Gavriel Kay",
+   "department": "epic-fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Joe Abercrombie",
+   "department": "epic-fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Naomi Novik",
+   "department": "epic-fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Madeline Miller",
+   "department": "epic-fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Susanna Clarke",
+   "department": "epic-fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Stephen King",
+   "department": "horror",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "H. P. Lovecraft",
+   "department": "horror",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Shirley Jackson",
+   "department": "horror",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Clive Barker",
+   "department": "horror",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Anne Rice",
+   "department": "horror",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Bram Stoker",
+   "department": "horror",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Edgar Allan Poe",
+   "department": "horror",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Mary Shelley",
+   "department": "horror",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Poppy Z. Brite",
+   "department": "horror",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Jim Butcher",
+   "department": "urban-fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Ilona Andrews",
+   "department": "urban-fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Patricia Briggs",
+   "department": "urban-fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Charlaine Harris",
+   "department": "urban-fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Ben Aaronovitch",
+   "department": "urban-fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Seanan McGuire",
+   "department": "urban-fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Kim Harrison",
+   "department": "urban-fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Laurell K. Hamilton",
+   "department": "urban-fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Gabriel García Márquez",
+   "department": "magical-realism",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Isabel Allende",
+   "department": "magical-realism",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Haruki Murakami",
+   "department": "magical-realism",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Salman Rushdie",
+   "department": "magical-realism",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Jorge Luis Borges",
+   "department": "magical-realism",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Toni Morrison",
+   "department": "magical-realism",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Frank Herbert",
+   "department": "speculative-fiction",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Octavia E. Butler",
+   "department": "speculative-fiction",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Philip K. Dick",
+   "department": "speculative-fiction",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Margaret Atwood",
+   "department": "speculative-fiction",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Isaac Asimov",
+   "department": "speculative-fiction",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "author",
+   "value": "Ray Bradbury",
+   "department": "speculative-fiction",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "series",
+   "value": "Harry Potter",
+   "department": "fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "series",
+   "value": "The Lord of the Rings",
+   "department": "fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "series",
+   "value": "A Song of Ice and Fire",
+   "department": "fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "series",
+   "value": "The Wheel of Time",
+   "department": "fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "series",
+   "value": "The Stormlight Archive",
+   "department": "fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "series",
+   "value": "Mistborn",
+   "department": "fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "series",
+   "value": "Earthsea",
+   "department": "fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "series",
+   "value": "Discworld",
+   "department": "fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "series",
+   "value": "The Dresden Files",
+   "department": "fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "series",
+   "value": "The Witcher",
+   "department": "fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "series",
+   "value": "Chronicles of Narnia",
+   "department": "fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "series",
+   "value": "His Dark Materials",
+   "department": "fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "series",
+   "value": "The Dark Tower",
+   "department": "fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "series",
+   "value": "Dune",
+   "department": "speculative-fiction",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "series",
+   "value": "The Kingkiller Chronicle",
+   "department": "fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "series",
+   "value": "The Broken Earth",
+   "department": "fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "series",
+   "value": "Realm of the Elderlings",
+   "department": "fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "series",
+   "value": "Wicked Years",
+   "department": "fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "series",
+   "value": "Outlander",
+   "department": "fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "series",
+   "value": "The Dark Is Rising",
+   "department": "fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  },
+  {
+   "kind": "series",
+   "value": "Percy Jackson",
+   "department": "fantasy",
+   "tradition": "fiction",
+   "level": "unrated"
+  }
+ ]
+}

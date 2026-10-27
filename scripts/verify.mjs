@@ -34,7 +34,11 @@ for (const [name, vp] of VIEWPORTS) {
   const errs = []; pg.on('pageerror', (e) => errs.push(e.message));
   await pg.route(/fonts\.(googleapis|gstatic)/, (r) => r.abort());
   const snap = async (f, full = false) => shots && pg.screenshot({ path: path.join(SH, `${name}-${f}.png`), fullPage: full });
-  const visible = () => pg.$$eval('.card:not([hidden])', (c) => c.map((x) => x.querySelector('.card-title').textContent.trim()));
+  // Paged listings and the search page draw results from the lazy chunk index, so wait for it to settle. Results are drawn 48 at a time; total() reads the count line.
+  const settle = async () => { await pg.waitForTimeout(80); await pg.waitForFunction(() => { const c = document.querySelector('[data-count]'); return !c || !/Loading|Cargando/i.test(c.textContent); }, null, { timeout: 8000 }).catch(() => {}); await pg.waitForTimeout(30); };
+  const visible = async () => { await settle(); return pg.$$eval('.grid:not([hidden]) > .card:not([hidden])', (c) => c.map((x) => x.querySelector('.card-title').textContent.trim())); };
+  const total = async () => { await settle(); const m = (await pg.locator('[data-count]').first().textContent()).match(/(\d[\d,]*)\D*$/) ?? (await pg.locator('[data-count]').first().textContent()).match(/(\d[\d,]*)/); return m ? +m[1].replace(/,/g, '') : -1; };
+  const listed = () => pg.evaluate(() => { const g = document.querySelector('[data-index-grid]'); return g ? +g.dataset.total : document.querySelectorAll('.card').length; });
   const hscroll = () => pg.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1);
   const T = `[${name}]`;
 
@@ -67,8 +71,8 @@ for (const [name, vp] of VIEWPORTS) {
   ok(await pg.locator('.site-footer .disclosure').getAttribute('lang') === 'en' && /As an Amazon Associate/.test(await pg.locator('.site-footer .disclosure').textContent()), `${T} legal affiliate disclosure stays in English`);
   await snap('ui-es');
   await pg.goto(url('books/index.html')); ok((await pg.locator('.filters label span').first().textContent()).trim().startsWith('Buscar'), `${T} choice persists on the next page (localStorage)`);
-  ok((await pg.locator('[data-count]').textContent()).includes('libros mostrados'), `${T} dynamic count is translated: "${(await pg.locator('[data-count]').textContent()).trim()}"`);
-  await pg.selectOption('select[name=lang]', 'de'); const msg = await pg.locator('[data-empty-text]').textContent();
+  ok(/libros/.test(await pg.locator('[data-count]').textContent()), `${T} dynamic count is translated: "${(await pg.locator('[data-count]').textContent()).trim()}"`);
+  await pg.selectOption('select[name=lang]', 'de'); await visible(); const msg = await pg.locator('[data-empty-text]').textContent();
   ok(/alem[aá]n|Deutsch/i.test(msg) && msg.startsWith('Ninguna edición verificada'), `${T} empty state in Spanish UI: "${msg.trim().slice(0, 70)}…"`);
   await pg.selectOption('select[name=lang]', '');
   await pg.goto(url('index.html')); await pg.locator('.lang-btn').click(); await pg.click('[data-ui=ar]');
@@ -81,7 +85,7 @@ for (const [name, vp] of VIEWPORTS) {
   const cases = [['Power of Now', 'The Power of Now'], ['tolle', 'The Power of Now'], ['Pagels', 'The Gnostic Gospels'], ['tarot', 'Seventy-Eight Degrees of Wisdom'], ['978-1-57731-480-6', 'The Power of Now'], ['9780875421186', 'Wicca'], ['0470923350', 'When the Body Says No'], ['B0H8MQN9WK', 'The Apocalypse of Adam'], ['chodron', 'When Things Fall Apart']];
   for (const [q, expect] of cases) { await pg.goto(url('search/index.html') + '?q=' + encodeURIComponent(q)); const v = await visible(); ok(v.some((t) => t === expect) && v.length < N, `${T} search "${q}" -> ${v.length} incl. ${expect}`); }
   await pg.goto(url('search/index.html') + '?q=deutsch'); ok((await visible()).length === 0, `${T} searching "deutsch" finds nothing (no German edition is verified)`);
-  await pg.goto(url('search/index.html') + '?q=english'); ok((await visible()).length === N, `${T} searching "english" matches all ${N} English works`);
+  await pg.goto(url('search/index.html') + '?q=english'); ok((await total()) === N, `${T} searching "english" matches all ${N} English works (count line; results are drawn 48 at a time)`);
   await pg.goto(url('search/index.html') + '?q=Power%20of%20Now'); await snap('search');
 
   // ===== filters =====
@@ -89,13 +93,13 @@ for (const [name, vp] of VIEWPORTS) {
   const langOpts = await pg.locator('select[name=lang] optgroup').evaluateAll((g) => g.map((x) => [x.label, x.querySelectorAll('option').length]));
   ok(langOpts[0][1] === 1 && langOpts[1][1] === reg.length - 1, `${T} language filter: ${langOpts[0][1]} language with editions, ${langOpts[1][1]} marked "None yet"`);
   ok((await pg.locator('select[name=lang] optgroup').first().locator('option').first().textContent()).trim() === `English (${N})`, `${T} English option shows the true work count (${N})`);
-  await pg.selectOption('select[name=lang]', 'en'); ok((await visible()).length === N, `${T} language=English -> all ${N}`);
+  await pg.selectOption('select[name=lang]', 'en'); ok((await total()) === N, `${T} language=English -> all ${N}`);
   await pg.selectOption('select[name=lang]', 'es'); ok((await visible()).length === 0 && await pg.isVisible('[data-empty]'), `${T} language=Spanish -> empty state`);
   ok(/No verified Spanish editions match these filters/.test(await pg.locator('[data-empty-text]').textContent()), `${T} empty-state message names the language and says editions are only listed when verified`);
-  ok((await pg.locator('[data-count]').textContent()).startsWith('0 books'), `${T} result count reads "0 books shown"`); await snap('empty-lang');
-  await pg.click('button[type=reset]'); await pg.waitForTimeout(50); ok((await visible()).length === N && !(await pg.isVisible('[data-empty]')), `${T} "Clear filters" restores all ${N}`);
+  await settle(); ok((await pg.locator('[data-count]').textContent()).startsWith('0 books'), `${T} result count reads "0 books shown"`); await snap('empty-lang');
+  await pg.click('button[type=reset]'); await pg.waitForTimeout(150); ok((await listed()) === N && (await pg.locator('.grid:not([hidden]) > .card:not([hidden])').count()) === Math.min(N, 48) && !(await pg.isVisible('[data-empty]')), `${T} "Clear filters" restores the full list (${N} books, first page of 48 shown)`);
   await pg.selectOption('select[name=press]', 'fmp'); ok((await visible()).length === 12, `${T} press filter shows 12 FMP titles`);
-  await pg.selectOption('select[name=press]', ''); await pg.selectOption('select[name=subject]', 'tarot'); ok((await visible()).join() === 'Seventy-Eight Degrees of Wisdom', `${T} subject=tarot`);
+  await pg.selectOption('select[name=press]', ''); await pg.selectOption('select[name=subject]', 'tarot'); { const want = cat.works.filter((w) => w.subjects.includes('tarot')).map((w) => w.title).sort().join('|'); ok((await visible()).sort().join('|') === want && want.includes('Seventy-Eight Degrees of Wisdom'), `${T} subject=tarot -> ${want.split('|').length} tarot works`); }
   await pg.selectOption('select[name=subject]', ''); await pg.selectOption('select[name=format]', 'audiobook'); ok((await visible()).length === 2, `${T} format=audiobook -> 2`);
   await pg.selectOption('select[name=lang]', 'en'); ok((await visible()).length === 2, `${T} language=English + format=audiobook -> 2`);
   await pg.selectOption('select[name=lang]', ''); await pg.selectOption('select[name=format]', ''); await pg.selectOption('select[name=tradition]', 'gnostic'); ok((await visible()).length === 2, `${T} tradition=gnostic -> 2`);
@@ -110,10 +114,10 @@ for (const [name, vp] of VIEWPORTS) {
   ok(rows.filter((r) => /no verified editions yet/.test(r)).length === reg.length - 1, `${T} every other language says "no verified editions yet"`);
   await pg.goto(url('languages/es/index.html')); ok(await pg.isVisible('[data-lang-empty]') && (await pg.locator('.card').count()) === 0, `${T} Spanish page: honest empty state, no books listed`); await snap('lang-es-empty');
   ok(/0 works · 0 editions/.test(await pg.locator('.stats').textContent()), `${T} Spanish page counts read 0 works · 0 editions`);
-  await pg.goto(url('languages/en/index.html')); ok((await pg.locator('.card').count()) === N, `${T} English page lists all ${N} works`);
+  await pg.goto(url('languages/en/index.html')); ok((await listed()) === N, `${T} English page lists all ${N} works (first page static, rest from the index)`);
   await pg.goto(url('languages/ar/index.html')); ok((await pg.locator('h1 [lang=ar]').getAttribute('dir')) === 'rtl', `${T} Arabic page marks its name dir="rtl"`);
   await pg.goto(url('languages/en/index.html')); await pg.click('.chips a >> text=Emotional Wellbeing'); ok(pg.url().includes('topics/emotional-wellbeing') && pg.url().includes('lang=en'), `${T} language page -> subject link carries ?lang=en`);
-  ok((await visible()).length === nSubj('emotional-wellbeing'), `${T} subject page opens with the language filter applied (${nSubj('emotional-wellbeing')} emotional-wellbeing works in English)`);
+  ok((await total()) === nSubj('emotional-wellbeing'), `${T} subject page opens with the language filter applied (${nSubj('emotional-wellbeing')} emotional-wellbeing works in English)`);
 
   // ===== navigation, editions =====
   await pg.goto(url('subjects/occult-magick-paganism/index.html')); await snap('hub');

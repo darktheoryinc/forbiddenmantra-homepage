@@ -70,5 +70,10 @@
  },
  "nav_iosutra": "IOSutra",
  "did_you_mean": "¿Quisiste decir {q}?",
- "close_matches": "Mostrando coincidencias cercanas para «{q}»"
+ "close_matches": "Mostrando coincidencias cercanas para «{q}»",
+ "show_more": "Mostrar más",
+ "lvl_unrated": "Nivel sin clasificar todavía",
+ "loading_index": "Cargando el índice del catálogo…",
+ "index_error": "No se pudo cargar el índice del catálogo.",
+ "count_range": "Mostrando {a} de {n} libros"
 }

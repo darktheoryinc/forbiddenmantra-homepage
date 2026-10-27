@@ -1,28 +1,28 @@
 {
  "summary": {
-  "works": 53,
-  "purchaseLinks": 68,
+  "works": 95,
+  "purchaseLinks": 119,
   "tagsExpected": {
    "amazon.com": "darktheoryinc-20"
   },
   "linkClasses": {
    "derived": 52,
-   "search": 14,
-   "verified": 2
+   "search": 55,
+   "verified": 12
   },
   "linkErrors": 0,
-  "worksWithValidTaggedProductLink": 43,
-  "ofWhichSourceVerified": 2,
+  "worksWithValidTaggedProductLink": 53,
+  "ofWhichSourceVerified": 12,
   "ofWhichIdentityVerifiedOffline": 41,
-  "worksWithSearchLinkOnly": 10,
+  "worksWithSearchLinkOnly": 42,
   "worksWithNoPurchaseLink": 0,
   "worksWithLinkErrors": 0,
-  "recordsNeedingManualReview": 21,
+  "recordsNeedingManualReview": 53,
   "manualReviewByReason": {
    "an edition identifier comes from a single source": 9,
    "owner-listed record: edition details unconfirmed": 12,
    "e-book/audiobook edition has no verified Amazon link": 8,
-   "only a search link: needs the edition's ASIN or ISBN": 10
+   "only a search link: needs the edition's ASIN or ISBN": 42
   },
   "liveCheckPending": 41
  },
@@ -190,6 +190,230 @@
    "title": "Seventy-Eight Degrees of Wisdom",
    "reasons": [
     "an edition identifier comes from a single source"
+   ]
+  },
+  {
+   "work": "autobiography-of-a-yogi",
+   "title": "Autobiography of a Yogi",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "the-tibetan-book-of-living-and-dying",
+   "title": "The Tibetan Book of Living and Dying",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "the-bhagavad-gita",
+   "title": "The Bhagavad Gita",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "the-secret-teachings-of-all-ages",
+   "title": "The Secret Teachings of All Ages",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "tarot-for-your-self",
+   "title": "Tarot for Your Self",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "the-four-agreements",
+   "title": "The Four Agreements",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "the-alchemist",
+   "title": "The Alchemist",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "the-dhammapada",
+   "title": "The Dhammapada",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "zen-mind-beginners-mind",
+   "title": "Zen Mind, Beginner's Mind",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "the-miracle-of-mindfulness",
+   "title": "The Miracle of Mindfulness",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "peace-is-every-step",
+   "title": "Peace Is Every Step",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "radical-acceptance",
+   "title": "Radical Acceptance",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "light-on-yoga",
+   "title": "Light on Yoga",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "the-yoga-sutras-of-patanjali",
+   "title": "The Yoga Sutras of Patañjali",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "i-am-that",
+   "title": "I Am That",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "liber-null-and-psychonaut",
+   "title": "Liber Null & Psychonaut",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "magick-in-theory-and-practice",
+   "title": "Magick in Theory and Practice",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "the-spiral-dance",
+   "title": "The Spiral Dance",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "initiation-into-hermetics",
+   "title": "Initiation into Hermetics",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "the-wise-mans-fear",
+   "title": "The Wise Man's Fear",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "the-way-of-kings",
+   "title": "The Way of Kings",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "the-eye-of-the-world",
+   "title": "The Eye of the World",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "a-clash-of-kings",
+   "title": "A Clash of Kings",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "the-fifth-season",
+   "title": "The Fifth Season",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "the-blade-itself",
+   "title": "The Blade Itself",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "the-call-of-cthulhu-and-other-weird-stories",
+   "title": "The Call of Cthulhu and Other Weird Stories",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "we-have-always-lived-in-the-castle",
+   "title": "We Have Always Lived in the Castle",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "one-hundred-years-of-solitude",
+   "title": "One Hundred Years of Solitude",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "the-house-of-the-spirits",
+   "title": "The House of the Spirits",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "kafka-on-the-shore",
+   "title": "Kafka on the Shore",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "fahrenheit-451",
+   "title": "Fahrenheit 451",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "kindred",
+   "title": "Kindred",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
    ]
   }
  ],
@@ -616,6 +840,342 @@
    "press": false,
    "links": 1,
    "best": "derived",
+   "errors": false
+  },
+  {
+   "work": "autobiography-of-a-yogi",
+   "title": "Autobiography of a Yogi",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-tibetan-book-of-living-and-dying",
+   "title": "The Tibetan Book of Living and Dying",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "wherever-you-go-there-you-are",
+   "title": "Wherever You Go, There You Are",
+   "press": false,
+   "links": 2,
+   "best": "verified",
+   "errors": false
+  },
+  {
+   "work": "be-here-now",
+   "title": "Be Here Now",
+   "press": false,
+   "links": 1,
+   "best": "verified",
+   "errors": false
+  },
+  {
+   "work": "the-bhagavad-gita",
+   "title": "The Bhagavad Gita",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-secret-teachings-of-all-ages",
+   "title": "The Secret Teachings of All Ages",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "tarot-for-your-self",
+   "title": "Tarot for Your Self",
+   "press": false,
+   "links": 2,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-four-agreements",
+   "title": "The Four Agreements",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-alchemist",
+   "title": "The Alchemist",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-kybalion",
+   "title": "The Kybalion",
+   "press": false,
+   "links": 1,
+   "best": "verified",
+   "errors": false
+  },
+  {
+   "work": "the-dhammapada",
+   "title": "The Dhammapada",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "zen-mind-beginners-mind",
+   "title": "Zen Mind, Beginner's Mind",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-miracle-of-mindfulness",
+   "title": "The Miracle of Mindfulness",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "peace-is-every-step",
+   "title": "Peace Is Every Step",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "radical-acceptance",
+   "title": "Radical Acceptance",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "light-on-yoga",
+   "title": "Light on Yoga",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-yoga-sutras-of-patanjali",
+   "title": "The Yoga Sutras of Patañjali",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "i-am-that",
+   "title": "I Am That",
+   "press": false,
+   "links": 2,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-tao-of-physics",
+   "title": "The Tao of Physics",
+   "press": false,
+   "links": 2,
+   "best": "verified",
+   "errors": false
+  },
+  {
+   "work": "liber-null-and-psychonaut",
+   "title": "Liber Null & Psychonaut",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "magick-in-theory-and-practice",
+   "title": "Magick in Theory and Practice",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-mystical-qabalah",
+   "title": "The Mystical Qabalah",
+   "press": false,
+   "links": 1,
+   "best": "verified",
+   "errors": false
+  },
+  {
+   "work": "drawing-down-the-moon",
+   "title": "Drawing Down the Moon",
+   "press": false,
+   "links": 1,
+   "best": "verified",
+   "errors": false
+  },
+  {
+   "work": "the-spiral-dance",
+   "title": "The Spiral Dance",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "initiation-into-hermetics",
+   "title": "Initiation into Hermetics",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "modern-magick",
+   "title": "Modern Magick",
+   "press": false,
+   "links": 2,
+   "best": "verified",
+   "errors": false
+  },
+  {
+   "work": "the-return-of-the-king",
+   "title": "The Return of the King",
+   "press": false,
+   "links": 2,
+   "best": "verified",
+   "errors": false
+  },
+  {
+   "work": "the-wise-mans-fear",
+   "title": "The Wise Man's Fear",
+   "press": false,
+   "links": 2,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-way-of-kings",
+   "title": "The Way of Kings",
+   "press": false,
+   "links": 2,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-eye-of-the-world",
+   "title": "The Eye of the World",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "a-clash-of-kings",
+   "title": "A Clash of Kings",
+   "press": false,
+   "links": 2,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-left-hand-of-darkness",
+   "title": "The Left Hand of Darkness",
+   "press": false,
+   "links": 1,
+   "best": "verified",
+   "errors": false
+  },
+  {
+   "work": "the-fifth-season",
+   "title": "The Fifth Season",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-blade-itself",
+   "title": "The Blade Itself",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "storm-front",
+   "title": "Storm Front",
+   "press": false,
+   "links": 1,
+   "best": "verified",
+   "errors": false
+  },
+  {
+   "work": "the-call-of-cthulhu-and-other-weird-stories",
+   "title": "The Call of Cthulhu and Other Weird Stories",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "we-have-always-lived-in-the-castle",
+   "title": "We Have Always Lived in the Castle",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "one-hundred-years-of-solitude",
+   "title": "One Hundred Years of Solitude",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-house-of-the-spirits",
+   "title": "The House of the Spirits",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "kafka-on-the-shore",
+   "title": "Kafka on the Shore",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "fahrenheit-451",
+   "title": "Fahrenheit 451",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "kindred",
+   "title": "Kindred",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
    "errors": false
   }
  ],
@@ -1543,6 +2103,638 @@
    "issues": [],
    "verdict": null,
    "url": "https://www.amazon.com/dp/0345431707?tag=…"
+  },
+  {
+   "work": "autobiography-of-a-yogi",
+   "workTitle": "Autobiography of a Yogi",
+   "press": false,
+   "isbn13": "9780876120798",
+   "market": "amazon.com",
+   "edition": "paperback en 9780876120798",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780876120798&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-tibetan-book-of-living-and-dying",
+   "workTitle": "The Tibetan Book of Living and Dying",
+   "press": false,
+   "isbn13": "9780712657525",
+   "market": "amazon.com",
+   "edition": "paperback en 9780712657525",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780712657525&i=stripbooks&tag=…"
+  },
+  {
+   "work": "wherever-you-go-there-you-are",
+   "workTitle": "Wherever You Go, There You Are",
+   "press": false,
+   "isbn13": "9780749925482",
+   "market": "amazon.com",
+   "asin": "0749925485",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780749925482",
+   "class": "verified",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/Wherever-You-Go-There-Are/dp/0749925485?tag=…"
+  },
+  {
+   "work": "wherever-you-go-there-you-are",
+   "workTitle": "Wherever You Go, There You Are",
+   "press": false,
+   "isbn13": "9780306832017",
+   "market": "amazon.com",
+   "edition": "paperback en 9780306832017",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780306832017&i=stripbooks&tag=…"
+  },
+  {
+   "work": "be-here-now",
+   "workTitle": "Be Here Now",
+   "press": false,
+   "isbn13": "9780517543054",
+   "market": "amazon.com",
+   "asin": "0517543052",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780517543054",
+   "class": "verified",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/Be-Here-Now-Ram-Dass/dp/0517543052?tag=…"
+  },
+  {
+   "work": "the-bhagavad-gita",
+   "workTitle": "The Bhagavad Gita",
+   "press": false,
+   "isbn13": "9781586380199",
+   "market": "amazon.com",
+   "edition": "paperback en 9781586380199",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9781586380199&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-secret-teachings-of-all-ages",
+   "workTitle": "The Secret Teachings of All Ages",
+   "press": false,
+   "isbn13": "9781585422500",
+   "market": "amazon.com",
+   "edition": "paperback en 9781585422500",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9781585422500&i=stripbooks&tag=…"
+  },
+  {
+   "work": "tarot-for-your-self",
+   "workTitle": "Tarot for Your Self",
+   "press": false,
+   "isbn13": "9781564145888",
+   "market": "amazon.com",
+   "edition": "paperback en 9781564145888",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9781564145888&i=stripbooks&tag=…"
+  },
+  {
+   "work": "tarot-for-your-self",
+   "workTitle": "Tarot for Your Self",
+   "press": false,
+   "isbn13": "9781578636792",
+   "market": "amazon.com",
+   "edition": "paperback en 9781578636792",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9781578636792&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-four-agreements",
+   "workTitle": "The Four Agreements",
+   "press": false,
+   "isbn13": "9781878424310",
+   "market": "amazon.com",
+   "edition": "paperback en 9781878424310",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9781878424310&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-alchemist",
+   "workTitle": "The Alchemist",
+   "press": false,
+   "isbn13": "9780062315007",
+   "market": "amazon.com",
+   "edition": "paperback en 9780062315007",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780062315007&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-kybalion",
+   "workTitle": "The Kybalion",
+   "press": false,
+   "isbn13": "9781585426430",
+   "market": "amazon.com",
+   "asin": "1585426431",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9781585426430",
+   "class": "verified",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/Kybalion-Tarcher-Cornerstone-Editions/dp/1585426431?tag=…"
+  },
+  {
+   "work": "the-dhammapada",
+   "workTitle": "The Dhammapada",
+   "press": false,
+   "isbn13": "9781586380205",
+   "market": "amazon.com",
+   "edition": "paperback en 9781586380205",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9781586380205&i=stripbooks&tag=…"
+  },
+  {
+   "work": "zen-mind-beginners-mind",
+   "workTitle": "Zen Mind, Beginner's Mind",
+   "press": false,
+   "isbn13": "9780834800793",
+   "market": "amazon.com",
+   "edition": "paperback en 9780834800793",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780834800793&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-miracle-of-mindfulness",
+   "workTitle": "The Miracle of Mindfulness",
+   "press": false,
+   "isbn13": "9780807012390",
+   "market": "amazon.com",
+   "edition": "paperback en 9780807012390",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780807012390&i=stripbooks&tag=…"
+  },
+  {
+   "work": "peace-is-every-step",
+   "workTitle": "Peace Is Every Step",
+   "press": false,
+   "isbn13": "9780553351392",
+   "market": "amazon.com",
+   "edition": "paperback en 9780553351392",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780553351392&i=stripbooks&tag=…"
+  },
+  {
+   "work": "radical-acceptance",
+   "workTitle": "Radical Acceptance",
+   "press": false,
+   "isbn13": "9780553380996",
+   "market": "amazon.com",
+   "edition": "paperback en 9780553380996",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780553380996&i=stripbooks&tag=…"
+  },
+  {
+   "work": "light-on-yoga",
+   "workTitle": "Light on Yoga",
+   "press": false,
+   "isbn13": "9780805210316",
+   "market": "amazon.com",
+   "edition": "paperback en 9780805210316",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780805210316&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-yoga-sutras-of-patanjali",
+   "workTitle": "The Yoga Sutras of Patañjali",
+   "press": false,
+   "isbn13": "9780865477360",
+   "market": "amazon.com",
+   "edition": "paperback en 9780865477360",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780865477360&i=stripbooks&tag=…"
+  },
+  {
+   "work": "i-am-that",
+   "workTitle": "I Am That",
+   "press": false,
+   "isbn13": "9780893860462",
+   "market": "amazon.com",
+   "edition": "paperback en 9780893860462",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780893860462&i=stripbooks&tag=…"
+  },
+  {
+   "work": "i-am-that",
+   "workTitle": "I Am That",
+   "press": false,
+   "isbn13": "9780893860226",
+   "market": "amazon.com",
+   "edition": "paperback en 9780893860226",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780893860226&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-tao-of-physics",
+   "workTitle": "The Tao of Physics",
+   "press": false,
+   "isbn13": "9780394731117",
+   "market": "amazon.com",
+   "asin": "0394731115",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780394731117",
+   "class": "verified",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/Tao-Physics-Exploration-Parallels-Mysticism/dp/0394731115?tag=…"
+  },
+  {
+   "work": "the-tao-of-physics",
+   "workTitle": "The Tao of Physics",
+   "press": false,
+   "isbn13": "9781570625190",
+   "market": "amazon.com",
+   "edition": "paperback en 9781570625190",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9781570625190&i=stripbooks&tag=…"
+  },
+  {
+   "work": "liber-null-and-psychonaut",
+   "workTitle": "Liber Null & Psychonaut",
+   "press": false,
+   "isbn13": "9781578637669",
+   "market": "amazon.com",
+   "edition": "paperback en 9781578637669",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9781578637669&i=stripbooks&tag=…"
+  },
+  {
+   "work": "magick-in-theory-and-practice",
+   "workTitle": "Magick in Theory and Practice",
+   "press": false,
+   "isbn13": "9780486232959",
+   "market": "amazon.com",
+   "edition": "paperback en 9780486232959",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780486232959&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-mystical-qabalah",
+   "workTitle": "The Mystical Qabalah",
+   "press": false,
+   "isbn13": "9780877285960",
+   "market": "amazon.com",
+   "asin": "0877285969",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780877285960",
+   "class": "verified",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/Mystical-Qabalah-Dion-Fortune/dp/0877285969?tag=…"
+  },
+  {
+   "work": "drawing-down-the-moon",
+   "workTitle": "Drawing Down the Moon",
+   "press": false,
+   "isbn13": "9780143038191",
+   "market": "amazon.com",
+   "asin": "0143038192",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780143038191",
+   "class": "verified",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/Drawing-Down-Moon-Witches-Goddess-Worshippers/dp/0143038192?tag=…"
+  },
+  {
+   "work": "the-spiral-dance",
+   "workTitle": "The Spiral Dance",
+   "press": false,
+   "isbn13": "9780062516329",
+   "market": "amazon.com",
+   "edition": "paperback en 9780062516329",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780062516329&i=stripbooks&tag=…"
+  },
+  {
+   "work": "initiation-into-hermetics",
+   "workTitle": "Initiation into Hermetics",
+   "press": false,
+   "isbn13": "9781885928122",
+   "market": "amazon.com",
+   "edition": "paperback en 9781885928122",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9781885928122&i=stripbooks&tag=…"
+  },
+  {
+   "work": "modern-magick",
+   "workTitle": "Modern Magick",
+   "press": false,
+   "isbn13": "9780738715780",
+   "market": "amazon.com",
+   "edition": "paperback en 9780738715780",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780738715780&i=stripbooks&tag=…"
+  },
+  {
+   "work": "modern-magick",
+   "workTitle": "Modern Magick",
+   "press": false,
+   "isbn13": "9780875423241",
+   "market": "amazon.com",
+   "asin": "0875423248",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780875423241",
+   "class": "verified",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/Modern-Magick-Lessons-Magickal-Llewellyns/dp/0875423248?tag=…"
+  },
+  {
+   "work": "the-return-of-the-king",
+   "workTitle": "The Return of the King",
+   "press": false,
+   "isbn13": "9780547928197",
+   "market": "amazon.com",
+   "edition": "paperback en 9780547928197",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780547928197&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-return-of-the-king",
+   "workTitle": "The Return of the King",
+   "press": false,
+   "isbn13": "9780618002245",
+   "market": "amazon.com",
+   "asin": "0618002243",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780618002245",
+   "class": "verified",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/Return-King-Lord-Rings/dp/0618002243?tag=…"
+  },
+  {
+   "work": "the-wise-mans-fear",
+   "workTitle": "The Wise Man's Fear",
+   "press": false,
+   "isbn13": "9780756407124",
+   "market": "amazon.com",
+   "edition": "paperback en 9780756407124",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780756407124&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-wise-mans-fear",
+   "workTitle": "The Wise Man's Fear",
+   "press": false,
+   "isbn13": "9780756407919",
+   "market": "amazon.com",
+   "edition": "paperback en 9780756407919",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780756407919&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-way-of-kings",
+   "workTitle": "The Way of Kings",
+   "press": false,
+   "isbn13": "9780765376671",
+   "market": "amazon.com",
+   "edition": "paperback en 9780765376671",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780765376671&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-way-of-kings",
+   "workTitle": "The Way of Kings",
+   "press": false,
+   "isbn13": "9780765365279",
+   "market": "amazon.com",
+   "edition": "paperback en 9780765365279",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780765365279&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-eye-of-the-world",
+   "workTitle": "The Eye of the World",
+   "press": false,
+   "isbn13": "9780812579956",
+   "market": "amazon.com",
+   "edition": "paperback en 9780812579956",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780812579956&i=stripbooks&tag=…"
+  },
+  {
+   "work": "a-clash-of-kings",
+   "workTitle": "A Clash of Kings",
+   "press": false,
+   "isbn13": "9780553579901",
+   "market": "amazon.com",
+   "edition": "paperback en 9780553579901",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780553579901&i=stripbooks&tag=…"
+  },
+  {
+   "work": "a-clash-of-kings",
+   "workTitle": "A Clash of Kings",
+   "press": false,
+   "isbn13": "9780553381696",
+   "market": "amazon.com",
+   "edition": "paperback en 9780553381696",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780553381696&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-left-hand-of-darkness",
+   "workTitle": "The Left Hand of Darkness",
+   "press": false,
+   "isbn13": "9780441007318",
+   "market": "amazon.com",
+   "asin": "0441007317",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780441007318",
+   "class": "verified",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/Left-Hand-Darkness-Science-Fiction/dp/0441007317?tag=…"
+  },
+  {
+   "work": "the-fifth-season",
+   "workTitle": "The Fifth Season",
+   "press": false,
+   "isbn13": "9780316229296",
+   "market": "amazon.com",
+   "edition": "paperback en 9780316229296",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780316229296&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-blade-itself",
+   "workTitle": "The Blade Itself",
+   "press": false,
+   "isbn13": "9780575077867",
+   "market": "amazon.com",
+   "edition": "paperback en 9780575077867",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780575077867&i=stripbooks&tag=…"
+  },
+  {
+   "work": "storm-front",
+   "workTitle": "Storm Front",
+   "press": false,
+   "isbn13": "9780451457813",
+   "market": "amazon.com",
+   "asin": "0451457811",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780451457813",
+   "class": "verified",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/Storm-Front-Dresden-Files-Butcher/dp/0451457811?tag=…"
+  },
+  {
+   "work": "the-call-of-cthulhu-and-other-weird-stories",
+   "workTitle": "The Call of Cthulhu and Other Weird Stories",
+   "press": false,
+   "isbn13": "9780143106487",
+   "market": "amazon.com",
+   "edition": "paperback en 9780143106487",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780143106487&i=stripbooks&tag=…"
+  },
+  {
+   "work": "we-have-always-lived-in-the-castle",
+   "workTitle": "We Have Always Lived in the Castle",
+   "press": false,
+   "isbn13": "9780143039976",
+   "market": "amazon.com",
+   "edition": "paperback en 9780143039976",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780143039976&i=stripbooks&tag=…"
+  },
+  {
+   "work": "one-hundred-years-of-solitude",
+   "workTitle": "One Hundred Years of Solitude",
+   "press": false,
+   "isbn13": "9780060883287",
+   "market": "amazon.com",
+   "edition": "paperback en 9780060883287",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780060883287&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-house-of-the-spirits",
+   "workTitle": "The House of the Spirits",
+   "press": false,
+   "isbn13": "9781501117015",
+   "market": "amazon.com",
+   "edition": "paperback en 9781501117015",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9781501117015&i=stripbooks&tag=…"
+  },
+  {
+   "work": "kafka-on-the-shore",
+   "workTitle": "Kafka on the Shore",
+   "press": false,
+   "isbn13": "9781400079278",
+   "market": "amazon.com",
+   "edition": "paperback en 9781400079278",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9781400079278&i=stripbooks&tag=…"
+  },
+  {
+   "work": "fahrenheit-451",
+   "workTitle": "Fahrenheit 451",
+   "press": false,
+   "isbn13": "9781451673319",
+   "market": "amazon.com",
+   "edition": "paperback en 9781451673319",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9781451673319&i=stripbooks&tag=…"
+  },
+  {
+   "work": "kindred",
+   "workTitle": "Kindred",
+   "press": false,
+   "isbn13": "9780807083697",
+   "market": "amazon.com",
+   "edition": "paperback en 9780807083697",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780807083697&i=stripbooks&tag=…"
   }
  ]
 }

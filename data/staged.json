@@ -456,40 +456,6 @@
    "origin": "staging/outside-candidates.psv:16"
   },
   {
-   "title": "Wherever You Go, There You Are",
-   "subtitle": "Mindfulness Meditation in Everyday Life",
-   "authors": [
-    "Jon Kabat-Zinn"
-   ],
-   "subjects": [
-    "mindfulness"
-   ],
-   "tradition": [
-    "secular"
-   ],
-   "level": "beginner",
-   "editions": [
-    {
-     "format": "paperback",
-     "language": "en",
-     "publisher": "Hachette",
-     "year": 2005,
-     "isbn13": "9781401307783",
-     "isbn10": "1401307787"
-    }
-   ],
-   "sources": [
-    {
-     "label": "Editorial shortlist (candidate; details unverified)",
-     "url": "staging/outside-candidates.psv#row17",
-     "accessed": "2026-10-27",
-     "supports": "candidate only"
-    }
-   ],
-   "status": "staged-needs-verification",
-   "origin": "staging/outside-candidates.psv:17"
-  },
-  {
    "title": "Why Zebras Don't Get Ulcers",
    "subtitle": "",
    "authors": [
@@ -524,42 +490,6 @@
    "origin": "staging/outside-candidates.psv:18"
   },
   {
-   "title": "Radical Acceptance",
-   "subtitle": "Embracing Your Life with the Heart of a Buddha",
-   "authors": [
-    "Tara Brach"
-   ],
-   "subjects": [
-    "buddhism",
-    "emotional-wellbeing",
-    "mindfulness"
-   ],
-   "tradition": [
-    "buddhist"
-   ],
-   "level": "beginner",
-   "editions": [
-    {
-     "format": "paperback",
-     "language": "en",
-     "publisher": "Bantam",
-     "year": 2004,
-     "isbn13": "9780553380996",
-     "isbn10": "0553380990"
-    }
-   ],
-   "sources": [
-    {
-     "label": "Editorial shortlist (candidate; details unverified)",
-     "url": "staging/outside-candidates.psv#row19",
-     "accessed": "2026-10-27",
-     "supports": "candidate only"
-    }
-   ],
-   "status": "staged-needs-verification",
-   "origin": "staging/outside-candidates.psv:19"
-  },
-  {
    "title": "Self-Compassion",
    "subtitle": "The Proven Power of Being Kind to Yourself",
    "authors": [
@@ -592,76 +522,6 @@
    ],
    "status": "staged-needs-verification",
    "origin": "staging/outside-candidates.psv:20"
-  },
-  {
-   "title": "The Miracle of Mindfulness",
-   "subtitle": "An Introduction to the Practice of Meditation",
-   "authors": [
-    "Thich Nhat Hanh"
-   ],
-   "subjects": [
-    "mindfulness",
-    "buddhism"
-   ],
-   "tradition": [
-    "buddhist"
-   ],
-   "level": "beginner",
-   "editions": [
-    {
-     "format": "paperback",
-     "language": "en",
-     "publisher": "Beacon Press",
-     "year": 1999,
-     "isbn13": "9780807012390",
-     "isbn10": "0807012394"
-    }
-   ],
-   "sources": [
-    {
-     "label": "Editorial shortlist (candidate; details unverified)",
-     "url": "staging/outside-candidates.psv#row21",
-     "accessed": "2026-10-27",
-     "supports": "candidate only"
-    }
-   ],
-   "status": "staged-needs-verification",
-   "origin": "staging/outside-candidates.psv:21"
-  },
-  {
-   "title": "Peace Is Every Step",
-   "subtitle": "The Path of Mindfulness in Everyday Life",
-   "authors": [
-    "Thich Nhat Hanh"
-   ],
-   "subjects": [
-    "mindfulness",
-    "buddhism"
-   ],
-   "tradition": [
-    "buddhist"
-   ],
-   "level": "beginner",
-   "editions": [
-    {
-     "format": "paperback",
-     "language": "en",
-     "publisher": "Bantam",
-     "year": 1992,
-     "isbn13": "9780553351392",
-     "isbn10": "0553351397"
-    }
-   ],
-   "sources": [
-    {
-     "label": "Editorial shortlist (candidate; details unverified)",
-     "url": "staging/outside-candidates.psv#row22",
-     "accessed": "2026-10-27",
-     "supports": "candidate only"
-    }
-   ],
-   "status": "staged-needs-verification",
-   "origin": "staging/outside-candidates.psv:22"
   },
   {
    "title": "The Heart of the Buddha's Teaching",
@@ -732,110 +592,6 @@
    "origin": "staging/outside-candidates.psv:24"
   },
   {
-   "title": "Zen Mind, Beginner's Mind",
-   "subtitle": "",
-   "authors": [
-    "Shunryu Suzuki"
-   ],
-   "subjects": [
-    "buddhism",
-    "mindfulness"
-   ],
-   "tradition": [
-    "buddhist"
-   ],
-   "level": "beginner",
-   "editions": [
-    {
-     "format": "paperback",
-     "language": "en",
-     "publisher": "Shambhala",
-     "year": 2011,
-     "isbn13": "9781590308493",
-     "isbn10": "1590308492"
-    }
-   ],
-   "sources": [
-    {
-     "label": "Editorial shortlist (candidate; details unverified)",
-     "url": "staging/outside-candidates.psv#row25",
-     "accessed": "2026-10-27",
-     "supports": "candidate only"
-    }
-   ],
-   "status": "staged-needs-verification",
-   "origin": "staging/outside-candidates.psv:25"
-  },
-  {
-   "title": "The Tibetan Book of Living and Dying",
-   "subtitle": "",
-   "authors": [
-    "Sogyal Rinpoche"
-   ],
-   "subjects": [
-    "buddhism"
-   ],
-   "tradition": [
-    "buddhist"
-   ],
-   "level": "intermediate",
-   "editions": [
-    {
-     "format": "paperback",
-     "language": "en",
-     "publisher": "HarperOne",
-     "year": 2002,
-     "isbn13": "9780062508348",
-     "isbn10": "0062508342"
-    }
-   ],
-   "sources": [
-    {
-     "label": "Editorial shortlist (candidate; details unverified)",
-     "url": "staging/outside-candidates.psv#row26",
-     "accessed": "2026-10-27",
-     "supports": "candidate only"
-    }
-   ],
-   "status": "staged-needs-verification",
-   "origin": "staging/outside-candidates.psv:26"
-  },
-  {
-   "title": "The Dhammapada",
-   "subtitle": "",
-   "authors": [
-    "Eknath Easwaran (translator)"
-   ],
-   "subjects": [
-    "buddhism",
-    "ancient-texts"
-   ],
-   "tradition": [
-    "buddhist"
-   ],
-   "level": "intermediate",
-   "editions": [
-    {
-     "format": "paperback",
-     "language": "en",
-     "publisher": "Nilgiri Press",
-     "year": 2007,
-     "isbn13": "9781586380205",
-     "isbn10": "1586380206"
-    }
-   ],
-   "sources": [
-    {
-     "label": "Editorial shortlist (candidate; details unverified)",
-     "url": "staging/outside-candidates.psv#row27",
-     "accessed": "2026-10-27",
-     "supports": "candidate only"
-    }
-   ],
-   "status": "staged-needs-verification",
-   "origin": "staging/outside-candidates.psv:27"
-  },
-  {
    "title": "The Wisdom of Insecurity",
    "subtitle": "A Message for an Age of Anxiety",
    "authors": [
@@ -871,111 +627,6 @@
    "origin": "staging/outside-candidates.psv:28"
   },
   {
-   "title": "Light on Yoga",
-   "subtitle": "",
-   "authors": [
-    "B.K.S. Iyengar"
-   ],
-   "subjects": [
-    "yoga"
-   ],
-   "tradition": [
-    "hindu"
-   ],
-   "level": "intermediate",
-   "editions": [
-    {
-     "format": "paperback",
-     "language": "en",
-     "publisher": "Schocken",
-     "year": 1995,
-     "isbn13": "9780805210316",
-     "isbn10": "0805210318"
-    }
-   ],
-   "sources": [
-    {
-     "label": "Editorial shortlist (candidate; details unverified)",
-     "url": "staging/outside-candidates.psv#row29",
-     "accessed": "2026-10-27",
-     "supports": "candidate only"
-    }
-   ],
-   "status": "staged-needs-verification",
-   "origin": "staging/outside-candidates.psv:29"
-  },
-  {
-   "title": "The Yoga Sutras of Patanjali",
-   "subtitle": "A New Edition, Translation, and Commentary",
-   "authors": [
-    "Edwin F. Bryant"
-   ],
-   "subjects": [
-    "yoga",
-    "hinduism",
-    "ancient-texts"
-   ],
-   "tradition": [
-    "hindu"
-   ],
-   "level": "advanced",
-   "editions": [
-    {
-     "format": "paperback",
-     "language": "en",
-     "publisher": "North Point Press",
-     "year": 2009,
-     "isbn13": "9780865477360",
-     "isbn10": "0865477361"
-    }
-   ],
-   "sources": [
-    {
-     "label": "Editorial shortlist (candidate; details unverified)",
-     "url": "staging/outside-candidates.psv#row30",
-     "accessed": "2026-10-27",
-     "supports": "candidate only"
-    }
-   ],
-   "status": "staged-needs-verification",
-   "origin": "staging/outside-candidates.psv:30"
-  },
-  {
-   "title": "Autobiography of a Yogi",
-   "subtitle": "",
-   "authors": [
-    "Paramahansa Yogananda"
-   ],
-   "subjects": [
-    "yoga",
-    "hinduism"
-   ],
-   "tradition": [
-    "hindu"
-   ],
-   "level": "beginner",
-   "editions": [
-    {
-     "format": "paperback",
-     "language": "en",
-     "publisher": "Self-Realization Fellowship",
-     "year": 1998,
-     "isbn13": "9780876120835",
-     "isbn10": "0876120834"
-    }
-   ],
-   "sources": [
-    {
-     "label": "Editorial shortlist (candidate; details unverified)",
-     "url": "staging/outside-candidates.psv#row31",
-     "accessed": "2026-10-27",
-     "supports": "candidate only"
-    }
-   ],
-   "status": "staged-needs-verification",
-   "origin": "staging/outside-candidates.psv:31"
-  },
-  {
    "title": "The Heart of Yoga",
    "subtitle": "Developing a Personal Practice",
    "authors": [
@@ -1008,42 +659,6 @@
    ],
    "status": "staged-needs-verification",
    "origin": "staging/outside-candidates.psv:32"
-  },
-  {
-   "title": "The Bhagavad Gita",
-   "subtitle": "",
-   "authors": [
-    "Eknath Easwaran (translator)"
-   ],
-   "subjects": [
-    "hinduism",
-    "ancient-texts",
-    "yoga"
-   ],
-   "tradition": [
-    "hindu"
-   ],
-   "level": "beginner",
-   "editions": [
-    {
-     "format": "paperback",
-     "language": "en",
-     "publisher": "Nilgiri Press",
-     "year": 2007,
-     "isbn13": "9781586380199",
-     "isbn10": "1586380192"
-    }
-   ],
-   "sources": [
-    {
-     "label": "Editorial shortlist (candidate; details unverified)",
-     "url": "staging/outside-candidates.psv#row33",
-     "accessed": "2026-10-27",
-     "supports": "candidate only"
-    }
-   ],
-   "status": "staged-needs-verification",
-   "origin": "staging/outside-candidates.psv:33"
   },
   {
    "title": "The Upanishads",
@@ -2202,109 +1817,6 @@
    "origin": "staging/outside-candidates.psv:66"
   },
   {
-   "title": "The Kybalion",
-   "subtitle": "Hermetic Philosophy",
-   "authors": [
-    "Three Initiates"
-   ],
-   "subjects": [
-    "hermeticism"
-   ],
-   "tradition": [
-    "hermetic"
-   ],
-   "level": "beginner",
-   "editions": [
-    {
-     "format": "paperback",
-     "language": "en",
-     "publisher": "TarcherPerigee",
-     "year": 2008,
-     "isbn13": "9781585428748",
-     "isbn10": "1585428744"
-    }
-   ],
-   "sources": [
-    {
-     "label": "Editorial shortlist (candidate; details unverified)",
-     "url": "staging/outside-candidates.psv#row67",
-     "accessed": "2026-10-27",
-     "supports": "candidate only"
-    }
-   ],
-   "status": "staged-needs-verification",
-   "origin": "staging/outside-candidates.psv:67"
-  },
-  {
-   "title": "Initiation into Hermetics",
-   "subtitle": "",
-   "authors": [
-    "Franz Bardon"
-   ],
-   "subjects": [
-    "hermeticism"
-   ],
-   "tradition": [
-    "hermetic"
-   ],
-   "level": "advanced",
-   "editions": [
-    {
-     "format": "paperback",
-     "language": "en",
-     "publisher": "Merkur Publishing",
-     "year": 2001,
-     "isbn13": "9781885928009",
-     "isbn10": "1885928009"
-    }
-   ],
-   "sources": [
-    {
-     "label": "Editorial shortlist (candidate; details unverified)",
-     "url": "staging/outside-candidates.psv#row68",
-     "accessed": "2026-10-27",
-     "supports": "candidate only"
-    }
-   ],
-   "status": "staged-needs-verification",
-   "origin": "staging/outside-candidates.psv:68"
-  },
-  {
-   "title": "The Secret Teachings of All Ages",
-   "subtitle": "",
-   "authors": [
-    "Manly P. Hall"
-   ],
-   "subjects": [
-    "hermeticism",
-    "comparative-religion"
-   ],
-   "tradition": [
-    "western-esoteric"
-   ],
-   "level": "intermediate",
-   "editions": [
-    {
-     "format": "paperback",
-     "language": "en",
-     "publisher": "TarcherPerigee",
-     "year": 2003,
-     "isbn13": "9781585422500",
-     "isbn10": "1585422509"
-    }
-   ],
-   "sources": [
-    {
-     "label": "Editorial shortlist (candidate; details unverified)",
-     "url": "staging/outside-candidates.psv#row69",
-     "accessed": "2026-10-27",
-     "supports": "candidate only"
-    }
-   ],
-   "status": "staged-needs-verification",
-   "origin": "staging/outside-candidates.psv:69"
-  },
-  {
    "title": "Psychology and Alchemy",
    "subtitle": "",
    "authors": [
@@ -2372,78 +1884,6 @@
    ],
    "status": "staged-needs-verification",
    "origin": "staging/outside-candidates.psv:71"
-  },
-  {
-   "title": "Drawing Down the Moon",
-   "subtitle": "Witches, Druids, Goddess-Worshippers, and Other Pagans in America",
-   "authors": [
-    "Margot Adler"
-   ],
-   "subjects": [
-    "paganism",
-    "wicca",
-    "witchcraft"
-   ],
-   "tradition": [
-    "pagan"
-   ],
-   "level": "intermediate",
-   "editions": [
-    {
-     "format": "paperback",
-     "language": "en",
-     "publisher": "Penguin",
-     "year": 2006,
-     "isbn13": "9780143038146",
-     "isbn10": "0143038141"
-    }
-   ],
-   "sources": [
-    {
-     "label": "Editorial shortlist (candidate; details unverified)",
-     "url": "staging/outside-candidates.psv#row72",
-     "accessed": "2026-10-27",
-     "supports": "candidate only"
-    }
-   ],
-   "status": "staged-needs-verification",
-   "origin": "staging/outside-candidates.psv:72"
-  },
-  {
-   "title": "The Spiral Dance",
-   "subtitle": "A Rebirth of the Ancient Religion of the Great Goddess",
-   "authors": [
-    "Starhawk"
-   ],
-   "subjects": [
-    "wicca",
-    "paganism",
-    "witchcraft"
-   ],
-   "tradition": [
-    "wiccan"
-   ],
-   "level": "intermediate",
-   "editions": [
-    {
-     "format": "paperback",
-     "language": "en",
-     "publisher": "HarperOne",
-     "year": 1999,
-     "isbn13": "9780062516329",
-     "isbn10": "0062516329"
-    }
-   ],
-   "sources": [
-    {
-     "label": "Editorial shortlist (candidate; details unverified)",
-     "url": "staging/outside-candidates.psv#row73",
-     "accessed": "2026-10-27",
-     "supports": "candidate only"
-    }
-   ],
-   "status": "staged-needs-verification",
-   "origin": "staging/outside-candidates.psv:73"
   },
   {
    "title": "The Triumph of the Moon",
@@ -2726,40 +2166,6 @@
    "origin": "staging/outside-candidates.psv:81"
   },
   {
-   "title": "Tarot for Your Self",
-   "subtitle": "A Workbook for Personal Transformation",
-   "authors": [
-    "Mary K. Greer"
-   ],
-   "subjects": [
-    "tarot"
-   ],
-   "tradition": [
-    "western-esoteric"
-   ],
-   "level": "beginner",
-   "editions": [
-    {
-     "format": "paperback",
-     "language": "en",
-     "publisher": "New Page Books",
-     "year": 2002,
-     "isbn13": "9781564149879",
-     "isbn10": "1564149870"
-    }
-   ],
-   "sources": [
-    {
-     "label": "Editorial shortlist (candidate; details unverified)",
-     "url": "staging/outside-candidates.psv#row82",
-     "accessed": "2026-10-27",
-     "supports": "candidate only"
-    }
-   ],
-   "status": "staged-needs-verification",
-   "origin": "staging/outside-candidates.psv:82"
-  },
-  {
    "title": "Tarot Wisdom",
    "subtitle": "Spiritual Teachings and Deeper Meanings",
    "authors": [
@@ -3002,41 +2408,6 @@
    "origin": "staging/outside-candidates.psv:90"
   },
   {
-   "title": "I Am That",
-   "subtitle": "Talks with Sri Nisargadatta Maharaj",
-   "authors": [
-    "Nisargadatta Maharaj"
-   ],
-   "subjects": [
-    "consciousness",
-    "hinduism"
-   ],
-   "tradition": [
-    "nondual"
-   ],
-   "level": "intermediate",
-   "editions": [
-    {
-     "format": "paperback",
-     "language": "en",
-     "publisher": "Acorn Press",
-     "year": 1990,
-     "isbn13": "9780893860226",
-     "isbn10": "0893860220"
-    }
-   ],
-   "sources": [
-    {
-     "label": "Editorial shortlist (candidate; details unverified)",
-     "url": "staging/outside-candidates.psv#row91",
-     "accessed": "2026-10-27",
-     "supports": "candidate only"
-    }
-   ],
-   "status": "staged-needs-verification",
-   "origin": "staging/outside-candidates.psv:91"
-  },
-  {
    "title": "The Doors of Perception",
    "subtitle": "",
    "authors": [
@@ -3069,41 +2440,6 @@
    ],
    "status": "staged-needs-verification",
    "origin": "staging/outside-candidates.psv:92"
-  },
-  {
-   "title": "Be Here Now",
-   "subtitle": "",
-   "authors": [
-    "Ram Dass"
-   ],
-   "subjects": [
-    "consciousness",
-    "yoga"
-   ],
-   "tradition": [
-    "hindu"
-   ],
-   "level": "beginner",
-   "editions": [
-    {
-     "format": "paperback",
-     "language": "en",
-     "publisher": "Crown",
-     "year": 1971,
-     "isbn13": "9780517543054",
-     "isbn10": "0517543052"
-    }
-   ],
-   "sources": [
-    {
-     "label": "Editorial shortlist (candidate; details unverified)",
-     "url": "staging/outside-candidates.psv#row93",
-     "accessed": "2026-10-27",
-     "supports": "candidate only"
-    }
-   ],
-   "status": "staged-needs-verification",
-   "origin": "staging/outside-candidates.psv:93"
   },
   {
    "title": "Waking Up",

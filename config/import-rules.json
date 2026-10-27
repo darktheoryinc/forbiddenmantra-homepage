@@ -1,0 +1,9 @@
+{
+  "_doc": "Quality rules applied by scripts/reconcile.mjs before anything is eligible for a batch. Case-insensitive regexes. Matches go to the review queue with the rule that fired; they are never silently dropped.",
+  "blockTitlePatterns": ["\\b(summary|study guide|analysis|workbook|companion)\\s+(of|to|for)\\b", "\\b(coloring|colouring) book\\b", "\\b(journal|planner|notebook|diary|calendar)\\b", "\\bbox(ed)? set\\b", "\\bcomplete collection\\b", "\\bcliffs?notes\\b", "\\bsparknotes\\b", "\\bcrossword|sudoku|word search\\b"],
+  "blockSubjectPatterns": ["\\bpornograph", "\\berotic", "\\btextbook", "\\bjuvenile nonfiction\\b"],
+  "maxAuthorsPerWork": 3,
+  "requireFormat": true,
+  "requireLanguage": true,
+  "titleSimilarityMin": 0.7
+}

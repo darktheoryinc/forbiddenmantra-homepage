@@ -183,3 +183,13 @@ button[type=submit],.btn{background:var(--gold);color:#120d05;border:0;padding:1
 .nav a[href$="technology/index.html"]{opacity:.85}
 .articles{list-style:none;margin:10px 0 6px;max-width:760px}.articles li{padding:9px 0;border-bottom:1px solid rgba(201,168,76,.1);font-size:18px;line-height:1.4}
 .a-date{font-size:13px;color:var(--muted);white-space:nowrap}
+
+/* pagination, series, "show more" (scale layer) */
+.pager{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px 18px;margin:34px 0 10px}
+.pager ol{display:flex;flex-wrap:wrap;gap:6px;list-style:none;align-items:center;justify-content:center}
+.pager a,.pager [aria-current]{display:inline-block;min-width:44px;min-height:44px;line-height:44px;text-align:center;padding:0 10px;border:1px solid var(--line);border-radius:6px;text-decoration:none}
+.pager [aria-current]{background:rgba(201,168,76,.16);color:#F5EDD6;border-color:var(--gold)}
+.pager .dim{color:var(--muted);padding:0 10px}.pager .gap{color:var(--muted);padding:0 4px}
+.more{text-align:center;margin:26px 0 6px}
+.series{margin:2px 0 10px;color:var(--muted)}
+[data-index-grid][hidden],[data-results][hidden]{display:none}

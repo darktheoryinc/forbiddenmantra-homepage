@@ -24,6 +24,8 @@ const langReg = rd('data/languages.json');
 const cat = rd(`${DATA}/catalogue.json`);
 const staged = rd(`${DATA}/staged.json`).works;
 const coll = rd(`${DATA}/collections.json`);
+// scale settings (config/site.json "build"; FM_BUILD='{"pageSize":10}' overrides for tests)
+const BUILD = { pageSize: 48, maxStaticBookPages: 9000, shardSize: 1500, authorPagesAllBelow: 2000, ...(cfg.build ?? {}), ...(process.env.FM_BUILD ? JSON.parse(process.env.FM_BUILD) : {}) };
 
 // ---------- retailer link checks (scripts/check-links.mjs writes data/link-check.json from a networked machine) ----------
 const LINKCHECK = fs.existsSync(path.join(ROOT, DATA, 'link-check.json')) ? rd(`${DATA}/link-check.json`).results ?? {} : {};
@@ -97,8 +99,39 @@ const edLangs = (e) => [e.language, ...(e.alsoLanguages ?? [])];
 const wLangs = (w) => [...new Set(w.editions.flatMap(edLangs))];
 const FORMAT_ORDER = ['hardcover', 'paperback', 'ebook', 'audiobook'];
 
+// ---------- scale model: static/dynamic tiers, index chunks, series, author pages ----------
+const sortTitle = (w) => w.title.toLowerCase().replace(/^(the|a|an)\s+/, '');
+const rankTier = (w) => (w.press ? 0 : ({ 'hand-verified': 1, 'web-corroborated': 2, 'auto-two-source': 3 }[w.provenance?.tier] ?? 1));
+const staticSet = new Set([...cat.works].sort((a, b) => rankTier(a) - rankTier(b)).slice(0, BUILD.maxStaticBookPages).map((w) => w.id));
+const isDyn = (w) => !staticSet.has(w.id);
+const hubIx = new Map(tax.hubs.map((h, i) => [h.id, i]));
+const chunkOf = new Map();
+const orderedWorks = [...cat.works].sort((a, b) => hubIx.get(dept.get(a.subjects[0]).hubs[0]) - hubIx.get(dept.get(b.subjects[0]).hubs[0]) || (a.subjects[0] < b.subjects[0] ? -1 : a.subjects[0] > b.subjects[0] ? 1 : 0) || (sortTitle(a) < sortTitle(b) ? -1 : sortTitle(a) > sortTitle(b) ? 1 : 0));
+orderedWorks.forEach((w, i) => chunkOf.set(w.id, 'c' + String(Math.floor(i / BUILD.shardSize) + 1).padStart(2, '0')));
+const authorPage = new Set(cat.authors.filter((a) => cat.works.length <= BUILD.authorPagesAllBelow || a.workIds.length >= 2 || a.workIds.some((id) => workById.get(id).press)).map((a) => a.id));
+const seriesMap = new Map();
+for (const w of cat.works) if (w.series?.name) { const id = slugify(w.series.name); (seriesMap.get(id) ?? seriesMap.set(id, { id, name: w.series.name, works: [] }).get(id)).works.push(w); }
+for (const sr of seriesMap.values()) sr.works.sort((a, b) => (a.series.number ?? 1e9) - (b.series.number ?? 1e9) || (sortTitle(a) < sortTitle(b) ? -1 : 1));
+const byDept = new Map(); for (const w of cat.works) for (const d of w.subjects) (byDept.get(d) ?? byDept.set(d, []).get(d)).push(w);
+const byAuthor = new Map(cat.authors.map((a) => [a.id, a.workIds.map((id) => workById.get(id))]));
+function relatedFor(w) {
+  const out = [];
+  const add = (list, rot = 0) => { for (let i = 0; i < list.length && out.length < 4; i++) { const o = list[(i + rot) % list.length]; if (o.id !== w.id && !out.includes(o)) out.push(o); } };
+  if (w.series?.name) add(seriesMap.get(slugify(w.series.name)).works);
+  for (const n of w.authors) add(byAuthor.get(slugify(n)) ?? []);
+  let h = 0; for (const c of w.id) h = (h * 31 + c.charCodeAt(0)) >>> 0;
+  for (const d of w.subjects) add(byDept.get(d), h % byDept.get(d).length);
+  return out;
+}
+
 const langStats = new Map(langReg.languages.map((l) => [l.code, { works: new Set(), editions: 0, formats: new Set() }]));
 for (const w of cat.works) for (const e of w.editions) for (const c of edLangs(e)) { const s = langStats.get(c) ?? (langStats.set(c, { works: new Set(), editions: 0, formats: new Set() }), langStats.get(c)); s.works.add(w.id); s.editions++; s.formats.add(e.format); }
+const factSummary = (w) => {
+  const fm = [...new Set(w.editions.map((e) => tax.formats[e.format].toLowerCase()))], lg = wLangs(w).map((c) => LANG.get(c)?.name ?? c);
+  const pubs = [...new Set(w.editions.map((e) => e.publisher).filter(Boolean))];
+  return `${w.title} by ${w.authors.join(' and ')}. Filed under ${w.subjects.map((s) => dept.get(s).name).join(' and ')}. Catalogued in ${fm.join(' and ')} (${lg.join(', ')})${pubs.length ? `, from ${pubs.slice(0, 3).join(', ')}` : ''}. We have not written a description for this title yet; the details below come from the cited sources.`;
+};
+const descOf = (w) => w.description || factSummary(w);
 const nWorks = (c) => langStats.get(c)?.works.size ?? 0;
 const nEds = (c) => langStats.get(c)?.editions ?? 0;
 const stocked = langReg.languages.filter((l) => nEds(l.code) > 0).sort((a, b) => nWorks(b.code) - nWorks(a.code) || langReg.languages.indexOf(a) - langReg.languages.indexOf(b));
@@ -128,7 +161,13 @@ function retailersRaw(work, ed) {
   }
   if (!out.some((o) => o.affiliate) && ed.language === 'en') {
     const m = ed.marketplace ?? AFF.defaultMarketplace; // UK editions etc. can name their own marketplace
-    if (ed.isbn10 && ['paperback', 'hardcover'].includes(ed.format) && !ed.noDerivedLink)
+    // A /dp/ link built from an ISBN-10 is an assumption, so it is limited to the hand-verified tier. Bulk-imported editions get a product
+    // link only when that exact product page appeared in a cited source; otherwise a clearly labelled ISBN search link.
+    const trusted = !!work.press || (work.provenance?.tier ?? 'hand-verified') === 'hand-verified';
+    const seen = ed.isbn10 && (ed.sources ?? []).find((x) => new RegExp(`^https://(?:www\\.|us\\.)?amazon\\.com/[^?#]*dp/${ed.isbn10}(?:[/?#]|$)`).test(x.url));
+    if (seen) out.push({ label: 'Amazon', url: withTag(`https://www.amazon.com${new URL(seen.url).pathname}`, 'amazon.com'), affiliate: true, market: 'amazon.com', status: `Product page seen in a cited source on ${seen.accessed}; live check pending` });
+    else if (!trusted && ed.isbn13) out.push({ label: 'Search on Amazon', url: withTag(`https://www.${m}/s?k=${ed.isbn13}&i=stripbooks`, m), affiliate: true, market: m, status: 'ISBN search link; no product page has been verified for this edition' });
+    else if (ed.isbn10 && ['paperback', 'hardcover'].includes(ed.format) && !ed.noDerivedLink)
       out.push({ label: 'Amazon', url: withTag(`https://www.${m}/dp/${ed.isbn10}`, m), affiliate: true, market: m, status: 'Built from the ISBN-10; not yet confirmed live' });
     else if (work.press === 'fmp')
       out.push({ label: 'Search on Amazon', url: withTag(`https://www.${m}/s?k=${encodeURIComponent(`${work.title} ${work.subtitle ?? ''} Forbidden Mantra Press`.replace(/\s+/g, ' ').trim())}&i=stripbooks`, m), affiliate: true, market: m, status: 'Search link; edition-specific ASIN still to be added' });
@@ -160,22 +199,24 @@ function cover(w, big = false, title = w.title) {
   const hue = w.press ? 38 : hashHue(w.title);
   return `<div class="cover${big ? ' cover-lg' : ''}${w.press ? ' cover-fmp' : ''}" style="--h:${hue}" role="img" aria-label="Placeholder cover for ${esc(title)}. Official cover art is shown only where a permitted source is connected."><span class="cover-title">${esc(title)}</span><span class="cover-author">${esc(w.authors[0])}</span></div>`;
 }
-const authorLinks = (w) => w.authors.map((n) => `<a href="${href(`authors/${slugify(n)}/`)}">${esc(n)}</a>`).join(', ');
+const authorHref = (n) => (authorPage.has(slugify(n)) ? href(`authors/${slugify(n)}/`) : `${href('search/')}?q=${encodeURIComponent(n)}`);
+const authorLinks = (w) => w.authors.map((n) => `<a href="${authorHref(n)}">${esc(n)}</a>`).join(', ');
+const bookHref = (w, ctx = null) => (isDyn(w) ? `${href('book/')}?c=${chunkOf.get(w.id)}&s=${encodeURIComponent(w.slug)}` : href(`books/${w.slug}/`)) + (ctx ? `#lang-${ctx}` : '');
 function searchBlob(w) {
   const ids = w.editions.flatMap((e) => [e.isbn13, e.isbn10, e.asin].filter(Boolean));
   const langs = wLangs(w).flatMap((c) => [LANG.get(c)?.name, LANG.get(c)?.endonym, c.length > 2 ? c : null]);
   return [w.title, w.subtitle, ...w.editions.flatMap((e) => [e.title, e.subtitle, e.translator]), ...w.authors, ...w.subjects.map((s) => dept.get(s).name), ...(w.tradition ?? []).map((t) => trad.get(t)?.name), ...w.editions.map((e) => e.publisher), ...langs, w.press ? 'forbidden mantra press' : '', ...ids].filter(Boolean).join(' ').toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '');
 }
 // ctxLang: render the card as seen from a language page (that language's title/formats; link to its edition group)
-function card(w, ctxLang = null, hl = 'h3') {
+function card(w, ctxLang = null, hl = 'h3', slim = false) {
   const eds = ctxLang ? w.editions.filter((e) => edLangs(e).includes(ctxLang)) : w.editions;
   const fmts = [...new Set(eds.map((e) => e.format))];
   const langs = [...new Set(eds.flatMap(edLangs))];
   const t = (ctxLang && eds.find((e) => e.title)?.title) || w.title;
   const sub = ctxLang ? (eds.find((e) => e.title)?.subtitle ?? '') : w.subtitle;
   const dataEd = w.editions.map((e) => ({ l: edLangs(e), f: e.format, t: e.title ?? '' }));
-  const link = href(`books/${w.slug}/`) + (ctxLang ? `#lang-${ctxLang}` : '');
-  return `<article class="card" data-title="${esc(w.title.toLowerCase())}" data-search="${esc(searchBlob(w))}" data-subjects="${w.subjects.join(' ')}" data-hubs="${[...new Set(w.subjects.flatMap((s) => dept.get(s).hubs))].join(' ')}" data-tradition="${(w.tradition ?? []).join(' ')}" data-level="${w.level}" data-press="${w.press ? 'fmp' : 'outside'}" data-author="${w.authors.map((a) => a.toLowerCase()).join(' ')}" data-ed="${esc(JSON.stringify(dataEd))}"${ctxLang ? ` data-ctx="${ctxLang}"` : ''} data-slug="${w.slug}" data-wtitle="${esc(w.title)}">
+  const link = bookHref(w, ctxLang);
+  return `<article class="card"${slim ? '' : ` data-title="${esc(w.title.toLowerCase())}" data-search="${esc(searchBlob(w))}" data-subjects="${w.subjects.join(' ')}" data-hubs="${[...new Set(w.subjects.flatMap((s) => dept.get(s).hubs))].join(' ')}" data-tradition="${(w.tradition ?? []).join(' ')}" data-level="${w.level}" data-press="${w.press ? 'fmp' : 'outside'}" data-author="${w.authors.map((a) => a.toLowerCase()).join(' ')}" data-ed="${esc(JSON.stringify(dataEd))}"${ctxLang ? ` data-ctx="${ctxLang}"` : ''} data-slug="${w.slug}" data-wtitle="${esc(w.title)}"`}>
   <a class="card-cover" href="${link}" tabindex="-1" aria-hidden="true">${cover(w, false, t)}</a>
   <div class="card-body">
     ${w.press ? '<span class="badge badge-fmp">Forbidden Mantra Press</span>' : ''}
@@ -186,7 +227,34 @@ function card(w, ctxLang = null, hl = 'h3') {
   </div>
 </article>`;
 }
-const grid = (works, { filterable = true, ctxLang = null, hl = 'h3' } = {}) => `<div class="grid" ${filterable ? 'data-filterable' : ''}>${works.map((w) => card(w, ctxLang, hl)).join('')}</div>`;
+// paged: this grid shows one static page of a longer list. The filter bar then works from the lazy-loaded chunk index (see app.js), not from these cards.
+const grid = (works, { filterable = true, ctxLang = null, hl = 'h3', paged = null } = {}) => paged
+  ? `<div class="grid" data-index-grid data-shards="${paged.shards.join(' ')}" data-scope='${esc(JSON.stringify(paged.scope))}' data-total="${paged.total}" data-per="${BUILD.pageSize}" data-root="${ROOT_PREFIX}"${ctxLang ? ` data-ctx="${ctxLang}"` : ''} data-hl="${hl}">${works.map((w) => card(w, ctxLang, hl, true)).join('')}</div>
+<div class="grid" data-results hidden></div><p class="more" data-more-wrap hidden><button type="button" class="btn btn-ghost" data-more data-i18n="show_more">${esc(en.show_more)}</button></p>`
+  : `<div class="grid" ${filterable ? 'data-filterable' : ''}>${works.map((w) => card(w, ctxLang, hl)).join('')}</div>`;
+function pager(rel, p, n) {
+  if (n < 2) return '';
+  const u = (k) => href(k === 1 ? rel : `${rel}page/${k}/`);
+  const nums = [...new Set([1, 2, p - 2, p - 1, p, p + 1, p + 2, n - 1, n].filter((k) => k >= 1 && k <= n))].sort((a, b) => a - b);
+  let prev = 0, items = '';
+  for (const k of nums) { if (k - prev > 1) items += '<li class="gap" aria-hidden="true">…</li>'; items += k === p ? `<li><span aria-current="page">${k}</span></li>` : `<li><a href="${u(k)}">${k}</a></li>`; prev = k; }
+  return `<nav class="pager" aria-label="Pagination" data-pager>${p > 1 ? `<a rel="prev" href="${u(p - 1)}">← Previous</a>` : '<span class="dim">← Previous</span>'}<ol>${items}</ol>${p < n ? `<a rel="next" href="${u(p + 1)}">Next →</a>` : '<span class="dim">Next →</span>'}</nav>`;
+}
+// Paginated listing: writes page 1 at <rel>index.html and the rest at <rel>page/N/. A list that fits on one page keeps the plain filterable grid.
+function listing({ rel, works, scope, page: { body, ...pageOpts }, ctxLang = null, hl = 'h2' }) {
+  const per = BUILD.pageSize, n = Math.max(1, Math.ceil(works.length / per)), paged = works.length > per;
+  const shards = paged ? [...new Set(works.map((w) => chunkOf.get(w.id)))].sort() : [];
+  for (let p = 1; p <= n; p++) {
+    const prel = p === 1 ? `${rel}index.html` : `${rel}page/${p}/index.html`;
+    const last = pageOpts.crumbs[pageOpts.crumbs.length - 1];
+    page(prel, {
+      ...pageOpts, title: p > 1 ? `${pageOpts.title} · page ${p}` : pageOpts.title,
+      crumbs: p > 1 ? [...pageOpts.crumbs.slice(0, -1), [last[0], rel], [`Page ${p}`]] : pageOpts.crumbs,
+      links: paged ? () => [p > 1 && `<link rel="prev" href="${href(p === 2 ? rel : `${rel}page/${p - 1}/`)}">`, p < n && `<link rel="next" href="${href(`${rel}page/${p + 1}/`)}">`].filter(Boolean).join('\n') : '',
+      body: () => body({ grid: grid(paged ? works.slice((p - 1) * per, p * per) : works, { ctxLang, hl, paged: paged ? { scope, shards, total: works.length } : null }), nav: pager(rel, p, n), p, n, paged }),
+    });
+  }
+}
 
 function langOptions(ctxWorks) {
   const n = (c) => ctxWorks.filter((w) => wLangs(w).includes(c)).length;
@@ -244,7 +312,7 @@ function langMenu() {
 
 const NAV = [['nav_subjects', 'subjects/'], ['nav_traditions', 'traditions/'], ['nav_authors', 'authors/'], ['nav_paths', 'paths/'], ['nav_collections', 'collections/'], ['nav_press', 'press/'], ['nav_iosutra', 'technology/']];
 const anyUntagged = Object.values(tagStatus).every((v) => !v);
-function layout({ title, rel, desc, body, crumbs = [], jsonld = null, current = '' }) {
+function layout({ title, rel, desc, body, crumbs = [], jsonld = null, current = '', links = '', noindex = false }) {
   ROOT_PREFIX = depthPrefix(rel);
   const page = body();
   const bc = crumbs.length ? `<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="${href('')}" data-i18n="home">${esc(en.home)}</a></li>${crumbs.map(([l, u]) => `<li>${u ? `<a href="${href(u)}">${esc(l)}</a>` : `<span aria-current="page">${esc(l)}</span>`}</li>`).join('')}</ol></nav>` : '';
@@ -255,8 +323,9 @@ function layout({ title, rel, desc, body, crumbs = [], jsonld = null, current = 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(title)}${title.includes('Forbidden Mantra') ? '' : ' · Forbidden Mantra Press'}</title>
 <meta name="description" content="${esc(desc ?? cfg.tagline)}">
-${PRODUCTION ? `<link rel="canonical" href="${SITE_URL}/${rel.replace(/index\.html$/, '')}">` : '<meta name="robots" content="noindex, nofollow"><!-- preview build: not for production -->'}
+${noindex ? '<meta name="robots" content="noindex, follow">' : PRODUCTION ? `<link rel="canonical" href="${SITE_URL}/${rel.replace(/index\.html$/, '')}">` : '<meta name="robots" content="noindex, nofollow"><!-- preview build: not for production -->'}
 <link rel="stylesheet" href="${ROOT_PREFIX}assets/style.css">
+${typeof links === 'function' ? links() : links}
 ${ANALYTICS.snippet}
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;500;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld)}</script>` : ''}
@@ -354,17 +423,35 @@ ${placed('home').map((p) => promo.renderHome(promoView('home', p.id), promoCtx))
 });
 
 // ---------- browse + search ----------
-const browseBody = (heading, intro) => () => `
+const allChunks = [...new Set(chunkOf.values())].sort();
+listing({
+  rel: 'books/', works: cat.works, scope: { k: 'all' },
+  page: {
+    title: 'All books', desc: 'Browse the full Forbidden Mantra Press catalogue.', crumbs: [['All books']], current: 'books/',
+    body: ({ grid: G, nav }) => `
 <section class="band"><div class="wrap">
-  <h1>${heading}</h1><p class="lede-sm">${intro}</p>
+  <h1>All books</h1><p class="lede-sm">Browse by subject, tradition, book language, format and reading level, or search by title, author, subject or ISBN.</p>
   <p class="stats">${langSummary}</p>
   ${filterBar(cat.works)}
-  ${grid(cat.works, { hl: 'h2' })}
+  ${G}${nav}
   ${emptyMsg()}
   <p class="note">The catalogue is growing. ${staged.length} further outside editions are staged and will be published once each title, edition and identifier is confirmed against a source.</p>
-</div></section>`;
-page('books/index.html', { title: 'All books', desc: 'Browse the full Forbidden Mantra Press catalogue.', crumbs: [['All books']], current: 'books/', body: browseBody('All books', 'Browse by subject, tradition, book language, format and reading level, or search by title, author, subject or ISBN.') });
-page('search/index.html', { title: 'Search', desc: 'Search by title, author, subject or ISBN.', crumbs: [['Search']], body: browseBody('Search the catalogue', 'Search by title, author, subject or ISBN. ISBNs can be typed with or without hyphens. Language names work too.') });
+</div></section>`,
+  },
+});
+// The search page has no static cards: results are drawn from the lazy-loaded chunk index.
+page('search/index.html', {
+  title: 'Search', desc: 'Search by title, author, subject or ISBN.', crumbs: [['Search']],
+  body: () => `
+<section class="band"><div class="wrap">
+  <h1>Search the catalogue</h1><p class="lede-sm">Search by title, author, subject or ISBN. ISBNs can be typed with or without hyphens. Language names work too.</p>
+  <p class="stats">${langSummary}</p>
+  ${filterBar(cat.works)}
+  <p class="note" data-search-prompt>${cat.works.length.toLocaleString('en-US')} books are searchable. Start typing, or choose a filter. <a href="${href('books/')}">Browse all books</a> instead.</p>
+  ${grid([], { paged: { scope: { k: 'all' }, shards: allChunks, total: cat.works.length } })}
+  ${emptyMsg()}
+</div></section>`,
+});
 
 // ---------- languages ----------
 const langBlock = (l) => {
@@ -384,20 +471,20 @@ for (const l of langReg.languages) {
   const ws = cat.works.filter((w) => wLangs(w).includes(l.code));
   const byDept = tax.departments.map((d) => [d, ws.filter((w) => w.subjects.includes(d.id)).length]).filter(([, n]) => n > 0);
   const stat = langStats.get(l.code);
-  page(`languages/${l.code}/index.html`, {
+  listing({ rel: `languages/${l.code}/`, works: ws, ctxLang: l.code, scope: { k: 'lang', v: l.code }, page: {
     title: `Books in ${l.name}`, desc: ws.length ? `${ws.length} works in ${l.name}.` : `No verified ${l.name} editions yet.`, crumbs: [['Languages', 'languages/'], [l.name]],
-    body: () => `<section class="band"><div class="wrap">
+    body: ({ grid: G, nav }) => `<section class="band"><div class="wrap">
 <p class="eyebrow">${esc(langReg.groups[l.group])}</p>
 <h1><span lang="${l.code}" dir="${l.dir}">${esc(l.endonym)}</span>${l.endonym !== l.name ? ` <small class="h1-sub">${esc(l.name)}</small>` : ''}</h1>
 ${ws.length ? `<p class="stats">${fmt(ws.length, 'work', 'works')} · ${fmt(stat.editions, 'edition', 'editions')} · ${[...stat.formats].sort((a, b) => FORMAT_ORDER.indexOf(a) - FORMAT_ORDER.indexOf(b)).map((f) => tax.formats[f]).join(', ')}</p>
 <p class="lede-sm">Each book below has at least one verified edition published in ${esc(l.name)}. Open a book to see that edition’s own ISBN, format and retailer link.</p>
 <h2>By subject</h2><ul class="chips">${byDept.map(([d, n]) => `<li><a href="${href(`topics/${d.id}/`)}?lang=${l.code}">${esc(d.name)}</a> <span>${n}</span></li>`).join('')}</ul>
-<h2>Books</h2>${filterBar(ws, { lang: false })}${grid(ws, { ctxLang: l.code })}${emptyMsg()}`
+<h2>Books</h2>${filterBar(ws, { lang: false })}${G}${nav}${emptyMsg()}`
  : `<p class="stats">0 works · 0 editions</p>
 <div class="empty" data-lang-empty><p><strong>We have no verified ${esc(l.name)} editions yet.</strong></p><p>A language is shown as available only when a specific edition has been verified with its own ISBN or ASIN, format, retailer link and dated source. We do not infer translations from the English books.</p><p><a class="btn btn-ghost" href="${href('books/')}">Browse all books</a> <a class="btn btn-ghost" href="${href('languages/')}">All languages</a></p></div>`}
 ${artFor.lang(l.code).length ? `<h2 lang="en">Articles in ${esc(l.name)}</h2><p class="note-sm" lang="en">These are blog articles, not book editions. Books in ${esc(l.name)} are listed only when a specific edition has been verified.</p>${artList(artFor.lang(l.code), 20)}` : ''}
 </div></section>`,
-  });
+  }});
 }
 
 // ---------- subjects ----------
@@ -409,28 +496,28 @@ for (const h of tax.hubs) {
   const ds = tax.departments.filter((d) => d.hubs.includes(h.id));
   const ws = worksInHub(h.id);
   const fm = ws.filter((w) => w.press);
-  page(`subjects/${h.id}/index.html`, {
+  listing({ rel: `subjects/${h.id}/`, works: ws, scope: { k: 'hub', v: h.id }, page: {
     title: h.name, desc: h.tagline, crumbs: [['Subjects', 'subjects/'], [h.name]],
-    body: () => `<section class="band"><div class="wrap"><h1>${esc(h.name)}</h1><p class="lede-sm">${esc(h.intro)}</p>
+    body: ({ grid: G, nav }) => `<section class="band"><div class="wrap"><h1>${esc(h.name)}</h1><p class="lede-sm">${esc(h.intro)}</p>
 <h2>Departments</h2>
 <div class="depts">${ds.map((d) => `<a class="dept" href="${href(`topics/${d.id}/`)}"><h3>${esc(d.name)}</h3><p>${esc(d.intro.split('. ')[0])}.</p><span class="hub-n">${fmt(worksIn(d.id).length, 'book', 'books')}${stagedIn(d.id) ? ` · ${stagedIn(d.id)} in review` : ''}</span></a>`).join('')}</div>
 ${fm.length ? `<h2>From Forbidden Mantra Press</h2>${grid(fm, { filterable: false })}` : ''}
 <h2>All books in this hub</h2>
-${ws.length ? langChips(ws) + filterBar(ws, { subjects: false, q: false }) + grid(ws) + emptyMsg() : `<p class="note">No books are published in this hub yet. ${stagedInHub(h.id)} are staged for verification.</p>`}
+${ws.length ? langChips(ws) + filterBar(ws, { subjects: false, q: false }) + G + nav + emptyMsg() : `<p class="note">No books are published in this hub yet. ${stagedInHub(h.id)} are staged for verification.</p>`}
 </div></section>`,
-  });
+  }});
 }
 for (const d of tax.departments) {
   const ws = worksIn(d.id);
   const sameHub = tax.departments.filter((x) => x.id !== d.id && x.hubs.some((hh) => d.hubs.includes(hh)));
-  page(`topics/${d.id}/index.html`, {
+  listing({ rel: `topics/${d.id}/`, works: ws, scope: { k: 'dept', v: d.id }, page: {
     title: d.name, desc: d.intro.split('. ')[0] + '.', crumbs: [['Subjects', 'subjects/'], [primaryHub(d.id).name, `subjects/${primaryHub(d.id).id}/`], [d.name]],
-    body: () => `<section class="band"><div class="wrap"><p class="eyebrow">${d.hubs.map((hh) => esc(hub.get(hh).name)).join(' · ')}</p><h1>${esc(d.name)}</h1><p class="lede-sm">${esc(d.intro)}</p>
-${ws.length ? langChips(ws) + filterBar(ws, { subjects: false, q: false }) + grid(ws, { hl: 'h2' }) + emptyMsg() : `<p class="note">No books are published in this department yet. ${stagedIn(d.id) ? `${stagedIn(d.id)} candidate titles are in review.` : 'Candidate titles have not yet been staged.'}</p>`}
+    body: ({ grid: G, nav }) => `<section class="band"><div class="wrap"><p class="eyebrow">${d.hubs.map((hh) => esc(hub.get(hh).name)).join(' · ')}</p><h1>${esc(d.name)}</h1><p class="lede-sm">${esc(d.intro)}</p>
+${ws.length ? langChips(ws) + filterBar(ws, { subjects: false, q: false }) + G + nav + emptyMsg() : `<p class="note">No books are published in this department yet. ${stagedIn(d.id) ? `${stagedIn(d.id)} candidate titles are in review.` : 'Candidate titles have not yet been staged.'}</p>`}
 ${artBlock(artFor.topic(d.id), 6, `#t-${d.id}`)}
 <h2>Related departments</h2><ul class="chips">${sameHub.map((x) => `<li><a href="${href(`topics/${x.id}/`)}">${esc(x.name)}</a></li>`).join('')}</ul>
 </div></section>`,
-  });
+  }});
 }
 
 // ---------- traditions ----------
@@ -441,33 +528,70 @@ page('traditions/index.html', {
 });
 for (const t of tax.traditions) {
   const ws = cat.works.filter((w) => (w.tradition ?? []).includes(t.id));
-  page(`traditions/${t.id}/index.html`, {
+  listing({ rel: `traditions/${t.id}/`, works: ws, scope: { k: 'trad', v: t.id }, page: {
     title: t.name, desc: t.intro, crumbs: [['Traditions', 'traditions/'], [t.name]],
-    body: () => `<section class="band"><div class="wrap"><h1>${esc(t.name)}</h1><p class="lede-sm">${esc(t.intro)}</p>${ws.length ? langChips(ws) + filterBar(ws, { traditions: false, q: false }) + grid(ws, { hl: 'h2' }) + emptyMsg() : '<p class="note">No books are published under this tradition yet.</p>'}</div></section>`,
-  });
+    body: ({ grid: G, nav }) => `<section class="band"><div class="wrap"><h1>${esc(t.name)}</h1><p class="lede-sm">${esc(t.intro)}</p>${ws.length ? langChips(ws) + filterBar(ws, { traditions: false, q: false }) + G + nav + emptyMsg() : '<p class="note">No books are published under this tradition yet.</p>'}</div></section>`,
+  }});
 }
 
 // ---------- authors ----------
-const letters = [...new Set(cat.authors.map((a) => a.sortName[0].toUpperCase()))];
-page('authors/index.html', {
-  title: 'Authors A–Z', crumbs: [['Authors']], current: 'authors/', desc: 'Authors A to Z.',
-  body: () => `<section class="band"><div class="wrap"><h1>${S('nav_authors')} A–Z</h1>
+// Small catalogues list every author on one page. Large ones get one page per initial letter (paged), and authors with a single book
+// link to a search for their name instead of owning a page, which keeps the file count down.
+const authorList = cat.authors.filter((a) => authorPage.has(a.id));
+const letters = [...new Set(authorList.map((a) => a.sortName[0].toUpperCase()))].sort();
+const authorRow = (a) => `<li><a href="${href(`authors/${a.id}/`)}">${esc(a.sortName)}</a> <span>${fmt(a.workIds.length, 'book', 'books')}</span></li>`;
+const LETTER_PAGE = BUILD.authorsPerPage ?? 400;
+if (authorList.length <= LETTER_PAGE) {
+  page('authors/index.html', {
+    title: 'Authors A–Z', crumbs: [['Authors']], current: 'authors/', desc: 'Authors A to Z.',
+    body: () => `<section class="band"><div class="wrap"><h1>${S('nav_authors')} A–Z</h1>
 <nav class="az" aria-label="Jump to letter">${letters.map((l) => `<a href="#l-${l}">${l}</a>`).join('')}</nav>
-${letters.map((l) => `<h2 id="l-${l}">${l}</h2><ul class="authors">${cat.authors.filter((a) => a.sortName[0].toUpperCase() === l).map((a) => `<li><a href="${href(`authors/${a.id}/`)}">${esc(a.sortName)}</a> <span>${fmt(a.workIds.length, 'book', 'books')}</span></li>`).join('')}</ul>`).join('')}
+${letters.map((l) => `<h2 id="l-${l}">${l}</h2><ul class="authors">${authorList.filter((a) => a.sortName[0].toUpperCase() === l).map(authorRow).join('')}</ul>`).join('')}
 </div></section>`,
-});
-for (const a of cat.authors) {
-  const ws = a.workIds.map((id) => workById.get(id));
-  page(`authors/${a.id}/index.html`, {
-    title: a.name, desc: a.bio ?? `Books by ${a.name}`, crumbs: [['Authors', 'authors/'], [a.name]],
-    body: () => `<section class="band"><div class="wrap"><h1>${esc(a.name)}</h1>${a.bio ? `<p class="lede-sm">${esc(a.bio)}</p>` : '<p class="note">Author profile pending. The author credit on Forbidden Mantra Press titles is being confirmed with the publisher.</p>'}<h2>Books</h2>${langChips(ws)}${filterBar(ws, { subjects: false, traditions: false, press: false, q: false })}${grid(ws)}${emptyMsg()}</div></section>`,
   });
+} else {
+  page('authors/index.html', {
+    title: 'Authors A–Z', crumbs: [['Authors']], current: 'authors/', desc: 'Authors A to Z.',
+    body: () => `<section class="band"><div class="wrap"><h1>${S('nav_authors')} A–Z</h1><p class="lede-sm">${fmt(authorList.length, 'author page', 'author pages')}. Choose an initial.</p>
+<nav class="az" aria-label="Choose a letter">${letters.map((l) => `<a href="${href(`authors/letter/${l.toLowerCase()}/`)}">${l}</a>`).join('')}</nav></div></section>`,
+  });
+  for (const l of letters) {
+    const as = authorList.filter((a) => a.sortName[0].toUpperCase() === l), n = Math.ceil(as.length / LETTER_PAGE);
+    for (let p = 1; p <= n; p++) {
+      const base = `authors/letter/${l.toLowerCase()}/`;
+      page(p === 1 ? `${base}index.html` : `${base}page/${p}/index.html`, {
+        title: `Authors: ${l}${p > 1 ? ' · page ' + p : ''}`, crumbs: [['Authors', 'authors/'], [`${l}${p > 1 ? ' · page ' + p : ''}`]], desc: `Authors whose names begin with ${l}.`,
+        body: () => `<section class="band"><div class="wrap"><h1>${l}</h1><nav class="az" aria-label="Choose a letter">${letters.map((x) => `<a href="${href(`authors/letter/${x.toLowerCase()}/`)}"${x === l ? ' aria-current="page"' : ''}>${x}</a>`).join('')}</nav><ul class="authors">${as.slice((p - 1) * LETTER_PAGE, p * LETTER_PAGE).map(authorRow).join('')}</ul>${pager(base, p, n)}</div></section>`,
+      });
+    }
+  }
+}
+for (const a of authorList) {
+  const ws = a.workIds.map((id) => workById.get(id));
+  listing({ rel: `authors/${a.id}/`, works: ws, scope: { k: 'author', v: a.name }, page: {
+    title: a.name, desc: a.bio ?? `Books by ${a.name}`, crumbs: [['Authors', 'authors/'], [a.name]],
+    body: ({ grid: G, nav }) => `<section class="band"><div class="wrap"><h1>${esc(a.name)}</h1>${a.bio ? `<p class="lede-sm">${esc(a.bio)}</p>` : a.workIds.some((id) => workById.get(id).press) ? '<p class="note">Author profile pending. The author credit on Forbidden Mantra Press titles is being confirmed with the publisher.</p>' : ''}<h2>Books</h2>${langChips(ws)}${filterBar(ws, { subjects: false, traditions: false, press: false, q: false })}${G}${nav}${emptyMsg()}</div></section>`,
+  }});
+}
+
+// ---------- series ----------
+if (seriesMap.size) {
+  const sl = [...seriesMap.values()].sort((a, b) => (sortTitle({ title: a.name }) < sortTitle({ title: b.name }) ? -1 : 1));
+  page('series/index.html', {
+    title: 'Series', crumbs: [['Series']], desc: 'Book series in the catalogue.',
+    body: () => `<section class="band"><div class="wrap"><h1>Series</h1><p class="lede-sm">Series are shown only where a source states the series and, where known, the book’s number in it.</p><ul class="authors">${sl.map((x) => `<li><a href="${href(`series/${x.id}/`)}">${esc(x.name)}</a> <span>${fmt(x.works.length, 'book', 'books')}</span></li>`).join('')}</ul></div></section>`,
+  });
+  for (const x of sl) listing({ rel: `series/${x.id}/`, works: x.works, scope: { k: 'series', v: x.name }, page: {
+    title: `${x.name} (series)`, crumbs: [['Series', 'series/'], [x.name]], desc: `Books in the ${x.name} series.`,
+    body: ({ grid: G, nav }) => `<section class="band"><div class="wrap"><h1>${esc(x.name)}</h1><p class="lede-sm">${fmt(x.works.length, 'book', 'books')} in this series that are in the catalogue, in series order where the number is known. Missing numbers mean those books are not catalogued yet.</p>${G}${nav}</div></section>`,
+  }});
 }
 
 // ---------- books ----------
 const jsonLdEd = (w, e) => ({ '@type': 'Book', name: e.title ?? w.title, bookFormat: { paperback: 'Paperback', hardcover: 'Hardcover', ebook: 'EBook', audiobook: 'AudiobookFormat' }[e.format], isbn: e.isbn13 || undefined, inLanguage: e.language, translator: e.translator ? { '@type': 'Person', name: e.translator } : undefined, publisher: e.publisher ? { '@type': 'Organization', name: e.publisher } : undefined });
 for (const w of cat.works) {
-  const related = cat.works.filter((o) => o.id !== w.id && o.subjects.some((s) => w.subjects.includes(s))).slice(0, 4);
+  if (isDyn(w)) continue;
+  const related = relatedFor(w);
   const groups = [...new Set(w.editions.map((e) => e.language))].map((c) => [c, w.editions.filter((e) => e.language === c).sort((a, b) => FORMAT_ORDER.indexOf(a.format) - FORMAT_ORDER.indexOf(b.format))]);
   const multi = groups.length > 1;
   const markets = new Set();
@@ -492,7 +616,7 @@ for (const w of cat.works) {
     : `<div class="lang-group" id="lang-${groups[0][0]}">${aliasAnchors(groups[0][1])}<div class="editions">${groups[0][1].map(edHtml).join('')}</div></div>`;
   const edSources = w.editions.filter((e) => e.sources?.length);
   page(`books/${w.slug}/index.html`, {
-    title: w.title + (w.subtitle ? `: ${w.subtitle}` : ''), desc: w.description.split('. ')[0] + '.', crumbs: [['All books', 'books/'], [w.title]],
+    title: w.title + (w.subtitle ? `: ${w.subtitle}` : ''), desc: descOf(w).split('. ')[0] + '.', crumbs: [['All books', 'books/'], [w.title]],
     jsonld: { '@context': 'https://schema.org', '@type': 'Book', name: w.title, author: w.authors.map((n) => ({ '@type': 'Person', name: n })), inLanguage: [...new Set(w.editions.map((e) => e.language))], workExample: w.editions.map((e) => jsonLdEd(w, e)) },
     body: () => `<article class="band"><div class="wrap book">
   <div class="book-cover">${cover(w, true)}</div>
@@ -500,9 +624,10 @@ for (const w of cat.works) {
     ${w.press ? '<span class="badge badge-fmp">Forbidden Mantra Press</span>' : ''}
     <h1>${esc(w.title)}</h1>${w.subtitle ? `<p class="subtitle">${esc(w.subtitle)}</p>` : ''}
     <p class="byline">by ${authorLinks(w)}</p>
+    ${w.series?.name ? `<p class="series">${w.series.number ? `Book ${w.series.number} of ` : 'Part of '}<a href="${href(`series/${slugify(w.series.name)}/`)}">${esc(w.series.name)}</a></p>` : ''}
     <p class="meta-row"><span>${esc(tax.levels[w.level])}</span>${(w.tradition ?? []).map((t) => `<a class="tag" href="${href(`traditions/${t}/`)}">${esc(trad.get(t).name)}</a>`).join('')}</p>
     ${multi ? `<p class="avail" aria-label="Available languages"><span data-i18n="f_language">${esc(en.f_language)}</span>: ${groups.map(([c]) => `<a class="tag" href="#lang-${c}" lang="${c}">${esc(LANG.get(c)?.endonym ?? c)}</a>`).join('')}</p>` : ''}
-    <p class="desc">${esc(w.description)}</p>
+    <p class="desc">${esc(descOf(w))}</p>
     ${w.status === 'owner-listed' ? `<p class="note">Edition details for this title are being confirmed with the publisher. Retailer links marked “search” will be replaced by edition-specific links.</p>` : ''}
     ${w.thirdPartyNotice ? `<p class="note note-tm" lang="en">${esc(w.thirdPartyNotice)}</p>` : ''}
     ${(w.claims ?? []).filter((c) => c.display).map((c) => `<p class="claim"><strong>Historical note:</strong> ${esc(c.text)}. <span>Per publisher and bookseller listings; not a current ranking.</span></p>`).join('')}
@@ -523,6 +648,35 @@ for (const w of cat.works) {
 </div></article>`,
   });
 }
+
+// ---------- chunk index (client search and filters) + dynamic book view ----------
+// Static pages exist for the first maxStaticBookPages books (press and hand-verified first). The rest are drawn client-side by book/index.html from the same
+// chunk files the search uses, so the file count stays under common static-host limits.
+const normS = (x) => String(x ?? '').toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g, '');
+const IDX = { depts: tax.departments.map((d) => d.id), trads: tax.traditions.map((t) => t.id), langs: langReg.languages.map((l) => l.code), fmts: Object.keys(tax.formats), levels: Object.keys(tax.levels) };
+const ixOf = (arr) => new Map(arr.map((v, i) => [v, i]));
+const dIx = ixOf(IDX.depts), tIx = ixOf(IDX.trads), lIx = ixOf(IDX.langs), fIx = ixOf(IDX.fmts), vIx = ixOf(IDX.levels);
+function qxOf(w) {
+  const base = new Set(normS([w.title, w.subtitle, ...w.authors, ...w.subjects.map((x) => dept.get(x).name), ...(w.tradition ?? []).map((x) => trad.get(x)?.name), ...wLangs(w).flatMap((c) => [LANG.get(c)?.name, LANG.get(c)?.endonym, c.length > 2 ? c : null]), w.press ? 'forbidden mantra press' : ''].filter(Boolean).join(' ')).split(/[^a-z0-9]+/).filter(Boolean));
+  return [...new Set(searchBlob(w).split(/\s+/).filter((t) => /[a-z0-9]/.test(t) && !base.has(t.replace(/[^a-z0-9]/g, '')) && !base.has(t)))].join(' ');
+}
+function dynPayload(w) {
+  return { d: descOf(w), tm: w.thirdPartyNotice ?? '', src: w.sources.map((x) => [x.label, x.url, x.accessed, x.supports ?? '']),
+    eds: w.editions.map((e) => ({ l: e.language, f: e.format, t: e.title ?? '', tr: e.translator ?? '', pub: e.publisher ?? '', y: e.year ?? 0, i13: e.isbn13 ?? '', i10: e.isbn10 ?? '', a: e.asin ?? '', n: e.note ?? '',
+      b: retailers(w, e).map((r) => [r.label, r.url, r.affiliate ? 1 : 0, r.market ?? '', r.status, r.library ? 1 : 0]), s: (e.sources ?? []).map((x) => [x.label, x.url, x.accessed, x.supports ?? '']) })) };
+}
+const recOf = (w) => [w.slug, w.title, w.subtitle ?? '', w.authors.join(';'), w.authors.map((n) => (authorPage.has(slugify(n)) ? 1 : 0)).join(''), w.subjects.map((x) => dIx.get(x)), (w.tradition ?? []).map((x) => tIx.get(x)),
+  vIx.get(w.level), w.press ? 1 : 0, w.editions.map((e) => [edLangs(e).map((c) => lIx.get(c)), fIx.get(e.format), e.title ?? '']), qxOf(w), isDyn(w) ? 1 : 0, w.series?.name ? [w.series.name, w.series.number ?? 0] : 0, ...(isDyn(w) ? [dynPayload(w)] : [])];
+{
+  const byChunk = new Map();
+  for (const w of orderedWorks) (byChunk.get(chunkOf.get(w.id)) ?? byChunk.set(chunkOf.get(w.id), []).get(chunkOf.get(w.id))).push(recOf(w));
+  for (const [name, recs] of byChunk) write(`assets/idx/${name}.js`, `(window.FM_IDX=window.FM_IDX||{}).${name}=${JSON.stringify(recs)};`);
+  write('assets/idx/manifest.js', `window.FM_MANIFEST=${JSON.stringify({ v: 1, total: cat.works.length, chunks: [...byChunk.keys()], depts: IDX.depts, deptNames: tax.departments.map((d) => d.name), hubs: Object.fromEntries(tax.hubs.map((h) => [h.id, tax.departments.map((d, i) => (d.hubs.includes(h.id) ? i : -1)).filter((i) => i >= 0)])), trads: IDX.trads, tradNames: tax.traditions.map((t) => t.name), langs: IDX.langs, fmts: IDX.fmts, levels: IDX.levels, authorPages: cat.works.length <= BUILD.authorPagesAllBelow ? 'all' : 'flags', pageSize: BUILD.pageSize, disclosure: cfg.disclosure })};`);
+}
+page('book/index.html', {
+  title: 'Book', desc: 'Book details.', crumbs: [['All books', 'books/'], ['Book']], noindex: true,
+  body: () => `<article class="band" data-dyn-book data-root="${ROOT_PREFIX}"><div class="wrap"><p class="note" data-dyn-status>Loading book details…</p><noscript><p class="note">This page needs JavaScript. <a href="${href('books/')}">Browse all books</a> or <a href="${href('search/')}">search</a> for the title.</p></noscript></div></article>`,
+});
 
 // ---------- press ----------
 page('press/index.html', {
@@ -616,7 +770,7 @@ fs.writeFileSync(path.join(ROOT, DATA, 'retailer-links.json'), JSON.stringify({ 
 write('assets/catalogue.json', JSON.stringify({ generated: cat.generated, works: cat.works.length, editions: totalEditions, languages: Object.fromEntries(stocked.map((l) => [l.code, { works: nWorks(l.code), editions: nEds(l.code) }])) }));
 // robots.txt and sitemap.xml: previews are closed to crawlers; production gets a sitemap built from the pages generated above
 {
-  const urls = []; (function walk(d) { for (const e of fs.readdirSync(d, { withFileTypes: true })) e.isDirectory() ? walk(path.join(d, e.name)) : e.name === 'index.html' && urls.push(path.relative(OUT, d).split(path.sep).join('/')); })(OUT);
+  const urls = []; (function walk(d) { for (const e of fs.readdirSync(d, { withFileTypes: true })) e.isDirectory() ? walk(path.join(d, e.name)) : e.name === 'index.html' && path.relative(OUT, d) !== 'book' && urls.push(path.relative(OUT, d).split(path.sep).join('/')); })(OUT);
   if (PRODUCTION) {
     write('robots.txt', `User-agent: *\nAllow: /\nSitemap: ${SITE_URL}/sitemap.xml\n`);
     write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.sort().map((u) => `<url><loc>${SITE_URL}/${u ? u + '/' : ''}</loc><lastmod>${cfg.catalogueAsOf}</lastmod></url>`).join('\n')}\n</urlset>\n`);

@@ -21,7 +21,15 @@ const decode = (s) => s.replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/
 
 const works = new Map(cat.works.map((w) => [w.slug, w]));
 const links = [];
+// Books beyond the static-page cap are drawn client-side from assets/idx/*.js; their buy links are audited from that payload.
+const dynLinks = new Map();
+const idxDir = path.join(SITE, 'assets/idx');
+if (fs.existsSync(idxDir)) for (const f of fs.readdirSync(idxDir).filter((x) => /^c\d+\.js$/.test(x))) {
+  const recs = JSON.parse(fs.readFileSync(path.join(idxDir, f), 'utf8').replace(/^\(window\.FM_IDX=window\.FM_IDX\|\|\{\}\)\.c\d+=/, '').replace(/;\s*$/, ''));
+  for (const r of recs) if (r[13]) dynLinks.set(r[0], r[13].eds.flatMap((e) => e.b.filter((b) => b[2]).map((b) => ({ href: b[1], rel: 'sponsored noopener noreferrer', isbn13: e.i13, market: b[3] }))));
+}
 for (const w of cat.works) {
+  if (dynLinks.has(w.slug)) { for (const l of dynLinks.get(w.slug)) links.push({ work: w.id, workTitle: w.title, press: !!w.press, ...l }); continue; }
   const html = fs.readFileSync(path.join(SITE, 'books', w.slug, 'index.html'), 'utf8');
   for (const m of html.matchAll(/<a class="btn" href="([^"]+)" target="_blank" rel="([^"]*)" data-track="buy" data-work="([^"]*)" data-isbn="([^"]*)" data-market="([^"]*)"/g)) {
     links.push({ work: w.id, workTitle: w.title, press: !!w.press, href: decode(m[1]), rel: m[2], isbn13: m[4], market: m[5] });
@@ -49,7 +57,7 @@ const results = links.map((l) => {
       const own = ed.asin === asin || (ed.retailers ?? []).some((r) => (r.url ?? '').includes(`/dp/${asin}`));
       const derived = ed.isbn13 && isbn13to10(ed.isbn13) === asin && isbn10Valid(asin) && ['paperback', 'hardcover'].includes(ed.format);
       if (!own && !derived) issues.push(`ASIN ${asin} is neither this edition's ASIN nor the ISBN-10 of ${ed.isbn13 ?? 'its ISBN'}`);
-      else cls = own && (ed.retailers ?? []).some((r) => (r.url ?? '').includes(asin) && r.verification) || verdict === 'live' ? 'verified' : 'derived';
+      else cls = own && (ed.retailers ?? []).some((r) => (r.url ?? '').includes(asin) && r.verification) || (ed.sources ?? []).some((x) => (x.url ?? '').includes(`/dp/${asin}`)) || verdict === 'live' ? 'verified' : 'derived';
       l.asin = asin; l.basis = own ? 'edition ASIN' : 'ISBN-10 of the edition';
     }
     if (verdict === 'dead') issues.push('live check found HTTP 404');

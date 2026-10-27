@@ -323,6 +323,146 @@
         "fantasy-folklore-fiction"
       ],
       "intro": "Western philosophy and Stoic practice, from Plato to modern existential writing. These are works of argument and reflection, distinct from the scriptural and practice traditions elsewhere in the store."
+    },
+    {
+      "id": "jainism",
+      "name": "Jainism",
+      "hubs": [
+        "religions-sacred-texts"
+      ],
+      "intro": "Jainism is an Indian religion centred on non-violence (ahimsa), non-attachment and the liberation of the soul. Entries include scripture in translation, introductions and practice guides."
+    },
+    {
+      "id": "sikhism",
+      "name": "Sikhism",
+      "hubs": [
+        "religions-sacred-texts"
+      ],
+      "intro": "Sikhism, founded by Guru Nanak in the Punjab, centres on devotion to one God, honest living and service. Its scripture is the Guru Granth Sahib."
+    },
+    {
+      "id": "islam-sufism",
+      "name": "Islam & Sufism",
+      "hubs": [
+        "religions-sacred-texts"
+      ],
+      "intro": "Islamic scripture and thought, and Sufism, the mystical tradition within Islam. Qur'an translations, classical poetry and modern introductions are labelled separately."
+    },
+    {
+      "id": "judaism-kabbalah",
+      "name": "Judaism & Kabbalah",
+      "hubs": [
+        "religions-sacred-texts",
+        "occult-magick-paganism"
+      ],
+      "intro": "Jewish texts and Kabbalah, the mystical tradition of Judaism. Scholarly and popular introductions are kept distinct, and Western occult adaptations are not presented as Jewish teaching."
+    },
+    {
+      "id": "theology",
+      "name": "Theology",
+      "hubs": [
+        "religions-sacred-texts"
+      ],
+      "intro": "Systematic and historical theology across traditions, distinct from devotional and practice books."
+    },
+    {
+      "id": "ceremonial-magic",
+      "name": "Ceremonial Magic",
+      "hubs": [
+        "occult-magick-paganism"
+      ],
+      "intro": "The ceremonial or high magic of the Western esoteric tradition: grimoires, the Golden Dawn and its successors. Historical sources and modern practice manuals are labelled."
+    },
+    {
+      "id": "divination",
+      "name": "Divination",
+      "hubs": [
+        "occult-magick-paganism"
+      ],
+      "intro": "Methods of divination beyond tarot and astrology, such as the I Ching, runes and scrying, with histories alongside how-to guides."
+    },
+    {
+      "id": "mind-body",
+      "name": "Mind-Body Wellness",
+      "hubs": [
+        "wellbeing-health",
+        "meditation-yoga-mantra"
+      ],
+      "intro": "Books on the connection between mind, body and health, from breathwork and movement to integrative approaches. None is medical advice."
+    },
+    {
+      "id": "personal-growth",
+      "name": "Personal Growth",
+      "hubs": [
+        "wellbeing-health",
+        "consciousness-myth-wisdom"
+      ],
+      "intro": "Self-development, habits, motivation and reflection, from classic works to recent bestsellers."
+    },
+    {
+      "id": "ancient-civilizations",
+      "name": "Ancient Civilizations",
+      "hubs": [
+        "consciousness-myth-wisdom",
+        "religions-sacred-texts"
+      ],
+      "intro": "Histories and primary sources on Egypt, Mesopotamia, Greece, Rome, India, China and the Americas."
+    },
+    {
+      "id": "epic-fantasy",
+      "name": "Epic Fantasy",
+      "hubs": [
+        "fantasy-folklore-fiction"
+      ],
+      "intro": "Large-scale fantasy with invented worlds, quests and long series."
+    },
+    {
+      "id": "urban-fantasy",
+      "name": "Urban Fantasy",
+      "hubs": [
+        "fantasy-folklore-fiction"
+      ],
+      "intro": "Fantasy set in the modern world, where magic hides in cities and everyday life."
+    },
+    {
+      "id": "dark-fantasy",
+      "name": "Dark Fantasy",
+      "hubs": [
+        "fantasy-folklore-fiction"
+      ],
+      "intro": "Fantasy with horror, moral darkness or grim worlds. Some books contain violence and disturbing material."
+    },
+    {
+      "id": "horror",
+      "name": "Horror",
+      "hubs": [
+        "fantasy-folklore-fiction"
+      ],
+      "intro": "Horror fiction, from classic ghost stories to modern terror. Content can be disturbing."
+    },
+    {
+      "id": "magical-realism",
+      "name": "Magical Realism",
+      "hubs": [
+        "fantasy-folklore-fiction"
+      ],
+      "intro": "Fiction in which magic enters ordinary life without comment, associated especially with Latin American and world literature."
+    },
+    {
+      "id": "speculative-fiction",
+      "name": "Speculative Fiction",
+      "hubs": [
+        "fantasy-folklore-fiction"
+      ],
+      "intro": "Science fiction and related speculative literature that imagines other worlds, futures and systems."
+    },
+    {
+      "id": "paranormal-fiction",
+      "name": "Paranormal Fiction",
+      "hubs": [
+        "fantasy-folklore-fiction"
+      ],
+      "intro": "Novels of ghosts, psychic phenomena and the supernatural in contemporary settings."
     }
   ],
   "traditions": [
@@ -410,6 +550,26 @@
       "id": "western-philosophy",
       "name": "Western Philosophy",
       "intro": "Philosophy in the Greek, Roman and European traditions, including Stoicism and existentialism."
+    },
+    {
+      "id": "jain",
+      "name": "Jain",
+      "intro": "Jain scripture, philosophy and practice."
+    },
+    {
+      "id": "sikh",
+      "name": "Sikh",
+      "intro": "Sikh scripture, history and practice."
+    },
+    {
+      "id": "islamic",
+      "name": "Islamic & Sufi",
+      "intro": "Islamic scripture and thought, including Sufi mysticism."
+    },
+    {
+      "id": "jewish",
+      "name": "Jewish & Kabbalistic",
+      "intro": "Jewish texts and Kabbalah. Western occult adaptations of Kabbalah are filed under Western Esoteric."
     }
   ],
   "formats": {
@@ -421,6 +581,7 @@
   "levels": {
     "beginner": "Beginner",
     "intermediate": "Intermediate",
-    "advanced": "Advanced / scholarly"
+    "advanced": "Advanced / scholarly",
+    "unrated": "Level not yet rated"
   }
 }
