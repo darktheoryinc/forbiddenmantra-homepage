@@ -386,7 +386,7 @@ ${page}
   <div class="wrap">${placed('footer').map((p) => promo.renderFooter(promoView('footer', p.id), promoCtx)).join('')}<p class="disclosure" lang="en">${esc(cfg.disclosure)}</p><p class="copy">© 2025–2026 Forbidden Mantra Press</p></div>
 </footer>
 ${rel === 'index.html' ? `<script>window.FM_LANGBOOKS=${JSON.stringify(LANGBOOKS).replace(/</g, '\\u003c')};</script>\n` : ''}<script src="${ROOT_PREFIX}assets/i18n.js"></script>
-<script src="${ROOT_PREFIX}assets/app.js"></script>
+<script src="${ROOT_PREFIX}assets/app.js"></script>${process.env.FM_WIX ? `\n<script src="${ROOT_PREFIX}assets/wix-embed.js" defer></script>` : ''}
 ${LIB.enabled ? `<div id="fm-librarian" hidden data-root="${ROOT_PREFIX}" data-config='${esc(JSON.stringify({ art: LIB_ART ? { ...LIB_ART, src: ROOT_PREFIX + 'assets/librarian/' + LIB_ART.file } : null, voice: LIB.voice, ai: { enabled: LIB.ai?.enabled }, startMinimized: LIB.startMinimized }))}'></div><script src="${ROOT_PREFIX}assets/librarian.js" defer></script>` : ''}
 </body>
 </html>`;
@@ -399,6 +399,7 @@ fs.mkdirSync(path.join(OUT, 'assets'), { recursive: true });
 fs.copyFileSync(path.join(ROOT, 'scripts/assets/style.css'), path.join(OUT, 'assets/style.css'));
 fs.copyFileSync(path.join(ROOT, 'scripts/assets/app.js'), path.join(OUT, 'assets/app.js'));
 fs.copyFileSync(path.join(ROOT, 'scripts/assets/librarian.js'), path.join(OUT, 'assets/librarian.js'));
+if (process.env.FM_WIX) fs.copyFileSync(path.join(ROOT, 'scripts/assets/wix-embed.js'), path.join(OUT, 'assets/wix-embed.js'));
 if (LIB_ART) { fs.mkdirSync(path.join(OUT, 'assets/librarian'), { recursive: true }); fs.copyFileSync(path.join(ROOT, 'assets-src/librarian', LIB_ART.file), path.join(OUT, 'assets/librarian', LIB_ART.file)); }
 const i18nOut = { dict: Object.fromEntries(Object.entries(locales).map(([c, d]) => [c, Object.fromEntries(Object.entries(d).filter(([k]) => k !== '_meta'))])), langs: Object.fromEntries(langReg.languages.map((l) => [l.code, { name: l.name, endonym: l.endonym, dir: l.dir }])), ui: uiLocales };
 write('assets/i18n.js', `window.FM_I18N=${JSON.stringify(i18nOut)};`);
