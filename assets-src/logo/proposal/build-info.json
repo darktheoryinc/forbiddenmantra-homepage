@@ -1,0 +1,19 @@
+{
+ "emblem_source": "assets-src/logo/reference/owner-reference-lockup.webp",
+ "emblem_crop": [
+  215,
+  179,
+  661,
+  601
+ ],
+ "integrity": {
+  "pixels_checked": 184220,
+  "max_difference": 0
+ },
+ "emblem_native_px": [
+  446,
+  422
+ ],
+ "font": "Cormorant Garamond Bold (SIL OFL 1.1)",
+ "note": "Proposal for owner approval. Not integrated into the website. 512 px icon not produced: the emblem is 446 px wide and would have to be upscaled."
+}
