@@ -10,6 +10,7 @@ import crypto from 'node:crypto';
 import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { state, ok, launch } from '../test/lib.mjs';
+import { scanPackage } from './security-gate.mjs';
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const zipPath = process.argv.includes('--zip') ? path.resolve(process.argv[process.argv.indexOf('--zip') + 1]) : path.join(ROOT, 'wix/forbiddenmantra-site-for-hosting.zip');
 const J = (p) => JSON.parse(fs.readFileSync(path.join(ROOT, p), 'utf8'));
@@ -31,6 +32,11 @@ ok(A.every((f) => fs.statSync(path.join(tmpA, f)).size > 0 || /^_headers$/.test(
 const hostDir = path.join(ROOT, 'wix/hosting');
 ok(!fs.existsSync(hostDir) || JSON.stringify(walk(hostDir).map((f) => path.relative(hostDir, f)).sort()) === JSON.stringify(A), 'the unzipped folder wix/hosting/ has exactly the same file list as the archive');
 const ROOTDIR = tmpA;
+const approvals = J('config/approvals.json'); const nvOK = approvals.nvidiaBranding?.approved === true;
+// ---- safety gate on the extracted archive ----
+const gate = scanPackage(ROOTDIR, { production: false });
+ok(gate.ok, `security gate passes on the extracted archive (${gate.info.files} files; tags ${JSON.stringify(gate.info.affiliateTags)})${gate.ok ? '' : ': ' + gate.fail.slice(0, 3).join(' | ')}`);
+ok(nvOK || (gate.info.nvidiaFiles === 0 && !A.some((f) => /nvidia|inception/i.test(f))), nvOK ? 'NVIDIA branding approved by the owner: included' : 'NVIDIA branding is NOT approved, so no NVIDIA badge, panel, name or claim is in the package');
 // ---- every local reference resolves ----
 const htmls = A.filter((f) => f.endsWith('.html'));
 let refs = 0; const missing = [];
@@ -59,18 +65,20 @@ console.log(`INFO  build type: ${preview ? 'PREVIEW (shows the preview notice ba
 
 // ---- served over HTTP, in a browser ----
 const mime = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css', '.svg': 'image/svg+xml', '.webp': 'image/webp', '.json': 'application/json', '.txt': 'text/plain' };
-const server = await new Promise((res) => { const s = http.createServer((q, r) => { let p = decodeURIComponent(new URL(q.url, 'http://x').pathname); if (p.endsWith('/')) p += 'index.html'; const f = path.join(ROOTDIR, p); if (!f.startsWith(ROOTDIR) || !fs.existsSync(f) || fs.statSync(f).isDirectory()) { r.writeHead(404); return r.end('nf'); } r.writeHead(200, { 'content-type': mime[path.extname(f)] ?? 'application/octet-stream' }); fs.createReadStream(f).pipe(r); }).listen(8821, '127.0.0.1', () => res(s)); });
+const HDR = {}; if (fs.existsSync(path.join(ROOTDIR, '_headers'))) for (const l of fs.readFileSync(path.join(ROOTDIR, '_headers'), 'utf8').split('\n')) { const m = l.match(/^\s+([A-Za-z-]+):\s*(.+)$/); if (m) HDR[m[1]] = m[2]; }
+ok(/default-src 'self'/.test(HDR['Content-Security-Policy'] ?? '') && HDR['X-Content-Type-Options'] === 'nosniff', 'the served pages carry the Content-Security-Policy and security headers from _headers (the browser tests below run under them)');
+const server = await new Promise((res) => { const s = http.createServer((q, r) => { let p = decodeURIComponent(new URL(q.url, 'http://x').pathname); if (p.endsWith('/')) p += 'index.html'; const f = path.join(ROOTDIR, p); if (!f.startsWith(ROOTDIR) || !fs.existsSync(f) || fs.statSync(f).isDirectory()) { r.writeHead(404); return r.end('nf'); } r.writeHead(200, { 'content-type': mime[path.extname(f)] ?? 'application/octet-stream', ...HDR }); fs.createReadStream(f).pipe(r); }).listen(8821, '127.0.0.1', () => res(s)); });
 const base = 'http://127.0.0.1:8821/';
 const browser = await launch();
 if (browser) for (const [name, vp, mobile] of [['desktop', { width: 1366, height: 900 }, false], ['mobile', { width: 390, height: 844 }, true]]) {
   const ctx = await browser.newContext({ viewport: vp, isMobile: mobile }); const pg = await ctx.newPage(); const errs = [], bad = [];
-  pg.on('pageerror', (e) => errs.push(String(e))); pg.on('response', (r) => { if (r.status() >= 400 && r.url().startsWith(base)) bad.push(r.status() + ' ' + r.url()); });
+  pg.on('pageerror', (e) => errs.push(String(e))); pg.on('console', (m) => { if (/Content Security Policy|violates the following/i.test(m.text())) errs.push('CSP: ' + m.text().slice(0, 120)); }); pg.on('response', (r) => { if (r.status() >= 400 && r.url().startsWith(base)) bad.push(r.status() + ' ' + r.url()); });
   await pg.route(/^https?:\/\/(?!127\.0\.0\.1)/, (x) => x.abort());
   const T = `[${name}]`, go = async (p) => { await pg.goto(base + p); await pg.waitForTimeout(350); };
   await go(''); ok(/Forbidden\s*Mantra\s*Press/.test((await pg.locator('h1').first().innerText())) && await pg.locator('[data-home=fmp] .card').count() === 8, `${T} homepage over HTTP: hero, 8 own titles, featured shelves`);
   await pg.locator('.promo-band').scrollIntoViewIfNeeded(); await pg.waitForTimeout(600);
   const im = await pg.evaluate(() => [...document.images].filter((i) => i.currentSrc).map((i) => [i.currentSrc.split('/').pop(), i.complete && i.naturalWidth > 0]));
-  ok(['iosutra-wellness-ai.webp', 'iosutra-inception-member.webp', 'nvidia-inception-program-badge-rgb-for-screen.svg'].every((n) => im.some(([f, g]) => f === n && g)) && im.every(([, g]) => g), `${T} IOSutra artwork, IOSutra panel and full-colour NVIDIA badge render; no broken images`);
+  ok(['iosutra-wellness-ai.webp', ...(nvOK ? ['iosutra-inception-member.webp', 'nvidia-inception-program-badge-rgb-for-screen.svg'] : [])].every((n) => im.some(([f, g]) => f === n && g)) && im.every(([, g]) => g), `${T} IOSutra artwork${nvOK ? ', IOSutra panel and full-colour NVIDIA badge' : ' (NVIDIA items withheld)'} render; no broken images`);
   ok(await pg.locator('.io-cta').getAttribute('href').then((h) => h.startsWith('https://iosutra.com/')), `${T} Visit IOSutra links to iosutra.com`);
   // search + librarian
   await go(''); await pg.focus('.hero-search input'); await pg.keyboard.type('tarot', { delay: 30 }); await pg.waitForTimeout(1500);

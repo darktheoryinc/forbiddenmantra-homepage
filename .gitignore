@@ -1,2 +1,7 @@
 test/out/
 test/fixtures/
+# generated output must never be committed (a 465 MB perf build and other test builds were once added by mistake)
+test/out-*/
+test/out/
+test/fixtures/
+site-wix/

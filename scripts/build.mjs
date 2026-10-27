@@ -64,7 +64,10 @@ const ANALYTICS = (() => {
   }
 }
 const promoView = (placement, id = 'iosutra-technology') => promo.resolve(PROMOS, id, placement, { root: ROOT });
-const promoCtx = { root: ROOT, production: PRODUCTION, href: (p) => href(p), asset: (f) => `${ROOT_PREFIX}assets/partner/${f}` };
+const APPROVALS = fs.existsSync(path.join(ROOT, 'config/approvals.json')) ? JSON.parse(fs.readFileSync(path.join(ROOT, 'config/approvals.json'), 'utf8')) : {};
+// FM_PUBLIC=1 (set by the hosting-package script): anything whose owner approval is not recorded in config/approvals.json is withheld from the output.
+const PUBLIC_OUT = !!process.env.FM_PUBLIC, NVIDIA_OK = !PUBLIC_OUT || APPROVALS.nvidiaBranding?.approved === true;
+const promoCtx = { root: ROOT, production: PRODUCTION, nvidia: NVIDIA_OK, href: (p) => href(p), asset: (f) => `${ROOT_PREFIX}assets/partner/${f}` };
 const placed = (placement) => PROMOS.promos.filter((p) => p.placements?.[placement]?.enabled);
 
 // ---------- languages & interface locales ----------
@@ -817,7 +820,7 @@ page('press/index.html', {
 <section class="band"><div class="wrap">
   ${langChips(fmpWorks)}${filterBar(fmpWorks, { press: false, q: false })}${grid(fmpWorks, { hl: 'h2' })}
   ${emptyMsg()}
-  <div class="note"><p><strong>Catalogue status.</strong> Amazon lists the Forbidden Mantra Series as 41 books; ${fmpWorks.length} titles are published here so far. The remaining titles, additional formats and the Spanish and German editions that have been reported are waiting on an export of the Amazon KDP/Author Central catalogue so that each edition gets its own verified link. Reported editions are not listed as available until verified.</p></div>
+  <div class="note"><p><strong>Catalogue status.</strong> ${fmpWorks.length} Forbidden Mantra Press titles are listed here. More titles and editions are added only once each one has been verified.</p></div>
   ${artBlock(artFor.press(), 6)}
   <p><a class="btn btn-ghost" href="${esc(cfg.affiliate.legacyStoreLink)}" target="_blank" rel="sponsored noopener noreferrer">Visit our Amazon storefront<span class="sr"> (opens in a new tab)</span></a> <span class="status">Existing store link, kept until edition links are complete.</span></p>
 </div></section>`,
@@ -863,10 +866,10 @@ for (const p of placed('page')) page(`${p.placements.page.path}index.html`, {
 });
 // authorised partner badge assets are copied only when the gate in scripts/promo.mjs allows them
 for (const b of Object.values(PROMOS.brands)) for (const bd of [b.hero, b.logo].filter(Boolean)) {
-  if (promo.assetState(bd, ROOT).ok) { fs.mkdirSync(path.join(OUT, 'assets/partner'), { recursive: true }); fs.copyFileSync(path.join(ROOT, 'assets-src/partner', bd.asset), path.join(OUT, 'assets/partner', bd.asset)); }
+  if (promo.assetState(bd, ROOT).ok && !(bd === b.logo && !NVIDIA_OK)) { fs.mkdirSync(path.join(OUT, 'assets/partner'), { recursive: true }); fs.copyFileSync(path.join(ROOT, 'assets-src/partner', bd.asset), path.join(OUT, 'assets/partner', bd.asset)); }
 }
 for (const b of Object.values(PROMOS.brands)) for (const bd of Object.values(b.badges ?? {})) {
-  if (promo.badgeState(bd, ROOT).ok) { fs.mkdirSync(path.join(OUT, 'assets/partner'), { recursive: true }); fs.copyFileSync(path.join(ROOT, 'assets-src/partner', bd.asset), path.join(OUT, 'assets/partner', bd.asset)); }
+  if (NVIDIA_OK && promo.badgeState(bd, ROOT).ok) { fs.mkdirSync(path.join(OUT, 'assets/partner'), { recursive: true }); fs.copyFileSync(path.join(ROOT, 'assets-src/partner', bd.asset), path.join(OUT, 'assets/partner', bd.asset)); }
 }
 
 // ---------- about ----------
