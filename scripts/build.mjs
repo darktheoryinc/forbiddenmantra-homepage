@@ -166,8 +166,12 @@ function retailersRaw(work, ed) {
     // link only when that exact product page appeared in a cited source; otherwise a clearly labelled ISBN search link.
     const trusted = !!work.press || (work.provenance?.tier ?? 'hand-verified') === 'hand-verified';
     const seen = ed.isbn10 && (ed.sources ?? []).find((x) => new RegExp(`^https://(?:www\\.|us\\.)?amazon\\.com/[^?#]*dp/${ed.isbn10}(?:[/?#]|$)`).test(x.url));
-    if (seen) out.push({ label: 'Amazon', url: withTag(`https://www.amazon.com${new URL(seen.url).pathname}`, 'amazon.com'), affiliate: true, market: 'amazon.com', status: `Product page seen in a cited source on ${seen.accessed}; live check pending` });
-    else if (!trusted && ed.isbn13) out.push({ label: 'Search on Amazon', url: withTag(`https://www.${m}/s?k=${ed.isbn13}&i=stripbooks`, m), affiliate: true, market: m, status: 'ISBN search link; no product page has been verified for this edition' });
+    const candUrl = ed.isbn10 && ['paperback', 'hardcover'].includes(ed.format) && m === 'amazon.com' ? `https://www.amazon.com/dp/${ed.isbn10}` : null;
+    const confirmed = candUrl && LINKCHECK[candUrl]?.verdict === 'live';
+    const searchTag = AFF.searchLinks === 'untagged' ? (u) => u : (u) => withTag(u, m), searchAff = AFF.searchLinks !== 'untagged';
+    if (!seen && !trusted && confirmed) out.push({ label: 'Amazon', url: withTag(candUrl, 'amazon.com'), affiliate: true, market: 'amazon.com', status: `Product page confirmed by the link check on ${LINKCHECK[candUrl].checkedOn}` });
+    else if (seen) out.push({ label: 'Amazon', url: withTag(`https://www.amazon.com${new URL(seen.url).pathname}`, 'amazon.com'), affiliate: true, market: 'amazon.com', status: `Product page seen in a cited source on ${seen.accessed}; live check pending` });
+    else if (!trusted && ed.isbn13) out.push({ label: 'Search on Amazon', url: searchTag(`https://www.${m}/s?k=${ed.isbn13}&i=stripbooks`), affiliate: searchAff, market: m, status: 'ISBN search link; no product page has been verified for this edition' });
     else if (ed.isbn10 && ['paperback', 'hardcover'].includes(ed.format) && !ed.noDerivedLink)
       out.push({ label: 'Amazon', url: withTag(`https://www.${m}/dp/${ed.isbn10}`, m), affiliate: true, market: m, status: 'Built from the ISBN-10; not yet confirmed live' });
     else if (work.press === 'fmp')
@@ -178,9 +182,16 @@ function retailersRaw(work, ed) {
 }
 
 // Apply link-check results: dead links are not rendered; verified ones say so; every retail URL is logged for the checker.
+const TAGLOG = []; // every affiliate URL the site renders, for the build-time tag guard
+const linkKind = (r) => (r.library ? 'library' : /\/dp\/[A-Z0-9]{10}/.test(r.url) ? 'product' : /amazon\.[a-z.]+\/s\?/.test(r.url) ? 'search' : 'link');
 function retailers(work, ed) {
   const out = [];
-  for (const r of retailersRaw(work, ed)) {
+  const raw = retailersRaw(work, ed);
+  // a candidate product page for search-only print editions: opt-in input to scripts/check-links.mjs --include-candidates
+  if (!work.press && ed.isbn10 && ['paperback', 'hardcover'].includes(ed.format) && ed.language === 'en' && !raw.some((r) => linkKind(r) === 'product' && r.affiliate))
+    LINKLOG.push({ work: work.id, title: `${ed.title ?? work.title}`, edition: ed.id ?? ed.isbn13 ?? '', label: 'candidate product page (ISBN-10)', market: 'amazon.com', url: `https://www.amazon.com/dp/${ed.isbn10}`, candidate: true });
+  for (const r of raw) {
+    r.kind = linkKind(r);
     if (r.library) { out.push(r); continue; }
     const clean = r.url.replace(/([?&])tag=[^&]*&?/, '$1').replace(/[?&]$/, '');
     LINKLOG.push({ work: work.id, title: `${ed.title ?? work.title}`, edition: ed.id ?? ed.isbn13 ?? '', label: r.label, market: r.market ?? null, url: clean });
@@ -189,6 +200,7 @@ function retailers(work, ed) {
     if (lc?.verdict === 'live') r.status = `Verified live ${lc.checkedOn}`;
     else if (lc?.verdict === 'blocked') r.status += `; automated check on ${lc.checkedOn} was blocked by the retailer`;
     else if (lc?.verdict === 'mismatch') r.status += `; check on ${lc.checkedOn} found a page whose title did not match`;
+    if (r.affiliate) TAGLOG.push({ work: work.id, url: r.url, market: r.market, kind: r.kind });
     out.push(r);
   }
   return out;
@@ -610,7 +622,7 @@ for (const w of cat.works) {
     <dl lang="en" dir="ltr">${e.translator ? `<dt data-i18n="l_translator">Translator</dt><dd>${esc(e.translator)}</dd>` : ''}${e.publisher ? `<dt data-i18n="l_publisher">Publisher</dt><dd>${esc(e.publisher)}</dd>` : ''}${e.year ? `<dt data-i18n="l_year">Year</dt><dd>${e.year}</dd>` : ''}${e.isbn13 ? `<dt>ISBN-13</dt><dd>${e.isbn13}</dd>` : ''}${e.isbn10 ? `<dt>ISBN-10</dt><dd>${e.isbn10}</dd>` : ''}${e.asin ? `<dt>ASIN</dt><dd>${e.asin}</dd>` : ''}${e.alsoLanguages?.length ? `<dt>Also in</dt><dd>${e.alsoLanguages.map((c) => esc(LANG.get(c)?.name ?? c)).join(', ')}</dd>` : ''}</dl>
     ${e.note ? `<p class="note-sm" lang="en" dir="ltr">${esc(e.note)}</p>` : ''}
     ${e.needsSecondSource ? '<p class="note-sm flag" lang="en" dir="ltr">Identifier reported by a single source; awaiting corroboration.</p>' : ''}
-    <ul class="buy" lang="en" dir="ltr">${rs.some((r) => !r.library) ? '' : '<li class="status">No retailer link verified yet.</li>'}${rs.map((r) => `<li><a class="${r.affiliate ? 'btn' : 'btn btn-ghost'}" href="${esc(r.url)}" target="_blank" rel="${r.affiliate ? 'sponsored ' : ''}noopener noreferrer" data-track="${r.affiliate ? 'buy' : r.library ? 'library' : 'link'}" data-work="${w.slug}" data-isbn="${e.isbn13 ?? ''}" data-market="${r.market ?? ''}">${r.labelIsHtml ? r.label : esc(r.label)}<span class="sr"> (opens in a new tab)</span></a><span class="status">${esc(r.status)}</span></li>`).join('') || '<li class="status">No retailer link verified yet.</li>'}</ul>
+    <ul class="buy" lang="en" dir="ltr">${rs.some((r) => !r.library) ? '' : '<li class="status">No retailer link verified yet.</li>'}${rs.map((r) => `<li><a class="${r.affiliate ? 'btn' : 'btn btn-ghost'}" href="${esc(r.url)}" target="_blank" rel="${r.affiliate ? 'sponsored ' : ''}noopener noreferrer" data-track="${r.affiliate ? 'buy' : r.library ? 'library' : 'link'}" data-work="${w.slug}" data-isbn="${e.isbn13 ?? ''}" data-market="${r.market ?? ''}" data-linktype="${r.kind}" data-cat="${w.subjects[0]}" data-own="${w.press ? 'fmp' : 'third-party'}">${r.labelIsHtml ? r.label : esc(r.label)}<span class="sr"> (opens in a new tab)</span></a><span class="status">${esc(r.status)}</span></li>`).join('') || '<li class="status">No retailer link verified yet.</li>'}</ul>
   </section>`;
   };
   const groupIds = new Set(groups.map(([c]) => c));
@@ -668,7 +680,7 @@ function qxOf(w) {
 function dynPayload(w) {
   return { d: descOf(w), tm: w.thirdPartyNotice ?? '', src: w.sources.map((x) => [x.label, x.url, x.accessed, x.supports ?? '']),
     eds: w.editions.map((e) => ({ l: e.language, f: e.format, t: e.title ?? '', tr: e.translator ?? '', pub: e.publisher ?? '', y: e.year ?? 0, i13: e.isbn13 ?? '', i10: e.isbn10 ?? '', a: e.asin ?? '', n: e.note ?? '',
-      b: retailers(w, e).map((r) => [r.label, r.url, r.affiliate ? 1 : 0, r.market ?? '', r.status, r.library ? 1 : 0]), s: (e.sources ?? []).map((x) => [x.label, x.url, x.accessed, x.supports ?? '']) })) };
+      b: retailers(w, e).map((r) => [r.label, r.url, r.affiliate ? 1 : 0, r.market ?? '', r.status, r.library ? 1 : 0, r.kind]), s: (e.sources ?? []).map((x) => [x.label, x.url, x.accessed, x.supports ?? '']) })) };
 }
 const recOf = (w) => [w.slug, w.title, w.subtitle ?? '', w.authors.join(';'), w.authors.map((n) => (authorPage.has(slugify(n)) ? 1 : 0)).join(''), w.subjects.map((x) => dIx.get(x)), (w.tradition ?? []).map((x) => tIx.get(x)),
   vIx.get(w.level), w.press ? 1 : 0, w.editions.map((e) => [edLangs(e).map((c) => lIx.get(c)), fIx.get(e.format), e.title ?? '']), qxOf(w), isDyn(w) ? 1 : 0, w.series?.name ? [w.series.name, w.series.number ?? 0] : 0];
@@ -777,6 +789,31 @@ page('about/catalogue-standards/index.html', {
 <li><strong>Traditions are kept distinct.</strong> Books are placed under the tradition they actually teach.</li></ul></div></section>`,
 });
 
+// ---------- affiliate tag guard: the build fails if an eligible US link lacks the ID or a non-US link carries it ----------
+{
+  const usId = tagFor('amazon.com'), pinned = AFF.requiredTrackingIds?.['amazon.com'];
+  const bad = [];
+  if (pinned && !FIXTURE && !process.env.FM_ALLOW_TAG_OVERRIDE && usId !== pinned) bad.push(`amazon.com tracking ID is "${usId ?? 'unset'}" but config/site.json pins "${pinned}"`);
+  if (PRODUCTION && !usId) bad.push('production build without an amazon.com tracking ID');
+  const seen = new Set(); let us = 0, usOk = 0; const byKind = {}, nonUs = {};
+  for (const t of TAGLOG) {
+    const key = t.work + '|' + t.url; if (seen.has(key)) continue; seen.add(key);
+    let u; try { u = new URL(t.url); } catch { bad.push(`unparseable affiliate URL for ${t.work}: ${t.url}`); continue; }
+    const host = u.hostname.replace(/^www\./, ''), tag = u.searchParams.get('tag'), want = AFF.marketplaces[host] ? tagFor(host) : null;
+    if (host === 'amazon.com') {
+      us++; byKind[t.kind] = (byKind[t.kind] ?? 0) + 1;
+      if (usId && tag === usId) usOk++; else if (usId) bad.push(`${t.work}: US link without the tracking ID (${t.url})`);
+    } else {
+      nonUs[host] = (nonUs[host] ?? 0) + 1;
+      if (usId && tag === usId) bad.push(`${t.work}: the US tracking ID is on ${host} (${t.url})`);
+      else if (tag !== want && !(tag === null && !want)) bad.push(`${t.work}: ${host} link has tag "${tag}" but its marketplace ID is "${want}"`);
+    }
+  }
+  fs.mkdirSync(path.join(ROOT, DATA), { recursive: true });
+  fs.writeFileSync(path.join(ROOT, DATA, 'affiliate-guard.json'), JSON.stringify({ generated: cfg.catalogueAsOf, trackingId: usId, eligibleUsLinks: us, taggedCorrectly: usOk, percentCorrect: us ? +(100 * usOk / us).toFixed(2) : null, usLinksByKind: byKind, nonUsLinks: nonUs, violations: bad.length }, null, 1));
+  if (bad.length) { console.error(`AFFILIATE GUARD FAILED (${bad.length}):\n  ` + bad.slice(0, 20).join('\n  ')); process.exit(1); }
+  console.log(`affiliate guard: ${usOk}/${us} eligible amazon.com links carry ${usId ?? '(no ID configured)'}; non-US links: ${JSON.stringify(nonUs)}`);
+}
 fs.mkdirSync(path.join(ROOT, DATA), { recursive: true });
 fs.writeFileSync(path.join(ROOT, DATA, 'retailer-links.json'), JSON.stringify({ generated: cfg.catalogueAsOf, note: 'Every outbound retail URL rendered by the site (untagged). Input for scripts/check-links.mjs.', links: (() => { const seen = new Set(); return LINKLOG.filter((l) => !seen.has(l.url) && seen.add(l.url)); })() }, null, 1));
 write('assets/catalogue.json', JSON.stringify({ generated: cat.generated, works: cat.works.length, editions: totalEditions, languages: Object.fromEntries(stocked.map((l) => [l.code, { works: nWorks(l.code), editions: nEds(l.code) }])) }));

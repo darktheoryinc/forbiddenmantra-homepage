@@ -369,7 +369,7 @@
           h('h3', {}, [tr('fmt_' + e.f) + ' · ' + langName(e.l)]),
           e.t ? h('p', { 'class': 'ed-title' }, [e.t]) : null, h('dl', { lang: 'en', dir: 'ltr' }, dl), e.n ? h('p', { 'class': 'note-sm', lang: 'en' }, [e.n]) : null,
           h('ul', { 'class': 'buy', lang: 'en', dir: 'ltr' }, (anyBuy ? [] : [h('li', { 'class': 'status' }, ['No retailer link verified yet.'])]).concat(rs.map(function (b) {
-            return h('li', {}, [h('a', { 'class': b[2] ? 'btn' : 'btn btn-ghost', href: b[1], target: '_blank', rel: (b[2] ? 'sponsored ' : '') + 'noopener noreferrer', 'data-track': b[2] ? 'buy' : b[5] ? 'library' : 'link', 'data-work': o.slug, 'data-isbn': e.i13, 'data-market': b[3] }, [b[5] ? tr('btn_library') : b[0], h('span', { 'class': 'sr' }, [' (opens in a new tab)'])]), h('span', { 'class': 'status' }, [b[4]])]);
+            return h('li', {}, [h('a', { 'class': b[2] ? 'btn' : 'btn btn-ghost', href: b[1], target: '_blank', rel: (b[2] ? 'sponsored ' : '') + 'noopener noreferrer', 'data-track': b[2] ? 'buy' : b[5] ? 'library' : 'link', 'data-work': o.slug, 'data-isbn': e.i13, 'data-market': b[3], 'data-linktype': b[6] || '', 'data-cat': (M.depts && M.depts[o.dep[0]]) || '', 'data-own': o.press === 'fmp' ? 'fmp' : 'third-party' }, [b[5] ? tr('btn_library') : b[0], h('span', { 'class': 'sr' }, [' (opens in a new tab)'])]), h('span', { 'class': 'status' }, [b[4]])]);
           })))
         ]);
       });

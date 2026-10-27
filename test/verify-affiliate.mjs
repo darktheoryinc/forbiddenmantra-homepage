@@ -104,7 +104,7 @@ ok(!/media-amazon\.com|images-na\.ssl-images-amazon|ssl-images-amazon|m\.media-a
 ok(!/\$\s?\d{1,3}\.\d{2}|price:\s*\$|★|stars? rating|customer reviews/i.test(blob.replace(/<script[\s\S]*?<\/script>/g, '')), 'no price, availability, star rating or review text is displayed');
 const repoText = ['config/site.json', 'data/promos.json', 'scripts/build.mjs', 'scripts/import.mjs'].map((f) => fs.readFileSync(path.join(ROOT, f), 'utf8')).join('\n');
 ok(!/AKIA[0-9A-Z]{12,}|secretKey|credentialSecret|client_secret|password\s*[:=]/i.test(repoText) && !fs.existsSync(path.join(ROOT, '.env')), 'no API credentials, secrets or .env file in the repository');
-ok(JSON.stringify(cfg).split(ID).length === 2, `the tracking ID appears exactly once in config (it is not a secret, but it is single-sourced)`);
+ok(JSON.stringify(cfg.affiliate.marketplaces).split(ID).length === 2 && cfg.affiliate.requiredTrackingIds['amazon.com'] === ID, 'the tracking ID is set once for the marketplace and pinned once as the required ID');
 
 // ===== click tracking collects no personal data =====
 const browser = await launch();
@@ -115,7 +115,7 @@ if (browser) for (const [name, vp] of VIEWPORTS) {
   await pg.evaluate(() => { window.__ev = []; document.addEventListener('click', (e) => e.preventDefault()); document.addEventListener('fm:outbound', (e) => window.__ev.push(e.detail)); });
   const a = pg.locator('a[data-track=buy]').first(); await a.click({ noWaitAfter: true }).catch(() => {});
   const ev = await pg.evaluate(() => window.__ev[0]); const cookie = await pg.evaluate(() => document.cookie); const ls = await pg.evaluate(() => Object.keys(localStorage));
-  ok(ev && JSON.stringify(Object.keys(ev).sort()) === JSON.stringify(['href', 'isbn', 'market', 'page', 'track', 'work']), `[${name}] click event contains only: ${Object.keys(ev || {}).sort().join(', ')}`);
+  ok(ev && JSON.stringify(Object.keys(ev).sort()) === JSON.stringify(['cat', 'href', 'isbn', 'linktype', 'market', 'own', 'page', 'track', 'work']), `[${name}] click event contains only: ${Object.keys(ev || {}).sort().join(', ')}`);
   ok(ev && ev.href.includes(`tag=${ID}`) && ev.work === 'the-power-of-now' && ev.isbn === '9781577314806' && ev.market === 'amazon.com', `[${name}] event identifies the book, ISBN and marketplace (no user identifiers)`);
   ok(cookie === '' && ls.every((k) => k === 'fm-ui'), `[${name}] no cookies set; local storage holds nothing but the optional language choice`);
   await ctx.close();

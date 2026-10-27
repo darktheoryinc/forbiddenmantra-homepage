@@ -118,7 +118,12 @@
         "disclosure": null
       }
     },
-    "legacyStoreLink": "https://amzn.to/4tX3ogd"
+    "legacyStoreLink": "https://amzn.to/4tX3ogd",
+    "requiredTrackingIds": {
+      "amazon.com": "darktheoryinc-20"
+    },
+    "searchLinks": "tagged",
+    "searchLinksNote": "OWNER DECISION: 'tagged' keeps the ID on Amazon search-results links. Amazon's published policies reviewed so far (Australia/Canada pages; the US text was not retrieved) say Special Links should lead to products and that linking to product lists, which include search results, needs additional original content. Whether a US search link earns commission has NOT been confirmed: check Associates Central > Policies, then set 'untagged' if search links are not eligible. Do not report search-link revenue without Associates reporting data."
   },
   "disclosure": "As an Amazon Associate I earn from qualifying purchases. Links marked “Amazon” are affiliate links; buying through them costs you nothing extra.",
   "siteUrl": null,
