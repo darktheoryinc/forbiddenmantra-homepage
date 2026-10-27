@@ -409,3 +409,10 @@ button[type=submit],.btn{background:var(--gold);color:#183F3B}
 @keyframes soon-pulse{0%,100%{box-shadow:0 0 0 3px rgba(216,180,107,.2)}50%{box-shadow:0 0 0 7px rgba(216,180,107,.05)}}
 @media(max-width:900px){.studio-steps{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:560px){.studio{padding:44px 0}.studio-steps{grid-template-columns:1fr}.studio-lede{font-size:17px}}
+
+/* IOSutra panel is an image supplied by the owner: shown at its own proportions, never stretched */
+.io-tile-img{padding:0;min-width:0;background:#fff;border:2px solid #c8a96a;line-height:0}
+.io-tile-img img{display:block;width:288px;max-width:100%;height:auto}
+a.io-tile-img:hover,a.io-tile-img:focus-visible{outline:3px solid #fff;outline-offset:2px}
+.io-pending{margin:0 auto 14px;max-width:60ch;font-size:13px;line-height:1.45;color:#EFD79C;border:1px dashed rgba(239,215,156,.6);border-radius:6px;padding:6px 10px}
+@media(max-width:600px){.io-tiles:has(.io-tile-img){width:auto;max-width:100%}.io-tile-img{width:auto}.io-tile-img img{margin:0 auto}}

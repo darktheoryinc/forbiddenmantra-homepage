@@ -25,7 +25,7 @@
           "licenseConfirmed": false,
           "guidelinesUrl": null,
           "guidelinesReviewedOn": null,
-          "note": "No authorised badge asset is in this repository and no Inception-specific usage terms were found. Enabling requires ALL of: asset file present under assets-src/partner/, licenseConfirmed=true (written authorisation or the member-portal terms), guidelinesUrl and guidelinesReviewedOn set. Never recreate, redraw, recolour or restyle NVIDIA marks, and do not use NVIDIA's green or imitate its visual style. The NVIDIA tile on the site is text-only: NVIDIA’s logo and the Inception badge are NVIDIA trademarks and must be used only from NVIDIA’s own brand assets under its guidelines. Obtain them from the NVIDIA Inception member portal, read the usage terms, then fill in asset, licenseConfirmed, guidelinesUrl and guidelinesReviewedOn."
+          "note": "BLOCKED: no official NVIDIA Inception asset or Inception-specific branding guidance is available to this project. NVIDIA's general logo page says its logo may not be distorted, recoloured, stylised or rearranged, may only be used as expressly authorised in writing, and that use of the NVIDIA logo can imply partnership or endorsement; its older partner guidelines say to use NVIDIA-provided badge assets under the guideline issued to the member. The NVIDIA panel visible in the owner's artwork is part of a composite image, not an NVIDIA-supplied file, so it is NOT reused. Until the owner supplies the official Inception badge from the Inception member portal together with its usage terms (and written approval if required), the site shows only the plain-text membership statement. To enable: place the file in assets-src/partner/, set asset, licenseConfirmed true, guidelinesUrl and guidelinesReviewedOn."
         }
       },
       "headline": "Wellness and AI Technology",
@@ -40,11 +40,13 @@
         "note": "Artwork supplied by the site owner on 2026-10-27 (the \"Wellness and AI Technology\" banner). Only the photographic top band (1640x326) is used; the title, logo tiles and NVIDIA badge from the banner are NOT used because they are rebuilt as live text. rightsConfirmed reflects the owner supplying the file for this site: confirm that the image licence/likeness permissions cover web use before launch."
       },
       "logo": {
-        "enabled": false,
-        "asset": null,
-        "altText": "IOSutra",
-        "rightsConfirmed": false,
-        "note": "No IOSutra logo file is in the repository. A plain-text wordmark in IOSutra blue is shown instead. Add the owner-supplied logo under assets-src/partner/ and enable it here."
+        "enabled": true,
+        "asset": "iosutra-inception-member.webp",
+        "width": 288,
+        "height": 99,
+        "altText": "IOSutra, Inception Member",
+        "rightsConfirmed": true,
+        "note": "IOSutra's own logo panel (blue and white 'IOSutra' mark beside 'Inception Member'), cut unaltered from the owner's Facebook cover artwork supplied 2026-10-27. It is shown at its native 288x99 pixels (no stretching or recolouring). It is low resolution: replace it with the original vector/high-resolution IOSutra logo file when available. The 'Inception Member' wording is part of that panel and relies on the same owner-asserted membership claim (see claims). Not an NVIDIA asset."
       }
     }
   },

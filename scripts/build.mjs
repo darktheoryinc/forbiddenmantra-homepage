@@ -64,7 +64,7 @@ const ANALYTICS = (() => {
   }
 }
 const promoView = (placement, id = 'iosutra-technology') => promo.resolve(PROMOS, id, placement, { root: ROOT });
-const promoCtx = { root: ROOT, href: (p) => href(p), asset: (f) => `${ROOT_PREFIX}assets/partner/${f}` };
+const promoCtx = { root: ROOT, production: PRODUCTION, href: (p) => href(p), asset: (f) => `${ROOT_PREFIX}assets/partner/${f}` };
 const placed = (placement) => PROMOS.promos.filter((p) => p.placements?.[placement]?.enabled);
 
 // ---------- languages & interface locales ----------

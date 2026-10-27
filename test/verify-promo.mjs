@@ -27,7 +27,7 @@ ok(home.includes(MEMBER) && tech.includes(MEMBER) && book.includes(MEMBER), 'exa
 ok(/does not extend to Forbidden Mantra Press or this bookstore/.test(home), 'home: membership explicitly scoped to IOSutra, not Forbidden Mantra Press');
 
 // wording lint across the whole site: strip approved strings, nothing NVIDIA may remain
-const allowed = ['<span class="io-nv-text">NVIDIA</span>', MEMBER, ...reg0.claims.filter((c) => c.id !== 'nvidia-inception-membership').flatMap((c) => [c.text, c.short]), reg0.externalLinks.nvidiaInception.label, reg0.externalLinks.nvidiaInception.url];
+const allowed = ['Preview note: the official NVIDIA Inception badge is not installed (asset and usage approval pending), so only the membership statement is shown.', MEMBER, ...reg0.claims.filter((c) => c.id !== 'nvidia-inception-membership').flatMap((c) => [c.text, c.short]), reg0.externalLinks.nvidiaInception.label, reg0.externalLinks.nvidiaInception.url];
 const decode = (h) => h.replace(/&amp;/g, '&').replace(/&#39;/g, "'").replace(/&quot;/g, '"');
 let leaks = [];
 for (const p of pages) { let h = decode(fs.readFileSync(p, 'utf8')); h = h.replace(/<(script|style)[\s\S]*?<\/\1>/g, ''); for (const a of allowed) h = h.split(a).join(''); if (/nvidia/i.test(h.replace(/<[^>]+>/g, ' '))) leaks.push(path.relative(SITE, p)); }
@@ -35,7 +35,7 @@ ok(leaks.length === 0, `NVIDIA is named only in approved wording on all pages${l
 const banned = reg0.claims.flatMap((c) => c.prohibitedVariants ?? []);
 ok(!pages.some((p) => banned.some((b) => decode(fs.readFileSync(p, 'utf8')).toLowerCase().includes(b.toLowerCase()))), `no prohibited wording anywhere (${banned.length} phrases checked)`);
 const partner = fs.existsSync(path.join(SITE, 'assets/partner')) ? fs.readdirSync(path.join(SITE, 'assets/partner')) : [];
-ok(!/nvidia/i.test(fs.readdirSync(path.join(SITE, 'assets')).join(' ')) && partner.every((f) => f === 'iosutra-wellness-ai.webp') && [...(home.split('promo-band')[1] ?? '').matchAll(/<img[^>]*src="([^"]+)"/gi)].every((m) => /iosutra-wellness-ai\.webp$/.test(m[1])), 'no NVIDIA badge/logo asset or image anywhere; the only image is the owner-supplied IOSutra artwork');
+ok(!/nvidia/i.test(fs.readdirSync(path.join(SITE, 'assets')).join(' ')) && partner.every((f) => /^iosutra-(wellness-ai|inception-member)\.webp$/.test(f)) && [...(home.split('promo-band')[1] ?? '').matchAll(/<img[^>]*src="([^"]+)"/gi)].every((m) => /iosutra-(wellness-ai|inception-member)\.webp$/.test(m[1])), 'no NVIDIA badge/logo asset or image anywhere; the only image is the owner-supplied IOSutra artwork');
 ok(!/76b900/i.test(read('assets/style.css') + home), "no NVIDIA green or imitation of NVIDIA's visual style");
 ok(!/sutra\.ai/i.test(pages.map((p) => fs.readFileSync(p, 'utf8')).join('')) && [...new Set(pages.flatMap((p) => [...fs.readFileSync(p, 'utf8').matchAll(/https?:\/\/[^"'\s<]*iosutra[^"'\s<]*/gi)].map((m) => new URL(m[0].replace(/&amp;/g, '&')).origin)))].every((o) => o === 'https://iosutra.com'), 'every IOSutra link goes to https://iosutra.com (the unrelated sutra.ai is not used)');
 ok(!/btn-pending|link to be added/i.test(pages.map((p) => fs.readFileSync(p, 'utf8')).join('')) && (home.match(/href="https:\/\/iosutra\.com\/[^"]*"/g) || []).length >= 3, 'no placeholder anywhere; home links the image, the logo tile and the Visit IOSutra button to iosutra.com');
@@ -74,7 +74,7 @@ try {
   ok(!!m, 'a) "Visit IOSutra" is a real prominent link (new tab, noopener noreferrer)');
   const u = new URL(m[1].replace(/&amp;/g, '&')); ok(u.searchParams.get('utm_source') === 'forbidden-mantra-press' && u.searchParams.get('utm_medium') === 'cross-promo' && u.searchParams.get('utm_campaign') === 'iosutra-technology' && u.searchParams.get('utm_content') === 'home', `a) outbound link carries campaign tags: ${u.search}`);
   ok(/<a href="https:\/\/example\.invalid\/iosutra[^"]*utm_content=footer/.test(af.replace(/&amp;/g, '&')), 'a) footer name links to IOSutra with utm_content=footer');
-  ok(!/btn-pending/.test(ah) && (!fs.existsSync(path.join(ROOT, 'test/out-promo-a/assets/partner')) || fs.readdirSync(path.join(ROOT, 'test/out-promo-a/assets/partner')).every((f) => f === 'iosutra-wellness-ai.webp')), 'a) no placeholder once URL set; still no NVIDIA badge (only the IOSutra artwork)');
+  ok(!/btn-pending/.test(ah) && (!fs.existsSync(path.join(ROOT, 'test/out-promo-a/assets/partner')) || fs.readdirSync(path.join(ROOT, 'test/out-promo-a/assets/partner')).every((f) => /^iosutra-(wellness-ai|inception-member)\.webp$/.test(f))), 'a) no placeholder once URL set; still no NVIDIA badge (only the IOSutra artwork)');
   // b) badge enabled, no asset
   f = variant((r) => { ready(r); Object.assign(r.brands.iosutra.badges.nvidiaInception, { enabled: true, asset: 'missing.png', licenseConfirmed: true, guidelinesUrl: 'https://example.invalid/g', guidelinesReviewedOn: '2026-10-26' }); }, 'b'); r = run({ FM_PROMOS: f, FM_OUT: 'test/out-promo-b' });
   ok(r.status === 1 && /asset file not found/.test(r.stderr), 'b) badge enabled with a missing asset file -> build fails');

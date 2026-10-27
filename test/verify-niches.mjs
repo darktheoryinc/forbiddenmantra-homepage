@@ -44,6 +44,8 @@ ok(/class="aff-note-p[^>]*>As an Amazon Associate/.test(read('books/the-power-of
   ok(/Coming soon/.test(studio) && !/<button|<form|<input|type="submit"|class="btn/.test(studio) && (studio.match(/<a /g) || []).length === 1, 'studio section is an honest "Coming soon": no buttons, forms or generate/buy actions (one contact link)');
   ok(!/\b(generate your|create your book now|order now|buy now|try it)\b/i.test(studio) && (studio.match(/Planned/g) || []).length === 6, 'every stage is labelled Planned and nothing is offered as available');
   ok(/iosutra\.com/.test(homeH.slice(iPromo, iStudio)) && homeH.slice(iPromo, iStudio).includes('Wellness and AI Technology') && homeH.slice(iPromo, iStudio).includes('does not imply that NVIDIA sponsors or endorses'), 'IOSutra promotion keeps its artwork heading, link and NVIDIA disclaimer');
+  ok(/<img src="[^"]*iosutra-inception-member\.webp" width="288" height="99" alt="IOSutra, Inception Member"/.test(homeH) && !/io-nv-text|io-wordmark/.test(homeH.slice(iPromo, iStudio)), 'IOSutra panel is the original image at native proportions (not rebuilt in HTML text); no text-drawn NVIDIA or IOSutra logos');
+  ok(!/io-tile-nv/.test(homeH) && /official NVIDIA Inception badge is not installed/.test(homeH), 'NVIDIA logo is not shown until an official asset is installed (preview note explains why)');
   ok(['Space+Grotesk', 'Sora', 'Inter'].every((f) => homeH.includes(f)), 'Space Grotesk, Sora and Inter are loaded');
 }
 // ---- build-time guard: a broken tag must fail the build ----
