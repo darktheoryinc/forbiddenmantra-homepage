@@ -140,5 +140,10 @@
       "token": null
     },
     "respectDoNotTrack": true
+  },
+  "legal": {
+    "reviewedByOwner": false,
+    "effectiveDate": null,
+    "reviewNote": "Adapted from the recovered Terms of Service / Refund Policy summary of the original Wix site (the full original text and the original Privacy Policy could not be read from this environment). Items needing owner or legal review are listed in docs/LEGAL-AND-NAVIGATION.md."
   }
 }

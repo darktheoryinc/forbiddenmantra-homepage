@@ -31,13 +31,13 @@
       "headline": "Wellness and AI Technology",
       "subline": "The future of health, wellbeing and abundance",
       "hero": {
-        "enabled": false,
-        "asset": null,
+        "enabled": true,
+        "asset": "iosutra-wellness-ai.webp",
         "width": 1640,
-        "height": 330,
+        "height": 326,
         "altText": "A man meditating on a misty hillside at sunrise beside a friendly humanoid AI figure, surrounded by glowing network lines and floating data panels.",
-        "rightsConfirmed": false,
-        "note": "The Wellness and AI Technology artwork was supplied in a chat message and is not in this repository. Save the artwork-only part (the photograph, without the title text or logo tiles, 1640x330 or wider, WebP or JPEG under 200 KB) as assets-src/partner/iosutra-wellness-ai.webp, then set asset, enabled:true and rightsConfirmed:true once the owner confirms the image is licensed for this site. Until then a decorative placeholder gradient is shown."
+        "rightsConfirmed": true,
+        "note": "Artwork supplied by the site owner on 2026-10-27 (the \"Wellness and AI Technology\" banner). Only the photographic top band (1640x326) is used; the title, logo tiles and NVIDIA badge from the banner are NOT used because they are rebuilt as live text. rightsConfirmed reflects the owner supplying the file for this site: confirm that the image licence/likeness permissions cover web use before launch."
       },
       "logo": {
         "enabled": false,

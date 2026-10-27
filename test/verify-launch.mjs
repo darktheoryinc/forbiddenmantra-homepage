@@ -54,7 +54,7 @@ const ready = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/promos.json'), 'u
 const pf = path.join(ROOT, 'test/fixtures/promos-ready.json'); fs.writeFileSync(pf, JSON.stringify(ready));
 r = node('scripts/build.mjs', { FM_ENV: 'production', FM_OUT: 'test/out-prod', FM_PROMOS: 'test/fixtures/promos-ready.json' });
 ok(r.status === 1 && /BLOCKER siteUrl/.test(r.stderr) && r.status === 1, 'production build refuses without a siteUrl');
-r = node('scripts/build.mjs', { FM_ENV: 'production', FM_OUT: 'test/out-prod', FM_PROMOS: 'test/fixtures/promos-ready.json', FM_SITE_URL: 'https://shop.example.invalid/' });
+r = node('scripts/build.mjs', { FM_ENV: 'production', FM_OUT: 'test/out-prod', FM_PROMOS: 'test/fixtures/promos-ready.json', FM_SITE_URL: 'https://shop.example.invalid/', FM_CONFIG_OVERRIDE: ov({ legal: { reviewedByOwner: true, effectiveDate: '2026-01-01' } }) });
 const PROD = path.join(ROOT, 'test/out-prod');
 ok(r.status === 0, `production build succeeds once URL, approval and claims are in place (exit ${r.status})`);
 const ph = read('index.html', PROD);

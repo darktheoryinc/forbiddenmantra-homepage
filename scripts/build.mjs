@@ -18,7 +18,7 @@ const FIXTURE = !!process.env.FM_FIXTURE;
 const rd = (p) => JSON.parse(fs.readFileSync(path.join(ROOT, p), 'utf8'));
 const cfg = rd(process.env.FM_CONFIG ?? 'config/site.json');
 // tests (and one-off builds) may override siteUrl/analytics without editing the committed config
-if (process.env.FM_CONFIG_OVERRIDE) { const o = JSON.parse(fs.readFileSync(path.resolve(process.env.FM_CONFIG_OVERRIDE), 'utf8')); for (const k of ['siteUrl', 'analytics']) if (k in o) cfg[k] = k === 'analytics' ? { ...cfg.analytics, ...o.analytics } : o[k]; }
+if (process.env.FM_CONFIG_OVERRIDE) { const o = JSON.parse(fs.readFileSync(path.resolve(process.env.FM_CONFIG_OVERRIDE), 'utf8')); for (const k of ['siteUrl', 'analytics', 'legal']) if (k in o) cfg[k] = k === 'siteUrl' ? o[k] : { ...cfg[k], ...o[k] }; }
 const tax = rd('data/taxonomy.json');
 const langReg = rd('data/languages.json');
 const cat = rd(`${DATA}/catalogue.json`);
@@ -55,6 +55,7 @@ const ANALYTICS = (() => {
 {
   const v = promo.validate(PROMOS, { root: ROOT, production: PRODUCTION });
   v.warnings.forEach((w) => console.warn(`promo warning: ${w}`));
+  if (PRODUCTION && cfg.legal && !cfg.legal.reviewedByOwner) v.blockers.push('legal: the Terms, Refund, Privacy and Affiliate pages are drafts. Owner/legal review is required; then set config/site.json legal.reviewedByOwner true and legal.effectiveDate.');
   if (PRODUCTION && !/^https:\/\/[^/]+/.test(SITE_URL)) v.blockers.push('siteUrl: set config/site.json "siteUrl" (or FM_SITE_URL) to the https address the site will be served from; canonical links and the sitemap need it.');
   if (v.errors.length || v.blockers.length) {
     [...v.errors.map((e) => `ERROR   ${e}`), ...v.blockers.map((b) => `BLOCKER ${b}`)].forEach((m) => console.error(m));
@@ -146,6 +147,7 @@ const write = (rel, html) => { const f = path.join(OUT, rel); fs.mkdirSync(path.
 const depthPrefix = (rel) => '../'.repeat(rel.split('/').length - 1) || './';
 const worksIn = (deptId) => cat.works.filter((w) => w.subjects.includes(deptId));
 const worksInHub = (hubId) => cat.works.filter((w) => w.subjects.some((s) => dept.get(s).hubs.includes(hubId)));
+const NETWORK = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/network.json'), 'utf8')).sites;
 const NICHES = fs.existsSync(path.join(ROOT, DATA, 'niches.json')) ? JSON.parse(fs.readFileSync(path.join(ROOT, DATA, 'niches.json'), 'utf8')).niches : [];
 const nicheById = new Map(NICHES.map((n) => [n.id, n]));
 for (const n of NICHES) for (const d of [...n.departments, ...(n.shelves ?? []), ...(n.relatedDepartments ?? [])]) if (!dept.has(d)) throw new Error('niches.json: ' + n.id + ' references unknown department ' + d);
@@ -374,7 +376,9 @@ ${page}
   <div class="wrap foot-grid">
     <div><p class="foot-brand">Forbidden Mantra Press</p><p>A curated bookstore of sacred texts, practice and inner cultivation.</p></div>
     <div><p class="foot-h" data-i18n="foot_browse">${esc(en.foot_browse)}</p><ul>${tax.hubs.map((h) => `<li><a href="${href(`subjects/${h.id}/`)}">${esc(h.name)}</a></li>`).join('')}</ul></div>
-    <div><p class="foot-h" data-i18n="foot_store">${esc(en.foot_store)}</p><ul><li><a href="${href('books/')}" data-i18n="foot_all_books">${esc(en.foot_all_books)}</a></li><li><a href="${href('languages/')}" data-i18n="foot_languages">${esc(en.foot_languages)}</a></li>${ART.length ? `<li><a href="${href('articles/')}">Articles</a></li>` : ''}<li><a href="${href('press/')}">Forbidden Mantra Press</a></li><li><a href="${href('about/catalogue-standards/')}" data-i18n="foot_verify">${esc(en.foot_verify)}</a></li><li><a href="${href('about/affiliate-disclosure/')}" data-i18n="foot_affiliate">${esc(en.foot_affiliate)}</a></li><li><a href="${href('about/privacy/')}">Privacy</a></li></ul></div>
+    <div><p class="foot-h" data-i18n="foot_store">${esc(en.foot_store)}</p><ul><li><a href="${href('books/')}" data-i18n="foot_all_books">${esc(en.foot_all_books)}</a></li><li><a href="${href('languages/')}" data-i18n="foot_languages">${esc(en.foot_languages)}</a></li>${ART.length ? `<li><a href="${href('articles/')}">Articles</a></li>` : ''}<li><a href="${href('press/')}">Forbidden Mantra Press</a></li><li><a href="${href('about/catalogue-standards/')}" data-i18n="foot_verify">${esc(en.foot_verify)}</a></li><li><a href="${href('about/affiliate-disclosure/')}" data-i18n="foot_affiliate">${esc(en.foot_affiliate)}</a></li></ul></div>
+    <div><p class="foot-h">Terms &amp; policies</p><ul><li><a href="${href('legal/')}">Terms &amp; Policies</a></li><li><a href="${href('legal/terms-refunds/')}">Terms of Service / Refund Policy</a></li><li><a href="${href('about/privacy/')}">Privacy Policy</a></li><li><a href="${href('about/affiliate-disclosure/')}">Affiliate Disclosure</a></li><li><a href="${href('contact/')}">Contact</a></li></ul></div>
+    <div><p class="foot-h">Our network</p><ul>${NETWORK.map((n) => `<li><a href="${esc(n.url)}" target="_blank" rel="noopener noreferrer" data-track="network" data-site="${esc(n.id)}">${esc(n.name)}<span class="sr"> (opens in a new tab)</span></a></li>`).join('')}<li><a href="${href('network/')}">About our network</a></li></ul></div>
   </div>
   <div class="wrap">${placed('footer').map((p) => promo.renderFooter(promoView('footer', p.id), promoCtx)).join('')}<p class="disclosure" lang="en">${esc(cfg.disclosure)}</p><p class="copy">© 2025–2026 Forbidden Mantra Press</p></div>
 </footer>
@@ -408,6 +412,7 @@ page('index.html', {
     <p class="lede">A curated bookstore of sacred texts, practice and inner cultivation, from our own press and from established authors in every tradition we shelve.</p>
     <form class="hero-search" action="${href('search/')}" method="get" role="search"><label class="sr" for="q-hero" data-i18n="search_label">${esc(en.search_label)}</label><input id="q-hero" type="search" name="q" placeholder="Search by title, author, subject or ISBN"><button class="btn" type="submit" data-i18n="search_btn">${esc(en.search_btn)}</button></form>
     <p class="hero-links"><a class="btn btn-ghost" href="${href('press/')}">Forbidden Mantra Press books</a> <a class="btn btn-ghost" href="${href('books/')}" data-i18n="foot_all_books">${esc(en.foot_all_books)}</a> <a class="btn btn-ghost" href="${href('paths/')}">Beginner reading paths</a></p>
+    <p class="disclosure hero-disclosure" lang="en">${esc(cfg.disclosure.split('. ')[0])}. <a href="${href('about/affiliate-disclosure/')}">Affiliate disclosure</a></p>
   </div>
 </section>
 <section class="band"><div class="wrap">
@@ -669,7 +674,7 @@ for (const w of cat.works) {
     <dl lang="en" dir="ltr">${e.translator ? `<dt data-i18n="l_translator">Translator</dt><dd>${esc(e.translator)}</dd>` : ''}${e.publisher ? `<dt data-i18n="l_publisher">Publisher</dt><dd>${esc(e.publisher)}</dd>` : ''}${e.year ? `<dt data-i18n="l_year">Year</dt><dd>${e.year}</dd>` : ''}${e.isbn13 ? `<dt>ISBN-13</dt><dd>${e.isbn13}</dd>` : ''}${e.isbn10 ? `<dt>ISBN-10</dt><dd>${e.isbn10}</dd>` : ''}${e.asin ? `<dt>ASIN</dt><dd>${e.asin}</dd>` : ''}${e.alsoLanguages?.length ? `<dt>Also in</dt><dd>${e.alsoLanguages.map((c) => esc(LANG.get(c)?.name ?? c)).join(', ')}</dd>` : ''}</dl>
     ${e.note ? `<p class="note-sm" lang="en" dir="ltr">${esc(e.note)}</p>` : ''}
     ${e.needsSecondSource ? '<p class="note-sm flag" lang="en" dir="ltr">Identifier reported by a single source; awaiting corroboration.</p>' : ''}
-    <ul class="buy" lang="en" dir="ltr">${rs.some((r) => !r.library) ? '' : '<li class="status">No retailer link verified yet.</li>'}${rs.map((r) => `<li><a class="${r.affiliate ? 'btn' : 'btn btn-ghost'}" href="${esc(r.url)}" target="_blank" rel="${r.affiliate ? 'sponsored ' : ''}noopener noreferrer" data-track="${r.affiliate ? 'buy' : r.library ? 'library' : 'link'}" data-work="${w.slug}" data-isbn="${e.isbn13 ?? ''}" data-market="${r.market ?? ''}" data-linktype="${r.kind}" data-cat="${w.subjects[0]}" data-own="${w.press ? 'fmp' : 'third-party'}">${r.labelIsHtml ? r.label : esc(r.label)}<span class="sr"> (opens in a new tab)</span></a><span class="status">${esc(r.status)}</span></li>`).join('') || '<li class="status">No retailer link verified yet.</li>'}</ul>
+    <ul class="buy" lang="en" dir="ltr">${rs.some((r) => !r.library) ? '' : '<li class="status">No retailer link verified yet.</li>'}${rs.map((r) => `<li><a class="${r.affiliate ? 'btn' : 'btn btn-ghost'}" href="${esc(r.url)}" target="_blank" rel="${r.affiliate ? 'sponsored ' : ''}noopener noreferrer" data-track="${r.affiliate ? 'buy' : r.library ? 'library' : 'link'}" data-work="${w.slug}" data-isbn="${e.isbn13 ?? ''}" data-market="${r.market ?? ''}" data-linktype="${r.kind}" data-cat="${w.subjects[0]}" data-own="${w.press ? 'fmp' : 'third-party'}">${r.labelIsHtml ? r.label : esc(r.label)}<span class="sr"> (opens in a new tab)</span></a><span class="status">${esc(r.status)}</span></li>`).join('') || '<li class="status">No retailer link verified yet.</li>'}</ul>${rs.some((r) => r.affiliate) ? `<p class="aff-note-p note-sm" lang="en">${esc(cfg.disclosure.split('. ')[0])}. <a href="${href('about/affiliate-disclosure/')}">Affiliate disclosure</a></p>` : ''}
   </section>`;
   };
   const groupIds = new Set(groups.map(([c]) => c));
@@ -809,22 +814,62 @@ for (const b of Object.values(PROMOS.brands)) for (const bd of Object.values(b.b
 }
 
 // ---------- about ----------
+// ---------- legal pages, contact, network ----------
+const LEGAL = cfg.legal ?? {};
+const reviewBar = () => (PRODUCTION ? '' : '<p class="note legal-review" role="note" lang="en"><strong>Draft for owner and legal review.</strong> ' + esc(LEGAL.reviewNote ?? '') + ' This notice appears in preview builds only.</p>');
+const legalHead = (t) => '<section class="band"><div class="wrap narrow prose" lang="en"><h1>' + t + '</h1>' + reviewBar();
+const ORIG = 'https://www.forbiddenmantra.com/';
+page('legal/index.html', {
+  title: 'Terms & Policies', crumbs: [['Terms & Policies']], desc: 'Terms of service, refund policy, privacy policy and affiliate disclosure.',
+  body: () => legalHead('Terms &amp; Policies') + '<p>These pages explain how this bookstore works and what we promise. Forbidden Mantra Press is a catalogue and discovery site: it does not sell books itself, take payments or keep accounts.</p><ul class="legal-list"><li><a href="' + href('legal/terms-refunds/') + '"><strong>Terms of Service / Refund Policy</strong></a>: using the site, who sells and fulfils orders, returns and refunds.</li><li><a href="' + href('about/privacy/') + '"><strong>Privacy Policy</strong></a>: what the site does and does not do with your data.</li><li><a href="' + href('about/affiliate-disclosure/') + '"><strong>Affiliate Disclosure</strong></a>: how Amazon Associates links work.</li><li><a href="' + href('contact/') + '"><strong>Contact</strong></a>: how to reach us.</li></ul><p class="disclosure" lang="en">' + esc(cfg.disclosure) + '</p></div></section>',
+});
+page('legal/terms-refunds/index.html', {
+  title: 'Terms of Service / Refund Policy', crumbs: [['Terms & Policies', 'legal/'], ['Terms of Service / Refund Policy']], desc: 'Terms of use, who fulfils orders, and returns and refunds.',
+  body: () => legalHead('Terms of Service / Refund Policy') + `<p>Welcome to the Forbidden Mantra Press bookstore. By using this site you agree to these terms.</p>
+<h2>Using this website</h2><p>You agree to use the site only for lawful purposes and in accordance with these terms. Misuse of the site may result in loss of access.</p>
+<h2>What this site is</h2><p>This site is a curated catalogue of books, with our own publications and books from other publishers. It has no shopping cart, checkout or customer accounts. Buttons on book pages lead to other companies’ websites, mainly Amazon, where any purchase takes place.</p>
+<h2>Orders, payment and fulfilment</h2><p>Books are bought, paid for and fulfilled by the retailer you choose, not by Forbidden Mantra Press, and the retailer’s own terms govern that transaction. This site does not process or store payment information for those orders.</p>
+<h2>Returns and refunds</h2><p>Books ordered through Amazon are covered by <a href="https://www.amazon.com/returns" rel="noopener noreferrer">Amazon’s returns and refund policy</a>; contact the retailer’s customer service for any order problem, because only the retailer can change or refund an order. Made-to-order items sold on our original store (for example apparel fulfilled through Printify) are generally non-refundable unless they arrive defective or damaged in shipping; see the terms on <a href="${ORIG}" rel="noopener noreferrer">forbiddenmantra.com</a> for those items.</p>
+<h2>Catalogue information</h2><p>We check book details against published sources and say where a detail is unverified. We do not show prices, availability or ratings. Check the retailer’s page for the current edition, price and format before you buy.</p>
+<h2>Affiliate links</h2><p>Some links to Amazon are affiliate links. See the <a href="${href('about/affiliate-disclosure/')}">Affiliate Disclosure</a>.</p>
+<h2>Ownership and reuse</h2><p>Content on this site that we wrote is owned by Forbidden Mantra Press, and no part may be reused or reproduced without our express written consent. Book titles, author names, cover images and trademarks belong to their owners; their appearance here does not imply endorsement.</p>
+<h2>Third-party sites</h2><p>Links to other sites, including retailers and our <a href="${href('network/')}">sister sites</a>, are provided for convenience. We are not responsible for their content or practices.</p>
+<h2>Limitation of liability</h2><p>Forbidden Mantra Press is not responsible for delays, damages or losses resulting from third-party vendors, shipping errors or platform issues beyond our control.</p>
+<h2>Changes</h2><p>We may update these terms. Updates are posted on this page with a new effective date.</p>
+<p class="note-sm">Effective date: ${esc(LEGAL.effectiveDate ?? 'to be set when the owner approves this page')}.</p></div></section>`,
+});
+page('contact/index.html', {
+  title: 'Contact', crumbs: [['Contact']], desc: 'How to contact Forbidden Mantra Press.',
+  body: () => `<section class="band"><div class="wrap narrow prose" lang="en"><h1>Contact</h1>${reviewBar()}<p>For questions about Forbidden Mantra Press, our books or this site, use the contact options on our main website: <a href="${ORIG}" rel="noopener noreferrer" target="_blank">forbiddenmantra.com<span class="sr"> (opens in a new tab)</span></a>.</p><p>For problems with an order, contact the retailer you bought from. We cannot see or change orders placed with Amazon or other retailers.</p><p>Questions about IOSutra go to <a href="${esc(PROMOS.brands.iosutra.url)}" rel="noopener noreferrer" target="_blank">iosutra.com<span class="sr"> (opens in a new tab)</span></a>.</p></div></section>`,
+});
+page('network/index.html', {
+  title: 'Our network', crumbs: [['Our network']], desc: 'Other websites from the Forbidden Mantra team.',
+  body: () => `<section class="band"><div class="wrap narrow prose" lang="en"><h1>Our network</h1><p>Forbidden Mantra Press is part of a small group of sites run by the same team. Each is a separate site with its own content and policies.</p><ul class="legal-list">${NETWORK.map((n) => `<li><a href="${esc(n.url)}" target="_blank" rel="noopener noreferrer" data-track="network" data-site="${esc(n.id)}"><strong>${esc(n.name)}</strong><span class="sr"> (opens in a new tab)</span></a>${n.blurb ? ': ' + esc(n.blurb) : ''}</li>`).join('')}</ul><p><a href="${href('technology/')}">About IOSutra</a></p></div></section>`,
+});
 page('about/privacy/index.html', {
-  title: 'Privacy', crumbs: [['Privacy']], desc: 'What this site does and does not do with your data.',
-  body: () => `<section class="band"><div class="wrap narrow prose" lang="en"><h1>Privacy</h1>
-<p>This page describes how the bookstore works today. It does not collect personal information, has no accounts or checkout, and sets no cookies.</p>
+  title: 'Privacy Policy', crumbs: [['Terms & Policies', 'legal/'], ['Privacy Policy']], desc: 'What this site does and does not do with your data.',
+  body: () => legalHead('Privacy Policy') + `<p>This page describes how this bookstore works today. The bookstore has no accounts, checkout, forms or comments, does not ask for personal information, and sets no cookies of its own.</p>
 <ul>
 <li><strong>Your choices stay in your browser.</strong> If you pick a website language, the site remembers it in your browser’s local storage on your own device. It is never sent to us.</li>
-<li><strong>Analytics:</strong> ${ANALYTICS.provider ? `the site uses ${esc(ANALYTICS.provider)}, a cookie-free analytics service, to count visits and outbound clicks.` : 'none is running at the moment. If this changes, this page will say which service is used and what it records.'}</li>
+<li><strong>Analytics:</strong> ${ANALYTICS.provider ? `the site uses ${esc(ANALYTICS.provider)}, a cookie-free analytics service, to count visits and outbound clicks (which book, category and type of link). It does not record who you are.` : 'none is running at the moment. If this changes, this page will say which service is used and what it records.'} The site does not run analytics when your browser sends Do Not Track.</li>
 <li><strong>Fonts:</strong> the site loads its typefaces from Google Fonts, so your browser contacts Google when a page loads and Google receives your IP address and browser details under its own privacy policy.</li>
-<li><strong>Retailer links:</strong> buttons for Amazon and other retailers, the Forbidden Mantra blog and other sites lead away from this site. Those sites have their own privacy practices. Amazon links may be affiliate links, so Amazon can tell that a purchase came from us; see the <a href="${href('about/affiliate-disclosure/')}">affiliate disclosure</a>.</li>
+<li><strong>Retailer and partner links:</strong> buttons for Amazon and other retailers, the Forbidden Mantra blog, our sister sites and IOSutra lead away from this site. Those sites have their own privacy practices. When you follow an Amazon affiliate link, Amazon can tell that the visit came from us and may set its own cookies; see the <a href="${href('about/affiliate-disclosure/')}">Affiliate Disclosure</a>. Links to IOSutra carry campaign tags (the name of this site and the page) in the address.</li>
 <li><strong>Library links</strong> go to WorldCat’s public search and carry only a book’s ISBN.</li>
+<li><strong>Our main website.</strong> <a href="https://www.forbiddenmantra.com/" rel="noopener noreferrer">forbiddenmantra.com</a> is a separate site with its own features and its own privacy practices.</li>
 </ul>
-<p>Questions about this page can be sent through the contact options on <a href="https://www.forbiddenmantra.com/" rel="noopener">forbiddenmantra.com</a>.</p></div></section>`,
+<p>Questions about this page: see <a href="${href('contact/')}">Contact</a>.</p></div></section>`,
 });
 page('about/affiliate-disclosure/index.html', {
-  title: 'Affiliate disclosure', crumbs: [['Affiliate disclosure']], desc: 'How we use affiliate links.',
-  body: () => `<section class="band"><div class="wrap narrow prose" lang="en"><h1>Affiliate disclosure</h1><p>${esc(cfg.disclosure)}</p><p>Buttons marked “Amazon” lead to an Amazon store. When we have an Amazon Associates tracking ID configured for that store’s marketplace, the link includes it, and we earn a small commission on qualifying purchases at no cost to you. Tracking IDs are specific to each marketplace, so a link to Amazon.de only earns commission when an Amazon.de tracking ID is set. Links to library lookups are non-commercial.</p><p>We do not show Amazon prices, availability or ratings unless they come through Amazon’s permitted programmes, and then only with the date and time they were retrieved. The disclosure appears in English on every page; where an Amazon marketplace requires specific local wording, we add it.</p></div></section>`,
+  title: 'Affiliate Disclosure', crumbs: [['Terms & Policies', 'legal/'], ['Affiliate Disclosure']], desc: 'How we use Amazon Associates affiliate links.',
+  body: () => legalHead('Affiliate Disclosure') + `<p class="disclosure-lead"><strong>${esc(cfg.disclosure.split('. ')[0])}.</strong></p>
+<p>Forbidden Mantra Press participates in the Amazon Services LLC Associates Program, an affiliate advertising program that lets sites earn fees by linking to Amazon.com. Buttons marked “Amazon” or “Search on Amazon” lead to Amazon.com and include our Associates tracking ID. If you buy through them we may earn a commission at no extra cost to you.</p>
+<ul>
+<li><strong>Which links.</strong> Amazon.com links on book pages and guides. “Amazon” buttons go to a specific product page; “Search on Amazon” buttons open an Amazon search for the book’s ISBN, and we are checking with Amazon which links qualify. Tracking IDs are specific to each marketplace, so links to other Amazon stores are untagged unless we hold that store’s own tracking ID.</li>
+<li><strong>Our own books and others.</strong> Some titles are published by Forbidden Mantra Press, and we also earn publisher royalties on those. Books from other publishers are marked as such.</li>
+<li><strong>Independence.</strong> Books are chosen for the catalogue by subject and quality of sources, not by commission. We do not show prices, availability or ratings.</li>
+<li><strong>Library and other links.</strong> Library lookups, article links and links to our other sites are not affiliate links.</li>
+</ul>
+<p>The statement above appears on every page. See also the <a href="${href('legal/terms-refunds/')}">Terms of Service / Refund Policy</a> and <a href="${href('about/privacy/')}">Privacy Policy</a>.</p></div></section>`,
 });
 page('about/catalogue-standards/index.html', {
   title: 'How we verify books', crumbs: [['How we verify books']], desc: 'Catalogue standards.',

@@ -208,7 +208,7 @@ button[type=submit],.btn{background:var(--gold);color:#120d05;border:0;padding:1
 /* IOSutra identity (green panel + gold type inside the black-and-gold frame) */
 .io-card{display:block;border:1px solid var(--gold);background:#17413c;padding:0;overflow:hidden}
 .io-media{display:block;position:relative;aspect-ratio:1640/330;min-height:150px;background:#0f2c29;text-decoration:none}
-.io-media img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.io-media img{display:block;width:100%;height:100%;object-fit:cover;object-position:45% 40%}
 .io-art{position:absolute;inset:0;background:radial-gradient(ellipse 40% 90% at 62% 100%,rgba(255,214,140,.85),transparent 70%),radial-gradient(ellipse 60% 70% at 30% 30%,rgba(120,210,190,.35),transparent 70%),linear-gradient(180deg,#4f8f8a 0%,#bfae78 70%,#2d5a4c 100%)}
 .io-media .io-wordmark{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-size:clamp(30px,6vw,54px);color:#fff;text-shadow:0 2px 14px rgba(0,0,0,.45)}
 .io-wordmark{font:700 24px/1 'Montserrat','Segoe UI',system-ui,sans-serif;letter-spacing:.01em;color:#1f5eea;display:inline-flex;align-items:center;gap:8px}
@@ -230,3 +230,13 @@ a.io-tile:hover,a.io-tile:focus-visible{outline:3px solid #fff;outline-offset:2p
 .io-more{margin-top:12px;font-size:15px}
 .io-big .io-media{aspect-ratio:1640/420}
 @media(max-width:600px){.io-media{aspect-ratio:auto;height:170px}.io-panel{padding:22px 16px}.io-tile{min-width:0;width:100%;padding:10px 14px}.io-tiles{width:100%;max-width:100%}.io-cta{width:100%;text-align:center}}
+/* legal, network, affiliate notes */
+.aff-note{font-size:13px;color:var(--muted);margin-top:6px}.aff-note a{color:var(--gold-l)}
+.aff-note-p{margin-top:6px}
+.hero-disclosure{margin-top:14px;font-size:14px}.hero-disclosure a{color:var(--gold-l)}
+.legal-list{list-style:none;padding:0}.legal-list li{margin:14px 0;padding:14px 16px;border:1px solid var(--line)}
+.legal-review{border-inline-start:4px solid var(--gold)}
+.disclosure-lead{font-size:20px;color:var(--gold-l)}
+.foot-grid{grid-template-columns:1.4fr 1fr 1fr 1fr 1fr}
+@media(max-width:900px){.foot-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.foot-grid{grid-template-columns:1fr}}

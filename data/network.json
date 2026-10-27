@@ -1,0 +1,23 @@
+{
+  "_doc": "Sister sites supplied by the site owner on 2026-10-27. Descriptions are left empty until the owner supplies wording; the build never invents any.",
+  "sites": [
+    {
+      "id": "iosutra",
+      "name": "IOSutra",
+      "url": "https://iosutra.com",
+      "blurb": "AI-powered business software platform."
+    },
+    {
+      "id": "spiritual-expressionz",
+      "name": "Spiritual Expressionz",
+      "url": "https://spiritualexpressionz.com",
+      "blurb": ""
+    },
+    {
+      "id": "dogs-r-fun",
+      "name": "Dogs R Fun",
+      "url": "https://dogsrfun.com",
+      "blurb": ""
+    }
+  ]
+}
