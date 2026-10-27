@@ -767,12 +767,12 @@ page('about/affiliate-disclosure/index.html', {
 page('about/catalogue-standards/index.html', {
   title: 'How we verify books', crumbs: [['How we verify books']], desc: 'Catalogue standards.',
   body: () => `<section class="band"><div class="wrap narrow prose" lang="en"><h1>How we verify books</h1>
-<p>A book appears in the catalogue only when its title, author, edition and identifier agree across at least one dated source, and its record keeps that source (see “Sources and verification” on each book page).</p>
+<p>A book appears in the catalogue only when its title, author, edition and identifier are backed by dated sources, and its record keeps them (see “Sources and verification” on each book page). Titles checked by hand carry at least one dated source. Titles added in bulk need <strong>two independent sources for each edition</strong>: bookseller sites owned by the same company count as one, and an edition with only one is held back.</p>
 <ul><li><strong>Editions of one work are grouped.</strong> Paperback, hardcover, e-book, audiobook and different language editions each keep their own identifier and retailer link.</li>
 <li><strong>Languages are never inferred.</strong> A language counts as available only when a specific edition published in that language has been verified, with its own source. We do not assume a translation exists because the work is popular, and we do not list machine translations as editions.</li>
 <li><strong>Website language is separate from book language.</strong> The website language only changes menus, labels and buttons; book descriptions stay in English. The book language is the language an edition is published in.</li>
 <li><strong>Uncertain records stay unpublished.</strong> Records with a failed ISBN checksum, a missing identifier or conflicting details go to a review queue.</li>
-<li><strong>Descriptions are our own.</strong> We write original summaries and do not copy competing bookstores.</li>
+<li><strong>Descriptions are our own, or absent.</strong> We write original summaries and do not copy competing bookstores or publishers. Where we have not written one, the page says so and shows only a plain summary of the verified facts.</li><li><strong>Purchase links are not assumed.</strong> A product link is shown only when that exact product page appeared in a cited source; otherwise the button is a labelled search for the ISBN.</li>
 <li><strong>No unverified claims.</strong> Bestseller badges, ratings and prices appear only when drawn from a source we are permitted to use. Historical honours are labelled as historical and are never presented as current rankings.</li>
 <li><strong>Traditions are kept distinct.</strong> Books are placed under the tradition they actually teach.</li></ul></div></section>`,
 });

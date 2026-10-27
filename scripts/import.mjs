@@ -114,10 +114,12 @@ function ingest(raw, origin, { batch = null } = {}) {
   if (w.series && !(typeof w.series.name === 'string' && w.series.name.trim())) problems.push('series needs a name');
   if (batch) {
     // batch works are bulk-verified: identity must be corroborated by >= minDistinctHostsForBatchPublish independent hosts
-    for (const e of w.editions) {
-      const hosts = new Set([...(e.sources ?? [])].map((x) => hostOf(x.url)).filter(Boolean));
-      if (hosts.size < srcPolicy.minDistinctHostsForBatchPublish) problems.push(`edition ${e.isbn13 ?? '(no ISBN)'} needs ${srcPolicy.minDistinctHostsForBatchPublish} independent source hosts of its own; found ${hosts.size}`);
-    }
+    // an edition without enough independent sources is held back on its own; the work is published with the editions that pass
+    const thin = w.editions.filter((e) => new Set((e.sources ?? []).map((x) => hostOf(x.url)).filter(Boolean)).size < srcPolicy.minDistinctHostsForBatchPublish);
+    if (thin.length && thin.length < w.editions.length) {
+      queue({ ...w, editions: thin }, 'validate', thin.map((e) => `edition ${e.isbn13 ?? '(no ISBN)'} needs ${srcPolicy.minDistinctHostsForBatchPublish} independent source hosts of its own; held back, the other edition(s) of this work are published`), 'warning');
+      w.editions = w.editions.filter((e) => !thin.includes(e));
+    } else for (const e of thin) problems.push(`edition ${e.isbn13 ?? '(no ISBN)'} needs ${srcPolicy.minDistinctHostsForBatchPublish} independent source hosts of its own; found ${new Set((e.sources ?? []).map((x) => hostOf(x.url)).filter(Boolean)).size}`);
     if (w.press) problems.push('batch imports cannot create Forbidden Mantra Press titles');
     if (!w.editions.every((e) => e.isbn13)) problems.push('batch editions need an ISBN-13');
   }

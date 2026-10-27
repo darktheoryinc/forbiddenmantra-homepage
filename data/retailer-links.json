@@ -587,6 +587,14 @@
    "url": "https://www.amazon.com/s?k=9781586380199&i=stripbooks"
   },
   {
+   "work": "siddhartha",
+   "title": "Siddhartha",
+   "edition": "9780811200684",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/Siddhartha-Hermann-Hesse/dp/081120068X"
+  },
+  {
    "work": "the-secret-teachings-of-all-ages",
    "title": "The Secret Teachings of All Ages",
    "edition": "9781585422500",
@@ -945,6 +953,822 @@
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9780807083697&i=stripbooks"
+  },
+  {
+   "work": "the-upanishads",
+   "title": "The Upanishads",
+   "edition": "9781586380212",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/Upanishads-2nd-Eknath-Easwaran/dp/1586380214"
+  },
+  {
+   "work": "the-nag-hammadi-scriptures",
+   "title": "The Nag Hammadi Scriptures",
+   "edition": "9780061626005",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780061626005&i=stripbooks"
+  },
+  {
+   "work": "the-way-of-zen",
+   "title": "The Way of Zen",
+   "edition": "9780394702988",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/Way-Zen-Alan-W-Watts/dp/0394702980"
+  },
+  {
+   "work": "the-wisdom-of-insecurity",
+   "title": "The Wisdom of Insecurity",
+   "edition": "9780394704685",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/Wisdom-Insecurity-Alan-W-Watts/dp/0394704681"
+  },
+  {
+   "work": "the-cloud-of-unknowing-and-other-works",
+   "title": "The Cloud of Unknowing and Other Works",
+   "edition": "9780140447620",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780140447620&i=stripbooks"
+  },
+  {
+   "work": "the-essential-rumi",
+   "title": "The Essential Rumi",
+   "edition": "9780062509598",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780062509598&i=stripbooks"
+  },
+  {
+   "work": "the-gift",
+   "title": "The Gift",
+   "edition": "9780140195811",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780140195811&i=stripbooks"
+  },
+  {
+   "work": "sefer-yetzirah",
+   "title": "Sefer Yetzirah",
+   "edition": "9780877288558",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/Sefer-Yetzirah-Creation-Aryeh-Kaplan/dp/0877288550"
+  },
+  {
+   "work": "the-body-keeps-the-score",
+   "title": "The Body Keeps the Score",
+   "edition": "9780143127741",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780143127741&i=stripbooks"
+  },
+  {
+   "work": "mythology",
+   "title": "Mythology",
+   "edition": "9780446574754",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780446574754&i=stripbooks"
+  },
+  {
+   "work": "the-epic-of-gilgamesh",
+   "title": "The Epic of Gilgamesh",
+   "edition": "9780140449198",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780140449198&i=stripbooks"
+  },
+  {
+   "work": "the-odyssey",
+   "title": "The Odyssey",
+   "edition": "9780393356250",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/Odyssey-Homer/dp/0393356256"
+  },
+  {
+   "work": "the-iliad",
+   "title": "The Iliad",
+   "edition": "9780140445923",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780140445923&i=stripbooks"
+  },
+  {
+   "work": "the-iliad",
+   "title": "The Iliad",
+   "edition": "9780140275360",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780140275360&i=stripbooks"
+  },
+  {
+   "work": "the-prose-edda",
+   "title": "The Prose Edda",
+   "edition": "9780140447552",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780140447552&i=stripbooks"
+  },
+  {
+   "work": "the-ramayana",
+   "title": "The Ramayana",
+   "edition": "9780143039679",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780143039679&i=stripbooks"
+  },
+  {
+   "work": "metamorphoses",
+   "title": "Metamorphoses",
+   "edition": "9780140447897",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780140447897&i=stripbooks"
+  },
+  {
+   "work": "metamorphoses",
+   "title": "Metamorphoses",
+   "edition": "9780140440584",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780140440584&i=stripbooks"
+  },
+  {
+   "work": "mastering-the-core-teachings-of-the-buddha",
+   "title": "Mastering the Core Teachings of the Buddha",
+   "edition": "9781911597100",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9781911597100&i=stripbooks"
+  },
+  {
+   "work": "daring-greatly",
+   "title": "Daring Greatly",
+   "edition": "9781592408412",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9781592408412&i=stripbooks"
+  },
+  {
+   "work": "a-new-earth",
+   "title": "A New Earth",
+   "edition": "9780452289963",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780452289963&i=stripbooks"
+  },
+  {
+   "work": "the-surrender-experiment",
+   "title": "The Surrender Experiment",
+   "edition": "9780804141109",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/Surrender-Experiment-Journey-Lifes-Perfection/dp/080414110X"
+  },
+  {
+   "work": "start-where-you-are",
+   "title": "Start Where You Are",
+   "edition": "9780877738800",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/Start-Where-You-Are-Compassionate/dp/0877738807"
+  },
+  {
+   "work": "the-wisdom-of-no-escape",
+   "title": "The Wisdom of No Escape",
+   "edition": "9781570628726",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/Wisdom-No-Escape-Path-Loving-Kindness/dp/1570628726"
+  },
+  {
+   "work": "the-wisdom-of-no-escape",
+   "title": "The Wisdom of No Escape",
+   "edition": "9780877736325",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780877736325&i=stripbooks"
+  },
+  {
+   "work": "comfortable-with-uncertainty",
+   "title": "Comfortable with Uncertainty",
+   "edition": "9781590300787",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9781590300787&i=stripbooks"
+  },
+  {
+   "work": "comfortable-with-uncertainty",
+   "title": "Comfortable with Uncertainty",
+   "edition": "9781611805956",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9781611805956&i=stripbooks"
+  },
+  {
+   "work": "cunninghams-encyclopedia-of-magical-herbs",
+   "title": "Cunningham's Encyclopedia of Magical Herbs",
+   "edition": "9780875421223",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780875421223&i=stripbooks"
+  },
+  {
+   "work": "living-wicca",
+   "title": "Living Wicca",
+   "edition": "9780875421841",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/Living-Wicca-Practitioner-Llewellyns-Practical/dp/0875421849"
+  },
+  {
+   "work": "earth-power",
+   "title": "Earth Power",
+   "edition": "9780875421216",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780875421216&i=stripbooks"
+  },
+  {
+   "work": "cunninghams-encyclopedia-of-crystal-gem-and-metal-magic",
+   "title": "Cunningham's Encyclopedia of Crystal, Gem & Metal Magic",
+   "edition": "9780875421261",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780875421261&i=stripbooks"
+  },
+  {
+   "work": "practical-candleburning-rituals",
+   "title": "Practical Candleburning Rituals",
+   "edition": "9780875420486",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780875420486&i=stripbooks"
+  },
+  {
+   "work": "the-element-encyclopedia-of-witchcraft",
+   "title": "The Element Encyclopedia of Witchcraft",
+   "edition": "9780007192939",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780007192939&i=stripbooks"
+  },
+  {
+   "work": "rachel-pollacks-tarot-wisdom",
+   "title": "Rachel Pollack's Tarot Wisdom",
+   "edition": "9780738713090",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/Rachel-Pollacks-Tarot-Wisdom-Spiritual/dp/0738713090"
+  },
+  {
+   "work": "awaken-healing-energy-through-the-tao",
+   "title": "Awaken Healing Energy Through the Tao",
+   "edition": "9780943358079",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780943358079&i=stripbooks"
+  },
+  {
+   "work": "beyond-belief",
+   "title": "Beyond Belief",
+   "edition": "9780375703164",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780375703164&i=stripbooks"
+  },
+  {
+   "work": "the-origin-of-satan",
+   "title": "The Origin of Satan",
+   "edition": "9780679731184",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/Origin-Satan-Christians-Demonized-Heretics/dp/0679731180"
+  },
+  {
+   "work": "chakra-mantras",
+   "title": "Chakra Mantras",
+   "edition": "9781578633678",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9781578633678&i=stripbooks"
+  },
+  {
+   "work": "meditation-for-the-love-of-it",
+   "title": "Meditation for the Love of It",
+   "edition": "9781604070811",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9781604070811&i=stripbooks"
+  },
+  {
+   "work": "awakening-shakti",
+   "title": "Awakening Shakti",
+   "edition": "9781604078916",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9781604078916&i=stripbooks"
+  },
+  {
+   "work": "wicca-for-life",
+   "title": "Wicca for Life",
+   "edition": "9780806522753",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/Wicca-Life-Craft-Birth-Summerland/dp/0806522755"
+  },
+  {
+   "work": "to-ride-a-silver-broomstick",
+   "title": "To Ride a Silver Broomstick",
+   "edition": "9780875427911",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780875427911&i=stripbooks"
+  },
+  {
+   "work": "the-golden-dawn",
+   "title": "The Golden Dawn",
+   "edition": "9780875426631",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780875426631&i=stripbooks"
+  },
+  {
+   "work": "llewellyns-complete-book-of-astrology",
+   "title": "Llewellyn's Complete Book of Astrology",
+   "edition": "9780738710716",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780738710716&i=stripbooks"
+  },
+  {
+   "work": "the-book-of-thoth",
+   "title": "The Book of Thoth",
+   "edition": "9780877282686",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780877282686&i=stripbooks"
+  },
+  {
+   "work": "the-tao-of-pooh",
+   "title": "The Tao of Pooh",
+   "edition": "9780140067477",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780140067477&i=stripbooks"
+  },
+  {
+   "work": "coraline",
+   "title": "Coraline",
+   "edition": "9780380807345",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780380807345&i=stripbooks"
+  },
+  {
+   "work": "the-graveyard-book",
+   "title": "The Graveyard Book",
+   "edition": "9780060530945",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780060530945&i=stripbooks"
+  },
+  {
+   "work": "stardust",
+   "title": "Stardust",
+   "edition": "9780063070714",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780063070714&i=stripbooks"
+  },
+  {
+   "work": "the-golden-compass",
+   "title": "The Golden Compass",
+   "edition": "9780375823459",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/Golden-Compass-Dark-Materials-Book/dp/037582345X"
+  },
+  {
+   "work": "rosemarys-baby",
+   "title": "Rosemary's Baby",
+   "edition": "9781605981109",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/Rosemarys-Baby-Ira-Levin/dp/1605981109"
+  },
+  {
+   "work": "the-handmaids-tale",
+   "title": "The Handmaid's Tale",
+   "edition": "9780385490818",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780385490818&i=stripbooks"
+  },
+  {
+   "work": "brave-new-world",
+   "title": "Brave New World",
+   "edition": "9780060850524",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780060850524&i=stripbooks"
+  },
+  {
+   "work": "neuromancer",
+   "title": "Neuromancer",
+   "edition": "9780441007462",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780441007462&i=stripbooks"
+  },
+  {
+   "work": "parable-of-the-sower",
+   "title": "Parable of the Sower",
+   "edition": "9780446675505",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780446675505&i=stripbooks"
+  },
+  {
+   "work": "parable-of-the-sower",
+   "title": "Parable of the Sower",
+   "edition": "9781538732182",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9781538732182&i=stripbooks"
+  },
+  {
+   "work": "dune",
+   "title": "Dune",
+   "edition": "9780441013593",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780441013593&i=stripbooks"
+  },
+  {
+   "work": "pet-sematary",
+   "title": "Pet Sematary",
+   "edition": "9781501156700",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/Pet-Sematary-Novel-Stephen-King/dp/1501156705"
+  },
+  {
+   "work": "salems-lot",
+   "title": "'Salem's Lot",
+   "edition": "9780307743671",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780307743671&i=stripbooks"
+  },
+  {
+   "work": "the-exorcist",
+   "title": "The Exorcist",
+   "edition": "9780062094360",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780062094360&i=stripbooks"
+  },
+  {
+   "work": "the-turn-of-the-screw",
+   "title": "The Turn of the Screw",
+   "edition": "9780141441351",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/Turn-Screw-Penguin-Classics/dp/0141441356"
+  },
+  {
+   "work": "the-picture-of-dorian-gray",
+   "title": "The Picture of Dorian Gray",
+   "edition": "9780141439570",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780141439570&i=stripbooks"
+  },
+  {
+   "work": "piranesi",
+   "title": "Piranesi",
+   "edition": "9781526622433",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/Piranesi/dp/1526622432"
+  },
+  {
+   "work": "the-lies-of-locke-lamora",
+   "title": "The Lies of Locke Lamora",
+   "edition": "9780553588941",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780553588941&i=stripbooks"
+  },
+  {
+   "work": "gardens-of-the-moon",
+   "title": "Gardens of the Moon",
+   "edition": "9780765322883",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780765322883&i=stripbooks"
+  },
+  {
+   "work": "mexican-gothic",
+   "title": "Mexican Gothic",
+   "edition": "9780525620808",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780525620808&i=stripbooks"
+  },
+  {
+   "work": "station-eleven",
+   "title": "Station Eleven",
+   "edition": "9780804172448",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780804172448&i=stripbooks"
+  },
+  {
+   "work": "practical-magic",
+   "title": "Practical Magic",
+   "edition": "9780425190371",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780425190371&i=stripbooks"
+  },
+  {
+   "work": "the-dispossessed",
+   "title": "The Dispossessed",
+   "edition": "9780061054884",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780061054884&i=stripbooks"
+  },
+  {
+   "work": "the-prophet",
+   "title": "The Prophet",
+   "edition": "9780394404288",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780394404288&i=stripbooks"
+  },
+  {
+   "work": "the-tibetan-book-of-the-dead",
+   "title": "The Tibetan Book of the Dead",
+   "edition": "9780140455267",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780140455267&i=stripbooks"
+  },
+  {
+   "work": "the-heart-of-the-buddhas-teaching",
+   "title": "The Heart of the Buddha's Teaching",
+   "edition": "9780767903691",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780767903691&i=stripbooks"
+  },
+  {
+   "work": "revelations",
+   "title": "Revelations",
+   "edition": "9780143121633",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780143121633&i=stripbooks"
+  },
+  {
+   "work": "tao-te-ching",
+   "title": "Tao Te Ching",
+   "edition": "9780061142666",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780061142666&i=stripbooks"
+  },
+  {
+   "work": "the-egyptian-book-of-the-dead",
+   "title": "The Egyptian Book of the Dead",
+   "edition": "9780486218663",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780486218663&i=stripbooks"
+  },
+  {
+   "work": "the-quran",
+   "title": "The Qur'an",
+   "edition": "9780199535958",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780199535958&i=stripbooks"
+  },
+  {
+   "work": "the-analects",
+   "title": "The Analects",
+   "edition": "9780140443486",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780140443486&i=stripbooks"
+  },
+  {
+   "work": "sikhism",
+   "title": "Sikhism",
+   "edition": "9780192806017",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780192806017&i=stripbooks"
+  },
+  {
+   "work": "sikhism",
+   "title": "Sikhism",
+   "edition": "9780198745570",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780198745570&i=stripbooks"
+  },
+  {
+   "work": "learning-the-tarot",
+   "title": "Learning the Tarot",
+   "edition": "9781578630486",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9781578630486&i=stripbooks"
+  },
+  {
+   "work": "holistic-tarot",
+   "title": "Holistic Tarot",
+   "edition": "9781583948354",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9781583948354&i=stripbooks"
+  },
+  {
+   "work": "the-inner-sky",
+   "title": "The Inner Sky",
+   "edition": "9780979067716",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780979067716&i=stripbooks"
+  },
+  {
+   "work": "the-i-ching-or-book-of-changes",
+   "title": "The I Ching or Book of Changes",
+   "edition": "9780691097503",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780691097503&i=stripbooks"
+  },
+  {
+   "work": "the-secret-of-the-golden-flower",
+   "title": "The Secret of the Golden Flower",
+   "edition": "9780156799805",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/Secret-Golden-Flower-Chinese-Book/dp/0156799804"
+  },
+  {
+   "work": "hermetica",
+   "title": "Hermetica",
+   "edition": "9780521425438",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780521425438&i=stripbooks"
+  },
+  {
+   "work": "the-mabinogion",
+   "title": "The Mabinogion",
+   "edition": "9780199218783",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780199218783&i=stripbooks"
+  },
+  {
+   "work": "the-histories",
+   "title": "The Histories",
+   "edition": "9780143107545",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780143107545&i=stripbooks"
+  },
+  {
+   "work": "the-worlds-religions",
+   "title": "The World's Religions",
+   "edition": "9780061660184",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780061660184&i=stripbooks"
+  },
+  {
+   "work": "the-varieties-of-religious-experience",
+   "title": "The Varieties of Religious Experience",
+   "edition": "9780140390346",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780140390346&i=stripbooks"
+  },
+  {
+   "work": "a-history-of-god",
+   "title": "A History of God",
+   "edition": "9780345384560",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/History-God-000-Year-Judaism-Christianity/dp/0345384563"
+  },
+  {
+   "work": "beyond-good-and-evil",
+   "title": "Beyond Good and Evil",
+   "edition": "9780140449235",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780140449235&i=stripbooks"
+  },
+  {
+   "work": "the-consolation-of-philosophy",
+   "title": "The Consolation of Philosophy",
+   "edition": "9780140447804",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780140447804&i=stripbooks"
+  },
+  {
+   "work": "discourses-and-selected-writings",
+   "title": "Discourses and Selected Writings",
+   "edition": "9780140449464",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780140449464&i=stripbooks"
+  },
+  {
+   "work": "tantra",
+   "title": "Tantra",
+   "edition": "9781570623042",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9781570623042&i=stripbooks"
+  },
+  {
+   "work": "what-the-buddha-taught",
+   "title": "What the Buddha Taught",
+   "edition": "9780802130310",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/What-Buddha-Taught-Expanded-Dhammapada/dp/0802130313"
+  },
+  {
+   "work": "being-peace",
+   "title": "Being Peace",
+   "edition": "9781952692765",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9781952692765&i=stripbooks"
+  },
+  {
+   "work": "full-catastrophe-living",
+   "title": "Full Catastrophe Living",
+   "edition": "9780345536938",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780345536938&i=stripbooks"
+  },
+  {
+   "work": "think-and-grow-rich",
+   "title": "Think and Grow Rich",
+   "edition": "9781585424337",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/Think-Grow-Rich-Landmark-Bestseller/dp/1585424331"
+  },
+  {
+   "work": "the-lord-of-the-rings",
+   "title": "The Lord of the Rings",
+   "edition": "9780618640157",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780618640157&i=stripbooks"
+  },
+  {
+   "work": "the-two-towers",
+   "title": "The Two Towers",
+   "edition": "9780547928203",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780547928203&i=stripbooks"
+  },
+  {
+   "work": "the-silmarillion",
+   "title": "The Silmarillion",
+   "edition": "9780618126989",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=9780618126989&i=stripbooks"
+  },
+  {
+   "work": "anansi-boys",
+   "title": "Anansi Boys",
+   "edition": "9780061342394",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/Anansi-Boys-Neil-Gaiman/dp/0061342394"
   }
  ]
 }

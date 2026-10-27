@@ -15,6 +15,13 @@ AXE_PATH=<axe.min.js> node test/a11y.mjs   # axe-core audit (install axe-core in
 node scripts/audit-affiliate.mjs   # audit every rendered Amazon link
 node scripts/check-links.mjs       # live retailer check: run on a networked machine
 node scripts/launch-check.mjs      # blockers and owner decisions
+
+# catalogue scale (see docs/DATA-SOURCES.md and docs/CATALOGUE-EXPANSION.md)
+node scripts/harvest.mjs discover|verify|goodbooks   # Open Library / Google Books harvest: resumable, rate-limited (networked machine)
+node scripts/reconcile.mjs     # harvested records -> two-source batches + review queue
+node test/verify-pipeline.mjs  # pipeline integrity on a mock of both APIs
+node test/verify-scale.mjs     # pagination, chunk index, dynamic book tier, retailer-link rule
+node scripts/synth-catalogue.mjs --n 25000 && FM_DATA=test/fixtures/perf/data FM_OUT=test/out-perf node scripts/build.mjs && node test/perf.mjs test/out-perf   # SYNTHETIC 25k load test
 ```
 Open `site/index.html` in a browser (links are relative; no server needed).
 
@@ -27,6 +34,8 @@ Open `site/index.html` in a browser (links are relative; no server needed).
 | `data/promos.json` | Cross-promotion registry (IOSutra): brands, claims with verification status, placements; `scripts/promo.mjs` renders it |
 | `docs/CROSS-PROMOTION.md` | How the IOSutra section works, launch gate, badge rules, reuse on other sites |
 | `docs/LAUNCH-STATUS.md` | **Start here:** status audit, counts, blockers, launch readiness |
+| `docs/CATALOGUE-EXPANSION.md` | Catalogue expansion report: counts, review queue, affiliate coverage, 25k performance, what is needed for 5,000 / 25,000 |
+| `docs/DATA-SOURCES.md` | Source policy, verification tiers, how to run the automated import |
 | `docs/LANGUAGES.md` | Interface vs book language, adding languages/editions, per-marketplace affiliate structure |
 | `data/taxonomy.json` | 6 hubs, 29 departments, 16 traditions, with original introductions |
 | `staging/verified/*.json` | Hand-verified records with dated sources; the only input that can be published |

@@ -36,7 +36,7 @@ for (const p of col.paths.filter((x) => /fantasy|potter/.test(x.id))) ok(read(`p
 ok([...col.collections.flatMap((c) => c.works), ...col.paths.flatMap((p) => p.steps.map((s) => s.work))].every((id) => byId.has(id)), 'every collection and path entry is a published work (nothing staged leaks in)');
 ok(read('index.html').includes('Seven subject hubs') && /Discover by story/.test(read('index.html')) && /If You Love Harry Potter/.test(read('index.html')), 'home: seven hubs and a "Discover by story" band with the Harry Potter discovery collection');
 const L = checkLinks(SITE); ok(L.broken.length === 0, `links resolve across ${L.pages} pages (${L.internal} internal)`);
-ok(rep.staged.works >= 70 && rep.published.works === cat.works.length, `unverified material stays staged: ${rep.staged.works} staged vs ${rep.published.works} published`);
+ok(rep.staged.works > 0 && rep.published.works === cat.works.length, `unverified material stays staged: ${rep.staged.works} staged vs ${rep.published.works} published`);
 
 // ===== browser =====
 const browser = await launch(); if (!browser) process.exit(state.fails ? 1 : 0);
@@ -76,8 +76,8 @@ for (const [name, vp] of VIEWPORTS) {
   await pg.goto(url('collections/harry-potter-discovery/index.html')); await snap('collection-hp', true);
   ok(await pg.isVisible('.note-tm') && (await pg.locator('.card').count()) === 9, `${T} Harry Potter discovery collection: 9 published books and the disclaimer`);
   await pg.goto(url('subjects/fantasy-folklore-fiction/index.html')); ok(await pg.isVisible('h1 >> text=Fantasy, Folklore') && (await pg.locator('.dept').count()) === tax.departments.filter((d) => d.hubs.includes('fantasy-folklore-fiction')).length, `${T} Fantasy hub lists all ${tax.departments.filter((d) => d.hubs.includes('fantasy-folklore-fiction')).length} of its departments`);
-  await pg.goto(url('authors/neil-gaiman/index.html')); ok((await pg.locator('.card').count()) === 4, `${T} author page groups all 4 Gaiman books`);
-  await pg.goto(url('topics/philosophy/index.html')); ok((await pg.locator('.card').count()) === 5, `${T} philosophy department lists 5 books`);
+  await pg.goto(url('authors/neil-gaiman/index.html')); { const n = cat.works.filter((w) => w.authors.some((a) => /Gaiman/.test(a))).length; ok((await pg.locator('.card').count()) === n, `${T} author page groups all ${n} Gaiman books`); }
+  await pg.goto(url('topics/philosophy/index.html')); { const n = cat.works.filter((w) => w.subjects.includes('philosophy')).length; ok((await pg.locator('.card').count()) === Math.min(n, 48) && (await pg.evaluate(() => { const g = document.querySelector('[data-index-grid]'); return g ? +g.dataset.total : document.querySelectorAll('.card').length; })) === n, `${T} philosophy department lists all ${n} books`); }
   ok(errs.length === 0, `${T} no JS errors${errs.length ? ': ' + errs[0] : ''}`);
   await ctx.close();
 }

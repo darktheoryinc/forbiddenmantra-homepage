@@ -1,5 +1,7 @@
 # Forbidden Mantra Press: status audit and launch readiness
 
+> **Update 2026-10-27 (catalogue expansion):** 192 verified works, 223 editions, 132 authors (was 53 / 69 / 39). Details, review queue, affiliate coverage and 25k performance: [CATALOGUE-EXPANSION.md](CATALOGUE-EXPANSION.md). Pipeline and source policy: [DATA-SOURCES.md](DATA-SOURCES.md). The counts further down this page predate that work.
+
 Measured on 2026-10-27 from the repository `claude/gallant-archimedes-ocwf9s` (not from memory). Nothing is deployed; `main` is untouched.
 Legend: **Verified** = a test or audit proves it · **Implemented** = built, not independently proven · **Partial** · **Planned** = not built.
 

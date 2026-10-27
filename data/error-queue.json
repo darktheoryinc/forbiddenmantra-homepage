@@ -189,14 +189,12 @@
     "Hermann Hesse"
    ],
    "isbn13": [
-    "9780811200684",
     "9780553125290"
    ],
    "stage": "validate",
-   "severity": "error",
+   "severity": "warning",
    "reasons": [
-    "edition 9780811200684 needs 2 independent source hosts of its own; found 1",
-    "edition 9780553125290 needs 2 independent source hosts of its own; found 1"
+    "edition 9780553125290 needs 2 independent source hosts of its own; held back, the other edition(s) of this work are published"
    ],
    "origin": "staging/batches/web-2026-10-27-a.vpsv"
   },
@@ -231,6 +229,21 @@
    "origin": "staging/outside-candidates.psv:2"
   },
   {
+   "title": "A New Earth",
+   "authors": [
+    "Eckhart Tolle"
+   ],
+   "isbn13": [
+    "9780452289963"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "already published as \"A New Earth\""
+   ],
+   "origin": "staging/outside-candidates.psv:3"
+  },
+  {
    "title": "Stillness Speaks",
    "authors": [
     "Eckhart Tolle"
@@ -244,6 +257,96 @@
     "ISBN-13 checksum fails: 9781577314568"
    ],
    "origin": "staging/outside-candidates.psv:4"
+  },
+  {
+   "title": "The Surrender Experiment",
+   "authors": [
+    "Michael A. Singer"
+   ],
+   "isbn13": [
+    "9780804141093"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "possible additional edition of published \"The Surrender Experiment\" (ISBN 9780804141093 not in its edition list)"
+   ],
+   "origin": "staging/outside-candidates.psv:6"
+  },
+  {
+   "title": "The Wisdom of No Escape",
+   "authors": [
+    "Pema Chödrön"
+   ],
+   "isbn13": [
+    "9781611806571"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "possible additional edition of published \"The Wisdom of No Escape\" (ISBN 9781611806571 not in its edition list)"
+   ],
+   "origin": "staging/outside-candidates.psv:7"
+  },
+  {
+   "title": "Start Where You Are",
+   "authors": [
+    "Pema Chödrön"
+   ],
+   "isbn13": [
+    "9781611806588"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "possible additional edition of published \"Start Where You Are\" (ISBN 9781611806588 not in its edition list)"
+   ],
+   "origin": "staging/outside-candidates.psv:8"
+  },
+  {
+   "title": "Comfortable with Uncertainty",
+   "authors": [
+    "Pema Chödrön"
+   ],
+   "isbn13": [
+    "9781611806595"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "possible additional edition of published \"Comfortable with Uncertainty\" (ISBN 9781611806595 not in its edition list)"
+   ],
+   "origin": "staging/outside-candidates.psv:9"
+  },
+  {
+   "title": "The Body Keeps the Score",
+   "authors": [
+    "Bessel van der Kolk"
+   ],
+   "isbn13": [
+    "9780143127741"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "already published as \"The Body Keeps the Score\""
+   ],
+   "origin": "staging/outside-candidates.psv:14"
+  },
+  {
+   "title": "Full Catastrophe Living",
+   "authors": [
+    "Jon Kabat-Zinn"
+   ],
+   "isbn13": [
+    "9780345536938"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "already published as \"Full Catastrophe Living\""
+   ],
+   "origin": "staging/outside-candidates.psv:16"
   },
   {
    "title": "Wherever You Go, There You Are",
@@ -304,6 +407,36 @@
     "already published as \"Peace Is Every Step\""
    ],
    "origin": "staging/outside-candidates.psv:22"
+  },
+  {
+   "title": "The Heart of the Buddha's Teaching",
+   "authors": [
+    "Thich Nhat Hanh"
+   ],
+   "isbn13": [
+    "9780767903691"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "already published as \"The Heart of the Buddha's Teaching\""
+   ],
+   "origin": "staging/outside-candidates.psv:23"
+  },
+  {
+   "title": "What the Buddha Taught",
+   "authors": [
+    "Walpola Rahula"
+   ],
+   "isbn13": [
+    "9780802130310"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "already published as \"What the Buddha Taught\""
+   ],
+   "origin": "staging/outside-candidates.psv:24"
   },
   {
    "title": "Zen Mind, Beginner's Mind",
@@ -411,15 +544,60 @@
    "origin": "staging/outside-candidates.psv:33"
   },
   {
+   "title": "The Upanishads",
+   "authors": [
+    "Eknath Easwaran (translator)"
+   ],
+   "isbn13": [
+    "9781586380212"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "already published as \"The Upanishads\""
+   ],
+   "origin": "staging/outside-candidates.psv:34"
+  },
+  {
+   "title": "The Ramayana",
+   "authors": [
+    "R.K. Narayan"
+   ],
+   "isbn13": [
+    "9780143039679"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "already published as \"The Ramayana\""
+   ],
+   "origin": "staging/outside-candidates.psv:35"
+  },
+  {
+   "title": "Meditation for the Love of It",
+   "authors": [
+    "Sally Kempton"
+   ],
+   "isbn13": [
+    "9781604070057"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "possible additional edition of published \"Meditation for the Love of It\" (ISBN 9781604070057 not in its edition list)"
+   ],
+   "origin": "staging/outside-candidates.psv:36"
+  },
+  {
    "title": "Awakening Shakti",
    "authors": [
     "Sally Kempton"
    ],
    "isbn13": [],
-   "stage": "identifiers",
-   "severity": "warning",
+   "stage": "dedup",
+   "severity": "duplicate",
    "reasons": [
-    "no ISBN-13 supplied; cannot be published until an ISBN/ASIN is confirmed from a source"
+    "possible additional edition of published \"Awakening Shakti\" (ISBN null not in its edition list)"
    ],
    "origin": "staging/outside-candidates.psv:37"
   },
@@ -437,15 +615,30 @@
    "origin": "staging/outside-candidates.psv:39"
   },
   {
+   "title": "Tao Te Ching",
+   "authors": [
+    "Stephen Mitchell (translator)"
+   ],
+   "isbn13": [
+    "9780061142666"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "already published as \"Tao Te Ching\""
+   ],
+   "origin": "staging/outside-candidates.psv:44"
+  },
+  {
    "title": "Awaken Healing Energy Through the Tao",
    "authors": [
     "Mantak Chia"
    ],
    "isbn13": [],
-   "stage": "identifiers",
-   "severity": "warning",
+   "stage": "dedup",
+   "severity": "duplicate",
    "reasons": [
-    "no ISBN-13 supplied; cannot be published until an ISBN/ASIN is confirmed from a source"
+    "possible additional edition of published \"Awaken Healing Energy Through the Tao\" (ISBN null not in its edition list)"
    ],
    "origin": "staging/outside-candidates.psv:49"
   },
@@ -474,6 +667,81 @@
     "no ISBN-13 supplied; cannot be published until an ISBN/ASIN is confirmed from a source"
    ],
    "origin": "staging/outside-candidates.psv:53"
+  },
+  {
+   "title": "The World's Religions",
+   "authors": [
+    "Huston Smith"
+   ],
+   "isbn13": [
+    "9780060859428"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "possible additional edition of published \"The World's Religions\" (ISBN 9780060859428 not in its edition list)"
+   ],
+   "origin": "staging/outside-candidates.psv:54"
+  },
+  {
+   "title": "The Varieties of Religious Experience",
+   "authors": [
+    "William James"
+   ],
+   "isbn13": [
+    "9780140390346"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "already published as \"The Varieties of Religious Experience\""
+   ],
+   "origin": "staging/outside-candidates.psv:56"
+  },
+  {
+   "title": "The Nag Hammadi Scriptures",
+   "authors": [
+    "Marvin Meyer (editor)"
+   ],
+   "isbn13": [
+    "9780061626005"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "already published as \"The Nag Hammadi Scriptures\""
+   ],
+   "origin": "staging/outside-candidates.psv:57"
+  },
+  {
+   "title": "Beyond Belief",
+   "authors": [
+    "Elaine Pagels"
+   ],
+   "isbn13": [
+    "9780375703164"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "already published as \"Beyond Belief\""
+   ],
+   "origin": "staging/outside-candidates.psv:59"
+  },
+  {
+   "title": "Hermetica",
+   "authors": [
+    "Brian P. Copenhaver (translator)"
+   ],
+   "isbn13": [
+    "9780521425438"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "already published as \"Hermetica\""
+   ],
+   "origin": "staging/outside-candidates.psv:66"
   },
   {
    "title": "The Kybalion",
@@ -551,6 +819,66 @@
    "origin": "staging/outside-candidates.psv:73"
   },
   {
+   "title": "Living Wicca",
+   "authors": [
+    "Scott Cunningham"
+   ],
+   "isbn13": [
+    "9780875421841"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "already published as \"Living Wicca\""
+   ],
+   "origin": "staging/outside-candidates.psv:75"
+  },
+  {
+   "title": "Cunningham's Encyclopedia of Magical Herbs",
+   "authors": [
+    "Scott Cunningham"
+   ],
+   "isbn13": [
+    "9780875421223"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "already published as \"Cunningham's Encyclopedia of Magical Herbs\""
+   ],
+   "origin": "staging/outside-candidates.psv:76"
+  },
+  {
+   "title": "Cunningham's Encyclopedia of Crystal, Gem & Metal Magic",
+   "authors": [
+    "Scott Cunningham"
+   ],
+   "isbn13": [
+    "9780875421261"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "already published as \"Cunningham's Encyclopedia of Crystal, Gem & Metal Magic\""
+   ],
+   "origin": "staging/outside-candidates.psv:77"
+  },
+  {
+   "title": "Wicca for Life",
+   "authors": [
+    "Raymond Buckland"
+   ],
+   "isbn13": [
+    "9780806522586"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "possible additional edition of published \"Wicca for Life\" (ISBN 9780806522586 not in its edition list)"
+   ],
+   "origin": "staging/outside-candidates.psv:78"
+  },
+  {
    "title": "Tarot for Your Self",
    "authors": [
     "Mary K. Greer"
@@ -581,6 +909,21 @@
    "origin": "staging/outside-candidates.psv:84"
   },
   {
+   "title": "The Inner Sky",
+   "authors": [
+    "Steven Forrest"
+   ],
+   "isbn13": [
+    "9781934976432"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "possible additional edition of published \"The Inner Sky\" (ISBN 9781934976432 not in its edition list)"
+   ],
+   "origin": "staging/outside-candidates.psv:85"
+  },
+  {
    "title": "I Am That",
    "authors": [
     "Nisargadatta Maharaj"
@@ -609,6 +952,52 @@
     "already published as \"Be Here Now\""
    ],
    "origin": "staging/outside-candidates.psv:93"
+  },
+  {
+   "title": "Mythology",
+   "authors": [
+    "Edith Hamilton"
+   ],
+   "isbn13": [
+    "9780316438520"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "possible additional edition of published \"Mythology\" (ISBN 9780316438520 not in its edition list)"
+   ],
+   "origin": "staging/outside-candidates.psv:97"
+  },
+  {
+   "title": "The Epic of Gilgamesh",
+   "authors": [
+    "Andrew George (translator)"
+   ],
+   "isbn13": [
+    "9780140449198"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "already published as \"The Epic of Gilgamesh\""
+   ],
+   "origin": "staging/outside-candidates.psv:98"
+  },
+  {
+   "title": "The Prose Edda",
+   "authors": [
+    "Snorri Sturluson",
+    "Jesse L. Byock (translator)"
+   ],
+   "isbn13": [
+    "9780140447552"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "already published as \"The Prose Edda\""
+   ],
+   "origin": "staging/outside-candidates.psv:99"
   }
  ]
 }

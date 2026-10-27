@@ -1,28 +1,28 @@
 {
  "summary": {
-  "works": 95,
-  "purchaseLinks": 119,
+  "works": 192,
+  "purchaseLinks": 222,
   "tagsExpected": {
    "amazon.com": "darktheoryinc-20"
   },
   "linkClasses": {
    "derived": 52,
-   "search": 55,
-   "verified": 12
+   "search": 135,
+   "verified": 35
   },
   "linkErrors": 0,
-  "worksWithValidTaggedProductLink": 53,
-  "ofWhichSourceVerified": 12,
+  "worksWithValidTaggedProductLink": 76,
+  "ofWhichSourceVerified": 35,
   "ofWhichIdentityVerifiedOffline": 41,
-  "worksWithSearchLinkOnly": 42,
+  "worksWithSearchLinkOnly": 116,
   "worksWithNoPurchaseLink": 0,
   "worksWithLinkErrors": 0,
-  "recordsNeedingManualReview": 53,
+  "recordsNeedingManualReview": 127,
   "manualReviewByReason": {
    "an edition identifier comes from a single source": 9,
    "owner-listed record: edition details unconfirmed": 12,
    "e-book/audiobook edition has no verified Amazon link": 8,
-   "only a search link: needs the edition's ASIN or ISBN": 42
+   "only a search link: needs the edition's ASIN or ISBN": 116
   },
   "liveCheckPending": 41
  },
@@ -412,6 +412,524 @@
   {
    "work": "kindred",
    "title": "Kindred",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "the-nag-hammadi-scriptures",
+   "title": "The Nag Hammadi Scriptures",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "the-cloud-of-unknowing-and-other-works",
+   "title": "The Cloud of Unknowing and Other Works",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "the-essential-rumi",
+   "title": "The Essential Rumi",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "the-gift",
+   "title": "The Gift",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "the-body-keeps-the-score",
+   "title": "The Body Keeps the Score",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "mythology",
+   "title": "Mythology",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "the-epic-of-gilgamesh",
+   "title": "The Epic of Gilgamesh",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "the-iliad",
+   "title": "The Iliad",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "the-prose-edda",
+   "title": "The Prose Edda",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "the-ramayana",
+   "title": "The Ramayana",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "metamorphoses",
+   "title": "Metamorphoses",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "mastering-the-core-teachings-of-the-buddha",
+   "title": "Mastering the Core Teachings of the Buddha",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "daring-greatly",
+   "title": "Daring Greatly",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "a-new-earth",
+   "title": "A New Earth",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "comfortable-with-uncertainty",
+   "title": "Comfortable with Uncertainty",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "cunninghams-encyclopedia-of-magical-herbs",
+   "title": "Cunningham's Encyclopedia of Magical Herbs",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "earth-power",
+   "title": "Earth Power",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "cunninghams-encyclopedia-of-crystal-gem-and-metal-magic",
+   "title": "Cunningham's Encyclopedia of Crystal, Gem & Metal Magic",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "practical-candleburning-rituals",
+   "title": "Practical Candleburning Rituals",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "the-element-encyclopedia-of-witchcraft",
+   "title": "The Element Encyclopedia of Witchcraft",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "awaken-healing-energy-through-the-tao",
+   "title": "Awaken Healing Energy Through the Tao",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "beyond-belief",
+   "title": "Beyond Belief",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "chakra-mantras",
+   "title": "Chakra Mantras",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "meditation-for-the-love-of-it",
+   "title": "Meditation for the Love of It",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "awakening-shakti",
+   "title": "Awakening Shakti",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "to-ride-a-silver-broomstick",
+   "title": "To Ride a Silver Broomstick",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "the-golden-dawn",
+   "title": "The Golden Dawn",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "llewellyns-complete-book-of-astrology",
+   "title": "Llewellyn's Complete Book of Astrology",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "the-book-of-thoth",
+   "title": "The Book of Thoth",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "the-tao-of-pooh",
+   "title": "The Tao of Pooh",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "coraline",
+   "title": "Coraline",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "the-graveyard-book",
+   "title": "The Graveyard Book",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "stardust",
+   "title": "Stardust",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "the-handmaids-tale",
+   "title": "The Handmaid's Tale",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "brave-new-world",
+   "title": "Brave New World",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "neuromancer",
+   "title": "Neuromancer",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "parable-of-the-sower",
+   "title": "Parable of the Sower",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "dune",
+   "title": "Dune",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "salems-lot",
+   "title": "'Salem's Lot",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "the-exorcist",
+   "title": "The Exorcist",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "the-picture-of-dorian-gray",
+   "title": "The Picture of Dorian Gray",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "the-lies-of-locke-lamora",
+   "title": "The Lies of Locke Lamora",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "gardens-of-the-moon",
+   "title": "Gardens of the Moon",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "mexican-gothic",
+   "title": "Mexican Gothic",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "station-eleven",
+   "title": "Station Eleven",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "practical-magic",
+   "title": "Practical Magic",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "the-dispossessed",
+   "title": "The Dispossessed",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "the-prophet",
+   "title": "The Prophet",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "the-tibetan-book-of-the-dead",
+   "title": "The Tibetan Book of the Dead",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "the-heart-of-the-buddhas-teaching",
+   "title": "The Heart of the Buddha's Teaching",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "revelations",
+   "title": "Revelations",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "tao-te-ching",
+   "title": "Tao Te Ching",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "the-egyptian-book-of-the-dead",
+   "title": "The Egyptian Book of the Dead",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "the-quran",
+   "title": "The Qur'an",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "the-analects",
+   "title": "The Analects",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "sikhism",
+   "title": "Sikhism",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "learning-the-tarot",
+   "title": "Learning the Tarot",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "holistic-tarot",
+   "title": "Holistic Tarot",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "the-inner-sky",
+   "title": "The Inner Sky",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "the-i-ching-or-book-of-changes",
+   "title": "The I Ching or Book of Changes",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "hermetica",
+   "title": "Hermetica",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "the-mabinogion",
+   "title": "The Mabinogion",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "the-histories",
+   "title": "The Histories",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "the-worlds-religions",
+   "title": "The World's Religions",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "the-varieties-of-religious-experience",
+   "title": "The Varieties of Religious Experience",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "beyond-good-and-evil",
+   "title": "Beyond Good and Evil",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "the-consolation-of-philosophy",
+   "title": "The Consolation of Philosophy",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "discourses-and-selected-writings",
+   "title": "Discourses and Selected Writings",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "tantra",
+   "title": "Tantra",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "being-peace",
+   "title": "Being Peace",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "full-catastrophe-living",
+   "title": "Full Catastrophe Living",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "the-lord-of-the-rings",
+   "title": "The Lord of the Rings",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "the-two-towers",
+   "title": "The Two Towers",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN"
+   ]
+  },
+  {
+   "work": "the-silmarillion",
+   "title": "The Silmarillion",
    "reasons": [
     "only a search link: needs the edition's ASIN or ISBN"
    ]
@@ -883,6 +1401,14 @@
    "errors": false
   },
   {
+   "work": "siddhartha",
+   "title": "Siddhartha",
+   "press": false,
+   "links": 1,
+   "best": "verified",
+   "errors": false
+  },
+  {
    "work": "the-secret-teachings-of-all-ages",
    "title": "The Secret Teachings of All Ages",
    "press": false,
@@ -1176,6 +1702,774 @@
    "press": false,
    "links": 1,
    "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-upanishads",
+   "title": "The Upanishads",
+   "press": false,
+   "links": 1,
+   "best": "verified",
+   "errors": false
+  },
+  {
+   "work": "the-nag-hammadi-scriptures",
+   "title": "The Nag Hammadi Scriptures",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-way-of-zen",
+   "title": "The Way of Zen",
+   "press": false,
+   "links": 1,
+   "best": "verified",
+   "errors": false
+  },
+  {
+   "work": "the-wisdom-of-insecurity",
+   "title": "The Wisdom of Insecurity",
+   "press": false,
+   "links": 1,
+   "best": "verified",
+   "errors": false
+  },
+  {
+   "work": "the-cloud-of-unknowing-and-other-works",
+   "title": "The Cloud of Unknowing and Other Works",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-essential-rumi",
+   "title": "The Essential Rumi",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-gift",
+   "title": "The Gift",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "sefer-yetzirah",
+   "title": "Sefer Yetzirah",
+   "press": false,
+   "links": 1,
+   "best": "verified",
+   "errors": false
+  },
+  {
+   "work": "the-body-keeps-the-score",
+   "title": "The Body Keeps the Score",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "mythology",
+   "title": "Mythology",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-epic-of-gilgamesh",
+   "title": "The Epic of Gilgamesh",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-odyssey",
+   "title": "The Odyssey",
+   "press": false,
+   "links": 1,
+   "best": "verified",
+   "errors": false
+  },
+  {
+   "work": "the-iliad",
+   "title": "The Iliad",
+   "press": false,
+   "links": 2,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-prose-edda",
+   "title": "The Prose Edda",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-ramayana",
+   "title": "The Ramayana",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "metamorphoses",
+   "title": "Metamorphoses",
+   "press": false,
+   "links": 2,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "mastering-the-core-teachings-of-the-buddha",
+   "title": "Mastering the Core Teachings of the Buddha",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "daring-greatly",
+   "title": "Daring Greatly",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "a-new-earth",
+   "title": "A New Earth",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-surrender-experiment",
+   "title": "The Surrender Experiment",
+   "press": false,
+   "links": 1,
+   "best": "verified",
+   "errors": false
+  },
+  {
+   "work": "start-where-you-are",
+   "title": "Start Where You Are",
+   "press": false,
+   "links": 1,
+   "best": "verified",
+   "errors": false
+  },
+  {
+   "work": "the-wisdom-of-no-escape",
+   "title": "The Wisdom of No Escape",
+   "press": false,
+   "links": 2,
+   "best": "verified",
+   "errors": false
+  },
+  {
+   "work": "comfortable-with-uncertainty",
+   "title": "Comfortable with Uncertainty",
+   "press": false,
+   "links": 2,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "cunninghams-encyclopedia-of-magical-herbs",
+   "title": "Cunningham's Encyclopedia of Magical Herbs",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "living-wicca",
+   "title": "Living Wicca",
+   "press": false,
+   "links": 1,
+   "best": "verified",
+   "errors": false
+  },
+  {
+   "work": "earth-power",
+   "title": "Earth Power",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "cunninghams-encyclopedia-of-crystal-gem-and-metal-magic",
+   "title": "Cunningham's Encyclopedia of Crystal, Gem & Metal Magic",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "practical-candleburning-rituals",
+   "title": "Practical Candleburning Rituals",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-element-encyclopedia-of-witchcraft",
+   "title": "The Element Encyclopedia of Witchcraft",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "rachel-pollacks-tarot-wisdom",
+   "title": "Rachel Pollack's Tarot Wisdom",
+   "press": false,
+   "links": 1,
+   "best": "verified",
+   "errors": false
+  },
+  {
+   "work": "awaken-healing-energy-through-the-tao",
+   "title": "Awaken Healing Energy Through the Tao",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "beyond-belief",
+   "title": "Beyond Belief",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-origin-of-satan",
+   "title": "The Origin of Satan",
+   "press": false,
+   "links": 1,
+   "best": "verified",
+   "errors": false
+  },
+  {
+   "work": "chakra-mantras",
+   "title": "Chakra Mantras",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "meditation-for-the-love-of-it",
+   "title": "Meditation for the Love of It",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "awakening-shakti",
+   "title": "Awakening Shakti",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "wicca-for-life",
+   "title": "Wicca for Life",
+   "press": false,
+   "links": 1,
+   "best": "verified",
+   "errors": false
+  },
+  {
+   "work": "to-ride-a-silver-broomstick",
+   "title": "To Ride a Silver Broomstick",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-golden-dawn",
+   "title": "The Golden Dawn",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "llewellyns-complete-book-of-astrology",
+   "title": "Llewellyn's Complete Book of Astrology",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-book-of-thoth",
+   "title": "The Book of Thoth",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-tao-of-pooh",
+   "title": "The Tao of Pooh",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "coraline",
+   "title": "Coraline",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-graveyard-book",
+   "title": "The Graveyard Book",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "stardust",
+   "title": "Stardust",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-golden-compass",
+   "title": "The Golden Compass",
+   "press": false,
+   "links": 1,
+   "best": "verified",
+   "errors": false
+  },
+  {
+   "work": "rosemarys-baby",
+   "title": "Rosemary's Baby",
+   "press": false,
+   "links": 1,
+   "best": "verified",
+   "errors": false
+  },
+  {
+   "work": "the-handmaids-tale",
+   "title": "The Handmaid's Tale",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "brave-new-world",
+   "title": "Brave New World",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "neuromancer",
+   "title": "Neuromancer",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "parable-of-the-sower",
+   "title": "Parable of the Sower",
+   "press": false,
+   "links": 2,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "dune",
+   "title": "Dune",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "pet-sematary",
+   "title": "Pet Sematary",
+   "press": false,
+   "links": 1,
+   "best": "verified",
+   "errors": false
+  },
+  {
+   "work": "salems-lot",
+   "title": "'Salem's Lot",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-exorcist",
+   "title": "The Exorcist",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-turn-of-the-screw",
+   "title": "The Turn of the Screw",
+   "press": false,
+   "links": 1,
+   "best": "verified",
+   "errors": false
+  },
+  {
+   "work": "the-picture-of-dorian-gray",
+   "title": "The Picture of Dorian Gray",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "piranesi",
+   "title": "Piranesi",
+   "press": false,
+   "links": 1,
+   "best": "verified",
+   "errors": false
+  },
+  {
+   "work": "the-lies-of-locke-lamora",
+   "title": "The Lies of Locke Lamora",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "gardens-of-the-moon",
+   "title": "Gardens of the Moon",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "mexican-gothic",
+   "title": "Mexican Gothic",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "station-eleven",
+   "title": "Station Eleven",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "practical-magic",
+   "title": "Practical Magic",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-dispossessed",
+   "title": "The Dispossessed",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-prophet",
+   "title": "The Prophet",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-tibetan-book-of-the-dead",
+   "title": "The Tibetan Book of the Dead",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-heart-of-the-buddhas-teaching",
+   "title": "The Heart of the Buddha's Teaching",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "revelations",
+   "title": "Revelations",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "tao-te-ching",
+   "title": "Tao Te Ching",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-egyptian-book-of-the-dead",
+   "title": "The Egyptian Book of the Dead",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-quran",
+   "title": "The Qur'an",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-analects",
+   "title": "The Analects",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "sikhism",
+   "title": "Sikhism",
+   "press": false,
+   "links": 2,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "learning-the-tarot",
+   "title": "Learning the Tarot",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "holistic-tarot",
+   "title": "Holistic Tarot",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-inner-sky",
+   "title": "The Inner Sky",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-i-ching-or-book-of-changes",
+   "title": "The I Ching or Book of Changes",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-secret-of-the-golden-flower",
+   "title": "The Secret of the Golden Flower",
+   "press": false,
+   "links": 1,
+   "best": "verified",
+   "errors": false
+  },
+  {
+   "work": "hermetica",
+   "title": "Hermetica",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-mabinogion",
+   "title": "The Mabinogion",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-histories",
+   "title": "The Histories",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-worlds-religions",
+   "title": "The World's Religions",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-varieties-of-religious-experience",
+   "title": "The Varieties of Religious Experience",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "a-history-of-god",
+   "title": "A History of God",
+   "press": false,
+   "links": 1,
+   "best": "verified",
+   "errors": false
+  },
+  {
+   "work": "beyond-good-and-evil",
+   "title": "Beyond Good and Evil",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-consolation-of-philosophy",
+   "title": "The Consolation of Philosophy",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "discourses-and-selected-writings",
+   "title": "Discourses and Selected Writings",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "tantra",
+   "title": "Tantra",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "what-the-buddha-taught",
+   "title": "What the Buddha Taught",
+   "press": false,
+   "links": 1,
+   "best": "verified",
+   "errors": false
+  },
+  {
+   "work": "being-peace",
+   "title": "Being Peace",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "full-catastrophe-living",
+   "title": "Full Catastrophe Living",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "think-and-grow-rich",
+   "title": "Think and Grow Rich",
+   "press": false,
+   "links": 1,
+   "best": "verified",
+   "errors": false
+  },
+  {
+   "work": "the-lord-of-the-rings",
+   "title": "The Lord of the Rings",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-two-towers",
+   "title": "The Two Towers",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-silmarillion",
+   "title": "The Silmarillion",
+   "press": false,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "anansi-boys",
+   "title": "Anansi Boys",
+   "press": false,
+   "links": 1,
+   "best": "verified",
    "errors": false
   }
  ],
@@ -2181,6 +3475,20 @@
    "url": "https://www.amazon.com/s?k=9781586380199&i=stripbooks&tag=…"
   },
   {
+   "work": "siddhartha",
+   "workTitle": "Siddhartha",
+   "press": false,
+   "isbn13": "9780811200684",
+   "market": "amazon.com",
+   "asin": "081120068X",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780811200684",
+   "class": "verified",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/Siddhartha-Hermann-Hesse/dp/081120068X?tag=…"
+  },
+  {
    "work": "the-secret-teachings-of-all-ages",
    "workTitle": "The Secret Teachings of All Ages",
    "press": false,
@@ -2735,6 +4043,1274 @@
    "issues": [],
    "verdict": null,
    "url": "https://www.amazon.com/s?k=9780807083697&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-upanishads",
+   "workTitle": "The Upanishads",
+   "press": false,
+   "isbn13": "9781586380212",
+   "market": "amazon.com",
+   "asin": "1586380214",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9781586380212",
+   "class": "verified",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/Upanishads-2nd-Eknath-Easwaran/dp/1586380214?tag=…"
+  },
+  {
+   "work": "the-nag-hammadi-scriptures",
+   "workTitle": "The Nag Hammadi Scriptures",
+   "press": false,
+   "isbn13": "9780061626005",
+   "market": "amazon.com",
+   "edition": "paperback en 9780061626005",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780061626005&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-way-of-zen",
+   "workTitle": "The Way of Zen",
+   "press": false,
+   "isbn13": "9780394702988",
+   "market": "amazon.com",
+   "asin": "0394702980",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780394702988",
+   "class": "verified",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/Way-Zen-Alan-W-Watts/dp/0394702980?tag=…"
+  },
+  {
+   "work": "the-wisdom-of-insecurity",
+   "workTitle": "The Wisdom of Insecurity",
+   "press": false,
+   "isbn13": "9780394704685",
+   "market": "amazon.com",
+   "asin": "0394704681",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780394704685",
+   "class": "verified",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/Wisdom-Insecurity-Alan-W-Watts/dp/0394704681?tag=…"
+  },
+  {
+   "work": "the-cloud-of-unknowing-and-other-works",
+   "workTitle": "The Cloud of Unknowing and Other Works",
+   "press": false,
+   "isbn13": "9780140447620",
+   "market": "amazon.com",
+   "edition": "paperback en 9780140447620",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780140447620&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-essential-rumi",
+   "workTitle": "The Essential Rumi",
+   "press": false,
+   "isbn13": "9780062509598",
+   "market": "amazon.com",
+   "edition": "paperback en 9780062509598",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780062509598&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-gift",
+   "workTitle": "The Gift",
+   "press": false,
+   "isbn13": "9780140195811",
+   "market": "amazon.com",
+   "edition": "paperback en 9780140195811",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780140195811&i=stripbooks&tag=…"
+  },
+  {
+   "work": "sefer-yetzirah",
+   "workTitle": "Sefer Yetzirah",
+   "press": false,
+   "isbn13": "9780877288558",
+   "market": "amazon.com",
+   "asin": "0877288550",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780877288558",
+   "class": "verified",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/Sefer-Yetzirah-Creation-Aryeh-Kaplan/dp/0877288550?tag=…"
+  },
+  {
+   "work": "the-body-keeps-the-score",
+   "workTitle": "The Body Keeps the Score",
+   "press": false,
+   "isbn13": "9780143127741",
+   "market": "amazon.com",
+   "edition": "paperback en 9780143127741",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780143127741&i=stripbooks&tag=…"
+  },
+  {
+   "work": "mythology",
+   "workTitle": "Mythology",
+   "press": false,
+   "isbn13": "9780446574754",
+   "market": "amazon.com",
+   "edition": "paperback en 9780446574754",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780446574754&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-epic-of-gilgamesh",
+   "workTitle": "The Epic of Gilgamesh",
+   "press": false,
+   "isbn13": "9780140449198",
+   "market": "amazon.com",
+   "edition": "paperback en 9780140449198",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780140449198&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-odyssey",
+   "workTitle": "The Odyssey",
+   "press": false,
+   "isbn13": "9780393356250",
+   "market": "amazon.com",
+   "asin": "0393356256",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780393356250",
+   "class": "verified",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/Odyssey-Homer/dp/0393356256?tag=…"
+  },
+  {
+   "work": "the-iliad",
+   "workTitle": "The Iliad",
+   "press": false,
+   "isbn13": "9780140445923",
+   "market": "amazon.com",
+   "edition": "paperback en 9780140445923",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780140445923&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-iliad",
+   "workTitle": "The Iliad",
+   "press": false,
+   "isbn13": "9780140275360",
+   "market": "amazon.com",
+   "edition": "paperback en 9780140275360",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780140275360&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-prose-edda",
+   "workTitle": "The Prose Edda",
+   "press": false,
+   "isbn13": "9780140447552",
+   "market": "amazon.com",
+   "edition": "paperback en 9780140447552",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780140447552&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-ramayana",
+   "workTitle": "The Ramayana",
+   "press": false,
+   "isbn13": "9780143039679",
+   "market": "amazon.com",
+   "edition": "paperback en 9780143039679",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780143039679&i=stripbooks&tag=…"
+  },
+  {
+   "work": "metamorphoses",
+   "workTitle": "Metamorphoses",
+   "press": false,
+   "isbn13": "9780140447897",
+   "market": "amazon.com",
+   "edition": "paperback en 9780140447897",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780140447897&i=stripbooks&tag=…"
+  },
+  {
+   "work": "metamorphoses",
+   "workTitle": "Metamorphoses",
+   "press": false,
+   "isbn13": "9780140440584",
+   "market": "amazon.com",
+   "edition": "paperback en 9780140440584",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780140440584&i=stripbooks&tag=…"
+  },
+  {
+   "work": "mastering-the-core-teachings-of-the-buddha",
+   "workTitle": "Mastering the Core Teachings of the Buddha",
+   "press": false,
+   "isbn13": "9781911597100",
+   "market": "amazon.com",
+   "edition": "paperback en 9781911597100",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9781911597100&i=stripbooks&tag=…"
+  },
+  {
+   "work": "daring-greatly",
+   "workTitle": "Daring Greatly",
+   "press": false,
+   "isbn13": "9781592408412",
+   "market": "amazon.com",
+   "edition": "paperback en 9781592408412",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9781592408412&i=stripbooks&tag=…"
+  },
+  {
+   "work": "a-new-earth",
+   "workTitle": "A New Earth",
+   "press": false,
+   "isbn13": "9780452289963",
+   "market": "amazon.com",
+   "edition": "paperback en 9780452289963",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780452289963&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-surrender-experiment",
+   "workTitle": "The Surrender Experiment",
+   "press": false,
+   "isbn13": "9780804141109",
+   "market": "amazon.com",
+   "asin": "080414110X",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780804141109",
+   "class": "verified",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/Surrender-Experiment-Journey-Lifes-Perfection/dp/080414110X?tag=…"
+  },
+  {
+   "work": "start-where-you-are",
+   "workTitle": "Start Where You Are",
+   "press": false,
+   "isbn13": "9780877738800",
+   "market": "amazon.com",
+   "asin": "0877738807",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780877738800",
+   "class": "verified",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/Start-Where-You-Are-Compassionate/dp/0877738807?tag=…"
+  },
+  {
+   "work": "the-wisdom-of-no-escape",
+   "workTitle": "The Wisdom of No Escape",
+   "press": false,
+   "isbn13": "9781570628726",
+   "market": "amazon.com",
+   "asin": "1570628726",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9781570628726",
+   "class": "verified",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/Wisdom-No-Escape-Path-Loving-Kindness/dp/1570628726?tag=…"
+  },
+  {
+   "work": "the-wisdom-of-no-escape",
+   "workTitle": "The Wisdom of No Escape",
+   "press": false,
+   "isbn13": "9780877736325",
+   "market": "amazon.com",
+   "edition": "paperback en 9780877736325",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780877736325&i=stripbooks&tag=…"
+  },
+  {
+   "work": "comfortable-with-uncertainty",
+   "workTitle": "Comfortable with Uncertainty",
+   "press": false,
+   "isbn13": "9781590300787",
+   "market": "amazon.com",
+   "edition": "paperback en 9781590300787",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9781590300787&i=stripbooks&tag=…"
+  },
+  {
+   "work": "comfortable-with-uncertainty",
+   "workTitle": "Comfortable with Uncertainty",
+   "press": false,
+   "isbn13": "9781611805956",
+   "market": "amazon.com",
+   "edition": "paperback en 9781611805956",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9781611805956&i=stripbooks&tag=…"
+  },
+  {
+   "work": "cunninghams-encyclopedia-of-magical-herbs",
+   "workTitle": "Cunningham's Encyclopedia of Magical Herbs",
+   "press": false,
+   "isbn13": "9780875421223",
+   "market": "amazon.com",
+   "edition": "paperback en 9780875421223",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780875421223&i=stripbooks&tag=…"
+  },
+  {
+   "work": "living-wicca",
+   "workTitle": "Living Wicca",
+   "press": false,
+   "isbn13": "9780875421841",
+   "market": "amazon.com",
+   "asin": "0875421849",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780875421841",
+   "class": "verified",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/Living-Wicca-Practitioner-Llewellyns-Practical/dp/0875421849?tag=…"
+  },
+  {
+   "work": "earth-power",
+   "workTitle": "Earth Power",
+   "press": false,
+   "isbn13": "9780875421216",
+   "market": "amazon.com",
+   "edition": "paperback en 9780875421216",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780875421216&i=stripbooks&tag=…"
+  },
+  {
+   "work": "cunninghams-encyclopedia-of-crystal-gem-and-metal-magic",
+   "workTitle": "Cunningham's Encyclopedia of Crystal, Gem & Metal Magic",
+   "press": false,
+   "isbn13": "9780875421261",
+   "market": "amazon.com",
+   "edition": "paperback en 9780875421261",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780875421261&i=stripbooks&tag=…"
+  },
+  {
+   "work": "practical-candleburning-rituals",
+   "workTitle": "Practical Candleburning Rituals",
+   "press": false,
+   "isbn13": "9780875420486",
+   "market": "amazon.com",
+   "edition": "paperback en 9780875420486",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780875420486&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-element-encyclopedia-of-witchcraft",
+   "workTitle": "The Element Encyclopedia of Witchcraft",
+   "press": false,
+   "isbn13": "9780007192939",
+   "market": "amazon.com",
+   "edition": "paperback en 9780007192939",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780007192939&i=stripbooks&tag=…"
+  },
+  {
+   "work": "rachel-pollacks-tarot-wisdom",
+   "workTitle": "Rachel Pollack's Tarot Wisdom",
+   "press": false,
+   "isbn13": "9780738713090",
+   "market": "amazon.com",
+   "asin": "0738713090",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780738713090",
+   "class": "verified",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/Rachel-Pollacks-Tarot-Wisdom-Spiritual/dp/0738713090?tag=…"
+  },
+  {
+   "work": "awaken-healing-energy-through-the-tao",
+   "workTitle": "Awaken Healing Energy Through the Tao",
+   "press": false,
+   "isbn13": "9780943358079",
+   "market": "amazon.com",
+   "edition": "paperback en 9780943358079",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780943358079&i=stripbooks&tag=…"
+  },
+  {
+   "work": "beyond-belief",
+   "workTitle": "Beyond Belief",
+   "press": false,
+   "isbn13": "9780375703164",
+   "market": "amazon.com",
+   "edition": "paperback en 9780375703164",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780375703164&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-origin-of-satan",
+   "workTitle": "The Origin of Satan",
+   "press": false,
+   "isbn13": "9780679731184",
+   "market": "amazon.com",
+   "asin": "0679731180",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780679731184",
+   "class": "verified",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/Origin-Satan-Christians-Demonized-Heretics/dp/0679731180?tag=…"
+  },
+  {
+   "work": "chakra-mantras",
+   "workTitle": "Chakra Mantras",
+   "press": false,
+   "isbn13": "9781578633678",
+   "market": "amazon.com",
+   "edition": "paperback en 9781578633678",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9781578633678&i=stripbooks&tag=…"
+  },
+  {
+   "work": "meditation-for-the-love-of-it",
+   "workTitle": "Meditation for the Love of It",
+   "press": false,
+   "isbn13": "9781604070811",
+   "market": "amazon.com",
+   "edition": "paperback en 9781604070811",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9781604070811&i=stripbooks&tag=…"
+  },
+  {
+   "work": "awakening-shakti",
+   "workTitle": "Awakening Shakti",
+   "press": false,
+   "isbn13": "9781604078916",
+   "market": "amazon.com",
+   "edition": "paperback en 9781604078916",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9781604078916&i=stripbooks&tag=…"
+  },
+  {
+   "work": "wicca-for-life",
+   "workTitle": "Wicca for Life",
+   "press": false,
+   "isbn13": "9780806522753",
+   "market": "amazon.com",
+   "asin": "0806522755",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780806522753",
+   "class": "verified",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/Wicca-Life-Craft-Birth-Summerland/dp/0806522755?tag=…"
+  },
+  {
+   "work": "to-ride-a-silver-broomstick",
+   "workTitle": "To Ride a Silver Broomstick",
+   "press": false,
+   "isbn13": "9780875427911",
+   "market": "amazon.com",
+   "edition": "paperback en 9780875427911",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780875427911&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-golden-dawn",
+   "workTitle": "The Golden Dawn",
+   "press": false,
+   "isbn13": "9780875426631",
+   "market": "amazon.com",
+   "edition": "paperback en 9780875426631",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780875426631&i=stripbooks&tag=…"
+  },
+  {
+   "work": "llewellyns-complete-book-of-astrology",
+   "workTitle": "Llewellyn's Complete Book of Astrology",
+   "press": false,
+   "isbn13": "9780738710716",
+   "market": "amazon.com",
+   "edition": "paperback en 9780738710716",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780738710716&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-book-of-thoth",
+   "workTitle": "The Book of Thoth",
+   "press": false,
+   "isbn13": "9780877282686",
+   "market": "amazon.com",
+   "edition": "paperback en 9780877282686",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780877282686&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-tao-of-pooh",
+   "workTitle": "The Tao of Pooh",
+   "press": false,
+   "isbn13": "9780140067477",
+   "market": "amazon.com",
+   "edition": "paperback en 9780140067477",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780140067477&i=stripbooks&tag=…"
+  },
+  {
+   "work": "coraline",
+   "workTitle": "Coraline",
+   "press": false,
+   "isbn13": "9780380807345",
+   "market": "amazon.com",
+   "edition": "paperback en 9780380807345",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780380807345&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-graveyard-book",
+   "workTitle": "The Graveyard Book",
+   "press": false,
+   "isbn13": "9780060530945",
+   "market": "amazon.com",
+   "edition": "paperback en 9780060530945",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780060530945&i=stripbooks&tag=…"
+  },
+  {
+   "work": "stardust",
+   "workTitle": "Stardust",
+   "press": false,
+   "isbn13": "9780063070714",
+   "market": "amazon.com",
+   "edition": "paperback en 9780063070714",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780063070714&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-golden-compass",
+   "workTitle": "The Golden Compass",
+   "press": false,
+   "isbn13": "9780375823459",
+   "market": "amazon.com",
+   "asin": "037582345X",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780375823459",
+   "class": "verified",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/Golden-Compass-Dark-Materials-Book/dp/037582345X?tag=…"
+  },
+  {
+   "work": "rosemarys-baby",
+   "workTitle": "Rosemary's Baby",
+   "press": false,
+   "isbn13": "9781605981109",
+   "market": "amazon.com",
+   "asin": "1605981109",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9781605981109",
+   "class": "verified",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/Rosemarys-Baby-Ira-Levin/dp/1605981109?tag=…"
+  },
+  {
+   "work": "the-handmaids-tale",
+   "workTitle": "The Handmaid's Tale",
+   "press": false,
+   "isbn13": "9780385490818",
+   "market": "amazon.com",
+   "edition": "paperback en 9780385490818",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780385490818&i=stripbooks&tag=…"
+  },
+  {
+   "work": "brave-new-world",
+   "workTitle": "Brave New World",
+   "press": false,
+   "isbn13": "9780060850524",
+   "market": "amazon.com",
+   "edition": "paperback en 9780060850524",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780060850524&i=stripbooks&tag=…"
+  },
+  {
+   "work": "neuromancer",
+   "workTitle": "Neuromancer",
+   "press": false,
+   "isbn13": "9780441007462",
+   "market": "amazon.com",
+   "edition": "paperback en 9780441007462",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780441007462&i=stripbooks&tag=…"
+  },
+  {
+   "work": "parable-of-the-sower",
+   "workTitle": "Parable of the Sower",
+   "press": false,
+   "isbn13": "9780446675505",
+   "market": "amazon.com",
+   "edition": "paperback en 9780446675505",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780446675505&i=stripbooks&tag=…"
+  },
+  {
+   "work": "parable-of-the-sower",
+   "workTitle": "Parable of the Sower",
+   "press": false,
+   "isbn13": "9781538732182",
+   "market": "amazon.com",
+   "edition": "paperback en 9781538732182",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9781538732182&i=stripbooks&tag=…"
+  },
+  {
+   "work": "dune",
+   "workTitle": "Dune",
+   "press": false,
+   "isbn13": "9780441013593",
+   "market": "amazon.com",
+   "edition": "paperback en 9780441013593",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780441013593&i=stripbooks&tag=…"
+  },
+  {
+   "work": "pet-sematary",
+   "workTitle": "Pet Sematary",
+   "press": false,
+   "isbn13": "9781501156700",
+   "market": "amazon.com",
+   "asin": "1501156705",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9781501156700",
+   "class": "verified",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/Pet-Sematary-Novel-Stephen-King/dp/1501156705?tag=…"
+  },
+  {
+   "work": "salems-lot",
+   "workTitle": "'Salem's Lot",
+   "press": false,
+   "isbn13": "9780307743671",
+   "market": "amazon.com",
+   "edition": "paperback en 9780307743671",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780307743671&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-exorcist",
+   "workTitle": "The Exorcist",
+   "press": false,
+   "isbn13": "9780062094360",
+   "market": "amazon.com",
+   "edition": "paperback en 9780062094360",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780062094360&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-turn-of-the-screw",
+   "workTitle": "The Turn of the Screw",
+   "press": false,
+   "isbn13": "9780141441351",
+   "market": "amazon.com",
+   "asin": "0141441356",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780141441351",
+   "class": "verified",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/Turn-Screw-Penguin-Classics/dp/0141441356?tag=…"
+  },
+  {
+   "work": "the-picture-of-dorian-gray",
+   "workTitle": "The Picture of Dorian Gray",
+   "press": false,
+   "isbn13": "9780141439570",
+   "market": "amazon.com",
+   "edition": "paperback en 9780141439570",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780141439570&i=stripbooks&tag=…"
+  },
+  {
+   "work": "piranesi",
+   "workTitle": "Piranesi",
+   "press": false,
+   "isbn13": "9781526622433",
+   "market": "amazon.com",
+   "asin": "1526622432",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9781526622433",
+   "class": "verified",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/Piranesi/dp/1526622432?tag=…"
+  },
+  {
+   "work": "the-lies-of-locke-lamora",
+   "workTitle": "The Lies of Locke Lamora",
+   "press": false,
+   "isbn13": "9780553588941",
+   "market": "amazon.com",
+   "edition": "paperback en 9780553588941",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780553588941&i=stripbooks&tag=…"
+  },
+  {
+   "work": "gardens-of-the-moon",
+   "workTitle": "Gardens of the Moon",
+   "press": false,
+   "isbn13": "9780765322883",
+   "market": "amazon.com",
+   "edition": "paperback en 9780765322883",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780765322883&i=stripbooks&tag=…"
+  },
+  {
+   "work": "mexican-gothic",
+   "workTitle": "Mexican Gothic",
+   "press": false,
+   "isbn13": "9780525620808",
+   "market": "amazon.com",
+   "edition": "paperback en 9780525620808",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780525620808&i=stripbooks&tag=…"
+  },
+  {
+   "work": "station-eleven",
+   "workTitle": "Station Eleven",
+   "press": false,
+   "isbn13": "9780804172448",
+   "market": "amazon.com",
+   "edition": "paperback en 9780804172448",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780804172448&i=stripbooks&tag=…"
+  },
+  {
+   "work": "practical-magic",
+   "workTitle": "Practical Magic",
+   "press": false,
+   "isbn13": "9780425190371",
+   "market": "amazon.com",
+   "edition": "paperback en 9780425190371",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780425190371&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-dispossessed",
+   "workTitle": "The Dispossessed",
+   "press": false,
+   "isbn13": "9780061054884",
+   "market": "amazon.com",
+   "edition": "paperback en 9780061054884",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780061054884&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-prophet",
+   "workTitle": "The Prophet",
+   "press": false,
+   "isbn13": "9780394404288",
+   "market": "amazon.com",
+   "edition": "hardcover en 9780394404288",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780394404288&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-tibetan-book-of-the-dead",
+   "workTitle": "The Tibetan Book of the Dead",
+   "press": false,
+   "isbn13": "9780140455267",
+   "market": "amazon.com",
+   "edition": "paperback en 9780140455267",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780140455267&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-heart-of-the-buddhas-teaching",
+   "workTitle": "The Heart of the Buddha's Teaching",
+   "press": false,
+   "isbn13": "9780767903691",
+   "market": "amazon.com",
+   "edition": "paperback en 9780767903691",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780767903691&i=stripbooks&tag=…"
+  },
+  {
+   "work": "revelations",
+   "workTitle": "Revelations",
+   "press": false,
+   "isbn13": "9780143121633",
+   "market": "amazon.com",
+   "edition": "paperback en 9780143121633",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780143121633&i=stripbooks&tag=…"
+  },
+  {
+   "work": "tao-te-ching",
+   "workTitle": "Tao Te Ching",
+   "press": false,
+   "isbn13": "9780061142666",
+   "market": "amazon.com",
+   "edition": "paperback en 9780061142666",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780061142666&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-egyptian-book-of-the-dead",
+   "workTitle": "The Egyptian Book of the Dead",
+   "press": false,
+   "isbn13": "9780486218663",
+   "market": "amazon.com",
+   "edition": "paperback en 9780486218663",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780486218663&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-quran",
+   "workTitle": "The Qur'an",
+   "press": false,
+   "isbn13": "9780199535958",
+   "market": "amazon.com",
+   "edition": "paperback en 9780199535958",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780199535958&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-analects",
+   "workTitle": "The Analects",
+   "press": false,
+   "isbn13": "9780140443486",
+   "market": "amazon.com",
+   "edition": "paperback en 9780140443486",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780140443486&i=stripbooks&tag=…"
+  },
+  {
+   "work": "sikhism",
+   "workTitle": "Sikhism",
+   "press": false,
+   "isbn13": "9780192806017",
+   "market": "amazon.com",
+   "edition": "paperback en 9780192806017",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780192806017&i=stripbooks&tag=…"
+  },
+  {
+   "work": "sikhism",
+   "workTitle": "Sikhism",
+   "press": false,
+   "isbn13": "9780198745570",
+   "market": "amazon.com",
+   "edition": "paperback en 9780198745570",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780198745570&i=stripbooks&tag=…"
+  },
+  {
+   "work": "learning-the-tarot",
+   "workTitle": "Learning the Tarot",
+   "press": false,
+   "isbn13": "9781578630486",
+   "market": "amazon.com",
+   "edition": "paperback en 9781578630486",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9781578630486&i=stripbooks&tag=…"
+  },
+  {
+   "work": "holistic-tarot",
+   "workTitle": "Holistic Tarot",
+   "press": false,
+   "isbn13": "9781583948354",
+   "market": "amazon.com",
+   "edition": "paperback en 9781583948354",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9781583948354&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-inner-sky",
+   "workTitle": "The Inner Sky",
+   "press": false,
+   "isbn13": "9780979067716",
+   "market": "amazon.com",
+   "edition": "paperback en 9780979067716",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780979067716&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-i-ching-or-book-of-changes",
+   "workTitle": "The I Ching or Book of Changes",
+   "press": false,
+   "isbn13": "9780691097503",
+   "market": "amazon.com",
+   "edition": "hardcover en 9780691097503",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780691097503&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-secret-of-the-golden-flower",
+   "workTitle": "The Secret of the Golden Flower",
+   "press": false,
+   "isbn13": "9780156799805",
+   "market": "amazon.com",
+   "asin": "0156799804",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780156799805",
+   "class": "verified",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/Secret-Golden-Flower-Chinese-Book/dp/0156799804?tag=…"
+  },
+  {
+   "work": "hermetica",
+   "workTitle": "Hermetica",
+   "press": false,
+   "isbn13": "9780521425438",
+   "market": "amazon.com",
+   "edition": "paperback en 9780521425438",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780521425438&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-mabinogion",
+   "workTitle": "The Mabinogion",
+   "press": false,
+   "isbn13": "9780199218783",
+   "market": "amazon.com",
+   "edition": "paperback en 9780199218783",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780199218783&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-histories",
+   "workTitle": "The Histories",
+   "press": false,
+   "isbn13": "9780143107545",
+   "market": "amazon.com",
+   "edition": "paperback en 9780143107545",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780143107545&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-worlds-religions",
+   "workTitle": "The World's Religions",
+   "press": false,
+   "isbn13": "9780061660184",
+   "market": "amazon.com",
+   "edition": "paperback en 9780061660184",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780061660184&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-varieties-of-religious-experience",
+   "workTitle": "The Varieties of Religious Experience",
+   "press": false,
+   "isbn13": "9780140390346",
+   "market": "amazon.com",
+   "edition": "paperback en 9780140390346",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780140390346&i=stripbooks&tag=…"
+  },
+  {
+   "work": "a-history-of-god",
+   "workTitle": "A History of God",
+   "press": false,
+   "isbn13": "9780345384560",
+   "market": "amazon.com",
+   "asin": "0345384563",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780345384560",
+   "class": "verified",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/History-God-000-Year-Judaism-Christianity/dp/0345384563?tag=…"
+  },
+  {
+   "work": "beyond-good-and-evil",
+   "workTitle": "Beyond Good and Evil",
+   "press": false,
+   "isbn13": "9780140449235",
+   "market": "amazon.com",
+   "edition": "paperback en 9780140449235",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780140449235&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-consolation-of-philosophy",
+   "workTitle": "The Consolation of Philosophy",
+   "press": false,
+   "isbn13": "9780140447804",
+   "market": "amazon.com",
+   "edition": "paperback en 9780140447804",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780140447804&i=stripbooks&tag=…"
+  },
+  {
+   "work": "discourses-and-selected-writings",
+   "workTitle": "Discourses and Selected Writings",
+   "press": false,
+   "isbn13": "9780140449464",
+   "market": "amazon.com",
+   "edition": "paperback en 9780140449464",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780140449464&i=stripbooks&tag=…"
+  },
+  {
+   "work": "tantra",
+   "workTitle": "Tantra",
+   "press": false,
+   "isbn13": "9781570623042",
+   "market": "amazon.com",
+   "edition": "paperback en 9781570623042",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9781570623042&i=stripbooks&tag=…"
+  },
+  {
+   "work": "what-the-buddha-taught",
+   "workTitle": "What the Buddha Taught",
+   "press": false,
+   "isbn13": "9780802130310",
+   "market": "amazon.com",
+   "asin": "0802130313",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780802130310",
+   "class": "verified",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/What-Buddha-Taught-Expanded-Dhammapada/dp/0802130313?tag=…"
+  },
+  {
+   "work": "being-peace",
+   "workTitle": "Being Peace",
+   "press": false,
+   "isbn13": "9781952692765",
+   "market": "amazon.com",
+   "edition": "paperback en 9781952692765",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9781952692765&i=stripbooks&tag=…"
+  },
+  {
+   "work": "full-catastrophe-living",
+   "workTitle": "Full Catastrophe Living",
+   "press": false,
+   "isbn13": "9780345536938",
+   "market": "amazon.com",
+   "edition": "paperback en 9780345536938",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780345536938&i=stripbooks&tag=…"
+  },
+  {
+   "work": "think-and-grow-rich",
+   "workTitle": "Think and Grow Rich",
+   "press": false,
+   "isbn13": "9781585424337",
+   "market": "amazon.com",
+   "asin": "1585424331",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9781585424337",
+   "class": "verified",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/Think-Grow-Rich-Landmark-Bestseller/dp/1585424331?tag=…"
+  },
+  {
+   "work": "the-lord-of-the-rings",
+   "workTitle": "The Lord of the Rings",
+   "press": false,
+   "isbn13": "9780618640157",
+   "market": "amazon.com",
+   "edition": "paperback en 9780618640157",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780618640157&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-two-towers",
+   "workTitle": "The Two Towers",
+   "press": false,
+   "isbn13": "9780547928203",
+   "market": "amazon.com",
+   "edition": "paperback en 9780547928203",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780547928203&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-silmarillion",
+   "workTitle": "The Silmarillion",
+   "press": false,
+   "isbn13": "9780618126989",
+   "market": "amazon.com",
+   "edition": "paperback en 9780618126989",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=9780618126989&i=stripbooks&tag=…"
+  },
+  {
+   "work": "anansi-boys",
+   "workTitle": "Anansi Boys",
+   "press": false,
+   "isbn13": "9780061342394",
+   "market": "amazon.com",
+   "asin": "0061342394",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780061342394",
+   "class": "verified",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/Anansi-Boys-Neil-Gaiman/dp/0061342394?tag=…"
   }
  ]
 }

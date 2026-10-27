@@ -98,6 +98,18 @@ ok((await pg.locator('summary').first().textContent()).length > 0 && (await pg.l
 await pg.goto(url('book/index.html') + '?s=does-not-exist'); await pg.waitForTimeout(500);
 ok(/not found/i.test(await pg.locator('[data-dyn-status]').textContent()), 'unknown slug: clear "not found" message');
 ok(errs.length === 0, `no JS errors${errs.length ? ': ' + errs[0] : ''}`);
+// mobile width: no horizontal scroll, pager and results usable
+{
+  const mctx = await browser.newContext({ viewport: { width: 390, height: 844 }, isMobile: true }); const mp = await mctx.newPage(); const merrs = []; mp.on('pageerror', (e) => merrs.push(e.message)); await mp.route(/fonts\.(googleapis|gstatic)/, (r) => r.abort());
+  const hs = () => mp.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1);
+  await mp.goto(url('books/index.html')); ok(!(await hs()), '[mobile] books/ (first page + pager): no horizontal scroll');
+  const pg2 = mp.locator('[data-pager] a').first(); const bb = await mp.locator('[data-pager] li a, [data-pager] > a').first().boundingBox();
+  ok(bb && bb.height >= 44 && bb.width >= 44, `[mobile] pager links are at least 44px tap targets (${Math.round(bb.width)}x${Math.round(bb.height)})`);
+  await mp.goto(url('books/page/2/index.html')); ok(!(await hs()), '[mobile] books/page/2: no horizontal scroll');
+  await mp.goto(url('search/index.html') + '?q=magic'); await mp.waitForTimeout(600); ok(!(await hs()) && (await mp.locator('.grid:not([hidden]) > .card').count()) > 0, '[mobile] search results: cards drawn, no horizontal scroll');
+  await mp.goto(url('book/index.html') + '?s=' + encodeURIComponent(dynW.slug)); await mp.waitForSelector('h1'); ok(!(await hs()), '[mobile] dynamic book view: no horizontal scroll');
+  ok(merrs.length === 0, '[mobile] no JS errors'); await mctx.close();
+}
 await browser.close();
 console.log(state.fails ? `\n${state.fails} check(s) FAILED, ${state.passes} passed` : `\nAll ${state.passes} scale checks passed`);
 process.exit(state.fails ? 1 : 0);
