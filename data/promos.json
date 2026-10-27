@@ -17,15 +17,15 @@
       "blurb": "IOSutra is our AI-powered business software platform for wellness and abundance. It is a separate product from this bookstore.",
       "badges": {
         "nvidiaInception": {
-          "enabled": false,
-          "asset": null,
-          "altText": "NVIDIA Inception Program member",
-          "displayHeightPx": 56,
+          "enabled": true,
+          "asset": "nvidia-inception-program-badge-rgb-1c-blk-for-screen.svg",
+          "altText": "NVIDIA Inception Program badge",
+          "displayHeightPx": 99,
           "clearSpacePx": 12,
-          "licenseConfirmed": false,
-          "guidelinesUrl": null,
-          "guidelinesReviewedOn": null,
-          "note": "BLOCKED: no official NVIDIA Inception asset or Inception-specific branding guidance is available to this project. NVIDIA's general logo page says its logo may not be distorted, recoloured, stylised or rearranged, may only be used as expressly authorised in writing, and that use of the NVIDIA logo can imply partnership or endorsement; its older partner guidelines say to use NVIDIA-provided badge assets under the guideline issued to the member. The NVIDIA panel visible in the owner's artwork is part of a composite image, not an NVIDIA-supplied file, so it is NOT reused. Until the owner supplies the official Inception badge from the Inception member portal together with its usage terms (and written approval if required), the site shows only the plain-text membership statement. To enable: place the file in assets-src/partner/, set asset, licenseConfirmed true, guidelinesUrl and guidelinesReviewedOn."
+          "licenseConfirmed": true,
+          "guidelinesUrl": "https://www.nvidia.com/en-us/about-nvidia/legal-info/logo-brand-usage/",
+          "guidelinesReviewedOn": "2026-10-27",
+          "note": "Official NVIDIA Inception Program badge supplied by the owner from NVIDIA's member resources, copied byte-for-byte (SVG, unmodified; checked with cmp). IMPORTANT: the file supplied is the ONE-COLOUR BLACK variant (nvidia-inception-program-badge-rgb-1c-blk-for-screen.svg), not the full-colour 'nvidia-inception-program-badge-rgb-for-screen.svg' the owner asked for; the full-colour file and the Inception-specific guidelines document were not in the upload. Displayed at the same height as the IOSutra panel (99 px), so never larger, with its own built-in margin plus the site's clear space. licenseConfirmed is owner-asserted. guidelinesUrl is NVIDIA's general logo and brand page, which is all that could be read; the Inception badge guidelines PDF still needs to be checked, including the required trademark attribution wording (the current line, 'NVIDIA and NVIDIA Inception are trademarks of NVIDIA Corporation.', is a standard form and is still marked needs-confirmation). To switch to the full-colour badge, copy that file into assets-src/partner/ and change `asset` here."
         }
       },
       "headline": "Wellness and AI Technology",

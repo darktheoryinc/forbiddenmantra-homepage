@@ -416,3 +416,8 @@ button[type=submit],.btn{background:var(--gold);color:#183F3B}
 a.io-tile-img:hover,a.io-tile-img:focus-visible{outline:3px solid #fff;outline-offset:2px}
 .io-pending{margin:0 auto 14px;max-width:60ch;font-size:13px;line-height:1.45;color:#EFD79C;border:1px dashed rgba(239,215,156,.6);border-radius:6px;padding:6px 10px}
 @media(max-width:600px){.io-tiles:has(.io-tile-img){width:auto;max-width:100%}.io-tile-img{width:auto}.io-tile-img img{margin:0 auto}}
+
+/* Official NVIDIA badge (SVG, unmodified) beside the IOSutra panel: same height, so never larger; no recolouring or stretching */
+.io-tile-nv{padding:0;min-width:0;background:transparent;border:0;display:block;line-height:0}
+.io-tile-nv img{display:block;height:99px;width:auto;max-width:100%}
+@media(max-width:700px){.io-tiles:has(.io-tile-nv){flex-direction:column;align-items:center}.io-tile-nv img{height:auto;width:min(229px,100%)}}
