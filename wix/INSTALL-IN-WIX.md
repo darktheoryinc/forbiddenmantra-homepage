@@ -12,10 +12,10 @@ Your earlier homepage was one HTML file pasted into a Wix HTML iframe. The books
 ## Part 1: get a working preview (about 5 minutes, free)
 1. Download the file (exact link):
    `https://github.com/darktheoryinc/forbiddenmantra-homepage/raw/claude/gallant-archimedes-ocwf9s/wix/forbiddenmantra-site-for-hosting.zip`
-   It must be **3,648,435 bytes (about 3.6 MB)** and start with the letters `PK`. If it is tiny, or opens as a web page, it was not downloaded correctly: use the link above (the "raw" link, not the normal file page), or use step 1b.
+   It must be **3,653,414 bytes (about 3.7 MB)** and start with the letters `PK`. If it is tiny, or opens as a web page, it was not downloaded correctly: use the link above (the "raw" link, not the normal file page), or use step 1b.
    * **Check it (Windows):** open Command Prompt in the Downloads folder and run
      `certutil -hashfile forbiddenmantra-site-for-hosting.zip SHA256`
-     The result must be `22e04e00b8e1e2f9…` (the full value is in `wix/forbiddenmantra-site-for-hosting.zip.sha256`).
+     The result must be `e555cf458c7cd04a…` (the full value is in `wix/forbiddenmantra-site-for-hosting.zip.sha256`).
    * **1b. No ZIP needed:** on the repository page choose branch `claude/gallant-archimedes-ocwf9s`, then Code > Download ZIP, extract it, and use the folder `wix/hosting/` inside. It holds the identical files.
 2. Go to **Netlify Drop** (app.netlify.com/drop). Drag in **either** the ZIP **or** the extracted folder (`wix/hosting/`, whose top level contains `index.html`). If the ZIP is refused, extract it and drag the folder instead.
 3. Netlify gives you an address like `https://something.netlify.app`. Open it and look around. It should show the bookstore with the IOSutra section and the full-colour NVIDIA badge.
@@ -30,7 +30,7 @@ Your earlier homepage was one HTML file pasted into a Wix HTML iframe. The books
 10. When satisfied, **you** press Publish in Wix. To undo, unpublish or restore the duplicate.
 
 ## What is verified, and what is not
-* **Verified here** (`node scripts/verify-wix-package.mjs`, 53 checks, including the security gate and the browser tests running under the package's security headers): the ZIP is real and non-empty, extracts to identical files with two independent tools (Info-ZIP and Java), has `index.html` at the top, all 520 files present, all 48,710 internal links, images and scripts resolve; all 192 books and 223 editions have pages; served over HTTP in a real browser on desktop and mobile with no failed requests or JavaScript errors: homepage, search, librarian, categories, authors, series, guides, legal pages, language menu, IOSutra artwork and full-colour NVIDIA badge. Cross-origin iframe test: `node test/verify-wix-embed.mjs` (41 checks).
+* **Verified here** (`node scripts/verify-wix-package.mjs`, 55 checks, including the security gate and the browser tests running under the package's security headers): the ZIP is real and non-empty, extracts to identical files with two independent tools (Info-ZIP and Java), has `index.html` at the top, all 520 files present, all 48,710 internal links, images and scripts resolve; all 192 books and 223 editions have pages; served over HTTP in a real browser on desktop and mobile with no failed requests or JavaScript errors: homepage, search, librarian, categories, authors, series, guides, legal pages, language menu, IOSutra artwork and full-colour NVIDIA badge. Cross-origin iframe test: `node test/verify-wix-embed.mjs` (45 checks).
 * **Not verified:** I cannot reach Netlify or Wix from my environment, so I did not upload to Netlify or open your Wix editor. The ZIP meets the Netlify Drop requirement as I understand it (a standard ZIP with `index.html` at the top), but I have not seen Netlify accept it.
 * **Amazon links:** 220 buy buttons on book pages; every amazon.com link carries `tag=darktheoryinc-20` (85 go to a product page, 135 are an ISBN search); 2 amazon.co.uk links are correctly untagged. Product links have not been checked live.
 

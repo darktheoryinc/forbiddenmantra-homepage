@@ -46,13 +46,14 @@
   var body = h('div', { 'class': 'lib-body', id: 'lib-body' }, [avatar, display]);
   var panel = h('section', { 'class': 'lib-panel', role: 'complementary', 'aria-label': 'Digital librarian', lang: 'en' }, [head, body]);
   var chip = h('button', { type: 'button', 'class': 'lib-chip', 'aria-label': 'Open the digital librarian', 'aria-expanded': 'false', 'aria-controls': 'lib-body' }, [h('span', { 'class': 'lib-chip-i' }), h('span', { 'class': 'lib-chip-t' }, ['Librarian'])]);
-  chip.firstChild.innerHTML = lotus.replace(/lg1/g, 'lc1').replace(/lg2/g, 'lc2');
+  if (art) { var pt = chip.firstChild; pt.className = 'lib-chip-i lib-chip-face'; pt.style.backgroundImage = 'url(' + art.src + ')'; }
+  else chip.firstChild.innerHTML = lotus.replace(/lg1/g, 'lc1').replace(/lg2/g, 'lc2');
   host.appendChild(panel); host.appendChild(chip); host.hidden = false;
   host.className = 'lib';
 
   // ---------- visibility: open / minimized / off (remembered per browser) ----------
-  /* She starts as a small button so she never covers page content; a search (or a click) opens her. Only the visitor's own Minimize/open/hide choices are remembered. */
-  var mode = store.get() || (cfg.startMinimized === false ? 'open' : 'min'), auto = false, autoY = 0, autoTimer = null;
+  /* Original behaviour: open on larger screens (greeting + panel), a small button on narrow screens. If she opened by herself she tucks away when the visitor scrolls on, so she never sits over page content. Only the visitor's own Minimize/open/hide choices are remembered. */
+  var saved = store.get(), mode = saved || (window.innerWidth < (cfg.startMinimizedBelowPx || 700) ? 'min' : 'open'), auto = false, autoY = 0, autoTimer = null;
   function setMode(m, focus, isAuto) {
     mode = m; auto = isAuto === true && m === 'open'; if (!isAuto) store.set(m); /* isAuto === 'init' restores the saved state without re-saving it */ if (auto) autoY = window.pageYOffset;
     host.setAttribute('data-mode', m);
@@ -189,6 +190,7 @@
   if (urlQ && mode !== 'off') submitQuery(urlQ, { source: 'url' });
   else { say('Hello. Ask me for a title, author, subject or ISBN.'); if (mode === 'open') { setState('greet'); } }
   setMode(mode, false, 'init');
+  if (!saved && mode === 'open') { auto = true; autoY = window.pageYOffset; }
   if (!urlQ && mode === 'open') setState('greet');
 
   // ---------- public extension points ----------

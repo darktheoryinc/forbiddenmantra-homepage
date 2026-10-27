@@ -76,8 +76,11 @@ if (browser) for (const [name, vp, mobile] of [['desktop', { width: 1366, height
   await pg.route(/^https?:\/\/(?!127\.0\.0\.1)/, (x) => x.abort());
   const T = `[${name}]`, go = async (p) => { await pg.goto(base + p); await pg.waitForTimeout(350); };
   await go(''); ok(/Forbidden\s*Mantra\s*Press/.test((await pg.locator('h1').first().innerText())) && await pg.locator('[data-home=fmp] .card').count() === 8, `${T} homepage over HTTP: hero, 8 own titles, featured shelves`);
+  await pg.waitForFunction(() => { const i = document.querySelector('.lib-img'); return !i || i.closest('.lib-panel').hidden || (i.complete && i.naturalWidth > 0); }, null, { timeout: 4000 }).catch(() => {});
+  const lv = await pg.evaluate(() => { const panel = document.querySelector('.lib-panel'), chip = document.querySelector('.lib-chip'); const el = !panel.hidden ? panel : chip; const r = el.getBoundingClientRect(); return { mode: document.getElementById('fm-librarian').dataset.mode, inside: r.right <= innerWidth + 1 && r.bottom <= innerHeight + 1 && r.width > 30, face: /librarian\.webp/.test(getComputedStyle(document.querySelector('.lib-chip-face')).backgroundImage), art: [...document.querySelectorAll('.lib-img')].every((i) => i.complete && i.naturalWidth > 0) || panel.hidden }; });
+  ok(lv.inside && lv.face && lv.art && lv.mode === (mobile ? 'min' : 'open'), `${T} the digital librarian is on screen at load (${mobile ? 'small button with her face' : 'floating panel with her character'}), art loads under the security headers`);
   await pg.locator('.promo-band').scrollIntoViewIfNeeded(); await pg.waitForTimeout(600);
-  const im = await pg.evaluate(() => [...document.images].filter((i) => i.currentSrc).map((i) => [i.currentSrc.split('/').pop(), i.complete && i.naturalWidth > 0]));
+  const im = await pg.evaluate(() => [...document.images].filter((i) => i.currentSrc && !i.closest('.lib-panel[hidden]')).map((i) => [i.currentSrc.split('/').pop(), i.complete && i.naturalWidth > 0]));
   ok(['iosutra-wellness-ai.webp', ...(nvOK ? ['iosutra-inception-member.webp', 'nvidia-inception-program-badge-rgb-for-screen.svg'] : [])].every((n) => im.some(([f, g]) => f === n && g)) && im.every(([, g]) => g), `${T} IOSutra artwork${nvOK ? ', IOSutra panel and full-colour NVIDIA badge' : ' (NVIDIA items withheld)'} render; no broken images`);
   ok(await pg.locator('.io-cta').getAttribute('href').then((h) => h.startsWith('https://iosutra.com/')), `${T} Visit IOSutra links to iosutra.com`);
   // search + librarian

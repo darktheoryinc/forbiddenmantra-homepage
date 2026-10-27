@@ -428,3 +428,6 @@ a.io-tile-img:hover,a.io-tile-img:focus-visible{outline:3px solid #fff;outline-o
 .lib-chip{padding:0 8px}
 .lib-chip:hover,.lib-chip:focus-visible{padding:0 16px 0 8px}
 .lp-status{font-size:15px;line-height:1.4;margin:6px 0 10px;color:var(--text)}.lp-status a{color:var(--gold-l)}
+
+/* the minimized button shows HER (the head from the character artwork), not a generic icon */
+.lib-chip-face{border-radius:50%;background-size:420% auto;background-position:46% 0;background-repeat:no-repeat;background-color:#EFE9DF;border:2px solid #D8B46B;width:40px;height:40px}

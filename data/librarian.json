@@ -43,5 +43,5 @@
     "provider": null,
     "note": "Phase 3: AI answers. Register a provider with FMLibrarian.setAnswerProvider(fn). Nothing calls any API, and no key or recurring cost exists."
   },
-  "startMinimized": true
+  "startMinimizedBelowPx": 700
 }

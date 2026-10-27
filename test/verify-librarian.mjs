@@ -21,7 +21,12 @@ if (browser) for (const [name, vp, mobile] of [['desktop', { width: 1366, height
   const T = `[${name}]`, u = urlOf(SITE);
   await pg.goto(u('index.html')); await pg.waitForTimeout(500);
   const mode = await pg.locator('#fm-librarian').getAttribute('data-mode');
-  ok(mode === 'min' && await pg.locator('.lib-chip').isVisible() && !(await pg.locator('.lib-panel').isVisible()), `${T} starts as a small round button, so no panel covers the page (${mode})`);
+  if (mobile) ok(mode === 'min' && await pg.locator('.lib-chip').isVisible() && await pg.evaluate(() => /librarian\.webp/.test(getComputedStyle(document.querySelector('.lib-chip-face')).backgroundImage)), `${T} narrow screen: a small button showing HER face (${mode})`);
+  else {
+    ok(mode === 'open' && await pg.locator('.lib-panel').isVisible() && await pg.locator('.lib-img').evaluate((i) => i.complete && i.naturalWidth > 0), `${T} she is on screen at load: floating panel with her character image (${mode})`);
+    ok(/Hello\. Ask me for a title, author, subject or ISBN\./.test(await pg.locator('.lib-status').textContent()) && await pg.evaluate(() => { const r = document.querySelector('.lib-panel').getBoundingClientRect(); return r.right <= innerWidth && r.bottom <= innerHeight && r.left > innerWidth / 2; }), `${T} original greeting shown; panel sits in the bottom-right corner, fully inside the window`);
+    ok(await pg.locator('.lib-btn').isVisible() && await pg.locator('.lib-btn').textContent() === 'Minimize', `${T} Minimize control present`);
+  }
   await pg.locator('.promo-band').scrollIntoViewIfNeeded(); await pg.waitForTimeout(200);
   const ov = await pg.evaluate(() => { const a = document.querySelector('.io-card').getBoundingClientRect(), b = document.querySelector('.lib-chip').getBoundingClientRect(); const w = Math.max(0, Math.min(a.right, b.right) - Math.max(a.left, b.left)), h = Math.max(0, Math.min(a.bottom, b.bottom) - Math.max(a.top, b.top)); return { w, h, chipW: b.width }; });
   ok(mobile ? ov.chipW <= 60 : ov.w * ov.h === 0, `${T} the librarian button does not overlap the IOSutra section (${mobile ? 'button is ' + Math.round(ov.chipW) + 'px wide' : 'no intersection'})`);
@@ -45,8 +50,8 @@ if (browser) for (const [name, vp, mobile] of [['desktop', { width: 1366, height
   await pg.evaluate(() => window.scrollBy(0, 600)); await pg.waitForTimeout(300);
   ok(await pg.locator('#fm-librarian').getAttribute('data-mode') === 'min', `${T} scrolling on tucks an automatically opened librarian away`);
   await pg.evaluate(() => window.scrollTo(0, 0)); await pg.reload(); await pg.waitForTimeout(400);
-  ok(await pg.locator('#fm-librarian').getAttribute('data-mode') === 'min', `${T} automatic opening is not remembered`);
-  await pg.locator('.lib-chip').click(); await pg.waitForTimeout(150);
+  ok(await pg.evaluate(() => localStorage.getItem('fm-librarian')) === null, `${T} automatic opening/tucking is not remembered`);
+  if (await pg.locator('.lib-chip').isVisible()) { await pg.locator('.lib-chip').click(); await pg.waitForTimeout(150); }
   // minimize / restore / hide with the keyboard
   await pg.locator('.lib-btn').focus(); await pg.keyboard.press('Enter'); await pg.waitForTimeout(150);
   ok(!(await pg.locator('.lib-panel').isVisible()) && await pg.locator('.lib-chip').isVisible() && await pg.evaluate(() => document.activeElement.className) === 'lib-chip', `${T} Minimize collapses to a small button and moves focus to it`);
