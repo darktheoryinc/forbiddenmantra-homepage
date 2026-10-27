@@ -1,0 +1,5 @@
+{
+  "_doc": "Cover manifest. One entry per EDITION whose cover image has been obtained legally and matched to that exact edition. Empty today: no cover has been supplied or licensed. Add entries only with scripts/covers.mjs add (it validates the match and records the rights evidence). Never add a cover by editing this file by hand, never from a scraped page, and never one whose rights are unconfirmed.",
+  "schema": 1,
+  "covers": []
+}

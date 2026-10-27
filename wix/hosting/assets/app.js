@@ -62,7 +62,7 @@
     wrap.appendChild(head); wrap.appendChild(h('p', { 'class': 'lede-sm' }, [tr('lang_home_note', { lang: name })]));
     var grid = h('div', { 'class': 'grid' }, L.books.map(function (b) {
       return h('article', { 'class': 'card' }, [
-        h('a', { 'class': 'card-cover', href: './' + b.h, tabindex: '-1', 'aria-hidden': 'true' }, [coverEl(b.t, b.a.split(', ')[0], !!b.p)]),
+        h('a', { 'class': 'card-cover', href: './' + b.h, tabindex: '-1', 'aria-hidden': 'true' }, [coverEl(b.t, b.a.split(', ')[0], !!b.p, false, b.v || null, './')]),
         h('div', { 'class': 'card-body' }, [b.p ? h('span', { 'class': 'badge badge-fmp' }, ['Forbidden Mantra Press']) : null,
           h('h3', { 'class': 'card-title' }, [h('a', { href: './' + b.h, lang: ui }, [b.t])]), h('p', { 'class': 'card-author' }, [b.a]), h('p', { 'class': 'card-meta' }, [name])])]);
     }));
@@ -199,7 +199,8 @@
   function h(tag, attrs, kids) { var e = document.createElement(tag); for (var k in (attrs || {})) if (attrs[k] != null && attrs[k] !== false) e.setAttribute(k, attrs[k]); (kids || []).forEach(function (c) { if (c != null) e.appendChild(typeof c === 'string' ? document.createTextNode(c) : c); }); return e; }
   function slugify(x) { return x.normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/&/g, ' and ').replace(/[’'`]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, ''); }
   function hue(x) { var v = 0; for (var i = 0; i < x.length; i++) v = (v * 31 + x.charCodeAt(i)) >>> 0; return v % 360; }
-  function coverEl(title, author, press, big) {
+  function coverEl(title, author, press, big, cv, root) {
+    if (cv) { var base = (root || './') + 'assets/covers/' + cv[0]; return h('div', { 'class': 'cover cover-photo' + (big ? ' cover-lg' : '') + (press ? ' cover-fmp' : '') }, [h('img', { src: base + '-240.webp', srcset: cv[3] ? base + '-240.webp 240w, ' + base + '-480.webp 480w' : null, sizes: cv[3] ? (big ? '300px' : '(max-width:760px) 45vw, 240px') : null, width: cv[1], height: cv[2], alt: 'Cover of ' + title + ' by ' + author, loading: 'lazy', decoding: 'async' })]); }
     return h('div', { 'class': 'cover' + (big ? ' cover-lg' : '') + (press ? ' cover-fmp' : ''), style: '--h:' + (press ? 38 : hue(title)), role: 'img', 'aria-label': 'Placeholder cover for ' + title + '. Official cover art is shown only where a permitted source is connected.' }, [h('span', { 'class': 'cover-title' }, [title]), h('span', { 'class': 'cover-author' }, [author])]);
   }
   var MANIFEST = null;
@@ -224,7 +225,7 @@
 
     function decode(r, c, i) {
       return { slug: r[0], title: r[1], sub: r[2], authors: r[3].split(';'), ap: r[4], dep: r[5], trd: r[6], lvl: M.levels[r[7]], press: r[8] ? 'fmp' : 'outside',
-        ed: r[9].map(function (e) { return { l: e[0].map(function (x) { return M.langs[x]; }), f: M.fmts[e[1]], t: e[2] }; }), qx: r[10], dyn: r[11], ser: r[12], chunk: c, i: i };
+        ed: r[9].map(function (e) { return { l: e[0].map(function (x) { return M.langs[x]; }), f: M.fmts[e[1]], t: e[2] }; }), qx: r[10], dyn: r[11], ser: r[12], cv: r[13] || null, chunk: c, i: i };
     }
     function inScope(o) {
       switch (scope.k) {
@@ -319,7 +320,7 @@
       var link = (o.dyn ? root + 'book/index.html?s=' + encodeURIComponent(o.slug) : root + 'books/' + o.slug + '/index.html') + (eff ? '#lang-' + eff : '');
       var au = []; o.authors.forEach(function (n, i) { if (i) au.push(', '); au.push(authorLink(M, root, o, i)); });
       return h('article', { 'class': 'card' }, [
-        h('a', { 'class': 'card-cover', href: link, tabindex: '-1', 'aria-hidden': 'true' }, [coverEl(title, o.authors[0], o.press === 'fmp')]),
+        h('a', { 'class': 'card-cover', href: link, tabindex: '-1', 'aria-hidden': 'true' }, [coverEl(title, o.authors[0], o.press === 'fmp', false, o.cv, root)]),
         h('div', { 'class': 'card-body' }, [
           o.press === 'fmp' ? h('span', { 'class': 'badge badge-fmp' }, ['Forbidden Mantra Press']) : null,
           h(hl, { 'class': 'card-title' }, [h('a', { href: link, lang: alt ? eff : null }, [title])]),
@@ -393,7 +394,7 @@
       });
     }).catch(function () { fail('The catalogue index could not be loaded.'); });
     function render(M, r) {
-      var o = { slug: r[0], title: r[1], sub: r[2], authors: r[3].split(';'), ap: r[4], dep: r[5], trd: r[6], lvl: M.levels[r[7]], press: r[8] ? 'fmp' : 'outside', ser: r[12] }, P = r[13];
+      var o = { slug: r[0], title: r[1], sub: r[2], authors: r[3].split(';'), ap: r[4], dep: r[5], trd: r[6], lvl: M.levels[r[7]], press: r[8] ? 'fmp' : 'outside', ser: r[12] }, P = r[14];
       document.title = o.title + ' · Forbidden Mantra Press';
       var au = []; o.authors.forEach(function (n, i) { if (i) au.push(', '); au.push(authorLink(M, root, o, i)); });
       var edEls = P.eds.map(function (e) {
@@ -410,7 +411,7 @@
       });
       wrap.textContent = '';
       wrap.appendChild(h('div', { 'class': 'book' }, [
-        h('div', { 'class': 'book-cover' }, [coverEl(o.title, o.authors[0], o.press === 'fmp', true)]),
+        h('div', { 'class': 'book-cover' }, [coverEl(o.title, o.authors[0], o.press === 'fmp', true, r[13] || null, root)]),
         h('div', { 'class': 'book-main' }, [
           h('h1', {}, [o.title]), o.sub ? h('p', { 'class': 'subtitle' }, [o.sub]) : null, h('p', { 'class': 'byline' }, ['by '].concat(au)),
           o.ser ? h('p', { 'class': 'series' }, [(o.ser[1] ? 'Book ' + o.ser[1] + ' of ' : 'Part of ') + o.ser[0]]) : null,
@@ -420,7 +421,7 @@
         ])
       ]));
       var more = h('div', {}, [h('h2', {}, [tr('h_editions')]), h('p', { 'class': 'note-sm' }, ['Each edition has its own identifier and retailer destination.']), h('div', { 'class': 'editions' }, edEls),
-        h('p', { 'class': 'note-sm' }, ['Prices, availability, ratings and cover images are not shown: they appear only through a permitted, maintained source, and none is connected to this preview yet.']),
+        h('p', { 'class': 'note-sm' }, ['Prices, availability and ratings are not shown: they appear only through a permitted, maintained source, and none is connected to this preview yet. A cover image appears only where we hold a verified permission for that exact edition.']),
         h('details', { 'class': 'sources' }, [h('summary', {}, [tr('h_sources')]), h('ul', {}, P.src.concat([].concat.apply([], P.eds.map(function (e) { return e.s; }))).map(function (x) { return h('li', {}, [/^https?:/.test(x[1]) ? h('a', { href: x[1], rel: 'noopener noreferrer' }, [x[0]]) : x[0], ', supports ' + (x[3] || 'edition details') + '; accessed ' + x[2] + '.']); }))]),
         h('p', { 'class': 'disclosure sm', lang: 'en' }, [M.disclosure])]);
       wrap.parentNode.appendChild(h('div', { 'class': 'wrap' }, [more]));

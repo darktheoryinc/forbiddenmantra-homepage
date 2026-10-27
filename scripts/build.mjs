@@ -9,6 +9,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { slugify } from './lib.mjs';
 import * as promo from './promo.mjs';
+import { loadCovers } from './covers.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const esc = (s = '') => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
@@ -152,6 +153,13 @@ const worksIn = (deptId) => cat.works.filter((w) => w.subjects.includes(deptId))
 const worksInHub = (hubId) => cat.works.filter((w) => w.subjects.some((s) => dept.get(s).hubs.includes(hubId)));
 const LIB = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/librarian.json'), 'utf8'));
 const LIB_ART = LIB.art?.file && LIB.art.rightsConfirmed && fs.existsSync(path.join(ROOT, 'assets-src/librarian', LIB.art.file)) ? LIB.art : null;
+// ---------- verified covers (data/covers.json; empty until covers are supplied or licensed; see docs/COVERS.md) ----------
+const COVERS = loadCovers();
+if (COVERS.errors.length) { console.error('COVER MANIFEST ERRORS:\n  ' + COVERS.errors.join('\n  ')); process.exit(1); }
+const coverOfWork = new Map(), coverOfEdition = new Map();
+for (const c of COVERS.entries) coverOfEdition.set(`${c.work.slug}/${c.edition.id}`, c);
+for (const w of cat.works) { const c = w.editions.map((e) => coverOfEdition.get(`${w.slug}/${e.id}`)).find(Boolean); if (c) coverOfWork.set(w.slug, c); }
+const coverRec = (c) => (c ? [c.key, c.sizes?.[240]?.w ?? 240, c.sizes?.[240]?.h ?? 360, c.has480 ? 1 : 0] : 0);
 const NETWORK = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/network.json'), 'utf8')).sites;
 const NICHES = fs.existsSync(path.join(ROOT, DATA, 'niches.json')) ? JSON.parse(fs.readFileSync(path.join(ROOT, DATA, 'niches.json'), 'utf8')).niches : [];
 const nicheById = new Map(NICHES.map((n) => [n.id, n]));
@@ -219,7 +227,12 @@ function retailers(work, ed) {
 
 // ---------- components ----------
 function hashHue(s) { let h = 0; for (const c of s) h = (h * 31 + c.charCodeAt(0)) >>> 0; return h % 360; }
-function cover(w, big = false, title = w.title) {
+function cover(w, big = false, title = w.title, entry = coverOfWork.get(w.slug)) {
+  if (entry) {
+    const k = entry.key, w240 = entry.sizes?.[240]?.w ?? 240, h240 = entry.sizes?.[240]?.h ?? 360, base = `${ROOT_PREFIX}assets/covers/${k}`;
+    const alt = `Cover of ${title} by ${w.authors.join(', ')} (${entry.edition.format} edition)`;
+    return `<div class="cover cover-photo${big ? ' cover-lg' : ''}${w.press ? ' cover-fmp' : ''}"><img src="${base}-240.webp"${entry.has480 ? ` srcset="${base}-240.webp 240w, ${base}-480.webp 480w" sizes="${big ? '300px' : '(max-width:760px) 45vw, 240px'}"` : ''} width="${w240}" height="${h240}" alt="${esc(alt)}" loading="lazy" decoding="async"></div>`;
+  }
   const hue = w.press ? 38 : hashHue(w.title);
   return `<div class="cover${big ? ' cover-lg' : ''}${w.press ? ' cover-fmp' : ''}" style="--h:${hue}" role="img" aria-label="Placeholder cover for ${esc(title)}. Official cover art is shown only where a permitted source is connected."><span class="cover-title">${esc(title)}</span><span class="cover-author">${esc(w.authors[0])}</span></div>`;
 }
@@ -402,6 +415,12 @@ fs.mkdirSync(path.join(OUT, 'assets'), { recursive: true });
 fs.copyFileSync(path.join(ROOT, 'scripts/assets/style.css'), path.join(OUT, 'assets/style.css'));
 fs.copyFileSync(path.join(ROOT, 'scripts/assets/app.js'), path.join(OUT, 'assets/app.js'));
 fs.copyFileSync(path.join(ROOT, 'scripts/assets/librarian.js'), path.join(OUT, 'assets/librarian.js'));
+if (COVERS.entries.length) {
+  const covDir = process.env.FM_COVERS_OPT ? path.resolve(process.env.FM_COVERS_OPT) : path.join(ROOT, 'assets-src/covers-opt');
+  fs.mkdirSync(path.join(OUT, 'assets/covers'), { recursive: true });
+  for (const c of COVERS.entries) for (const wd of c.has480 ? [240, 480] : [240]) fs.copyFileSync(path.join(covDir, `${c.key}-${wd}.webp`), path.join(OUT, 'assets/covers', `${c.key}-${wd}.webp`));
+  console.log(`covers: ${COVERS.entries.length} verified cover(s) published`);
+}
 if (process.env.FM_WIX) fs.copyFileSync(path.join(ROOT, 'scripts/assets/wix-embed.js'), path.join(OUT, 'assets/wix-embed.js'));
 if (LIB_ART) { fs.mkdirSync(path.join(OUT, 'assets/librarian'), { recursive: true }); fs.copyFileSync(path.join(ROOT, 'assets-src/librarian', LIB_ART.file), path.join(OUT, 'assets/librarian', LIB_ART.file)); }
 const i18nOut = { dict: Object.fromEntries(Object.entries(locales).map(([c, d]) => [c, Object.fromEntries(Object.entries(d).filter(([k]) => k !== '_meta'))])), langs: Object.fromEntries(langReg.languages.map((l) => [l.code, { name: l.name, endonym: l.endonym, dir: l.dir }])), ui: uiLocales };
@@ -431,7 +450,7 @@ const featuredForHub = (hubId, n = 4, exclude = new Set()) => {
 const LANGBOOKS = Object.fromEntries(stocked.map((l) => {
   const pool = cat.works.filter((w) => w.editions.some((e) => edLangs(e).includes(l.code)));
   const top = pickFeatured(pool, 8, false);
-  return [l.code, { n: nEds(l.code), works: nWorks(l.code), href: `languages/${l.code}/index.html`, books: top.map((w) => { const e = w.editions.find((x) => edLangs(x).includes(l.code)); return { s: w.slug, t: e?.title || w.title, a: w.authors.join(', '), p: w.press ? 1 : 0, h: (isDyn(w) ? `book/index.html?s=${encodeURIComponent(w.slug)}` : `books/${w.slug}/index.html`) + `#lang-${l.code}`, c: w.subjects[0] }; }) }];
+  return [l.code, { n: nEds(l.code), works: nWorks(l.code), href: `languages/${l.code}/index.html`, books: top.map((w) => { const e = w.editions.find((x) => edLangs(x).includes(l.code)); return { s: w.slug, t: e?.title || w.title, a: w.authors.join(', '), p: w.press ? 1 : 0, h: (isDyn(w) ? `book/index.html?s=${encodeURIComponent(w.slug)}` : `books/${w.slug}/index.html`) + `#lang-${l.code}`, c: w.subjects[0], v: coverRec(coverOfEdition.get(`${w.slug}/${e.id}`)) }; }) }];
 }));
 const fmpWorks = cat.works.filter((w) => w.press === 'fmp');
 const outside = cat.works.filter((w) => !w.press);
@@ -728,6 +747,7 @@ for (const w of cat.works) {
     const rs = retailers(w, e); rs.forEach((r) => r.market && markets.add(r.market));
     const L = LANG.get(e.language);
     return `<section class="edition" id="ed-${esc(e.id ?? e.isbn13 ?? e.asin ?? '')}" aria-label="${esc(tax.formats[e.format])} edition, ${esc(L?.name ?? e.language)}${e.year ? ', ' + e.year : ''}${e.isbn13 ? ', ISBN ' + e.isbn13 : ''}" lang="${e.language}" dir="${L?.dir ?? 'ltr'}">
+    ${(() => { const ec = coverOfEdition.get(`${w.slug}/${e.id}`); return ec && ec.key !== coverOfWork.get(w.slug)?.key ? `<div class="ed-cover">${cover(w, false, e.title ?? w.title, ec)}</div>` : ''; })()}
     <${eh}><span data-i18n="fmt_${e.format}">${esc(tax.formats[e.format])}</span> · <span lang="en" dir="ltr">${esc(L?.endonym ?? e.language)}${L && L.endonym !== L.name ? ` (${esc(L.name)})` : ''}</span></${eh}>
     ${e.title ? `<p class="ed-title">${esc(e.title)}${e.subtitle ? `: <em>${esc(e.subtitle)}</em>` : ''}</p>` : ''}
     <dl lang="en" dir="ltr">${e.translator ? `<dt data-i18n="l_translator">Translator</dt><dd>${esc(e.translator)}</dd>` : ''}${e.publisher ? `<dt data-i18n="l_publisher">Publisher</dt><dd>${esc(e.publisher)}</dd>` : ''}${e.year ? `<dt data-i18n="l_year">Year</dt><dd>${e.year}</dd>` : ''}${e.isbn13 ? `<dt>ISBN-13</dt><dd>${e.isbn13}</dd>` : ''}${e.isbn10 ? `<dt>ISBN-10</dt><dd>${e.isbn10}</dd>` : ''}${e.asin ? `<dt>ASIN</dt><dd>${e.asin}</dd>` : ''}${e.alsoLanguages?.length ? `<dt>Also in</dt><dd>${e.alsoLanguages.map((c) => esc(LANG.get(c)?.name ?? c)).join(', ')}</dd>` : ''}</dl>
@@ -768,7 +788,7 @@ for (const w of cat.works) {
   <h2 data-i18n="h_editions">${esc(en.h_editions)}</h2>
   <p class="note-sm">Editions of the same work are grouped here${multi ? ', by the language each is published in' : ''}. Each has its own identifier and retailer destination.</p>
   ${editionsHtml}
-  <p class="note-sm">Prices, availability, ratings and cover images are not shown: they appear only through a permitted, maintained source, and none is connected to this preview yet.</p>
+  <p class="note-sm">Prices, availability and ratings are not shown: they appear only through a permitted, maintained source, and none is connected to this preview yet. A cover image appears only where we hold a verified permission for that exact edition.</p>
   <details class="sources"><summary data-i18n="h_sources">${esc(en.h_sources)}</summary><ul>${w.sources.map((s) => `<li>${/^https?:/.test(s.url) ? `<a href="${esc(s.url)}" rel="noopener noreferrer">${esc(s.label)}</a>` : esc(s.label)}, supports ${esc(s.supports)}; accessed ${s.accessed}.</li>`).join('')}${edSources.flatMap((e) => e.sources.map((s) => `<li>${esc(LANG.get(e.language)?.name ?? e.language)} ${esc(tax.formats[e.format].toLowerCase())} edition: ${/^https?:/.test(s.url) ? `<a href="${esc(s.url)}" rel="noopener noreferrer">${esc(s.label)}</a>` : esc(s.label)}, supports ${esc(s.supports ?? 'edition details')}; accessed ${s.accessed}.</li>`)).join('')}</ul></details>
   <p class="disclosure sm" lang="en">${esc(cfg.disclosure)}</p>
   ${[...markets].filter((m) => AFF.marketplaces[m]?.disclosure).map((m) => `<p class="disclosure sm" lang="en">${esc(AFF.marketplaces[m].disclosure)}</p>`).join('')}
@@ -794,7 +814,7 @@ function dynPayload(w) {
       b: retailers(w, e).map((r) => [r.label, r.url, r.affiliate ? 1 : 0, r.market ?? '', r.status, r.library ? 1 : 0, r.kind]), s: (e.sources ?? []).map((x) => [x.label, x.url, x.accessed, x.supports ?? '']) })) };
 }
 const recOf = (w) => [w.slug, w.title, w.subtitle ?? '', w.authors.join(';'), w.authors.map((n) => (authorPage.has(slugify(n)) ? 1 : 0)).join(''), w.subjects.map((x) => dIx.get(x)), (w.tradition ?? []).map((x) => tIx.get(x)),
-  vIx.get(w.level), w.press ? 1 : 0, w.editions.map((e) => [edLangs(e).map((c) => lIx.get(c)), fIx.get(e.format), e.title ?? '']), qxOf(w), isDyn(w) ? 1 : 0, w.series?.name ? [w.series.name, w.series.number ?? 0] : 0];
+  vIx.get(w.level), w.press ? 1 : 0, w.editions.map((e) => [edLangs(e).map((c) => lIx.get(c)), fIx.get(e.format), e.title ?? '']), qxOf(w), isDyn(w) ? 1 : 0, w.series?.name ? [w.series.name, w.series.number ?? 0] : 0, coverRec(coverOfWork.get(w.slug))];
 const fnv = (x) => { let h = 0x811c9dc5; for (let i = 0; i < x.length; i++) { h ^= x.charCodeAt(i); h = Math.imul(h, 0x01000193) >>> 0; } return h; };
 const nDyn = cat.works.filter(isDyn).length, DYN_SHARDS = Math.max(1, Math.min(256, Math.ceil(nDyn / BUILD.dynShardTarget)));
 const dynShard = (slug) => (fnv(slug) % DYN_SHARDS).toString(16).padStart(2, '0');

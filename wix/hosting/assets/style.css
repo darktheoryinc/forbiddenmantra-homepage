@@ -431,3 +431,9 @@ a.io-tile-img:hover,a.io-tile-img:focus-visible{outline:3px solid #fff;outline-o
 
 /* the minimized button shows HER (the head from the character artwork), not a generic icon */
 .lib-chip-face{border-radius:50%;background-size:420% auto;background-position:46% 0;background-repeat:no-repeat;background-color:#EFE9DF;border:2px solid #D8B46B;width:40px;height:40px}
+
+/* real covers (only ever shown for a verified, rights-recorded, exactly matched edition) */
+.cover-photo{padding:0;background:#fff;aspect-ratio:2/3;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.cover-photo img{display:block;width:100%;height:100%;object-fit:contain}
+.cover-photo.cover-lg{max-width:300px}
+.ed-cover{float:inline-end;width:84px;margin:0 0 8px 12px}.ed-cover .cover{box-shadow:0 3px 8px rgba(24,63,59,.18)}

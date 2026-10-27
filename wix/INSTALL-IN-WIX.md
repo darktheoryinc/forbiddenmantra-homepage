@@ -12,10 +12,10 @@ Your earlier homepage was one HTML file pasted into a Wix HTML iframe. The books
 ## Part 1: get a working preview (about 5 minutes, free)
 1. Download the file (exact link):
    `https://github.com/darktheoryinc/forbiddenmantra-homepage/raw/claude/gallant-archimedes-ocwf9s/wix/forbiddenmantra-site-for-hosting.zip`
-   It must be **3,653,414 bytes (about 3.7 MB)** and start with the letters `PK`. If it is tiny, or opens as a web page, it was not downloaded correctly: use the link above (the "raw" link, not the normal file page), or use step 1b.
+   It must be **3,659,532 bytes (about 3.7 MB)** and start with the letters `PK`. If it is tiny, or opens as a web page, it was not downloaded correctly: use the link above (the "raw" link, not the normal file page), or use step 1b.
    * **Check it (Windows):** open Command Prompt in the Downloads folder and run
      `certutil -hashfile forbiddenmantra-site-for-hosting.zip SHA256`
-     The result must be `e555cf458c7cd04a…` (the full value is in `wix/forbiddenmantra-site-for-hosting.zip.sha256`).
+     The result must be `8ca2aa3c7786a861…` (the full value is in `wix/forbiddenmantra-site-for-hosting.zip.sha256`).
    * **1b. No ZIP needed:** on the repository page choose branch `claude/gallant-archimedes-ocwf9s`, then Code > Download ZIP, extract it, and use the folder `wix/hosting/` inside. It holds the identical files.
 2. Go to **Netlify Drop** (app.netlify.com/drop). Drag in **either** the ZIP **or** the extracted folder (`wix/hosting/`, whose top level contains `index.html`). If the ZIP is refused, extract it and drag the folder instead.
 3. Netlify gives you an address like `https://something.netlify.app`. Open it and look around. It should show the bookstore with the IOSutra section and the full-colour NVIDIA badge.
@@ -42,7 +42,7 @@ Your earlier homepage was one HTML file pasted into a Wix HTML iframe. The books
 * Amazon, IOSutra and NVIDIA links open in a new tab, because Amazon refuses to load inside a frame.
 
 ## Open launch blockers (not granted, not assumed)
-1. **Book covers:** none of the 192 books has a cover image; each shows a typographic title card. No cover source is connected, and none were invented. See `docs/LAUNCH-READINESS.md`.
+1. **Book covers:** none of the 192 books has a cover image; each shows a typographic title card. No cover source is connected, and none were invented. See `docs/COVERS.md` (pipeline, what I need from you) and `docs/COVER-AUDIT.md`.
 2. **Verified purchase links:** 76 books have a product link, 116 an ISBN search link, and 10 of your own 12 titles have no ISBN/ASIN.
 3. **Approvals only you can give:** NVIDIA membership statement and trademark wording (send the Inception guidelines PDF); IOSutra promotion approved; legal pages reviewed; final web address; commercial-use and likeness permissions for the IOSutra artwork and the librarian character. The production build refuses to run until they are recorded.
 
