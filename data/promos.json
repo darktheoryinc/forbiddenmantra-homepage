@@ -1,15 +1,20 @@
 {
   "_doc": "Cross-promotion registry. Brands, the CLAIMS made about them (each with a verification status and sourcing), and PROMOS that place a brand on a surface. Rendering is done by scripts/promo.mjs, which is independent of the bookstore so other sites can reuse it. A production build (FM_ENV=production) refuses to run while any placed promo is unapproved, has no URL, or relies on an unverified claim or an unauthorised badge. See docs/CROSS-PROMOTION.md.",
   "schema": 1,
-  "site": { "id": "forbidden-mantra-press", "name": "Forbidden Mantra Press", "utmSource": "forbidden-mantra-press", "utmMedium": "cross-promo" },
+  "site": {
+    "id": "forbidden-mantra-press",
+    "name": "Forbidden Mantra Press",
+    "utmSource": "forbidden-mantra-press",
+    "utmMedium": "cross-promo"
+  },
   "brands": {
     "iosutra": {
       "name": "IOSutra",
       "descriptor": "AI-powered business software platform",
       "relationship": "Owned by the same team as Forbidden Mantra Press, and a separate product from this bookstore.",
-      "url": null,
-      "urlNote": "Not provided. A web search on 2026-10-26 found no IOSutra site (an unrelated company, Sutra.AI, appears in results and must not be used). Set `url` to the real address; it must be https.",
-      "blurb": "IOSutra is our AI-powered business software platform. It is a separate product from this bookstore. Visit IOSutra to see what it does.",
+      "url": "https://iosutra.com",
+      "urlNote": "Supplied by the site owner on 2026-10-27 (task message). The unrelated company Sutra.AI must never be used.",
+      "blurb": "IOSutra is our AI-powered business software platform for wellness and abundance. It is a separate product from this bookstore.",
       "badges": {
         "nvidiaInception": {
           "enabled": false,
@@ -20,8 +25,26 @@
           "licenseConfirmed": false,
           "guidelinesUrl": null,
           "guidelinesReviewedOn": null,
-          "note": "No authorised badge asset is in this repository and no Inception-specific usage terms were found. Enabling requires ALL of: asset file present under assets-src/partner/, licenseConfirmed=true (written authorisation or the member-portal terms), guidelinesUrl and guidelinesReviewedOn set. Never recreate, redraw, recolour or restyle NVIDIA marks, and do not use NVIDIA's green or imitate its visual style."
+          "note": "No authorised badge asset is in this repository and no Inception-specific usage terms were found. Enabling requires ALL of: asset file present under assets-src/partner/, licenseConfirmed=true (written authorisation or the member-portal terms), guidelinesUrl and guidelinesReviewedOn set. Never recreate, redraw, recolour or restyle NVIDIA marks, and do not use NVIDIA's green or imitate its visual style. The NVIDIA tile on the site is text-only: NVIDIA’s logo and the Inception badge are NVIDIA trademarks and must be used only from NVIDIA’s own brand assets under its guidelines. Obtain them from the NVIDIA Inception member portal, read the usage terms, then fill in asset, licenseConfirmed, guidelinesUrl and guidelinesReviewedOn."
         }
+      },
+      "headline": "Wellness and AI Technology",
+      "subline": "The future of health, wellbeing and abundance",
+      "hero": {
+        "enabled": false,
+        "asset": null,
+        "width": 1640,
+        "height": 330,
+        "altText": "A man meditating on a misty hillside at sunrise beside a friendly humanoid AI figure, surrounded by glowing network lines and floating data panels.",
+        "rightsConfirmed": false,
+        "note": "The Wellness and AI Technology artwork was supplied in a chat message and is not in this repository. Save the artwork-only part (the photograph, without the title text or logo tiles, 1640x330 or wider, WebP or JPEG under 200 KB) as assets-src/partner/iosutra-wellness-ai.webp, then set asset, enabled:true and rightsConfirmed:true once the owner confirms the image is licensed for this site. Until then a decorative placeholder gradient is shown."
+      },
+      "logo": {
+        "enabled": false,
+        "asset": null,
+        "altText": "IOSutra",
+        "rightsConfirmed": false,
+        "note": "No IOSutra logo file is in the repository. A plain-text wordmark in IOSutra blue is shown instead. Add the owner-supplied logo under assets-src/partner/ and enable it here."
       }
     }
   },
@@ -40,7 +63,15 @@
         "Read the program terms or trademark licence you accepted and confirm this wording and any required attribution are permitted.",
         "Record the date and what you checked in `evidence`/`verifiedOn`, then set status to \"verified\"."
       ],
-      "prohibitedVariants": ["powered by NVIDIA", "NVIDIA partner", "NVIDIA-certified", "NVIDIA-backed", "in partnership with NVIDIA", "NVIDIA-approved", "endorsed by NVIDIA"]
+      "prohibitedVariants": [
+        "powered by NVIDIA",
+        "NVIDIA partner",
+        "NVIDIA-certified",
+        "NVIDIA-backed",
+        "in partnership with NVIDIA",
+        "NVIDIA-approved",
+        "endorsed by NVIDIA"
+      ]
     },
     {
       "id": "no-endorsement",
@@ -61,11 +92,17 @@
       "assertedBy": "standard trademark attribution, wording not checked against program terms",
       "evidence": null,
       "verifiedOn": null,
-      "beforeLaunch": ["Confirm the exact attribution wording the Inception terms require (if any) and update this text."]
+      "beforeLaunch": [
+        "Confirm the exact attribution wording the Inception terms require (if any) and update this text."
+      ]
     }
   ],
   "externalLinks": {
-    "nvidiaInception": { "label": "About the NVIDIA Inception program", "url": "https://www.nvidia.com/en-us/startups/", "source": "NVIDIA official startups page, found by web search 2026-10-26; not fetched from this environment" }
+    "nvidiaInception": {
+      "label": "About the NVIDIA Inception program",
+      "url": "https://www.nvidia.com/en-us/startups/",
+      "source": "NVIDIA official startups page, found by web search 2026-10-26; not fetched from this environment"
+    }
   },
   "promos": [
     {
@@ -73,12 +110,23 @@
       "brand": "iosutra",
       "approved": false,
       "approvalNote": "Preview only. Owner approval needed before production.",
-      "claims": ["nvidia-inception-membership", "no-endorsement", "nvidia-trademark-notice"],
+      "claims": [
+        "nvidia-inception-membership",
+        "no-endorsement",
+        "nvidia-trademark-notice"
+      ],
       "utmCampaign": "iosutra-technology",
       "placements": {
-        "home": { "enabled": true },
-        "footer": { "enabled": true },
-        "page": { "enabled": true, "path": "technology/" }
+        "home": {
+          "enabled": true
+        },
+        "footer": {
+          "enabled": true
+        },
+        "page": {
+          "enabled": true,
+          "path": "technology/"
+        }
       }
     }
   ]

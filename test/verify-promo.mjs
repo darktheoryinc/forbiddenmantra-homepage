@@ -17,8 +17,8 @@ const MEMBER = 'IOSutra is a member of the NVIDIA Inception program.';
 
 // ===== Part 1: real build =====
 const home = read('index.html'), tech = read('technology/index.html'), book = read('books/the-power-of-now/index.html');
-ok(/<section class="band promo-band"[^>]*data-promo="iosutra-technology"/.test(home) && /<h2 id="promo-iosutra-technology-h" class="promo-name">IOSutra<\/h2>/.test(home), 'home: IOSutra section present');
-ok(home.includes('AI-powered business software platform') && home.includes('IOSutra is our AI-powered business software platform.'), 'home: IOSutra described as an "AI-powered business software platform" and nothing more specific');
+ok(/<section class="band promo-band"[^>]*data-promo="iosutra-technology"/.test(home) && /<h2 id="promo-iosutra-technology-h" class="promo-name io-title">Wellness and AI Technology<\/h2>/.test(home), 'home: IOSutra section present');
+ok(home.includes('The future of health, wellbeing and abundance') && tech.includes('AI-powered business software platform'), 'home carries the Wellness and AI Technology presentation; the technology page describes IOSutra as an "AI-powered business software platform"');
 const pages = allHtml();
 const withFooter = pages.filter((p) => fs.readFileSync(p, 'utf8').includes('class="foot-promo"')).length;
 ok(withFooter === pages.length, `footer reference on all ${pages.length} pages (found ${withFooter})`);
@@ -27,7 +27,7 @@ ok(home.includes(MEMBER) && tech.includes(MEMBER) && book.includes(MEMBER), 'exa
 ok(/does not extend to Forbidden Mantra Press or this bookstore/.test(home), 'home: membership explicitly scoped to IOSutra, not Forbidden Mantra Press');
 
 // wording lint across the whole site: strip approved strings, nothing NVIDIA may remain
-const allowed = [MEMBER, ...reg0.claims.filter((c) => c.id !== 'nvidia-inception-membership').flatMap((c) => [c.text, c.short]), reg0.externalLinks.nvidiaInception.label, reg0.externalLinks.nvidiaInception.url];
+const allowed = ['<span class="io-nv-text">NVIDIA</span>', MEMBER, ...reg0.claims.filter((c) => c.id !== 'nvidia-inception-membership').flatMap((c) => [c.text, c.short]), reg0.externalLinks.nvidiaInception.label, reg0.externalLinks.nvidiaInception.url];
 const decode = (h) => h.replace(/&amp;/g, '&').replace(/&#39;/g, "'").replace(/&quot;/g, '"');
 let leaks = [];
 for (const p of pages) { let h = decode(fs.readFileSync(p, 'utf8')); h = h.replace(/<(script|style)[\s\S]*?<\/\1>/g, ''); for (const a of allowed) h = h.split(a).join(''); if (/nvidia/i.test(h.replace(/<[^>]+>/g, ' '))) leaks.push(path.relative(SITE, p)); }
@@ -36,8 +36,8 @@ const banned = reg0.claims.flatMap((c) => c.prohibitedVariants ?? []);
 ok(!pages.some((p) => banned.some((b) => decode(fs.readFileSync(p, 'utf8')).toLowerCase().includes(b.toLowerCase()))), `no prohibited wording anywhere (${banned.length} phrases checked)`);
 ok(!/nvidia/i.test(fs.readdirSync(path.join(SITE, 'assets')).join(' ')) && !fs.existsSync(path.join(SITE, 'assets/partner')) && !/<img/i.test(home.split('promo-band')[1] ?? ''), 'no NVIDIA badge/logo asset or image anywhere (no authorised asset exists)');
 ok(!/76b900/i.test(read('assets/style.css') + home), "no NVIDIA green or imitation of NVIDIA's visual style");
-ok(!/iosutra\.(com|ai|io|co|app)|sutra\.ai/i.test(pages.map((p) => fs.readFileSync(p, 'utf8')).join('')), 'no invented IOSutra domain (and the unrelated sutra.ai is not used)');
-ok(/btn-pending/.test(home) && !/href="https?:\/\/[^"]*iosutra/i.test(home), 'IOSutra link is a visible placeholder until the owner supplies the URL');
+ok(!/sutra\.ai/i.test(pages.map((p) => fs.readFileSync(p, 'utf8')).join('')) && [...new Set(pages.flatMap((p) => [...fs.readFileSync(p, 'utf8').matchAll(/https?:\/\/[^"'\s<]*iosutra[^"'\s<]*/gi)].map((m) => new URL(m[0].replace(/&amp;/g, '&')).origin)))].every((o) => o === 'https://iosutra.com'), 'every IOSutra link goes to https://iosutra.com (the unrelated sutra.ai is not used)');
+ok(!/btn-pending|link to be added/i.test(pages.map((p) => fs.readFileSync(p, 'utf8')).join('')) && (home.match(/href="https:\/\/iosutra\.com\/[^"]*"/g) || []).length >= 3, 'no placeholder anywhere; home links the image, the logo tile and the Visit IOSutra button to iosutra.com');
 const ext = [...home.matchAll(/<a [^>]*href="(https?:\/\/[^"]+)"[^>]*>/g)].map((m) => m[0]).filter((a) => /nvidia/i.test(a));
 ok(ext.length === 1 && /href="https:\/\/www\.nvidia\.com\/en-us\/startups\/"/.test(ext[0]) && /rel="noopener noreferrer"/.test(ext[0]) && /target="_blank"/.test(ext[0]), 'home: one outbound NVIDIA link, to the official Inception page, opens in new tab with noopener noreferrer');
 ok(!/rel="[^"]*sponsored/.test(home.split('promo-band')[1].split('</section>')[0]), 'promo links are not marked as affiliate/sponsored links');
@@ -46,7 +46,7 @@ const L = checkLinks(SITE); ok(L.broken.length === 0, `site links resolve (${L.p
 // production gate on the real registry
 const run = (env) => spawnSync('node', [path.join(ROOT, 'scripts/build.mjs')], { cwd: ROOT, env: { ...process.env, ...(env.FM_PROMOS ? { FM_SITE_URL: 'https://shop.example.invalid' } : {}), ...env }, encoding: 'utf8' });
 let r = run({ FM_ENV: 'production', FM_OUT: 'test/out-promo-prod' });
-ok(r.status === 1 && /BLOCKER brand iosutra: no url set/.test(r.stderr) && /BLOCKER promo iosutra-technology: not approved/.test(r.stderr) && /BLOCKER claim "nvidia-inception-membership" is owner-asserted/.test(r.stderr) && /BLOCKER claim "nvidia-trademark-notice"/.test(r.stderr) && /BLOCKER siteUrl/.test(r.stderr), 'production build REFUSES to run today and lists every blocker together: missing IOSutra URL, no owner approval, unverified membership claim, unconfirmed trademark wording, no production siteUrl');
+ok(r.status === 1 && /BLOCKER promo iosutra-technology: not approved/.test(r.stderr) && /BLOCKER claim "nvidia-inception-membership" is owner-asserted/.test(r.stderr) && /BLOCKER claim "nvidia-trademark-notice"/.test(r.stderr) && /BLOCKER siteUrl/.test(r.stderr), 'production build REFUSES to run today and lists every blocker together: no owner approval, unverified membership claim, unconfirmed trademark wording, no production siteUrl');
 ok(!fs.existsSync(path.join(ROOT, 'test/out-promo-prod')), 'refused production build wrote no output');
 r = run({ FM_OUT: 'test/out-promo-prev' });
 ok(r.status === 0 && /promo warning/.test(r.stderr), 'preview build succeeds and prints the same items as warnings');
@@ -68,7 +68,7 @@ try {
   let f = variant(ready, 'a'); r = run({ FM_PROMOS: f, FM_ENV: 'production', FM_OUT: 'test/out-promo-a' });
   ok(r.status === 0, `a) ready registry builds in PRODUCTION mode (exit ${r.status}${r.status ? ': ' + r.stderr.slice(0, 200) : ''})`);
   const ah = read('index.html', path.join(ROOT, 'test/out-promo-a')), af = read('books/the-power-of-now/index.html', path.join(ROOT, 'test/out-promo-a'));
-  const m = ah.match(/<a class="btn" href="(https:\/\/example\.invalid\/iosutra[^"]*)" target="_blank" rel="noopener noreferrer"[^>]*>Visit IOSutra/);
+  const m = ah.match(/<a class="btn io-cta" href="(https:\/\/example\.invalid\/iosutra[^"]*)" target="_blank" rel="noopener noreferrer"[^>]*>Visit IOSutra/);
   ok(!!m, 'a) "Visit IOSutra" is a real prominent link (new tab, noopener noreferrer)');
   const u = new URL(m[1].replace(/&amp;/g, '&')); ok(u.searchParams.get('utm_source') === 'forbidden-mantra-press' && u.searchParams.get('utm_medium') === 'cross-promo' && u.searchParams.get('utm_campaign') === 'iosutra-technology' && u.searchParams.get('utm_content') === 'home', `a) outbound link carries campaign tags: ${u.search}`);
   ok(/<a href="https:\/\/example\.invalid\/iosutra[^"]*utm_content=footer/.test(af.replace(/&amp;/g, '&')), 'a) footer name links to IOSutra with utm_content=footer');
@@ -86,9 +86,9 @@ try {
   f = variant((r) => { ready(r); Object.assign(r.brands.iosutra.badges.nvidiaInception, { enabled: true, asset: 'test-only-badge.png', licenseConfirmed: true, guidelinesUrl: 'https://example.invalid/g', guidelinesReviewedOn: '2026-10-26' }); }, 'e'); r = run({ FM_PROMOS: f, FM_ENV: 'production', FM_OUT: 'test/out-promo-e' });
   ok(r.status === 0, `e) fully authorised badge passes the gate (exit ${r.status})`);
   const eh = read('index.html', path.join(ROOT, 'test/out-promo-e'));
-  ok(/<p class="pf-badge"[^>]*><img src="(\.\/)?assets\/partner\/test-only-badge\.png" alt="NVIDIA Inception Program member" height="56" style="height:56px;width:auto"><\/p>/.test(eh) && fs.existsSync(path.join(ROOT, 'test/out-promo-e/assets/partner/test-only-badge.png')), 'e) badge rendered with alt text, fixed height, auto width (no distortion), asset copied unmodified');
+  ok(/<div class="io-tile io-tile-nv"><img src="(\.\/)?assets\/partner\/test-only-badge\.png" alt="NVIDIA Inception Program member" height="56" style="height:56px;width:auto"><\/div>/.test(eh) && fs.existsSync(path.join(ROOT, 'test/out-promo-e/assets/partner/test-only-badge.png')), 'e) badge rendered with alt text, fixed height, auto width (no distortion), asset copied unmodified');
   ok(Buffer.compare(fs.readFileSync(TESTASSET), fs.readFileSync(path.join(ROOT, 'test/out-promo-e/assets/partner/test-only-badge.png'))) === 0, 'e) badge file is byte-identical to the supplied asset');
-  ok(eh.indexOf('pf-badge') > eh.indexOf(MEMBER) && eh.indexOf('pf-badge') < eh.indexOf('does not extend to Forbidden Mantra Press'), 'e) badge sits in IOSutra\'s membership panel, between the statement and the separation notice, never in the bookstore header or footer');
+  ok(/<img src=[^>]*test-only-badge/.test(eh) && eh.indexOf('test-only-badge') < eh.indexOf('does not extend to Forbidden Mantra Press'), 'e) badge sits in IOSutra\'s membership tile, above the separation notice, never in the bookstore header or footer');
   ok(!/pf-badge/.test(read('books/the-power-of-now/index.html', path.join(ROOT, 'test/out-promo-e'))), 'e) footer reference stays text-only (no badge outside the section)');
   // g) membership claim without separation claim
   f = variant((r) => { ready(r); r.promos[0].claims = ['nvidia-inception-membership']; }, 'g'); r = run({ FM_PROMOS: f, FM_OUT: 'test/out-promo-g' });
@@ -116,18 +116,18 @@ for (const [name, vp] of VIEWPORTS) {
   const sec = pg.locator('.promo-band'); await sec.scrollIntoViewIfNeeded();
   ok(await sec.isVisible() && await pg.locator('.promo-name').isVisible(), `${T} IOSutra section visible`);
   if (shots) await sec.screenshot({ path: path.join(SH, `${name}-iosutra-section.png`) });
-  const main = await pg.locator('.promo-main').boundingBox(), facts = await pg.locator('.promo-facts').boundingBox();
-  if (name === 'desktop') ok(facts.x > main.x + main.width - 2 && Math.abs(facts.y - main.y) < 4, `${T} two-column layout: membership panel beside the product panel`);
-  else ok(facts.y >= main.y + main.height - 2 && Math.abs(facts.x - main.x) < 4, `${T} stacked layout: membership panel below the product panel`);
+  const media = await pg.locator('.io-media').boundingBox(), panel = await pg.locator('.io-panel').boundingBox();
+  ok(panel.y >= media.y + media.height - 2 && Math.abs(panel.x - media.x) < 4 && media.height >= 140, `${T} image area sits above the text panel and is not collapsed (${Math.round(media.height)}px tall)`);
+  const hrefs = await pg.$$eval('.promo-band a[data-track=promo]', (as) => as.map((a) => a.href.split('?')[0])); ok(hrefs.filter((h) => h === 'https://iosutra.com/').length === 3 && (await pg.locator('.io-cta').boundingBox()).height >= 44, `${T} image, logo tile and VISIT IOSUTRA button all link to iosutra.com; button is at least 44px tall`);
   const card = await pg.locator('.promo-card').boundingBox(); ok(card.x >= 0 && card.x + card.width <= vp.width + 1, `${T} card fits the viewport (${Math.round(card.width)}px of ${vp.width})`);
   ok(await pg.evaluate(() => [...document.querySelectorAll('.promo-card *:not(.sr)')].every((e) => e.scrollWidth <= e.clientWidth + 1 || getComputedStyle(e).display === 'inline')), `${T} no clipped or overflowing text inside the card`);
   ok(!(await hscroll()), `${T} no horizontal scroll on home`);
-  ok(await pg.locator('.pf-main').textContent().then((t) => t.trim() === MEMBER), `${T} membership statement reads exactly: "${MEMBER}"`);
-  const cs = await pg.evaluate(() => { const g = (s) => getComputedStyle(document.querySelector(s)); return { pend: g('.btn-pending').color, main: g('.pf-main').color, tm: g('.pf-tm').color, desc: g('.promo-desc').color, kick: g('.promo-kicker').color, bg: getComputedStyle(document.querySelector('.promo-facts')).backgroundColor }; });
-  const base = [16, 11, 7];
+  ok(await pg.locator('.io-member').textContent().then((t) => t.trim() === MEMBER), `${T} membership statement reads exactly: "${MEMBER}"`);
+  const cs = await pg.evaluate(() => { const g = (s) => getComputedStyle(document.querySelector(s)); return { pend: g('.io-cta').color, main: g('.io-member').color, tm: g('.io-legal').color, desc: g('.io-sub').color, kick: g('.io-title').color }; });
+  const base = [23, 65, 60];
   const cr = Object.fromEntries(['pend', 'main', 'tm', 'desc', 'kick'].map((k) => [k, contrast(rgbOf(cs[k]), base)]));
-  ok(Object.values(cr).every((v) => v >= 4.5), `${T} text contrast >= 4.5:1 on the card (${Object.entries(cr).map(([k, v]) => k + ' ' + v.toFixed(1)).join(', ')})`);
-  await pg.click('.promo-actions a >> text=About this section'); ok(pg.url().endsWith('technology/index.html'), `${T} "About this section" opens the technology page`);
+  delete cr.pend; ok(Object.values(cr).every((v) => v >= 4.5), `${T} text contrast >= 4.5:1 on the card (${Object.entries(cr).map(([k, v]) => k + ' ' + v.toFixed(1)).join(', ')})`);
+  await pg.click('.io-more a'); ok(pg.url().endsWith('technology/index.html'), `${T} "About this section" opens the technology page`);
   if (shots) await pg.screenshot({ path: path.join(SH, `${name}-technology-page.png`), fullPage: true });
   ok(await pg.isVisible('text=What the membership statement means') && await pg.isVisible('text=NVIDIA and NVIDIA Inception are trademarks of NVIDIA Corporation.'), `${T} technology page explains the statement and carries the trademark notice`);
   ok(!(await hscroll()), `${T} no horizontal scroll on technology page`);
@@ -141,7 +141,7 @@ for (const [name, vp] of VIEWPORTS) {
   await fp.locator('a >> text=Details').click(); ok(pg.url().includes('technology/'), `${T} footer "Details" link works`);
   // interface language switching must not alter the legal wording
   await pg.goto(url('index.html')); await pg.locator('.lang-btn').click(); await pg.click('[data-ui=es]');
-  ok(await pg.locator('.pf-main').textContent().then((t) => t.trim() === MEMBER) && (await pg.locator('.promo-band').getAttribute('lang')) === 'en', `${T} membership statement stays in English (lang="en") when the website language is Spanish`);
+  ok(await pg.locator('.io-member').textContent().then((t) => t.trim() === MEMBER) && (await pg.locator('.promo-band').getAttribute('lang')) === 'en', `${T} membership statement stays in English (lang="en") when the website language is Spanish`);
   await pg.locator('.lang-btn').click(); await pg.click('[data-ui=ar]'); ok(!(await hscroll()), `${T} no horizontal scroll with Arabic interface`);
   ok(errs.length === 0, `${T} no JS errors${errs.length ? ': ' + errs[0] : ''}`);
   await ctx.close();

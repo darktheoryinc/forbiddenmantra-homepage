@@ -63,7 +63,7 @@ const ANALYTICS = (() => {
   }
 }
 const promoView = (placement, id = 'iosutra-technology') => promo.resolve(PROMOS, id, placement, { root: ROOT });
-const promoCtx = { href: (p) => href(p), asset: (f) => `${ROOT_PREFIX}assets/partner/${f}` };
+const promoCtx = { root: ROOT, href: (p) => href(p), asset: (f) => `${ROOT_PREFIX}assets/partner/${f}` };
 const placed = (placement) => PROMOS.promos.filter((p) => p.placements?.[placement]?.enabled);
 
 // ---------- languages & interface locales ----------
@@ -567,20 +567,20 @@ for (const n of NICHES) {
   const shelf = (d) => { const list = ws.filter((w) => w.subjects.includes(d)).sort((a, b) => (b.press ? 1 : 0) - (a.press ? 1 : 0)).slice(0, 8); return '<section class="niche-shelf" aria-labelledby="sh-' + d + '"><div class="split"><h3 id="sh-' + d + '">' + esc(dept.get(d).name) + '</h3><a href="' + href('topics/' + d + '/') + '">All ' + fmt(worksIn(d).length, 'book', 'books') + ' →</a></div><div class="shelf" role="region" tabindex="0" aria-label="' + esc(dept.get(d).name) + ' books, scroll sideways">' + list.map((w) => card(w, null, 'h4', true)).join('') + '</div></section>'; };
   const arts = [...new Map(n.departments.flatMap((d) => artFor.topic(d)).map((a) => [a.slug, a])).values()];
   const relDeps = [...new Set([...n.departments, ...(n.relatedDepartments ?? [])])].filter((d) => worksIn(d).length);
-  const shelves = shelfDeps.length ? shelfDeps.map(shelf).join('') : '';
+  const shelves = () => (shelfDeps.length ? shelfDeps.map(shelf).join('') : '');
   listing({ rel: 'niches/' + n.id + '/', works: ws, scope: { k: 'depts', v: n.departments }, page: {
     title: n.name, desc: n.tagline, crumbs: [['Guides', 'niches/'], [n.name]],
     body: ({ grid: G, nav }) => '<section class="hero hero-sm niche-hero"><div class="wrap"><p class="eyebrow">Guide</p><h1>' + esc(n.name) + '</h1><p class="lede">' + esc(n.intro) + '</p><p class="hero-links"><span class="status">' + fmt(ws.length, 'book', 'books') + ' · ' + fmt(own.length, 'Forbidden Mantra Press title', 'Forbidden Mantra Press titles') + '</span></p></div></section>' +
       '<section class="band"><div class="wrap">' +
       (picks.length ? '<section class="niche-fmp" aria-labelledby="nf-h" data-own-section><h2 id="nf-h">From Forbidden Mantra Press</h2>' + (own.length ? '<p class="note-sm">Books published by us. Buying through the Amazon links below earns us both the publisher royalty and an affiliate commission.</p>' : '<p class="note-sm">' + esc(n.fmpFallbackNote) + '</p>') + '<div class="fmp-picks">' + picks.map((w) => '<div class="fmp-pick">' + card(w, null, 'h3', true) + '<p class="pick-buy">' + buyBtn(w) + '</p></div>').join('') + '</div></section>' : '') +
-      shelves +
+      shelves() +
       (authors.length ? '<h2>Featured authors</h2><ul class="chips">' + authors.map(([a, c]) => '<li><a href="' + authorHref(a) + '">' + esc(a) + '</a> <span>' + c + '</span></li>').join('') + '</ul>' : '') +
       (sers.length ? '<h2>Series</h2><ul class="chips">' + sers.map((x) => '<li><a href="' + href('series/' + x.sr.id + '/') + '">' + esc(x.sr.name) + '</a> <span>' + x.k + '</span></li>').join('') + '</ul>' : '') +
       '<h2>Browse and search this guide</h2>' + langChips(ws) + filterBar(ws, { subjects: false }) + G + nav + emptyMsg() +
       '<p class="note-sm" lang="en">' + esc(cfg.disclosure) + ' Purchase links are on each book page and are labelled.</p>' +
       '<h2>Related subjects</h2><ul class="chips">' + relDeps.map((d) => '<li><a href="' + href('topics/' + d + '/') + '">' + esc(dept.get(d).name) + '</a></li>').join('') + '</ul>' +
       ((n.related ?? []).length ? '<h2>Related guides</h2><ul class="chips">' + n.related.map((id) => nicheById.get(id)).filter(Boolean).map((x) => '<li><a href="' + href('niches/' + x.id + '/') + '">' + esc(x.name) + '</a></li>').join('') + '</ul>' : '') +
-      artBlock(arts, 6, '#n-' + n.id) + '</div></section>',
+      artBlock(arts, 6, '#t-' + n.departments[0]) + '</div></section>',
   }});
 }
 
@@ -801,6 +801,9 @@ for (const p of placed('page')) page(`${p.placements.page.path}index.html`, {
   body: () => promo.renderPage(promoView('page', p.id), promoCtx),
 });
 // authorised partner badge assets are copied only when the gate in scripts/promo.mjs allows them
+for (const b of Object.values(PROMOS.brands)) for (const bd of [b.hero, b.logo].filter(Boolean)) {
+  if (promo.assetState(bd, ROOT).ok) { fs.mkdirSync(path.join(OUT, 'assets/partner'), { recursive: true }); fs.copyFileSync(path.join(ROOT, 'assets-src/partner', bd.asset), path.join(OUT, 'assets/partner', bd.asset)); }
+}
 for (const b of Object.values(PROMOS.brands)) for (const bd of Object.values(b.badges ?? {})) {
   if (promo.badgeState(bd, ROOT).ok) { fs.mkdirSync(path.join(OUT, 'assets/partner'), { recursive: true }); fs.copyFileSync(path.join(ROOT, 'assets-src/partner', bd.asset), path.join(OUT, 'assets/partner', bd.asset)); }
 }

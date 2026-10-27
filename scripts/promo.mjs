@@ -76,37 +76,50 @@ export function resolve(reg, promoId, placement, { root } = {}) {
   };
 }
 
+// brand art (hero image / logo) is used only when the file exists and the owner has confirmed the rights
+export function assetState(a, root) {
+  if (!a?.enabled) return { ok: false, enabled: false };
+  if (!a.asset || !fs.existsSync(path.join(root, 'assets-src/partner', a.asset)) || a.rightsConfirmed !== true) return { ok: false, enabled: true };
+  return { ok: true, enabled: true };
+}
 const cta = (v, cls = 'btn') => v.url
-  ? `<a class="${cls}" href="${esc(v.url)}" target="_blank" rel="noopener noreferrer" data-track="promo" data-promo="${esc(v.promo.id)}" data-placement="${esc(v.placement)}">Visit ${esc(v.brand.name)}<span class="sr"> (opens in a new tab)</span></a>`
+  ? `<a class="${cls}" href="${esc(v.url)}" target="_blank" rel="noopener noreferrer" data-track="promo" data-promo="${esc(v.promo.id)}" data-placement="${esc(v.placement)}">Visit IOSutra<span class="sr"> (opens iosutra.com in a new tab)</span></a>`
   : `<span class="${cls} btn-pending" role="note">${esc(v.brand.name)} link to be added</span>`;
+const lnk = (v, placement, inner, cls, label) => v.url
+  ? `<a class="${cls}" href="${esc(tagUrl(v.brand.url, v.site, v.promo, placement))}" target="_blank" rel="noopener noreferrer" data-track="promo" data-promo="${esc(v.promo.id)}" data-placement="${esc(placement)}"${label ? ` aria-label="${esc(label)}"` : ''}>${inner}</a>`
+  : `<div class="${cls}">${inner}</div>`;
 
-function facts(v, { asset }) {
-  const member = v.claim('nvidia-inception-membership'), sep = v.claim('no-endorsement'), tm = v.claim('nvidia-trademark-notice');
+// IOSutra identity: dark-green panel with gold type, used by the home section and the technology page
+function card(v, { asset, root, big }) {
+  const hero = v.brand.hero, hs = assetState(hero, root), badge = v.badge, member = v.claim('nvidia-inception-membership'), sep = v.claim('no-endorsement'), tm = v.claim('nvidia-trademark-notice');
   const link = v.external?.nvidiaInception;
-  return `<div class="promo-facts" role="group" aria-label="Program membership">
-    <p class="pf-h">Program membership</p>
-    ${member ? `<p class="pf-main">${esc(member.text)}</p>` : ''}
-    ${v.badge ? `<p class="pf-badge" style="--pad:${v.badge.clearSpacePx}px"><img src="${esc(asset(v.badge.asset))}" alt="${esc(v.badge.altText)}" height="${v.badge.displayHeightPx}" style="height:${v.badge.displayHeightPx}px;width:auto"></p>` : ''}
-    ${sep ? `<p class="pf-note">${esc(sep.text)}</p>` : ''}
-    ${link ? `<p class="pf-link"><a href="${esc(link.url)}" target="_blank" rel="noopener noreferrer">${esc(link.label)}<span class="sr"> (opens in a new tab)</span></a></p>` : ''}
-    ${tm ? `<p class="pf-tm">${esc(tm.text)}</p>` : ''}
+  const wordmark = '<span class="io-wordmark" aria-hidden="true"><span class="io-mark"></span>IOSutra</span>';
+  const media = hs.ok
+    ? `<img src="${esc(asset(hero.asset))}" width="${hero.width}" height="${hero.height}" alt="${esc(hero.altText)}" loading="lazy" decoding="async">`
+    : `<span class="io-art" aria-hidden="true"></span>${wordmark.replace('aria-hidden="true"', '')}`;
+  return `<div class="promo-card io-card${big ? ' io-big' : ''}">
+    ${lnk(v, v.placement + '-image', media, 'io-media', 'IOSutra: ' + v.brand.headline + ' (opens iosutra.com in a new tab)')}
+    <div class="io-panel">
+      <h2 id="promo-${esc(v.promo.id)}-h" class="promo-name io-title">${esc(v.brand.headline)}</h2>
+      <p class="io-sub">${esc(v.brand.subline)}</p>
+      <div class="io-tiles" role="group" aria-label="Program membership">
+        ${lnk(v, v.placement + '-logo', `<span class="io-wordmark io-wm-dark">IOSutra</span><span class="io-tile-t">Inception<br>Member</span>`, 'io-tile', 'IOSutra, Inception Member (opens iosutra.com in a new tab)')}
+        <div class="io-tile io-tile-nv">${badge ? `<img src="${esc(asset(badge.asset))}" alt="${esc(badge.altText)}" height="${badge.displayHeightPx}" style="height:${badge.displayHeightPx}px;width:auto">` : '<span class="io-nv-text">NVIDIA</span><span class="io-tile-t">Inception<br>Program</span>'}</div>
+      </div>
+      ${member ? `<p class="io-member">${esc(member.text)}</p>` : ''}
+      <p class="io-actions">${cta(v, 'btn io-cta')}</p>
+      <p class="io-legal">${sep ? esc(sep.text) + ' ' : ''}${tm ? esc(tm.text) : ''}${link ? ` <a href="${esc(link.url)}" target="_blank" rel="noopener noreferrer">${esc(link.label)}<span class="sr"> (opens in a new tab)</span></a>` : ''}</p>
+    </div>
   </div>`;
 }
+const ctxRoot = (ctx) => ctx.root ?? process.cwd();
 
 export function renderHome(v, ctx) {
   return `<section class="band promo-band" aria-labelledby="promo-${esc(v.promo.id)}-h" data-promo="${esc(v.promo.id)}" lang="en">
   <div class="wrap">
-    <p class="eyebrow">Technology &amp; innovation</p>
-    <div class="promo-card">
-      <div class="promo-main">
-        <p class="promo-kicker">From our technology side</p>
-        <h2 id="promo-${esc(v.promo.id)}-h" class="promo-name">${esc(v.brand.name)}</h2>
-        <p class="promo-desc">${esc(v.brand.descriptor)}</p>
-        <p class="promo-blurb">${esc(v.brand.blurb)}</p>
-        <p class="promo-actions">${cta(v)} <a class="btn btn-ghost" href="${ctx.href(v.promo.placements.page.path)}">About this section</a></p>
-      </div>
-      ${facts(v, ctx)}
-    </div>
+    <p class="eyebrow">Technology &amp; innovation · from our team</p>
+    ${card(v, { asset: ctx.asset, root: ctxRoot(ctx) })}
+    <p class="io-more"><a href="${ctx.href(v.promo.placements.page.path)}">About this section →</a></p>
   </div>
 </section>`;
 }
@@ -118,19 +131,12 @@ export function renderFooter(v, ctx) {
 
 export function renderPage(v, ctx) {
   return `<section class="band promo-band" data-promo="${esc(v.promo.id)}" lang="en"><div class="wrap">
-    <h1>Technology &amp; innovation</h1>
+    <h1>IOSutra: technology &amp; innovation</h1>
     <p class="lede-sm">Forbidden Mantra Press is a bookstore and publisher. ${esc(v.brand.name)} is a separate product from the same team.</p>
-    <div class="promo-card">
-      <div class="promo-main">
-        <p class="promo-kicker">Our software platform</p>
-        <h2 class="promo-name">${esc(v.brand.name)}</h2>
-        <p class="promo-desc">${esc(v.brand.descriptor)}</p>
-        <p class="promo-blurb">${esc(v.brand.blurb)}</p>
-        <p class="promo-actions">${cta(v)}</p>
-      </div>
-      ${facts(v, ctx)}
-    </div>
+    ${card(v, { asset: ctx.asset, root: ctxRoot(ctx), big: true })}
     <div class="prose promo-prose">
+      <h2>About IOSutra</h2>
+      <p>${esc(v.brand.descriptor)}. ${esc(v.brand.relationship)}</p>
       <h2>What the membership statement means</h2>
       <p>${esc(v.claim('nvidia-inception-membership').text)} ${esc(v.claim('no-endorsement').text)}</p>
       <p><a href="${esc(v.external.nvidiaInception.url)}" target="_blank" rel="noopener noreferrer">${esc(v.external.nvidiaInception.label)}<span class="sr"> (opens in a new tab)</span></a></p>
