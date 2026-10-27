@@ -76,5 +76,11 @@
  "loading_index": "A carregar o índice do catálogo…",
  "index_error": "Não foi possível carregar o índice do catálogo.",
  "count_range": "A mostrar {a} de {n} livros",
- "count_loading": "{n} até agora · a carregar o índice ({k} de {t})"
+ "count_loading": "{n} até agora · a carregar o índice ({k} de {t})",
+ "lang_home_h": "Livros: {lang}",
+ "lang_home_note": "Títulos em destaque com uma edição em {lang} verificada. Cada um leva a essa edição.",
+ "lang_home_none": "Ainda não há edições em {lang} verificadas. Só adicionamos um livro a um idioma quando essa edição específica foi verificada; nunca presumimos que um livro em inglês exista em {lang}.",
+ "lang_home_all": "Todos os livros: {lang} ({n})",
+ "lang_status_have": "{lang}: {n} edições verificadas",
+ "lang_status_none": "Ainda sem edições em {lang} verificadas"
 }

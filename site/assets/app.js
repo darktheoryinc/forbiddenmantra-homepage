@@ -31,10 +31,43 @@
     document.querySelectorAll('[data-count-ed]').forEach(function (el) { var n = +el.getAttribute('data-count-ed'); el.textContent = tr(n === 1 ? 'lang_ed_one' : 'lang_ed_many', { n: n }); });
     document.querySelectorAll('[data-ui]').forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-ui') === ui); });
     var cur = document.querySelector('[data-ui-code]'); if (cur) cur.textContent = ui.toUpperCase();
+    langStatus(); langBand();
     applyFilters();
   }
   function setUI(c) { if (!I.dict[c]) return; ui = c; try { localStorage.setItem('fm-ui', c); } catch (e) {} applyUI(); }
 
+
+  // ---------- what the chosen language means for books (verified editions only) ----------
+  function langStatus() {
+    var el = document.querySelector('[data-lp-status]'); if (!el) return;
+    el.textContent = '';
+    var a = document.querySelector('.lp-books:not(.dim) a[lang="' + ui + '"]');
+    if (a) {
+      var n = a.parentNode.querySelector('[data-count-ed]');
+      el.appendChild(document.createTextNode(tr('lang_status_have', { lang: langName(ui), n: n ? n.getAttribute('data-count-ed') : '' }) + ' · '));
+      var l = document.createElement('a'); l.href = a.getAttribute('href'); l.textContent = tr('lang_home_all', { lang: langName(ui), n: '' }).replace(/\s*\(\s*\)/, ''); el.appendChild(l);
+    } else el.textContent = tr('lang_status_none', { lang: langName(ui) });
+  }
+  // Homepage only: a band of featured books that HAVE a verified edition in the chosen language. Data comes from the build (catalogue editions), never guessed.
+  function langBand() {
+    var box = document.querySelector('[data-langbooks]'); if (!box) return;
+    var wrap = box.querySelector('.wrap'), D = window.FM_LANGBOOKS || {}, L = D[ui];
+    wrap.textContent = '';
+    if (ui === 'en') { box.hidden = true; return; }
+    box.hidden = false;
+    var name = langName(ui);
+    var head = h('div', { 'class': 'split' }, [h('h2', {}, [tr('lang_home_h', { lang: name })])]);
+    if (!L) { wrap.appendChild(head); wrap.appendChild(h('p', { 'class': 'lede-sm' }, [tr('lang_home_none', { lang: name })])); wrap.appendChild(h('p', {}, [h('a', { href: './languages/index.html' }, [tr('lang_all_link')])])); return; }
+    head.appendChild(h('a', { href: './' + L.href }, [tr('lang_home_all', { lang: name, n: L.works })]));
+    wrap.appendChild(head); wrap.appendChild(h('p', { 'class': 'lede-sm' }, [tr('lang_home_note', { lang: name })]));
+    var grid = h('div', { 'class': 'grid' }, L.books.map(function (b) {
+      return h('article', { 'class': 'card' }, [
+        h('a', { 'class': 'card-cover', href: './' + b.h, tabindex: '-1', 'aria-hidden': 'true' }, [coverEl(b.t, b.a.split(', ')[0], !!b.p)]),
+        h('div', { 'class': 'card-body' }, [b.p ? h('span', { 'class': 'badge badge-fmp' }, ['Forbidden Mantra Press']) : null,
+          h('h3', { 'class': 'card-title' }, [h('a', { href: './' + b.h, lang: ui }, [b.t])]), h('p', { 'class': 'card-author' }, [b.a]), h('p', { 'class': 'card-meta' }, [name])])]);
+    }));
+    wrap.appendChild(grid);
+  }
   // ---------- language menu ----------
   var menu = document.querySelector('[data-langmenu]');
   if (menu) {

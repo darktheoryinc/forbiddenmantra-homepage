@@ -73,5 +73,11 @@
  "loading_index": "Loading the catalogue index…",
  "index_error": "The catalogue index could not be loaded. Check your connection and try again.",
  "count_range": "Showing {a} of {n} books",
- "count_loading": "{n} so far · loading the catalogue index ({k} of {t})"
+ "count_loading": "{n} so far · loading the catalogue index ({k} of {t})",
+ "lang_home_h": "Books in {lang}",
+ "lang_home_note": "Featured titles with a verified {lang} edition. Each one links to that edition.",
+ "lang_home_none": "No {lang} editions are verified yet. We add a book to a language only when that specific edition has been verified, so an English book is never assumed to exist in {lang}.",
+ "lang_home_all": "All {lang} books ({n})",
+ "lang_status_have": "{lang}: {n} verified editions",
+ "lang_status_none": "No verified {lang} editions yet"
 }

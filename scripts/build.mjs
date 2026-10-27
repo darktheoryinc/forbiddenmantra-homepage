@@ -321,6 +321,7 @@ function langMenu() {
     <section aria-labelledby="lp-site">
       <h2 id="lp-site" data-i18n="lang_site_h">${esc(en.lang_site_h)}</h2>
       <p class="lp-note" data-i18n="lang_site_note">${esc(en.lang_site_note)}</p>
+      <p class="lp-status" data-lp-status role="status" aria-live="polite"></p>
       <ul class="lp-ui">${uiLocales.map((c) => `<li><button type="button" data-ui="${c}" lang="${c}" aria-pressed="${c === 'en'}">${esc(LANG.get(c).endonym)}${langReg.languages.find((l) => l.code === c).interface === 'beta' ? ` <small data-i18n="lang_beta">${esc(en.lang_beta)}</small>` : ''}</button></li>`).join('')}</ul>
     </section>
     <section aria-labelledby="lp-books">
@@ -384,7 +385,7 @@ ${page}
   </div>
   <div class="wrap">${placed('footer').map((p) => promo.renderFooter(promoView('footer', p.id), promoCtx)).join('')}<p class="disclosure" lang="en">${esc(cfg.disclosure)}</p><p class="copy">© 2025–2026 Forbidden Mantra Press</p></div>
 </footer>
-<script src="${ROOT_PREFIX}assets/i18n.js"></script>
+${rel === 'index.html' ? `<script>window.FM_LANGBOOKS=${JSON.stringify(LANGBOOKS).replace(/</g, '\\u003c')};</script>\n` : ''}<script src="${ROOT_PREFIX}assets/i18n.js"></script>
 <script src="${ROOT_PREFIX}assets/app.js"></script>
 ${LIB.enabled ? `<div id="fm-librarian" hidden data-root="${ROOT_PREFIX}" data-config='${esc(JSON.stringify({ art: LIB_ART ? { ...LIB_ART, src: ROOT_PREFIX + 'assets/librarian/' + LIB_ART.file } : null, voice: LIB.voice, ai: { enabled: LIB.ai?.enabled }, startMinimized: LIB.startMinimized }))}'></div><script src="${ROOT_PREFIX}assets/librarian.js" defer></script>` : ''}
 </body>
@@ -402,6 +403,32 @@ if (LIB_ART) { fs.mkdirSync(path.join(OUT, 'assets/librarian'), { recursive: tru
 const i18nOut = { dict: Object.fromEntries(Object.entries(locales).map(([c, d]) => [c, Object.fromEntries(Object.entries(d).filter(([k]) => k !== '_meta'))])), langs: Object.fromEntries(langReg.languages.map((l) => [l.code, { name: l.name, endonym: l.endonym, dir: l.dir }])), ui: uiLocales };
 write('assets/i18n.js', `window.FM_I18N=${JSON.stringify(i18nOut)};`);
 
+// ---------- curated homepage selections ----------
+// No sales data is available, so nothing is called a bestseller. "Featured" = an editorial-interest score from the catalogue itself:
+// owner-curated home list, appearances in collections/reading paths, extra verified editions, and an author page. data/featured.json can override any category by slug.
+const FEATURED_OVERRIDE = fs.existsSync(path.join(ROOT, DATA, 'featured.json')) ? JSON.parse(fs.readFileSync(path.join(ROOT, DATA, 'featured.json'), 'utf8')) : {};
+const inColl = new Map();
+for (const c of coll.collections) for (const id of c.works ?? []) inColl.set(id, (inColl.get(id) ?? 0) + 1);
+for (const pth of coll.paths) for (const st of pth.steps ?? []) { const id = st.work ?? st.id ?? st; if (typeof id === 'string') inColl.set(id, (inColl.get(id) ?? 0) + 1); }
+const homeIx = new Map((coll.featured?.home ?? []).map((id, i) => [id, i]));
+const featScore = (w) => (homeIx.has(w.id) ? 4 : 0) + Math.min(3, inColl.get(w.id) ?? 0) + Math.min(2, w.editions.length - 1) + (w.authors.some((a) => authorPage.has(slugify(a))) ? 1 : 0) + ((w.provenance?.tier ?? 'hand-verified') === 'hand-verified' ? 1 : 0);
+function pickFeatured(pool, n, distinctAuthors = true, exclude = new Set()) {
+  const out = [], used = new Set();
+  const fresh = pool.filter((w) => !exclude.has(w.id)); if (fresh.length >= Math.min(n, 2)) pool = fresh; // a book is featured in one category when another good one is available
+  for (const w of [...pool].sort((a, b) => featScore(b) - featScore(a) || (a.slug < b.slug ? -1 : 1))) { if (out.length >= n) break; if (distinctAuthors && w.authors.some((a) => used.has(a))) continue; out.push(w); w.authors.forEach((a) => used.add(a)); }
+  return out;
+}
+const featuredForHub = (hubId, n = 4, exclude = new Set()) => {
+  const o = FEATURED_OVERRIDE.hubs?.[hubId];
+  if (o) return o.map((id) => workById.get(id) ?? cat.works.find((w) => w.slug === id)).filter(Boolean).slice(0, n);
+  const third = worksInHub(hubId).filter((w) => !w.press);
+  return pickFeatured(third.length ? third : worksInHub(hubId), n, true, exclude); // a category with only our own books shows those
+};
+const LANGBOOKS = Object.fromEntries(stocked.map((l) => {
+  const pool = cat.works.filter((w) => w.editions.some((e) => edLangs(e).includes(l.code)));
+  const top = pickFeatured(pool, 8, false);
+  return [l.code, { n: nEds(l.code), works: nWorks(l.code), href: `languages/${l.code}/index.html`, books: top.map((w) => { const e = w.editions.find((x) => edLangs(x).includes(l.code)); return { s: w.slug, t: e?.title || w.title, a: w.authors.join(', '), p: w.press ? 1 : 0, h: (isDyn(w) ? `book/index.html?s=${encodeURIComponent(w.slug)}` : `books/${w.slug}/index.html`) + `#lang-${l.code}`, c: w.subjects[0] }; }) }];
+}));
 const fmpWorks = cat.works.filter((w) => w.press === 'fmp');
 const outside = cat.works.filter((w) => !w.press);
 const langSummary = `${fmt(cat.works.length, 'work', 'works')} · ${fmt(totalEditions, 'edition', 'editions')} · ${fmt(stocked.length, 'language with verified editions', 'languages with verified editions')}`;
@@ -437,6 +464,7 @@ ${placed('home').map((p) => promo.renderHome(promoView('home', p.id), promoCtx))
     <p class="studio-soon" role="note"><span class="soon-dot" aria-hidden="true"></span><strong>Book creation tools: coming soon.</strong> There is nothing to try or buy yet. <a href="${href('contact/')}">Tell us what you would like to see</a>.</p>
   </div>
 </section>
+<section class="band alt" data-home="langbooks" data-langbooks hidden aria-live="polite"><div class="wrap"></div></section>
 <section class="band"><div class="wrap">
   <h2>${['Zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten'][tax.hubs.length] ?? tax.hubs.length} subject hubs</h2>
   <div class="hubs">${tax.hubs.map((h) => { const n = worksInHub(h.id).length; return `<a class="hub" href="${href(`subjects/${h.id}/`)}"><h3>${esc(h.name)}</h3><p>${esc(h.tagline)}</p><span class="hub-n">${fmt(n, 'book', 'books')} · ${fmt(tax.departments.filter((d) => d.hubs.includes(h.id)).length, 'department', 'departments')}</span></a>`; }).join('')}</div>
@@ -447,17 +475,23 @@ ${NICHES.length ? `<section class="band" data-home="guides"><div class="wrap"><d
   <p class="lede-sm">Fantasy, myth and the supernatural, with independent recommendations for readers who love particular books or authors.</p>
   <div class="paths">${['harry-potter-discovery', 'major-fantasy-authors', 'myth-retold', 'gothic-supernatural'].map((id) => coll.collections.find((c) => c.id === id)).filter(Boolean).map((c) => `<a class="path" href="${href(`collections/${c.id}/`)}"><h3>${esc(c.title)}</h3><p>${esc(c.blurb)}</p><span class="hub-n">${fmt(c.works.length, 'book', 'books')}</span></a>`).join('')}</div>
 </div></section>
-<section class="band"><div class="wrap">
-  <div class="split"><h2>From Forbidden Mantra Press</h2><a href="${href('press/')}">All press titles →</a></div>
-  ${grid(fmpWorks.slice(0, 4), { filterable: false })}
+<section class="band" data-home="fmp" aria-labelledby="fmp-h"><div class="wrap">
+  <div class="split"><h2 id="fmp-h">From Forbidden Mantra Press</h2><a href="${href('press/')}">All ${fmpWorks.length} press titles →</a></div>
+  <p class="lede-sm">Books published by us, kept apart from the third-party titles below.</p>
+  ${grid(fmpWorks.slice(0, 8), { filterable: false })}
+</div></section>
+<section class="band alt" data-home="featured" aria-labelledby="feat-h"><div class="wrap">
+  <div class="split"><h2 id="feat-h">Featured books</h2><a href="${href('books/')}">Browse all ${cat.works.length} books →</a></div>
+  <p class="lede-sm">A small selection from each category. This is not a sales ranking: we have no reliable sales data, so nothing here is called a bestseller. The whole catalogue stays searchable.</p>
+  ${(() => { const taken = new Set(); return tax.hubs.map((hb) => { const ws = featuredForHub(hb.id, 4, taken); ws.forEach((w) => taken.add(w.id)); return ws.length ? `<section class="niche-shelf" aria-labelledby="fh-${hb.id}"><div class="split"><h3 id="fh-${hb.id}">${esc(hb.name)}</h3><a href="${href(`subjects/${hb.id}/`)}">All ${worksInHub(hb.id).length} books →</a></div><div class="shelf" role="region" tabindex="0" aria-label="${esc(hb.name)} featured books, scroll sideways">${ws.map((w) => card(w, null, 'h4', true)).join('')}</div></section>` : ''; }).join(''); })()}
 </div></section>
 <section class="band alt"><div class="wrap">
   <div class="split"><h2>Start reading</h2><a href="${href('paths/')}">All reading paths →</a></div>
   <div class="paths">${coll.paths.slice(0, 3).map((p) => `<a class="path" href="${href(`paths/${p.id}/`)}"><p class="eyebrow">${esc(p.audience)}</p><h3>${esc(p.title)}</h3><p>${esc(p.blurb)}</p></a>`).join('')}</div>
 </div></section>
 <section class="band"><div class="wrap">
-  <div class="split"><h2>Established authors</h2><a href="${href('authors/')}">Authors A–Z →</a></div>
-  ${grid((coll.featured?.home ?? []).map((id) => workById.get(id)).filter(Boolean).concat(outside).filter((w, i, a) => a.indexOf(w) === i).slice(0, 8), { filterable: false })}
+  <div class="split"><h2>Authors</h2><a href="${href('authors/')}">Authors A–Z →</a></div>
+  <p class="lede-sm">Every author in the catalogue has a page listing their books. <a href="${href('authors/')}">Browse authors A–Z</a> or use the search box above.</p>
 </div></section>
 <section class="band alt"><div class="wrap">
   <div class="split"><h2 data-i18n="lang_books_h">${esc(en.lang_books_h)}</h2><a href="${href('languages/')}" data-i18n="lang_all_link">${esc(en.lang_all_link)}</a></div>

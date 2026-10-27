@@ -76,5 +76,11 @@
  "loading_index": "Katalogindex wird geladen …",
  "index_error": "Der Katalogindex konnte nicht geladen werden.",
  "count_range": "{a} von {n} Büchern angezeigt",
- "count_loading": "{n} bisher · Katalogindex wird geladen ({k} von {t})"
+ "count_loading": "{n} bisher · Katalogindex wird geladen ({k} von {t})",
+ "lang_home_h": "Bücher – {lang}",
+ "lang_home_note": "Ausgewählte Titel mit einer geprüften {lang}-Ausgabe. Jeder Titel führt zu genau dieser Ausgabe.",
+ "lang_home_none": "Noch keine {lang}-Ausgaben geprüft. Wir führen ein Buch in einer Sprache nur auf, wenn genau diese Ausgabe geprüft wurde; wir nehmen nie an, dass ein englisches Buch auch auf {lang} existiert.",
+ "lang_home_all": "Alle Bücher – {lang} ({n})",
+ "lang_status_have": "{lang}: {n} geprüfte Ausgaben",
+ "lang_status_none": "Noch keine geprüften {lang}-Ausgaben"
 }

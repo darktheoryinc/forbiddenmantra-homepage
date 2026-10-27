@@ -76,5 +76,11 @@
  "loading_index": "Chargement de l’index du catalogue…",
  "index_error": "L’index du catalogue n’a pas pu être chargé.",
  "count_range": "{a} sur {n} livres affichés",
- "count_loading": "{n} pour l’instant · chargement de l’index ({k} sur {t})"
+ "count_loading": "{n} pour l’instant · chargement de l’index ({k} sur {t})",
+ "lang_home_h": "Livres : {lang}",
+ "lang_home_note": "Titres sélectionnés ayant une édition vérifiée en {lang}. Chacun renvoie à cette édition.",
+ "lang_home_none": "Aucune édition en {lang} n’est encore vérifiée. Nous n’ajoutons un livre à une langue que lorsque cette édition précise a été vérifiée ; nous ne supposons jamais qu’un livre anglais existe en {lang}.",
+ "lang_home_all": "Tous les livres : {lang} ({n})",
+ "lang_status_have": "{lang} : {n} éditions vérifiées",
+ "lang_status_none": "Aucune édition vérifiée en {lang} pour l’instant"
 }

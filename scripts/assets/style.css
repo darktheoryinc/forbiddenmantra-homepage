@@ -427,3 +427,4 @@ a.io-tile-img:hover,a.io-tile-img:focus-visible{outline:3px solid #fff;outline-o
 .lib-chip:hover .lib-chip-t,.lib-chip:focus-visible .lib-chip-t{display:inline}
 .lib-chip{padding:0 8px}
 .lib-chip:hover,.lib-chip:focus-visible{padding:0 16px 0 8px}
+.lp-status{font-size:15px;line-height:1.4;margin:6px 0 10px;color:var(--text)}.lp-status a{color:var(--gold-l)}

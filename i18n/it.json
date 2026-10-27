@@ -76,5 +76,11 @@
  "loading_index": "Caricamento dell’indice del catalogo…",
  "index_error": "Impossibile caricare l’indice del catalogo.",
  "count_range": "Mostrati {a} di {n} libri",
- "count_loading": "{n} finora · caricamento dell’indice ({k} di {t})"
+ "count_loading": "{n} finora · caricamento dell’indice ({k} di {t})",
+ "lang_home_h": "Libri: {lang}",
+ "lang_home_note": "Titoli in evidenza con un’edizione in {lang} verificata. Ognuno rimanda a quell’edizione.",
+ "lang_home_none": "Nessuna edizione in {lang} è ancora verificata. Aggiungiamo un libro a una lingua solo quando quella specifica edizione è stata verificata; non diamo mai per scontato che un libro inglese esista in {lang}.",
+ "lang_home_all": "Tutti i libri: {lang} ({n})",
+ "lang_status_have": "{lang}: {n} edizioni verificate",
+ "lang_status_none": "Nessuna edizione in {lang} verificata"
 }
