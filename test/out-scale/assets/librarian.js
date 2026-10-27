@@ -25,9 +25,9 @@
   var avatar = h('div', { 'class': 'lib-avatar', 'aria-hidden': 'true' }, [
     h('div', { 'class': 'lib-aura' }),
     h('div', { 'class': 'lib-figure' }, art
-      ? [h('img', { 'class': 'lib-img', src: art.src, width: art.width, height: art.height, alt: '', decoding: 'async' }),
+      ? [h('img', { 'class': 'lib-img', src: art.src, width: art.width, height: art.height, alt: '', decoding: 'async', loading: 'lazy' }),
          h('div', { 'class': 'lib-headlayer', style: art.head ? 'clip-path:inset(0 0 ' + (100 - art.head.clipBottom) + '% 0);transform-origin:50% ' + art.head.pivotY + '%' : '' },
-           [h('img', { src: art.src, width: art.width, height: art.height, alt: '', decoding: 'async' })].concat((art.eyes || []).map(function (e) { return h('span', { 'class': 'lib-lid', style: 'left:' + e.x + '%;top:' + e.y + '%;width:' + e.w + '%;height:' + e.h + '%' }); }))),
+           [h('img', { src: art.src, width: art.width, height: art.height, alt: '', decoding: 'async', loading: 'lazy' })].concat((art.eyes || []).map(function (e) { return h('span', { 'class': 'lib-lid', style: 'left:' + e.x + '%;top:' + e.y + '%;width:' + e.w + '%;height:' + e.h + '%' }); }))),
          art.emblem ? h('span', { 'class': 'lib-emblem', style: 'left:' + art.emblem.x + '%;top:' + art.emblem.y + '%' }) : null]
       : [h('span', { 'class': 'lib-placeholder' })]),
     h('span', { 'class': 'lib-spark', style: art && art.hand ? 'left:' + art.hand.x + '%;top:' + art.hand.y + '%' : '' })

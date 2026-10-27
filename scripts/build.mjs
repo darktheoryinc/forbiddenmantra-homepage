@@ -352,7 +352,7 @@ ${noindex ? '<meta name="robots" content="noindex, follow">' : PRODUCTION ? `<li
 <link rel="stylesheet" href="${ROOT_PREFIX}assets/style.css">
 ${typeof links === 'function' ? links() : links}
 ${ANALYTICS.snippet}
-<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;500;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Cormorant+Garamond:wght@500;600&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;500;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Cormorant+Garamond:wght@500;600&family=Montserrat:wght@500;600;700&family=Space+Grotesk:wght@500;600;700&family=Sora:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld)}</script>` : ''}
 </head>
 <body>
@@ -420,6 +420,23 @@ page('index.html', {
     <p class="disclosure hero-disclosure" lang="en">${esc(cfg.disclosure.split('. ')[0])}. <a href="${href('about/affiliate-disclosure/')}">Affiliate disclosure</a></p>
   </div>
 </section>
+${placed('home').map((p) => promo.renderHome(promoView('home', p.id), promoCtx)).join('')}
+<section class="band studio dark" id="imagination" aria-labelledby="studio-h" lang="en" data-home="studio">
+  <div class="wrap">
+    <p class="studio-kicker"><span>Our vision</span><span class="soon-chip">Coming soon</span></p>
+    <h2 id="studio-h" class="studio-title">From Imagination to Publication</h2>
+    <p class="studio-lede">We are exploring how AI-assisted tools could help an author carry a book from a first idea to a manuscript that is ready to publish. This is a roadmap, not a service: nothing on this site generates, sells or publishes a book today.</p>
+    <ol class="studio-steps" aria-label="Possible workflow, in planned order">
+      <li><span class="step-no" aria-hidden="true">01</span><h3>Research</h3><p>Gather and organise sources, quotations and background notes, with the origin of each one kept so the author can check it.</p><span class="plan-tag">Planned</span></li>
+      <li><span class="step-no" aria-hidden="true">02</span><h3>Writing</h3><p>Outline chapters and draft passages that the author directs, rewrites and approves.</p><span class="plan-tag">Planned</span></li>
+      <li><span class="step-no" aria-hidden="true">03</span><h3>Editing</h3><p>Suggest improvements to clarity, consistency and style for the author to accept or reject.</p><span class="plan-tag">Planned</span></li>
+      <li><span class="step-no" aria-hidden="true">04</span><h3>Illustration</h3><p>Explore visual ideas and artwork for interiors and covers, subject to rights and review.</p><span class="plan-tag">Planned</span></li>
+      <li><span class="step-no" aria-hidden="true">05</span><h3>Formatting</h3><p>Prepare the text for print and e-book layouts.</p><span class="plan-tag">Planned</span></li>
+      <li><span class="step-no" aria-hidden="true">06</span><h3>Publishing preparation</h3><p>Assemble the checklist of metadata, identifiers and files a retailer asks for.</p><span class="plan-tag">Planned</span></li>
+    </ol>
+    <p class="studio-soon" role="note"><span class="soon-dot" aria-hidden="true"></span><strong>Book creation tools: coming soon.</strong> There is nothing to try or buy yet. <a href="${href('contact/')}">Tell us what you would like to see</a>.</p>
+  </div>
+</section>
 <section class="band"><div class="wrap">
   <h2>${['Zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten'][tax.hubs.length] ?? tax.hubs.length} subject hubs</h2>
   <div class="hubs">${tax.hubs.map((h) => { const n = worksInHub(h.id).length; return `<a class="hub" href="${href(`subjects/${h.id}/`)}"><h3>${esc(h.name)}</h3><p>${esc(h.tagline)}</p><span class="hub-n">${fmt(n, 'book', 'books')} · ${fmt(tax.departments.filter((d) => d.hubs.includes(h.id)).length, 'department', 'departments')}</span></a>`; }).join('')}</div>
@@ -447,7 +464,6 @@ ${NICHES.length ? `<section class="band" data-home="guides"><div class="wrap"><d
   <p class="lede-sm">${stocked.length === 1 ? `Every verified edition so far is in ${esc(stocked[0].name)}. ` : ''}We add a language to the shelf only when a specific edition has been verified with its own identifier and source. ${unstocked.length} more languages are set up and waiting for verified editions.</p>
   <ul class="langs-home">${stocked.map((l) => `<li><a class="lang-tile" href="${href(`languages/${l.code}/`)}" lang="${l.code}" dir="${l.dir}"><span class="lt-name">${esc(l.endonym)}</span><span class="lt-n">${fmt(nWorks(l.code), 'book', 'books')} · ${fmt(nEds(l.code), 'edition', 'editions')}</span></a></li>`).join('')}</ul>
 </div></section>
-${placed('home').map((p) => promo.renderHome(promoView('home', p.id), promoCtx)).join('')}
 <section class="band alt"><div class="wrap narrow">
   <h2>How the catalogue is built</h2>
   <p>Every listed book has a named source for its title, author, edition and identifier. Books we cannot yet confirm are held back rather than shown. We do not display prices, ratings or bestseller badges unless they come from a source we are permitted to use. <a href="${href('about/catalogue-standards/')}">Read our standards</a>.</p>

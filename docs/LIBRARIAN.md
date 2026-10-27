@@ -27,3 +27,9 @@ Percent coordinates in `data/librarian.json` `art`: `eyes[]` (centre x/y and siz
 * Fuzzy matching is single-edit and only runs when nothing matches exactly.
 * She presents titles and authors only; no covers, prices or availability.
 * Image rights/likeness: the owner supplied the art; confirm licence for web use.
+
+## Roadmap status
+* Phase 1 (done, this branch): animated librarian beside real catalogue search, minimize/hide, reduced motion.
+* Placement: the figure sits at the bottom right of every page and responds to the search boxes (hero, header, filters, search page). A variant docked directly beside the homepage search field is a possible later layout change.
+* Phase 2 (not started): microphone search via `FMLibrarian.submitQuery(text, { source: 'voice' })`.
+* Phase 3 (not started): AI answers via `FMLibrarian.setAnswerProvider(fn)`; no paid API is configured.
