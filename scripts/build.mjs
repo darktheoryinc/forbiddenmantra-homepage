@@ -386,7 +386,7 @@ ${page}
 </footer>
 <script src="${ROOT_PREFIX}assets/i18n.js"></script>
 <script src="${ROOT_PREFIX}assets/app.js"></script>
-${LIB.enabled ? `<div id="fm-librarian" hidden data-root="${ROOT_PREFIX}" data-config='${esc(JSON.stringify({ art: LIB_ART ? { ...LIB_ART, src: ROOT_PREFIX + 'assets/librarian/' + LIB_ART.file } : null, voice: LIB.voice, ai: { enabled: LIB.ai?.enabled }, startMinimizedBelowPx: LIB.startMinimizedBelowPx }))}'></div><script src="${ROOT_PREFIX}assets/librarian.js" defer></script>` : ''}
+${LIB.enabled ? `<div id="fm-librarian" hidden data-root="${ROOT_PREFIX}" data-config='${esc(JSON.stringify({ art: LIB_ART ? { ...LIB_ART, src: ROOT_PREFIX + 'assets/librarian/' + LIB_ART.file } : null, voice: LIB.voice, ai: { enabled: LIB.ai?.enabled }, startMinimized: LIB.startMinimized }))}'></div><script src="${ROOT_PREFIX}assets/librarian.js" defer></script>` : ''}
 </body>
 </html>`;
 }

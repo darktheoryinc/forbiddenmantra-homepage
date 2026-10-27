@@ -51,9 +51,10 @@
   host.className = 'lib';
 
   // ---------- visibility: open / minimized / off (remembered per browser) ----------
-  var mode = store.get() || ((cfg.startMinimizedBelowPx && window.innerWidth < cfg.startMinimizedBelowPx) ? 'min' : 'open');
-  function setMode(m, focus) {
-    mode = m; if (m !== 'off' || true) store.set(m);
+  /* She starts as a small button so she never covers page content; a search (or a click) opens her. Only the visitor's own Minimize/open/hide choices are remembered. */
+  var mode = store.get() || (cfg.startMinimized === false ? 'open' : 'min'), auto = false, autoY = 0, autoTimer = null;
+  function setMode(m, focus, isAuto) {
+    mode = m; auto = isAuto === true && m === 'open'; if (!isAuto) store.set(m); /* isAuto === 'init' restores the saved state without re-saving it */ if (auto) autoY = window.pageYOffset;
     host.setAttribute('data-mode', m);
     panel.hidden = m !== 'open'; chip.hidden = m !== 'min';
     minBtn.setAttribute('aria-expanded', String(m === 'open')); chip.setAttribute('aria-expanded', String(m === 'open'));
@@ -64,6 +65,10 @@
   }
   minBtn.addEventListener('click', function () { setMode('min', true); });
   chip.addEventListener('click', function () { setMode('open', true); });
+  // opened automatically by a search: tuck her away again when the visitor scrolls on, unless they are using her
+  function wake() { if (mode === 'min') { setMode('open', false, true); } }
+  panel.addEventListener('pointerdown', function () { auto = false; }); panel.addEventListener('focusin', function () { auto = false; });
+  window.addEventListener('scroll', function () { if (auto && Math.abs(window.pageYOffset - autoY) > 250 && !panel.matches(':hover')) setMode('min', false, true); }, { passive: true });
   panel.addEventListener('keydown', function (e) { if (e.key === 'Escape') { setMode('min', true); } });
   doc.addEventListener('click', function (e) { var t = e.target.closest && e.target.closest('[data-librarian-toggle]'); if (t) { e.preventDefault(); setMode(mode === 'off' ? 'open' : 'off'); } });
 
@@ -163,24 +168,27 @@
   function submitQuery(text, opts) {
     var q = String(text || '').trim(); clearTimeout(debounce);
     if (!q) { pending = null; list.textContent = ''; authors.textContent = ''; more.hidden = true; say('Ask me for a title, author, subject or ISBN.'); setState('idle'); return; }
-    if (mode !== 'open') { return; }
+    if (mode === 'off') { return; } wake();
     setState('think'); say('Searching the catalogue…'); pending = q;
     ensure().then(function () { if (pending === q) run(q, true); });
   }
   function onInput(e) {
     var t = e.target; if (!t || t.tagName !== 'INPUT' || t.name !== 'q' || t.closest('.lib')) return;
-    if (mode === 'open' && t.value.trim()) setState('think');
+    if (t.value.trim()) { wake(); setState('think'); }
     clearTimeout(debounce); debounce = setTimeout(function () { submitQuery(t.value, { source: 'text' }); }, 350);
   }
   doc.addEventListener('input', onInput);
-  doc.addEventListener('focusin', function (e) { if (e.target && e.target.name === 'q' && mode === 'open') { setState('listen'); ensure(); } });
-  doc.addEventListener('focusout', function (e) { if (e.target && e.target.name === 'q' && state === 'listen') setState('idle'); });
+  doc.addEventListener('focusin', function (e) { if (e.target && e.target.name === 'q' && !e.target.closest('.lib') && mode !== 'off') { clearTimeout(autoTimer); wake(); setState('listen'); ensure(); } });
+  doc.addEventListener('focusout', function (e) {
+    if (!(e.target && e.target.name === 'q')) return; if (state === 'listen') setState('idle');
+    if (auto && !pending && !list.children.length) { clearTimeout(autoTimer); autoTimer = setTimeout(function () { if (auto && !list.children.length) setMode('min', false, true); }, 1500); }
+  });
 
   // a search page opened with ?q= : search at once
   var urlQ = (new URLSearchParams(location.search)).get('q');
-  if (urlQ && mode === 'open') submitQuery(urlQ, { source: 'url' });
+  if (urlQ && mode !== 'off') submitQuery(urlQ, { source: 'url' });
   else { say('Hello. Ask me for a title, author, subject or ISBN.'); if (mode === 'open') { setState('greet'); } }
-  setMode(mode);
+  setMode(mode, false, 'init');
   if (!urlQ && mode === 'open') setState('greet');
 
   // ---------- public extension points ----------

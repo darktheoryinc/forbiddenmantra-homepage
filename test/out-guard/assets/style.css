@@ -421,3 +421,9 @@ a.io-tile-img:hover,a.io-tile-img:focus-visible{outline:3px solid #fff;outline-o
 .io-tile-nv{padding:0;min-width:0;background:transparent;border:0;display:block;line-height:0}
 .io-tile-nv img{display:block;height:99px;width:auto;max-width:100%}
 @media(max-width:700px){.io-tiles:has(.io-tile-nv){flex-direction:column;align-items:center}.io-tile.io-tile-nv{width:auto}.io-tile-nv img{height:auto;width:min(229px,100%)}}
+
+/* the minimized librarian is just a round button, so it never covers the page; the label appears on hover or keyboard focus */
+.lib-chip-t{display:none}
+.lib-chip:hover .lib-chip-t,.lib-chip:focus-visible .lib-chip-t{display:inline}
+.lib-chip{padding:0 8px}
+.lib-chip:hover,.lib-chip:focus-visible{padding:0 16px 0 8px}

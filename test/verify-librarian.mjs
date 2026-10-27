@@ -21,12 +21,15 @@ if (browser) for (const [name, vp, mobile] of [['desktop', { width: 1366, height
   const T = `[${name}]`, u = urlOf(SITE);
   await pg.goto(u('index.html')); await pg.waitForTimeout(500);
   const mode = await pg.locator('#fm-librarian').getAttribute('data-mode');
-  ok(mode === (mobile ? 'min' : 'open'), `${T} starts ${mobile ? 'minimized (small screen)' : 'open'} (${mode})`);
-  if (mobile) { await pg.locator('.lib-chip').focus(); await pg.keyboard.press('Enter'); await pg.waitForTimeout(200); }
-  ok(await pg.locator('.lib-panel').isVisible(), `${T} panel opens (keyboard Enter on the chip on mobile)`);
+  ok(mode === 'min' && await pg.locator('.lib-chip').isVisible() && !(await pg.locator('.lib-panel').isVisible()), `${T} starts as a small round button, so no panel covers the page (${mode})`);
+  await pg.locator('.promo-band').scrollIntoViewIfNeeded(); await pg.waitForTimeout(200);
+  const ov = await pg.evaluate(() => { const a = document.querySelector('.io-card').getBoundingClientRect(), b = document.querySelector('.lib-chip').getBoundingClientRect(); const w = Math.max(0, Math.min(a.right, b.right) - Math.max(a.left, b.left)), h = Math.max(0, Math.min(a.bottom, b.bottom) - Math.max(a.top, b.top)); return { w, h, chipW: b.width }; });
+  ok(mobile ? ov.chipW <= 60 : ov.w * ov.h === 0, `${T} the librarian button does not overlap the IOSutra section (${mobile ? 'button is ' + Math.round(ov.chipW) + 'px wide' : 'no intersection'})`);
+  await pg.evaluate(() => window.scrollTo(0, 0)); await pg.waitForTimeout(150);
   // real search
   await pg.focus('.hero-search input'); await pg.keyboard.type('tarot', { delay: 40 });
   await pg.waitForTimeout(150);
+  ok(await pg.locator('.lib-panel').isVisible(), `${T} typing a search opens her automatically`);
   const st1 = await pg.locator('#fm-librarian').getAttribute('data-state');
   ok(st1 === 'think' || st1 === 'present', `${T} typing a search turns her toward the display (state ${st1})`);
   await pg.waitForFunction(() => document.querySelector('.lib-list a'), null, { timeout: 5000 }).catch(() => {});
@@ -38,6 +41,12 @@ if (browser) for (const [name, vp, mobile] of [['desktop', { width: 1366, height
   ok(hrefs.every((h) => !h.startsWith('http')) && hrefs.filter((h) => h.includes('books/')).every((h) => fs.existsSync(path.join(SITE, h.replace(/^\.\//, '').split('?')[0]))), `${T} every link she offers resolves (${hrefs.length} links)`);
   const none = await (async () => { await pg.fill('.hero-search input', 'zzqxjkvv'); await pg.waitForTimeout(900); return pg.locator('.lib-status').textContent(); })();
   ok(/could not find/.test(none) && (await pg.locator('.lib-list a').count()) === 0, `${T} nonsense query: honest "could not find", no invented books`);
+  await pg.fill('.hero-search input', 'tarot'); await pg.waitForTimeout(900);
+  await pg.evaluate(() => window.scrollBy(0, 600)); await pg.waitForTimeout(300);
+  ok(await pg.locator('#fm-librarian').getAttribute('data-mode') === 'min', `${T} scrolling on tucks an automatically opened librarian away`);
+  await pg.evaluate(() => window.scrollTo(0, 0)); await pg.reload(); await pg.waitForTimeout(400);
+  ok(await pg.locator('#fm-librarian').getAttribute('data-mode') === 'min', `${T} automatic opening is not remembered`);
+  await pg.locator('.lib-chip').click(); await pg.waitForTimeout(150);
   // minimize / restore / hide with the keyboard
   await pg.locator('.lib-btn').focus(); await pg.keyboard.press('Enter'); await pg.waitForTimeout(150);
   ok(!(await pg.locator('.lib-panel').isVisible()) && await pg.locator('.lib-chip').isVisible() && await pg.evaluate(() => document.activeElement.className) === 'lib-chip', `${T} Minimize collapses to a small button and moves focus to it`);
@@ -46,7 +55,10 @@ if (browser) for (const [name, vp, mobile] of [['desktop', { width: 1366, height
   await pg.keyboard.press('Escape'); await pg.waitForTimeout(100);
   ok(await pg.locator('#fm-librarian').getAttribute('data-mode') === 'min', `${T} Escape minimizes`);
   await pg.reload(); await pg.waitForTimeout(400);
-  ok(await pg.locator('#fm-librarian').getAttribute('data-mode') === 'min', `${T} the choice is remembered`);
+  ok(await pg.locator('#fm-librarian').getAttribute('data-mode') === 'min', `${T} the visitor's Minimize choice is remembered`);
+  await pg.locator('.lib-chip').click(); await pg.reload(); await pg.waitForTimeout(400);
+  ok(await pg.locator('#fm-librarian').getAttribute('data-mode') === 'open', `${T} an explicit open is remembered too`);
+  await pg.locator('.lib-btn').click(); await pg.waitForTimeout(100);
   await pg.locator('[data-librarian-toggle]').click(); await pg.waitForTimeout(100);
   ok(await pg.locator('#fm-librarian').isHidden(), `${T} footer link hides her completely`);
   await pg.locator('[data-librarian-toggle]').click(); await pg.waitForTimeout(100);
