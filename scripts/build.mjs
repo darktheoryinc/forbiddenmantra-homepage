@@ -25,7 +25,7 @@ const cat = rd(`${DATA}/catalogue.json`);
 const staged = rd(`${DATA}/staged.json`).works;
 const coll = rd(`${DATA}/collections.json`);
 // scale settings (config/site.json "build"; FM_BUILD='{"pageSize":10}' overrides for tests)
-const BUILD = { pageSize: 48, maxStaticBookPages: 9000, shardSize: 1500, authorPagesAllBelow: 2000, ...(cfg.build ?? {}), ...(process.env.FM_BUILD ? JSON.parse(process.env.FM_BUILD) : {}) };
+const BUILD = { pageSize: 48, maxStaticBookPages: 6000, maxListingPages: 40, shardSize: 1500, authorPagesAllBelow: 2000, dynShardTarget: 60, ...(cfg.build ?? {}), ...(process.env.FM_BUILD ? JSON.parse(process.env.FM_BUILD) : {}) };
 
 // ---------- retailer link checks (scripts/check-links.mjs writes data/link-check.json from a networked machine) ----------
 const LINKCHECK = fs.existsSync(path.join(ROOT, DATA, 'link-check.json')) ? rd(`${DATA}/link-check.json`).results ?? {} : {};
@@ -96,7 +96,8 @@ const PERENNIAL = { id: 'perennial', name: 'Perennial Philosophy', intro: 'Write
 if (!trad.has('perennial')) { trad.set('perennial', PERENNIAL); tax.traditions.push(PERENNIAL); }
 const workById = new Map(cat.works.map((w) => [w.id, w]));
 const edLangs = (e) => [e.language, ...(e.alsoLanguages ?? [])];
-const wLangs = (w) => [...new Set(w.editions.flatMap(edLangs))];
+const _wl = new WeakMap();
+const wLangs = (w) => { let v = _wl.get(w); if (!v) _wl.set(w, (v = [...new Set(w.editions.flatMap(edLangs))])); return v; };
 const FORMAT_ORDER = ['hardcover', 'paperback', 'ebook', 'audiobook'];
 
 // ---------- scale model: static/dynamic tiers, index chunks, series, author pages ----------
@@ -201,7 +202,7 @@ function cover(w, big = false, title = w.title) {
 }
 const authorHref = (n) => (authorPage.has(slugify(n)) ? href(`authors/${slugify(n)}/`) : `${href('search/')}?q=${encodeURIComponent(n)}`);
 const authorLinks = (w) => w.authors.map((n) => `<a href="${authorHref(n)}">${esc(n)}</a>`).join(', ');
-const bookHref = (w, ctx = null) => (isDyn(w) ? `${href('book/')}?c=${chunkOf.get(w.id)}&s=${encodeURIComponent(w.slug)}` : href(`books/${w.slug}/`)) + (ctx ? `#lang-${ctx}` : '');
+const bookHref = (w, ctx = null) => (isDyn(w) ? `${href('book/')}?s=${encodeURIComponent(w.slug)}` : href(`books/${w.slug}/`)) + (ctx ? `#lang-${ctx}` : '');
 function searchBlob(w) {
   const ids = w.editions.flatMap((e) => [e.isbn13, e.isbn10, e.asin].filter(Boolean));
   const langs = wLangs(w).flatMap((c) => [LANG.get(c)?.name, LANG.get(c)?.endonym, c.length > 2 ? c : null]);
@@ -242,7 +243,7 @@ function pager(rel, p, n) {
 }
 // Paginated listing: writes page 1 at <rel>index.html and the rest at <rel>page/N/. A list that fits on one page keeps the plain filterable grid.
 function listing({ rel, works, scope, page: { body, ...pageOpts }, ctxLang = null, hl = 'h2' }) {
-  const per = BUILD.pageSize, n = Math.max(1, Math.ceil(works.length / per)), paged = works.length > per;
+  const per = BUILD.pageSize, full = Math.max(1, Math.ceil(works.length / per)), n = Math.min(full, BUILD.maxListingPages), paged = works.length > per, truncated = full > n;
   const shards = paged ? [...new Set(works.map((w) => chunkOf.get(w.id)))].sort() : [];
   for (let p = 1; p <= n; p++) {
     const prel = p === 1 ? `${rel}index.html` : `${rel}page/${p}/index.html`;
@@ -251,7 +252,7 @@ function listing({ rel, works, scope, page: { body, ...pageOpts }, ctxLang = nul
       ...pageOpts, title: p > 1 ? `${pageOpts.title} · page ${p}` : pageOpts.title,
       crumbs: p > 1 ? [...pageOpts.crumbs.slice(0, -1), [last[0], rel], [`Page ${p}`]] : pageOpts.crumbs,
       links: paged ? () => [p > 1 && `<link rel="prev" href="${href(p === 2 ? rel : `${rel}page/${p - 1}/`)}">`, p < n && `<link rel="next" href="${href(`${rel}page/${p + 1}/`)}">`].filter(Boolean).join('\n') : '',
-      body: () => body({ grid: grid(paged ? works.slice((p - 1) * per, p * per) : works, { ctxLang, hl, paged: paged ? { scope, shards, total: works.length } : null }), nav: pager(rel, p, n), p, n, paged }),
+      body: () => body({ grid: grid(paged ? works.slice((p - 1) * per, p * per) : works, { ctxLang, hl, paged: paged ? { scope, shards, total: works.length } : null }), nav: pager(rel, p, n) + (truncated && p === n ? `<p class="note-sm" lang="en">This list continues for ${(works.length - n * per).toLocaleString('en-US')} more books. Use the filters or search above to reach them.</p>` : ''), p, n, paged }),
     });
   }
 }
@@ -265,7 +266,10 @@ function langOptions(ctxWorks) {
       <optgroup ${A('label', 'f_lang_avail')}>${avail.map(o).join('')}</optgroup>
       <optgroup ${A('label', 'f_lang_unavail')}>${none.map(o).join('')}</optgroup>`;
 }
-function filterBar(ctx, { subjects = true, traditions = true, press = true, q = true, lang = true } = {}) {
+// filterBar/langChips are pure functions of the work list, and a long list is rendered once per page, so they are memoised on the list.
+const memoOn = (fn) => { const m = new WeakMap(); return (ctx, opts = {}) => { let b = m.get(ctx); if (!b) m.set(ctx, (b = new Map())); const k = JSON.stringify(opts); if (!b.has(k)) b.set(k, fn(ctx, opts)); return b.get(k); }; };
+const filterBar = memoOn(filterBarRaw);
+function filterBarRaw(ctx, { subjects = true, traditions = true, press = true, q = true, lang = true } = {}) {
   const fopts = Object.entries(tax.formats).map(([k, v]) => `<option value="${k}" data-i18n="fmt_${k}">${esc(en['fmt_' + k] ?? v)}</option>`).join('');
   const lopts = Object.entries(tax.levels).map(([k, v]) => `<option value="${k}" data-i18n="lvl_${k}">${esc(en['lvl_' + k] ?? v)}</option>`).join('');
   return `<form class="filters" role="search" aria-label="Filter books" data-filterbar onsubmit="return false">
@@ -281,7 +285,8 @@ function filterBar(ctx, { subjects = true, traditions = true, press = true, q = 
 </form>`;
 }
 const emptyMsg = () => `<p class="empty" hidden data-empty><span data-empty-text data-i18n="empty_filters">${esc(en.empty_filters)}</span><span class="suggest" data-suggest></span></p>`;
-const langChips = (works) => {
+const langChips = memoOn(langChipsRaw);
+function langChipsRaw(works) {
   const cs = langReg.languages.map((l) => [l, works.filter((w) => wLangs(w).includes(l.code)).length]).filter(([, n]) => n > 0);
   return cs.length ? `<p class="lang-chips"><span class="lc-h" data-i18n="f_language">${esc(en.f_language)}</span> ${cs.map(([l, n]) => `<a class="tag" href="?lang=${l.code}" lang="${l.code}">${esc(l.endonym)}<span class="sr"> (${esc(l.name)})</span> <span class="n">${n}</span></a>`).join('')}</p>` : '';
 };
@@ -448,7 +453,7 @@ page('search/index.html', {
   <p class="stats">${langSummary}</p>
   ${filterBar(cat.works)}
   <p class="note" data-search-prompt>${cat.works.length.toLocaleString('en-US')} books are searchable. Start typing, or choose a filter. <a href="${href('books/')}">Browse all books</a> instead.</p>
-  ${grid([], { paged: { scope: { k: 'all' }, shards: allChunks, total: cat.works.length } })}
+  ${grid([], { hl: 'h2', paged: { scope: { k: 'all' }, shards: allChunks, total: cat.works.length } })}
   ${emptyMsg()}
 </div></section>`,
 });
@@ -666,12 +671,19 @@ function dynPayload(w) {
       b: retailers(w, e).map((r) => [r.label, r.url, r.affiliate ? 1 : 0, r.market ?? '', r.status, r.library ? 1 : 0]), s: (e.sources ?? []).map((x) => [x.label, x.url, x.accessed, x.supports ?? '']) })) };
 }
 const recOf = (w) => [w.slug, w.title, w.subtitle ?? '', w.authors.join(';'), w.authors.map((n) => (authorPage.has(slugify(n)) ? 1 : 0)).join(''), w.subjects.map((x) => dIx.get(x)), (w.tradition ?? []).map((x) => tIx.get(x)),
-  vIx.get(w.level), w.press ? 1 : 0, w.editions.map((e) => [edLangs(e).map((c) => lIx.get(c)), fIx.get(e.format), e.title ?? '']), qxOf(w), isDyn(w) ? 1 : 0, w.series?.name ? [w.series.name, w.series.number ?? 0] : 0, ...(isDyn(w) ? [dynPayload(w)] : [])];
+  vIx.get(w.level), w.press ? 1 : 0, w.editions.map((e) => [edLangs(e).map((c) => lIx.get(c)), fIx.get(e.format), e.title ?? '']), qxOf(w), isDyn(w) ? 1 : 0, w.series?.name ? [w.series.name, w.series.number ?? 0] : 0];
+const fnv = (x) => { let h = 0x811c9dc5; for (let i = 0; i < x.length; i++) { h ^= x.charCodeAt(i); h = Math.imul(h, 0x01000193) >>> 0; } return h; };
+const nDyn = cat.works.filter(isDyn).length, DYN_SHARDS = Math.max(1, Math.min(256, Math.ceil(nDyn / BUILD.dynShardTarget)));
+const dynShard = (slug) => (fnv(slug) % DYN_SHARDS).toString(16).padStart(2, '0');
 {
   const byChunk = new Map();
   for (const w of orderedWorks) (byChunk.get(chunkOf.get(w.id)) ?? byChunk.set(chunkOf.get(w.id), []).get(chunkOf.get(w.id))).push(recOf(w));
   for (const [name, recs] of byChunk) write(`assets/idx/${name}.js`, `(window.FM_IDX=window.FM_IDX||{}).${name}=${JSON.stringify(recs)};`);
-  write('assets/idx/manifest.js', `window.FM_MANIFEST=${JSON.stringify({ v: 1, total: cat.works.length, chunks: [...byChunk.keys()], depts: IDX.depts, deptNames: tax.departments.map((d) => d.name), hubs: Object.fromEntries(tax.hubs.map((h) => [h.id, tax.departments.map((d, i) => (d.hubs.includes(h.id) ? i : -1)).filter((i) => i >= 0)])), trads: IDX.trads, tradNames: tax.traditions.map((t) => t.name), langs: IDX.langs, fmts: IDX.fmts, levels: IDX.levels, authorPages: cat.works.length <= BUILD.authorPagesAllBelow ? 'all' : 'flags', pageSize: BUILD.pageSize, disclosure: cfg.disclosure })};`);
+  // books without a static page: record + full detail, sharded by a hash of the slug so one book view loads one small file
+  const dynBy = new Map();
+  for (const w of cat.works) if (isDyn(w)) (dynBy.get(dynShard(w.slug)) ?? dynBy.set(dynShard(w.slug), {}).get(dynShard(w.slug)))[w.slug] = [...recOf(w), dynPayload(w)];
+  for (const [k, o] of dynBy) write(`assets/idx/dyn-${k}.js`, `(window.FM_DYN=window.FM_DYN||{})[${JSON.stringify(k)}]=${JSON.stringify(o)};`);
+  write('assets/idx/manifest.js', `window.FM_MANIFEST=${JSON.stringify({ v: 1, total: cat.works.length, chunks: [...byChunk.keys()], depts: IDX.depts, deptNames: tax.departments.map((d) => d.name), hubs: Object.fromEntries(tax.hubs.map((h) => [h.id, tax.departments.map((d, i) => (d.hubs.includes(h.id) ? i : -1)).filter((i) => i >= 0)])), trads: IDX.trads, tradNames: tax.traditions.map((t) => t.name), langs: IDX.langs, fmts: IDX.fmts, levels: IDX.levels, authorPages: cat.works.length <= BUILD.authorPagesAllBelow ? 'all' : 'flags', dynShards: DYN_SHARDS, pageSize: BUILD.pageSize, disclosure: cfg.disclosure })};`);
 }
 page('book/index.html', {
   title: 'Book', desc: 'Book details.', crumbs: [['All books', 'books/'], ['Book']], noindex: true,
@@ -766,7 +778,7 @@ page('about/catalogue-standards/index.html', {
 });
 
 fs.mkdirSync(path.join(ROOT, DATA), { recursive: true });
-fs.writeFileSync(path.join(ROOT, DATA, 'retailer-links.json'), JSON.stringify({ generated: cfg.catalogueAsOf, note: 'Every outbound retail URL rendered by the site (untagged). Input for scripts/check-links.mjs.', links: LINKLOG.filter((l, i, a) => a.findIndex((x) => x.url === l.url) === i) }, null, 1));
+fs.writeFileSync(path.join(ROOT, DATA, 'retailer-links.json'), JSON.stringify({ generated: cfg.catalogueAsOf, note: 'Every outbound retail URL rendered by the site (untagged). Input for scripts/check-links.mjs.', links: (() => { const seen = new Set(); return LINKLOG.filter((l) => !seen.has(l.url) && seen.add(l.url)); })() }, null, 1));
 write('assets/catalogue.json', JSON.stringify({ generated: cat.generated, works: cat.works.length, editions: totalEditions, languages: Object.fromEntries(stocked.map((l) => [l.code, { works: nWorks(l.code), editions: nEds(l.code) }])) }));
 // robots.txt and sitemap.xml: previews are closed to crawlers; production gets a sitemap built from the pages generated above
 {

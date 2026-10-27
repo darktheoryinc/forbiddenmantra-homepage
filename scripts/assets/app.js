@@ -204,13 +204,26 @@
         default: return true;
       }
     }
+    // Chunks load in parallel and each one is searchable as soon as it arrives; fuzzy matching and "did you mean" wait for the full set.
+    var byChunk = [], nLoaded = 0, onProg = null;
+    function loadedList() { return [].concat.apply([], byChunk.filter(Boolean)); }
     function ensure() {
       if (recs) return Promise.resolve();
       if (loading && !failed) return loading;
       failed = false;
-      loading = loadManifest(root).then(function (m) { M = m; return Promise.all(shards.map(function (c) { return loadChunk(root, c); })); }).then(function () {
-        recs = []; shards.forEach(function (c) { (window.FM_IDX[c] || []).forEach(function (r) { var o = decode(r, c, recs.length); if (inScope(o)) recs.push(o); }); });
-      }).catch(function (e) { failed = true; throw e; });
+      loading = loadManifest(root).then(function (m) {
+        M = m;
+        // three at a time: the first chunks arrive quickly instead of all of them sharing the connection and finishing together
+        var next = 0, worker = function () {
+          if (next >= shards.length) return Promise.resolve();
+          var si = next++, c = shards[si];
+          return loadChunk(root, c).then(function () {
+            var arr = []; (window.FM_IDX[c] || []).forEach(function (r, k) { var o = decode(r, c, si * 100000 + k); if (inScope(o)) arr.push(o); });
+            byChunk[si] = arr; nLoaded++; if (onProg) onProg();
+          }).then(worker);
+        };
+        return Promise.all([worker(), worker(), worker()]);
+      }).then(function () { recs = loadedList(); }).catch(function (e) { failed = true; throw e; });
       return loading;
     }
     function hay(o) {
@@ -225,7 +238,10 @@
     function closeWords(x) { // vocabulary words within the allowed edit distance of x (built once)
       var m = maxEdits(x), out = {}; if (!m) return out;
       if (!vocab) { var seen = {}; recs.forEach(function (o) { hay(o); o.w.forEach(function (w) { if (w.length > 2) seen[w] = 1; }); }); vocab = Object.keys(seen); }
-      vocab.forEach(function (w) { if (osa(x, w.slice(0, x.length + 1), m) <= m || osa(x, w, m) <= m) out[w] = 1; });
+      vocab.forEach(function (w) { // typos rarely change both of the first two letters, and length must be within the edit budget
+        if (Math.abs(w.length - x.length) > m || (w[0] !== x[0] && w[1] !== x[1] && w[0] !== x[1])) return;
+        if (osa(x, w.slice(0, x.length + 1), m) <= m || osa(x, w, m) <= m) out[w] = 1;
+      });
       return out;
     }
     function suggestFor(terms) {
@@ -236,10 +252,10 @@
       });
       return changed ? out.join(' ') : '';
     }
-    function run() {
+    function run(list, final) {
       var terms = (f.q ? norm(f.q.value).trim() : '').split(/\s+/).filter(Boolean), L = val('lang'), F = val('format'), Sj = val('subject'), T = val('tradition'), V = val('level'), P = val('press');
       var di = Sj ? M.depts.indexOf(Sj) : -1, ti = T ? M.trads.indexOf(T) : -1, eff = L || ctx;
-      var base = recs.filter(function (o) {
+      var base = list.filter(function (o) {
         if (Sj && o.dep.indexOf(di) < 0) return false;
         if (T && o.trd.indexOf(ti) < 0) return false;
         if (V && o.lvl !== V) return false;
@@ -249,7 +265,7 @@
       });
       var fuzzy = false;
       if (terms.length) {
-        fuzzy = !base.some(function (o) { return terms.every(function (x) { return exact(o, x); }); });
+        fuzzy = !!final && !base.some(function (o) { return terms.every(function (x) { return exact(o, x); }); });
         var sets = fuzzy ? terms.map(closeWords) : null;
         base = base.filter(function (o) {
           var ok = terms.every(function (x, k) { return exact(o, x) || (fuzzy && o.w.some(function (w) { return sets[k][w]; })); });
@@ -266,7 +282,7 @@
       var fm = [], lg = []; eds.forEach(function (e) { if (fm.indexOf(e.f) < 0) fm.push(e.f); e.l.forEach(function (x) { if (lg.indexOf(x) < 0) lg.push(x); }); });
       if (eff) lg = [eff];
       var alt = eff ? (eds.filter(function (e) { return e.t; })[0] || {}).t : '', title = alt || o.title;
-      var link = (o.dyn ? root + 'book/index.html?c=' + o.chunk + '&s=' + encodeURIComponent(o.slug) : root + 'books/' + o.slug + '/index.html') + (eff ? '#lang-' + eff : '');
+      var link = (o.dyn ? root + 'book/index.html?s=' + encodeURIComponent(o.slug) : root + 'books/' + o.slug + '/index.html') + (eff ? '#lang-' + eff : '');
       var au = []; o.authors.forEach(function (n, i) { if (i) au.push(', '); au.push(authorLink(M, root, o, i)); });
       return h('article', { 'class': 'card' }, [
         h('a', { 'class': 'card-cover', href: link, tabindex: '-1', 'aria-hidden': 'true' }, [coverEl(title, o.authors[0], o.press === 'fmp')]),
@@ -291,24 +307,27 @@
       count.textContent = (n > shown ? tr('count_range', { a: shown, n: n }) : tr(n === 1 ? 'count_one' : 'count_many', { n: n })) + (usedFuzzy ? ' · ' + tr('close_matches', { q: f.q.value.trim() }) : '');
     }
     var active = function () { return ['q', 'subject', 'tradition', 'lang', 'format', 'level', 'press'].some(function (k) { return val(k); }); };
+    function present(terms, final) {
+      ig.hidden = true; if (pager) pager.hidden = true; if (prompt) prompt.hidden = true; res.hidden = false; draw(true);
+      var n = matches.length, L = val('lang');
+      if (!final) { if (count) count.textContent = tr('count_loading', { n: n, k: nLoaded, t: shards.length }); if (empty) empty.hidden = true; return; }
+      setCount();
+      if (empty) {
+        empty.hidden = n > 0;
+        if (n === 0 && emptyText) emptyText.textContent = L ? tr('empty_lang', { lang: langName(L) }) : tr('empty_filters');
+        var box = empty.querySelector('[data-suggest]'); if (box) {
+          box.textContent = ''; var sg = n === 0 && terms.length ? suggestFor(terms) : '';
+          if (sg) { var bt = h('button', { type: 'button', 'class': 'btn-link' }, [sg]); bt.addEventListener('click', function () { f.q.value = sg; sync(); }); var pre = tr('did_you_mean', { q: '\u0000' }).split('\u0000'); box.appendChild(document.createTextNode(' ' + pre[0])); box.appendChild(bt); box.appendChild(document.createTextNode(pre[1] || '')); }
+        }
+      }
+    }
     function update() {
       var my = ++seq;
       if (!active()) { res.hidden = true; moreWrap.hidden = true; ig.hidden = false; if (pager) pager.hidden = false; if (prompt) prompt.hidden = false; if (empty) empty.hidden = true; if (count && +ig.dataset.total && ig.children.length) count.textContent = tr('count_range', { a: ig.children.length, n: +ig.dataset.total }); else if (count) count.textContent = ''; return; }
-      if (!recs && count) count.textContent = tr('loading_index');
-      ensure().then(function () {
-        if (my !== seq) return;
-        var terms = run(); ig.hidden = true; if (pager) pager.hidden = true; if (prompt) prompt.hidden = true; res.hidden = false; draw(true);
-        var n = matches.length, L = val('lang');
-        setCount();
-        if (empty) {
-          empty.hidden = n > 0;
-          if (n === 0 && emptyText) emptyText.textContent = L ? tr('empty_lang', { lang: langName(L) }) : tr('empty_filters');
-          var box = empty.querySelector('[data-suggest]'); if (box) {
-            box.textContent = ''; var sg = n === 0 && terms.length ? suggestFor(terms) : '';
-            if (sg) { var bt = h('button', { type: 'button', 'class': 'btn-link' }, [sg]); bt.addEventListener('click', function () { f.q.value = sg; sync(); }); var pre = tr('did_you_mean', { q: '\u0000' }).split('\u0000'); box.appendChild(document.createTextNode(' ' + pre[0])); box.appendChild(bt); box.appendChild(document.createTextNode(pre[1] || '')); }
-          }
-        }
-      }).catch(function () { if (my === seq && count) count.textContent = tr('index_error'); });
+      if (recs) { present(run(recs, true), true); return; }
+      if (count) count.textContent = tr('loading_index');
+      onProg = function () { if (my !== seq || recs) return; present(run(loadedList(), false), false); };
+      ensure().then(function () { if (my === seq) present(run(recs, true), true); }).catch(function () { if (my === seq && count) count.textContent = tr('index_error'); });
     }
     function sync() {
       update();
@@ -327,13 +346,15 @@
   // ---------- dynamic book view (books beyond the static-page cap) ----------
   var dyn = document.querySelector('[data-dyn-book]');
   if (dyn) (function () {
-    var root = dyn.dataset.root || './', q = new URLSearchParams(location.search), c = q.get('c'), slug = q.get('s'), wrap = dyn.querySelector('.wrap'), st = dyn.querySelector('[data-dyn-status]');
+    var root = dyn.dataset.root || './', q = new URLSearchParams(location.search), slug = q.get('s'), wrap = dyn.querySelector('.wrap'), st = dyn.querySelector('[data-dyn-status]');
     var fail = function (m) { if (st) st.textContent = m; };
-    if (!c || !slug || !/^c\d+$/.test(c)) { fail('No book was specified.'); return; }
+    if (!slug) { fail('No book was specified.'); return; }
+    var fnv = function (x) { var hh = 0x811c9dc5; for (var i = 0; i < x.length; i++) { hh ^= x.charCodeAt(i); hh = Math.imul(hh, 0x01000193) >>> 0; } return hh; };
     loadManifest(root).then(function (M) {
-      return loadChunk(root, c).then(function () {
-        var r = (window.FM_IDX[c] || []).filter(function (x) { return x[0] === slug; })[0];
-        if (!r || !r[13]) { fail('This book was not found in the catalogue index.'); return; }
+      var k = (fnv(slug) % M.dynShards).toString(16); if (k.length < 2) k = '0' + k;
+      return loadScript(root + 'assets/idx/dyn-' + k + '.js').then(function () {
+        var r = window.FM_DYN && window.FM_DYN[k] && window.FM_DYN[k][slug];
+        if (!r) { fail('This book was not found in the catalogue index.'); return; }
         render(M, r);
       });
     }).catch(function () { fail('The catalogue index could not be loaded.'); });

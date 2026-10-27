@@ -72,5 +72,6 @@
  "show_more": "Show more",
  "loading_index": "Loading the catalogue index…",
  "index_error": "The catalogue index could not be loaded. Check your connection and try again.",
- "count_range": "Showing {a} of {n} books"
+ "count_range": "Showing {a} of {n} books",
+ "count_loading": "{n} so far · loading the catalogue index ({k} of {t})"
 }

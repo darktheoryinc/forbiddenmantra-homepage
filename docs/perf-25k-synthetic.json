@@ -1,0 +1,133 @@
+{
+ "works": 25095,
+ "sizes": {
+  "htmlGz": {
+   "books/index.html": 10109,
+   "books/page/2/index.html": 10679,
+   "search/index.html": 6145,
+   "index.html": 8102,
+   "topics/fantasy/index.html": 9528
+  },
+  "searchIndex": {
+   "files": 17,
+   "rawBytes": 3977838,
+   "gzipBytes": 1217820
+  }
+ },
+ "runs": {
+  "desktop": {
+   "homeLoad": {
+    "dcl": 109,
+    "load": 110,
+    "fcp": null,
+    "wall": 164
+   },
+   "browsePageLoad": {
+    "dcl": 61,
+    "load": 69,
+    "fcp": null,
+    "wall": 81
+   },
+   "browsePage2Load": {
+    "dcl": 73,
+    "load": 78,
+    "fcp": null,
+    "wall": 93
+   },
+   "topicLoad": {
+    "dcl": 85,
+    "load": 89,
+    "fcp": null,
+    "wall": 98
+   },
+   "searchColdFirstQueryMs": 843,
+   "searchColdFirstResultsVisibleMs": 560,
+   "searchColdCount": "14 books shown",
+   "jsHeapMBAfterIndexLoad": 55.7,
+   "search": {
+    "title (full)": {
+     "ms": 200,
+     "result": "1 book shown"
+    },
+    "one word": {
+     "ms": 150,
+     "result": "14 books shown"
+    },
+    "isbn": {
+     "ms": 155,
+     "result": "1 book shown"
+    },
+    "typo": {
+     "ms": 415,
+     "result": "22 books shown · Showing close matches for “Ioqnuaust”"
+    },
+    "no match": {
+     "ms": 250,
+     "result": "0 books shown"
+    }
+   },
+   "filterLanguageMs": 49,
+   "filterLanguageResult": "Showing 48 of 770 books",
+   "filterSubjectMs": 37,
+   "dynamicBookViewMs": 127,
+   "jsErrors": 0
+  },
+  "mobile (4x CPU, 1.6 Mbit/s, 150 ms)": {
+   "homeLoad": {
+    "dcl": 612,
+    "load": 612,
+    "fcp": 596,
+    "wall": 632
+   },
+   "browsePageLoad": {
+    "dcl": 594,
+    "load": 594,
+    "fcp": 536,
+    "wall": 611
+   },
+   "browsePage2Load": {
+    "dcl": 577,
+    "load": 577,
+    "fcp": 552,
+    "wall": 595
+   },
+   "topicLoad": {
+    "dcl": 567,
+    "load": 567,
+    "fcp": 508,
+    "wall": 580
+   },
+   "searchColdFirstQueryMs": 6988,
+   "searchColdFirstResultsVisibleMs": 2049,
+   "searchColdCount": "14 books shown",
+   "jsHeapMBAfterIndexLoad": 44.5,
+   "search": {
+    "title (full)": {
+     "ms": 244,
+     "result": "1 book shown"
+    },
+    "one word": {
+     "ms": 234,
+     "result": "14 books shown"
+    },
+    "isbn": {
+     "ms": 260,
+     "result": "1 book shown"
+    },
+    "typo": {
+     "ms": 1807,
+     "result": "22 books shown · Showing close matches for “Ioqnuaust”"
+    },
+    "no match": {
+     "ms": 581,
+     "result": "0 books shown"
+    }
+   },
+   "filterLanguageMs": 187,
+   "filterLanguageResult": "Showing 48 of 770 books",
+   "filterSubjectMs": 146,
+   "dynamicBookViewMs": 1093,
+   "jsErrors": 0
+  }
+ }
+}

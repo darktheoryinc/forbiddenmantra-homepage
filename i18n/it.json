@@ -75,5 +75,6 @@
  "lvl_unrated": "Livello non ancora valutato",
  "loading_index": "Caricamento dell’indice del catalogo…",
  "index_error": "Impossibile caricare l’indice del catalogo.",
- "count_range": "Mostrati {a} di {n} libri"
+ "count_range": "Mostrati {a} di {n} libri",
+ "count_loading": "{n} finora · caricamento dell’indice ({k} di {t})"
 }

@@ -193,3 +193,4 @@ button[type=submit],.btn{background:var(--gold);color:#120d05;border:0;padding:1
 .more{text-align:center;margin:26px 0 6px}
 .series{margin:2px 0 10px;color:var(--muted)}
 [data-index-grid][hidden],[data-results][hidden]{display:none}
+[hidden]{display:none !important}

@@ -24,8 +24,8 @@ const links = [];
 // Books beyond the static-page cap are drawn client-side from assets/idx/*.js; their buy links are audited from that payload.
 const dynLinks = new Map();
 const idxDir = path.join(SITE, 'assets/idx');
-if (fs.existsSync(idxDir)) for (const f of fs.readdirSync(idxDir).filter((x) => /^c\d+\.js$/.test(x))) {
-  const recs = JSON.parse(fs.readFileSync(path.join(idxDir, f), 'utf8').replace(/^\(window\.FM_IDX=window\.FM_IDX\|\|\{\}\)\.c\d+=/, '').replace(/;\s*$/, ''));
+if (fs.existsSync(idxDir)) for (const f of fs.readdirSync(idxDir).filter((x) => /^dyn-[0-9a-f]+\.js$/.test(x))) {
+  const recs = Object.values(JSON.parse(fs.readFileSync(path.join(idxDir, f), 'utf8').replace(/^\(window\.FM_DYN=window\.FM_DYN\|\|\{\}\)\[[^\]]*\]=/, '').replace(/;\s*$/, '')));
   for (const r of recs) if (r[13]) dynLinks.set(r[0], r[13].eds.flatMap((e) => e.b.filter((b) => b[2]).map((b) => ({ href: b[1], rel: 'sponsored noopener noreferrer', isbn13: e.i13, market: b[3] }))));
 }
 for (const w of cat.works) {

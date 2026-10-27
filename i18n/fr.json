@@ -75,5 +75,6 @@
  "lvl_unrated": "Niveau pas encore évalué",
  "loading_index": "Chargement de l’index du catalogue…",
  "index_error": "L’index du catalogue n’a pas pu être chargé.",
- "count_range": "{a} sur {n} livres affichés"
+ "count_range": "{a} sur {n} livres affichés",
+ "count_loading": "{n} pour l’instant · chargement de l’index ({k} sur {t})"
 }

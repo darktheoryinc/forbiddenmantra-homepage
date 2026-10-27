@@ -75,5 +75,6 @@
  "lvl_unrated": "Stufe noch nicht bewertet",
  "loading_index": "Katalogindex wird geladen …",
  "index_error": "Der Katalogindex konnte nicht geladen werden.",
- "count_range": "{a} von {n} Büchern angezeigt"
+ "count_range": "{a} von {n} Büchern angezeigt",
+ "count_loading": "{n} bisher · Katalogindex wird geladen ({k} von {t})"
 }
