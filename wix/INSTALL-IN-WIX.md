@@ -1,57 +1,49 @@
-# Putting the updated Forbidden Mantra Press bookstore into your Wix site
+# Installing the Forbidden Mantra Press bookstore inside your Wix site
 
-**Status: prepared only. Nothing has been published, nothing in Wix was touched, no domain or hosting was changed or bought.**
+**Prepared only. Nothing has been published; your Wix site, domain, DNS and hosting are unchanged. No paid service is needed.**
 
-## The honest answer first
-Your earlier method (copy code from GitHub, paste into a Wix HTML iframe) was a **single HTML file** (`legacy/forbiddenmantra-homepage.html`, plus the auto-height snippet `legacy/wix-velo-page-code.js`, element `#html3`). That method can hold **one page**.
+This package is a **PREVIEW build**: it shows a "Preview build, not published" bar at the top and tells search engines not to index it. Use it to inspect the bookstore on a free host before connecting it to Wix. The final production build is made after the approvals listed at the bottom.
 
-The new bookstore is **521 files**: 508 pages, a search index, images, scripts and styles. It **cannot be pasted into one Wix code box**, and if it were squeezed into a single page, search, the librarian and every page except the homepage would stop working.
+## Why an iframe
+Your earlier homepage was one HTML file pasted into a Wix HTML iframe. The bookstore is 522 files (508 pages, search index, images, scripts), so it must live on a free static host, and Wix shows it through the same kind of iframe element, set to a website address instead of pasted code.
 
-So there are two honest options:
+## Part 1: get a working preview (about 5 minutes, free)
+1. Download the file (exact link):
+   `https://github.com/darktheoryinc/forbiddenmantra-homepage/raw/claude/gallant-archimedes-ocwf9s/wix/forbiddenmantra-site-for-hosting.zip`
+   It must be **3,702,982 bytes (about 3.7 MB)** and start with the letters `PK`. If it is tiny, or opens as a web page, it was not downloaded correctly: use the link above (the "raw" link, not the normal file page), or use step 1b.
+   * **Check it (Windows):** open Command Prompt in the Downloads folder and run
+     `certutil -hashfile forbiddenmantra-site-for-hosting.zip SHA256`
+     The result must be `3d389c100f09b45f…` (the full value is in `wix/forbiddenmantra-site-for-hosting.zip.sha256`).
+   * **1b. No ZIP needed:** on the repository page choose branch `claude/gallant-archimedes-ocwf9s`, then Code > Download ZIP, extract it, and use the folder `wix/hosting/` inside. It holds the identical files.
+2. Go to **Netlify Drop** (app.netlify.com/drop). Drag in **either** the ZIP **or** the extracted folder (`wix/hosting/`, whose top level contains `index.html`). If the ZIP is refused, extract it and drag the folder instead.
+3. Netlify gives you an address like `https://something.netlify.app`. Open it and look around. It should show the bookstore with the IOSutra section and the full-colour NVIDIA badge.
+4. Free Netlify Drop sites may expire unless you claim them with a free Netlify account. Claim it if you want to keep the address.
 
-| | What works | What you need |
-|---|---|---|
-| **A. Full bookstore in an iframe (recommended)** | Everything: all pages, search, librarian, language menu, curated homepage, IOSutra section with the full-colour NVIDIA badge, Amazon links with `darktheoryinc-20` | A free place to put the files (step 1 below) and the same Wix iframe element you used before, switched to "website address" |
-| B. Paste-only, single page | Homepage look only. **No search, no librarian, no other pages** | Nothing extra, but it is not the bookstore, so I did not build it |
+## Part 2: show it inside Wix (only after you are happy with Part 1)
+5. Open your Wix site in the **editor** (do not publish yet).
+6. Duplicate the page that holds the current bookstore iframe and keep the copy as a backup.
+7. Click the existing iframe element (it shows "iFrame #html3"). Change it from *Code* to **Website address**, paste your Netlify address (it must start with `https://`), and apply. Keeping the same element keeps its ID.
+8. Make it **full width** and about **screen height** (100vh, or around 900 px), with scrolling on.
+9. Click **Preview** in Wix and check: homepage, search, a book page, the language menu, the librarian button at the bottom right, on desktop and mobile.
+10. When satisfied, **you** press Publish in Wix. To undo, unpublish or restore the duplicate.
 
-The rest of this page is Option A. It keeps your Wix site, domain and pages (Blog, About, etc.) exactly as they are.
+## What is verified, and what is not
+* **Verified here** (`node scripts/verify-wix-package.mjs`, 50 checks): the ZIP is real and non-empty, extracts to identical files with two independent tools (Info-ZIP and Java), has `index.html` at the top, all 522 files present, all 48,710 internal links, images and scripts resolve; all 192 books and 223 editions have pages; served over HTTP in a real browser on desktop and mobile with no failed requests or JavaScript errors: homepage, search, librarian, categories, authors, series, guides, legal pages, language menu, IOSutra artwork and full-colour NVIDIA badge. Cross-origin iframe test: `node test/verify-wix-embed.mjs` (41 checks).
+* **Not verified:** I cannot reach Netlify or Wix from my environment, so I did not upload to Netlify or open your Wix editor. The ZIP meets the Netlify Drop requirement as I understand it (a standard ZIP with `index.html` at the top), but I have not seen Netlify accept it.
+* **Amazon links:** 220 buy buttons on book pages; every amazon.com link carries `tag=darktheoryinc-20` (85 go to a product page, 135 are an ISBN search); 2 amazon.co.uk links are correctly untagged. Product links have not been checked live.
 
-## Install: 10 steps
-Do steps 1 to 6 first; nothing public changes until step 8.
+## Known limitations (all iframe embeds)
+* The browser address bar stays on your Wix page, so a visitor cannot copy a link to one book.
+* Google credits the content to the Netlify address, not forbiddenmantra.com (the preview is marked noindex for that reason).
+* Wix's menu and the bookstore's menu both show; your Blog, About and other Wix pages stay in Wix's menu.
+* Saved choices (language, librarian minimized) may not persist where a browser blocks storage in frames. The site still works.
+* Amazon, IOSutra and NVIDIA links open in a new tab, because Amazon refuses to load inside a frame.
 
-1. **Get the files online (free).** Unzip `wix/forbiddenmantra-site-for-hosting.zip` (3.6 MB) from this GitHub branch. Upload the *unzipped folder* to a free static host such as Netlify Drop (drag and drop) or Cloudflare Pages (Direct Upload). You get a web address like `https://something.netlify.app`. Open it: you should see the bookstore. *(I have not tested these hosts' current menus or free-tier limits; any host that serves plain files over HTTPS works.)*
-2. **Copy that address.** It must start with `https://` and end with `/`.
-3. In Wix, open your site in the **editor** (do not publish).
-4. **Back up first:** duplicate the page that holds the current bookstore iframe (page menu > Duplicate) and leave the copy hidden.
-5. On the original page, click the existing **HTML iframe** element (the one that shows "iFrame #html3").
-6. Change it from *Code* to **Website address**, paste the address from step 2, and apply. Keeping the same element keeps its ID, so any old snippet still points at it.
-7. **Size it:** width 100% of the page; height about 100% of the screen height (use "100vh" if your editor offers it, or around 900 px). Leave scrolling on. In **Preview**, check: the homepage with the IOSutra section, search, the language menu, a book page, the librarian button at the bottom right.
-8. When you are happy, **Publish** from Wix as you normally do. (Only you do this step.)
-9. *(Optional auto-height layout.)* If you prefer the iframe to grow with the page instead of scrolling inside itself, paste `wix/wix-velo-page-code.js` into the page code. Trade-off: the librarian button and header then sit at the very bottom/top of a very tall frame instead of following the visitor.
-10. To roll back: unpublish the page or restore the duplicate from step 4.
+## Open launch blockers (not granted, not assumed)
+1. **Book covers:** none of the 192 books has a cover image; each shows a typographic title card. No cover source is connected, and none were invented. See `docs/LAUNCH-READINESS.md`.
+2. **Verified purchase links:** 76 books have a product link, 116 an ISBN search link, and 10 of your own 12 titles have no ISBN/ASIN.
+3. **Approvals only you can give:** NVIDIA membership statement and trademark wording (send the Inception guidelines PDF); IOSutra promotion approved; legal pages reviewed; final web address; commercial-use and likeness permissions for the IOSutra artwork and the librarian character. The production build refuses to run until they are recorded.
 
-## Before this goes live: five approvals only you can give
-The zip is a **preview build**: it shows a "PREVIEW BUILD, NOT PUBLISHED" bar at the top and the production build refuses to run until these are done. Tell me "approved" for each (or tell me what to change) and I will make the clean production zip:
-1. IOSutra membership statement verified in the NVIDIA Inception portal (and the exact trademark attribution line NVIDIA requires; send the guidelines PDF).
-2. The IOSutra promotion approved for production.
-3. The legal pages (Terms/Refund, Privacy, Affiliate Disclosure) reviewed by you or counsel; I recovered only summaries of your original Wix policies.
-4. The final web address from step 1 (needed for the production build).
-5. Confirm commercial-use and likeness permissions for the IOSutra artwork and the librarian character.
-
-## What will and will not behave differently inside Wix
-* **Works (tested):** the bookstore loaded from a different address inside an iframe on desktop and mobile widths, with images, scripts, search (also `?q=`), the librarian, the language menu, internal page navigation, and the NVIDIA full-colour badge file (byte-identical to the one you supplied). Run `node test/verify-wix-embed.mjs` (41 checks, including a sandboxed iframe with browser storage blocked).
-* **Affiliate links:** every Amazon button opens in a new tab with `tag=darktheoryinc-20` and `rel="sponsored"`. They must open in a new tab because Amazon refuses to load inside frames. The same applies to IOSutra and NVIDIA links.
-* **Limits of any iframe on Wix:**
-  * **Web addresses:** the browser address bar stays on your Wix page, so visitors cannot copy a link to a particular book, author or search.
-  * **Google/SEO:** Google credits the content to the hosting address, not to forbiddenmantra.com, and Wix SEO tools cannot see inside the frame. If search ranking of book pages matters, the frame is the wrong tool; hosting the bookstore on a subdomain of your domain would be the fix, but that is a domain change, so I did not do it.
-  * **Two menus:** Wix's own header/menu and the bookstore's menu will both show. Your original Wix pages (Blog, About, Health & Wellness, etc.) stay in Wix's menu; the bookstore's menu does not link to them.
-  * **Saved choices** (website language, librarian minimized) may not persist in browsers that block storage in frames (the site still works, it just forgets).
-  * **Fonts** load from Google Fonts over the internet.
-  * **Untested by me:** the actual Wix editor and live Wix page (I cannot open your Wix editor); the exact wording of Wix menus may differ from the steps above.
-* **Preview notice and drafts:** see the five approvals above.
-
-## What is in this package
-* `wix/forbiddenmantra-site-for-hosting.zip`: the whole site (`index.html` at the top level), including `assets/wix-embed.js`, a 15-line helper that does nothing outside a frame and, inside one, reports the page height in the original `setHeight` format.
-* `wix/wix-velo-page-code.js`: optional auto-height snippet.
-* `scripts/make-wix-package.mjs`: rebuilds the zip (`node scripts/make-wix-package.mjs`).
-* The Wix package differs from the normal build only by that helper script (it is added only when `FM_WIX=1`).
+## Rebuilding
+`node scripts/make-wix-package.mjs` rebuilds the preview ZIP and `wix/hosting/`; `node scripts/verify-wix-package.mjs` re-checks them. A production package is made with `FM_ENV=production FM_SITE_URL=https://your-address/ node scripts/make-wix-package.mjs` and works only after the approvals above.
+`wix/wix-velo-page-code.js` is an optional auto-height snippet (the fixed-height setup above needs no code).
