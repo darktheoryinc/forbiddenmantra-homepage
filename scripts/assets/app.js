@@ -196,6 +196,7 @@
     function inScope(o) {
       switch (scope.k) {
         case 'dept': return o.dep.indexOf(M.depts.indexOf(scope.v)) > -1;
+        case 'depts': return scope.v.some(function (id) { return o.dep.indexOf(M.depts.indexOf(id)) > -1; });
         case 'hub': var ds = M.hubs[scope.v] || []; return o.dep.some(function (d) { return ds.indexOf(d) > -1; });
         case 'trad': return o.trd.indexOf(M.trads.indexOf(scope.v)) > -1;
         case 'lang': return o.ed.some(function (e) { return e.l.indexOf(scope.v) > -1; });

@@ -1,0 +1,29 @@
+{
+  "_doc": "Niche landing pages. A niche is a curated group of taxonomy departments plus editorial framing. Everything shown on a niche page is derived from the catalogue at build time; nothing here lists a book that is not in data/catalogue.json. fmpFallback is used only when Forbidden Mantra Press has no title inside the niche, and the page then says so plainly.",
+  "niches": [
+    {
+      "id": "magic-witchcraft",
+      "name": "Magic & Witchcraft",
+      "tagline": "Witchcraft, folk magic, Wicca, paganism, tarot, divination, ceremonial magic and the Western esoteric current behind them.",
+      "intro": "Books on the practice and history of magic, from village charms and the modern witchcraft revival to the ritual systems of the Western esoteric tradition. Each book keeps its own tradition label, so Wiccan, pagan, hermetic and ceremonial works are not blended into one shelf.",
+      "departments": ["witchcraft", "spells", "wicca", "paganism", "tarot", "divination", "astrology", "ceremonial-magic", "hermeticism", "alchemy"],
+      "shelves": ["witchcraft", "wicca", "tarot", "ceremonial-magic"],
+      "related": ["spirituality-mantras"],
+      "relatedDepartments": ["folklore-fairy-tales", "dark-fantasy", "supernatural-fiction", "gnosticism", "mythology"],
+      "fmpFallback": ["the-apocalypse-of-adam", "the-hidden-technology-of-human-power"],
+      "fmpFallbackNote": "Forbidden Mantra Press does not currently publish a book on witchcraft or ceremonial magic. These are our closest titles for readers drawn to the esoteric side of this subject: an early Gnostic text and a practice guide to subtle-body energy work."
+    },
+    {
+      "id": "spirituality-mantras",
+      "name": "Spirituality & Mantras",
+      "tagline": "Sanskrit mantras, yoga, tantra, Buddhism, Taoist inner practice and contemplative texts.",
+      "intro": "Mantra, meditation and inner cultivation across traditions. Hindu mantra practice, Buddhist and Taoist texts, tantra and the subtle-body arts are kept in their own traditions so you can follow one lineage at a time or compare them.",
+      "departments": ["sanskrit-mantras", "mindfulness", "yoga", "hinduism", "tantra", "buddhism", "taoism", "qigong", "neigong", "mo-pai", "subtle-body", "consciousness", "holistic-traditions"],
+      "shelves": ["sanskrit-mantras", "buddhism", "taoism", "yoga"],
+      "related": ["magic-witchcraft"],
+      "relatedDepartments": ["comparative-religion", "islam-sufism", "judaism-kabbalah", "christian-mysticism", "ancient-texts", "personal-growth"],
+      "fmpFallback": [],
+      "fmpFallbackNote": ""
+    }
+  ]
+}

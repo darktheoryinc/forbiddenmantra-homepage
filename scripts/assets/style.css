@@ -194,3 +194,13 @@ button[type=submit],.btn{background:var(--gold);color:#120d05;border:0;padding:1
 .series{margin:2px 0 10px;color:var(--muted)}
 [data-index-grid][hidden],[data-results][hidden]{display:none}
 [hidden]{display:none !important}
+/* niche guides */
+.niche-hero{background:linear-gradient(180deg,var(--panel2),transparent)}
+.niche-shelf{margin:28px 0}
+.shelf{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(180px,210px);gap:16px;overflow-x:auto;padding:4px 2px 14px;scroll-snap-type:x proximity}
+.shelf .card{scroll-snap-align:start;height:100%}
+.shelf:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.fmp-picks{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:18px;margin-top:12px}
+.fmp-pick{display:flex;flex-direction:column;gap:10px}
+.pick-buy{margin:0}
+.niche-fmp{border:1px solid var(--gold);padding:20px;border-radius:2px;margin-bottom:28px}

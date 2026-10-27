@@ -2,7 +2,7 @@
 // Static site build:  node scripts/build.mjs   ->  site/
 // Reads <FM_DATA>/catalogue.json (from scripts/import.mjs), data/taxonomy.json, data/languages.json, <FM_DATA>/collections.json,
 // config/site.json and i18n/*.json. Zero dependencies. Links end in index.html so output also works from file:// and sub-paths.
-// Env: FM_DATA (default data), FM_OUT (default site), FM_FIXTURE=1 (marks a test build with fictional records),
+// Env: FM_DATA (default data), FM_OUT (default site), FM_CONFIG (alternate site.json, for tests), FM_FIXTURE=1 (marks a test build with fictional records),
 //      AMAZON_TRACKING_ID[_<SUFFIX>] per marketplace (see config/site.json).
 import fs from 'node:fs';
 import path from 'node:path';
@@ -16,7 +16,7 @@ const DATA = process.env.FM_DATA ?? 'data';
 const OUT = path.join(ROOT, process.env.FM_OUT ?? 'site');
 const FIXTURE = !!process.env.FM_FIXTURE;
 const rd = (p) => JSON.parse(fs.readFileSync(path.join(ROOT, p), 'utf8'));
-const cfg = rd('config/site.json');
+const cfg = rd(process.env.FM_CONFIG ?? 'config/site.json');
 // tests (and one-off builds) may override siteUrl/analytics without editing the committed config
 if (process.env.FM_CONFIG_OVERRIDE) { const o = JSON.parse(fs.readFileSync(path.resolve(process.env.FM_CONFIG_OVERRIDE), 'utf8')); for (const k of ['siteUrl', 'analytics']) if (k in o) cfg[k] = k === 'analytics' ? { ...cfg.analytics, ...o.analytics } : o[k]; }
 const tax = rd('data/taxonomy.json');
@@ -146,6 +146,10 @@ const write = (rel, html) => { const f = path.join(OUT, rel); fs.mkdirSync(path.
 const depthPrefix = (rel) => '../'.repeat(rel.split('/').length - 1) || './';
 const worksIn = (deptId) => cat.works.filter((w) => w.subjects.includes(deptId));
 const worksInHub = (hubId) => cat.works.filter((w) => w.subjects.some((s) => dept.get(s).hubs.includes(hubId)));
+const NICHES = fs.existsSync(path.join(ROOT, DATA, 'niches.json')) ? JSON.parse(fs.readFileSync(path.join(ROOT, DATA, 'niches.json'), 'utf8')).niches : [];
+const nicheById = new Map(NICHES.map((n) => [n.id, n]));
+for (const n of NICHES) for (const d of [...n.departments, ...(n.shelves ?? []), ...(n.relatedDepartments ?? [])]) if (!dept.has(d)) throw new Error('niches.json: ' + n.id + ' references unknown department ' + d);
+const nicheWorksOf = (n) => { const set = new Set(n.departments); return orderedWorks.filter((w) => w.subjects.some((x) => set.has(x))); };
 const stagedIn = (deptId) => staged.filter((w) => w.subjects.includes(deptId)).length;
 const stagedInHub = (hubId) => staged.filter((w) => w.subjects.some((s) => dept.get(s).hubs.includes(hubId))).length;
 const primaryHub = (d) => hub.get(dept.get(d).hubs[0]);
@@ -410,6 +414,7 @@ page('index.html', {
   <h2>${['Zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten'][tax.hubs.length] ?? tax.hubs.length} subject hubs</h2>
   <div class="hubs">${tax.hubs.map((h) => { const n = worksInHub(h.id).length; return `<a class="hub" href="${href(`subjects/${h.id}/`)}"><h3>${esc(h.name)}</h3><p>${esc(h.tagline)}</p><span class="hub-n">${fmt(n, 'book', 'books')} · ${fmt(tax.departments.filter((d) => d.hubs.includes(h.id)).length, 'department', 'departments')}</span></a>`; }).join('')}</div>
 </div></section>
+${NICHES.length ? `<section class="band" data-home="guides"><div class="wrap"><div class="split"><h2>Guides by interest</h2><a href="${href('niches/')}">All guides →</a></div><div class="depts">${NICHES.map((n) => `<a class="dept" href="${href('niches/' + n.id + '/')}"><h3>${esc(n.name)}</h3><p>${esc(n.tagline)}</p><span class="hub-n">${fmt(nicheWorksOf(n).length, 'book', 'books')}</span></a>`).join('')}</div></div></section>` : ''}
 <section class="band alt" data-home="discovery"><div class="wrap">
   <div class="split"><h2>Discover by story</h2><a href="${href('collections/')}">All collections →</a></div>
   <p class="lede-sm">Fantasy, myth and the supernatural, with independent recommendations for readers who love particular books or authors.</p>
@@ -534,6 +539,48 @@ ${ws.length ? langChips(ws) + filterBar(ws, { subjects: false, q: false }) + G +
 ${artBlock(artFor.topic(d.id), 6, `#t-${d.id}`)}
 <h2>Related departments</h2><ul class="chips">${sameHub.map((x) => `<li><a href="${href(`topics/${x.id}/`)}">${esc(x.name)}</a></li>`).join('')}</ul>
 </div></section>`,
+  }});
+}
+
+// ---------- niche landing pages (data/niches.json) ----------
+const buyBtn = (w) => {
+  for (const e of w.editions) {
+    const r = retailers(w, e).find((x) => x.affiliate && !x.library);
+    if (r) return '<a class="btn" href="' + esc(r.url) + '" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="' + esc(w.slug) + '" data-isbn="' + (e.isbn13 ?? '') + '" data-market="' + (r.market ?? '') + '" data-linktype="' + r.kind + '" data-cat="' + w.subjects[0] + '" data-own="' + (w.press ? 'fmp' : 'third-party') + '">Buy on Amazon (affiliate link)<span class="sr"> (opens in a new tab)</span></a>';
+  }
+  return '';
+};
+page('niches/index.html', {
+  title: 'Guides by interest', crumbs: [['Guides']], desc: 'Curated landing pages for the main interests in the catalogue.',
+  body: () => '<section class="band"><div class="wrap"><h1>Guides by interest</h1><p class="lede-sm">Curated starting points. Each guide gathers a part of the catalogue with its authors, series, related subjects and articles.</p><div class="depts">' + NICHES.map((n) => '<a class="dept" href="' + href('niches/' + n.id + '/') + '"><h2>' + esc(n.name) + '</h2><p>' + esc(n.tagline) + '</p><span class="hub-n">' + fmt(nicheWorksOf(n).length, 'book', 'books') + '</span></a>').join('') + '</div></div></section>',
+});
+for (const n of NICHES) {
+  const ws = nicheWorksOf(n), depSet = new Set(n.departments);
+  const own = ws.filter((w) => w.press);
+  const fallback = !own.length ? (n.fmpFallback ?? []).map((id) => workById.get(id)).filter(Boolean) : [];
+  const picks = own.length ? own : fallback;
+  // featured authors: most books in the niche, or any Forbidden Mantra Press author
+  const ac = new Map(); for (const w of ws) for (const a of w.authors) ac.set(a, (ac.get(a) ?? 0) + 1);
+  const authors = [...ac].filter(([a, c]) => authorPage.has(slugify(a)) && (c >= 2 || ws.some((w) => w.press && w.authors.includes(a)))).sort((a, b) => b[1] - a[1] || (a[0] < b[0] ? -1 : 1)).slice(0, 8);
+  const sers = [...seriesMap.values()].map((sr) => ({ sr, k: sr.works.filter((w) => w.subjects.some((x) => depSet.has(x))).length })).filter((x) => x.k >= 2).sort((a, b) => b.k - a.k).slice(0, 6);
+  const shelfDeps = (n.shelves ?? []).filter((d) => ws.some((w) => w.subjects.includes(d)));
+  const shelf = (d) => { const list = ws.filter((w) => w.subjects.includes(d)).sort((a, b) => (b.press ? 1 : 0) - (a.press ? 1 : 0)).slice(0, 8); return '<section class="niche-shelf" aria-labelledby="sh-' + d + '"><div class="split"><h3 id="sh-' + d + '">' + esc(dept.get(d).name) + '</h3><a href="' + href('topics/' + d + '/') + '">All ' + fmt(worksIn(d).length, 'book', 'books') + ' →</a></div><div class="shelf" role="region" tabindex="0" aria-label="' + esc(dept.get(d).name) + ' books, scroll sideways">' + list.map((w) => card(w, null, 'h4', true)).join('') + '</div></section>'; };
+  const arts = [...new Map(n.departments.flatMap((d) => artFor.topic(d)).map((a) => [a.slug, a])).values()];
+  const relDeps = [...new Set([...n.departments, ...(n.relatedDepartments ?? [])])].filter((d) => worksIn(d).length);
+  const shelves = shelfDeps.length ? shelfDeps.map(shelf).join('') : '';
+  listing({ rel: 'niches/' + n.id + '/', works: ws, scope: { k: 'depts', v: n.departments }, page: {
+    title: n.name, desc: n.tagline, crumbs: [['Guides', 'niches/'], [n.name]],
+    body: ({ grid: G, nav }) => '<section class="hero hero-sm niche-hero"><div class="wrap"><p class="eyebrow">Guide</p><h1>' + esc(n.name) + '</h1><p class="lede">' + esc(n.intro) + '</p><p class="hero-links"><span class="status">' + fmt(ws.length, 'book', 'books') + ' · ' + fmt(own.length, 'Forbidden Mantra Press title', 'Forbidden Mantra Press titles') + '</span></p></div></section>' +
+      '<section class="band"><div class="wrap">' +
+      (picks.length ? '<section class="niche-fmp" aria-labelledby="nf-h" data-own-section><h2 id="nf-h">From Forbidden Mantra Press</h2>' + (own.length ? '<p class="note-sm">Books published by us. Buying through the Amazon links below earns us both the publisher royalty and an affiliate commission.</p>' : '<p class="note-sm">' + esc(n.fmpFallbackNote) + '</p>') + '<div class="fmp-picks">' + picks.map((w) => '<div class="fmp-pick">' + card(w, null, 'h3', true) + '<p class="pick-buy">' + buyBtn(w) + '</p></div>').join('') + '</div></section>' : '') +
+      shelves +
+      (authors.length ? '<h2>Featured authors</h2><ul class="chips">' + authors.map(([a, c]) => '<li><a href="' + authorHref(a) + '">' + esc(a) + '</a> <span>' + c + '</span></li>').join('') + '</ul>' : '') +
+      (sers.length ? '<h2>Series</h2><ul class="chips">' + sers.map((x) => '<li><a href="' + href('series/' + x.sr.id + '/') + '">' + esc(x.sr.name) + '</a> <span>' + x.k + '</span></li>').join('') + '</ul>' : '') +
+      '<h2>Browse and search this guide</h2>' + langChips(ws) + filterBar(ws, { subjects: false }) + G + nav + emptyMsg() +
+      '<p class="note-sm" lang="en">' + esc(cfg.disclosure) + ' Purchase links are on each book page and are labelled.</p>' +
+      '<h2>Related subjects</h2><ul class="chips">' + relDeps.map((d) => '<li><a href="' + href('topics/' + d + '/') + '">' + esc(dept.get(d).name) + '</a></li>').join('') + '</ul>' +
+      ((n.related ?? []).length ? '<h2>Related guides</h2><ul class="chips">' + n.related.map((id) => nicheById.get(id)).filter(Boolean).map((x) => '<li><a href="' + href('niches/' + x.id + '/') + '">' + esc(x.name) + '</a></li>').join('') + '</ul>' : '') +
+      artBlock(arts, 6, '#n-' + n.id) + '</div></section>',
   }});
 }
 
