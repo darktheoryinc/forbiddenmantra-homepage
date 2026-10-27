@@ -11,26 +11,52 @@ import { slugify } from './lib.mjs';
 import * as promo from './promo.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const esc = (s = '') => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
 const DATA = process.env.FM_DATA ?? 'data';
 const OUT = path.join(ROOT, process.env.FM_OUT ?? 'site');
 const FIXTURE = !!process.env.FM_FIXTURE;
 const rd = (p) => JSON.parse(fs.readFileSync(path.join(ROOT, p), 'utf8'));
 const cfg = rd('config/site.json');
+// tests (and one-off builds) may override siteUrl/analytics without editing the committed config
+if (process.env.FM_CONFIG_OVERRIDE) { const o = JSON.parse(fs.readFileSync(path.resolve(process.env.FM_CONFIG_OVERRIDE), 'utf8')); for (const k of ['siteUrl', 'analytics']) if (k in o) cfg[k] = k === 'analytics' ? { ...cfg.analytics, ...o.analytics } : o[k]; }
 const tax = rd('data/taxonomy.json');
 const langReg = rd('data/languages.json');
 const cat = rd(`${DATA}/catalogue.json`);
 const staged = rd(`${DATA}/staged.json`).works;
 const coll = rd(`${DATA}/collections.json`);
 
+// ---------- retailer link checks (scripts/check-links.mjs writes data/link-check.json from a networked machine) ----------
+const LINKCHECK = fs.existsSync(path.join(ROOT, DATA, 'link-check.json')) ? rd(`${DATA}/link-check.json`).results ?? {} : {};
+const LINKLOG = []; // every outbound retail URL the site renders, for check-links.mjs
+
+// ---------- blog articles (scripts/import-articles.mjs) ----------
+const ART = fs.existsSync(path.join(ROOT, DATA, 'articles.json')) ? rd(`${DATA}/articles.json`).articles : [];
+const artFor = { work: (id) => ART.filter((a) => a.works.includes(id)), topic: (id) => ART.filter((a) => a.topics.includes(id)), press: () => ART.filter((a) => a.press), lang: (c) => ART.filter((a) => a.lang === c) };
+const artList = (list, limit = 6) => `<ul class="articles" lang="en">${list.slice(0, limit).map((a) => `<li><a href="${esc(a.url)}" target="_blank" rel="noopener" data-track="article" data-slug="${esc(a.slug)}"${a.lang !== 'en' ? ` lang="${a.lang}"` : ''}>${esc(a.title)}<span class="sr"> (opens in a new tab)</span></a> <span class="a-date">${a.published}</span>${a.lang !== 'en' ? ` <span class="tag">${esc(LANG.get(a.lang)?.endonym ?? a.lang)}</span>` : ''}</li>`).join('')}</ul>`;
+const artBlock = (list, limit, more) => list.length ? `<h2 lang="en">From the blog</h2><p class="note-sm" lang="en">Articles from the Forbidden Mantra blog that relate to this page. Suggested by topic; the blog is a separate site.</p>${artList(list, limit)}${list.length > limit ? `<p lang="en"><a href="${href('articles/')}${more ?? ''}">All ${list.length} related articles →</a></p>` : ''}` : '';
+
 // ---------- cross-promotion (scripts/promo.mjs) ----------
 const PROMOS = promo.loadRegistry(path.join(ROOT, process.env.FM_PROMOS ?? 'data/promos.json'));
 const PRODUCTION = process.env.FM_ENV === 'production';
+const SITE_URL = (process.env.FM_SITE_URL ?? cfg.siteUrl ?? '').replace(/\/+$/, '');
+// analytics: off unless exactly one provider is configured with its id
+const ANALYTICS = (() => {
+  const a = cfg.analytics ?? {}, p = a.provider;
+  if (!p) return { snippet: '', provider: null };
+  if (p === 'ga4') { console.error('ERROR analytics: GA4 is not supported until a consent mechanism exists.'); process.exit(1); }
+  const need = { goatcounter: a.goatcounter?.code, plausible: a.plausible?.domain, cloudflare: a.cloudflare?.token }[p];
+  if (!need) { console.error(`ERROR analytics: provider "${p}" has no id set in config/site.json.`); process.exit(1); }
+  const snippet = { goatcounter: `<script data-goatcounter="https://${esc(need)}.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>`, plausible: `<script defer data-domain="${esc(need)}" src="https://plausible.io/js/script.js"></script>`, cloudflare: `<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "${esc(need)}"}'></script>` }[p];
+  if (!snippet) { console.error(`ERROR analytics: unknown provider "${p}".`); process.exit(1); }
+  return { snippet, provider: p };
+})();
 {
   const v = promo.validate(PROMOS, { root: ROOT, production: PRODUCTION });
   v.warnings.forEach((w) => console.warn(`promo warning: ${w}`));
+  if (PRODUCTION && !/^https:\/\/[^/]+/.test(SITE_URL)) v.blockers.push('siteUrl: set config/site.json "siteUrl" (or FM_SITE_URL) to the https address the site will be served from; canonical links and the sitemap need it.');
   if (v.errors.length || v.blockers.length) {
     [...v.errors.map((e) => `ERROR   ${e}`), ...v.blockers.map((b) => `BLOCKER ${b}`)].forEach((m) => console.error(m));
-    console.error(`\nBuild stopped: ${v.errors.length} error(s), ${v.blockers.length} launch blocker(s) in data/promos.json.`);
+    console.error(`\nBuild stopped: ${v.errors.length} error(s), ${v.blockers.length} launch blocker(s).`);
     process.exit(1);
   }
 }
@@ -47,7 +73,6 @@ for (const f of fs.readdirSync(path.join(ROOT, 'i18n')).filter((x) => x.endsWith
 const uiLocales = Object.keys(locales).filter((c) => LANG.has(c));
 const missingKeys = Object.fromEntries(Object.entries(locales).map(([c, d]) => [c, Object.keys(en).filter((k) => !(k in d))]));
 for (const [c, m] of Object.entries(missingKeys)) if (m.length) console.warn(`i18n/${c}.json is missing ${m.length} key(s); English is used as fallback: ${m.join(', ')}`);
-const esc = (s = '') => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
 const S = (k, tag = 'span') => `<${tag} data-i18n="${k}">${esc(en[k])}</${tag}>`;   // translatable text node
 const A = (attr, k) => `${attr}="${esc(en[k])}" data-i18n-${attr}="${k}"`;          // translatable attribute
 const fill = (s, v) => s.replace(/\{(\w+)\}/g, (_, k) => v[k]);
@@ -95,20 +120,37 @@ const fmt = (n, one, many) => `${n} ${n === 1 ? one : many}`;
 // ---------- retailer links (marketplace-aware) ----------
 const mkt = (r) => r.marketplace ?? (r.retailer === 'amazon' ? AFF.defaultMarketplace : null);
 const amazonLabel = (m, ed) => (m === 'amazon.com' ? (ed.format === 'audiobook' ? 'Amazon (Audible)' : 'Amazon') : `Amazon.${m.slice(7)}${ed.format === 'audiobook' ? ' (Audible)' : ''}`);
-function retailers(work, ed) {
+function retailersRaw(work, ed) {
   const out = [];
   for (const r of ed.retailers ?? []) {
     const m = mkt(r);
     out.push({ label: r.retailer === 'amazon' ? amazonLabel(m, ed) : r.retailer === 'google-play' ? 'Google Play Books' : r.retailer, url: r.retailer === 'amazon' ? withTag(r.url, m) : r.url, affiliate: r.retailer === 'amazon', market: r.retailer === 'amazon' ? m : null, status: r.verification === 'seen-in-search-results' ? `Link seen in search results on ${r.checkedOn}; live check pending` : `Verified ${r.checkedOn}` });
   }
   if (!out.some((o) => o.affiliate) && ed.language === 'en') {
-    const m = AFF.defaultMarketplace;
+    const m = ed.marketplace ?? AFF.defaultMarketplace; // UK editions etc. can name their own marketplace
     if (ed.isbn10 && ['paperback', 'hardcover'].includes(ed.format) && !ed.noDerivedLink)
       out.push({ label: 'Amazon', url: withTag(`https://www.${m}/dp/${ed.isbn10}`, m), affiliate: true, market: m, status: 'Built from the ISBN-10; not yet confirmed live' });
     else if (work.press === 'fmp')
       out.push({ label: 'Search on Amazon', url: withTag(`https://www.${m}/s?k=${encodeURIComponent(`${work.title} ${work.subtitle ?? ''} Forbidden Mantra Press`.replace(/\s+/g, ' ').trim())}&i=stripbooks`, m), affiliate: true, market: m, status: 'Search link; edition-specific ASIN still to be added' });
   }
   if (ed.isbn13) out.push({ label: S('btn_library'), labelIsHtml: true, url: `https://search.worldcat.org/search?q=bn%3A${ed.isbn13}`, affiliate: false, library: true, status: 'Non-commercial WorldCat ISBN lookup' });
+  return out;
+}
+
+// Apply link-check results: dead links are not rendered; verified ones say so; every retail URL is logged for the checker.
+function retailers(work, ed) {
+  const out = [];
+  for (const r of retailersRaw(work, ed)) {
+    if (r.library) { out.push(r); continue; }
+    const clean = r.url.replace(/([?&])tag=[^&]*&?/, '$1').replace(/[?&]$/, '');
+    LINKLOG.push({ work: work.id, title: `${ed.title ?? work.title}`, edition: ed.id ?? ed.isbn13 ?? '', label: r.label, market: r.market ?? null, url: clean });
+    const lc = LINKCHECK[clean];
+    if (lc?.verdict === 'dead') continue;
+    if (lc?.verdict === 'live') r.status = `Verified live ${lc.checkedOn}`;
+    else if (lc?.verdict === 'blocked') r.status += `; automated check on ${lc.checkedOn} was blocked by the retailer`;
+    else if (lc?.verdict === 'mismatch') r.status += `; check on ${lc.checkedOn} found a page whose title did not match`;
+    out.push(r);
+  }
   return out;
 }
 
@@ -125,7 +167,7 @@ function searchBlob(w) {
   return [w.title, w.subtitle, ...w.editions.flatMap((e) => [e.title, e.subtitle, e.translator]), ...w.authors, ...w.subjects.map((s) => dept.get(s).name), ...(w.tradition ?? []).map((t) => trad.get(t)?.name), ...w.editions.map((e) => e.publisher), ...langs, w.press ? 'forbidden mantra press' : '', ...ids].filter(Boolean).join(' ').toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '');
 }
 // ctxLang: render the card as seen from a language page (that language's title/formats; link to its edition group)
-function card(w, ctxLang = null) {
+function card(w, ctxLang = null, hl = 'h3') {
   const eds = ctxLang ? w.editions.filter((e) => edLangs(e).includes(ctxLang)) : w.editions;
   const fmts = [...new Set(eds.map((e) => e.format))];
   const langs = [...new Set(eds.flatMap(edLangs))];
@@ -137,14 +179,14 @@ function card(w, ctxLang = null) {
   <a class="card-cover" href="${link}" tabindex="-1" aria-hidden="true">${cover(w, false, t)}</a>
   <div class="card-body">
     ${w.press ? '<span class="badge badge-fmp">Forbidden Mantra Press</span>' : ''}
-    <h3 class="card-title"><a href="${link}"${t !== w.title ? ` lang="${ctxLang}"` : ''}>${esc(t)}</a></h3>
+    <${hl} class="card-title"><a href="${link}"${t !== w.title ? ` lang="${ctxLang}"` : ''}>${esc(t)}</a></${hl}>
     ${sub ? `<p class="card-sub">${esc(sub)}</p>` : ''}
     <p class="card-author">${authorLinks(w)}</p>
     <p class="card-meta">${fmts.map((f) => tax.formats[f]).join(' · ')} · ${langs.map((c) => LANG.get(c)?.name ?? c).join(', ')} · ${tax.levels[w.level].split(' /')[0]}</p>
   </div>
 </article>`;
 }
-const grid = (works, { filterable = true, ctxLang = null } = {}) => `<div class="grid" ${filterable ? 'data-filterable' : ''}>${works.map((w) => card(w, ctxLang)).join('')}</div>`;
+const grid = (works, { filterable = true, ctxLang = null, hl = 'h3' } = {}) => `<div class="grid" ${filterable ? 'data-filterable' : ''}>${works.map((w) => card(w, ctxLang, hl)).join('')}</div>`;
 
 function langOptions(ctxWorks) {
   const n = (c) => ctxWorks.filter((w) => wLangs(w).includes(c)).length;
@@ -170,7 +212,7 @@ function filterBar(ctx, { subjects = true, traditions = true, press = true, q = 
   <p class="f-count" role="status" aria-live="polite" data-count></p>
 </form>`;
 }
-const emptyMsg = () => `<p class="empty" hidden data-empty><span data-empty-text data-i18n="empty_filters">${esc(en.empty_filters)}</span></p>`;
+const emptyMsg = () => `<p class="empty" hidden data-empty><span data-empty-text data-i18n="empty_filters">${esc(en.empty_filters)}</span><span class="suggest" data-suggest></span></p>`;
 const langChips = (works) => {
   const cs = langReg.languages.map((l) => [l, works.filter((w) => wLangs(w).includes(l.code)).length]).filter(([, n]) => n > 0);
   return cs.length ? `<p class="lang-chips"><span class="lc-h" data-i18n="f_language">${esc(en.f_language)}</span> ${cs.map(([l, n]) => `<a class="tag" href="?lang=${l.code}" lang="${l.code}">${esc(l.endonym)}<span class="sr"> (${esc(l.name)})</span> <span class="n">${n}</span></a>`).join('')}</p>` : '';
@@ -200,7 +242,7 @@ function langMenu() {
 </div>`;
 }
 
-const NAV = [['nav_subjects', 'subjects/'], ['nav_traditions', 'traditions/'], ['nav_authors', 'authors/'], ['nav_paths', 'paths/'], ['nav_collections', 'collections/'], ['nav_press', 'press/']];
+const NAV = [['nav_subjects', 'subjects/'], ['nav_traditions', 'traditions/'], ['nav_authors', 'authors/'], ['nav_paths', 'paths/'], ['nav_collections', 'collections/'], ['nav_press', 'press/'], ['nav_iosutra', 'technology/']];
 const anyUntagged = Object.values(tagStatus).every((v) => !v);
 function layout({ title, rel, desc, body, crumbs = [], jsonld = null, current = '' }) {
   ROOT_PREFIX = depthPrefix(rel);
@@ -213,15 +255,16 @@ function layout({ title, rel, desc, body, crumbs = [], jsonld = null, current = 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(title)}${title.includes('Forbidden Mantra') ? '' : ' · Forbidden Mantra Press'}</title>
 <meta name="description" content="${esc(desc ?? cfg.tagline)}">
-<meta name="robots" content="noindex, nofollow"><!-- preview build: remove before production -->
+${PRODUCTION ? `<link rel="canonical" href="${SITE_URL}/${rel.replace(/index\.html$/, '')}">` : '<meta name="robots" content="noindex, nofollow"><!-- preview build: not for production -->'}
 <link rel="stylesheet" href="${ROOT_PREFIX}assets/style.css">
+${ANALYTICS.snippet}
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;500;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld)}</script>` : ''}
 </head>
 <body>
 <a class="skip" href="#main" data-i18n="skip">${esc(en.skip)}</a>
-${FIXTURE ? '<div class="preview-bar fixture-bar" role="note">TEST FIXTURE BUILD. Every record on this site is fictional and exists only to test multilingual behaviour. Never publish.</div>' : ''}
-<div class="preview-bar" role="note">Preview build, not published. Catalogue as of ${cfg.catalogueAsOf}. ${anyUntagged ? 'Amazon links carry no Associates tracking ID yet.' : ''}</div>
+${FIXTURE ? '<div class="preview-bar fixture-bar" role="region" aria-label="Test fixture notice">TEST FIXTURE BUILD. Every record on this site is fictional and exists only to test multilingual behaviour. Never publish.</div>' : ''}
+${PRODUCTION ? '' : `<div class="preview-bar" role="region" aria-label="Preview notice">Preview build, not published. Catalogue as of ${cfg.catalogueAsOf}. ${anyUntagged ? 'Amazon links carry no Associates tracking ID yet.' : ''}</div>`}
 <header class="site-header">
   <div class="wrap header-in">
     <a class="logo" href="${href('')}">Forbidden Mantra Press</a>
@@ -241,7 +284,7 @@ ${page}
   <div class="wrap foot-grid">
     <div><p class="foot-brand">Forbidden Mantra Press</p><p>A curated bookstore of sacred texts, practice and inner cultivation.</p></div>
     <div><p class="foot-h" data-i18n="foot_browse">${esc(en.foot_browse)}</p><ul>${tax.hubs.map((h) => `<li><a href="${href(`subjects/${h.id}/`)}">${esc(h.name)}</a></li>`).join('')}</ul></div>
-    <div><p class="foot-h" data-i18n="foot_store">${esc(en.foot_store)}</p><ul><li><a href="${href('books/')}" data-i18n="foot_all_books">${esc(en.foot_all_books)}</a></li><li><a href="${href('languages/')}" data-i18n="foot_languages">${esc(en.foot_languages)}</a></li><li><a href="${href('press/')}">Forbidden Mantra Press</a></li><li><a href="${href('about/catalogue-standards/')}" data-i18n="foot_verify">${esc(en.foot_verify)}</a></li><li><a href="${href('about/affiliate-disclosure/')}" data-i18n="foot_affiliate">${esc(en.foot_affiliate)}</a></li></ul></div>
+    <div><p class="foot-h" data-i18n="foot_store">${esc(en.foot_store)}</p><ul><li><a href="${href('books/')}" data-i18n="foot_all_books">${esc(en.foot_all_books)}</a></li><li><a href="${href('languages/')}" data-i18n="foot_languages">${esc(en.foot_languages)}</a></li>${ART.length ? `<li><a href="${href('articles/')}">Articles</a></li>` : ''}<li><a href="${href('press/')}">Forbidden Mantra Press</a></li><li><a href="${href('about/catalogue-standards/')}" data-i18n="foot_verify">${esc(en.foot_verify)}</a></li><li><a href="${href('about/affiliate-disclosure/')}" data-i18n="foot_affiliate">${esc(en.foot_affiliate)}</a></li><li><a href="${href('about/privacy/')}">Privacy</a></li></ul></div>
   </div>
   <div class="wrap">${placed('footer').map((p) => promo.renderFooter(promoView('footer', p.id), promoCtx)).join('')}<p class="disclosure" lang="en">${esc(cfg.disclosure)}</p><p class="copy">© 2025–2026 Forbidden Mantra Press</p></div>
 </footer>
@@ -278,22 +321,27 @@ page('index.html', {
   </div>
 </section>
 <section class="band"><div class="wrap">
-  <h2>Six subject hubs</h2>
+  <h2>${['Zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten'][tax.hubs.length] ?? tax.hubs.length} subject hubs</h2>
   <div class="hubs">${tax.hubs.map((h) => { const n = worksInHub(h.id).length; return `<a class="hub" href="${href(`subjects/${h.id}/`)}"><h3>${esc(h.name)}</h3><p>${esc(h.tagline)}</p><span class="hub-n">${fmt(n, 'book', 'books')} · ${fmt(tax.departments.filter((d) => d.hubs.includes(h.id)).length, 'department', 'departments')}</span></a>`; }).join('')}</div>
 </div></section>
-<section class="band alt"><div class="wrap">
+<section class="band alt" data-home="discovery"><div class="wrap">
+  <div class="split"><h2>Discover by story</h2><a href="${href('collections/')}">All collections →</a></div>
+  <p class="lede-sm">Fantasy, myth and the supernatural, with independent recommendations for readers who love particular books or authors.</p>
+  <div class="paths">${['harry-potter-discovery', 'major-fantasy-authors', 'myth-retold', 'gothic-supernatural'].map((id) => coll.collections.find((c) => c.id === id)).filter(Boolean).map((c) => `<a class="path" href="${href(`collections/${c.id}/`)}"><h3>${esc(c.title)}</h3><p>${esc(c.blurb)}</p><span class="hub-n">${fmt(c.works.length, 'book', 'books')}</span></a>`).join('')}</div>
+</div></section>
+<section class="band"><div class="wrap">
   <div class="split"><h2>From Forbidden Mantra Press</h2><a href="${href('press/')}">All press titles →</a></div>
   ${grid(fmpWorks.slice(0, 4), { filterable: false })}
 </div></section>
-<section class="band"><div class="wrap">
+<section class="band alt"><div class="wrap">
   <div class="split"><h2>Start reading</h2><a href="${href('paths/')}">All reading paths →</a></div>
   <div class="paths">${coll.paths.slice(0, 3).map((p) => `<a class="path" href="${href(`paths/${p.id}/`)}"><p class="eyebrow">${esc(p.audience)}</p><h3>${esc(p.title)}</h3><p>${esc(p.blurb)}</p></a>`).join('')}</div>
 </div></section>
-<section class="band alt"><div class="wrap">
-  <div class="split"><h2>Established authors</h2><a href="${href('authors/')}">Authors A–Z →</a></div>
-  ${grid(outside.slice(0, 8), { filterable: false })}
-</div></section>
 <section class="band"><div class="wrap">
+  <div class="split"><h2>Established authors</h2><a href="${href('authors/')}">Authors A–Z →</a></div>
+  ${grid((coll.featured?.home ?? []).map((id) => workById.get(id)).filter(Boolean).concat(outside).filter((w, i, a) => a.indexOf(w) === i).slice(0, 8), { filterable: false })}
+</div></section>
+<section class="band alt"><div class="wrap">
   <div class="split"><h2 data-i18n="lang_books_h">${esc(en.lang_books_h)}</h2><a href="${href('languages/')}" data-i18n="lang_all_link">${esc(en.lang_all_link)}</a></div>
   <p class="lede-sm">${stocked.length === 1 ? `Every verified edition so far is in ${esc(stocked[0].name)}. ` : ''}We add a language to the shelf only when a specific edition has been verified with its own identifier and source. ${unstocked.length} more languages are set up and waiting for verified editions.</p>
   <ul class="langs-home">${stocked.map((l) => `<li><a class="lang-tile" href="${href(`languages/${l.code}/`)}" lang="${l.code}" dir="${l.dir}"><span class="lt-name">${esc(l.endonym)}</span><span class="lt-n">${fmt(nWorks(l.code), 'book', 'books')} · ${fmt(nEds(l.code), 'edition', 'editions')}</span></a></li>`).join('')}</ul>
@@ -311,7 +359,7 @@ const browseBody = (heading, intro) => () => `
   <h1>${heading}</h1><p class="lede-sm">${intro}</p>
   <p class="stats">${langSummary}</p>
   ${filterBar(cat.works)}
-  ${grid(cat.works)}
+  ${grid(cat.works, { hl: 'h2' })}
   ${emptyMsg()}
   <p class="note">The catalogue is growing. ${staged.length} further outside editions are staged and will be published once each title, edition and identifier is confirmed against a source.</p>
 </div></section>`;
@@ -347,13 +395,14 @@ ${ws.length ? `<p class="stats">${fmt(ws.length, 'work', 'works')} · ${fmt(stat
 <h2>Books</h2>${filterBar(ws, { lang: false })}${grid(ws, { ctxLang: l.code })}${emptyMsg()}`
  : `<p class="stats">0 works · 0 editions</p>
 <div class="empty" data-lang-empty><p><strong>We have no verified ${esc(l.name)} editions yet.</strong></p><p>A language is shown as available only when a specific edition has been verified with its own ISBN or ASIN, format, retailer link and dated source. We do not infer translations from the English books.</p><p><a class="btn btn-ghost" href="${href('books/')}">Browse all books</a> <a class="btn btn-ghost" href="${href('languages/')}">All languages</a></p></div>`}
+${artFor.lang(l.code).length ? `<h2 lang="en">Articles in ${esc(l.name)}</h2><p class="note-sm" lang="en">These are blog articles, not book editions. Books in ${esc(l.name)} are listed only when a specific edition has been verified.</p>${artList(artFor.lang(l.code), 20)}` : ''}
 </div></section>`,
   });
 }
 
 // ---------- subjects ----------
 page('subjects/index.html', {
-  title: 'Subjects', crumbs: [['Subjects']], current: 'subjects/', desc: 'Six subject hubs and 29 departments.',
+  title: 'Subjects', crumbs: [['Subjects']], current: 'subjects/', desc: `${tax.hubs.length} subject hubs and ${tax.departments.length} departments.`,
   body: () => `<section class="band"><div class="wrap"><h1 data-i18n="nav_subjects">${esc(en.nav_subjects)}</h1>${tax.hubs.map((h) => `<div class="hub-block"><h2><a href="${href(`subjects/${h.id}/`)}">${esc(h.name)}</a></h2><p>${esc(h.tagline)}</p><ul class="chips">${tax.departments.filter((d) => d.hubs.includes(h.id)).map((d) => `<li><a href="${href(`topics/${d.id}/`)}">${esc(d.name)}</a> <span>${worksIn(d.id).length}</span></li>`).join('')}</ul></div>`).join('')}</div></section>`,
 });
 for (const h of tax.hubs) {
@@ -377,7 +426,8 @@ for (const d of tax.departments) {
   page(`topics/${d.id}/index.html`, {
     title: d.name, desc: d.intro.split('. ')[0] + '.', crumbs: [['Subjects', 'subjects/'], [primaryHub(d.id).name, `subjects/${primaryHub(d.id).id}/`], [d.name]],
     body: () => `<section class="band"><div class="wrap"><p class="eyebrow">${d.hubs.map((hh) => esc(hub.get(hh).name)).join(' · ')}</p><h1>${esc(d.name)}</h1><p class="lede-sm">${esc(d.intro)}</p>
-${ws.length ? langChips(ws) + filterBar(ws, { subjects: false, q: false }) + grid(ws) + emptyMsg() : `<p class="note">No books are published in this department yet. ${stagedIn(d.id) ? `${stagedIn(d.id)} candidate titles are in review.` : 'Candidate titles have not yet been staged.'}</p>`}
+${ws.length ? langChips(ws) + filterBar(ws, { subjects: false, q: false }) + grid(ws, { hl: 'h2' }) + emptyMsg() : `<p class="note">No books are published in this department yet. ${stagedIn(d.id) ? `${stagedIn(d.id)} candidate titles are in review.` : 'Candidate titles have not yet been staged.'}</p>`}
+${artBlock(artFor.topic(d.id), 6, `#t-${d.id}`)}
 <h2>Related departments</h2><ul class="chips">${sameHub.map((x) => `<li><a href="${href(`topics/${x.id}/`)}">${esc(x.name)}</a></li>`).join('')}</ul>
 </div></section>`,
   });
@@ -393,7 +443,7 @@ for (const t of tax.traditions) {
   const ws = cat.works.filter((w) => (w.tradition ?? []).includes(t.id));
   page(`traditions/${t.id}/index.html`, {
     title: t.name, desc: t.intro, crumbs: [['Traditions', 'traditions/'], [t.name]],
-    body: () => `<section class="band"><div class="wrap"><h1>${esc(t.name)}</h1><p class="lede-sm">${esc(t.intro)}</p>${ws.length ? langChips(ws) + filterBar(ws, { traditions: false, q: false }) + grid(ws) + emptyMsg() : '<p class="note">No books are published under this tradition yet.</p>'}</div></section>`,
+    body: () => `<section class="band"><div class="wrap"><h1>${esc(t.name)}</h1><p class="lede-sm">${esc(t.intro)}</p>${ws.length ? langChips(ws) + filterBar(ws, { traditions: false, q: false }) + grid(ws, { hl: 'h2' }) + emptyMsg() : '<p class="note">No books are published under this tradition yet.</p>'}</div></section>`,
   });
 }
 
@@ -422,15 +472,16 @@ for (const w of cat.works) {
   const multi = groups.length > 1;
   const markets = new Set();
   const edHtml = (e) => {
+    const eh = multi ? 'h4' : 'h3';
     const rs = retailers(w, e); rs.forEach((r) => r.market && markets.add(r.market));
     const L = LANG.get(e.language);
-    return `<section class="edition" id="ed-${esc(e.id ?? e.isbn13 ?? e.asin ?? '')}" aria-label="${esc(tax.formats[e.format])} edition, ${esc(L?.name ?? e.language)}" lang="${e.language}" dir="${L?.dir ?? 'ltr'}">
-    <h4><span data-i18n="fmt_${e.format}">${esc(tax.formats[e.format])}</span> · <span lang="en" dir="ltr">${esc(L?.endonym ?? e.language)}${L && L.endonym !== L.name ? ` (${esc(L.name)})` : ''}</span></h4>
+    return `<section class="edition" id="ed-${esc(e.id ?? e.isbn13 ?? e.asin ?? '')}" aria-label="${esc(tax.formats[e.format])} edition, ${esc(L?.name ?? e.language)}${e.year ? ', ' + e.year : ''}${e.isbn13 ? ', ISBN ' + e.isbn13 : ''}" lang="${e.language}" dir="${L?.dir ?? 'ltr'}">
+    <${eh}><span data-i18n="fmt_${e.format}">${esc(tax.formats[e.format])}</span> · <span lang="en" dir="ltr">${esc(L?.endonym ?? e.language)}${L && L.endonym !== L.name ? ` (${esc(L.name)})` : ''}</span></${eh}>
     ${e.title ? `<p class="ed-title">${esc(e.title)}${e.subtitle ? `: <em>${esc(e.subtitle)}</em>` : ''}</p>` : ''}
     <dl lang="en" dir="ltr">${e.translator ? `<dt data-i18n="l_translator">Translator</dt><dd>${esc(e.translator)}</dd>` : ''}${e.publisher ? `<dt data-i18n="l_publisher">Publisher</dt><dd>${esc(e.publisher)}</dd>` : ''}${e.year ? `<dt data-i18n="l_year">Year</dt><dd>${e.year}</dd>` : ''}${e.isbn13 ? `<dt>ISBN-13</dt><dd>${e.isbn13}</dd>` : ''}${e.isbn10 ? `<dt>ISBN-10</dt><dd>${e.isbn10}</dd>` : ''}${e.asin ? `<dt>ASIN</dt><dd>${e.asin}</dd>` : ''}${e.alsoLanguages?.length ? `<dt>Also in</dt><dd>${e.alsoLanguages.map((c) => esc(LANG.get(c)?.name ?? c)).join(', ')}</dd>` : ''}</dl>
     ${e.note ? `<p class="note-sm" lang="en" dir="ltr">${esc(e.note)}</p>` : ''}
     ${e.needsSecondSource ? '<p class="note-sm flag" lang="en" dir="ltr">Identifier reported by a single source; awaiting corroboration.</p>' : ''}
-    <ul class="buy" lang="en" dir="ltr">${rs.some((r) => !r.library) ? '' : '<li class="status">No retailer link verified yet.</li>'}${rs.map((r) => `<li><a class="${r.affiliate ? 'btn' : 'btn btn-ghost'}" href="${esc(r.url)}" target="_blank" rel="${r.affiliate ? 'sponsored ' : ''}noopener noreferrer">${r.labelIsHtml ? r.label : esc(r.label)}<span class="sr"> (opens in a new tab)</span></a><span class="status">${esc(r.status)}</span></li>`).join('') || '<li class="status">No retailer link verified yet.</li>'}</ul>
+    <ul class="buy" lang="en" dir="ltr">${rs.some((r) => !r.library) ? '' : '<li class="status">No retailer link verified yet.</li>'}${rs.map((r) => `<li><a class="${r.affiliate ? 'btn' : 'btn btn-ghost'}" href="${esc(r.url)}" target="_blank" rel="${r.affiliate ? 'sponsored ' : ''}noopener noreferrer" data-track="${r.affiliate ? 'buy' : r.library ? 'library' : 'link'}" data-work="${w.slug}" data-isbn="${e.isbn13 ?? ''}" data-market="${r.market ?? ''}">${r.labelIsHtml ? r.label : esc(r.label)}<span class="sr"> (opens in a new tab)</span></a><span class="status">${esc(r.status)}</span></li>`).join('') || '<li class="status">No retailer link verified yet.</li>'}</ul>
   </section>`;
   };
   const groupIds = new Set(groups.map(([c]) => c));
@@ -453,9 +504,11 @@ for (const w of cat.works) {
     ${multi ? `<p class="avail" aria-label="Available languages"><span data-i18n="f_language">${esc(en.f_language)}</span>: ${groups.map(([c]) => `<a class="tag" href="#lang-${c}" lang="${c}">${esc(LANG.get(c)?.endonym ?? c)}</a>`).join('')}</p>` : ''}
     <p class="desc">${esc(w.description)}</p>
     ${w.status === 'owner-listed' ? `<p class="note">Edition details for this title are being confirmed with the publisher. Retailer links marked “search” will be replaced by edition-specific links.</p>` : ''}
+    ${w.thirdPartyNotice ? `<p class="note note-tm" lang="en">${esc(w.thirdPartyNotice)}</p>` : ''}
     ${(w.claims ?? []).filter((c) => c.display).map((c) => `<p class="claim"><strong>Historical note:</strong> ${esc(c.text)}. <span>Per publisher and bookseller listings; not a current ranking.</span></p>`).join('')}
     <h2 data-i18n="h_subjects">${esc(en.h_subjects)}</h2>
     <ul class="chips">${w.subjects.map((s) => `<li><a href="${href(`topics/${s}/`)}">${esc(dept.get(s).name)}</a></li>`).join('')}</ul>
+    ${artBlock(artFor.work(w.id), 6)}
   </div>
 </div>
 <div class="wrap">
@@ -476,9 +529,10 @@ page('press/index.html', {
   title: 'Forbidden Mantra Press', current: 'press/', crumbs: [['Forbidden Mantra Press']], desc: 'Books from Forbidden Mantra Press.',
   body: () => `<section class="hero hero-sm"><div class="wrap"><p class="eyebrow">Our imprint</p><h1>Forbidden Mantra Press</h1><p class="lede">Sacred texts and practice guides: the Forbidden Mantra Series on Sanskrit mantras, Nag Hammadi and Ethiopian texts, Hindu epic material, and internal-energy cultivation.</p></div></section>
 <section class="band"><div class="wrap">
-  ${langChips(fmpWorks)}${filterBar(fmpWorks, { press: false, q: false })}${grid(fmpWorks)}
+  ${langChips(fmpWorks)}${filterBar(fmpWorks, { press: false, q: false })}${grid(fmpWorks, { hl: 'h2' })}
   ${emptyMsg()}
   <div class="note"><p><strong>Catalogue status.</strong> Amazon lists the Forbidden Mantra Series as 41 books; ${fmpWorks.length} titles are published here so far. The remaining titles, additional formats and the Spanish and German editions that have been reported are waiting on an export of the Amazon KDP/Author Central catalogue so that each edition gets its own verified link. Reported editions are not listed as available until verified.</p></div>
+  ${artBlock(artFor.press(), 6)}
   <p><a class="btn btn-ghost" href="${esc(cfg.affiliate.legacyStoreLink)}" target="_blank" rel="sponsored noopener noreferrer">Visit our Amazon storefront<span class="sr"> (opens in a new tab)</span></a> <span class="status">Existing store link, kept until edition links are complete.</span></p>
 </div></section>`,
 });
@@ -490,7 +544,7 @@ page('paths/index.html', {
 });
 for (const p of coll.paths) page(`paths/${p.id}/index.html`, {
   title: p.title, desc: p.blurb, crumbs: [['Reading paths', 'paths/'], [p.title]],
-  body: () => `<section class="band"><div class="wrap narrow"><p class="eyebrow">${esc(p.audience)}</p><h1>${esc(p.title)}</h1><p class="lede-sm">${esc(p.blurb)}</p><ol class="steps">${p.steps.map((s, i) => { const w = workById.get(s.work); return `<li><div class="step-n" aria-hidden="true">${i + 1}</div><div>${card(w)}<p class="why">${esc(s.why)}</p></div></li>`; }).join('')}</ol></div></section>`,
+  body: () => `<section class="band"><div class="wrap narrow"><p class="eyebrow">${esc(p.audience)}</p><h1>${esc(p.title)}</h1><p class="lede-sm">${esc(p.blurb)}</p>${p.disclaimer ? `<p class="note note-tm" lang="en">${esc(p.disclaimer)}</p>` : ''}<ol class="steps">${p.steps.map((s, i) => { const w = workById.get(s.work); return `<li><div class="step-n" aria-hidden="true">${i + 1}</div><div>${card(w, null, 'h2')}<p class="why">${esc(s.why)}</p></div></li>`; }).join('')}</ol></div></section>`,
 });
 page('collections/index.html', {
   title: 'Collections', current: 'collections/', crumbs: [['Collections']], desc: 'Curated collections.',
@@ -500,7 +554,19 @@ for (const c of coll.collections) {
   const ws = c.works.map((id) => workById.get(id));
   page(`collections/${c.id}/index.html`, {
     title: c.title, desc: c.blurb, crumbs: [['Collections', 'collections/'], [c.title]],
-    body: () => `<section class="band"><div class="wrap"><h1>${esc(c.title)}</h1><p class="lede-sm">${esc(c.blurb)}</p>${langChips(ws)}${filterBar(ws, { subjects: false, traditions: false, press: false, q: false })}${grid(ws)}${emptyMsg()}</div></section>`,
+    body: () => `<section class="band"><div class="wrap"><h1>${esc(c.title)}</h1><p class="lede-sm">${esc(c.blurb)}</p>${c.disclaimer ? `<p class="note note-tm" lang="en">${esc(c.disclaimer)}</p>` : ''}${langChips(ws)}${filterBar(ws, { subjects: false, traditions: false, press: false, q: false })}${grid(ws, { hl: 'h2' })}${emptyMsg()}</div></section>`,
+  });
+}
+
+// ---------- articles index ----------
+if (ART.length) {
+  const topicsWith = tax.departments.filter((d) => artFor.topic(d.id).length);
+  page('articles/index.html', {
+    title: 'Articles', crumbs: [['Articles']], desc: 'Articles from the Forbidden Mantra blog, organised by topic.',
+    body: () => `<section class="band"><div class="wrap" lang="en"><h1>Articles</h1><p class="lede-sm">${ART.length} articles from the Forbidden Mantra blog, organised by topic and connected to the books they relate to. Articles appear under every topic they touch. The blog is a separate site; links open in a new tab.</p>
+<nav class="az" aria-label="Jump to topic">${topicsWith.map((d) => `<a href="#t-${d.id}">${esc(d.name)} (${artFor.topic(d.id).length})</a>`).join('')}</nav>
+${topicsWith.map((d) => `<h2 id="t-${d.id}">${esc(d.name)}</h2>${artList(artFor.topic(d.id), 100)}`).join('')}
+${artFor.lang('hi').length ? `<h2 id="t-hi">हिन्दी (Hindi)</h2>${artList(artFor.lang('hi'), 20)}` : ''}</div></section>`,
   });
 }
 
@@ -515,6 +581,19 @@ for (const b of Object.values(PROMOS.brands)) for (const bd of Object.values(b.b
 }
 
 // ---------- about ----------
+page('about/privacy/index.html', {
+  title: 'Privacy', crumbs: [['Privacy']], desc: 'What this site does and does not do with your data.',
+  body: () => `<section class="band"><div class="wrap narrow prose" lang="en"><h1>Privacy</h1>
+<p>This page describes how the bookstore works today. It does not collect personal information, has no accounts or checkout, and sets no cookies.</p>
+<ul>
+<li><strong>Your choices stay in your browser.</strong> If you pick a website language, the site remembers it in your browser’s local storage on your own device. It is never sent to us.</li>
+<li><strong>Analytics:</strong> ${ANALYTICS.provider ? `the site uses ${esc(ANALYTICS.provider)}, a cookie-free analytics service, to count visits and outbound clicks.` : 'none is running at the moment. If this changes, this page will say which service is used and what it records.'}</li>
+<li><strong>Fonts:</strong> the site loads its typefaces from Google Fonts, so your browser contacts Google when a page loads and Google receives your IP address and browser details under its own privacy policy.</li>
+<li><strong>Retailer links:</strong> buttons for Amazon and other retailers, the Forbidden Mantra blog and other sites lead away from this site. Those sites have their own privacy practices. Amazon links may be affiliate links, so Amazon can tell that a purchase came from us; see the <a href="${href('about/affiliate-disclosure/')}">affiliate disclosure</a>.</li>
+<li><strong>Library links</strong> go to WorldCat’s public search and carry only a book’s ISBN.</li>
+</ul>
+<p>Questions about this page can be sent through the contact options on <a href="https://www.forbiddenmantra.com/" rel="noopener">forbiddenmantra.com</a>.</p></div></section>`,
+});
 page('about/affiliate-disclosure/index.html', {
   title: 'Affiliate disclosure', crumbs: [['Affiliate disclosure']], desc: 'How we use affiliate links.',
   body: () => `<section class="band"><div class="wrap narrow prose" lang="en"><h1>Affiliate disclosure</h1><p>${esc(cfg.disclosure)}</p><p>Buttons marked “Amazon” lead to an Amazon store. When we have an Amazon Associates tracking ID configured for that store’s marketplace, the link includes it, and we earn a small commission on qualifying purchases at no cost to you. Tracking IDs are specific to each marketplace, so a link to Amazon.de only earns commission when an Amazon.de tracking ID is set. Links to library lookups are non-commercial.</p><p>We do not show Amazon prices, availability or ratings unless they come through Amazon’s permitted programmes, and then only with the date and time they were retrieved. The disclosure appears in English on every page; where an Amazon marketplace requires specific local wording, we add it.</p></div></section>`,
@@ -532,6 +611,16 @@ page('about/catalogue-standards/index.html', {
 <li><strong>Traditions are kept distinct.</strong> Books are placed under the tradition they actually teach.</li></ul></div></section>`,
 });
 
+fs.mkdirSync(path.join(ROOT, DATA), { recursive: true });
+fs.writeFileSync(path.join(ROOT, DATA, 'retailer-links.json'), JSON.stringify({ generated: cfg.catalogueAsOf, note: 'Every outbound retail URL rendered by the site (untagged). Input for scripts/check-links.mjs.', links: LINKLOG.filter((l, i, a) => a.findIndex((x) => x.url === l.url) === i) }, null, 1));
 write('assets/catalogue.json', JSON.stringify({ generated: cat.generated, works: cat.works.length, editions: totalEditions, languages: Object.fromEntries(stocked.map((l) => [l.code, { works: nWorks(l.code), editions: nEds(l.code) }])) }));
+// robots.txt and sitemap.xml: previews are closed to crawlers; production gets a sitemap built from the pages generated above
+{
+  const urls = []; (function walk(d) { for (const e of fs.readdirSync(d, { withFileTypes: true })) e.isDirectory() ? walk(path.join(d, e.name)) : e.name === 'index.html' && urls.push(path.relative(OUT, d).split(path.sep).join('/')); })(OUT);
+  if (PRODUCTION) {
+    write('robots.txt', `User-agent: *\nAllow: /\nSitemap: ${SITE_URL}/sitemap.xml\n`);
+    write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.sort().map((u) => `<url><loc>${SITE_URL}/${u ? u + '/' : ''}</loc><lastmod>${cfg.catalogueAsOf}</lastmod></url>`).join('\n')}\n</urlset>\n`);
+  } else write('robots.txt', 'User-agent: *\nDisallow: /\n');
+}
 const nPages = (function count(d) { return fs.readdirSync(d, { withFileTypes: true }).reduce((n, e) => n + (e.isDirectory() ? count(path.join(d, e.name)) : e.name.endsWith('.html') ? 1 : 0), 0); })(OUT);
 console.log(`built ${nPages} pages -> ${path.relative(ROOT, OUT)}/  (works=${cat.works.length}, editions=${totalEditions}, authors=${cat.authors.length}, languages with editions=${stocked.length}/${langReg.languages.length}, ui locales=${uiLocales.join(',')}, tracking IDs set for: ${Object.entries(tagStatus).filter(([, v]) => v).map(([k]) => k).join(', ') || 'none'})`);

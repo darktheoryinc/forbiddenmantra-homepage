@@ -67,5 +67,8 @@
  "h_sources": "Fuentes y verificación",
  "_meta": {
   "status": "machine-drafted; needs native-speaker review before leaving beta"
- }
+ },
+ "nav_iosutra": "IOSutra",
+ "did_you_mean": "¿Quisiste decir {q}?",
+ "close_matches": "Mostrando coincidencias cercanas para «{q}»"
 }

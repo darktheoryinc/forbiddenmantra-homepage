@@ -8,6 +8,13 @@ node scripts/build.mjs         # generate static site                 -> site/
 node scripts/verify.mjs --shots  # real-site checks: links, search, filters, language menu, mobile (needs Playwright)
 node test/verify-multilingual.mjs  # multilingual behaviour on FICTIONAL fixtures (never published)
 node test/verify-promo.mjs         # IOSutra section, wording lint, badge/production gates
+node test/verify-discovery.mjs     # catalogue expansion, collections, typo-tolerant search, nav
+node test/verify-launch.mjs        # articles, analytics, production mode, link checker, launch gate
+node test/verify-affiliate.mjs     # Amazon tags/ASINs/disclosures/click events, with corruption tests
+AXE_PATH=<axe.min.js> node test/a11y.mjs   # axe-core audit (install axe-core in a scratch dir)
+node scripts/audit-affiliate.mjs   # audit every rendered Amazon link
+node scripts/check-links.mjs       # live retailer check: run on a networked machine
+node scripts/launch-check.mjs      # blockers and owner decisions
 ```
 Open `site/index.html` in a browser (links are relative; no server needed).
 
@@ -19,6 +26,7 @@ Open `site/index.html` in a browser (links are relative; no server needed).
 | `i18n/*.json` | Website-interface translations (en complete; 7 beta drafts needing native review) |
 | `data/promos.json` | Cross-promotion registry (IOSutra): brands, claims with verification status, placements; `scripts/promo.mjs` renders it |
 | `docs/CROSS-PROMOTION.md` | How the IOSutra section works, launch gate, badge rules, reuse on other sites |
+| `docs/LAUNCH-STATUS.md` | **Start here:** status audit, counts, blockers, launch readiness |
 | `docs/LANGUAGES.md` | Interface vs book language, adding languages/editions, per-marketplace affiliate structure |
 | `data/taxonomy.json` | 6 hubs, 29 departments, 16 traditions, with original introductions |
 | `staging/verified/*.json` | Hand-verified records with dated sources; the only input that can be published |

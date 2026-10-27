@@ -4,7 +4,7 @@
 
 | Item | State |
 |---|---|
-| Associates **tracking ID** | **Not recovered.** The repository contains none. The only Amazon link is the short link `https://amzn.to/4tX3ogd`, which could not be expanded from the build environment (outbound access to amzn.to and amazon.com was blocked). The "Influencer storefront name" is not assumed to be the tracking ID. |
+| Associates **tracking ID (US)** | **Configured 2026-10-27: owner-confirmed `darktheoryinc-20` for amazon.com only** (`config/site.json`). The statement below about recovery is historical: the repository contained none and the `amzn.to/4tX3ogd` short link still cannot be expanded here, so its tag is unknown. The only Amazon link is the short link `https://amzn.to/4tX3ogd`, which could not be expanded from the build environment (outbound access to amzn.to and amazon.com was blocked). The "Influencer storefront name" is not assumed to be the tracking ID. |
 | Marketplace | Default `amazon.com`, flagged `marketplaceVerified: false`. Tracking IDs are now **per marketplace** (18 slots in `config/site.json`); none is set and enrollment per marketplace is unknown. See `docs/LANGUAGES.md`. |
 | Amazon Associates / Creators API | Not connected. No credentials were available and none were requested. |
 
@@ -36,3 +36,15 @@ Run a live check from a networked machine before launch: for each URL expect HTT
 - The new storefront is a dependency-free static site: `node scripts/import.mjs && node scripts/build.mjs`, output in `site/`. It is multi-page with real URLs, so it should be hosted as its own site (for example on a subdomain, GitHub Pages, Netlify or Cloudflare Pages) rather than inside a Wix iframe. Decision needed from you: where to host it and how `forbiddenmantra.com` should link to it.
 - Pages contain `noindex` and a preview banner. Remove both (in `scripts/build.mjs`) at launch.
 - Nothing has been published to production.
+
+
+## Update 2026-10-27: US tracking ID, audit and API credentials
+
+- **Configured:** `darktheoryinc-20` on `amazon.com`; the other 17 marketplaces remain unconfigured (`trackingId: null`). A link receives only its own marketplace's ID, so UK editions stay untagged until an amazon.co.uk ID is confirmed.
+- **Audit:** `node scripts/audit-affiliate.mjs` checks every rendered Amazon link offline: host, exactly one correct tag, ASIN = the edition's own ASIN or the ISBN-10 of its own ISBN-13, `rel="sponsored noopener"`. Before configuring: **66 of 68 links had no tag**. After: **0 errors**. `test/verify-affiliate.mjs` also mutates built pages (missing/wrong/duplicate tag, another book's ASIN, wrong marketplace, missing `rel`) and proves the audit fails each time.
+- **Disclosure:** the footer of every page and every book page with an Amazon link carries "As an Amazon Associate I earn from qualifying purchases." Confirm the exact required wording against the current Operating Agreement.
+- **Clicks:** outbound clicks emit an event containing only `track, work, isbn, market, href, page`. No cookies, no identifiers; nothing leaves the browser unless an analytics provider is enabled.
+- **Not used:** Amazon images, prices, availability, ratings, widgets or any Amazon-hosted asset. Metadata comes from public library catalogues, publisher pages and bookseller listings found by web search; Amazon was never scraped.
+- **Are Associates API credentials required?** **No**, not for anything built so far: tagged links, disclosures and click tracking need only the tracking ID. Credentials become necessary **only** to display Amazon prices, availability, covers or ratings, which must come from the Creators API (the successor to PA-API, retired in 2026 per secondary sources). By those sources it requires an Associates account in good standing with **at least 10 qualifying sales in the trailing 30 days**, and credentials created in Associates Central by the account owner. **Do not request them yet**; a bookstore does not need them to earn commission. Confirm eligibility in Associates Central before applying.
+- **Still unverified:** whether `darktheoryinc-20` is active and in good standing (confirm in Associates Central); the 41 derived links have not been live-checked (`scripts/check-links.mjs`).
+- **Idea, not built:** Associates allows several tracking IDs; separate IDs per site or surface would show which pages earn. Add them as additional marketplace-independent IDs only after you create them.

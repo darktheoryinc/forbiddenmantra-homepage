@@ -44,9 +44,9 @@ ok(!/rel="[^"]*sponsored/.test(home.split('promo-band')[1].split('</section>')[0
 const L = checkLinks(SITE); ok(L.broken.length === 0, `site links resolve (${L.pages} pages, ${L.internal} internal links) including the new technology page`);
 
 // production gate on the real registry
-const run = (env) => spawnSync('node', [path.join(ROOT, 'scripts/build.mjs')], { cwd: ROOT, env: { ...process.env, ...env }, encoding: 'utf8' });
+const run = (env) => spawnSync('node', [path.join(ROOT, 'scripts/build.mjs')], { cwd: ROOT, env: { ...process.env, ...(env.FM_PROMOS ? { FM_SITE_URL: 'https://shop.example.invalid' } : {}), ...env }, encoding: 'utf8' });
 let r = run({ FM_ENV: 'production', FM_OUT: 'test/out-promo-prod' });
-ok(r.status === 1 && /BLOCKER brand iosutra: no url set/.test(r.stderr) && /BLOCKER promo iosutra-technology: not approved/.test(r.stderr) && /BLOCKER claim "nvidia-inception-membership" is owner-asserted/.test(r.stderr) && /BLOCKER claim "nvidia-trademark-notice"/.test(r.stderr), 'production build REFUSES to run today: missing URL, no owner approval, unverified membership claim, unconfirmed trademark wording');
+ok(r.status === 1 && /BLOCKER brand iosutra: no url set/.test(r.stderr) && /BLOCKER promo iosutra-technology: not approved/.test(r.stderr) && /BLOCKER claim "nvidia-inception-membership" is owner-asserted/.test(r.stderr) && /BLOCKER claim "nvidia-trademark-notice"/.test(r.stderr) && /BLOCKER siteUrl/.test(r.stderr), 'production build REFUSES to run today and lists every blocker together: missing IOSutra URL, no owner approval, unverified membership claim, unconfirmed trademark wording, no production siteUrl');
 ok(!fs.existsSync(path.join(ROOT, 'test/out-promo-prod')), 'refused production build wrote no output');
 r = run({ FM_OUT: 'test/out-promo-prev' });
 ok(r.status === 0 && /promo warning/.test(r.stderr), 'preview build succeeds and prints the same items as warnings');
@@ -68,7 +68,7 @@ try {
   let f = variant(ready, 'a'); r = run({ FM_PROMOS: f, FM_ENV: 'production', FM_OUT: 'test/out-promo-a' });
   ok(r.status === 0, `a) ready registry builds in PRODUCTION mode (exit ${r.status}${r.status ? ': ' + r.stderr.slice(0, 200) : ''})`);
   const ah = read('index.html', path.join(ROOT, 'test/out-promo-a')), af = read('books/the-power-of-now/index.html', path.join(ROOT, 'test/out-promo-a'));
-  const m = ah.match(/<a class="btn" href="(https:\/\/example\.invalid\/iosutra[^"]*)" target="_blank" rel="noopener noreferrer">Visit IOSutra/);
+  const m = ah.match(/<a class="btn" href="(https:\/\/example\.invalid\/iosutra[^"]*)" target="_blank" rel="noopener noreferrer"[^>]*>Visit IOSutra/);
   ok(!!m, 'a) "Visit IOSutra" is a real prominent link (new tab, noopener noreferrer)');
   const u = new URL(m[1].replace(/&amp;/g, '&')); ok(u.searchParams.get('utm_source') === 'forbidden-mantra-press' && u.searchParams.get('utm_medium') === 'cross-promo' && u.searchParams.get('utm_campaign') === 'iosutra-technology' && u.searchParams.get('utm_content') === 'home', `a) outbound link carries campaign tags: ${u.search}`);
   ok(/<a href="https:\/\/example\.invalid\/iosutra[^"]*utm_content=footer/.test(af.replace(/&amp;/g, '&')), 'a) footer name links to IOSutra with utm_content=footer');

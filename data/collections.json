@@ -1,22 +1,322 @@
 {
-  "paths": [
-    {"id":"begin-mindfulness","title":"Begin with Awareness","audience":"Complete beginners","blurb":"Three short, non-sectarian books that move from noticing the mind, to stepping back from it, to staying steady when life is hard.",
-     "steps":[{"work":"the-power-of-now","why":"A brief introduction to present-moment attention, with minimal jargon."},{"work":"the-untethered-soul","why":"Builds on that idea with a practical account of inner patterns and how to let them go."},{"work":"when-things-fall-apart","why":"Adds a Buddhist perspective on staying present with pain rather than avoiding it."}]},
-    {"id":"first-steps-wicca","title":"First Steps in Wicca & Folk Magic","audience":"Curious newcomers","blurb":"Start with a structured course, then a solitary-practice guide, then a broad reference. Note that Wicca is one religion; the reference book covers many traditions of folk magic.",
-     "steps":[{"work":"bucklands-complete-book-of-witchcraft","why":"A lesson-by-lesson introduction to Wicca as a religion."},{"work":"wicca","why":"Cunningham’s guide for practising alone, with ritual outlines."},{"work":"encyclopedia-of-5-000-spells","why":"A browsable reference once you want to explore folk-magic traditions beyond Wicca."}]},
-    {"id":"nag-hammadi-start","title":"Entering the Nag Hammadi Texts","audience":"Readers new to Gnostic literature","blurb":"Read the scholarly context, then a primary text. Gnostic literature is distinct from Hermetic and from orthodox Christian mystical writing.",
-     "steps":[{"work":"the-gnostic-gospels","why":"Explains what the Nag Hammadi library is and why it matters for early Christian history."},{"work":"the-apocalypse-of-adam","why":"A Nag Hammadi text in a Forbidden Mantra Press edition."}]},
-    {"id":"mantra-first-practices","title":"First Mantra Practices","audience":"Practice-minded beginners","blurb":"Begin with a general guide to Sanskrit mantra, then move to individual mantras from the Forbidden Mantra Series. Traditionally some mantras are received from a teacher; the books note this where they say so.",
-     "steps":[{"work":"healing-mantras","why":"A broad introduction with transliterations and instructions."},{"work":"gayatri-mantra","why":"One of the best-known Vedic mantras, in a focused guide."},{"work":"maha-mrityunjaya-mantra","why":"A mantra traditionally addressed to Shiva, studied in its own guide."}]},
-    {"id":"taoist-inner-cultivation","title":"Taoist Inner Cultivation, Carefully","audience":"Readers curious about Taoist energy practice","blurb":"A first look at modern Taoist cultivation. More titles, including classic translations such as the Tao Te Ching, are staged for verification and will join this path.",
-     "steps":[{"work":"taoist-secrets-of-love","why":"A modern Healing Tao presentation of internal-energy practice."}]},
-    {"id":"tarot-foundation","title":"Tarot Foundations","audience":"New and returning tarot readers","blurb":"A single, durable anchor text that rewards re-reading. More tarot titles are staged.",
-     "steps":[{"work":"seventy-eight-degrees-of-wisdom","why":"A card-by-card study that treats tarot as symbolic language."}]}
-  ],
-  "collections": [
-    {"id":"stress-and-the-body","title":"Stress, Emotion & the Body","blurb":"Books that approach inner life and physical wellbeing together, from a physician’s clinical view to contemplative guides.","works":["when-the-body-says-no","when-things-fall-apart","the-untethered-soul","the-power-of-now"]},
-    {"id":"mantra-shelf","title":"The Mantra Shelf","blurb":"Sanskrit mantras explained for practitioners, including the Forbidden Mantra Series.","works":["healing-mantras","gayatri-mantra","maha-mrityunjaya-mantra","invoke-the-fierce","lakshmi-gayatri","om-namah-shivaya","maa-kali-mantras-and-instructions","forbidden-mantra"]},
-    {"id":"modern-witchcraft-wicca","title":"Modern Witchcraft & Wicca","blurb":"The core introductory shelf for readers beginning with Wicca and magical practice.","works":["bucklands-complete-book-of-witchcraft","wicca","encyclopedia-of-5-000-spells","seventy-eight-degrees-of-wisdom"]},
-    {"id":"ancient-texts-shelf","title":"Ancient Texts & Their Readers","blurb":"Primary texts and the scholarship around them: Nag Hammadi, the Kebra Nagast and Hindu epic material.","works":["the-gnostic-gospels","the-apocalypse-of-adam","kebra-nagast","weapons-of-the-gods"]}
+ "paths": [
+  {
+   "id": "begin-mindfulness",
+   "title": "Begin with Awareness",
+   "audience": "Complete beginners",
+   "blurb": "Three short, non-sectarian books that move from noticing the mind, to stepping back from it, to staying steady when life is hard.",
+   "steps": [
+    {
+     "work": "the-power-of-now",
+     "why": "A brief introduction to present-moment attention, with minimal jargon."
+    },
+    {
+     "work": "the-untethered-soul",
+     "why": "Builds on that idea with a practical account of inner patterns and how to let them go."
+    },
+    {
+     "work": "when-things-fall-apart",
+     "why": "Adds a Buddhist perspective on staying present with pain rather than avoiding it."
+    }
+   ]
+  },
+  {
+   "id": "first-steps-wicca",
+   "title": "First Steps in Wicca & Folk Magic",
+   "audience": "Curious newcomers",
+   "blurb": "Start with a structured course, then a solitary-practice guide, then a broad reference. Note that Wicca is one religion; the reference book covers many traditions of folk magic.",
+   "steps": [
+    {
+     "work": "bucklands-complete-book-of-witchcraft",
+     "why": "A lesson-by-lesson introduction to Wicca as a religion."
+    },
+    {
+     "work": "wicca",
+     "why": "Cunningham’s guide for practising alone, with ritual outlines."
+    },
+    {
+     "work": "encyclopedia-of-5-000-spells",
+     "why": "A browsable reference once you want to explore folk-magic traditions beyond Wicca."
+    }
+   ]
+  },
+  {
+   "id": "nag-hammadi-start",
+   "title": "Entering the Nag Hammadi Texts",
+   "audience": "Readers new to Gnostic literature",
+   "blurb": "Read the scholarly context, then a primary text. Gnostic literature is distinct from Hermetic and from orthodox Christian mystical writing.",
+   "steps": [
+    {
+     "work": "the-gnostic-gospels",
+     "why": "Explains what the Nag Hammadi library is and why it matters for early Christian history."
+    },
+    {
+     "work": "the-apocalypse-of-adam",
+     "why": "A Nag Hammadi text in a Forbidden Mantra Press edition."
+    }
+   ]
+  },
+  {
+   "id": "mantra-first-practices",
+   "title": "First Mantra Practices",
+   "audience": "Practice-minded beginners",
+   "blurb": "Begin with a general guide to Sanskrit mantra, then move to individual mantras from the Forbidden Mantra Series. Traditionally some mantras are received from a teacher; the books note this where they say so.",
+   "steps": [
+    {
+     "work": "healing-mantras",
+     "why": "A broad introduction with transliterations and instructions."
+    },
+    {
+     "work": "gayatri-mantra",
+     "why": "One of the best-known Vedic mantras, in a focused guide."
+    },
+    {
+     "work": "maha-mrityunjaya-mantra",
+     "why": "A mantra traditionally addressed to Shiva, studied in its own guide."
+    }
+   ]
+  },
+  {
+   "id": "taoist-inner-cultivation",
+   "title": "Taoist Inner Cultivation, Carefully",
+   "audience": "Readers curious about Taoist energy practice",
+   "blurb": "A first look at modern Taoist cultivation. More titles, including classic translations such as the Tao Te Ching, are staged for verification and will join this path.",
+   "steps": [
+    {
+     "work": "taoist-secrets-of-love",
+     "why": "A modern Healing Tao presentation of internal-energy practice."
+    }
+   ]
+  },
+  {
+   "id": "tarot-foundation",
+   "title": "Tarot Foundations",
+   "audience": "New and returning tarot readers",
+   "blurb": "A single, durable anchor text that rewards re-reading. More tarot titles are staged.",
+   "steps": [
+    {
+     "work": "seventy-eight-degrees-of-wisdom",
+     "why": "A card-by-card study that treats tarot as symbolic language."
+    }
+   ]
+  },
+  {
+   "id": "fantasy-where-to-begin",
+   "title": "Fantasy: Where to Begin",
+   "audience": "New and returning fantasy readers",
+   "blurb": "Five approachable starting points, from a school of magic to a quest to a classic archipelago. Each is the first or a standalone book of its story.",
+   "disclaimer": "Independent recommendations. Forbidden Mantra Press is not affiliated with, authorized by or endorsed by the authors, publishers or rights holders of the books or franchises mentioned.",
+   "steps": [
+    {
+     "work": "harry-potter-and-the-philosophers-stone",
+     "why": "The best-known modern school-of-magic story, and the first of its series."
+    },
+    {
+     "work": "the-hobbit",
+     "why": "A shorter, lighter quest that leads into The Lord of the Rings."
+    },
+    {
+     "work": "a-wizard-of-earthsea",
+     "why": "A concise story about power, balance and the importance of names."
+    },
+    {
+     "work": "the-lion-the-witch-and-the-wardrobe",
+     "why": "A classic children's fantasy that adults still read."
+    },
+    {
+     "work": "neverwhere",
+     "why": "A modern urban fantasy that begins in a recognizable city."
+    }
+   ]
+  },
+  {
+   "id": "after-harry-potter",
+   "title": "After Harry Potter",
+   "audience": "Readers who have finished the Harry Potter books",
+   "blurb": "Books with schools of magic, hidden worlds or wry humour, plus the real history of magic behind the stories.",
+   "disclaimer": "Independent listing and recommendations. Forbidden Mantra Press is not affiliated with, authorized by or endorsed by J.K. Rowling, her publishers or the rights holders of Harry Potter.",
+   "steps": [
+    {
+     "work": "harry-potter-a-history-of-magic",
+     "why": "The real traditions of magic, alchemy and folklore, from a British Library exhibition book."
+    },
+    {
+     "work": "a-wizard-of-earthsea",
+     "why": "Another young wizard's education, with a more reflective tone."
+    },
+    {
+     "work": "jonathan-strange-and-mr-norrell",
+     "why": "Magic returns to Regency England, written in the style of a period novel."
+    },
+    {
+     "work": "good-omens",
+     "why": "A comic fantasy about the end of the world."
+    },
+    {
+     "work": "the-name-of-the-wind",
+     "why": "A long, absorbing story that includes a university of magic."
+    }
+   ]
+  },
+  {
+   "id": "stoicism-first-steps",
+   "title": "Philosophy for Living: First Steps",
+   "audience": "Readers new to Stoic and practical philosophy",
+   "blurb": "Primary texts and one modern classic on finding meaning, in translations aimed at general readers.",
+   "steps": [
+    {
+     "work": "meditations",
+     "why": "Short, private reflections on Stoic practice."
+    },
+    {
+     "work": "letters-from-a-stoic",
+     "why": "Letters that apply Stoic ideas to everyday problems."
+    },
+    {
+     "work": "mans-search-for-meaning",
+     "why": "A modern account of finding meaning under extreme conditions."
+    }
+   ]
+  }
+ ],
+ "collections": [
+  {
+   "id": "stress-and-the-body",
+   "title": "Stress, Emotion & the Body",
+   "blurb": "Books that approach inner life and physical wellbeing together, from a physician’s clinical view to contemplative guides.",
+   "works": [
+    "when-the-body-says-no",
+    "when-things-fall-apart",
+    "the-untethered-soul",
+    "the-power-of-now"
+   ]
+  },
+  {
+   "id": "mantra-shelf",
+   "title": "The Mantra Shelf",
+   "blurb": "Sanskrit mantras explained for practitioners, including the Forbidden Mantra Series.",
+   "works": [
+    "healing-mantras",
+    "gayatri-mantra",
+    "maha-mrityunjaya-mantra",
+    "invoke-the-fierce",
+    "lakshmi-gayatri",
+    "om-namah-shivaya",
+    "maa-kali-mantras-and-instructions",
+    "forbidden-mantra"
+   ]
+  },
+  {
+   "id": "modern-witchcraft-wicca",
+   "title": "Modern Witchcraft & Wicca",
+   "blurb": "The core introductory shelf for readers beginning with Wicca and magical practice.",
+   "works": [
+    "bucklands-complete-book-of-witchcraft",
+    "wicca",
+    "encyclopedia-of-5-000-spells",
+    "seventy-eight-degrees-of-wisdom"
+   ]
+  },
+  {
+   "id": "ancient-texts-shelf",
+   "title": "Ancient Texts & Their Readers",
+   "blurb": "Primary texts and the scholarship around them: Nag Hammadi, the Kebra Nagast and Hindu epic material.",
+   "works": [
+    "the-gnostic-gospels",
+    "the-apocalypse-of-adam",
+    "kebra-nagast",
+    "weapons-of-the-gods"
+   ]
+  },
+  {
+   "id": "harry-potter-discovery",
+   "title": "If You Love Harry Potter",
+   "blurb": "Independent recommendations for readers of Harry Potter: more magic school and hidden-world fiction, the real history of magic, and folk-magic references.",
+   "disclaimer": "Independent listing and recommendations. Forbidden Mantra Press is not affiliated with, authorized by or endorsed by J.K. Rowling, her publishers or the rights holders of Harry Potter.",
+   "works": [
+    "harry-potter-and-the-philosophers-stone",
+    "harry-potter-a-history-of-magic",
+    "a-wizard-of-earthsea",
+    "the-lion-the-witch-and-the-wardrobe",
+    "jonathan-strange-and-mr-norrell",
+    "good-omens",
+    "the-name-of-the-wind",
+    "encyclopedia-of-5-000-spells",
+    "the-golden-bough"
+   ]
+  },
+  {
+   "id": "major-fantasy-authors",
+   "title": "Major Fantasy Authors: Where to Start",
+   "blurb": "One recommended entry point for each of the best-known names in modern fantasy.",
+   "disclaimer": "Independent recommendations. Forbidden Mantra Press is not affiliated with, authorized by or endorsed by the authors, publishers or rights holders of the books or franchises mentioned.",
+   "works": [
+    "the-hobbit",
+    "the-fellowship-of-the-ring",
+    "a-wizard-of-earthsea",
+    "the-lion-the-witch-and-the-wardrobe",
+    "harry-potter-and-the-philosophers-stone",
+    "good-omens",
+    "american-gods",
+    "the-color-of-magic",
+    "a-game-of-thrones",
+    "the-name-of-the-wind",
+    "mistborn-the-final-empire",
+    "circe"
+   ]
+  },
+  {
+   "id": "myth-retold",
+   "title": "Myth Retold",
+   "blurb": "Novels and retellings that bring myth and legend into fiction, with a folk-tale classic and one comparative study.",
+   "disclaimer": "Independent recommendations. Forbidden Mantra Press is not affiliated with, authorized by or endorsed by the authors, publishers or rights holders of the books or franchises mentioned.",
+   "works": [
+    "circe",
+    "norse-mythology",
+    "american-gods",
+    "the-once-and-future-king",
+    "the-complete-fairy-tales-of-the-brothers-grimm",
+    "the-golden-bough"
+   ]
+  },
+  {
+   "id": "gothic-supernatural",
+   "title": "Gothic & Supernatural Classics",
+   "blurb": "Haunted houses, vampires and uncanny carnivals, from the nineteenth century to the present.",
+   "disclaimer": "Independent recommendations. Forbidden Mantra Press is not affiliated with, authorized by or endorsed by the authors, publishers or rights holders of the books or franchises mentioned.",
+   "works": [
+    "the-haunting-of-hill-house",
+    "dracula",
+    "frankenstein",
+    "something-wicked-this-way-comes",
+    "the-master-and-margarita",
+    "interview-with-the-vampire"
+   ]
+  },
+  {
+   "id": "philosophy-for-living",
+   "title": "Philosophy for Living",
+   "blurb": "Stoic and existential classics in modern translations.",
+   "works": [
+    "meditations",
+    "letters-from-a-stoic",
+    "the-republic",
+    "thus-spoke-zarathustra",
+    "mans-search-for-meaning"
+   ]
+  }
+ ],
+ "featured": {
+  "_doc": "Work ids featured on the home page 'Established authors' band, in order; remaining slots fill from the catalogue.",
+  "home": [
+   "the-power-of-now",
+   "the-hobbit",
+   "when-things-fall-apart",
+   "harry-potter-and-the-philosophers-stone",
+   "the-gnostic-gospels",
+   "a-wizard-of-earthsea",
+   "wicca",
+   "meditations"
   ]
+ }
 }

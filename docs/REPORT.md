@@ -1,3 +1,5 @@
+> Latest status: see **docs/LAUNCH-STATUS.md** (2026-10-27). Sections below are earlier snapshots.
+
 # IOSutra technology section update
 
 Preview only; not deployed. Details: `docs/CROSS-PROMOTION.md`.

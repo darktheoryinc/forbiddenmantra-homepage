@@ -1,18 +1,19 @@
 {
   "name": "Forbidden Mantra Press",
   "tagline": "A curated bookstore of sacred texts, practice and inner cultivation",
-  "catalogueAsOf": "2026-10-26",
+  "catalogueAsOf": "2026-10-27",
   "affiliate": {
     "program": "Amazon Associates",
     "defaultMarketplace": "amazon.com",
-    "marketplaceVerified": false,
-    "note": "Tracking IDs are per marketplace and must be the Associates *tracking ID* (looks like name-20), NOT the Influencer storefront name. Whether this account is enrolled in each marketplace programme is unknown (enrolled:null) and must be confirmed in Associates Central. IDs are read at build time from AMAZON_TRACKING_ID_<SUFFIX> (e.g. AMAZON_TRACKING_ID_COM, _CO_UK, _DE, _FR); AMAZON_TRACKING_ID alone is treated as the amazon.com ID. Never commit credentials. `disclosure` overrides the default text for a marketplace where its programme requires specific local wording; null = use the default below until the correct wording is confirmed from that programme's agreement.",
+    "marketplaceVerified": true,
+    "note": "Tracking IDs are per marketplace and must be the Associates *tracking ID* (looks like name-20), NOT the Influencer storefront name. amazon.com (US) is owner-confirmed (see its trackingId; confirmed 2026-10-27). Enrollment for every other marketplace is unknown (enrolled:null) and must be confirmed in Associates Central. IDs are read at build time from AMAZON_TRACKING_ID_<SUFFIX> (e.g. AMAZON_TRACKING_ID_COM, _CO_UK, _DE, _FR); AMAZON_TRACKING_ID alone is treated as the amazon.com ID. Never commit credentials. `disclosure` overrides the default text for a marketplace where its programme requires specific local wording; null = use the default below until the correct wording is confirmed from that programme's agreement.",
     "marketplaces": {
       "amazon.com": {
         "country": "US",
-        "trackingId": null,
-        "enrolled": null,
-        "disclosure": null
+        "trackingId": "darktheoryinc-20",
+        "enrolled": true,
+        "disclosure": null,
+        "trackingIdConfirmedBy": "site owner, 2026-10-27"
       },
       "amazon.co.uk": {
         "country": "GB",
@@ -119,5 +120,20 @@
     },
     "legacyStoreLink": "https://amzn.to/4tX3ogd"
   },
-  "disclosure": "As an Amazon Associate, Forbidden Mantra Press earns from qualifying purchases. Links marked “Amazon” may be affiliate links; buying through them costs you nothing extra."
+  "disclosure": "As an Amazon Associate I earn from qualifying purchases. Links marked “Amazon” are affiliate links; buying through them costs you nothing extra.",
+  "siteUrl": null,
+  "analytics": {
+    "_doc": "Analytics is OFF. Choose at most one provider and fill its id; nothing loads and no data leaves the browser until you do. Outbound clicks are always tagged (data-track) and emit a 'fm:outbound' DOM event for testing; providers receive them only when enabled. Cookie-free providers are listed. GA4 is deliberately unsupported until a consent mechanism exists. Snippet formats were written from memory: check them against the provider's current docs when enabling.",
+    "provider": null,
+    "goatcounter": {
+      "code": null
+    },
+    "plausible": {
+      "domain": null
+    },
+    "cloudflare": {
+      "token": null
+    },
+    "respectDoNotTrack": true
+  }
 }

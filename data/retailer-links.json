@@ -1,0 +1,542 @@
+{
+ "generated": "2026-10-27",
+ "note": "Every outbound retail URL rendered by the site (untagged). Input for scripts/check-links.mjs.",
+ "links": [
+  {
+   "work": "harry-potter-and-the-philosophers-stone",
+   "title": "Harry Potter and the Sorcerer's Stone",
+   "edition": "9780590353427",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/059035342X"
+  },
+  {
+   "work": "harry-potter-and-the-philosophers-stone",
+   "title": "Harry Potter and the Philosopher's Stone",
+   "edition": "9781408855652",
+   "label": "Amazon",
+   "market": "amazon.co.uk",
+   "url": "https://www.amazon.co.uk/dp/1408855658"
+  },
+  {
+   "work": "harry-potter-a-history-of-magic",
+   "title": "Harry Potter: A History of Magic",
+   "edition": "9781408890769",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/1408890763"
+  },
+  {
+   "work": "harry-potter-a-history-of-magic",
+   "title": "Harry Potter: A History of Magic",
+   "edition": "9781526607072",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/1526607077"
+  },
+  {
+   "work": "the-hobbit",
+   "title": "The Hobbit",
+   "edition": "9780547928227",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/054792822X"
+  },
+  {
+   "work": "the-fellowship-of-the-ring",
+   "title": "The Fellowship of the Ring",
+   "edition": "9780547928210",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0547928211"
+  },
+  {
+   "work": "a-wizard-of-earthsea",
+   "title": "A Wizard of Earthsea",
+   "edition": "9780547722023",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0547722028"
+  },
+  {
+   "work": "a-wizard-of-earthsea",
+   "title": "A Wizard of Earthsea",
+   "edition": "9780553383041",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0553383043"
+  },
+  {
+   "work": "the-lion-the-witch-and-the-wardrobe",
+   "title": "The Lion, the Witch and the Wardrobe",
+   "edition": "9780064471046",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0064471047"
+  },
+  {
+   "work": "good-omens",
+   "title": "Good Omens",
+   "edition": "9780060853983",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0060853980"
+  },
+  {
+   "work": "american-gods",
+   "title": "American Gods",
+   "edition": "9780063081918",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0063081911"
+  },
+  {
+   "work": "the-color-of-magic",
+   "title": "The Color of Magic",
+   "edition": "9780062225672",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0062225677"
+  },
+  {
+   "work": "the-color-of-magic",
+   "title": "The Colour of Magic",
+   "edition": "9780552166591",
+   "label": "Amazon",
+   "market": "amazon.co.uk",
+   "url": "https://www.amazon.co.uk/dp/0552166596"
+  },
+  {
+   "work": "jonathan-strange-and-mr-norrell",
+   "title": "Jonathan Strange & Mr Norrell",
+   "edition": "9781582346038",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/1582346038"
+  },
+  {
+   "work": "jonathan-strange-and-mr-norrell",
+   "title": "Jonathan Strange & Mr Norrell",
+   "edition": "9781635576726",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/1635576725"
+  },
+  {
+   "work": "circe",
+   "title": "Circe",
+   "edition": "9780316556347",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0316556343"
+  },
+  {
+   "work": "circe",
+   "title": "Circe",
+   "edition": "9780316556323",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0316556327"
+  },
+  {
+   "work": "the-name-of-the-wind",
+   "title": "The Name of the Wind",
+   "edition": "9780756404741",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0756404746"
+  },
+  {
+   "work": "mistborn-the-final-empire",
+   "title": "Mistborn: The Final Empire",
+   "edition": "9780765377135",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0765377136"
+  },
+  {
+   "work": "a-game-of-thrones",
+   "title": "A Game of Thrones",
+   "edition": "9780553593716",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0553593714"
+  },
+  {
+   "work": "the-once-and-future-king",
+   "title": "The Once and Future King",
+   "edition": "9780441627400",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0441627404"
+  },
+  {
+   "work": "neverwhere",
+   "title": "Neverwhere",
+   "edition": "9780060557812",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0060557818"
+  },
+  {
+   "work": "neverwhere",
+   "title": "Neverwhere",
+   "edition": "9780063070721",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0063070723"
+  },
+  {
+   "work": "the-haunting-of-hill-house",
+   "title": "The Haunting of Hill House",
+   "edition": "9780143039983",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0143039989"
+  },
+  {
+   "work": "dracula",
+   "title": "Dracula",
+   "edition": "9780141439846",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/014143984X"
+  },
+  {
+   "work": "frankenstein",
+   "title": "Frankenstein",
+   "edition": "9780141439471",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0141439475"
+  },
+  {
+   "work": "something-wicked-this-way-comes",
+   "title": "Something Wicked This Way Comes",
+   "edition": "9781501167713",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/1501167715"
+  },
+  {
+   "work": "the-master-and-margarita",
+   "title": "The Master and Margarita",
+   "edition": "9780143108276",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0143108271"
+  },
+  {
+   "work": "interview-with-the-vampire",
+   "title": "Interview with the Vampire",
+   "edition": "9780345337665",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0345337662"
+  },
+  {
+   "work": "the-complete-fairy-tales-of-the-brothers-grimm",
+   "title": "The Complete Fairy Tales of the Brothers Grimm",
+   "edition": "9780553382167",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0553382160"
+  },
+  {
+   "work": "norse-mythology",
+   "title": "Norse Mythology",
+   "edition": "9780393609097",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/039360909X"
+  },
+  {
+   "work": "norse-mythology",
+   "title": "Norse Mythology",
+   "edition": "9780393356182",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0393356183"
+  },
+  {
+   "work": "the-golden-bough",
+   "title": "The Golden Bough",
+   "edition": "9780199538829",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0199538824"
+  },
+  {
+   "work": "meditations",
+   "title": "Meditations",
+   "edition": "9780812968255",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0812968255"
+  },
+  {
+   "work": "the-republic",
+   "title": "The Republic",
+   "edition": "9780140455113",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0140455116"
+  },
+  {
+   "work": "thus-spoke-zarathustra",
+   "title": "Thus Spoke Zarathustra",
+   "edition": "9780140441185",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0140441182"
+  },
+  {
+   "work": "mans-search-for-meaning",
+   "title": "Man's Search for Meaning",
+   "edition": "9780807014271",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0807014273"
+  },
+  {
+   "work": "letters-from-a-stoic",
+   "title": "Letters from a Stoic",
+   "edition": "9780140442106",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0140442103"
+  },
+  {
+   "work": "the-apocalypse-of-adam",
+   "title": "The Apocalypse of Adam",
+   "edition": "ed2",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=The%20Apocalypse%20of%20Adam%20Forbidden%20Mantra%20Press&i=stripbooks"
+  },
+  {
+   "work": "the-apocalypse-of-adam",
+   "title": "The Apocalypse of Adam",
+   "edition": "B0H8MQN9WK",
+   "label": "Amazon (Audible)",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/Apocalypse-Adam-Forbidden-Mantra-Press/dp/B0H8MQN9WK"
+  },
+  {
+   "work": "gayatri-mantra",
+   "title": "Gayatri Mantra",
+   "edition": "ed2",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=Gayatri%20Mantra%20Light%20of%20Divine%20Intelligence%20Forbidden%20Mantra%20Press&i=stripbooks"
+  },
+  {
+   "work": "gayatri-mantra",
+   "title": "Gayatri Mantra",
+   "edition": "B0H8MDVC72",
+   "label": "Amazon (Audible)",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/Gayatri-Mantra-Light-Divine-Intelligence/dp/B0H8MDVC72"
+  },
+  {
+   "work": "kebra-nagast",
+   "title": "Kebra Nagast",
+   "edition": "ed1",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=Kebra%20Nagast%20Forbidden%20Mantra%20Press&i=stripbooks"
+  },
+  {
+   "work": "weapons-of-the-gods",
+   "title": "Weapons of the Gods",
+   "edition": "ed1",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=Weapons%20of%20the%20Gods%20An%20Overview%20of%20Astra%20%26%20Shastra%20Forbidden%20Mantra%20Press&i=stripbooks"
+  },
+  {
+   "work": "maha-mrityunjaya-mantra",
+   "title": "Maha Mrityunjaya Mantra",
+   "edition": "ed1",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=Maha%20Mrityunjaya%20Mantra%20Forbidden%20Mantra%20Press&i=stripbooks"
+  },
+  {
+   "work": "invoke-the-fierce",
+   "title": "Invoke the Fierce",
+   "edition": "ed1",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=Invoke%20the%20Fierce%20Unlocking%20Strength%20and%20Protection%20with%20the%20Durga%20Mantra%20Forbidden%20Mantra%20Press&i=stripbooks"
+  },
+  {
+   "work": "lakshmi-gayatri",
+   "title": "Lakshmi Gayatri",
+   "edition": "ed1",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=Lakshmi%20Gayatri%20Forbidden%20Mantra%20Press&i=stripbooks"
+  },
+  {
+   "work": "om-namah-shivaya",
+   "title": "Om Namah Shivaya",
+   "edition": "ed1",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=Om%20Namah%20Shivaya%20A%20Sacred%20Practice%20Guide%20Forbidden%20Mantra%20Press&i=stripbooks"
+  },
+  {
+   "work": "maa-kali-mantras-and-instructions",
+   "title": "Maa Kali Mantras and Instructions",
+   "edition": "ed1",
+   "label": "Google Play Books",
+   "market": null,
+   "url": "https://play.google.com/store/books/details/Maa_Kali_Mantras_and_Instructions?id=RlyKEQAAQBAJ&hl=en_US"
+  },
+  {
+   "work": "maa-kali-mantras-and-instructions",
+   "title": "Maa Kali Mantras and Instructions",
+   "edition": "ed1",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=Maa%20Kali%20Mantras%20and%20Instructions%20Forbidden%20Mantra%20Press&i=stripbooks"
+  },
+  {
+   "work": "mo-pai-nei-kung",
+   "title": "Mo Pai Nei Kung",
+   "edition": "ed1",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=Mo%20Pai%20Nei%20Kung%20Forbidden%20Mantra%20Press&i=stripbooks"
+  },
+  {
+   "work": "the-hidden-technology-of-human-power",
+   "title": "The Hidden Technology of Human Power",
+   "edition": "ed1",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=The%20Hidden%20Technology%20of%20Human%20Power%20Forbidden%20Mantra%20Press&i=stripbooks"
+  },
+  {
+   "work": "forbidden-mantra",
+   "title": "Forbidden Mantra",
+   "edition": "ed1",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=Forbidden%20Mantra%20Forbidden%20Mantra%20Press&i=stripbooks"
+  },
+  {
+   "work": "the-power-of-now",
+   "title": "The Power of Now",
+   "edition": "9781577314806",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/1577314808"
+  },
+  {
+   "work": "the-untethered-soul",
+   "title": "The Untethered Soul",
+   "edition": "9781572245372",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/1572245379"
+  },
+  {
+   "work": "when-things-fall-apart",
+   "title": "When Things Fall Apart",
+   "edition": "9781611803433",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/1611803438"
+  },
+  {
+   "work": "when-things-fall-apart",
+   "title": "When Things Fall Apart",
+   "edition": "9780834821002",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0834821001"
+  },
+  {
+   "work": "when-the-body-says-no",
+   "title": "When the Body Says No",
+   "edition": "9780470923351",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0470923350"
+  },
+  {
+   "work": "when-the-body-says-no",
+   "title": "When the Body Says No",
+   "edition": "9780471219828",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0471219827"
+  },
+  {
+   "work": "bucklands-complete-book-of-witchcraft",
+   "title": "Buckland’s Complete Book of Witchcraft",
+   "edition": "9780875420509",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0875420508"
+  },
+  {
+   "work": "wicca",
+   "title": "Wicca",
+   "edition": "9780875421186",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0875421180"
+  },
+  {
+   "work": "encyclopedia-of-5-000-spells",
+   "title": "Encyclopedia of 5,000 Spells",
+   "edition": "9780061711237",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0061711233"
+  },
+  {
+   "work": "seventy-eight-degrees-of-wisdom",
+   "title": "Seventy-Eight Degrees of Wisdom",
+   "edition": "9781578636655",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/1578636655"
+  },
+  {
+   "work": "seventy-eight-degrees-of-wisdom",
+   "title": "Seventy-Eight Degrees of Wisdom",
+   "edition": "9781578637348",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/1578637341"
+  },
+  {
+   "work": "the-gnostic-gospels",
+   "title": "The Gnostic Gospels",
+   "edition": "9780679724537",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0679724532"
+  },
+  {
+   "work": "taoist-secrets-of-love",
+   "title": "Taoist Secrets of Love",
+   "edition": "9780943358192",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0943358191"
+  },
+  {
+   "work": "healing-mantras",
+   "title": "Healing Mantras",
+   "edition": "9780345431707",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0345431707"
+  }
+ ]
+}

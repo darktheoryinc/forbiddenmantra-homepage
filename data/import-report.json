@@ -1,20 +1,20 @@
 {
-  "generated": "2026-10-26",
+  "generated": "2026-10-27",
   "input": {
-    "verifiedRecords": 23,
+    "verifiedRecords": 53,
     "candidateRows": 100
   },
   "published": {
-    "works": 23,
-    "editions": 31,
-    "outsideWorks": 11,
+    "works": 53,
+    "editions": 69,
+    "outsideWorks": 41,
     "fmpWorks": 12,
-    "authors": 13
+    "authors": 39
   },
   "publishedByLanguage": {
     "en": {
-      "works": 23,
-      "editions": 31
+      "works": 53,
+      "editions": 69
     }
   },
   "languagesRegistered": 39,

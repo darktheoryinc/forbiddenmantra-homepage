@@ -68,6 +68,7 @@ function validateWork(w, { requireSources, allowNoId = false }) {
     if (!LANGS.has(e.language)) r.push(`unknown language code "${e.language}" (add it to data/languages.json)`);
     for (const x of e.alsoLanguages ?? []) if (!LANGS.has(x)) r.push(`unknown alsoLanguages code "${x}"`);
     if (e.language !== 'en' && !(e.sources?.length && e.sources.every((x) => x.url && x.accessed))) r.push(`${e.language} edition (${e.format}) needs its own dated source; translated editions are never inferred from the English work`);
+    if (e.marketplace && !MARKETS.has(e.marketplace)) r.push(`unknown edition marketplace "${e.marketplace}" (add it to config/site.json)`);
     for (const rt of e.retailers ?? []) if (rt.retailer === 'amazon' && rt.marketplace && !MARKETS.has(rt.marketplace)) r.push(`unknown Amazon marketplace "${rt.marketplace}" (add it to config/site.json)`);
     if (e.isbn13 && !isbn13Valid(e.isbn13)) r.push(`ISBN-13 checksum fails: ${e.isbn13}`);
     if (!allowNoId && !e.isbn13 && !e.asin && !(e.retailers?.length)) r.push(`edition (${e.format}) has no identifier (ISBN/ASIN)`);
@@ -191,8 +192,9 @@ for (const w of finalWorks) w.authors.forEach((name, i) => {
   authorMap.get(id).workIds.push(w.id);
 });
 function sortName(n) {
-  if (/press$/i.test(n)) return n;
+  if (/(press|library)$/i.test(n)) return n; // institutions keep their name
   const parts = n.replace(/\(.*\)/, '').trim().split(/\s+/);
+  if (parts.length === 1) return parts[0]; // single names (Plato, Seneca)
   const last = parts.pop();
   return `${last}, ${parts.join(' ')}`.trim();
 }

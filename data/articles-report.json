@@ -1,0 +1,112 @@
+{
+ "source": "articles-wix-2026-10-27.psv",
+ "posts": 96,
+ "uniqueArticles": 82,
+ "duplicatePosts": 14,
+ "hindi": 3,
+ "linkedToWorks": 69,
+ "linkedToTopics": 79,
+ "pressOnly": 3,
+ "unmatched": [],
+ "flags": [
+  {
+   "slug": "title-dualism-in-gnosticism-the-battle-between-light-and-dark",
+   "issue": "title begins with \"Title:\" (scaffolding text); shown without it"
+  }
+ ],
+ "duplicates": [
+  {
+   "slug": "the-apocalypse-of-adam-explained-hidden-gnostic-teachings-revealed-2",
+   "title": "The Apocalypse of Adam Explained: Hidden Gnostic Teachings Revealed",
+   "duplicateOf": "the-apocalypse-of-adam-explained-hidden-gnostic-teachings-revealed-3",
+   "published": "2026-06-10"
+  },
+  {
+   "slug": "the-apocalypse-of-adam-explained-hidden-gnostic-teachings-revealed",
+   "title": "The Apocalypse of Adam Explained: Hidden Gnostic Teachings Revealed",
+   "duplicateOf": "the-apocalypse-of-adam-explained-hidden-gnostic-teachings-revealed-3",
+   "published": "2026-06-09"
+  },
+  {
+   "slug": "the-kleem-mantra-ancient-attraction-and-manifestation-practice-1",
+   "title": "The Kleem Mantra: Ancient Attraction and Manifestation Practice",
+   "duplicateOf": "the-kleem-mantra-ancient-attraction-and-manifestation-practice-2",
+   "published": "2026-06-10"
+  },
+  {
+   "slug": "the-kleem-mantra-ancient-attraction-and-manifestation-practice",
+   "title": "The Kleem Mantra: Ancient Attraction and Manifestation Practice",
+   "duplicateOf": "the-kleem-mantra-ancient-attraction-and-manifestation-practice-2",
+   "published": "2026-06-09"
+  },
+  {
+   "slug": "tummo-breathwork-the-ancient-practice-of-inner-fire-meditation-2",
+   "title": "Tummo Breathwork: The Ancient Practice of Inner Fire Meditation",
+   "duplicateOf": "tummo-breathwork-the-ancient-practice-of-inner-fire-meditation-3",
+   "published": "2026-06-10"
+  },
+  {
+   "slug": "tummo-breathwork-the-ancient-practice-of-inner-fire-meditation",
+   "title": "Tummo Breathwork: The Ancient Practice of Inner Fire Meditation",
+   "duplicateOf": "tummo-breathwork-the-ancient-practice-of-inner-fire-meditation-3",
+   "published": "2026-06-09"
+  },
+  {
+   "slug": "tummo-breathwork-the-ancient-practice-of-inner-fire-meditation-1",
+   "title": "Tummo Breathwork: The Ancient Practice of Inner Fire Meditation",
+   "duplicateOf": "tummo-breathwork-the-ancient-practice-of-inner-fire-meditation-3",
+   "published": "2026-06-09"
+  },
+  {
+   "slug": "energy-unleashed-exploring-the-hidden-power-of-mo-pai-2",
+   "title": "Energy Unleashed: Exploring the Hidden Power of Mo Pai",
+   "duplicateOf": "energy-unleashed-exploring-the-hidden-power-of-mo-pai-3",
+   "published": "2026-06-10"
+  },
+  {
+   "slug": "energy-unleashed-exploring-the-hidden-power-of-mo-pai",
+   "title": "Energy Unleashed: Exploring the Hidden Power of Mo Pai",
+   "duplicateOf": "energy-unleashed-exploring-the-hidden-power-of-mo-pai-3",
+   "published": "2026-06-09"
+  },
+  {
+   "slug": "energy-unleashed-exploring-the-hidden-power-of-mo-pai-1",
+   "title": "Energy Unleashed: Exploring the Hidden Power of Mo Pai",
+   "duplicateOf": "energy-unleashed-exploring-the-hidden-power-of-mo-pai-3",
+   "published": "2026-06-09"
+  },
+  {
+   "slug": "genesis-and-sumerian-texts-exploring-ancient-creation-stories",
+   "title": "Genesis and Sumerian Texts: Exploring Ancient Creation Stories",
+   "duplicateOf": "genesis-and-sumerian-texts-exploring-ancient-creation-stories-2",
+   "published": "2026-06-09"
+  },
+  {
+   "slug": "genesis-and-sumerian-texts-exploring-ancient-creation-stories-1",
+   "title": "Genesis and Sumerian Texts: Exploring Ancient Creation Stories",
+   "duplicateOf": "genesis-and-sumerian-texts-exploring-ancient-creation-stories-2",
+   "published": "2026-06-09"
+  },
+  {
+   "slug": "मो-पाई-mo-pai-क्या-है-ऊर्जा-साधना-की-अवधारणा-सावधानियाँ-और-सुरक्षित-अभ्यास-1",
+   "title": "मो पाई (Mo Pai) क्या है? ऊर्जा-साधना की अवधारणा, सावधानियाँ और सुरक्षित अभ्यास",
+   "duplicateOf": "मो-पाई-mo-pai-क्या-है-ऊर्जा-साधना-की-अवधारणा-सावधानियाँ-और-सुरक्षित-अभ्यास",
+   "published": "2026-05-06"
+  },
+  {
+   "slug": "मंत्र-और-दैनिक-जीवन-10-मिनट-की-साधना-से-मन-ऊर्जा-और-फोकस-में-बदलाव-1",
+   "title": "मंत्र और दैनिक जीवन: 10 मिनट की साधना से मन, ऊर्जा और फोकस में बदलाव",
+   "duplicateOf": "मंत्र-और-दैनिक-जीवन-10-मिनट-की-साधना-से-मन-ऊर्जा-और-फोकस-में-बदलाव",
+   "published": "2026-05-06"
+  }
+ ],
+ "worksWithArticles": {
+  "gayatri-mantra": 3,
+  "healing-mantras": 5,
+  "lakshmi-gayatri": 1,
+  "mo-pai-nei-kung": 11,
+  "the-apocalypse-of-adam": 15,
+  "the-gnostic-gospels": 53
+ },
+ "note": "Posts read from the Wix blog (read-only API) on 2026-10-27; transcription verified against the live list by checksum. Connections are keyword-rule suggestions, not editorial review."
+}

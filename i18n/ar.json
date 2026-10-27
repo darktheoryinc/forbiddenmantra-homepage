@@ -67,5 +67,8 @@
  "h_sources": "المصادر والتحقق",
  "_meta": {
   "status": "machine-drafted; needs native-speaker review before leaving beta"
- }
+ },
+ "nav_iosutra": "IOSutra",
+ "did_you_mean": "هل تقصد {q}؟",
+ "close_matches": "عرض نتائج قريبة لـ «{q}»"
 }

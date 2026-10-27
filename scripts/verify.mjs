@@ -10,6 +10,9 @@ const cat = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/catalogue.json'), '
 const rep = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/import-report.json'), 'utf8'));
 const reg = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/languages.json'), 'utf8')).languages;
 const N = cat.works.length;
+const E = cat.works.reduce((n, w) => n + w.editions.length, 0);
+const nLevel = (l) => cat.works.filter((w) => w.level === l).length;
+const nSubj = (d) => cat.works.filter((w) => w.subjects.includes(d)).length;
 
 // ---- static checks ----
 const L = checkLinks(SITE);
@@ -19,7 +22,7 @@ ok(![...L.buy.keys()].some((u) => u.includes('amzn.to')), 'legacy amzn.to link i
 const editionLangs = new Set(cat.works.flatMap((w) => w.editions.map((e) => e.language)));
 ok([...editionLangs].join() === 'en', `no invented translations: every published edition is English (found: ${[...editionLangs].join(',')})`);
 ok(cat.works.every((w) => w.editions.every((e) => e.language === 'en' || e.sources?.length)), 'every non-English edition (none yet) would carry its own source');
-ok(rep.languagesWithVerifiedEditions === 1 && rep.publishedByLanguage.en.editions === 31 && rep.publishedByLanguage.en.works === N, `import report counts: en = ${rep.publishedByLanguage.en.works} works / ${rep.publishedByLanguage.en.editions} editions; ${rep.languagesRegistered} languages registered`);
+ok(rep.languagesWithVerifiedEditions === 1 && rep.publishedByLanguage.en.editions === E && rep.publishedByLanguage.en.works === N, `import report counts: en = ${rep.publishedByLanguage.en.works} works / ${rep.publishedByLanguage.en.editions} editions; ${rep.languagesRegistered} languages registered`);
 ok(!Object.keys(rep.publishedByLanguage).some((c) => ['es', 'de'].includes(c)) && rep.editionLeads.total === 3, 'reported Spanish/German editions stay leads: counted as 0 published (3 unverified leads)');
 for (const f of ['catalogue.json', 'staged.json', 'error-queue.json']) ok(true, `data/${f} present`);
 
@@ -49,7 +52,7 @@ for (const [name, vp] of VIEWPORTS) {
   ok(!(await hscroll()), `${T} no horizontal scroll with dropdown open`);
   const box = await panel.boundingBox(); ok(box && box.x >= -1 && box.x + box.width <= vp.width + 1, `${T} dropdown panel fits inside the viewport (x=${Math.round(box.x)}, w=${Math.round(box.width)}, vw=${vp.width})`);
   const verified = await panel.locator('.lp-books').first().locator('li').allTextContents();
-  ok(verified.length === 1 && /English/.test(verified[0]) && /31 editions/.test(verified[0]), `${T} "Books by language" lists only languages with verified editions: ${JSON.stringify(verified.map((s) => s.trim()))}`);
+  ok(verified.length === 1 && /English/.test(verified[0]) && new RegExp(`${E} editions`).test(verified[0]), `${T} "Books by language" lists only languages with verified editions: ${JSON.stringify(verified.map((s) => s.trim()))}`);
   await panel.locator('summary').click();
   const working = await panel.locator('.lp-more li').count(); ok(working === reg.length - 1, `${T} "working toward" lists the other ${working} languages, without counts`);
   ok(!/\d+ edition/.test(await panel.locator('.lp-more').innerText()), `${T} no language outside the verified list shows an edition count`);
@@ -96,21 +99,21 @@ for (const [name, vp] of VIEWPORTS) {
   await pg.selectOption('select[name=subject]', ''); await pg.selectOption('select[name=format]', 'audiobook'); ok((await visible()).length === 2, `${T} format=audiobook -> 2`);
   await pg.selectOption('select[name=lang]', 'en'); ok((await visible()).length === 2, `${T} language=English + format=audiobook -> 2`);
   await pg.selectOption('select[name=lang]', ''); await pg.selectOption('select[name=format]', ''); await pg.selectOption('select[name=tradition]', 'gnostic'); ok((await visible()).length === 2, `${T} tradition=gnostic -> 2`);
-  await pg.selectOption('select[name=tradition]', ''); await pg.selectOption('select[name=level]', 'intermediate'); ok((await visible()).length === 8, `${T} level=intermediate -> 8`);
+  await pg.selectOption('select[name=tradition]', ''); await pg.selectOption('select[name=level]', 'intermediate'); ok((await visible()).length === nLevel('intermediate'), `${T} level=intermediate -> ${nLevel('intermediate')}`);
   await pg.selectOption('select[name=level]', ''); await snap('books');
   await pg.goto(url('books/index.html') + '?lang=es&format=ebook'); ok((await pg.inputValue('select[name=lang]')) === 'es' && (await visible()).length === 0, `${T} filters can be pre-selected from the URL (?lang=es&format=ebook)`);
 
   // ===== language pages =====
   await pg.goto(url('languages/index.html')); await snap('languages', true);
   const rows = await pg.locator('.lang-row').allTextContents();
-  ok(rows.length === reg.length && /English[\s\S]*23 works · 31 editions/.test(rows[0]), `${T} languages index: ${rows.length} languages, first row "${rows[0].replace(/\s+/g, ' ').trim().slice(0, 60)}"`);
+  ok(rows.length === reg.length && new RegExp(`English[\\s\\S]*${N} works · ${E} editions`).test(rows[0]), `${T} languages index: ${rows.length} languages, first row "${rows[0].replace(/\s+/g, ' ').trim().slice(0, 60)}"`);
   ok(rows.filter((r) => /no verified editions yet/.test(r)).length === reg.length - 1, `${T} every other language says "no verified editions yet"`);
   await pg.goto(url('languages/es/index.html')); ok(await pg.isVisible('[data-lang-empty]') && (await pg.locator('.card').count()) === 0, `${T} Spanish page: honest empty state, no books listed`); await snap('lang-es-empty');
   ok(/0 works · 0 editions/.test(await pg.locator('.stats').textContent()), `${T} Spanish page counts read 0 works · 0 editions`);
   await pg.goto(url('languages/en/index.html')); ok((await pg.locator('.card').count()) === N, `${T} English page lists all ${N} works`);
   await pg.goto(url('languages/ar/index.html')); ok((await pg.locator('h1 [lang=ar]').getAttribute('dir')) === 'rtl', `${T} Arabic page marks its name dir="rtl"`);
   await pg.goto(url('languages/en/index.html')); await pg.click('.chips a >> text=Emotional Wellbeing'); ok(pg.url().includes('topics/emotional-wellbeing') && pg.url().includes('lang=en'), `${T} language page -> subject link carries ?lang=en`);
-  ok((await visible()).length === 5, `${T} subject page opens with the language filter applied (5 emotional-wellbeing works in English)`);
+  ok((await visible()).length === nSubj('emotional-wellbeing'), `${T} subject page opens with the language filter applied (${nSubj('emotional-wellbeing')} emotional-wellbeing works in English)`);
 
   // ===== navigation, editions =====
   await pg.goto(url('subjects/occult-magick-paganism/index.html')); await snap('hub');

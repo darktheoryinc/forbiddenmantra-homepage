@@ -77,20 +77,20 @@ export function resolve(reg, promoId, placement, { root } = {}) {
 }
 
 const cta = (v, cls = 'btn') => v.url
-  ? `<a class="${cls}" href="${esc(v.url)}" target="_blank" rel="noopener noreferrer">Visit ${esc(v.brand.name)}<span class="sr"> (opens in a new tab)</span></a>`
+  ? `<a class="${cls}" href="${esc(v.url)}" target="_blank" rel="noopener noreferrer" data-track="promo" data-promo="${esc(v.promo.id)}" data-placement="${esc(v.placement)}">Visit ${esc(v.brand.name)}<span class="sr"> (opens in a new tab)</span></a>`
   : `<span class="${cls} btn-pending" role="note">${esc(v.brand.name)} link to be added</span>`;
 
 function facts(v, { asset }) {
   const member = v.claim('nvidia-inception-membership'), sep = v.claim('no-endorsement'), tm = v.claim('nvidia-trademark-notice');
   const link = v.external?.nvidiaInception;
-  return `<aside class="promo-facts" aria-label="Program membership">
+  return `<div class="promo-facts" role="group" aria-label="Program membership">
     <p class="pf-h">Program membership</p>
     ${member ? `<p class="pf-main">${esc(member.text)}</p>` : ''}
     ${v.badge ? `<p class="pf-badge" style="--pad:${v.badge.clearSpacePx}px"><img src="${esc(asset(v.badge.asset))}" alt="${esc(v.badge.altText)}" height="${v.badge.displayHeightPx}" style="height:${v.badge.displayHeightPx}px;width:auto"></p>` : ''}
     ${sep ? `<p class="pf-note">${esc(sep.text)}</p>` : ''}
     ${link ? `<p class="pf-link"><a href="${esc(link.url)}" target="_blank" rel="noopener noreferrer">${esc(link.label)}<span class="sr"> (opens in a new tab)</span></a></p>` : ''}
     ${tm ? `<p class="pf-tm">${esc(tm.text)}</p>` : ''}
-  </aside>`;
+  </div>`;
 }
 
 export function renderHome(v, ctx) {
@@ -112,7 +112,7 @@ export function renderHome(v, ctx) {
 }
 
 export function renderFooter(v, ctx) {
-  const name = v.url ? `<a href="${esc(v.url)}" target="_blank" rel="noopener noreferrer">${esc(v.brand.name)}</a>` : esc(v.brand.name);
+  const name = v.url ? `<a href="${esc(v.url)}" target="_blank" rel="noopener noreferrer" data-track="promo" data-promo="${esc(v.promo.id)}" data-placement="${esc(v.placement)}">${esc(v.brand.name)}</a>` : esc(v.brand.name);
   return `<div class="foot-promo" data-promo="${esc(v.promo.id)}" lang="en"><p>${name}, our ${esc(v.brand.descriptor)}. ${esc(v.claim('nvidia-inception-membership').short)} ${esc(v.claim('no-endorsement').short)} <a href="${ctx.href(v.promo.placements.page.path)}">Details</a></p></div>`;
 }
 

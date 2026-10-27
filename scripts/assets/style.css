@@ -128,7 +128,7 @@ button[type=submit],.btn{background:var(--gold);color:#120d05;border:0;padding:1
 .lang-group{margin:20px 0}.lg-h{font:500 22px 'Cinzel',serif;margin:18px 0 10px;color:var(--gold-l)}.lg-h small{font-size:14px;color:var(--muted);letter-spacing:.1em}
 .lang-group:target .lg-h{box-shadow:0 2px 0 var(--gold)}
 .ed-title{font-size:19px;margin:6px 0;color:#F5EDD6}
-.edition h4{font:500 17px 'Cinzel',serif;color:#F5EDD6;margin:0}
+.edition h4,.edition h3{font:500 17px 'Cinzel',serif;color:#F5EDD6;margin:0}
 .fixture-bar{background:#6b1a1a;color:#fff}
 [dir=rtl] .crumbs li+li::before{margin-inline:0 6px}
 @media(max-width:1000px){.header-in{gap:12px}}
@@ -179,3 +179,7 @@ button[type=submit],.btn{background:var(--gold);color:#120d05;border:0;padding:1
 .promo-prose{margin-top:34px;max-width:760px}
 .foot-promo{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:16px 0;margin:26px 0 6px;max-width:900px}.foot-promo p{font-size:14px;color:var(--muted);line-height:1.5}
 @media(max-width:860px){.promo-card{grid-template-columns:1fr}.promo-main{padding:26px 22px}.promo-facts{border-inline-start:0;border-top:1px solid var(--line);padding:22px}.promo-blurb{font-size:18px}.pf-main{font-size:19px}}
+.note-tm{font-size:15px;color:var(--muted)}
+.nav a[href$="technology/index.html"]{opacity:.85}
+.articles{list-style:none;margin:10px 0 6px;max-width:760px}.articles li{padding:9px 0;border-bottom:1px solid rgba(201,168,76,.1);font-size:18px;line-height:1.4}
+.a-date{font-size:13px;color:var(--muted);white-space:nowrap}

@@ -1,0 +1,1376 @@
+{
+ "generatedFrom": "web-search corroboration",
+ "checkedOn": "2026-10-27",
+ "works": [
+  {
+   "press": null,
+   "status": "verified",
+   "claims": [],
+   "title": "Harry Potter and the Philosopher's Stone",
+   "authors": [
+    "J.K. Rowling"
+   ],
+   "subjects": [
+    "fantasy"
+   ],
+   "tradition": [
+    "fiction"
+   ],
+   "level": "beginner",
+   "thirdPartyNotice": "Independent listing. Forbidden Mantra Press is not affiliated with, authorized by or endorsed by the author, the publishers or the rights holders of Harry Potter.",
+   "description": "The first novel in the Harry Potter series, in which an orphaned boy learns he is a wizard and starts at a school of magic. Listed as one work with its US and UK editions, which carry different titles.",
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "title": "Harry Potter and the Sorcerer's Stone",
+     "publisher": "Scholastic",
+     "year": 1999,
+     "isbn13": "9780590353427",
+     "note": "US edition. Some catalogue records give 1998, the year of the original hardcover."
+    },
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Bloomsbury Children's Books",
+     "year": 2014,
+     "isbn13": "9781408855652",
+     "marketplace": "amazon.co.uk",
+     "note": "UK edition, New Children's Edition."
+    }
+   ],
+   "sources": [
+    {
+     "label": "Publishers Weekly record (US edition)",
+     "url": "https://publishersweekly.com/9780590353427",
+     "accessed": "2026-10-27",
+     "supports": "US isbn13, title"
+    },
+    {
+     "label": "University of Southern Indiana library record",
+     "url": "https://library.usi.edu/record/428555",
+     "accessed": "2026-10-27",
+     "supports": "US publisher, year"
+    },
+    {
+     "label": "AbeBooks listing (UK edition)",
+     "url": "https://www.abebooks.com/9781408855652/Harry-Potter-Philosophers-Stone-Rowling-1408855658/plp",
+     "accessed": "2026-10-27",
+     "supports": "UK isbn13, title"
+    },
+    {
+     "label": "Goodreads editions",
+     "url": "https://www.goodreads.com/work/editions/4640799",
+     "accessed": "2026-10-27",
+     "supports": "UK edition, publisher"
+    }
+   ]
+  },
+  {
+   "press": null,
+   "status": "verified",
+   "claims": [],
+   "title": "Harry Potter: A History of Magic",
+   "authors": [
+    "British Library"
+   ],
+   "subjects": [
+    "witchcraft",
+    "alchemy",
+    "astrology",
+    "folklore-fairy-tales"
+   ],
+   "tradition": [
+    "western-esoteric"
+   ],
+   "level": "beginner",
+   "thirdPartyNotice": "Independent listing. Forbidden Mantra Press is not affiliated with, authorized by or endorsed by the author, the publishers or the rights holders of Harry Potter.",
+   "description": "The book of the British Library's exhibition on the history of magic, published by Bloomsbury. It surveys the real traditions of magic, alchemy and folklore alongside the Harry Potter stories.",
+   "editions": [
+    {
+     "language": "en",
+     "format": "hardcover",
+     "publisher": "Bloomsbury",
+     "year": 2017,
+     "isbn13": "9781408890769"
+    },
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Bloomsbury",
+     "year": 2018,
+     "isbn13": "9781526607072",
+     "needsSecondSource": true,
+     "note": "Paperback ISBN reported by Wikipedia only."
+    }
+   ],
+   "sources": [
+    {
+     "label": "Wikipedia: Harry Potter: A History of Magic",
+     "url": "https://en.wikipedia.org/wiki/Harry_Potter:_A_History_of_Magic",
+     "accessed": "2026-10-27",
+     "supports": "paperback ISBN, publication"
+    },
+    {
+     "label": "Angus & Robertson listing",
+     "url": "https://www.angusrobertson.com.au/books/p/9781408890769",
+     "accessed": "2026-10-27",
+     "supports": "hardcover isbn13"
+    },
+    {
+     "label": "Kingston Frontenac library record",
+     "url": "https://www.kfpl.ca/c/catalogue/record/1.450800",
+     "accessed": "2026-10-27",
+     "supports": "title, publisher"
+    }
+   ]
+  },
+  {
+   "press": null,
+   "status": "verified",
+   "claims": [],
+   "title": "The Hobbit",
+   "subtitle": "Or There and Back Again",
+   "authors": [
+    "J.R.R. Tolkien"
+   ],
+   "subjects": [
+    "fantasy"
+   ],
+   "tradition": [
+    "fiction"
+   ],
+   "level": "beginner",
+   "description": "Tolkien's fantasy of a reluctant hobbit drawn into a quest to reclaim a treasure guarded by a dragon. The shorter, lighter book that precedes The Lord of the Rings, and a common first step into modern fantasy.",
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Houghton Mifflin Harcourt (Mariner Books)",
+     "year": 2012,
+     "isbn13": "9780547928227",
+     "note": "Listings credit Houghton Mifflin Harcourt or its Mariner Books imprint."
+    }
+   ],
+   "sources": [
+    {
+     "label": "Tolkien Books US catalogue",
+     "url": "https://www.tolkienbooks.us/hob/us/tpb/the-hobbit-2012/",
+     "accessed": "2026-10-27",
+     "supports": "edition, isbn13, 2012"
+    },
+    {
+     "label": "AbeBooks listing",
+     "url": "https://www.abebooks.com/9780547928227/Hobbit-Back-Tolkien-054792822X/plp",
+     "accessed": "2026-10-27",
+     "supports": "isbn13, title"
+    }
+   ]
+  },
+  {
+   "press": null,
+   "status": "verified",
+   "claims": [],
+   "title": "The Fellowship of the Ring",
+   "subtitle": "Being the First Part of The Lord of the Rings",
+   "authors": [
+    "J.R.R. Tolkien"
+   ],
+   "subjects": [
+    "fantasy"
+   ],
+   "tradition": [
+    "fiction"
+   ],
+   "level": "intermediate",
+   "description": "The first volume of The Lord of the Rings, in which the journey of the One Ring begins. Longer and darker than The Hobbit.",
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Houghton Mifflin Harcourt (Mariner Books)",
+     "year": 2012,
+     "isbn13": "9780547928210",
+     "note": "Some listings credit other imprints; the Mariner/Houghton Mifflin Harcourt attribution is the most consistent."
+    }
+   ],
+   "sources": [
+    {
+     "label": "Tolkien Books US catalogue",
+     "url": "https://www.tolkienbooks.us/lotr/us/tpb/hm2012/the-fellowship-of-the-ring-2012/",
+     "accessed": "2026-10-27",
+     "supports": "edition, isbn13"
+    },
+    {
+     "label": "AbeBooks listing",
+     "url": "https://www.abebooks.com/Fellowship-Ring-Being-First-Part-Lord/32240846014/bd",
+     "accessed": "2026-10-27",
+     "supports": "title"
+    }
+   ]
+  },
+  {
+   "press": null,
+   "status": "verified",
+   "claims": [],
+   "title": "A Wizard of Earthsea",
+   "authors": [
+    "Ursula K. Le Guin"
+   ],
+   "subjects": [
+    "fantasy"
+   ],
+   "tradition": [
+    "fiction"
+   ],
+   "level": "beginner",
+   "description": "A young mage learns the cost of power at a school of wizardry in Le Guin's archipelago of Earthsea. A cornerstone of modern fantasy, with an emphasis on balance and true names.",
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Graphia (Houghton Mifflin Harcourt)",
+     "year": 2012,
+     "isbn13": "9780547722023",
+     "note": "Includes a new afterword by the author, per library records."
+    },
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Spectra (Bantam)",
+     "year": 2004,
+     "isbn13": "9780553383041",
+     "note": "The Earthsea Cycle, Book 1."
+    }
+   ],
+   "sources": [
+    {
+     "label": "Ilsley Public Library record",
+     "url": "https://catalog.ilsleypubliclibrary.org/Record/457655",
+     "accessed": "2026-10-27",
+     "supports": "title, author"
+    },
+    {
+     "label": "Harvard Book Store listing",
+     "url": "https://www.harvard.com/book/9780547722023",
+     "accessed": "2026-10-27",
+     "supports": "2012 isbn13"
+    },
+    {
+     "label": "AbeBooks listing",
+     "url": "https://www.abebooks.com/9780553383041/Wizard-Earthsea-Guin-Ursula-Robbins-0553383043/plp",
+     "accessed": "2026-10-27",
+     "supports": "2004 isbn13"
+    }
+   ]
+  },
+  {
+   "press": null,
+   "status": "verified",
+   "claims": [],
+   "title": "The Lion, the Witch and the Wardrobe",
+   "authors": [
+    "C.S. Lewis"
+   ],
+   "subjects": [
+    "fantasy"
+   ],
+   "tradition": [
+    "fiction"
+   ],
+   "level": "beginner",
+   "description": "Four children enter a snowbound land through a wardrobe in C.S. Lewis's classic of children's fantasy, the best-known book of The Chronicles of Narnia.",
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "HarperCollins",
+     "year": null,
+     "isbn13": "9780064471046",
+     "note": "Listings give different years for this ISBN, so none is shown. Illustrated by Pauline Baynes."
+    }
+   ],
+   "sources": [
+    {
+     "label": "MIT Press Bookstore listing",
+     "url": "https://mitpressbookstore.mit.edu/book/9780064471046",
+     "accessed": "2026-10-27",
+     "supports": "isbn13, publisher"
+    },
+    {
+     "label": "Porchlight Books listing",
+     "url": "https://www.porchlightbooks.com/products/lion-the-witch-and-the-wardrobe-c-s-lewis-9780064471046",
+     "accessed": "2026-10-27",
+     "supports": "title"
+    }
+   ]
+  },
+  {
+   "press": null,
+   "status": "verified",
+   "claims": [],
+   "title": "Good Omens",
+   "subtitle": "The Nice and Accurate Prophecies of Agnes Nutter, Witch",
+   "authors": [
+    "Neil Gaiman",
+    "Terry Pratchett"
+   ],
+   "subjects": [
+    "fantasy",
+    "supernatural-fiction"
+   ],
+   "tradition": [
+    "fiction"
+   ],
+   "level": "beginner",
+   "description": "A comic fantasy about an angel and a demon who try to prevent the end of the world, written by two authors who became leading voices in British fantasy.",
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "HarperTorch (William Morrow Paperbacks)",
+     "year": 2006,
+     "isbn13": "9780060853983",
+     "note": "Publisher attribution differs between sources."
+    }
+   ],
+   "sources": [
+    {
+     "label": "Neil Gaiman Bibliography: US 2006 paperback",
+     "url": "https://neilgaimanbibliography.com/books/goodomens/goodomens-us-2006-pb.html",
+     "accessed": "2026-10-27",
+     "supports": "edition, publisher, date"
+    },
+    {
+     "label": "Harvard Book Store listing",
+     "url": "https://www.harvard.com/book/9780060853983",
+     "accessed": "2026-10-27",
+     "supports": "isbn13"
+    }
+   ]
+  },
+  {
+   "press": null,
+   "status": "verified",
+   "claims": [],
+   "title": "American Gods",
+   "authors": [
+    "Neil Gaiman"
+   ],
+   "subjects": [
+    "fantasy",
+    "supernatural-fiction",
+    "mythology"
+   ],
+   "tradition": [
+    "fiction"
+   ],
+   "level": "intermediate",
+   "description": "Gaiman's novel in which old gods brought to America by immigrants clash with newer gods of media and technology. A bridge between modern fantasy and the world's mythologies.",
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "William Morrow Paperbacks",
+     "year": 2021,
+     "isbn13": "9780063081918",
+     "note": "Other editions, including a tenth-anniversary edition, carry different ISBNs."
+    }
+   ],
+   "sources": [
+    {
+     "label": "MIT Press Bookstore listing",
+     "url": "https://mitpressbookstore.mit.edu/book/9780063081918",
+     "accessed": "2026-10-27",
+     "supports": "isbn13, publisher"
+    },
+    {
+     "label": "Round Rock library record",
+     "url": "https://discovery.roundrocktexas.gov/Record/321243",
+     "accessed": "2026-10-27",
+     "supports": "isbn13, edition"
+    }
+   ]
+  },
+  {
+   "press": null,
+   "status": "verified",
+   "claims": [],
+   "title": "The Color of Magic",
+   "authors": [
+    "Terry Pratchett"
+   ],
+   "subjects": [
+    "fantasy"
+   ],
+   "tradition": [
+    "fiction"
+   ],
+   "level": "beginner",
+   "description": "The first Discworld novel: a failed wizard and a tourist with a sentient luggage travel a flat world. A comic introduction to Pratchett's long-running series. Listed with its US and UK editions, which spell the title differently.",
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Harper",
+     "year": 2013,
+     "isbn13": "9780062225672",
+     "note": "US edition, spelled \"Color\"."
+    },
+    {
+     "language": "en",
+     "format": "paperback",
+     "title": "The Colour of Magic",
+     "publisher": "Corgi (Penguin)",
+     "year": null,
+     "isbn13": "9780552166591",
+     "marketplace": "amazon.co.uk",
+     "needsSecondSource": true,
+     "note": "UK edition, spelled \"Colour\". ISBN seen on the Penguin UK page only."
+    }
+   ],
+   "sources": [
+    {
+     "label": "Folsom library record (US edition)",
+     "url": "https://librarycatalog.folsom.ca.us/Record/.b15234538",
+     "accessed": "2026-10-27",
+     "supports": "US edition, 2013"
+    },
+    {
+     "label": "AbeBooks listing (US edition)",
+     "url": "https://www.abebooks.com/9780062225672/Color-Magic-Novel-Discworld-Pratchett-0062225677/plp",
+     "accessed": "2026-10-27",
+     "supports": "isbn13"
+    },
+    {
+     "label": "Penguin UK page (UK edition)",
+     "url": "https://www.penguin.co.uk/books/389504/the-colour-of-magic-by-pratchett-terry/9780552166591",
+     "accessed": "2026-10-27",
+     "supports": "UK isbn13, title"
+    }
+   ]
+  },
+  {
+   "press": null,
+   "status": "verified",
+   "claims": [],
+   "title": "Jonathan Strange & Mr Norrell",
+   "authors": [
+    "Susanna Clarke"
+   ],
+   "subjects": [
+    "fantasy"
+   ],
+   "tradition": [
+    "fiction"
+   ],
+   "level": "intermediate",
+   "description": "An alternate-history novel in which magic returns to nineteenth-century England through two rival magicians, written in the manner of period fiction and full of footnotes.",
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Bloomsbury",
+     "year": 2005,
+     "isbn13": "9781582346038",
+     "needsSecondSource": true,
+     "note": "ISBN from a single library record."
+    },
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Bloomsbury",
+     "year": null,
+     "isbn13": "9781635576726",
+     "needsSecondSource": true,
+     "note": "Current Bloomsbury edition per one bookseller; 864 pages."
+    }
+   ],
+   "sources": [
+    {
+     "label": "Swan Libraries record (2005 paperback)",
+     "url": "https://rss.swanlibraries.net/Record/a2511757",
+     "accessed": "2026-10-27",
+     "supports": "isbn13, 2005"
+    },
+    {
+     "label": "Harvard Book Store listing (current edition)",
+     "url": "https://www.harvard.com/book/9781635576726",
+     "accessed": "2026-10-27",
+     "supports": "isbn13"
+    }
+   ]
+  },
+  {
+   "press": null,
+   "status": "verified",
+   "claims": [],
+   "title": "Circe",
+   "authors": [
+    "Madeline Miller"
+   ],
+   "subjects": [
+    "fantasy",
+    "mythology"
+   ],
+   "tradition": [
+    "fiction",
+    "mythic"
+   ],
+   "level": "intermediate",
+   "description": "A retelling of Greek myth from the point of view of the witch Circe, who appears in the Odyssey. A route from classical myth into the modern novel.",
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Back Bay Books",
+     "year": 2020,
+     "isbn13": "9780316556323"
+    },
+    {
+     "language": "en",
+     "format": "hardcover",
+     "publisher": "Little, Brown and Company",
+     "year": 2018,
+     "isbn13": "9780316556347"
+    }
+   ],
+   "sources": [
+    {
+     "label": "AbeBooks listing (paperback)",
+     "url": "https://www.abebooks.com/9780316556323/Circe-Miller-Madeline-Paperback-0316556327/plp",
+     "accessed": "2026-10-27",
+     "supports": "paperback isbn13"
+    },
+    {
+     "label": "Westchester Libraries record",
+     "url": "https://opac.westchesterlibraries.org/Record/4063082",
+     "accessed": "2026-10-27",
+     "supports": "title, author"
+    },
+    {
+     "label": "IBS listing (hardcover)",
+     "url": "https://www.ibs.it/circe-libro-inglese-madeline-miller/e/9780316556347",
+     "accessed": "2026-10-27",
+     "supports": "hardcover isbn13"
+    }
+   ]
+  },
+  {
+   "press": null,
+   "status": "verified",
+   "claims": [],
+   "title": "The Name of the Wind",
+   "authors": [
+    "Patrick Rothfuss"
+   ],
+   "subjects": [
+    "fantasy"
+   ],
+   "tradition": [
+    "fiction"
+   ],
+   "level": "intermediate",
+   "description": "The first volume of the Kingkiller Chronicle, in which a legendary figure tells the story of his youth, including his time at a university of magic.",
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "DAW Books",
+     "year": 2008,
+     "isbn13": "9780756404741",
+     "note": "Sources describe it as both mass-market and trade paperback; page counts vary."
+    }
+   ],
+   "sources": [
+    {
+     "label": "Harvard Book Store listing",
+     "url": "https://www.harvard.com/book/9780756404741",
+     "accessed": "2026-10-27",
+     "supports": "isbn13, series"
+    },
+    {
+     "label": "Schweitzer listing",
+     "url": "https://www.schweitzer-online.de/buch/Rothfuss/Name-Wind/9780756404741/A3262872/",
+     "accessed": "2026-10-27",
+     "supports": "isbn13, 2008"
+    }
+   ]
+  },
+  {
+   "press": null,
+   "status": "verified",
+   "claims": [],
+   "title": "Mistborn: The Final Empire",
+   "authors": [
+    "Brandon Sanderson"
+   ],
+   "subjects": [
+    "fantasy"
+   ],
+   "tradition": [
+    "fiction"
+   ],
+   "level": "intermediate",
+   "description": "The first Mistborn novel: a heist against an immortal emperor, built around a magic system drawn from metals.",
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Tor Teen",
+     "year": 2014,
+     "isbn13": "9780765377135",
+     "note": "Trade paperback, from library records. A mass-market edition has a different ISBN."
+    }
+   ],
+   "sources": [
+    {
+     "label": "Knox County Library record",
+     "url": "https://discover.knoxcountylibrary.org/Record/336547",
+     "accessed": "2026-10-27",
+     "supports": "title, edition"
+    },
+    {
+     "label": "Roseville library record",
+     "url": "https://library.roseville.ca.us/Record/249344",
+     "accessed": "2026-10-27",
+     "supports": "isbn13"
+    }
+   ]
+  },
+  {
+   "press": null,
+   "status": "verified",
+   "claims": [],
+   "title": "A Game of Thrones",
+   "authors": [
+    "George R.R. Martin"
+   ],
+   "subjects": [
+    "fantasy"
+   ],
+   "tradition": [
+    "fiction"
+   ],
+   "level": "intermediate",
+   "description": "The first novel of A Song of Ice and Fire, an epic of rival noble houses that is the basis of the television series Game of Thrones.",
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Bantam",
+     "year": null,
+     "isbn13": "9780553593716",
+     "note": "Sources disagree on whether this is a tie-in or standard paperback and on its page count, so no year is shown."
+    }
+   ],
+   "sources": [
+    {
+     "label": "Round Rock library record",
+     "url": "https://discovery.roundrocktexas.gov/Record/178313",
+     "accessed": "2026-10-27",
+     "supports": "isbn13, paperback"
+    },
+    {
+     "label": "Deerfield library record",
+     "url": "https://catalog.deerfieldlibrary.org/Record/.b1051580x",
+     "accessed": "2026-10-27",
+     "supports": "isbn13"
+    }
+   ]
+  },
+  {
+   "press": null,
+   "status": "verified",
+   "claims": [],
+   "title": "The Once and Future King",
+   "authors": [
+    "T.H. White"
+   ],
+   "subjects": [
+    "fantasy",
+    "mythology"
+   ],
+   "tradition": [
+    "fiction",
+    "mythic"
+   ],
+   "level": "intermediate",
+   "description": "T.H. White's retelling of the Arthurian legend, from Arthur's boyhood to the fall of Camelot, mixing humour with tragedy.",
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Ace",
+     "year": 1987,
+     "isbn13": "9780441627400",
+     "note": "Mass-market paperback; other Ace printings have different ISBNs."
+    }
+   ],
+   "sources": [
+    {
+     "label": "MIT Press Bookstore listing",
+     "url": "https://mitpressbookstore.mit.edu/book/9780441627400",
+     "accessed": "2026-10-27",
+     "supports": "isbn13, publisher"
+    },
+    {
+     "label": "Parnassus Books listing",
+     "url": "https://parnassusbooks.net/book/9780441627400",
+     "accessed": "2026-10-27",
+     "supports": "title"
+    }
+   ]
+  },
+  {
+   "press": null,
+   "status": "verified",
+   "claims": [],
+   "title": "Neverwhere",
+   "authors": [
+    "Neil Gaiman"
+   ],
+   "subjects": [
+    "fantasy"
+   ],
+   "tradition": [
+    "fiction"
+   ],
+   "level": "beginner",
+   "description": "A man falls into London Below, a hidden city beneath the real one. Gaiman's urban fantasy began as a BBC television series.",
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "HarperCollins (Perennial)",
+     "year": 2003,
+     "isbn13": "9780060557812"
+    },
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "William Morrow Paperbacks",
+     "year": null,
+     "isbn13": "9780063070721",
+     "note": "Later Morrow paperback."
+    }
+   ],
+   "sources": [
+    {
+     "label": "Ellinwood library record",
+     "url": "https://ellinwood.catalog.ckls.org/Record/699900",
+     "accessed": "2026-10-27",
+     "supports": "2003 edition, isbn13"
+    },
+    {
+     "label": "MIT Press Bookstore listing (Morrow edition)",
+     "url": "https://mitpressbookstore.mit.edu/book/9780063070721",
+     "accessed": "2026-10-27",
+     "supports": "Morrow isbn13"
+    }
+   ]
+  },
+  {
+   "press": null,
+   "status": "verified",
+   "claims": [],
+   "title": "The Haunting of Hill House",
+   "authors": [
+    "Shirley Jackson"
+   ],
+   "subjects": [
+    "supernatural-fiction"
+   ],
+   "tradition": [
+    "fiction"
+   ],
+   "level": "intermediate",
+   "description": "A classic haunted-house novel in which a paranormal investigator invites guests to stay in a notorious mansion. Known for psychological suspense.",
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Penguin Classics",
+     "year": 2006,
+     "isbn13": "9780143039983",
+     "note": "Revised edition."
+    }
+   ],
+   "sources": [
+    {
+     "label": "Tattered Cover listing",
+     "url": "https://www.tatteredcover.com/products/9780143039983",
+     "accessed": "2026-10-27",
+     "supports": "isbn13"
+    },
+    {
+     "label": "Lebanon library record",
+     "url": "https://catalog.leblibrary.com/Record/15392",
+     "accessed": "2026-10-27",
+     "supports": "title, author"
+    }
+   ]
+  },
+  {
+   "press": null,
+   "status": "verified",
+   "claims": [],
+   "title": "Dracula",
+   "authors": [
+    "Bram Stoker"
+   ],
+   "subjects": [
+    "supernatural-fiction"
+   ],
+   "tradition": [
+    "fiction"
+   ],
+   "level": "intermediate",
+   "description": "Stoker's 1897 vampire novel, told through letters and diaries. This Penguin Classics edition has an introduction and notes by Maurice Hindle.",
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Penguin Classics",
+     "year": 2003,
+     "isbn13": "9780141439846",
+     "note": "Edited by Maurice Hindle with a preface by Christopher Frayling."
+    }
+   ],
+   "sources": [
+    {
+     "label": "Penguin UK page",
+     "url": "https://www.penguin.co.uk/books/55632/dracula-by-stoker-bram/9780141439846",
+     "accessed": "2026-10-27",
+     "supports": "isbn13, imprint"
+    },
+    {
+     "label": "Penguin Random House page",
+     "url": "https://penguinrandomhouse.com/books/isbn/9780141439846",
+     "accessed": "2026-10-27",
+     "supports": "isbn13"
+    }
+   ]
+  },
+  {
+   "press": null,
+   "status": "verified",
+   "claims": [],
+   "title": "Frankenstein",
+   "subtitle": "Or, The Modern Prometheus",
+   "authors": [
+    "Mary Shelley"
+   ],
+   "subjects": [
+    "supernatural-fiction"
+   ],
+   "tradition": [
+    "fiction"
+   ],
+   "level": "intermediate",
+   "description": "Mary Shelley's novel of a scientist and the being he creates, often called the first science-fiction novel. This Penguin Classics edition uses the 1831 text with introduction and notes by Maurice Hindle.",
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Penguin Classics",
+     "year": 2003,
+     "isbn13": "9780141439471",
+     "note": "Revised 2003 printing of the 1985 Penguin Classics edition."
+    }
+   ],
+   "sources": [
+    {
+     "label": "MIT Press Bookstore listing",
+     "url": "https://mitpressbookstore.mit.edu/book/9780141439471",
+     "accessed": "2026-10-27",
+     "supports": "isbn13"
+    },
+    {
+     "label": "Parnassus Books listing",
+     "url": "https://parnassusbooks.net/book/9780141439471",
+     "accessed": "2026-10-27",
+     "supports": "title"
+    }
+   ]
+  },
+  {
+   "press": null,
+   "status": "verified",
+   "claims": [],
+   "title": "Something Wicked This Way Comes",
+   "authors": [
+    "Ray Bradbury"
+   ],
+   "subjects": [
+    "supernatural-fiction",
+    "fantasy"
+   ],
+   "tradition": [
+    "fiction"
+   ],
+   "level": "intermediate",
+   "description": "A dark carnival arrives in a small Midwestern town in Bradbury's fantasy of autumn, fear and temptation.",
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Simon & Schuster",
+     "year": 2017,
+     "isbn13": "9781501167713",
+     "note": "Library records agree on this ISBN; other S&S paperbacks have different ISBNs."
+    }
+   ],
+   "sources": [
+    {
+     "label": "Bookshop.org page",
+     "url": "https://bookshop.org/p/books/something-wicked-this-way-comes-ray-bradbury/6776721",
+     "accessed": "2026-10-27",
+     "supports": "edition"
+    },
+    {
+     "label": "Payson library record",
+     "url": "https://catalog.paysonlibrary.org/Record/38129",
+     "accessed": "2026-10-27",
+     "supports": "isbn13"
+    }
+   ]
+  },
+  {
+   "press": null,
+   "status": "verified",
+   "claims": [],
+   "title": "The Master and Margarita",
+   "authors": [
+    "Mikhail Bulgakov"
+   ],
+   "subjects": [
+    "supernatural-fiction",
+    "fantasy"
+   ],
+   "tradition": [
+    "fiction"
+   ],
+   "level": "intermediate",
+   "description": "Bulgakov's satirical novel in which the devil visits Soviet Moscow, interwoven with a retelling of the trial of Pontius Pilate. Penguin Classics Deluxe edition, translated by Richard Pevear and Larissa Volokhonsky.",
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Penguin Classics",
+     "year": 2016,
+     "isbn13": "9780143108276",
+     "translator": "Richard Pevear and Larissa Volokhonsky",
+     "note": "50th-anniversary Deluxe edition with a foreword by Boris Fishman."
+    }
+   ],
+   "sources": [
+    {
+     "label": "Harvard Book Store listing",
+     "url": "https://www.harvard.com/book/9780143108276",
+     "accessed": "2026-10-27",
+     "supports": "isbn13, translators"
+    },
+    {
+     "label": "Wake County library record",
+     "url": "https://catalog.wake.gov/Record/720694",
+     "accessed": "2026-10-27",
+     "supports": "title"
+    }
+   ]
+  },
+  {
+   "press": null,
+   "status": "verified",
+   "claims": [],
+   "title": "Interview with the Vampire",
+   "authors": [
+    "Anne Rice"
+   ],
+   "subjects": [
+    "supernatural-fiction"
+   ],
+   "tradition": [
+    "fiction"
+   ],
+   "level": "intermediate",
+   "description": "Anne Rice's first Vampire Chronicles novel, in which a vampire tells the story of his life to a reporter.",
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Ballantine Books",
+     "year": null,
+     "isbn13": "9780345337665",
+     "note": "The same ISBN appears on several Ballantine printings, so no year is shown."
+    }
+   ],
+   "sources": [
+    {
+     "label": "Bookshop.org page",
+     "url": "https://bookshop.org/p/books/interview-with-the-vampire-anne-rice/7381e3057494c951",
+     "accessed": "2026-10-27",
+     "supports": "isbn13, publisher"
+    },
+    {
+     "label": "Slugbooks listing",
+     "url": "https://slugbooks.com/9780345337665-interview-with-the-vampire--book-i-of-the.html",
+     "accessed": "2026-10-27",
+     "supports": "title"
+    }
+   ]
+  },
+  {
+   "press": null,
+   "status": "verified",
+   "claims": [],
+   "title": "The Complete Fairy Tales of the Brothers Grimm",
+   "subtitle": "All-New Third Edition",
+   "authors": [
+    "Jacob and Wilhelm Grimm"
+   ],
+   "subjects": [
+    "folklore-fairy-tales"
+   ],
+   "tradition": [
+    "mythic"
+   ],
+   "level": "beginner",
+   "description": "A translation of the Grimms' collected tales by Jack Zipes, with tales omitted from the original German edition.",
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Bantam",
+     "year": null,
+     "isbn13": "9780553382167",
+     "translator": "Jack Zipes",
+     "note": "All-New Third Edition; illustrated by John B. Gruelle."
+    }
+   ],
+   "sources": [
+    {
+     "label": "Massive Bookshop listing",
+     "url": "https://massivebookshop.com/products/9780553382167",
+     "accessed": "2026-10-27",
+     "supports": "isbn13, title"
+    },
+    {
+     "label": "Chautauqua Bookstore listing",
+     "url": "https://chautauquabookstore.com/book/9780553382167",
+     "accessed": "2026-10-27",
+     "supports": "publisher"
+    }
+   ]
+  },
+  {
+   "press": null,
+   "status": "verified",
+   "claims": [],
+   "title": "Norse Mythology",
+   "authors": [
+    "Neil Gaiman"
+   ],
+   "subjects": [
+    "mythology",
+    "folklore-fairy-tales"
+   ],
+   "tradition": [
+    "mythic"
+   ],
+   "level": "beginner",
+   "description": "Gaiman's retelling of the Norse myths, from the creation of the world to Ragnarok.",
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "W. W. Norton",
+     "year": 2018,
+     "isbn13": "9780393356182"
+    },
+    {
+     "language": "en",
+     "format": "hardcover",
+     "publisher": "W. W. Norton",
+     "year": 2017,
+     "isbn13": "9780393609097",
+     "needsSecondSource": true,
+     "note": "Hardcover ISBN from one library record."
+    }
+   ],
+   "sources": [
+    {
+     "label": "Bookshop.org page",
+     "url": "https://bookshop.org/p/books/norse-mythology-neil-gaiman/7383212",
+     "accessed": "2026-10-27",
+     "supports": "paperback isbn13, date"
+    },
+    {
+     "label": "San Bernardino library record",
+     "url": "https://catalog.sbplibrary.org/Record/130581",
+     "accessed": "2026-10-27",
+     "supports": "title"
+    },
+    {
+     "label": "Larchmont library record",
+     "url": "https://catalog.larchmontlibrary.org/Record/4020086",
+     "accessed": "2026-10-27",
+     "supports": "hardcover isbn13"
+    }
+   ]
+  },
+  {
+   "press": null,
+   "status": "verified",
+   "claims": [],
+   "title": "The Golden Bough",
+   "subtitle": "A Study in Magic and Religion",
+   "authors": [
+    "James George Frazer"
+   ],
+   "subjects": [
+    "mythology",
+    "comparative-religion",
+    "folklore-fairy-tales"
+   ],
+   "tradition": [
+    "comparative",
+    "mythic"
+   ],
+   "level": "advanced",
+   "description": "Frazer's historically influential and much-criticised comparative study of magic and religion, here in the Oxford World's Classics abridgement edited by Robert Fraser.",
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Oxford University Press (Oxford World's Classics)",
+     "year": 2009,
+     "isbn13": "9780199538829",
+     "note": "A new abridgement from the second and third editions."
+    }
+   ],
+   "sources": [
+    {
+     "label": "MIT Press Bookstore listing",
+     "url": "https://mitpressbookstore.mit.edu/book/9780199538829",
+     "accessed": "2026-10-27",
+     "supports": "isbn13"
+    },
+    {
+     "label": "Tattered Cover listing",
+     "url": "https://www.tatteredcover.com/products/9780199538829",
+     "accessed": "2026-10-27",
+     "supports": "title"
+    }
+   ]
+  },
+  {
+   "press": null,
+   "status": "verified",
+   "claims": [],
+   "title": "Meditations",
+   "authors": [
+    "Marcus Aurelius"
+   ],
+   "subjects": [
+    "philosophy"
+   ],
+   "tradition": [
+    "western-philosophy"
+   ],
+   "level": "beginner",
+   "description": "Marcus Aurelius's private notes on Stoic practice, in Gregory Hays's modern translation.",
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Modern Library",
+     "year": 2003,
+     "isbn13": "9780812968255",
+     "translator": "Gregory Hays",
+     "note": "One library record gives 2002."
+    }
+   ],
+   "sources": [
+    {
+     "label": "MIT Press Bookstore listing",
+     "url": "https://mitpressbookstore.mit.edu/book/9780812968255",
+     "accessed": "2026-10-27",
+     "supports": "isbn13"
+    },
+    {
+     "label": "Harvard Book Store listing",
+     "url": "https://www.harvard.com/book/9780812968255",
+     "accessed": "2026-10-27",
+     "supports": "translator, price"
+    }
+   ]
+  },
+  {
+   "press": null,
+   "status": "verified",
+   "claims": [],
+   "title": "The Republic",
+   "authors": [
+    "Plato"
+   ],
+   "subjects": [
+    "philosophy"
+   ],
+   "tradition": [
+    "western-philosophy"
+   ],
+   "level": "intermediate",
+   "description": "Plato's dialogue on justice and the ideal city, in the Penguin Classics translation by Desmond Lee with an introduction by Melissa Lane.",
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Penguin Classics",
+     "year": 2007,
+     "isbn13": "9780140455113",
+     "translator": "Desmond Lee",
+     "note": "Second revised edition with a new introduction by Melissa Lane."
+    }
+   ],
+   "sources": [
+    {
+     "label": "Penguin Random House page",
+     "url": "https://penguinrandomhouse.com/books/302379/the-republic-by-plato/9780140455113/",
+     "accessed": "2026-10-27",
+     "supports": "isbn13, translator"
+    },
+    {
+     "label": "Schweitzer listing",
+     "url": "https://www.schweitzer-online.de/buch/Plato/Republic/9780140455113/A862015/",
+     "accessed": "2026-10-27",
+     "supports": "title"
+    }
+   ]
+  },
+  {
+   "press": null,
+   "status": "verified",
+   "claims": [],
+   "title": "Thus Spoke Zarathustra",
+   "subtitle": "A Book for Everyone and No One",
+   "authors": [
+    "Friedrich Nietzsche"
+   ],
+   "subjects": [
+    "philosophy"
+   ],
+   "tradition": [
+    "western-philosophy"
+   ],
+   "level": "advanced",
+   "description": "Nietzsche's philosophical work in the form of a prophet's speeches, in R. J. Hollingdale's Penguin Classics translation.",
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Penguin Classics",
+     "year": null,
+     "isbn13": "9780140441185",
+     "translator": "R. J. Hollingdale",
+     "note": "Sources give different years (1961, 1969, 1974), so none is shown."
+    }
+   ],
+   "sources": [
+    {
+     "label": "Penguin Random House page",
+     "url": "https://www.penguinrandomhouse.com/books/322953/thus-spoke-zarathustra-by-friedrich-nietzsche-translated-with-an-introduction-and-notes-by-r-jhollingdale",
+     "accessed": "2026-10-27",
+     "supports": "isbn13, translator"
+    },
+    {
+     "label": "Blackwell's listing",
+     "url": "https://blackwells.co.uk/bookshop/product/9780140441185",
+     "accessed": "2026-10-27",
+     "supports": "title"
+    }
+   ]
+  },
+  {
+   "press": null,
+   "status": "verified",
+   "claims": [],
+   "title": "Man's Search for Meaning",
+   "authors": [
+    "Viktor E. Frankl"
+   ],
+   "subjects": [
+    "philosophy",
+    "emotional-wellbeing"
+   ],
+   "tradition": [
+    "western-philosophy",
+    "secular"
+   ],
+   "level": "beginner",
+   "description": "Viktor Frankl's account of his years in Nazi concentration camps and of logotherapy, his meaning-centred approach to psychotherapy. It is a memoir and a work of psychology, not medical advice.",
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Beacon Press",
+     "year": null,
+     "isbn13": "9780807014271",
+     "needsSecondSource": true,
+     "note": "Current Beacon paperback per one bookseller. An older 2006 edition (ISBN 9780807014295) is reported out of print and is not listed."
+    }
+   ],
+   "sources": [
+    {
+     "label": "AbeBooks listing noting the current edition",
+     "url": "https://www.abebooks.com/9780807014295/Mans-Search-Meaning-Viktor-Frankl-080701429X/plp",
+     "accessed": "2026-10-27",
+     "supports": "current-edition isbn13"
+    }
+   ]
+  },
+  {
+   "press": null,
+   "status": "verified",
+   "claims": [],
+   "title": "Letters from a Stoic",
+   "subtitle": "Epistulae Morales ad Lucilium",
+   "authors": [
+    "Seneca"
+   ],
+   "subjects": [
+    "philosophy"
+   ],
+   "tradition": [
+    "western-philosophy"
+   ],
+   "level": "beginner",
+   "description": "A selection of Seneca's letters to Lucilius on Stoic practice, friendship and courage, translated by Robin Campbell.",
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Penguin Classics",
+     "year": 2004,
+     "isbn13": "9780140442106",
+     "translator": "Robin Campbell",
+     "note": "First published by Penguin in 1969."
+    }
+   ],
+   "sources": [
+    {
+     "label": "Penguin UK page",
+     "url": "https://www.penguin.co.uk/books/26877/letters-from-a-stoic-by-seneca/9780140442106",
+     "accessed": "2026-10-27",
+     "supports": "isbn13, translator"
+    },
+    {
+     "label": "Penguin Random House page",
+     "url": "https://www.penguinrandomhouse.com/books/317438/letters-from-a-stoic-by-seneca-translated-by-robin-campbell/9780140442106",
+     "accessed": "2026-10-27",
+     "supports": "isbn13"
+    }
+   ]
+  }
+ ]
+}

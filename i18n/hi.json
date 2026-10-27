@@ -67,5 +67,8 @@
  "h_sources": "स्रोत और सत्यापन",
  "_meta": {
   "status": "machine-drafted; needs native-speaker review before leaving beta"
- }
+ },
+ "nav_iosutra": "IOSutra",
+ "did_you_mean": "क्या आपका मतलब {q} था?",
+ "close_matches": "“{q}” के मिलते-जुलते परिणाम"
 }

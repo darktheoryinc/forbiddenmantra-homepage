@@ -67,5 +67,8 @@
  "h_sources": "Fonti e verifica",
  "_meta": {
   "status": "machine-drafted; needs native-speaker review before leaving beta"
- }
+ },
+ "nav_iosutra": "IOSutra",
+ "did_you_mean": "Intendevi {q}?",
+ "close_matches": "Risultati simili per «{q}»"
 }

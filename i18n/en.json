@@ -64,5 +64,8 @@
  "l_year": "Year",
  "l_translator": "Translator",
  "btn_library": "Find in a library",
- "h_sources": "Sources and verification"
+ "h_sources": "Sources and verification",
+ "nav_iosutra": "IOSutra",
+ "did_you_mean": "Did you mean {q}?",
+ "close_matches": "Showing close matches for “{q}”"
 }

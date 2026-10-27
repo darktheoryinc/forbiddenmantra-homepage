@@ -35,6 +35,12 @@
       "name": "Consciousness, Myth & Ancient Wisdom",
       "tagline": "Mind, dreams, myth, and the oldest surviving texts.",
       "intro": "Philosophy of awareness, dream work, comparative mythology and ancient literature. Readers can move between a non-dual teacher, a psychologist of religion and a translation of a Mesopotamian epic, and still know which voice they are hearing."
+    },
+    {
+      "id": "fantasy-folklore-fiction",
+      "name": "Fantasy, Folklore & Supernatural Fiction",
+      "tagline": "Wizards, myths retold, fairy tales and the uncanny.",
+      "intro": "Storytelling shelves for readers who follow magic into fiction. Modern fantasy, classic gothic and supernatural novels, collected folk and fairy tales, and philosophy that sits beside them are kept distinct from the religious and practice books elsewhere in the store, so a novel is never mistaken for a manual."
     }
   ],
   "departments": [
@@ -279,9 +285,44 @@
       "id": "mythology",
       "name": "Mythology",
       "hubs": [
-        "consciousness-myth-wisdom"
+        "consciousness-myth-wisdom",
+        "fantasy-folklore-fiction"
       ],
       "intro": "Myth as story, symbol and comparative field. Classical, Norse, Mesopotamian, Indian and Mesoamerican traditions, with the scholars who interpret them."
+    },
+    {
+      "id": "fantasy",
+      "name": "Fantasy",
+      "hubs": [
+        "fantasy-folklore-fiction"
+      ],
+      "intro": "Epic, urban, historical and children's fantasy, from the schools of magic and quest tales many readers start with to long, layered series. Each entry is a novel; for the real traditions behind magic, see the occult and mythology shelves."
+    },
+    {
+      "id": "supernatural-fiction",
+      "name": "Supernatural & Gothic Fiction",
+      "hubs": [
+        "fantasy-folklore-fiction"
+      ],
+      "intro": "Ghost stories, vampires, haunted houses and gothic classics. Some are supernatural and some are scientific horror, and each book page says which."
+    },
+    {
+      "id": "folklore-fairy-tales",
+      "name": "Folklore & Fairy Tales",
+      "hubs": [
+        "fantasy-folklore-fiction",
+        "consciousness-myth-wisdom"
+      ],
+      "intro": "Collected folk tales, fairy lore and the scholarship that studies them. Collections are labelled by how faithfully they follow their sources."
+    },
+    {
+      "id": "philosophy",
+      "name": "Philosophy",
+      "hubs": [
+        "consciousness-myth-wisdom",
+        "fantasy-folklore-fiction"
+      ],
+      "intro": "Western philosophy and Stoic practice, from Plato to modern existential writing. These are works of argument and reflection, distinct from the scriptural and practice traditions elsewhere in the store."
     }
   ],
   "traditions": [
@@ -359,6 +400,16 @@
       "id": "comparative",
       "name": "Comparative",
       "intro": "Works that survey several traditions side by side."
+    },
+    {
+      "id": "fiction",
+      "name": "Fiction: Fantasy & Supernatural",
+      "intro": "Novels and story collections. These are works of imagination, not religious or instructional texts, even when they draw on myth or magical traditions."
+    },
+    {
+      "id": "western-philosophy",
+      "name": "Western Philosophy",
+      "intro": "Philosophy in the Greek, Roman and European traditions, including Stoicism and existentialism."
     }
   ],
   "formats": {

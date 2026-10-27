@@ -1,0 +1,1548 @@
+{
+ "summary": {
+  "works": 53,
+  "purchaseLinks": 68,
+  "tagsExpected": {
+   "amazon.com": "darktheoryinc-20"
+  },
+  "linkClasses": {
+   "derived": 52,
+   "search": 14,
+   "verified": 2
+  },
+  "linkErrors": 0,
+  "worksWithValidTaggedProductLink": 43,
+  "ofWhichSourceVerified": 2,
+  "ofWhichIdentityVerifiedOffline": 41,
+  "worksWithSearchLinkOnly": 10,
+  "worksWithNoPurchaseLink": 0,
+  "worksWithLinkErrors": 0,
+  "recordsNeedingManualReview": 21,
+  "manualReviewByReason": {
+   "an edition identifier comes from a single source": 9,
+   "owner-listed record: edition details unconfirmed": 12,
+   "e-book/audiobook edition has no verified Amazon link": 8,
+   "only a search link: needs the edition's ASIN or ISBN": 10
+  },
+  "liveCheckPending": 41
+ },
+ "manualReview": [
+  {
+   "work": "harry-potter-a-history-of-magic",
+   "title": "Harry Potter: A History of Magic",
+   "reasons": [
+    "an edition identifier comes from a single source"
+   ]
+  },
+  {
+   "work": "the-color-of-magic",
+   "title": "The Color of Magic",
+   "reasons": [
+    "an edition identifier comes from a single source"
+   ]
+  },
+  {
+   "work": "jonathan-strange-and-mr-norrell",
+   "title": "Jonathan Strange & Mr Norrell",
+   "reasons": [
+    "an edition identifier comes from a single source"
+   ]
+  },
+  {
+   "work": "norse-mythology",
+   "title": "Norse Mythology",
+   "reasons": [
+    "an edition identifier comes from a single source"
+   ]
+  },
+  {
+   "work": "mans-search-for-meaning",
+   "title": "Man's Search for Meaning",
+   "reasons": [
+    "an edition identifier comes from a single source"
+   ]
+  },
+  {
+   "work": "the-apocalypse-of-adam",
+   "title": "The Apocalypse of Adam",
+   "reasons": [
+    "owner-listed record: edition details unconfirmed"
+   ]
+  },
+  {
+   "work": "gayatri-mantra",
+   "title": "Gayatri Mantra",
+   "reasons": [
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "kebra-nagast",
+   "title": "Kebra Nagast",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "weapons-of-the-gods",
+   "title": "Weapons of the Gods",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "maha-mrityunjaya-mantra",
+   "title": "Maha Mrityunjaya Mantra",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "invoke-the-fierce",
+   "title": "Invoke the Fierce",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "lakshmi-gayatri",
+   "title": "Lakshmi Gayatri",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "om-namah-shivaya",
+   "title": "Om Namah Shivaya",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "maa-kali-mantras-and-instructions",
+   "title": "Maa Kali Mantras and Instructions",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed"
+   ]
+  },
+  {
+   "work": "mo-pai-nei-kung",
+   "title": "Mo Pai Nei Kung",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed"
+   ]
+  },
+  {
+   "work": "the-hidden-technology-of-human-power",
+   "title": "The Hidden Technology of Human Power",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed"
+   ]
+  },
+  {
+   "work": "forbidden-mantra",
+   "title": "Forbidden Mantra",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed"
+   ]
+  },
+  {
+   "work": "when-things-fall-apart",
+   "title": "When Things Fall Apart",
+   "reasons": [
+    "an edition identifier comes from a single source"
+   ]
+  },
+  {
+   "work": "when-the-body-says-no",
+   "title": "When the Body Says No",
+   "reasons": [
+    "an edition identifier comes from a single source"
+   ]
+  },
+  {
+   "work": "encyclopedia-of-5-000-spells",
+   "title": "Encyclopedia of 5,000 Spells",
+   "reasons": [
+    "an edition identifier comes from a single source",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "seventy-eight-degrees-of-wisdom",
+   "title": "Seventy-Eight Degrees of Wisdom",
+   "reasons": [
+    "an edition identifier comes from a single source"
+   ]
+  }
+ ],
+ "works": [
+  {
+   "work": "harry-potter-and-the-philosophers-stone",
+   "title": "Harry Potter and the Philosopher's Stone",
+   "press": false,
+   "links": 2,
+   "best": "derived",
+   "errors": false
+  },
+  {
+   "work": "harry-potter-a-history-of-magic",
+   "title": "Harry Potter: A History of Magic",
+   "press": false,
+   "links": 2,
+   "best": "derived",
+   "errors": false
+  },
+  {
+   "work": "the-hobbit",
+   "title": "The Hobbit",
+   "press": false,
+   "links": 1,
+   "best": "derived",
+   "errors": false
+  },
+  {
+   "work": "the-fellowship-of-the-ring",
+   "title": "The Fellowship of the Ring",
+   "press": false,
+   "links": 1,
+   "best": "derived",
+   "errors": false
+  },
+  {
+   "work": "a-wizard-of-earthsea",
+   "title": "A Wizard of Earthsea",
+   "press": false,
+   "links": 2,
+   "best": "derived",
+   "errors": false
+  },
+  {
+   "work": "the-lion-the-witch-and-the-wardrobe",
+   "title": "The Lion, the Witch and the Wardrobe",
+   "press": false,
+   "links": 1,
+   "best": "derived",
+   "errors": false
+  },
+  {
+   "work": "good-omens",
+   "title": "Good Omens",
+   "press": false,
+   "links": 1,
+   "best": "derived",
+   "errors": false
+  },
+  {
+   "work": "american-gods",
+   "title": "American Gods",
+   "press": false,
+   "links": 1,
+   "best": "derived",
+   "errors": false
+  },
+  {
+   "work": "the-color-of-magic",
+   "title": "The Color of Magic",
+   "press": false,
+   "links": 2,
+   "best": "derived",
+   "errors": false
+  },
+  {
+   "work": "jonathan-strange-and-mr-norrell",
+   "title": "Jonathan Strange & Mr Norrell",
+   "press": false,
+   "links": 2,
+   "best": "derived",
+   "errors": false
+  },
+  {
+   "work": "circe",
+   "title": "Circe",
+   "press": false,
+   "links": 2,
+   "best": "derived",
+   "errors": false
+  },
+  {
+   "work": "the-name-of-the-wind",
+   "title": "The Name of the Wind",
+   "press": false,
+   "links": 1,
+   "best": "derived",
+   "errors": false
+  },
+  {
+   "work": "mistborn-the-final-empire",
+   "title": "Mistborn: The Final Empire",
+   "press": false,
+   "links": 1,
+   "best": "derived",
+   "errors": false
+  },
+  {
+   "work": "a-game-of-thrones",
+   "title": "A Game of Thrones",
+   "press": false,
+   "links": 1,
+   "best": "derived",
+   "errors": false
+  },
+  {
+   "work": "the-once-and-future-king",
+   "title": "The Once and Future King",
+   "press": false,
+   "links": 1,
+   "best": "derived",
+   "errors": false
+  },
+  {
+   "work": "neverwhere",
+   "title": "Neverwhere",
+   "press": false,
+   "links": 2,
+   "best": "derived",
+   "errors": false
+  },
+  {
+   "work": "the-haunting-of-hill-house",
+   "title": "The Haunting of Hill House",
+   "press": false,
+   "links": 1,
+   "best": "derived",
+   "errors": false
+  },
+  {
+   "work": "dracula",
+   "title": "Dracula",
+   "press": false,
+   "links": 1,
+   "best": "derived",
+   "errors": false
+  },
+  {
+   "work": "frankenstein",
+   "title": "Frankenstein",
+   "press": false,
+   "links": 1,
+   "best": "derived",
+   "errors": false
+  },
+  {
+   "work": "something-wicked-this-way-comes",
+   "title": "Something Wicked This Way Comes",
+   "press": false,
+   "links": 1,
+   "best": "derived",
+   "errors": false
+  },
+  {
+   "work": "the-master-and-margarita",
+   "title": "The Master and Margarita",
+   "press": false,
+   "links": 1,
+   "best": "derived",
+   "errors": false
+  },
+  {
+   "work": "interview-with-the-vampire",
+   "title": "Interview with the Vampire",
+   "press": false,
+   "links": 1,
+   "best": "derived",
+   "errors": false
+  },
+  {
+   "work": "the-complete-fairy-tales-of-the-brothers-grimm",
+   "title": "The Complete Fairy Tales of the Brothers Grimm",
+   "press": false,
+   "links": 1,
+   "best": "derived",
+   "errors": false
+  },
+  {
+   "work": "norse-mythology",
+   "title": "Norse Mythology",
+   "press": false,
+   "links": 2,
+   "best": "derived",
+   "errors": false
+  },
+  {
+   "work": "the-golden-bough",
+   "title": "The Golden Bough",
+   "press": false,
+   "links": 1,
+   "best": "derived",
+   "errors": false
+  },
+  {
+   "work": "meditations",
+   "title": "Meditations",
+   "press": false,
+   "links": 1,
+   "best": "derived",
+   "errors": false
+  },
+  {
+   "work": "the-republic",
+   "title": "The Republic",
+   "press": false,
+   "links": 1,
+   "best": "derived",
+   "errors": false
+  },
+  {
+   "work": "thus-spoke-zarathustra",
+   "title": "Thus Spoke Zarathustra",
+   "press": false,
+   "links": 1,
+   "best": "derived",
+   "errors": false
+  },
+  {
+   "work": "mans-search-for-meaning",
+   "title": "Man's Search for Meaning",
+   "press": false,
+   "links": 1,
+   "best": "derived",
+   "errors": false
+  },
+  {
+   "work": "letters-from-a-stoic",
+   "title": "Letters from a Stoic",
+   "press": false,
+   "links": 1,
+   "best": "derived",
+   "errors": false
+  },
+  {
+   "work": "the-apocalypse-of-adam",
+   "title": "The Apocalypse of Adam",
+   "press": true,
+   "links": 2,
+   "best": "verified",
+   "errors": false
+  },
+  {
+   "work": "gayatri-mantra",
+   "title": "Gayatri Mantra",
+   "press": true,
+   "links": 2,
+   "best": "verified",
+   "errors": false
+  },
+  {
+   "work": "kebra-nagast",
+   "title": "Kebra Nagast",
+   "press": true,
+   "links": 2,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "weapons-of-the-gods",
+   "title": "Weapons of the Gods",
+   "press": true,
+   "links": 2,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "maha-mrityunjaya-mantra",
+   "title": "Maha Mrityunjaya Mantra",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "invoke-the-fierce",
+   "title": "Invoke the Fierce",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "lakshmi-gayatri",
+   "title": "Lakshmi Gayatri",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "om-namah-shivaya",
+   "title": "Om Namah Shivaya",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "maa-kali-mantras-and-instructions",
+   "title": "Maa Kali Mantras and Instructions",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "mo-pai-nei-kung",
+   "title": "Mo Pai Nei Kung",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-hidden-technology-of-human-power",
+   "title": "The Hidden Technology of Human Power",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "forbidden-mantra",
+   "title": "Forbidden Mantra",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-power-of-now",
+   "title": "The Power of Now",
+   "press": false,
+   "links": 1,
+   "best": "derived",
+   "errors": false
+  },
+  {
+   "work": "the-untethered-soul",
+   "title": "The Untethered Soul",
+   "press": false,
+   "links": 1,
+   "best": "derived",
+   "errors": false
+  },
+  {
+   "work": "when-things-fall-apart",
+   "title": "When Things Fall Apart",
+   "press": false,
+   "links": 2,
+   "best": "derived",
+   "errors": false
+  },
+  {
+   "work": "when-the-body-says-no",
+   "title": "When the Body Says No",
+   "press": false,
+   "links": 2,
+   "best": "derived",
+   "errors": false
+  },
+  {
+   "work": "bucklands-complete-book-of-witchcraft",
+   "title": "Buckland’s Complete Book of Witchcraft",
+   "press": false,
+   "links": 1,
+   "best": "derived",
+   "errors": false
+  },
+  {
+   "work": "wicca",
+   "title": "Wicca",
+   "press": false,
+   "links": 1,
+   "best": "derived",
+   "errors": false
+  },
+  {
+   "work": "encyclopedia-of-5-000-spells",
+   "title": "Encyclopedia of 5,000 Spells",
+   "press": false,
+   "links": 1,
+   "best": "derived",
+   "errors": false
+  },
+  {
+   "work": "seventy-eight-degrees-of-wisdom",
+   "title": "Seventy-Eight Degrees of Wisdom",
+   "press": false,
+   "links": 2,
+   "best": "derived",
+   "errors": false
+  },
+  {
+   "work": "the-gnostic-gospels",
+   "title": "The Gnostic Gospels",
+   "press": false,
+   "links": 1,
+   "best": "derived",
+   "errors": false
+  },
+  {
+   "work": "taoist-secrets-of-love",
+   "title": "Taoist Secrets of Love",
+   "press": false,
+   "links": 1,
+   "best": "derived",
+   "errors": false
+  },
+  {
+   "work": "healing-mantras",
+   "title": "Healing Mantras",
+   "press": false,
+   "links": 1,
+   "best": "derived",
+   "errors": false
+  }
+ ],
+ "links": [
+  {
+   "work": "harry-potter-and-the-philosophers-stone",
+   "workTitle": "Harry Potter and the Philosopher's Stone",
+   "press": false,
+   "isbn13": "9780590353427",
+   "market": "amazon.com",
+   "asin": "059035342X",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780590353427",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/dp/059035342X?tag=…"
+  },
+  {
+   "work": "harry-potter-and-the-philosophers-stone",
+   "workTitle": "Harry Potter and the Philosopher's Stone",
+   "press": false,
+   "isbn13": "9781408855652",
+   "market": "amazon.co.uk",
+   "asin": "1408855658",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9781408855652",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.co.uk/dp/1408855658"
+  },
+  {
+   "work": "harry-potter-a-history-of-magic",
+   "workTitle": "Harry Potter: A History of Magic",
+   "press": false,
+   "isbn13": "9781408890769",
+   "market": "amazon.com",
+   "asin": "1408890763",
+   "basis": "ISBN-10 of the edition",
+   "edition": "hardcover en 9781408890769",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/dp/1408890763?tag=…"
+  },
+  {
+   "work": "harry-potter-a-history-of-magic",
+   "workTitle": "Harry Potter: A History of Magic",
+   "press": false,
+   "isbn13": "9781526607072",
+   "market": "amazon.com",
+   "asin": "1526607077",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9781526607072",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/dp/1526607077?tag=…"
+  },
+  {
+   "work": "the-hobbit",
+   "workTitle": "The Hobbit",
+   "press": false,
+   "isbn13": "9780547928227",
+   "market": "amazon.com",
+   "asin": "054792822X",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780547928227",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/dp/054792822X?tag=…"
+  },
+  {
+   "work": "the-fellowship-of-the-ring",
+   "workTitle": "The Fellowship of the Ring",
+   "press": false,
+   "isbn13": "9780547928210",
+   "market": "amazon.com",
+   "asin": "0547928211",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780547928210",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/dp/0547928211?tag=…"
+  },
+  {
+   "work": "a-wizard-of-earthsea",
+   "workTitle": "A Wizard of Earthsea",
+   "press": false,
+   "isbn13": "9780547722023",
+   "market": "amazon.com",
+   "asin": "0547722028",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780547722023",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/dp/0547722028?tag=…"
+  },
+  {
+   "work": "a-wizard-of-earthsea",
+   "workTitle": "A Wizard of Earthsea",
+   "press": false,
+   "isbn13": "9780553383041",
+   "market": "amazon.com",
+   "asin": "0553383043",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780553383041",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/dp/0553383043?tag=…"
+  },
+  {
+   "work": "the-lion-the-witch-and-the-wardrobe",
+   "workTitle": "The Lion, the Witch and the Wardrobe",
+   "press": false,
+   "isbn13": "9780064471046",
+   "market": "amazon.com",
+   "asin": "0064471047",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780064471046",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/dp/0064471047?tag=…"
+  },
+  {
+   "work": "good-omens",
+   "workTitle": "Good Omens",
+   "press": false,
+   "isbn13": "9780060853983",
+   "market": "amazon.com",
+   "asin": "0060853980",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780060853983",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/dp/0060853980?tag=…"
+  },
+  {
+   "work": "american-gods",
+   "workTitle": "American Gods",
+   "press": false,
+   "isbn13": "9780063081918",
+   "market": "amazon.com",
+   "asin": "0063081911",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780063081918",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/dp/0063081911?tag=…"
+  },
+  {
+   "work": "the-color-of-magic",
+   "workTitle": "The Color of Magic",
+   "press": false,
+   "isbn13": "9780062225672",
+   "market": "amazon.com",
+   "asin": "0062225677",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780062225672",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/dp/0062225677?tag=…"
+  },
+  {
+   "work": "the-color-of-magic",
+   "workTitle": "The Color of Magic",
+   "press": false,
+   "isbn13": "9780552166591",
+   "market": "amazon.co.uk",
+   "asin": "0552166596",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780552166591",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.co.uk/dp/0552166596"
+  },
+  {
+   "work": "jonathan-strange-and-mr-norrell",
+   "workTitle": "Jonathan Strange & Mr Norrell",
+   "press": false,
+   "isbn13": "9781582346038",
+   "market": "amazon.com",
+   "asin": "1582346038",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9781582346038",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/dp/1582346038?tag=…"
+  },
+  {
+   "work": "jonathan-strange-and-mr-norrell",
+   "workTitle": "Jonathan Strange & Mr Norrell",
+   "press": false,
+   "isbn13": "9781635576726",
+   "market": "amazon.com",
+   "asin": "1635576725",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9781635576726",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/dp/1635576725?tag=…"
+  },
+  {
+   "work": "circe",
+   "workTitle": "Circe",
+   "press": false,
+   "isbn13": "9780316556347",
+   "market": "amazon.com",
+   "asin": "0316556343",
+   "basis": "ISBN-10 of the edition",
+   "edition": "hardcover en 9780316556347",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/dp/0316556343?tag=…"
+  },
+  {
+   "work": "circe",
+   "workTitle": "Circe",
+   "press": false,
+   "isbn13": "9780316556323",
+   "market": "amazon.com",
+   "asin": "0316556327",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780316556323",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/dp/0316556327?tag=…"
+  },
+  {
+   "work": "the-name-of-the-wind",
+   "workTitle": "The Name of the Wind",
+   "press": false,
+   "isbn13": "9780756404741",
+   "market": "amazon.com",
+   "asin": "0756404746",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780756404741",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/dp/0756404746?tag=…"
+  },
+  {
+   "work": "mistborn-the-final-empire",
+   "workTitle": "Mistborn: The Final Empire",
+   "press": false,
+   "isbn13": "9780765377135",
+   "market": "amazon.com",
+   "asin": "0765377136",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780765377135",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/dp/0765377136?tag=…"
+  },
+  {
+   "work": "a-game-of-thrones",
+   "workTitle": "A Game of Thrones",
+   "press": false,
+   "isbn13": "9780553593716",
+   "market": "amazon.com",
+   "asin": "0553593714",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780553593716",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/dp/0553593714?tag=…"
+  },
+  {
+   "work": "the-once-and-future-king",
+   "workTitle": "The Once and Future King",
+   "press": false,
+   "isbn13": "9780441627400",
+   "market": "amazon.com",
+   "asin": "0441627404",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780441627400",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/dp/0441627404?tag=…"
+  },
+  {
+   "work": "neverwhere",
+   "workTitle": "Neverwhere",
+   "press": false,
+   "isbn13": "9780060557812",
+   "market": "amazon.com",
+   "asin": "0060557818",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780060557812",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/dp/0060557818?tag=…"
+  },
+  {
+   "work": "neverwhere",
+   "workTitle": "Neverwhere",
+   "press": false,
+   "isbn13": "9780063070721",
+   "market": "amazon.com",
+   "asin": "0063070723",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780063070721",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/dp/0063070723?tag=…"
+  },
+  {
+   "work": "the-haunting-of-hill-house",
+   "workTitle": "The Haunting of Hill House",
+   "press": false,
+   "isbn13": "9780143039983",
+   "market": "amazon.com",
+   "asin": "0143039989",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780143039983",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/dp/0143039989?tag=…"
+  },
+  {
+   "work": "dracula",
+   "workTitle": "Dracula",
+   "press": false,
+   "isbn13": "9780141439846",
+   "market": "amazon.com",
+   "asin": "014143984X",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780141439846",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/dp/014143984X?tag=…"
+  },
+  {
+   "work": "frankenstein",
+   "workTitle": "Frankenstein",
+   "press": false,
+   "isbn13": "9780141439471",
+   "market": "amazon.com",
+   "asin": "0141439475",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780141439471",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/dp/0141439475?tag=…"
+  },
+  {
+   "work": "something-wicked-this-way-comes",
+   "workTitle": "Something Wicked This Way Comes",
+   "press": false,
+   "isbn13": "9781501167713",
+   "market": "amazon.com",
+   "asin": "1501167715",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9781501167713",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/dp/1501167715?tag=…"
+  },
+  {
+   "work": "the-master-and-margarita",
+   "workTitle": "The Master and Margarita",
+   "press": false,
+   "isbn13": "9780143108276",
+   "market": "amazon.com",
+   "asin": "0143108271",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780143108276",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/dp/0143108271?tag=…"
+  },
+  {
+   "work": "interview-with-the-vampire",
+   "workTitle": "Interview with the Vampire",
+   "press": false,
+   "isbn13": "9780345337665",
+   "market": "amazon.com",
+   "asin": "0345337662",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780345337665",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/dp/0345337662?tag=…"
+  },
+  {
+   "work": "the-complete-fairy-tales-of-the-brothers-grimm",
+   "workTitle": "The Complete Fairy Tales of the Brothers Grimm",
+   "press": false,
+   "isbn13": "9780553382167",
+   "market": "amazon.com",
+   "asin": "0553382160",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780553382167",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/dp/0553382160?tag=…"
+  },
+  {
+   "work": "norse-mythology",
+   "workTitle": "Norse Mythology",
+   "press": false,
+   "isbn13": "9780393609097",
+   "market": "amazon.com",
+   "asin": "039360909X",
+   "basis": "ISBN-10 of the edition",
+   "edition": "hardcover en 9780393609097",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/dp/039360909X?tag=…"
+  },
+  {
+   "work": "norse-mythology",
+   "workTitle": "Norse Mythology",
+   "press": false,
+   "isbn13": "9780393356182",
+   "market": "amazon.com",
+   "asin": "0393356183",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780393356182",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/dp/0393356183?tag=…"
+  },
+  {
+   "work": "the-golden-bough",
+   "workTitle": "The Golden Bough",
+   "press": false,
+   "isbn13": "9780199538829",
+   "market": "amazon.com",
+   "asin": "0199538824",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780199538829",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/dp/0199538824?tag=…"
+  },
+  {
+   "work": "meditations",
+   "workTitle": "Meditations",
+   "press": false,
+   "isbn13": "9780812968255",
+   "market": "amazon.com",
+   "asin": "0812968255",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780812968255",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/dp/0812968255?tag=…"
+  },
+  {
+   "work": "the-republic",
+   "workTitle": "The Republic",
+   "press": false,
+   "isbn13": "9780140455113",
+   "market": "amazon.com",
+   "asin": "0140455116",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780140455113",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/dp/0140455116?tag=…"
+  },
+  {
+   "work": "thus-spoke-zarathustra",
+   "workTitle": "Thus Spoke Zarathustra",
+   "press": false,
+   "isbn13": "9780140441185",
+   "market": "amazon.com",
+   "asin": "0140441182",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780140441185",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/dp/0140441182?tag=…"
+  },
+  {
+   "work": "mans-search-for-meaning",
+   "workTitle": "Man's Search for Meaning",
+   "press": false,
+   "isbn13": "9780807014271",
+   "market": "amazon.com",
+   "asin": "0807014273",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780807014271",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/dp/0807014273?tag=…"
+  },
+  {
+   "work": "letters-from-a-stoic",
+   "workTitle": "Letters from a Stoic",
+   "press": false,
+   "isbn13": "9780140442106",
+   "market": "amazon.com",
+   "asin": "0140442103",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780140442106",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/dp/0140442103?tag=…"
+  },
+  {
+   "work": "the-apocalypse-of-adam",
+   "workTitle": "The Apocalypse of Adam",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "audiobook en B0H8MQN9WK",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=The%20Apocalypse%20of%20Adam%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-apocalypse-of-adam",
+   "workTitle": "The Apocalypse of Adam",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "asin": "B0H8MQN9WK",
+   "basis": "edition ASIN",
+   "edition": "audiobook en B0H8MQN9WK",
+   "class": "verified",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/Apocalypse-Adam-Forbidden-Mantra-Press/dp/B0H8MQN9WK?tag=…"
+  },
+  {
+   "work": "gayatri-mantra",
+   "workTitle": "Gayatri Mantra",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "audiobook en B0H8MDVC72",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Gayatri%20Mantra%20Light%20of%20Divine%20Intelligence%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "gayatri-mantra",
+   "workTitle": "Gayatri Mantra",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "asin": "B0H8MDVC72",
+   "basis": "edition ASIN",
+   "edition": "audiobook en B0H8MDVC72",
+   "class": "verified",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/Gayatri-Mantra-Light-Divine-Intelligence/dp/B0H8MDVC72?tag=…"
+  },
+  {
+   "work": "kebra-nagast",
+   "workTitle": "Kebra Nagast",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "paperback en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Kebra%20Nagast%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "kebra-nagast",
+   "workTitle": "Kebra Nagast",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "paperback en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Kebra%20Nagast%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "weapons-of-the-gods",
+   "workTitle": "Weapons of the Gods",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "paperback en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Weapons%20of%20the%20Gods%20An%20Overview%20of%20Astra%20%26%20Shastra%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "weapons-of-the-gods",
+   "workTitle": "Weapons of the Gods",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "paperback en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Weapons%20of%20the%20Gods%20An%20Overview%20of%20Astra%20%26%20Shastra%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "maha-mrityunjaya-mantra",
+   "workTitle": "Maha Mrityunjaya Mantra",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Maha%20Mrityunjaya%20Mantra%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "invoke-the-fierce",
+   "workTitle": "Invoke the Fierce",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Invoke%20the%20Fierce%20Unlocking%20Strength%20and%20Protection%20with%20the%20Durga%20Mantra%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "lakshmi-gayatri",
+   "workTitle": "Lakshmi Gayatri",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Lakshmi%20Gayatri%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "om-namah-shivaya",
+   "workTitle": "Om Namah Shivaya",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Om%20Namah%20Shivaya%20A%20Sacred%20Practice%20Guide%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "maa-kali-mantras-and-instructions",
+   "workTitle": "Maa Kali Mantras and Instructions",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Maa%20Kali%20Mantras%20and%20Instructions%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "mo-pai-nei-kung",
+   "workTitle": "Mo Pai Nei Kung",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "paperback en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Mo%20Pai%20Nei%20Kung%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-hidden-technology-of-human-power",
+   "workTitle": "The Hidden Technology of Human Power",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "paperback en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=The%20Hidden%20Technology%20of%20Human%20Power%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "forbidden-mantra",
+   "workTitle": "Forbidden Mantra",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "paperback en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Forbidden%20Mantra%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-power-of-now",
+   "workTitle": "The Power of Now",
+   "press": false,
+   "isbn13": "9781577314806",
+   "market": "amazon.com",
+   "asin": "1577314808",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9781577314806",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/dp/1577314808?tag=…"
+  },
+  {
+   "work": "the-untethered-soul",
+   "workTitle": "The Untethered Soul",
+   "press": false,
+   "isbn13": "9781572245372",
+   "market": "amazon.com",
+   "asin": "1572245379",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9781572245372",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/dp/1572245379?tag=…"
+  },
+  {
+   "work": "when-things-fall-apart",
+   "workTitle": "When Things Fall Apart",
+   "press": false,
+   "isbn13": "9781611803433",
+   "market": "amazon.com",
+   "asin": "1611803438",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9781611803433",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/dp/1611803438?tag=…"
+  },
+  {
+   "work": "when-things-fall-apart",
+   "workTitle": "When Things Fall Apart",
+   "press": false,
+   "isbn13": "9780834821002",
+   "market": "amazon.com",
+   "asin": "0834821001",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780834821002",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/dp/0834821001?tag=…"
+  },
+  {
+   "work": "when-the-body-says-no",
+   "workTitle": "When the Body Says No",
+   "press": false,
+   "isbn13": "9780470923351",
+   "market": "amazon.com",
+   "asin": "0470923350",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780470923351",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/dp/0470923350?tag=…"
+  },
+  {
+   "work": "when-the-body-says-no",
+   "workTitle": "When the Body Says No",
+   "press": false,
+   "isbn13": "9780471219828",
+   "market": "amazon.com",
+   "asin": "0471219827",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780471219828",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/dp/0471219827?tag=…"
+  },
+  {
+   "work": "bucklands-complete-book-of-witchcraft",
+   "workTitle": "Buckland’s Complete Book of Witchcraft",
+   "press": false,
+   "isbn13": "9780875420509",
+   "market": "amazon.com",
+   "asin": "0875420508",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780875420509",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/dp/0875420508?tag=…"
+  },
+  {
+   "work": "wicca",
+   "workTitle": "Wicca",
+   "press": false,
+   "isbn13": "9780875421186",
+   "market": "amazon.com",
+   "asin": "0875421180",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780875421186",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/dp/0875421180?tag=…"
+  },
+  {
+   "work": "encyclopedia-of-5-000-spells",
+   "workTitle": "Encyclopedia of 5,000 Spells",
+   "press": false,
+   "isbn13": "9780061711237",
+   "market": "amazon.com",
+   "asin": "0061711233",
+   "basis": "ISBN-10 of the edition",
+   "edition": "hardcover en 9780061711237",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/dp/0061711233?tag=…"
+  },
+  {
+   "work": "seventy-eight-degrees-of-wisdom",
+   "workTitle": "Seventy-Eight Degrees of Wisdom",
+   "press": false,
+   "isbn13": "9781578636655",
+   "market": "amazon.com",
+   "asin": "1578636655",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9781578636655",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/dp/1578636655?tag=…"
+  },
+  {
+   "work": "seventy-eight-degrees-of-wisdom",
+   "workTitle": "Seventy-Eight Degrees of Wisdom",
+   "press": false,
+   "isbn13": "9781578637348",
+   "market": "amazon.com",
+   "asin": "1578637341",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9781578637348",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/dp/1578637341?tag=…"
+  },
+  {
+   "work": "the-gnostic-gospels",
+   "workTitle": "The Gnostic Gospels",
+   "press": false,
+   "isbn13": "9780679724537",
+   "market": "amazon.com",
+   "asin": "0679724532",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780679724537",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/dp/0679724532?tag=…"
+  },
+  {
+   "work": "taoist-secrets-of-love",
+   "workTitle": "Taoist Secrets of Love",
+   "press": false,
+   "isbn13": "9780943358192",
+   "market": "amazon.com",
+   "asin": "0943358191",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780943358192",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/dp/0943358191?tag=…"
+  },
+  {
+   "work": "healing-mantras",
+   "workTitle": "Healing Mantras",
+   "press": false,
+   "isbn13": "9780345431707",
+   "market": "amazon.com",
+   "asin": "0345431707",
+   "basis": "ISBN-10 of the edition",
+   "edition": "paperback en 9780345431707",
+   "class": "derived",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/dp/0345431707?tag=…"
+  }
+ ]
+}
