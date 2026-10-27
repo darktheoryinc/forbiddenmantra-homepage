@@ -27,6 +27,13 @@ for (const n of nd.niches) {
 }
 ok(/Guides by interest/.test(read('index.html')) && read('index.html').includes('niches/magic-witchcraft/'), 'home links to the guides');
 
+// ---- legal pages, footer, disclosures ----
+for (const [rel, h] of [['legal/index.html', 'Terms &amp; Policies'], ['legal/terms-refunds/index.html', 'Terms of Service / Refund Policy'], ['about/privacy/index.html', 'Privacy Policy'], ['about/affiliate-disclosure/index.html', 'Affiliate Disclosure'], ['contact/index.html', 'Contact'], ['network/index.html', 'Our network']]) ok(read(rel).includes(`<h1>${h}</h1>`), `${rel} loads with its heading`);
+const homeH = read('index.html');
+ok(homeH.includes('hero-disclosure') && homeH.includes('As an Amazon Associate I earn from qualifying purchases.'), 'homepage shows "As an Amazon Associate I earn from qualifying purchases." in the hero');
+for (const href of ['legal/', 'legal/terms-refunds/', 'about/privacy/', 'about/affiliate-disclosure/', 'contact/', 'network/']) ok(homeH.includes(`href="./${href}index.html"`) && fs.existsSync(path.join(SITE, href, 'index.html')), `footer links to ${href} and it exists`);
+ok(['https://iosutra.com', 'https://spiritualexpressionz.com', 'https://dogsrfun.com'].every((u) => homeH.includes(`href="${u}"`)), 'footer links to IOSutra, Spiritual Expressionz and Dogs R Fun');
+ok(/class="aff-note-p[^>]*>As an Amazon Associate/.test(read('books/the-power-of-now/index.html')), 'book page shows the disclosure directly under the buy buttons');
 // ---- build-time guard: a broken tag must fail the build ----
 const run = (cfgEdit, env = {}) => {
   const dir = path.join(ROOT, 'test/fixtures/guard-cfg'); fs.rmSync(dir, { recursive: true, force: true }); fs.mkdirSync(dir, { recursive: true });

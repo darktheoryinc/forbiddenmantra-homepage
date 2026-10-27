@@ -350,7 +350,7 @@ ${noindex ? '<meta name="robots" content="noindex, follow">' : PRODUCTION ? `<li
 <link rel="stylesheet" href="${ROOT_PREFIX}assets/style.css">
 ${typeof links === 'function' ? links() : links}
 ${ANALYTICS.snippet}
-<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;500;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;500;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Cormorant+Garamond:wght@500;600&display=swap" rel="stylesheet">
 ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld)}</script>` : ''}
 </head>
 <body>
@@ -525,7 +525,7 @@ for (const h of tax.hubs) {
   const fm = ws.filter((w) => w.press);
   listing({ rel: `subjects/${h.id}/`, works: ws, scope: { k: 'hub', v: h.id }, page: {
     title: h.name, desc: h.tagline, crumbs: [['Subjects', 'subjects/'], [h.name]],
-    body: ({ grid: G, nav }) => `<section class="band"><div class="wrap"><h1>${esc(h.name)}</h1><p class="lede-sm">${esc(h.intro)}</p>
+    body: ({ grid: G, nav }) => `<section class="banner"><div class="wrap"><h1>${esc(h.name)}</h1><p class="lede-sm">${esc(h.intro)}</p></div></section><section class="band"><div class="wrap">
 <h2>Departments</h2>
 <div class="depts">${ds.map((d) => `<a class="dept" href="${href(`topics/${d.id}/`)}"><h3>${esc(d.name)}</h3><p>${esc(d.intro.split('. ')[0])}.</p><span class="hub-n">${fmt(worksIn(d.id).length, 'book', 'books')}${stagedIn(d.id) ? ` · ${stagedIn(d.id)} in review` : ''}</span></a>`).join('')}</div>
 ${fm.length ? `<h2>From Forbidden Mantra Press</h2>${grid(fm, { filterable: false })}` : ''}
@@ -539,7 +539,7 @@ for (const d of tax.departments) {
   const sameHub = tax.departments.filter((x) => x.id !== d.id && x.hubs.some((hh) => d.hubs.includes(hh)));
   listing({ rel: `topics/${d.id}/`, works: ws, scope: { k: 'dept', v: d.id }, page: {
     title: d.name, desc: d.intro.split('. ')[0] + '.', crumbs: [['Subjects', 'subjects/'], [primaryHub(d.id).name, `subjects/${primaryHub(d.id).id}/`], [d.name]],
-    body: ({ grid: G, nav }) => `<section class="band"><div class="wrap"><p class="eyebrow">${d.hubs.map((hh) => esc(hub.get(hh).name)).join(' · ')}</p><h1>${esc(d.name)}</h1><p class="lede-sm">${esc(d.intro)}</p>
+    body: ({ grid: G, nav }) => `<section class="banner"><div class="wrap"><p class="eyebrow">${d.hubs.map((hh) => esc(hub.get(hh).name)).join(' · ')}</p><h1>${esc(d.name)}</h1><p class="lede-sm">${esc(d.intro)}</p></div></section><section class="band"><div class="wrap">
 ${ws.length ? langChips(ws) + filterBar(ws, { subjects: false, q: false }) + G + nav + emptyMsg() : `<p class="note">No books are published in this department yet. ${stagedIn(d.id) ? `${stagedIn(d.id)} candidate titles are in review.` : 'Candidate titles have not yet been staged.'}</p>`}
 ${artBlock(artFor.topic(d.id), 6, `#t-${d.id}`)}
 <h2>Related departments</h2><ul class="chips">${sameHub.map((x) => `<li><a href="${href(`topics/${x.id}/`)}">${esc(x.name)}</a></li>`).join('')}</ul>
@@ -599,7 +599,7 @@ for (const t of tax.traditions) {
   const ws = cat.works.filter((w) => (w.tradition ?? []).includes(t.id));
   listing({ rel: `traditions/${t.id}/`, works: ws, scope: { k: 'trad', v: t.id }, page: {
     title: t.name, desc: t.intro, crumbs: [['Traditions', 'traditions/'], [t.name]],
-    body: ({ grid: G, nav }) => `<section class="band"><div class="wrap"><h1>${esc(t.name)}</h1><p class="lede-sm">${esc(t.intro)}</p>${ws.length ? langChips(ws) + filterBar(ws, { traditions: false, q: false }) + G + nav + emptyMsg() : '<p class="note">No books are published under this tradition yet.</p>'}</div></section>`,
+    body: ({ grid: G, nav }) => `<section class="banner"><div class="wrap"><h1>${esc(t.name)}</h1><p class="lede-sm">${esc(t.intro)}</p></div></section><section class="band"><div class="wrap">${ws.length ? langChips(ws) + filterBar(ws, { traditions: false, q: false }) + G + nav + emptyMsg() : '<p class="note">No books are published under this tradition yet.</p>'}</div></section>`,
   }});
 }
 
