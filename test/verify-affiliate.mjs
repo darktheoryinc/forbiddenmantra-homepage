@@ -117,7 +117,7 @@ if (browser) for (const [name, vp] of VIEWPORTS) {
   const ev = await pg.evaluate(() => window.__ev[0]); const cookie = await pg.evaluate(() => document.cookie); const ls = await pg.evaluate(() => Object.keys(localStorage));
   ok(ev && JSON.stringify(Object.keys(ev).sort()) === JSON.stringify(['cat', 'href', 'isbn', 'linktype', 'market', 'own', 'page', 'track', 'work']), `[${name}] click event contains only: ${Object.keys(ev || {}).sort().join(', ')}`);
   ok(ev && ev.href.includes(`tag=${ID}`) && ev.work === 'the-power-of-now' && ev.isbn === '9781577314806' && ev.market === 'amazon.com', `[${name}] event identifies the book, ISBN and marketplace (no user identifiers)`);
-  ok(cookie === '' && ls.every((k) => k === 'fm-ui'), `[${name}] no cookies set; local storage holds nothing but the optional language choice`);
+  ok(cookie === '' && ls.every((k) => k === 'fm-ui' || k === 'fm-librarian'), `[${name}] no cookies set; local storage holds nothing but the optional language and librarian-visibility choices`);
   await ctx.close();
 }
 await browser?.close();

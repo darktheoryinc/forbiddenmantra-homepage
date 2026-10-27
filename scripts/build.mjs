@@ -147,6 +147,8 @@ const write = (rel, html) => { const f = path.join(OUT, rel); fs.mkdirSync(path.
 const depthPrefix = (rel) => '../'.repeat(rel.split('/').length - 1) || './';
 const worksIn = (deptId) => cat.works.filter((w) => w.subjects.includes(deptId));
 const worksInHub = (hubId) => cat.works.filter((w) => w.subjects.some((s) => dept.get(s).hubs.includes(hubId)));
+const LIB = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/librarian.json'), 'utf8'));
+const LIB_ART = LIB.art?.file && LIB.art.rightsConfirmed && fs.existsSync(path.join(ROOT, 'assets-src/librarian', LIB.art.file)) ? LIB.art : null;
 const NETWORK = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/network.json'), 'utf8')).sites;
 const NICHES = fs.existsSync(path.join(ROOT, DATA, 'niches.json')) ? JSON.parse(fs.readFileSync(path.join(ROOT, DATA, 'niches.json'), 'utf8')).niches : [];
 const nicheById = new Map(NICHES.map((n) => [n.id, n]));
@@ -350,7 +352,7 @@ ${noindex ? '<meta name="robots" content="noindex, follow">' : PRODUCTION ? `<li
 <link rel="stylesheet" href="${ROOT_PREFIX}assets/style.css">
 ${typeof links === 'function' ? links() : links}
 ${ANALYTICS.snippet}
-<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;500;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Cormorant+Garamond:wght@500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;500;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Cormorant+Garamond:wght@500;600&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
 ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld)}</script>` : ''}
 </head>
 <body>
@@ -376,7 +378,7 @@ ${page}
   <div class="wrap foot-grid">
     <div><p class="foot-brand">Forbidden Mantra Press</p><p>A curated bookstore of sacred texts, practice and inner cultivation.</p></div>
     <div><p class="foot-h" data-i18n="foot_browse">${esc(en.foot_browse)}</p><ul>${tax.hubs.map((h) => `<li><a href="${href(`subjects/${h.id}/`)}">${esc(h.name)}</a></li>`).join('')}</ul></div>
-    <div><p class="foot-h" data-i18n="foot_store">${esc(en.foot_store)}</p><ul><li><a href="${href('books/')}" data-i18n="foot_all_books">${esc(en.foot_all_books)}</a></li><li><a href="${href('languages/')}" data-i18n="foot_languages">${esc(en.foot_languages)}</a></li>${ART.length ? `<li><a href="${href('articles/')}">Articles</a></li>` : ''}<li><a href="${href('press/')}">Forbidden Mantra Press</a></li><li><a href="${href('about/catalogue-standards/')}" data-i18n="foot_verify">${esc(en.foot_verify)}</a></li><li><a href="${href('about/affiliate-disclosure/')}" data-i18n="foot_affiliate">${esc(en.foot_affiliate)}</a></li></ul></div>
+    <div><p class="foot-h" data-i18n="foot_store">${esc(en.foot_store)}</p><ul><li><a href="${href('books/')}" data-i18n="foot_all_books">${esc(en.foot_all_books)}</a></li><li><a href="${href('languages/')}" data-i18n="foot_languages">${esc(en.foot_languages)}</a></li>${ART.length ? `<li><a href="${href('articles/')}">Articles</a></li>` : ''}<li><a href="${href('press/')}">Forbidden Mantra Press</a></li><li><a href="${href('about/catalogue-standards/')}" data-i18n="foot_verify">${esc(en.foot_verify)}</a></li><li><a href="${href('about/affiliate-disclosure/')}" data-i18n="foot_affiliate">${esc(en.foot_affiliate)}</a></li>${LIB.enabled ? '<li><button type="button" class="btn-link" data-librarian-toggle lang="en">Hide digital librarian</button></li>' : ''}</ul></div>
     <div><p class="foot-h">Terms &amp; policies</p><ul><li><a href="${href('legal/')}">Terms &amp; Policies</a></li><li><a href="${href('legal/terms-refunds/')}">Terms of Service / Refund Policy</a></li><li><a href="${href('about/privacy/')}">Privacy Policy</a></li><li><a href="${href('about/affiliate-disclosure/')}">Affiliate Disclosure</a></li><li><a href="${href('contact/')}">Contact</a></li></ul></div>
     <div><p class="foot-h">Our network</p><ul>${NETWORK.map((n) => `<li><a href="${esc(n.url)}" target="_blank" rel="noopener noreferrer" data-track="network" data-site="${esc(n.id)}">${esc(n.name)}<span class="sr"> (opens in a new tab)</span></a></li>`).join('')}<li><a href="${href('network/')}">About our network</a></li></ul></div>
   </div>
@@ -384,6 +386,7 @@ ${page}
 </footer>
 <script src="${ROOT_PREFIX}assets/i18n.js"></script>
 <script src="${ROOT_PREFIX}assets/app.js"></script>
+${LIB.enabled ? `<div id="fm-librarian" hidden data-root="${ROOT_PREFIX}" data-config='${esc(JSON.stringify({ art: LIB_ART ? { ...LIB_ART, src: ROOT_PREFIX + 'assets/librarian/' + LIB_ART.file } : null, voice: LIB.voice, ai: { enabled: LIB.ai?.enabled }, startMinimizedBelowPx: LIB.startMinimizedBelowPx }))}'></div><script src="${ROOT_PREFIX}assets/librarian.js" defer></script>` : ''}
 </body>
 </html>`;
 }
@@ -394,6 +397,8 @@ fs.rmSync(OUT, { recursive: true, force: true });
 fs.mkdirSync(path.join(OUT, 'assets'), { recursive: true });
 fs.copyFileSync(path.join(ROOT, 'scripts/assets/style.css'), path.join(OUT, 'assets/style.css'));
 fs.copyFileSync(path.join(ROOT, 'scripts/assets/app.js'), path.join(OUT, 'assets/app.js'));
+fs.copyFileSync(path.join(ROOT, 'scripts/assets/librarian.js'), path.join(OUT, 'assets/librarian.js'));
+if (LIB_ART) { fs.mkdirSync(path.join(OUT, 'assets/librarian'), { recursive: true }); fs.copyFileSync(path.join(ROOT, 'assets-src/librarian', LIB_ART.file), path.join(OUT, 'assets/librarian', LIB_ART.file)); }
 const i18nOut = { dict: Object.fromEntries(Object.entries(locales).map(([c, d]) => [c, Object.fromEntries(Object.entries(d).filter(([k]) => k !== '_meta'))])), langs: Object.fromEntries(langReg.languages.map((l) => [l.code, { name: l.name, endonym: l.endonym, dir: l.dir }])), ui: uiLocales };
 write('assets/i18n.js', `window.FM_I18N=${JSON.stringify(i18nOut)};`);
 
@@ -850,7 +855,8 @@ page('about/privacy/index.html', {
   title: 'Privacy Policy', crumbs: [['Terms & Policies', 'legal/'], ['Privacy Policy']], desc: 'What this site does and does not do with your data.',
   body: () => legalHead('Privacy Policy') + `<p>This page describes how this bookstore works today. The bookstore has no accounts, checkout, forms or comments, does not ask for personal information, and sets no cookies of its own.</p>
 <ul>
-<li><strong>Your choices stay in your browser.</strong> If you pick a website language, the site remembers it in your browser’s local storage on your own device. It is never sent to us.</li>
+<li><strong>Your choices stay in your browser.</strong> If you pick a website language, the site remembers it in your browser’s local storage on your own device. It is never sent to us. The same goes for whether you have minimized or hidden the digital librarian.</li>
+<li><strong>Digital librarian:</strong> the animated guide searches the book index that your browser downloads from this site. What you type into it or into the search boxes is not sent anywhere, and it uses no cookies, microphone or outside service.</li>
 <li><strong>Analytics:</strong> ${ANALYTICS.provider ? `the site uses ${esc(ANALYTICS.provider)}, a cookie-free analytics service, to count visits and outbound clicks (which book, category and type of link). It does not record who you are.` : 'none is running at the moment. If this changes, this page will say which service is used and what it records.'} The site does not run analytics when your browser sends Do Not Track.</li>
 <li><strong>Fonts:</strong> the site loads its typefaces from Google Fonts, so your browser contacts Google when a page loads and Google receives your IP address and browser details under its own privacy policy.</li>
 <li><strong>Retailer and partner links:</strong> buttons for Amazon and other retailers, the Forbidden Mantra blog, our sister sites and IOSutra lead away from this site. Those sites have their own privacy practices. When you follow an Amazon affiliate link, Amazon can tell that the visit came from us and may set its own cookies; see the <a href="${href('about/affiliate-disclosure/')}">Affiliate Disclosure</a>. Links to IOSutra carry campaign tags (the name of this site and the page) in the address.</li>

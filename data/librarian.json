@@ -1,0 +1,47 @@
+{
+  "_doc": "Digital librarian configuration. Character art: the owner-supplied 'Welcoming Futuristic Lotus Android' image (1024x1536 transparent WebP, supplied in chat on 2026-10-27) is installed as assets-src/librarian/librarian.webp, downscaled to 560x840 without redrawing. Coordinates below are percentages of the image: eyes (two lids drawn over the eyes to blink), head (clip line below the chin and the neck pivot, so the head can nod independently), emblem (glowing chest lotus) and hand (open palm used for the welcoming gesture). Nothing here enables a paid service.",
+  "enabled": true,
+  "art": {
+    "file": "librarian.webp",
+    "width": 560,
+    "height": 840,
+    "alt": "",
+    "rightsConfirmed": true,
+    "eyes": [
+      {
+        "x": 39.9,
+        "y": 8.5,
+        "w": 5.6,
+        "h": 2.4
+      },
+      {
+        "x": 48.5,
+        "y": 10.0,
+        "w": 6.0,
+        "h": 2.5
+      }
+    ],
+    "head": {
+      "clipBottom": 16.4,
+      "pivotY": 15.5
+    },
+    "emblem": {
+      "x": 49.1,
+      "y": 24.2
+    },
+    "hand": {
+      "x": 85.9,
+      "y": 22.8
+    }
+  },
+  "voice": {
+    "enabled": false,
+    "note": "Phase 2: microphone search. Implement by calling FMLibrarian.submitQuery(text, { source: 'voice' }) from a recognition handler; see docs/LIBRARIAN.md. No recogniser is loaded and the microphone is never requested."
+  },
+  "ai": {
+    "enabled": false,
+    "provider": null,
+    "note": "Phase 3: AI answers. Register a provider with FMLibrarian.setAnswerProvider(fn). Nothing calls any API, and no key or recurring cost exists."
+  },
+  "startMinimizedBelowPx": 900
+}
