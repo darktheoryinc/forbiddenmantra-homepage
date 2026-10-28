@@ -350,6 +350,1688 @@
           "h": 720
         }
       }
+    },
+    {
+      "work": "the-tao-of-pooh",
+      "edition": "9780140067477",
+      "isbn13": "9780140067477",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780140067477.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/the-tao-of-pooh__9780140067477.jpg",
+      "original": [
+        314,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 344
+        },
+        "480": {
+          "w": 314,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "the-gift",
+      "edition": "9780140195811",
+      "isbn13": "9780140195811",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780140195811.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/the-gift__9780140195811.jpg",
+      "original": [
+        293,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 369
+        },
+        "480": {
+          "w": 293,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "the-iliad",
+      "edition": "9780140275360",
+      "isbn13": "9780140275360",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780140275360.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/the-iliad__9780140275360.jpg",
+      "original": [
+        300,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 360
+        },
+        "480": {
+          "w": 300,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "the-varieties-of-religious-experience",
+      "edition": "9780140390346",
+      "isbn13": "9780140390346",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780140390346.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/the-varieties-of-religious-experience__9780140390346.jpg",
+      "original": [
+        294,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 367
+        },
+        "480": {
+          "w": 294,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "metamorphoses",
+      "edition": "9780140440584",
+      "isbn13": "9780140440584",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780140440584.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/metamorphoses__9780140440584.jpg",
+      "original": [
+        292,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 370
+        },
+        "480": {
+          "w": 292,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "thus-spoke-zarathustra",
+      "edition": "9780140441185",
+      "isbn13": "9780140441185",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780140441185.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/thus-spoke-zarathustra__9780140441185.jpg",
+      "original": [
+        293,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 369
+        },
+        "480": {
+          "w": 293,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "the-analects",
+      "edition": "9780140443486",
+      "isbn13": "9780140443486",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780140443486.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/the-analects__9780140443486.jpg",
+      "original": [
+        289,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 374
+        },
+        "480": {
+          "w": 289,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "the-iliad",
+      "edition": "9780140445923",
+      "isbn13": "9780140445923",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780140445923.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/the-iliad__9780140445923.jpg",
+      "original": [
+        294,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 367
+        },
+        "480": {
+          "w": 294,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "the-prose-edda",
+      "edition": "9780140447552",
+      "isbn13": "9780140447552",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780140447552.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/the-prose-edda__9780140447552.jpg",
+      "original": [
+        293,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 369
+        },
+        "480": {
+          "w": 293,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "the-cloud-of-unknowing-and-other-works",
+      "edition": "9780140447620",
+      "isbn13": "9780140447620",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780140447620.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/the-cloud-of-unknowing-and-other-works__9780140447620.jpg",
+      "original": [
+        291,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 371
+        },
+        "480": {
+          "w": 291,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "the-consolation-of-philosophy",
+      "edition": "9780140447804",
+      "isbn13": "9780140447804",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780140447804.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/the-consolation-of-philosophy__9780140447804.jpg",
+      "original": [
+        289,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 374
+        },
+        "480": {
+          "w": 289,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "the-epic-of-gilgamesh",
+      "edition": "9780140449198",
+      "isbn13": "9780140449198",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780140449198.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/the-epic-of-gilgamesh__9780140449198.jpg",
+      "original": [
+        293,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 369
+        },
+        "480": {
+          "w": 293,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "beyond-good-and-evil",
+      "edition": "9780140449235",
+      "isbn13": "9780140449235",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780140449235.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/beyond-good-and-evil__9780140449235.jpg",
+      "original": [
+        292,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 370
+        },
+        "480": {
+          "w": 292,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "discourses-and-selected-writings",
+      "edition": "9780140449464",
+      "isbn13": "9780140449464",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780140449464.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/discourses-and-selected-writings__9780140449464.jpg",
+      "original": [
+        293,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 369
+        },
+        "480": {
+          "w": 293,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "the-republic",
+      "edition": "9780140455113",
+      "isbn13": "9780140455113",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780140455113.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/the-republic__9780140455113.jpg",
+      "original": [
+        293,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 369
+        },
+        "480": {
+          "w": 293,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "the-tibetan-book-of-the-dead",
+      "edition": "9780140455267",
+      "isbn13": "9780140455267",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780140455267.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/the-tibetan-book-of-the-dead__9780140455267.jpg",
+      "original": [
+        259,
+        400
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 371
+        },
+        "480": {
+          "w": 259,
+          "h": 400
+        }
+      }
+    },
+    {
+      "work": "frankenstein",
+      "edition": "9780141439471",
+      "isbn13": "9780141439471",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780141439471.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/frankenstein__9780141439471.jpg",
+      "original": [
+        293,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 369
+        },
+        "480": {
+          "w": 293,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "the-picture-of-dorian-gray",
+      "edition": "9780141439570",
+      "isbn13": "9780141439570",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780141439570.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/the-picture-of-dorian-gray__9780141439570.jpg",
+      "original": [
+        291,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 371
+        },
+        "480": {
+          "w": 291,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "dracula",
+      "edition": "9780141439846",
+      "isbn13": "9780141439846",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780141439846.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/dracula__9780141439846.jpg",
+      "original": [
+        293,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 369
+        },
+        "480": {
+          "w": 293,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "the-turn-of-the-screw",
+      "edition": "9780141441351",
+      "isbn13": "9780141441351",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780141441351.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/the-turn-of-the-screw__9780141441351.jpg",
+      "original": [
+        294,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 367
+        },
+        "480": {
+          "w": 294,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "drawing-down-the-moon",
+      "edition": "9780143038191",
+      "isbn13": "9780143038191",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780143038191.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/drawing-down-the-moon__9780143038191.jpg",
+      "original": [
+        300,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 360
+        },
+        "480": {
+          "w": 300,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "the-ramayana",
+      "edition": "9780143039679",
+      "isbn13": "9780143039679",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780143039679.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/the-ramayana__9780143039679.jpg",
+      "original": [
+        294,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 367
+        },
+        "480": {
+          "w": 294,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "we-have-always-lived-in-the-castle",
+      "edition": "9780143039976",
+      "isbn13": "9780143039976",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780143039976.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/we-have-always-lived-in-the-castle__9780143039976.jpg",
+      "original": [
+        300,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 360
+        },
+        "480": {
+          "w": 300,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "the-haunting-of-hill-house",
+      "edition": "9780143039983",
+      "isbn13": "9780143039983",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780143039983.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/the-haunting-of-hill-house__9780143039983.jpg",
+      "original": [
+        294,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 367
+        },
+        "480": {
+          "w": 294,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "the-call-of-cthulhu-and-other-weird-stories",
+      "edition": "9780143106487",
+      "isbn13": "9780143106487",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780143106487.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/the-call-of-cthulhu-and-other-weird-stories__9780143106487.jpg",
+      "original": [
+        300,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 360
+        },
+        "480": {
+          "w": 300,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "the-histories",
+      "edition": "9780143107545",
+      "isbn13": "9780143107545",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780143107545.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/the-histories__9780143107545.jpg",
+      "original": [
+        300,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 360
+        },
+        "480": {
+          "w": 300,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "the-master-and-margarita",
+      "edition": "9780143108276",
+      "isbn13": "9780143108276",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780143108276.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/the-master-and-margarita__9780143108276.jpg",
+      "original": [
+        300,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 360
+        },
+        "480": {
+          "w": 300,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "revelations",
+      "edition": "9780143121633",
+      "isbn13": "9780143121633",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780143121633.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/revelations__9780143121633.jpg",
+      "original": [
+        299,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 361
+        },
+        "480": {
+          "w": 299,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "the-body-keeps-the-score",
+      "edition": "9780143127741",
+      "isbn13": "9780143127741",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780143127741.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/the-body-keeps-the-score__9780143127741.jpg",
+      "original": [
+        293,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 369
+        },
+        "480": {
+          "w": 293,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "salems-lot",
+      "edition": "9780307743671",
+      "isbn13": "9780307743671",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780307743671.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/salems-lot__9780307743671.jpg",
+      "original": [
+        273,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 396
+        },
+        "480": {
+          "w": 273,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "interview-with-the-vampire",
+      "edition": "9780345337665",
+      "isbn13": "9780345337665",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780345337665.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/interview-with-the-vampire__9780345337665.jpg",
+      "original": [
+        274,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 394
+        },
+        "480": {
+          "w": 274,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "a-history-of-god",
+      "edition": "9780345384560",
+      "isbn13": "9780345384560",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780345384560.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/a-history-of-god__9780345384560.jpg",
+      "original": [
+        301,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 359
+        },
+        "480": {
+          "w": 301,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "full-catastrophe-living",
+      "edition": "9780345536938",
+      "isbn13": "9780345536938",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780345536938.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/full-catastrophe-living__9780345536938.jpg",
+      "original": [
+        298,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 362
+        },
+        "480": {
+          "w": 298,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "beyond-belief",
+      "edition": "9780375703164",
+      "isbn13": "9780375703164",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780375703164.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/beyond-belief__9780375703164.jpg",
+      "original": [
+        292,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 370
+        },
+        "480": {
+          "w": 292,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "the-golden-compass",
+      "edition": "9780375823459",
+      "isbn13": "9780375823459",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780375823459.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/the-golden-compass__9780375823459.jpg",
+      "original": [
+        299,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 361
+        },
+        "480": {
+          "w": 299,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "the-handmaids-tale",
+      "edition": "9780385490818",
+      "isbn13": "9780385490818",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780385490818.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/the-handmaids-tale__9780385490818.jpg",
+      "original": [
+        292,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 370
+        },
+        "480": {
+          "w": 292,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "the-prophet",
+      "edition": "9780394404288",
+      "isbn13": "9780394404288",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780394404288.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/the-prophet__9780394404288.jpg",
+      "original": [
+        300,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 360
+        },
+        "480": {
+          "w": 300,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "practical-magic",
+      "edition": "9780425190371",
+      "isbn13": "9780425190371",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780425190371.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/practical-magic__9780425190371.jpg",
+      "original": [
+        288,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 375
+        },
+        "480": {
+          "w": 288,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "the-left-hand-of-darkness",
+      "edition": "9780441007318",
+      "isbn13": "9780441007318",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780441007318.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/the-left-hand-of-darkness__9780441007318.jpg",
+      "original": [
+        286,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 378
+        },
+        "480": {
+          "w": 286,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "neuromancer",
+      "edition": "9780441007462",
+      "isbn13": "9780441007462",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780441007462.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/neuromancer__9780441007462.jpg",
+      "original": [
+        300,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 360
+        },
+        "480": {
+          "w": 300,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "dune",
+      "edition": "9780441013593",
+      "isbn13": "9780441013593",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780441013593.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/dune__9780441013593.jpg",
+      "original": [
+        300,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 360
+        },
+        "480": {
+          "w": 300,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "the-once-and-future-king",
+      "edition": "9780441627400",
+      "isbn13": "9780441627400",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780441627400.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/the-once-and-future-king__9780441627400.jpg",
+      "original": [
+        279,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 387
+        },
+        "480": {
+          "w": 279,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "a-new-earth",
+      "edition": "9780452289963",
+      "isbn13": "9780452289963",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780452289963.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/a-new-earth__9780452289963.jpg",
+      "original": [
+        299,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 361
+        },
+        "480": {
+          "w": 299,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "mexican-gothic",
+      "edition": "9780525620808",
+      "isbn13": "9780525620808",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780525620808.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/mexican-gothic__9780525620808.jpg",
+      "original": [
+        298,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 362
+        },
+        "480": {
+          "w": 298,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "peace-is-every-step",
+      "edition": "9780553351392",
+      "isbn13": "9780553351392",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780553351392.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/peace-is-every-step__9780553351392.jpg",
+      "original": [
+        285,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 379
+        },
+        "480": {
+          "w": 285,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "radical-acceptance",
+      "edition": "9780553380996",
+      "isbn13": "9780553380996",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780553380996.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/radical-acceptance__9780553380996.jpg",
+      "original": [
+        302,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 358
+        },
+        "480": {
+          "w": 302,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "a-clash-of-kings",
+      "edition": "9780553381696",
+      "isbn13": "9780553381696",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780553381696.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/a-clash-of-kings__9780553381696.jpg",
+      "original": [
+        299,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 361
+        },
+        "480": {
+          "w": 299,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "the-complete-fairy-tales-of-the-brothers-grimm",
+      "edition": "9780553382167",
+      "isbn13": "9780553382167",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780553382167.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/the-complete-fairy-tales-of-the-brothers-grimm__9780553382167.jpg",
+      "original": [
+        296,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 365
+        },
+        "480": {
+          "w": 296,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "a-clash-of-kings",
+      "edition": "9780553579901",
+      "isbn13": "9780553579901",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780553579901.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/a-clash-of-kings__9780553579901.jpg",
+      "original": [
+        274,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 394
+        },
+        "480": {
+          "w": 274,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "a-game-of-thrones",
+      "edition": "9780553593716",
+      "isbn13": "9780553593716",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780553593716.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/a-game-of-thrones__9780553593716.jpg",
+      "original": [
+        275,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 393
+        },
+        "480": {
+          "w": 275,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "the-origin-of-satan",
+      "edition": "9780679731184",
+      "isbn13": "9780679731184",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780679731184.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/the-origin-of-satan__9780679731184.jpg",
+      "original": [
+        291,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 371
+        },
+        "480": {
+          "w": 291,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "the-heart-of-the-buddhas-teaching",
+      "edition": "9780767903691",
+      "isbn13": "9780767903691",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780767903691.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/the-heart-of-the-buddhas-teaching__9780767903691.jpg",
+      "original": [
+        292,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 370
+        },
+        "480": {
+          "w": 292,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "the-surrender-experiment",
+      "edition": "9780804141109",
+      "isbn13": "9780804141109",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780804141109.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/the-surrender-experiment__9780804141109.jpg",
+      "original": [
+        299,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 361
+        },
+        "480": {
+          "w": 299,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "station-eleven",
+      "edition": "9780804172448",
+      "isbn13": "9780804172448",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780804172448.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/station-eleven__9780804172448.jpg",
+      "original": [
+        292,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 370
+        },
+        "480": {
+          "w": 292,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "kafka-on-the-shore",
+      "edition": "9781400079278",
+      "isbn13": "9781400079278",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9781400079278.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/kafka-on-the-shore__9781400079278.jpg",
+      "original": [
+        292,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 370
+        },
+        "480": {
+          "w": 292,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "the-secret-teachings-of-all-ages",
+      "edition": "9781585422500",
+      "isbn13": "9781585422500",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9781585422500.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/the-secret-teachings-of-all-ages__9781585422500.jpg",
+      "original": [
+        300,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 360
+        },
+        "480": {
+          "w": 300,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "think-and-grow-rich",
+      "edition": "9781585424337",
+      "isbn13": "9781585424337",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9781585424337.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/think-and-grow-rich__9781585424337.jpg",
+      "original": [
+        316,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 342
+        },
+        "480": {
+          "w": 316,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "the-kybalion",
+      "edition": "9781585426430",
+      "isbn13": "9781585426430",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9781585426430.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/the-kybalion__9781585426430.jpg",
+      "original": [
+        316,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 342
+        },
+        "480": {
+          "w": 316,
+          "h": 450
+        }
+      }
     }
   ]
 }
