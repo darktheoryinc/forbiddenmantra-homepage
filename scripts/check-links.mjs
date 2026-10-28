@@ -25,6 +25,8 @@ export function judge({ status, body, title: expectTitle }) {
   if (status >= 200 && status < 300) {
     if (BLOCK.test(body)) return { verdict: 'blocked' };
     const page = (body.match(/<title[^>]*>([\s\S]*?)<\/title>/i)?.[1] ?? '').replace(/\s+/g, ' ').trim();
+    // search-result pages are served without a usable <title>, so a title comparison proves nothing: report them as inconclusive, not as a mismatch
+    if (!page.replace(/&nbsp;|\s/g, '')) return { verdict: 'inconclusive', pageTitle: page.slice(0, 140) };
     const want = words(expectTitle), have = new Set(words(page));
     const hits = want.filter((w) => have.has(w)).length;
     return { verdict: want.length === 0 || hits / want.length >= 0.5 ? 'live' : 'mismatch', pageTitle: page.slice(0, 140) };

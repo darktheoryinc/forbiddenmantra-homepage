@@ -5,8 +5,8 @@
  "taggedCorrectly": 224,
  "percentCorrect": 100,
  "usLinksByKind": {
-  "product": 88,
-  "search": 136
+  "product": 100,
+  "search": 124
  },
  "nonUsLinks": {
   "amazon.co.uk": 2,

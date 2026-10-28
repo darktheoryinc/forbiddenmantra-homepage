@@ -28,9 +28,9 @@ const aa = J('data/affiliate-audit.json');
 if (aa) add(aa.summary.linkErrors === 0 ? 'PASS' : 'BLOCKER', 'Revenue', 'Affiliate link audit', `${aa.summary.purchaseLinks} purchase links, ${aa.summary.linkErrors} errors. ${aa.summary.worksWithValidTaggedProductLink} works have a tagged product link; ${aa.summary.worksWithSearchLinkOnly} have only a search link; ${aa.summary.recordsNeedingManualReview} records need manual review.`);
 else add('WARN', 'Revenue', 'Affiliate link audit', 'Run scripts/audit-affiliate.mjs after a build.');
 // link validity
-const total = links.length, st = { live: 0, dead: 0, blocked: 0, mismatch: 0, unchecked: 0 };
+const total = links.length, st = { live: 0, dead: 0, blocked: 0, mismatch: 0, inconclusive: 0, unchecked: 0 };
 for (const l of links) st[lc[l.url]?.verdict ?? 'unchecked']++;
-add(total && st.live === total ? 'PASS' : st.live + st.blocked === 0 ? 'BLOCKER' : 'WARN', 'Links', `Retail link validity (${total} URLs)`, `live ${st.live}, dead ${st.dead} (hidden), blocked ${st.blocked}, mismatch ${st.mismatch}, never checked ${st.unchecked}. Run scripts/check-links.mjs on a networked machine.`);
+add(total && st.live === total ? 'PASS' : st.live + st.blocked === 0 ? 'BLOCKER' : 'WARN', 'Links', `Retail link validity (${total} URLs)`, `live ${st.live}, dead ${st.dead} (hidden), blocked ${st.blocked}, mismatch ${st.mismatch}, inconclusive ${st.inconclusive}, never checked ${st.unchecked}. Run scripts/check-links.mjs on a networked machine.`);
 const noId = cat.works.filter((w) => w.press).flatMap((w) => w.editions).filter((e) => !e.isbn13 && !e.asin).length;
 add(noId === 0 ? 'PASS' : 'WARN', 'Catalogue', 'Forbidden Mantra Press editions have identifiers', `${noId} editions have no ASIN/ISBN yet and use search links. Needs a KDP / Author Central export.`);
 const nPress = cat.works.filter((w) => w.press).length, flagged = cat.works.filter((w) => w.reviewFlags?.length).map((w) => w.title);

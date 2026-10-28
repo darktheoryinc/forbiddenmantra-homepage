@@ -8,7 +8,7 @@ on:
     paths: ['.github/run-resolve-amzn.txt']
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   resolve:
@@ -22,3 +22,7 @@ jobs:
           echo "http: ${final##* HTTP }"
           tag=$(printf '%s' "$final" | grep -oE '[?&]tag=[^&[:space:]]+' | head -1 | cut -d= -f2)
           echo "tracking tag in final URL: ${tag:-none found (page may have been served a robot check)}"
+          { echo "landed: $(printf '%s' "${final%% HTTP*}" | sed -E 's/(tag=)[^&]*/\1<TAG>/' | cut -c1-200)"; echo "http: ${final##* HTTP }"; echo "tracking tag in final URL: ${tag:-none found}"; } > /tmp/amzn-result.txt
+          git config user.name "link-check-bot"; git config user.email "link-check-bot@users.noreply.github.com"
+          git checkout --orphan amzn-to-result; git rm -rf --cached . >/dev/null 2>&1 || true; git clean -fdx -e /tmp >/dev/null 2>&1 || true
+          cp /tmp/amzn-result.txt result.txt; git add result.txt; git commit -q -m "amzn.to resolution result"; git push --force origin amzn-to-result
