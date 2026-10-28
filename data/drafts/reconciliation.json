@@ -1,0 +1,83 @@
+{
+ "status": "Reconciliation of owner titles, cover artwork and editions (2026-10-28). Evidence only; nothing here is published or in the catalogue.",
+ "coverRules": "Drive doc \"Forbidden Mantra Press premium cover standard\" is a style guide (black background, gold metallic title, one central image, author line EMILY K PATEL), not a file or size specification.",
+ "possibleRetitles": [
+  {
+   "cover": "Durga3.png",
+   "coverTitle": "Durga Mantra: Awaken the Fierce Divine Within",
+   "catalogue": "invoke-the-fierce",
+   "manuscript": "Invoke the Fierce: Unlocking Strength and Protection with the Durga Mantra",
+   "evidence": "Same subject (Om Dum Durgayei Namaha) and both Drive files modified 2025-05-26; titles differ on the cover and in the manuscript. Public listing seen earlier shows the published title as Invoke the Fierce.",
+   "status": "probable earlier cover concept for the same book; NOT confirmed, not integrated"
+  },
+  {
+   "cover": "LAKSHMIBOOKCOVER.png",
+   "coverTitle": "LAKSHMI: A Modern Guide to Sacred Abundance and Mantra Power",
+   "catalogue": "lakshmi-gayatri",
+   "manuscript": "Lakshmi Gayatri: Awakening Sacred Wealth in the Modern Age",
+   "evidence": "Same subject (Lakshmi Gayatri mantra, sacred wealth) and both Drive files modified 2025-05-28; cover title and subtitle differ from the manuscript.",
+   "status": "probable earlier cover concept; NOT confirmed, not integrated"
+  },
+  {
+   "cover": "the matrix of mantra.png",
+   "coverTitle": "The Matrix of Mantra",
+   "manuscript": "THe Matrix Of Sound (and \"The Matrix of Sound: My Journey with the Gayatri Mantra\" in the Durga manuscript featured-titles list)",
+   "evidence": "Both modified 2025-05-22; cover and manuscript titles differ.",
+   "status": "probable retitle; not in catalogue"
+  }
+ ],
+ "confirmedPublished": [
+  {
+   "title": "Siddhis: Unlocking the Divine Powers Within",
+   "evidence": "Owner Drive screenshot of its Amazon Kindle listing (2025-05-30), Forbidden Tantra Series Book 16; cover matches siddhi apple.jpg"
+  },
+  {
+   "title": "The Gospel of Magdalene: The Womb and the Word (Mary Magdalene Book 1)",
+   "evidence": "Owner Drive screenshot of its Amazon Kindle listing (2026-04-03); cover matches the PDF export"
+  },
+  {
+   "title": "Make Yourself Irresistibly Attractive with the Kleem Mantra, Kamdev Mantra and Kama Sutra (Forbidden Mantra Series)",
+   "evidence": "Owner Drive screenshot of its Amazon listing; Spanish edition ASIN B0CW19ZHGX seen earlier in public search"
+  },
+  {
+   "title": "Mo Pai Exposed",
+   "evidence": "Public Amazon paperback listings seen earlier (ASINs B0GFW4H6T2, B0GFVWMR9B); cover Mo_Pai_Exposed_Book_cover.png reads Mo Pai Exposed. Separate book from Mo Pai Nei Kung"
+  },
+  {
+   "title": "Mo Pai: The Destructive and Healing Force Within",
+   "evidence": "Public Amazon paperback listing seen earlier (ASIN B0GFW8DJHW); matching cover file in Drive"
+  },
+  {
+   "title": "Energy Unleashed: The Hidden Superpowers of Mo Pai",
+   "evidence": "Public Amazon paperback listing seen earlier (ASIN B0F29FBNF3); no cover file found in Drive"
+  }
+ ],
+ "draftsOnly": [
+  {
+   "title": "Archons Unveiled (I-4 and Part 4)",
+   "evidence": "Many manuscripts and covers in Drive; a Drive screenshot may show a listing but is a cropped web image; no confirmed listing"
+  },
+  {
+   "title": "The Coven and the Yogi (Book 1, Book 2)",
+   "evidence": "Manuscripts, series documents and two covers; no listing evidence"
+  },
+  {
+   "title": "Edenic Origins (EN, ES, DE)",
+   "evidence": "Manuscripts and covers; the Spanish cover still has a placeholder subtitle; no listing evidence"
+  },
+  {
+   "title": "The Physics of Siddhis (Books 1 and 2)",
+   "evidence": "Manuscripts and covers; no listing evidence"
+  },
+  {
+   "title": "The Apocalypse of Peter",
+   "evidence": "Several manuscripts and one cover; no listing evidence; different book from The Apocalypse of Adam"
+  },
+  {
+   "title": "The Catalyst: Awakening the Human Code",
+   "evidence": "Manuscripts only; no cover found"
+  }
+ ],
+ "moPaiCatalogue": "Catalogue entries \"Mo Pai Nei Kung\" and \"The Hidden Technology of Human Power\" come from the old Wix homepage (placeholder cards, no details). Public listings show The Hidden Technology of Human Power is a series name for the Mo Pai books. No evidence links \"Mo Pai Nei Kung\" to any specific Drive cover.",
+ "weaponsOfTheGodsPaperback": "Paperback exists (listing price seen earlier), but nothing shows that it uses the same artwork. The Drive file is a 3:4 web image, not a print wrap. Needs the paperback cover file or the owner stating it is the same front cover."
+}
