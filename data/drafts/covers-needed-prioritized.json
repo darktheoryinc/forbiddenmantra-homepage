@@ -4,24 +4,24 @@
   "generated": "2026-10-28",
   "worksMissing": 101,
   "editionsInThoseWorks": 299,
-  "distinctDesigns": 127,
+  "distinctDesigns": 128,
   "otherLanguageDesignsOfCoveredWorks": 17,
   "designsByLanguage": {
    "en": 97,
+   "hi": 9,
    "es": 11,
+   "nl": 2,
+   "zh": 2,
    "de": 3,
    "fr": 2,
    "pt": 1,
-   "ru": 1,
-   "nl": 2,
-   "zh": 2,
-   "hi": 8
+   "ru": 1
   },
   "tiers": [
    {
     "tier": 1,
     "works": 3,
-    "designs": 4,
+    "designs": 5,
     "editions": 14
    },
    {
@@ -62,16 +62,24 @@
      "formats": [
       "audiobook",
       "ebook",
-      "ebook",
       "hardcover",
       "paperback"
      ],
      "asins": [
       "B0H8MBCDC6",
       "B0H3MY3JS3",
-      "B0H44YW832",
       "B0H3T6CKMZ",
       "B0H3QCG6D6"
+     ]
+    },
+    {
+     "language": "hi",
+     "languageName": "Hindi",
+     "formats": [
+      "ebook"
+     ],
+     "asins": [
+      "B0H44YW832"
      ]
     },
     {
@@ -107,7 +115,7 @@
      "link": "product link from the owner catalogue (live check pending)"
     },
     {
-     "language": "en",
+     "language": "hi",
      "format": "ebook",
      "asin": "B0H44YW832",
      "isbn13": null,
@@ -117,7 +125,7 @@
      "language": "en",
      "format": "hardcover",
      "asin": "B0H3T6CKMZ",
-     "isbn13": null,
+     "isbn13": "9798199638562",
      "link": "product link from the owner catalogue (live check pending)"
     },
     {
@@ -253,6 +261,1645 @@
    ],
    "editionCount": 1,
    "hasPrintEditions": true,
+   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
+  },
+  {
+   "tier": 2,
+   "tierName": "Forbidden Mantra Press titles with product links (English)",
+   "work": "beyond-sex",
+   "title": "Beyond Sex",
+   "subtitle": "Exploring the Spiritual Dimensions of Tantra",
+   "credit": "Emily K Patel",
+   "press": true,
+   "shownOn": "first page of the Press listing",
+   "designs": [
+    {
+     "language": "en",
+     "languageName": "English",
+     "formats": [
+      "ebook",
+      "hardcover",
+      "paperback"
+     ],
+     "asins": [
+      "B0DR9PWDC4",
+      "B0DRGLK449",
+      "B0DRD64TNV"
+     ]
+    },
+    {
+     "language": "nl",
+     "languageName": "Dutch",
+     "formats": [
+      "ebook",
+      "hardcover",
+      "paperback",
+      "ebook"
+     ],
+     "asins": [
+      "B0CG4R26KH",
+      "B0DQYRJF34",
+      "B0CFZC75KS",
+      "B0CTHRB4QZ"
+     ]
+    },
+    {
+     "language": "es",
+     "languageName": "Spanish",
+     "formats": [
+      "ebook",
+      "hardcover",
+      "paperback"
+     ],
+     "asins": [
+      "B0CW6HWK1B",
+      "B0DPZP35BD",
+      "B0DQY7VFXT"
+     ]
+    },
+    {
+     "language": "zh",
+     "languageName": "Chinese",
+     "formats": [
+      "ebook"
+     ],
+     "asins": [
+      "B0CTHQKLFT"
+     ]
+    }
+   ],
+   "editions": [
+    {
+     "language": "en",
+     "format": "ebook",
+     "asin": "B0DR9PWDC4",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "en",
+     "format": "hardcover",
+     "asin": "B0DRGLK449",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "en",
+     "format": "paperback",
+     "asin": "B0DRD64TNV",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "nl",
+     "format": "ebook",
+     "asin": "B0CG4R26KH",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "nl",
+     "format": "hardcover",
+     "asin": "B0DQYRJF34",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "nl",
+     "format": "paperback",
+     "asin": "B0CFZC75KS",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "nl",
+     "format": "ebook",
+     "asin": "B0CTHRB4QZ",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "es",
+     "format": "ebook",
+     "asin": "B0CW6HWK1B",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "es",
+     "format": "hardcover",
+     "asin": "B0DPZP35BD",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "es",
+     "format": "paperback",
+     "asin": "B0DQY7VFXT",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "zh",
+     "format": "ebook",
+     "asin": "B0CTHQKLFT",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    }
+   ],
+   "editionCount": 11,
+   "hasPrintEditions": true,
+   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
+  },
+  {
+   "tier": 2,
+   "tierName": "Forbidden Mantra Press titles with product links (English)",
+   "work": "creation-and-connection",
+   "title": "Creation and Connection",
+   "subtitle": "Exploring Genesis and Sumerian Texts in Comparative Perspective: Unveiling Ancient Narratives, Cultural Influences, and Shared Insights",
+   "credit": "Emily K Patel",
+   "press": true,
+   "shownOn": "first page of the Press listing",
+   "designs": [
+    {
+     "language": "en",
+     "languageName": "English",
+     "formats": [
+      "audiobook",
+      "ebook",
+      "hardcover",
+      "paperback"
+     ],
+     "asins": [
+      "B0GS42KHPQ",
+      "B0C5TZHPQY",
+      "B0C5P55W6W",
+      "B0C5PGF3NT"
+     ]
+    },
+    {
+     "language": "es",
+     "languageName": "Spanish",
+     "formats": [
+      "ebook",
+      "paperback"
+     ],
+     "asins": [
+      "B0CW23C6LZ",
+      "B0CW32CNX7"
+     ]
+    },
+    {
+     "language": "nl",
+     "languageName": "Dutch",
+     "formats": [
+      "ebook",
+      "paperback"
+     ],
+     "asins": [
+      "B0CVZVP7WP",
+      "B0CW1NZVTJ"
+     ]
+    },
+    {
+     "language": "hi",
+     "languageName": "Hindi",
+     "formats": [
+      "ebook"
+     ],
+     "asins": [
+      "B0CW1J4DW3"
+     ]
+    },
+    {
+     "language": "zh",
+     "languageName": "Chinese",
+     "formats": [
+      "ebook"
+     ],
+     "asins": [
+      "B0CW24RPXP"
+     ]
+    }
+   ],
+   "editions": [
+    {
+     "language": "en",
+     "format": "audiobook",
+     "asin": "B0GS42KHPQ",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "en",
+     "format": "ebook",
+     "asin": "B0C5TZHPQY",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "en",
+     "format": "hardcover",
+     "asin": "B0C5P55W6W",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "en",
+     "format": "paperback",
+     "asin": "B0C5PGF3NT",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "es",
+     "format": "ebook",
+     "asin": "B0CW23C6LZ",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "es",
+     "format": "paperback",
+     "asin": "B0CW32CNX7",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "nl",
+     "format": "ebook",
+     "asin": "B0CVZVP7WP",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "nl",
+     "format": "paperback",
+     "asin": "B0CW1NZVTJ",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "hi",
+     "format": "ebook",
+     "asin": "B0CW1J4DW3",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "zh",
+     "format": "ebook",
+     "asin": "B0CW24RPXP",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    }
+   ],
+   "editionCount": 10,
+   "hasPrintEditions": true,
+   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
+  },
+  {
+   "tier": 2,
+   "tierName": "Forbidden Mantra Press titles with product links (English)",
+   "work": "jewel-of-the-lotus",
+   "title": "Jewel of the Lotus",
+   "subtitle": "Unveiling the Mysteries of Om Mani Padme Hum",
+   "credit": "Emily K Patel",
+   "press": true,
+   "shownOn": "first page of the Press listing",
+   "designs": [
+    {
+     "language": "en",
+     "languageName": "English",
+     "formats": [
+      "audiobook",
+      "ebook",
+      "hardcover",
+      "paperback"
+     ],
+     "asins": [
+      "B0H85DXXJL",
+      "B0CWH8JXXJ",
+      "B0DPV3YKSX",
+      "B0DPV2NL45"
+     ]
+    },
+    {
+     "language": "es",
+     "languageName": "Spanish",
+     "formats": [
+      "audiobook",
+      "ebook",
+      "hardcover",
+      "paperback"
+     ],
+     "asins": [
+      "B0H85K6MJP",
+      "B0CWF8X555",
+      "B0DPV3QR1T",
+      "B0DPV1ZC4C"
+     ]
+    },
+    {
+     "language": "hi",
+     "languageName": "Hindi",
+     "formats": [
+      "ebook"
+     ],
+     "asins": [
+      "B0CXFC7HFY"
+     ]
+    }
+   ],
+   "editions": [
+    {
+     "language": "en",
+     "format": "audiobook",
+     "asin": "B0H85DXXJL",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "en",
+     "format": "ebook",
+     "asin": "B0CWH8JXXJ",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "en",
+     "format": "hardcover",
+     "asin": "B0DPV3YKSX",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "en",
+     "format": "paperback",
+     "asin": "B0DPV2NL45",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "es",
+     "format": "audiobook",
+     "asin": "B0H85K6MJP",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "es",
+     "format": "ebook",
+     "asin": "B0CWF8X555",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "es",
+     "format": "hardcover",
+     "asin": "B0DPV3QR1T",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "es",
+     "format": "paperback",
+     "asin": "B0DPV1ZC4C",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "hi",
+     "format": "ebook",
+     "asin": "B0CXFC7HFY",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    }
+   ],
+   "editionCount": 9,
+   "hasPrintEditions": true,
+   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
+  },
+  {
+   "tier": 2,
+   "tierName": "Forbidden Mantra Press titles with product links (English)",
+   "work": "a-comprehensive-guide-on-the-avalokitesvara-mantra",
+   "title": "A Comprehensive Guide On The Avalokitesvara Mantra",
+   "subtitle": null,
+   "credit": "Emily K Patel",
+   "press": true,
+   "shownOn": "first page of the Press listing",
+   "designs": [
+    {
+     "language": "en",
+     "languageName": "English",
+     "formats": [
+      "ebook",
+      "hardcover",
+      "paperback"
+     ],
+     "asins": [
+      "B0C2NN8DNK",
+      "B0DPR77SFP",
+      "B0C1J7F6SC"
+     ]
+    },
+    {
+     "language": "es",
+     "languageName": "Spanish",
+     "formats": [
+      "audiobook",
+      "ebook",
+      "hardcover",
+      "paperback"
+     ],
+     "asins": [
+      "B0H8J8W9HW",
+      "B0CXMPXWXR",
+      "B0DPQ34N5D",
+      "B0DPRQYXTS"
+     ]
+    }
+   ],
+   "editions": [
+    {
+     "language": "en",
+     "format": "ebook",
+     "asin": "B0C2NN8DNK",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "en",
+     "format": "hardcover",
+     "asin": "B0DPR77SFP",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "en",
+     "format": "paperback",
+     "asin": "B0C1J7F6SC",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "es",
+     "format": "audiobook",
+     "asin": "B0H8J8W9HW",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "es",
+     "format": "ebook",
+     "asin": "B0CXMPXWXR",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "es",
+     "format": "hardcover",
+     "asin": "B0DPQ34N5D",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "es",
+     "format": "paperback",
+     "asin": "B0DPRQYXTS",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    }
+   ],
+   "editionCount": 7,
+   "hasPrintEditions": true,
+   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
+  },
+  {
+   "tier": 2,
+   "tierName": "Forbidden Mantra Press titles with product links (English)",
+   "work": "apocalypse-of-adam",
+   "title": "Apocalypse of Adam",
+   "subtitle": "Part II – The War of the Archons",
+   "credit": "Emily K Patel",
+   "press": true,
+   "shownOn": "first page of the Press listing",
+   "designs": [
+    {
+     "language": "en",
+     "languageName": "English",
+     "formats": [
+      "audiobook",
+      "ebook",
+      "hardcover",
+      "paperback"
+     ],
+     "asins": [
+      "B0H671G2S7",
+      "B0GWS9VC82",
+      "B0GWWMZDS6",
+      "B0GWVMZQ8S"
+     ]
+    },
+    {
+     "language": "hi",
+     "languageName": "Hindi",
+     "formats": [
+      "ebook"
+     ],
+     "asins": [
+      "B0GYQ7MYRJ"
+     ]
+    }
+   ],
+   "editions": [
+    {
+     "language": "en",
+     "format": "audiobook",
+     "asin": "B0H671G2S7",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "en",
+     "format": "ebook",
+     "asin": "B0GWS9VC82",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "en",
+     "format": "hardcover",
+     "asin": "B0GWWMZDS6",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "en",
+     "format": "paperback",
+     "asin": "B0GWVMZQ8S",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "hi",
+     "format": "ebook",
+     "asin": "B0GYQ7MYRJ",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    }
+   ],
+   "editionCount": 5,
+   "hasPrintEditions": true,
+   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
+  },
+  {
+   "tier": 2,
+   "tierName": "Forbidden Mantra Press titles with product links (English)",
+   "work": "awakening-the-sacred-serpent",
+   "title": "Awakening the Sacred Serpent",
+   "subtitle": "A Journey into Kundalini Yoga and Spiritual Realization",
+   "credit": "Emily K Patel",
+   "press": true,
+   "shownOn": "first page of the Press listing",
+   "designs": [
+    {
+     "language": "en",
+     "languageName": "English",
+     "formats": [
+      "audiobook",
+      "ebook",
+      "hardcover",
+      "paperback"
+     ],
+     "asins": [
+      "B0H859PDTK",
+      "B0C6V1YBK5",
+      "B0C6VYCGKL",
+      "B0C6VTZMGK"
+     ]
+    }
+   ],
+   "editions": [
+    {
+     "language": "en",
+     "format": "audiobook",
+     "asin": "B0H859PDTK",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "en",
+     "format": "ebook",
+     "asin": "B0C6V1YBK5",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "en",
+     "format": "hardcover",
+     "asin": "B0C6VYCGKL",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "en",
+     "format": "paperback",
+     "asin": "B0C6VTZMGK",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    }
+   ],
+   "editionCount": 4,
+   "hasPrintEditions": true,
+   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
+  },
+  {
+   "tier": 2,
+   "tierName": "Forbidden Mantra Press titles with product links (English)",
+   "work": "breathing-with-ancient-wisdom",
+   "title": "Breathing with Ancient Wisdom",
+   "subtitle": "Unleashing Vitality and Inner Balance through the Nishino Method",
+   "credit": "Emily K Patel",
+   "press": true,
+   "shownOn": "first page of the Press listing",
+   "designs": [
+    {
+     "language": "en",
+     "languageName": "English",
+     "formats": [
+      "audiobook",
+      "ebook",
+      "hardcover",
+      "paperback"
+     ],
+     "asins": [
+      "B0H8M8TQXZ",
+      "B0C5Z2JQSX",
+      "B0C5YYNZ4B",
+      "B0C63YPYKR"
+     ]
+    }
+   ],
+   "editions": [
+    {
+     "language": "en",
+     "format": "audiobook",
+     "asin": "B0H8M8TQXZ",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "en",
+     "format": "ebook",
+     "asin": "B0C5Z2JQSX",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "en",
+     "format": "hardcover",
+     "asin": "B0C5YYNZ4B",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "en",
+     "format": "paperback",
+     "asin": "B0C63YPYKR",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    }
+   ],
+   "editionCount": 4,
+   "hasPrintEditions": true,
+   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
+  },
+  {
+   "tier": 2,
+   "tierName": "Forbidden Mantra Press titles with product links (English)",
+   "work": "the-hanuman-mantra",
+   "title": "The Hanuman Mantra",
+   "subtitle": "Your Ultimate Mind-Body-Spirit Guide to Finding Inner Peace and Conquering Obstacles in the Modern World!",
+   "credit": "Rav Shiva",
+   "press": true,
+   "shownOn": "first page of the Press listing",
+   "designs": [
+    {
+     "language": "en",
+     "languageName": "English",
+     "formats": [
+      "audiobook",
+      "ebook",
+      "hardcover",
+      "paperback"
+     ],
+     "asins": [
+      "B0H8MJ9YWV",
+      "B0BZLXMD41",
+      "B0C63RJ7HW",
+      "B0BZFRQXGC"
+     ]
+    }
+   ],
+   "editions": [
+    {
+     "language": "en",
+     "format": "audiobook",
+     "asin": "B0H8MJ9YWV",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "en",
+     "format": "ebook",
+     "asin": "B0BZLXMD41",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "en",
+     "format": "hardcover",
+     "asin": "B0C63RJ7HW",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "en",
+     "format": "paperback",
+     "asin": "B0BZFRQXGC",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    }
+   ],
+   "editionCount": 4,
+   "hasPrintEditions": true,
+   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
+  },
+  {
+   "tier": 2,
+   "tierName": "Forbidden Mantra Press titles with product links (English)",
+   "work": "beyond-sex-exploring-the-spiritual-dimensions-of-tantra-second-catalogue-record",
+   "title": "Beyond Sex: Exploring the Spiritual Dimensions of Tantra (second catalogue record)",
+   "subtitle": "Exploring the Spiritual Dimensions of Tantra",
+   "credit": "Emily K. Patel",
+   "press": true,
+   "shownOn": "first page of the Press listing",
+   "designs": [
+    {
+     "language": "en",
+     "languageName": "English",
+     "formats": [
+      "ebook",
+      "hardcover",
+      "paperback"
+     ],
+     "asins": [
+      "B0BX75YQX3",
+      "B0C9SQHH9J",
+      "B0C9RYT7HG"
+     ]
+    }
+   ],
+   "editions": [
+    {
+     "language": "en",
+     "format": "ebook",
+     "asin": "B0BX75YQX3",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "en",
+     "format": "hardcover",
+     "asin": "B0C9SQHH9J",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "en",
+     "format": "paperback",
+     "asin": "B0C9RYT7HG",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    }
+   ],
+   "editionCount": 3,
+   "hasPrintEditions": true,
+   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
+  },
+  {
+   "tier": 2,
+   "tierName": "Forbidden Mantra Press titles with product links (English)",
+   "work": "lost-wisdom",
+   "title": "Lost Wisdom",
+   "subtitle": "The Mysterious Gospel of Thomas and the Secrets of Early Christianity",
+   "credit": "Emily K Patel",
+   "press": true,
+   "shownOn": "first page of the Press listing",
+   "designs": [
+    {
+     "language": "en",
+     "languageName": "English",
+     "formats": [
+      "ebook",
+      "hardcover",
+      "paperback"
+     ],
+     "asins": [
+      "B0C4K2JQCR",
+      "B0C481QQTH",
+      "B0C47WK7FB"
+     ]
+    }
+   ],
+   "editions": [
+    {
+     "language": "en",
+     "format": "ebook",
+     "asin": "B0C4K2JQCR",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "en",
+     "format": "hardcover",
+     "asin": "B0C481QQTH",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "en",
+     "format": "paperback",
+     "asin": "B0C47WK7FB",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    }
+   ],
+   "editionCount": 3,
+   "hasPrintEditions": true,
+   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
+  },
+  {
+   "tier": 2,
+   "tierName": "Forbidden Mantra Press titles with product links (English)",
+   "work": "maa-kali-mantras-and-instructions",
+   "title": "Maa Kali Mantras and Instructions",
+   "subtitle": null,
+   "credit": "Forbidden Mantra Press",
+   "press": true,
+   "shownOn": "first page of the Press listing",
+   "designs": [
+    {
+     "language": "en",
+     "languageName": "English",
+     "formats": [
+      "ebook"
+     ],
+     "asins": [
+      "B0BXTBM2QT"
+     ]
+    },
+    {
+     "language": "de",
+     "languageName": "German",
+     "formats": [
+      "ebook"
+     ],
+     "asins": [
+      "B0F4B7712F"
+     ]
+    },
+    {
+     "language": "es",
+     "languageName": "Spanish",
+     "formats": [
+      "ebook"
+     ],
+     "asins": [
+      "B0F4B4W29W"
+     ]
+    }
+   ],
+   "editions": [
+    {
+     "language": "en",
+     "format": "ebook",
+     "asin": "B0BXTBM2QT",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "de",
+     "format": "ebook",
+     "asin": "B0F4B7712F",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "es",
+     "format": "ebook",
+     "asin": "B0F4B4W29W",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    }
+   ],
+   "editionCount": 3,
+   "hasPrintEditions": false,
+   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
+  },
+  {
+   "tier": 2,
+   "tierName": "Forbidden Mantra Press titles with product links (English)",
+   "work": "mantra-magic",
+   "title": "Mantra Magic",
+   "subtitle": "Unlocking the Healing Power of Om Namo Bhagavate Vasudevaya",
+   "credit": "Rav Shiva",
+   "press": true,
+   "shownOn": "first page of the Press listing",
+   "designs": [
+    {
+     "language": "en",
+     "languageName": "English",
+     "formats": [
+      "audiobook",
+      "ebook",
+      "paperback"
+     ],
+     "asins": [
+      "B0CY8FCZ4N",
+      "B0BZGQKHPD",
+      "B0BZF4Z4SC"
+     ]
+    }
+   ],
+   "editions": [
+    {
+     "language": "en",
+     "format": "audiobook",
+     "asin": "B0CY8FCZ4N",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "en",
+     "format": "ebook",
+     "asin": "B0BZGQKHPD",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "en",
+     "format": "paperback",
+     "asin": "B0BZF4Z4SC",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    }
+   ],
+   "editionCount": 3,
+   "hasPrintEditions": true,
+   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
+  },
+  {
+   "tier": 2,
+   "tierName": "Forbidden Mantra Press titles with product links (English)",
+   "work": "revelations-of-mary",
+   "title": "Revelations of Mary",
+   "subtitle": "A Journey to Spiritual Enlightenment and Liberation",
+   "credit": "Emily K Patel",
+   "press": true,
+   "shownOn": "first page of the Press listing",
+   "designs": [
+    {
+     "language": "en",
+     "languageName": "English",
+     "formats": [
+      "ebook",
+      "hardcover",
+      "paperback"
+     ],
+     "asins": [
+      "B0C4K6G6FN",
+      "B0C63M22HG",
+      "B0C6448LR2"
+     ]
+    }
+   ],
+   "editions": [
+    {
+     "language": "en",
+     "format": "ebook",
+     "asin": "B0C4K6G6FN",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "en",
+     "format": "hardcover",
+     "asin": "B0C63M22HG",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "en",
+     "format": "paperback",
+     "asin": "B0C6448LR2",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    }
+   ],
+   "editionCount": 3,
+   "hasPrintEditions": true,
+   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
+  },
+  {
+   "tier": 2,
+   "tierName": "Forbidden Mantra Press titles with product links (English)",
+   "work": "the-power-of-sound",
+   "title": "The Power of Sound",
+   "subtitle": "Exploring the Connection between Mantra, Yoga, and Inner Awareness",
+   "credit": "Emily K Patel",
+   "press": true,
+   "shownOn": "first page of the Press listing",
+   "designs": [
+    {
+     "language": "en",
+     "languageName": "English",
+     "formats": [
+      "ebook",
+      "hardcover",
+      "paperback"
+     ],
+     "asins": [
+      "B0BZYNSXN7",
+      "B0C63J2XBM",
+      "B0BZFJML7W"
+     ]
+    }
+   ],
+   "editions": [
+    {
+     "language": "en",
+     "format": "ebook",
+     "asin": "B0BZYNSXN7",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "en",
+     "format": "hardcover",
+     "asin": "B0C63J2XBM",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "en",
+     "format": "paperback",
+     "asin": "B0BZFJML7W",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    }
+   ],
+   "editionCount": 3,
+   "hasPrintEditions": true,
+   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
+  },
+  {
+   "tier": 2,
+   "tierName": "Forbidden Mantra Press titles with product links (English)",
+   "work": "unlocking-enlightenment",
+   "title": "Unlocking Enlightenment",
+   "subtitle": "The Timeless Power of Nam-myoho-renge-kyo in a Modern World",
+   "credit": "Emily K Patel",
+   "press": true,
+   "shownOn": "first page of the Press listing",
+   "designs": [
+    {
+     "language": "en",
+     "languageName": "English",
+     "formats": [
+      "ebook"
+     ],
+     "asins": [
+      "B0CYC5NLY6"
+     ]
+    },
+    {
+     "language": "es",
+     "languageName": "Spanish",
+     "formats": [
+      "ebook"
+     ],
+     "asins": [
+      "B0CZHHPZ1M"
+     ]
+    },
+    {
+     "language": "hi",
+     "languageName": "Hindi",
+     "formats": [
+      "ebook"
+     ],
+     "asins": [
+      "B0CZ4SRQW5"
+     ]
+    }
+   ],
+   "editions": [
+    {
+     "language": "en",
+     "format": "ebook",
+     "asin": "B0CYC5NLY6",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "es",
+     "format": "ebook",
+     "asin": "B0CZHHPZ1M",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "hi",
+     "format": "ebook",
+     "asin": "B0CZ4SRQW5",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    }
+   ],
+   "editionCount": 3,
+   "hasPrintEditions": false,
+   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
+  },
+  {
+   "tier": 2,
+   "tierName": "Forbidden Mantra Press titles with product links (English)",
+   "work": "chakra-mastery",
+   "title": "Chakra Mastery",
+   "subtitle": "A Spiritual Approach to Cultivating Positive Energies and Transforming Your Life",
+   "credit": "Emily K Patel",
+   "press": true,
+   "shownOn": "first page of the Press listing",
+   "designs": [
+    {
+     "language": "en",
+     "languageName": "English",
+     "formats": [
+      "ebook",
+      "paperback"
+     ],
+     "asins": [
+      "B0CFYNWYWN",
+      "B0CFZGX8QN"
+     ]
+    }
+   ],
+   "editions": [
+    {
+     "language": "en",
+     "format": "ebook",
+     "asin": "B0CFYNWYWN",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "en",
+     "format": "paperback",
+     "asin": "B0CFZGX8QN",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    }
+   ],
+   "editionCount": 2,
+   "hasPrintEditions": true,
+   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
+  },
+  {
+   "tier": 2,
+   "tierName": "Forbidden Mantra Press titles with product links (English)",
+   "work": "the-maha-mrityunjaya-mantra",
+   "title": "The Maha Mrityunjaya Mantra",
+   "subtitle": "A Sacred Chant for Spiritual Growth and Transformation for All",
+   "credit": "Rav Shiva",
+   "press": true,
+   "shownOn": "first page of the Press listing",
+   "designs": [
+    {
+     "language": "en",
+     "languageName": "English",
+     "formats": [
+      "ebook",
+      "paperback"
+     ],
+     "asins": [
+      "B0BZQ428XZ",
+      "B0BZF9RGDS"
+     ]
+    }
+   ],
+   "editions": [
+    {
+     "language": "en",
+     "format": "ebook",
+     "asin": "B0BZQ428XZ",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "en",
+     "format": "paperback",
+     "asin": "B0BZF9RGDS",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    }
+   ],
+   "editionCount": 2,
+   "hasPrintEditions": true,
+   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
+  },
+  {
+   "tier": 2,
+   "tierName": "Forbidden Mantra Press titles with product links (English)",
+   "work": "yoga-for-every-woman",
+   "title": "Yoga for Every Woman",
+   "subtitle": "Unlock the Secrets to Vitality, Balance, and Inner Peace: Tips for Incorporating Yoga into Your Daily Routine for Sustainable Health and Well-being",
+   "credit": "Emily K Patel",
+   "press": true,
+   "shownOn": "first page of the Press listing",
+   "designs": [
+    {
+     "language": "en",
+     "languageName": "English",
+     "formats": [
+      "ebook",
+      "paperback"
+     ],
+     "asins": [
+      "B0C3P6YCTD",
+      "B0C2SPYYQX"
+     ]
+    }
+   ],
+   "editions": [
+    {
+     "language": "en",
+     "format": "ebook",
+     "asin": "B0C3P6YCTD",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    },
+    {
+     "language": "en",
+     "format": "paperback",
+     "asin": "B0C2SPYYQX",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    }
+   ],
+   "editionCount": 2,
+   "hasPrintEditions": true,
+   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
+  },
+  {
+   "tier": 2,
+   "tierName": "Forbidden Mantra Press titles with product links (English)",
+   "work": "a-conversation-between-a-yogi-and-artificial-intelligence",
+   "title": "A Conversation Between A Yogi & Artificial Intelligence",
+   "subtitle": "Are aliens already living on Earth?",
+   "credit": "Rav Shiva",
+   "press": true,
+   "shownOn": "first page of the Press listing",
+   "designs": [
+    {
+     "language": "en",
+     "languageName": "English",
+     "formats": [
+      "ebook"
+     ],
+     "asins": [
+      "B0C3L7W5SC"
+     ]
+    }
+   ],
+   "editions": [
+    {
+     "language": "en",
+     "format": "ebook",
+     "asin": "B0C3L7W5SC",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    }
+   ],
+   "editionCount": 1,
+   "hasPrintEditions": false,
+   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
+  },
+  {
+   "tier": 2,
+   "tierName": "Forbidden Mantra Press titles with product links (English)",
+   "work": "a-conversation-between-a-yogi-and-artificial-intelligence-about-god-satan-and-technology",
+   "title": "A Conversation between a Yogi and Artificial Intelligence about God, Satan & Technology",
+   "subtitle": null,
+   "credit": "Rav Shiva",
+   "press": true,
+   "shownOn": "first page of the Press listing",
+   "designs": [
+    {
+     "language": "en",
+     "languageName": "English",
+     "formats": [
+      "ebook"
+     ],
+     "asins": [
+      "B0C3KW4PMR"
+     ]
+    }
+   ],
+   "editions": [
+    {
+     "language": "en",
+     "format": "ebook",
+     "asin": "B0C3KW4PMR",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    }
+   ],
+   "editionCount": 1,
+   "hasPrintEditions": false,
+   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
+  },
+  {
+   "tier": 2,
+   "tierName": "Forbidden Mantra Press titles with product links (English)",
+   "work": "an-ancient-mantra-for-getting-the-girl-you-want-to-love-you",
+   "title": "An Ancient Mantra for Getting the Girl You Want to Love You",
+   "subtitle": null,
+   "credit": "Rav Shiva",
+   "press": true,
+   "shownOn": "first page of the Press listing",
+   "designs": [
+    {
+     "language": "en",
+     "languageName": "English",
+     "formats": [
+      "ebook"
+     ],
+     "asins": [
+      "B0BXBMP5NC"
+     ]
+    }
+   ],
+   "editions": [
+    {
+     "language": "en",
+     "format": "ebook",
+     "asin": "B0BXBMP5NC",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    }
+   ],
+   "editionCount": 1,
+   "hasPrintEditions": false,
+   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
+  },
+  {
+   "tier": 2,
+   "tierName": "Forbidden Mantra Press titles with product links (English)",
+   "work": "an-ancient-sanskrit-mantra-to-attain-sexual-pleasure-for-men",
+   "title": "An Ancient Sanskrit Mantra to Attain Sexual Pleasure for Men",
+   "subtitle": null,
+   "credit": "Rav Shiva",
+   "press": true,
+   "shownOn": "first page of the Press listing",
+   "designs": [
+    {
+     "language": "en",
+     "languageName": "English",
+     "formats": [
+      "ebook"
+     ],
+     "asins": [
+      "B0BXBL84LW"
+     ]
+    }
+   ],
+   "editions": [
+    {
+     "language": "en",
+     "format": "ebook",
+     "asin": "B0BXBL84LW",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    }
+   ],
+   "editionCount": 1,
+   "hasPrintEditions": false,
+   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
+  },
+  {
+   "tier": 2,
+   "tierName": "Forbidden Mantra Press titles with product links (English)",
+   "work": "ancient-breathing-techniques-that-will-revitalize-you",
+   "title": "Ancient Breathing Techniques that will revitalize you",
+   "subtitle": null,
+   "credit": "Emily K. Patel",
+   "press": true,
+   "shownOn": "first page of the Press listing",
+   "designs": [
+    {
+     "language": "en",
+     "languageName": "English",
+     "formats": [
+      "ebook"
+     ],
+     "asins": [
+      "B0BXCCWS95"
+     ]
+    }
+   ],
+   "editions": [
+    {
+     "language": "en",
+     "format": "ebook",
+     "asin": "B0BXCCWS95",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    }
+   ],
+   "editionCount": 1,
+   "hasPrintEditions": false,
+   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
+  },
+  {
+   "tier": 2,
+   "tierName": "Forbidden Mantra Press titles with product links (English)",
+   "work": "benny-the-brave-and-the-shimmering-night",
+   "title": "Benny the Brave and the Shimmering Night",
+   "subtitle": "A Heartwarming Bedtime Adventure Picture Book for Children Ages 3–8",
+   "credit": "Emily Patel",
+   "press": true,
+   "shownOn": "first page of the Press listing",
+   "designs": [
+    {
+     "language": "en",
+     "languageName": "English",
+     "formats": [
+      "ebook"
+     ],
+     "asins": [
+      "B0G5BPZX47"
+     ]
+    }
+   ],
+   "editions": [
+    {
+     "language": "en",
+     "format": "ebook",
+     "asin": "B0G5BPZX47",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    }
+   ],
+   "editionCount": 1,
+   "hasPrintEditions": false,
+   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
+  },
+  {
+   "tier": 2,
+   "tierName": "Forbidden Mantra Press titles with product links (English)",
+   "work": "brahmastra",
+   "title": "Brahmastra",
+   "subtitle": "Weapon of God",
+   "credit": "Rav Shiva",
+   "press": true,
+   "shownOn": "first page of the Press listing",
+   "designs": [
+    {
+     "language": "en",
+     "languageName": "English",
+     "formats": [
+      "ebook"
+     ],
+     "asins": [
+      "B0BY3RRH44"
+     ]
+    }
+   ],
+   "editions": [
+    {
+     "language": "en",
+     "format": "ebook",
+     "asin": "B0BY3RRH44",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    }
+   ],
+   "editionCount": 1,
+   "hasPrintEditions": false,
+   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
+  },
+  {
+   "tier": 2,
+   "tierName": "Forbidden Mantra Press titles with product links (English)",
+   "work": "forbidden-mantra",
+   "title": "Forbidden Mantra",
+   "subtitle": null,
+   "credit": "Forbidden Mantra Press",
+   "press": true,
+   "shownOn": "first page of the Press listing",
+   "designs": [
+    {
+     "language": "en",
+     "languageName": "English",
+     "formats": [
+      "paperback"
+     ],
+     "asins": [
+      null
+     ]
+    }
+   ],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "asin": null,
+     "isbn13": null,
+     "link": "search link only"
+    }
+   ],
+   "editionCount": 1,
+   "hasPrintEditions": true,
+   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
+  },
+  {
+   "tier": 2,
+   "tierName": "Forbidden Mantra Press titles with product links (English)",
+   "work": "the-hidden-technology-of-human-power",
+   "title": "The Hidden Technology of Human Power",
+   "subtitle": null,
+   "credit": "Forbidden Mantra Press",
+   "press": true,
+   "shownOn": "first page of the Press listing",
+   "designs": [
+    {
+     "language": "en",
+     "languageName": "English",
+     "formats": [
+      "paperback"
+     ],
+     "asins": [
+      null
+     ]
+    }
+   ],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "asin": null,
+     "isbn13": null,
+     "link": "search link only"
+    }
+   ],
+   "editionCount": 1,
+   "hasPrintEditions": true,
+   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
+  },
+  {
+   "tier": 2,
+   "tierName": "Forbidden Mantra Press titles with product links (English)",
+   "work": "the-ultimate-guide-to-transforming-your-life",
+   "title": "The Ultimate Guide to Transforming Your Life",
+   "subtitle": "Unlocking the Power of the Amitabha Mantra",
+   "credit": "Emily K Patel",
+   "press": true,
+   "shownOn": "first page of the Press listing",
+   "designs": [
+    {
+     "language": "en",
+     "languageName": "English",
+     "formats": [
+      "ebook"
+     ],
+     "asins": [
+      "B0C2SNX7VK"
+     ]
+    }
+   ],
+   "editions": [
+    {
+     "language": "en",
+     "format": "ebook",
+     "asin": "B0C2SNX7VK",
+     "isbn13": null,
+     "link": "product link from the owner catalogue (live check pending)"
+    }
+   ],
+   "editionCount": 1,
+   "hasPrintEditions": false,
    "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
   },
   {
@@ -599,154 +2246,6 @@
   {
    "tier": 2,
    "tierName": "Forbidden Mantra Press titles with product links (English)",
-   "work": "beyond-sex",
-   "title": "Beyond Sex",
-   "subtitle": "Exploring the Spiritual Dimensions of Tantra",
-   "credit": "Emily K Patel",
-   "press": true,
-   "shownOn": null,
-   "designs": [
-    {
-     "language": "en",
-     "languageName": "English",
-     "formats": [
-      "ebook",
-      "hardcover",
-      "paperback"
-     ],
-     "asins": [
-      "B0DR9PWDC4",
-      "B0DRGLK449",
-      "B0DRD64TNV"
-     ]
-    },
-    {
-     "language": "nl",
-     "languageName": "Dutch",
-     "formats": [
-      "ebook",
-      "hardcover",
-      "paperback",
-      "ebook"
-     ],
-     "asins": [
-      "B0CG4R26KH",
-      "B0DQYRJF34",
-      "B0CFZC75KS",
-      "B0CTHRB4QZ"
-     ]
-    },
-    {
-     "language": "es",
-     "languageName": "Spanish",
-     "formats": [
-      "ebook",
-      "hardcover",
-      "paperback"
-     ],
-     "asins": [
-      "B0CW6HWK1B",
-      "B0DPZP35BD",
-      "B0DQY7VFXT"
-     ]
-    },
-    {
-     "language": "zh",
-     "languageName": "Chinese",
-     "formats": [
-      "ebook"
-     ],
-     "asins": [
-      "B0CTHQKLFT"
-     ]
-    }
-   ],
-   "editions": [
-    {
-     "language": "en",
-     "format": "ebook",
-     "asin": "B0DR9PWDC4",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "en",
-     "format": "hardcover",
-     "asin": "B0DRGLK449",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "en",
-     "format": "paperback",
-     "asin": "B0DRD64TNV",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "nl",
-     "format": "ebook",
-     "asin": "B0CG4R26KH",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "nl",
-     "format": "hardcover",
-     "asin": "B0DQYRJF34",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "nl",
-     "format": "paperback",
-     "asin": "B0CFZC75KS",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "nl",
-     "format": "ebook",
-     "asin": "B0CTHRB4QZ",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "es",
-     "format": "ebook",
-     "asin": "B0CW6HWK1B",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "es",
-     "format": "hardcover",
-     "asin": "B0DPZP35BD",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "es",
-     "format": "paperback",
-     "asin": "B0DQY7VFXT",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "zh",
-     "format": "ebook",
-     "asin": "B0CTHQKLFT",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    }
-   ],
-   "editionCount": 11,
-   "hasPrintEditions": true,
-   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
-  },
-  {
-   "tier": 2,
-   "tierName": "Forbidden Mantra Press titles with product links (English)",
    "work": "make-yourself-irresistibly-attractive-with-the-kleem-mantra",
    "title": "Make Yourself Irresistibly Attractive with the Kleem Mantra",
    "subtitle": null,
@@ -895,371 +2394,6 @@
   {
    "tier": 2,
    "tierName": "Forbidden Mantra Press titles with product links (English)",
-   "work": "creation-and-connection",
-   "title": "Creation and Connection",
-   "subtitle": "Exploring Genesis and Sumerian Texts in Comparative Perspective: Unveiling Ancient Narratives, Cultural Influences, and Shared Insights",
-   "credit": "Emily K Patel",
-   "press": true,
-   "shownOn": null,
-   "designs": [
-    {
-     "language": "en",
-     "languageName": "English",
-     "formats": [
-      "audiobook",
-      "ebook",
-      "hardcover",
-      "paperback"
-     ],
-     "asins": [
-      "B0GS42KHPQ",
-      "B0C5TZHPQY",
-      "B0C5P55W6W",
-      "B0C5PGF3NT"
-     ]
-    },
-    {
-     "language": "es",
-     "languageName": "Spanish",
-     "formats": [
-      "ebook",
-      "paperback"
-     ],
-     "asins": [
-      "B0CW23C6LZ",
-      "B0CW32CNX7"
-     ]
-    },
-    {
-     "language": "nl",
-     "languageName": "Dutch",
-     "formats": [
-      "ebook",
-      "paperback"
-     ],
-     "asins": [
-      "B0CVZVP7WP",
-      "B0CW1NZVTJ"
-     ]
-    },
-    {
-     "language": "hi",
-     "languageName": "Hindi",
-     "formats": [
-      "ebook"
-     ],
-     "asins": [
-      "B0CW1J4DW3"
-     ]
-    },
-    {
-     "language": "zh",
-     "languageName": "Chinese",
-     "formats": [
-      "ebook"
-     ],
-     "asins": [
-      "B0CW24RPXP"
-     ]
-    }
-   ],
-   "editions": [
-    {
-     "language": "en",
-     "format": "audiobook",
-     "asin": "B0GS42KHPQ",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "en",
-     "format": "ebook",
-     "asin": "B0C5TZHPQY",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "en",
-     "format": "hardcover",
-     "asin": "B0C5P55W6W",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "en",
-     "format": "paperback",
-     "asin": "B0C5PGF3NT",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "es",
-     "format": "ebook",
-     "asin": "B0CW23C6LZ",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "es",
-     "format": "paperback",
-     "asin": "B0CW32CNX7",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "nl",
-     "format": "ebook",
-     "asin": "B0CVZVP7WP",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "nl",
-     "format": "paperback",
-     "asin": "B0CW1NZVTJ",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "hi",
-     "format": "ebook",
-     "asin": "B0CW1J4DW3",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "zh",
-     "format": "ebook",
-     "asin": "B0CW24RPXP",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    }
-   ],
-   "editionCount": 10,
-   "hasPrintEditions": true,
-   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
-  },
-  {
-   "tier": 2,
-   "tierName": "Forbidden Mantra Press titles with product links (English)",
-   "work": "jewel-of-the-lotus",
-   "title": "Jewel of the Lotus",
-   "subtitle": "Unveiling the Mysteries of Om Mani Padme Hum",
-   "credit": "Emily K Patel",
-   "press": true,
-   "shownOn": null,
-   "designs": [
-    {
-     "language": "en",
-     "languageName": "English",
-     "formats": [
-      "audiobook",
-      "ebook",
-      "hardcover",
-      "paperback"
-     ],
-     "asins": [
-      "B0H85DXXJL",
-      "B0CWH8JXXJ",
-      "B0DPV3YKSX",
-      "B0DPV2NL45"
-     ]
-    },
-    {
-     "language": "es",
-     "languageName": "Spanish",
-     "formats": [
-      "audiobook",
-      "ebook",
-      "hardcover",
-      "paperback"
-     ],
-     "asins": [
-      "B0H85K6MJP",
-      "B0CWF8X555",
-      "B0DPV3QR1T",
-      "B0DPV1ZC4C"
-     ]
-    },
-    {
-     "language": "hi",
-     "languageName": "Hindi",
-     "formats": [
-      "ebook"
-     ],
-     "asins": [
-      "B0CXFC7HFY"
-     ]
-    }
-   ],
-   "editions": [
-    {
-     "language": "en",
-     "format": "audiobook",
-     "asin": "B0H85DXXJL",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "en",
-     "format": "ebook",
-     "asin": "B0CWH8JXXJ",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "en",
-     "format": "hardcover",
-     "asin": "B0DPV3YKSX",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "en",
-     "format": "paperback",
-     "asin": "B0DPV2NL45",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "es",
-     "format": "audiobook",
-     "asin": "B0H85K6MJP",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "es",
-     "format": "ebook",
-     "asin": "B0CWF8X555",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "es",
-     "format": "hardcover",
-     "asin": "B0DPV3QR1T",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "es",
-     "format": "paperback",
-     "asin": "B0DPV1ZC4C",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "hi",
-     "format": "ebook",
-     "asin": "B0CXFC7HFY",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    }
-   ],
-   "editionCount": 9,
-   "hasPrintEditions": true,
-   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
-  },
-  {
-   "tier": 2,
-   "tierName": "Forbidden Mantra Press titles with product links (English)",
-   "work": "a-comprehensive-guide-on-the-avalokitesvara-mantra",
-   "title": "A Comprehensive Guide On The Avalokitesvara Mantra",
-   "subtitle": null,
-   "credit": "Emily K Patel",
-   "press": true,
-   "shownOn": null,
-   "designs": [
-    {
-     "language": "en",
-     "languageName": "English",
-     "formats": [
-      "ebook",
-      "hardcover",
-      "paperback"
-     ],
-     "asins": [
-      "B0C2NN8DNK",
-      "B0DPR77SFP",
-      "B0C1J7F6SC"
-     ]
-    },
-    {
-     "language": "es",
-     "languageName": "Spanish",
-     "formats": [
-      "audiobook",
-      "ebook",
-      "hardcover",
-      "paperback"
-     ],
-     "asins": [
-      "B0H8J8W9HW",
-      "B0CXMPXWXR",
-      "B0DPQ34N5D",
-      "B0DPRQYXTS"
-     ]
-    }
-   ],
-   "editions": [
-    {
-     "language": "en",
-     "format": "ebook",
-     "asin": "B0C2NN8DNK",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "en",
-     "format": "hardcover",
-     "asin": "B0DPR77SFP",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "en",
-     "format": "paperback",
-     "asin": "B0C1J7F6SC",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "es",
-     "format": "audiobook",
-     "asin": "B0H8J8W9HW",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "es",
-     "format": "ebook",
-     "asin": "B0CXMPXWXR",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "es",
-     "format": "hardcover",
-     "asin": "B0DPQ34N5D",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "es",
-     "format": "paperback",
-     "asin": "B0DPRQYXTS",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    }
-   ],
-   "editionCount": 7,
-   "hasPrintEditions": true,
-   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
-  },
-  {
-   "tier": 2,
-   "tierName": "Forbidden Mantra Press titles with product links (English)",
    "work": "the-infancy-gospel-of-thomas-and-gospel-of-thomas",
    "title": "THE INFANCY GOSPEL OF THOMAS & GOSPEL OF THOMAS",
    "subtitle": null,
@@ -1348,84 +2482,6 @@
   {
    "tier": 2,
    "tierName": "Forbidden Mantra Press titles with product links (English)",
-   "work": "apocalypse-of-adam",
-   "title": "Apocalypse of Adam",
-   "subtitle": "Part II – The War of the Archons",
-   "credit": "Emily K Patel",
-   "press": true,
-   "shownOn": null,
-   "designs": [
-    {
-     "language": "en",
-     "languageName": "English",
-     "formats": [
-      "audiobook",
-      "ebook",
-      "hardcover",
-      "paperback"
-     ],
-     "asins": [
-      "B0H671G2S7",
-      "B0GWS9VC82",
-      "B0GWWMZDS6",
-      "B0GWVMZQ8S"
-     ]
-    },
-    {
-     "language": "hi",
-     "languageName": "Hindi",
-     "formats": [
-      "ebook"
-     ],
-     "asins": [
-      "B0GYQ7MYRJ"
-     ]
-    }
-   ],
-   "editions": [
-    {
-     "language": "en",
-     "format": "audiobook",
-     "asin": "B0H671G2S7",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "en",
-     "format": "ebook",
-     "asin": "B0GWS9VC82",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "en",
-     "format": "hardcover",
-     "asin": "B0GWWMZDS6",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "en",
-     "format": "paperback",
-     "asin": "B0GWVMZQ8S",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "hi",
-     "format": "ebook",
-     "asin": "B0GYQ7MYRJ",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    }
-   ],
-   "editionCount": 5,
-   "hasPrintEditions": true,
-   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
-  },
-  {
-   "tier": 2,
-   "tierName": "Forbidden Mantra Press titles with product links (English)",
    "work": "gnostic-gospels-and-the-hidden-christ",
    "title": "Gnostic Gospels and the Hidden Christ",
    "subtitle": null,
@@ -1498,128 +2554,6 @@
     }
    ],
    "editionCount": 5,
-   "hasPrintEditions": true,
-   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
-  },
-  {
-   "tier": 2,
-   "tierName": "Forbidden Mantra Press titles with product links (English)",
-   "work": "awakening-the-sacred-serpent",
-   "title": "Awakening the Sacred Serpent",
-   "subtitle": "A Journey into Kundalini Yoga and Spiritual Realization",
-   "credit": "Emily K Patel",
-   "press": true,
-   "shownOn": null,
-   "designs": [
-    {
-     "language": "en",
-     "languageName": "English",
-     "formats": [
-      "audiobook",
-      "ebook",
-      "hardcover",
-      "paperback"
-     ],
-     "asins": [
-      "B0H859PDTK",
-      "B0C6V1YBK5",
-      "B0C6VYCGKL",
-      "B0C6VTZMGK"
-     ]
-    }
-   ],
-   "editions": [
-    {
-     "language": "en",
-     "format": "audiobook",
-     "asin": "B0H859PDTK",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "en",
-     "format": "ebook",
-     "asin": "B0C6V1YBK5",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "en",
-     "format": "hardcover",
-     "asin": "B0C6VYCGKL",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "en",
-     "format": "paperback",
-     "asin": "B0C6VTZMGK",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    }
-   ],
-   "editionCount": 4,
-   "hasPrintEditions": true,
-   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
-  },
-  {
-   "tier": 2,
-   "tierName": "Forbidden Mantra Press titles with product links (English)",
-   "work": "breathing-with-ancient-wisdom",
-   "title": "Breathing with Ancient Wisdom",
-   "subtitle": "Unleashing Vitality and Inner Balance through the Nishino Method",
-   "credit": "Emily K Patel",
-   "press": true,
-   "shownOn": null,
-   "designs": [
-    {
-     "language": "en",
-     "languageName": "English",
-     "formats": [
-      "audiobook",
-      "ebook",
-      "hardcover",
-      "paperback"
-     ],
-     "asins": [
-      "B0H8M8TQXZ",
-      "B0C5Z2JQSX",
-      "B0C5YYNZ4B",
-      "B0C63YPYKR"
-     ]
-    }
-   ],
-   "editions": [
-    {
-     "language": "en",
-     "format": "audiobook",
-     "asin": "B0H8M8TQXZ",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "en",
-     "format": "ebook",
-     "asin": "B0C5Z2JQSX",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "en",
-     "format": "hardcover",
-     "asin": "B0C5YYNZ4B",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "en",
-     "format": "paperback",
-     "asin": "B0C63YPYKR",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    }
-   ],
-   "editionCount": 4,
    "hasPrintEditions": true,
    "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
   },
@@ -1859,67 +2793,6 @@
      "language": "en",
      "format": "paperback",
      "asin": "B0C5PGBWXP",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    }
-   ],
-   "editionCount": 4,
-   "hasPrintEditions": true,
-   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
-  },
-  {
-   "tier": 2,
-   "tierName": "Forbidden Mantra Press titles with product links (English)",
-   "work": "the-hanuman-mantra",
-   "title": "The Hanuman Mantra",
-   "subtitle": "Your Ultimate Mind-Body-Spirit Guide to Finding Inner Peace and Conquering Obstacles in the Modern World!",
-   "credit": "Rav Shiva",
-   "press": true,
-   "shownOn": null,
-   "designs": [
-    {
-     "language": "en",
-     "languageName": "English",
-     "formats": [
-      "audiobook",
-      "ebook",
-      "hardcover",
-      "paperback"
-     ],
-     "asins": [
-      "B0H8MJ9YWV",
-      "B0BZLXMD41",
-      "B0C63RJ7HW",
-      "B0BZFRQXGC"
-     ]
-    }
-   ],
-   "editions": [
-    {
-     "language": "en",
-     "format": "audiobook",
-     "asin": "B0H8MJ9YWV",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "en",
-     "format": "ebook",
-     "asin": "B0BZLXMD41",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "en",
-     "format": "hardcover",
-     "asin": "B0C63RJ7HW",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "en",
-     "format": "paperback",
-     "asin": "B0BZFRQXGC",
      "isbn13": null,
      "link": "product link from the owner catalogue (live check pending)"
     }
@@ -2236,58 +3109,6 @@
   {
    "tier": 2,
    "tierName": "Forbidden Mantra Press titles with product links (English)",
-   "work": "beyond-sex-exploring-the-spiritual-dimensions-of-tantra-second-catalogue-record",
-   "title": "Beyond Sex: Exploring the Spiritual Dimensions of Tantra (second catalogue record)",
-   "subtitle": "Exploring the Spiritual Dimensions of Tantra",
-   "credit": "Emily K. Patel",
-   "press": true,
-   "shownOn": null,
-   "designs": [
-    {
-     "language": "en",
-     "languageName": "English",
-     "formats": [
-      "ebook",
-      "hardcover",
-      "paperback"
-     ],
-     "asins": [
-      "B0BX75YQX3",
-      "B0C9SQHH9J",
-      "B0C9RYT7HG"
-     ]
-    }
-   ],
-   "editions": [
-    {
-     "language": "en",
-     "format": "ebook",
-     "asin": "B0BX75YQX3",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "en",
-     "format": "hardcover",
-     "asin": "B0C9SQHH9J",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "en",
-     "format": "paperback",
-     "asin": "B0C9RYT7HG",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    }
-   ],
-   "editionCount": 3,
-   "hasPrintEditions": true,
-   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
-  },
-  {
-   "tier": 2,
-   "tierName": "Forbidden Mantra Press titles with product links (English)",
    "work": "kamdev-mantra-for-making-yourself-attractive",
    "title": "Kamdev Mantra for making yourself attractive",
    "subtitle": null,
@@ -2329,178 +3150,6 @@
      "language": "en",
      "format": "paperback",
      "asin": "B0C63P69BT",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    }
-   ],
-   "editionCount": 3,
-   "hasPrintEditions": true,
-   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
-  },
-  {
-   "tier": 2,
-   "tierName": "Forbidden Mantra Press titles with product links (English)",
-   "work": "lost-wisdom",
-   "title": "Lost Wisdom",
-   "subtitle": "The Mysterious Gospel of Thomas and the Secrets of Early Christianity",
-   "credit": "Emily K Patel",
-   "press": true,
-   "shownOn": null,
-   "designs": [
-    {
-     "language": "en",
-     "languageName": "English",
-     "formats": [
-      "ebook",
-      "hardcover",
-      "paperback"
-     ],
-     "asins": [
-      "B0C4K2JQCR",
-      "B0C481QQTH",
-      "B0C47WK7FB"
-     ]
-    }
-   ],
-   "editions": [
-    {
-     "language": "en",
-     "format": "ebook",
-     "asin": "B0C4K2JQCR",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "en",
-     "format": "hardcover",
-     "asin": "B0C481QQTH",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "en",
-     "format": "paperback",
-     "asin": "B0C47WK7FB",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    }
-   ],
-   "editionCount": 3,
-   "hasPrintEditions": true,
-   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
-  },
-  {
-   "tier": 2,
-   "tierName": "Forbidden Mantra Press titles with product links (English)",
-   "work": "maa-kali-mantras-and-instructions",
-   "title": "Maa Kali Mantras and Instructions",
-   "subtitle": null,
-   "credit": "Forbidden Mantra Press",
-   "press": true,
-   "shownOn": null,
-   "designs": [
-    {
-     "language": "en",
-     "languageName": "English",
-     "formats": [
-      "ebook"
-     ],
-     "asins": [
-      "B0BXTBM2QT"
-     ]
-    },
-    {
-     "language": "de",
-     "languageName": "German",
-     "formats": [
-      "ebook"
-     ],
-     "asins": [
-      "B0F4B7712F"
-     ]
-    },
-    {
-     "language": "es",
-     "languageName": "Spanish",
-     "formats": [
-      "ebook"
-     ],
-     "asins": [
-      "B0F4B4W29W"
-     ]
-    }
-   ],
-   "editions": [
-    {
-     "language": "en",
-     "format": "ebook",
-     "asin": "B0BXTBM2QT",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "de",
-     "format": "ebook",
-     "asin": "B0F4B7712F",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "es",
-     "format": "ebook",
-     "asin": "B0F4B4W29W",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    }
-   ],
-   "editionCount": 3,
-   "hasPrintEditions": false,
-   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
-  },
-  {
-   "tier": 2,
-   "tierName": "Forbidden Mantra Press titles with product links (English)",
-   "work": "mantra-magic",
-   "title": "Mantra Magic",
-   "subtitle": "Unlocking the Healing Power of Om Namo Bhagavate Vasudevaya",
-   "credit": "Rav Shiva",
-   "press": true,
-   "shownOn": null,
-   "designs": [
-    {
-     "language": "en",
-     "languageName": "English",
-     "formats": [
-      "audiobook",
-      "ebook",
-      "paperback"
-     ],
-     "asins": [
-      "B0CY8FCZ4N",
-      "B0BZGQKHPD",
-      "B0BZF4Z4SC"
-     ]
-    }
-   ],
-   "editions": [
-    {
-     "language": "en",
-     "format": "audiobook",
-     "asin": "B0CY8FCZ4N",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "en",
-     "format": "ebook",
-     "asin": "B0BZGQKHPD",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "en",
-     "format": "paperback",
-     "asin": "B0BZF4Z4SC",
      "isbn13": null,
      "link": "product link from the owner catalogue (live check pending)"
     }
@@ -2605,58 +3254,6 @@
      "language": "en",
      "format": "paperback",
      "asin": "B0C6VYRBCD",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    }
-   ],
-   "editionCount": 3,
-   "hasPrintEditions": true,
-   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
-  },
-  {
-   "tier": 2,
-   "tierName": "Forbidden Mantra Press titles with product links (English)",
-   "work": "revelations-of-mary",
-   "title": "Revelations of Mary",
-   "subtitle": "A Journey to Spiritual Enlightenment and Liberation",
-   "credit": "Emily K Patel",
-   "press": true,
-   "shownOn": null,
-   "designs": [
-    {
-     "language": "en",
-     "languageName": "English",
-     "formats": [
-      "ebook",
-      "hardcover",
-      "paperback"
-     ],
-     "asins": [
-      "B0C4K6G6FN",
-      "B0C63M22HG",
-      "B0C6448LR2"
-     ]
-    }
-   ],
-   "editions": [
-    {
-     "language": "en",
-     "format": "ebook",
-     "asin": "B0C4K6G6FN",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "en",
-     "format": "hardcover",
-     "asin": "B0C63M22HG",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "en",
-     "format": "paperback",
-     "asin": "B0C6448LR2",
      "isbn13": null,
      "link": "product link from the owner catalogue (live check pending)"
     }
@@ -3188,58 +3785,6 @@
   {
    "tier": 2,
    "tierName": "Forbidden Mantra Press titles with product links (English)",
-   "work": "the-power-of-sound",
-   "title": "The Power of Sound",
-   "subtitle": "Exploring the Connection between Mantra, Yoga, and Inner Awareness",
-   "credit": "Emily K Patel",
-   "press": true,
-   "shownOn": null,
-   "designs": [
-    {
-     "language": "en",
-     "languageName": "English",
-     "formats": [
-      "ebook",
-      "hardcover",
-      "paperback"
-     ],
-     "asins": [
-      "B0BZYNSXN7",
-      "B0C63J2XBM",
-      "B0BZFJML7W"
-     ]
-    }
-   ],
-   "editions": [
-    {
-     "language": "en",
-     "format": "ebook",
-     "asin": "B0BZYNSXN7",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "en",
-     "format": "hardcover",
-     "asin": "B0C63J2XBM",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "en",
-     "format": "paperback",
-     "asin": "B0BZFJML7W",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    }
-   ],
-   "editionCount": 3,
-   "hasPrintEditions": true,
-   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
-  },
-  {
-   "tier": 2,
-   "tierName": "Forbidden Mantra Press titles with product links (English)",
    "work": "timeless-reciprocity",
    "title": "Timeless Reciprocity",
    "subtitle": "The Golden Rule as a Universal Guide",
@@ -3344,74 +3889,6 @@
   {
    "tier": 2,
    "tierName": "Forbidden Mantra Press titles with product links (English)",
-   "work": "unlocking-enlightenment",
-   "title": "Unlocking Enlightenment",
-   "subtitle": "The Timeless Power of Nam-myoho-renge-kyo in a Modern World",
-   "credit": "Emily K Patel",
-   "press": true,
-   "shownOn": null,
-   "designs": [
-    {
-     "language": "en",
-     "languageName": "English",
-     "formats": [
-      "ebook"
-     ],
-     "asins": [
-      "B0CYC5NLY6"
-     ]
-    },
-    {
-     "language": "es",
-     "languageName": "Spanish",
-     "formats": [
-      "ebook"
-     ],
-     "asins": [
-      "B0CZHHPZ1M"
-     ]
-    },
-    {
-     "language": "hi",
-     "languageName": "Hindi",
-     "formats": [
-      "ebook"
-     ],
-     "asins": [
-      "B0CZ4SRQW5"
-     ]
-    }
-   ],
-   "editions": [
-    {
-     "language": "en",
-     "format": "ebook",
-     "asin": "B0CYC5NLY6",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "es",
-     "format": "ebook",
-     "asin": "B0CZHHPZ1M",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "hi",
-     "format": "ebook",
-     "asin": "B0CZ4SRQW5",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    }
-   ],
-   "editionCount": 3,
-   "hasPrintEditions": false,
-   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
-  },
-  {
-   "tier": 2,
-   "tierName": "Forbidden Mantra Press titles with product links (English)",
    "work": "unlocking-the-power-of-the-shakyamuni-mantra",
    "title": "Unlocking the Power of the Shakyamuni Mantra",
    "subtitle": "A Practical Guide to Cultivating Inner Peace and Compassion",
@@ -3458,49 +3935,6 @@
     }
    ],
    "editionCount": 3,
-   "hasPrintEditions": true,
-   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
-  },
-  {
-   "tier": 2,
-   "tierName": "Forbidden Mantra Press titles with product links (English)",
-   "work": "chakra-mastery",
-   "title": "Chakra Mastery",
-   "subtitle": "A Spiritual Approach to Cultivating Positive Energies and Transforming Your Life",
-   "credit": "Emily K Patel",
-   "press": true,
-   "shownOn": null,
-   "designs": [
-    {
-     "language": "en",
-     "languageName": "English",
-     "formats": [
-      "ebook",
-      "paperback"
-     ],
-     "asins": [
-      "B0CFYNWYWN",
-      "B0CFZGX8QN"
-     ]
-    }
-   ],
-   "editions": [
-    {
-     "language": "en",
-     "format": "ebook",
-     "asin": "B0CFYNWYWN",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "en",
-     "format": "paperback",
-     "asin": "B0CFZGX8QN",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    }
-   ],
-   "editionCount": 2,
    "hasPrintEditions": true,
    "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
   },
@@ -3937,49 +4371,6 @@
   {
    "tier": 2,
    "tierName": "Forbidden Mantra Press titles with product links (English)",
-   "work": "the-maha-mrityunjaya-mantra",
-   "title": "The Maha Mrityunjaya Mantra",
-   "subtitle": "A Sacred Chant for Spiritual Growth and Transformation for All",
-   "credit": "Rav Shiva",
-   "press": true,
-   "shownOn": null,
-   "designs": [
-    {
-     "language": "en",
-     "languageName": "English",
-     "formats": [
-      "ebook",
-      "paperback"
-     ],
-     "asins": [
-      "B0BZQ428XZ",
-      "B0BZF9RGDS"
-     ]
-    }
-   ],
-   "editions": [
-    {
-     "language": "en",
-     "format": "ebook",
-     "asin": "B0BZQ428XZ",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "en",
-     "format": "paperback",
-     "asin": "B0BZF9RGDS",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    }
-   ],
-   "editionCount": 2,
-   "hasPrintEditions": true,
-   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
-  },
-  {
-   "tier": 2,
-   "tierName": "Forbidden Mantra Press titles with product links (English)",
    "work": "the-modern-kama-sutra",
    "title": "The Modern Kama Sutra",
    "subtitle": "A Comprehensive Guide to Sensual Exploration for All Genders and Sexualities",
@@ -4152,287 +4543,6 @@
   {
    "tier": 2,
    "tierName": "Forbidden Mantra Press titles with product links (English)",
-   "work": "yoga-for-every-woman",
-   "title": "Yoga for Every Woman",
-   "subtitle": "Unlock the Secrets to Vitality, Balance, and Inner Peace: Tips for Incorporating Yoga into Your Daily Routine for Sustainable Health and Well-being",
-   "credit": "Emily K Patel",
-   "press": true,
-   "shownOn": null,
-   "designs": [
-    {
-     "language": "en",
-     "languageName": "English",
-     "formats": [
-      "ebook",
-      "paperback"
-     ],
-     "asins": [
-      "B0C3P6YCTD",
-      "B0C2SPYYQX"
-     ]
-    }
-   ],
-   "editions": [
-    {
-     "language": "en",
-     "format": "ebook",
-     "asin": "B0C3P6YCTD",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "en",
-     "format": "paperback",
-     "asin": "B0C2SPYYQX",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    }
-   ],
-   "editionCount": 2,
-   "hasPrintEditions": true,
-   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
-  },
-  {
-   "tier": 2,
-   "tierName": "Forbidden Mantra Press titles with product links (English)",
-   "work": "a-conversation-between-a-yogi-and-artificial-intelligence",
-   "title": "A Conversation Between A Yogi & Artificial Intelligence",
-   "subtitle": "Are aliens already living on Earth?",
-   "credit": "Rav Shiva",
-   "press": true,
-   "shownOn": null,
-   "designs": [
-    {
-     "language": "en",
-     "languageName": "English",
-     "formats": [
-      "ebook"
-     ],
-     "asins": [
-      "B0C3L7W5SC"
-     ]
-    }
-   ],
-   "editions": [
-    {
-     "language": "en",
-     "format": "ebook",
-     "asin": "B0C3L7W5SC",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    }
-   ],
-   "editionCount": 1,
-   "hasPrintEditions": false,
-   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
-  },
-  {
-   "tier": 2,
-   "tierName": "Forbidden Mantra Press titles with product links (English)",
-   "work": "a-conversation-between-a-yogi-and-artificial-intelligence-about-god-satan-and-technology",
-   "title": "A Conversation between a Yogi and Artificial Intelligence about God, Satan & Technology",
-   "subtitle": null,
-   "credit": "Rav Shiva",
-   "press": true,
-   "shownOn": null,
-   "designs": [
-    {
-     "language": "en",
-     "languageName": "English",
-     "formats": [
-      "ebook"
-     ],
-     "asins": [
-      "B0C3KW4PMR"
-     ]
-    }
-   ],
-   "editions": [
-    {
-     "language": "en",
-     "format": "ebook",
-     "asin": "B0C3KW4PMR",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    }
-   ],
-   "editionCount": 1,
-   "hasPrintEditions": false,
-   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
-  },
-  {
-   "tier": 2,
-   "tierName": "Forbidden Mantra Press titles with product links (English)",
-   "work": "an-ancient-mantra-for-getting-the-girl-you-want-to-love-you",
-   "title": "An Ancient Mantra for Getting the Girl You Want to Love You",
-   "subtitle": null,
-   "credit": "Rav Shiva",
-   "press": true,
-   "shownOn": null,
-   "designs": [
-    {
-     "language": "en",
-     "languageName": "English",
-     "formats": [
-      "ebook"
-     ],
-     "asins": [
-      "B0BXBMP5NC"
-     ]
-    }
-   ],
-   "editions": [
-    {
-     "language": "en",
-     "format": "ebook",
-     "asin": "B0BXBMP5NC",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    }
-   ],
-   "editionCount": 1,
-   "hasPrintEditions": false,
-   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
-  },
-  {
-   "tier": 2,
-   "tierName": "Forbidden Mantra Press titles with product links (English)",
-   "work": "an-ancient-sanskrit-mantra-to-attain-sexual-pleasure-for-men",
-   "title": "An Ancient Sanskrit Mantra to Attain Sexual Pleasure for Men",
-   "subtitle": null,
-   "credit": "Rav Shiva",
-   "press": true,
-   "shownOn": null,
-   "designs": [
-    {
-     "language": "en",
-     "languageName": "English",
-     "formats": [
-      "ebook"
-     ],
-     "asins": [
-      "B0BXBL84LW"
-     ]
-    }
-   ],
-   "editions": [
-    {
-     "language": "en",
-     "format": "ebook",
-     "asin": "B0BXBL84LW",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    }
-   ],
-   "editionCount": 1,
-   "hasPrintEditions": false,
-   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
-  },
-  {
-   "tier": 2,
-   "tierName": "Forbidden Mantra Press titles with product links (English)",
-   "work": "ancient-breathing-techniques-that-will-revitalize-you",
-   "title": "Ancient Breathing Techniques that will revitalize you",
-   "subtitle": null,
-   "credit": "Emily K. Patel",
-   "press": true,
-   "shownOn": null,
-   "designs": [
-    {
-     "language": "en",
-     "languageName": "English",
-     "formats": [
-      "ebook"
-     ],
-     "asins": [
-      "B0BXCCWS95"
-     ]
-    }
-   ],
-   "editions": [
-    {
-     "language": "en",
-     "format": "ebook",
-     "asin": "B0BXCCWS95",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    }
-   ],
-   "editionCount": 1,
-   "hasPrintEditions": false,
-   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
-  },
-  {
-   "tier": 2,
-   "tierName": "Forbidden Mantra Press titles with product links (English)",
-   "work": "benny-the-brave-and-the-shimmering-night",
-   "title": "Benny the Brave and the Shimmering Night",
-   "subtitle": "A Heartwarming Bedtime Adventure Picture Book for Children Ages 3–8",
-   "credit": "Emily Patel",
-   "press": true,
-   "shownOn": null,
-   "designs": [
-    {
-     "language": "en",
-     "languageName": "English",
-     "formats": [
-      "ebook"
-     ],
-     "asins": [
-      "B0G5BPZX47"
-     ]
-    }
-   ],
-   "editions": [
-    {
-     "language": "en",
-     "format": "ebook",
-     "asin": "B0G5BPZX47",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    }
-   ],
-   "editionCount": 1,
-   "hasPrintEditions": false,
-   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
-  },
-  {
-   "tier": 2,
-   "tierName": "Forbidden Mantra Press titles with product links (English)",
-   "work": "brahmastra",
-   "title": "Brahmastra",
-   "subtitle": "Weapon of God",
-   "credit": "Rav Shiva",
-   "press": true,
-   "shownOn": null,
-   "designs": [
-    {
-     "language": "en",
-     "languageName": "English",
-     "formats": [
-      "ebook"
-     ],
-     "asins": [
-      "B0BY3RRH44"
-     ]
-    }
-   ],
-   "editions": [
-    {
-     "language": "en",
-     "format": "ebook",
-     "asin": "B0BY3RRH44",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    }
-   ],
-   "editionCount": 1,
-   "hasPrintEditions": false,
-   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
-  },
-  {
-   "tier": 2,
-   "tierName": "Forbidden Mantra Press titles with product links (English)",
    "work": "enlightened-silly-comic-strips",
    "title": "Enlightened Silly Comic Strips",
    "subtitle": "Twilight Zone meets Looney Toons",
@@ -4530,40 +4640,6 @@
    ],
    "editionCount": 1,
    "hasPrintEditions": false,
-   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
-  },
-  {
-   "tier": 2,
-   "tierName": "Forbidden Mantra Press titles with product links (English)",
-   "work": "forbidden-mantra",
-   "title": "Forbidden Mantra",
-   "subtitle": null,
-   "credit": "Forbidden Mantra Press",
-   "press": true,
-   "shownOn": null,
-   "designs": [
-    {
-     "language": "en",
-     "languageName": "English",
-     "formats": [
-      "paperback"
-     ],
-     "asins": [
-      null
-     ]
-    }
-   ],
-   "editions": [
-    {
-     "language": "en",
-     "format": "paperback",
-     "asin": null,
-     "isbn13": null,
-     "link": "search link only"
-    }
-   ],
-   "editionCount": 1,
-   "hasPrintEditions": true,
    "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
   },
   {
@@ -4932,74 +5008,6 @@
      "language": "en",
      "format": "ebook",
      "asin": "B0BXT95PPV",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    }
-   ],
-   "editionCount": 1,
-   "hasPrintEditions": false,
-   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
-  },
-  {
-   "tier": 2,
-   "tierName": "Forbidden Mantra Press titles with product links (English)",
-   "work": "the-hidden-technology-of-human-power",
-   "title": "The Hidden Technology of Human Power",
-   "subtitle": null,
-   "credit": "Forbidden Mantra Press",
-   "press": true,
-   "shownOn": null,
-   "designs": [
-    {
-     "language": "en",
-     "languageName": "English",
-     "formats": [
-      "paperback"
-     ],
-     "asins": [
-      null
-     ]
-    }
-   ],
-   "editions": [
-    {
-     "language": "en",
-     "format": "paperback",
-     "asin": null,
-     "isbn13": null,
-     "link": "search link only"
-    }
-   ],
-   "editionCount": 1,
-   "hasPrintEditions": true,
-   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
-  },
-  {
-   "tier": 2,
-   "tierName": "Forbidden Mantra Press titles with product links (English)",
-   "work": "the-ultimate-guide-to-transforming-your-life",
-   "title": "The Ultimate Guide to Transforming Your Life",
-   "subtitle": "Unlocking the Power of the Amitabha Mantra",
-   "credit": "Emily K Patel",
-   "press": true,
-   "shownOn": null,
-   "designs": [
-    {
-     "language": "en",
-     "languageName": "English",
-     "formats": [
-      "ebook"
-     ],
-     "asins": [
-      "B0C2SNX7VK"
-     ]
-    }
-   ],
-   "editions": [
-    {
-     "language": "en",
-     "format": "ebook",
-     "asin": "B0C2SNX7VK",
      "isbn13": null,
      "link": "product link from the owner catalogue (live check pending)"
     }

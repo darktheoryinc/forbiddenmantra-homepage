@@ -16,6 +16,7 @@ const fmpWorks = cat.works.filter((w) => w.press === 'fmp');
 const order = new Map((HL.featured ?? []).map((s, i) => [s, i]));
 const shelf = [...fmpWorks].sort((a, b) => (order.has(a.slug) ? order.get(a.slug) : 99) - (order.has(b.slug) ? order.get(b.slug) : 99) || (hasCover(b) ? 1 : 0) - (hasCover(a) ? 1 : 0)).slice(0, 14).map((w) => w.slug);
 const moPai = new Set([...(HL.moPai.order ?? []), ...cat.works.filter((w) => w.subjects.includes(HL.moPai.subject)).map((w) => w.slug)]);
+const pressPos = new Map(fmpWorks.map((w, i) => [w.slug, i])), onPressPage1 = (w) => pressPos.get(w.slug) < 48; // first page of the Press listing (48 cards)
 const home = (w) => (shelf.includes(w.slug) ? 'homepage: Featured from Forbidden Mantra Press shelf' : moPai.has(w.slug) ? 'homepage: Mo Pai Collection shelf' : null);
 const own = cat.works.filter((w) => w.status === 'owner-listed' && !hasCover(w));
 const rows = own.map((w) => {
@@ -25,10 +26,10 @@ const rows = own.map((w) => {
   const eds = w.editions.map((e) => ({ language: e.language, format: e.format, asin: e.asin ?? null, isbn13: e.isbn13 ?? null, link: (e.retailers ?? []).some((r) => r.kind === 'product') ? 'product link from the owner catalogue (live check pending)' : 'search link only' }));
   const tier = home(w) ? 1 : w.press && w.editions.some((e) => e.language === 'en') ? 2 : w.press ? 3 : 4;
   return { tier, tierName: ['', 'Highest visibility (on the homepage)', 'Forbidden Mantra Press titles with product links (English)', 'Forbidden Mantra Press translations and other languages', 'Imprint or author identity unresolved (not counted as press titles)'][tier],
-    work: w.slug, title: w.title, subtitle: w.subtitle || null, credit: w.authors[0], press: !!w.press, shownOn: home(w), designs: Object.keys(byLang).map((l) => ({ language: l, languageName: langs.get(l) ?? l, formats: byLang[l].map((e) => e.format), asins: byLang[l].map((e) => e.asin) })),
+    work: w.slug, title: w.title, subtitle: w.subtitle || null, credit: w.authors[0], press: !!w.press, shownOn: home(w) ?? (onPressPage1(w) ? 'first page of the Press listing' : null), designs: Object.keys(byLang).map((l) => ({ language: l, languageName: langs.get(l) ?? l, formats: byLang[l].map((e) => e.format), asins: byLang[l].map((e) => e.asin) })),
     editions: eds, editionCount: eds.length, hasPrintEditions: hasPrint,
     sourceFileNeeded: `Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card.` };
-}).sort((a, b) => a.tier - b.tier || b.editionCount - a.editionCount || a.title.localeCompare(b.title));
+}).sort((a, b) => a.tier - b.tier || (b.shownOn ? 1 : 0) - (a.shownOn ? 1 : 0) || b.editionCount - a.editionCount || a.title.localeCompare(b.title));
 // works that already have a cover for one language but not for their other-language editions
 const partial = cat.works.filter((w) => w.status === 'owner-listed' && hasCover(w)).flatMap((w) => [...new Set(w.editions.map((e) => e.language))].filter((l) => !w.editions.some((e) => e.language === l && have.has(`${w.slug}/${e.id}`))).map((l) => ({ work: w.slug, title: w.title, language: l, languageName: langs.get(l) ?? l, asins: w.editions.filter((e) => e.language === l).map((e) => e.asin) })));
 const designs = rows.flatMap((r) => r.designs.map((d) => ({ ...d, work: r.work })));

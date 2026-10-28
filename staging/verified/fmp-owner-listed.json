@@ -1814,7 +1814,8 @@
         "cover NOT assigned: the Drive cover subtitle (\"Serious Truths About Internal Power Training\") differs from the listing (\"What the Internal Power Community Refuses to Admit\")",
         "second Amazon listing ISBN 9798243193894 (ASIN B0GFVWMR9B) NOT assigned: format unverified",
         "publisher attribution is owner-supplied",
-        "listed in the owner's own bookstore catalogue; ASINs, formats and dates come from that table (prices and Amazon cover URLs were not stored)"
+        "listed in the owner's own bookstore catalogue; ASINs, formats and dates come from that table (prices and Amazon cover URLs were not stored)",
+        "public Amazon listing for the ebook B0GFQ63JSF confirms the title 'Mo Pai Exposed: What the Internal Power Community Refuses to Admit', The Hidden Technology of Human Power Series Book 2, 57 pages, published 2026-01-08; the listing's cover image could not be compared (Amazon images are not fetched)"
       ]
     },
     {
@@ -2029,13 +2030,22 @@
               "url": "https://www.forbiddenmantra.com/",
               "accessed": "2026-10-28",
               "supports": "title, author as credited, series, language, ASIN, format, publication date"
+            },
+            {
+              "label": "Public Amazon listing, title and details seen in search results",
+              "url": "https://www.amazon.com/Pai-destructrice-gu%C3%A9risseuse-int%C3%A9rieure-Technology/dp/B0GZ7XWJT6",
+              "accessed": "2026-10-28",
+              "supports": "paperback/hardcover ISBN-13 9798195110697"
             }
           ],
           "credit": "Emily K Patel",
           "title": "Mo Pai",
           "subtitle": "La force destructrice et guérisseuse intérieure",
           "publisher": "Forbidden Mantra Press",
-          "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line"
+          "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+          "id": "B0GZ7XWJT6",
+          "isbn13": "9798195110697",
+          "note": "ISBN-13 from the public Amazon listing title."
         },
         {
           "format": "paperback",
@@ -2278,13 +2288,22 @@
               "url": "https://www.forbiddenmantra.com/",
               "accessed": "2026-10-28",
               "supports": "title, author as credited, series, language, ASIN, format, publication date"
+            },
+            {
+              "label": "Public Amazon listing, title and details seen in search results",
+              "url": "https://www.amazon.com/Mo-Pai-destructiva-Mechanics-Cultivation/dp/B0GYZLZW9L",
+              "accessed": "2026-10-28",
+              "supports": "paperback/hardcover ISBN-13 9798259344242"
             }
           ],
           "credit": "Emily K Patel",
           "title": "Mo Pai",
           "subtitle": "La fuerza destructiva y sanadora interior",
           "publisher": "Forbidden Mantra Press",
-          "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line"
+          "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+          "id": "B0GYZLZW9L",
+          "isbn13": "9798259344242",
+          "note": "ISBN-13 from the public Amazon listing title."
         },
         {
           "format": "audiobook",
@@ -2527,7 +2546,8 @@
       ],
       "claims": [],
       "reviewFlags": [
-        "not found in the owner's catalogue table (2026-10-28); kept from the earlier owner listing, owner to confirm"
+        "not found in the owner's catalogue table (2026-10-28); kept from the earlier owner listing, owner to confirm",
+        "Public search finds no Forbidden Mantra Press book called 'Mo Pai Nei Kung'. The only Amazon book of that name found is 'Beginning Mo Pai Nei Kung' by Shifu Lin (Lung Hu Shan Publications, 2012), a different, third-party book that must not be merged with this entry. The owner's own design notes use 'Mo Pai Nei Kung series' as a category label. Likely a topic/series placeholder, not a published book; owner to confirm"
       ]
     },
     {
@@ -12854,14 +12874,22 @@
               "url": "https://www.forbiddenmantra.com/",
               "accessed": "2026-10-28",
               "supports": "title, author as credited, series, language, ASIN, format, publication date"
+            },
+            {
+              "label": "Public Amazon listing, title and details seen in search results",
+              "url": "https://us.amazon.com/Mechanics-Energy-Cultivation-Hidden-Technology-ebook/dp/B0H3MY3JS3",
+              "accessed": "2026-10-28",
+              "supports": "English Kindle edition, Series Book 10, 107 pages, 2026-06-02, publisher Forbidden Mantra Press"
             }
           ],
           "publisher": "Forbidden Mantra Press",
-          "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line"
+          "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+          "id": "B0H3MY3JS3",
+          "note": "The public listing shows Book 10 of The Hidden Technology of Human Power Series, 107 pages, published 2026-06-02, publisher Forbidden Mantra Press."
         },
         {
           "format": "ebook",
-          "language": "en",
+          "language": "hi",
           "year": 2026,
           "published": "2026-06-05",
           "asin": "B0H44YW832",
@@ -12882,10 +12910,19 @@
               "url": "https://www.forbiddenmantra.com/",
               "accessed": "2026-10-28",
               "supports": "title, author as credited, series, language, ASIN, format, publication date"
+            },
+            {
+              "label": "Public Amazon listing, title and details seen in search results",
+              "url": "https://us.amazon.com/Mechanics-Energy-Cultivation-Hidden-Technology-ebook/dp/B0H44YW832",
+              "accessed": "2026-10-28",
+              "supports": "ASIN B0H44YW832 is labelled '(Hindi Edition)', Series Book 12"
             }
           ],
           "publisher": "Forbidden Mantra Press",
-          "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line"
+          "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+          "title": "The Inner Mechanics of Energy Cultivation",
+          "note": "The owner's catalogue table lists this ebook under the English record, but the public Amazon listing for B0H44YW832 is titled '(Hindi Edition)' and is Book 12 of The Hidden Technology of Human Power Series; recorded as Hindi. The listing shows the title in English. Published 2026-06-05, three days after the English ebook.",
+          "id": "B0H44YW832"
         },
         {
           "format": "hardcover",
@@ -12910,10 +12947,19 @@
               "url": "https://www.forbiddenmantra.com/",
               "accessed": "2026-10-28",
               "supports": "title, author as credited, series, language, ASIN, format, publication date"
+            },
+            {
+              "label": "Public Amazon listing, title and details seen in search results",
+              "url": "https://www.amazon.com/Mechanics-Energy-Cultivation-Hidden-Technology/dp/B0H3T6CKMZ",
+              "accessed": "2026-10-28",
+              "supports": "hardcover ISBN-13 9798199638562"
             }
           ],
           "publisher": "Forbidden Mantra Press",
-          "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line"
+          "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+          "isbn13": "9798199638562",
+          "id": "B0H3T6CKMZ",
+          "note": "ISBN-13 from the public Amazon listing title."
         },
         {
           "format": "paperback",
@@ -13077,7 +13123,9 @@
         "chinese-internal-arts"
       ],
       "reviewFlags": [
-        "listed in the owner's own bookstore catalogue; ASINs, formats and dates come from that table (prices and Amazon cover URLs were not stored)"
+        "listed in the owner's own bookstore catalogue; ASINs, formats and dates come from that table (prices and Amazon cover URLs were not stored)",
+        "A public Amazon listing for B0GYYGC3XH ('The Inner Mechanics of Energy Cultivation', Kindle, Emily K Patel) was seen in search results but is not in the owner's catalogue table, so it was NOT added; owner to say what it is",
+        "the second 'English' ebook B0H44YW832 is a Hindi edition (see its note); the English edition has one ebook, B0H3MY3JS3"
       ],
       "series": {
         "name": "The Hidden Technology of Human Power Series"
