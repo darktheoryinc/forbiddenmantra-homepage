@@ -18,7 +18,7 @@ Nothing is deployed. DNS, Wix and the live site are untouched.
 ## Exact remaining approvals (`config/approvals.json`, all currently false)
 | Approval | What the owner must confirm |
 |---|---|
-| nvidiaBranding | Membership is current in the NVIDIA Inception portal; guidelines read; attribution wording agreed |
+| nvidiaBranding | GRANTED 2026-10-28 on the owner's explicit instruction (branding shown inside the IOSutra ad only). Still not documented: portal verification of membership, NVIDIA's Inception guidelines and attribution wording, legal review |
 | iosutraPromotion | The IOSutra section may be promoted on this site |
 | iosutraArtworkRights | Commercial-use and likeness permission for the meditating man and robot artwork |
 | librarianArtworkRights | Rights to the digital librarian character artwork |

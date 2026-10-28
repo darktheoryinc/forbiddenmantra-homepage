@@ -1,9 +1,43 @@
 {
   "_doc": "Owner approvals that gate PUBLIC output. Every value is false until the owner records it here (with who and when). Packages for public hosting (scripts/make-wix-package.mjs, FM_PUBLIC=1) withhold anything whose approval is false, and production builds are blocked. Nothing in this file has been granted by Claude.",
-  "nvidiaBranding": { "approved": false, "approvedBy": null, "approvedOn": null, "covers": "NVIDIA Inception badge, the 'Inception Member' panel, the IOSutra membership statement, NVIDIA trademark attribution. Needs: membership verified in the Inception portal, NVIDIA's Inception guidelines read, required attribution wording confirmed." },
-  "iosutraPromotion": { "approved": false, "approvedBy": null, "approvedOn": null },
-  "iosutraArtworkRights": { "approved": false, "approvedBy": null, "approvedOn": null, "covers": "The meditating man and robot picture: commercial-use and likeness permissions." },
-  "librarianArtworkRights": { "approved": false, "approvedBy": null, "approvedOn": null, "covers": "The digital librarian character artwork." },
-  "legalPagesReviewed": { "approved": false, "approvedBy": null, "approvedOn": null },
-  "productionAddress": { "approved": false, "approvedBy": null, "approvedOn": null, "url": null }
+  "nvidiaBranding": {
+    "approved": true,
+    "approvedBy": "site owner (explicit instruction in the working session)",
+    "approvedOn": "2026-10-28",
+    "basis": "owner-approved",
+    "covers": "NVIDIA Inception badge, the 'Inception Member' panel, the IOSutra membership statement, the non-endorsement statement and the NVIDIA trademark attribution, shown inside the IOSutra advertisement only, using the existing approved design and original assets.",
+    "notDocumented": [
+      "Membership has not been independently verified in the NVIDIA Inception portal (claim stays 'owner-asserted' in data/promos.json).",
+      "NVIDIA's Inception-specific brand guidelines and required attribution wording have not been supplied or confirmed (trademark notice stays 'needs-confirmation').",
+      "No legal review is recorded."
+    ]
+  },
+  "iosutraPromotion": {
+    "approved": false,
+    "approvedBy": null,
+    "approvedOn": null
+  },
+  "iosutraArtworkRights": {
+    "approved": false,
+    "approvedBy": null,
+    "approvedOn": null,
+    "covers": "The meditating man and robot picture: commercial-use and likeness permissions."
+  },
+  "librarianArtworkRights": {
+    "approved": false,
+    "approvedBy": null,
+    "approvedOn": null,
+    "covers": "The digital librarian character artwork."
+  },
+  "legalPagesReviewed": {
+    "approved": false,
+    "approvedBy": null,
+    "approvedOn": null
+  },
+  "productionAddress": {
+    "approved": false,
+    "approvedBy": null,
+    "approvedOn": null,
+    "url": null
+  }
 }

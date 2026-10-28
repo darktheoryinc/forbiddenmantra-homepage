@@ -449,3 +449,9 @@ a.io-tile-img:hover,a.io-tile-img:focus-visible{outline:3px solid #fff;outline-o
 @media(max-width:520px){.logo{flex:1 1 0;min-width:0}.logo img{width:auto;max-height:40px}}
 /* wider header search (desktop) */
 @media(min-width:1280px){.logo{flex:none}.logo img{width:175px}}@media(min-width:1366px){.logo img{width:215px}}@media(min-width:1440px){.logo img{width:240px}.nav-search input{width:150px}}@media(min-width:1600px){.nav-search input{width:190px}.logo img{width:300px}}
+
+/* homepage shelves: one prominent tagged buy button under each book */
+.card-buy{margin-top:10px;position:relative}.btn-buy{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:8px 16px;font-size:13px;width:100%;max-width:220px}
+.niche-shelf .card-buy{margin-top:8px}
+@media(max-width:520px){.btn-buy{max-width:none}}
+@media(max-width:520px){.btn-buy{font-size:12px;letter-spacing:.06em;padding:8px 6px;white-space:nowrap}}

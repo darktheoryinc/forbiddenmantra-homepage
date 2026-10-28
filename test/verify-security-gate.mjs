@@ -43,7 +43,12 @@ const okAll = Object.fromEntries(['nvidiaBranding', 'iosutraPromotion', 'iosutra
 ok(scanPackage(pkg('prod-ok', {}), { approvals: okAll, production: true }).ok, 'production passes only when every approval is recorded and no preview marker remains');
 // the real repository state
 const approvals = JSON.parse(fs.readFileSync(path.join(ROOT, 'config/approvals.json'), 'utf8'));
-ok(Object.entries(approvals).filter(([k]) => !k.startsWith('_')).every(([, v]) => v.approved === false), 'config/approvals.json: no approval has been granted (nothing was assumed)');
+ok(Object.entries(approvals).filter(([k]) => !k.startsWith('_') && k !== 'nvidiaBranding').every(([, v]) => v.approved === false), 'config/approvals.json: the five other gates are still not granted (nothing was assumed)');
+const nv = approvals.nvidiaBranding;
+ok(nv.approved === true && /owner/.test(nv.approvedBy) && nv.approvedOn === '2026-10-28' && nv.basis === 'owner-approved' && Array.isArray(nv.notDocumented) && nv.notDocumented.length >= 3, 'nvidiaBranding: recorded as the owner\'s explicit approval, with verification/guidelines/legal review listed as not documented');
+const promos = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/promos.json'), 'utf8'));
+const st = Object.fromEntries(promos.claims.map((c) => [c.id, c.status]));
+ok(st['nvidia-inception-membership'] === 'owner-asserted' && st['nvidia-trademark-notice'] === 'needs-confirmation', 'claims were not upgraded to verified by the branding approval');
 fs.rmSync(tmp, { recursive: true, force: true });
 console.log(state.fails ? `\n${state.fails} check(s) FAILED, ${state.passes} passed` : `\nAll ${state.passes} security-gate checks passed`);
 process.exit(state.fails ? 1 : 0);
