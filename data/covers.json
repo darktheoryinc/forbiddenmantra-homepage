@@ -2844,6 +2844,35 @@
           "h": 720
         }
       }
+    },
+    {
+      "work": "energy-unleashed",
+      "edition": "B0F287TGGL",
+      "source": {
+        "type": "owner-supplied",
+        "description": "Owner-supplied original file B0F287TGGL.png (bulk import)"
+      },
+      "rights": {
+        "basis": "Forbidden Mantra Press owner confirmed (2026-10-28) that all original Forbidden Mantra Press artwork is his and authorized for commercial use",
+        "confirmedBy": "Forbidden Mantra Press owner",
+        "confirmedOn": "2026-10-28"
+      },
+      "matchEvidence": "Owner-supplied file B0F287TGGL.png, tied to this edition by its ASIN B0F287TGGL (en ebook); checked for shape, size and duplicates by scripts/covers-bulk.mjs",
+      "file": "assets-src/covers/energy-unleashed__B0F287TGGL.png",
+      "original": [
+        517,
+        791
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 367
+        },
+        "480": {
+          "w": 480,
+          "h": 734
+        }
+      }
     }
   ]
 }

@@ -13,7 +13,7 @@ for p in sys.argv[1:]:
         im = ImageOps.exif_transpose(Image.open(p)); im.load()
         w, h = im.size
         g = im.convert("L").resize((9, 8), Image.LANCZOS)
-        px = list(g.getdata()); bits = 0
+        px = list(g.tobytes()); bits = 0
         for r in range(8):
             for c in range(8):
                 bits = (bits << 1) | (1 if px[r * 9 + c] > px[r * 9 + c + 1] else 0)

@@ -2,12 +2,12 @@
  "summary": {
   "displayReuseEditions": 0,
   "generated": "2026-10-28",
-  "worksMissing": 102,
-  "editionsInThoseWorks": 302,
-  "distinctDesigns": 128,
+  "worksMissing": 101,
+  "editionsInThoseWorks": 299,
+  "distinctDesigns": 127,
   "otherLanguageDesignsOfCoveredWorks": 17,
   "designsByLanguage": {
-   "en": 98,
+   "en": 97,
    "es": 11,
    "de": 3,
    "fr": 2,
@@ -20,9 +20,9 @@
   "tiers": [
    {
     "tier": 1,
-    "works": 4,
-    "designs": 5,
-    "editions": 17
+    "works": 3,
+    "designs": 4,
+    "editions": 14
    },
    {
     "tier": 2,
@@ -218,58 +218,6 @@
     }
    ],
    "editionCount": 4,
-   "hasPrintEditions": true,
-   "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
-  },
-  {
-   "tier": 1,
-   "tierName": "Highest visibility (on the homepage)",
-   "work": "energy-unleashed",
-   "title": "Energy Unleashed",
-   "subtitle": "The Hidden Superpowers of Mo Pai",
-   "credit": "Emily K Patel",
-   "press": true,
-   "shownOn": "homepage: Featured from Forbidden Mantra Press shelf",
-   "designs": [
-    {
-     "language": "en",
-     "languageName": "English",
-     "formats": [
-      "ebook",
-      "hardcover",
-      "paperback"
-     ],
-     "asins": [
-      "B0F287TGGL",
-      "B0F2B2CTWH",
-      "B0F29FBNF3"
-     ]
-    }
-   ],
-   "editions": [
-    {
-     "language": "en",
-     "format": "ebook",
-     "asin": "B0F287TGGL",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "en",
-     "format": "hardcover",
-     "asin": "B0F2B2CTWH",
-     "isbn13": null,
-     "link": "product link from the owner catalogue (live check pending)"
-    },
-    {
-     "language": "en",
-     "format": "paperback",
-     "asin": "B0F29FBNF3",
-     "isbn13": "9798315272588",
-     "link": "product link from the owner catalogue (live check pending)"
-    }
-   ],
-   "editionCount": 3,
    "hasPrintEditions": true,
    "sourceFileNeeded": "Original front-cover file for each design above (portrait, at least 1000 px on the short side if possible). Say which formats use the same artwork; the ebook file is enough to show on the book card."
   },

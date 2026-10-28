@@ -1,5 +1,5 @@
 {
- "status": "STAGED, NOT PUBLISHED. Updated 2026-10-28 after the owner's catalogue table settled several matches: The Hidden Doctrine of Mo Pai, The Genesis of Sophia, The Secret Knowledge of Adam, The Catalyst and the Hindi Kundalini cover were published.",
+ "status": "STAGED, NOT PUBLISHED. Updated 2026-10-28 after the owner's catalogue table settled several matches: The Hidden Doctrine of Mo Pai, The Genesis of Sophia, The Secret Knowledge of Adam, The Catalyst and the Hindi Kundalini cover were published. Energy Unleashed: the owner supplied a clean 517x791 cover on 2026-10-28 (published for the ebook, ASIN B0F287TGGL); the two screenshot files are superseded.",
  "covers": [
   {
    "work": "gayatri-mantra",
@@ -33,12 +33,6 @@
    "looks": "Das Erscheinen Adams, Emily K Patel",
    "work": "the-apocalypse-of-adam (de, ed3)",
    "held": "325x518 with a visible smear across the title; needs a clean file"
-  },
-  {
-   "file": "wix-energyunleashed.png / wix-energy-unleashed-listing.png",
-   "looks": "Energy Unleashed: The Hidden Superpowers of Mo Pai",
-   "work": "energy-unleashed",
-   "held": "both are 292-312px screenshots of the Amazon listing with a grid overlay"
   },
   {
    "file": "wix-mopai-exposed.png",

@@ -1,0 +1,29 @@
+{
+ "summary": {
+  "files": 1,
+  "ok": 1,
+  "warn": 0,
+  "refused": 0,
+  "reuseRecorded": 0
+ },
+ "applied": true,
+ "report": [
+  {
+   "file": "B0F287TGGL.png",
+   "status": "ok",
+   "problems": [],
+   "warnings": [
+    "under 600 px on the short side: usable but soft on large screens"
+   ],
+   "size": "517x791",
+   "shape": "portrait",
+   "work": "energy-unleashed",
+   "edition": "B0F287TGGL",
+   "asin": "B0F287TGGL",
+   "language": "en",
+   "format": "ebook",
+   "title": "Energy Unleashed",
+   "reuseFor": []
+  }
+ ]
+}
