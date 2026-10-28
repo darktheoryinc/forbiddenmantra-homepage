@@ -97,7 +97,7 @@ ok(JSON.parse(fs.readFileSync(path.join(ROOT, 'test/fixtures/data/retailer-links
 // ===== launch gate =====
 r = node('scripts/launch-check.mjs', {}, ['--json']); const items = JSON.parse(r.stdout);
 const lv = (re) => items.find((i) => re.test(i.what))?.level;
-ok(r.status === 1 && lv(/tracking ID for amazon\.com/) === 'PASS' && lv(/Retail link validity/) === 'BLOCKER' && lv(/Cross-promotion/) === 'BLOCKER' && lv(/Production URL/) === 'DECISION', 'launch-check reports NOT READY with the remaining blockers: unverified links, IOSutra gate, hosting decision (tracking ID now passes)');
+ok(r.status === 1 && lv(/tracking ID for amazon\.com/) === 'PASS' && lv(/Retail link validity/) === 'WARN' && lv(/Cross-promotion/) === 'BLOCKER' && lv(/Production URL/) === 'DECISION', 'launch-check reports NOT READY with the remaining blocker (IOSutra gate) and the hosting decision; the live link check has run (links are a warning: 20 live, the rest blocked by Amazon or inconclusive); tracking ID passes');
 ok(lv(/amazon\.co\.uk/) === 'WARN', 'launch-check does not assume the US ID covers amazon.co.uk (UK editions stay a warning)');
 
 // ===== browser: outbound events =====

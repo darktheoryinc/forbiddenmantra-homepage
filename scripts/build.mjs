@@ -212,24 +212,24 @@ function retailersRaw(work, ed) {
 // Apply link-check results: dead links are not rendered; verified ones say so; every retail URL is logged for the checker.
 const TAGLOG = []; // every affiliate URL the site renders, for the build-time tag guard
 const linkKind = (r) => (r.library ? 'library' : /\/dp\/[A-Z0-9]{10}/.test(r.url) ? 'product' : /amazon\.[a-z.]+\/s\?/.test(r.url) ? 'search' : 'link');
-function retailers(work, ed) {
+function retailers(work, ed, { log = true } = {}) {
   const out = [];
   const raw = retailersRaw(work, ed);
   // a candidate product page for search-only print editions: opt-in input to scripts/check-links.mjs --include-candidates
-  if (!work.press && ed.isbn10 && ['paperback', 'hardcover'].includes(ed.format) && ed.language === 'en' && !raw.some((r) => linkKind(r) === 'product' && r.affiliate))
+  if (log && !work.press && ed.isbn10 && ['paperback', 'hardcover'].includes(ed.format) && ed.language === 'en' && !raw.some((r) => linkKind(r) === 'product' && r.affiliate))
     LINKLOG.push({ work: work.id, title: `${ed.title ?? work.title}`, edition: ed.id ?? ed.isbn13 ?? '', label: 'candidate product page (ISBN-10)', market: 'amazon.com', url: `https://www.amazon.com/dp/${ed.isbn10}`, candidate: true });
   for (const r of raw) {
     r.kind = linkKind(r);
     if (r.library) { out.push(r); continue; }
     const clean = r.url.replace(/([?&])tag=[^&]*&?/, '$1').replace(/[?&]$/, '');
-    LINKLOG.push({ work: work.id, title: `${ed.title ?? work.title}`, edition: ed.id ?? ed.isbn13 ?? '', label: r.label, market: r.market ?? null, url: clean });
+    if (log) LINKLOG.push({ work: work.id, title: `${ed.title ?? work.title}`, edition: ed.id ?? ed.isbn13 ?? '', label: r.label, market: r.market ?? null, url: clean });
     const lc = LINKCHECK[clean];
     if (r.market && r.affiliate && !tagFor(r.market)) r.label += ' (no affiliate tracking)';
     if (lc?.verdict === 'dead') continue;
     if (lc?.verdict === 'live') r.status = `Verified live ${lc.checkedOn}`;
     else if (lc?.verdict === 'blocked') r.status += `; automated check on ${lc.checkedOn} was blocked by the retailer`;
     else if (lc?.verdict === 'mismatch') r.status += `; check on ${lc.checkedOn} found a page whose title did not match`;
-    if (r.affiliate) TAGLOG.push({ work: work.id, url: r.url, market: r.market, kind: r.kind });
+    if (r.affiliate && log) TAGLOG.push({ work: work.id, url: r.url, market: r.market, kind: r.kind });
     out.push(r);
   }
   return out;
@@ -255,7 +255,15 @@ function searchBlob(w) {
   return [w.title, w.subtitle, ...w.editions.flatMap((e) => [e.title, e.subtitle, e.translator]), ...w.authors, ...w.subjects.map((s) => dept.get(s).name), ...(w.tradition ?? []).map((t) => trad.get(t)?.name), ...w.editions.map((e) => e.publisher), ...langs, w.press ? 'forbidden mantra press' : '', ...ids].filter(Boolean).join(' ').toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '');
 }
 // ctxLang: render the card as seen from a language page (that language's title/formats; link to its edition group)
-function card(w, ctxLang = null, hl = 'h3', slim = false) {
+// Homepage shelves show one tagged Amazon.com buy button per book (same URL as on the book page; silent so the audit logs list each link once).
+function homeBuy(w) {
+  for (const ed of w.editions) {
+    const r = retailers(w, ed, { log: false }).find((x) => x.affiliate && x.market === 'amazon.com');
+    if (r) return `<p class="card-buy"><a class="btn btn-buy" href="${esc(r.url)}" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="${esc(w.slug)}">Buy on Amazon<span class="sr"> (affiliate link, opens in a new tab): ${esc(w.title)}</span></a></p>`;
+  }
+  return '';
+}
+function card(w, ctxLang = null, hl = 'h3', slim = false, buy = false) {
   const eds = ctxLang ? w.editions.filter((e) => edLangs(e).includes(ctxLang)) : w.editions;
   const fmts = [...new Set(eds.map((e) => e.format))];
   const langs = [...new Set(eds.flatMap(edLangs))];
@@ -271,14 +279,15 @@ function card(w, ctxLang = null, hl = 'h3', slim = false) {
     ${sub ? `<p class="card-sub">${esc(sub)}</p>` : ''}
     <p class="card-author">${authorLinks(w)}</p>
     <p class="card-meta">${fmts.map((f) => tax.formats[f]).join(' · ')} · ${langs.map((c) => LANG.get(c)?.name ?? c).join(', ')} · ${tax.levels[w.level].split(' /')[0]}</p>
+    ${buy ? homeBuy(w) : ''}
   </div>
 </article>`;
 }
 // paged: this grid shows one static page of a longer list. The filter bar then works from the lazy-loaded chunk index (see app.js), not from these cards.
-const grid = (works, { filterable = true, ctxLang = null, hl = 'h3', paged = null } = {}) => paged
+const grid = (works, { filterable = true, ctxLang = null, hl = 'h3', paged = null, buy = false } = {}) => paged
   ? `<div class="grid" data-index-grid data-shards="${paged.shards.join(' ')}" data-scope='${esc(JSON.stringify(paged.scope))}' data-total="${paged.total}" data-per="${BUILD.pageSize}" data-root="${ROOT_PREFIX}"${ctxLang ? ` data-ctx="${ctxLang}"` : ''} data-hl="${hl}">${works.map((w) => card(w, ctxLang, hl, true)).join('')}</div>
 <div class="grid" data-results hidden></div><p class="more" data-more-wrap hidden><button type="button" class="btn btn-ghost" data-more data-i18n="show_more">${esc(en.show_more)}</button></p>`
-  : `<div class="grid" ${filterable ? 'data-filterable' : ''}>${works.map((w) => card(w, ctxLang, hl)).join('')}</div>`;
+  : `<div class="grid" ${filterable ? 'data-filterable' : ''}>${works.map((w) => card(w, ctxLang, hl, false, buy)).join('')}</div>`;
 function pager(rel, p, n) {
   if (n < 2) return '';
   const u = (k) => href(k === 1 ? rel : `${rel}page/${k}/`);
@@ -484,7 +493,17 @@ page('index.html', {
     <p class="disclosure hero-disclosure" lang="en">${esc(cfg.disclosure.split('. ')[0])}. <a href="${href('about/affiliate-disclosure/')}">Affiliate disclosure</a></p>
   </div>
 </section>
+<section class="band" data-home="fmp" aria-labelledby="fmp-h"><div class="wrap">
+  <div class="split"><h2 id="fmp-h">From Forbidden Mantra Press</h2><a href="${href('press/')}">All ${fmpWorks.length} press titles →</a></div>
+  <p class="lede-sm">Books published by us, kept apart from the third-party titles further down.</p>
+  ${grid([...fmpWorks].sort((a, b) => (coverOfWork.has(b.slug) ? 1 : 0) - (coverOfWork.has(a.slug) ? 1 : 0)).slice(0, 8), { filterable: false, buy: true })}
+</div></section>
 ${placed('home').map((p) => promo.renderHome(promoView('home', p.id), promoCtx)).join('')}
+<section class="band alt" data-home="featured" aria-labelledby="feat-h"><div class="wrap">
+  <div class="split"><h2 id="feat-h">Featured books</h2><a href="${href('books/')}">Browse all ${cat.works.length} books →</a></div>
+  <p class="lede-sm">A small selection from each category. This is not a sales ranking: we have no reliable sales data, so nothing here is called a bestseller. The whole catalogue stays searchable.</p>
+  ${(() => { const taken = new Set(); return tax.hubs.map((hb) => { const ws = featuredForHub(hb.id, 4, taken); ws.forEach((w) => taken.add(w.id)); return ws.length ? `<section class="niche-shelf" aria-labelledby="fh-${hb.id}"><div class="split"><h3 id="fh-${hb.id}">${esc(hb.name)}</h3><a href="${href(`subjects/${hb.id}/`)}">All ${worksInHub(hb.id).length} books →</a></div><div class="shelf" role="region" tabindex="0" aria-label="${esc(hb.name)} featured books, scroll sideways">${ws.map((w) => card(w, null, 'h4', true, true)).join('')}</div></section>` : ''; }).join(''); })()}
+</div></section>
 <section class="band studio dark" id="imagination" aria-labelledby="studio-h" lang="en" data-home="studio">
   <div class="wrap">
     <p class="studio-kicker"><span>Our vision</span><span class="soon-chip">Coming soon</span></p>
@@ -511,16 +530,6 @@ ${NICHES.length ? `<section class="band" data-home="guides"><div class="wrap"><d
   <div class="split"><h2>Discover by story</h2><a href="${href('collections/')}">All collections →</a></div>
   <p class="lede-sm">Fantasy, myth and the supernatural, with independent recommendations for readers who love particular books or authors.</p>
   <div class="paths">${['harry-potter-discovery', 'major-fantasy-authors', 'myth-retold', 'gothic-supernatural'].map((id) => coll.collections.find((c) => c.id === id)).filter(Boolean).map((c) => `<a class="path" href="${href(`collections/${c.id}/`)}"><h3>${esc(c.title)}</h3><p>${esc(c.blurb)}</p><span class="hub-n">${fmt(c.works.length, 'book', 'books')}</span></a>`).join('')}</div>
-</div></section>
-<section class="band" data-home="fmp" aria-labelledby="fmp-h"><div class="wrap">
-  <div class="split"><h2 id="fmp-h">From Forbidden Mantra Press</h2><a href="${href('press/')}">All ${fmpWorks.length} press titles →</a></div>
-  <p class="lede-sm">Books published by us, kept apart from the third-party titles below.</p>
-  ${grid(fmpWorks.slice(0, 8), { filterable: false })}
-</div></section>
-<section class="band alt" data-home="featured" aria-labelledby="feat-h"><div class="wrap">
-  <div class="split"><h2 id="feat-h">Featured books</h2><a href="${href('books/')}">Browse all ${cat.works.length} books →</a></div>
-  <p class="lede-sm">A small selection from each category. This is not a sales ranking: we have no reliable sales data, so nothing here is called a bestseller. The whole catalogue stays searchable.</p>
-  ${(() => { const taken = new Set(); return tax.hubs.map((hb) => { const ws = featuredForHub(hb.id, 4, taken); ws.forEach((w) => taken.add(w.id)); return ws.length ? `<section class="niche-shelf" aria-labelledby="fh-${hb.id}"><div class="split"><h3 id="fh-${hb.id}">${esc(hb.name)}</h3><a href="${href(`subjects/${hb.id}/`)}">All ${worksInHub(hb.id).length} books →</a></div><div class="shelf" role="region" tabindex="0" aria-label="${esc(hb.name)} featured books, scroll sideways">${ws.map((w) => card(w, null, 'h4', true)).join('')}</div></section>` : ''; }).join(''); })()}
 </div></section>
 <section class="band alt"><div class="wrap">
   <div class="split"><h2>Start reading</h2><a href="${href('paths/')}">All reading paths →</a></div>
