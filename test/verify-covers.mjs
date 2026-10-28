@@ -39,7 +39,7 @@ const build = (out, extra = {}) => spawnSync('node', [path.join(ROOT, 'scripts/b
 r = build('test/out-covers-x'); ok(r.status !== 0 && /fixture cover in a real build/.test(r.stderr), 'a real build REFUSES fixture covers');
 const bad = JSON.parse(fs.readFileSync(T.manifest, 'utf8')); bad.covers[0].isbn13 = '9780000000001'; const badF = path.join(tmp, 'bad.json'); fs.writeFileSync(badF, JSON.stringify(bad));
 r = build('test/out-covers-x', { FM_COVERS_MANIFEST: badF, FM_COVERS_ALLOW_FIXTURE: '1' }); ok(r.status !== 0 && /another edition/.test(r.stderr), 'a build stops if a manifest entry points at the wrong edition');
-r = build('test/out-covers', { FM_COVERS_ALLOW_FIXTURE: '1', FM_BUILD: JSON.stringify({ maxStaticBookPages: 12 }) });
+r = build('test/out-covers', { FM_COVERS_ALLOW_FIXTURE: '1', FM_BUILD: JSON.stringify({ maxStaticBookPages: cat.works.filter((w) => w.press).length + 3 }) });;
 ok(r.status === 0 && /2 verified cover\(s\) published/.test(r.stdout), 'build with two fixture covers succeeds');
 const OUT = path.join(ROOT, 'test/out-covers'), rd = (p) => fs.readFileSync(path.join(OUT, p), 'utf8');
 const key1 = `the-power-of-now__${ponEd.id}`, key2 = `forbidden-mantra__${fmEd.id}`;

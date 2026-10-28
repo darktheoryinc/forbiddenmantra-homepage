@@ -26,20 +26,20 @@ const dynLinks = new Map();
 const idxDir = path.join(SITE, 'assets/idx');
 if (fs.existsSync(idxDir)) for (const f of fs.readdirSync(idxDir).filter((x) => /^dyn-[0-9a-f]+\.js$/.test(x))) {
   const recs = Object.values(JSON.parse(fs.readFileSync(path.join(idxDir, f), 'utf8').replace(/^\(window\.FM_DYN=window\.FM_DYN\|\|\{\}\)\[[^\]]*\]=/, '').replace(/;\s*$/, '')));
-  for (const r of recs) if (r[13]) dynLinks.set(r[0], r[13].eds.flatMap((e) => e.b.filter((b) => b[2]).map((b) => ({ href: b[1], rel: 'sponsored noopener noreferrer', isbn13: e.i13, market: b[3] }))));
+  for (const r of recs) if (r[13]) dynLinks.set(r[0], r[13].eds.flatMap((e) => e.b.filter((b) => b[2]).map((b) => ({ href: b[1], rel: 'sponsored noopener noreferrer', isbn13: e.i13, edAsin: e.a || '', market: b[3] }))));
 }
 for (const w of cat.works) {
   if (dynLinks.has(w.slug)) { for (const l of dynLinks.get(w.slug)) links.push({ work: w.id, workTitle: w.title, press: !!w.press, ...l }); continue; }
   const html = fs.readFileSync(path.join(SITE, 'books', w.slug, 'index.html'), 'utf8');
-  for (const m of html.matchAll(/<a class="btn" href="([^"]+)" target="_blank" rel="([^"]*)" data-track="buy" data-work="([^"]*)" data-isbn="([^"]*)" data-market="([^"]*)"/g)) {
-    links.push({ work: w.id, workTitle: w.title, press: !!w.press, href: decode(m[1]), rel: m[2], isbn13: m[4], market: m[5] });
+  for (const m of html.matchAll(/<a class="btn" href="([^"]+)" target="_blank" rel="([^"]*)" data-track="buy" data-work="([^"]*)" data-isbn="([^"]*)"(?: data-asin="([^"]*)")? data-market="([^"]*)"/g)) {
+    links.push({ work: w.id, workTitle: w.title, press: !!w.press, href: decode(m[1]), rel: m[2], isbn13: m[4], edAsin: m[5] || '', market: m[6] });
   }
 }
 const results = links.map((l) => {
   const issues = []; let cls = 'error';
   let u; try { u = new URL(l.href); } catch { return { ...l, class: 'error', issues: ['unparseable URL'] }; }
   const w = works.get(l.work) ?? cat.works.find((x) => x.id === l.work);
-  const ed = w.editions.find((e) => (e.isbn13 ?? '') === l.isbn13 && (e.isbn13 || e.asin)) ?? w.editions.find((e) => !e.isbn13 && l.isbn13 === '') ;
+  const ed = (l.edAsin ? w.editions.find((e) => e.asin === l.edAsin) : null) ?? w.editions.find((e) => (e.isbn13 ?? '') === l.isbn13 && (e.isbn13 || e.asin)) ?? w.editions.find((e) => !e.isbn13 && l.isbn13 === '');
   const market = u.hostname.replace(/^www\./, '');
   if (u.protocol !== 'https:') issues.push('not https');
   if (!/^amazon\./.test(market)) issues.push(`host ${u.hostname} is not an Amazon marketplace`);

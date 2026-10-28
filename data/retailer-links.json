@@ -22,57 +22,57 @@
    "work": "edenic-origins",
    "title": "Edenic Origins",
    "edition": "ed1",
-   "label": "Search on Amazon",
+   "label": "Amazon",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Edenic%20Origins%20The%20Sacred%20Roots%20of%20Veganism%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0F2SM2SH1"
   },
   {
    "work": "forbidden-fruit",
    "title": "Forbidden Fruit",
-   "edition": "ed1",
-   "label": "Search on Amazon",
+   "edition": "B0BXJSQFKD",
+   "label": "Amazon",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Forbidden%20Fruit%20Top%205%20Herbs%20To%20Treat%20Erectile%20Dysfunction%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0BXJSQFKD"
+  },
+  {
+   "work": "forbidden-practices",
+   "title": "Forbidden Practices",
+   "edition": "B0BXHQQS8W",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0BXHQQS8W"
   },
   {
    "work": "how-to-stop-overthinking-at-night",
    "title": "How to Stop Overthinking at Night",
-   "edition": "ed1",
-   "label": "Search on Amazon",
+   "edition": "B0H8MKFF22",
+   "label": "Amazon (Audible)",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=How%20to%20Stop%20Overthinking%20at%20Night%20A%20Simple%20Guide%20to%20Quiet%20Your%20Mind%20and%20Finally%20Fall%20Asleep%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0H8MKFF22"
   },
   {
    "work": "how-to-stop-overthinking-right-now",
    "title": "How to Stop Overthinking Right Now",
-   "edition": "ed1",
-   "label": "Search on Amazon",
+   "edition": "B0H8MGHPF9",
+   "label": "Amazon (Audible)",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=How%20to%20Stop%20Overthinking%20Right%20Now%20A%20Simple%2C%20Proven%20System%20to%20Calm%20Your%20Mind%20and%20Take%20Back%20Control%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0H8MGHPF9"
   },
   {
-   "work": "an-ancient-mantra-for-getting-the-girl-you-want-to-love-you",
-   "title": "An Ancient Mantra for Getting the Girl You Want to Love You",
-   "edition": "ed1",
-   "label": "Search on Amazon",
+   "work": "the-book-of-vedic-spells",
+   "title": "The Book of Vedic Spells",
+   "edition": "B0D11V38H9",
+   "label": "Amazon (Audible)",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=An%20Ancient%20Mantra%20for%20Getting%20the%20Girl%20You%20Want%20to%20Love%20You%20Forbidden%20Mantra%20Press&i=stripbooks"
-  },
-  {
-   "work": "an-ancient-sanskrit-mantra-to-attain-sexual-pleasure-for-men",
-   "title": "An Ancient Sanskrit Mantra to Attain Sexual Pleasure for Men",
-   "edition": "ed1",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=An%20Ancient%20Sanskrit%20Mantra%20to%20Attain%20Sexual%20Pleasure%20for%20Men%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0D11V38H9"
   },
   {
    "work": "brahmastra",
    "title": "Brahmastra",
-   "edition": "ed1",
-   "label": "Search on Amazon",
+   "edition": "B0BY3RRH44",
+   "label": "Amazon",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Brahmastra%20Weapon%20of%20God%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0BY3RRH44"
   },
   {
    "work": "forbidden-mantra",
@@ -93,122 +93,114 @@
   {
    "work": "the-hanuman-mantra",
    "title": "The Hanuman Mantra",
-   "edition": "ed1",
-   "label": "Search on Amazon",
+   "edition": "B0H8MJ9YWV",
+   "label": "Amazon (Audible)",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=The%20Hanuman%20Mantra%20Your%20Ultimate%20Mind-Body-Spirit%20Guide%20to%20Finding%20Inner%20Peace%20and%20Conquering%20Obstacles%20in%20the%20Modern%20World%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0H8MJ9YWV"
   },
   {
    "work": "how-to-chant-the-gayatri-mantra",
    "title": "How to Chant the Gayatri Mantra",
-   "edition": "ed1",
-   "label": "Search on Amazon",
+   "edition": "B0BY7PDZXS",
+   "label": "Amazon",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=How%20to%20Chant%20the%20Gayatri%20Mantra%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0BY7PDZXS"
   },
   {
    "work": "invoke-the-fierce",
    "title": "Invoke the Fierce",
    "edition": "ed1",
-   "label": "Search on Amazon",
+   "label": "Amazon",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Invoke%20the%20Fierce%20Unlocking%20Strength%20and%20Protection%20with%20the%20Durga%20Mantra%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0F9WQSNVW"
   },
   {
    "work": "kamdev-gayatri-mantra",
    "title": "Kamdev Gayatri Mantra",
-   "edition": "ed1",
-   "label": "Search on Amazon",
+   "edition": "B0BXBTMYBX",
+   "label": "Amazon",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Kamdev%20Gayatri%20Mantra%20An%20Instructional%20Manual%20Forbidden%20Mantra%20Press&i=stripbooks"
-  },
-  {
-   "work": "kamdev-mantra-for-making-yourself-attractive",
-   "title": "Kamdev Mantra for making yourself attractive",
-   "edition": "ed1",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Kamdev%20Mantra%20for%20making%20yourself%20attractive%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0BXBTMYBX"
   },
   {
    "work": "katyayani-mantra-for-removing-obstacles-and-delayed-marriages",
    "title": "Katyayani Mantra for Removing Obstacles and Delayed Marriages",
-   "edition": "ed1",
-   "label": "Search on Amazon",
+   "edition": "B0BY6ZNY1C",
+   "label": "Amazon",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Katyayani%20Mantra%20for%20Removing%20Obstacles%20and%20Delayed%20Marriages%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0BY6ZNY1C"
+  },
+  {
+   "work": "the-kubera-mantra",
+   "title": "The Kubera Mantra",
+   "edition": "B0CQRMWPZW",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0CQRMWPZW"
   },
   {
    "work": "lakshmi-gayatri",
    "title": "Lakshmi Gayatri",
    "edition": "ed1",
-   "label": "Search on Amazon",
+   "label": "Amazon",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Lakshmi%20Gayatri%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0FB2YT1JY"
   },
   {
    "work": "lakshmi-gayatri-mantra",
    "title": "Lakshmi Gayatri Mantra",
-   "edition": "ed1",
-   "label": "Search on Amazon",
+   "edition": "B0CQRKX83X",
+   "label": "Amazon",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Lakshmi%20Gayatri%20Mantra%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0CQRKX83X"
   },
   {
    "work": "lakshmi-mantra-for-the-pleasure-of-wealth-and-abundance",
    "title": "Lakshmi Mantra for the Pleasure of Wealth & Abundance",
-   "edition": "ed1",
-   "label": "Search on Amazon",
+   "edition": "B0BXT8SWYX",
+   "label": "Amazon",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Lakshmi%20Mantra%20for%20the%20Pleasure%20of%20Wealth%20%26%20Abundance%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0BXT8SWYX"
+  },
+  {
+   "work": "los-pensamientos-son-mantras",
+   "title": "LOS PENSAMIENTOS SON MANTRAS",
+   "edition": "B0CY88818M",
+   "label": "Amazon (Audible)",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0CY88818M"
   },
   {
    "work": "maa-kali-mantra-for-success",
    "title": "Maa Kali Mantra for Success",
-   "edition": "ed1",
-   "label": "Search on Amazon",
+   "edition": "B0BXTGYV5W",
+   "label": "Amazon",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Maa%20Kali%20Mantra%20for%20Success%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0BXTGYV5W"
   },
   {
    "work": "maa-kali-mantras-and-instructions",
    "title": "Maa Kali Mantras and Instructions",
-   "edition": "ed1",
-   "label": "Google Play Books",
-   "market": null,
-   "url": "https://play.google.com/store/books/details/Maa_Kali_Mantras_and_Instructions?id=RlyKEQAAQBAJ&hl=en_US"
-  },
-  {
-   "work": "maa-kali-mantras-and-instructions",
-   "title": "Maa Kali Mantras and Instructions",
-   "edition": "ed1",
-   "label": "Search on Amazon",
+   "edition": "B0BXTBM2QT",
+   "label": "Amazon",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Maa%20Kali%20Mantras%20and%20Instructions%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0BXTBM2QT"
   },
   {
    "work": "maha-mrityunjaya-mantra",
    "title": "Maha Mrityunjaya Mantra",
    "edition": "ed1",
-   "label": "Search on Amazon",
+   "label": "Amazon",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Maha%20Mrityunjaya%20Mantra%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0F9PZLQCP"
   },
   {
    "work": "the-maha-mrityunjaya-mantra",
    "title": "The Maha Mrityunjaya Mantra",
-   "edition": "ed1",
-   "label": "Search on Amazon",
+   "edition": "B0BZQ428XZ",
+   "label": "Amazon",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=The%20Maha%20Mrityunjaya%20Mantra%20A%20Sacred%20Chant%20for%20Spiritual%20Growth%20and%20Transformation%20for%20All%20Forbidden%20Mantra%20Press&i=stripbooks"
-  },
-  {
-   "work": "make-yourself-irresistibly-attractive-with-the-kleem-mantra",
-   "title": "Make Yourself Irresistibly Attractive with the Kleem Mantra",
-   "edition": "ed1",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Make%20Yourself%20Irresistibly%20Attractive%20with%20the%20Kleem%20Mantra%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0BZQ428XZ"
   },
   {
    "work": "make-yourself-irresistibly-attractive-with-the-kleem-mantra-kamdev-mantra-and-kama-sutra",
@@ -221,202 +213,362 @@
   {
    "work": "mantra-magic",
    "title": "Mantra Magic",
-   "edition": "ed1",
-   "label": "Search on Amazon",
+   "edition": "B0CY8FCZ4N",
+   "label": "Amazon (Audible)",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Mantra%20Magic%20Unlocking%20the%20Healing%20Power%20of%20Om%20Namo%20Bhagavate%20Vasudevaya%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0CY8FCZ4N"
   },
   {
-   "work": "mantra-sound-vibrational-energy",
-   "title": "Mantra Sound Vibrational Energy",
-   "edition": "ed1",
-   "label": "Search on Amazon",
+   "work": "the-matrix-of-sound",
+   "title": "The Matrix of Sound",
+   "edition": "B0H8MKMLT9",
+   "label": "Amazon (Audible)",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Mantra%20Sound%20Vibrational%20Energy%20Maha%20Mrityunjaya%20Mantra%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0H8MKMLT9"
   },
   {
    "work": "om-namah-shivaya",
    "title": "Om Namah Shivaya",
-   "edition": "ed1",
-   "label": "Search on Amazon",
+   "edition": "B0H8MJSRVJ",
+   "label": "Amazon (Audible)",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Om%20Namah%20Shivaya%20A%20Sacred%20Practice%20Guide%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0H8MJSRVJ"
   },
   {
-   "work": "the-power-of-sound",
-   "title": "The Power of Sound",
-   "edition": "ed1",
-   "label": "Search on Amazon",
+   "work": "saraswati-mantra-enhance-intelligence-creativity-and-knowledge",
+   "title": "Saraswati Mantra - Enhance Intelligence, Creativity and Knowledge.",
+   "edition": "B0BZFFDG4N",
+   "label": "Amazon",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=The%20Power%20of%20Sound%20Exploring%20the%20Connection%20Between%20Mantra%2C%20Yoga%2C%20and%20Inner%20Awareness%20Forbidden%20Mantra%20Press&i=stripbooks"
-  },
-  {
-   "work": "radiate-beauty-from-within",
-   "title": "Radiate Beauty from Within",
-   "edition": "ed1",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Radiate%20Beauty%20from%20Within%20Harnessing%20the%20Power%20of%20Chandra%20Mantra%20for%20All%20Genders%20and%20Ethnicities%20Forbidden%20Mantra%20Press&i=stripbooks"
-  },
-  {
-   "work": "saraswati-mantra",
-   "title": "Saraswati Mantra",
-   "edition": "ed1",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Saraswati%20Mantra%20Enhance%20Intelligence%2C%20Creativity%20and%20Knowledge%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0BZFFDG4N"
   },
   {
    "work": "shiva-mantra-for-purification-of-mind-body-and-soul",
    "title": "Shiva Mantra for Purification of Mind, Body & Soul",
-   "edition": "ed1",
-   "label": "Search on Amazon",
+   "edition": "B0BXT95PPV",
+   "label": "Amazon",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Shiva%20Mantra%20for%20Purification%20of%20Mind%2C%20Body%20%26%20Soul%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0BXT95PPV"
+  },
+  {
+   "work": "unlock-inner-peace-and-live-a-harmonious-life",
+   "title": "Unlock Inner Peace and Live a Harmonious Life",
+   "edition": "B0BZLZS9DT",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0BZLZS9DT"
+  },
+  {
+   "work": "bajrang-baan-hanuman-sadhana-hindi",
+   "title": "बजरंग बाण एवं हनुमान साधना",
+   "edition": "B0H9XKBQFB",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H9XKBQFB"
+  },
+  {
+   "work": "shri-kanakadhara-stotram-hindi",
+   "title": "श्री कनकधारा स्तोत्रम्",
+   "edition": "B0H9XT6Y2Z",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H9XT6Y2Z"
+  },
+  {
+   "work": "shri-lakshmi-mantraratnavali-hindi",
+   "title": "श्री लक्ष्मी मन्त्ररत्नावली",
+   "edition": "B0H78CYMLQ",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H78CYMLQ"
+  },
+  {
+   "work": "the-eternal-quest",
+   "title": "The Eternal Quest",
+   "edition": "B0C6C2SD9B",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C6C2SD9B"
+  },
+  {
+   "work": "siddhis",
+   "title": "Siddhis",
+   "edition": "B0H85FV76W",
+   "label": "Amazon (Audible)",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H85FV76W"
+  },
+  {
+   "work": "yoga-for-every-woman",
+   "title": "Yoga for Every Woman",
+   "edition": "B0C3P6YCTD",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C3P6YCTD"
+  },
+  {
+   "work": "the-yoga-sutras-of-patanjali",
+   "title": "The Yoga Sutras of Patanjali",
+   "edition": "B0BY2XS8PR",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0BY2XS8PR"
+  },
+  {
+   "work": "a-comprehensive-guide-on-the-avalokitesvara-mantra",
+   "title": "A Comprehensive Guide On The Avalokitesvara Mantra",
+   "edition": "B0C2NN8DNK",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C2NN8DNK"
+  },
+  {
+   "work": "jewel-of-the-lotus",
+   "title": "Jewel of the Lotus",
+   "edition": "B0H85DXXJL",
+   "label": "Amazon (Audible)",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H85DXXJL"
+  },
+  {
+   "work": "mantra-of-vajrayogini",
+   "title": "Mantra of Vajrayogini",
+   "edition": "B0DP46F3S4",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0DP46F3S4"
+  },
+  {
+   "work": "the-ultimate-guide-to-transforming-your-life",
+   "title": "The Ultimate Guide to Transforming Your Life",
+   "edition": "B0C2SNX7VK",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C2SNX7VK"
+  },
+  {
+   "work": "unlocking-enlightenment",
+   "title": "Unlocking Enlightenment",
+   "edition": "B0CYC5NLY6",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0CYC5NLY6"
+  },
+  {
+   "work": "unlocking-the-power-of-the-shakyamuni-mantra",
+   "title": "Unlocking the Power of the Shakyamuni Mantra",
+   "edition": "B0C2L38W4L",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C2L38W4L"
+  },
+  {
+   "work": "weapons-of-the-gods",
+   "title": "Weapons of the Gods",
+   "edition": "ed2",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0FCDBMM5T"
+  },
+  {
+   "work": "an-ancient-mantra-for-getting-the-girl-you-want-to-love-you",
+   "title": "An Ancient Mantra for Getting the Girl You Want to Love You",
+   "edition": "B0BXBMP5NC",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0BXBMP5NC"
+  },
+  {
+   "work": "an-ancient-sanskrit-mantra-to-attain-sexual-pleasure-for-men",
+   "title": "An Ancient Sanskrit Mantra to Attain Sexual Pleasure for Men",
+   "edition": "B0BXBL84LW",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0BXBL84LW"
+  },
+  {
+   "work": "awakening-the-sacred-serpent",
+   "title": "Awakening the Sacred Serpent",
+   "edition": "B0H859PDTK",
+   "label": "Amazon (Audible)",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H859PDTK"
+  },
+  {
+   "work": "beyond-sex",
+   "title": "Beyond Sex",
+   "edition": "B0DR9PWDC4",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0DR9PWDC4"
+  },
+  {
+   "work": "beyond-sex-exploring-the-spiritual-dimensions-of-tantra-second-catalogue-record",
+   "title": "Beyond Sex: Exploring the Spiritual Dimensions of Tantra (second catalogue record)",
+   "edition": "B0BX75YQX3",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0BX75YQX3"
+  },
+  {
+   "work": "chakra-mastery",
+   "title": "Chakra Mastery",
+   "edition": "B0CFYNWYWN",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0CFYNWYWN"
+  },
+  {
+   "work": "the-coven-and-the-yogi-eclipse-of-the-heart-chakra",
+   "title": "The Coven and The Yogi: Eclipse of the Heart Chakra",
+   "edition": "B0FFLZ4V48",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0FFLZ4V48"
+  },
+  {
+   "work": "have-sex-like-a-god",
+   "title": "Have Sex Like A God",
+   "edition": "B0BXBN7X5N",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0BXBN7X5N"
+  },
+  {
+   "work": "kama-sutra-sexual-yoga-with-a-partner",
+   "title": "Kama Sutra - Sexual Yoga with a Partner",
+   "edition": "B0BXHTD3M9",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0BXHTD3M9"
+  },
+  {
+   "work": "kamdev-mantra-for-making-yourself-attractive",
+   "title": "Kamdev Mantra for making yourself attractive",
+   "edition": "B0F93NVQ9J",
+   "label": "Amazon (Audible)",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0F93NVQ9J"
+  },
+  {
+   "work": "make-yourself-irresistibly-attractive-with-the-kleem-mantra",
+   "title": "Make Yourself Irresistibly Attractive with the Kleem Mantra",
+   "edition": "B0H8MQYPPR",
+   "label": "Amazon (Audible)",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H8MQYPPR"
+  },
+  {
+   "work": "make-yourself-irresitible-to-anyone-with-kundalini-energy-and-cultivation",
+   "title": "Make Yourself Irresitible to Anyone with Kundalini Energy and Cultivation",
+   "edition": "B0BXF91GRT",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0BXF91GRT"
+  },
+  {
+   "work": "mantra-sound-vibrational-energy",
+   "title": "Mantra Sound Vibrational Energy",
+   "edition": "B0BY62FDGQ",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0BY62FDGQ"
   },
   {
    "work": "miracles-of-the-masters-of-yoga",
    "title": "Miracles of the Masters of Yoga",
    "edition": "ed1",
-   "label": "Search on Amazon",
+   "label": "Amazon",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Miracles%20of%20the%20Masters%20of%20Yoga%20Siddhis-%20Super%20Powers%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0F3DF7BTK"
   },
   {
-   "work": "siddhis",
-   "title": "Siddhis",
-   "edition": "ed1",
-   "label": "Search on Amazon",
+   "work": "the-modern-kama-sutra",
+   "title": "The Modern Kama Sutra",
+   "edition": "B0BYTSGG3D",
+   "label": "Amazon",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Siddhis%20Unlocking%20the%20Divine%20Powers%20Within%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0BYTSGG3D"
   },
   {
-   "work": "yoga-for-every-woman",
-   "title": "Yoga for Every Woman",
-   "edition": "ed1",
-   "label": "Search on Amazon",
+   "work": "the-power-of-sound",
+   "title": "The Power of Sound",
+   "edition": "B0BZYNSXN7",
+   "label": "Amazon",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Yoga%20for%20Every%20Woman%20Unlock%20the%20Secrets%20to%20Vitality%2C%20Balance%2C%20and%20Inner%20Peace%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0BZYNSXN7"
   },
   {
-   "work": "a-comprehensive-guide-on-the-avalokitesvara-mantra",
-   "title": "A Comprehensive Guide On The Avalokitesvara Mantra",
-   "edition": "ed1",
-   "label": "Search on Amazon",
+   "work": "radiate-beauty-from-within",
+   "title": "Radiate Beauty from Within",
+   "edition": "B0H8JLG5FJ",
+   "label": "Amazon (Audible)",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=A%20Comprehensive%20Guide%20On%20The%20Avalokitesvara%20Mantra%20Forbidden%20Mantra%20Press&i=stripbooks"
-  },
-  {
-   "work": "mantra-of-vajrayogini",
-   "title": "Mantra of Vajrayogini",
-   "edition": "ed1",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Mantra%20of%20Vajrayogini%20A%20Practitioner's%20Guide%20to%20Wisdom%20and%20Transformation%20Forbidden%20Mantra%20Press&i=stripbooks"
-  },
-  {
-   "work": "the-ultimate-guide-to-transforming-your-life",
-   "title": "The Ultimate Guide to Transforming Your Life",
-   "edition": "ed1",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=The%20Ultimate%20Guide%20to%20Transforming%20Your%20Life%20Unlocking%20the%20Power%20of%20the%20Amitabha%20Mantra%20Forbidden%20Mantra%20Press&i=stripbooks"
-  },
-  {
-   "work": "unlocking-enlightenment",
-   "title": "Unlocking Enlightenment",
-   "edition": "ed1",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Unlocking%20Enlightenment%20The%20Timeless%20Power%20of%20Nam-myoho-renge-kyo%20in%20a%20Modern%20World%20Forbidden%20Mantra%20Press&i=stripbooks"
-  },
-  {
-   "work": "weapons-of-the-gods",
-   "title": "Weapons of the Gods",
-   "edition": "ed1",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Weapons%20of%20the%20Gods%20An%20Overview%20of%20Astra%20%26%20Shastra%20Forbidden%20Mantra%20Press&i=stripbooks"
-  },
-  {
-   "work": "the-ancient-science-of-kundalini-energy-revealed",
-   "title": "The Ancient Science of Kundalini Energy Revealed",
-   "edition": "ed1",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=The%20Ancient%20Science%20of%20Kundalini%20Energy%20Revealed%20Mastery%20of%20Sexual%20Energy%20and%20Psychic%20Abilities%20Forbidden%20Mantra%20Press&i=stripbooks"
-  },
-  {
-   "work": "beyond-sex",
-   "title": "Beyond Sex",
-   "edition": "ed1",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Beyond%20Sex%20Exploring%20the%20Spiritual%20Dimensions%20of%20Tantra%20Forbidden%20Mantra%20Press&i=stripbooks"
-  },
-  {
-   "work": "forbidden-practices",
-   "title": "Forbidden Practices",
-   "edition": "ed1",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Forbidden%20Practices%20Increase%20the%20size%20and%20stamina%20of%20your%20manhood%20Forbidden%20Mantra%20Press&i=stripbooks"
-  },
-  {
-   "work": "have-sex-like-a-god",
-   "title": "Have Sex Like A God",
-   "edition": "ed1",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Have%20Sex%20Like%20A%20God%20Kundalini%20Awakening%20Instruction%20Manual%20Forbidden%20Mantra%20Press&i=stripbooks"
-  },
-  {
-   "work": "kama-sutra-sexual-yoga-with-a-partner",
-   "title": "Kama Sutra - Sexual Yoga with a Partner",
-   "edition": "ed1",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Kama%20Sutra%20-%20Sexual%20Yoga%20with%20a%20Partner%20Forbidden%20Mantra%20Press&i=stripbooks"
-  },
-  {
-   "work": "make-yourself-irresistible-to-anyone-with-kundalini-energy-and-cultivation",
-   "title": "Make Yourself Irresistible to Anyone with Kundalini Energy and Cultivation",
-   "edition": "ed1",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Make%20Yourself%20Irresistible%20to%20Anyone%20with%20Kundalini%20Energy%20and%20Cultivation%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0H8JLG5FJ"
   },
   {
    "work": "sacred-union-in-tantra",
    "title": "Sacred Union in Tantra",
-   "edition": "ed1",
-   "label": "Search on Amazon",
+   "edition": "B0CFKHQSNX",
+   "label": "Amazon",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Sacred%20Union%20in%20Tantra%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0CFKHQSNX"
+  },
+  {
+   "work": "unlock-your-inner-beauty",
+   "title": "Unlock Your Inner Beauty",
+   "edition": "B0D53ZP8BV",
+   "label": "Amazon (Audible)",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0D53ZP8BV"
+  },
+  {
+   "work": "the-ancient-science-of-kundalini-energy-revealed",
+   "title": "The Ancient Science of Kundalini Energy Revealed",
+   "edition": "B0H8J5VCQW",
+   "label": "Amazon (Audible)",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H8J5VCQW"
   },
   {
    "work": "energy-unleashed",
    "title": "Energy Unleashed",
-   "edition": "9798315272588",
+   "edition": "B0F287TGGL",
    "label": "Amazon",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/Energy-Unleashed-Hidden-Superpowers-Buddhist/dp/B0F29FBNF3"
+   "url": "https://www.amazon.com/dp/B0F287TGGL"
+  },
+  {
+   "work": "the-hidden-doctrine-of-mo-pai",
+   "title": "The Hidden Doctrine of Mo Pai",
+   "edition": "B0H8JDF2Z8",
+   "label": "Amazon (Audible)",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H8JDF2Z8"
+  },
+  {
+   "work": "the-inner-mechanics-of-energy-cultivation",
+   "title": "The Inner Mechanics of Energy Cultivation",
+   "edition": "B0H8MBCDC6",
+   "label": "Amazon (Audible)",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H8MBCDC6"
   },
   {
    "work": "mo-pai-and-internal-alchemy",
    "title": "Mo Pai and Internal Alchemy",
-   "edition": "ed1",
-   "label": "Search on Amazon",
+   "edition": "B0H8JJHYLR",
+   "label": "Amazon (Audible)",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Mo%20Pai%20and%20Internal%20Alchemy%20The%20Physiology%2C%20Polarity%2C%20and%20Power%20Mechanics%20Behind%20Human%20Energy%20Cultivation%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0H8JJHYLR"
   },
   {
    "work": "mo-pai-exposed",
    "title": "Mo Pai Exposed",
-   "edition": "9798243193078",
-   "label": "Amazon",
+   "edition": "B0H85C85V8",
+   "label": "Amazon (Audible)",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/Mo-Pai-Exposed-Community-Technology/dp/B0GFW4H6T2"
+   "url": "https://www.amazon.com/dp/B0H85C85V8"
   },
   {
    "work": "mo-pai-nei-kung",
@@ -429,58 +581,74 @@
   {
    "work": "mo-pai-the-destructive-and-healing-force-within",
    "title": "Mo Pai: The Destructive and Healing Force Within",
-   "edition": "9798243200189",
-   "label": "Amazon",
+   "edition": "B0H8MB14CP",
+   "label": "Amazon (Audible)",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/Pai-Destructive-Meditation-Discipline-Technology/dp/B0GFW8DJHW"
+   "url": "https://www.amazon.com/dp/B0H8MB14CP"
   },
   {
    "work": "ancient-breathing-techniques-that-will-revitalize-you",
    "title": "Ancient Breathing Techniques that will revitalize you",
-   "edition": "ed1",
-   "label": "Search on Amazon",
+   "edition": "B0BXCCWS95",
+   "label": "Amazon",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Ancient%20Breathing%20Techniques%20that%20will%20revitalize%20you%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0BXCCWS95"
   },
   {
-   "work": "chakra-mastery",
-   "title": "Chakra Mastery",
-   "edition": "ed1",
-   "label": "Search on Amazon",
+   "work": "breathing-with-ancient-wisdom",
+   "title": "Breathing with Ancient Wisdom",
+   "edition": "B0H8M8TQXZ",
+   "label": "Amazon (Audible)",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Chakra%20Mastery%20A%20Spiritual%20Approach%20to%20Cultivating%20Positive%20Energies%20and%20Transforming%20Your%20Life%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0H8M8TQXZ"
   },
   {
    "work": "unleashing-the-inner-fire",
    "title": "Unleashing the Inner Fire",
-   "edition": "ed1",
-   "label": "Search on Amazon",
+   "edition": "B0FTCH1N1Q",
+   "label": "Amazon (Audible)",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Unleashing%20the%20Inner%20Fire%20The%20Ancient%20Art%20of%20Tummo%20Breathwork%20for%20Radical%20Transformation%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0FTCH1N1Q"
+  },
+  {
+   "work": "the-catalyst",
+   "title": "The Catalyst",
+   "edition": "B0F39GJ9F8",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0F39GJ9F8"
   },
   {
    "work": "a-conversation-between-a-yogi-and-artificial-intelligence",
    "title": "A Conversation Between A Yogi & Artificial Intelligence",
-   "edition": "ed1",
-   "label": "Search on Amazon",
+   "edition": "B0C3L7W5SC",
+   "label": "Amazon",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=A%20Conversation%20Between%20A%20Yogi%20%26%20Artificial%20Intelligence%20Are%20aliens%20already%20living%20on%20Earth%3F%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0C3L7W5SC"
   },
   {
    "work": "a-conversation-between-a-yogi-and-artificial-intelligence-about-god-satan-and-technology",
    "title": "A Conversation between a Yogi and Artificial Intelligence about God, Satan & Technology",
-   "edition": "ed1",
-   "label": "Search on Amazon",
+   "edition": "B0C3KW4PMR",
+   "label": "Amazon",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=A%20Conversation%20between%20a%20Yogi%20and%20Artificial%20Intelligence%20about%20God%2C%20Satan%20%26%20Technology%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0C3KW4PMR"
   },
   {
-   "work": "siddhis-the-non-locality-of-consciousness",
-   "title": "Siddhis: The Non-Locality of Consciousness",
-   "edition": "ed1",
-   "label": "Search on Amazon",
+   "work": "the-physics-of-siddhis",
+   "title": "The Physics of Siddhis",
+   "edition": "B0H84DPBZK",
+   "label": "Amazon (Audible)",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Siddhis%3A%20The%20Non-Locality%20of%20Consciousness%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0H84DPBZK"
+  },
+  {
+   "work": "siddhis-tsp-ravshiva",
+   "title": "Siddhis",
+   "edition": "B0H8M6XGB3",
+   "label": "Amazon (Audible)",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H8M6XGB3"
   },
   {
    "work": "harry-potter-and-the-philosophers-stone",
@@ -789,34 +957,458 @@
   {
    "work": "the-apocalypse-of-adam",
    "title": "The Apocalypse of Adam",
-   "edition": "ed2",
-   "label": "Search on Amazon",
+   "edition": "B0DP5YYR9N",
+   "label": "Amazon",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=The%20Apocalypse%20of%20Adam%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0DP5YYR9N"
+  },
+  {
+   "work": "the-apocalypse-of-adam",
+   "title": "The Apocalypse of Adam",
+   "edition": "ed2",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C9S88JPC"
+  },
+  {
+   "work": "the-apocalypse-of-adam",
+   "title": "The Apocalypse of Adam",
+   "edition": "B0C9YXQNPF",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C9YXQNPF"
+  },
+  {
+   "work": "the-apocalypse-of-adam",
+   "title": "Das Erscheinen Adams",
+   "edition": "B0CVW787KP",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0CVW787KP"
+  },
+  {
+   "work": "the-apocalypse-of-adam",
+   "title": "Datguddiad Adda",
+   "edition": "B0DRFBYZGN",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0DRFBYZGN"
+  },
+  {
+   "work": "the-apocalypse-of-adam",
+   "title": "Datguddiad Adda",
+   "edition": "B0DRFD3VYC",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0DRFD3VYC"
+  },
+  {
+   "work": "the-apocalypse-of-adam",
+   "title": "Datguddiad Adda",
+   "edition": "B0DR7FGXGT",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0DR7FGXGT"
+  },
+  {
+   "work": "the-apocalypse-of-adam",
+   "title": "De verschijning van Adam",
+   "edition": "B0DQWL2PNS",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0DQWL2PNS"
+  },
+  {
+   "work": "the-apocalypse-of-adam",
+   "title": "De verschijning van Adam",
+   "edition": "B0DR2LSYBL",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0DR2LSYBL"
+  },
+  {
+   "work": "the-apocalypse-of-adam",
+   "title": "De verschijning van Adam",
+   "edition": "B0CVW83LGY",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0CVW83LGY"
+  },
+  {
+   "work": "the-apocalypse-of-adam",
+   "title": "EL APOCALIPSIS DE ADÁN",
+   "edition": "B0CVVHH3J2",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0CVVHH3J2"
+  },
+  {
+   "work": "the-apocalypse-of-adam",
+   "title": "EL APOCALIPSIS DE ADÁN",
+   "edition": "B0CVVFSVKT",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0CVVFSVKT"
+  },
+  {
+   "work": "the-apocalypse-of-adam",
+   "title": "تلقى آدم الوحي الإلهي أو الرؤى النبوية للأحداث المستقبلية. من خلال هذه الرؤية يمكنك الحصول على نظرة ثاقبة تتكشف الأحداث الكونية والتاريخية.",
+   "edition": "B0CVW6HPZ7",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0CVW6HPZ7"
+  },
+  {
+   "work": "the-apocalypse-of-adam",
+   "title": "आदम का सर्वनाश",
+   "edition": "B0H1KPFZS6",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H1KPFZS6"
+  },
+  {
+   "work": "the-apocalypse-of-adam",
+   "title": "एडम का सर्वनाश",
+   "edition": "B0DR69Q4T4",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0DR69Q4T4"
+  },
+  {
+   "work": "the-apocalypse-of-adam",
+   "title": "ஆதாமின் வெளிப்பாடு",
+   "edition": "B0DR7FXC4K",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0DR7FXC4K"
+  },
+  {
+   "work": "the-apocalypse-of-adam",
+   "title": "亞當的啟示錄",
+   "edition": "B0DR69B37P",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0DR69B37P"
   },
   {
    "work": "gayatri-mantra",
    "title": "Gayatri Mantra",
    "edition": "ed2",
-   "label": "Search on Amazon",
+   "label": "Amazon",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Gayatri%20Mantra%20Light%20of%20Divine%20Intelligence%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0F9PKY776"
   },
   {
    "work": "kebra-nagast",
    "title": "Kebra Nagast",
    "edition": "ed1",
-   "label": "Search on Amazon",
+   "label": "Amazon",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Kebra%20Nagast%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0FD7JXKGB"
+  },
+  {
+   "work": "kebra-nagast",
+   "title": "Kebra Nagast",
+   "edition": "ed2",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0FD4CFRDF"
+  },
+  {
+   "work": "weapons-of-the-gods",
+   "title": "Weapons of the Gods",
+   "edition": "B0FCS3L34S",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0FCS3L34S"
+  },
+  {
+   "work": "invoke-the-fierce",
+   "title": "Invocar al Feroz",
+   "edition": "ed2",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0F9WVXM9T"
+  },
+  {
+   "work": "lakshmi-gayatri",
+   "title": "Lakshmi Gayatri",
+   "edition": "B0DBDLXWJW",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0DBDLXWJW"
+  },
+  {
+   "work": "om-namah-shivaya",
+   "title": "Om Namah Shivaya",
+   "edition": "ed1",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0F9T23TX4"
+  },
+  {
+   "work": "om-namah-shivaya",
+   "title": "Om Namah Shivaya",
+   "edition": "B0F9TWY17M",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0F9TWY17M"
+  },
+  {
+   "work": "om-namah-shivaya",
+   "title": "Om Namah Shivaya",
+   "edition": "ed3",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0F9SXV16N"
+  },
+  {
+   "work": "om-namah-shivaya",
+   "title": "Om Namah Shivaya",
+   "edition": "B0H8MDS8VR",
+   "label": "Amazon (Audible)",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H8MDS8VR"
+  },
+  {
+   "work": "maa-kali-mantras-and-instructions",
+   "title": "Maa Kali Mantras und Anweisungen",
+   "edition": "B0F4B7712F",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0F4B7712F"
+  },
+  {
+   "work": "maa-kali-mantras-and-instructions",
+   "title": "Mantras de Maa Kali e instrucciones",
+   "edition": "B0F4B4W29W",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0F4B4W29W"
+  },
+  {
+   "work": "siddhis",
+   "title": "Siddhis",
+   "edition": "B0F3JY2YC8",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0F3JY2YC8"
+  },
+  {
+   "work": "siddhis",
+   "title": "Siddhis",
+   "edition": "B0F3JYXVBJ",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0F3JYXVBJ"
+  },
+  {
+   "work": "siddhis",
+   "title": "Siddhis",
+   "edition": "ed1",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0F3J5KXNK"
+  },
+  {
+   "work": "the-gospel-of-magdalene",
+   "title": "The Gospel of Magdalene",
+   "edition": "B0F2Z9JJ3X",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0F2Z9JJ3X"
+  },
+  {
+   "work": "the-gospel-of-magdalene",
+   "title": "The Gospel of Magdalene",
+   "edition": "B0F2YH6ZYM",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0F2YH6ZYM"
   },
   {
    "work": "the-gospel-of-magdalene",
    "title": "The Gospel of Magdalene",
    "edition": "ed1",
-   "label": "Search on Amazon",
+   "label": "Amazon",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=The%20Gospel%20of%20Magdalene%20The%20Womb%20and%20the%20Word%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0F2NTNFGG"
+  },
+  {
+   "work": "the-gospel-of-magdalene",
+   "title": "The Gospel of Magdalene",
+   "edition": "B0H8M6NYRK",
+   "label": "Amazon (Audible)",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H8M6NYRK"
+  },
+  {
+   "work": "mo-pai-exposed",
+   "title": "Mo Pai Exposed",
+   "edition": "9798243193894",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0GFVWMR9B"
+  },
+  {
+   "work": "mo-pai-exposed",
+   "title": "Mo Pai Exposed",
+   "edition": "9798243193078",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/Mo-Pai-Exposed-Community-Technology/dp/B0GFW4H6T2"
+  },
+  {
+   "work": "mo-pai-exposed",
+   "title": "Mo Pai Exposed",
+   "edition": "B0GFQ63JSF",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0GFQ63JSF"
+  },
+  {
+   "work": "mo-pai-the-destructive-and-healing-force-within",
+   "title": "Mo Pai: The Destructive and Healing Force Within",
+   "edition": "B0GFWBTZHL",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0GFWBTZHL"
+  },
+  {
+   "work": "mo-pai-the-destructive-and-healing-force-within",
+   "title": "Mo Pai: The Destructive and Healing Force Within",
+   "edition": "9798243200189",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/Pai-Destructive-Meditation-Discipline-Technology/dp/B0GFW8DJHW"
+  },
+  {
+   "work": "mo-pai-the-destructive-and-healing-force-within",
+   "title": "Mo Pai: The Destructive and Healing Force Within",
+   "edition": "B0GFTC2YTM",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0GFTC2YTM"
+  },
+  {
+   "work": "mo-pai-the-destructive-and-healing-force-within",
+   "title": "Mo Pai",
+   "edition": "B0GZ7XWJT6",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0GZ7XWJT6"
+  },
+  {
+   "work": "mo-pai-the-destructive-and-healing-force-within",
+   "title": "Mo Pai",
+   "edition": "B0GZ7Z7NNC",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0GZ7Z7NNC"
+  },
+  {
+   "work": "mo-pai-the-destructive-and-healing-force-within",
+   "title": "Mo Pai",
+   "edition": "ed2",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0GZ6ZGCYY"
+  },
+  {
+   "work": "mo-pai-the-destructive-and-healing-force-within",
+   "title": "Mo Pai",
+   "edition": "B0H8MG1JQ4",
+   "label": "Amazon (Audible)",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H8MG1JQ4"
+  },
+  {
+   "work": "mo-pai-the-destructive-and-healing-force-within",
+   "title": "Mo Pai",
+   "edition": "B0GZ9LSHT9",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0GZ9LSHT9"
+  },
+  {
+   "work": "mo-pai-the-destructive-and-healing-force-within",
+   "title": "Mo Pai",
+   "edition": "B0GZ8JS1TT",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0GZ8JS1TT"
+  },
+  {
+   "work": "mo-pai-the-destructive-and-healing-force-within",
+   "title": "Mo Pai",
+   "edition": "B0GZ71SMKH",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0GZ71SMKH"
+  },
+  {
+   "work": "mo-pai-the-destructive-and-healing-force-within",
+   "title": "Mo Pai",
+   "edition": "B0GZ34X6X7",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0GZ34X6X7"
+  },
+  {
+   "work": "mo-pai-the-destructive-and-healing-force-within",
+   "title": "Mo Pai",
+   "edition": "B0GYZLZW9L",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0GYZLZW9L"
+  },
+  {
+   "work": "mo-pai-the-destructive-and-healing-force-within",
+   "title": "Mo Pai",
+   "edition": "ed4",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0GYJ7P9QG"
+  },
+  {
+   "work": "mo-pai-the-destructive-and-healing-force-within",
+   "title": "Mo Pai",
+   "edition": "B0H8M7Z9XK",
+   "label": "Amazon (Audible)",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H8M7Z9XK"
+  },
+  {
+   "work": "mo-pai-the-destructive-and-healing-force-within",
+   "title": "मो पाई",
+   "edition": "B0H1L2FDQH",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H1L2FDQH"
+  },
+  {
+   "work": "mo-pai-the-destructive-and-healing-force-within",
+   "title": "मो पाई",
+   "edition": "B0H8MHZPR5",
+   "label": "Amazon (Audible)",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H8MHZPR5"
+  },
+  {
+   "work": "energy-unleashed",
+   "title": "Energy Unleashed",
+   "edition": "B0F2B2CTWH",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0F2B2CTWH"
+  },
+  {
+   "work": "energy-unleashed",
+   "title": "Energy Unleashed",
+   "edition": "9798315272588",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/Energy-Unleashed-Hidden-Superpowers-Buddhist/dp/B0F29FBNF3"
   },
   {
    "work": "make-yourself-irresistibly-attractive-with-the-kleem-mantra-kamdev-mantra-and-kama-sutra",
@@ -827,156 +1419,2292 @@
    "url": "https://www.amazon.es/irresistiblemente-atractivo-mantra-Forbidden-Mantra-ebook/dp/B0CW19ZHGX"
   },
   {
-   "work": "gnostic-gospels-and-the-hidden-christ",
-   "title": "Gnostic Gospels and the Hidden Christ",
-   "edition": "ed1",
-   "label": "Search on Amazon",
+   "work": "awakening-the-sacred-serpent",
+   "title": "Awakening the Sacred Serpent",
+   "edition": "B0C6VYCGKL",
+   "label": "Amazon",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Gnostic%20Gospels%20and%20the%20Hidden%20Christ%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0C6VYCGKL"
+  },
+  {
+   "work": "awakening-the-sacred-serpent",
+   "title": "Awakening the Sacred Serpent",
+   "edition": "B0C6VTZMGK",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C6VTZMGK"
+  },
+  {
+   "work": "awakening-the-sacred-serpent",
+   "title": "Awakening the Sacred Serpent",
+   "edition": "B0C6V1YBK5",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C6V1YBK5"
+  },
+  {
+   "work": "breathing-with-ancient-wisdom",
+   "title": "Breathing with Ancient Wisdom",
+   "edition": "B0C5YYNZ4B",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C5YYNZ4B"
+  },
+  {
+   "work": "breathing-with-ancient-wisdom",
+   "title": "Breathing with Ancient Wisdom",
+   "edition": "B0C63YPYKR",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C63YPYKR"
+  },
+  {
+   "work": "breathing-with-ancient-wisdom",
+   "title": "Breathing with Ancient Wisdom",
+   "edition": "B0C5Z2JQSX",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C5Z2JQSX"
+  },
+  {
+   "work": "creation-and-connection",
+   "title": "Creation and Connection",
+   "edition": "B0C5P55W6W",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C5P55W6W"
+  },
+  {
+   "work": "creation-and-connection",
+   "title": "Creation and Connection",
+   "edition": "B0C5PGF3NT",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C5PGF3NT"
+  },
+  {
+   "work": "creation-and-connection",
+   "title": "Creation and Connection",
+   "edition": "B0C5TZHPQY",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C5TZHPQY"
+  },
+  {
+   "work": "creation-and-connection",
+   "title": "Creation and Connection",
+   "edition": "B0GS42KHPQ",
+   "label": "Amazon (Audible)",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0GS42KHPQ"
+  },
+  {
+   "work": "creation-and-connection",
+   "title": "Creación y conexión",
+   "edition": "B0CW32CNX7",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0CW32CNX7"
+  },
+  {
+   "work": "creation-and-connection",
+   "title": "Creación y conexión",
+   "edition": "B0CW23C6LZ",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0CW23C6LZ"
+  },
+  {
+   "work": "creation-and-connection",
+   "title": "Schepping en verbinding",
+   "edition": "B0CW1NZVTJ",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0CW1NZVTJ"
+  },
+  {
+   "work": "creation-and-connection",
+   "title": "Schepping en verbinding",
+   "edition": "B0CVZVP7WP",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0CVZVP7WP"
+  },
+  {
+   "work": "creation-and-connection",
+   "title": "सृजन और संबंध",
+   "edition": "B0CW1J4DW3",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0CW1J4DW3"
+  },
+  {
+   "work": "creation-and-connection",
+   "title": "創造與連結",
+   "edition": "B0CW24RPXP",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0CW24RPXP"
+  },
+  {
+   "work": "jewel-of-the-lotus",
+   "title": "Jewel of the Lotus",
+   "edition": "B0DPV3YKSX",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0DPV3YKSX"
+  },
+  {
+   "work": "jewel-of-the-lotus",
+   "title": "Jewel of the Lotus",
+   "edition": "B0DPV2NL45",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0DPV2NL45"
+  },
+  {
+   "work": "jewel-of-the-lotus",
+   "title": "Jewel of the Lotus",
+   "edition": "B0CWH8JXXJ",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0CWH8JXXJ"
+  },
+  {
+   "work": "jewel-of-the-lotus",
+   "title": "La Joya del Loto",
+   "edition": "B0DPV3QR1T",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0DPV3QR1T"
+  },
+  {
+   "work": "jewel-of-the-lotus",
+   "title": "La Joya del Loto",
+   "edition": "B0DPV1ZC4C",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0DPV1ZC4C"
+  },
+  {
+   "work": "jewel-of-the-lotus",
+   "title": "La Joya del Loto",
+   "edition": "B0CWF8X555",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0CWF8X555"
+  },
+  {
+   "work": "jewel-of-the-lotus",
+   "title": "La Joya del Loto",
+   "edition": "B0H85K6MJP",
+   "label": "Amazon (Audible)",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H85K6MJP"
+  },
+  {
+   "work": "jewel-of-the-lotus",
+   "title": "कमल का गहना",
+   "edition": "B0CXFC7HFY",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0CXFC7HFY"
   },
   {
    "work": "lost-wisdom",
    "title": "Lost Wisdom",
-   "edition": "ed1",
-   "label": "Search on Amazon",
+   "edition": "B0C481QQTH",
+   "label": "Amazon",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Lost%20Wisdom%20The%20Mysterious%20Gospel%20of%20Thomas%20and%20the%20Secrets%20of%20Early%20Christianity%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0C481QQTH"
+  },
+  {
+   "work": "lost-wisdom",
+   "title": "Lost Wisdom",
+   "edition": "B0C47WK7FB",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C47WK7FB"
+  },
+  {
+   "work": "lost-wisdom",
+   "title": "Lost Wisdom",
+   "edition": "B0C4K2JQCR",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C4K2JQCR"
+  },
+  {
+   "work": "mantra-magic",
+   "title": "Mantra Magic",
+   "edition": "B0BZF4Z4SC",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0BZF4Z4SC"
+  },
+  {
+   "work": "mantra-magic",
+   "title": "Mantra Magic",
+   "edition": "B0BZGQKHPD",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0BZGQKHPD"
   },
   {
    "work": "revelations-of-mary",
    "title": "Revelations of Mary",
-   "edition": "ed1",
-   "label": "Search on Amazon",
+   "edition": "B0C63M22HG",
+   "label": "Amazon",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Revelations%20of%20Mary%20A%20Journey%20to%20Spiritual%20Enlightenment%20and%20Liberation%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0C63M22HG"
   },
   {
-   "work": "quotes-of-yeshua-the-christ",
-   "title": "Quotes of Yeshua The Christ",
-   "edition": "ed1",
-   "label": "Search on Amazon",
+   "work": "revelations-of-mary",
+   "title": "Revelations of Mary",
+   "edition": "B0C6448LR2",
+   "label": "Amazon",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Quotes%20of%20Yeshua%20The%20Christ%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0C6448LR2"
   },
   {
-   "work": "the-acts-of-peter-and-the-twelve-apostles",
-   "title": "The Acts of Peter and the Twelve Apostles",
-   "edition": "ed1",
-   "label": "Search on Amazon",
+   "work": "revelations-of-mary",
+   "title": "Revelations of Mary",
+   "edition": "B0C4K6G6FN",
+   "label": "Amazon",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=The%20Acts%20of%20Peter%20and%20the%20Twelve%20Apostles%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0C4K6G6FN"
   },
   {
-   "work": "the-apocalypse-of-eve",
-   "title": "The Apocalypse of Eve",
-   "edition": "ed1",
-   "label": "Search on Amazon",
+   "work": "the-hanuman-mantra",
+   "title": "The Hanuman Mantra",
+   "edition": "B0C63RJ7HW",
+   "label": "Amazon",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=The%20Apocalypse%20of%20Eve%20Forbidden%20Feminine%20Wisdom%20from%20Ancient%20Gnostic%20Texts%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0C63RJ7HW"
   },
   {
-   "work": "the-apocalypse-of-peter",
-   "title": "The Apocalypse of Peter",
-   "edition": "ed1",
-   "label": "Search on Amazon",
+   "work": "the-hanuman-mantra",
+   "title": "The Hanuman Mantra",
+   "edition": "B0BZFRQXGC",
+   "label": "Amazon",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=The%20Apocalypse%20of%20Peter%20Visions%20of%20Judgment%2C%20Mercy%2C%20and%20the%20Forgotten%20Afterlife%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0BZFRQXGC"
   },
   {
-   "work": "the-apocryphon-of-john",
-   "title": "The Apocryphon of John",
-   "edition": "ed1",
-   "label": "Search on Amazon",
+   "work": "the-hanuman-mantra",
+   "title": "The Hanuman Mantra",
+   "edition": "B0BZLXMD41",
+   "label": "Amazon",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=The%20Apocryphon%20of%20John%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0BZLXMD41"
   },
   {
-   "work": "the-apocrypha-the-book-of-esdras",
-   "title": "The Apocrypha - The Book of Esdras",
-   "edition": "ed1",
-   "label": "Search on Amazon",
+   "work": "the-maha-mrityunjaya-mantra",
+   "title": "The Maha Mrityunjaya Mantra",
+   "edition": "B0BZF9RGDS",
+   "label": "Amazon",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=The%20Apocrypha%20-%20The%20Book%20of%20Esdras%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0BZF9RGDS"
   },
   {
-   "work": "the-apocrypha-additions-to-esther",
-   "title": "The Apocrypha - Additions to Esther",
-   "edition": "ed1",
-   "label": "Search on Amazon",
+   "work": "the-power-of-sound",
+   "title": "The Power of Sound",
+   "edition": "B0C63J2XBM",
+   "label": "Amazon",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=The%20Apocrypha%20-%20Additions%20to%20Esther%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0C63J2XBM"
   },
   {
-   "work": "from-the-apocrypha-the-book-of-maccabees",
-   "title": "From the Apocrypha - The Book of Maccabees",
-   "edition": "ed1",
-   "label": "Search on Amazon",
+   "work": "the-power-of-sound",
+   "title": "The Power of Sound",
+   "edition": "B0BZFJML7W",
+   "label": "Amazon",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=From%20the%20Apocrypha%20-%20The%20Book%20of%20Maccabees%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0BZFJML7W"
   },
   {
-   "work": "apocalypse-of-adam-part-ii",
-   "title": "Apocalypse of Adam: Part II",
-   "edition": "ed1",
-   "label": "Search on Amazon",
+   "work": "unlocking-enlightenment",
+   "title": "Desbloqueando la iluminación",
+   "edition": "B0CZHHPZ1M",
+   "label": "Amazon",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Apocalypse%20of%20Adam%3A%20Part%20II%20The%20War%20of%20the%20Archons%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0CZHHPZ1M"
   },
   {
-   "work": "archons-unveiled",
-   "title": "Archons Unveiled",
-   "edition": "ed1",
-   "label": "Search on Amazon",
+   "work": "unlocking-enlightenment",
+   "title": "अनलॉकिंग एनलाइटनमेंट",
+   "edition": "B0CZ4SRQW5",
+   "label": "Amazon",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Archons%20Unveiled%20The%20Non-Human%20Manipulation%20of%20Human%20Consciousness%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0CZ4SRQW5"
+  },
+  {
+   "work": "yoga-for-every-woman",
+   "title": "Yoga for Every Woman",
+   "edition": "B0C2SPYYQX",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C2SPYYQX"
+  },
+  {
+   "work": "a-comprehensive-guide-on-the-avalokitesvara-mantra",
+   "title": "A Comprehensive Guide On The Avalokitesvara Mantra",
+   "edition": "B0DPR77SFP",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0DPR77SFP"
+  },
+  {
+   "work": "a-comprehensive-guide-on-the-avalokitesvara-mantra",
+   "title": "A Comprehensive Guide On The Avalokitesvara Mantra",
+   "edition": "B0C1J7F6SC",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C1J7F6SC"
+  },
+  {
+   "work": "a-comprehensive-guide-on-the-avalokitesvara-mantra",
+   "title": "Una guía completa sobre el mantra Avalokitesvara",
+   "edition": "B0DPQ34N5D",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0DPQ34N5D"
+  },
+  {
+   "work": "a-comprehensive-guide-on-the-avalokitesvara-mantra",
+   "title": "Una guía completa sobre el mantra Avalokitesvara",
+   "edition": "B0DPRQYXTS",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0DPRQYXTS"
+  },
+  {
+   "work": "a-comprehensive-guide-on-the-avalokitesvara-mantra",
+   "title": "Una guía completa sobre el mantra Avalokitesvara",
+   "edition": "B0CXMPXWXR",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0CXMPXWXR"
+  },
+  {
+   "work": "a-comprehensive-guide-on-the-avalokitesvara-mantra",
+   "title": "Una guía completa sobre el mantra Avalokitesvara",
+   "edition": "B0H8J8W9HW",
+   "label": "Amazon (Audible)",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H8J8W9HW"
+  },
+  {
+   "work": "apocalypse-of-adam",
+   "title": "Apocalypse of Adam",
+   "edition": "B0GWWMZDS6",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0GWWMZDS6"
+  },
+  {
+   "work": "apocalypse-of-adam",
+   "title": "Apocalypse of Adam",
+   "edition": "B0GWVMZQ8S",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0GWVMZQ8S"
+  },
+  {
+   "work": "apocalypse-of-adam",
+   "title": "Apocalypse of Adam",
+   "edition": "B0GWS9VC82",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0GWS9VC82"
+  },
+  {
+   "work": "apocalypse-of-adam",
+   "title": "Apocalypse of Adam",
+   "edition": "B0H671G2S7",
+   "label": "Amazon (Audible)",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H671G2S7"
+  },
+  {
+   "work": "apocalypse-of-adam",
+   "title": "आदम का सर्वनाश",
+   "edition": "B0GYQ7MYRJ",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0GYQ7MYRJ"
+  },
+  {
+   "work": "archons-unveiled-ii",
+   "title": "Archons Unveiled II",
+   "edition": "B0F42VSSK9",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0F42VSSK9"
   },
   {
    "work": "archons-unveiled-ii",
    "title": "Archons Unveiled II",
    "edition": "ed1",
-   "label": "Search on Amazon",
+   "label": "Amazon",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Archons%20Unveiled%20II%20Multiphasic%20Precognition%20of%20Reality%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0F3XRW9MD"
+  },
+  {
+   "work": "archons-unveiled-iii",
+   "title": "Archons Unveiled III",
+   "edition": "B0F44G66WZ",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0F44G66WZ"
   },
   {
    "work": "archons-unveiled-iii",
    "title": "Archons Unveiled III",
    "edition": "ed1",
-   "label": "Search on Amazon",
+   "label": "Amazon",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Archons%20Unveiled%20III%20The%20Code%20of%20Immortality%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0F3ZLS922"
+  },
+  {
+   "work": "archons-unveiled-part-4",
+   "title": "Archons Unveiled: Part 4",
+   "edition": "B0F4JZL1CM",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0F4JZL1CM"
   },
   {
    "work": "archons-unveiled-part-4",
    "title": "Archons Unveiled: Part 4",
    "edition": "ed1",
-   "label": "Search on Amazon",
+   "label": "Amazon",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Archons%20Unveiled%3A%20Part%204%20The%20Transformation%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0DMTWBMR4"
   },
   {
-   "work": "enlightened-silly-comic-strips",
-   "title": "Enlightened Silly Comic Strips",
+   "work": "archons-unveiled",
+   "title": "Archons Unveiled",
    "edition": "ed1",
-   "label": "Search on Amazon",
+   "label": "Amazon",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Enlightened%20Silly%20Comic%20Strips%20Twilight%20Zone%20meets%20Looney%20Toons%20Forbidden%20Mantra%20Press&i=stripbooks"
-  },
-  {
-   "work": "enlightened-silly-comics",
-   "title": "Enlightened Silly Comics",
-   "edition": "ed1",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Enlightened%20Silly%20Comics%20Art%20%26%20Humor%20with%20Insight%20%7C%20Social%20Satire%20and%20Political%20Humor%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0F2ZSLW5H"
   },
   {
    "work": "benny-the-brave-and-the-shimmering-night",
    "title": "Benny the Brave and the Shimmering Night",
-   "edition": "ed1",
-   "label": "Search on Amazon",
+   "edition": "B0G5BPZX47",
+   "label": "Amazon",
    "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Benny%20the%20Brave%20and%20the%20Shimmering%20Night%20A%20Heartwarming%20Bedtime%20Adventure%20Picture%20Book%20for%20Children%20Ages%203-8%20Forbidden%20Mantra%20Press&i=stripbooks"
+   "url": "https://www.amazon.com/dp/B0G5BPZX47"
+  },
+  {
+   "work": "beyond-sex",
+   "title": "Beyond Sex",
+   "edition": "B0DRGLK449",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0DRGLK449"
+  },
+  {
+   "work": "beyond-sex",
+   "title": "Beyond Sex",
+   "edition": "B0DRD64TNV",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0DRD64TNV"
+  },
+  {
+   "work": "beyond-sex",
+   "title": "Beyond Sex",
+   "edition": "B0DQYRJF34",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0DQYRJF34"
+  },
+  {
+   "work": "beyond-sex",
+   "title": "Beyond Sex",
+   "edition": "B0CFZC75KS",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0CFZC75KS"
+  },
+  {
+   "work": "beyond-sex",
+   "title": "Beyond Sex",
+   "edition": "B0CG4R26KH",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0CG4R26KH"
+  },
+  {
+   "work": "beyond-sex",
+   "title": "Beyond Sex",
+   "edition": "B0CTHRB4QZ",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0CTHRB4QZ"
+  },
+  {
+   "work": "beyond-sex",
+   "title": "Más allá del sexo",
+   "edition": "B0DPZP35BD",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0DPZP35BD"
+  },
+  {
+   "work": "beyond-sex",
+   "title": "Más allá del sexo",
+   "edition": "B0DQY7VFXT",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0DQY7VFXT"
+  },
+  {
+   "work": "beyond-sex",
+   "title": "Más allá del sexo",
+   "edition": "B0CW6HWK1B",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0CW6HWK1B"
+  },
+  {
+   "work": "beyond-sex",
+   "title": "超越性",
+   "edition": "B0CTHQKLFT",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0CTHQKLFT"
+  },
+  {
+   "work": "beyond-sex-exploring-the-spiritual-dimensions-of-tantra-second-catalogue-record",
+   "title": "Beyond Sex: Exploring the Spiritual Dimensions of Tantra (second catalogue record)",
+   "edition": "B0C9SQHH9J",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C9SQHH9J"
+  },
+  {
+   "work": "beyond-sex-exploring-the-spiritual-dimensions-of-tantra-second-catalogue-record",
+   "title": "Beyond Sex: Exploring the Spiritual Dimensions of Tantra (second catalogue record)",
+   "edition": "B0C9RYT7HG",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C9RYT7HG"
+  },
+  {
+   "work": "chakra-mastery",
+   "title": "Chakra Mastery",
+   "edition": "B0CFZGX8QN",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0CFZGX8QN"
+  },
+  {
+   "work": "edenic-origins",
+   "title": "Edenic Origins",
+   "edition": "B0F3V6NGG4",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0F3V6NGG4"
+  },
+  {
+   "work": "edenic-origins",
+   "title": "Edenic Origins",
+   "edition": "B0F3W11JD5",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0F3W11JD5"
+  },
+  {
+   "work": "edenic-origins",
+   "title": "Edenic Origins",
+   "edition": "B0F376B2M6",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0F376B2M6"
+  },
+  {
+   "work": "edenic-origins",
+   "title": "Orígenes edénicos",
+   "edition": "B0F3VX9X9M",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0F3VX9X9M"
+  },
+  {
+   "work": "edenic-origins",
+   "title": "Orígenes edénicos",
+   "edition": "B0F2ZKR53Z",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0F2ZKR53Z"
+  },
+  {
+   "work": "enlightened-silly-comic-strips",
+   "title": "Enlightened Silly Comic Strips",
+   "edition": "B06XNLT8JL",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B06XNLT8JL"
+  },
+  {
+   "work": "enlightened-silly-comics",
+   "title": "Enlightened Silly Comics",
+   "edition": "B06XHLQZQR",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B06XHLQZQR"
+  },
+  {
+   "work": "from-the-apocrypha-the-book-of-macabees",
+   "title": "FROM THE APOCRYPHA - The Book of Macabees",
+   "edition": "B0BZDM2QYX",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0BZDM2QYX"
+  },
+  {
+   "work": "gnostic-gospels-and-the-hidden-christ",
+   "title": "Gnostic Gospels and the Hidden Christ",
+   "edition": "B0H4678MRC",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H4678MRC"
+  },
+  {
+   "work": "gnostic-gospels-and-the-hidden-christ",
+   "title": "Gnostic Gospels and the Hidden Christ",
+   "edition": "B0H465SK2J",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H465SK2J"
+  },
+  {
+   "work": "gnostic-gospels-and-the-hidden-christ",
+   "title": "Gnostic Gospels and the Hidden Christ",
+   "edition": "B0H444WGPY",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H444WGPY"
+  },
+  {
+   "work": "gnostic-gospels-and-the-hidden-christ",
+   "title": "Gnostic Gospels and the Hidden Christ",
+   "edition": "B0H85B87X8",
+   "label": "Amazon (Audible)",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H85B87X8"
+  },
+  {
+   "work": "gnostic-gospels-and-the-hidden-christ",
+   "title": "ग्नोस्टिक सुसमाचार और छिपा हुआ मसीह",
+   "edition": "B0H44V6V4S",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H44V6V4S"
+  },
+  {
+   "work": "how-to-stop-overthinking-at-night",
+   "title": "How to Stop Overthinking at Night",
+   "edition": "B0GBVRTSSR",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0GBVRTSSR"
+  },
+  {
+   "work": "how-to-stop-overthinking-right-now",
+   "title": "How to Stop Overthinking Right Now",
+   "edition": "B0G9C2PXJS",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0G9C2PXJS"
+  },
+  {
+   "work": "jinn-dark-angels-shapeshifters-and-ghouls",
+   "title": "JINN - Dark Angels, Shapeshifters, and Ghouls",
+   "edition": "B0BY758969",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0BY758969"
+  },
+  {
+   "work": "kamdev-mantra-for-making-yourself-attractive",
+   "title": "Kamdev Mantra for making yourself attractive",
+   "edition": "B0C63P69BT",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C63P69BT"
+  },
+  {
+   "work": "kamdev-mantra-for-making-yourself-attractive",
+   "title": "Kamdev Mantra for making yourself attractive",
+   "edition": "B0BZTKCYRN",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0BZTKCYRN"
+  },
+  {
+   "work": "lakshmi-gayatri-mantra",
+   "title": "Lakshmi Gayatri Mantra",
+   "edition": "B0CQRSQBFC",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0CQRSQBFC"
+  },
+  {
+   "work": "los-pensamientos-son-mantras",
+   "title": "LOS PENSAMIENTOS SON MANTRAS",
+   "edition": "B0FFT31L46",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0FFT31L46"
+  },
+  {
+   "work": "los-pensamientos-son-mantras",
+   "title": "LOS PENSAMIENTOS SON MANTRAS",
+   "edition": "B0FFP3C6S1",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0FFP3C6S1"
+  },
+  {
+   "work": "make-yourself-irresistibly-attractive-with-the-kleem-mantra",
+   "title": "Make Yourself Irresistibly Attractive with the Kleem Mantra",
+   "edition": "B0BZF9RHRY",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0BZF9RHRY"
+  },
+  {
+   "work": "make-yourself-irresistibly-attractive-with-the-kleem-mantra",
+   "title": "Make Yourself Irresistibly Attractive with the Kleem Mantra",
+   "edition": "B0BZFCW9HT",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0BZFCW9HT"
+  },
+  {
+   "work": "make-yourself-irresistibly-attractive-with-the-kleem-mantra",
+   "title": "Make Yourself Irresistibly Attractive with the Kleem Mantra",
+   "edition": "B0BY67Z5QR",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0BY67Z5QR"
+  },
+  {
+   "work": "make-yourself-irresistibly-attractive-with-the-kleem-mantra",
+   "title": "Hazte irresistiblemente atractivo con el mantra Kleem",
+   "edition": "B0CW19ZHGX",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0CW19ZHGX"
+  },
+  {
+   "work": "make-yourself-irresistibly-attractive-with-the-kleem-mantra",
+   "title": "Machen Sie sich mit dem Kleem-Mantra unwiderstehlich attraktiv",
+   "edition": "B0DRYZP1HQ",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0DRYZP1HQ"
+  },
+  {
+   "work": "make-yourself-irresistibly-attractive-with-the-kleem-mantra",
+   "title": "Machen Sie sich mit dem Kleem-Mantra unwiderstehlich attraktiv",
+   "edition": "B0DRZSM6X8",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0DRZSM6X8"
+  },
+  {
+   "work": "make-yourself-irresistibly-attractive-with-the-kleem-mantra",
+   "title": "Machen Sie sich mit dem Kleem-Mantra unwiderstehlich attraktiv",
+   "edition": "B0CWJ782FT",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0CWJ782FT"
+  },
+  {
+   "work": "make-yourself-irresistibly-attractive-with-the-kleem-mantra",
+   "title": "Rendez-vous irrésistiblement attirant avec le mantra de Kleem",
+   "edition": "B0DPSPB6FZ",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0DPSPB6FZ"
+  },
+  {
+   "work": "make-yourself-irresistibly-attractive-with-the-kleem-mantra",
+   "title": "Rendez-vous irrésistiblement attirant avec le mantra de Kleem",
+   "edition": "B0DPSJW3PS",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0DPSJW3PS"
+  },
+  {
+   "work": "make-yourself-irresistibly-attractive-with-the-kleem-mantra",
+   "title": "Rendez-vous irrésistiblement attirant avec le mantra de Kleem",
+   "edition": "B0CWKMD1M3",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0CWKMD1M3"
+  },
+  {
+   "work": "mantra-of-vajrayogini",
+   "title": "Mantra of Vajrayogini",
+   "edition": "B0DP5DZCV1",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0DP5DZCV1"
+  },
+  {
+   "work": "mantra-of-vajrayogini",
+   "title": "Mantra of Vajrayogini",
+   "edition": "B0DP59QBL9",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0DP59QBL9"
+  },
+  {
+   "work": "mantra-sound-vibrational-energy",
+   "title": "Mantra Sound Vibrational Energy",
+   "edition": "B0C6W96ZMZ",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C6W96ZMZ"
+  },
+  {
+   "work": "mantra-sound-vibrational-energy",
+   "title": "Mantra Sound Vibrational Energy",
+   "edition": "B0C6VYRBCD",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C6VYRBCD"
+  },
+  {
+   "work": "miracles-of-the-masters-of-yoga",
+   "title": "Miracles of the Masters of Yoga",
+   "edition": "B0F3J35RZF",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0F3J35RZF"
+  },
+  {
+   "work": "miracles-of-the-masters-of-yoga",
+   "title": "Miracles of the Masters of Yoga",
+   "edition": "B0F3L2T7ML",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0F3L2T7ML"
+  },
+  {
+   "work": "miracles-of-the-masters-of-yoga",
+   "title": "Milagros de los Maestros del Yoga",
+   "edition": "B0F3JFZSLG",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0F3JFZSLG"
+  },
+  {
+   "work": "miracles-of-the-masters-of-yoga",
+   "title": "Milagros de los Maestros del Yoga",
+   "edition": "B0F3JNPVD1",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0F3JNPVD1"
+  },
+  {
+   "work": "miracles-of-the-masters-of-yoga",
+   "title": "Milagros de los Maestros del Yoga",
+   "edition": "B0F3G1J1S2",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0F3G1J1S2"
+  },
+  {
+   "work": "mo-pai-and-internal-alchemy",
+   "title": "Mo Pai and Internal Alchemy",
+   "edition": "B0GCHWL6RP",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0GCHWL6RP"
+  },
+  {
+   "work": "mo-pai-and-internal-alchemy",
+   "title": "Mo Pai and Internal Alchemy",
+   "edition": "B0GCJSF7H9",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0GCJSF7H9"
+  },
+  {
+   "work": "mo-pai-and-internal-alchemy",
+   "title": "Mo Pai and Internal Alchemy",
+   "edition": "ed1",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0GCHGT4BX"
+  },
+  {
+   "work": "quotes-of-yeshua-the-christ",
+   "title": "Quotes of Yeshua The Christ",
+   "edition": "B0BXN47ST1",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0BXN47ST1"
+  },
+  {
+   "work": "quotes-of-yeshua-the-christ",
+   "title": "Quotes of Yeshua The Christ",
+   "edition": "B0BXN6QNPM",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0BXN6QNPM"
+  },
+  {
+   "work": "radiate-beauty-from-within",
+   "title": "Radiate Beauty from Within",
+   "edition": "B0C63MDR4J",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C63MDR4J"
+  },
+  {
+   "work": "radiate-beauty-from-within",
+   "title": "Radiate Beauty from Within",
+   "edition": "B0BZFNZ15C",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0BZFNZ15C"
+  },
+  {
+   "work": "radiate-beauty-from-within",
+   "title": "Radiate Beauty from Within",
+   "edition": "B0BZTKVBR6",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0BZTKVBR6"
+  },
+  {
+   "work": "ruqyahs-for-wealth-in-arabic-language",
+   "title": "Ruqyah's for Wealth in Arabic Language",
+   "edition": "B0BY5CCJNV",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0BY5CCJNV"
+  },
+  {
+   "work": "ruqyahs-for-wealth",
+   "title": "Ruqyah’s for Wealth",
+   "edition": "B0BY57NY5C",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0BY57NY5C"
+  },
+  {
+   "work": "sacred-union-in-tantra",
+   "title": "Sacred Union in Tantra",
+   "edition": "B0CFDB36SZ",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0CFDB36SZ"
+  },
+  {
+   "work": "sacred-union-in-tantra",
+   "title": "Sacred Union in Tantra",
+   "edition": "B0CFCK3F1M",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0CFCK3F1M"
+  },
+  {
+   "work": "saraswati-mantra-enhance-intelligence-creativity-and-knowledge",
+   "title": "Saraswati Mantra - Enhance Intelligence, Creativity and Knowledge.",
+   "edition": "B0BZF75Q4D",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0BZF75Q4D"
+  },
+  {
+   "work": "siddhis-tsp-ravshiva",
+   "title": "Siddhis",
+   "edition": "B0GGGGZSXK",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0GGGGZSXK"
+  },
+  {
+   "work": "siddhis-tsp-ravshiva",
+   "title": "Siddhis",
+   "edition": "B0GG9LT922",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0GG9LT922"
+  },
+  {
+   "work": "siddhis-tsp-ravshiva",
+   "title": "Siddhis",
+   "edition": "ed1",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0GFXRQLK6"
+  },
+  {
+   "work": "the-acts-of-peter-and-the-twelve-apostles",
+   "title": "The Acts of Peter and the Twelve Apostles",
+   "edition": "B0C9S56XPZ",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C9S56XPZ"
+  },
+  {
+   "work": "the-acts-of-peter-and-the-twelve-apostles",
+   "title": "The Acts of Peter and the Twelve Apostles",
+   "edition": "B0CCCVQH1R",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0CCCVQH1R"
+  },
+  {
+   "work": "the-acts-of-peter-and-the-twelve-apostles",
+   "title": "The Acts of Peter and the Twelve Apostles",
+   "edition": "B0CB3VJ381",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0CB3VJ381"
+  },
+  {
+   "work": "the-ancient-science-of-kundalini-energy-revealed",
+   "title": "The Ancient Science of Kundalini Energy Revealed",
+   "edition": "B0GZPR2XNS",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0GZPR2XNS"
+  },
+  {
+   "work": "the-ancient-science-of-kundalini-energy-revealed",
+   "title": "The Ancient Science of Kundalini Energy Revealed",
+   "edition": "B0GZQNVXB7",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0GZQNVXB7"
+  },
+  {
+   "work": "the-ancient-science-of-kundalini-energy-revealed",
+   "title": "The Ancient Science of Kundalini Energy Revealed",
+   "edition": "ed1",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0GX31LSRG"
+  },
+  {
+   "work": "the-ancient-science-of-kundalini-energy-revealed",
+   "title": "कुंडलिनी ऊर्जा के प्राचीन विज्ञान का रहस्योद्घाटन",
+   "edition": "B0GZQJ3BS3",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0GZQJ3BS3"
+  },
+  {
+   "work": "the-apocalypse-of-eve",
+   "title": "The Apocalypse of Eve",
+   "edition": "B0GC5KLNTF",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0GC5KLNTF"
+  },
+  {
+   "work": "the-apocalypse-of-eve",
+   "title": "The Apocalypse of Eve",
+   "edition": "B0GC75BPD5",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0GC75BPD5"
+  },
+  {
+   "work": "the-apocalypse-of-eve",
+   "title": "The Apocalypse of Eve",
+   "edition": "ed1",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0GC3HHLVR"
+  },
+  {
+   "work": "the-apocalypse-of-eve",
+   "title": "The Apocalypse of Eve",
+   "edition": "B0H8MR9NCQ",
+   "label": "Amazon (Audible)",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H8MR9NCQ"
+  },
+  {
+   "work": "the-apocalypse-of-peter",
+   "title": "The Apocalypse of Peter",
+   "edition": "B0GF86PXVY",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0GF86PXVY"
+  },
+  {
+   "work": "the-apocalypse-of-peter",
+   "title": "The Apocalypse of Peter",
+   "edition": "B0GF7YYJ3Q",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0GF7YYJ3Q"
+  },
+  {
+   "work": "the-apocalypse-of-peter",
+   "title": "The Apocalypse of Peter",
+   "edition": "ed1",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0GF79PS13"
+  },
+  {
+   "work": "the-apocalypse-of-peter",
+   "title": "The Apocalypse of Peter",
+   "edition": "B0H8MKC8RX",
+   "label": "Amazon (Audible)",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H8MKC8RX"
+  },
+  {
+   "work": "the-apochrypha-the-book-of-esdras",
+   "title": "THE APOCHRYPHA - The Book of Esdras",
+   "edition": "B0BZ6STXZY",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0BZ6STXZY"
+  },
+  {
+   "work": "the-apochrypha-the-book-of-esdras",
+   "title": "THE APOCHRYPHA - The Book of Esdras",
+   "edition": "B0BYYHTQXW",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0BYYHTQXW"
+  },
+  {
+   "work": "the-apochryphon-of-john",
+   "title": "THE APOCHRYPHON OF JOHN",
+   "edition": "B0C6P9QW8G",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C6P9QW8G"
+  },
+  {
+   "work": "the-apochryphon-of-john",
+   "title": "THE APOCHRYPHON OF JOHN",
+   "edition": "B0C6MZVC8N",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C6MZVC8N"
+  },
+  {
+   "work": "the-apocrypha-additions-to-esther",
+   "title": "The Apocrypha - Additions to Esther",
+   "edition": "B0BZF75SFY",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0BZF75SFY"
+  },
+  {
+   "work": "the-apocrypha-additions-to-esther",
+   "title": "The Apocrypha - Additions to Esther",
+   "edition": "B0BZ57W6GT",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0BZ57W6GT"
+  },
+  {
+   "work": "the-book-of-jubilees",
+   "title": "The Book of Jubilees",
+   "edition": "B0F32VS8BC",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0F32VS8BC"
+  },
+  {
+   "work": "the-book-of-jubilees",
+   "title": "The Book of Jubilees",
+   "edition": "B0F32T4P8X",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0F32T4P8X"
+  },
+  {
+   "work": "the-book-of-jubilees",
+   "title": "The Book of Jubilees",
+   "edition": "B0F31M3RWL",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0F31M3RWL"
+  },
+  {
+   "work": "the-book-of-vedic-spells",
+   "title": "The Book of Vedic Spells",
+   "edition": "B0F7R7FJD7",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0F7R7FJD7"
+  },
+  {
+   "work": "the-book-of-vedic-spells",
+   "title": "The Book of Vedic Spells",
+   "edition": "B0F7G31829",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0F7G31829"
+  },
+  {
+   "work": "the-catalyst",
+   "title": "The Catalyst",
+   "edition": "B0F3D9HD71",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0F3D9HD71"
+  },
+  {
+   "work": "the-code-of-immortality",
+   "title": "The Code of Immortality",
+   "edition": "B0C5G9L6GJ",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C5G9L6GJ"
+  },
+  {
+   "work": "the-code-of-immortality",
+   "title": "The Code of Immortality",
+   "edition": "B0C5GJXTP9",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C5GJXTP9"
+  },
+  {
+   "work": "the-code-of-immortality",
+   "title": "The Code of Immortality",
+   "edition": "B0C5JWDVV3",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C5JWDVV3"
+  },
+  {
+   "work": "the-complete-dream-and-conscious-experience-journal-1-year-edition",
+   "title": "The Complete Dream & Conscious Experience Journal (1-Year Edition)",
+   "edition": "B0H1259BYN",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H1259BYN"
+  },
+  {
+   "work": "the-complete-dream-and-conscious-experience-journal-1-year-edition",
+   "title": "The Complete Dream & Conscious Experience Journal (1-Year Edition)",
+   "edition": "B0H14D7THD",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H14D7THD"
+  },
+  {
+   "work": "the-coven-and-the-yogi",
+   "title": "The Coven and The Yogi",
+   "edition": "B0FG134QHD",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0FG134QHD"
+  },
+  {
+   "work": "the-coven-and-the-yogi",
+   "title": "The Coven and The Yogi",
+   "edition": "B0FFYCS763",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0FFYCS763"
+  },
+  {
+   "work": "the-coven-and-the-yogi",
+   "title": "The Coven and The Yogi",
+   "edition": "B0FFM4TJFS",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0FFM4TJFS"
+  },
+  {
+   "work": "the-coven-and-the-yogi-eclipse-of-the-heart-chakra",
+   "title": "The Coven and The Yogi: Eclipse of the Heart Chakra",
+   "edition": "B0FFZPG914",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0FFZPG914"
+  },
+  {
+   "work": "the-coven-and-the-yogi-eclipse-of-the-heart-chakra",
+   "title": "The Coven and The Yogi: Eclipse of the Heart Chakra",
+   "edition": "B0FG172DPD",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0FG172DPD"
+  },
+  {
+   "work": "the-cyber-cupid",
+   "title": "The Cyber Cupid",
+   "edition": "B0BX5PRFLX",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0BX5PRFLX"
+  },
+  {
+   "work": "the-eternal-quest",
+   "title": "The Eternal Quest",
+   "edition": "B0C6BWWT86",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C6BWWT86"
+  },
+  {
+   "work": "the-eternal-quest",
+   "title": "The Eternal Quest",
+   "edition": "B0C6BM1337",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C6BM1337"
+  },
+  {
+   "work": "the-genesis-of-sophia",
+   "title": "The Genesis of Sophia",
+   "edition": "B0F2MNX2Q1",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0F2MNX2Q1"
+  },
+  {
+   "work": "the-genesis-of-sophia",
+   "title": "The Genesis of Sophia",
+   "edition": "B0F2J8XT9Q",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0F2J8XT9Q"
+  },
+  {
+   "work": "the-genesis-of-sophia",
+   "title": "The Genesis of Sophia",
+   "edition": "B0F2GSPKX7",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0F2GSPKX7"
+  },
+  {
+   "work": "the-genesis-of-sophia",
+   "title": "The Genesis of Sophia",
+   "edition": "B0H85GTKMH",
+   "label": "Amazon (Audible)",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H85GTKMH"
+  },
+  {
+   "work": "the-gospel-of-judas",
+   "title": "The Gospel of Judas",
+   "edition": "B0F2G395YR",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0F2G395YR"
+  },
+  {
+   "work": "the-gospel-of-judas",
+   "title": "The Gospel of Judas",
+   "edition": "B0F2G9YRK7",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0F2G9YRK7"
+  },
+  {
+   "work": "the-gospel-of-judas",
+   "title": "The Gospel of Judas",
+   "edition": "B0F2CLDFPX",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0F2CLDFPX"
+  },
+  {
+   "work": "the-gospel-of-philip",
+   "title": "The Gospel of Philip",
+   "edition": "B0C6BT7QH8",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C6BT7QH8"
+  },
+  {
+   "work": "the-gospel-of-philip",
+   "title": "The Gospel of Philip",
+   "edition": "B0C6C6SD92",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C6C6SD92"
+  },
+  {
+   "work": "the-gospel-of-philip",
+   "title": "The Gospel of Philip",
+   "edition": "B0C5TRDBDF",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C5TRDBDF"
+  },
+  {
+   "work": "the-gospel-of-philip",
+   "title": "The Gospel of Philip",
+   "edition": "B0H8MG7YFF",
+   "label": "Amazon (Audible)",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H8MG7YFF"
+  },
+  {
+   "work": "the-gospel-of-thomas",
+   "title": "The Gospel of Thomas",
+   "edition": "B0H2TZGGYQ",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H2TZGGYQ"
+  },
+  {
+   "work": "the-gospel-of-thomas",
+   "title": "The Gospel of Thomas",
+   "edition": "B0H2V4H51G",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H2V4H51G"
+  },
+  {
+   "work": "the-gospel-of-thomas",
+   "title": "The Gospel of Thomas",
+   "edition": "B0GZ8YNRX4",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0GZ8YNRX4"
+  },
+  {
+   "work": "the-gospel-of-thomas",
+   "title": "The Gospel of Thomas",
+   "edition": "B0H8M7GP17",
+   "label": "Amazon (Audible)",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H8M7GP17"
+  },
+  {
+   "work": "the-gospel-of-truth-ancient-wisdom-revealed",
+   "title": "The Gospel of Truth Ancient Wisdom Revealed",
+   "edition": "B0C6BK4WYV",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C6BK4WYV"
+  },
+  {
+   "work": "the-gospel-of-truth-ancient-wisdom-revealed",
+   "title": "The Gospel of Truth Ancient Wisdom Revealed",
+   "edition": "B0C6BQ5D5S",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C6BQ5D5S"
+  },
+  {
+   "work": "the-gospel-of-truth-ancient-wisdom-revealed",
+   "title": "The Gospel of Truth Ancient Wisdom Revealed",
+   "edition": "B0C6C4N12B",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C6C4N12B"
+  },
+  {
+   "work": "the-gospel-of-truth",
+   "title": "The Gospel of Truth",
+   "edition": "B0DQ17WQXY",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0DQ17WQXY"
+  },
+  {
+   "work": "the-gospel-of-truth",
+   "title": "The Gospel of Truth",
+   "edition": "B0C5PGBWXP",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C5PGBWXP"
+  },
+  {
+   "work": "the-gospel-of-truth",
+   "title": "The Gospel of Truth",
+   "edition": "B0C5TRHX23",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C5TRHX23"
+  },
+  {
+   "work": "the-gospel-of-truth",
+   "title": "The Gospel of Truth",
+   "edition": "B0H857VB2G",
+   "label": "Amazon (Audible)",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H857VB2G"
+  },
+  {
+   "work": "the-hidden-doctrine-of-mo-pai",
+   "title": "The Hidden Doctrine of Mo Pai",
+   "edition": "B0GCK12H1H",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0GCK12H1H"
+  },
+  {
+   "work": "the-hidden-doctrine-of-mo-pai",
+   "title": "The Hidden Doctrine of Mo Pai",
+   "edition": "B0GCCZMCNR",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0GCCZMCNR"
+  },
+  {
+   "work": "the-hidden-doctrine-of-mo-pai",
+   "title": "The Hidden Doctrine of Mo Pai",
+   "edition": "B0GCC4NP56",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0GCC4NP56"
+  },
+  {
+   "work": "the-hidden-doctrine-of-mo-pai",
+   "title": "मो पाई का गुप्त सिद्धांत",
+   "edition": "B0H1KQ5F78",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H1KQ5F78"
+  },
+  {
+   "work": "the-infancy-gospel-of-thomas-and-gospel-of-thomas",
+   "title": "THE INFANCY GOSPEL OF THOMAS & GOSPEL OF THOMAS",
+   "edition": "B0C5P9LYLJ",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C5P9LYLJ"
+  },
+  {
+   "work": "the-infancy-gospel-of-thomas-and-gospel-of-thomas",
+   "title": "THE INFANCY GOSPEL OF THOMAS & GOSPEL OF THOMAS",
+   "edition": "B0DR888ZB4",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0DR888ZB4"
+  },
+  {
+   "work": "the-infancy-gospel-of-thomas-and-gospel-of-thomas",
+   "title": "THE INFANCY GOSPEL OF THOMAS & GOSPEL OF THOMAS",
+   "edition": "B0DR19RFT6",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0DR19RFT6"
+  },
+  {
+   "work": "the-infancy-gospel-of-thomas-and-gospel-of-thomas",
+   "title": "THE INFANCY GOSPEL OF THOMAS & GOSPEL OF THOMAS",
+   "edition": "B0C5P36594",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C5P36594"
+  },
+  {
+   "work": "the-infancy-gospel-of-thomas-and-gospel-of-thomas",
+   "title": "THE INFANCY GOSPEL OF THOMAS & GOSPEL OF THOMAS",
+   "edition": "B0C5TWLYB6",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C5TWLYB6"
+  },
+  {
+   "work": "the-infancy-gospel-of-thomas-and-gospel-of-thomas",
+   "title": "THE INFANCY GOSPEL OF THOMAS & GOSPEL OF THOMAS",
+   "edition": "B0DR62N4HW",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0DR62N4HW"
+  },
+  {
+   "work": "the-infancy-gospel-of-thomas-and-gospel-of-thomas",
+   "title": "THE INFANCY GOSPEL OF THOMAS & GOSPEL OF THOMAS",
+   "edition": "B0H8MKSJ6S",
+   "label": "Amazon (Audible)",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H8MKSJ6S"
+  },
+  {
+   "work": "the-inner-mechanics-of-energy-cultivation",
+   "title": "The Inner Mechanics of Energy Cultivation",
+   "edition": "B0H3T6CKMZ",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H3T6CKMZ"
+  },
+  {
+   "work": "the-inner-mechanics-of-energy-cultivation",
+   "title": "The Inner Mechanics of Energy Cultivation",
+   "edition": "B0H3QCG6D6",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H3QCG6D6"
+  },
+  {
+   "work": "the-inner-mechanics-of-energy-cultivation",
+   "title": "The Inner Mechanics of Energy Cultivation",
+   "edition": "B0H3MY3JS3",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H3MY3JS3"
+  },
+  {
+   "work": "the-inner-mechanics-of-energy-cultivation",
+   "title": "The Inner Mechanics of Energy Cultivation",
+   "edition": "B0H44YW832",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H44YW832"
+  },
+  {
+   "work": "the-inner-mechanics-of-energy-cultivation",
+   "title": "La mecánica interna del cultivo de la energía",
+   "edition": "B0H3SQK65J",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H3SQK65J"
+  },
+  {
+   "work": "the-inner-mechanics-of-energy-cultivation",
+   "title": "La mecánica interna del cultivo de la energía",
+   "edition": "B0H3T75J6P",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H3T75J6P"
+  },
+  {
+   "work": "the-inner-mechanics-of-energy-cultivation",
+   "title": "La mecánica interna del cultivo de la energía",
+   "edition": "B0H3NV7ZVS",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H3NV7ZVS"
+  },
+  {
+   "work": "the-inner-mechanics-of-energy-cultivation",
+   "title": "La mecánica interna del cultivo de la energía",
+   "edition": "B0H8ML8C5F",
+   "label": "Amazon (Audible)",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H8ML8C5F"
+  },
+  {
+   "work": "the-kubera-mantra",
+   "title": "The Kubera Mantra",
+   "edition": "B0CQVLLMLH",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0CQVLLMLH"
+  },
+  {
+   "work": "the-matrix-of-sound",
+   "title": "The Matrix of Sound",
+   "edition": "B0F9LNXF5H",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0F9LNXF5H"
+  },
+  {
+   "work": "the-matrix-of-sound",
+   "title": "The Matrix of Sound",
+   "edition": "B0F9KWD3B8",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0F9KWD3B8"
+  },
+  {
+   "work": "the-modern-kama-sutra",
+   "title": "The Modern Kama Sutra",
+   "edition": "B0BYRM235Z",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0BYRM235Z"
+  },
+  {
+   "work": "the-origin-and-nature-of-the-archons",
+   "title": "The Origin and Nature of the Archons",
+   "edition": "B0C9SF6C36",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C9SF6C36"
+  },
+  {
+   "work": "the-origin-and-nature-of-the-archons",
+   "title": "The Origin and Nature of the Archons",
+   "edition": "B0CB1V15R3",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0CB1V15R3"
+  },
+  {
+   "work": "the-physics-of-siddhis",
+   "title": "The Physics of Siddhis",
+   "edition": "B0GH84W6C9",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0GH84W6C9"
+  },
+  {
+   "work": "the-physics-of-siddhis",
+   "title": "The Physics of Siddhis",
+   "edition": "B0GH8BVX6S",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0GH8BVX6S"
+  },
+  {
+   "work": "the-physics-of-siddhis",
+   "title": "The Physics of Siddhis",
+   "edition": "B0GH6P31CM",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0GH6P31CM"
+  },
+  {
+   "work": "the-pissed-off-hindu",
+   "title": "The Pissed Off Hindu",
+   "edition": "1079449361",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/1079449361"
+  },
+  {
+   "work": "the-pissed-off-hindu",
+   "title": "The Pissed Off Hindu",
+   "edition": "B01JVC9I5U",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B01JVC9I5U"
+  },
+  {
+   "work": "the-power-of-fasting-and-prayer",
+   "title": "The Power of Fasting and Prayer",
+   "edition": "B0BZFG4YR9",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0BZFG4YR9"
+  },
+  {
+   "work": "the-power-of-fasting-and-prayer",
+   "title": "The Power of Fasting and Prayer",
+   "edition": "B0BZM2V8V7",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0BZM2V8V7"
+  },
+  {
+   "work": "the-power-of-fasting-and-prayer",
+   "title": "The Power of Fasting and Prayer",
+   "edition": "B0H85CCYWV",
+   "label": "Amazon (Audible)",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H85CCYWV"
+  },
+  {
+   "work": "the-reason-all-the-prophets-fasted",
+   "title": "The Reason All The Prophets Fasted",
+   "edition": "B0GWVSK66G",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0GWVSK66G"
+  },
+  {
+   "work": "the-reason-all-the-prophets-fasted",
+   "title": "The Reason All The Prophets Fasted",
+   "edition": "B0GWTF724Q",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0GWTF724Q"
+  },
+  {
+   "work": "the-reason-all-the-prophets-fasted",
+   "title": "The Reason All The Prophets Fasted",
+   "edition": "B0GQQJW8QR",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0GQQJW8QR"
+  },
+  {
+   "work": "the-reason-all-the-prophets-fasted",
+   "title": "The Reason All The Prophets Fasted",
+   "edition": "B0H8MBM5CT",
+   "label": "Amazon (Audible)",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H8MBM5CT"
+  },
+  {
+   "work": "the-secret-and-infancy-book-of-james",
+   "title": "THE SECRET & INFANCY BOOK OF JAMES",
+   "edition": "B0C6P2PXFJ",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C6P2PXFJ"
+  },
+  {
+   "work": "the-secret-and-infancy-book-of-james",
+   "title": "THE SECRET & INFANCY BOOK OF JAMES",
+   "edition": "B0C63VZSL9",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C63VZSL9"
+  },
+  {
+   "work": "the-secret-and-infancy-book-of-james",
+   "title": "THE SECRET & INFANCY BOOK OF JAMES",
+   "edition": "B0C5TXY6HH",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C5TXY6HH"
+  },
+  {
+   "work": "the-secret-and-infancy-book-of-james",
+   "title": "THE SECRET & INFANCY BOOK OF JAMES",
+   "edition": "B0GTBYSJBP",
+   "label": "Amazon (Audible)",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0GTBYSJBP"
+  },
+  {
+   "work": "the-secret-knowledge-of-adam",
+   "title": "The Secret Knowledge of Adam",
+   "edition": "B0F3JSWLZR",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0F3JSWLZR"
+  },
+  {
+   "work": "the-secret-knowledge-of-adam",
+   "title": "The Secret Knowledge of Adam",
+   "edition": "B0F3HSLFPW",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0F3HSLFPW"
+  },
+  {
+   "work": "the-secret-knowledge-of-adam",
+   "title": "The Secret Knowledge of Adam",
+   "edition": "B0F3CXG33X",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0F3CXG33X"
+  },
+  {
+   "work": "the-secret-knowledge-of-adam",
+   "title": "The Secret Knowledge of Adam",
+   "edition": "B0H85G82T1",
+   "label": "Amazon (Audible)",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H85G82T1"
+  },
+  {
+   "work": "the-wisdom-of-jesus",
+   "title": "THE WISDOM OF JESUS",
+   "edition": "B0C6NZGJ5Y",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C6NZGJ5Y"
+  },
+  {
+   "work": "the-wisdom-of-jesus",
+   "title": "THE WISDOM OF JESUS",
+   "edition": "B0C6P8D4CZ",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C6P8D4CZ"
+  },
+  {
+   "work": "the-wisdom-of-jesus",
+   "title": "THE WISDOM OF JESUS",
+   "edition": "B0C6N2LZQZ",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C6N2LZQZ"
+  },
+  {
+   "work": "the-wisdom-of-jesus",
+   "title": "THE WISDOM OF JESUS",
+   "edition": "B0FW5X2X7M",
+   "label": "Amazon (Audible)",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0FW5X2X7M"
+  },
+  {
+   "work": "the-yoga-sutras-of-patanjali",
+   "title": "The Yoga Sutras of Patanjali",
+   "edition": "B0DRD8934N",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0DRD8934N"
+  },
+  {
+   "work": "timeless-reciprocity",
+   "title": "Timeless Reciprocity",
+   "edition": "B0DNCWQQT1",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0DNCWQQT1"
+  },
+  {
+   "work": "timeless-reciprocity",
+   "title": "Timeless Reciprocity",
+   "edition": "B0DPPTH3D2",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0DPPTH3D2"
+  },
+  {
+   "work": "timeless-reciprocity",
+   "title": "Timeless Reciprocity",
+   "edition": "B0DN1MLYPK",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0DN1MLYPK"
+  },
+  {
+   "work": "truth-is-stranger-than-fiction",
+   "title": "Truth is Stranger Than Fiction",
+   "edition": "1078483299",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/1078483299"
+  },
+  {
+   "work": "truth-is-stranger-than-fiction",
+   "title": "Truth is Stranger Than Fiction",
+   "edition": "B07TY5WQVH",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B07TY5WQVH"
+  },
+  {
+   "work": "unknown-gospels",
+   "title": "UNKNOWN GOSPELS",
+   "edition": "B0C6BX92CW",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C6BX92CW"
+  },
+  {
+   "work": "unknown-gospels",
+   "title": "UNKNOWN GOSPELS",
+   "edition": "B0C5PGF3RF",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C5PGF3RF"
+  },
+  {
+   "work": "unknown-gospels",
+   "title": "UNKNOWN GOSPELS",
+   "edition": "B0C5V44LF7",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C5V44LF7"
+  },
+  {
+   "work": "unknown-gospels",
+   "title": "UNKNOWN GOSPELS",
+   "edition": "B0H854TZTT",
+   "label": "Amazon (Audible)",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H854TZTT"
+  },
+  {
+   "work": "unleashing-the-inner-fire",
+   "title": "Unleashing the Inner Fire",
+   "edition": "B0C5YZVNPY",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C5YZVNPY"
+  },
+  {
+   "work": "unleashing-the-inner-fire",
+   "title": "Unleashing the Inner Fire",
+   "edition": "B0C5YQ7364",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C5YQ7364"
+  },
+  {
+   "work": "unleashing-the-inner-fire",
+   "title": "Unleashing the Inner Fire",
+   "edition": "B0C5ZZ9GHB",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C5ZZ9GHB"
+  },
+  {
+   "work": "unleashing-the-inner-fire",
+   "title": "Das innere Feuer entfesseln",
+   "edition": "B0DRW4KJWT",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0DRW4KJWT"
+  },
+  {
+   "work": "unleashing-the-inner-fire",
+   "title": "Das innere Feuer entfesseln",
+   "edition": "B0DRW33XN7",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0DRW33XN7"
+  },
+  {
+   "work": "unleashing-the-inner-fire",
+   "title": "Das innere Feuer entfesseln",
+   "edition": "B0CWXW3HXP",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0CWXW3HXP"
+  },
+  {
+   "work": "unleashing-the-inner-fire",
+   "title": "Desatando el fuego interior",
+   "edition": "B0DPSPJ8PS",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0DPSPJ8PS"
+  },
+  {
+   "work": "unleashing-the-inner-fire",
+   "title": "Desatando el fuego interior",
+   "edition": "B0DPSM53HW",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0DPSM53HW"
+  },
+  {
+   "work": "unleashing-the-inner-fire",
+   "title": "Desatando el fuego interior",
+   "edition": "B0CWYTQ5RC",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0CWYTQ5RC"
+  },
+  {
+   "work": "unleashing-the-inner-fire",
+   "title": "Desatando el fuego interior",
+   "edition": "B0H8MJS9FD",
+   "label": "Amazon (Audible)",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H8MJS9FD"
+  },
+  {
+   "work": "unleashing-the-inner-fire",
+   "title": "Libérer le feu intérieur",
+   "edition": "B0DRW3L4L1",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0DRW3L4L1"
+  },
+  {
+   "work": "unleashing-the-inner-fire",
+   "title": "Libérer le feu intérieur",
+   "edition": "B0DRW2ZW7C",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0DRW2ZW7C"
+  },
+  {
+   "work": "unleashing-the-inner-fire",
+   "title": "Libérer le feu intérieur",
+   "edition": "B0CW1B9JYY",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0CW1B9JYY"
+  },
+  {
+   "work": "unlock-inner-peace-and-live-a-harmonious-life",
+   "title": "Unlock Inner Peace and Live a Harmonious Life",
+   "edition": "B0BZFGDRPK",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0BZFGDRPK"
+  },
+  {
+   "work": "unlock-your-inner-beauty",
+   "title": "Unlock Your Inner Beauty",
+   "edition": "B0BZFP1VZT",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0BZFP1VZT"
+  },
+  {
+   "work": "unlock-your-inner-beauty",
+   "title": "Unlock Your Inner Beauty",
+   "edition": "B0BZT9RGJK",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0BZT9RGJK"
+  },
+  {
+   "work": "unlocking-the-power-of-the-shakyamuni-mantra",
+   "title": "Unlocking the Power of the Shakyamuni Mantra",
+   "edition": "B0C1JBHYYX",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C1JBHYYX"
+  },
+  {
+   "work": "unlocking-the-power-of-the-shakyamuni-mantra",
+   "title": "Unlocking the Power of the Shakyamuni Mantra",
+   "edition": "B0C1JD322S",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C1JD322S"
+  },
+  {
+   "work": "unveiling-hidden-wisdom",
+   "title": "Unveiling Hidden Wisdom",
+   "edition": "B0C6BK224P",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C6BK224P"
+  },
+  {
+   "work": "unveiling-hidden-wisdom",
+   "title": "Unveiling Hidden Wisdom",
+   "edition": "B0C6BYXT7F",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C6BYXT7F"
+  },
+  {
+   "work": "unveiling-hidden-wisdom",
+   "title": "Unveiling Hidden Wisdom",
+   "edition": "B0C6HDZ56K",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C6HDZ56K"
+  },
+  {
+   "work": "unveiling-hidden-wisdom",
+   "title": "Unveiling Hidden Wisdom",
+   "edition": "B0H84HVYP4",
+   "label": "Amazon (Audible)",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H84HVYP4"
+  },
+  {
+   "work": "unveiling-the-mysteries-of-the-gospel-of-peter",
+   "title": "Unveiling the Mysteries of The Gospel of Peter",
+   "edition": "B0C6BXY4Z4",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C6BXY4Z4"
+  },
+  {
+   "work": "unveiling-the-mysteries-of-the-gospel-of-peter",
+   "title": "Unveiling the Mysteries of The Gospel of Peter",
+   "edition": "B0C6BX91QW",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C6BX91QW"
+  },
+  {
+   "work": "unveiling-the-mysteries-of-the-gospel-of-peter",
+   "title": "Unveiling the Mysteries of The Gospel of Peter",
+   "edition": "B0C6JD11ZC",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0C6JD11ZC"
+  },
+  {
+   "work": "unveiling-the-mysteries-of-the-gospel-of-peter",
+   "title": "Unveiling the Mysteries of The Gospel of Peter",
+   "edition": "B0G7MPBL9G",
+   "label": "Amazon (Audible)",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0G7MPBL9G"
+  },
+  {
+   "work": "unveiling-the-mysteries-of-the-gospel-of-peter",
+   "title": "Revelando los misterios de El evangelio de Pedro",
+   "edition": "B0DR2MC84P",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0DR2MC84P"
+  },
+  {
+   "work": "unveiling-the-mysteries-of-the-gospel-of-peter",
+   "title": "Revelando los misterios de El evangelio de Pedro",
+   "edition": "B0DR2GF2PD",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0DR2GF2PD"
+  },
+  {
+   "work": "unveiling-the-mysteries-of-the-gospel-of-peter",
+   "title": "Revelando los misterios de El evangelio de Pedro",
+   "edition": "B0DQXQ3GC7",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0DQXQ3GC7"
+  },
+  {
+   "work": "unveiling-the-mysteries-of-the-gospel-of-peter",
+   "title": "Revelando os mistérios do O Evangelho de Pedro",
+   "edition": "B0DR6ZPPLS",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0DR6ZPPLS"
+  },
+  {
+   "work": "unveiling-the-mysteries-of-the-gospel-of-peter",
+   "title": "Revelando os mistérios do O Evangelho de Pedro",
+   "edition": "B0DR6YH3KM",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0DR6YH3KM"
+  },
+  {
+   "work": "unveiling-the-mysteries-of-the-gospel-of-peter",
+   "title": "Revelando os mistérios do O Evangelho de Pedro",
+   "edition": "B0DQVXX954",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0DQVXX954"
+  },
+  {
+   "work": "unveiling-the-mysteries-of-the-gospel-of-peter",
+   "title": "Раскрывая тайны Евангелие от Петра",
+   "edition": "B0DR6VH6J5",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0DR6VH6J5"
+  },
+  {
+   "work": "unveiling-the-mysteries-of-the-gospel-of-peter",
+   "title": "Раскрывая тайны Евангелие от Петра",
+   "edition": "B0DR5YND4R",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0DR5YND4R"
+  },
+  {
+   "work": "unveiling-the-mysteries-of-the-gospel-of-peter",
+   "title": "Раскрывая тайны Евангелие от Петра",
+   "edition": "B0CW1LH4KZ",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0CW1LH4KZ"
+  },
+  {
+   "work": "wildflower-coloring-book",
+   "title": "wildflower coloring book",
+   "edition": "B0FDFRQ986",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0FDFRQ986"
   },
   {
    "work": "the-power-of-now",
@@ -1369,7 +4097,7 @@
    "url": "https://www.amazon.com/s?k=9780805210316&i=stripbooks"
   },
   {
-   "work": "the-yoga-sutras-of-patanjali",
+   "work": "the-yoga-sutras-of-patanjali-edwin-f-bryant",
    "title": "The Yoga Sutras of Patañjali",
    "edition": "9780865477360",
    "label": "Amazon",

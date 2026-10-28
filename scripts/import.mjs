@@ -34,7 +34,7 @@ const tradIds = new Set(tax.traditions.map((t) => t.id));
 const PSV_EXTRA_TRADS = new Set(['perennial']);
 
 import { slugify } from './lib.mjs';
-const normTitle = (t) => slugify(t.replace(/^(the|a|an)\s+/i, ''));
+const normTitle = (t) => slugify(t.replace(/^(the|a|an)\s+/i, '')) || t.trim().toLowerCase(); // non-Latin titles keep their own text as the key
 
 export function isbn13Valid(s) {
   if (!/^\d{13}$/.test(s)) return false;
@@ -125,9 +125,9 @@ function ingest(raw, origin, { batch = null } = {}) {
   }
   if (problems.length) { queue(w, 'validate', problems); return; }
   if (ownerListed) for (const e of w.editions) if (!e.isbn13 && !e.asin) queue({ ...w, isbn13: null }, 'identifiers', [`owner-listed ${e.format}${e.language !== 'en' ? ' (' + e.language + ')' : ''} edition has no ASIN/ISBN yet; retailer link not verified`], 'warning');
-  const ids = w.editions.map((e) => e.isbn13 ?? e.asin).filter(Boolean);
+  const ids = w.editions.map((e) => e.id ?? e.isbn13 ?? e.asin).filter(Boolean);
   if (new Set(ids).size !== ids.length) { queue(w, 'validate', ['two editions of this work share an identifier']); return; }
-  w.editions = w.editions.map((e, i) => ({ ...e, id: `${e.isbn13 ?? e.asin ?? `ed${i + 1}`}`, isbn10: e.isbn13 ? isbn13to10(e.isbn13) : null }));
+  w.editions = w.editions.map((e, i) => ({ ...e, id: `${e.id ?? e.isbn13 ?? e.asin ?? `ed${i + 1}`}`, isbn10: e.isbn13 ? isbn13to10(e.isbn13) : null }));
   w.provenance ??= { tier: 'hand-verified' };
   if (addWork(w, w._origin)) batchTally[w.provenance.tier] = (batchTally[w.provenance.tier] ?? 0) + 1;
 }

@@ -479,6 +479,14 @@
         "fantasy-folklore-fiction"
       ],
       "intro": "Comic strips and humorous illustrated books."
+    },
+    {
+      "id": "journals-coloring",
+      "name": "Journals & Coloring Books",
+      "hubs": [
+        "wellbeing-health"
+      ],
+      "intro": "Dream journals, coloring books and other guided or creative pages."
     }
   ],
   "traditions": [

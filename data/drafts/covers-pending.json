@@ -1,5 +1,5 @@
 {
- "status": "STAGED, NOT PUBLISHED (files in assets-src/covers-pending/, git-ignored). Updated 2026-10-28 after the Wix Media Manager files became downloadable. 20 clean originals were moved into data/covers.json.",
+ "status": "STAGED, NOT PUBLISHED. Updated 2026-10-28 after the owner's catalogue table settled several matches: The Hidden Doctrine of Mo Pai, The Genesis of Sophia, The Secret Knowledge of Adam, The Catalyst and the Hindi Kundalini cover were published.",
  "covers": [
   {
    "work": "gayatri-mantra",
@@ -58,19 +58,9 @@
    "held": "square 2400px files, one letterboxed in black; the website shows portrait covers, so the published portrait versions are needed"
   },
   {
-   "file": "wix-mopai-hidden-doctrine.jpeg",
-   "looks": "The Hidden Doctrine of Mo Pai, Emily K Patel",
-   "held": "no catalogue entry; listing not visible in the screenshots"
-  },
-  {
-   "file": "wix-hindi-the-ancient.png",
-   "looks": "Hindi edition of The Ancient Science of Kundalini Energy Revealed",
-   "held": "no Hindi listing seen; not added as an edition"
-  },
-  {
-   "file": "wix-matrix-of-mantra.png, wix-atharvaveda.png, wix-dream-journal.png, wix-forbidden-light.png, wix-genesis-sophia2.png, wix-sophia.jpg, wix-chatgpt-apr2.png, wix-full-length-kdp.jpg",
-   "looks": "The Matrix of Mantra; The Atharva Veda; Dream Journal; The Forbidden Light; The Genesis of Sophia (two files); The Secret Knowledge of Adam; The Catalyst: Awakening the Human Code",
-   "held": "no matching listing seen in the screenshots (The Catalyst is listed on the website but its author is not shown)"
+   "file": "wix-matrix-of-mantra.png, wix-atharvaveda.png, wix-dream-journal.png, wix-forbidden-light.png, wix-sophia.jpg",
+   "looks": "The Matrix of Mantra (catalogue title: The Matrix of Sound); The Atharva Veda (catalogue: The Book of Vedic Spells); Dream Journal (catalogue: The Complete Dream & Conscious Experience Journal); The Forbidden Light: Unlocking the Gayatri Code; a small Genesis of Sophia screenshot",
+   "held": "cover titles differ from the owner's catalogue titles (earlier or alternate titles?) or have no catalogue record (The Forbidden Light); owner to confirm before they are assigned"
   }
  ]
 }

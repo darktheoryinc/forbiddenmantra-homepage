@@ -1,20 +1,20 @@
 {
   "generated": "2026-10-27",
   "input": {
-    "verifiedRecords": 130,
+    "verifiedRecords": 172,
     "batchRecords": 140,
     "candidateRows": 100
   },
   "publishedByProvenance": {
-    "hand-verified": 130,
+    "hand-verified": 172,
     "web-corroborated": 139
   },
   "published": {
-    "works": 269,
-    "editions": 325,
-    "outsideWorks": 183,
-    "fmpWorks": 86,
-    "authors": 140
+    "works": 311,
+    "editions": 632,
+    "outsideWorks": 188,
+    "fmpWorks": 123,
+    "authors": 145
   },
   "publishedByLanguage": {
     "ar": {
@@ -23,35 +23,51 @@
     },
     "cy": {
       "works": 1,
-      "editions": 1
+      "editions": 3
     },
     "de": {
       "works": 7,
-      "editions": 7
+      "editions": 14
     },
     "en": {
-      "works": 262,
-      "editions": 293
+      "works": 307,
+      "editions": 525
     },
     "es": {
-      "works": 16,
-      "editions": 16
+      "works": 19,
+      "editions": 46
     },
     "fr": {
       "works": 3,
-      "editions": 3
+      "editions": 10
+    },
+    "hi": {
+      "works": 12,
+      "editions": 14
     },
     "nl": {
       "works": 3,
-      "editions": 3
+      "editions": 9
     },
     "pt": {
       "works": 1,
+      "editions": 3
+    },
+    "ru": {
+      "works": 1,
+      "editions": 3
+    },
+    "ta": {
+      "works": 1,
       "editions": 1
+    },
+    "zh": {
+      "works": 3,
+      "editions": 3
     }
   },
   "languagesRegistered": 40,
-  "languagesWithVerifiedEditions": 8,
+  "languagesWithVerifiedEditions": 12,
   "stagedEditions": 0,
   "editionLeads": {
     "total": 3,
@@ -67,14 +83,14 @@
     "missingIsbn": 3
   },
   "errorQueue": {
-    "total": 167,
+    "total": 59,
     "byStage": {
-      "identifiers": 115,
+      "identifiers": 7,
       "validate": 3,
       "dedup": 49
     },
     "bySeverity": {
-      "warning": 116,
+      "warning": 8,
       "error": 2,
       "duplicate": 49
     }

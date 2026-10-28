@@ -1,0 +1,4461 @@
+{
+ "note": "Read-only snapshot of the owner's public 'catalog' table on 2026-10-28 (prices and Amazon cover URLs omitted).",
+ "records": [
+  {
+   "slug": "awakening-the-sacred-serpent-a-journey-into-kundalini-yoga-and-spiritual-realiza",
+   "title": "\"Awakening the Sacred Serpent: A Journey into Kundalini Yoga and Spiritual Realization\": Forbidden Tantra Series",
+   "author": "Emily K Patel",
+   "series": "forbidden tantra series",
+   "language": "en",
+   "primary_asin": "B0C6V1YBK5",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0H859PDTK",
+     "format": "audiobook",
+     "published_at": "2026-07-11",
+     "amazon_url": "https://www.amazon.com/dp/B0H859PDTK"
+    },
+    {
+     "asin": "B0C6V1YBK5",
+     "format": "ebook",
+     "published_at": "2023-06-01",
+     "amazon_url": "https://www.amazon.com/dp/B0C6V1YBK5"
+    },
+    {
+     "asin": "B0C6VYCGKL",
+     "format": "hardcover",
+     "published_at": "2023-06-01",
+     "amazon_url": "https://www.amazon.com/dp/B0C6VYCGKL"
+    },
+    {
+     "asin": "B0C6VTZMGK",
+     "format": "paperback",
+     "published_at": "2023-06-02",
+     "amazon_url": "https://www.amazon.com/dp/B0C6VTZMGK"
+    }
+   ]
+  },
+  {
+   "slug": "beyond-sex-onderzoek-naar-de-spirituele-dimensies-van-tantra",
+   "title": "\"Beyond Sex: onderzoek naar de spirituele dimensies van Tantra\"",
+   "author": "Emily K Patel",
+   "series": "forbidden tantra series",
+   "language": "nl",
+   "primary_asin": "B0CTHRB4QZ",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0CTHRB4QZ",
+     "format": "ebook",
+     "published_at": "2024-02-24",
+     "amazon_url": "https://www.amazon.com/dp/B0CTHRB4QZ"
+    }
+   ]
+  },
+  {
+   "slug": "breathing-with-ancient-wisdom-unleashing-vitality-and-inner-balance-through-the-",
+   "title": "\"Breathing with Ancient Wisdom: Unleashing Vitality and Inner Balance through the Nishino Method\"",
+   "author": "Emily K Patel",
+   "series": "breath mastery series",
+   "language": "en",
+   "primary_asin": "B0C5Z2JQSX",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0H8M8TQXZ",
+     "format": "audiobook",
+     "published_at": "2026-07-12",
+     "amazon_url": "https://www.amazon.com/dp/B0H8M8TQXZ"
+    },
+    {
+     "asin": "B0C5Z2JQSX",
+     "format": "ebook",
+     "published_at": "2023-05-23",
+     "amazon_url": "https://www.amazon.com/dp/B0C5Z2JQSX"
+    },
+    {
+     "asin": "B0C5YYNZ4B",
+     "format": "hardcover",
+     "published_at": "2023-05-23",
+     "amazon_url": "https://www.amazon.com/dp/B0C5YYNZ4B"
+    },
+    {
+     "asin": "B0C63YPYKR",
+     "format": "paperback",
+     "published_at": "2023-05-25",
+     "amazon_url": "https://www.amazon.com/dp/B0C63YPYKR"
+    }
+   ]
+  },
+  {
+   "slug": "creacion-y-conexion-exploracion-del-genesis-y-los-textos-sumerios-en-una-perspec",
+   "title": "\"Creación y conexión: exploración del Génesis y los textos sumerios en una perspectiva comparada\"",
+   "author": "Emily K Patel",
+   "series": "nag hammadi series",
+   "language": "es",
+   "primary_asin": "B0CW23C6LZ",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0CW23C6LZ",
+     "format": "ebook",
+     "published_at": "2024-02-20",
+     "amazon_url": "https://www.amazon.com/dp/B0CW23C6LZ"
+    },
+    {
+     "asin": "B0CW32CNX7",
+     "format": "paperback",
+     "published_at": "2024-02-21",
+     "amazon_url": "https://www.amazon.com/dp/B0CW32CNX7"
+    }
+   ]
+  },
+  {
+   "slug": "creation-and-connection-exploring-genesis-and-sumerian-texts-in-comparative-pers",
+   "title": "\"Creation and Connection: Exploring Genesis and Sumerian Texts in Comparative Perspective\": \"Unveiling Ancient Narratives, Cultural Influences, and Shared Insights\"",
+   "author": "Emily K Patel",
+   "series": "\"cross-cultural myths: unraveling ancient connections\"",
+   "language": "en",
+   "primary_asin": "B0C5TZHPQY",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0GS42KHPQ",
+     "format": "audiobook",
+     "published_at": "2026-07-11",
+     "amazon_url": "https://www.amazon.com/dp/B0GS42KHPQ"
+    },
+    {
+     "asin": "B0C5TZHPQY",
+     "format": "ebook",
+     "published_at": "2023-05-20",
+     "amazon_url": "https://www.amazon.com/dp/B0C5TZHPQY"
+    },
+    {
+     "asin": "B0C5P55W6W",
+     "format": "hardcover",
+     "published_at": "2023-05-21",
+     "amazon_url": "https://www.amazon.com/dp/B0C5P55W6W"
+    },
+    {
+     "asin": "B0C5PGF3NT",
+     "format": "paperback",
+     "published_at": "2023-05-21",
+     "amazon_url": "https://www.amazon.com/dp/B0C5PGF3NT"
+    }
+   ]
+  },
+  {
+   "slug": "desbloqueando-la-iluminacion-el-poder-eterno-de-nam-myoho-renge-kyo-en-un-mundo-",
+   "title": "\"Desbloqueando la iluminación: el poder eterno de Nam-myoho-renge-kyo en un mundo moderno\"",
+   "author": "Emily K Patel",
+   "series": "buddhist mantra series",
+   "language": "es",
+   "primary_asin": "B0CZHHPZ1M",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0CZHHPZ1M",
+     "format": "ebook",
+     "published_at": "2024-03-30",
+     "amazon_url": "https://www.amazon.com/dp/B0CZHHPZ1M"
+    }
+   ]
+  },
+  {
+   "slug": "jewel-of-the-lotus-unveiling-the-mysteries-of-om-mani-padme-hum",
+   "title": "\"Jewel of the Lotus: Unveiling the Mysteries of Om Mani Padme Hum\"",
+   "author": "Emily K Patel",
+   "series": "buddhist mantra series",
+   "language": "en",
+   "primary_asin": "B0CWH8JXXJ",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0H85DXXJL",
+     "format": "audiobook",
+     "published_at": "2026-07-11",
+     "amazon_url": "https://www.amazon.com/dp/B0H85DXXJL"
+    },
+    {
+     "asin": "B0CWH8JXXJ",
+     "format": "ebook",
+     "published_at": "2024-03-08",
+     "amazon_url": "https://www.amazon.com/dp/B0CWH8JXXJ"
+    },
+    {
+     "asin": "B0DPV3YKSX",
+     "format": "hardcover",
+     "published_at": "2024-12-08",
+     "amazon_url": "https://www.amazon.com/dp/B0DPV3YKSX"
+    },
+    {
+     "asin": "B0DPV2NL45",
+     "format": "paperback",
+     "published_at": "2024-12-08",
+     "amazon_url": "https://www.amazon.com/dp/B0DPV2NL45"
+    }
+   ]
+  },
+  {
+   "slug": "la-joya-del-loto-desvelando-los-misterios-de-om-mani-padme-hum",
+   "title": "\"La Joya del Loto: Desvelando los Misterios de Om Mani Padme Hum\"",
+   "author": "Emily K Patel",
+   "series": "buddhist mantra series",
+   "language": "es",
+   "primary_asin": "B0CWF8X555",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0H85K6MJP",
+     "format": "audiobook",
+     "published_at": "2026-07-10",
+     "amazon_url": "https://www.amazon.com/dp/B0H85K6MJP"
+    },
+    {
+     "asin": "B0CWF8X555",
+     "format": "ebook",
+     "published_at": "2024-03-08",
+     "amazon_url": "https://www.amazon.com/dp/B0CWF8X555"
+    },
+    {
+     "asin": "B0DPV3QR1T",
+     "format": "hardcover",
+     "published_at": "2024-12-08",
+     "amazon_url": "https://www.amazon.com/dp/B0DPV3QR1T"
+    },
+    {
+     "asin": "B0DPV1ZC4C",
+     "format": "paperback",
+     "published_at": "2024-12-08",
+     "amazon_url": "https://www.amazon.com/dp/B0DPV1ZC4C"
+    }
+   ]
+  },
+  {
+   "slug": "lost-wisdom-the-mysterious-gospel-of-thomas-and-the-secrets-of-early-christianit",
+   "title": "\"Lost Wisdom: The Mysterious Gospel of Thomas and the Secrets of Early Christianity\": Nag Hammadi",
+   "author": "Emily K Patel",
+   "series": "nag hammadi series",
+   "language": "en",
+   "primary_asin": "B0C4K2JQCR",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0C4K2JQCR",
+     "format": "ebook",
+     "published_at": "2023-05-07",
+     "amazon_url": "https://www.amazon.com/dp/B0C4K2JQCR"
+    },
+    {
+     "asin": "B0C481QQTH",
+     "format": "hardcover",
+     "published_at": "2023-05-08",
+     "amazon_url": "https://www.amazon.com/dp/B0C481QQTH"
+    },
+    {
+     "asin": "B0C47WK7FB",
+     "format": "paperback",
+     "published_at": "2023-05-08",
+     "amazon_url": "https://www.amazon.com/dp/B0C47WK7FB"
+    }
+   ]
+  },
+  {
+   "slug": "mantra-magic-unlocking-the-healing-power-of-om-namo-bhagavate-vasudevaya-forbidd",
+   "title": "\"Mantra Magic: Unlocking the Healing Power of Om Namo Bhagavate Vasudevaya\": Forbidden Mantra Series",
+   "author": "Rav Shiva",
+   "series": "forbidden mantra series",
+   "language": "en",
+   "primary_asin": "B0BZGQKHPD",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0CY8FCZ4N",
+     "format": "audiobook",
+     "published_at": "2026-07-11",
+     "amazon_url": "https://www.amazon.com/dp/B0CY8FCZ4N"
+    },
+    {
+     "asin": "B0BZGQKHPD",
+     "format": "ebook",
+     "published_at": "2023-03-24",
+     "amazon_url": "https://www.amazon.com/dp/B0BZGQKHPD"
+    },
+    {
+     "asin": "B0BZF4Z4SC",
+     "format": "paperback",
+     "published_at": "2023-03-24",
+     "amazon_url": "https://www.amazon.com/dp/B0BZF4Z4SC"
+    }
+   ]
+  },
+  {
+   "slug": "mas-alla-del-sexo-explorando-las-dimensiones-espirituales-del-tantra",
+   "title": "\"Más allá del sexo: explorando las dimensiones espirituales del tantra\"",
+   "author": "Emily K Patel",
+   "series": "forbidden tantra series",
+   "language": "es",
+   "primary_asin": "B0CW6HWK1B",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0CW6HWK1B",
+     "format": "ebook",
+     "published_at": "2024-02-24",
+     "amazon_url": "https://www.amazon.com/dp/B0CW6HWK1B"
+    },
+    {
+     "asin": "B0DPZP35BD",
+     "format": "hardcover",
+     "published_at": "2024-12-10",
+     "amazon_url": "https://www.amazon.com/dp/B0DPZP35BD"
+    },
+    {
+     "asin": "B0DQY7VFXT",
+     "format": "paperback",
+     "published_at": "2024-12-19",
+     "amazon_url": "https://www.amazon.com/dp/B0DQY7VFXT"
+    }
+   ]
+  },
+  {
+   "slug": "revelations-of-mary-a-journey-to-spiritual-enlightenment-and-liberation-gospel-o",
+   "title": "\"Revelations of Mary: A Journey to Spiritual Enlightenment and Liberation\": Gospel of Mary",
+   "author": "Emily K Patel",
+   "series": "nag hammadi series",
+   "language": "en",
+   "primary_asin": "B0C4K6G6FN",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0C4K6G6FN",
+     "format": "ebook",
+     "published_at": "2023-05-07",
+     "amazon_url": "https://www.amazon.com/dp/B0C4K6G6FN"
+    },
+    {
+     "asin": "B0C63M22HG",
+     "format": "hardcover",
+     "published_at": "2023-05-25",
+     "amazon_url": "https://www.amazon.com/dp/B0C63M22HG"
+    },
+    {
+     "asin": "B0C6448LR2",
+     "format": "paperback",
+     "published_at": "2023-05-25",
+     "amazon_url": "https://www.amazon.com/dp/B0C6448LR2"
+    }
+   ]
+  },
+  {
+   "slug": "schepping-en-verbinding-onderzoek-naar-genesis-en-sumerische-teksten-in-vergelij",
+   "title": "\"Schepping en verbinding: onderzoek naar Genesis en Sumerische teksten in vergelijkend perspectief\"",
+   "author": "Emily K Patel",
+   "series": "nag hammadi series",
+   "language": "nl",
+   "primary_asin": "B0CVZVP7WP",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0CVZVP7WP",
+     "format": "ebook",
+     "published_at": "2024-02-20",
+     "amazon_url": "https://www.amazon.com/dp/B0CVZVP7WP"
+    },
+    {
+     "asin": "B0CW1NZVTJ",
+     "format": "paperback",
+     "published_at": "2024-02-20",
+     "amazon_url": "https://www.amazon.com/dp/B0CW1NZVTJ"
+    }
+   ]
+  },
+  {
+   "slug": "the-hanuman-mantra-your-ultimate-mind-body-spirit-guide-to-finding-inner-peace-a",
+   "title": "\"The Hanuman Mantra: Your Ultimate Mind-Body-Spirit Guide to Finding Inner Peace and Conquering Obstacles in the Modern World!\": Forbidden Mantra Series",
+   "author": "Rav Shiva",
+   "series": "forbidden mantra series",
+   "language": "en",
+   "primary_asin": "B0BZLXMD41",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0H8MJ9YWV",
+     "format": "audiobook",
+     "published_at": "2026-07-12",
+     "amazon_url": "https://www.amazon.com/dp/B0H8MJ9YWV"
+    },
+    {
+     "asin": "B0BZLXMD41",
+     "format": "ebook",
+     "published_at": "2023-03-25",
+     "amazon_url": "https://www.amazon.com/dp/B0BZLXMD41"
+    },
+    {
+     "asin": "B0C63RJ7HW",
+     "format": "hardcover",
+     "published_at": "2023-05-25",
+     "amazon_url": "https://www.amazon.com/dp/B0C63RJ7HW"
+    },
+    {
+     "asin": "B0BZFRQXGC",
+     "format": "paperback",
+     "published_at": "2023-03-26",
+     "amazon_url": "https://www.amazon.com/dp/B0BZFRQXGC"
+    }
+   ]
+  },
+  {
+   "slug": "the-maha-mrityunjaya-mantra-a-sacred-chant-for-spiritual-growth-and-transformati",
+   "title": "\"The Maha Mrityunjaya Mantra: A Sacred Chant for Spiritual Growth and Transformation for All\": Forbidden Mantra Series",
+   "author": "Rav Shiva",
+   "series": "forbidden mantra series",
+   "language": "en",
+   "primary_asin": "B0BZQ428XZ",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0BZQ428XZ",
+     "format": "ebook",
+     "published_at": "2023-03-27",
+     "amazon_url": "https://www.amazon.com/dp/B0BZQ428XZ"
+    },
+    {
+     "asin": "B0BZF9RGDS",
+     "format": "paperback",
+     "published_at": "2023-03-26",
+     "amazon_url": "https://www.amazon.com/dp/B0BZF9RGDS"
+    }
+   ]
+  },
+  {
+   "slug": "the-power-of-sound-exploring-the-connection-between-mantra-yoga-and-inner-awaren",
+   "title": "\"The Power of Sound: Exploring the Connection between Mantra, Yoga, and Inner Awareness\": Forbidden Mantra Series",
+   "author": "Emily K Patel",
+   "series": "forbidden tantra series",
+   "language": "en",
+   "primary_asin": "B0BZYNSXN7",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0BZYNSXN7",
+     "format": "ebook",
+     "published_at": "2023-03-30",
+     "amazon_url": "https://www.amazon.com/dp/B0BZYNSXN7"
+    },
+    {
+     "asin": "B0C63J2XBM",
+     "format": "hardcover",
+     "published_at": "2023-05-25",
+     "amazon_url": "https://www.amazon.com/dp/B0C63J2XBM"
+    },
+    {
+     "asin": "B0BZFJML7W",
+     "format": "paperback",
+     "published_at": "2023-03-30",
+     "amazon_url": "https://www.amazon.com/dp/B0BZFJML7W"
+    }
+   ]
+  },
+  {
+   "slug": "the-ultimate-guide-to-transforming-your-life-unlocking-the-power-of-the-amitabha",
+   "title": "\"The Ultimate Guide to Transforming Your Life: Unlocking the Power of the Amitabha Mantra\": Buddhist Mantra Series",
+   "author": "Emily K Patel",
+   "series": "buddhist mantra series",
+   "language": "en",
+   "primary_asin": "B0C2SNX7VK",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0C2SNX7VK",
+     "format": "ebook",
+     "published_at": "2023-04-17",
+     "amazon_url": "https://www.amazon.com/dp/B0C2SNX7VK"
+    }
+   ]
+  },
+  {
+   "slug": "unlocking-enlightenment-the-timeless-power-of-nam-myoho-renge-kyo-in-a-modern-wo",
+   "title": "\"Unlocking Enlightenment: The Timeless Power of Nam-myoho-renge-kyo in a Modern World\"",
+   "author": "Emily K Patel",
+   "series": "buddhist mantra series",
+   "language": "en",
+   "primary_asin": "B0CYC5NLY6",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0CYC5NLY6",
+     "format": "ebook",
+     "published_at": "2024-03-30",
+     "amazon_url": "https://www.amazon.com/dp/B0CYC5NLY6"
+    }
+   ]
+  },
+  {
+   "slug": "yoga-for-every-woman-unlock-the-secrets-to-vitality-balance-and-inner-peace-tips",
+   "title": "\"Yoga for Every Woman: Unlock the Secrets to Vitality, Balance, and Inner Peace\": \"Tips for Incorporating Yoga into Your Daily Routine for Sustainable Health and Well-being\"",
+   "author": "Emily K Patel",
+   "series": null,
+   "language": "en",
+   "primary_asin": "B0C3P6YCTD",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0C3P6YCTD",
+     "format": "ebook",
+     "published_at": "2023-04-26",
+     "amazon_url": "https://www.amazon.com/dp/B0C3P6YCTD"
+    },
+    {
+     "asin": "B0C2SPYYQX",
+     "format": "paperback",
+     "published_at": "2023-04-27",
+     "amazon_url": "https://www.amazon.com/dp/B0C2SPYYQX"
+    }
+   ]
+  },
+  {
+   "slug": "b0cz4srqw5",
+   "title": "\"अनलॉकिंग एनलाइटनमेंट: द इटरनल पॉवर ऑफ़ नाम-मायोहो-रेंगे-क्यो इन ए मॉडर्न वर्ल्ड\"",
+   "author": "Emily K Patel",
+   "series": "buddhist mantra series",
+   "language": "hi",
+   "primary_asin": "B0CZ4SRQW5",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0CZ4SRQW5",
+     "format": "ebook",
+     "published_at": "2024-03-30",
+     "amazon_url": "https://www.amazon.com/dp/B0CZ4SRQW5"
+    }
+   ]
+  },
+  {
+   "slug": "b0cxfc7hfy",
+   "title": "\"कमल का गहना: ओम मणि पद्मे हम के रहस्यों का अनावरण\"",
+   "author": "Emily K Patel",
+   "series": "buddhist mantra series",
+   "language": "hi",
+   "primary_asin": "B0CXFC7HFY",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0CXFC7HFY",
+     "format": "ebook",
+     "published_at": "2024-03-08",
+     "amazon_url": "https://www.amazon.com/dp/B0CXFC7HFY"
+    }
+   ]
+  },
+  {
+   "slug": "b0cw1j4dw3",
+   "title": "\"सृजन और संबंध: तुलनात्मक परिप्रेक्ष्य से उत्पत्ति और सुमेरियन ग्रंथों की खोज\"",
+   "author": "Emily K Patel",
+   "series": "nag hammadi series",
+   "language": "hi",
+   "primary_asin": "B0CW1J4DW3",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0CW1J4DW3",
+     "format": "ebook",
+     "published_at": "2024-02-21",
+     "amazon_url": "https://www.amazon.com/dp/B0CW1J4DW3"
+    }
+   ]
+  },
+  {
+   "slug": "b0cw24rpxp",
+   "title": "“創造與連結：從比較的角度探索創世記和蘇美爾文本”",
+   "author": "Emily K Patel",
+   "series": "nag hammadi series",
+   "language": "zh",
+   "primary_asin": "B0CW24RPXP",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0CW24RPXP",
+     "format": "ebook",
+     "published_at": "2024-02-20",
+     "amazon_url": "https://www.amazon.com/dp/B0CW24RPXP"
+    }
+   ]
+  },
+  {
+   "slug": "b0cthqklft",
+   "title": "《超越性：探索密宗的靈性向度》",
+   "author": "Emily K Patel",
+   "series": "forbidden tantra series",
+   "language": "zh",
+   "primary_asin": "B0CTHQKLFT",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0CTHQKLFT",
+     "format": "ebook",
+     "published_at": "2024-02-24",
+     "amazon_url": "https://www.amazon.com/dp/B0CTHQKLFT"
+    }
+   ]
+  },
+  {
+   "slug": "a-comprehensive-guide-on-the-avalokitesvara-mantra-buddhist-mantra-series",
+   "title": "A Comprehensive Guide On The Avalokitesvara Mantra: Buddhist Mantra Series",
+   "author": "Emily K Patel",
+   "series": "buddhist mantra series",
+   "language": "en",
+   "primary_asin": "B0C2NN8DNK",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0C2NN8DNK",
+     "format": "ebook",
+     "published_at": "2023-04-16",
+     "amazon_url": "https://www.amazon.com/dp/B0C2NN8DNK"
+    },
+    {
+     "asin": "B0DPR77SFP",
+     "format": "hardcover",
+     "published_at": "2024-12-06",
+     "amazon_url": "https://www.amazon.com/dp/B0DPR77SFP"
+    },
+    {
+     "asin": "B0C1J7F6SC",
+     "format": "paperback",
+     "published_at": "2023-04-17",
+     "amazon_url": "https://www.amazon.com/dp/B0C1J7F6SC"
+    }
+   ]
+  },
+  {
+   "slug": "a-conversation-between-a-yogi-artificial-intelligence-are-aliens-already-living-",
+   "title": "A Conversation Between A Yogi & Artificial Intelligence: Are aliens already living on Earth?",
+   "author": "Rav Shiva",
+   "series": "conversations between a yogi and artificial intelligence",
+   "language": "en",
+   "primary_asin": "B0C3L7W5SC",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0C3L7W5SC",
+     "format": "ebook",
+     "published_at": "2023-04-26",
+     "amazon_url": "https://www.amazon.com/dp/B0C3L7W5SC"
+    }
+   ]
+  },
+  {
+   "slug": "a-conversation-between-a-yogi-and-artificial-intelligence-about-god-satan-techno",
+   "title": "A Conversation between a Yogi and Artificial Intelligence about God, Satan & Technology: The Singularity Series",
+   "author": "Rav Shiva",
+   "series": "conversations between a yogi and artificial intelligence",
+   "language": "en",
+   "primary_asin": "B0C3KW4PMR",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0C3KW4PMR",
+     "format": "ebook",
+     "published_at": "2023-04-26",
+     "amazon_url": "https://www.amazon.com/dp/B0C3KW4PMR"
+    }
+   ]
+  },
+  {
+   "slug": "an-ancient-mantra-for-getting-the-girl-you-want-to-love-you-forbidden-mantra-ser",
+   "title": "An Ancient Mantra for Getting the Girl You Want to Love You: Forbidden Mantra Series",
+   "author": "Rav Shiva",
+   "series": "forbidden mantra series",
+   "language": "en",
+   "primary_asin": "B0BXBMP5NC",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0BXBMP5NC",
+     "format": "ebook",
+     "published_at": "2023-03-02",
+     "amazon_url": "https://www.amazon.com/dp/B0BXBMP5NC"
+    }
+   ]
+  },
+  {
+   "slug": "an-ancient-sanskrit-mantra-to-attain-sexual-pleasure-for-men-forbidden-mantras-s",
+   "title": "An Ancient Sanskrit Mantra to Attain Sexual Pleasure for Men: Forbidden Mantras Series",
+   "author": "Rav Shiva",
+   "series": "forbidden mantra series",
+   "language": "en",
+   "primary_asin": "B0BXBL84LW",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0BXBL84LW",
+     "format": "ebook",
+     "published_at": "2023-03-02",
+     "amazon_url": "https://www.amazon.com/dp/B0BXBL84LW"
+    }
+   ]
+  },
+  {
+   "slug": "ancient-breathing-techniques-that-will-revitalize-you-forbidden-mantra-press",
+   "title": "Ancient Breathing Techniques that will revitalize you: Forbidden Mantra Press",
+   "author": "Emily K. Patel",
+   "series": "breath mastery series",
+   "language": "en",
+   "primary_asin": "B0BXCCWS95",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0BXCCWS95",
+     "format": "ebook",
+     "published_at": "2023-03-03",
+     "amazon_url": "https://www.amazon.com/dp/B0BXCCWS95"
+    }
+   ]
+  },
+  {
+   "slug": "apocalypse-of-adam-part-ii-the-war-of-the-archons",
+   "title": "Apocalypse of Adam: Part II – The War of the Archons",
+   "author": "Emily K Patel",
+   "series": "nag hammadi series",
+   "language": "en",
+   "primary_asin": "B0GWS9VC82",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0H671G2S7",
+     "format": "audiobook",
+     "published_at": "2026-07-11",
+     "amazon_url": "https://www.amazon.com/dp/B0H671G2S7"
+    },
+    {
+     "asin": "B0GWS9VC82",
+     "format": "ebook",
+     "published_at": "2026-04-11",
+     "amazon_url": "https://www.amazon.com/dp/B0GWS9VC82"
+    },
+    {
+     "asin": "B0GWWMZDS6",
+     "format": "hardcover",
+     "published_at": "2026-04-12",
+     "amazon_url": "https://www.amazon.com/dp/B0GWWMZDS6"
+    },
+    {
+     "asin": "B0GWVMZQ8S",
+     "format": "paperback",
+     "published_at": "2026-04-11",
+     "amazon_url": "https://www.amazon.com/dp/B0GWVMZQ8S"
+    }
+   ]
+  },
+  {
+   "slug": "archons-unveiled-ii-multiphasic-precognition-of-reality",
+   "title": "Archons Unveiled II:: Multiphasic Precognition of Reality",
+   "author": "TSPRavshiva The Spiritual Philan...",
+   "series": "the archon series",
+   "language": "en",
+   "primary_asin": "B0F3XRW9MD",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0F3XRW9MD",
+     "format": "ebook",
+     "published_at": "2025-04-07",
+     "amazon_url": "https://www.amazon.com/dp/B0F3XRW9MD"
+    },
+    {
+     "asin": "B0F42VSSK9",
+     "format": "paperback",
+     "published_at": "2025-04-08",
+     "amazon_url": "https://www.amazon.com/dp/B0F42VSSK9"
+    }
+   ]
+  },
+  {
+   "slug": "archons-unveiled-iii-the-code-of-immortality",
+   "title": "Archons Unveiled III:: The Code of Immortality",
+   "author": "TSPRavshiva The Spiritual Philan...",
+   "series": "the archon series",
+   "language": "en",
+   "primary_asin": "B0F3ZLS922",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0F3ZLS922",
+     "format": "ebook",
+     "published_at": "2025-04-08",
+     "amazon_url": "https://www.amazon.com/dp/B0F3ZLS922"
+    },
+    {
+     "asin": "B0F44G66WZ",
+     "format": "paperback",
+     "published_at": "2025-04-08",
+     "amazon_url": "https://www.amazon.com/dp/B0F44G66WZ"
+    }
+   ]
+  },
+  {
+   "slug": "archons-unveiled-part-4-the-transformation",
+   "title": "Archons Unveiled:: Part 4 – The Transformation",
+   "author": "TSPRavshiva The Spiritual Philan...",
+   "series": "the archon series",
+   "language": "en",
+   "primary_asin": "B0DMTWBMR4",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0DMTWBMR4",
+     "format": "ebook",
+     "published_at": "2025-04-09",
+     "amazon_url": "https://www.amazon.com/dp/B0DMTWBMR4"
+    },
+    {
+     "asin": "B0F4JZL1CM",
+     "format": "paperback",
+     "published_at": "2025-04-11",
+     "amazon_url": "https://www.amazon.com/dp/B0F4JZL1CM"
+    }
+   ]
+  },
+  {
+   "slug": "archons-unveiled-the-non-human-manipulation-of-human-consciousness",
+   "title": "Archons Unveiled:: The Non-Human Manipulation of Human Consciousness",
+   "author": "The Spiritual Philanthropist Rav...",
+   "series": "the archon series",
+   "language": "en",
+   "primary_asin": "B0F2ZSLW5H",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0F2ZSLW5H",
+     "format": "ebook",
+     "published_at": "2025-03-30",
+     "amazon_url": "https://www.amazon.com/dp/B0F2ZSLW5H"
+    }
+   ]
+  },
+  {
+   "slug": "benny-the-brave-and-the-shimmering-night-a-heartwarming-bedtime-adventure-pictur",
+   "title": "Benny the Brave and the Shimmering Night: A Heartwarming Bedtime Adventure Picture Book for Children Ages 3–8",
+   "author": "Emily Patel",
+   "series": "benny the brave adventures",
+   "language": "en",
+   "primary_asin": "B0G5BPZX47",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0G5BPZX47",
+     "format": "ebook",
+     "published_at": "2025-12-05",
+     "amazon_url": "https://www.amazon.com/dp/B0G5BPZX47"
+    }
+   ]
+  },
+  {
+   "slug": "beyond-sex-de-spirituele-dimensies-van-tantra-verkennen",
+   "title": "Beyond Sex: de spirituele dimensies van Tantra verkennen",
+   "author": "Emily K Patel",
+   "series": "forbidden tantra series",
+   "language": "en",
+   "primary_asin": "B0CG4R26KH",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0CG4R26KH",
+     "format": "ebook",
+     "published_at": "2023-08-20",
+     "amazon_url": "https://www.amazon.com/dp/B0CG4R26KH"
+    },
+    {
+     "asin": "B0DQYRJF34",
+     "format": "hardcover",
+     "published_at": "2024-12-19",
+     "amazon_url": "https://www.amazon.com/dp/B0DQYRJF34"
+    },
+    {
+     "asin": "B0CFZC75KS",
+     "format": "paperback",
+     "published_at": "2023-08-20",
+     "amazon_url": "https://www.amazon.com/dp/B0CFZC75KS"
+    }
+   ]
+  },
+  {
+   "slug": "beyond-sex-exploring-the-spiritual-dimensions-of-tantra",
+   "title": "Beyond Sex: Exploring the Spiritual Dimensions of Tantra",
+   "author": "Emily K Patel",
+   "series": "forbidden tantra series",
+   "language": "en",
+   "primary_asin": "B0DR9PWDC4",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0DR9PWDC4",
+     "format": "ebook",
+     "published_at": "2024-12-23",
+     "amazon_url": "https://www.amazon.com/dp/B0DR9PWDC4"
+    },
+    {
+     "asin": "B0DRGLK449",
+     "format": "hardcover",
+     "published_at": "2024-12-25",
+     "amazon_url": "https://www.amazon.com/dp/B0DRGLK449"
+    },
+    {
+     "asin": "B0DRD64TNV",
+     "format": "paperback",
+     "published_at": "2024-12-24",
+     "amazon_url": "https://www.amazon.com/dp/B0DRD64TNV"
+    }
+   ]
+  },
+  {
+   "slug": "beyond-sex-exploring-the-spiritual-dimensions-of-tantra-how-to-series",
+   "title": "Beyond Sex: Exploring the Spiritual Dimensions of Tantra: How To Series",
+   "author": "Emily K. Patel",
+   "series": "forbidden tantra series",
+   "language": "en",
+   "primary_asin": "B0BX75YQX3",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0BX75YQX3",
+     "format": "ebook",
+     "published_at": "2023-03-01",
+     "amazon_url": "https://www.amazon.com/dp/B0BX75YQX3"
+    },
+    {
+     "asin": "B0C9SQHH9J",
+     "format": "hardcover",
+     "published_at": "2023-07-03",
+     "amazon_url": "https://www.amazon.com/dp/B0C9SQHH9J"
+    },
+    {
+     "asin": "B0C9RYT7HG",
+     "format": "paperback",
+     "published_at": "2023-07-02",
+     "amazon_url": "https://www.amazon.com/dp/B0C9RYT7HG"
+    }
+   ]
+  },
+  {
+   "slug": "brahmastra-weapon-of-god-forbidden-mantra-series",
+   "title": "Brahmastra: Weapon of God: Forbidden Mantra Series",
+   "author": "Rav Shiva",
+   "series": "forbidden mantra series",
+   "language": "en",
+   "primary_asin": "B0BY3RRH44",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0BY3RRH44",
+     "format": "ebook",
+     "published_at": "2023-03-10",
+     "amazon_url": "https://www.amazon.com/dp/B0BY3RRH44"
+    }
+   ]
+  },
+  {
+   "slug": "chakra-mastery-a-spiritual-approach-to-cultivating-positive-energies-and-transfo",
+   "title": "Chakra Mastery: A Spiritual Approach to Cultivating Positive Energies and Transforming Your Life",
+   "author": "Emily K Patel",
+   "series": "forbidden tantra series",
+   "language": "en",
+   "primary_asin": "B0CFYNWYWN",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0CFYNWYWN",
+     "format": "ebook",
+     "published_at": "2023-08-17",
+     "amazon_url": "https://www.amazon.com/dp/B0CFYNWYWN"
+    },
+    {
+     "asin": "B0CFZGX8QN",
+     "format": "paperback",
+     "published_at": "2023-08-19",
+     "amazon_url": "https://www.amazon.com/dp/B0CFZGX8QN"
+    }
+   ]
+  },
+  {
+   "slug": "das-erscheinen-adams",
+   "title": "Das Erscheinen Adams",
+   "author": "Emily K Patel",
+   "series": "nag hammadi series",
+   "language": "de",
+   "primary_asin": "B0CVW787KP",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0CVW787KP",
+     "format": "ebook",
+     "published_at": "2024-02-18",
+     "amazon_url": "https://www.amazon.com/dp/B0CVW787KP"
+    }
+   ]
+  },
+  {
+   "slug": "das-innere-feuer-entfesseln-die-alte-kunst-der-tummo-atemarbeit-fur-radikale-tra",
+   "title": "Das innere Feuer entfesseln: Die alte Kunst der Tummo-Atemarbeit für radikale Transformation",
+   "author": "Emily K Patel",
+   "series": "breath mastery series",
+   "language": "de",
+   "primary_asin": "B0CWXW3HXP",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0CWXW3HXP",
+     "format": "ebook",
+     "published_at": "2024-03-02",
+     "amazon_url": "https://www.amazon.com/dp/B0CWXW3HXP"
+    },
+    {
+     "asin": "B0DRW4KJWT",
+     "format": "hardcover",
+     "published_at": "2024-12-30",
+     "amazon_url": "https://www.amazon.com/dp/B0DRW4KJWT"
+    },
+    {
+     "asin": "B0DRW33XN7",
+     "format": "paperback",
+     "published_at": "2024-12-30",
+     "amazon_url": "https://www.amazon.com/dp/B0DRW33XN7"
+    }
+   ]
+  },
+  {
+   "slug": "datguddiad-adda",
+   "title": "Datguddiad Adda",
+   "author": "Emily K Patel",
+   "series": "nag hammadi series",
+   "language": "en",
+   "primary_asin": "B0DR7FGXGT",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0DR7FGXGT",
+     "format": "ebook",
+     "published_at": "2024-12-22",
+     "amazon_url": "https://www.amazon.com/dp/B0DR7FGXGT"
+    },
+    {
+     "asin": "B0DRFBYZGN",
+     "format": "hardcover",
+     "published_at": "2024-12-25",
+     "amazon_url": "https://www.amazon.com/dp/B0DRFBYZGN"
+    },
+    {
+     "asin": "B0DRFD3VYC",
+     "format": "paperback",
+     "published_at": "2024-12-25",
+     "amazon_url": "https://www.amazon.com/dp/B0DRFD3VYC"
+    }
+   ]
+  },
+  {
+   "slug": "de-verschijning-van-adam",
+   "title": "De verschijning van Adam",
+   "author": "Emily K Patel",
+   "series": "nag hammadi series",
+   "language": "en",
+   "primary_asin": "B0CVW83LGY",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0CVW83LGY",
+     "format": "ebook",
+     "published_at": "2024-02-18",
+     "amazon_url": "https://www.amazon.com/dp/B0CVW83LGY"
+    },
+    {
+     "asin": "B0DQWL2PNS",
+     "format": "hardcover",
+     "published_at": "2024-12-19",
+     "amazon_url": "https://www.amazon.com/dp/B0DQWL2PNS"
+    },
+    {
+     "asin": "B0DR2LSYBL",
+     "format": "paperback",
+     "published_at": "2024-12-20",
+     "amazon_url": "https://www.amazon.com/dp/B0DR2LSYBL"
+    }
+   ]
+  },
+  {
+   "slug": "desatando-el-fuego-interior-el-antiguo-arte-de-la-respiracion-tummo-para-una-tra",
+   "title": "Desatando el fuego interior: el antiguo arte de la respiración Tummo para una transformación radical",
+   "author": "Emily K Patel",
+   "series": "breath mastery series",
+   "language": "es",
+   "primary_asin": "B0CWYTQ5RC",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0H8MJS9FD",
+     "format": "audiobook",
+     "published_at": "2026-07-12",
+     "amazon_url": "https://www.amazon.com/dp/B0H8MJS9FD"
+    },
+    {
+     "asin": "B0CWYTQ5RC",
+     "format": "ebook",
+     "published_at": "2024-03-03",
+     "amazon_url": "https://www.amazon.com/dp/B0CWYTQ5RC"
+    },
+    {
+     "asin": "B0DPSPJ8PS",
+     "format": "hardcover",
+     "published_at": "2024-12-07",
+     "amazon_url": "https://www.amazon.com/dp/B0DPSPJ8PS"
+    },
+    {
+     "asin": "B0DPSM53HW",
+     "format": "paperback",
+     "published_at": "2024-12-07",
+     "amazon_url": "https://www.amazon.com/dp/B0DPSM53HW"
+    }
+   ]
+  },
+  {
+   "slug": "edenic-origins-die-heiligen-wurzeln-des-veganismus",
+   "title": "Edenic Origins:: Die heiligen Wurzeln des Veganismus",
+   "author": "Emily K Patel",
+   "series": "sacred plant based traditions",
+   "language": "de",
+   "primary_asin": "B0F376B2M6",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0F376B2M6",
+     "format": "ebook",
+     "published_at": "2025-04-01",
+     "amazon_url": "https://www.amazon.com/dp/B0F376B2M6"
+    },
+    {
+     "asin": "B0F3W11JD5",
+     "format": "paperback",
+     "published_at": "2025-04-06",
+     "amazon_url": "https://www.amazon.com/dp/B0F3W11JD5"
+    }
+   ]
+  },
+  {
+   "slug": "edenic-origins-the-sacred-roots-of-veganism",
+   "title": "Edenic Origins:: The Sacred Roots of Veganism",
+   "author": "Emily K Patel",
+   "series": "sacred plant based traditions",
+   "language": "en",
+   "primary_asin": "B0F2SM2SH1",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0F2SM2SH1",
+     "format": "ebook",
+     "published_at": "2025-03-31",
+     "amazon_url": "https://www.amazon.com/dp/B0F2SM2SH1"
+    },
+    {
+     "asin": "B0F3V6NGG4",
+     "format": "paperback",
+     "published_at": "2025-04-05",
+     "amazon_url": "https://www.amazon.com/dp/B0F3V6NGG4"
+    }
+   ]
+  },
+  {
+   "slug": "el-apocalipsis-de-adan",
+   "title": "EL APOCALIPSIS DE ADÁN",
+   "author": "Emily K Patel",
+   "series": "nag hammadi series",
+   "language": "es",
+   "primary_asin": "B0CVVFSVKT",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0CVVFSVKT",
+     "format": "ebook",
+     "published_at": "2024-02-17",
+     "amazon_url": "https://www.amazon.com/dp/B0CVVFSVKT"
+    },
+    {
+     "asin": "B0CVVHH3J2",
+     "format": "paperback",
+     "published_at": "2024-02-18",
+     "amazon_url": "https://www.amazon.com/dp/B0CVVHH3J2"
+    }
+   ]
+  },
+  {
+   "slug": "energy-unleashed-the-hidden-superpowers-of-mo-pai",
+   "title": "Energy Unleashed: The Hidden Superpowers of Mo Pai",
+   "author": "Emily K Patel",
+   "series": "buddhist mantra series",
+   "language": "en",
+   "primary_asin": "B0F287TGGL",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0F287TGGL",
+     "format": "ebook",
+     "published_at": "2025-03-23",
+     "amazon_url": "https://www.amazon.com/dp/B0F287TGGL"
+    },
+    {
+     "asin": "B0F2B2CTWH",
+     "format": "hardcover",
+     "published_at": "2025-03-24",
+     "amazon_url": "https://www.amazon.com/dp/B0F2B2CTWH"
+    },
+    {
+     "asin": "B0F29FBNF3",
+     "format": "paperback",
+     "published_at": "2025-03-24",
+     "amazon_url": "https://www.amazon.com/dp/B0F29FBNF3"
+    }
+   ]
+  },
+  {
+   "slug": "enlightened-silly-comic-strips-twilight-zone-meets-looney-toons",
+   "title": "Enlightened Silly Comic Strips: Twilight Zone meets Looney Toons",
+   "author": "Rav Shiva",
+   "series": null,
+   "language": "en",
+   "primary_asin": "B06XNLT8JL",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B06XNLT8JL",
+     "format": "ebook",
+     "published_at": "2017-03-15",
+     "amazon_url": "https://www.amazon.com/dp/B06XNLT8JL"
+    }
+   ]
+  },
+  {
+   "slug": "enlightened-silly-comics-art-humor-with-insight-social-satire-and-political-humo",
+   "title": "Enlightened Silly Comics: Art & Humor with Insight / Social Satire and Political Humor",
+   "author": "Rav Shiva",
+   "series": null,
+   "language": "en",
+   "primary_asin": "B06XHLQZQR",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B06XHLQZQR",
+     "format": "ebook",
+     "published_at": "2017-03-09",
+     "amazon_url": "https://www.amazon.com/dp/B06XHLQZQR"
+    }
+   ]
+  },
+  {
+   "slug": "forbidden-fruit-top-5-herbs-to-treat-erectile-dysfunction-forbidden-mantra-serie",
+   "title": "Forbidden Fruit: Top 5 Herbs To Treat Erectile Dysfunction: Forbidden Mantra Series",
+   "author": "Rav Shiva",
+   "series": "forbidden mantra series",
+   "language": "en",
+   "primary_asin": "B0BXJSQFKD",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0BXJSQFKD",
+     "format": "ebook",
+     "published_at": "2023-03-05",
+     "amazon_url": "https://www.amazon.com/dp/B0BXJSQFKD"
+    }
+   ]
+  },
+  {
+   "slug": "forbidden-practices-increase-the-size-and-stamina-of-your-manhood-forbidden-prac",
+   "title": "Forbidden Practices: Increase the size and stamina of your manhood: Forbidden Practices Series",
+   "author": "Rav Shiva",
+   "series": "forbidden mantra series",
+   "language": "en",
+   "primary_asin": "B0BXHQQS8W",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0BXHQQS8W",
+     "format": "ebook",
+     "published_at": "2023-03-04",
+     "amazon_url": "https://www.amazon.com/dp/B0BXHQQS8W"
+    }
+   ]
+  },
+  {
+   "slug": "from-the-apocrypha-the-book-of-macabees",
+   "title": "FROM THE APOCRYPHA - The Book of Macabees",
+   "author": "Emily K Patel",
+   "series": null,
+   "language": "en",
+   "primary_asin": "B0BZDM2QYX",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0BZDM2QYX",
+     "format": "ebook",
+     "published_at": "2023-03-23",
+     "amazon_url": "https://www.amazon.com/dp/B0BZDM2QYX"
+    }
+   ]
+  },
+  {
+   "slug": "gayatri-mantra-light-of-divine-intelligence",
+   "title": "Gayatri Mantra: Light of Divine Intelligence",
+   "author": "Forbidden Mantra Press",
+   "series": "forbidden mantra series",
+   "language": "en",
+   "primary_asin": "B0F9PKY776",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0H8MDVC72",
+     "format": "audiobook",
+     "published_at": "2026-07-13",
+     "amazon_url": "https://www.amazon.com/dp/B0H8MDVC72"
+    },
+    {
+     "asin": "B0F9PKY776",
+     "format": "ebook",
+     "published_at": "2025-05-23",
+     "amazon_url": "https://www.amazon.com/dp/B0F9PKY776"
+    }
+   ]
+  },
+  {
+   "slug": "gnostic-gospels-and-the-hidden-christ",
+   "title": "Gnostic Gospels and the Hidden Christ",
+   "author": "Emily K Patel",
+   "series": "nag hammadi series",
+   "language": "en",
+   "primary_asin": "B0H444WGPY",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0H85B87X8",
+     "format": "audiobook",
+     "published_at": "2026-07-10",
+     "amazon_url": "https://www.amazon.com/dp/B0H85B87X8"
+    },
+    {
+     "asin": "B0H444WGPY",
+     "format": "ebook",
+     "published_at": "2026-06-05",
+     "amazon_url": "https://www.amazon.com/dp/B0H444WGPY"
+    },
+    {
+     "asin": "B0H4678MRC",
+     "format": "hardcover",
+     "published_at": "2026-06-05",
+     "amazon_url": "https://www.amazon.com/dp/B0H4678MRC"
+    },
+    {
+     "asin": "B0H465SK2J",
+     "format": "paperback",
+     "published_at": "2026-06-05",
+     "amazon_url": "https://www.amazon.com/dp/B0H465SK2J"
+    }
+   ]
+  },
+  {
+   "slug": "have-sex-like-a-god-kundalini-awakening-instruction-manual-forbidden-mantra-seri",
+   "title": "Have Sex Like A God: Kundalini Awakening Instruction Manual: Forbidden Mantra Series",
+   "author": "Rav Shiva",
+   "series": "forbidden mantra series",
+   "language": "en",
+   "primary_asin": "B0BXBN7X5N",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0BXBN7X5N",
+     "format": "ebook",
+     "published_at": "2023-03-02",
+     "amazon_url": "https://www.amazon.com/dp/B0BXBN7X5N"
+    }
+   ]
+  },
+  {
+   "slug": "hazte-irresistiblemente-atractivo-con-el-mantra-kleem",
+   "title": "Hazte irresistiblemente atractivo con el mantra Kleem",
+   "author": "Emily K Patel",
+   "series": "forbidden mantra series",
+   "language": "es",
+   "primary_asin": "B0CW19ZHGX",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0CW19ZHGX",
+     "format": "ebook",
+     "published_at": "2024-03-03",
+     "amazon_url": "https://www.amazon.com/dp/B0CW19ZHGX"
+    }
+   ]
+  },
+  {
+   "slug": "how-to-chant-the-gayatri-mantra-forbidden-mantra-series",
+   "title": "How to Chant the Gayatri Mantra: Forbidden Mantra Series",
+   "author": "Rav Shiva",
+   "series": "forbidden mantra series",
+   "language": "en",
+   "primary_asin": "B0BY7PDZXS",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0BY7PDZXS",
+     "format": "ebook",
+     "published_at": "2023-03-13",
+     "amazon_url": "https://www.amazon.com/dp/B0BY7PDZXS"
+    }
+   ]
+  },
+  {
+   "slug": "how-to-stop-overthinking-at-night-a-simple-guide-to-quiet-your-mind-and-finally-",
+   "title": "How to Stop Overthinking at Night: A Simple Guide to Quiet Your Mind and Finally Fall Asleep",
+   "author": "TSP Ravshiva",
+   "series": null,
+   "language": "en",
+   "primary_asin": "B0GBVRTSSR",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0H8MKFF22",
+     "format": "audiobook",
+     "published_at": "2026-07-13",
+     "amazon_url": "https://www.amazon.com/dp/B0H8MKFF22"
+    },
+    {
+     "asin": "B0GBVRTSSR",
+     "format": "ebook",
+     "published_at": "2025-12-22",
+     "amazon_url": "https://www.amazon.com/dp/B0GBVRTSSR"
+    }
+   ]
+  },
+  {
+   "slug": "how-to-stop-overthinking-right-now-a-simple-proven-system-to-calm-your-mind-and-",
+   "title": "How to Stop Overthinking Right Now: A Simple, Proven System to Calm Your Mind and Take Back Control",
+   "author": "TSP Ravshiva",
+   "series": null,
+   "language": "en",
+   "primary_asin": "B0G9C2PXJS",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0H8MGHPF9",
+     "format": "audiobook",
+     "published_at": "2026-07-13",
+     "amazon_url": "https://www.amazon.com/dp/B0H8MGHPF9"
+    },
+    {
+     "asin": "B0G9C2PXJS",
+     "format": "ebook",
+     "published_at": "2025-12-20",
+     "amazon_url": "https://www.amazon.com/dp/B0G9C2PXJS"
+    }
+   ]
+  },
+  {
+   "slug": "invocar-al-feroz-desbloqueo-de-fuerza-y-proteccion-con-el-durga-mantra",
+   "title": "Invocar al Feroz: Desbloqueo de fuerza y protección con el Durga Mantra",
+   "author": "Forbidden Mantra Press",
+   "series": "forbidden mantra series",
+   "language": "es",
+   "primary_asin": "B0F9WVXM9T",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0F9WVXM9T",
+     "format": "ebook",
+     "published_at": "2025-05-26",
+     "amazon_url": "https://www.amazon.com/dp/B0F9WVXM9T"
+    }
+   ]
+  },
+  {
+   "slug": "invoke-the-fierce-unlocking-strength-and-protection-with-the-durga-mantra",
+   "title": "Invoke the Fierce:: Unlocking Strength and Protection with the Durga Mantra",
+   "author": "Forbidden Mantra Press",
+   "series": "forbidden mantra series",
+   "language": "en",
+   "primary_asin": "B0F9WQSNVW",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0F9WQSNVW",
+     "format": "ebook",
+     "published_at": "2025-05-26",
+     "amazon_url": "https://www.amazon.com/dp/B0F9WQSNVW"
+    }
+   ]
+  },
+  {
+   "slug": "jinn-dark-angels-shapeshifters-and-ghouls-muslim-prayer-quotes-series",
+   "title": "JINN - Dark Angels, Shapeshifters, and Ghouls: Muslim Prayer & Quotes Series",
+   "author": "TSPRav Shiva",
+   "series": "muslim prayer series",
+   "language": "en",
+   "primary_asin": "B0BY758969",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0BY758969",
+     "format": "ebook",
+     "published_at": "2023-03-12",
+     "amazon_url": "https://www.amazon.com/dp/B0BY758969"
+    }
+   ]
+  },
+  {
+   "slug": "kama-sutra-sexual-yoga-with-a-partner-forbidden-mantra-series",
+   "title": "Kama Sutra - Sexual Yoga with a Partner: Forbidden Mantra Series",
+   "author": "Rav Shiva",
+   "series": "forbidden mantra series",
+   "language": "en",
+   "primary_asin": "B0BXHTD3M9",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0BXHTD3M9",
+     "format": "ebook",
+     "published_at": "2023-03-04",
+     "amazon_url": "https://www.amazon.com/dp/B0BXHTD3M9"
+    }
+   ]
+  },
+  {
+   "slug": "kamdev-gayatri-mantra-an-instructional-manual-forbidden-mantra-series",
+   "title": "Kamdev Gayatri Mantra: An Instructional Manual: Forbidden Mantra Series",
+   "author": "Rav Shiva",
+   "series": "forbidden mantra series",
+   "language": "en",
+   "primary_asin": "B0BXBTMYBX",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0BXBTMYBX",
+     "format": "ebook",
+     "published_at": "2023-03-03",
+     "amazon_url": "https://www.amazon.com/dp/B0BXBTMYBX"
+    }
+   ]
+  },
+  {
+   "slug": "kamdev-mantra-for-making-yourself-attractive-forbidden-mantra-series",
+   "title": "Kamdev Mantra for making yourself attractive: Forbidden Mantra Series",
+   "author": "Emily K. Patel",
+   "series": "forbidden tantra series",
+   "language": "en",
+   "primary_asin": "B0BZTKCYRN",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0F93NVQ9J",
+     "format": "audiobook",
+     "published_at": "2026-07-11",
+     "amazon_url": "https://www.amazon.com/dp/B0F93NVQ9J"
+    },
+    {
+     "asin": "B0BZTKCYRN",
+     "format": "ebook",
+     "published_at": "2023-03-28",
+     "amazon_url": "https://www.amazon.com/dp/B0BZTKCYRN"
+    },
+    {
+     "asin": "B0C63P69BT",
+     "format": "paperback",
+     "published_at": "2023-05-25",
+     "amazon_url": "https://www.amazon.com/dp/B0C63P69BT"
+    }
+   ]
+  },
+  {
+   "slug": "katyayani-mantra-for-removing-obstacles-and-delayed-marriages-forbidden-mantra-s",
+   "title": "Katyayani Mantra for Removing Obstacles and Delayed Marriages: Forbidden Mantra Series",
+   "author": "Emily K Patel",
+   "series": "forbidden mantra series",
+   "language": "en",
+   "primary_asin": "B0BY6ZNY1C",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0BY6ZNY1C",
+     "format": "ebook",
+     "published_at": "2023-03-12",
+     "amazon_url": "https://www.amazon.com/dp/B0BY6ZNY1C"
+    }
+   ]
+  },
+  {
+   "slug": "kebra-nagast",
+   "title": "Kebra Nagast",
+   "author": "Forbidden Mantra Press",
+   "series": "ethiopian bible",
+   "language": "en",
+   "primary_asin": "B0FD4CFRDF",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0FD4CFRDF",
+     "format": "ebook",
+     "published_at": "2025-06-13",
+     "amazon_url": "https://www.amazon.com/dp/B0FD4CFRDF"
+    },
+    {
+     "asin": "B0FD7JXKGB",
+     "format": "paperback",
+     "published_at": "2025-06-14",
+     "amazon_url": "https://www.amazon.com/dp/B0FD7JXKGB"
+    }
+   ]
+  },
+  {
+   "slug": "la-mecanica-interna-del-cultivo-de-la-energia",
+   "title": "La mecánica interna del cultivo de la energía",
+   "author": "Emily K Patel",
+   "series": "the hidden technology of human power series",
+   "language": "es",
+   "primary_asin": "B0H3NV7ZVS",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0H8ML8C5F",
+     "format": "audiobook",
+     "published_at": "2026-07-12",
+     "amazon_url": "https://www.amazon.com/dp/B0H8ML8C5F"
+    },
+    {
+     "asin": "B0H3NV7ZVS",
+     "format": "ebook",
+     "published_at": "2026-06-02",
+     "amazon_url": "https://www.amazon.com/dp/B0H3NV7ZVS"
+    },
+    {
+     "asin": "B0H3SQK65J",
+     "format": "hardcover",
+     "published_at": "2026-06-03",
+     "amazon_url": "https://www.amazon.com/dp/B0H3SQK65J"
+    },
+    {
+     "asin": "B0H3T75J6P",
+     "format": "paperback",
+     "published_at": "2026-06-03",
+     "amazon_url": "https://www.amazon.com/dp/B0H3T75J6P"
+    }
+   ]
+  },
+  {
+   "slug": "lakshmi-gayatri-mantra-forbidden-mantra-press",
+   "title": "Lakshmi Gayatri Mantra: Forbidden Mantra Press",
+   "author": "Emily K Patel",
+   "series": "lakshmi mantra series",
+   "language": "en",
+   "primary_asin": "B0CQRKX83X",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0CQRKX83X",
+     "format": "ebook",
+     "published_at": "2023-12-21",
+     "amazon_url": "https://www.amazon.com/dp/B0CQRKX83X"
+    },
+    {
+     "asin": "B0CQRSQBFC",
+     "format": "paperback",
+     "published_at": "2023-12-21",
+     "amazon_url": "https://www.amazon.com/dp/B0CQRSQBFC"
+    }
+   ]
+  },
+  {
+   "slug": "lakshmi-gayatri-awakening-sacred-wealth-in-the-modern-age",
+   "title": "Lakshmi Gayatri:: Awakening Sacred Wealth in the Modern Age",
+   "author": "Forbidden Mantra Press",
+   "series": "forbidden mantra series",
+   "language": "en",
+   "primary_asin": "B0FB2YT1JY",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0FB2YT1JY",
+     "format": "ebook",
+     "published_at": "2025-05-28",
+     "amazon_url": "https://www.amazon.com/dp/B0FB2YT1JY"
+    }
+   ]
+  },
+  {
+   "slug": "lakshmi-gayatri-el-despertar-de-la-riqueza-sagrada-en-la-era-moderna",
+   "title": "Lakshmi Gayatri:: El despertar de la riqueza sagrada en la era moderna",
+   "author": "Forbidden Mantra Press",
+   "series": null,
+   "language": "es",
+   "primary_asin": "B0DBDLXWJW",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0DBDLXWJW",
+     "format": "ebook",
+     "published_at": "2025-05-28",
+     "amazon_url": "https://www.amazon.com/dp/B0DBDLXWJW"
+    }
+   ]
+  },
+  {
+   "slug": "lakshmi-mantra-for-the-pleasure-of-wealth-abundance-forbidden-mantra-series",
+   "title": "Lakshmi Mantra for the Pleasure of Wealth & Abundance: Forbidden Mantra Series",
+   "author": "Rav Shiva",
+   "series": "forbidden mantra series",
+   "language": "en",
+   "primary_asin": "B0BXT8SWYX",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0BXT8SWYX",
+     "format": "ebook",
+     "published_at": "2023-03-08",
+     "amazon_url": "https://www.amazon.com/dp/B0BXT8SWYX"
+    }
+   ]
+  },
+  {
+   "slug": "liberer-le-feu-interieur-l-art-ancien-de-la-respiration-tummo-pour-une-transform",
+   "title": "Libérer le feu intérieur : l'art ancien de la respiration Tummo pour une transformation radicale",
+   "author": "Emily K Patel",
+   "series": "breath mastery series",
+   "language": "fr",
+   "primary_asin": "B0CW1B9JYY",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0CW1B9JYY",
+     "format": "ebook",
+     "published_at": "2024-03-03",
+     "amazon_url": "https://www.amazon.com/dp/B0CW1B9JYY"
+    },
+    {
+     "asin": "B0DRW3L4L1",
+     "format": "hardcover",
+     "published_at": "2024-12-30",
+     "amazon_url": "https://www.amazon.com/dp/B0DRW3L4L1"
+    },
+    {
+     "asin": "B0DRW2ZW7C",
+     "format": "paperback",
+     "published_at": "2024-12-30",
+     "amazon_url": "https://www.amazon.com/dp/B0DRW2ZW7C"
+    }
+   ]
+  },
+  {
+   "slug": "los-pensamientos-son-mantras",
+   "title": "LOS PENSAMIENTOS SON MANTRAS",
+   "author": "Ravi A. Kissoon",
+   "series": "integrative bioenhancement series",
+   "language": "en",
+   "primary_asin": "B0FFP3C6S1",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0CY88818M",
+     "format": "audiobook",
+     "published_at": "2026-07-11",
+     "amazon_url": "https://www.amazon.com/dp/B0CY88818M"
+    },
+    {
+     "asin": "B0FFP3C6S1",
+     "format": "ebook",
+     "published_at": "2025-06-26",
+     "amazon_url": "https://www.amazon.com/dp/B0FFP3C6S1"
+    },
+    {
+     "asin": "B0FFT31L46",
+     "format": "paperback",
+     "published_at": "2025-06-27",
+     "amazon_url": "https://www.amazon.com/dp/B0FFT31L46"
+    }
+   ]
+  },
+  {
+   "slug": "maa-kali-mantra-for-success-forbidden-mantra-series",
+   "title": "Maa Kali Mantra for Success: Forbidden Mantra Series",
+   "author": "Rav Shiva",
+   "series": "forbidden mantra series",
+   "language": "en",
+   "primary_asin": "B0BXTGYV5W",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0BXTGYV5W",
+     "format": "ebook",
+     "published_at": "2023-03-08",
+     "amazon_url": "https://www.amazon.com/dp/B0BXTGYV5W"
+    }
+   ]
+  },
+  {
+   "slug": "maa-kali-mantras-and-instructions-forbidden-mantra-series",
+   "title": "Maa Kali Mantras and Instructions: Forbidden Mantra Series",
+   "author": "Rav Shiva",
+   "series": "forbidden mantra series",
+   "language": "en",
+   "primary_asin": "B0BXTBM2QT",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0BXTBM2QT",
+     "format": "ebook",
+     "published_at": "2023-03-08",
+     "amazon_url": "https://www.amazon.com/dp/B0BXTBM2QT"
+    }
+   ]
+  },
+  {
+   "slug": "maa-kali-mantras-und-anweisungen",
+   "title": "Maa Kali Mantras und Anweisungen",
+   "author": "Emily K Patel",
+   "series": "forbidden mantra series",
+   "language": "de",
+   "primary_asin": "B0F4B7712F",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0F4B7712F",
+     "format": "ebook",
+     "published_at": "2025-04-09",
+     "amazon_url": "https://www.amazon.com/dp/B0F4B7712F"
+    }
+   ]
+  },
+  {
+   "slug": "machen-sie-sich-mit-dem-kleem-mantra-unwiderstehlich-attraktiv",
+   "title": "Machen Sie sich mit dem Kleem-Mantra unwiderstehlich attraktiv",
+   "author": "Emily K Patel",
+   "series": "forbidden mantra series",
+   "language": "en",
+   "primary_asin": "B0CWJ782FT",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0CWJ782FT",
+     "format": "ebook",
+     "published_at": "2024-03-03",
+     "amazon_url": "https://www.amazon.com/dp/B0CWJ782FT"
+    },
+    {
+     "asin": "B0DRYZP1HQ",
+     "format": "hardcover",
+     "published_at": "2024-12-31",
+     "amazon_url": "https://www.amazon.com/dp/B0DRYZP1HQ"
+    },
+    {
+     "asin": "B0DRZSM6X8",
+     "format": "paperback",
+     "published_at": "2025-01-01",
+     "amazon_url": "https://www.amazon.com/dp/B0DRZSM6X8"
+    }
+   ]
+  },
+  {
+   "slug": "maha-mrityunjaya-mantra",
+   "title": "Maha Mrityunjaya Mantra",
+   "author": "Forbidden Mantra Press",
+   "series": "forbidden mantra series",
+   "language": "en",
+   "primary_asin": "B0F9PZLQCP",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0F9PZLQCP",
+     "format": "ebook",
+     "published_at": "2025-05-23",
+     "amazon_url": "https://www.amazon.com/dp/B0F9PZLQCP"
+    }
+   ]
+  },
+  {
+   "slug": "make-yourself-irresistibly-attractive-with-the-kleem-mantra-forbidden-mantra-ser",
+   "title": "Make Yourself Irresistibly Attractive with the Kleem Mantra: Forbidden Mantra Series",
+   "author": "TSPRav Shiva",
+   "series": "forbidden mantra series",
+   "language": "en",
+   "primary_asin": "B0BY67Z5QR",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0H8MQYPPR",
+     "format": "audiobook",
+     "published_at": "2026-07-13",
+     "amazon_url": "https://www.amazon.com/dp/B0H8MQYPPR"
+    },
+    {
+     "asin": "B0BY67Z5QR",
+     "format": "ebook",
+     "published_at": "2023-03-12",
+     "amazon_url": "https://www.amazon.com/dp/B0BY67Z5QR"
+    },
+    {
+     "asin": "B0BZF9RHRY",
+     "format": "hardcover",
+     "published_at": "2023-03-29",
+     "amazon_url": "https://www.amazon.com/dp/B0BZF9RHRY"
+    },
+    {
+     "asin": "B0BZFCW9HT",
+     "format": "paperback",
+     "published_at": "2023-03-29",
+     "amazon_url": "https://www.amazon.com/dp/B0BZFCW9HT"
+    }
+   ]
+  },
+  {
+   "slug": "make-yourself-irresitible-to-anyone-with-kundalini-energy-and-cultivation-forbid",
+   "title": "Make Yourself Irresitible to Anyone with Kundalini Energy and Cultivation: Forbidden Mantra Series",
+   "author": "Rav Shiva",
+   "series": "forbidden mantra series",
+   "language": "en",
+   "primary_asin": "B0BXF91GRT",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0BXF91GRT",
+     "format": "ebook",
+     "published_at": "2023-03-03",
+     "amazon_url": "https://www.amazon.com/dp/B0BXF91GRT"
+    }
+   ]
+  },
+  {
+   "slug": "mantra-of-vajrayogini-a-practitioner-s-guide-to-wisdom-and-transformation",
+   "title": "Mantra of Vajrayogini: A Practitioner’s Guide to Wisdom and Transformation",
+   "author": "Emily K Patel",
+   "series": "buddhist mantra series",
+   "language": "en",
+   "primary_asin": "B0DP46F3S4",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0DP46F3S4",
+     "format": "ebook",
+     "published_at": "2024-11-27",
+     "amazon_url": "https://www.amazon.com/dp/B0DP46F3S4"
+    },
+    {
+     "asin": "B0DP5DZCV1",
+     "format": "hardcover",
+     "published_at": "2024-11-27",
+     "amazon_url": "https://www.amazon.com/dp/B0DP5DZCV1"
+    },
+    {
+     "asin": "B0DP59QBL9",
+     "format": "paperback",
+     "published_at": "2024-11-27",
+     "amazon_url": "https://www.amazon.com/dp/B0DP59QBL9"
+    }
+   ]
+  },
+  {
+   "slug": "mantra-sound-vibrational-energy-maha-mrityunjaya-mantra-forbidden-mantra-series",
+   "title": "Mantra Sound Vibrational Energy: Maha Mrityunjaya Mantra: Forbidden Mantra Series",
+   "author": "Emily K Patel",
+   "series": "forbidden tantra series",
+   "language": "en",
+   "primary_asin": "B0BY62FDGQ",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0BY62FDGQ",
+     "format": "ebook",
+     "published_at": "2023-03-12",
+     "amazon_url": "https://www.amazon.com/dp/B0BY62FDGQ"
+    },
+    {
+     "asin": "B0C6W96ZMZ",
+     "format": "hardcover",
+     "published_at": "2023-06-05",
+     "amazon_url": "https://www.amazon.com/dp/B0C6W96ZMZ"
+    },
+    {
+     "asin": "B0C6VYRBCD",
+     "format": "paperback",
+     "published_at": "2023-06-04",
+     "amazon_url": "https://www.amazon.com/dp/B0C6VYRBCD"
+    }
+   ]
+  },
+  {
+   "slug": "mantras-de-maa-kali-e-instrucciones",
+   "title": "Mantras de Maa Kali e instrucciones",
+   "author": "Emily K Patel",
+   "series": "forbidden mantra series",
+   "language": "en",
+   "primary_asin": "B0F4B4W29W",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0F4B4W29W",
+     "format": "ebook",
+     "published_at": "2025-04-09",
+     "amazon_url": "https://www.amazon.com/dp/B0F4B4W29W"
+    }
+   ]
+  },
+  {
+   "slug": "milagros-de-los-maestros-del-yoga",
+   "title": "Milagros de los Maestros del Yoga",
+   "author": "Emily K Patel",
+   "series": "forbidden mantra series",
+   "language": "es",
+   "primary_asin": "B0F3G1J1S2",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0F3G1J1S2",
+     "format": "ebook",
+     "published_at": "2025-04-02",
+     "amazon_url": "https://www.amazon.com/dp/B0F3G1J1S2"
+    },
+    {
+     "asin": "B0F3JFZSLG",
+     "format": "hardcover",
+     "published_at": "2025-04-03",
+     "amazon_url": "https://www.amazon.com/dp/B0F3JFZSLG"
+    },
+    {
+     "asin": "B0F3JNPVD1",
+     "format": "paperback",
+     "published_at": "2025-04-03",
+     "amazon_url": "https://www.amazon.com/dp/B0F3JNPVD1"
+    }
+   ]
+  },
+  {
+   "slug": "miracles-of-the-masters-of-yoga-siddhis-super-powers",
+   "title": "Miracles of the Masters of Yoga: Siddhis- Super Powers",
+   "author": "Emily K Patel",
+   "series": "forbidden tantra series",
+   "language": "en",
+   "primary_asin": "B0F3DF7BTK",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0F3DF7BTK",
+     "format": "ebook",
+     "published_at": "2025-04-02",
+     "amazon_url": "https://www.amazon.com/dp/B0F3DF7BTK"
+    },
+    {
+     "asin": "B0F3J35RZF",
+     "format": "hardcover",
+     "published_at": "2025-04-03",
+     "amazon_url": "https://www.amazon.com/dp/B0F3J35RZF"
+    },
+    {
+     "asin": "B0F3L2T7ML",
+     "format": "paperback",
+     "published_at": "2025-04-03",
+     "amazon_url": "https://www.amazon.com/dp/B0F3L2T7ML"
+    }
+   ]
+  },
+  {
+   "slug": "mo-pai-la-force-destructrice-et-guerisseuse-interieure",
+   "title": "Mo Pai : La force destructrice et guérisseuse intérieure",
+   "author": "Emily K Patel",
+   "series": "the hidden technology of human power series",
+   "language": "fr",
+   "primary_asin": "B0GZ6ZGCYY",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0H8MG1JQ4",
+     "format": "audiobook",
+     "published_at": "2026-07-14",
+     "amazon_url": "https://www.amazon.com/dp/B0H8MG1JQ4"
+    },
+    {
+     "asin": "B0GZ6ZGCYY",
+     "format": "ebook",
+     "published_at": "2026-05-01",
+     "amazon_url": "https://www.amazon.com/dp/B0GZ6ZGCYY"
+    },
+    {
+     "asin": "B0GZ7XWJT6",
+     "format": "hardcover",
+     "published_at": "2026-05-01",
+     "amazon_url": "https://www.amazon.com/dp/B0GZ7XWJT6"
+    },
+    {
+     "asin": "B0GZ7Z7NNC",
+     "format": "paperback",
+     "published_at": "2026-05-01",
+     "amazon_url": "https://www.amazon.com/dp/B0GZ7Z7NNC"
+    }
+   ]
+  },
+  {
+   "slug": "mo-pai-and-internal-alchemy-the-physiology-polarity-and-power-mechanics-behind-h",
+   "title": "Mo Pai and Internal Alchemy: The Physiology, Polarity, and Power Mechanics Behind Human Energy Cultivation",
+   "author": "Emily Patel",
+   "series": "the hidden technology of human power series",
+   "language": "en",
+   "primary_asin": "B0GCHGT4BX",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0H8JJHYLR",
+     "format": "audiobook",
+     "published_at": "2026-07-11",
+     "amazon_url": "https://www.amazon.com/dp/B0H8JJHYLR"
+    },
+    {
+     "asin": "B0GCHGT4BX",
+     "format": "ebook",
+     "published_at": "2025-12-25",
+     "amazon_url": "https://www.amazon.com/dp/B0GCHGT4BX"
+    },
+    {
+     "asin": "B0GCHWL6RP",
+     "format": "hardcover",
+     "published_at": "2025-12-25",
+     "amazon_url": "https://www.amazon.com/dp/B0GCHWL6RP"
+    },
+    {
+     "asin": "B0GCJSF7H9",
+     "format": "paperback",
+     "published_at": "2025-12-25",
+     "amazon_url": "https://www.amazon.com/dp/B0GCJSF7H9"
+    }
+   ]
+  },
+  {
+   "slug": "mo-pai-exposed-what-the-internal-power-community-refuses-to-admit",
+   "title": "Mo Pai Exposed: What the Internal Power Community Refuses to Admit",
+   "author": "Emily Patel",
+   "series": "the hidden technology of human power series",
+   "language": "en",
+   "primary_asin": "B0GFQ63JSF",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0H85C85V8",
+     "format": "audiobook",
+     "published_at": "2026-07-10",
+     "amazon_url": "https://www.amazon.com/dp/B0H85C85V8"
+    },
+    {
+     "asin": "B0GFQ63JSF",
+     "format": "ebook",
+     "published_at": "2026-01-08",
+     "amazon_url": "https://www.amazon.com/dp/B0GFQ63JSF"
+    },
+    {
+     "asin": "B0GFVWMR9B",
+     "format": "hardcover",
+     "published_at": "2026-01-09",
+     "amazon_url": "https://www.amazon.com/dp/B0GFVWMR9B"
+    },
+    {
+     "asin": "B0GFW4H6T2",
+     "format": "paperback",
+     "published_at": "2026-01-09",
+     "amazon_url": "https://www.amazon.com/dp/B0GFW4H6T2"
+    }
+   ]
+  },
+  {
+   "slug": "mo-pai-die-zerstorerische-und-heilende-innere-kraft",
+   "title": "Mo Pai: Die zerstörerische und heilende innere Kraft",
+   "author": "Emily K Patel",
+   "series": "the hidden technology of human power series",
+   "language": "de",
+   "primary_asin": "B0GZ71SMKH",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0GZ71SMKH",
+     "format": "ebook",
+     "published_at": "2026-05-01",
+     "amazon_url": "https://www.amazon.com/dp/B0GZ71SMKH"
+    },
+    {
+     "asin": "B0GZ9LSHT9",
+     "format": "hardcover",
+     "published_at": "2026-05-02",
+     "amazon_url": "https://www.amazon.com/dp/B0GZ9LSHT9"
+    },
+    {
+     "asin": "B0GZ8JS1TT",
+     "format": "paperback",
+     "published_at": "2026-05-01",
+     "amazon_url": "https://www.amazon.com/dp/B0GZ8JS1TT"
+    }
+   ]
+  },
+  {
+   "slug": "mo-pai-la-fuerza-destructiva-y-sanadora-interior",
+   "title": "Mo Pai: La fuerza destructiva y sanadora interior",
+   "author": "Emily K Patel",
+   "series": "the inner mechanics of energy cultivation",
+   "language": "es",
+   "primary_asin": "B0GYJ7P9QG",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0H8M7Z9XK",
+     "format": "audiobook",
+     "published_at": "2026-07-14",
+     "amazon_url": "https://www.amazon.com/dp/B0H8M7Z9XK"
+    },
+    {
+     "asin": "B0GYJ7P9QG",
+     "format": "ebook",
+     "published_at": "2026-04-29",
+     "amazon_url": "https://www.amazon.com/dp/B0GYJ7P9QG"
+    },
+    {
+     "asin": "B0GZ34X6X7",
+     "format": "hardcover",
+     "published_at": "2026-04-30",
+     "amazon_url": "https://www.amazon.com/dp/B0GZ34X6X7"
+    },
+    {
+     "asin": "B0GYZLZW9L",
+     "format": "paperback",
+     "published_at": "2026-04-29",
+     "amazon_url": "https://www.amazon.com/dp/B0GYZLZW9L"
+    }
+   ]
+  },
+  {
+   "slug": "mo-pai-the-destructive-and-healing-force-within-meditation-internal-power-and-th",
+   "title": "Mo Pai: The Destructive and Healing Force Within Meditation, Internal Power, and the Discipline That Shapes It",
+   "author": "Emily Patel",
+   "series": "the hidden technology of human power series",
+   "language": "en",
+   "primary_asin": "B0GFTC2YTM",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0H8MB14CP",
+     "format": "audiobook",
+     "published_at": "2026-07-14",
+     "amazon_url": "https://www.amazon.com/dp/B0H8MB14CP"
+    },
+    {
+     "asin": "B0GFTC2YTM",
+     "format": "ebook",
+     "published_at": "2026-01-09",
+     "amazon_url": "https://www.amazon.com/dp/B0GFTC2YTM"
+    },
+    {
+     "asin": "B0GFWBTZHL",
+     "format": "hardcover",
+     "published_at": "2026-01-09",
+     "amazon_url": "https://www.amazon.com/dp/B0GFWBTZHL"
+    },
+    {
+     "asin": "B0GFW8DJHW",
+     "format": "paperback",
+     "published_at": "2026-01-09",
+     "amazon_url": "https://www.amazon.com/dp/B0GFW8DJHW"
+    }
+   ]
+  },
+  {
+   "slug": "om-namah-shivaya-a-sacred-practice-guide",
+   "title": "Om Namah Shivaya:: A Sacred Practice Guide",
+   "author": "Forbidden Mantra Press",
+   "series": "forbidden mantra series",
+   "language": "en",
+   "primary_asin": "B0F9T23TX4",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0H8MJSRVJ",
+     "format": "audiobook",
+     "published_at": "2026-07-16",
+     "amazon_url": "https://www.amazon.com/dp/B0H8MJSRVJ"
+    },
+    {
+     "asin": "B0F9T23TX4",
+     "format": "ebook",
+     "published_at": "2025-05-24",
+     "amazon_url": "https://www.amazon.com/dp/B0F9T23TX4"
+    }
+   ]
+  },
+  {
+   "slug": "om-namah-shivaya-ein-leitfaden-zur-heiligen-praxis",
+   "title": "Om Namah Shivaya:: Ein Leitfaden zur heiligen Praxis",
+   "author": "Forbidden Mantra Press",
+   "series": "forbidden mantra series",
+   "language": "de",
+   "primary_asin": "B0F9TWY17M",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0F9TWY17M",
+     "format": "ebook",
+     "published_at": "2025-05-24",
+     "amazon_url": "https://www.amazon.com/dp/B0F9TWY17M"
+    }
+   ]
+  },
+  {
+   "slug": "om-namah-shivaya-una-guia-de-practica-sagrada",
+   "title": "Om Namah Shivaya:: Una guía de práctica sagrada",
+   "author": "Forbidden Mantra Press",
+   "series": "forbidden mantra series",
+   "language": "es",
+   "primary_asin": "B0F9SXV16N",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0H8MDS8VR",
+     "format": "audiobook",
+     "published_at": "2026-07-13",
+     "amazon_url": "https://www.amazon.com/dp/B0H8MDS8VR"
+    },
+    {
+     "asin": "B0F9SXV16N",
+     "format": "ebook",
+     "published_at": "2025-05-24",
+     "amazon_url": "https://www.amazon.com/dp/B0F9SXV16N"
+    }
+   ]
+  },
+  {
+   "slug": "origenes-edenicos-las-raices-sagradas-del-veganismo",
+   "title": "Orígenes edénicos:: las raíces sagradas del veganismo",
+   "author": "Emily K Patel",
+   "series": "sacred plant based traditions",
+   "language": "es",
+   "primary_asin": "B0F2ZKR53Z",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0F2ZKR53Z",
+     "format": "ebook",
+     "published_at": "2025-03-31",
+     "amazon_url": "https://www.amazon.com/dp/B0F2ZKR53Z"
+    },
+    {
+     "asin": "B0F3VX9X9M",
+     "format": "paperback",
+     "published_at": "2025-04-06",
+     "amazon_url": "https://www.amazon.com/dp/B0F3VX9X9M"
+    }
+   ]
+  },
+  {
+   "slug": "quotes-of-yeshua-the-christ-forbidden-mantra-series",
+   "title": "Quotes of Yeshua The Christ: Forbidden Mantra Series",
+   "author": "Emily K Patel",
+   "series": null,
+   "language": "en",
+   "primary_asin": "B0BXN6QNPM",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0BXN47ST1",
+     "format": "hardcover",
+     "published_at": "2023-03-12",
+     "amazon_url": "https://www.amazon.com/dp/B0BXN47ST1"
+    },
+    {
+     "asin": "B0BXN6QNPM",
+     "format": "paperback",
+     "published_at": "2023-03-12",
+     "amazon_url": "https://www.amazon.com/dp/B0BXN6QNPM"
+    }
+   ]
+  },
+  {
+   "slug": "radiate-beauty-from-within-harnessing-the-power-of-chandra-mantra-for-all-gender",
+   "title": "Radiate Beauty from Within: Harnessing the Power of Chandra Mantra for All Genders and Ethnicities: Forbidden Mantra Series",
+   "author": "Emily K Patel",
+   "series": "forbidden tantra series",
+   "language": "en",
+   "primary_asin": "B0BZTKVBR6",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0H8JLG5FJ",
+     "format": "audiobook",
+     "published_at": "2026-07-11",
+     "amazon_url": "https://www.amazon.com/dp/B0H8JLG5FJ"
+    },
+    {
+     "asin": "B0BZTKVBR6",
+     "format": "ebook",
+     "published_at": "2023-03-28",
+     "amazon_url": "https://www.amazon.com/dp/B0BZTKVBR6"
+    },
+    {
+     "asin": "B0C63MDR4J",
+     "format": "hardcover",
+     "published_at": "2023-05-25",
+     "amazon_url": "https://www.amazon.com/dp/B0C63MDR4J"
+    },
+    {
+     "asin": "B0BZFNZ15C",
+     "format": "paperback",
+     "published_at": "2023-03-29",
+     "amazon_url": "https://www.amazon.com/dp/B0BZFNZ15C"
+    }
+   ]
+  },
+  {
+   "slug": "rendez-vous-irresistiblement-attirant-avec-le-mantra-de-kleem",
+   "title": "Rendez-vous irrésistiblement attirant avec le mantra de Kleem",
+   "author": "Emily K Patel",
+   "series": "forbidden mantra series",
+   "language": "fr",
+   "primary_asin": "B0CWKMD1M3",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0CWKMD1M3",
+     "format": "ebook",
+     "published_at": "2024-03-03",
+     "amazon_url": "https://www.amazon.com/dp/B0CWKMD1M3"
+    },
+    {
+     "asin": "B0DPSPB6FZ",
+     "format": "hardcover",
+     "published_at": "2024-12-07",
+     "amazon_url": "https://www.amazon.com/dp/B0DPSPB6FZ"
+    },
+    {
+     "asin": "B0DPSJW3PS",
+     "format": "paperback",
+     "published_at": "2024-12-07",
+     "amazon_url": "https://www.amazon.com/dp/B0DPSJW3PS"
+    }
+   ]
+  },
+  {
+   "slug": "revelando-los-misterios-de-el-evangelio-de-pedro",
+   "title": "Revelando los misterios de El evangelio de Pedro",
+   "author": "Emily K Patel",
+   "series": "nag hammadi series",
+   "language": "es",
+   "primary_asin": "B0DQXQ3GC7",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0DQXQ3GC7",
+     "format": "ebook",
+     "published_at": "2024-12-19",
+     "amazon_url": "https://www.amazon.com/dp/B0DQXQ3GC7"
+    },
+    {
+     "asin": "B0DR2MC84P",
+     "format": "hardcover",
+     "published_at": "2024-12-20",
+     "amazon_url": "https://www.amazon.com/dp/B0DR2MC84P"
+    },
+    {
+     "asin": "B0DR2GF2PD",
+     "format": "paperback",
+     "published_at": "2024-12-20",
+     "amazon_url": "https://www.amazon.com/dp/B0DR2GF2PD"
+    }
+   ]
+  },
+  {
+   "slug": "revelando-os-misterios-do-o-evangelho-de-pedro",
+   "title": "Revelando os mistérios do O Evangelho de Pedro",
+   "author": "Emily K Patel",
+   "series": "nag hammadi series",
+   "language": "pt",
+   "primary_asin": "B0DQVXX954",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0DQVXX954",
+     "format": "ebook",
+     "published_at": "2024-12-19",
+     "amazon_url": "https://www.amazon.com/dp/B0DQVXX954"
+    },
+    {
+     "asin": "B0DR6ZPPLS",
+     "format": "hardcover",
+     "published_at": "2024-12-22",
+     "amazon_url": "https://www.amazon.com/dp/B0DR6ZPPLS"
+    },
+    {
+     "asin": "B0DR6YH3KM",
+     "format": "paperback",
+     "published_at": "2024-12-22",
+     "amazon_url": "https://www.amazon.com/dp/B0DR6YH3KM"
+    }
+   ]
+  },
+  {
+   "slug": "ruqyah-s-for-wealth-in-arabic-language-muslim-prayer-series",
+   "title": "Ruqyah's for Wealth in Arabic Language: Muslim Prayer Series",
+   "author": "Abdur Rahman",
+   "series": "muslim prayer series",
+   "language": "en",
+   "primary_asin": "B0BY5CCJNV",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0BY5CCJNV",
+     "format": "ebook",
+     "published_at": "2023-03-11",
+     "amazon_url": "https://www.amazon.com/dp/B0BY5CCJNV"
+    }
+   ]
+  },
+  {
+   "slug": "ruqyah-s-for-wealth-muslim-prayer-press",
+   "title": "Ruqyah’s for Wealth: Muslim Prayer Press",
+   "author": "Abdur Rahman",
+   "series": "muslim prayer series",
+   "language": "en",
+   "primary_asin": "B0BY57NY5C",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0BY57NY5C",
+     "format": "ebook",
+     "published_at": "2023-03-11",
+     "amazon_url": "https://www.amazon.com/dp/B0BY57NY5C"
+    }
+   ]
+  },
+  {
+   "slug": "sacred-union-in-tantra-forbidden-mantra-press",
+   "title": "Sacred Union in Tantra: Forbidden Mantra Press",
+   "author": "Emily K Patel",
+   "series": "forbidden tantra series",
+   "language": "en",
+   "primary_asin": "B0CFKHQSNX",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0CFKHQSNX",
+     "format": "ebook",
+     "published_at": "2023-08-14",
+     "amazon_url": "https://www.amazon.com/dp/B0CFKHQSNX"
+    },
+    {
+     "asin": "B0CFDB36SZ",
+     "format": "hardcover",
+     "published_at": "2023-08-14",
+     "amazon_url": "https://www.amazon.com/dp/B0CFDB36SZ"
+    },
+    {
+     "asin": "B0CFCK3F1M",
+     "format": "paperback",
+     "published_at": "2023-08-14",
+     "amazon_url": "https://www.amazon.com/dp/B0CFCK3F1M"
+    }
+   ]
+  },
+  {
+   "slug": "saraswati-mantra-enhance-intelligence-creativity-and-knowledge-forbidden-mantra-",
+   "title": "Saraswati Mantra - Enhance Intelligence, Creativity and Knowledge.: Forbidden Mantra Series",
+   "author": "Rav Shiva",
+   "series": "forbidden mantra series",
+   "language": "en",
+   "primary_asin": "B0BZFFDG4N",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0BZFFDG4N",
+     "format": "ebook",
+     "published_at": "2023-03-23",
+     "amazon_url": "https://www.amazon.com/dp/B0BZFFDG4N"
+    },
+    {
+     "asin": "B0BZF75Q4D",
+     "format": "paperback",
+     "published_at": "2023-03-25",
+     "amazon_url": "https://www.amazon.com/dp/B0BZF75Q4D"
+    }
+   ]
+  },
+  {
+   "slug": "shiva-mantra-for-purification-of-mind-body-soul-forbidden-mantra-press",
+   "title": "Shiva Mantra for Purification of Mind, Body & Soul: Forbidden Mantra Press",
+   "author": "Rav Shiva",
+   "series": "forbidden mantra series",
+   "language": "en",
+   "primary_asin": "B0BXT95PPV",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0BXT95PPV",
+     "format": "ebook",
+     "published_at": "2023-03-08",
+     "amazon_url": "https://www.amazon.com/dp/B0BXT95PPV"
+    }
+   ]
+  },
+  {
+   "slug": "siddhis-the-non-locality-of-consciousness",
+   "title": "Siddhis: The Non-Locality of Consciousness",
+   "author": "TSP Ravshiva",
+   "series": "the physics of siddhis",
+   "language": "en",
+   "primary_asin": "B0GFXRQLK6",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0H8M6XGB3",
+     "format": "audiobook",
+     "published_at": "2026-07-13",
+     "amazon_url": "https://www.amazon.com/dp/B0H8M6XGB3"
+    },
+    {
+     "asin": "B0GFXRQLK6",
+     "format": "ebook",
+     "published_at": "2026-01-11",
+     "amazon_url": "https://www.amazon.com/dp/B0GFXRQLK6"
+    },
+    {
+     "asin": "B0GGGGZSXK",
+     "format": "hardcover",
+     "published_at": "2026-01-13",
+     "amazon_url": "https://www.amazon.com/dp/B0GGGGZSXK"
+    },
+    {
+     "asin": "B0GG9LT922",
+     "format": "paperback",
+     "published_at": "2026-01-12",
+     "amazon_url": "https://www.amazon.com/dp/B0GG9LT922"
+    }
+   ]
+  },
+  {
+   "slug": "siddhis-unlocking-the-divine-powers-within",
+   "title": "Siddhis:: Unlocking the Divine Powers Within",
+   "author": "Emily K Patel",
+   "series": "forbidden tantra series",
+   "language": "en",
+   "primary_asin": "B0F3J5KXNK",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0H85FV76W",
+     "format": "audiobook",
+     "published_at": "2026-07-14",
+     "amazon_url": "https://www.amazon.com/dp/B0H85FV76W"
+    },
+    {
+     "asin": "B0F3J5KXNK",
+     "format": "ebook",
+     "published_at": "2025-04-03",
+     "amazon_url": "https://www.amazon.com/dp/B0F3J5KXNK"
+    },
+    {
+     "asin": "B0F3JY2YC8",
+     "format": "hardcover",
+     "published_at": "2025-04-03",
+     "amazon_url": "https://www.amazon.com/dp/B0F3JY2YC8"
+    },
+    {
+     "asin": "B0F3JYXVBJ",
+     "format": "paperback",
+     "published_at": "2025-04-03",
+     "amazon_url": "https://www.amazon.com/dp/B0F3JYXVBJ"
+    }
+   ]
+  },
+  {
+   "slug": "the-acts-of-peter-and-the-twelve-apostles-nag-hammadi-series",
+   "title": "The Acts of Peter and the Twelve Apostles: Nag Hammadi Series",
+   "author": "Emily K Patel",
+   "series": "nag hammadi series",
+   "language": "en",
+   "primary_asin": "B0CB3VJ381",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0CB3VJ381",
+     "format": "ebook",
+     "published_at": "2023-07-04",
+     "amazon_url": "https://www.amazon.com/dp/B0CB3VJ381"
+    },
+    {
+     "asin": "B0C9S56XPZ",
+     "format": "hardcover",
+     "published_at": "2023-07-04",
+     "amazon_url": "https://www.amazon.com/dp/B0C9S56XPZ"
+    },
+    {
+     "asin": "B0CCCVQH1R",
+     "format": "paperback",
+     "published_at": "2023-07-23",
+     "amazon_url": "https://www.amazon.com/dp/B0CCCVQH1R"
+    }
+   ]
+  },
+  {
+   "slug": "the-ancient-science-of-kundalini-energy-revealed-mastery-of-sexual-energy-and-ps",
+   "title": "The Ancient Science of Kundalini Energy Revealed Mastery of Sexual Energy and Psychic Abilities: Mastery of Sexual Energy and Psychic Abilities",
+   "author": "Emily K Patel",
+   "series": "the hidden technology of human power series",
+   "language": "en",
+   "primary_asin": "B0GX31LSRG",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0H8J5VCQW",
+     "format": "audiobook",
+     "published_at": "2026-07-14",
+     "amazon_url": "https://www.amazon.com/dp/B0H8J5VCQW"
+    },
+    {
+     "asin": "B0GX31LSRG",
+     "format": "ebook",
+     "published_at": "2026-05-06",
+     "amazon_url": "https://www.amazon.com/dp/B0GX31LSRG"
+    },
+    {
+     "asin": "B0GZPR2XNS",
+     "format": "hardcover",
+     "published_at": "2026-05-06",
+     "amazon_url": "https://www.amazon.com/dp/B0GZPR2XNS"
+    },
+    {
+     "asin": "B0GZQNVXB7",
+     "format": "paperback",
+     "published_at": "2026-05-06",
+     "amazon_url": "https://www.amazon.com/dp/B0GZQNVXB7"
+    }
+   ]
+  },
+  {
+   "slug": "the-apocalypse-of-adam-forbidden-mantra-press",
+   "title": "The Apocalypse of Adam: Forbidden Mantra Press",
+   "author": "Emily K Patel",
+   "series": "nag hammadi series",
+   "language": "en",
+   "primary_asin": "B0C9YXQNPF",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0H8MQN9WK",
+     "format": "audiobook",
+     "published_at": "2026-07-13",
+     "amazon_url": "https://www.amazon.com/dp/B0H8MQN9WK"
+    },
+    {
+     "asin": "B0C9YXQNPF",
+     "format": "ebook",
+     "published_at": "2023-07-03",
+     "amazon_url": "https://www.amazon.com/dp/B0C9YXQNPF"
+    },
+    {
+     "asin": "B0DP5YYR9N",
+     "format": "hardcover",
+     "published_at": "2024-11-28",
+     "amazon_url": "https://www.amazon.com/dp/B0DP5YYR9N"
+    },
+    {
+     "asin": "B0C9S88JPC",
+     "format": "paperback",
+     "published_at": "2023-07-03",
+     "amazon_url": "https://www.amazon.com/dp/B0C9S88JPC"
+    }
+   ]
+  },
+  {
+   "slug": "the-apocalypse-of-eve-forbidden-feminine-wisdom-from-ancient-gnostic-texts",
+   "title": "The Apocalypse of Eve: Forbidden Feminine Wisdom from Ancient Gnostic Texts",
+   "author": "Emily K. Patel",
+   "series": "nag hammadi series",
+   "language": "en",
+   "primary_asin": "B0GC3HHLVR",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0H8MR9NCQ",
+     "format": "audiobook",
+     "published_at": "2026-07-14",
+     "amazon_url": "https://www.amazon.com/dp/B0H8MR9NCQ"
+    },
+    {
+     "asin": "B0GC3HHLVR",
+     "format": "ebook",
+     "published_at": "2025-12-23",
+     "amazon_url": "https://www.amazon.com/dp/B0GC3HHLVR"
+    },
+    {
+     "asin": "B0GC5KLNTF",
+     "format": "hardcover",
+     "published_at": "2025-12-23",
+     "amazon_url": "https://www.amazon.com/dp/B0GC5KLNTF"
+    },
+    {
+     "asin": "B0GC75BPD5",
+     "format": "paperback",
+     "published_at": "2025-12-23",
+     "amazon_url": "https://www.amazon.com/dp/B0GC75BPD5"
+    }
+   ]
+  },
+  {
+   "slug": "the-apocalypse-of-peter-visions-of-judgment-mercy-and-the-forgotten-afterlife-an",
+   "title": "The Apocalypse of Peter: Visions of Judgment, Mercy, and the Forgotten Afterlife. An Ancient Christian Vision of Heaven, Hell, and Divine Mercy Suppressed by the Early Church",
+   "author": "Emily K Patel",
+   "series": "nag hammadi series",
+   "language": "en",
+   "primary_asin": "B0GF79PS13",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0H8MKC8RX",
+     "format": "audiobook",
+     "published_at": "2026-07-12",
+     "amazon_url": "https://www.amazon.com/dp/B0H8MKC8RX"
+    },
+    {
+     "asin": "B0GF79PS13",
+     "format": "ebook",
+     "published_at": "2026-01-06",
+     "amazon_url": "https://www.amazon.com/dp/B0GF79PS13"
+    },
+    {
+     "asin": "B0GF86PXVY",
+     "format": "hardcover",
+     "published_at": "2026-01-06",
+     "amazon_url": "https://www.amazon.com/dp/B0GF86PXVY"
+    },
+    {
+     "asin": "B0GF7YYJ3Q",
+     "format": "paperback",
+     "published_at": "2026-01-06",
+     "amazon_url": "https://www.amazon.com/dp/B0GF7YYJ3Q"
+    }
+   ]
+  },
+  {
+   "slug": "the-apochrypha-the-book-of-esdras-forbidden-christian-books",
+   "title": "THE APOCHRYPHA - The Book of Esdras: Forbidden Christian Books",
+   "author": "Emily K Patel",
+   "series": null,
+   "language": "en",
+   "primary_asin": "B0BYYHTQXW",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0BYYHTQXW",
+     "format": "ebook",
+     "published_at": "2023-03-20",
+     "amazon_url": "https://www.amazon.com/dp/B0BYYHTQXW"
+    },
+    {
+     "asin": "B0BZ6STXZY",
+     "format": "paperback",
+     "published_at": "2023-03-22",
+     "amazon_url": "https://www.amazon.com/dp/B0BZ6STXZY"
+    }
+   ]
+  },
+  {
+   "slug": "the-apochryphon-of-john-nag-hammadi",
+   "title": "THE APOCHRYPHON OF JOHN: NAG HAMMADI",
+   "author": "Emily Patel",
+   "series": "nag hammadi series",
+   "language": "en",
+   "primary_asin": "B0C6MZVC8N",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0C6MZVC8N",
+     "format": "ebook",
+     "published_at": "2023-05-30",
+     "amazon_url": "https://www.amazon.com/dp/B0C6MZVC8N"
+    },
+    {
+     "asin": "B0C6P9QW8G",
+     "format": "hardcover",
+     "published_at": "2023-05-31",
+     "amazon_url": "https://www.amazon.com/dp/B0C6P9QW8G"
+    }
+   ]
+  },
+  {
+   "slug": "the-apocrypha-additions-to-esther-forbidden-christian-books",
+   "title": "The Apocrypha - Additions to Esther: Forbidden Christian Books",
+   "author": "Emily K Patel",
+   "series": null,
+   "language": "en",
+   "primary_asin": "B0BZ57W6GT",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0BZ57W6GT",
+     "format": "ebook",
+     "published_at": "2023-03-21",
+     "amazon_url": "https://www.amazon.com/dp/B0BZ57W6GT"
+    },
+    {
+     "asin": "B0BZF75SFY",
+     "format": "paperback",
+     "published_at": "2023-03-24",
+     "amazon_url": "https://www.amazon.com/dp/B0BZF75SFY"
+    }
+   ]
+  },
+  {
+   "slug": "the-book-of-jubilees-a-sacred-chronology-and-covenant-of-israel",
+   "title": "The Book of Jubilees:: A Sacred Chronology and Covenant of Israel",
+   "author": "Emily K Patel",
+   "series": "ethiopian orthodox christianity",
+   "language": "en",
+   "primary_asin": "B0F31M3RWL",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0F31M3RWL",
+     "format": "ebook",
+     "published_at": "2025-03-30",
+     "amazon_url": "https://www.amazon.com/dp/B0F31M3RWL"
+    },
+    {
+     "asin": "B0F32VS8BC",
+     "format": "hardcover",
+     "published_at": "2025-03-31",
+     "amazon_url": "https://www.amazon.com/dp/B0F32VS8BC"
+    },
+    {
+     "asin": "B0F32T4P8X",
+     "format": "paperback",
+     "published_at": "2025-03-31",
+     "amazon_url": "https://www.amazon.com/dp/B0F32T4P8X"
+    }
+   ]
+  },
+  {
+   "slug": "the-book-of-vedic-spells-ancient-mantras-from-the-atharva-veda",
+   "title": "The Book of Vedic Spells:: Ancient Mantras from the Atharva Veda",
+   "author": "TSP Ravshiva",
+   "series": "forbidden mantra series",
+   "language": "en",
+   "primary_asin": "B0F7G31829",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0D11V38H9",
+     "format": "audiobook",
+     "published_at": "2026-07-11",
+     "amazon_url": "https://www.amazon.com/dp/B0D11V38H9"
+    },
+    {
+     "asin": "B0F7G31829",
+     "format": "ebook",
+     "published_at": "2025-05-04",
+     "amazon_url": "https://www.amazon.com/dp/B0F7G31829"
+    },
+    {
+     "asin": "B0F7R7FJD7",
+     "format": "paperback",
+     "published_at": "2025-05-07",
+     "amazon_url": "https://www.amazon.com/dp/B0F7R7FJD7"
+    }
+   ]
+  },
+  {
+   "slug": "the-catalyst-awakening-the-human-code",
+   "title": "The Catalyst:: Awakening the Human Code",
+   "author": "TSPRavshiva The Spiritual Phila...",
+   "series": "the catalyst chronicles: awakening the human code",
+   "language": "en",
+   "primary_asin": "B0F39GJ9F8",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0F39GJ9F8",
+     "format": "ebook",
+     "published_at": "2025-04-01",
+     "amazon_url": "https://www.amazon.com/dp/B0F39GJ9F8"
+    },
+    {
+     "asin": "B0F3D9HD71",
+     "format": "paperback",
+     "published_at": "2025-04-02",
+     "amazon_url": "https://www.amazon.com/dp/B0F3D9HD71"
+    }
+   ]
+  },
+  {
+   "slug": "the-code-of-immortality-the-fallen-star",
+   "title": "The Code of Immortality: The Fallen Star",
+   "author": "TSP Ravshiva",
+   "series": "the code of immortality",
+   "language": "en",
+   "primary_asin": "B0C5JWDVV3",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0C5JWDVV3",
+     "format": "ebook",
+     "published_at": "2023-05-17",
+     "amazon_url": "https://www.amazon.com/dp/B0C5JWDVV3"
+    },
+    {
+     "asin": "B0C5G9L6GJ",
+     "format": "hardcover",
+     "published_at": "2023-05-17",
+     "amazon_url": "https://www.amazon.com/dp/B0C5G9L6GJ"
+    },
+    {
+     "asin": "B0C5GJXTP9",
+     "format": "paperback",
+     "published_at": "2023-05-17",
+     "amazon_url": "https://www.amazon.com/dp/B0C5GJXTP9"
+    }
+   ]
+  },
+  {
+   "slug": "the-complete-dream-conscious-experience-journal-1-year-edition",
+   "title": "The Complete Dream & Conscious Experience Journal (1-Year Edition)",
+   "author": "Emily K Patel",
+   "series": "journals",
+   "language": "en",
+   "primary_asin": "B0H14D7THD",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0H1259BYN",
+     "format": "hardcover",
+     "published_at": "2026-05-08",
+     "amazon_url": "https://www.amazon.com/dp/B0H1259BYN"
+    },
+    {
+     "asin": "B0H14D7THD",
+     "format": "paperback",
+     "published_at": "2026-05-09",
+     "amazon_url": "https://www.amazon.com/dp/B0H14D7THD"
+    }
+   ]
+  },
+  {
+   "slug": "the-coven-and-the-yogi",
+   "title": "The Coven and The Yogi",
+   "author": "Emily K Patel",
+   "series": "asanas & alchemy",
+   "language": "en",
+   "primary_asin": "B0FFM4TJFS",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0FFM4TJFS",
+     "format": "ebook",
+     "published_at": "2025-06-27",
+     "amazon_url": "https://www.amazon.com/dp/B0FFM4TJFS"
+    },
+    {
+     "asin": "B0FG134QHD",
+     "format": "hardcover",
+     "published_at": "2025-06-29",
+     "amazon_url": "https://www.amazon.com/dp/B0FG134QHD"
+    },
+    {
+     "asin": "B0FFYCS763",
+     "format": "paperback",
+     "published_at": "2025-06-28",
+     "amazon_url": "https://www.amazon.com/dp/B0FFYCS763"
+    }
+   ]
+  },
+  {
+   "slug": "the-coven-and-the-yogi-eclipse-of-the-heart-chakra",
+   "title": "The Coven and The Yogi:: Eclipse of the Heart Chakra",
+   "author": "Emily K Patel",
+   "series": "asanas & alchemy",
+   "language": "en",
+   "primary_asin": "B0FFLZ4V48",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0FFLZ4V48",
+     "format": "ebook",
+     "published_at": "2025-06-28",
+     "amazon_url": "https://www.amazon.com/dp/B0FFLZ4V48"
+    },
+    {
+     "asin": "B0FFZPG914",
+     "format": "hardcover",
+     "published_at": "2025-06-28",
+     "amazon_url": "https://www.amazon.com/dp/B0FFZPG914"
+    },
+    {
+     "asin": "B0FG172DPD",
+     "format": "paperback",
+     "published_at": "2025-06-29",
+     "amazon_url": "https://www.amazon.com/dp/B0FG172DPD"
+    }
+   ]
+  },
+  {
+   "slug": "the-cyber-cupid-a-guide-to-finding-love-in-the-digital-future-how-to-series",
+   "title": "The Cyber Cupid: A Guide to Finding Love in the Digital Future: How To Series",
+   "author": "Alex Knight",
+   "series": "forbidden mantra series",
+   "language": "en",
+   "primary_asin": "B0BX5PRFLX",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0BX5PRFLX",
+     "format": "ebook",
+     "published_at": "2023-03-01",
+     "amazon_url": "https://www.amazon.com/dp/B0BX5PRFLX"
+    }
+   ]
+  },
+  {
+   "slug": "the-eternal-quest-wisdom-and-enlightenment-in-the-bhagavad-gita-a-concise-summar",
+   "title": "The Eternal Quest: Wisdom and Enlightenment in the Bhagavad Gita: A Concise Summary of the Sacred Verses",
+   "author": "TSP Ravshiva",
+   "series": "sacred verses",
+   "language": "en",
+   "primary_asin": "B0C6C2SD9B",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0C6C2SD9B",
+     "format": "ebook",
+     "published_at": "2023-05-25",
+     "amazon_url": "https://www.amazon.com/dp/B0C6C2SD9B"
+    },
+    {
+     "asin": "B0C6BWWT86",
+     "format": "hardcover",
+     "published_at": "2023-05-26",
+     "amazon_url": "https://www.amazon.com/dp/B0C6BWWT86"
+    },
+    {
+     "asin": "B0C6BM1337",
+     "format": "paperback",
+     "published_at": "2023-05-26",
+     "amazon_url": "https://www.amazon.com/dp/B0C6BM1337"
+    }
+   ]
+  },
+  {
+   "slug": "the-genesis-of-sophia-the-lost-origin-of-the-divine-feminine-and-the-awakening-o",
+   "title": "The Genesis of Sophia: The Lost Origin of the Divine Feminine and the Awakening of the World",
+   "author": "Emily K Patel",
+   "series": "nag hammadi series",
+   "language": "en",
+   "primary_asin": "B0F2GSPKX7",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0H85GTKMH",
+     "format": "audiobook",
+     "published_at": "2026-07-11",
+     "amazon_url": "https://www.amazon.com/dp/B0H85GTKMH"
+    },
+    {
+     "asin": "B0F2GSPKX7",
+     "format": "ebook",
+     "published_at": "2025-03-25",
+     "amazon_url": "https://www.amazon.com/dp/B0F2GSPKX7"
+    },
+    {
+     "asin": "B0F2MNX2Q1",
+     "format": "hardcover",
+     "published_at": "2025-03-27",
+     "amazon_url": "https://www.amazon.com/dp/B0F2MNX2Q1"
+    },
+    {
+     "asin": "B0F2J8XT9Q",
+     "format": "paperback",
+     "published_at": "2025-03-26",
+     "amazon_url": "https://www.amazon.com/dp/B0F2J8XT9Q"
+    }
+   ]
+  },
+  {
+   "slug": "the-gospel-of-judas-the-betrayal-that-was-never-a-betrayal",
+   "title": "The Gospel of Judas:: The Betrayal That Was Never a Betrayal",
+   "author": "Emily K Patel",
+   "series": "nag hammadi series",
+   "language": "en",
+   "primary_asin": "B0F2CLDFPX",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0F2CLDFPX",
+     "format": "ebook",
+     "published_at": "2025-03-25",
+     "amazon_url": "https://www.amazon.com/dp/B0F2CLDFPX"
+    },
+    {
+     "asin": "B0F2G395YR",
+     "format": "hardcover",
+     "published_at": "2025-03-25",
+     "amazon_url": "https://www.amazon.com/dp/B0F2G395YR"
+    },
+    {
+     "asin": "B0F2G9YRK7",
+     "format": "paperback",
+     "published_at": "2025-03-25",
+     "amazon_url": "https://www.amazon.com/dp/B0F2G9YRK7"
+    }
+   ]
+  },
+  {
+   "slug": "the-gospel-of-magdalene-the-womb-and-the-word",
+   "title": "The Gospel of Magdalene:: The Womb and The Word",
+   "author": "Emily K Patel",
+   "series": "mary magdalene",
+   "language": "en",
+   "primary_asin": "B0F2NTNFGG",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0H8M6NYRK",
+     "format": "audiobook",
+     "published_at": "2026-07-16",
+     "amazon_url": "https://www.amazon.com/dp/B0H8M6NYRK"
+    },
+    {
+     "asin": "B0F2NTNFGG",
+     "format": "ebook",
+     "published_at": "2025-03-27",
+     "amazon_url": "https://www.amazon.com/dp/B0F2NTNFGG"
+    },
+    {
+     "asin": "B0F2Z9JJ3X",
+     "format": "hardcover",
+     "published_at": "2025-03-29",
+     "amazon_url": "https://www.amazon.com/dp/B0F2Z9JJ3X"
+    },
+    {
+     "asin": "B0F2YH6ZYM",
+     "format": "paperback",
+     "published_at": "2025-03-29",
+     "amazon_url": "https://www.amazon.com/dp/B0F2YH6ZYM"
+    }
+   ]
+  },
+  {
+   "slug": "the-gospel-of-philip-nag-hammadi",
+   "title": "The Gospel of Philip: Nag Hammadi",
+   "author": "Emily K Patel",
+   "series": "nag hammadi series",
+   "language": "en",
+   "primary_asin": "B0C5TRDBDF",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0H8MG7YFF",
+     "format": "audiobook",
+     "published_at": "2026-07-12",
+     "amazon_url": "https://www.amazon.com/dp/B0H8MG7YFF"
+    },
+    {
+     "asin": "B0C5TRDBDF",
+     "format": "ebook",
+     "published_at": "2023-05-20",
+     "amazon_url": "https://www.amazon.com/dp/B0C5TRDBDF"
+    },
+    {
+     "asin": "B0C6BT7QH8",
+     "format": "hardcover",
+     "published_at": "2023-05-28",
+     "amazon_url": "https://www.amazon.com/dp/B0C6BT7QH8"
+    },
+    {
+     "asin": "B0C6C6SD92",
+     "format": "paperback",
+     "published_at": "2023-05-29",
+     "amazon_url": "https://www.amazon.com/dp/B0C6C6SD92"
+    }
+   ]
+  },
+  {
+   "slug": "the-gospel-of-thomas-the-hidden-sayings-of-jesus-christ",
+   "title": "The Gospel of Thomas: The Hidden Sayings of Jesus Christ",
+   "author": "Emily K Patel",
+   "series": "nag hammadi series",
+   "language": "en",
+   "primary_asin": "B0GZ8YNRX4",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0H8M7GP17",
+     "format": "audiobook",
+     "published_at": "2026-07-12",
+     "amazon_url": "https://www.amazon.com/dp/B0H8M7GP17"
+    },
+    {
+     "asin": "B0GZ8YNRX4",
+     "format": "ebook",
+     "published_at": "2026-05-24",
+     "amazon_url": "https://www.amazon.com/dp/B0GZ8YNRX4"
+    },
+    {
+     "asin": "B0H2TZGGYQ",
+     "format": "hardcover",
+     "published_at": "2026-05-25",
+     "amazon_url": "https://www.amazon.com/dp/B0H2TZGGYQ"
+    },
+    {
+     "asin": "B0H2V4H51G",
+     "format": "paperback",
+     "published_at": "2026-05-25",
+     "amazon_url": "https://www.amazon.com/dp/B0H2V4H51G"
+    }
+   ]
+  },
+  {
+   "slug": "the-gospel-of-truth-ancient-wisdom-revealed-sacred-illuminations-of-truth-the-na",
+   "title": "The Gospel of Truth \"Ancient Wisdom Revealed: Sacred Illuminations of Truth\": The Nag Hammadi Library",
+   "author": "Emily K Patel",
+   "series": "nag hammadi series",
+   "language": "en",
+   "primary_asin": "B0C6C4N12B",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0C6C4N12B",
+     "format": "ebook",
+     "published_at": "2023-05-25",
+     "amazon_url": "https://www.amazon.com/dp/B0C6C4N12B"
+    },
+    {
+     "asin": "B0C6BK4WYV",
+     "format": "hardcover",
+     "published_at": "2023-05-26",
+     "amazon_url": "https://www.amazon.com/dp/B0C6BK4WYV"
+    },
+    {
+     "asin": "B0C6BQ5D5S",
+     "format": "paperback",
+     "published_at": "2023-05-28",
+     "amazon_url": "https://www.amazon.com/dp/B0C6BQ5D5S"
+    }
+   ]
+  },
+  {
+   "slug": "the-gospel-of-truth-nag-hammadi",
+   "title": "The Gospel of Truth: Nag Hammadi",
+   "author": "Emily K Patel",
+   "series": "nag hammadi series",
+   "language": "en",
+   "primary_asin": "B0C5TRHX23",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0H857VB2G",
+     "format": "audiobook",
+     "published_at": "2026-07-14",
+     "amazon_url": "https://www.amazon.com/dp/B0H857VB2G"
+    },
+    {
+     "asin": "B0C5TRHX23",
+     "format": "ebook",
+     "published_at": "2023-05-20",
+     "amazon_url": "https://www.amazon.com/dp/B0C5TRHX23"
+    },
+    {
+     "asin": "B0DQ17WQXY",
+     "format": "hardcover",
+     "published_at": "2024-12-10",
+     "amazon_url": "https://www.amazon.com/dp/B0DQ17WQXY"
+    },
+    {
+     "asin": "B0C5PGBWXP",
+     "format": "paperback",
+     "published_at": "2023-05-21",
+     "amazon_url": "https://www.amazon.com/dp/B0C5PGBWXP"
+    }
+   ]
+  },
+  {
+   "slug": "the-hidden-doctrine-of-mo-pai-sexual-energy-internal-alchemy-and-the-technology-",
+   "title": "The Hidden Doctrine of Mo Pai: Sexual Energy, Internal Alchemy, and the Technology of Human Power",
+   "author": "Emily Patel",
+   "series": "forbidden mantra series",
+   "language": "en",
+   "primary_asin": "B0GCC4NP56",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0H8JDF2Z8",
+     "format": "audiobook",
+     "published_at": "2026-07-14",
+     "amazon_url": "https://www.amazon.com/dp/B0H8JDF2Z8"
+    },
+    {
+     "asin": "B0GCC4NP56",
+     "format": "ebook",
+     "published_at": "2025-12-23",
+     "amazon_url": "https://www.amazon.com/dp/B0GCC4NP56"
+    },
+    {
+     "asin": "B0GCK12H1H",
+     "format": "hardcover",
+     "published_at": "2025-12-25",
+     "amazon_url": "https://www.amazon.com/dp/B0GCK12H1H"
+    },
+    {
+     "asin": "B0GCCZMCNR",
+     "format": "paperback",
+     "published_at": "2025-12-24",
+     "amazon_url": "https://www.amazon.com/dp/B0GCCZMCNR"
+    }
+   ]
+  },
+  {
+   "slug": "the-infancy-gospel-of-thomas-gospel-of-thomas-nag-hammadi",
+   "title": "THE INFANCY GOSPEL OF THOMAS & GOSPEL OF THOMAS: NAG HAMMADI",
+   "author": "Emily K Patel",
+   "series": "nag hammadi series",
+   "language": "en",
+   "primary_asin": "B0C5TWLYB6",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0H8MKSJ6S",
+     "format": "audiobook",
+     "published_at": "2026-07-12",
+     "amazon_url": "https://www.amazon.com/dp/B0H8MKSJ6S"
+    },
+    {
+     "asin": "B0C5TWLYB6",
+     "format": "ebook",
+     "published_at": "2023-05-20",
+     "amazon_url": "https://www.amazon.com/dp/B0C5TWLYB6"
+    },
+    {
+     "asin": "B0DR62N4HW",
+     "format": "ebook",
+     "published_at": "2024-12-21",
+     "amazon_url": "https://www.amazon.com/dp/B0DR62N4HW"
+    },
+    {
+     "asin": "B0C5P9LYLJ",
+     "format": "hardcover",
+     "published_at": "2023-05-21",
+     "amazon_url": "https://www.amazon.com/dp/B0C5P9LYLJ"
+    },
+    {
+     "asin": "B0DR888ZB4",
+     "format": "hardcover",
+     "published_at": "2024-12-23",
+     "amazon_url": "https://www.amazon.com/dp/B0DR888ZB4"
+    },
+    {
+     "asin": "B0DR19RFT6",
+     "format": "paperback",
+     "published_at": "2024-12-20",
+     "amazon_url": "https://www.amazon.com/dp/B0DR19RFT6"
+    },
+    {
+     "asin": "B0C5P36594",
+     "format": "paperback",
+     "published_at": "2023-05-21",
+     "amazon_url": "https://www.amazon.com/dp/B0C5P36594"
+    }
+   ]
+  },
+  {
+   "slug": "the-inner-mechanics-of-energy-cultivation",
+   "title": "The Inner Mechanics of Energy Cultivation",
+   "author": "Emily K Patel",
+   "series": "the hidden technology of human power series",
+   "language": "en",
+   "primary_asin": "B0H3MY3JS3",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0H8MBCDC6",
+     "format": "audiobook",
+     "published_at": "2026-07-12",
+     "amazon_url": "https://www.amazon.com/dp/B0H8MBCDC6"
+    },
+    {
+     "asin": "B0H3MY3JS3",
+     "format": "ebook",
+     "published_at": "2026-06-02",
+     "amazon_url": "https://www.amazon.com/dp/B0H3MY3JS3"
+    },
+    {
+     "asin": "B0H44YW832",
+     "format": "ebook",
+     "published_at": "2026-06-05",
+     "amazon_url": "https://www.amazon.com/dp/B0H44YW832"
+    },
+    {
+     "asin": "B0H3T6CKMZ",
+     "format": "hardcover",
+     "published_at": "2026-06-03",
+     "amazon_url": "https://www.amazon.com/dp/B0H3T6CKMZ"
+    },
+    {
+     "asin": "B0H3QCG6D6",
+     "format": "paperback",
+     "published_at": "2026-06-02",
+     "amazon_url": "https://www.amazon.com/dp/B0H3QCG6D6"
+    }
+   ]
+  },
+  {
+   "slug": "the-kubera-mantra-unlocking-financial-prosperity-and-success",
+   "title": "The Kubera Mantra: Unlocking Financial Prosperity and Success",
+   "author": "Emily K Patel",
+   "series": "lakshmi mantra series",
+   "language": "en",
+   "primary_asin": "B0CQRMWPZW",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0CQRMWPZW",
+     "format": "ebook",
+     "published_at": "2023-12-21",
+     "amazon_url": "https://www.amazon.com/dp/B0CQRMWPZW"
+    },
+    {
+     "asin": "B0CQVLLMLH",
+     "format": "paperback",
+     "published_at": "2023-12-23",
+     "amazon_url": "https://www.amazon.com/dp/B0CQVLLMLH"
+    }
+   ]
+  },
+  {
+   "slug": "the-matrix-of-sound",
+   "title": "The Matrix of Sound",
+   "author": "TSPRavshiva The Spiritual Philan...",
+   "series": "forbidden mantra series",
+   "language": "en",
+   "primary_asin": "B0F9KWD3B8",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0H8MKMLT9",
+     "format": "audiobook",
+     "published_at": "2026-07-12",
+     "amazon_url": "https://www.amazon.com/dp/B0H8MKMLT9"
+    },
+    {
+     "asin": "B0F9KWD3B8",
+     "format": "ebook",
+     "published_at": "2025-05-22",
+     "amazon_url": "https://www.amazon.com/dp/B0F9KWD3B8"
+    },
+    {
+     "asin": "B0F9LNXF5H",
+     "format": "paperback",
+     "published_at": "2025-05-22",
+     "amazon_url": "https://www.amazon.com/dp/B0F9LNXF5H"
+    }
+   ]
+  },
+  {
+   "slug": "the-modern-kama-sutra-a-comprehensive-guide-to-sensual-exploration-for-all-gende",
+   "title": "The Modern Kama Sutra: A Comprehensive Guide to Sensual Exploration for All Genders and Sexualities: Forbidden Mantra Series",
+   "author": "Rav Shiva",
+   "series": "forbidden mantra series",
+   "language": "en",
+   "primary_asin": "B0BYTSGG3D",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0BYTSGG3D",
+     "format": "ebook",
+     "published_at": "2023-03-17",
+     "amazon_url": "https://www.amazon.com/dp/B0BYTSGG3D"
+    },
+    {
+     "asin": "B0BYRM235Z",
+     "format": "paperback",
+     "published_at": "2023-03-20",
+     "amazon_url": "https://www.amazon.com/dp/B0BYRM235Z"
+    }
+   ]
+  },
+  {
+   "slug": "the-origin-and-nature-of-the-archons-the-archon-series",
+   "title": "The Origin and Nature of the Archons: The Archon Series",
+   "author": "Emily K Patel",
+   "series": "the archon series",
+   "language": "en",
+   "primary_asin": "B0CB1V15R3",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0CB1V15R3",
+     "format": "ebook",
+     "published_at": "2023-07-03",
+     "amazon_url": "https://www.amazon.com/dp/B0CB1V15R3"
+    },
+    {
+     "asin": "B0C9SF6C36",
+     "format": "paperback",
+     "published_at": "2023-07-04",
+     "amazon_url": "https://www.amazon.com/dp/B0C9SF6C36"
+    }
+   ]
+  },
+  {
+   "slug": "the-physics-of-siddhis-perception-across-time",
+   "title": "The Physics of Siddhis: Perception Across Time",
+   "author": "TSP Ravshiva",
+   "series": "the physics of siddhis",
+   "language": "en",
+   "primary_asin": "B0GH6P31CM",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0H84DPBZK",
+     "format": "audiobook",
+     "published_at": "2026-07-10",
+     "amazon_url": "https://www.amazon.com/dp/B0H84DPBZK"
+    },
+    {
+     "asin": "B0GH6P31CM",
+     "format": "ebook",
+     "published_at": "2026-01-16",
+     "amazon_url": "https://www.amazon.com/dp/B0GH6P31CM"
+    },
+    {
+     "asin": "B0GH84W6C9",
+     "format": "hardcover",
+     "published_at": "2026-01-16",
+     "amazon_url": "https://www.amazon.com/dp/B0GH84W6C9"
+    },
+    {
+     "asin": "B0GH8BVX6S",
+     "format": "paperback",
+     "published_at": "2026-01-16",
+     "amazon_url": "https://www.amazon.com/dp/B0GH8BVX6S"
+    }
+   ]
+  },
+  {
+   "slug": "the-pissed-off-hindu-muses-of-an-american-yogi",
+   "title": "The Pissed Off Hindu: Muses of an American yogi",
+   "author": "R. K. Theory",
+   "series": null,
+   "language": "en",
+   "primary_asin": "B01JVC9I5U",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B01JVC9I5U",
+     "format": "ebook",
+     "published_at": "2016-08-06",
+     "amazon_url": "https://www.amazon.com/dp/B01JVC9I5U"
+    },
+    {
+     "asin": "1079449361",
+     "format": "paperback",
+     "published_at": "2019-07-10",
+     "amazon_url": "https://www.amazon.com/dp/1079449361"
+    }
+   ]
+  },
+  {
+   "slug": "the-power-of-fasting-and-prayer-discovering-the-meaning-of-ramadan-muslim-prayer",
+   "title": "The Power of Fasting and Prayer: Discovering the Meaning of Ramadan: Muslim Prayer Series",
+   "author": "Rav Shiva",
+   "series": "muslim prayer series",
+   "language": "en",
+   "primary_asin": "B0BZM2V8V7",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0H85CCYWV",
+     "format": "audiobook",
+     "published_at": "2026-07-10",
+     "amazon_url": "https://www.amazon.com/dp/B0H85CCYWV"
+    },
+    {
+     "asin": "B0BZM2V8V7",
+     "format": "ebook",
+     "published_at": "2023-03-26",
+     "amazon_url": "https://www.amazon.com/dp/B0BZM2V8V7"
+    },
+    {
+     "asin": "B0BZFG4YR9",
+     "format": "paperback",
+     "published_at": "2023-03-27",
+     "amazon_url": "https://www.amazon.com/dp/B0BZFG4YR9"
+    }
+   ]
+  },
+  {
+   "slug": "the-reason-all-the-prophets-fasted",
+   "title": "The Reason All The Prophets Fasted",
+   "author": "TSP Ravshiva",
+   "series": "the hidden technology of human power series",
+   "language": "en",
+   "primary_asin": "B0GQQJW8QR",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0H8MBM5CT",
+     "format": "audiobook",
+     "published_at": "2026-07-14",
+     "amazon_url": "https://www.amazon.com/dp/B0H8MBM5CT"
+    },
+    {
+     "asin": "B0GQQJW8QR",
+     "format": "ebook",
+     "published_at": "2026-04-09",
+     "amazon_url": "https://www.amazon.com/dp/B0GQQJW8QR"
+    },
+    {
+     "asin": "B0GWVSK66G",
+     "format": "hardcover",
+     "published_at": "2026-04-11",
+     "amazon_url": "https://www.amazon.com/dp/B0GWVSK66G"
+    },
+    {
+     "asin": "B0GWTF724Q",
+     "format": "paperback",
+     "published_at": "2026-04-11",
+     "amazon_url": "https://www.amazon.com/dp/B0GWTF724Q"
+    }
+   ]
+  },
+  {
+   "slug": "the-secret-infancy-book-of-james-nag-hammadi",
+   "title": "THE SECRET & INFANCY BOOK OF JAMES: NAG HAMMADI",
+   "author": "Emily K Patel",
+   "series": "nag hammadi series",
+   "language": "en",
+   "primary_asin": "B0C5TXY6HH",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0GTBYSJBP",
+     "format": "audiobook",
+     "published_at": "2026-07-11",
+     "amazon_url": "https://www.amazon.com/dp/B0GTBYSJBP"
+    },
+    {
+     "asin": "B0C5TXY6HH",
+     "format": "ebook",
+     "published_at": "2023-05-20",
+     "amazon_url": "https://www.amazon.com/dp/B0C5TXY6HH"
+    },
+    {
+     "asin": "B0C6P2PXFJ",
+     "format": "hardcover",
+     "published_at": "2023-06-01",
+     "amazon_url": "https://www.amazon.com/dp/B0C6P2PXFJ"
+    },
+    {
+     "asin": "B0C63VZSL9",
+     "format": "paperback",
+     "published_at": "2023-05-25",
+     "amazon_url": "https://www.amazon.com/dp/B0C63VZSL9"
+    }
+   ]
+  },
+  {
+   "slug": "the-secret-knowledge-of-adam-revelations-from-the-gnostic-scrolls",
+   "title": "The Secret Knowledge of Adam:: Revelations from the Gnostic Scrolls",
+   "author": "Emily K Patel",
+   "series": "codex tchacos early christian apocryphal",
+   "language": "en",
+   "primary_asin": "B0F3CXG33X",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0H85G82T1",
+     "format": "audiobook",
+     "published_at": "2026-07-10",
+     "amazon_url": "https://www.amazon.com/dp/B0H85G82T1"
+    },
+    {
+     "asin": "B0F3CXG33X",
+     "format": "ebook",
+     "published_at": "2025-04-02",
+     "amazon_url": "https://www.amazon.com/dp/B0F3CXG33X"
+    },
+    {
+     "asin": "B0F3JSWLZR",
+     "format": "hardcover",
+     "published_at": "2025-04-03",
+     "amazon_url": "https://www.amazon.com/dp/B0F3JSWLZR"
+    },
+    {
+     "asin": "B0F3HSLFPW",
+     "format": "paperback",
+     "published_at": "2025-04-03",
+     "amazon_url": "https://www.amazon.com/dp/B0F3HSLFPW"
+    }
+   ]
+  },
+  {
+   "slug": "the-wisdom-of-jesus",
+   "title": "THE WISDOM OF JESUS",
+   "author": "Emily K Patel",
+   "series": "nag hammadi series",
+   "language": "en",
+   "primary_asin": "B0C6N2LZQZ",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0FW5X2X7M",
+     "format": "audiobook",
+     "published_at": "2026-07-11",
+     "amazon_url": "https://www.amazon.com/dp/B0FW5X2X7M"
+    },
+    {
+     "asin": "B0C6N2LZQZ",
+     "format": "ebook",
+     "published_at": "2023-05-30",
+     "amazon_url": "https://www.amazon.com/dp/B0C6N2LZQZ"
+    },
+    {
+     "asin": "B0C6NZGJ5Y",
+     "format": "hardcover",
+     "published_at": "2023-05-31",
+     "amazon_url": "https://www.amazon.com/dp/B0C6NZGJ5Y"
+    },
+    {
+     "asin": "B0C6P8D4CZ",
+     "format": "paperback",
+     "published_at": "2023-05-31",
+     "amazon_url": "https://www.amazon.com/dp/B0C6P8D4CZ"
+    }
+   ]
+  },
+  {
+   "slug": "the-yoga-sutras-of-patanjali-forbidden-mantra-series",
+   "title": "The Yoga Sutras of Patanjali: Forbidden Mantra Series",
+   "author": "Rav Shiva",
+   "series": "forbidden mantra series",
+   "language": "en",
+   "primary_asin": "B0BY2XS8PR",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0BY2XS8PR",
+     "format": "ebook",
+     "published_at": "2023-03-10",
+     "amazon_url": "https://www.amazon.com/dp/B0BY2XS8PR"
+    },
+    {
+     "asin": "B0DRD8934N",
+     "format": "paperback",
+     "published_at": "2024-12-24",
+     "amazon_url": "https://www.amazon.com/dp/B0DRD8934N"
+    }
+   ]
+  },
+  {
+   "slug": "timeless-reciprocity-the-golden-rule-as-a-universal-guide",
+   "title": "Timeless Reciprocity: The Golden Rule as a Universal Guide",
+   "author": "The Spiritual Philanthropist Rav...",
+   "series": "the universal principles series",
+   "language": "en",
+   "primary_asin": "B0DN1MLYPK",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0DN1MLYPK",
+     "format": "ebook",
+     "published_at": "2024-11-14",
+     "amazon_url": "https://www.amazon.com/dp/B0DN1MLYPK"
+    },
+    {
+     "asin": "B0DNCWQQT1",
+     "format": "hardcover",
+     "published_at": "2024-11-17",
+     "amazon_url": "https://www.amazon.com/dp/B0DNCWQQT1"
+    },
+    {
+     "asin": "B0DPPTH3D2",
+     "format": "paperback",
+     "published_at": "2024-12-06",
+     "amazon_url": "https://www.amazon.com/dp/B0DPPTH3D2"
+    }
+   ]
+  },
+  {
+   "slug": "truth-is-stranger-than-fiction-dark-theory-inc",
+   "title": "Truth is Stranger Than Fiction: Dark Theory Inc",
+   "author": "R. K. Theory",
+   "series": null,
+   "language": "en",
+   "primary_asin": "B07TY5WQVH",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B07TY5WQVH",
+     "format": "ebook",
+     "published_at": "2019-07-06",
+     "amazon_url": "https://www.amazon.com/dp/B07TY5WQVH"
+    },
+    {
+     "asin": "1078483299",
+     "format": "paperback",
+     "published_at": "2019-07-07",
+     "amazon_url": "https://www.amazon.com/dp/1078483299"
+    }
+   ]
+  },
+  {
+   "slug": "una-guia-completa-sobre-el-mantra-avalokitesvara",
+   "title": "Una guía completa sobre el mantra Avalokitesvara",
+   "author": "Emily K Patel",
+   "series": "buddhist mantra series",
+   "language": "es",
+   "primary_asin": "B0CXMPXWXR",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0H8J8W9HW",
+     "format": "audiobook",
+     "published_at": "2026-07-11",
+     "amazon_url": "https://www.amazon.com/dp/B0H8J8W9HW"
+    },
+    {
+     "asin": "B0CXMPXWXR",
+     "format": "ebook",
+     "published_at": "2024-12-04",
+     "amazon_url": "https://www.amazon.com/dp/B0CXMPXWXR"
+    },
+    {
+     "asin": "B0DPQ34N5D",
+     "format": "hardcover",
+     "published_at": "2024-12-06",
+     "amazon_url": "https://www.amazon.com/dp/B0DPQ34N5D"
+    },
+    {
+     "asin": "B0DPRQYXTS",
+     "format": "paperback",
+     "published_at": "2024-12-07",
+     "amazon_url": "https://www.amazon.com/dp/B0DPRQYXTS"
+    }
+   ]
+  },
+  {
+   "slug": "unknown-gospels-nag-hammadi",
+   "title": "UNKNOWN GOSPELS: NAG HAMMADI",
+   "author": "Emily K Patel",
+   "series": "nag hammadi series",
+   "language": "en",
+   "primary_asin": "B0C5V44LF7",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0H854TZTT",
+     "format": "audiobook",
+     "published_at": "2026-07-11",
+     "amazon_url": "https://www.amazon.com/dp/B0H854TZTT"
+    },
+    {
+     "asin": "B0C5V44LF7",
+     "format": "ebook",
+     "published_at": "2023-05-21",
+     "amazon_url": "https://www.amazon.com/dp/B0C5V44LF7"
+    },
+    {
+     "asin": "B0C6BX92CW",
+     "format": "hardcover",
+     "published_at": "2023-05-29",
+     "amazon_url": "https://www.amazon.com/dp/B0C6BX92CW"
+    },
+    {
+     "asin": "B0C5PGF3RF",
+     "format": "paperback",
+     "published_at": "2023-05-21",
+     "amazon_url": "https://www.amazon.com/dp/B0C5PGF3RF"
+    }
+   ]
+  },
+  {
+   "slug": "unleashing-the-inner-fire-the-ancient-art-of-tummo-breathwork-for-radical-transf",
+   "title": "Unleashing the Inner Fire: The Ancient Art of Tummo Breathwork for Radical Transformation",
+   "author": "Emily K Patel",
+   "series": "breath mastery series",
+   "language": "en",
+   "primary_asin": "B0C5ZZ9GHB",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0FTCH1N1Q",
+     "format": "audiobook",
+     "published_at": "2026-07-11",
+     "amazon_url": "https://www.amazon.com/dp/B0FTCH1N1Q"
+    },
+    {
+     "asin": "B0C5ZZ9GHB",
+     "format": "ebook",
+     "published_at": "2023-05-23",
+     "amazon_url": "https://www.amazon.com/dp/B0C5ZZ9GHB"
+    },
+    {
+     "asin": "B0C5YZVNPY",
+     "format": "hardcover",
+     "published_at": "2023-05-23",
+     "amazon_url": "https://www.amazon.com/dp/B0C5YZVNPY"
+    },
+    {
+     "asin": "B0C5YQ7364",
+     "format": "paperback",
+     "published_at": "2023-05-23",
+     "amazon_url": "https://www.amazon.com/dp/B0C5YQ7364"
+    }
+   ]
+  },
+  {
+   "slug": "unlock-inner-peace-and-live-a-harmonious-life-the-ultimate-guide-to-the-shanti-m",
+   "title": "Unlock Inner Peace and Live a Harmonious Life: The Ultimate Guide to the Shanti Mantra: Forbidden Mantra Series",
+   "author": "Rav Shiva",
+   "series": "forbidden mantra series",
+   "language": "en",
+   "primary_asin": "B0BZLZS9DT",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0BZLZS9DT",
+     "format": "ebook",
+     "published_at": "2023-03-25",
+     "amazon_url": "https://www.amazon.com/dp/B0BZLZS9DT"
+    },
+    {
+     "asin": "B0BZFGDRPK",
+     "format": "paperback",
+     "published_at": "2023-03-28",
+     "amazon_url": "https://www.amazon.com/dp/B0BZFGDRPK"
+    }
+   ]
+  },
+  {
+   "slug": "unlock-your-inner-beauty-the-revolutionary-guide-to-unleashing-your-attractivene",
+   "title": "Unlock Your Inner Beauty: The Revolutionary Guide to Unleashing Your Attractiveness and Finding Love: Forbidden Mantra Series",
+   "author": "Rav Shiva",
+   "series": "forbidden mantra series",
+   "language": "en",
+   "primary_asin": "B0BZT9RGJK",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0D53ZP8BV",
+     "format": "audiobook",
+     "published_at": "2026-07-11",
+     "amazon_url": "https://www.amazon.com/dp/B0D53ZP8BV"
+    },
+    {
+     "asin": "B0BZT9RGJK",
+     "format": "ebook",
+     "published_at": "2023-03-28",
+     "amazon_url": "https://www.amazon.com/dp/B0BZT9RGJK"
+    },
+    {
+     "asin": "B0BZFP1VZT",
+     "format": "paperback",
+     "published_at": "2023-03-29",
+     "amazon_url": "https://www.amazon.com/dp/B0BZFP1VZT"
+    }
+   ]
+  },
+  {
+   "slug": "unlocking-the-power-of-the-shakyamuni-mantra-a-practical-guide-to-cultivating-in",
+   "title": "Unlocking the Power of the Shakyamuni Mantra: A Practical Guide to Cultivating Inner Peace and Compassion: Buddhist Mantra Series",
+   "author": "Emily K Patel",
+   "series": "buddhist mantra series",
+   "language": "en",
+   "primary_asin": "B0C2L38W4L",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0C2L38W4L",
+     "format": "ebook",
+     "published_at": "2023-04-15",
+     "amazon_url": "https://www.amazon.com/dp/B0C2L38W4L"
+    },
+    {
+     "asin": "B0C1JBHYYX",
+     "format": "hardcover",
+     "published_at": "2023-04-16",
+     "amazon_url": "https://www.amazon.com/dp/B0C1JBHYYX"
+    },
+    {
+     "asin": "B0C1JD322S",
+     "format": "paperback",
+     "published_at": "2023-04-16",
+     "amazon_url": "https://www.amazon.com/dp/B0C1JD322S"
+    }
+   ]
+  },
+  {
+   "slug": "unveiling-hidden-wisdom-exploring-the-gospel-of-the-egyptians-nag-hammadi",
+   "title": "Unveiling Hidden Wisdom: Exploring the Gospel of the Egyptians: Nag Hammadi",
+   "author": "Emily K Patel",
+   "series": "forbidden tantra series",
+   "language": "en",
+   "primary_asin": "B0C6HDZ56K",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0H84HVYP4",
+     "format": "audiobook",
+     "published_at": "2026-07-10",
+     "amazon_url": "https://www.amazon.com/dp/B0H84HVYP4"
+    },
+    {
+     "asin": "B0C6HDZ56K",
+     "format": "ebook",
+     "published_at": "2023-05-27",
+     "amazon_url": "https://www.amazon.com/dp/B0C6HDZ56K"
+    },
+    {
+     "asin": "B0C6BK224P",
+     "format": "hardcover",
+     "published_at": "2023-05-28",
+     "amazon_url": "https://www.amazon.com/dp/B0C6BK224P"
+    },
+    {
+     "asin": "B0C6BYXT7F",
+     "format": "paperback",
+     "published_at": "2023-05-28",
+     "amazon_url": "https://www.amazon.com/dp/B0C6BYXT7F"
+    }
+   ]
+  },
+  {
+   "slug": "unveiling-the-mysteries-of-the-gospel-of-peter-nag-hammadi",
+   "title": "Unveiling the Mysteries of The Gospel of Peter: Nag Hammadi",
+   "author": "Emily K Patel",
+   "series": "nag hammadi series",
+   "language": "en",
+   "primary_asin": "B0C6JD11ZC",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0G7MPBL9G",
+     "format": "audiobook",
+     "published_at": "2026-07-11",
+     "amazon_url": "https://www.amazon.com/dp/B0G7MPBL9G"
+    },
+    {
+     "asin": "B0C6JD11ZC",
+     "format": "ebook",
+     "published_at": "2023-05-28",
+     "amazon_url": "https://www.amazon.com/dp/B0C6JD11ZC"
+    },
+    {
+     "asin": "B0C6BXY4Z4",
+     "format": "hardcover",
+     "published_at": "2023-05-29",
+     "amazon_url": "https://www.amazon.com/dp/B0C6BXY4Z4"
+    },
+    {
+     "asin": "B0C6BX91QW",
+     "format": "paperback",
+     "published_at": "2023-05-29",
+     "amazon_url": "https://www.amazon.com/dp/B0C6BX91QW"
+    }
+   ]
+  },
+  {
+   "slug": "weapons-of-the-gods-an-overview-of-astra-shastra",
+   "title": "Weapons of the Gods: An Overview of Astra & Shastra",
+   "author": "Forbidden Mantra Press",
+   "series": "hindu epic series",
+   "language": "en",
+   "primary_asin": "B0FCDBMM5T",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0FCDBMM5T",
+     "format": "ebook",
+     "published_at": "2025-06-10",
+     "amazon_url": "https://www.amazon.com/dp/B0FCDBMM5T"
+    },
+    {
+     "asin": "B0FCS3L34S",
+     "format": "paperback",
+     "published_at": "2025-06-11",
+     "amazon_url": "https://www.amazon.com/dp/B0FCS3L34S"
+    }
+   ]
+  },
+  {
+   "slug": "wildflower-coloring-book",
+   "title": "wildflower coloring book",
+   "author": "Spiritual Expressionz",
+   "series": null,
+   "language": "en",
+   "primary_asin": "B0FDFRQ986",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0FDFRQ986",
+     "format": "paperback",
+     "published_at": "2025-06-17",
+     "amazon_url": "https://www.amazon.com/dp/B0FDFRQ986"
+    }
+   ]
+  },
+  {
+   "slug": "b0cw1lh4kz",
+   "title": "Раскрывая тайны Евангелие от Петра",
+   "author": "Emily K Patel",
+   "series": "nag hammadi series",
+   "language": "ru",
+   "primary_asin": "B0CW1LH4KZ",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0CW1LH4KZ",
+     "format": "ebook",
+     "published_at": "2024-12-19",
+     "amazon_url": "https://www.amazon.com/dp/B0CW1LH4KZ"
+    },
+    {
+     "asin": "B0DR6VH6J5",
+     "format": "hardcover",
+     "published_at": "2024-12-22",
+     "amazon_url": "https://www.amazon.com/dp/B0DR6VH6J5"
+    },
+    {
+     "asin": "B0DR5YND4R",
+     "format": "paperback",
+     "published_at": "2024-12-21",
+     "amazon_url": "https://www.amazon.com/dp/B0DR5YND4R"
+    }
+   ]
+  },
+  {
+   "slug": "b0cvw6hpz7",
+   "title": "تلقى آدم الوحي الإلهي أو الرؤى النبوية للأحداث المستقبلية. من خلال هذه الرؤية يمكنك الحصول على نظرة ثاقبة تتكشف الأحداث الكونية والتاريخية.",
+   "author": "Emily K Patel",
+   "series": "nag hammadi series",
+   "language": "ar",
+   "primary_asin": "B0CVW6HPZ7",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0CVW6HPZ7",
+     "format": "ebook",
+     "published_at": "2024-02-18",
+     "amazon_url": "https://www.amazon.com/dp/B0CVW6HPZ7"
+    }
+   ]
+  },
+  {
+   "slug": "b0h1kpfzs6",
+   "title": "आदम का सर्वनाश",
+   "author": "Emily K Patel",
+   "series": "nag hammadi series",
+   "language": "hi",
+   "primary_asin": "B0H1KPFZS6",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0H1KPFZS6",
+     "format": "ebook",
+     "published_at": "2026-05-13",
+     "amazon_url": "https://www.amazon.com/dp/B0H1KPFZS6"
+    }
+   ]
+  },
+  {
+   "slug": "ii",
+   "title": "आदम का सर्वनाश: भाग II – आर्कॉन्स का युद्ध",
+   "author": "Emily K Patel",
+   "series": "nag hammadi series",
+   "language": "hi",
+   "primary_asin": "B0GYQ7MYRJ",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0GYQ7MYRJ",
+     "format": "ebook",
+     "published_at": "2026-05-13",
+     "amazon_url": "https://www.amazon.com/dp/B0GYQ7MYRJ"
+    }
+   ]
+  },
+  {
+   "slug": "b0dr69q4t4",
+   "title": "एडम का सर्वनाश",
+   "author": "Emily K Patel",
+   "series": "nag hammadi series",
+   "language": "hi",
+   "primary_asin": "B0DR69Q4T4",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0DR69Q4T4",
+     "format": "ebook",
+     "published_at": "2024-12-21",
+     "amazon_url": "https://www.amazon.com/dp/B0DR69Q4T4"
+    }
+   ]
+  },
+  {
+   "slug": "b0gzqj3bs3",
+   "title": "कुंडलिनी ऊर्जा के प्राचीन विज्ञान का रहस्योद्घाटन: यौन ऊर्जा और मानसिक क्षमताओं पर महारत हासिल करना",
+   "author": "Emily K Patel",
+   "series": null,
+   "language": "hi",
+   "primary_asin": "B0GZQJ3BS3",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0GZQJ3BS3",
+     "format": "ebook",
+     "published_at": "2026-05-06",
+     "amazon_url": "https://www.amazon.com/dp/B0GZQJ3BS3"
+    }
+   ]
+  },
+  {
+   "slug": "b0h44v6v4s",
+   "title": "ग्नोस्टिक सुसमाचार और छिपा हुआ मसीह",
+   "author": "Emily K Patel",
+   "series": "nag hammadi series",
+   "language": "hi",
+   "primary_asin": "B0H44V6V4S",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0H44V6V4S",
+     "format": "ebook",
+     "published_at": "2026-06-05",
+     "amazon_url": "https://www.amazon.com/dp/B0H44V6V4S"
+    }
+   ]
+  },
+  {
+   "slug": "b0h9xkbqfb",
+   "title": "बजरंग बाण एवं हनुमान साधना",
+   "author": "Emily K Patel",
+   "series": "the sacred hanuman series",
+   "language": "hi",
+   "primary_asin": "B0H9XKBQFB",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0H9XKBQFB",
+     "format": "ebook",
+     "published_at": "2026-07-22",
+     "amazon_url": "https://www.amazon.com/dp/B0H9XKBQFB"
+    }
+   ]
+  },
+  {
+   "slug": "b0h1kq5f78",
+   "title": "मो पाई का गुप्त सिद्धांत: यौन ऊर्जा, आंतरिक रसायन शास्त्र और मानवीय शक्ति की तकनीक",
+   "author": "Emily K Patel",
+   "series": "the hidden technology of human power series",
+   "language": "hi",
+   "primary_asin": "B0H1KQ5F78",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0H1KQ5F78",
+     "format": "ebook",
+     "published_at": "2026-05-13",
+     "amazon_url": "https://www.amazon.com/dp/B0H1KQ5F78"
+    }
+   ]
+  },
+  {
+   "slug": "b0h1l2fdqh",
+   "title": "मो पाई: भीतर की विनाशकारी और उपचारक शक्ति",
+   "author": "Emily K Patel",
+   "series": "the hidden technology of human power series",
+   "language": "hi",
+   "primary_asin": "B0H1L2FDQH",
+   "has_audiobook": true,
+   "editions": [
+    {
+     "asin": "B0H8MHZPR5",
+     "format": "audiobook",
+     "published_at": "2026-07-12",
+     "amazon_url": "https://www.amazon.com/dp/B0H8MHZPR5"
+    },
+    {
+     "asin": "B0H1L2FDQH",
+     "format": "ebook",
+     "published_at": "2026-05-13",
+     "amazon_url": "https://www.amazon.com/dp/B0H1L2FDQH"
+    }
+   ]
+  },
+  {
+   "slug": "b0h9xt6y2z",
+   "title": "श्री कनकधारा स्तोत्रम्",
+   "author": "Emily K Patel",
+   "series": "lakshmi mantra series",
+   "language": "hi",
+   "primary_asin": "B0H9XT6Y2Z",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0H9XT6Y2Z",
+     "format": "ebook",
+     "published_at": "2026-07-22",
+     "amazon_url": "https://www.amazon.com/dp/B0H9XT6Y2Z"
+    }
+   ]
+  },
+  {
+   "slug": "b0h78cymlq",
+   "title": "श्री लक्ष्मी मन्त्ररत्नावली",
+   "author": "Emily K Patel",
+   "series": "lakshmi mantra series",
+   "language": "hi",
+   "primary_asin": "B0H78CYMLQ",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0H78CYMLQ",
+     "format": "ebook",
+     "published_at": "2026-07-01",
+     "amazon_url": "https://www.amazon.com/dp/B0H78CYMLQ"
+    }
+   ]
+  },
+  {
+   "slug": "b0dr7fxc4k",
+   "title": "ஆதாமின் வெளிப்பாடு",
+   "author": "Emily K Patel",
+   "series": "nag hammadi series",
+   "language": "ta",
+   "primary_asin": "B0DR7FXC4K",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0DR7FXC4K",
+     "format": "ebook",
+     "published_at": "2024-12-22",
+     "amazon_url": "https://www.amazon.com/dp/B0DR7FXC4K"
+    }
+   ]
+  },
+  {
+   "slug": "b0dr69b37p",
+   "title": "亞當的啟示錄",
+   "author": "Emily K Patel",
+   "series": "nag hammadi series",
+   "language": "zh",
+   "primary_asin": "B0DR69B37P",
+   "has_audiobook": false,
+   "editions": [
+    {
+     "asin": "B0DR69B37P",
+     "format": "ebook",
+     "published_at": "2024-12-21",
+     "amazon_url": "https://www.amazon.com/dp/B0DR69B37P"
+    }
+   ]
+  }
+ ]
+}

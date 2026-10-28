@@ -2612,6 +2612,151 @@
           "h": 720
         }
       }
+    },
+    {
+      "work": "the-hidden-doctrine-of-mo-pai",
+      "edition": "B0GCC4NP56",
+      "source": {
+        "type": "owner-supplied",
+        "description": "Owner's Wix Media Manager (forbiddenmantra.com), file 'The Hidden Doctrine of Mo Pai.jpeg'"
+      },
+      "rights": {
+        "basis": "Forbidden Mantra Press owner confirmed (2026-10-28) that all original Forbidden Mantra Press artwork is his and authorized for commercial use",
+        "confirmedBy": "Forbidden Mantra Press owner",
+        "confirmedOn": "2026-10-28"
+      },
+      "matchEvidence": "Cover reads 'The Hidden Doctrine of Mo Pai', Emily K Patel; the owner's catalogue lists this title (credited 'Emily Patel') with its ebook ASIN; cover assigned to the ebook (the edition the catalogue shows)",
+      "file": "assets-src/covers/the-hidden-doctrine-of-mo-pai__B0GCC4NP56.jpeg",
+      "original": [
+        800,
+        1200
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 360
+        },
+        "480": {
+          "w": 480,
+          "h": 720
+        }
+      }
+    },
+    {
+      "work": "the-genesis-of-sophia",
+      "edition": "B0F2GSPKX7",
+      "source": {
+        "type": "owner-supplied",
+        "description": "Owner's Wix Media Manager (forbiddenmantra.com), file thegenesisofsophia2.png"
+      },
+      "rights": {
+        "basis": "Forbidden Mantra Press owner confirmed (2026-10-28) that all original Forbidden Mantra Press artwork is his and authorized for commercial use",
+        "confirmedBy": "Forbidden Mantra Press owner",
+        "confirmedOn": "2026-10-28"
+      },
+      "matchEvidence": "Cover reads 'The Genesis of Sophia: The Lost Origin of the Divine Feminine and the Awakening of the World', Nag Hammadi Series, Emily K Patel; exact match to the owner's catalogue record",
+      "file": "assets-src/covers/the-genesis-of-sophia__B0F2GSPKX7.png",
+      "original": [
+        1024,
+        1536
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 360
+        },
+        "480": {
+          "w": 480,
+          "h": 720
+        }
+      }
+    },
+    {
+      "work": "the-secret-knowledge-of-adam",
+      "edition": "B0F3CXG33X",
+      "source": {
+        "type": "owner-supplied",
+        "description": "Owner's Wix Media Manager (forbiddenmantra.com), file 'ChatGPT Image Apr 2, 2025, 04_01_38 AM.png'"
+      },
+      "rights": {
+        "basis": "Forbidden Mantra Press owner confirmed (2026-10-28) that all original Forbidden Mantra Press artwork is his and authorized for commercial use",
+        "confirmedBy": "Forbidden Mantra Press owner",
+        "confirmedOn": "2026-10-28"
+      },
+      "matchEvidence": "Cover reads 'The Secret Knowledge of Adam: Revelations from the Gnostic Scrolls'; exact match to the owner's catalogue record",
+      "file": "assets-src/covers/the-secret-knowledge-of-adam__B0F3CXG33X.png",
+      "original": [
+        1024,
+        1536
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 360
+        },
+        "480": {
+          "w": 480,
+          "h": 720
+        }
+      }
+    },
+    {
+      "work": "the-catalyst",
+      "edition": "B0F39GJ9F8",
+      "source": {
+        "type": "owner-supplied",
+        "description": "Owner's Wix Media Manager (forbiddenmantra.com), file Full_Length_KDP_Book_Cover.jpg"
+      },
+      "rights": {
+        "basis": "Forbidden Mantra Press owner confirmed (2026-10-28) that all original Forbidden Mantra Press artwork is his and authorized for commercial use",
+        "confirmedBy": "Forbidden Mantra Press owner",
+        "confirmedOn": "2026-10-28"
+      },
+      "matchEvidence": "Cover reads 'The Catalyst: Awakening the Human Code'; exact match to the owner's catalogue record (The Catalyst Chronicle series)",
+      "file": "assets-src/covers/the-catalyst__B0F39GJ9F8.jpg",
+      "original": [
+        1280,
+        1920
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 360
+        },
+        "480": {
+          "w": 480,
+          "h": 720
+        }
+      }
+    },
+    {
+      "work": "the-ancient-science-of-kundalini-energy-revealed",
+      "edition": "B0GZQJ3BS3",
+      "source": {
+        "type": "owner-supplied",
+        "description": "Owner's Wix Media Manager (forbiddenmantra.com), file 'hindi The Ancient.png'"
+      },
+      "rights": {
+        "basis": "Forbidden Mantra Press owner confirmed (2026-10-28) that all original Forbidden Mantra Press artwork is his and authorized for commercial use",
+        "confirmedBy": "Forbidden Mantra Press owner",
+        "confirmedOn": "2026-10-28"
+      },
+      "matchEvidence": "Hindi cover of the same artwork as the English edition; wording on the cover differs slightly from the catalogue's Hindi title, so same book, wording to confirm",
+      "file": "assets-src/covers/the-ancient-science-of-kundalini-energy-revealed__B0GZQJ3BS3.png",
+      "original": [
+        1024,
+        1536
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 360
+        },
+        "480": {
+          "w": 480,
+          "h": 720
+        }
+      }
     }
   ]
 }

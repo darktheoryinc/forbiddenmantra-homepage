@@ -16,6 +16,7 @@ const langEds = (c) => cat.works.reduce((n, w) => n + w.editions.filter((e) => e
 const langWorks = (c) => cat.works.filter((w) => w.editions.some((e) => e.language === c)).length;
 const LANGCOUNT = new Set(cat.works.flatMap((w) => w.editions.map((e) => e.language))).size; // languages that have verified editions
 const FMPN = cat.works.filter((w) => w.press).length;
+const nAudio = cat.works.filter((w) => w.editions.some((e) => e.format === 'audiobook')).length, nAudioEn = cat.works.filter((w) => w.editions.some((e) => e.format === 'audiobook' && e.language === 'en')).length;
 const NEN = langWorks('en'); // works with an English edition (some works are listed only in another language)
 const nLevel = (l) => cat.works.filter((w) => w.level === l).length;
 const nSubj = (d) => cat.works.filter((w) => w.subjects.includes(d)).length;
@@ -107,8 +108,8 @@ for (const [name, vp] of VIEWPORTS) {
   await pg.click('button[type=reset]'); await pg.waitForTimeout(150); ok((await listed()) === N && (await pg.locator('.grid:not([hidden]) > .card:not([hidden])').count()) === Math.min(N, 48) && !(await pg.isVisible('[data-empty]')), `${T} "Clear filters" restores the full list (${N} books, first page of 48 shown)`);
   await pg.selectOption('select[name=press]', 'fmp'); ok((await visible()).length === Math.min(FMPN, 48), `${T} press filter shows ${FMPN} FMP titles (first page of up to 48)`);
   await pg.selectOption('select[name=press]', ''); await pg.selectOption('select[name=subject]', 'tarot'); { const want = cat.works.filter((w) => w.subjects.includes('tarot')).map((w) => w.title).sort().join('|'); ok((await visible()).sort().join('|') === want && want.includes('Seventy-Eight Degrees of Wisdom'), `${T} subject=tarot -> ${want.split('|').length} tarot works`); }
-  await pg.selectOption('select[name=subject]', ''); await pg.selectOption('select[name=format]', 'audiobook'); ok((await visible()).length === 2, `${T} format=audiobook -> 2`);
-  await pg.selectOption('select[name=lang]', 'en'); ok((await visible()).length === 2, `${T} language=English + format=audiobook -> 2`);
+  await pg.selectOption('select[name=subject]', ''); await pg.selectOption('select[name=format]', 'audiobook'); ok((await visible()).length === Math.min(nAudio, 48), `${T} format=audiobook -> ${nAudio} works (first page of up to 48)`);
+  await pg.selectOption('select[name=lang]', 'en'); ok((await visible()).length === Math.min(nAudioEn, 48), `${T} language=English + format=audiobook -> ${nAudioEn} works (first page of up to 48)`);
   await pg.selectOption('select[name=lang]', ''); await pg.selectOption('select[name=format]', ''); await pg.selectOption('select[name=tradition]', 'gnostic'); { const n = cat.works.filter((w) => (w.tradition ?? []).includes('gnostic')).length; ok((await visible()).length === n, `${T} tradition=gnostic -> ${n}`); }
   await pg.selectOption('select[name=tradition]', ''); await pg.selectOption('select[name=level]', 'intermediate'); ok((await visible()).length === nLevel('intermediate'), `${T} level=intermediate -> ${nLevel('intermediate')}`);
   await pg.selectOption('select[name=level]', ''); await snap('books');
