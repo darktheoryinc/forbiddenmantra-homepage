@@ -16,6 +16,7 @@ const langEds = (c) => cat.works.reduce((n, w) => n + w.editions.filter((e) => e
 const langWorks = (c) => cat.works.filter((w) => w.editions.some((e) => e.language === c)).length;
 const LANGCOUNT = new Set(cat.works.flatMap((w) => w.editions.map((e) => e.language))).size; // languages that have verified editions
 const FMPN = cat.works.filter((w) => w.press).length;
+const NEN = langWorks('en'); // works with an English edition (some works are listed only in another language)
 const nLevel = (l) => cat.works.filter((w) => w.level === l).length;
 const nSubj = (d) => cat.works.filter((w) => w.subjects.includes(d)).length;
 
@@ -27,7 +28,7 @@ ok(![...L.buy.keys()].some((u) => u.includes('amzn.to')), 'legacy amzn.to link i
 const editionLangs = new Set(cat.works.flatMap((w) => w.editions.map((e) => e.language)));
 ok(['en', 'es'].every((c) => editionLangs.has(c)) && !editionLangs.has('it'), `no invented translations: every non-English edition carries its own source (languages found: ${[...editionLangs].sort().join(',')}; ${ES} Spanish)`);
 ok(cat.works.every((w) => w.editions.every((e) => e.language === 'en' || e.sources?.length)), 'every non-English edition carries its own source');
-ok(rep.languagesWithVerifiedEditions === LANGCOUNT && rep.publishedByLanguage.en.editions === E && rep.publishedByLanguage.en.works === N, `import report counts: en = ${rep.publishedByLanguage.en.works} works / ${rep.publishedByLanguage.en.editions} editions; ${rep.languagesRegistered} languages registered`);
+ok(rep.languagesWithVerifiedEditions === LANGCOUNT && rep.publishedByLanguage.en.editions === E && rep.publishedByLanguage.en.works === NEN, `import report counts: en = ${rep.publishedByLanguage.en.works} works / ${rep.publishedByLanguage.en.editions} editions; ${rep.languagesRegistered} languages registered`);
 ok(!rep.publishedByLanguage.it && rep.publishedByLanguage.es?.editions === ES, `Italian stays empty (0 published); the report counts ${ES} Spanish editions`);
 for (const f of ['catalogue.json', 'staged.json', 'error-queue.json']) ok(true, `data/${f} present`);
 
@@ -90,15 +91,15 @@ for (const [name, vp] of VIEWPORTS) {
   const cases = [['Power of Now', 'The Power of Now'], ['tolle', 'The Power of Now'], ['Pagels', 'The Gnostic Gospels'], ['tarot', 'Seventy-Eight Degrees of Wisdom'], ['978-1-57731-480-6', 'The Power of Now'], ['9780875421186', 'Wicca'], ['0470923350', 'When the Body Says No'], ['B0H8MQN9WK', 'The Apocalypse of Adam'], ['chodron', 'When Things Fall Apart']];
   for (const [q, expect] of cases) { await pg.goto(url('search/index.html') + '?q=' + encodeURIComponent(q)); const v = await visible(); ok(v.some((t) => t === expect) && v.length < N, `${T} search "${q}" -> ${v.length} incl. ${expect}`); }
   await pg.goto(url('search/index.html') + '?q=italiano'); ok((await visible()).length === 0, `${T} searching "italiano" finds nothing (no Italian edition is verified)`);
-  await pg.goto(url('search/index.html') + '?q=english'); ok((await total()) === N, `${T} searching "english" matches all ${N} English works (count line; results are drawn 48 at a time)`);
+  await pg.goto(url('search/index.html') + '?q=english'); ok((await total()) === NEN, `${T} searching "english" matches all ${NEN} English works (count line; results are drawn 48 at a time)`);
   await pg.goto(url('search/index.html') + '?q=Power%20of%20Now'); await snap('search');
 
   // ===== filters =====
   await pg.goto(url('books/index.html'));
   const langOpts = await pg.locator('select[name=lang] optgroup').evaluateAll((g) => g.map((x) => [x.label, x.querySelectorAll('option').length]));
   ok(langOpts[0][1] === LANGCOUNT && langOpts[1][1] === reg.length - LANGCOUNT, `${T} language filter: ${langOpts[0][1]} language with editions, ${langOpts[1][1]} marked "None yet"`);
-  ok((await pg.locator('select[name=lang] optgroup').first().locator('option').first().textContent()).trim() === `English (${N})`, `${T} English option shows the true work count (${N})`);
-  await pg.selectOption('select[name=lang]', 'en'); ok((await total()) === N, `${T} language=English -> all ${N}`);
+  ok((await pg.locator('select[name=lang] optgroup').first().locator('option').first().textContent()).trim() === `English (${NEN})`, `${T} English option shows the true work count (${NEN})`);
+  await pg.selectOption('select[name=lang]', 'en'); ok((await total()) === NEN, `${T} language=English -> all ${NEN}`);
   await pg.selectOption('select[name=lang]', 'es'); ok((await visible()).length === langWorks('es'), `${T} language=Spanish -> the ${langWorks('es')} works with verified Spanish editions`);
   await pg.selectOption('select[name=lang]', 'it'); ok((await visible()).length === 0 && await pg.isVisible('[data-empty]'), `${T} language=Italian -> empty state`);
   ok(/No verified Italian editions match these filters/.test(await pg.locator('[data-empty-text]').textContent()), `${T} empty-state message names the language and says editions are only listed when verified`);
@@ -116,11 +117,11 @@ for (const [name, vp] of VIEWPORTS) {
   // ===== language pages =====
   await pg.goto(url('languages/index.html')); await snap('languages', true);
   const rows = await pg.locator('.lang-row').allTextContents();
-  ok(rows.length === reg.length && new RegExp(`English[\\s\\S]*${N} works · ${E} editions`).test(rows[0]), `${T} languages index: ${rows.length} languages, first row "${rows[0].replace(/\s+/g, ' ').trim().slice(0, 60)}"`);
+  ok(rows.length === reg.length && new RegExp(`English[\\s\\S]*${NEN} works · ${E} editions`).test(rows[0]), `${T} languages index: ${rows.length} languages, first row "${rows[0].replace(/\s+/g, ' ').trim().slice(0, 60)}"`);
   ok(rows.filter((r) => /no verified editions yet/.test(r)).length === reg.length - LANGCOUNT, `${T} every other language says "no verified editions yet"`);
   await pg.goto(url('languages/it/index.html')); ok(await pg.isVisible('[data-lang-empty]') && (await pg.locator('.card').count()) === 0, `${T} Italian page: honest empty state, no books listed`); await snap('lang-es-empty');
   ok(/0 works · 0 editions/.test(await pg.locator('.stats').textContent()), `${T} Italian page counts read 0 works · 0 editions`);
-  await pg.goto(url('languages/en/index.html')); ok((await listed()) === N, `${T} English page lists all ${N} works (first page static, rest from the index)`);
+  await pg.goto(url('languages/en/index.html')); ok((await listed()) === NEN, `${T} English page lists all ${NEN} works (first page static, rest from the index)`);
   await pg.goto(url('languages/ar/index.html')); ok((await pg.locator('h1 [lang=ar]').getAttribute('dir')) === 'rtl', `${T} Arabic page marks its name dir="rtl"`);
   await pg.goto(url('languages/en/index.html')); await pg.click('.chips a >> text=Emotional Wellbeing'); ok(pg.url().includes('topics/emotional-wellbeing') && pg.url().includes('lang=en'), `${T} language page -> subject link carries ?lang=en`);
   ok((await total()) === nSubj('emotional-wellbeing'), `${T} subject page opens with the language filter applied (${nSubj('emotional-wellbeing')} emotional-wellbeing works in English)`);

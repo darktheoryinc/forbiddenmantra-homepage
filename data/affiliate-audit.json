@@ -1,28 +1,28 @@
 {
  "summary": {
-  "works": 256,
-  "purchaseLinks": 287,
+  "works": 269,
+  "purchaseLinks": 291,
   "tagsExpected": {
    "amazon.com": "darktheoryinc-20"
   },
   "linkClasses": {
    "derived": 49,
    "verified": 54,
-   "search": 184
+   "search": 188
   },
   "linkErrors": 0,
   "worksWithValidTaggedProductLink": 92,
   "ofWhichSourceVerified": 54,
   "ofWhichIdentityVerifiedOffline": 38,
-  "worksWithSearchLinkOnly": 164,
-  "worksWithNoPurchaseLink": 0,
+  "worksWithSearchLinkOnly": 168,
+  "worksWithNoPurchaseLink": 9,
   "worksWithLinkErrors": 0,
-  "recordsNeedingManualReview": 177,
+  "recordsNeedingManualReview": 190,
   "manualReviewByReason": {
    "an edition identifier comes from a single source": 9,
-   "owner-listed record: edition details unconfirmed": 74,
-   "e-book/audiobook edition has no verified Amazon link": 69,
-   "only a search link: needs the edition's ASIN or ISBN": 164
+   "owner-listed record: edition details unconfirmed": 87,
+   "e-book/audiobook edition has no verified Amazon link": 75,
+   "only a search link: needs the edition's ASIN or ISBN": 177
   },
   "liveCheckPending": 38
  },
@@ -716,6 +716,116 @@
     "only a search link: needs the edition's ASIN or ISBN",
     "owner-listed record: edition details unconfirmed",
     "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "ruqyahs-for-wealth",
+   "title": "Ruqyah's for Wealth",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "ruqyahs-for-wealth-in-arabic-language",
+   "title": "Ruqyah's for Wealth in Arabic Language",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed"
+   ]
+  },
+  {
+   "work": "jinn-dark-angels-shapeshifters-and-ghouls",
+   "title": "JINN - Dark Angels, Shapeshifters, and Ghouls",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "enlightened-silly-comic-strips",
+   "title": "Enlightened Silly Comic Strips",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "enlightened-silly-comics",
+   "title": "Enlightened Silly Comics",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "benny-the-brave-and-the-shimmering-night",
+   "title": "Benny the Brave and the Shimmering Night",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "make-yourself-irresistibly-attractive-with-the-kleem-mantra",
+   "title": "Make Yourself Irresistibly Attractive with the Kleem Mantra",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "la-joya-del-loto",
+   "title": "La Joya del Loto",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed"
+   ]
+  },
+  {
+   "work": "mas-alla-del-sexo",
+   "title": "Más allá del sexo",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed"
+   ]
+  },
+  {
+   "work": "schepping-en-verbinding",
+   "title": "Schepping en verbinding",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed"
+   ]
+  },
+  {
+   "work": "revelando-los-misterios-de-el-evangelio-de-pedro",
+   "title": "Revelando los misterios de El evangelio de Pedro",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed"
+   ]
+  },
+  {
+   "work": "revelando-os-misterios-do-o-evangelho-de-pedro",
+   "title": "Revelando os mistérios do O Evangelho de Pedro",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed"
+   ]
+  },
+  {
+   "work": "los-pensamientos-son-mantras",
+   "title": "Los pensamientos son mantras",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed"
    ]
   },
   {
@@ -2253,6 +2363,110 @@
    "press": true,
    "links": 1,
    "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "ruqyahs-for-wealth",
+   "title": "Ruqyah's for Wealth",
+   "press": false,
+   "links": 0,
+   "best": "none",
+   "errors": false
+  },
+  {
+   "work": "ruqyahs-for-wealth-in-arabic-language",
+   "title": "Ruqyah's for Wealth in Arabic Language",
+   "press": false,
+   "links": 0,
+   "best": "none",
+   "errors": false
+  },
+  {
+   "work": "jinn-dark-angels-shapeshifters-and-ghouls",
+   "title": "JINN - Dark Angels, Shapeshifters, and Ghouls",
+   "press": false,
+   "links": 0,
+   "best": "none",
+   "errors": false
+  },
+  {
+   "work": "enlightened-silly-comic-strips",
+   "title": "Enlightened Silly Comic Strips",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "enlightened-silly-comics",
+   "title": "Enlightened Silly Comics",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "benny-the-brave-and-the-shimmering-night",
+   "title": "Benny the Brave and the Shimmering Night",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "make-yourself-irresistibly-attractive-with-the-kleem-mantra",
+   "title": "Make Yourself Irresistibly Attractive with the Kleem Mantra",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "la-joya-del-loto",
+   "title": "La Joya del Loto",
+   "press": true,
+   "links": 0,
+   "best": "none",
+   "errors": false
+  },
+  {
+   "work": "mas-alla-del-sexo",
+   "title": "Más allá del sexo",
+   "press": true,
+   "links": 0,
+   "best": "none",
+   "errors": false
+  },
+  {
+   "work": "schepping-en-verbinding",
+   "title": "Schepping en verbinding",
+   "press": true,
+   "links": 0,
+   "best": "none",
+   "errors": false
+  },
+  {
+   "work": "revelando-los-misterios-de-el-evangelio-de-pedro",
+   "title": "Revelando los misterios de El evangelio de Pedro",
+   "press": true,
+   "links": 0,
+   "best": "none",
+   "errors": false
+  },
+  {
+   "work": "revelando-os-misterios-do-o-evangelho-de-pedro",
+   "title": "Revelando os mistérios do O Evangelho de Pedro",
+   "press": true,
+   "links": 0,
+   "best": "none",
+   "errors": false
+  },
+  {
+   "work": "los-pensamientos-son-mantras",
+   "title": "Los pensamientos son mantras",
+   "press": true,
+   "links": 0,
+   "best": "none",
    "errors": false
   },
   {
@@ -4972,6 +5186,54 @@
    "issues": [],
    "verdict": null,
    "url": "https://www.amazon.com/s?k=Mo%20Pai%20and%20Internal%20Alchemy%20The%20Physiology%2C%20Polarity%2C%20and%20Power%20Mechanics%20Behind%20Human%20Energy%20Cultivation%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "enlightened-silly-comic-strips",
+   "workTitle": "Enlightened Silly Comic Strips",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Enlightened%20Silly%20Comic%20Strips%20Twilight%20Zone%20meets%20Looney%20Toons%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "enlightened-silly-comics",
+   "workTitle": "Enlightened Silly Comics",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Enlightened%20Silly%20Comics%20Art%20%26%20Humor%20with%20Insight%20%7C%20Social%20Satire%20and%20Political%20Humor%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "benny-the-brave-and-the-shimmering-night",
+   "workTitle": "Benny the Brave and the Shimmering Night",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Benny%20the%20Brave%20and%20the%20Shimmering%20Night%20A%20Heartwarming%20Bedtime%20Adventure%20Picture%20Book%20for%20Children%20Ages%203-8%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "make-yourself-irresistibly-attractive-with-the-kleem-mantra",
+   "workTitle": "Make Yourself Irresistibly Attractive with the Kleem Mantra",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Make%20Yourself%20Irresistibly%20Attractive%20with%20the%20Kleem%20Mantra%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
   },
   {
    "work": "the-power-of-now",

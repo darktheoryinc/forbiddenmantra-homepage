@@ -463,6 +463,22 @@
         "fantasy-folklore-fiction"
       ],
       "intro": "Novels of ghosts, psychic phenomena and the supernatural in contemporary settings."
+    },
+    {
+      "id": "childrens-books",
+      "name": "Children's Books",
+      "hubs": [
+        "fantasy-folklore-fiction"
+      ],
+      "intro": "Picture books and stories for young readers."
+    },
+    {
+      "id": "comics-humor",
+      "name": "Comics & Humor",
+      "hubs": [
+        "fantasy-folklore-fiction"
+      ],
+      "intro": "Comic strips and humorous illustrated books."
     }
   ],
   "traditions": [

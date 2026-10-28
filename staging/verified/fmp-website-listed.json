@@ -2184,7 +2184,7 @@
       "title": "The Apocryphon of John",
       "subtitle": "",
       "authors": [
-        "Emily K Patel"
+        "Emily Patel"
       ],
       "subjects": [
         "gnosticism"
@@ -2220,7 +2220,8 @@
         "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
         "format (ebook), ASIN/ISBN and publication date not recovered",
         "publisher attribution is owner-supplied",
-        "series inferred from the cover wording 'Nag Hammadi'; confirm"
+        "series inferred from the cover wording 'Nag Hammadi'; confirm",
+        "author credit kept as printed on the website ('Emily Patel'); may be the same author as 'Emily K Patel'"
       ],
       "series": {
         "name": "Nag Hammadi Series"
@@ -2709,7 +2710,7 @@
       "title": "Mo Pai and Internal Alchemy",
       "subtitle": "The Physiology, Polarity, and Power Mechanics Behind Human Energy Cultivation",
       "authors": [
-        "Emily K Patel"
+        "Emily Patel"
       ],
       "subjects": [
         "mo-pai",
@@ -2765,7 +2766,679 @@
         "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
         "format (ebook), ASIN/ISBN and publication date not recovered",
         "publisher attribution is owner-supplied",
-        "the Spanish title 'La mecánica interna del cultivo de la energía' may belong to this book or another Mo Pai title; owner to confirm"
+        "the Spanish title 'La mecánica interna del cultivo de la energía' may belong to this book or another Mo Pai title; owner to confirm",
+        "author credit kept as printed on the website ('Emily Patel'); may be the same author as 'Emily K Patel'"
+      ]
+    },
+    {
+      "title": "Ruqyah's for Wealth",
+      "subtitle": "",
+      "authors": [
+        "Abdur Rehman"
+      ],
+      "subjects": [
+        "islam-sufism"
+      ],
+      "tradition": [
+        "islamic"
+      ],
+      "level": "unrated",
+      "press": null,
+      "status": "owner-listed",
+      "editions": [
+        {
+          "format": "ebook",
+          "language": "en",
+          "publisher": "Muslim Prayer Press",
+          "year": null,
+          "retailers": [],
+          "publisherBasis": "owner-supplied: the imprint shown on the owner's website is Muslim Prayer Press",
+          "formatConfirmed": false,
+          "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+          "url": "https://www.forbiddenmantra.com/",
+          "accessed": "2026-10-28",
+          "supports": "title, author, series and language as shown on the owner's website"
+        }
+      ],
+      "claims": [],
+      "reviewFlags": [
+        "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+        "format (ebook), ASIN/ISBN and publication date not recovered",
+        "imprint shown is Muslim Prayer Press, not Forbidden Mantra Press: owner to confirm whether it is one of your imprints",
+        "kept separate from 'Ruqyah's for Wealth in Arabic Language'; may be the same book in another language"
+      ],
+      "series": {
+        "name": "Muslim Prayer Series"
+      }
+    },
+    {
+      "title": "Ruqyah's for Wealth in Arabic Language",
+      "subtitle": "",
+      "authors": [
+        "Abdur Rehman"
+      ],
+      "subjects": [
+        "islam-sufism"
+      ],
+      "tradition": [
+        "islamic"
+      ],
+      "level": "unrated",
+      "press": null,
+      "status": "owner-listed",
+      "editions": [
+        {
+          "format": "ebook",
+          "language": "ar",
+          "publisher": "Muslim Prayer Press",
+          "year": null,
+          "retailers": [],
+          "publisherBasis": "owner-supplied: the imprint shown on the owner's website is Muslim Prayer Press",
+          "formatConfirmed": false,
+          "note": "Listed on the website as 'Ruqyah's for Wealth in Arabic Language'; whether the text is Arabic is not confirmed.",
+          "title": "Ruqyah's for Wealth in Arabic Language",
+          "sources": [
+            {
+              "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+              "url": "https://www.forbiddenmantra.com/",
+              "accessed": "2026-10-28",
+              "supports": "title, author, series and language as shown on the owner's website"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+          "url": "https://www.forbiddenmantra.com/",
+          "accessed": "2026-10-28",
+          "supports": "title, author, series and language as shown on the owner's website"
+        }
+      ],
+      "claims": [],
+      "reviewFlags": [
+        "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+        "format (ebook), ASIN/ISBN and publication date not recovered",
+        "imprint shown is Muslim Prayer Press",
+        "possible duplicate of 'Ruqyah's for Wealth'; not merged"
+      ],
+      "series": {
+        "name": "Muslim Prayer Series"
+      }
+    },
+    {
+      "title": "JINN - Dark Angels, Shapeshifters, and Ghouls",
+      "subtitle": "",
+      "authors": [
+        "TSPRav Shiva"
+      ],
+      "subjects": [
+        "islam-sufism"
+      ],
+      "tradition": [
+        "islamic"
+      ],
+      "level": "unrated",
+      "press": null,
+      "status": "owner-listed",
+      "editions": [
+        {
+          "format": "ebook",
+          "language": "en",
+          "publisher": "Muslim Prayer Press",
+          "year": null,
+          "retailers": [],
+          "publisherBasis": "owner-supplied: the imprint shown on the owner's website is Muslim Prayer Press",
+          "formatConfirmed": false,
+          "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+          "url": "https://www.forbiddenmantra.com/",
+          "accessed": "2026-10-28",
+          "supports": "title, author, series and language as shown on the owner's website"
+        }
+      ],
+      "claims": [],
+      "reviewFlags": [
+        "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+        "format (ebook), ASIN/ISBN and publication date not recovered",
+        "series wording on the website: 'Muslim Prayer & Quotes Series'",
+        "imprint shown is Muslim Prayer Press"
+      ],
+      "series": {
+        "name": "Muslim Prayer & Quotes Series"
+      }
+    },
+    {
+      "title": "Enlightened Silly Comic Strips",
+      "subtitle": "Twilight Zone meets Looney Toons",
+      "authors": [
+        "Rav Shiva"
+      ],
+      "subjects": [
+        "comics-humor"
+      ],
+      "tradition": [],
+      "level": "unrated",
+      "press": "fmp",
+      "status": "owner-listed",
+      "editions": [
+        {
+          "format": "ebook",
+          "language": "en",
+          "publisher": "Forbidden Mantra Press",
+          "year": null,
+          "retailers": [],
+          "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+          "formatConfirmed": false,
+          "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+          "url": "https://www.forbiddenmantra.com/",
+          "accessed": "2026-10-28",
+          "supports": "title, author, series and language as shown on the owner's website"
+        }
+      ],
+      "claims": [],
+      "reviewFlags": [
+        "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+        "format (ebook), ASIN/ISBN and publication date not recovered",
+        "publisher attribution is owner-supplied",
+        "possible duplicate of 'Enlightened Silly Comics'; not merged"
+      ]
+    },
+    {
+      "title": "Enlightened Silly Comics",
+      "subtitle": "Art & Humor with Insight | Social Satire and Political Humor",
+      "authors": [
+        "Rav Shiva"
+      ],
+      "subjects": [
+        "comics-humor"
+      ],
+      "tradition": [],
+      "level": "unrated",
+      "press": "fmp",
+      "status": "owner-listed",
+      "editions": [
+        {
+          "format": "ebook",
+          "language": "en",
+          "publisher": "Forbidden Mantra Press",
+          "year": null,
+          "retailers": [],
+          "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+          "formatConfirmed": false,
+          "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+          "url": "https://www.forbiddenmantra.com/",
+          "accessed": "2026-10-28",
+          "supports": "title, author, series and language as shown on the owner's website"
+        }
+      ],
+      "claims": [],
+      "reviewFlags": [
+        "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+        "format (ebook), ASIN/ISBN and publication date not recovered",
+        "publisher attribution is owner-supplied",
+        "possible duplicate of 'Enlightened Silly Comic Strips'; not merged"
+      ]
+    },
+    {
+      "title": "Benny the Brave and the Shimmering Night",
+      "subtitle": "A Heartwarming Bedtime Adventure Picture Book for Children Ages 3-8",
+      "authors": [
+        "Emily Patel"
+      ],
+      "subjects": [
+        "childrens-books"
+      ],
+      "tradition": [],
+      "level": "unrated",
+      "press": "fmp",
+      "status": "owner-listed",
+      "editions": [
+        {
+          "format": "ebook",
+          "language": "en",
+          "publisher": "Forbidden Mantra Press",
+          "year": null,
+          "retailers": [],
+          "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+          "formatConfirmed": false,
+          "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+          "url": "https://www.forbiddenmantra.com/",
+          "accessed": "2026-10-28",
+          "supports": "title, author, series and language as shown on the owner's website"
+        }
+      ],
+      "claims": [],
+      "reviewFlags": [
+        "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+        "format (ebook), ASIN/ISBN and publication date not recovered",
+        "publisher attribution is owner-supplied",
+        "author credit kept as printed on the website ('Emily Patel'); may be the same author as 'Emily K Patel'"
+      ]
+    },
+    {
+      "title": "Make Yourself Irresistibly Attractive with the Kleem Mantra",
+      "subtitle": "",
+      "authors": [
+        "TSPRav Shiva"
+      ],
+      "subjects": [
+        "sanskrit-mantras",
+        "tantra"
+      ],
+      "tradition": [
+        "hindu",
+        "tantric"
+      ],
+      "level": "unrated",
+      "press": "fmp",
+      "status": "owner-listed",
+      "editions": [
+        {
+          "format": "ebook",
+          "language": "en",
+          "publisher": "Forbidden Mantra Press",
+          "year": null,
+          "retailers": [],
+          "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+          "formatConfirmed": false,
+          "note": "English title as shown on the website and in an owner screenshot of its Amazon page (Kindle, 'Forbidden Mantra Series'); format and ASIN not recovered."
+        },
+        {
+          "format": "ebook",
+          "language": "de",
+          "publisher": "Forbidden Mantra Press",
+          "year": null,
+          "retailers": [],
+          "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+          "formatConfirmed": false,
+          "note": "de edition listed on the owner's website; format, ASIN and date not recovered.",
+          "title": "Machen Sie sich mit dem Kleem-Mantra unwiderstehlich attraktiv",
+          "sources": [
+            {
+              "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+              "url": "https://www.forbiddenmantra.com/",
+              "accessed": "2026-10-28",
+              "supports": "title, author, series and language as shown on the owner's website"
+            }
+          ]
+        },
+        {
+          "format": "ebook",
+          "language": "fr",
+          "publisher": "Forbidden Mantra Press",
+          "year": null,
+          "retailers": [],
+          "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+          "formatConfirmed": false,
+          "note": "fr edition listed on the owner's website; format, ASIN and date not recovered.",
+          "title": "Rendez-vous irrésistiblement attirant avec le mantra de Kleem",
+          "sources": [
+            {
+              "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+              "url": "https://www.forbiddenmantra.com/",
+              "accessed": "2026-10-28",
+              "supports": "title, author, series and language as shown on the owner's website"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+          "url": "https://www.forbiddenmantra.com/",
+          "accessed": "2026-10-28",
+          "supports": "title, author, series and language as shown on the owner's website"
+        }
+      ],
+      "claims": [],
+      "reviewFlags": [
+        "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+        "format (ebook), ASIN/ISBN and publication date not recovered",
+        "publisher attribution is owner-supplied",
+        "POSSIBLE DUPLICATE of 'Make Yourself Irresistibly Attractive with the Kleem Mantra, Kamdev Mantra and Kama Sutra' (existing work); not merged",
+        "the Spanish 'Hazte irresistiblemente atractivo con el mantra Kleem' is already an edition of the existing work"
+      ],
+      "series": {
+        "name": "Forbidden Mantra Series"
+      }
+    },
+    {
+      "title": "La Joya del Loto",
+      "subtitle": "Desvelando los Misterios de Om Mani Padme Hum",
+      "authors": [
+        "Emily K Patel"
+      ],
+      "subjects": [
+        "buddhism"
+      ],
+      "tradition": [
+        "buddhist"
+      ],
+      "level": "unrated",
+      "press": "fmp",
+      "status": "owner-listed",
+      "editions": [
+        {
+          "format": "ebook",
+          "language": "es",
+          "publisher": "Forbidden Mantra Press",
+          "year": null,
+          "retailers": [],
+          "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+          "formatConfirmed": false,
+          "note": "es edition listed on the owner's website; format, ASIN and date not recovered.",
+          "title": "La Joya del Loto",
+          "subtitle": "Desvelando los Misterios de Om Mani Padme Hum",
+          "sources": [
+            {
+              "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+              "url": "https://www.forbiddenmantra.com/",
+              "accessed": "2026-10-28",
+              "supports": "title, author, series and language as shown on the owner's website"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+          "url": "https://www.forbiddenmantra.com/",
+          "accessed": "2026-10-28",
+          "supports": "title, author, series and language as shown on the owner's website"
+        }
+      ],
+      "claims": [],
+      "reviewFlags": [
+        "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+        "format (ebook), ASIN/ISBN and publication date not recovered",
+        "publisher attribution is owner-supplied",
+        "no English base title was seen; may be a translation of an English Om Mani Padme Hum title"
+      ]
+    },
+    {
+      "title": "Más allá del sexo",
+      "subtitle": "explorando las dimensiones espirituales del tantra",
+      "authors": [
+        "Emily K Patel"
+      ],
+      "subjects": [
+        "tantra"
+      ],
+      "tradition": [
+        "tantric"
+      ],
+      "level": "unrated",
+      "press": "fmp",
+      "status": "owner-listed",
+      "editions": [
+        {
+          "format": "ebook",
+          "language": "es",
+          "publisher": "Forbidden Mantra Press",
+          "year": null,
+          "retailers": [],
+          "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+          "formatConfirmed": false,
+          "note": "es edition listed on the owner's website; format, ASIN and date not recovered.",
+          "title": "Más allá del sexo",
+          "subtitle": "explorando las dimensiones espirituales del tantra",
+          "sources": [
+            {
+              "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+              "url": "https://www.forbiddenmantra.com/",
+              "accessed": "2026-10-28",
+              "supports": "title, author, series and language as shown on the owner's website"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+          "url": "https://www.forbiddenmantra.com/",
+          "accessed": "2026-10-28",
+          "supports": "title, author, series and language as shown on the owner's website"
+        }
+      ],
+      "claims": [],
+      "reviewFlags": [
+        "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+        "format (ebook), ASIN/ISBN and publication date not recovered",
+        "publisher attribution is owner-supplied",
+        "POSSIBLE DUPLICATE: the Spanish edition may belong to the English 'Beyond Sex' work, where it is currently also listed; not merged"
+      ]
+    },
+    {
+      "title": "Schepping en verbinding",
+      "subtitle": "Ontdek Genesis en Sumerische teksten in een nieuw perspectief",
+      "authors": [
+        "Emily K Patel"
+      ],
+      "subjects": [
+        "ancient-texts",
+        "comparative-religion"
+      ],
+      "tradition": [],
+      "level": "unrated",
+      "press": "fmp",
+      "status": "owner-listed",
+      "editions": [
+        {
+          "format": "ebook",
+          "language": "nl",
+          "publisher": "Forbidden Mantra Press",
+          "year": null,
+          "retailers": [],
+          "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+          "formatConfirmed": false,
+          "note": "nl edition listed on the owner's website; format, ASIN and date not recovered.",
+          "title": "Schepping en verbinding",
+          "sources": [
+            {
+              "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+              "url": "https://www.forbiddenmantra.com/",
+              "accessed": "2026-10-28",
+              "supports": "title, author, series and language as shown on the owner's website"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+          "url": "https://www.forbiddenmantra.com/",
+          "accessed": "2026-10-28",
+          "supports": "title, author, series and language as shown on the owner's website"
+        }
+      ],
+      "claims": [],
+      "reviewFlags": [
+        "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+        "format (ebook), ASIN/ISBN and publication date not recovered",
+        "publisher attribution is owner-supplied",
+        "Dutch title only partly legible in the screenshot; no English base title seen"
+      ]
+    },
+    {
+      "title": "Revelando los misterios de El evangelio de Pedro",
+      "subtitle": "",
+      "authors": [
+        "Emily K Patel"
+      ],
+      "subjects": [
+        "gnosticism"
+      ],
+      "tradition": [
+        "gnostic"
+      ],
+      "level": "unrated",
+      "press": "fmp",
+      "status": "owner-listed",
+      "editions": [
+        {
+          "format": "ebook",
+          "language": "es",
+          "publisher": "Forbidden Mantra Press",
+          "year": null,
+          "retailers": [],
+          "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+          "formatConfirmed": false,
+          "note": "es edition listed on the owner's website; format, ASIN and date not recovered.",
+          "title": "Revelando los misterios de El evangelio de Pedro",
+          "sources": [
+            {
+              "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+              "url": "https://www.forbiddenmantra.com/",
+              "accessed": "2026-10-28",
+              "supports": "title, author, series and language as shown on the owner's website"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+          "url": "https://www.forbiddenmantra.com/",
+          "accessed": "2026-10-28",
+          "supports": "title, author, series and language as shown on the owner's website"
+        }
+      ],
+      "claims": [],
+      "reviewFlags": [
+        "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+        "format (ebook), ASIN/ISBN and publication date not recovered",
+        "publisher attribution is owner-supplied",
+        "no English base title was seen"
+      ]
+    },
+    {
+      "title": "Revelando os mistérios do O Evangelho de Pedro",
+      "subtitle": "",
+      "authors": [
+        "Emily K Patel"
+      ],
+      "subjects": [
+        "gnosticism"
+      ],
+      "tradition": [
+        "gnostic"
+      ],
+      "level": "unrated",
+      "press": "fmp",
+      "status": "owner-listed",
+      "editions": [
+        {
+          "format": "ebook",
+          "language": "pt",
+          "publisher": "Forbidden Mantra Press",
+          "year": null,
+          "retailers": [],
+          "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+          "formatConfirmed": false,
+          "note": "pt edition listed on the owner's website; format, ASIN and date not recovered.",
+          "title": "Revelando os mistérios do O Evangelho de Pedro",
+          "sources": [
+            {
+              "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+              "url": "https://www.forbiddenmantra.com/",
+              "accessed": "2026-10-28",
+              "supports": "title, author, series and language as shown on the owner's website"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+          "url": "https://www.forbiddenmantra.com/",
+          "accessed": "2026-10-28",
+          "supports": "title, author, series and language as shown on the owner's website"
+        }
+      ],
+      "claims": [],
+      "reviewFlags": [
+        "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+        "format (ebook), ASIN/ISBN and publication date not recovered",
+        "publisher attribution is owner-supplied",
+        "Portuguese; no English base title was seen; wording as shown on the website"
+      ]
+    },
+    {
+      "title": "Los pensamientos son mantras",
+      "subtitle": "",
+      "authors": [
+        "TSPRavshiva"
+      ],
+      "subjects": [
+        "sanskrit-mantras",
+        "mindfulness"
+      ],
+      "tradition": [
+        "hindu"
+      ],
+      "level": "unrated",
+      "press": "fmp",
+      "status": "owner-listed",
+      "editions": [
+        {
+          "format": "ebook",
+          "language": "es",
+          "publisher": "Forbidden Mantra Press",
+          "year": null,
+          "retailers": [],
+          "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+          "formatConfirmed": false,
+          "note": "es edition listed on the owner's website; format, ASIN and date not recovered.",
+          "title": "Los pensamientos son mantras",
+          "sources": [
+            {
+              "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+              "url": "https://www.forbiddenmantra.com/",
+              "accessed": "2026-10-28",
+              "supports": "title, author, series and language as shown on the owner's website"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+          "url": "https://www.forbiddenmantra.com/",
+          "accessed": "2026-10-28",
+          "supports": "title, author, series and language as shown on the owner's website"
+        }
+      ],
+      "claims": [],
+      "reviewFlags": [
+        "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+        "format (ebook), ASIN/ISBN and publication date not recovered",
+        "publisher attribution is owner-supplied",
+        "byline unclear in the screenshot (reads like 'TSPRavshiva' and 'Ravi A. Kissoon'); owner to confirm"
       ]
     }
   ]

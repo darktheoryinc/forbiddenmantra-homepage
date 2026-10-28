@@ -1090,7 +1090,7 @@
   {
    "title": "The Apocryphon of John",
    "authors": [
-    "Emily K Patel"
+    "Emily Patel"
    ],
    "isbn13": [],
    "stage": "identifiers",
@@ -1246,7 +1246,7 @@
   {
    "title": "Mo Pai and Internal Alchemy",
    "authors": [
-    "Emily K Patel"
+    "Emily Patel"
    ],
    "isbn13": [],
    "stage": "identifiers",
@@ -1259,7 +1259,202 @@
   {
    "title": "Mo Pai and Internal Alchemy",
    "authors": [
+    "Emily Patel"
+   ],
+   "isbn13": [],
+   "stage": "identifiers",
+   "severity": "warning",
+   "reasons": [
+    "owner-listed ebook (es) edition has no ASIN/ISBN yet; retailer link not verified"
+   ],
+   "origin": "staging/verified/fmp-website-listed.json"
+  },
+  {
+   "title": "Ruqyah's for Wealth",
+   "authors": [
+    "Abdur Rehman"
+   ],
+   "isbn13": [],
+   "stage": "identifiers",
+   "severity": "warning",
+   "reasons": [
+    "owner-listed ebook edition has no ASIN/ISBN yet; retailer link not verified"
+   ],
+   "origin": "staging/verified/fmp-website-listed.json"
+  },
+  {
+   "title": "Ruqyah's for Wealth in Arabic Language",
+   "authors": [
+    "Abdur Rehman"
+   ],
+   "isbn13": [],
+   "stage": "identifiers",
+   "severity": "warning",
+   "reasons": [
+    "owner-listed ebook (ar) edition has no ASIN/ISBN yet; retailer link not verified"
+   ],
+   "origin": "staging/verified/fmp-website-listed.json"
+  },
+  {
+   "title": "JINN - Dark Angels, Shapeshifters, and Ghouls",
+   "authors": [
+    "TSPRav Shiva"
+   ],
+   "isbn13": [],
+   "stage": "identifiers",
+   "severity": "warning",
+   "reasons": [
+    "owner-listed ebook edition has no ASIN/ISBN yet; retailer link not verified"
+   ],
+   "origin": "staging/verified/fmp-website-listed.json"
+  },
+  {
+   "title": "Enlightened Silly Comic Strips",
+   "authors": [
+    "Rav Shiva"
+   ],
+   "isbn13": [],
+   "stage": "identifiers",
+   "severity": "warning",
+   "reasons": [
+    "owner-listed ebook edition has no ASIN/ISBN yet; retailer link not verified"
+   ],
+   "origin": "staging/verified/fmp-website-listed.json"
+  },
+  {
+   "title": "Enlightened Silly Comics",
+   "authors": [
+    "Rav Shiva"
+   ],
+   "isbn13": [],
+   "stage": "identifiers",
+   "severity": "warning",
+   "reasons": [
+    "owner-listed ebook edition has no ASIN/ISBN yet; retailer link not verified"
+   ],
+   "origin": "staging/verified/fmp-website-listed.json"
+  },
+  {
+   "title": "Benny the Brave and the Shimmering Night",
+   "authors": [
+    "Emily Patel"
+   ],
+   "isbn13": [],
+   "stage": "identifiers",
+   "severity": "warning",
+   "reasons": [
+    "owner-listed ebook edition has no ASIN/ISBN yet; retailer link not verified"
+   ],
+   "origin": "staging/verified/fmp-website-listed.json"
+  },
+  {
+   "title": "Make Yourself Irresistibly Attractive with the Kleem Mantra",
+   "authors": [
+    "TSPRav Shiva"
+   ],
+   "isbn13": [],
+   "stage": "identifiers",
+   "severity": "warning",
+   "reasons": [
+    "owner-listed ebook edition has no ASIN/ISBN yet; retailer link not verified"
+   ],
+   "origin": "staging/verified/fmp-website-listed.json"
+  },
+  {
+   "title": "Make Yourself Irresistibly Attractive with the Kleem Mantra",
+   "authors": [
+    "TSPRav Shiva"
+   ],
+   "isbn13": [],
+   "stage": "identifiers",
+   "severity": "warning",
+   "reasons": [
+    "owner-listed ebook (de) edition has no ASIN/ISBN yet; retailer link not verified"
+   ],
+   "origin": "staging/verified/fmp-website-listed.json"
+  },
+  {
+   "title": "Make Yourself Irresistibly Attractive with the Kleem Mantra",
+   "authors": [
+    "TSPRav Shiva"
+   ],
+   "isbn13": [],
+   "stage": "identifiers",
+   "severity": "warning",
+   "reasons": [
+    "owner-listed ebook (fr) edition has no ASIN/ISBN yet; retailer link not verified"
+   ],
+   "origin": "staging/verified/fmp-website-listed.json"
+  },
+  {
+   "title": "La Joya del Loto",
+   "authors": [
     "Emily K Patel"
+   ],
+   "isbn13": [],
+   "stage": "identifiers",
+   "severity": "warning",
+   "reasons": [
+    "owner-listed ebook (es) edition has no ASIN/ISBN yet; retailer link not verified"
+   ],
+   "origin": "staging/verified/fmp-website-listed.json"
+  },
+  {
+   "title": "Más allá del sexo",
+   "authors": [
+    "Emily K Patel"
+   ],
+   "isbn13": [],
+   "stage": "identifiers",
+   "severity": "warning",
+   "reasons": [
+    "owner-listed ebook (es) edition has no ASIN/ISBN yet; retailer link not verified"
+   ],
+   "origin": "staging/verified/fmp-website-listed.json"
+  },
+  {
+   "title": "Schepping en verbinding",
+   "authors": [
+    "Emily K Patel"
+   ],
+   "isbn13": [],
+   "stage": "identifiers",
+   "severity": "warning",
+   "reasons": [
+    "owner-listed ebook (nl) edition has no ASIN/ISBN yet; retailer link not verified"
+   ],
+   "origin": "staging/verified/fmp-website-listed.json"
+  },
+  {
+   "title": "Revelando los misterios de El evangelio de Pedro",
+   "authors": [
+    "Emily K Patel"
+   ],
+   "isbn13": [],
+   "stage": "identifiers",
+   "severity": "warning",
+   "reasons": [
+    "owner-listed ebook (es) edition has no ASIN/ISBN yet; retailer link not verified"
+   ],
+   "origin": "staging/verified/fmp-website-listed.json"
+  },
+  {
+   "title": "Revelando os mistérios do O Evangelho de Pedro",
+   "authors": [
+    "Emily K Patel"
+   ],
+   "isbn13": [],
+   "stage": "identifiers",
+   "severity": "warning",
+   "reasons": [
+    "owner-listed ebook (pt) edition has no ASIN/ISBN yet; retailer link not verified"
+   ],
+   "origin": "staging/verified/fmp-website-listed.json"
+  },
+  {
+   "title": "Los pensamientos son mantras",
+   "authors": [
+    "TSPRavshiva"
    ],
    "isbn13": [],
    "stage": "identifiers",

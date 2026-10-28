@@ -1,12 +1,12 @@
 {
  "generated": "2026-10-27",
  "trackingId": "darktheoryinc-20",
- "eligibleUsLinks": 282,
- "taggedCorrectly": 282,
+ "eligibleUsLinks": 286,
+ "taggedCorrectly": 286,
  "percentCorrect": 100,
  "usLinksByKind": {
   "product": 100,
-  "search": 182
+  "search": 186
  },
  "nonUsLinks": {
   "amazon.co.uk": 2,
