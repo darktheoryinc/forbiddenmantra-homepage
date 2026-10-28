@@ -1,12 +1,21 @@
 # Launch-readiness checklist
 
 State: 311 works, 632 editions, 12 languages, 99 verified covers, 626/626 eligible amazon.com links tagged `darktheoryinc-20`.
-Source: `node scripts/launch-check.mjs` (1 blocker, 2 owner decisions, 8 warnings, 4 passed).
+Source: `node scripts/launch-check.mjs` (preview ready; production gated by the owner approvals below).
 
-## Genuine blockers (owner action; no code can resolve these)
-1. **IOSutra cross-promotion gate.** The NVIDIA Inception claims are owner-asserted. Confirm membership and the attribution wording in the Inception terms, record `verifiedOn` and `evidence`, then approve the promo. Until then the gate reports "NOT ready".
-2. **Production address and host.** Choose the production URL and host, then deploy (not done in this work).
-3. **Remaining approval gates** other than `nvidiaBranding` are still false.
+## Gates (exact names, current value, purpose, type)
+| Gate | Value | Purpose | Type | Blocks preview? |
+|---|---|---|---|---|
+| `nvidiaBranding` (config/approvals.json) | **true**, owner, 2026-10-28 | Show badge/panel inside the IOSutra ad | Settled. The earlier checklist wrongly listed it as a blocker. The only gap is that data/promos.json claim entries still say owner-asserted / needs-confirmation because no portal evidence was supplied: administrative, no branding change, no invented evidence | No |
+| `iosutraPromotion` | false | Owner approval that the IOSutra section is promoted here | Owner decision, but the owner has already directed the ad's placement; flag is unreconciled with that instruction | No (preview). Production build refuses |
+| `iosutraArtworkRights` | false | Likeness/commercial rights for the man-and-robot artwork | Owner decision | No (preview). Production |
+| `librarianArtworkRights` | false | Rights to the librarian character art | Owner decision | No (preview). Production |
+| `legalPagesReviewed` | false | Privacy/terms/disclosure reviewed, contact method added | Owner decision | No (preview). Production |
+| `productionAddress` | false, url null | Final public address | Owner decision | No (preview). Production |
+| `siteUrl` (config/site.json) | empty | Canonical URLs for production | Owner decision with productionAddress | No |
+| Analytics | off | Optional | Owner decision | No |
+
+Technical blockers for a preview: **none open**. Production gate, as launch-check reports it: IOSutra promotion approval, hosting URL, analytics choice.
 
 ## Working and verified (functioning bookstore)
 - Build: 682 pages. All test suites pass (covers, security gate, launch, librarian, curation, promo, discovery, affiliate, niches, multilingual, scale, wix-embed, pipeline, cover-bulk). axe finds no violations across 26 pages at desktop and mobile widths.

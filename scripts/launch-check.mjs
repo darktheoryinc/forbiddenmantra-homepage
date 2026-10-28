@@ -39,7 +39,14 @@ const errs = q.filter((i) => i.severity === 'error').length;
 add(errs === 0 ? 'PASS' : 'WARN', 'Catalogue', 'Import error queue', `${errs} errors, ${q.filter((i) => i.severity === 'duplicate').length} duplicates, ${q.filter((i) => i.severity === 'warning').length} warnings. ${rep.staged.works} candidates remain staged (unpublished).`);
 // promo
 const v = promo.validate(reg, { root: ROOT, production: true });
-add(v.errors.length + v.blockers.length === 0 ? 'PASS' : 'BLOCKER', 'IOSutra', 'Cross-promotion gate', v.errors.concat(v.blockers).join(' | ') || 'clear');
+// The owner's recorded NVIDIA branding approval (config/approvals.json) is settled. The claim-evidence notes in promos.json stay
+// "owner-asserted"/"needs-confirmation" because no portal evidence was supplied; that is documentation, not a branding blocker.
+const appr = J('config/approvals.json', {});
+const nvDoc = (m) => appr.nvidiaBranding?.approved === true && /claim "nvidia-/.test(m);
+const gateMsgs = v.errors.concat(v.blockers);
+const gateReal = gateMsgs.filter((m) => !nvDoc(m)), gateDoc = gateMsgs.filter(nvDoc);
+add(gateReal.length === 0 ? 'PASS' : 'BLOCKER', 'IOSutra', 'Cross-promotion gate (production build)', gateReal.join(' | ') || 'clear');
+if (gateDoc.length) add('WARN', 'IOSutra', 'NVIDIA branding: approval recorded; evidence notes not filled in', `config/approvals.json nvidiaBranding.approved=true (${appr.nvidiaBranding.approvedBy}, ${appr.nvidiaBranding.approvedOn}). Administrative only: the claim entries in data/promos.json still read owner-asserted / needs-confirmation until the owner supplies evidence. No branding change is needed and nothing is invented.`);
 // legal / privacy / analytics
 add(fs.existsSync(path.join(ROOT, 'site/about/privacy/index.html')) ? 'WARN' : 'BLOCKER', 'Legal', 'Privacy page exists but needs owner/legal review', 'Describes current behaviour (no cookies, no analytics, Google Fonts). Add a real contact method, and update it before enabling analytics.');
 add(cfg.analytics.provider ? 'PASS' : 'DECISION', 'Analytics', 'Analytics provider', cfg.analytics.provider ?? 'Off. Outbound clicks are already tagged; choose a cookie-free provider (e.g. GoatCounter, free) or none.');

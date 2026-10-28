@@ -490,3 +490,12 @@ a.io-tile-img:hover,a.io-tile-img:focus-visible{outline:3px solid #fff;outline-o
 .grid .cover-ph .ph-t{font-size:12px;margin:0}.grid .cover-ph .ph-t.ph-m{font-size:11px}.grid .cover-ph .ph-t.ph-s{font-size:10px}
 .grid .cover-ph{padding:10px 8px 8px}.grid .cover-ph .ph-cap{font-size:7px;letter-spacing:.1em}
 .cover-ph.cover-lg .ph-t{font-size:26px}.cover-ph.cover-lg .ph-t.ph-m{font-size:22px}.cover-ph.cover-lg .ph-t.ph-s{font-size:17px}
+
+/* Longer interface translations (fr, pt, it, de, es) must not push the single-row desktop header past the viewport. English is unchanged. */
+@media(min-width:1280px){
+ html:not([lang=en]) .nav{gap:10px}
+ html:not([lang=en]) .nav ul{gap:12px}
+ html:not([lang=en]) .nav a{letter-spacing:.05em;font-size:10px}
+ html:not([lang=en]) .nav-search input{width:84px}
+ html:not([lang=en]) .header-in{gap:10px}
+}
