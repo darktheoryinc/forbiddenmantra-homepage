@@ -2,7 +2,7 @@
 
 **Prepared only. Nothing has been published; your Wix site, domain, DNS and hosting are unchanged. No paid service is needed.**
 
-**Security note (2026-10-27):** a Netlify Drop site is public to anyone who has its address, even while unclaimed. This package is therefore built as a *public* package: anything awaiting your approval (the NVIDIA badge, the "Inception Member" panel and the NVIDIA membership statement) is **withheld**, and the build refuses to produce a package that fails the security gate (`docs/SECURITY-AUDIT.md`). Delete any earlier upload that contained the NVIDIA badge.
+**Update 2026-10-28:** this is the package from commit `8f14416`. The owner has recorded explicit approval to show the IOSutra advertisement with the NVIDIA Inception badge, membership wording and non-endorsement statement, so they are included. Independent portal verification of the membership, NVIDIA's Inception guidelines and legal review are not documented. A Netlify Drop site is public to anyone who has its address, so share the preview address only with people you trust (the preview is marked noindex).
 
 This package is a **PREVIEW build**: it shows a "Preview build, not published" bar at the top and tells search engines not to index it. Use it to inspect the bookstore on a free host before connecting it to Wix. The final production build is made after the approvals listed at the bottom.
 
@@ -12,13 +12,13 @@ Your earlier homepage was one HTML file pasted into a Wix HTML iframe. The books
 ## Part 1: get a working preview (about 5 minutes, free)
 1. Download the file (exact link):
    `https://github.com/darktheoryinc/forbiddenmantra-homepage/raw/claude/gallant-archimedes-ocwf9s/wix/forbiddenmantra-site-for-hosting.zip`
-   It must be **3,659,532 bytes (about 3.7 MB)** and start with the letters `PK`. If it is tiny, or opens as a web page, it was not downloaded correctly: use the link above (the "raw" link, not the normal file page), or use step 1b.
+   It must be **9,043,521 bytes (about 9 MB)** and start with the letters `PK`. If it is tiny, or opens as a web page, it was not downloaded correctly: use the link above (the "raw" link, not the normal file page), or use step 1b.
    * **Check it (Windows):** open Command Prompt in the Downloads folder and run
      `certutil -hashfile forbiddenmantra-site-for-hosting.zip SHA256`
-     The result must be `8ca2aa3c7786a861…` (the full value is in `wix/forbiddenmantra-site-for-hosting.zip.sha256`).
+     The result must be `23aec519f2f516f1…` (the full value is in `wix/forbiddenmantra-site-for-hosting.zip.sha256`).
    * **1b. No ZIP needed:** on the repository page choose branch `claude/gallant-archimedes-ocwf9s`, then Code > Download ZIP, extract it, and use the folder `wix/hosting/` inside. It holds the identical files.
 2. Go to **Netlify Drop** (app.netlify.com/drop). Drag in **either** the ZIP **or** the extracted folder (`wix/hosting/`, whose top level contains `index.html`). If the ZIP is refused, extract it and drag the folder instead.
-3. Netlify gives you an address like `https://something.netlify.app`. Open it and look around. It should show the bookstore with the IOSutra section and the full-colour NVIDIA badge.
+3. Netlify gives you an address like `https://something.netlify.app`. Open it and look around. It should show, top to bottom: the hero, a shelf of Forbidden Mantra Press books, the IOSutra advertisement with the Inception Member panel and the full-colour NVIDIA Inception badge inside it, then the Featured books shelves.
 4. Free Netlify Drop sites may expire unless you claim them with a free Netlify account. Claim it if you want to keep the address.
 
 ## Part 2: show it inside Wix (only after you are happy with Part 1)
@@ -30,9 +30,9 @@ Your earlier homepage was one HTML file pasted into a Wix HTML iframe. The books
 10. When satisfied, **you** press Publish in Wix. To undo, unpublish or restore the duplicate.
 
 ## What is verified, and what is not
-* **Verified here** (`node scripts/verify-wix-package.mjs`, 55 checks, including the security gate and the browser tests running under the package's security headers): the ZIP is real and non-empty, extracts to identical files with two independent tools (Info-ZIP and Java), has `index.html` at the top, all 520 files present, all 48,710 internal links, images and scripts resolve; all 192 books and 223 editions have pages; served over HTTP in a real browser on desktop and mobile with no failed requests or JavaScript errors: homepage, search, librarian, categories, authors, series, guides, legal pages, language menu, IOSutra artwork and full-colour NVIDIA badge. Cross-origin iframe test: `node test/verify-wix-embed.mjs` (45 checks).
+* **Verified here** (`node scripts/verify-wix-package.mjs`, 55 checks, plus the full suite): the ZIP extracts to identical files with `index.html` at the top, about 580 files, all internal links resolve; 198 works; 12 real covers; the IOSutra ad contains the original badge (byte-identical to the source file) with a bookshelf above and another below; every amazon.com buy button carries `tag=darktheoryinc-20`; no accessibility violations.
 * **Not verified:** I cannot reach Netlify or Wix from my environment, so I did not upload to Netlify or open your Wix editor. The ZIP meets the Netlify Drop requirement as I understand it (a standard ZIP with `index.html` at the top), but I have not seen Netlify accept it.
-* **Amazon links:** 220 buy buttons on book pages; every amazon.com link carries `tag=darktheoryinc-20` (85 go to a product page, 135 are an ISBN search); 2 amazon.co.uk links are correctly untagged. Product links have not been checked live.
+* **Amazon links:** every amazon.com buy button carries `tag=darktheoryinc-20` (product pages and ISBN searches); links to other marketplaces are untagged and labelled. Product links could not be machine-checked from here (Amazon blocks it); open a few after the preview is live.
 
 ## Known limitations (all iframe embeds)
 * The browser address bar stays on your Wix page, so a visitor cannot copy a link to one book.
@@ -42,9 +42,7 @@ Your earlier homepage was one HTML file pasted into a Wix HTML iframe. The books
 * Amazon, IOSutra and NVIDIA links open in a new tab, because Amazon refuses to load inside a frame.
 
 ## Open launch blockers (not granted, not assumed)
-1. **Book covers:** none of the 192 books has a cover image; each shows a typographic title card. No cover source is connected, and none were invented. See `docs/COVERS.md` (pipeline, what I need from you) and `docs/COVER-AUDIT.md`.
-2. **Verified purchase links:** 76 books have a product link, 116 an ISBN search link, and 10 of your own 12 titles have no ISBN/ASIN.
-3. **Approvals only you can give:** NVIDIA membership statement and trademark wording (send the Inception guidelines PDF); IOSutra promotion approved; legal pages reviewed; final web address; commercial-use and likeness permissions for the IOSutra artwork and the librarian character. The production build refuses to run until they are recorded.
+The NVIDIA branding approval is granted. Still open: the five other approvals in `config/approvals.json` (`iosutraPromotion`, `iosutraArtworkRights`, `librarianArtworkRights`, `legalPagesReviewed`, `productionAddress`), and the owner decisions listed in `docs/DEPLOYMENT-READINESS.md`. The production build refuses to run until they are recorded.
 
 ## Rebuilding
 `node scripts/make-wix-package.mjs` rebuilds the preview ZIP and `wix/hosting/`; `node scripts/verify-wix-package.mjs` re-checks them. A production package is made with `FM_ENV=production FM_SITE_URL=https://your-address/ node scripts/make-wix-package.mjs` and works only after the approvals above.
