@@ -14,3 +14,6 @@ secrets/
 *credentials*.csv
 *rootkey*.csv
 *creators*.csv
+
+# owner artwork staged but not yet cleared for publication (commercial rights unconfirmed)
+assets-src/covers-pending/
