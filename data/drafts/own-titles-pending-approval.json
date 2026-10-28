@@ -1,0 +1,17 @@
+{
+  "status": "DRAFT. Not loaded by the build, not in the catalogue, not published. Each entry needs the owner's approval, an ISBN/ASIN and confirmed cover rights.",
+  "note": "Mo Pai Exposed and Mo Pai Nei Kung are different books. Never share a cover between them.",
+  "titles": [
+    { "title": "Mo Pai Exposed", "subtitle": "Serious Truths About Internal Power Training", "author": "Emily K Patel", "driveFile": "1H85j7isr3OrGHNXT_W2Jo-Pg9ft9jhAb" },
+    { "title": "Mo Pai and Internal Alchemy", "series": "The Hidden Technology of Human Power", "driveFile": "1vhq0HPzaV-jc9Ky-SrGBl4RdlyfI0aoc" },
+    { "title": "Mo Pai: The Destructive and Healing Force Within", "driveFile": "1iWWd1Vn1VEHqQOgvPLGmhbJbNe22o8yT" },
+    { "title": "The Hidden Doctrine of Mo Pai", "subtitle": "A Deeper Exploration of Internal Cultivation and Regulation", "author": "Emily K Patel", "driveFile": "1zNvdxBAQlFIDB2C2708iUSAPi4rT8a-s" },
+    { "title": "The Physics of Siddhis (Book 1)", "subtitle": "Non-Locality of Consciousness", "author": "TSPRavshiva", "driveFile": "1yBp7lPmbzuxgET_7SkI7xwouFv-D2V6F" },
+    { "title": "The Physics of Siddhis (Book 2)", "subtitle": "Perception Across Time", "author": "TSPRavshiva", "driveFile": "1Lf9K27o5kdzeXGbo74Lea25J4YrgSRN4" },
+    { "title": "Siddhis: Unlocking the Divine Powers Within", "author": "Emily K Patel", "driveFile": "1gprAfVrFOCXzD7LzZzyfdBrSsM6yMabb", "note": "file is a screenshot with a border" },
+    { "title": "The Coven and the Yogi", "subtitle": "Eclipse of the Heart Chakra (Asanas & Alchemy, Book Two)", "author": "Emily K. Patel", "driveFile": "1cRrhbZUemyxfz1A5Nt6KvF7dQJ6eWbJr" },
+    { "title": "The Apocalypse of Peter", "author": "Emily K Patel", "publisher": "Forbidden Mantra Press", "driveFile": "1ti4K4B_oGz70D-6JzSyAKyMf8alIuStp", "note": "not The Apocalypse of Adam" },
+    { "title": "The Matrix of Mantra", "author": "TSPRavshiva", "driveFile": "1I10z-qo15_06j2QTLqHQzmholDWFb-Zi" },
+    { "title": "Archons Unveiled", "subtitle": "Multiphasic Precognition of Reality", "author": "TSPRavshiva", "driveFile": "1yZ8WIIQ0_KedbiyTKNui1GOz-Gs6frF0", "note": "file is a web screenshot, unusable as a cover" }
+  ]
+}

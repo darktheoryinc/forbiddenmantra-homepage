@@ -7,7 +7,7 @@
    "press": null,
    "status": "verified",
    "claims": [],
-   "title": "Harry Potter and the Philosopher's Stone",
+   "title": "Harry Potter and the Sorcerer's Stone",
    "authors": [
     "J.K. Rowling"
    ],
@@ -39,6 +39,7 @@
      "year": 2014,
      "isbn13": "9781408855652",
      "marketplace": "amazon.co.uk",
+     "title": "Harry Potter and the Philosopher's Stone",
      "note": "UK edition, New Children's Edition.",
      "id": "9781408855652",
      "isbn10": "1408855658"

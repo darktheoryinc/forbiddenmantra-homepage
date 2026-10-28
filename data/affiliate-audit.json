@@ -938,7 +938,7 @@
  "works": [
   {
    "work": "harry-potter-and-the-philosophers-stone",
-   "title": "Harry Potter and the Philosopher's Stone",
+   "title": "Harry Potter and the Sorcerer's Stone",
    "press": false,
    "links": 2,
    "best": "derived",
@@ -2476,7 +2476,7 @@
  "links": [
   {
    "work": "harry-potter-and-the-philosophers-stone",
-   "workTitle": "Harry Potter and the Philosopher's Stone",
+   "workTitle": "Harry Potter and the Sorcerer's Stone",
    "press": false,
    "isbn13": "9780590353427",
    "market": "amazon.com",
@@ -2490,7 +2490,7 @@
   },
   {
    "work": "harry-potter-and-the-philosophers-stone",
-   "workTitle": "Harry Potter and the Philosopher's Stone",
+   "workTitle": "Harry Potter and the Sorcerer's Stone",
    "press": false,
    "isbn13": "9781408855652",
    "market": "amazon.co.uk",
