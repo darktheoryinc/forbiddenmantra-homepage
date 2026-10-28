@@ -1,0 +1,3 @@
+landed: https://www.amazon.com/stores/Emily-K-Patel/author/B0C6HKC9GH?qid=1779952034&sr=8-1&shoppingPortalEnabled=true&ccs_id=03bbe5a8-b298-4624-9b5a-25e037bf3d72&linkCode=sl2&tag=<TAG>&linkId=7c3a61e0040fb39
+http: 503
+tracking tag in final URL: darktheoryinc-20
