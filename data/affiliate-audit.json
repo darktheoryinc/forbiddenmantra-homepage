@@ -1,28 +1,28 @@
 {
  "summary": {
-  "works": 198,
-  "purchaseLinks": 229,
+  "works": 256,
+  "purchaseLinks": 287,
   "tagsExpected": {
    "amazon.com": "darktheoryinc-20"
   },
   "linkClasses": {
    "derived": 49,
    "verified": 54,
-   "search": 126
+   "search": 184
   },
   "linkErrors": 0,
   "worksWithValidTaggedProductLink": 92,
   "ofWhichSourceVerified": 54,
   "ofWhichIdentityVerifiedOffline": 38,
-  "worksWithSearchLinkOnly": 106,
+  "worksWithSearchLinkOnly": 164,
   "worksWithNoPurchaseLink": 0,
   "worksWithLinkErrors": 0,
-  "recordsNeedingManualReview": 118,
+  "recordsNeedingManualReview": 177,
   "manualReviewByReason": {
    "an edition identifier comes from a single source": 9,
-   "owner-listed record: edition details unconfirmed": 15,
-   "e-book/audiobook edition has no verified Amazon link": 11,
-   "only a search link: needs the edition's ASIN or ISBN": 106
+   "owner-listed record: edition details unconfirmed": 74,
+   "e-book/audiobook edition has no verified Amazon link": 69,
+   "only a search link: needs the edition's ASIN or ISBN": 164
   },
   "liveCheckPending": 38
  },
@@ -185,6 +185,535 @@
    "work": "make-yourself-irresistibly-attractive-with-the-kleem-mantra-kamdev-mantra-and-kama-sutra",
    "title": "Make Yourself Irresistibly Attractive with the Kleem Mantra, Kamdev Mantra and Kama Sutra",
    "reasons": [
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "mo-pai-the-destructive-and-healing-force-within",
+   "title": "Mo Pai: The Destructive and Healing Force Within",
+   "reasons": [
+    "owner-listed record: edition details unconfirmed"
+   ]
+  },
+  {
+   "work": "the-hanuman-mantra",
+   "title": "The Hanuman Mantra",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "the-maha-mrityunjaya-mantra",
+   "title": "The Maha Mrityunjaya Mantra",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "mantra-magic",
+   "title": "Mantra Magic",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "an-ancient-mantra-for-getting-the-girl-you-want-to-love-you",
+   "title": "An Ancient Mantra for Getting the Girl You Want to Love You",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "an-ancient-sanskrit-mantra-to-attain-sexual-pleasure-for-men",
+   "title": "An Ancient Sanskrit Mantra to Attain Sexual Pleasure for Men",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "brahmastra",
+   "title": "Brahmastra",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "forbidden-fruit",
+   "title": "Forbidden Fruit",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "forbidden-practices",
+   "title": "Forbidden Practices",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "have-sex-like-a-god",
+   "title": "Have Sex Like A God",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "how-to-chant-the-gayatri-mantra",
+   "title": "How to Chant the Gayatri Mantra",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "kama-sutra-sexual-yoga-with-a-partner",
+   "title": "Kama Sutra - Sexual Yoga with a Partner",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "kamdev-gayatri-mantra",
+   "title": "Kamdev Gayatri Mantra",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "lakshmi-mantra-for-the-pleasure-of-wealth-and-abundance",
+   "title": "Lakshmi Mantra for the Pleasure of Wealth & Abundance",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "maa-kali-mantra-for-success",
+   "title": "Maa Kali Mantra for Success",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "make-yourself-irresistible-to-anyone-with-kundalini-energy-and-cultivation",
+   "title": "Make Yourself Irresistible to Anyone with Kundalini Energy and Cultivation",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "saraswati-mantra",
+   "title": "Saraswati Mantra",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "shiva-mantra-for-purification-of-mind-body-and-soul",
+   "title": "Shiva Mantra for Purification of Mind, Body & Soul",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "a-conversation-between-a-yogi-and-artificial-intelligence",
+   "title": "A Conversation Between A Yogi & Artificial Intelligence",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "a-conversation-between-a-yogi-and-artificial-intelligence-about-god-satan-and-technology",
+   "title": "A Conversation between a Yogi and Artificial Intelligence about God, Satan & Technology",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "kamdev-mantra-for-making-yourself-attractive",
+   "title": "Kamdev Mantra for making yourself attractive",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "katyayani-mantra-for-removing-obstacles-and-delayed-marriages",
+   "title": "Katyayani Mantra for Removing Obstacles and Delayed Marriages",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "lakshmi-gayatri-mantra",
+   "title": "Lakshmi Gayatri Mantra",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "radiate-beauty-from-within",
+   "title": "Radiate Beauty from Within",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "the-power-of-sound",
+   "title": "The Power of Sound",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "the-ultimate-guide-to-transforming-your-life",
+   "title": "The Ultimate Guide to Transforming Your Life",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "a-comprehensive-guide-on-the-avalokitesvara-mantra",
+   "title": "A Comprehensive Guide On The Avalokitesvara Mantra",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "unlocking-enlightenment",
+   "title": "Unlocking Enlightenment",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "yoga-for-every-woman",
+   "title": "Yoga for Every Woman",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "mantra-of-vajrayogini",
+   "title": "Mantra of Vajrayogini",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "mantra-sound-vibrational-energy",
+   "title": "Mantra Sound Vibrational Energy",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "chakra-mastery",
+   "title": "Chakra Mastery",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "sacred-union-in-tantra",
+   "title": "Sacred Union in Tantra",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "the-ancient-science-of-kundalini-energy-revealed",
+   "title": "The Ancient Science of Kundalini Energy Revealed",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "ancient-breathing-techniques-that-will-revitalize-you",
+   "title": "Ancient Breathing Techniques that will revitalize you",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "miracles-of-the-masters-of-yoga",
+   "title": "Miracles of the Masters of Yoga",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "unleashing-the-inner-fire",
+   "title": "Unleashing the Inner Fire",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "beyond-sex",
+   "title": "Beyond Sex",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "edenic-origins",
+   "title": "Edenic Origins",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "gnostic-gospels-and-the-hidden-christ",
+   "title": "Gnostic Gospels and the Hidden Christ",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "lost-wisdom",
+   "title": "Lost Wisdom",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "revelations-of-mary",
+   "title": "Revelations of Mary",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "quotes-of-yeshua-the-christ",
+   "title": "Quotes of Yeshua The Christ",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "the-acts-of-peter-and-the-twelve-apostles",
+   "title": "The Acts of Peter and the Twelve Apostles",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "the-apocalypse-of-eve",
+   "title": "The Apocalypse of Eve",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "the-apocalypse-of-peter",
+   "title": "The Apocalypse of Peter",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "the-apocryphon-of-john",
+   "title": "The Apocryphon of John",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "the-apocrypha-the-book-of-esdras",
+   "title": "The Apocrypha - The Book of Esdras",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "the-apocrypha-additions-to-esther",
+   "title": "The Apocrypha - Additions to Esther",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "from-the-apocrypha-the-book-of-maccabees",
+   "title": "From the Apocrypha - The Book of Maccabees",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "apocalypse-of-adam-part-ii",
+   "title": "Apocalypse of Adam: Part II",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "archons-unveiled",
+   "title": "Archons Unveiled",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "archons-unveiled-ii",
+   "title": "Archons Unveiled II",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "archons-unveiled-iii",
+   "title": "Archons Unveiled III",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "archons-unveiled-part-4",
+   "title": "Archons Unveiled: Part 4",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "how-to-stop-overthinking-at-night",
+   "title": "How to Stop Overthinking at Night",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "how-to-stop-overthinking-right-now",
+   "title": "How to Stop Overthinking Right Now",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "siddhis-the-non-locality-of-consciousness",
+   "title": "Siddhis: The Non-Locality of Consciousness",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "mo-pai-and-internal-alchemy",
+   "title": "Mo Pai and Internal Alchemy",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
     "owner-listed record: edition details unconfirmed",
     "e-book/audiobook edition has no verified Amazon link"
    ]
@@ -1260,6 +1789,470 @@
    "press": true,
    "links": 1,
    "best": "verified",
+   "errors": false
+  },
+  {
+   "work": "the-hanuman-mantra",
+   "title": "The Hanuman Mantra",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-maha-mrityunjaya-mantra",
+   "title": "The Maha Mrityunjaya Mantra",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "mantra-magic",
+   "title": "Mantra Magic",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "an-ancient-mantra-for-getting-the-girl-you-want-to-love-you",
+   "title": "An Ancient Mantra for Getting the Girl You Want to Love You",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "an-ancient-sanskrit-mantra-to-attain-sexual-pleasure-for-men",
+   "title": "An Ancient Sanskrit Mantra to Attain Sexual Pleasure for Men",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "brahmastra",
+   "title": "Brahmastra",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "forbidden-fruit",
+   "title": "Forbidden Fruit",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "forbidden-practices",
+   "title": "Forbidden Practices",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "have-sex-like-a-god",
+   "title": "Have Sex Like A God",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "how-to-chant-the-gayatri-mantra",
+   "title": "How to Chant the Gayatri Mantra",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "kama-sutra-sexual-yoga-with-a-partner",
+   "title": "Kama Sutra - Sexual Yoga with a Partner",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "kamdev-gayatri-mantra",
+   "title": "Kamdev Gayatri Mantra",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "lakshmi-mantra-for-the-pleasure-of-wealth-and-abundance",
+   "title": "Lakshmi Mantra for the Pleasure of Wealth & Abundance",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "maa-kali-mantra-for-success",
+   "title": "Maa Kali Mantra for Success",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "make-yourself-irresistible-to-anyone-with-kundalini-energy-and-cultivation",
+   "title": "Make Yourself Irresistible to Anyone with Kundalini Energy and Cultivation",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "saraswati-mantra",
+   "title": "Saraswati Mantra",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "shiva-mantra-for-purification-of-mind-body-and-soul",
+   "title": "Shiva Mantra for Purification of Mind, Body & Soul",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "a-conversation-between-a-yogi-and-artificial-intelligence",
+   "title": "A Conversation Between A Yogi & Artificial Intelligence",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "a-conversation-between-a-yogi-and-artificial-intelligence-about-god-satan-and-technology",
+   "title": "A Conversation between a Yogi and Artificial Intelligence about God, Satan & Technology",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "kamdev-mantra-for-making-yourself-attractive",
+   "title": "Kamdev Mantra for making yourself attractive",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "katyayani-mantra-for-removing-obstacles-and-delayed-marriages",
+   "title": "Katyayani Mantra for Removing Obstacles and Delayed Marriages",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "lakshmi-gayatri-mantra",
+   "title": "Lakshmi Gayatri Mantra",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "radiate-beauty-from-within",
+   "title": "Radiate Beauty from Within",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-power-of-sound",
+   "title": "The Power of Sound",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-ultimate-guide-to-transforming-your-life",
+   "title": "The Ultimate Guide to Transforming Your Life",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "a-comprehensive-guide-on-the-avalokitesvara-mantra",
+   "title": "A Comprehensive Guide On The Avalokitesvara Mantra",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "unlocking-enlightenment",
+   "title": "Unlocking Enlightenment",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "yoga-for-every-woman",
+   "title": "Yoga for Every Woman",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "mantra-of-vajrayogini",
+   "title": "Mantra of Vajrayogini",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "mantra-sound-vibrational-energy",
+   "title": "Mantra Sound Vibrational Energy",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "chakra-mastery",
+   "title": "Chakra Mastery",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "sacred-union-in-tantra",
+   "title": "Sacred Union in Tantra",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-ancient-science-of-kundalini-energy-revealed",
+   "title": "The Ancient Science of Kundalini Energy Revealed",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "ancient-breathing-techniques-that-will-revitalize-you",
+   "title": "Ancient Breathing Techniques that will revitalize you",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "miracles-of-the-masters-of-yoga",
+   "title": "Miracles of the Masters of Yoga",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "unleashing-the-inner-fire",
+   "title": "Unleashing the Inner Fire",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "beyond-sex",
+   "title": "Beyond Sex",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "edenic-origins",
+   "title": "Edenic Origins",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "gnostic-gospels-and-the-hidden-christ",
+   "title": "Gnostic Gospels and the Hidden Christ",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "lost-wisdom",
+   "title": "Lost Wisdom",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "revelations-of-mary",
+   "title": "Revelations of Mary",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "quotes-of-yeshua-the-christ",
+   "title": "Quotes of Yeshua The Christ",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-acts-of-peter-and-the-twelve-apostles",
+   "title": "The Acts of Peter and the Twelve Apostles",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-apocalypse-of-eve",
+   "title": "The Apocalypse of Eve",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-apocalypse-of-peter",
+   "title": "The Apocalypse of Peter",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-apocryphon-of-john",
+   "title": "The Apocryphon of John",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-apocrypha-the-book-of-esdras",
+   "title": "The Apocrypha - The Book of Esdras",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-apocrypha-additions-to-esther",
+   "title": "The Apocrypha - Additions to Esther",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "from-the-apocrypha-the-book-of-maccabees",
+   "title": "From the Apocrypha - The Book of Maccabees",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "apocalypse-of-adam-part-ii",
+   "title": "Apocalypse of Adam: Part II",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "archons-unveiled",
+   "title": "Archons Unveiled",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "archons-unveiled-ii",
+   "title": "Archons Unveiled II",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "archons-unveiled-iii",
+   "title": "Archons Unveiled III",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "archons-unveiled-part-4",
+   "title": "Archons Unveiled: Part 4",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "how-to-stop-overthinking-at-night",
+   "title": "How to Stop Overthinking at Night",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "how-to-stop-overthinking-right-now",
+   "title": "How to Stop Overthinking Right Now",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "siddhis-the-non-locality-of-consciousness",
+   "title": "Siddhis: The Non-Locality of Consciousness",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "mo-pai-and-internal-alchemy",
+   "title": "Mo Pai and Internal Alchemy",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
    "errors": false
   },
   {
@@ -3283,6 +4276,702 @@
    "issues": [],
    "verdict": "blocked",
    "url": "https://www.amazon.com/Energy-Unleashed-Hidden-Superpowers-Buddhist/dp/B0F29FBNF3?tag=…"
+  },
+  {
+   "work": "the-hanuman-mantra",
+   "workTitle": "The Hanuman Mantra",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=The%20Hanuman%20Mantra%20Your%20Ultimate%20Mind-Body-Spirit%20Guide%20to%20Finding%20Inner%20Peace%20and%20Conquering%20Obstacles%20in%20the%20Modern%20World%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-maha-mrityunjaya-mantra",
+   "workTitle": "The Maha Mrityunjaya Mantra",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=The%20Maha%20Mrityunjaya%20Mantra%20A%20Sacred%20Chant%20for%20Spiritual%20Growth%20and%20Transformation%20for%20All%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "mantra-magic",
+   "workTitle": "Mantra Magic",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Mantra%20Magic%20Unlocking%20the%20Healing%20Power%20of%20Om%20Namo%20Bhagavate%20Vasudevaya%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "an-ancient-mantra-for-getting-the-girl-you-want-to-love-you",
+   "workTitle": "An Ancient Mantra for Getting the Girl You Want to Love You",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=An%20Ancient%20Mantra%20for%20Getting%20the%20Girl%20You%20Want%20to%20Love%20You%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "an-ancient-sanskrit-mantra-to-attain-sexual-pleasure-for-men",
+   "workTitle": "An Ancient Sanskrit Mantra to Attain Sexual Pleasure for Men",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=An%20Ancient%20Sanskrit%20Mantra%20to%20Attain%20Sexual%20Pleasure%20for%20Men%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "brahmastra",
+   "workTitle": "Brahmastra",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Brahmastra%20Weapon%20of%20God%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "forbidden-fruit",
+   "workTitle": "Forbidden Fruit",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Forbidden%20Fruit%20Top%205%20Herbs%20To%20Treat%20Erectile%20Dysfunction%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "forbidden-practices",
+   "workTitle": "Forbidden Practices",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Forbidden%20Practices%20Increase%20the%20size%20and%20stamina%20of%20your%20manhood%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "have-sex-like-a-god",
+   "workTitle": "Have Sex Like A God",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Have%20Sex%20Like%20A%20God%20Kundalini%20Awakening%20Instruction%20Manual%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "how-to-chant-the-gayatri-mantra",
+   "workTitle": "How to Chant the Gayatri Mantra",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=How%20to%20Chant%20the%20Gayatri%20Mantra%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "kama-sutra-sexual-yoga-with-a-partner",
+   "workTitle": "Kama Sutra - Sexual Yoga with a Partner",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Kama%20Sutra%20-%20Sexual%20Yoga%20with%20a%20Partner%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "kamdev-gayatri-mantra",
+   "workTitle": "Kamdev Gayatri Mantra",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Kamdev%20Gayatri%20Mantra%20An%20Instructional%20Manual%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "lakshmi-mantra-for-the-pleasure-of-wealth-and-abundance",
+   "workTitle": "Lakshmi Mantra for the Pleasure of Wealth & Abundance",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Lakshmi%20Mantra%20for%20the%20Pleasure%20of%20Wealth%20%26%20Abundance%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "maa-kali-mantra-for-success",
+   "workTitle": "Maa Kali Mantra for Success",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Maa%20Kali%20Mantra%20for%20Success%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "make-yourself-irresistible-to-anyone-with-kundalini-energy-and-cultivation",
+   "workTitle": "Make Yourself Irresistible to Anyone with Kundalini Energy and Cultivation",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Make%20Yourself%20Irresistible%20to%20Anyone%20with%20Kundalini%20Energy%20and%20Cultivation%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "saraswati-mantra",
+   "workTitle": "Saraswati Mantra",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Saraswati%20Mantra%20Enhance%20Intelligence%2C%20Creativity%20and%20Knowledge%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "shiva-mantra-for-purification-of-mind-body-and-soul",
+   "workTitle": "Shiva Mantra for Purification of Mind, Body & Soul",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Shiva%20Mantra%20for%20Purification%20of%20Mind%2C%20Body%20%26%20Soul%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "a-conversation-between-a-yogi-and-artificial-intelligence",
+   "workTitle": "A Conversation Between A Yogi & Artificial Intelligence",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=A%20Conversation%20Between%20A%20Yogi%20%26%20Artificial%20Intelligence%20Are%20aliens%20already%20living%20on%20Earth%3F%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "a-conversation-between-a-yogi-and-artificial-intelligence-about-god-satan-and-technology",
+   "workTitle": "A Conversation between a Yogi and Artificial Intelligence about God, Satan & Technology",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=A%20Conversation%20between%20a%20Yogi%20and%20Artificial%20Intelligence%20about%20God%2C%20Satan%20%26%20Technology%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "kamdev-mantra-for-making-yourself-attractive",
+   "workTitle": "Kamdev Mantra for making yourself attractive",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Kamdev%20Mantra%20for%20making%20yourself%20attractive%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "katyayani-mantra-for-removing-obstacles-and-delayed-marriages",
+   "workTitle": "Katyayani Mantra for Removing Obstacles and Delayed Marriages",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Katyayani%20Mantra%20for%20Removing%20Obstacles%20and%20Delayed%20Marriages%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "lakshmi-gayatri-mantra",
+   "workTitle": "Lakshmi Gayatri Mantra",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Lakshmi%20Gayatri%20Mantra%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "radiate-beauty-from-within",
+   "workTitle": "Radiate Beauty from Within",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Radiate%20Beauty%20from%20Within%20Harnessing%20the%20Power%20of%20Chandra%20Mantra%20for%20All%20Genders%20and%20Ethnicities%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-power-of-sound",
+   "workTitle": "The Power of Sound",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=The%20Power%20of%20Sound%20Exploring%20the%20Connection%20Between%20Mantra%2C%20Yoga%2C%20and%20Inner%20Awareness%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-ultimate-guide-to-transforming-your-life",
+   "workTitle": "The Ultimate Guide to Transforming Your Life",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=The%20Ultimate%20Guide%20to%20Transforming%20Your%20Life%20Unlocking%20the%20Power%20of%20the%20Amitabha%20Mantra%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "a-comprehensive-guide-on-the-avalokitesvara-mantra",
+   "workTitle": "A Comprehensive Guide On The Avalokitesvara Mantra",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=A%20Comprehensive%20Guide%20On%20The%20Avalokitesvara%20Mantra%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "unlocking-enlightenment",
+   "workTitle": "Unlocking Enlightenment",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Unlocking%20Enlightenment%20The%20Timeless%20Power%20of%20Nam-myoho-renge-kyo%20in%20a%20Modern%20World%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "yoga-for-every-woman",
+   "workTitle": "Yoga for Every Woman",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Yoga%20for%20Every%20Woman%20Unlock%20the%20Secrets%20to%20Vitality%2C%20Balance%2C%20and%20Inner%20Peace%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "mantra-of-vajrayogini",
+   "workTitle": "Mantra of Vajrayogini",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Mantra%20of%20Vajrayogini%20A%20Practitioner's%20Guide%20to%20Wisdom%20and%20Transformation%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "mantra-sound-vibrational-energy",
+   "workTitle": "Mantra Sound Vibrational Energy",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Mantra%20Sound%20Vibrational%20Energy%20Maha%20Mrityunjaya%20Mantra%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "chakra-mastery",
+   "workTitle": "Chakra Mastery",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Chakra%20Mastery%20A%20Spiritual%20Approach%20to%20Cultivating%20Positive%20Energies%20and%20Transforming%20Your%20Life%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "sacred-union-in-tantra",
+   "workTitle": "Sacred Union in Tantra",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Sacred%20Union%20in%20Tantra%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-ancient-science-of-kundalini-energy-revealed",
+   "workTitle": "The Ancient Science of Kundalini Energy Revealed",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=The%20Ancient%20Science%20of%20Kundalini%20Energy%20Revealed%20Mastery%20of%20Sexual%20Energy%20and%20Psychic%20Abilities%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "ancient-breathing-techniques-that-will-revitalize-you",
+   "workTitle": "Ancient Breathing Techniques that will revitalize you",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Ancient%20Breathing%20Techniques%20that%20will%20revitalize%20you%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "miracles-of-the-masters-of-yoga",
+   "workTitle": "Miracles of the Masters of Yoga",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Miracles%20of%20the%20Masters%20of%20Yoga%20Siddhis-%20Super%20Powers%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "unleashing-the-inner-fire",
+   "workTitle": "Unleashing the Inner Fire",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Unleashing%20the%20Inner%20Fire%20The%20Ancient%20Art%20of%20Tummo%20Breathwork%20for%20Radical%20Transformation%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "beyond-sex",
+   "workTitle": "Beyond Sex",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Beyond%20Sex%20Exploring%20the%20Spiritual%20Dimensions%20of%20Tantra%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "edenic-origins",
+   "workTitle": "Edenic Origins",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Edenic%20Origins%20The%20Sacred%20Roots%20of%20Veganism%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "gnostic-gospels-and-the-hidden-christ",
+   "workTitle": "Gnostic Gospels and the Hidden Christ",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Gnostic%20Gospels%20and%20the%20Hidden%20Christ%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "lost-wisdom",
+   "workTitle": "Lost Wisdom",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Lost%20Wisdom%20The%20Mysterious%20Gospel%20of%20Thomas%20and%20the%20Secrets%20of%20Early%20Christianity%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "revelations-of-mary",
+   "workTitle": "Revelations of Mary",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Revelations%20of%20Mary%20A%20Journey%20to%20Spiritual%20Enlightenment%20and%20Liberation%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "quotes-of-yeshua-the-christ",
+   "workTitle": "Quotes of Yeshua The Christ",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Quotes%20of%20Yeshua%20The%20Christ%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-acts-of-peter-and-the-twelve-apostles",
+   "workTitle": "The Acts of Peter and the Twelve Apostles",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=The%20Acts%20of%20Peter%20and%20the%20Twelve%20Apostles%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-apocalypse-of-eve",
+   "workTitle": "The Apocalypse of Eve",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=The%20Apocalypse%20of%20Eve%20Forbidden%20Feminine%20Wisdom%20from%20Ancient%20Gnostic%20Texts%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-apocalypse-of-peter",
+   "workTitle": "The Apocalypse of Peter",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=The%20Apocalypse%20of%20Peter%20Visions%20of%20Judgment%2C%20Mercy%2C%20and%20the%20Forgotten%20Afterlife%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-apocryphon-of-john",
+   "workTitle": "The Apocryphon of John",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=The%20Apocryphon%20of%20John%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-apocrypha-the-book-of-esdras",
+   "workTitle": "The Apocrypha - The Book of Esdras",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=The%20Apocrypha%20-%20The%20Book%20of%20Esdras%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-apocrypha-additions-to-esther",
+   "workTitle": "The Apocrypha - Additions to Esther",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=The%20Apocrypha%20-%20Additions%20to%20Esther%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "from-the-apocrypha-the-book-of-maccabees",
+   "workTitle": "From the Apocrypha - The Book of Maccabees",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=From%20the%20Apocrypha%20-%20The%20Book%20of%20Maccabees%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "apocalypse-of-adam-part-ii",
+   "workTitle": "Apocalypse of Adam: Part II",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Apocalypse%20of%20Adam%3A%20Part%20II%20The%20War%20of%20the%20Archons%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "archons-unveiled",
+   "workTitle": "Archons Unveiled",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Archons%20Unveiled%20The%20Non-Human%20Manipulation%20of%20Human%20Consciousness%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "archons-unveiled-ii",
+   "workTitle": "Archons Unveiled II",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Archons%20Unveiled%20II%20Multiphasic%20Precognition%20of%20Reality%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "archons-unveiled-iii",
+   "workTitle": "Archons Unveiled III",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Archons%20Unveiled%20III%20The%20Code%20of%20Immortality%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "archons-unveiled-part-4",
+   "workTitle": "Archons Unveiled: Part 4",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Archons%20Unveiled%3A%20Part%204%20The%20Transformation%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "how-to-stop-overthinking-at-night",
+   "workTitle": "How to Stop Overthinking at Night",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=How%20to%20Stop%20Overthinking%20at%20Night%20A%20Simple%20Guide%20to%20Quiet%20Your%20Mind%20and%20Finally%20Fall%20Asleep%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "how-to-stop-overthinking-right-now",
+   "workTitle": "How to Stop Overthinking Right Now",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=How%20to%20Stop%20Overthinking%20Right%20Now%20A%20Simple%2C%20Proven%20System%20to%20Calm%20Your%20Mind%20and%20Take%20Back%20Control%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "siddhis-the-non-locality-of-consciousness",
+   "workTitle": "Siddhis: The Non-Locality of Consciousness",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Siddhis%3A%20The%20Non-Locality%20of%20Consciousness%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "mo-pai-and-internal-alchemy",
+   "workTitle": "Mo Pai and Internal Alchemy",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Mo%20Pai%20and%20Internal%20Alchemy%20The%20Physiology%2C%20Polarity%2C%20and%20Power%20Mechanics%20Behind%20Human%20Energy%20Cultivation%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
   },
   {
    "work": "the-power-of-now",

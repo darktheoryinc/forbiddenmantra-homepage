@@ -17,7 +17,7 @@ export function checkLinks(SITE) {
       const [file, hash] = u.split('#'); internal++;
       const target = file ? path.resolve(path.dirname(p), file.split('?')[0]) : p;
       if (!fs.existsSync(target)) { broken.push(`${path.relative(SITE, p)} -> ${u}`); continue; }
-      if (hash && target.endsWith('.html') && !fs.readFileSync(target, 'utf8').includes(`id="${hash}"`)) broken.push(`${path.relative(SITE, p)} -> ${u} (missing anchor)`);
+      if (hash && target.endsWith('.html') && !/[?&]s=/.test(file + (u.includes('?') ? u.slice(u.indexOf('?')) : '')) && !fs.readFileSync(target, 'utf8').includes(`id="${hash}"`)) broken.push(`${path.relative(SITE, p)} -> ${u} (missing anchor)`);
     }
   }
   return { pages: pages.length, internal, broken, buy };

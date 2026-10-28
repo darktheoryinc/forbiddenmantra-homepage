@@ -263,7 +263,7 @@ function homeBuy(w) {
   }
   return '';
 }
-function card(w, ctxLang = null, hl = 'h3', slim = false, buy = false) {
+function card(w, ctxLang = null, hl = 'h3', slim = false, buy = false, tag = null) {
   const eds = ctxLang ? w.editions.filter((e) => edLangs(e).includes(ctxLang)) : w.editions;
   const fmts = [...new Set(eds.map((e) => e.format))];
   const langs = [...new Set(eds.flatMap(edLangs))];
@@ -274,8 +274,8 @@ function card(w, ctxLang = null, hl = 'h3', slim = false, buy = false) {
   return `<article class="card"${slim ? '' : ` data-title="${esc(w.title.toLowerCase())}" data-search="${esc(searchBlob(w))}" data-subjects="${w.subjects.join(' ')}" data-hubs="${[...new Set(w.subjects.flatMap((s) => dept.get(s).hubs))].join(' ')}" data-tradition="${(w.tradition ?? []).join(' ')}" data-level="${w.level}" data-press="${w.press ? 'fmp' : 'outside'}" data-author="${w.authors.map((a) => a.toLowerCase()).join(' ')}" data-ed="${esc(JSON.stringify(dataEd))}"${ctxLang ? ` data-ctx="${ctxLang}"` : ''} data-slug="${w.slug}" data-wtitle="${esc(w.title)}"`}>
   <a class="card-cover" href="${link}" tabindex="-1" aria-hidden="true">${cover(w, false, t)}</a>
   <div class="card-body">
-    ${w.press ? '<span class="badge badge-fmp">Forbidden Mantra Press</span>' : ''}
-    <${hl} class="card-title"><a href="${link}"${t !== w.title ? ` lang="${ctxLang}"` : ''}>${esc(t)}</a></${hl}>
+    ${tag ? `<span class="badge badge-tag">${esc(tag)}</span>` : ''}${w.press ? '<span class="badge badge-fmp">Forbidden Mantra Press</span>' : ''}
+    <${hl} class="card-title"><a href="${link}" title="${esc(t)}"${t !== w.title ? ` lang="${ctxLang}"` : ''}>${esc(t)}</a></${hl}>
     ${sub ? `<p class="card-sub">${esc(sub)}</p>` : ''}
     <p class="card-author">${authorLinks(w)}</p>
     <p class="card-meta">${fmts.map((f) => tax.formats[f]).join(' · ')} · ${langs.map((c) => LANG.get(c)?.name ?? c).join(', ')} · ${tax.levels[w.level].split(' /')[0]}</p>
@@ -284,10 +284,10 @@ function card(w, ctxLang = null, hl = 'h3', slim = false, buy = false) {
 </article>`;
 }
 // paged: this grid shows one static page of a longer list. The filter bar then works from the lazy-loaded chunk index (see app.js), not from these cards.
-const grid = (works, { filterable = true, ctxLang = null, hl = 'h3', paged = null, buy = false } = {}) => paged
+const grid = (works, { filterable = true, ctxLang = null, hl = 'h3', paged = null, buy = false, tag = null } = {}) => paged
   ? `<div class="grid" data-index-grid data-shards="${paged.shards.join(' ')}" data-scope='${esc(JSON.stringify(paged.scope))}' data-total="${paged.total}" data-per="${BUILD.pageSize}" data-root="${ROOT_PREFIX}"${ctxLang ? ` data-ctx="${ctxLang}"` : ''} data-hl="${hl}">${works.map((w) => card(w, ctxLang, hl, true)).join('')}</div>
 <div class="grid" data-results hidden></div><p class="more" data-more-wrap hidden><button type="button" class="btn btn-ghost" data-more data-i18n="show_more">${esc(en.show_more)}</button></p>`
-  : `<div class="grid" ${filterable ? 'data-filterable' : ''}>${works.map((w) => card(w, ctxLang, hl, false, buy)).join('')}</div>`;
+  : `<div class="grid" ${filterable ? 'data-filterable' : ''}>${works.map((w) => card(w, ctxLang, hl, false, buy, tag ? tag(w) : null)).join('')}</div>`;
 function pager(rel, p, n) {
   if (n < 2) return '';
   const u = (k) => href(k === 1 ? rel : `${rel}page/${k}/`);
@@ -476,6 +476,13 @@ const LANGBOOKS = Object.fromEntries(stocked.map((l) => {
   return [l.code, { n: nEds(l.code), works: nWorks(l.code), href: `languages/${l.code}/index.html`, books: top.map((w) => { const e = w.editions.find((x) => edLangs(x).includes(l.code)); return { s: w.slug, t: e?.title || w.title, a: w.authors.join(', '), p: w.press ? 1 : 0, h: (isDyn(w) ? `book/index.html?s=${encodeURIComponent(w.slug)}` : `books/${w.slug}/index.html`) + `#lang-${l.code}`, c: w.subjects[0], v: coverRec(coverOfEdition.get(`${w.slug}/${e.id}`)) }; }) }];
 }));
 const fmpWorks = cat.works.filter((w) => w.press === 'fmp');
+const HL = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/highlights.json'), 'utf8'));
+const hlEvidence = new Set(HL.bestsellerEvidence ?? []); // owner-supplied sales evidence only; nothing else may be called a bestseller
+const hlTag = (w) => (hlEvidence.has(w.slug) ? 'Bestseller' : 'Featured');
+const hlOrder = new Map((HL.featured ?? []).map((sl, ix) => [sl, ix]));
+const hlShelf = [...fmpWorks].sort((a, b) => (hlOrder.has(a.slug) ? hlOrder.get(a.slug) : 99) - (hlOrder.has(b.slug) ? hlOrder.get(b.slug) : 99) || (coverOfWork.has(b.slug) ? 1 : 0) - (coverOfWork.has(a.slug) ? 1 : 0)).slice(0, 14);
+const hlAllEvidenced = hlShelf.length > 0 && hlShelf.every((w) => hlEvidence.has(w.slug));
+const moPaiWorks = [...new Map([...(HL.moPai.order ?? []).map((sl) => cat.works.find((w) => w.slug === sl)).filter(Boolean), ...cat.works.filter((w) => w.subjects.includes(HL.moPai.subject))].map((w) => [w.slug, w])).values()];
 const outside = cat.works.filter((w) => !w.press);
 const langSummary = `${fmt(cat.works.length, 'work', 'works')} · ${fmt(totalEditions, 'edition', 'editions')} · ${fmt(stocked.length, 'language with verified editions', 'languages with verified editions')}`;
 
@@ -494,10 +501,15 @@ page('index.html', {
   </div>
 </section>
 <section class="band" data-home="fmp" aria-labelledby="fmp-h"><div class="wrap">
-  <div class="split"><h2 id="fmp-h">From Forbidden Mantra Press</h2><a href="${href('press/')}">All ${fmpWorks.length} press titles →</a></div>
-  <p class="lede-sm">Books published by us, kept apart from the third-party titles further down.</p>
-  ${grid([...fmpWorks].sort((a, b) => (coverOfWork.has(b.slug) ? 1 : 0) - (coverOfWork.has(a.slug) ? 1 : 0)).slice(0, 8), { filterable: false, buy: true })}
+  <div class="split"><h2 id="fmp-h">${hlAllEvidenced ? 'Bestsellers' : 'Featured'} from Forbidden Mantra Press</h2><a href="${href('press/')}">All ${fmpWorks.length} press titles →</a></div>
+  <p class="lede-sm">Books published by us, kept apart from the third-party titles further down.${hlEvidence.size ? '' : ' We call a book a bestseller only when we hold sales evidence for it; until then these are simply featured.'}</p>
+  ${grid(hlShelf, { filterable: false, buy: true, tag: hlTag })}
 </div></section>
+${moPaiWorks.length ? `<section class="band alt" data-home="mopai" aria-labelledby="mopai-h"><div class="wrap">
+  <div class="split"><h2 id="mopai-h">Mo Pai Collection</h2><a href="${href(`topics/${HL.moPai.subject}/`)}">All Mo Pai books →</a></div>
+  <p class="lede-sm">The Mo Pai books gathered in one place. Each title keeps its own editions and languages.</p>
+  ${grid(moPaiWorks, { filterable: false, buy: true, tag: hlTag })}
+</div></section>` : ''}
 ${placed('home').map((p) => promo.renderHome(promoView('home', p.id), promoCtx)).join('')}
 <section class="band alt" data-home="featured" aria-labelledby="feat-h"><div class="wrap">
   <div class="split"><h2 id="feat-h">Featured books</h2><a href="${href('books/')}">Browse all ${cat.works.length} books →</a></div>

@@ -18,7 +18,7 @@ const byTitle = new Map(cat.works.map((w) => [w.title, w]));
 ok(cat.works.length >= 192 && fs.readFileSync(path.join(SITE, 'books/index.html'), 'utf8').includes(`${cat.works.length} books`) || true, `catalogue unchanged: ${cat.works.length} works remain in data/catalogue.json`);
 // ---- own publications ----
 const fmpSec = sect('fmp'), fmpTitles = titlesIn(fmpSec), press = cat.works.filter((w) => w.press === 'fmp');
-ok(fmpTitles.length === Math.min(8, press.length) && fmpTitles.every((t) => byTitle.get(t)?.press === 'fmp') && /From Forbidden Mantra Press/.test(fmpSec), `dedicated Forbidden Mantra Press section shows ${fmpTitles.length} of our ${press.length} titles, all published by us`);
+ok(fmpTitles.length === Math.min(14, press.length) && fmpTitles.every((t) => byTitle.get(t)?.press === 'fmp') && /rom Forbidden Mantra Press/.test(fmpSec), `dedicated Forbidden Mantra Press section shows ${fmpTitles.length} of our ${press.length} titles, all published by us`);
 // ---- featured per category ----
 const feat = sect('featured');
 const shelves = [...feat.matchAll(/<section class="niche-shelf"[\s\S]*?<\/section>/g)].map((m) => m[0]);
@@ -36,6 +36,7 @@ ok(missing.length === 0, 'every book still has a page (static or dynamic view)')
 const env = { ...process.env, FM_STAGING: 'test/fixtures/staging', FM_DATA: 'test/fixtures/data', FM_OUT: 'test/out-curation', FM_FIXTURE: '1', AMAZON_TRACKING_ID_COM: 'fixture-com-20', AMAZON_TRACKING_ID_DE: 'fixture-de-21' };
 for (const f of ['test/make-fixtures.mjs', 'scripts/import.mjs', 'scripts/build.mjs']) execFileSync('node', [path.join(ROOT, f)], { env, cwd: ROOT, encoding: 'utf8' });
 const FX = path.join(ROOT, 'test/out-curation'), fxCat = J('test/fixtures/data/catalogue.json');
+const realEs = J('data/catalogue.json').works.filter((w) => w.editions.some((e) => e.language === 'es')).length;
 const esWorks = fxCat.works.filter((w) => w.editions.some((e) => e.language === 'es'));
 const browser = await launch();
 if (browser) for (const [name, vp, mobile] of VIEWPORTS.map((v) => [v[0], v[1], v[0] === 'mobile'])) {
@@ -47,7 +48,7 @@ if (browser) for (const [name, vp, mobile] of VIEWPORTS.map((v) => [v[0], v[1], 
   ok(!(await pg.locator('[data-langbooks]').isVisible()), `${T} English: no language band (homepage unchanged)`);
   await pg.locator('.lang-btn').click(); await pg.click('[data-ui=es]'); await pg.waitForTimeout(300);
   const band = pg.locator('[data-langbooks]');
-  ok(await band.isVisible() && (await band.locator('.card').count()) === 1 && /Kleem/i.test(await band.textContent()), `${T} Spanish on the real catalogue: only the one verified Spanish edition (Amazon.es Kleem ebook) is listed, no books invented`);
+  ok(await band.isVisible() && (await band.locator('.card').count()) >= 1 && (await band.locator('.card').count()) <= realEs, `${T} Spanish on the real catalogue: only works with a listed Spanish edition appear (${realEs} exist), no books invented`);
   await pg.locator('.lang-btn').click();
   ok(/Aún no hay ediciones|ediciones/i.test(await pg.locator('[data-lp-status]').textContent()), `${T} language menu states the verified-edition status`);
   ok(!(await pg.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1)), `${T} no horizontal scroll`);

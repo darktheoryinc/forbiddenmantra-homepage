@@ -1736,6 +1736,90 @@
      "retailers": [],
      "id": "ed2",
      "isbn10": null
+    },
+    {
+     "format": "ebook",
+     "language": "de",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "de edition listed on the owner's website; format, ASIN and date not recovered.",
+     "title": "Das Erscheinen Adams",
+     "sources": [
+      {
+       "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+       "url": "https://www.forbiddenmantra.com/",
+       "accessed": "2026-10-28",
+       "supports": "title, author, series and language as shown on the owner's website"
+      }
+     ],
+     "id": "ed3",
+     "isbn10": null
+    },
+    {
+     "format": "ebook",
+     "language": "nl",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "nl edition listed on the owner's website; format, ASIN and date not recovered.",
+     "title": "De verschijning van Adam",
+     "sources": [
+      {
+       "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+       "url": "https://www.forbiddenmantra.com/",
+       "accessed": "2026-10-28",
+       "supports": "title, author, series and language as shown on the owner's website"
+      }
+     ],
+     "id": "ed4",
+     "isbn10": null
+    },
+    {
+     "format": "ebook",
+     "language": "cy",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "cy edition listed on the owner's website; format, ASIN and date not recovered.",
+     "title": "Datguddiad Adda",
+     "sources": [
+      {
+       "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+       "url": "https://www.forbiddenmantra.com/",
+       "accessed": "2026-10-28",
+       "supports": "title, author, series and language as shown on the owner's website"
+      }
+     ],
+     "id": "ed5",
+     "isbn10": null
+    },
+    {
+     "format": "ebook",
+     "language": "es",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "es edition listed on the owner's website; format, ASIN and date not recovered.",
+     "title": "El Apocalipsis de Adán",
+     "sources": [
+      {
+       "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+       "url": "https://www.forbiddenmantra.com/",
+       "accessed": "2026-10-28",
+       "supports": "title, author, series and language as shown on the owner's website"
+      }
+     ],
+     "id": "ed6",
+     "isbn10": null
     }
    ],
    "sources": [
@@ -1750,6 +1834,12 @@
      "url": "legacy/forbiddenmantra-homepage.html",
      "accessed": "2026-10-26",
      "supports": "title listed"
+    },
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
     }
    ],
    "claims": [],
@@ -2013,6 +2103,27 @@
      "retailers": [],
      "id": "ed1",
      "isbn10": null
+    },
+    {
+     "format": "ebook",
+     "language": "es",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "es edition listed on the owner's website; format, ASIN and date not recovered.",
+     "title": "Invocar al Feroz: Desbloqueo de fuerza y protección con el Durga Mantra",
+     "sources": [
+      {
+       "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+       "url": "https://www.forbiddenmantra.com/",
+       "accessed": "2026-10-28",
+       "supports": "title, author, series and language as shown on the owner's website"
+      }
+     ],
+     "id": "ed2",
+     "isbn10": null
     }
    ],
    "sources": [
@@ -2021,6 +2132,12 @@
      "url": "https://www.amazon.in/Kindle-Store-Forbidden-Mantra-Press/s?rh=n:1571277031,p_27:Forbidden%2BMantra%2BPress",
      "accessed": "2026-10-26",
      "supports": "title, subtitle"
+    },
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
     }
    ],
    "claims": [],
@@ -2059,6 +2176,27 @@
      "retailers": [],
      "id": "ed1",
      "isbn10": null
+    },
+    {
+     "format": "ebook",
+     "language": "es",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "es edition listed on the owner's website; format, ASIN and date not recovered.",
+     "title": "Lakshmi Gayatri: El despertar de la riqueza sagrada en la era moderna",
+     "sources": [
+      {
+       "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+       "url": "https://www.forbiddenmantra.com/",
+       "accessed": "2026-10-28",
+       "supports": "title, author, series and language as shown on the owner's website"
+      }
+     ],
+     "id": "ed2",
+     "isbn10": null
     }
    ],
    "sources": [
@@ -2067,6 +2205,12 @@
      "url": "https://www.amazon.com/Books-Mantra-Press/s?rh=n%3A283155%2Cp_27%3AMantra%2BPress",
      "accessed": "2026-10-26",
      "supports": "title"
+    },
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
     }
    ],
    "claims": [],
@@ -2105,6 +2249,48 @@
      "retailers": [],
      "id": "ed1",
      "isbn10": null
+    },
+    {
+     "format": "ebook",
+     "language": "de",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "de edition listed on the owner's website; format, ASIN and date not recovered.",
+     "title": "Om Namah Shivaya:: Ein Leitfaden zur heiligen Praxis",
+     "sources": [
+      {
+       "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+       "url": "https://www.forbiddenmantra.com/",
+       "accessed": "2026-10-28",
+       "supports": "title, author, series and language as shown on the owner's website"
+      }
+     ],
+     "id": "ed2",
+     "isbn10": null
+    },
+    {
+     "format": "ebook",
+     "language": "es",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "es edition listed on the owner's website; format, ASIN and date not recovered.",
+     "title": "Om Namah Shivaya:: Una guía de práctica sagrada",
+     "sources": [
+      {
+       "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+       "url": "https://www.forbiddenmantra.com/",
+       "accessed": "2026-10-28",
+       "supports": "title, author, series and language as shown on the owner's website"
+      }
+     ],
+     "id": "ed3",
+     "isbn10": null
     }
    ],
    "sources": [
@@ -2113,6 +2299,12 @@
      "url": "https://www.amazon.in/Kindle-Store-Forbidden-Mantra-Press/s?rh=n:1571277031,p_27:Forbidden%2BMantra%2BPress",
      "accessed": "2026-10-26",
      "supports": "title, subtitle"
+    },
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
     }
    ],
    "claims": [],
@@ -2159,6 +2351,48 @@
      ],
      "id": "ed1",
      "isbn10": null
+    },
+    {
+     "format": "ebook",
+     "language": "de",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "de edition listed on the owner's website; format, ASIN and date not recovered.",
+     "title": "Maa Kali Mantras und Anweisungen",
+     "sources": [
+      {
+       "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+       "url": "https://www.forbiddenmantra.com/",
+       "accessed": "2026-10-28",
+       "supports": "title, author, series and language as shown on the owner's website"
+      }
+     ],
+     "id": "ed2",
+     "isbn10": null
+    },
+    {
+     "format": "ebook",
+     "language": "es",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "es edition listed on the owner's website; format, ASIN and date not recovered.",
+     "title": "Mantras de Maa Kali e instrucciones",
+     "sources": [
+      {
+       "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+       "url": "https://www.forbiddenmantra.com/",
+       "accessed": "2026-10-28",
+       "supports": "title, author, series and language as shown on the owner's website"
+      }
+     ],
+     "id": "ed3",
+     "isbn10": null
     }
    ],
    "sources": [
@@ -2167,6 +2401,12 @@
      "url": "https://play.google.com/store/books/details/Maa_Kali_Mantras_and_Instructions?id=RlyKEQAAQBAJ&hl=en_US",
      "accessed": "2026-10-26",
      "supports": "title, publisher, retailer URL"
+    },
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
     }
    ],
    "claims": [],
@@ -2630,6 +2870,69 @@
      "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
      "id": "9798243200189",
      "isbn10": null
+    },
+    {
+     "format": "ebook",
+     "language": "fr",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "fr edition listed on the owner's website; format, ASIN and date not recovered.",
+     "title": "Mo Pai : La force destructrice et guérisseuse intérieure",
+     "sources": [
+      {
+       "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+       "url": "https://www.forbiddenmantra.com/",
+       "accessed": "2026-10-28",
+       "supports": "title, author, series and language as shown on the owner's website"
+      }
+     ],
+     "id": "ed2",
+     "isbn10": null
+    },
+    {
+     "format": "ebook",
+     "language": "de",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "de edition listed on the owner's website; format, ASIN and date not recovered.",
+     "title": "Mo Pai: Die zerstörerische und heilende innere Kraft",
+     "sources": [
+      {
+       "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+       "url": "https://www.forbiddenmantra.com/",
+       "accessed": "2026-10-28",
+       "supports": "title, author, series and language as shown on the owner's website"
+      }
+     ],
+     "id": "ed3",
+     "isbn10": null
+    },
+    {
+     "format": "ebook",
+     "language": "es",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "es edition listed on the owner's website; format, ASIN and date not recovered.",
+     "title": "Mo Pai: La fuerza destructiva y sanadora interior",
+     "sources": [
+      {
+       "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+       "url": "https://www.forbiddenmantra.com/",
+       "accessed": "2026-10-28",
+       "supports": "title, author, series and language as shown on the owner's website"
+      }
+     ],
+     "id": "ed4",
+     "isbn10": null
     }
    ],
    "sources": [
@@ -2638,6 +2941,12 @@
      "url": "https://www.amazon.com/Pai-Destructive-Meditation-Discipline-Technology/dp/B0GFW8DJHW",
      "accessed": "2026-10-28",
      "supports": "title, subtitle, author, ISBN-13, ASIN, paperback, date"
+    },
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
     }
    ],
    "claims": [],
@@ -2707,6 +3016,3370 @@
    "reviewFlags": [
     "publisher attribution is owner-supplied",
     "publication date not recovered"
+   ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "emily-k-patel"
+   ]
+  },
+  {
+   "id": "the-hanuman-mantra",
+   "slug": "the-hanuman-mantra",
+   "title": "The Hanuman Mantra",
+   "subtitle": "Your Ultimate Mind-Body-Spirit Guide to Finding Inner Peace and Conquering Obstacles in the Modern World",
+   "authors": [
+    "Rav Shiva"
+   ],
+   "subjects": [
+    "sanskrit-mantras",
+    "hinduism"
+   ],
+   "tradition": [
+    "hindu"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied"
+   ],
+   "series": {
+    "name": "Forbidden Mantra Series"
+   },
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "rav-shiva"
+   ]
+  },
+  {
+   "id": "the-maha-mrityunjaya-mantra",
+   "slug": "the-maha-mrityunjaya-mantra",
+   "title": "The Maha Mrityunjaya Mantra",
+   "subtitle": "A Sacred Chant for Spiritual Growth and Transformation for All",
+   "authors": [
+    "Rav Shiva"
+   ],
+   "subjects": [
+    "sanskrit-mantras",
+    "hinduism"
+   ],
+   "tradition": [
+    "hindu"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied",
+    "possibly the same book as the catalogue's 'Maha Mrityunjaya Mantra' (Forbidden Mantra Press); kept separate because the title, author and series differ"
+   ],
+   "series": {
+    "name": "Forbidden Mantra Series"
+   },
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "rav-shiva"
+   ]
+  },
+  {
+   "id": "mantra-magic",
+   "slug": "mantra-magic",
+   "title": "Mantra Magic",
+   "subtitle": "Unlocking the Healing Power of Om Namo Bhagavate Vasudevaya",
+   "authors": [
+    "Rav Shiva"
+   ],
+   "subjects": [
+    "sanskrit-mantras",
+    "hinduism"
+   ],
+   "tradition": [
+    "hindu"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied"
+   ],
+   "series": {
+    "name": "Forbidden Mantra Series"
+   },
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "rav-shiva"
+   ]
+  },
+  {
+   "id": "an-ancient-mantra-for-getting-the-girl-you-want-to-love-you",
+   "slug": "an-ancient-mantra-for-getting-the-girl-you-want-to-love-you",
+   "title": "An Ancient Mantra for Getting the Girl You Want to Love You",
+   "subtitle": "",
+   "authors": [
+    "Rav Shiva"
+   ],
+   "subjects": [
+    "sanskrit-mantras",
+    "tantra"
+   ],
+   "tradition": [
+    "hindu"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied"
+   ],
+   "series": {
+    "name": "Forbidden Mantra Series"
+   },
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "rav-shiva"
+   ]
+  },
+  {
+   "id": "an-ancient-sanskrit-mantra-to-attain-sexual-pleasure-for-men",
+   "slug": "an-ancient-sanskrit-mantra-to-attain-sexual-pleasure-for-men",
+   "title": "An Ancient Sanskrit Mantra to Attain Sexual Pleasure for Men",
+   "subtitle": "",
+   "authors": [
+    "Rav Shiva"
+   ],
+   "subjects": [
+    "sanskrit-mantras",
+    "tantra"
+   ],
+   "tradition": [
+    "hindu"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied",
+    "series is spelled 'Mantras Series' on the website"
+   ],
+   "series": {
+    "name": "Forbidden Mantras Series"
+   },
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "rav-shiva"
+   ]
+  },
+  {
+   "id": "brahmastra",
+   "slug": "brahmastra",
+   "title": "Brahmastra",
+   "subtitle": "Weapon of God",
+   "authors": [
+    "Rav Shiva"
+   ],
+   "subjects": [
+    "sanskrit-mantras",
+    "hinduism"
+   ],
+   "tradition": [
+    "hindu"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied",
+    "catalogue already has 'Weapons of the Gods' (Brahmastra artwork); the owner must confirm whether these are the same book or two books"
+   ],
+   "series": {
+    "name": "Forbidden Mantra Series"
+   },
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "rav-shiva"
+   ]
+  },
+  {
+   "id": "forbidden-fruit",
+   "slug": "forbidden-fruit",
+   "title": "Forbidden Fruit",
+   "subtitle": "Top 5 Herbs To Treat Erectile Dysfunction",
+   "authors": [
+    "Rav Shiva"
+   ],
+   "subjects": [
+    "holistic-traditions"
+   ],
+   "tradition": [],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied",
+    "health topic: owner to confirm department placement"
+   ],
+   "series": {
+    "name": "Forbidden Mantra Series"
+   },
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "rav-shiva"
+   ]
+  },
+  {
+   "id": "forbidden-practices",
+   "slug": "forbidden-practices",
+   "title": "Forbidden Practices",
+   "subtitle": "Increase the size and stamina of your manhood",
+   "authors": [
+    "Rav Shiva"
+   ],
+   "subjects": [
+    "tantra",
+    "holistic-traditions"
+   ],
+   "tradition": [
+    "tantric"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied",
+    "health topic: owner to confirm department placement"
+   ],
+   "series": {
+    "name": "Forbidden Practices Series"
+   },
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "rav-shiva"
+   ]
+  },
+  {
+   "id": "have-sex-like-a-god",
+   "slug": "have-sex-like-a-god",
+   "title": "Have Sex Like A God",
+   "subtitle": "Kundalini Awakening Instruction Manual",
+   "authors": [
+    "Rav Shiva"
+   ],
+   "subjects": [
+    "tantra",
+    "subtle-body"
+   ],
+   "tradition": [
+    "tantric"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied"
+   ],
+   "series": {
+    "name": "Forbidden Mantra Series"
+   },
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "rav-shiva"
+   ]
+  },
+  {
+   "id": "how-to-chant-the-gayatri-mantra",
+   "slug": "how-to-chant-the-gayatri-mantra",
+   "title": "How to Chant the Gayatri Mantra",
+   "subtitle": "",
+   "authors": [
+    "Rav Shiva"
+   ],
+   "subjects": [
+    "sanskrit-mantras",
+    "hinduism"
+   ],
+   "tradition": [
+    "hindu"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied"
+   ],
+   "series": {
+    "name": "Forbidden Mantra Series"
+   },
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "rav-shiva"
+   ]
+  },
+  {
+   "id": "kama-sutra-sexual-yoga-with-a-partner",
+   "slug": "kama-sutra-sexual-yoga-with-a-partner",
+   "title": "Kama Sutra - Sexual Yoga with a Partner",
+   "subtitle": "",
+   "authors": [
+    "Rav Shiva"
+   ],
+   "subjects": [
+    "tantra",
+    "yoga"
+   ],
+   "tradition": [
+    "tantric"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied"
+   ],
+   "series": {
+    "name": "Forbidden Mantra Series"
+   },
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "rav-shiva"
+   ]
+  },
+  {
+   "id": "kamdev-gayatri-mantra",
+   "slug": "kamdev-gayatri-mantra",
+   "title": "Kamdev Gayatri Mantra",
+   "subtitle": "An Instructional Manual",
+   "authors": [
+    "Rav Shiva"
+   ],
+   "subjects": [
+    "sanskrit-mantras",
+    "hinduism"
+   ],
+   "tradition": [
+    "hindu"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied"
+   ],
+   "series": {
+    "name": "Forbidden Mantra Series"
+   },
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "rav-shiva"
+   ]
+  },
+  {
+   "id": "lakshmi-mantra-for-the-pleasure-of-wealth-and-abundance",
+   "slug": "lakshmi-mantra-for-the-pleasure-of-wealth-and-abundance",
+   "title": "Lakshmi Mantra for the Pleasure of Wealth & Abundance",
+   "subtitle": "",
+   "authors": [
+    "Rav Shiva"
+   ],
+   "subjects": [
+    "sanskrit-mantras",
+    "hinduism"
+   ],
+   "tradition": [
+    "hindu"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied"
+   ],
+   "series": {
+    "name": "Forbidden Mantra Series"
+   },
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "rav-shiva"
+   ]
+  },
+  {
+   "id": "maa-kali-mantra-for-success",
+   "slug": "maa-kali-mantra-for-success",
+   "title": "Maa Kali Mantra for Success",
+   "subtitle": "",
+   "authors": [
+    "Rav Shiva"
+   ],
+   "subjects": [
+    "sanskrit-mantras",
+    "hinduism"
+   ],
+   "tradition": [
+    "hindu"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied"
+   ],
+   "series": {
+    "name": "Forbidden Mantra Series"
+   },
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "rav-shiva"
+   ]
+  },
+  {
+   "id": "make-yourself-irresistible-to-anyone-with-kundalini-energy-and-cultivation",
+   "slug": "make-yourself-irresistible-to-anyone-with-kundalini-energy-and-cultivation",
+   "title": "Make Yourself Irresistible to Anyone with Kundalini Energy and Cultivation",
+   "subtitle": "",
+   "authors": [
+    "Rav Shiva"
+   ],
+   "subjects": [
+    "tantra",
+    "subtle-body"
+   ],
+   "tradition": [
+    "tantric"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied"
+   ],
+   "series": {
+    "name": "Forbidden Mantra Series"
+   },
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "rav-shiva"
+   ]
+  },
+  {
+   "id": "saraswati-mantra",
+   "slug": "saraswati-mantra",
+   "title": "Saraswati Mantra",
+   "subtitle": "Enhance Intelligence, Creativity and Knowledge",
+   "authors": [
+    "Rav Shiva"
+   ],
+   "subjects": [
+    "sanskrit-mantras",
+    "hinduism"
+   ],
+   "tradition": [
+    "hindu"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied"
+   ],
+   "series": {
+    "name": "Forbidden Mantra Series"
+   },
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "rav-shiva"
+   ]
+  },
+  {
+   "id": "shiva-mantra-for-purification-of-mind-body-and-soul",
+   "slug": "shiva-mantra-for-purification-of-mind-body-and-soul",
+   "title": "Shiva Mantra for Purification of Mind, Body & Soul",
+   "subtitle": "",
+   "authors": [
+    "Rav Shiva"
+   ],
+   "subjects": [
+    "sanskrit-mantras",
+    "hinduism"
+   ],
+   "tradition": [
+    "hindu"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied"
+   ],
+   "series": {
+    "name": "Forbidden Mantra Series"
+   },
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "rav-shiva"
+   ]
+  },
+  {
+   "id": "a-conversation-between-a-yogi-and-artificial-intelligence",
+   "slug": "a-conversation-between-a-yogi-and-artificial-intelligence",
+   "title": "A Conversation Between A Yogi & Artificial Intelligence",
+   "subtitle": "Are aliens already living on Earth?",
+   "authors": [
+    "Rav Shiva"
+   ],
+   "subjects": [
+    "consciousness",
+    "yoga"
+   ],
+   "tradition": [],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied"
+   ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "rav-shiva"
+   ]
+  },
+  {
+   "id": "a-conversation-between-a-yogi-and-artificial-intelligence-about-god-satan-and-technology",
+   "slug": "a-conversation-between-a-yogi-and-artificial-intelligence-about-god-satan-and-technology",
+   "title": "A Conversation between a Yogi and Artificial Intelligence about God, Satan & Technology",
+   "subtitle": "",
+   "authors": [
+    "Rav Shiva"
+   ],
+   "subjects": [
+    "consciousness",
+    "yoga"
+   ],
+   "tradition": [],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied"
+   ],
+   "series": {
+    "name": "The Singularity Series"
+   },
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "rav-shiva"
+   ]
+  },
+  {
+   "id": "kamdev-mantra-for-making-yourself-attractive",
+   "slug": "kamdev-mantra-for-making-yourself-attractive",
+   "title": "Kamdev Mantra for making yourself attractive",
+   "subtitle": "",
+   "authors": [
+    "Emily K Patel"
+   ],
+   "subjects": [
+    "sanskrit-mantras",
+    "tantra"
+   ],
+   "tradition": [
+    "hindu"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied"
+   ],
+   "series": {
+    "name": "Forbidden Mantra Series"
+   },
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "emily-k-patel"
+   ]
+  },
+  {
+   "id": "katyayani-mantra-for-removing-obstacles-and-delayed-marriages",
+   "slug": "katyayani-mantra-for-removing-obstacles-and-delayed-marriages",
+   "title": "Katyayani Mantra for Removing Obstacles and Delayed Marriages",
+   "subtitle": "",
+   "authors": [
+    "Emily K Patel"
+   ],
+   "subjects": [
+    "sanskrit-mantras",
+    "hinduism"
+   ],
+   "tradition": [
+    "hindu"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied"
+   ],
+   "series": {
+    "name": "Forbidden Mantra Series"
+   },
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "emily-k-patel"
+   ]
+  },
+  {
+   "id": "lakshmi-gayatri-mantra",
+   "slug": "lakshmi-gayatri-mantra",
+   "title": "Lakshmi Gayatri Mantra",
+   "subtitle": "",
+   "authors": [
+    "Emily K Patel"
+   ],
+   "subjects": [
+    "sanskrit-mantras",
+    "hinduism"
+   ],
+   "tradition": [
+    "hindu"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied",
+    "possibly the same book as the catalogue's 'Lakshmi Gayatri' (Forbidden Mantra Press); kept separate because the title, author and series differ"
+   ],
+   "series": {
+    "name": "Forbidden Mantra Series"
+   },
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "emily-k-patel"
+   ]
+  },
+  {
+   "id": "radiate-beauty-from-within",
+   "slug": "radiate-beauty-from-within",
+   "title": "Radiate Beauty from Within",
+   "subtitle": "Harnessing the Power of Chandra Mantra for All Genders and Ethnicities",
+   "authors": [
+    "Emily K Patel"
+   ],
+   "subjects": [
+    "sanskrit-mantras",
+    "hinduism"
+   ],
+   "tradition": [
+    "hindu"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied"
+   ],
+   "series": {
+    "name": "Forbidden Mantra Series"
+   },
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "emily-k-patel"
+   ]
+  },
+  {
+   "id": "the-power-of-sound",
+   "slug": "the-power-of-sound",
+   "title": "The Power of Sound",
+   "subtitle": "Exploring the Connection Between Mantra, Yoga, and Inner Awareness",
+   "authors": [
+    "Emily K Patel"
+   ],
+   "subjects": [
+    "sanskrit-mantras",
+    "yoga"
+   ],
+   "tradition": [
+    "hindu"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied"
+   ],
+   "series": {
+    "name": "Forbidden Mantra Series"
+   },
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "emily-k-patel"
+   ]
+  },
+  {
+   "id": "the-ultimate-guide-to-transforming-your-life",
+   "slug": "the-ultimate-guide-to-transforming-your-life",
+   "title": "The Ultimate Guide to Transforming Your Life",
+   "subtitle": "Unlocking the Power of the Amitabha Mantra",
+   "authors": [
+    "Emily K Patel"
+   ],
+   "subjects": [
+    "buddhism"
+   ],
+   "tradition": [
+    "buddhist"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied"
+   ],
+   "series": {
+    "name": "Buddhist Mantra Series"
+   },
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "emily-k-patel"
+   ]
+  },
+  {
+   "id": "a-comprehensive-guide-on-the-avalokitesvara-mantra",
+   "slug": "a-comprehensive-guide-on-the-avalokitesvara-mantra",
+   "title": "A Comprehensive Guide On The Avalokitesvara Mantra",
+   "subtitle": "",
+   "authors": [
+    "Emily K Patel"
+   ],
+   "subjects": [
+    "buddhism"
+   ],
+   "tradition": [
+    "buddhist"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied"
+   ],
+   "series": {
+    "name": "Buddhist Mantra Series"
+   },
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "emily-k-patel"
+   ]
+  },
+  {
+   "id": "unlocking-enlightenment",
+   "slug": "unlocking-enlightenment",
+   "title": "Unlocking Enlightenment",
+   "subtitle": "The Timeless Power of Nam-myoho-renge-kyo in a Modern World",
+   "authors": [
+    "Emily K Patel"
+   ],
+   "subjects": [
+    "buddhism"
+   ],
+   "tradition": [
+    "buddhist"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied"
+   ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "emily-k-patel"
+   ]
+  },
+  {
+   "id": "yoga-for-every-woman",
+   "slug": "yoga-for-every-woman",
+   "title": "Yoga for Every Woman",
+   "subtitle": "Unlock the Secrets to Vitality, Balance, and Inner Peace",
+   "authors": [
+    "Emily K Patel"
+   ],
+   "subjects": [
+    "yoga"
+   ],
+   "tradition": [
+    "hindu"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied",
+    "subtitle is longer on the website ('Tips for Incorporating Yoga into Your Daily Routine...'); only the legible part is recorded"
+   ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "emily-k-patel"
+   ]
+  },
+  {
+   "id": "mantra-of-vajrayogini",
+   "slug": "mantra-of-vajrayogini",
+   "title": "Mantra of Vajrayogini",
+   "subtitle": "A Practitioner's Guide to Wisdom and Transformation",
+   "authors": [
+    "Emily K Patel"
+   ],
+   "subjects": [
+    "buddhism"
+   ],
+   "tradition": [
+    "buddhist"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied"
+   ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "emily-k-patel"
+   ]
+  },
+  {
+   "id": "mantra-sound-vibrational-energy",
+   "slug": "mantra-sound-vibrational-energy",
+   "title": "Mantra Sound Vibrational Energy",
+   "subtitle": "Maha Mrityunjaya Mantra",
+   "authors": [
+    "Emily K Patel"
+   ],
+   "subjects": [
+    "sanskrit-mantras",
+    "hinduism"
+   ],
+   "tradition": [
+    "hindu"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied"
+   ],
+   "series": {
+    "name": "Forbidden Mantra Series"
+   },
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "emily-k-patel"
+   ]
+  },
+  {
+   "id": "chakra-mastery",
+   "slug": "chakra-mastery",
+   "title": "Chakra Mastery",
+   "subtitle": "A Spiritual Approach to Cultivating Positive Energies and Transforming Your Life",
+   "authors": [
+    "Emily K Patel"
+   ],
+   "subjects": [
+    "subtle-body",
+    "yoga"
+   ],
+   "tradition": [
+    "hindu"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied"
+   ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "emily-k-patel"
+   ]
+  },
+  {
+   "id": "sacred-union-in-tantra",
+   "slug": "sacred-union-in-tantra",
+   "title": "Sacred Union in Tantra",
+   "subtitle": "",
+   "authors": [
+    "Emily K Patel"
+   ],
+   "subjects": [
+    "tantra"
+   ],
+   "tradition": [
+    "tantric"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied"
+   ],
+   "series": {
+    "name": "Forbidden Mantra Series"
+   },
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "emily-k-patel"
+   ]
+  },
+  {
+   "id": "the-ancient-science-of-kundalini-energy-revealed",
+   "slug": "the-ancient-science-of-kundalini-energy-revealed",
+   "title": "The Ancient Science of Kundalini Energy Revealed",
+   "subtitle": "Mastery of Sexual Energy and Psychic Abilities",
+   "authors": [
+    "Emily K Patel"
+   ],
+   "subjects": [
+    "tantra",
+    "subtle-body"
+   ],
+   "tradition": [
+    "tantric"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied"
+   ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "emily-k-patel"
+   ]
+  },
+  {
+   "id": "ancient-breathing-techniques-that-will-revitalize-you",
+   "slug": "ancient-breathing-techniques-that-will-revitalize-you",
+   "title": "Ancient Breathing Techniques that will revitalize you",
+   "subtitle": "",
+   "authors": [
+    "Emily K Patel"
+   ],
+   "subjects": [
+    "subtle-body",
+    "mind-body"
+   ],
+   "tradition": [],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied",
+    "possibly an English edition of the Tummo book listed below; owner to confirm"
+   ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "emily-k-patel"
+   ]
+  },
+  {
+   "id": "miracles-of-the-masters-of-yoga",
+   "slug": "miracles-of-the-masters-of-yoga",
+   "title": "Miracles of the Masters of Yoga",
+   "subtitle": "Siddhis- Super Powers",
+   "authors": [
+    "Emily K Patel"
+   ],
+   "subjects": [
+    "yoga",
+    "hinduism"
+   ],
+   "tradition": [
+    "hindu"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    },
+    {
+     "format": "ebook",
+     "language": "es",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "es edition listed on the owner's website; format, ASIN and date not recovered.",
+     "title": "Milagros de los Maestros del Yoga",
+     "sources": [
+      {
+       "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+       "url": "https://www.forbiddenmantra.com/",
+       "accessed": "2026-10-28",
+       "supports": "title, author, series and language as shown on the owner's website"
+      }
+     ],
+     "id": "ed2",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied"
+   ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "emily-k-patel"
+   ]
+  },
+  {
+   "id": "unleashing-the-inner-fire",
+   "slug": "unleashing-the-inner-fire",
+   "title": "Unleashing the Inner Fire",
+   "subtitle": "The Ancient Art of Tummo Breathwork for Radical Transformation",
+   "authors": [
+    "Emily K Patel"
+   ],
+   "subjects": [
+    "subtle-body",
+    "buddhism"
+   ],
+   "tradition": [
+    "buddhist"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "English Kindle edition seen in an owner screenshot of its Amazon page (Breath Mastery Series Book 3); ASIN and date not recovered.",
+     "id": "ed1",
+     "isbn10": null
+    },
+    {
+     "format": "ebook",
+     "language": "de",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "de edition listed on the owner's website; format, ASIN and date not recovered.",
+     "title": "Das innere Feuer entfesseln",
+     "subtitle": "Die alte Kunst der Tummo-Atemarbeit für radikale Transformation",
+     "sources": [
+      {
+       "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+       "url": "https://www.forbiddenmantra.com/",
+       "accessed": "2026-10-28",
+       "supports": "title, author, series and language as shown on the owner's website"
+      }
+     ],
+     "id": "ed2",
+     "isbn10": null
+    },
+    {
+     "format": "ebook",
+     "language": "es",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "es edition listed on the owner's website; format, ASIN and date not recovered.",
+     "title": "Desatando el fuego interior",
+     "subtitle": "el antiguo arte de la respiración Tummo para una transformación radical",
+     "sources": [
+      {
+       "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+       "url": "https://www.forbiddenmantra.com/",
+       "accessed": "2026-10-28",
+       "supports": "title, author, series and language as shown on the owner's website"
+      }
+     ],
+     "id": "ed3",
+     "isbn10": null
+    },
+    {
+     "format": "ebook",
+     "language": "fr",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "fr edition listed on the owner's website; format, ASIN and date not recovered.",
+     "title": "Libérer le feu intérieur",
+     "subtitle": "l'art ancien de la respiration Tummo pour une transformation radicale",
+     "sources": [
+      {
+       "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+       "url": "https://www.forbiddenmantra.com/",
+       "accessed": "2026-10-28",
+       "supports": "title, author, series and language as shown on the owner's website"
+      }
+     ],
+     "id": "ed4",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied",
+    "Amazon title in the owner's screenshot ends 'Radical Transformation (Breath Mastery Series Book 3)'"
+   ],
+   "series": {
+    "name": "Breath Mastery Series"
+   },
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "emily-k-patel"
+   ]
+  },
+  {
+   "id": "beyond-sex",
+   "slug": "beyond-sex",
+   "title": "Beyond Sex",
+   "subtitle": "Exploring the Spiritual Dimensions of Tantra",
+   "authors": [
+    "Emily K Patel"
+   ],
+   "subjects": [
+    "tantra"
+   ],
+   "tradition": [
+    "tantric"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Two English entries (one with the 'How To Series' suffix) appear on the website; shown here as one edition until the owner confirms.",
+     "id": "ed1",
+     "isbn10": null
+    },
+    {
+     "format": "ebook",
+     "language": "nl",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "nl edition listed on the owner's website; format, ASIN and date not recovered.",
+     "title": "Beyond Sex",
+     "subtitle": "de spirituele dimensies van Tantra verkennen",
+     "sources": [
+      {
+       "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+       "url": "https://www.forbiddenmantra.com/",
+       "accessed": "2026-10-28",
+       "supports": "title, author, series and language as shown on the owner's website"
+      }
+     ],
+     "id": "ed2",
+     "isbn10": null
+    },
+    {
+     "format": "ebook",
+     "language": "es",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "es edition listed on the owner's website; format, ASIN and date not recovered.",
+     "title": "Más allá del sexo",
+     "subtitle": "explorando las dimensiones espirituales del tantra",
+     "sources": [
+      {
+       "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+       "url": "https://www.forbiddenmantra.com/",
+       "accessed": "2026-10-28",
+       "supports": "title, author, series and language as shown on the owner's website"
+      }
+     ],
+     "id": "ed3",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied",
+    "the Spanish listing may be a separate book; owner to confirm"
+   ],
+   "series": {
+    "name": "How To Series"
+   },
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "emily-k-patel"
+   ]
+  },
+  {
+   "id": "edenic-origins",
+   "slug": "edenic-origins",
+   "title": "Edenic Origins",
+   "subtitle": "The Sacred Roots of Veganism",
+   "authors": [
+    "Emily K Patel"
+   ],
+   "subjects": [
+    "holistic-traditions",
+    "comparative-religion"
+   ],
+   "tradition": [],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    },
+    {
+     "format": "ebook",
+     "language": "de",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "de edition listed on the owner's website; format, ASIN and date not recovered.",
+     "title": "Edenic Origins",
+     "subtitle": "Die heiligen Wurzeln des Veganismus",
+     "sources": [
+      {
+       "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+       "url": "https://www.forbiddenmantra.com/",
+       "accessed": "2026-10-28",
+       "supports": "title, author, series and language as shown on the owner's website"
+      }
+     ],
+     "id": "ed2",
+     "isbn10": null
+    },
+    {
+     "format": "ebook",
+     "language": "es",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "es edition listed on the owner's website; format, ASIN and date not recovered.",
+     "title": "Orígenes edénicos",
+     "subtitle": "las raíces sagradas del veganismo",
+     "sources": [
+      {
+       "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+       "url": "https://www.forbiddenmantra.com/",
+       "accessed": "2026-10-28",
+       "supports": "title, author, series and language as shown on the owner's website"
+      }
+     ],
+     "id": "ed3",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied"
+   ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "emily-k-patel"
+   ]
+  },
+  {
+   "id": "gnostic-gospels-and-the-hidden-christ",
+   "slug": "gnostic-gospels-and-the-hidden-christ",
+   "title": "Gnostic Gospels and the Hidden Christ",
+   "subtitle": "",
+   "authors": [
+    "Emily K Patel"
+   ],
+   "subjects": [
+    "gnosticism"
+   ],
+   "tradition": [
+    "gnostic"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied"
+   ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "emily-k-patel"
+   ]
+  },
+  {
+   "id": "lost-wisdom",
+   "slug": "lost-wisdom",
+   "title": "Lost Wisdom",
+   "subtitle": "The Mysterious Gospel of Thomas and the Secrets of Early Christianity",
+   "authors": [
+    "Emily K Patel"
+   ],
+   "subjects": [
+    "gnosticism"
+   ],
+   "tradition": [
+    "gnostic"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied",
+    "series inferred from the cover wording 'Nag Hammadi'; confirm"
+   ],
+   "series": {
+    "name": "Nag Hammadi Series"
+   },
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "emily-k-patel"
+   ]
+  },
+  {
+   "id": "revelations-of-mary",
+   "slug": "revelations-of-mary",
+   "title": "Revelations of Mary",
+   "subtitle": "A Journey to Spiritual Enlightenment and Liberation",
+   "authors": [
+    "Emily K Patel"
+   ],
+   "subjects": [
+    "gnosticism"
+   ],
+   "tradition": [
+    "gnostic"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied",
+    "cover reads 'Gospel of Mary'"
+   ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "emily-k-patel"
+   ]
+  },
+  {
+   "id": "quotes-of-yeshua-the-christ",
+   "slug": "quotes-of-yeshua-the-christ",
+   "title": "Quotes of Yeshua The Christ",
+   "subtitle": "",
+   "authors": [
+    "Emily K Patel"
+   ],
+   "subjects": [
+    "christian-mysticism"
+   ],
+   "tradition": [
+    "christian"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied"
+   ],
+   "series": {
+    "name": "Forbidden Mantra Series"
+   },
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "emily-k-patel"
+   ]
+  },
+  {
+   "id": "the-acts-of-peter-and-the-twelve-apostles",
+   "slug": "the-acts-of-peter-and-the-twelve-apostles",
+   "title": "The Acts of Peter and the Twelve Apostles",
+   "subtitle": "",
+   "authors": [
+    "Emily K Patel"
+   ],
+   "subjects": [
+    "gnosticism"
+   ],
+   "tradition": [
+    "gnostic"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied"
+   ],
+   "series": {
+    "name": "Nag Hammadi Series"
+   },
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "emily-k-patel"
+   ]
+  },
+  {
+   "id": "the-apocalypse-of-eve",
+   "slug": "the-apocalypse-of-eve",
+   "title": "The Apocalypse of Eve",
+   "subtitle": "Forbidden Feminine Wisdom from Ancient Gnostic Texts",
+   "authors": [
+    "Emily K Patel"
+   ],
+   "subjects": [
+    "gnosticism"
+   ],
+   "tradition": [
+    "gnostic"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied"
+   ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "emily-k-patel"
+   ]
+  },
+  {
+   "id": "the-apocalypse-of-peter",
+   "slug": "the-apocalypse-of-peter",
+   "title": "The Apocalypse of Peter",
+   "subtitle": "Visions of Judgment, Mercy, and the Forgotten Afterlife",
+   "authors": [
+    "Emily K Patel"
+   ],
+   "subjects": [
+    "gnosticism"
+   ],
+   "tradition": [
+    "gnostic"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied",
+    "the subtitle continues on the website ('An Ancient Christian Vision of Heaven, Hell, and Divine Mercy Suppressed by the Early Church'); only the legible part is recorded"
+   ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "emily-k-patel"
+   ]
+  },
+  {
+   "id": "the-apocryphon-of-john",
+   "slug": "the-apocryphon-of-john",
+   "title": "The Apocryphon of John",
+   "subtitle": "",
+   "authors": [
+    "Emily K Patel"
+   ],
+   "subjects": [
+    "gnosticism"
+   ],
+   "tradition": [
+    "gnostic"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied",
+    "series inferred from the cover wording 'Nag Hammadi'; confirm"
+   ],
+   "series": {
+    "name": "Nag Hammadi Series"
+   },
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "emily-k-patel"
+   ]
+  },
+  {
+   "id": "the-apocrypha-the-book-of-esdras",
+   "slug": "the-apocrypha-the-book-of-esdras",
+   "title": "The Apocrypha - The Book of Esdras",
+   "subtitle": "",
+   "authors": [
+    "Emily K Patel"
+   ],
+   "subjects": [
+    "ancient-texts",
+    "christian-mysticism"
+   ],
+   "tradition": [
+    "christian"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied"
+   ],
+   "series": {
+    "name": "Forbidden Christian Books"
+   },
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "emily-k-patel"
+   ]
+  },
+  {
+   "id": "the-apocrypha-additions-to-esther",
+   "slug": "the-apocrypha-additions-to-esther",
+   "title": "The Apocrypha - Additions to Esther",
+   "subtitle": "",
+   "authors": [
+    "Emily K Patel"
+   ],
+   "subjects": [
+    "ancient-texts",
+    "christian-mysticism"
+   ],
+   "tradition": [
+    "christian"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied"
+   ],
+   "series": {
+    "name": "Forbidden Christian Books"
+   },
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "emily-k-patel"
+   ]
+  },
+  {
+   "id": "from-the-apocrypha-the-book-of-maccabees",
+   "slug": "from-the-apocrypha-the-book-of-maccabees",
+   "title": "From the Apocrypha - The Book of Maccabees",
+   "subtitle": "",
+   "authors": [
+    "Emily K Patel"
+   ],
+   "subjects": [
+    "ancient-texts",
+    "christian-mysticism"
+   ],
+   "tradition": [
+    "christian"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied"
+   ],
+   "series": {
+    "name": "Forbidden Christian Books"
+   },
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "emily-k-patel"
+   ]
+  },
+  {
+   "id": "apocalypse-of-adam-part-ii",
+   "slug": "apocalypse-of-adam-part-ii",
+   "title": "Apocalypse of Adam: Part II",
+   "subtitle": "The War of the Archons",
+   "authors": [
+    "Emily K Patel"
+   ],
+   "subjects": [
+    "gnosticism"
+   ],
+   "tradition": [
+    "gnostic"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied",
+    "catalogue's 'The Apocalypse of Adam' is a different title (Part I)"
+   ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "emily-k-patel"
+   ]
+  },
+  {
+   "id": "archons-unveiled",
+   "slug": "archons-unveiled",
+   "title": "Archons Unveiled",
+   "subtitle": "The Non-Human Manipulation of Human Consciousness",
+   "authors": [
+    "TSP Ravshiva"
+   ],
+   "subjects": [
+    "gnosticism"
+   ],
+   "tradition": [
+    "gnostic"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied",
+    "byline reads 'TSPRavshiva' and a longer second line on the website that is not legible"
+   ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "tsp-ravshiva"
+   ]
+  },
+  {
+   "id": "archons-unveiled-ii",
+   "slug": "archons-unveiled-ii",
+   "title": "Archons Unveiled II",
+   "subtitle": "Multiphasic Precognition of Reality",
+   "authors": [
+    "TSP Ravshiva"
+   ],
+   "subjects": [
+    "gnosticism"
+   ],
+   "tradition": [
+    "gnostic"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied",
+    "byline reads 'TSPRavshiva' and a longer second line on the website that is not legible"
+   ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "tsp-ravshiva"
+   ]
+  },
+  {
+   "id": "archons-unveiled-iii",
+   "slug": "archons-unveiled-iii",
+   "title": "Archons Unveiled III",
+   "subtitle": "The Code of Immortality",
+   "authors": [
+    "TSP Ravshiva"
+   ],
+   "subjects": [
+    "gnosticism"
+   ],
+   "tradition": [
+    "gnostic"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied",
+    "byline reads 'TSPRavshiva' and a longer second line on the website that is not legible"
+   ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "tsp-ravshiva"
+   ]
+  },
+  {
+   "id": "archons-unveiled-part-4",
+   "slug": "archons-unveiled-part-4",
+   "title": "Archons Unveiled: Part 4",
+   "subtitle": "The Transformation",
+   "authors": [
+    "TSP Ravshiva"
+   ],
+   "subjects": [
+    "gnosticism"
+   ],
+   "tradition": [
+    "gnostic"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied",
+    "byline reads 'TSPRavshiva' and a longer second line on the website that is not legible"
+   ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "tsp-ravshiva"
+   ]
+  },
+  {
+   "id": "how-to-stop-overthinking-at-night",
+   "slug": "how-to-stop-overthinking-at-night",
+   "title": "How to Stop Overthinking at Night",
+   "subtitle": "A Simple Guide to Quiet Your Mind and Finally Fall Asleep",
+   "authors": [
+    "TSP Ravshiva"
+   ],
+   "subjects": [
+    "sleep-stress",
+    "mindfulness"
+   ],
+   "tradition": [],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied"
+   ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "tsp-ravshiva"
+   ]
+  },
+  {
+   "id": "how-to-stop-overthinking-right-now",
+   "slug": "how-to-stop-overthinking-right-now",
+   "title": "How to Stop Overthinking Right Now",
+   "subtitle": "A Simple, Proven System to Calm Your Mind and Take Back Control",
+   "authors": [
+    "TSP Ravshiva"
+   ],
+   "subjects": [
+    "sleep-stress",
+    "mindfulness"
+   ],
+   "tradition": [],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied"
+   ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "tsp-ravshiva"
+   ]
+  },
+  {
+   "id": "siddhis-the-non-locality-of-consciousness",
+   "slug": "siddhis-the-non-locality-of-consciousness",
+   "title": "Siddhis: The Non-Locality of Consciousness",
+   "subtitle": "",
+   "authors": [
+    "TSP Ravshiva"
+   ],
+   "subjects": [
+    "consciousness",
+    "yoga"
+   ],
+   "tradition": [
+    "hindu"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied",
+    "separate from 'Siddhis: Unlocking the Divine Powers Within' (Emily K Patel)"
+   ],
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "tsp-ravshiva"
+   ]
+  },
+  {
+   "id": "mo-pai-and-internal-alchemy",
+   "slug": "mo-pai-and-internal-alchemy",
+   "title": "Mo Pai and Internal Alchemy",
+   "subtitle": "The Physiology, Polarity, and Power Mechanics Behind Human Energy Cultivation",
+   "authors": [
+    "Emily K Patel"
+   ],
+   "subjects": [
+    "mo-pai",
+    "neigong"
+   ],
+   "tradition": [
+    "chinese-internal-arts"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "Listed on the owner's website with a View on Amazon link; format (shown as ebook), ASIN and publication date have not been recovered.",
+     "id": "ed1",
+     "isbn10": null
+    },
+    {
+     "format": "ebook",
+     "language": "es",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false,
+     "note": "es edition listed on the owner's website; format, ASIN and date not recovered.",
+     "title": "La mecánica interna del cultivo de la energía",
+     "sources": [
+      {
+       "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+       "url": "https://www.forbiddenmantra.com/",
+       "accessed": "2026-10-28",
+       "supports": "title, author, series and language as shown on the owner's website"
+      }
+     ],
+     "id": "ed2",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner's existing Forbidden Mantra Press website, listing screenshot supplied 2026-10-28",
+     "url": "https://www.forbiddenmantra.com/",
+     "accessed": "2026-10-28",
+     "supports": "title, author, series and language as shown on the owner's website"
+    }
+   ],
+   "claims": [],
+   "reviewFlags": [
+    "listed on the owner's website; title text transcribed from a screenshot, check exact wording",
+    "format (ebook), ASIN/ISBN and publication date not recovered",
+    "publisher attribution is owner-supplied",
+    "the Spanish title 'La mecánica interna del cultivo de la energía' may belong to this book or another Mo Pai title; owner to confirm"
    ],
    "provenance": {
     "tier": "hand-verified"
@@ -15032,7 +18705,39 @@
     "siddhis",
     "the-gospel-of-magdalene",
     "mo-pai-exposed",
-    "energy-unleashed"
+    "energy-unleashed",
+    "kamdev-mantra-for-making-yourself-attractive",
+    "katyayani-mantra-for-removing-obstacles-and-delayed-marriages",
+    "lakshmi-gayatri-mantra",
+    "radiate-beauty-from-within",
+    "the-power-of-sound",
+    "the-ultimate-guide-to-transforming-your-life",
+    "a-comprehensive-guide-on-the-avalokitesvara-mantra",
+    "unlocking-enlightenment",
+    "yoga-for-every-woman",
+    "mantra-of-vajrayogini",
+    "mantra-sound-vibrational-energy",
+    "chakra-mastery",
+    "sacred-union-in-tantra",
+    "the-ancient-science-of-kundalini-energy-revealed",
+    "ancient-breathing-techniques-that-will-revitalize-you",
+    "miracles-of-the-masters-of-yoga",
+    "unleashing-the-inner-fire",
+    "beyond-sex",
+    "edenic-origins",
+    "gnostic-gospels-and-the-hidden-christ",
+    "lost-wisdom",
+    "revelations-of-mary",
+    "quotes-of-yeshua-the-christ",
+    "the-acts-of-peter-and-the-twelve-apostles",
+    "the-apocalypse-of-eve",
+    "the-apocalypse-of-peter",
+    "the-apocryphon-of-john",
+    "the-apocrypha-the-book-of-esdras",
+    "the-apocrypha-additions-to-esther",
+    "from-the-apocrypha-the-book-of-maccabees",
+    "apocalypse-of-adam-part-ii",
+    "mo-pai-and-internal-alchemy"
    ]
   },
   {
@@ -15097,7 +18802,14 @@
    "sortName": "Ravshiva, TSP",
    "bio": null,
    "workIds": [
-    "the-gospel-of-magdalene"
+    "the-gospel-of-magdalene",
+    "archons-unveiled",
+    "archons-unveiled-ii",
+    "archons-unveiled-iii",
+    "archons-unveiled-part-4",
+    "how-to-stop-overthinking-at-night",
+    "how-to-stop-overthinking-right-now",
+    "siddhis-the-non-locality-of-consciousness"
    ]
   },
   {
@@ -15208,6 +18920,33 @@
    "bio": "English novelist, author of Frankenstein.",
    "workIds": [
     "frankenstein"
+   ]
+  },
+  {
+   "id": "rav-shiva",
+   "name": "Rav Shiva",
+   "sortName": "Shiva, Rav",
+   "bio": null,
+   "workIds": [
+    "the-hanuman-mantra",
+    "the-maha-mrityunjaya-mantra",
+    "mantra-magic",
+    "an-ancient-mantra-for-getting-the-girl-you-want-to-love-you",
+    "an-ancient-sanskrit-mantra-to-attain-sexual-pleasure-for-men",
+    "brahmastra",
+    "forbidden-fruit",
+    "forbidden-practices",
+    "have-sex-like-a-god",
+    "how-to-chant-the-gayatri-mantra",
+    "kama-sutra-sexual-yoga-with-a-partner",
+    "kamdev-gayatri-mantra",
+    "lakshmi-mantra-for-the-pleasure-of-wealth-and-abundance",
+    "maa-kali-mantra-for-success",
+    "make-yourself-irresistible-to-anyone-with-kundalini-energy-and-cultivation",
+    "saraswati-mantra",
+    "shiva-mantra-for-purification-of-mind-body-and-soul",
+    "a-conversation-between-a-yogi-and-artificial-intelligence",
+    "a-conversation-between-a-yogi-and-artificial-intelligence-about-god-satan-and-technology"
    ]
   },
   {

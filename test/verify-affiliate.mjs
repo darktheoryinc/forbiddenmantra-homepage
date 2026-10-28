@@ -14,7 +14,7 @@ const J = (p) => JSON.parse(fs.readFileSync(path.join(ROOT, p), 'utf8'));
 const cfg = J('config/site.json'), cat = J('data/catalogue.json');
 const run = (script, env = {}, args = []) => spawnSync('node', [path.join(ROOT, script), ...args], { cwd: ROOT, env: { ...process.env, ...env }, encoding: 'utf8' });
 const htmls = (base) => { const o = []; (function w(d) { for (const e of fs.readdirSync(d, { withFileTypes: true })) e.isDirectory() ? w(path.join(d, e.name)) : e.name.endsWith('.html') && o.push(path.join(d, e.name)); })(base); return o; };
-const dec = (s) => s.replace(/&amp;/g, '&');
+const dec = (s) => s.replace(/&#(\d+);/g, (_, n) => String.fromCharCode(+n)).replace(/&#x([0-9a-f]+);/gi, (_, n) => String.fromCharCode(parseInt(n, 16))).replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&'); // HTML attribute decoding, as a browser does
 
 // ===== configuration =====
 const mk = cfg.affiliate.marketplaces;
@@ -27,7 +27,7 @@ ok(/^As an Amazon Associate I earn from qualifying purchases\./.test(cfg.disclos
 let r = run('scripts/audit-affiliate.mjs', {}, ['--json']); const audit = JSON.parse(r.stdout).summary;
 ok(r.status === 0 && audit.linkErrors === 0, `audit: ${audit.purchaseLinks} purchase links, ${audit.linkErrors} errors`);
 ok(audit.worksWithValidTaggedProductLink + audit.worksWithSearchLinkOnly + audit.worksWithNoPurchaseLink === cat.works.length, `audit: every one of ${cat.works.length} works is accounted for (valid ${audit.worksWithValidTaggedProductLink}, search-only ${audit.worksWithSearchLinkOnly}, none ${audit.worksWithNoPurchaseLink})`);
-ok(audit.worksWithValidTaggedProductLink >= 43 && audit.ofWhichSourceVerified >= 2 && audit.ofWhichSourceVerified + audit.ofWhichIdentityVerifiedOffline === audit.worksWithValidTaggedProductLink && cat.works.filter((w) => w.press).length === 18, `audit: ${audit.worksWithValidTaggedProductLink} works have a tagged product link (${audit.ofWhichSourceVerified} product page seen in a cited source, ${audit.ofWhichIdentityVerifiedOffline} matched offline to their own ISBN-10); ${audit.worksWithSearchLinkOnly} have only a labelled search link`);
+ok(audit.worksWithValidTaggedProductLink >= 43 && audit.ofWhichSourceVerified >= 2 && audit.ofWhichSourceVerified + audit.ofWhichIdentityVerifiedOffline === audit.worksWithValidTaggedProductLink && cat.works.filter((w) => w.press).length >= 18, `audit: ${audit.worksWithValidTaggedProductLink} works have a tagged product link (${audit.ofWhichSourceVerified} product page seen in a cited source, ${audit.ofWhichIdentityVerifiedOffline} matched offline to their own ISBN-10); ${audit.worksWithSearchLinkOnly} have only a labelled search link`);
 
 // ===== every page: tag only on amazon.com, always ours =====
 let amazonLinks = 0, taggedCom = 0, badTag = [], foreignTag = [];

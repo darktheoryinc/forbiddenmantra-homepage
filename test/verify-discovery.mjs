@@ -21,7 +21,7 @@ ok(new Set(isbns).size === isbns.length, `no ISBN appears twice (${isbns.length}
 ok(tax.hubs.some((h) => h.id === 'fantasy-folklore-fiction') && ['fantasy', 'supernatural-fiction', 'folklore-fairy-tales', 'philosophy'].every((d) => tax.departments.some((x) => x.id === d)), 'new hub and departments exist (fantasy, supernatural & gothic fiction, folklore, philosophy)');
 const per = (d) => cat.works.filter((w) => w.subjects.includes(d)).length;
 ok(['fantasy', 'supernatural-fiction', 'folklore-fairy-tales', 'philosophy'].every((d) => per(d) >= 3), `new departments are populated: fantasy ${per('fantasy')}, supernatural ${per('supernatural-fiction')}, folklore ${per('folklore-fairy-tales')}, philosophy ${per('philosophy')}`);
-ok(cat.works.filter((w) => w.press).length === 18 && ['the-apocalypse-of-adam', 'mo-pai-nei-kung', 'kebra-nagast', 'forbidden-mantra'].every((id) => byId.has(id)), 'all 12 original Forbidden Mantra Press records are preserved (18 press titles now)');
+ok(cat.works.filter((w) => w.press).length >= 18 && ['the-apocalypse-of-adam', 'mo-pai-nei-kung', 'kebra-nagast', 'forbidden-mantra'].every((id) => byId.has(id)), 'all 12 original Forbidden Mantra Press records are preserved (press titles have only grown)');
 ok(['the-power-of-now', 'when-things-fall-apart', 'the-gnostic-gospels', 'seventy-eight-degrees-of-wisdom'].every((id) => byId.has(id)), 'the original 11 outside-author records are preserved');
 const hp = byId.get('harry-potter-and-the-philosophers-stone');
 ok(hp && hp.editions.length === 2 && hp.editions[0].title === "Harry Potter and the Sorcerer's Stone" && hp.editions[1].marketplace === 'amazon.co.uk', 'Harry Potter: one work, US and UK editions with their own titles, ISBNs and marketplaces');

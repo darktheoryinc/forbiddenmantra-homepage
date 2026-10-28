@@ -1,0 +1,21 @@
+{
+  "_doc": "Homepage highlight shelves for Forbidden Mantra Press titles. 'featured' orders the first shelf (the rest follow, books with real covers first). 'bestsellerEvidence' lists works for which the owner has supplied actual sales evidence; ONLY those show a 'Bestseller' label, everything else is labelled 'Featured'. No rankings or sales figures are stored or invented here.",
+  "featured": [
+    "the-apocalypse-of-adam",
+    "mo-pai-the-destructive-and-healing-force-within",
+    "mo-pai-exposed",
+    "energy-unleashed",
+    "mo-pai-and-internal-alchemy"
+  ],
+  "bestsellerEvidence": [],
+  "moPai": {
+    "subject": "mo-pai",
+    "order": [
+      "mo-pai-the-destructive-and-healing-force-within",
+      "mo-pai-exposed",
+      "energy-unleashed",
+      "mo-pai-and-internal-alchemy",
+      "mo-pai-nei-kung"
+    ]
+  }
+}

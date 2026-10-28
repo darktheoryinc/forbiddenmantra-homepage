@@ -455,3 +455,26 @@ a.io-tile-img:hover,a.io-tile-img:focus-visible{outline:3px solid #fff;outline-o
 .niche-shelf .card-buy{margin-top:8px}
 @media(max-width:520px){.btn-buy{max-width:none}}
 @media(max-width:520px){.btn-buy{font-size:12px;letter-spacing:.06em;padding:8px 6px;white-space:nowrap}}
+/* dense bookshelf (owner-approved): seven covers per row on wide screens, compact cards, long titles clamped */
+.grid{grid-template-columns:repeat(7,minmax(0,1fr));gap:22px 14px}
+.grid .card{gap:7px;min-width:0}
+.grid .card-body{display:flex;flex-direction:column;gap:2px;min-width:0}
+.grid .card-title{font-size:13px;line-height:1.3;margin:0;overflow-wrap:anywhere;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;line-clamp:3;overflow:hidden}
+.grid .card-sub{display:none}
+.grid .card-author{font-size:12px;line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.grid .card-meta{font-size:11px;line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.grid .badge-fmp{font-size:9px;padding:2px 6px;align-self:flex-start;max-width:100%}
+.grid .cover{padding:10px 8px}
+.grid .cover-title{font-size:12px;line-height:1.25;margin-top:8%}
+.grid .cover-author{font-size:8px;letter-spacing:.1em}
+.grid .card-buy{margin-top:6px}
+.grid .btn-buy{min-height:40px;font-size:11px;letter-spacing:.04em;padding:6px 8px;max-width:none}
+@media(max-width:1099px){.grid{grid-template-columns:repeat(6,minmax(0,1fr))}}
+@media(max-width:899px){.grid{grid-template-columns:repeat(5,minmax(0,1fr))}}
+@media(max-width:719px){.grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:18px 12px}}
+@media(max-width:559px){.grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px 10px}.grid .card-title{font-size:12px}.grid .card-author{font-size:11px}.grid .btn-buy{font-size:10px;letter-spacing:0;padding:6px 4px}}
+@media(max-width:429px){.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 12px}.grid .card-title{font-size:13px}.grid .card-meta{font-size:11px}}
+.grid .badge-fmp{font-size:8.5px;letter-spacing:.04em;padding:2px 5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+[data-home="fmp"] .grid .badge-fmp{display:none}
+.grid .badge-tag{font-size:8.5px;letter-spacing:.06em;padding:2px 5px;margin-bottom:3px;align-self:flex-start;white-space:nowrap}
+.grid .badge-tag+.badge-fmp{display:none}
