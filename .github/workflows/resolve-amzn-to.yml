@@ -15,6 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
+      - uses: actions/checkout@v4
       - name: Follow amzn.to/4tX3ogd
         run: |
           final=$(curl -sL -m 30 -A "Mozilla/5.0" -o /dev/null -w '%{url_effective} HTTP %{http_code}' https://amzn.to/4tX3ogd || true)
