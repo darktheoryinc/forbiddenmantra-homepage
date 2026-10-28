@@ -59,6 +59,151 @@
           "h": 720
         }
       }
+    },
+    {
+      "work": "letters-from-a-stoic",
+      "edition": "9780140442106",
+      "isbn13": "9780140442106",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780140442106.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/letters-from-a-stoic__9780140442106.jpg",
+      "original": [
+        293,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 369
+        },
+        "480": {
+          "w": 293,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "metamorphoses",
+      "edition": "9780140447897",
+      "isbn13": "9780140447897",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780140447897.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/metamorphoses__9780140447897.jpg",
+      "original": [
+        290,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 372
+        },
+        "480": {
+          "w": 290,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "healing-mantras",
+      "edition": "9780345431707",
+      "isbn13": "9780345431707",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780345431707.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/healing-mantras__9780345431707.jpg",
+      "original": [
+        295,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 366
+        },
+        "480": {
+          "w": 295,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "the-gnostic-gospels",
+      "edition": "9780679724537",
+      "isbn13": "9780679724537",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780679724537.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/the-gnostic-gospels__9780679724537.jpg",
+      "original": [
+        288,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 375
+        },
+        "480": {
+          "w": 288,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "meditations",
+      "edition": "9780812968255",
+      "isbn13": "9780812968255",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780812968255.jpg"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms at the owner's instruction (2026-10-28)",
+        "confirmedOn": "2026-10-28"
+      },
+      "file": "assets-src/covers/meditations__9780812968255.jpg",
+      "original": [
+        293,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 369
+        },
+        "480": {
+          "w": 293,
+          "h": 450
+        }
+      }
     }
   ]
 }
