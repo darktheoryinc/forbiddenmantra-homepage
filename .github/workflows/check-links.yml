@@ -6,6 +6,11 @@ name: Check retail links
 # Amazon often shows bot protection to data-centre addresses; those are reported as "blocked", never as "dead".
 on:
   workflow_dispatch:
+  # GitHub only shows the Run workflow button for workflows on the default branch. To run from this development
+  # branch without merging anything, change the number in .github/run-link-check.txt and push; that starts one run.
+  push:
+    branches: [claude/gallant-archimedes-ocwf9s]
+    paths: ['.github/run-link-check.txt']
 
 permissions:
   contents: write
