@@ -527,7 +527,8 @@
      "publisher": "Forbidden Mantra Press",
      "year": null,
      "note": "Kindle edition seen on Amazon in an owner screenshot dated 2025-05-30; ASIN, ISBN and publication date not recovered. Publisher line is not shown in the screenshot (owner-listed).",
-     "retailers": []
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line"
     }
    ],
    "sources": [
@@ -538,7 +539,11 @@
      "supports": "title, series, author, Kindle format"
     }
    ],
-   "claims": []
+   "claims": [],
+   "reviewFlags": [
+    "publisher attribution is owner-supplied",
+    "no ASIN/ISBN recovered"
+   ]
   },
   {
    "title": "The Gospel of Magdalene",
@@ -570,7 +575,8 @@
      "publisher": "Forbidden Mantra Press",
      "year": null,
      "note": "Kindle edition seen on Amazon in an owner screenshot dated 2026-04-03; ASIN, ISBN and publication date not recovered. Publisher line is not shown in the screenshot (owner-listed).",
-     "retailers": []
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line"
     }
    ],
    "sources": [
@@ -581,7 +587,11 @@
      "supports": "title, series, authors, Kindle format"
     }
    ],
-   "claims": []
+   "claims": [],
+   "reviewFlags": [
+    "publisher attribution is owner-supplied",
+    "no ASIN/ISBN recovered"
+   ]
   },
   {
    "title": "Make Yourself Irresistibly Attractive with the Kleem Mantra, Kamdev Mantra and Kama Sutra",
@@ -608,7 +618,9 @@
      "publisher": "Forbidden Mantra Press",
      "year": null,
      "note": "English edition seen in an owner screenshot of its Amazon page; the format (shown here as ebook) and the ASIN are not yet confirmed. Publisher line is not shown (owner-listed).",
-     "retailers": []
+     "retailers": [],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+     "formatConfirmed": false
     },
     {
      "format": "ebook",
@@ -636,7 +648,8 @@
        "accessed": "2026-10-28",
        "supports": "Spanish edition title, ASIN, format, date"
       }
-     ]
+     ],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line"
     }
    ],
    "sources": [
@@ -653,7 +666,12 @@
      "supports": "Spanish edition"
     }
    ],
-   "claims": []
+   "claims": [],
+   "reviewFlags": [
+    "English edition format (ebook) is NOT confirmed; no ASIN recovered",
+    "publisher attribution is owner-supplied",
+    "author on the English cover is \"TSPRav Shiva\" but the Spanish listing shows \"Patel, Emily K\""
+   ]
   },
   {
    "title": "Mo Pai Exposed",
@@ -692,7 +710,8 @@
        "verification": "seen-in-search-results",
        "checkedOn": "2026-10-28"
       }
-     ]
+     ],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line"
     }
    ],
    "sources": [
@@ -703,7 +722,12 @@
      "supports": "title, subtitle, author, ISBN-13, ASIN, paperback, date"
     }
    ],
-   "claims": []
+   "claims": [],
+   "reviewFlags": [
+    "cover NOT assigned: the Drive cover subtitle (\"Serious Truths About Internal Power Training\") differs from the listing (\"What the Internal Power Community Refuses to Admit\")",
+    "second Amazon listing ISBN 9798243193894 (ASIN B0GFVWMR9B) NOT assigned: format unverified",
+    "publisher attribution is owner-supplied"
+   ]
   },
   {
    "title": "Mo Pai: The Destructive and Healing Force Within",
@@ -742,7 +766,8 @@
        "verification": "seen-in-search-results",
        "checkedOn": "2026-10-28"
       }
-     ]
+     ],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line"
     }
    ],
    "sources": [
@@ -753,7 +778,12 @@
      "supports": "title, subtitle, author, ISBN-13, ASIN, paperback, date"
     }
    ],
-   "claims": []
+   "claims": [],
+   "reviewFlags": [
+    "author spelling \"Emily K Kissoon\" is as shown in the Amazon listing; owner to confirm (other titles use Emily K Patel)",
+    "publisher attribution is owner-supplied",
+    "cover assigned on a title match with a shorter subtitle than the listing"
+   ]
   },
   {
    "title": "Energy Unleashed",
@@ -789,7 +819,8 @@
        "verification": "seen-in-search-results",
        "checkedOn": "2026-10-28"
       }
-     ]
+     ],
+     "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line"
     }
    ],
    "sources": [
@@ -800,7 +831,11 @@
      "supports": "title, subtitle, author, ISBN-13, ASIN, paperback"
     }
    ],
-   "claims": []
+   "claims": [],
+   "reviewFlags": [
+    "publisher attribution is owner-supplied",
+    "publication date not recovered"
+   ]
   }
  ]
 }

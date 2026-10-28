@@ -33,7 +33,8 @@ for (const l of links) st[lc[l.url]?.verdict ?? 'unchecked']++;
 add(total && st.live === total ? 'PASS' : st.live + st.blocked === 0 ? 'BLOCKER' : 'WARN', 'Links', `Retail link validity (${total} URLs)`, `live ${st.live}, dead ${st.dead} (hidden), blocked ${st.blocked}, mismatch ${st.mismatch}, never checked ${st.unchecked}. Run scripts/check-links.mjs on a networked machine.`);
 const noId = cat.works.filter((w) => w.press).flatMap((w) => w.editions).filter((e) => !e.isbn13 && !e.asin).length;
 add(noId === 0 ? 'PASS' : 'WARN', 'Catalogue', 'Forbidden Mantra Press editions have identifiers', `${noId} editions have no ASIN/ISBN yet and use search links. Needs a KDP / Author Central export.`);
-add('WARN', 'Catalogue', 'Press titles still unconfirmed by owner', 'Mo Pai Nei Kung, The Hidden Technology of Human Power and Forbidden Mantra have no confirmed edition data; Amazon lists 41 books in the series, only 12 titles are published here.');
+const nPress = cat.works.filter((w) => w.press).length, flagged = cat.works.filter((w) => w.reviewFlags?.length).map((w) => w.title);
+add('WARN', 'Catalogue', 'Press titles still unconfirmed by owner', `Mo Pai Nei Kung, The Hidden Technology of Human Power and Forbidden Mantra have no confirmed edition data. ${nPress} press titles are listed; every one is owner-listed and none has independently verified publisher attribution. Flagged for owner confirmation: ${flagged.join('; ') || 'none'}.`);
 const errs = q.filter((i) => i.severity === 'error').length;
 add(errs === 0 ? 'PASS' : 'WARN', 'Catalogue', 'Import error queue', `${errs} errors, ${q.filter((i) => i.severity === 'duplicate').length} duplicates, ${q.filter((i) => i.severity === 'warning').length} warnings. ${rep.staged.works} candidates remain staged (unpublished).`);
 // promo
