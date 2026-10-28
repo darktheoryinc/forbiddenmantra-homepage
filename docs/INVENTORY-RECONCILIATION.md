@@ -56,7 +56,7 @@ Owner-owned editions with a cover, by language: English 30 of 318, Spanish 3 of 
 
 New this round, from the owner's Google Drive and matched to exact table records: The Physics of Siddhis (Perception Across Time), Siddhis: The Non-Locality of Consciousness (the cover reads "The Physics of Siddhis: Non-Locality of Consciousness"; wording to confirm), and The Coven and The Yogi: Eclipse of the Heart Chakra (cover says Book Two). The Wix media subfolders hold only social-media images, and Drive has no further matching files (a Drive Spanish Edenic Origins file still reads "Aquí va el subtítulo", so it is a placeholder, not a cover).
 
-The list of owner-listed works that still need a cover file is `data/drafts/covers-needed-from-owner.json` (106 works with their languages, formats and ASINs). The table's Amazon-hosted cover images are not used (see `docs/AMAZON-COVERS.md`).
+The list of owner-listed works that still need a cover file is `data/drafts/covers-needed-from-owner.json` (102 works with their languages, formats and ASINs). The table's Amazon-hosted cover images are not used (see `docs/AMAZON-COVERS.md`).
 
 ## Duplicate decisions, from ASINs and publication dates
 No records were merged and no edition was removed: every table ASIN is unique, so every flagged pair is two different Amazon products.
