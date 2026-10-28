@@ -366,6 +366,8 @@ function layout({ title, rel, desc, body, crumbs = [], jsonld = null, current = 
 <title>${esc(title)}${title.includes('Forbidden Mantra') ? '' : ' · Forbidden Mantra Press'}</title>
 <meta name="description" content="${esc(desc ?? cfg.tagline)}">
 ${noindex ? '<meta name="robots" content="noindex, follow">' : PRODUCTION ? `<link rel="canonical" href="${SITE_URL}/${rel.replace(/index\.html$/, '')}">` : '<meta name="robots" content="noindex, nofollow"><!-- preview build: not for production -->'}
+<link rel="icon" href="${ROOT_PREFIX}assets/brand/favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="${ROOT_PREFIX}assets/brand/favicon-32.png"><link rel="icon" type="image/png" sizes="16x16" href="${ROOT_PREFIX}assets/brand/favicon-16.png"><link rel="apple-touch-icon" sizes="180x180" href="${ROOT_PREFIX}assets/brand/apple-touch-icon-180.png">
+<meta name="theme-color" content="#183F3B">
 <link rel="stylesheet" href="${ROOT_PREFIX}assets/style.css">
 ${typeof links === 'function' ? links() : links}
 ${ANALYTICS.snippet}
@@ -378,7 +380,7 @@ ${FIXTURE ? '<div class="preview-bar fixture-bar" role="region" aria-label="Test
 ${PRODUCTION ? '' : `<div class="preview-bar" role="region" aria-label="Preview notice">Preview build, not published. Catalogue as of ${cfg.catalogueAsOf}. ${anyUntagged ? 'Amazon links carry no Associates tracking ID yet.' : ''}</div>`}
 <header class="site-header">
   <div class="wrap header-in">
-    <a class="logo" href="${href('')}">Forbidden Mantra Press</a>
+    <a class="logo" href="${href('')}" aria-label="Forbidden Mantra Press, home"><picture><source media="(max-width:520px)" srcset="${ROOT_PREFIX}assets/brand/logo-header-mobile.png 1x, ${ROOT_PREFIX}assets/brand/logo-header-mobile@2x.png 2x"><img src="${ROOT_PREFIX}assets/brand/logo-header-desktop.png" srcset="${ROOT_PREFIX}assets/brand/logo-header-desktop.png 1x, ${ROOT_PREFIX}assets/brand/logo-header-desktop@2x.png 2x" width="325" height="56" alt="Forbidden Mantra"></picture></a>
     ${langMenu()}
     <button class="nav-toggle" aria-expanded="false" aria-controls="nav" type="button"><span class="sr" data-i18n="menu">${esc(en.menu)}</span><span aria-hidden="true">☰</span></button>
     <nav id="nav" class="nav" aria-label="Main">
@@ -393,7 +395,7 @@ ${page}
 </main>
 <footer class="site-footer">
   <div class="wrap foot-grid">
-    <div><p class="foot-brand">Forbidden Mantra Press</p><p>A curated bookstore of sacred texts, practice and inner cultivation.</p></div>
+    <div><p class="foot-brand"><img src="${ROOT_PREFIX}assets/brand/logo-full-stacked-480h.png" width="391" height="150" alt="Forbidden Mantra Press" loading="lazy"></p><p>A curated bookstore of sacred texts, practice and inner cultivation.</p></div>
     <div><p class="foot-h" data-i18n="foot_browse">${esc(en.foot_browse)}</p><ul>${tax.hubs.map((h) => `<li><a href="${href(`subjects/${h.id}/`)}">${esc(h.name)}</a></li>`).join('')}</ul></div>
     <div><p class="foot-h" data-i18n="foot_store">${esc(en.foot_store)}</p><ul><li><a href="${href('books/')}" data-i18n="foot_all_books">${esc(en.foot_all_books)}</a></li><li><a href="${href('languages/')}" data-i18n="foot_languages">${esc(en.foot_languages)}</a></li>${ART.length ? `<li><a href="${href('articles/')}">Articles</a></li>` : ''}<li><a href="${href('press/')}">Forbidden Mantra Press</a></li><li><a href="${href('about/catalogue-standards/')}" data-i18n="foot_verify">${esc(en.foot_verify)}</a></li><li><a href="${href('about/affiliate-disclosure/')}" data-i18n="foot_affiliate">${esc(en.foot_affiliate)}</a></li>${LIB.enabled ? '<li><button type="button" class="btn-link" data-librarian-toggle lang="en">Hide digital librarian</button></li>' : ''}</ul></div>
     <div><p class="foot-h">Terms &amp; policies</p><ul><li><a href="${href('legal/')}">Terms &amp; Policies</a></li><li><a href="${href('legal/terms-refunds/')}">Terms of Service / Refund Policy</a></li><li><a href="${href('about/privacy/')}">Privacy Policy</a></li><li><a href="${href('about/affiliate-disclosure/')}">Affiliate Disclosure</a></li><li><a href="${href('contact/')}">Contact</a></li></ul></div>
@@ -421,6 +423,8 @@ if (COVERS.entries.length) {
   for (const c of COVERS.entries) for (const wd of c.has480 ? [240, 480] : [240]) fs.copyFileSync(path.join(covDir, `${c.key}-${wd}.webp`), path.join(OUT, 'assets/covers', `${c.key}-${wd}.webp`));
   console.log(`covers: ${COVERS.entries.length} verified cover(s) published`);
 }
+fs.mkdirSync(path.join(OUT, 'assets/brand'), { recursive: true });
+for (const f of fs.readdirSync(path.join(ROOT, 'assets-src/logo/proposal'))) if (/^(logo-|favicon|apple-touch)/.test(f)) fs.copyFileSync(path.join(ROOT, 'assets-src/logo/proposal', f), path.join(OUT, 'assets/brand', f));
 if (process.env.FM_WIX) fs.copyFileSync(path.join(ROOT, 'scripts/assets/wix-embed.js'), path.join(OUT, 'assets/wix-embed.js'));
 if (LIB_ART) { fs.mkdirSync(path.join(OUT, 'assets/librarian'), { recursive: true }); fs.copyFileSync(path.join(ROOT, 'assets-src/librarian', LIB_ART.file), path.join(OUT, 'assets/librarian', LIB_ART.file)); }
 const i18nOut = { dict: Object.fromEntries(Object.entries(locales).map(([c, d]) => [c, Object.fromEntries(Object.entries(d).filter(([k]) => k !== '_meta'))])), langs: Object.fromEntries(langReg.languages.map((l) => [l.code, { name: l.name, endonym: l.endonym, dir: l.dir }])), ui: uiLocales };

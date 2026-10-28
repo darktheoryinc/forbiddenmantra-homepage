@@ -437,3 +437,13 @@ a.io-tile-img:hover,a.io-tile-img:focus-visible{outline:3px solid #fff;outline-o
 .cover-photo img{display:block;width:100%;height:100%;object-fit:contain}
 .cover-photo.cover-lg{max-width:300px}
 .ed-cover{float:inline-end;width:84px;margin:0 0 8px 12px}.ed-cover .cover{box-shadow:0 3px 8px rgba(24,63,59,.18)}
+
+/* approved logo (2026-10-28): dark teal header and footer */
+.site-header{background:rgba(24,63,59,.98);border-bottom:1px solid rgba(239,215,156,.28);box-shadow:0 1px 16px rgba(10,30,28,.35)}
+.logo{display:inline-flex;align-items:center;padding:6px 0;line-height:0}.logo img{display:block;height:auto;max-width:100%}
+.nav a{color:#F7F1E4}.nav a:hover,.nav a[aria-current]{color:#EFD79C;box-shadow:0 2px 0 #D8B46B}
+.nav-toggle{color:#F7F1E4;border-color:rgba(239,215,156,.6)}
+.lang-btn{color:#F7F1E4;border-color:rgba(239,215,156,.6)}.lang-btn:hover,.lang-btn[aria-expanded=true]{background:rgba(239,215,156,.14);color:#fff}
+.foot-brand img{display:block;height:auto;max-width:100%;margin-bottom:6px}
+@media(max-width:1279px){.nav a{border-bottom-color:rgba(247,241,228,.2)}}
+@media(max-width:520px){.logo{flex:1 1 0;min-width:0}.logo img{width:auto;max-height:40px}}

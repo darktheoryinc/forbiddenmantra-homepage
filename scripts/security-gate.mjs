@@ -45,6 +45,7 @@ export function scanPackage(dir, { production = false, approvals = null, publicO
     const r = rel(f), base = path.basename(f), ext = path.extname(f).toLowerCase(), st = fs.statSync(f);
     if (r.startsWith('assets/covers/')) { const m = base.match(/^(.+)-(240|480)\.webp$/); if (!m || !verifiedKeys.has(m[1])) add(fail, 'HIGH', r, 'cover image with no verified manifest entry (source and rights evidence are required in data/covers.json)'); }
     if (r.split('/').some((s) => s.startsWith('.') && !ALLOWED_DOT.has(s)) || /(^|\/)\.(env|git|ds_store|npmrc)|\.(map|pem|key|p12|pfx|env|log|bak|zip|md|mjs|py|sh|ts|sql|csv|psv|yml|yaml)$/i.test(r)) add(fail, 'CRITICAL', r, 'non-public / sensitive file type or hidden file');
+    else if (r.startsWith('assets/brand/') && (ext === '.png' || ext === '.ico')) { /* owner-approved logo and favicon files */ }
     else if (!ALLOWED_EXT.has(ext) && !ALLOWED_DOT.has(base)) add(fail, 'HIGH', r, `file type ${ext || '(none)'} is not on the public allow-list`);
     if (st.size > MAX_FILE) add(fail, 'MEDIUM', r, `unexpectedly large (${st.size} bytes)`);
     if (st.size === 0) add(fail, 'MEDIUM', r, 'empty file');
