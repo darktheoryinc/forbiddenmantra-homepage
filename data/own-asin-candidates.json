@@ -1,0 +1,12 @@
+{
+  "note": "Candidate identifiers for Forbidden Mantra Press editions, found in public search results on 2026-10-28. NOT applied to the catalogue: each needs confirming on the amazon.com product page (marketplace, format, title) before use. Nothing here is a cover.",
+  "candidates": [
+    { "work": "weapons-of-the-gods", "format": "ebook", "asin": "B0FCDBMM5T", "seenOn": "amazon.in", "url": "https://www.amazon.in/Weapons-Gods-Overview-Astra-Shastra-ebook/dp/B0FCDBMM5T", "status": "candidate: Kindle edition, publisher Forbidden Mantra Press; amazon.com page not checked" },
+    { "work": "gayatri-mantra", "format": "ebook", "asin": "B0F9PKY776", "seenOn": "amazon.in", "url": "https://www.amazon.in/-/hi/Forbidden-Mantra-Press-ebook/dp/B0F9PKY776", "status": "candidate: ASIN taken from the listing URL only; amazon.com page not checked" },
+    { "work": "kebra-nagast", "format": "paperback", "isbn13": "9798287971052", "seenOn": "foyles.co.uk", "url": "https://www.foyles.co.uk/book/kebra-nagast/forbidden-mantra-press/9798287971052", "status": "candidate: bookseller lists imprint Independently Published; ASIN not found" },
+    { "work": "the-apocalypse-of-adam", "format": "audiobook", "asin": "B0H8MQN9WK", "status": "already in catalogue" },
+    { "work": "gayatri-mantra", "format": "audiobook", "asin": "B0H8MDVC72", "status": "already in catalogue" }
+  ],
+  "unmatched": ["the-apocalypse-of-adam paperback", "kebra-nagast ebook", "weapons-of-the-gods paperback", "maha-mrityunjaya-mantra ebook", "invoke-the-fierce ebook", "lakshmi-gayatri ebook", "om-namah-shivaya ebook", "maa-kali-mantras-and-instructions ebook", "the-hidden-technology-of-human-power paperback", "forbidden-mantra paperback", "mo-pai-nei-kung paperback"],
+  "catalogue_discrepancy": "Public Amazon listings show other Forbidden Mantra Press Mo Pai books (for example 'Mo Pai Exposed', paperback, ASINs B0GFW4H6T2 / B0GFVWMR9B) that are not in the catalogue under those titles. The Drive file 'Mo Pai Exposed Book cover.png' appears to belong to that title, not to the catalogue entry 'Mo Pai Nei Kung'."
+}
