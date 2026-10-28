@@ -385,7 +385,7 @@ ${PRODUCTION ? '' : `<div class="preview-bar" role="region" aria-label="Preview 
     <button class="nav-toggle" aria-expanded="false" aria-controls="nav" type="button"><span class="sr" data-i18n="menu">${esc(en.menu)}</span><span aria-hidden="true">☰</span></button>
     <nav id="nav" class="nav" aria-label="Main">
       <ul>${NAV.map(([k, u]) => `<li><a href="${href(u)}"${current === u ? ' aria-current="page"' : ''} data-i18n="${k}">${esc(en[k])}</a></li>`).join('')}</ul>
-      <form class="nav-search" action="${href('search/')}" method="get" role="search"><label class="sr" for="q-nav" data-i18n="search_label">${esc(en.search_label)}</label><input id="q-nav" type="search" name="q" ${A('placeholder', 'search_ph')}><button type="submit" data-i18n="search_btn">${esc(en.search_btn)}</button></form>
+      <form class="nav-search" action="${href('search/')}" method="get" role="search" aria-label="Site search"><label class="sr" for="q-nav" data-i18n="search_label">${esc(en.search_label)}</label><input id="q-nav" type="search" name="q" ${A('placeholder', 'search_ph')}><button type="submit" data-i18n="search_btn">${esc(en.search_btn)}</button></form>
     </nav>
   </div>
 </header>
@@ -469,7 +469,7 @@ page('index.html', {
     <p class="eyebrow">Ancient wisdom · Hidden knowledge · Inner power</p>
     <h1>Forbidden<br>Mantra Press</h1>
     <p class="lede">A curated bookstore of sacred texts, practice and inner cultivation, from our own press and from established authors in every tradition we shelve.</p>
-    <form class="hero-search" action="${href('search/')}" method="get" role="search"><label class="sr" for="q-hero" data-i18n="search_label">${esc(en.search_label)}</label><input id="q-hero" type="search" name="q" placeholder="Search by title, author, subject or ISBN"><button class="btn" type="submit" data-i18n="search_btn">${esc(en.search_btn)}</button></form>
+    <form class="hero-search" action="${href('search/')}" method="get" role="search" aria-label="Search the bookstore"><label class="sr" for="q-hero" data-i18n="search_label">${esc(en.search_label)}</label><input id="q-hero" type="search" name="q" placeholder="Search by title, author, subject or ISBN"><button class="btn" type="submit" data-i18n="search_btn">${esc(en.search_btn)}</button></form>
     <p class="hero-links"><a class="btn btn-ghost" href="${href('press/')}">Forbidden Mantra Press books</a> <a class="btn btn-ghost" href="${href('books/')}" data-i18n="foot_all_books">${esc(en.foot_all_books)}</a> <a class="btn btn-ghost" href="${href('paths/')}">Beginner reading paths</a></p>
     <p class="disclosure hero-disclosure" lang="en">${esc(cfg.disclosure.split('. ')[0])}. <a href="${href('about/affiliate-disclosure/')}">Affiliate disclosure</a></p>
   </div>
@@ -675,7 +675,7 @@ for (const n of NICHES) {
 page('traditions/index.html', {
   title: 'Traditions', crumbs: [['Traditions']], current: 'traditions/', desc: 'Browse by tradition.',
   body: () => `<section class="band"><div class="wrap"><h1 data-i18n="nav_traditions">${esc(en.nav_traditions)}</h1><p class="lede-sm">Traditions are kept distinct. A book on Taoist internal alchemy is not filed with Hindu tantra, and Gnostic texts are not mixed with Christian mystical writing. Where a book is a modern adaptation or draws on several sources, its page says so.</p>
-<div class="depts">${tax.traditions.map((t) => `<a class="dept" href="${href(`traditions/${t.id}/`)}"><h3>${esc(t.name)}</h3><p>${esc(t.intro)}</p><span class="hub-n">${fmt(cat.works.filter((w) => (w.tradition ?? []).includes(t.id)).length, 'book', 'books')}</span></a>`).join('')}</div></div></section>`,
+<div class="depts">${tax.traditions.map((t) => `<a class="dept" href="${href(`traditions/${t.id}/`)}"><h2>${esc(t.name)}</h2><p>${esc(t.intro)}</p><span class="hub-n">${fmt(cat.works.filter((w) => (w.tradition ?? []).includes(t.id)).length, 'book', 'books')}</span></a>`).join('')}</div></div></section>`,
 });
 for (const t of tax.traditions) {
   const ws = cat.works.filter((w) => (w.tradition ?? []).includes(t.id));
@@ -834,7 +834,7 @@ const dynShard = (slug) => (fnv(slug) % DYN_SHARDS).toString(16).padStart(2, '0'
 }
 page('book/index.html', {
   title: 'Book', desc: 'Book details.', crumbs: [['All books', 'books/'], ['Book']], noindex: true,
-  body: () => `<article class="band" data-dyn-book data-root="${ROOT_PREFIX}"><div class="wrap"><p class="note" data-dyn-status>Loading book details…</p><noscript><p class="note">This page needs JavaScript. <a href="${href('books/')}">Browse all books</a> or <a href="${href('search/')}">search</a> for the title.</p></noscript></div></article>`,
+  body: () => `<article class="band" data-dyn-book data-root="${ROOT_PREFIX}"><div class="wrap"><h1 class="sr">Book details</h1><p class="note" data-dyn-status>Loading book details…</p><noscript><p class="note">This page needs JavaScript. <a href="${href('books/')}">Browse all books</a> or <a href="${href('search/')}">search</a> for the title.</p></noscript></div></article>`,
 });
 
 // ---------- press ----------
@@ -853,7 +853,7 @@ page('press/index.html', {
 // ---------- paths + collections ----------
 page('paths/index.html', {
   title: 'Reading paths', current: 'paths/', crumbs: [['Reading paths']], desc: 'Beginner reading paths.',
-  body: () => `<section class="band"><div class="wrap"><h1 data-i18n="nav_paths">${esc(en.nav_paths)}</h1><p class="lede-sm">Short sequences that tell you what to read first and why. Paths grow as more titles pass verification.</p><div class="paths">${coll.paths.map((p) => `<a class="path" href="${href(`paths/${p.id}/`)}"><p class="eyebrow">${esc(p.audience)}</p><h3>${esc(p.title)}</h3><p>${esc(p.blurb)}</p><span class="hub-n">${fmt(p.steps.length, 'book', 'books')}</span></a>`).join('')}</div></div></section>`,
+  body: () => `<section class="band"><div class="wrap"><h1 data-i18n="nav_paths">${esc(en.nav_paths)}</h1><p class="lede-sm">Short sequences that tell you what to read first and why. Paths grow as more titles pass verification.</p><div class="paths">${coll.paths.map((p) => `<a class="path" href="${href(`paths/${p.id}/`)}"><p class="eyebrow">${esc(p.audience)}</p><h2>${esc(p.title)}</h2><p>${esc(p.blurb)}</p><span class="hub-n">${fmt(p.steps.length, 'book', 'books')}</span></a>`).join('')}</div></div></section>`,
 });
 for (const p of coll.paths) page(`paths/${p.id}/index.html`, {
   title: p.title, desc: p.blurb, crumbs: [['Reading paths', 'paths/'], [p.title]],
@@ -861,7 +861,7 @@ for (const p of coll.paths) page(`paths/${p.id}/index.html`, {
 });
 page('collections/index.html', {
   title: 'Collections', current: 'collections/', crumbs: [['Collections']], desc: 'Curated collections.',
-  body: () => `<section class="band"><div class="wrap"><h1 data-i18n="nav_collections">${esc(en.nav_collections)}</h1><div class="paths">${coll.collections.map((c) => `<a class="path" href="${href(`collections/${c.id}/`)}"><h3>${esc(c.title)}</h3><p>${esc(c.blurb)}</p><span class="hub-n">${fmt(c.works.length, 'book', 'books')}</span></a>`).join('')}</div></div></section>`,
+  body: () => `<section class="band"><div class="wrap"><h1 data-i18n="nav_collections">${esc(en.nav_collections)}</h1><div class="paths">${coll.collections.map((c) => `<a class="path" href="${href(`collections/${c.id}/`)}"><h2>${esc(c.title)}</h2><p>${esc(c.blurb)}</p><span class="hub-n">${fmt(c.works.length, 'book', 'books')}</span></a>`).join('')}</div></div></section>`,
 });
 for (const c of coll.collections) {
   const ws = c.works.map((id) => workById.get(id));
