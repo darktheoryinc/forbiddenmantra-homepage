@@ -5,3 +5,12 @@ test/out-*/
 test/out/
 test/fixtures/
 site-wix/
+
+# secrets: never commit credentials or env files
+.env
+.env.*
+*.env
+secrets/
+*credentials*.csv
+*rootkey*.csv
+*creators*.csv
