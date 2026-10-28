@@ -1,0 +1,3580 @@
+{
+ "works": 192,
+ "editions": 223,
+ "rows": [
+  {
+   "work": "harry-potter-and-the-philosophers-stone",
+   "edition": "9780590353427",
+   "title": "Harry Potter and the Sorcerer's Stone",
+   "authors": [
+    "J.K. Rowling"
+   ],
+   "format": "paperback",
+   "publisher": "Scholastic",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780590353427",
+   "isbn10": "059035342X",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "harry-potter-and-the-philosophers-stone",
+   "edition": "9781408855652",
+   "title": "Harry Potter and the Philosopher's Stone",
+   "authors": [
+    "J.K. Rowling"
+   ],
+   "format": "paperback",
+   "publisher": "Bloomsbury Children's Books",
+   "own": false,
+   "asin": null,
+   "isbn13": "9781408855652",
+   "isbn10": "1408855658",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "harry-potter-a-history-of-magic",
+   "edition": "9781408890769",
+   "title": "Harry Potter: A History of Magic",
+   "authors": [
+    "British Library"
+   ],
+   "format": "hardcover",
+   "publisher": "Bloomsbury",
+   "own": false,
+   "asin": null,
+   "isbn13": "9781408890769",
+   "isbn10": "1408890763",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "harry-potter-a-history-of-magic",
+   "edition": "9781526607072",
+   "title": "Harry Potter: A History of Magic",
+   "authors": [
+    "British Library"
+   ],
+   "format": "paperback",
+   "publisher": "Bloomsbury",
+   "own": false,
+   "asin": null,
+   "isbn13": "9781526607072",
+   "isbn10": "1526607077",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-hobbit",
+   "edition": "9780547928227",
+   "title": "The Hobbit",
+   "authors": [
+    "J.R.R. Tolkien"
+   ],
+   "format": "paperback",
+   "publisher": "Houghton Mifflin Harcourt (Mariner Books)",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780547928227",
+   "isbn10": "054792822X",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-fellowship-of-the-ring",
+   "edition": "9780547928210",
+   "title": "The Fellowship of the Ring",
+   "authors": [
+    "J.R.R. Tolkien"
+   ],
+   "format": "paperback",
+   "publisher": "Houghton Mifflin Harcourt (Mariner Books)",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780547928210",
+   "isbn10": "0547928211",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "a-wizard-of-earthsea",
+   "edition": "9780547722023",
+   "title": "A Wizard of Earthsea",
+   "authors": [
+    "Ursula K. Le Guin"
+   ],
+   "format": "paperback",
+   "publisher": "Graphia (Houghton Mifflin Harcourt)",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780547722023",
+   "isbn10": "0547722028",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "a-wizard-of-earthsea",
+   "edition": "9780553383041",
+   "title": "A Wizard of Earthsea",
+   "authors": [
+    "Ursula K. Le Guin"
+   ],
+   "format": "paperback",
+   "publisher": "Spectra (Bantam)",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780553383041",
+   "isbn10": "0553383043",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-lion-the-witch-and-the-wardrobe",
+   "edition": "9780064471046",
+   "title": "The Lion, the Witch and the Wardrobe",
+   "authors": [
+    "C.S. Lewis"
+   ],
+   "format": "paperback",
+   "publisher": "HarperCollins",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780064471046",
+   "isbn10": "0064471047",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "good-omens",
+   "edition": "9780060853983",
+   "title": "Good Omens",
+   "authors": [
+    "Neil Gaiman",
+    "Terry Pratchett"
+   ],
+   "format": "paperback",
+   "publisher": "HarperTorch (William Morrow Paperbacks)",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780060853983",
+   "isbn10": "0060853980",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "american-gods",
+   "edition": "9780063081918",
+   "title": "American Gods",
+   "authors": [
+    "Neil Gaiman"
+   ],
+   "format": "paperback",
+   "publisher": "William Morrow Paperbacks",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780063081918",
+   "isbn10": "0063081911",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-color-of-magic",
+   "edition": "9780062225672",
+   "title": "The Color of Magic",
+   "authors": [
+    "Terry Pratchett"
+   ],
+   "format": "paperback",
+   "publisher": "Harper",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780062225672",
+   "isbn10": "0062225677",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-color-of-magic",
+   "edition": "9780552166591",
+   "title": "The Colour of Magic",
+   "authors": [
+    "Terry Pratchett"
+   ],
+   "format": "paperback",
+   "publisher": "Corgi (Penguin)",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780552166591",
+   "isbn10": "0552166596",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "jonathan-strange-and-mr-norrell",
+   "edition": "9781582346038",
+   "title": "Jonathan Strange & Mr Norrell",
+   "authors": [
+    "Susanna Clarke"
+   ],
+   "format": "paperback",
+   "publisher": "Bloomsbury",
+   "own": false,
+   "asin": null,
+   "isbn13": "9781582346038",
+   "isbn10": "1582346038",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "jonathan-strange-and-mr-norrell",
+   "edition": "9781635576726",
+   "title": "Jonathan Strange & Mr Norrell",
+   "authors": [
+    "Susanna Clarke"
+   ],
+   "format": "paperback",
+   "publisher": "Bloomsbury",
+   "own": false,
+   "asin": null,
+   "isbn13": "9781635576726",
+   "isbn10": "1635576725",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "circe",
+   "edition": "9780316556323",
+   "title": "Circe",
+   "authors": [
+    "Madeline Miller"
+   ],
+   "format": "paperback",
+   "publisher": "Back Bay Books",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780316556323",
+   "isbn10": "0316556327",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "circe",
+   "edition": "9780316556347",
+   "title": "Circe",
+   "authors": [
+    "Madeline Miller"
+   ],
+   "format": "hardcover",
+   "publisher": "Little, Brown and Company",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780316556347",
+   "isbn10": "0316556343",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-name-of-the-wind",
+   "edition": "9780756404741",
+   "title": "The Name of the Wind",
+   "authors": [
+    "Patrick Rothfuss"
+   ],
+   "format": "paperback",
+   "publisher": "DAW Books",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780756404741",
+   "isbn10": "0756404746",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "mistborn-the-final-empire",
+   "edition": "9780765377135",
+   "title": "Mistborn: The Final Empire",
+   "authors": [
+    "Brandon Sanderson"
+   ],
+   "format": "paperback",
+   "publisher": "Tor Teen",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780765377135",
+   "isbn10": "0765377136",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "a-game-of-thrones",
+   "edition": "9780553593716",
+   "title": "A Game of Thrones",
+   "authors": [
+    "George R.R. Martin"
+   ],
+   "format": "paperback",
+   "publisher": "Bantam",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780553593716",
+   "isbn10": "0553593714",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-once-and-future-king",
+   "edition": "9780441627400",
+   "title": "The Once and Future King",
+   "authors": [
+    "T.H. White"
+   ],
+   "format": "paperback",
+   "publisher": "Ace",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780441627400",
+   "isbn10": "0441627404",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "neverwhere",
+   "edition": "9780060557812",
+   "title": "Neverwhere",
+   "authors": [
+    "Neil Gaiman"
+   ],
+   "format": "paperback",
+   "publisher": "HarperCollins (Perennial)",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780060557812",
+   "isbn10": "0060557818",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "neverwhere",
+   "edition": "9780063070721",
+   "title": "Neverwhere",
+   "authors": [
+    "Neil Gaiman"
+   ],
+   "format": "paperback",
+   "publisher": "William Morrow Paperbacks",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780063070721",
+   "isbn10": "0063070723",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-haunting-of-hill-house",
+   "edition": "9780143039983",
+   "title": "The Haunting of Hill House",
+   "authors": [
+    "Shirley Jackson"
+   ],
+   "format": "paperback",
+   "publisher": "Penguin Classics",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780143039983",
+   "isbn10": "0143039989",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "dracula",
+   "edition": "9780141439846",
+   "title": "Dracula",
+   "authors": [
+    "Bram Stoker"
+   ],
+   "format": "paperback",
+   "publisher": "Penguin Classics",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780141439846",
+   "isbn10": "014143984X",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "frankenstein",
+   "edition": "9780141439471",
+   "title": "Frankenstein",
+   "authors": [
+    "Mary Shelley"
+   ],
+   "format": "paperback",
+   "publisher": "Penguin Classics",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780141439471",
+   "isbn10": "0141439475",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "something-wicked-this-way-comes",
+   "edition": "9781501167713",
+   "title": "Something Wicked This Way Comes",
+   "authors": [
+    "Ray Bradbury"
+   ],
+   "format": "paperback",
+   "publisher": "Simon & Schuster",
+   "own": false,
+   "asin": null,
+   "isbn13": "9781501167713",
+   "isbn10": "1501167715",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-master-and-margarita",
+   "edition": "9780143108276",
+   "title": "The Master and Margarita",
+   "authors": [
+    "Mikhail Bulgakov"
+   ],
+   "format": "paperback",
+   "publisher": "Penguin Classics",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780143108276",
+   "isbn10": "0143108271",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "interview-with-the-vampire",
+   "edition": "9780345337665",
+   "title": "Interview with the Vampire",
+   "authors": [
+    "Anne Rice"
+   ],
+   "format": "paperback",
+   "publisher": "Ballantine Books",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780345337665",
+   "isbn10": "0345337662",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-complete-fairy-tales-of-the-brothers-grimm",
+   "edition": "9780553382167",
+   "title": "The Complete Fairy Tales of the Brothers Grimm",
+   "authors": [
+    "Jacob and Wilhelm Grimm"
+   ],
+   "format": "paperback",
+   "publisher": "Bantam",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780553382167",
+   "isbn10": "0553382160",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "norse-mythology",
+   "edition": "9780393356182",
+   "title": "Norse Mythology",
+   "authors": [
+    "Neil Gaiman"
+   ],
+   "format": "paperback",
+   "publisher": "W. W. Norton",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780393356182",
+   "isbn10": "0393356183",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "norse-mythology",
+   "edition": "9780393609097",
+   "title": "Norse Mythology",
+   "authors": [
+    "Neil Gaiman"
+   ],
+   "format": "hardcover",
+   "publisher": "W. W. Norton",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780393609097",
+   "isbn10": "039360909X",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-golden-bough",
+   "edition": "9780199538829",
+   "title": "The Golden Bough",
+   "authors": [
+    "James George Frazer"
+   ],
+   "format": "paperback",
+   "publisher": "Oxford University Press (Oxford World's Classics)",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780199538829",
+   "isbn10": "0199538824",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "meditations",
+   "edition": "9780812968255",
+   "title": "Meditations",
+   "authors": [
+    "Marcus Aurelius"
+   ],
+   "format": "paperback",
+   "publisher": "Modern Library",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780812968255",
+   "isbn10": "0812968255",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-republic",
+   "edition": "9780140455113",
+   "title": "The Republic",
+   "authors": [
+    "Plato"
+   ],
+   "format": "paperback",
+   "publisher": "Penguin Classics",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780140455113",
+   "isbn10": "0140455116",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "thus-spoke-zarathustra",
+   "edition": "9780140441185",
+   "title": "Thus Spoke Zarathustra",
+   "authors": [
+    "Friedrich Nietzsche"
+   ],
+   "format": "paperback",
+   "publisher": "Penguin Classics",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780140441185",
+   "isbn10": "0140441182",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "mans-search-for-meaning",
+   "edition": "9780807014271",
+   "title": "Man's Search for Meaning",
+   "authors": [
+    "Viktor E. Frankl"
+   ],
+   "format": "paperback",
+   "publisher": "Beacon Press",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780807014271",
+   "isbn10": "0807014273",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "letters-from-a-stoic",
+   "edition": "9780140442106",
+   "title": "Letters from a Stoic",
+   "authors": [
+    "Seneca"
+   ],
+   "format": "paperback",
+   "publisher": "Penguin Classics",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780140442106",
+   "isbn10": "0140442103",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-apocalypse-of-adam",
+   "edition": "B0H8MQN9WK",
+   "title": "The Apocalypse of Adam",
+   "authors": [
+    "Forbidden Mantra Press"
+   ],
+   "format": "audiobook",
+   "publisher": "Forbidden Mantra Press",
+   "own": true,
+   "asin": "B0H8MQN9WK",
+   "isbn13": null,
+   "isbn10": null,
+   "method": "ASIN (from a seen Amazon product link)",
+   "status": "ready"
+  },
+  {
+   "work": "the-apocalypse-of-adam",
+   "edition": "ed2",
+   "title": "The Apocalypse of Adam",
+   "authors": [
+    "Forbidden Mantra Press"
+   ],
+   "format": "paperback",
+   "publisher": "Forbidden Mantra Press",
+   "own": true,
+   "asin": null,
+   "isbn13": null,
+   "isbn10": null,
+   "method": "none",
+   "status": "needs ASIN or ISBN from the owner (KDP dashboard)"
+  },
+  {
+   "work": "gayatri-mantra",
+   "edition": "B0H8MDVC72",
+   "title": "Gayatri Mantra",
+   "authors": [
+    "Forbidden Mantra Press"
+   ],
+   "format": "audiobook",
+   "publisher": "Forbidden Mantra Press",
+   "own": true,
+   "asin": "B0H8MDVC72",
+   "isbn13": null,
+   "isbn10": null,
+   "method": "ASIN (from a seen Amazon product link)",
+   "status": "ready"
+  },
+  {
+   "work": "gayatri-mantra",
+   "edition": "ed2",
+   "title": "Gayatri Mantra",
+   "authors": [
+    "Forbidden Mantra Press"
+   ],
+   "format": "ebook",
+   "publisher": "Forbidden Mantra Press",
+   "own": true,
+   "asin": null,
+   "isbn13": null,
+   "isbn10": null,
+   "method": "none",
+   "status": "needs ASIN or ISBN from the owner (KDP dashboard)"
+  },
+  {
+   "work": "kebra-nagast",
+   "edition": "ed1",
+   "title": "Kebra Nagast",
+   "authors": [
+    "Forbidden Mantra Press"
+   ],
+   "format": "paperback",
+   "publisher": "Forbidden Mantra Press",
+   "own": true,
+   "asin": null,
+   "isbn13": null,
+   "isbn10": null,
+   "method": "none",
+   "status": "needs ASIN or ISBN from the owner (KDP dashboard)"
+  },
+  {
+   "work": "kebra-nagast",
+   "edition": "ed2",
+   "title": "Kebra Nagast",
+   "authors": [
+    "Forbidden Mantra Press"
+   ],
+   "format": "ebook",
+   "publisher": "Forbidden Mantra Press",
+   "own": true,
+   "asin": null,
+   "isbn13": null,
+   "isbn10": null,
+   "method": "none",
+   "status": "needs ASIN or ISBN from the owner (KDP dashboard)"
+  },
+  {
+   "work": "weapons-of-the-gods",
+   "edition": "ed1",
+   "title": "Weapons of the Gods",
+   "authors": [
+    "Forbidden Mantra Press"
+   ],
+   "format": "paperback",
+   "publisher": "Forbidden Mantra Press",
+   "own": true,
+   "asin": null,
+   "isbn13": null,
+   "isbn10": null,
+   "method": "none",
+   "status": "needs ASIN or ISBN from the owner (KDP dashboard)"
+  },
+  {
+   "work": "weapons-of-the-gods",
+   "edition": "ed2",
+   "title": "Weapons of the Gods",
+   "authors": [
+    "Forbidden Mantra Press"
+   ],
+   "format": "ebook",
+   "publisher": "Forbidden Mantra Press",
+   "own": true,
+   "asin": null,
+   "isbn13": null,
+   "isbn10": null,
+   "method": "none",
+   "status": "needs ASIN or ISBN from the owner (KDP dashboard)"
+  },
+  {
+   "work": "maha-mrityunjaya-mantra",
+   "edition": "ed1",
+   "title": "Maha Mrityunjaya Mantra",
+   "authors": [
+    "Forbidden Mantra Press"
+   ],
+   "format": "ebook",
+   "publisher": "Forbidden Mantra Press",
+   "own": true,
+   "asin": null,
+   "isbn13": null,
+   "isbn10": null,
+   "method": "none",
+   "status": "needs ASIN or ISBN from the owner (KDP dashboard)"
+  },
+  {
+   "work": "invoke-the-fierce",
+   "edition": "ed1",
+   "title": "Invoke the Fierce",
+   "authors": [
+    "Forbidden Mantra Press"
+   ],
+   "format": "ebook",
+   "publisher": "Forbidden Mantra Press",
+   "own": true,
+   "asin": null,
+   "isbn13": null,
+   "isbn10": null,
+   "method": "none",
+   "status": "needs ASIN or ISBN from the owner (KDP dashboard)"
+  },
+  {
+   "work": "lakshmi-gayatri",
+   "edition": "ed1",
+   "title": "Lakshmi Gayatri",
+   "authors": [
+    "Forbidden Mantra Press"
+   ],
+   "format": "ebook",
+   "publisher": "Forbidden Mantra Press",
+   "own": true,
+   "asin": null,
+   "isbn13": null,
+   "isbn10": null,
+   "method": "none",
+   "status": "needs ASIN or ISBN from the owner (KDP dashboard)"
+  },
+  {
+   "work": "om-namah-shivaya",
+   "edition": "ed1",
+   "title": "Om Namah Shivaya",
+   "authors": [
+    "Forbidden Mantra Press"
+   ],
+   "format": "ebook",
+   "publisher": "Forbidden Mantra Press",
+   "own": true,
+   "asin": null,
+   "isbn13": null,
+   "isbn10": null,
+   "method": "none",
+   "status": "needs ASIN or ISBN from the owner (KDP dashboard)"
+  },
+  {
+   "work": "maa-kali-mantras-and-instructions",
+   "edition": "ed1",
+   "title": "Maa Kali Mantras and Instructions",
+   "authors": [
+    "Forbidden Mantra Press"
+   ],
+   "format": "ebook",
+   "publisher": "Forbidden Mantra Press",
+   "own": true,
+   "asin": null,
+   "isbn13": null,
+   "isbn10": null,
+   "method": "none",
+   "status": "needs ASIN or ISBN from the owner (KDP dashboard)"
+  },
+  {
+   "work": "mo-pai-nei-kung",
+   "edition": "ed1",
+   "title": "Mo Pai Nei Kung",
+   "authors": [
+    "Forbidden Mantra Press"
+   ],
+   "format": "paperback",
+   "publisher": "Forbidden Mantra Press",
+   "own": true,
+   "asin": null,
+   "isbn13": null,
+   "isbn10": null,
+   "method": "none",
+   "status": "needs ASIN or ISBN from the owner (KDP dashboard)"
+  },
+  {
+   "work": "the-hidden-technology-of-human-power",
+   "edition": "ed1",
+   "title": "The Hidden Technology of Human Power",
+   "authors": [
+    "Forbidden Mantra Press"
+   ],
+   "format": "paperback",
+   "publisher": "Forbidden Mantra Press",
+   "own": true,
+   "asin": null,
+   "isbn13": null,
+   "isbn10": null,
+   "method": "none",
+   "status": "needs ASIN or ISBN from the owner (KDP dashboard)"
+  },
+  {
+   "work": "forbidden-mantra",
+   "edition": "ed1",
+   "title": "Forbidden Mantra",
+   "authors": [
+    "Forbidden Mantra Press"
+   ],
+   "format": "paperback",
+   "publisher": "Forbidden Mantra Press",
+   "own": true,
+   "asin": null,
+   "isbn13": null,
+   "isbn10": null,
+   "method": "none",
+   "status": "needs ASIN or ISBN from the owner (KDP dashboard)"
+  },
+  {
+   "work": "the-power-of-now",
+   "edition": "9781577314806",
+   "title": "The Power of Now",
+   "authors": [
+    "Eckhart Tolle"
+   ],
+   "format": "paperback",
+   "publisher": "New World Library",
+   "own": false,
+   "asin": null,
+   "isbn13": "9781577314806",
+   "isbn10": "1577314808",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-untethered-soul",
+   "edition": "9781572245372",
+   "title": "The Untethered Soul",
+   "authors": [
+    "Michael A. Singer"
+   ],
+   "format": "paperback",
+   "publisher": "New Harbinger Publications / Noetic Books",
+   "own": false,
+   "asin": null,
+   "isbn13": "9781572245372",
+   "isbn10": "1572245379",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "when-things-fall-apart",
+   "edition": "9781611803433",
+   "title": "When Things Fall Apart",
+   "authors": [
+    "Pema Chödrön"
+   ],
+   "format": "paperback",
+   "publisher": "Shambhala Publications",
+   "own": false,
+   "asin": null,
+   "isbn13": "9781611803433",
+   "isbn10": "1611803438",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "when-things-fall-apart",
+   "edition": "9780834821002",
+   "title": "When Things Fall Apart",
+   "authors": [
+    "Pema Chödrön"
+   ],
+   "format": "paperback",
+   "publisher": "Shambhala Publications",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780834821002",
+   "isbn10": "0834821001",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "when-the-body-says-no",
+   "edition": "9780470923351",
+   "title": "When the Body Says No",
+   "authors": [
+    "Gabor Maté"
+   ],
+   "format": "paperback",
+   "publisher": "John Wiley & Sons",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780470923351",
+   "isbn10": "0470923350",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "when-the-body-says-no",
+   "edition": "9780471219828",
+   "title": "When the Body Says No",
+   "authors": [
+    "Gabor Maté"
+   ],
+   "format": "paperback",
+   "publisher": "John Wiley & Sons",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780471219828",
+   "isbn10": "0471219827",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "bucklands-complete-book-of-witchcraft",
+   "edition": "9780875420509",
+   "title": "Buckland’s Complete Book of Witchcraft",
+   "authors": [
+    "Raymond Buckland"
+   ],
+   "format": "paperback",
+   "publisher": "Llewellyn Publications",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780875420509",
+   "isbn10": "0875420508",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "wicca",
+   "edition": "9780875421186",
+   "title": "Wicca",
+   "authors": [
+    "Scott Cunningham"
+   ],
+   "format": "paperback",
+   "publisher": "Llewellyn Publications",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780875421186",
+   "isbn10": "0875421180",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "encyclopedia-of-5-000-spells",
+   "edition": "9780061711237",
+   "title": "Encyclopedia of 5,000 Spells",
+   "authors": [
+    "Judika Illes"
+   ],
+   "format": "hardcover",
+   "publisher": "HarperOne",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780061711237",
+   "isbn10": "0061711233",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "encyclopedia-of-5-000-spells",
+   "edition": "9780062047267",
+   "title": "Encyclopedia of 5,000 Spells",
+   "authors": [
+    "Judika Illes"
+   ],
+   "format": "ebook",
+   "publisher": "HarperOne",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780062047267",
+   "isbn10": "0062047264",
+   "method": "ISBN-13 search, accept only an exact ISBN-13 match",
+   "status": "ready"
+  },
+  {
+   "work": "seventy-eight-degrees-of-wisdom",
+   "edition": "9781578636655",
+   "title": "Seventy-Eight Degrees of Wisdom",
+   "authors": [
+    "Rachel Pollack"
+   ],
+   "format": "paperback",
+   "publisher": "Weiser Books",
+   "own": false,
+   "asin": null,
+   "isbn13": "9781578636655",
+   "isbn10": "1578636655",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "seventy-eight-degrees-of-wisdom",
+   "edition": "9781578637348",
+   "title": "Seventy-Eight Degrees of Wisdom",
+   "authors": [
+    "Rachel Pollack"
+   ],
+   "format": "paperback",
+   "publisher": "Weiser Books",
+   "own": false,
+   "asin": null,
+   "isbn13": "9781578637348",
+   "isbn10": "1578637341",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-gnostic-gospels",
+   "edition": "9780679724537",
+   "title": "The Gnostic Gospels",
+   "authors": [
+    "Elaine Pagels"
+   ],
+   "format": "paperback",
+   "publisher": "Vintage Books",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780679724537",
+   "isbn10": "0679724532",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "taoist-secrets-of-love",
+   "edition": "9780943358192",
+   "title": "Taoist Secrets of Love",
+   "authors": [
+    "Mantak Chia",
+    "Michael Winn"
+   ],
+   "format": "paperback",
+   "publisher": "Aurora Press",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780943358192",
+   "isbn10": "0943358191",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "healing-mantras",
+   "edition": "9780345431707",
+   "title": "Healing Mantras",
+   "authors": [
+    "Thomas Ashley-Farrand"
+   ],
+   "format": "paperback",
+   "publisher": "Ballantine Wellspring",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780345431707",
+   "isbn10": "0345431707",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "autobiography-of-a-yogi",
+   "edition": "9780876120798",
+   "title": "Autobiography of a Yogi",
+   "authors": [
+    "Paramahansa Yogananda"
+   ],
+   "format": "paperback",
+   "publisher": "Self-Realization Fellowship",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780876120798",
+   "isbn10": "0876120796",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-tibetan-book-of-living-and-dying",
+   "edition": "9780712657525",
+   "title": "The Tibetan Book of Living and Dying",
+   "authors": [
+    "Sogyal Rinpoche"
+   ],
+   "format": "paperback",
+   "publisher": "Rider",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780712657525",
+   "isbn10": "0712657525",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "wherever-you-go-there-you-are",
+   "edition": "9780749925482",
+   "title": "Wherever You Go, There You Are",
+   "authors": [
+    "Jon Kabat-Zinn"
+   ],
+   "format": "paperback",
+   "publisher": "Piatkus",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780749925482",
+   "isbn10": "0749925485",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "wherever-you-go-there-you-are",
+   "edition": "9780306832017",
+   "title": "Wherever You Go, There You Are",
+   "authors": [
+    "Jon Kabat-Zinn"
+   ],
+   "format": "paperback",
+   "publisher": "Balance",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780306832017",
+   "isbn10": "0306832011",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "be-here-now",
+   "edition": "9780517543054",
+   "title": "Be Here Now",
+   "authors": [
+    "Ram Dass"
+   ],
+   "format": "paperback",
+   "publisher": null,
+   "own": false,
+   "asin": null,
+   "isbn13": "9780517543054",
+   "isbn10": "0517543052",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-bhagavad-gita",
+   "edition": "9781586380199",
+   "title": "The Bhagavad Gita",
+   "authors": [
+    "Eknath Easwaran"
+   ],
+   "format": "paperback",
+   "publisher": "Nilgiri Press",
+   "own": false,
+   "asin": null,
+   "isbn13": "9781586380199",
+   "isbn10": "1586380192",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "siddhartha",
+   "edition": "9780811200684",
+   "title": "Siddhartha",
+   "authors": [
+    "Hermann Hesse"
+   ],
+   "format": "paperback",
+   "publisher": "New Directions",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780811200684",
+   "isbn10": "081120068X",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-secret-teachings-of-all-ages",
+   "edition": "9781585422500",
+   "title": "The Secret Teachings of All Ages",
+   "authors": [
+    "Manly P. Hall"
+   ],
+   "format": "paperback",
+   "publisher": "Tarcher",
+   "own": false,
+   "asin": null,
+   "isbn13": "9781585422500",
+   "isbn10": "1585422509",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "tarot-for-your-self",
+   "edition": "9781564145888",
+   "title": "Tarot for Your Self",
+   "authors": [
+    "Mary K. Greer"
+   ],
+   "format": "paperback",
+   "publisher": "New Page Books",
+   "own": false,
+   "asin": null,
+   "isbn13": "9781564145888",
+   "isbn10": "1564145883",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "tarot-for-your-self",
+   "edition": "9781578636792",
+   "title": "Tarot for Your Self",
+   "authors": [
+    "Mary K. Greer"
+   ],
+   "format": "paperback",
+   "publisher": "Weiser Books",
+   "own": false,
+   "asin": null,
+   "isbn13": "9781578636792",
+   "isbn10": "1578636795",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-four-agreements",
+   "edition": "9781878424310",
+   "title": "The Four Agreements",
+   "authors": [
+    "Don Miguel Ruiz"
+   ],
+   "format": "paperback",
+   "publisher": "Amber-Allen Publishing",
+   "own": false,
+   "asin": null,
+   "isbn13": "9781878424310",
+   "isbn10": "1878424319",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-alchemist",
+   "edition": "9780062315007",
+   "title": "The Alchemist",
+   "authors": [
+    "Paulo Coelho"
+   ],
+   "format": "paperback",
+   "publisher": "HarperOne",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780062315007",
+   "isbn10": "0062315005",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-kybalion",
+   "edition": "9781585426430",
+   "title": "The Kybalion",
+   "authors": [
+    "Three Initiates"
+   ],
+   "format": "paperback",
+   "publisher": "Tarcher Cornerstone Editions",
+   "own": false,
+   "asin": null,
+   "isbn13": "9781585426430",
+   "isbn10": "1585426431",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-dhammapada",
+   "edition": "9781586380205",
+   "title": "The Dhammapada",
+   "authors": [
+    "Eknath Easwaran"
+   ],
+   "format": "paperback",
+   "publisher": "Nilgiri Press",
+   "own": false,
+   "asin": null,
+   "isbn13": "9781586380205",
+   "isbn10": "1586380206",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "zen-mind-beginners-mind",
+   "edition": "9780834800793",
+   "title": "Zen Mind, Beginner's Mind",
+   "authors": [
+    "Shunryu Suzuki"
+   ],
+   "format": "paperback",
+   "publisher": "Shambhala",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780834800793",
+   "isbn10": "0834800799",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-miracle-of-mindfulness",
+   "edition": "9780807012390",
+   "title": "The Miracle of Mindfulness",
+   "authors": [
+    "Thich Nhat Hanh"
+   ],
+   "format": "paperback",
+   "publisher": "Beacon Press",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780807012390",
+   "isbn10": "0807012394",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "peace-is-every-step",
+   "edition": "9780553351392",
+   "title": "Peace Is Every Step",
+   "authors": [
+    "Thich Nhat Hanh"
+   ],
+   "format": "paperback",
+   "publisher": "Bantam",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780553351392",
+   "isbn10": "0553351397",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "radical-acceptance",
+   "edition": "9780553380996",
+   "title": "Radical Acceptance",
+   "authors": [
+    "Tara Brach"
+   ],
+   "format": "paperback",
+   "publisher": "Bantam",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780553380996",
+   "isbn10": "0553380990",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "light-on-yoga",
+   "edition": "9780805210316",
+   "title": "Light on Yoga",
+   "authors": [
+    "B.K.S. Iyengar"
+   ],
+   "format": "paperback",
+   "publisher": "Schocken Books",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780805210316",
+   "isbn10": "0805210318",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-yoga-sutras-of-patanjali",
+   "edition": "9780865477360",
+   "title": "The Yoga Sutras of Patañjali",
+   "authors": [
+    "Edwin F. Bryant"
+   ],
+   "format": "paperback",
+   "publisher": "North Point Press",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780865477360",
+   "isbn10": "0865477361",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "i-am-that",
+   "edition": "9780893860462",
+   "title": "I Am That",
+   "authors": [
+    "Nisargadatta Maharaj"
+   ],
+   "format": "paperback",
+   "publisher": "Acorn Press",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780893860462",
+   "isbn10": "0893860468",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "i-am-that",
+   "edition": "9780893860226",
+   "title": "I Am That",
+   "authors": [
+    "Nisargadatta Maharaj"
+   ],
+   "format": "paperback",
+   "publisher": "Acorn Press",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780893860226",
+   "isbn10": "0893860220",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-tao-of-physics",
+   "edition": "9780394731117",
+   "title": "The Tao of Physics",
+   "authors": [
+    "Fritjof Capra"
+   ],
+   "format": "paperback",
+   "publisher": "Shambhala",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780394731117",
+   "isbn10": "0394731115",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-tao-of-physics",
+   "edition": "9781570625190",
+   "title": "The Tao of Physics",
+   "authors": [
+    "Fritjof Capra"
+   ],
+   "format": "paperback",
+   "publisher": "Shambhala",
+   "own": false,
+   "asin": null,
+   "isbn13": "9781570625190",
+   "isbn10": "1570625190",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "liber-null-and-psychonaut",
+   "edition": "9781578637669",
+   "title": "Liber Null & Psychonaut",
+   "authors": [
+    "Peter J. Carroll"
+   ],
+   "format": "paperback",
+   "publisher": "Weiser Books",
+   "own": false,
+   "asin": null,
+   "isbn13": "9781578637669",
+   "isbn10": "157863766X",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "magick-in-theory-and-practice",
+   "edition": "9780486232959",
+   "title": "Magick in Theory and Practice",
+   "authors": [
+    "Aleister Crowley"
+   ],
+   "format": "paperback",
+   "publisher": "Dover Publications",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780486232959",
+   "isbn10": "0486232956",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-mystical-qabalah",
+   "edition": "9780877285960",
+   "title": "The Mystical Qabalah",
+   "authors": [
+    "Dion Fortune"
+   ],
+   "format": "paperback",
+   "publisher": "Red Wheel/Weiser",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780877285960",
+   "isbn10": "0877285969",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "drawing-down-the-moon",
+   "edition": "9780143038191",
+   "title": "Drawing Down the Moon",
+   "authors": [
+    "Margot Adler"
+   ],
+   "format": "paperback",
+   "publisher": "Penguin",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780143038191",
+   "isbn10": "0143038192",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-spiral-dance",
+   "edition": "9780062516329",
+   "title": "The Spiral Dance",
+   "authors": [
+    "Starhawk"
+   ],
+   "format": "paperback",
+   "publisher": "HarperOne",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780062516329",
+   "isbn10": "0062516329",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "initiation-into-hermetics",
+   "edition": "9781885928122",
+   "title": "Initiation into Hermetics",
+   "authors": [
+    "Franz Bardon"
+   ],
+   "format": "paperback",
+   "publisher": "Merkur Publishing",
+   "own": false,
+   "asin": null,
+   "isbn13": "9781885928122",
+   "isbn10": "1885928122",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "modern-magick",
+   "edition": "9780738715780",
+   "title": "Modern Magick",
+   "authors": [
+    "Donald Michael Kraig"
+   ],
+   "format": "paperback",
+   "publisher": "Llewellyn",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780738715780",
+   "isbn10": "0738715786",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "modern-magick",
+   "edition": "9780875423241",
+   "title": "Modern Magick",
+   "authors": [
+    "Donald Michael Kraig"
+   ],
+   "format": "paperback",
+   "publisher": "Llewellyn",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780875423241",
+   "isbn10": "0875423248",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-return-of-the-king",
+   "edition": "9780547928197",
+   "title": "The Return of the King",
+   "authors": [
+    "J.R.R. Tolkien"
+   ],
+   "format": "paperback",
+   "publisher": "Mariner Books",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780547928197",
+   "isbn10": "054792819X",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-return-of-the-king",
+   "edition": "9780618002245",
+   "title": "The Return of the King",
+   "authors": [
+    "J.R.R. Tolkien"
+   ],
+   "format": "paperback",
+   "publisher": "Mariner Books",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780618002245",
+   "isbn10": "0618002243",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-wise-mans-fear",
+   "edition": "9780756407124",
+   "title": "The Wise Man's Fear",
+   "authors": [
+    "Patrick Rothfuss"
+   ],
+   "format": "paperback",
+   "publisher": "DAW",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780756407124",
+   "isbn10": "0756407125",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-wise-mans-fear",
+   "edition": "9780756407919",
+   "title": "The Wise Man's Fear",
+   "authors": [
+    "Patrick Rothfuss"
+   ],
+   "format": "paperback",
+   "publisher": "DAW",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780756407919",
+   "isbn10": "0756407915",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-way-of-kings",
+   "edition": "9780765376671",
+   "title": "The Way of Kings",
+   "authors": [
+    "Brandon Sanderson"
+   ],
+   "format": "paperback",
+   "publisher": "Tor Books",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780765376671",
+   "isbn10": "0765376679",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-way-of-kings",
+   "edition": "9780765365279",
+   "title": "The Way of Kings",
+   "authors": [
+    "Brandon Sanderson"
+   ],
+   "format": "paperback",
+   "publisher": "Tor Books",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780765365279",
+   "isbn10": "0765365278",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-eye-of-the-world",
+   "edition": "9780812579956",
+   "title": "The Eye of the World",
+   "authors": [
+    "Robert Jordan"
+   ],
+   "format": "paperback",
+   "publisher": "Tor Books",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780812579956",
+   "isbn10": "081257995X",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "a-clash-of-kings",
+   "edition": "9780553579901",
+   "title": "A Clash of Kings",
+   "authors": [
+    "George R.R. Martin"
+   ],
+   "format": "paperback",
+   "publisher": "Bantam",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780553579901",
+   "isbn10": "0553579908",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "a-clash-of-kings",
+   "edition": "9780553381696",
+   "title": "A Clash of Kings",
+   "authors": [
+    "George R.R. Martin"
+   ],
+   "format": "paperback",
+   "publisher": "Bantam",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780553381696",
+   "isbn10": "0553381695",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-left-hand-of-darkness",
+   "edition": "9780441007318",
+   "title": "The Left Hand of Darkness",
+   "authors": [
+    "Ursula K. Le Guin"
+   ],
+   "format": "paperback",
+   "publisher": "Ace",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780441007318",
+   "isbn10": "0441007317",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-fifth-season",
+   "edition": "9780316229296",
+   "title": "The Fifth Season",
+   "authors": [
+    "N.K. Jemisin"
+   ],
+   "format": "paperback",
+   "publisher": "Orbit",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780316229296",
+   "isbn10": "0316229296",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-blade-itself",
+   "edition": "9780575077867",
+   "title": "The Blade Itself",
+   "authors": [
+    "Joe Abercrombie"
+   ],
+   "format": "paperback",
+   "publisher": "Gollancz",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780575077867",
+   "isbn10": "0575077867",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "storm-front",
+   "edition": "9780451457813",
+   "title": "Storm Front",
+   "authors": [
+    "Jim Butcher"
+   ],
+   "format": "paperback",
+   "publisher": null,
+   "own": false,
+   "asin": null,
+   "isbn13": "9780451457813",
+   "isbn10": "0451457811",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-call-of-cthulhu-and-other-weird-stories",
+   "edition": "9780143106487",
+   "title": "The Call of Cthulhu and Other Weird Stories",
+   "authors": [
+    "H.P. Lovecraft"
+   ],
+   "format": "paperback",
+   "publisher": "Penguin Classics",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780143106487",
+   "isbn10": "0143106481",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "we-have-always-lived-in-the-castle",
+   "edition": "9780143039976",
+   "title": "We Have Always Lived in the Castle",
+   "authors": [
+    "Shirley Jackson"
+   ],
+   "format": "paperback",
+   "publisher": "Penguin Classics",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780143039976",
+   "isbn10": "0143039970",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "one-hundred-years-of-solitude",
+   "edition": "9780060883287",
+   "title": "One Hundred Years of Solitude",
+   "authors": [
+    "Gabriel García Márquez"
+   ],
+   "format": "paperback",
+   "publisher": "Harper Perennial Modern Classics",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780060883287",
+   "isbn10": "0060883286",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-house-of-the-spirits",
+   "edition": "9781501117015",
+   "title": "The House of the Spirits",
+   "authors": [
+    "Isabel Allende"
+   ],
+   "format": "paperback",
+   "publisher": "Atria Books",
+   "own": false,
+   "asin": null,
+   "isbn13": "9781501117015",
+   "isbn10": "1501117017",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "kafka-on-the-shore",
+   "edition": "9781400079278",
+   "title": "Kafka on the Shore",
+   "authors": [
+    "Haruki Murakami"
+   ],
+   "format": "paperback",
+   "publisher": "Vintage International",
+   "own": false,
+   "asin": null,
+   "isbn13": "9781400079278",
+   "isbn10": "1400079276",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "fahrenheit-451",
+   "edition": "9781451673319",
+   "title": "Fahrenheit 451",
+   "authors": [
+    "Ray Bradbury"
+   ],
+   "format": "paperback",
+   "publisher": "Simon & Schuster",
+   "own": false,
+   "asin": null,
+   "isbn13": "9781451673319",
+   "isbn10": "1451673310",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "kindred",
+   "edition": "9780807083697",
+   "title": "Kindred",
+   "authors": [
+    "Octavia E. Butler"
+   ],
+   "format": "paperback",
+   "publisher": "Beacon Press",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780807083697",
+   "isbn10": "0807083690",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-upanishads",
+   "edition": "9781586380212",
+   "title": "The Upanishads",
+   "authors": [
+    "Eknath Easwaran"
+   ],
+   "format": "paperback",
+   "publisher": "Nilgiri Press",
+   "own": false,
+   "asin": null,
+   "isbn13": "9781586380212",
+   "isbn10": "1586380214",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-nag-hammadi-scriptures",
+   "edition": "9780061626005",
+   "title": "The Nag Hammadi Scriptures",
+   "authors": [
+    "Marvin W. Meyer",
+    "James M. Robinson"
+   ],
+   "format": "paperback",
+   "publisher": "HarperOne",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780061626005",
+   "isbn10": "0061626007",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-way-of-zen",
+   "edition": "9780394702988",
+   "title": "The Way of Zen",
+   "authors": [
+    "Alan W. Watts"
+   ],
+   "format": "paperback",
+   "publisher": "Vintage",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780394702988",
+   "isbn10": "0394702980",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-wisdom-of-insecurity",
+   "edition": "9780394704685",
+   "title": "The Wisdom of Insecurity",
+   "authors": [
+    "Alan W. Watts"
+   ],
+   "format": "paperback",
+   "publisher": "Vintage",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780394704685",
+   "isbn10": "0394704681",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-cloud-of-unknowing-and-other-works",
+   "edition": "9780140447620",
+   "title": "The Cloud of Unknowing and Other Works",
+   "authors": [
+    "Anonymous"
+   ],
+   "format": "paperback",
+   "publisher": "Penguin Classics",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780140447620",
+   "isbn10": "0140447628",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-essential-rumi",
+   "edition": "9780062509598",
+   "title": "The Essential Rumi",
+   "authors": [
+    "Rumi",
+    "Coleman Barks"
+   ],
+   "format": "paperback",
+   "publisher": "HarperOne",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780062509598",
+   "isbn10": "0062509594",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-gift",
+   "edition": "9780140195811",
+   "title": "The Gift",
+   "authors": [
+    "Hafiz",
+    "Daniel Ladinsky"
+   ],
+   "format": "paperback",
+   "publisher": "Penguin",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780140195811",
+   "isbn10": "0140195815",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "sefer-yetzirah",
+   "edition": "9780877288558",
+   "title": "Sefer Yetzirah",
+   "authors": [
+    "Aryeh Kaplan"
+   ],
+   "format": "paperback",
+   "publisher": "Weiser Books",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780877288558",
+   "isbn10": "0877288550",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-body-keeps-the-score",
+   "edition": "9780143127741",
+   "title": "The Body Keeps the Score",
+   "authors": [
+    "Bessel van der Kolk"
+   ],
+   "format": "paperback",
+   "publisher": "Penguin Books",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780143127741",
+   "isbn10": "0143127748",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "mythology",
+   "edition": "9780446574754",
+   "title": "Mythology",
+   "authors": [
+    "Edith Hamilton"
+   ],
+   "format": "paperback",
+   "publisher": "Grand Central Publishing",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780446574754",
+   "isbn10": "0446574759",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-epic-of-gilgamesh",
+   "edition": "9780140449198",
+   "title": "The Epic of Gilgamesh",
+   "authors": [
+    "Anonymous"
+   ],
+   "format": "paperback",
+   "publisher": "Penguin Classics",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780140449198",
+   "isbn10": "0140449191",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-odyssey",
+   "edition": "9780393356250",
+   "title": "The Odyssey",
+   "authors": [
+    "Homer"
+   ],
+   "format": "paperback",
+   "publisher": "W. W. Norton",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780393356250",
+   "isbn10": "0393356256",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-iliad",
+   "edition": "9780140445923",
+   "title": "The Iliad",
+   "authors": [
+    "Homer"
+   ],
+   "format": "paperback",
+   "publisher": "Penguin Classics",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780140445923",
+   "isbn10": "0140445927",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-iliad",
+   "edition": "9780140275360",
+   "title": "The Iliad",
+   "authors": [
+    "Homer"
+   ],
+   "format": "paperback",
+   "publisher": "Penguin Classics Deluxe Edition",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780140275360",
+   "isbn10": "0140275363",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-prose-edda",
+   "edition": "9780140447552",
+   "title": "The Prose Edda",
+   "authors": [
+    "Snorri Sturluson"
+   ],
+   "format": "paperback",
+   "publisher": "Penguin Classics",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780140447552",
+   "isbn10": "0140447555",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-ramayana",
+   "edition": "9780143039679",
+   "title": "The Ramayana",
+   "authors": [
+    "R. K. Narayan"
+   ],
+   "format": "paperback",
+   "publisher": "Penguin Classics",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780143039679",
+   "isbn10": "0143039679",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "metamorphoses",
+   "edition": "9780140447897",
+   "title": "Metamorphoses",
+   "authors": [
+    "Ovid"
+   ],
+   "format": "paperback",
+   "publisher": "Penguin Classics",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780140447897",
+   "isbn10": "014044789X",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "metamorphoses",
+   "edition": "9780140440584",
+   "title": "Metamorphoses",
+   "authors": [
+    "Ovid"
+   ],
+   "format": "paperback",
+   "publisher": "Penguin Classics",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780140440584",
+   "isbn10": "0140440585",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "mastering-the-core-teachings-of-the-buddha",
+   "edition": "9781911597100",
+   "title": "Mastering the Core Teachings of the Buddha",
+   "authors": [
+    "Daniel Ingram"
+   ],
+   "format": "paperback",
+   "publisher": "Aeon Books",
+   "own": false,
+   "asin": null,
+   "isbn13": "9781911597100",
+   "isbn10": "1911597108",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "daring-greatly",
+   "edition": "9781592408412",
+   "title": "Daring Greatly",
+   "authors": [
+    "Brené Brown"
+   ],
+   "format": "paperback",
+   "publisher": "Avery",
+   "own": false,
+   "asin": null,
+   "isbn13": "9781592408412",
+   "isbn10": "1592408419",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "a-new-earth",
+   "edition": "9780452289963",
+   "title": "A New Earth",
+   "authors": [
+    "Eckhart Tolle"
+   ],
+   "format": "paperback",
+   "publisher": "Plume",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780452289963",
+   "isbn10": "0452289963",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-surrender-experiment",
+   "edition": "9780804141109",
+   "title": "The Surrender Experiment",
+   "authors": [
+    "Michael A. Singer"
+   ],
+   "format": "paperback",
+   "publisher": "Harmony",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780804141109",
+   "isbn10": "080414110X",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "start-where-you-are",
+   "edition": "9780877738800",
+   "title": "Start Where You Are",
+   "authors": [
+    "Pema Chödrön"
+   ],
+   "format": "paperback",
+   "publisher": "Shambhala",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780877738800",
+   "isbn10": "0877738807",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-wisdom-of-no-escape",
+   "edition": "9781570628726",
+   "title": "The Wisdom of No Escape",
+   "authors": [
+    "Pema Chödrön"
+   ],
+   "format": "paperback",
+   "publisher": "Shambhala",
+   "own": false,
+   "asin": null,
+   "isbn13": "9781570628726",
+   "isbn10": "1570628726",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-wisdom-of-no-escape",
+   "edition": "9780877736325",
+   "title": "The Wisdom of No Escape",
+   "authors": [
+    "Pema Chödrön"
+   ],
+   "format": "paperback",
+   "publisher": "Shambhala",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780877736325",
+   "isbn10": "0877736324",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "comfortable-with-uncertainty",
+   "edition": "9781590300787",
+   "title": "Comfortable with Uncertainty",
+   "authors": [
+    "Pema Chödrön"
+   ],
+   "format": "paperback",
+   "publisher": "Shambhala",
+   "own": false,
+   "asin": null,
+   "isbn13": "9781590300787",
+   "isbn10": "1590300785",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "comfortable-with-uncertainty",
+   "edition": "9781611805956",
+   "title": "Comfortable with Uncertainty",
+   "authors": [
+    "Pema Chödrön"
+   ],
+   "format": "paperback",
+   "publisher": "Shambhala",
+   "own": false,
+   "asin": null,
+   "isbn13": "9781611805956",
+   "isbn10": "1611805953",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "cunninghams-encyclopedia-of-magical-herbs",
+   "edition": "9780875421223",
+   "title": "Cunningham's Encyclopedia of Magical Herbs",
+   "authors": [
+    "Scott Cunningham"
+   ],
+   "format": "paperback",
+   "publisher": "Llewellyn",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780875421223",
+   "isbn10": "0875421229",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "living-wicca",
+   "edition": "9780875421841",
+   "title": "Living Wicca",
+   "authors": [
+    "Scott Cunningham"
+   ],
+   "format": "paperback",
+   "publisher": "Llewellyn",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780875421841",
+   "isbn10": "0875421849",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "earth-power",
+   "edition": "9780875421216",
+   "title": "Earth Power",
+   "authors": [
+    "Scott Cunningham"
+   ],
+   "format": "paperback",
+   "publisher": "Llewellyn",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780875421216",
+   "isbn10": "0875421210",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "cunninghams-encyclopedia-of-crystal-gem-and-metal-magic",
+   "edition": "9780875421261",
+   "title": "Cunningham's Encyclopedia of Crystal, Gem & Metal Magic",
+   "authors": [
+    "Scott Cunningham"
+   ],
+   "format": "paperback",
+   "publisher": "Llewellyn",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780875421261",
+   "isbn10": "0875421261",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "practical-candleburning-rituals",
+   "edition": "9780875420486",
+   "title": "Practical Candleburning Rituals",
+   "authors": [
+    "Raymond Buckland"
+   ],
+   "format": "paperback",
+   "publisher": "Llewellyn",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780875420486",
+   "isbn10": "0875420486",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-element-encyclopedia-of-witchcraft",
+   "edition": "9780007192939",
+   "title": "The Element Encyclopedia of Witchcraft",
+   "authors": [
+    "Judika Illes"
+   ],
+   "format": "paperback",
+   "publisher": "HarperElement",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780007192939",
+   "isbn10": "0007192932",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "rachel-pollacks-tarot-wisdom",
+   "edition": "9780738713090",
+   "title": "Rachel Pollack's Tarot Wisdom",
+   "authors": [
+    "Rachel Pollack"
+   ],
+   "format": "paperback",
+   "publisher": "Llewellyn",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780738713090",
+   "isbn10": "0738713090",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "awaken-healing-energy-through-the-tao",
+   "edition": "9780943358079",
+   "title": "Awaken Healing Energy Through the Tao",
+   "authors": [
+    "Mantak Chia"
+   ],
+   "format": "paperback",
+   "publisher": "Aurora Press",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780943358079",
+   "isbn10": "0943358078",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "beyond-belief",
+   "edition": "9780375703164",
+   "title": "Beyond Belief",
+   "authors": [
+    "Elaine Pagels"
+   ],
+   "format": "paperback",
+   "publisher": "Vintage",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780375703164",
+   "isbn10": "0375703160",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-origin-of-satan",
+   "edition": "9780679731184",
+   "title": "The Origin of Satan",
+   "authors": [
+    "Elaine Pagels"
+   ],
+   "format": "paperback",
+   "publisher": "Vintage",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780679731184",
+   "isbn10": "0679731180",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "chakra-mantras",
+   "edition": "9781578633678",
+   "title": "Chakra Mantras",
+   "authors": [
+    "Thomas Ashley-Farrand"
+   ],
+   "format": "paperback",
+   "publisher": "Weiser Books",
+   "own": false,
+   "asin": null,
+   "isbn13": "9781578633678",
+   "isbn10": "1578633672",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "meditation-for-the-love-of-it",
+   "edition": "9781604070811",
+   "title": "Meditation for the Love of It",
+   "authors": [
+    "Sally Kempton"
+   ],
+   "format": "paperback",
+   "publisher": "Sounds True",
+   "own": false,
+   "asin": null,
+   "isbn13": "9781604070811",
+   "isbn10": "1604070811",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "awakening-shakti",
+   "edition": "9781604078916",
+   "title": "Awakening Shakti",
+   "authors": [
+    "Sally Kempton"
+   ],
+   "format": "paperback",
+   "publisher": "Sounds True",
+   "own": false,
+   "asin": null,
+   "isbn13": "9781604078916",
+   "isbn10": "160407891X",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "wicca-for-life",
+   "edition": "9780806522753",
+   "title": "Wicca for Life",
+   "authors": [
+    "Raymond Buckland"
+   ],
+   "format": "paperback",
+   "publisher": "Kensington",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780806522753",
+   "isbn10": "0806522755",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "to-ride-a-silver-broomstick",
+   "edition": "9780875427911",
+   "title": "To Ride a Silver Broomstick",
+   "authors": [
+    "Silver RavenWolf"
+   ],
+   "format": "paperback",
+   "publisher": "Llewellyn",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780875427911",
+   "isbn10": "087542791X",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-golden-dawn",
+   "edition": "9780875426631",
+   "title": "The Golden Dawn",
+   "authors": [
+    "Israel Regardie"
+   ],
+   "format": "paperback",
+   "publisher": "Llewellyn",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780875426631",
+   "isbn10": "0875426638",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "llewellyns-complete-book-of-astrology",
+   "edition": "9780738710716",
+   "title": "Llewellyn's Complete Book of Astrology",
+   "authors": [
+    "Kris Brandt Riske"
+   ],
+   "format": "paperback",
+   "publisher": "Llewellyn",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780738710716",
+   "isbn10": "0738710717",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-book-of-thoth",
+   "edition": "9780877282686",
+   "title": "The Book of Thoth",
+   "authors": [
+    "Aleister Crowley"
+   ],
+   "format": "paperback",
+   "publisher": "Weiser Books",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780877282686",
+   "isbn10": "0877282684",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-tao-of-pooh",
+   "edition": "9780140067477",
+   "title": "The Tao of Pooh",
+   "authors": [
+    "Benjamin Hoff"
+   ],
+   "format": "paperback",
+   "publisher": "Penguin Books",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780140067477",
+   "isbn10": "0140067477",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "coraline",
+   "edition": "9780380807345",
+   "title": "Coraline",
+   "authors": [
+    "Neil Gaiman"
+   ],
+   "format": "paperback",
+   "publisher": "HarperCollins",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780380807345",
+   "isbn10": "0380807343",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-graveyard-book",
+   "edition": "9780060530945",
+   "title": "The Graveyard Book",
+   "authors": [
+    "Neil Gaiman"
+   ],
+   "format": "paperback",
+   "publisher": "HarperCollins",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780060530945",
+   "isbn10": "0060530944",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "stardust",
+   "edition": "9780063070714",
+   "title": "Stardust",
+   "authors": [
+    "Neil Gaiman"
+   ],
+   "format": "paperback",
+   "publisher": "William Morrow Paperbacks",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780063070714",
+   "isbn10": "0063070715",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-golden-compass",
+   "edition": "9780375823459",
+   "title": "The Golden Compass",
+   "authors": [
+    "Philip Pullman"
+   ],
+   "format": "paperback",
+   "publisher": "Knopf Books for Young Readers",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780375823459",
+   "isbn10": "037582345X",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "rosemarys-baby",
+   "edition": "9781605981109",
+   "title": "Rosemary's Baby",
+   "authors": [
+    "Ira Levin"
+   ],
+   "format": "paperback",
+   "publisher": "Pegasus Books",
+   "own": false,
+   "asin": null,
+   "isbn13": "9781605981109",
+   "isbn10": "1605981109",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-handmaids-tale",
+   "edition": "9780385490818",
+   "title": "The Handmaid's Tale",
+   "authors": [
+    "Margaret Atwood"
+   ],
+   "format": "paperback",
+   "publisher": "Anchor Books",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780385490818",
+   "isbn10": "038549081X",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "brave-new-world",
+   "edition": "9780060850524",
+   "title": "Brave New World",
+   "authors": [
+    "Aldous Huxley"
+   ],
+   "format": "paperback",
+   "publisher": "Harper Perennial Modern Classics",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780060850524",
+   "isbn10": "0060850523",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "neuromancer",
+   "edition": "9780441007462",
+   "title": "Neuromancer",
+   "authors": [
+    "William Gibson"
+   ],
+   "format": "paperback",
+   "publisher": "Ace",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780441007462",
+   "isbn10": "0441007465",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "parable-of-the-sower",
+   "edition": "9780446675505",
+   "title": "Parable of the Sower",
+   "authors": [
+    "Octavia E. Butler"
+   ],
+   "format": "paperback",
+   "publisher": "Grand Central Publishing",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780446675505",
+   "isbn10": "0446675504",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "parable-of-the-sower",
+   "edition": "9781538732182",
+   "title": "Parable of the Sower",
+   "authors": [
+    "Octavia E. Butler"
+   ],
+   "format": "paperback",
+   "publisher": "Grand Central Publishing",
+   "own": false,
+   "asin": null,
+   "isbn13": "9781538732182",
+   "isbn10": "1538732181",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "dune",
+   "edition": "9780441013593",
+   "title": "Dune",
+   "authors": [
+    "Frank Herbert"
+   ],
+   "format": "paperback",
+   "publisher": "Ace",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780441013593",
+   "isbn10": "0441013597",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "pet-sematary",
+   "edition": "9781501156700",
+   "title": "Pet Sematary",
+   "authors": [
+    "Stephen King"
+   ],
+   "format": "paperback",
+   "publisher": "Pocket Books",
+   "own": false,
+   "asin": null,
+   "isbn13": "9781501156700",
+   "isbn10": "1501156705",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "salems-lot",
+   "edition": "9780307743671",
+   "title": "'Salem's Lot",
+   "authors": [
+    "Stephen King"
+   ],
+   "format": "paperback",
+   "publisher": "Anchor",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780307743671",
+   "isbn10": "0307743675",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-exorcist",
+   "edition": "9780062094360",
+   "title": "The Exorcist",
+   "authors": [
+    "William Peter Blatty"
+   ],
+   "format": "paperback",
+   "publisher": "Harper",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780062094360",
+   "isbn10": "006209436X",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-turn-of-the-screw",
+   "edition": "9780141441351",
+   "title": "The Turn of the Screw",
+   "authors": [
+    "Henry James"
+   ],
+   "format": "paperback",
+   "publisher": "Penguin Classics",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780141441351",
+   "isbn10": "0141441356",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-picture-of-dorian-gray",
+   "edition": "9780141439570",
+   "title": "The Picture of Dorian Gray",
+   "authors": [
+    "Oscar Wilde"
+   ],
+   "format": "paperback",
+   "publisher": "Penguin Classics",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780141439570",
+   "isbn10": "0141439572",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "piranesi",
+   "edition": "9781526622433",
+   "title": "Piranesi",
+   "authors": [
+    "Susanna Clarke"
+   ],
+   "format": "paperback",
+   "publisher": "Bloomsbury",
+   "own": false,
+   "asin": null,
+   "isbn13": "9781526622433",
+   "isbn10": "1526622432",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-lies-of-locke-lamora",
+   "edition": "9780553588941",
+   "title": "The Lies of Locke Lamora",
+   "authors": [
+    "Scott Lynch"
+   ],
+   "format": "paperback",
+   "publisher": null,
+   "own": false,
+   "asin": null,
+   "isbn13": "9780553588941",
+   "isbn10": "055358894X",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "gardens-of-the-moon",
+   "edition": "9780765322883",
+   "title": "Gardens of the Moon",
+   "authors": [
+    "Steven Erikson"
+   ],
+   "format": "paperback",
+   "publisher": "Tor Books",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780765322883",
+   "isbn10": "0765322889",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "mexican-gothic",
+   "edition": "9780525620808",
+   "title": "Mexican Gothic",
+   "authors": [
+    "Silvia Moreno-Garcia"
+   ],
+   "format": "paperback",
+   "publisher": "Del Rey",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780525620808",
+   "isbn10": "052562080X",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "station-eleven",
+   "edition": "9780804172448",
+   "title": "Station Eleven",
+   "authors": [
+    "Emily St. John Mandel"
+   ],
+   "format": "paperback",
+   "publisher": "Vintage",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780804172448",
+   "isbn10": "0804172447",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "practical-magic",
+   "edition": "9780425190371",
+   "title": "Practical Magic",
+   "authors": [
+    "Alice Hoffman"
+   ],
+   "format": "paperback",
+   "publisher": "Berkley",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780425190371",
+   "isbn10": "0425190374",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-dispossessed",
+   "edition": "9780061054884",
+   "title": "The Dispossessed",
+   "authors": [
+    "Ursula K. Le Guin"
+   ],
+   "format": "paperback",
+   "publisher": "Harper Voyager",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780061054884",
+   "isbn10": "0061054887",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-prophet",
+   "edition": "9780394404288",
+   "title": "The Prophet",
+   "authors": [
+    "Kahlil Gibran"
+   ],
+   "format": "hardcover",
+   "publisher": "Knopf",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780394404288",
+   "isbn10": "0394404289",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-tibetan-book-of-the-dead",
+   "edition": "9780140455267",
+   "title": "The Tibetan Book of the Dead",
+   "authors": [
+    "Padmasambhava"
+   ],
+   "format": "paperback",
+   "publisher": "Penguin Classics",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780140455267",
+   "isbn10": "0140455264",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-heart-of-the-buddhas-teaching",
+   "edition": "9780767903691",
+   "title": "The Heart of the Buddha's Teaching",
+   "authors": [
+    "Thich Nhat Hanh"
+   ],
+   "format": "paperback",
+   "publisher": "Harmony",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780767903691",
+   "isbn10": "0767903692",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "revelations",
+   "edition": "9780143121633",
+   "title": "Revelations",
+   "authors": [
+    "Elaine Pagels"
+   ],
+   "format": "paperback",
+   "publisher": "Penguin Books",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780143121633",
+   "isbn10": "0143121634",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "tao-te-ching",
+   "edition": "9780061142666",
+   "title": "Tao Te Ching",
+   "authors": [
+    "Lao Tzu"
+   ],
+   "format": "paperback",
+   "publisher": "Harper Perennial Modern Classics",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780061142666",
+   "isbn10": "0061142662",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-egyptian-book-of-the-dead",
+   "edition": "9780486218663",
+   "title": "The Egyptian Book of the Dead",
+   "authors": [
+    "E. A. Wallis Budge"
+   ],
+   "format": "paperback",
+   "publisher": "Dover Publications",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780486218663",
+   "isbn10": "048621866X",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-quran",
+   "edition": "9780199535958",
+   "title": "The Qur'an",
+   "authors": [
+    "M. A. S. Abdel Haleem"
+   ],
+   "format": "paperback",
+   "publisher": "Oxford University Press",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780199535958",
+   "isbn10": "0199535957",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-analects",
+   "edition": "9780140443486",
+   "title": "The Analects",
+   "authors": [
+    "Confucius"
+   ],
+   "format": "paperback",
+   "publisher": "Penguin Classics",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780140443486",
+   "isbn10": "0140443487",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "sikhism",
+   "edition": "9780192806017",
+   "title": "Sikhism",
+   "authors": [
+    "Eleanor Nesbitt"
+   ],
+   "format": "paperback",
+   "publisher": "Oxford University Press",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780192806017",
+   "isbn10": "0192806017",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "sikhism",
+   "edition": "9780198745570",
+   "title": "Sikhism",
+   "authors": [
+    "Eleanor Nesbitt"
+   ],
+   "format": "paperback",
+   "publisher": "Oxford University Press",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780198745570",
+   "isbn10": "0198745575",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "learning-the-tarot",
+   "edition": "9781578630486",
+   "title": "Learning the Tarot",
+   "authors": [
+    "Joan Bunning"
+   ],
+   "format": "paperback",
+   "publisher": "Weiser Books",
+   "own": false,
+   "asin": null,
+   "isbn13": "9781578630486",
+   "isbn10": "1578630487",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "holistic-tarot",
+   "edition": "9781583948354",
+   "title": "Holistic Tarot",
+   "authors": [
+    "Benebell Wen"
+   ],
+   "format": "paperback",
+   "publisher": "North Atlantic Books",
+   "own": false,
+   "asin": null,
+   "isbn13": "9781583948354",
+   "isbn10": "158394835X",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-inner-sky",
+   "edition": "9780979067716",
+   "title": "The Inner Sky",
+   "authors": [
+    "Steven Forrest"
+   ],
+   "format": "paperback",
+   "publisher": "Seven Paws Press",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780979067716",
+   "isbn10": "0979067715",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-i-ching-or-book-of-changes",
+   "edition": "9780691097503",
+   "title": "The I Ching or Book of Changes",
+   "authors": [
+    "Richard Wilhelm"
+   ],
+   "format": "hardcover",
+   "publisher": "Princeton University Press",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780691097503",
+   "isbn10": "069109750X",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-secret-of-the-golden-flower",
+   "edition": "9780156799805",
+   "title": "The Secret of the Golden Flower",
+   "authors": [
+    "Richard Wilhelm",
+    "C. G. Jung"
+   ],
+   "format": "paperback",
+   "publisher": "Harcourt Brace Jovanovich",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780156799805",
+   "isbn10": "0156799804",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "hermetica",
+   "edition": "9780521425438",
+   "title": "Hermetica",
+   "authors": [
+    "Brian P. Copenhaver"
+   ],
+   "format": "paperback",
+   "publisher": "Cambridge University Press",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780521425438",
+   "isbn10": "0521425433",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-mabinogion",
+   "edition": "9780199218783",
+   "title": "The Mabinogion",
+   "authors": [
+    "Anonymous"
+   ],
+   "format": "paperback",
+   "publisher": "Oxford University Press",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780199218783",
+   "isbn10": "0199218781",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-histories",
+   "edition": "9780143107545",
+   "title": "The Histories",
+   "authors": [
+    "Herodotus"
+   ],
+   "format": "paperback",
+   "publisher": "Penguin Classics Deluxe Edition",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780143107545",
+   "isbn10": "0143107542",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-worlds-religions",
+   "edition": "9780061660184",
+   "title": "The World's Religions",
+   "authors": [
+    "Huston Smith"
+   ],
+   "format": "paperback",
+   "publisher": "HarperOne",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780061660184",
+   "isbn10": "0061660183",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-varieties-of-religious-experience",
+   "edition": "9780140390346",
+   "title": "The Varieties of Religious Experience",
+   "authors": [
+    "William James"
+   ],
+   "format": "paperback",
+   "publisher": "Penguin",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780140390346",
+   "isbn10": "0140390340",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "a-history-of-god",
+   "edition": "9780345384560",
+   "title": "A History of God",
+   "authors": [
+    "Karen Armstrong"
+   ],
+   "format": "paperback",
+   "publisher": "Ballantine Books",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780345384560",
+   "isbn10": "0345384563",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "beyond-good-and-evil",
+   "edition": "9780140449235",
+   "title": "Beyond Good and Evil",
+   "authors": [
+    "Friedrich Nietzsche"
+   ],
+   "format": "paperback",
+   "publisher": "Penguin Classics",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780140449235",
+   "isbn10": "014044923X",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-consolation-of-philosophy",
+   "edition": "9780140447804",
+   "title": "The Consolation of Philosophy",
+   "authors": [
+    "Boethius"
+   ],
+   "format": "paperback",
+   "publisher": "Penguin Classics",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780140447804",
+   "isbn10": "0140447806",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "discourses-and-selected-writings",
+   "edition": "9780140449464",
+   "title": "Discourses and Selected Writings",
+   "authors": [
+    "Epictetus"
+   ],
+   "format": "paperback",
+   "publisher": "Penguin Classics",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780140449464",
+   "isbn10": "0140449469",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "tantra",
+   "edition": "9781570623042",
+   "title": "Tantra",
+   "authors": [
+    "Georg Feuerstein"
+   ],
+   "format": "paperback",
+   "publisher": "Shambhala",
+   "own": false,
+   "asin": null,
+   "isbn13": "9781570623042",
+   "isbn10": "157062304X",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "what-the-buddha-taught",
+   "edition": "9780802130310",
+   "title": "What the Buddha Taught",
+   "authors": [
+    "Walpola Rahula"
+   ],
+   "format": "paperback",
+   "publisher": "Grove Press",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780802130310",
+   "isbn10": "0802130313",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "being-peace",
+   "edition": "9781952692765",
+   "title": "Being Peace",
+   "authors": [
+    "Thich Nhat Hanh"
+   ],
+   "format": "paperback",
+   "publisher": "Parallax Press",
+   "own": false,
+   "asin": null,
+   "isbn13": "9781952692765",
+   "isbn10": "1952692768",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "full-catastrophe-living",
+   "edition": "9780345536938",
+   "title": "Full Catastrophe Living",
+   "authors": [
+    "Jon Kabat-Zinn"
+   ],
+   "format": "paperback",
+   "publisher": "Bantam",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780345536938",
+   "isbn10": "0345536932",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "think-and-grow-rich",
+   "edition": "9781585424337",
+   "title": "Think and Grow Rich",
+   "authors": [
+    "Napoleon Hill"
+   ],
+   "format": "paperback",
+   "publisher": "Tarcher",
+   "own": false,
+   "asin": null,
+   "isbn13": "9781585424337",
+   "isbn10": "1585424331",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-lord-of-the-rings",
+   "edition": "9780618640157",
+   "title": "The Lord of the Rings",
+   "authors": [
+    "J.R.R. Tolkien"
+   ],
+   "format": "paperback",
+   "publisher": "Mariner Books",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780618640157",
+   "isbn10": "0618640150",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-two-towers",
+   "edition": "9780547928203",
+   "title": "The Two Towers",
+   "authors": [
+    "J.R.R. Tolkien"
+   ],
+   "format": "paperback",
+   "publisher": "Mariner Books",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780547928203",
+   "isbn10": "0547928203",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "the-silmarillion",
+   "edition": "9780618126989",
+   "title": "The Silmarillion",
+   "authors": [
+    "J.R.R. Tolkien"
+   ],
+   "format": "paperback",
+   "publisher": null,
+   "own": false,
+   "asin": null,
+   "isbn13": "9780618126989",
+   "isbn10": "0618126988",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  },
+  {
+   "work": "anansi-boys",
+   "edition": "9780061342394",
+   "title": "Anansi Boys",
+   "authors": [
+    "Neil Gaiman"
+   ],
+   "format": "paperback",
+   "publisher": "William Morrow Paperbacks",
+   "own": false,
+   "asin": null,
+   "isbn13": "9780061342394",
+   "isbn10": "0061342394",
+   "method": "ISBN-10 as ASIN (print edition), confirmed by ISBN-13 in the response",
+   "status": "ready"
+  }
+ ]
+}
