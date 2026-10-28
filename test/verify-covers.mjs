@@ -45,8 +45,8 @@ const OUT = path.join(ROOT, 'test/out-covers'), rd = (p) => fs.readFileSync(path
 const key1 = `the-power-of-now__${ponEd.id}`, key2 = `forbidden-mantra__${fmEd.id}`;
 const fmPage = rd('books/forbidden-mantra/index.html');
 ok(new RegExp(`<img src="\\.\\./\\.\\./assets/covers/${key2}-240\\.webp" srcset="[^"]*480w" sizes="[^"]+" width="240" height="360" alt="Cover of Forbidden Mantra by [^"]+ \\(paperback edition\\)" loading="lazy"`).test(fmPage), 'static book page: real <img> with srcset, intrinsic size, exact-title/author/edition alt text, lazy loading');
-ok(!/cover-photo/.test(rd('books/gayatri-mantra/index.html').split('class="book-cover"')[1]?.slice(0, 400) ?? 'cover-photo') && /class="cover cover-lg cover-fmp"/.test(rd('books/gayatri-mantra/index.html')), 'a book without a verified cover keeps its typographic card (never a borrowed cover)');
-const home = rd('books/index.html'); ok((home.match(/cover-photo/g) || []).length >= 1 && /class="cover cover-fmp"|class="cover"/.test(home), 'listings show a real cover only for the covered edition; the rest stay typographic (never a borrowed cover)');
+ok(!/cover-photo/.test(rd('books/gayatri-mantra/index.html').split('class="book-cover"')[1]?.slice(0, 400) ?? 'cover-photo') && /class="cover cover-ph cover-lg cover-fmp"/.test(rd('books/gayatri-mantra/index.html')), 'a book without a verified cover keeps its typographic card (never a borrowed cover)');
+const home = rd('books/index.html'); ok((home.match(/cover-photo/g) || []).length >= 1 && /class="cover cover-ph cover-fmp"|class="cover cover-fmp"|class="cover"/.test(home), 'listings show a real cover only for the covered edition; the rest stay typographic (never a borrowed cover)');
 ok(fs.existsSync(path.join(OUT, 'assets/covers', `${key1}-240.webp`)) && fs.readdirSync(path.join(OUT, 'assets/covers')).length === 4, 'only the covers in the manifest are published');
 const gate = scanPackage(OUT, { approvals: { nvidiaBranding: { approved: true } } });
 ok(!gate.ok && gate.fail.some((f) => /cover image with no verified manifest entry/.test(f)), 'security gate rejects cover files that are not in the real manifest');

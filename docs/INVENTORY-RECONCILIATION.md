@@ -79,3 +79,9 @@ Counts of table records: Emily K Patel 104; Rav Shiva 27; Forbidden Mantra Press
 
 ## Imprints and categories
 The table has no publisher field. Forbidden Mantra Press is recorded as owner-supplied for the 123 press works; the Muslim Prayer Series titles and the Abdur Rahman, R. K. Theory, Alex Knight and Spiritual Expressionz titles stay outside the press count until the owner confirms the imprint. Departments were checked against the table's series: all but four agree with the series; the four are source anomalies that were kept (Energy Unleashed sits in the table's "buddhist mantra series" but is a Mo Pai book; Creation and Connection and Unveiling Hidden Wisdom and The Reason All The Prophets Fasted sit in series that do not match their subject). Two works are assigned by default and flagged: The Code of Immortality: The Fallen Star.
+
+## B0GYYGC3XH (public-listing check)
+Public evidence shows an English title with Spanish content and a series mix-up with Inner Mechanics. That is not reliable enough to confirm language, format or relationship. Not added, not merged, not published. Owner to confirm what it is.
+
+## Press listing, first page audit
+Checked against the owner's public catalogue table. No further independently verifiable errors remain. The unverified placeholders are suppressed from purchasable listings; see `docs/LAUNCH-CHECKLIST.md`.

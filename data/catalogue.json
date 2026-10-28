@@ -4474,6 +4474,9 @@
     "not found in the owner's catalogue table (2026-10-28); kept from the earlier owner listing, owner to confirm",
     "Public search finds no Forbidden Mantra Press book called 'Mo Pai Nei Kung'. The only Amazon book of that name found is 'Beginning Mo Pai Nei Kung' by Shifu Lin (Lung Hu Shan Publications, 2012), a different, third-party book that must not be merged with this entry. The owner's own design notes use 'Mo Pai Nei Kung series' as a category label. Likely a topic/series placeholder, not a published book; owner to confirm"
    ],
+   "purchasable": false,
+   "placeholder": true,
+   "placeholderNote": "Unverified placeholder. No publication or ASIN has been verified for a book called 'Mo Pai Nei Kung' by this press; the name is kept as a category label for the Mo Pai books. It is not offered for sale here.",
    "provenance": {
     "tier": "hand-verified"
    },
@@ -4524,6 +4527,9 @@
    "reviewFlags": [
     "the owner's catalogue uses 'The Hidden Technology of Human Power Series' as a SERIES name (11 records), not a book title; kept, owner to confirm"
    ],
+   "purchasable": false,
+   "placeholder": true,
+   "placeholderNote": "Series name, not a book. 'The Hidden Technology of Human Power' is the series that Mo Pai and other titles belong to; no single book of this name has been verified. It is not offered for sale here.",
    "provenance": {
     "tier": "hand-verified"
    },

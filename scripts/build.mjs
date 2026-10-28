@@ -186,6 +186,7 @@ const mkt = (r) => r.marketplace ?? (r.retailer === 'amazon' ? AFF.defaultMarket
 const amazonLabel = (m, ed) => (m === 'amazon.com' ? (ed.format === 'audiobook' ? 'Amazon (Audible)' : 'Amazon') : `Amazon.${m.slice(7)}${ed.format === 'audiobook' ? ' (Audible)' : ''}`);
 function retailersRaw(work, ed) {
   const out = [];
+  if (work.purchasable === false) return out; // unverified placeholder: no purchase link of any kind
   for (const r of ed.retailers ?? []) {
     const m = mkt(r);
     out.push({ label: r.retailer === 'amazon' ? amazonLabel(m, ed) : r.retailer === 'google-play' ? 'Google Play Books' : r.retailer, url: r.retailer === 'amazon' ? withTag(r.url, m) : r.url, affiliate: r.retailer === 'amazon', market: r.retailer === 'amazon' ? m : null, status: r.verification === 'owner-catalogue' ? `Listed in the owner's own bookstore catalogue on ${r.checkedOn}; live check pending` : r.verification === 'seen-in-search-results' ? `Link seen in search results on ${r.checkedOn}; live check pending` : `Verified ${r.checkedOn}` });
@@ -246,7 +247,8 @@ function cover(w, big = false, title = w.title, entry = coverOfWork.get(w.slug))
     return `<div class="cover cover-photo${big ? ' cover-lg' : ''}${w.press ? ' cover-fmp' : ''}"><img src="${base}-240.webp"${entry.has480 ? ` srcset="${base}-240.webp 240w, ${base}-480.webp 480w" sizes="${big ? '300px' : '(max-width:760px) 45vw, 240px'}"` : ''} width="${w240}" height="${h240}" alt="${esc(alt)}" loading="lazy" decoding="async"></div>`;
   }
   const hue = w.press ? 38 : hashHue(w.title);
-  return `<div class="cover${big ? ' cover-lg' : ''}${w.press ? ' cover-fmp' : ''}" style="--h:${hue}" role="img" aria-label="Placeholder cover for ${esc(title)}. Official cover art is shown only where a permitted source is connected."><span class="cover-title">${esc(title)}</span><span class="cover-author">${esc(w.authors[0])}</span></div>`;
+  const sz = title.length > 70 ? ' ph-s' : title.length > 40 ? ' ph-m' : '';
+  return `<div class="cover cover-ph${big ? ' cover-lg' : ''}${w.press ? ' cover-fmp' : ''}" style="--h:${hue}" role="img" aria-label="Text placeholder for the cover of ${esc(title)}. The original cover art is not available yet."><span class="ph-orn" aria-hidden="true">✦</span><span class="cover-title ph-t${sz}">${esc(title)}</span><span class="cover-author">${esc(w.authors[0])}</span><span class="ph-cap" aria-hidden="true">Cover art coming</span></div>`;
 }
 const authorHref = (n) => (authorPage.has(slugify(n)) ? href(`authors/${slugify(n)}/`) : `${href('search/')}?q=${encodeURIComponent(n)}`);
 const authorLinks = (w) => w.authors.map((n) => `<a href="${authorHref(n)}">${esc(n)}</a>`).join(', ');
@@ -482,9 +484,9 @@ const HL = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/highlights.json'), '
 const hlEvidence = new Set(HL.bestsellerEvidence ?? []); // owner-supplied sales evidence only; nothing else may be called a bestseller
 const hlTag = (w) => (hlEvidence.has(w.slug) ? 'Bestseller' : 'Featured');
 const hlOrder = new Map((HL.featured ?? []).map((sl, ix) => [sl, ix]));
-const hlShelf = [...fmpWorks].sort((a, b) => (hlOrder.has(a.slug) ? hlOrder.get(a.slug) : 99) - (hlOrder.has(b.slug) ? hlOrder.get(b.slug) : 99) || (coverOfWork.has(b.slug) ? 1 : 0) - (coverOfWork.has(a.slug) ? 1 : 0)).slice(0, 14);
+const hlShelf = [...fmpWorks.filter((w) => w.purchasable !== false)].sort((a, b) => (hlOrder.has(a.slug) ? hlOrder.get(a.slug) : 99) - (hlOrder.has(b.slug) ? hlOrder.get(b.slug) : 99) || (coverOfWork.has(b.slug) ? 1 : 0) - (coverOfWork.has(a.slug) ? 1 : 0)).slice(0, 14);
 const hlAllEvidenced = hlShelf.length > 0 && hlShelf.every((w) => hlEvidence.has(w.slug));
-const moPaiWorks = [...new Map([...(HL.moPai.order ?? []).map((sl) => cat.works.find((w) => w.slug === sl)).filter(Boolean), ...cat.works.filter((w) => w.subjects.includes(HL.moPai.subject))].map((w) => [w.slug, w])).values()];
+const moPaiWorks = [...new Map([...(HL.moPai.order ?? []).map((sl) => cat.works.find((w) => w.slug === sl)).filter(Boolean), ...cat.works.filter((w) => w.subjects.includes(HL.moPai.subject))].filter((w) => w.purchasable !== false).map((w) => [w.slug, w])).values()];
 const outside = cat.works.filter((w) => !w.press);
 const langSummary = `${fmt(cat.works.length, 'work', 'works')} · ${fmt(totalEditions, 'edition', 'editions')} · ${fmt(stocked.length, 'language with verified editions', 'languages with verified editions')}`;
 
@@ -790,7 +792,7 @@ for (const w of cat.works) {
     <dl lang="en" dir="ltr">${e.credit ? `<dt>Credited as</dt><dd>${esc(e.credit)}</dd>` : ''}${e.translator ? `<dt data-i18n="l_translator">Translator</dt><dd>${esc(e.translator)}</dd>` : ''}${e.publisher ? `<dt data-i18n="l_publisher">Publisher</dt><dd>${esc(e.publisher)}</dd>` : ''}${e.year ? `<dt data-i18n="l_year">Year</dt><dd>${e.year}</dd>` : ''}${e.isbn13 ? `<dt>ISBN-13</dt><dd>${e.isbn13}</dd>` : ''}${e.isbn10 ? `<dt>ISBN-10</dt><dd>${e.isbn10}</dd>` : ''}${e.asin ? `<dt>ASIN</dt><dd>${e.asin}</dd>` : ''}${e.alsoLanguages?.length ? `<dt>Also in</dt><dd>${e.alsoLanguages.map((c) => esc(LANG.get(c)?.name ?? c)).join(', ')}</dd>` : ''}</dl>
     ${e.note ? `<p class="note-sm" lang="en" dir="ltr">${esc(e.note)}</p>` : ''}
     ${e.needsSecondSource ? '<p class="note-sm flag" lang="en" dir="ltr">Identifier reported by a single source; awaiting corroboration.</p>' : ''}
-    <ul class="buy" lang="en" dir="ltr">${rs.some((r) => !r.library) ? '' : '<li class="status">No retailer link verified yet.</li>'}${rs.map((r) => `<li><a class="${r.affiliate ? 'btn' : 'btn btn-ghost'}" href="${esc(r.url)}" target="_blank" rel="${r.affiliate ? 'sponsored ' : ''}noopener noreferrer" data-track="${r.affiliate ? 'buy' : r.library ? 'library' : 'link'}" data-work="${w.slug}" data-isbn="${e.isbn13 ?? ''}" data-asin="${e.asin ?? ''}" data-market="${r.market ?? ''}" data-linktype="${r.kind}" data-cat="${w.subjects[0]}" data-own="${w.press ? 'fmp' : 'third-party'}">${r.labelIsHtml ? r.label : esc(r.label)}<span class="sr"> (opens in a new tab)</span></a><span class="status">${esc(r.status)}</span></li>`).join('') || '<li class="status">No retailer link verified yet.</li>'}</ul>${rs.some((r) => r.affiliate) ? `<p class="aff-note-p note-sm" lang="en">${esc(cfg.disclosure.split('. ')[0])}. <a href="${href('about/affiliate-disclosure/')}">Affiliate disclosure</a></p>` : ''}
+    <ul class="buy" lang="en" dir="ltr">${rs.some((r) => !r.library) ? '' : (w.purchasable === false ? '<li class="status">Not offered for sale: unverified placeholder.</li>' : '<li class="status">No retailer link verified yet.</li>')}${rs.map((r) => `<li><a class="${r.affiliate ? 'btn' : 'btn btn-ghost'}" href="${esc(r.url)}" target="_blank" rel="${r.affiliate ? 'sponsored ' : ''}noopener noreferrer" data-track="${r.affiliate ? 'buy' : r.library ? 'library' : 'link'}" data-work="${w.slug}" data-isbn="${e.isbn13 ?? ''}" data-asin="${e.asin ?? ''}" data-market="${r.market ?? ''}" data-linktype="${r.kind}" data-cat="${w.subjects[0]}" data-own="${w.press ? 'fmp' : 'third-party'}">${r.labelIsHtml ? r.label : esc(r.label)}<span class="sr"> (opens in a new tab)</span></a><span class="status">${esc(r.status)}</span></li>`).join('') || '<li class="status">No retailer link verified yet.</li>'}</ul>${rs.some((r) => r.affiliate) ? `<p class="aff-note-p note-sm" lang="en">${esc(cfg.disclosure.split('. ')[0])}. <a href="${href('about/affiliate-disclosure/')}">Affiliate disclosure</a></p>` : ''}
   </section>`;
   };
   const groupIds = new Set(groups.map(([c]) => c));
@@ -807,7 +809,7 @@ for (const w of cat.works) {
   <div class="book-cover">${cover(w, true)}${(() => { const ce = coverOfWork.get(w.slug); if (!ce) return ''; const same = w.editions.filter((e) => e.id !== ce.edition.id), ru = [...new Set(reuseOfWork.get(w.slug) ?? [])]; return `<p class="cover-note" lang="en">Cover of the ${esc(LANG.get(ce.edition.language)?.name ?? ce.edition.language)} ${esc(ce.edition.format)} edition${ru.length ? `; the owner confirms the same front artwork is used for the ${esc(ru.join(' and '))} edition${ru.length > 1 ? 's' : ''}` : ''}${same.length > ru.length ? '; other editions may use different artwork.' : '.'}</p>`; })()}</div>
   <div class="book-main">
     ${w.press ? '<span class="badge badge-fmp">Forbidden Mantra Press</span>' : ''}
-    <h1>${esc(w.title)}</h1>${w.subtitle ? `<p class="subtitle">${esc(w.subtitle)}</p>` : ''}
+    <h1>${esc(w.title)}</h1>${w.placeholder ? `<p class="placeholder-note" role="note" lang="en"><strong>Unverified placeholder.</strong> ${esc(w.placeholderNote ?? 'No publication has been verified for this entry.')}</p>` : ''}${w.subtitle ? `<p class="subtitle">${esc(w.subtitle)}</p>` : ''}
     <p class="byline">by ${authorLinks(w)}</p>
     ${w.series?.name ? `<p class="series">${w.series.number ? `Book ${w.series.number} of ` : 'Part of '}<a href="${href(`series/${slugify(w.series.name)}/`)}">${esc(w.series.name)}</a></p>` : ''}
     <p class="meta-row"><span>${esc(tax.levels[w.level])}</span>${(w.tradition ?? []).map((t) => `<a class="tag" href="${href(`traditions/${t}/`)}">${esc(trad.get(t).name)}</a>`).join('')}</p>

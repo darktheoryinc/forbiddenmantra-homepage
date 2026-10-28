@@ -11,14 +11,6 @@
    "url": "https://www.amazon.com/Apocalypse-Adam-Forbidden-Mantra-Press/dp/B0H8MQN9WK"
   },
   {
-   "work": "the-hidden-technology-of-human-power",
-   "title": "The Hidden Technology of Human Power",
-   "edition": "ed1",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=The%20Hidden%20Technology%20of%20Human%20Power%20Forbidden%20Mantra%20Press&i=stripbooks"
-  },
-  {
    "work": "edenic-origins",
    "title": "Edenic Origins",
    "edition": "ed1",
@@ -571,14 +563,6 @@
    "url": "https://www.amazon.com/dp/B0H85C85V8"
   },
   {
-   "work": "mo-pai-nei-kung",
-   "title": "Mo Pai Nei Kung",
-   "edition": "ed1",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Mo%20Pai%20Nei%20Kung%20Forbidden%20Mantra%20Press&i=stripbooks"
-  },
-  {
    "work": "mo-pai-the-destructive-and-healing-force-within",
    "title": "Mo Pai: The Destructive and Healing Force Within",
    "edition": "B0H8MB14CP",
@@ -689,270 +673,6 @@
    "label": "Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/dp/054792822X"
-  },
-  {
-   "work": "the-fellowship-of-the-ring",
-   "title": "The Fellowship of the Ring",
-   "edition": "9780547928210",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0547928211"
-  },
-  {
-   "work": "a-wizard-of-earthsea",
-   "title": "A Wizard of Earthsea",
-   "edition": "9780547722023",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0547722028"
-  },
-  {
-   "work": "a-wizard-of-earthsea",
-   "title": "A Wizard of Earthsea",
-   "edition": "9780553383041",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0553383043"
-  },
-  {
-   "work": "the-lion-the-witch-and-the-wardrobe",
-   "title": "The Lion, the Witch and the Wardrobe",
-   "edition": "9780064471046",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0064471047"
-  },
-  {
-   "work": "good-omens",
-   "title": "Good Omens",
-   "edition": "9780060853983",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0060853980"
-  },
-  {
-   "work": "american-gods",
-   "title": "American Gods",
-   "edition": "9780063081918",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0063081911"
-  },
-  {
-   "work": "the-color-of-magic",
-   "title": "The Color of Magic",
-   "edition": "9780062225672",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0062225677"
-  },
-  {
-   "work": "the-color-of-magic",
-   "title": "The Colour of Magic",
-   "edition": "9780552166591",
-   "label": "Amazon",
-   "market": "amazon.co.uk",
-   "url": "https://www.amazon.co.uk/dp/0552166596"
-  },
-  {
-   "work": "jonathan-strange-and-mr-norrell",
-   "title": "Jonathan Strange & Mr Norrell",
-   "edition": "9781582346038",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/1582346038"
-  },
-  {
-   "work": "jonathan-strange-and-mr-norrell",
-   "title": "Jonathan Strange & Mr Norrell",
-   "edition": "9781635576726",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/1635576725"
-  },
-  {
-   "work": "circe",
-   "title": "Circe",
-   "edition": "9780316556347",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0316556343"
-  },
-  {
-   "work": "circe",
-   "title": "Circe",
-   "edition": "9780316556323",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0316556327"
-  },
-  {
-   "work": "the-name-of-the-wind",
-   "title": "The Name of the Wind",
-   "edition": "9780756404741",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0756404746"
-  },
-  {
-   "work": "mistborn-the-final-empire",
-   "title": "Mistborn: The Final Empire",
-   "edition": "9780765377135",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0765377136"
-  },
-  {
-   "work": "a-game-of-thrones",
-   "title": "A Game of Thrones",
-   "edition": "9780553593716",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0553593714"
-  },
-  {
-   "work": "the-once-and-future-king",
-   "title": "The Once and Future King",
-   "edition": "9780441627400",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0441627404"
-  },
-  {
-   "work": "neverwhere",
-   "title": "Neverwhere",
-   "edition": "9780060557812",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0060557818"
-  },
-  {
-   "work": "neverwhere",
-   "title": "Neverwhere",
-   "edition": "9780063070721",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0063070723"
-  },
-  {
-   "work": "the-haunting-of-hill-house",
-   "title": "The Haunting of Hill House",
-   "edition": "9780143039983",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0143039989"
-  },
-  {
-   "work": "dracula",
-   "title": "Dracula",
-   "edition": "9780141439846",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/014143984X"
-  },
-  {
-   "work": "frankenstein",
-   "title": "Frankenstein",
-   "edition": "9780141439471",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0141439475"
-  },
-  {
-   "work": "something-wicked-this-way-comes",
-   "title": "Something Wicked This Way Comes",
-   "edition": "9781501167713",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/1501167715"
-  },
-  {
-   "work": "the-master-and-margarita",
-   "title": "The Master and Margarita",
-   "edition": "9780143108276",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0143108271"
-  },
-  {
-   "work": "interview-with-the-vampire",
-   "title": "Interview with the Vampire",
-   "edition": "9780345337665",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0345337662"
-  },
-  {
-   "work": "the-complete-fairy-tales-of-the-brothers-grimm",
-   "title": "The Complete Fairy Tales of the Brothers Grimm",
-   "edition": "9780553382167",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0553382160"
-  },
-  {
-   "work": "norse-mythology",
-   "title": "Norse Mythology",
-   "edition": "9780393609097",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/039360909X"
-  },
-  {
-   "work": "norse-mythology",
-   "title": "Norse Mythology",
-   "edition": "9780393356182",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0393356183"
-  },
-  {
-   "work": "the-golden-bough",
-   "title": "The Golden Bough",
-   "edition": "9780199538829",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0199538824"
-  },
-  {
-   "work": "meditations",
-   "title": "Meditations",
-   "edition": "9780812968255",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0812968255"
-  },
-  {
-   "work": "the-republic",
-   "title": "The Republic",
-   "edition": "9780140455113",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0140455116"
-  },
-  {
-   "work": "thus-spoke-zarathustra",
-   "title": "Thus Spoke Zarathustra",
-   "edition": "9780140441185",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0140441182"
-  },
-  {
-   "work": "mans-search-for-meaning",
-   "title": "Man's Search for Meaning",
-   "edition": "9780807014271",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0807014273"
-  },
-  {
-   "work": "letters-from-a-stoic",
-   "title": "Letters from a Stoic",
-   "edition": "9780140442106",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0140442103"
   },
   {
    "work": "the-apocalypse-of-adam",
@@ -2123,14 +1843,6 @@
    "url": "https://www.amazon.com/dp/B0G9C2PXJS"
   },
   {
-   "work": "jinn-dark-angels-shapeshifters-and-ghouls",
-   "title": "JINN - Dark Angels, Shapeshifters, and Ghouls",
-   "edition": "B0BY758969",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/B0BY758969"
-  },
-  {
    "work": "kamdev-mantra-for-making-yourself-attractive",
    "title": "Kamdev Mantra for making yourself attractive",
    "edition": "B0C63P69BT",
@@ -2385,22 +2097,6 @@
    "label": "Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/dp/B0BZTKVBR6"
-  },
-  {
-   "work": "ruqyahs-for-wealth-in-arabic-language",
-   "title": "Ruqyah's for Wealth in Arabic Language",
-   "edition": "B0BY5CCJNV",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/B0BY5CCJNV"
-  },
-  {
-   "work": "ruqyahs-for-wealth",
-   "title": "Ruqyah’s for Wealth",
-   "edition": "B0BY57NY5C",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/B0BY57NY5C"
   },
   {
    "work": "sacred-union-in-tantra",
@@ -2745,14 +2441,6 @@
    "label": "Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/dp/B0FG172DPD"
-  },
-  {
-   "work": "the-cyber-cupid",
-   "title": "The Cyber Cupid",
-   "edition": "B0BX5PRFLX",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/B0BX5PRFLX"
   },
   {
    "work": "the-eternal-quest",
@@ -3171,46 +2859,6 @@
    "url": "https://www.amazon.com/dp/B0GH6P31CM"
   },
   {
-   "work": "the-pissed-off-hindu",
-   "title": "The Pissed Off Hindu",
-   "edition": "1079449361",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/1079449361"
-  },
-  {
-   "work": "the-pissed-off-hindu",
-   "title": "The Pissed Off Hindu",
-   "edition": "B01JVC9I5U",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/B01JVC9I5U"
-  },
-  {
-   "work": "the-power-of-fasting-and-prayer",
-   "title": "The Power of Fasting and Prayer",
-   "edition": "B0BZFG4YR9",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/B0BZFG4YR9"
-  },
-  {
-   "work": "the-power-of-fasting-and-prayer",
-   "title": "The Power of Fasting and Prayer",
-   "edition": "B0BZM2V8V7",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/B0BZM2V8V7"
-  },
-  {
-   "work": "the-power-of-fasting-and-prayer",
-   "title": "The Power of Fasting and Prayer",
-   "edition": "B0H85CCYWV",
-   "label": "Amazon (Audible)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/B0H85CCYWV"
-  },
-  {
    "work": "the-reason-all-the-prophets-fasted",
    "title": "The Reason All The Prophets Fasted",
    "edition": "B0GWVSK66G",
@@ -3369,22 +3017,6 @@
    "label": "Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/dp/B0DN1MLYPK"
-  },
-  {
-   "work": "truth-is-stranger-than-fiction",
-   "title": "Truth is Stranger Than Fiction",
-   "edition": "1078483299",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/1078483299"
-  },
-  {
-   "work": "truth-is-stranger-than-fiction",
-   "title": "Truth is Stranger Than Fiction",
-   "edition": "B07TY5WQVH",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/B07TY5WQVH"
   },
   {
    "work": "unknown-gospels",
@@ -3697,6 +3329,358 @@
    "label": "Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/dp/B0CW1LH4KZ"
+  },
+  {
+   "work": "the-fellowship-of-the-ring",
+   "title": "The Fellowship of the Ring",
+   "edition": "9780547928210",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0547928211"
+  },
+  {
+   "work": "a-wizard-of-earthsea",
+   "title": "A Wizard of Earthsea",
+   "edition": "9780547722023",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0547722028"
+  },
+  {
+   "work": "a-wizard-of-earthsea",
+   "title": "A Wizard of Earthsea",
+   "edition": "9780553383041",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0553383043"
+  },
+  {
+   "work": "the-lion-the-witch-and-the-wardrobe",
+   "title": "The Lion, the Witch and the Wardrobe",
+   "edition": "9780064471046",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0064471047"
+  },
+  {
+   "work": "good-omens",
+   "title": "Good Omens",
+   "edition": "9780060853983",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0060853980"
+  },
+  {
+   "work": "american-gods",
+   "title": "American Gods",
+   "edition": "9780063081918",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0063081911"
+  },
+  {
+   "work": "the-color-of-magic",
+   "title": "The Color of Magic",
+   "edition": "9780062225672",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0062225677"
+  },
+  {
+   "work": "the-color-of-magic",
+   "title": "The Colour of Magic",
+   "edition": "9780552166591",
+   "label": "Amazon",
+   "market": "amazon.co.uk",
+   "url": "https://www.amazon.co.uk/dp/0552166596"
+  },
+  {
+   "work": "jonathan-strange-and-mr-norrell",
+   "title": "Jonathan Strange & Mr Norrell",
+   "edition": "9781582346038",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/1582346038"
+  },
+  {
+   "work": "jonathan-strange-and-mr-norrell",
+   "title": "Jonathan Strange & Mr Norrell",
+   "edition": "9781635576726",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/1635576725"
+  },
+  {
+   "work": "circe",
+   "title": "Circe",
+   "edition": "9780316556323",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0316556327"
+  },
+  {
+   "work": "circe",
+   "title": "Circe",
+   "edition": "9780316556347",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0316556343"
+  },
+  {
+   "work": "the-name-of-the-wind",
+   "title": "The Name of the Wind",
+   "edition": "9780756404741",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0756404746"
+  },
+  {
+   "work": "mistborn-the-final-empire",
+   "title": "Mistborn: The Final Empire",
+   "edition": "9780765377135",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0765377136"
+  },
+  {
+   "work": "a-game-of-thrones",
+   "title": "A Game of Thrones",
+   "edition": "9780553593716",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0553593714"
+  },
+  {
+   "work": "the-once-and-future-king",
+   "title": "The Once and Future King",
+   "edition": "9780441627400",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0441627404"
+  },
+  {
+   "work": "neverwhere",
+   "title": "Neverwhere",
+   "edition": "9780060557812",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0060557818"
+  },
+  {
+   "work": "neverwhere",
+   "title": "Neverwhere",
+   "edition": "9780063070721",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0063070723"
+  },
+  {
+   "work": "the-haunting-of-hill-house",
+   "title": "The Haunting of Hill House",
+   "edition": "9780143039983",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0143039989"
+  },
+  {
+   "work": "dracula",
+   "title": "Dracula",
+   "edition": "9780141439846",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/014143984X"
+  },
+  {
+   "work": "frankenstein",
+   "title": "Frankenstein",
+   "edition": "9780141439471",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0141439475"
+  },
+  {
+   "work": "something-wicked-this-way-comes",
+   "title": "Something Wicked This Way Comes",
+   "edition": "9781501167713",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/1501167715"
+  },
+  {
+   "work": "the-master-and-margarita",
+   "title": "The Master and Margarita",
+   "edition": "9780143108276",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0143108271"
+  },
+  {
+   "work": "interview-with-the-vampire",
+   "title": "Interview with the Vampire",
+   "edition": "9780345337665",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0345337662"
+  },
+  {
+   "work": "the-complete-fairy-tales-of-the-brothers-grimm",
+   "title": "The Complete Fairy Tales of the Brothers Grimm",
+   "edition": "9780553382167",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0553382160"
+  },
+  {
+   "work": "norse-mythology",
+   "title": "Norse Mythology",
+   "edition": "9780393356182",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0393356183"
+  },
+  {
+   "work": "norse-mythology",
+   "title": "Norse Mythology",
+   "edition": "9780393609097",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/039360909X"
+  },
+  {
+   "work": "the-golden-bough",
+   "title": "The Golden Bough",
+   "edition": "9780199538829",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0199538824"
+  },
+  {
+   "work": "meditations",
+   "title": "Meditations",
+   "edition": "9780812968255",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0812968255"
+  },
+  {
+   "work": "the-republic",
+   "title": "The Republic",
+   "edition": "9780140455113",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0140455116"
+  },
+  {
+   "work": "thus-spoke-zarathustra",
+   "title": "Thus Spoke Zarathustra",
+   "edition": "9780140441185",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0140441182"
+  },
+  {
+   "work": "mans-search-for-meaning",
+   "title": "Man's Search for Meaning",
+   "edition": "9780807014271",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0807014273"
+  },
+  {
+   "work": "letters-from-a-stoic",
+   "title": "Letters from a Stoic",
+   "edition": "9780140442106",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0140442103"
+  },
+  {
+   "work": "jinn-dark-angels-shapeshifters-and-ghouls",
+   "title": "JINN - Dark Angels, Shapeshifters, and Ghouls",
+   "edition": "B0BY758969",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0BY758969"
+  },
+  {
+   "work": "ruqyahs-for-wealth-in-arabic-language",
+   "title": "Ruqyah's for Wealth in Arabic Language",
+   "edition": "B0BY5CCJNV",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0BY5CCJNV"
+  },
+  {
+   "work": "ruqyahs-for-wealth",
+   "title": "Ruqyah’s for Wealth",
+   "edition": "B0BY57NY5C",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0BY57NY5C"
+  },
+  {
+   "work": "the-cyber-cupid",
+   "title": "The Cyber Cupid",
+   "edition": "B0BX5PRFLX",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0BX5PRFLX"
+  },
+  {
+   "work": "the-pissed-off-hindu",
+   "title": "The Pissed Off Hindu",
+   "edition": "B01JVC9I5U",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B01JVC9I5U"
+  },
+  {
+   "work": "the-pissed-off-hindu",
+   "title": "The Pissed Off Hindu",
+   "edition": "1079449361",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/1079449361"
+  },
+  {
+   "work": "the-power-of-fasting-and-prayer",
+   "title": "The Power of Fasting and Prayer",
+   "edition": "B0H85CCYWV",
+   "label": "Amazon (Audible)",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0H85CCYWV"
+  },
+  {
+   "work": "the-power-of-fasting-and-prayer",
+   "title": "The Power of Fasting and Prayer",
+   "edition": "B0BZM2V8V7",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0BZM2V8V7"
+  },
+  {
+   "work": "the-power-of-fasting-and-prayer",
+   "title": "The Power of Fasting and Prayer",
+   "edition": "B0BZFG4YR9",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0BZFG4YR9"
+  },
+  {
+   "work": "truth-is-stranger-than-fiction",
+   "title": "Truth is Stranger Than Fiction",
+   "edition": "B07TY5WQVH",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B07TY5WQVH"
+  },
+  {
+   "work": "truth-is-stranger-than-fiction",
+   "title": "Truth is Stranger Than Fiction",
+   "edition": "1078483299",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/1078483299"
   },
   {
    "work": "wildflower-coloring-book",
