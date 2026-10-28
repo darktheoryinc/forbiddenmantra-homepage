@@ -184,6 +184,46 @@
    "origin": "staging/verified/fmp-owner-listed.json"
   },
   {
+   "title": "Siddhis",
+   "authors": [
+    "Emily K Patel"
+   ],
+   "isbn13": [],
+   "stage": "identifiers",
+   "severity": "warning",
+   "reasons": [
+    "owner-listed ebook edition has no ASIN/ISBN yet; retailer link not verified"
+   ],
+   "origin": "staging/verified/fmp-owner-listed.json"
+  },
+  {
+   "title": "The Gospel of Magdalene",
+   "authors": [
+    "Emily K Patel",
+    "TSP Ravshiva"
+   ],
+   "isbn13": [],
+   "stage": "identifiers",
+   "severity": "warning",
+   "reasons": [
+    "owner-listed ebook edition has no ASIN/ISBN yet; retailer link not verified"
+   ],
+   "origin": "staging/verified/fmp-owner-listed.json"
+  },
+  {
+   "title": "Make Yourself Irresistibly Attractive with the Kleem Mantra, Kamdev Mantra and Kama Sutra",
+   "authors": [
+    "TSPRav Shiva"
+   ],
+   "isbn13": [],
+   "stage": "identifiers",
+   "severity": "warning",
+   "reasons": [
+    "owner-listed ebook edition has no ASIN/ISBN yet; retailer link not verified"
+   ],
+   "origin": "staging/verified/fmp-owner-listed.json"
+  },
+  {
    "title": "Siddhartha",
    "authors": [
     "Hermann Hesse"

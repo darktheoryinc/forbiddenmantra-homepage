@@ -233,6 +233,123 @@
           "h": 640
         }
       }
+    },
+    {
+      "work": "siddhis",
+      "edition": "ed1",
+      "source": {
+        "type": "owner-supplied",
+        "description": "Owner's Google Drive file siddhi apple.jpg (screenshot border of about 15 px cropped off; original kept)"
+      },
+      "rights": {
+        "basis": "Forbidden Mantra Press owner confirmed that all original Forbidden Mantra Press artwork is his and authorized for commercial use",
+        "confirmedBy": "Forbidden Mantra Press owner",
+        "confirmedOn": "2026-10-28"
+      },
+      "matchEvidence": "Cover reads exactly 'Siddhis: Unlocking the Divine Powers Within' with the subtitle 'Unlocking the Supernatural Potential of Yoga' and Emily K Patel, matching the Kindle listing screenshot dated 2025-05-30. Ebook edition (Kindle).",
+      "file": "assets-src/covers/siddhis__ed1.png",
+      "original": [
+        1371,
+        2200
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 385
+        },
+        "480": {
+          "w": 480,
+          "h": 770
+        }
+      }
+    },
+    {
+      "work": "the-gospel-of-magdalene",
+      "edition": "ed1",
+      "source": {
+        "type": "owner-supplied",
+        "description": "Owner's Google Drive PDF ChatGPT_Image_Mar_27_2025 (embedded cover image, 1024x1536)"
+      },
+      "rights": {
+        "basis": "Forbidden Mantra Press owner confirmed that all original Forbidden Mantra Press artwork is his and authorized for commercial use",
+        "confirmedBy": "Forbidden Mantra Press owner",
+        "confirmedOn": "2026-10-28"
+      },
+      "matchEvidence": "Cover reads 'The Gospel of Magdalene: The Womb and the Word', matching the Kindle listing screenshot dated 2026-04-03. Ebook edition (Kindle).",
+      "file": "assets-src/covers/the-gospel-of-magdalene__ed1.png",
+      "original": [
+        1024,
+        1536
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 360
+        },
+        "480": {
+          "w": 480,
+          "h": 720
+        }
+      }
+    },
+    {
+      "work": "make-yourself-irresistibly-attractive-with-the-kleem-mantra-kamdev-mantra-and-kama-sutra",
+      "edition": "ed1",
+      "source": {
+        "type": "owner-supplied",
+        "description": "Owner's Google Drive screenshot of the English Amazon page, cover only (316x472, low resolution)"
+      },
+      "rights": {
+        "basis": "Forbidden Mantra Press owner confirmed that all original Forbidden Mantra Press artwork is his and authorized for commercial use",
+        "confirmedBy": "Forbidden Mantra Press owner",
+        "confirmedOn": "2026-10-28"
+      },
+      "matchEvidence": "Cover reads 'Make Yourself Irresistibly Attractive with the Kleem Mantra, Kamdev Mantra and Kama Sutra', Forbidden Mantra Series, TSPRav Shiva: the English edition. The ebook format is not confirmed.",
+      "file": "assets-src/covers/make-yourself-irresistibly-attractive-with-the-kleem-mantra-kamdev-mantra-and-kama-sutra__ed1.png",
+      "original": [
+        316,
+        472
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 358
+        },
+        "480": {
+          "w": 316,
+          "h": 472
+        }
+      }
+    },
+    {
+      "work": "mo-pai-the-destructive-and-healing-force-within",
+      "edition": "9798243200189",
+      "isbn13": "9798243200189",
+      "source": {
+        "type": "owner-supplied",
+        "description": "Owner's Google Drive file Mo Pai The Destructive and Healing Force.jpeg (800x1200)"
+      },
+      "rights": {
+        "basis": "Forbidden Mantra Press owner confirmed that all original Forbidden Mantra Press artwork is his and authorized for commercial use",
+        "confirmedBy": "Forbidden Mantra Press owner",
+        "confirmedOn": "2026-10-28"
+      },
+      "matchEvidence": "Cover reads 'Mo Pai: The Destructive and Healing Force Within'; the Amazon paperback listing continues with a longer keyword subtitle. Paperback edition ISBN-13 9798243200189.",
+      "file": "assets-src/covers/mo-pai-the-destructive-and-healing-force-within__9798243200189.jpeg",
+      "original": [
+        800,
+        1200
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 360
+        },
+        "480": {
+          "w": 480,
+          "h": 720
+        }
+      }
     }
   ]
 }

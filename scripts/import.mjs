@@ -229,7 +229,7 @@ for (const f of fs.readdirSync(path.join(ROOT, STAGING)).filter((x) => x.endsWit
 
 // ---------- finalise ----------
 const finalWorks = [...works.values()].map((w) => {
-  const slug = slugify(w.title);
+  const slug = w.slug ?? slugify(w.title); // an explicit slug keeps an existing URL stable when a title is corrected
   const { _origin, ...rest } = w;
   return { id: slug, slug, ...rest, authorIds: w.authors.map(slugify) };
 });

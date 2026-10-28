@@ -2319,6 +2319,368 @@
    ]
   },
   {
+   "id": "siddhis",
+   "slug": "siddhis",
+   "title": "Siddhis",
+   "subtitle": "Unlocking the Divine Powers Within",
+   "authors": [
+    "Emily K Patel"
+   ],
+   "subjects": [
+    "yoga",
+    "hinduism"
+   ],
+   "tradition": [
+    "hindu"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "description": "A Kindle title in the Forbidden Tantra Series (Book 16 per the Amazon listing), subtitled on its cover \"Unlocking the Supernatural Potential of Yoga\".",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "note": "Kindle edition seen on Amazon in an owner screenshot dated 2025-05-30; ASIN, ISBN and publication date not recovered. Publisher line is not shown in the screenshot (owner-listed).",
+     "retailers": [],
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner Google Drive screenshot of the Amazon Kindle listing (2025-05-30)",
+     "url": "https://drive.google.com/file/d/13ePm7SimEhzrR8xM18_G-Os71uNg0UEV/view",
+     "accessed": "2026-10-28",
+     "supports": "title, series, author, Kindle format"
+    }
+   ],
+   "claims": [],
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "emily-k-patel"
+   ]
+  },
+  {
+   "id": "the-gospel-of-magdalene",
+   "slug": "the-gospel-of-magdalene",
+   "title": "The Gospel of Magdalene",
+   "subtitle": "The Womb and the Word",
+   "authors": [
+    "Emily K Patel",
+    "TSP Ravshiva"
+   ],
+   "subjects": [
+    "gnosticism",
+    "christian-mysticism"
+   ],
+   "tradition": [
+    "gnostic",
+    "christian"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "description": "Book 1 of the Mary Magdalene series, listed on Amazon as a Kindle edition.",
+   "series": {
+    "name": "Mary Magdalene",
+    "position": 1
+   },
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "note": "Kindle edition seen on Amazon in an owner screenshot dated 2026-04-03; ASIN, ISBN and publication date not recovered. Publisher line is not shown in the screenshot (owner-listed).",
+     "retailers": [],
+     "id": "ed1",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner Google Drive screenshot of the Amazon Kindle listing (2026-04-03)",
+     "url": "https://drive.google.com/file/d/19zilU4NmgyU14EYl9NeC8w8zUPdU1sp8/view",
+     "accessed": "2026-10-28",
+     "supports": "title, series, authors, Kindle format"
+    }
+   ],
+   "claims": [],
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "emily-k-patel",
+    "tsp-ravshiva"
+   ]
+  },
+  {
+   "id": "make-yourself-irresistibly-attractive-with-the-kleem-mantra-kamdev-mantra-and-kama-sutra",
+   "slug": "make-yourself-irresistibly-attractive-with-the-kleem-mantra-kamdev-mantra-and-kama-sutra",
+   "title": "Make Yourself Irresistibly Attractive with the Kleem Mantra, Kamdev Mantra and Kama Sutra",
+   "subtitle": "",
+   "authors": [
+    "TSPRav Shiva"
+   ],
+   "subjects": [
+    "sanskrit-mantras",
+    "tantra"
+   ],
+   "tradition": [
+    "hindu",
+    "tantric"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "description": "A Forbidden Mantra Series title. The English edition is shown in an owner screenshot of its Amazon page; a Spanish Kindle edition is listed on Amazon.es.",
+   "editions": [
+    {
+     "format": "ebook",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "note": "English edition seen in an owner screenshot of its Amazon page; the format (shown here as ebook) and the ASIN are not yet confirmed. Publisher line is not shown (owner-listed).",
+     "retailers": [],
+     "id": "ed1",
+     "isbn10": null
+    },
+    {
+     "format": "ebook",
+     "language": "es",
+     "publisher": "Forbidden Mantra Press",
+     "year": 2024,
+     "title": "Hazte irresistiblemente atractivo con el mantra Kleem",
+     "asin": "B0CW19ZHGX",
+     "marketplace": "amazon.es",
+     "note": "Spanish Kindle edition, published 2024-03-02 per the Amazon.es listing; author shown there as Patel, Emily K.",
+     "retailers": [
+      {
+       "retailer": "amazon",
+       "kind": "product",
+       "marketplace": "amazon.es",
+       "url": "https://www.amazon.es/irresistiblemente-atractivo-mantra-Forbidden-Mantra-ebook/dp/B0CW19ZHGX",
+       "verification": "seen-in-search-results",
+       "checkedOn": "2026-10-28"
+      }
+     ],
+     "sources": [
+      {
+       "label": "Amazon.es listing seen in search results",
+       "url": "https://www.amazon.es/irresistiblemente-atractivo-mantra-Forbidden-Mantra-ebook/dp/B0CW19ZHGX",
+       "accessed": "2026-10-28",
+       "supports": "Spanish edition title, ASIN, format, date"
+      }
+     ],
+     "id": "B0CW19ZHGX",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Owner Google Drive screenshot of the English Amazon page",
+     "url": "https://drive.google.com/file/d/14IZWNIB-IY30_zuRxWLKERzIWzSqMecN/view",
+     "accessed": "2026-10-28",
+     "supports": "English title, series, author as printed on the cover"
+    },
+    {
+     "label": "Amazon.es listing seen in search results",
+     "url": "https://www.amazon.es/irresistiblemente-atractivo-mantra-Forbidden-Mantra-ebook/dp/B0CW19ZHGX",
+     "accessed": "2026-10-28",
+     "supports": "Spanish edition"
+    }
+   ],
+   "claims": [],
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "tsprav-shiva"
+   ]
+  },
+  {
+   "id": "mo-pai-exposed",
+   "slug": "mo-pai-exposed",
+   "title": "Mo Pai Exposed",
+   "subtitle": "What the Internal Power Community Refuses to Admit",
+   "authors": [
+    "Emily K Patel"
+   ],
+   "subjects": [
+    "mo-pai",
+    "neigong"
+   ],
+   "tradition": [
+    "chinese-internal-arts"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "description": "A paperback in The Hidden Technology of Human Power series. This is a separate book from Mo Pai Nei Kung.",
+   "series": {
+    "name": "The Hidden Technology of Human Power"
+   },
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": 2026,
+     "isbn13": "9798243193078",
+     "asin": "B0GFW4H6T2",
+     "note": "Paperback listed 2026-01-08 per Amazon search results. A second Amazon listing with ISBN 9798243193894 (ASIN B0GFVWMR9B) exists; its format is not confirmed and it is not included.",
+     "retailers": [
+      {
+       "retailer": "amazon",
+       "kind": "product",
+       "url": "https://www.amazon.com/Mo-Pai-Exposed-Community-Technology/dp/B0GFW4H6T2",
+       "verification": "seen-in-search-results",
+       "checkedOn": "2026-10-28"
+      }
+     ],
+     "id": "9798243193078",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Amazon listing seen in search results",
+     "url": "https://www.amazon.com/Mo-Pai-Exposed-Community-Technology/dp/B0GFW4H6T2",
+     "accessed": "2026-10-28",
+     "supports": "title, subtitle, author, ISBN-13, ASIN, paperback, date"
+    }
+   ],
+   "claims": [],
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "emily-k-patel"
+   ]
+  },
+  {
+   "id": "mo-pai-the-destructive-and-healing-force-within",
+   "slug": "mo-pai-the-destructive-and-healing-force-within",
+   "title": "Mo Pai: The Destructive and Healing Force Within",
+   "subtitle": "Meditation, Internal Power, and the Discipline That Shapes It",
+   "authors": [
+    "Emily K Kissoon"
+   ],
+   "subjects": [
+    "mo-pai",
+    "neigong"
+   ],
+   "tradition": [
+    "chinese-internal-arts"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "description": "A paperback in The Hidden Technology of Human Power series. The Amazon listing shows the author as Emily K Kissoon.",
+   "series": {
+    "name": "The Hidden Technology of Human Power"
+   },
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": 2026,
+     "isbn13": "9798243200189",
+     "asin": "B0GFW8DJHW",
+     "note": "Paperback listed 2026-01-09 per Amazon search results.",
+     "retailers": [
+      {
+       "retailer": "amazon",
+       "kind": "product",
+       "url": "https://www.amazon.com/Pai-Destructive-Meditation-Discipline-Technology/dp/B0GFW8DJHW",
+       "verification": "seen-in-search-results",
+       "checkedOn": "2026-10-28"
+      }
+     ],
+     "id": "9798243200189",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Amazon listing seen in search results",
+     "url": "https://www.amazon.com/Pai-Destructive-Meditation-Discipline-Technology/dp/B0GFW8DJHW",
+     "accessed": "2026-10-28",
+     "supports": "title, subtitle, author, ISBN-13, ASIN, paperback, date"
+    }
+   ],
+   "claims": [],
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "emily-k-kissoon"
+   ]
+  },
+  {
+   "id": "energy-unleashed",
+   "slug": "energy-unleashed",
+   "title": "Energy Unleashed",
+   "subtitle": "The Hidden Superpowers of Mo Pai",
+   "authors": [
+    "Emily K Patel"
+   ],
+   "subjects": [
+    "mo-pai",
+    "neigong"
+   ],
+   "tradition": [
+    "chinese-internal-arts"
+   ],
+   "level": "unrated",
+   "press": "fmp",
+   "status": "owner-listed",
+   "description": "A paperback listed on Amazon in the Buddhist Mantra Series.",
+   "editions": [
+    {
+     "format": "paperback",
+     "language": "en",
+     "publisher": "Forbidden Mantra Press",
+     "year": null,
+     "isbn13": "9798315272588",
+     "asin": "B0F29FBNF3",
+     "note": "Paperback per Amazon search results; publication date not recovered.",
+     "retailers": [
+      {
+       "retailer": "amazon",
+       "kind": "product",
+       "url": "https://www.amazon.com/Energy-Unleashed-Hidden-Superpowers-Buddhist/dp/B0F29FBNF3",
+       "verification": "seen-in-search-results",
+       "checkedOn": "2026-10-28"
+      }
+     ],
+     "id": "9798315272588",
+     "isbn10": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "Amazon listing seen in search results",
+     "url": "https://www.amazon.com/Energy-Unleashed-Hidden-Superpowers-Buddhist/dp/B0F29FBNF3",
+     "accessed": "2026-10-28",
+     "supports": "title, subtitle, author, ISBN-13, ASIN, paperback"
+    }
+   ],
+   "claims": [],
+   "provenance": {
+    "tier": "hand-verified"
+   },
+   "authorIds": [
+    "emily-k-patel"
+   ]
+  },
+  {
    "id": "the-power-of-now",
    "slug": "the-power-of-now",
    "title": "The Power of Now",
@@ -14415,6 +14777,15 @@
    ]
   },
   {
+   "id": "emily-k-kissoon",
+   "name": "Emily K Kissoon",
+   "sortName": "Kissoon, Emily K",
+   "bio": null,
+   "workIds": [
+    "mo-pai-the-destructive-and-healing-force-within"
+   ]
+  },
+  {
    "id": "bessel-van-der-kolk",
    "name": "Bessel van der Kolk",
    "sortName": "Kolk, Bessel van der",
@@ -14618,6 +14989,18 @@
    ]
   },
   {
+   "id": "emily-k-patel",
+   "name": "Emily K Patel",
+   "sortName": "Patel, Emily K",
+   "bio": null,
+   "workIds": [
+    "siddhis",
+    "the-gospel-of-magdalene",
+    "mo-pai-exposed",
+    "energy-unleashed"
+   ]
+  },
+  {
    "id": "plato",
    "name": "Plato",
    "sortName": "Plato",
@@ -14671,6 +15054,15 @@
    "bio": null,
    "workIds": [
     "to-ride-a-silver-broomstick"
+   ]
+  },
+  {
+   "id": "tsp-ravshiva",
+   "name": "TSP Ravshiva",
+   "sortName": "Ravshiva, TSP",
+   "bio": null,
+   "workIds": [
+    "the-gospel-of-magdalene"
    ]
   },
   {
@@ -14781,6 +15173,15 @@
    "bio": "English novelist, author of Frankenstein.",
    "workIds": [
     "frankenstein"
+   ]
+  },
+  {
+   "id": "tsprav-shiva",
+   "name": "TSPRav Shiva",
+   "sortName": "Shiva, TSPRav",
+   "bio": null,
+   "workIds": [
+    "make-yourself-irresistibly-attractive-with-the-kleem-mantra-kamdev-mantra-and-kama-sutra"
    ]
   },
   {

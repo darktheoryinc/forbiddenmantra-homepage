@@ -47,7 +47,7 @@ if (browser) for (const [name, vp, mobile] of VIEWPORTS.map((v) => [v[0], v[1], 
   ok(!(await pg.locator('[data-langbooks]').isVisible()), `${T} English: no language band (homepage unchanged)`);
   await pg.locator('.lang-btn').click(); await pg.click('[data-ui=es]'); await pg.waitForTimeout(300);
   const band = pg.locator('[data-langbooks]');
-  ok(await band.isVisible() && (await band.locator('.card').count()) === 0 && /edici/i.test(await band.textContent()), `${T} Spanish on the real catalogue: honest "no verified editions yet", no books invented`);
+  ok(await band.isVisible() && (await band.locator('.card').count()) === 1 && /Kleem/i.test(await band.textContent()), `${T} Spanish on the real catalogue: only the one verified Spanish edition (Amazon.es Kleem ebook) is listed, no books invented`);
   await pg.locator('.lang-btn').click();
   ok(/Aún no hay ediciones|ediciones/i.test(await pg.locator('[data-lp-status]').textContent()), `${T} language menu states the verified-edition status`);
   ok(!(await pg.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1)), `${T} no horizontal scroll`);

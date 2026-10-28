@@ -1,28 +1,28 @@
 {
  "summary": {
-  "works": 192,
-  "purchaseLinks": 222,
+  "works": 198,
+  "purchaseLinks": 229,
   "tagsExpected": {
    "amazon.com": "darktheoryinc-20"
   },
   "linkClasses": {
    "derived": 52,
-   "search": 135,
-   "verified": 35
+   "search": 138,
+   "verified": 39
   },
   "linkErrors": 0,
-  "worksWithValidTaggedProductLink": 76,
-  "ofWhichSourceVerified": 35,
+  "worksWithValidTaggedProductLink": 80,
+  "ofWhichSourceVerified": 39,
   "ofWhichIdentityVerifiedOffline": 41,
-  "worksWithSearchLinkOnly": 116,
+  "worksWithSearchLinkOnly": 118,
   "worksWithNoPurchaseLink": 0,
   "worksWithLinkErrors": 0,
-  "recordsNeedingManualReview": 127,
+  "recordsNeedingManualReview": 130,
   "manualReviewByReason": {
    "an edition identifier comes from a single source": 9,
-   "owner-listed record: edition details unconfirmed": 12,
-   "e-book/audiobook edition has no verified Amazon link": 8,
-   "only a search link: needs the edition's ASIN or ISBN": 116
+   "owner-listed record: edition details unconfirmed": 15,
+   "e-book/audiobook edition has no verified Amazon link": 11,
+   "only a search link: needs the edition's ASIN or ISBN": 118
   },
   "liveCheckPending": 41
  },
@@ -161,6 +161,32 @@
    "reasons": [
     "only a search link: needs the edition's ASIN or ISBN",
     "owner-listed record: edition details unconfirmed"
+   ]
+  },
+  {
+   "work": "siddhis",
+   "title": "Siddhis",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "the-gospel-of-magdalene",
+   "title": "The Gospel of Magdalene",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "make-yourself-irresistibly-attractive-with-the-kleem-mantra-kamdev-mantra-and-kama-sutra",
+   "title": "Make Yourself Irresistibly Attractive with the Kleem Mantra, Kamdev Mantra and Kama Sutra",
+   "reasons": [
+    "owner-listed record: edition details unconfirmed",
+    "e-book/audiobook edition has no verified Amazon link"
    ]
   },
   {
@@ -1270,6 +1296,54 @@
    "press": true,
    "links": 1,
    "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "siddhis",
+   "title": "Siddhis",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "the-gospel-of-magdalene",
+   "title": "The Gospel of Magdalene",
+   "press": true,
+   "links": 1,
+   "best": "search-only",
+   "errors": false
+  },
+  {
+   "work": "make-yourself-irresistibly-attractive-with-the-kleem-mantra-kamdev-mantra-and-kama-sutra",
+   "title": "Make Yourself Irresistibly Attractive with the Kleem Mantra, Kamdev Mantra and Kama Sutra",
+   "press": true,
+   "links": 2,
+   "best": "verified",
+   "errors": false
+  },
+  {
+   "work": "mo-pai-exposed",
+   "title": "Mo Pai Exposed",
+   "press": true,
+   "links": 1,
+   "best": "verified",
+   "errors": false
+  },
+  {
+   "work": "mo-pai-the-destructive-and-healing-force-within",
+   "title": "Mo Pai: The Destructive and Healing Force Within",
+   "press": true,
+   "links": 1,
+   "best": "verified",
+   "errors": false
+  },
+  {
+   "work": "energy-unleashed",
+   "title": "Energy Unleashed",
+   "press": true,
+   "links": 1,
+   "best": "verified",
    "errors": false
   },
   {
@@ -3201,6 +3275,98 @@
    "issues": [],
    "verdict": null,
    "url": "https://www.amazon.com/s?k=Forbidden%20Mantra%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "siddhis",
+   "workTitle": "Siddhis",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Siddhis%20Unlocking%20the%20Divine%20Powers%20Within%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "the-gospel-of-magdalene",
+   "workTitle": "The Gospel of Magdalene",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook en",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=The%20Gospel%20of%20Magdalene%20The%20Womb%20and%20the%20Word%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "make-yourself-irresistibly-attractive-with-the-kleem-mantra-kamdev-mantra-and-kama-sutra",
+   "workTitle": "Make Yourself Irresistibly Attractive with the Kleem Mantra, Kamdev Mantra and Kama Sutra",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.com",
+   "edition": "ebook es B0CW19ZHGX",
+   "class": "search",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/s?k=Make%20Yourself%20Irresistibly%20Attractive%20with%20the%20Kleem%20Mantra%2C%20Kamdev%20Mantra%20and%20Kama%20Sutra%20Forbidden%20Mantra%20Press&i=stripbooks&tag=…"
+  },
+  {
+   "work": "make-yourself-irresistibly-attractive-with-the-kleem-mantra-kamdev-mantra-and-kama-sutra",
+   "workTitle": "Make Yourself Irresistibly Attractive with the Kleem Mantra, Kamdev Mantra and Kama Sutra",
+   "press": true,
+   "isbn13": "",
+   "market": "amazon.es",
+   "asin": "B0CW19ZHGX",
+   "basis": "edition ASIN",
+   "edition": "ebook es B0CW19ZHGX",
+   "class": "verified",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.es/irresistiblemente-atractivo-mantra-Forbidden-Mantra-ebook/dp/B0CW19ZHGX"
+  },
+  {
+   "work": "mo-pai-exposed",
+   "workTitle": "Mo Pai Exposed",
+   "press": true,
+   "isbn13": "9798243193078",
+   "market": "amazon.com",
+   "asin": "B0GFW4H6T2",
+   "basis": "edition ASIN",
+   "edition": "paperback en 9798243193078",
+   "class": "verified",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/Mo-Pai-Exposed-Community-Technology/dp/B0GFW4H6T2?tag=…"
+  },
+  {
+   "work": "mo-pai-the-destructive-and-healing-force-within",
+   "workTitle": "Mo Pai: The Destructive and Healing Force Within",
+   "press": true,
+   "isbn13": "9798243200189",
+   "market": "amazon.com",
+   "asin": "B0GFW8DJHW",
+   "basis": "edition ASIN",
+   "edition": "paperback en 9798243200189",
+   "class": "verified",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/Pai-Destructive-Meditation-Discipline-Technology/dp/B0GFW8DJHW?tag=…"
+  },
+  {
+   "work": "energy-unleashed",
+   "workTitle": "Energy Unleashed",
+   "press": true,
+   "isbn13": "9798315272588",
+   "market": "amazon.com",
+   "asin": "B0F29FBNF3",
+   "basis": "edition ASIN",
+   "edition": "paperback en 9798315272588",
+   "class": "verified",
+   "issues": [],
+   "verdict": null,
+   "url": "https://www.amazon.com/Energy-Unleashed-Hidden-Superpowers-Buddhist/dp/B0F29FBNF3?tag=…"
   },
   {
    "work": "the-power-of-now",

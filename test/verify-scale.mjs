@@ -72,7 +72,7 @@ const cnt = await pg.locator('[data-count]').textContent();
 ok(nFantasy > 20 ? /Showing 20 of (\d+) books/.test(cnt) && +cnt.match(/of (\d+)/)[1] === nFantasy : true, `subject=fantasy -> ${cnt.trim()} (expected ${nFantasy})`);
 if (nFantasy > 20) { await pg.click('[data-more]'); await pg.waitForTimeout(100); ok((await shown()).length === Math.min(40, nFantasy), '"Show more" draws the next 20'); }
 await pg.selectOption('.filters select[name=subject]', ''); await pg.selectOption('.filters select[name=lang]', 'es'); await settle();
-ok((await shown()).length === 0 && await pg.isVisible('[data-empty]') && /No verified Spanish editions/.test(await pg.locator('[data-empty-text]').textContent()), 'language=Spanish over the whole index: honest empty state');
+ok((await shown()).length === 1, 'language=Spanish over the whole index: only the one verified Spanish edition (Amazon.es Kleem ebook)');
 await pg.selectOption('.filters select[name=lang]', '');
 await pg.goto(url('search/index.html') + '?q=' + encodeURIComponent('9780834800793')); await settle();
 ok((await shown()).join() === "Zen Mind, Beginner's Mind", 'ISBN search finds a book from the index (exact, no fuzziness)');

@@ -1,29 +1,33 @@
 {
   "generated": "2026-10-27",
   "input": {
-    "verifiedRecords": 53,
+    "verifiedRecords": 59,
     "batchRecords": 140,
     "candidateRows": 100
   },
   "publishedByProvenance": {
-    "hand-verified": 53,
+    "hand-verified": 59,
     "web-corroborated": 139
   },
   "published": {
-    "works": 192,
-    "editions": 223,
+    "works": 198,
+    "editions": 230,
     "outsideWorks": 180,
-    "fmpWorks": 12,
-    "authors": 132
+    "fmpWorks": 18,
+    "authors": 136
   },
   "publishedByLanguage": {
     "en": {
-      "works": 192,
-      "editions": 223
+      "works": 198,
+      "editions": 229
+    },
+    "es": {
+      "works": 1,
+      "editions": 1
     }
   },
   "languagesRegistered": 39,
-  "languagesWithVerifiedEditions": 1,
+  "languagesWithVerifiedEditions": 2,
   "stagedEditions": 0,
   "editionLeads": {
     "total": 3,
@@ -39,14 +43,14 @@
     "missingIsbn": 3
   },
   "errorQueue": {
-    "total": 69,
+    "total": 72,
     "byStage": {
-      "identifiers": 17,
+      "identifiers": 20,
       "validate": 3,
       "dedup": 49
     },
     "bySeverity": {
-      "warning": 18,
+      "warning": 21,
       "error": 2,
       "duplicate": 49
     }
