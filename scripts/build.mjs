@@ -380,7 +380,7 @@ ${FIXTURE ? '<div class="preview-bar fixture-bar" role="region" aria-label="Test
 ${PRODUCTION ? '' : `<div class="preview-bar" role="region" aria-label="Preview notice">Preview build, not published. Catalogue as of ${cfg.catalogueAsOf}. ${anyUntagged ? 'Amazon links carry no Associates tracking ID yet.' : ''}</div>`}
 <header class="site-header">
   <div class="wrap header-in">
-    <a class="logo" href="${href('')}" aria-label="Forbidden Mantra Press, home"><picture><source media="(max-width:520px)" srcset="${ROOT_PREFIX}assets/brand/logo-header-mobile.png 1x, ${ROOT_PREFIX}assets/brand/logo-header-mobile@2x.png 2x"><img src="${ROOT_PREFIX}assets/brand/logo-header-desktop.png" srcset="${ROOT_PREFIX}assets/brand/logo-header-desktop.png 1x, ${ROOT_PREFIX}assets/brand/logo-header-desktop@2x.png 2x" width="325" height="56" alt="Forbidden Mantra"></picture></a>
+    <a class="logo" href="${href('')}" aria-label="Forbidden Mantra Press, home"><picture><source media="(max-width:520px)" srcset="${ROOT_PREFIX}assets/brand/logo-header-mobile.png 1x, ${ROOT_PREFIX}assets/brand/logo-header-mobile-2x.png 2x"><img src="${ROOT_PREFIX}assets/brand/logo-header-desktop.png" srcset="${ROOT_PREFIX}assets/brand/logo-header-desktop.png 1x, ${ROOT_PREFIX}assets/brand/logo-header-desktop-2x.png 2x" width="325" height="56" alt="Forbidden Mantra"></picture></a>
     ${langMenu()}
     <button class="nav-toggle" aria-expanded="false" aria-controls="nav" type="button"><span class="sr" data-i18n="menu">${esc(en.menu)}</span><span aria-hidden="true">☰</span></button>
     <nav id="nav" class="nav" aria-label="Main">
@@ -424,7 +424,7 @@ if (COVERS.entries.length) {
   console.log(`covers: ${COVERS.entries.length} verified cover(s) published`);
 }
 fs.mkdirSync(path.join(OUT, 'assets/brand'), { recursive: true });
-for (const f of fs.readdirSync(path.join(ROOT, 'assets-src/logo/proposal'))) if (/^(logo-|favicon|apple-touch)/.test(f)) fs.copyFileSync(path.join(ROOT, 'assets-src/logo/proposal', f), path.join(OUT, 'assets/brand', f));
+for (const f of fs.readdirSync(path.join(ROOT, 'assets-src/logo/proposal'))) if (/^(logo-|favicon|apple-touch)/.test(f)) fs.copyFileSync(path.join(ROOT, 'assets-src/logo/proposal', f), path.join(OUT, 'assets/brand', f.replace('@2x', '-2x'))); // no '@' in published names (the security gate reads name@host as an email address)
 if (process.env.FM_WIX) fs.copyFileSync(path.join(ROOT, 'scripts/assets/wix-embed.js'), path.join(OUT, 'assets/wix-embed.js'));
 if (LIB_ART) { fs.mkdirSync(path.join(OUT, 'assets/librarian'), { recursive: true }); fs.copyFileSync(path.join(ROOT, 'assets-src/librarian', LIB_ART.file), path.join(OUT, 'assets/librarian', LIB_ART.file)); }
 const i18nOut = { dict: Object.fromEntries(Object.entries(locales).map(([c, d]) => [c, Object.fromEntries(Object.entries(d).filter(([k]) => k !== '_meta'))])), langs: Object.fromEntries(langReg.languages.map((l) => [l.code, { name: l.name, endonym: l.endonym, dir: l.dir }])), ui: uiLocales };
