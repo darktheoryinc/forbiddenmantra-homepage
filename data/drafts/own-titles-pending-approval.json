@@ -163,6 +163,137 @@
     "cover usage rights",
     "clean cover file"
    ]
+  },
+  {
+   "title": "The Coven and the Yogi",
+   "driveFile": "1ph4blN8PKahsSzZcpeOB46nLAdvGYwL_",
+   "slug": "the-coven-and-the-yogi",
+   "publisher": "Forbidden Mantra Press (to confirm)",
+   "catalogueStatus": "draft: not in catalogue, not published",
+   "needs": [
+    "owner approval",
+    "ISBN or ASIN per edition",
+    "publication details"
+   ],
+   "subtitle": "(Book One; square 1024x1024 art, no subtitle on cover)"
+  },
+  {
+   "title": "Siddhis: Unlocking the Divine Powers Within",
+   "driveFile": "1Ty2OJ07iphetKgP7XFTo6Xy-NaCj5BNh",
+   "slug": "siddhis-unlocking-the-divine-powers-within",
+   "publisher": "Forbidden Mantra Press (to confirm)",
+   "catalogueStatus": "draft: not in catalogue, not published",
+   "needs": [
+    "owner approval",
+    "ISBN or ASIN per edition",
+    "publication details"
+   ],
+   "subtitle": "cleaner cover variant without an author line (ChatGPT_Image_Apr_2_2025)"
+  },
+  {
+   "title": "Archons Unveiled",
+   "driveFile": "1-OF68-w685bLrQAa1Cy954TsQUIjuTUb",
+   "slug": "archons-unveiled",
+   "publisher": "Forbidden Mantra Press (to confirm)",
+   "catalogueStatus": "draft: not in catalogue, not published",
+   "needs": [
+    "owner approval",
+    "ISBN or ASIN per edition",
+    "publication details"
+   ],
+   "subtitle": "Multiphasic Precognition of Reality",
+   "author": "TSPRavshiva"
+  },
+  {
+   "title": "Archons Unveiled",
+   "driveFile": "1cKjGEtIrelNuvF0DG_Hzhks8Ksp4rX8e",
+   "slug": "archons-unveiled",
+   "publisher": "Forbidden Mantra Press (to confirm)",
+   "catalogueStatus": "draft: not in catalogue, not published",
+   "needs": [
+    "owner approval",
+    "ISBN or ASIN per edition",
+    "publication details"
+   ],
+   "subtitle": "The Non-Human Manipulation of Human Consciousness (alternate cover)"
+  },
+  {
+   "title": "Archons Unveiled 3",
+   "driveFile": "1D-qd7R0roL1fTSAy3q1lL6KcxEDY51_S",
+   "slug": "archons-unveiled-3",
+   "publisher": "Forbidden Mantra Press (to confirm)",
+   "catalogueStatus": "draft: not in catalogue, not published",
+   "needs": [
+    "owner approval",
+    "ISBN or ASIN per edition",
+    "publication details"
+   ],
+   "subtitle": "The Code of Immortality"
+  },
+  {
+   "title": "Archons Unveiled Part 4",
+   "driveFile": "1wOA_TkuOJlE7p7FJv7NUh7YqQPAk5j2o",
+   "slug": "archons-unveiled-part-4",
+   "publisher": "Forbidden Mantra Press (to confirm)",
+   "catalogueStatus": "draft: not in catalogue, not published",
+   "needs": [
+    "owner approval",
+    "ISBN or ASIN per edition",
+    "publication details"
+   ],
+   "author": "TSPRavshiva"
+  },
+  {
+   "title": "Edenic Origins",
+   "driveFile": "15SNaBDCmLwqxo4ns6G0LzoJqma3pmYdj",
+   "slug": "edenic-origins",
+   "publisher": "Forbidden Mantra Press (to confirm)",
+   "catalogueStatus": "draft: not in catalogue, not published",
+   "needs": [
+    "owner approval",
+    "ISBN or ASIN per edition",
+    "publication details"
+   ],
+   "subtitle": "The Sacred Roots of Veganism (Reclaiming the Divine Path to Compassionate Living)"
+  },
+  {
+   "title": "Orígenes Edénicos",
+   "driveFile": "1LKCuIf8p1xhs2cmJuuhI79YWvdh6tSN_",
+   "slug": "or-genes-ed-nicos",
+   "publisher": "Forbidden Mantra Press (to confirm)",
+   "catalogueStatus": "draft: not in catalogue, not published",
+   "needs": [
+    "owner approval",
+    "ISBN or ASIN per edition",
+    "publication details"
+   ],
+   "subtitle": "Las raíces sagradas del veganismo (Spanish; cover still shows the placeholder \"AQUÍ VA EL SUBTÍTULO\", so it is a draft)"
+  },
+  {
+   "title": "The Gospel of Magdalene",
+   "driveFile": "1Y7r-hMUGdhTB1m5zQyN2PbXEEeLZe039",
+   "slug": "the-gospel-of-magdalene",
+   "publisher": "Forbidden Mantra Press (to confirm)",
+   "catalogueStatus": "draft: not in catalogue, not published",
+   "needs": [
+    "owner approval",
+    "ISBN or ASIN per edition",
+    "publication details"
+   ],
+   "subtitle": "The Womb and the Word (PDF export)"
+  },
+  {
+   "title": "Durga Mantra",
+   "driveFile": "1C9PpiNbvL5mmPb0KFtL8CUXaj_2Ev610",
+   "slug": "durga-mantra",
+   "publisher": "Forbidden Mantra Press (to confirm)",
+   "catalogueStatus": "draft: not in catalogue, not published",
+   "needs": [
+    "owner approval",
+    "ISBN or ASIN per edition",
+    "publication details"
+   ],
+   "subtitle": "Awaken the Fierce Divine Within (cover title differs from catalogue \"Invoke the Fierce\"; not matched)"
   }
  ]
 }

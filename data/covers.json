@@ -204,6 +204,35 @@
           "h": 450
         }
       }
+    },
+    {
+      "work": "weapons-of-the-gods",
+      "edition": "ed2",
+      "source": {
+        "type": "owner-supplied",
+        "description": "Owner's Google Drive file brahmastra.png (Forbidden Mantra Press original artwork, 960x1280)"
+      },
+      "rights": {
+        "basis": "Forbidden Mantra Press owner confirmed that all original Forbidden Mantra Press artwork is his and authorized for commercial use",
+        "confirmedBy": "Forbidden Mantra Press owner",
+        "confirmedOn": "2026-10-28"
+      },
+      "matchEvidence": "Cover reads exactly 'Weapons of the Gods: An Overview of Astra & Shastra', the catalogue title and subtitle. Assigned to the ebook edition because the Kindle edition of this title is the confirmed listing; paperback not assigned.",
+      "file": "assets-src/covers/weapons-of-the-gods__ed2.png",
+      "original": [
+        960,
+        1280
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 320
+        },
+        "480": {
+          "w": 480,
+          "h": 640
+        }
+      }
     }
   ]
 }
