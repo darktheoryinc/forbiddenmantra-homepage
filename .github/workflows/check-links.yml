@@ -1,0 +1,55 @@
+name: Check retail links
+
+# Manual run only: Actions tab > "Check retail links" > Run workflow. No secrets, no deployment, no site changes.
+# It rebuilds the site (to refresh data/retailer-links.json), requests every retail URL politely (1.5 s apart),
+# and writes data/link-check.json to a separate branch called link-check-results so it can be reviewed.
+# Amazon often shows bot protection to data-centre addresses; those are reported as "blocked", never as "dead".
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: check-links
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Build (refreshes data/retailer-links.json)
+        run: node scripts/build.mjs
+      - name: Check every retail URL
+        run: node scripts/check-links.mjs --delay 1500
+      - name: Summary
+        run: |
+          node -e "
+          const r=JSON.parse(require('fs').readFileSync('data/link-check.json','utf8'));
+          const rows=Object.entries(r.results??r.links??r);
+          const t={};for(const [u,v] of rows){t[v.verdict]=(t[v.verdict]||0)+1;}
+          let s='## Retail link check\n\n'+Object.entries(t).map(([k,n])=>'- '+k+': '+n).join('\n')+'\n';
+          const dead=rows.filter(([u,v])=>v.verdict==='dead').map(([u,v])=>'- '+u);
+          s+='\n### Dead (genuinely broken)\n'+(dead.join('\n')||'none')+'\n';
+          require('fs').appendFileSync(process.env.GITHUB_STEP_SUMMARY,s);console.log(s);"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: link-check
+          path: data/link-check.json
+      - name: Publish results to the link-check-results branch
+        run: |
+          git config user.name "link-check-bot"
+          git config user.email "link-check-bot@users.noreply.github.com"
+          git checkout --orphan link-check-results
+          git rm -rf --cached . >/dev/null 2>&1 || true
+          mkdir -p /tmp/lc && cp data/link-check.json /tmp/lc/
+          git clean -fdx >/dev/null 2>&1 || true
+          cp /tmp/lc/link-check.json .
+          git add link-check.json
+          git commit -m "Retail link check results"
+          git push --force origin link-check-results
