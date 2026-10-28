@@ -18,24 +18,7 @@
     "edition assignment",
     "clean copy without the grid (and larger than 331 px)"
    ]
-  },
-  {
-   "work": "kebra-nagast",
-   "edition": "paperback and/or ebook (owner to confirm)",
-   "source": "Google Drive file 1xd8bqdgfvUdOTeJhTo5nWBJfzHdckfzn \"kebranagast2.png\"",
-   "original": "assets-src/covers-pending/original/kebra-nagast-DriveFile-kebranagast2.png",
-   "sha256": "9dab7c5f40d9a43add67",
-   "size": [
-    1024,
-    1536
-   ],
-   "identity": "title and publisher match the catalogue; carries the words \"New Edition\"",
-   "defect": "none seen",
-   "suitability": "2:3 front cover: matches a 6x9 in paperback front panel exactly and suits Kindle (about 1:1.6) with only a thin crop. It is a flat front image (no spine or back). 1024 px wide is enough for the web but is about 170 dpi at 6x9, below print resolution.",
-   "publishBlockers": [
-    "commercial rights",
-    "owner to say which edition(s) this cover belongs to"
-   ]
   }
- ]
+ ],
+ "note": "Kebra Nagast moved to data/covers.json (paperback ed1 and ebook ed2) on 2026-10-28 under the owner's recorded commercial-use authorization. Gayatri Mantra stays staged: its file has a baked-in grid defect and needs a clean replacement."
 }

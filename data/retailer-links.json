@@ -99,6 +99,30 @@
    "url": "https://www.amazon.com/s?k=Mo%20Pai%20Nei%20Kung%20Forbidden%20Mantra%20Press&i=stripbooks"
   },
   {
+   "work": "the-apocalypse-of-adam",
+   "title": "The Apocalypse of Adam",
+   "edition": "ed2",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=The%20Apocalypse%20of%20Adam%20Forbidden%20Mantra%20Press&i=stripbooks"
+  },
+  {
+   "work": "gayatri-mantra",
+   "title": "Gayatri Mantra",
+   "edition": "ed2",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=Gayatri%20Mantra%20Light%20of%20Divine%20Intelligence%20Forbidden%20Mantra%20Press&i=stripbooks"
+  },
+  {
+   "work": "kebra-nagast",
+   "title": "Kebra Nagast",
+   "edition": "ed1",
+   "label": "Search on Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/s?k=Kebra%20Nagast%20Forbidden%20Mantra%20Press&i=stripbooks"
+  },
+  {
    "work": "harry-potter-and-the-philosophers-stone",
    "title": "Harry Potter and the Sorcerer's Stone",
    "edition": "9780590353427",
@@ -221,18 +245,18 @@
   {
    "work": "circe",
    "title": "Circe",
-   "edition": "9780316556347",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0316556343"
-  },
-  {
-   "work": "circe",
-   "title": "Circe",
    "edition": "9780316556323",
    "label": "Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/dp/0316556327"
+  },
+  {
+   "work": "circe",
+   "title": "Circe",
+   "edition": "9780316556347",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/0316556343"
   },
   {
    "work": "the-name-of-the-wind",
@@ -341,18 +365,18 @@
   {
    "work": "norse-mythology",
    "title": "Norse Mythology",
-   "edition": "9780393609097",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/039360909X"
-  },
-  {
-   "work": "norse-mythology",
-   "title": "Norse Mythology",
    "edition": "9780393356182",
    "label": "Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/dp/0393356183"
+  },
+  {
+   "work": "norse-mythology",
+   "title": "Norse Mythology",
+   "edition": "9780393609097",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/039360909X"
   },
   {
    "work": "the-golden-bough",
@@ -401,30 +425,6 @@
    "label": "Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/dp/0140442103"
-  },
-  {
-   "work": "the-apocalypse-of-adam",
-   "title": "The Apocalypse of Adam",
-   "edition": "ed2",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=The%20Apocalypse%20of%20Adam%20Forbidden%20Mantra%20Press&i=stripbooks"
-  },
-  {
-   "work": "gayatri-mantra",
-   "title": "Gayatri Mantra",
-   "edition": "ed2",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Gayatri%20Mantra%20Light%20of%20Divine%20Intelligence%20Forbidden%20Mantra%20Press&i=stripbooks"
-  },
-  {
-   "work": "kebra-nagast",
-   "title": "Kebra Nagast",
-   "edition": "ed1",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=Kebra%20Nagast%20Forbidden%20Mantra%20Press&i=stripbooks"
   },
   {
    "work": "the-power-of-now",

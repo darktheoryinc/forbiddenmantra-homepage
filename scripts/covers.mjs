@@ -14,7 +14,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const P = (rel) => path.join(ROOT, rel);
 export const SOURCE_TYPES = ['owner-supplied', 'publisher-permission', 'licensed-feed', 'public-domain'];
 export const paths = () => ({
-  manifest: process.env.FM_COVERS_MANIFEST ? path.resolve(process.env.FM_COVERS_MANIFEST) : P('data/covers.json'),
+  manifest: process.env.FM_COVERS_MANIFEST ? path.resolve(process.env.FM_COVERS_MANIFEST) : process.env.FM_DATA ? path.join(path.resolve(ROOT, process.env.FM_DATA), 'covers.json') : P('data/covers.json'),
   src: process.env.FM_COVERS_SRC ? path.resolve(process.env.FM_COVERS_SRC) : P('assets-src/covers'),
   opt: process.env.FM_COVERS_OPT ? path.resolve(process.env.FM_COVERS_OPT) : P('assets-src/covers-opt'),
   catalogue: path.join(process.env.FM_DATA ? path.resolve(ROOT, process.env.FM_DATA) : P('data'), 'catalogue.json'),

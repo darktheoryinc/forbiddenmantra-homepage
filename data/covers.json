@@ -1,5 +1,64 @@
 {
   "_doc": "Cover manifest. One entry per EDITION whose cover image has been obtained legally and matched to that exact edition. Empty today: no cover has been supplied or licensed. Add entries only with scripts/covers.mjs add (it validates the match and records the rights evidence). Never add a cover by editing this file by hand, never from a scraped page, and never one whose rights are unconfirmed.",
   "schema": 1,
-  "covers": []
+  "covers": [
+    {
+      "work": "kebra-nagast",
+      "edition": "ed1",
+      "source": {
+        "type": "owner-supplied",
+        "description": "Owner's Google Drive file kebranagast2.png (Forbidden Mantra Press original artwork, 1024x1536)"
+      },
+      "rights": {
+        "basis": "Forbidden Mantra Press owner confirmed (2026-10-28) that all original Forbidden Mantra Press artwork is his and authorized for commercial use",
+        "confirmedBy": "Forbidden Mantra Press owner",
+        "confirmedOn": "2026-10-28"
+      },
+      "matchEvidence": "Cover reads 'Kebra Nagast, New Edition', Forbidden Mantra Press; owner states it is the cover for both the paperback and ebook editions of this title (no ISBN/ASIN on record)",
+      "file": "assets-src/covers/kebra-nagast__ed1.png",
+      "original": [
+        1024,
+        1536
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 360
+        },
+        "480": {
+          "w": 480,
+          "h": 720
+        }
+      }
+    },
+    {
+      "work": "kebra-nagast",
+      "edition": "ed2",
+      "source": {
+        "type": "owner-supplied",
+        "description": "Owner's Google Drive file kebranagast2.png (Forbidden Mantra Press original artwork, 1024x1536)"
+      },
+      "rights": {
+        "basis": "Forbidden Mantra Press owner confirmed (2026-10-28) that all original Forbidden Mantra Press artwork is his and authorized for commercial use",
+        "confirmedBy": "Forbidden Mantra Press owner",
+        "confirmedOn": "2026-10-28"
+      },
+      "matchEvidence": "Cover reads 'Kebra Nagast, New Edition', Forbidden Mantra Press; owner states it is the cover for both the paperback and ebook editions of this title (no ISBN/ASIN on record)",
+      "file": "assets-src/covers/kebra-nagast__ed2.png",
+      "original": [
+        1024,
+        1536
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 360
+        },
+        "480": {
+          "w": 480,
+          "h": 720
+        }
+      }
+    }
+  ]
 }
