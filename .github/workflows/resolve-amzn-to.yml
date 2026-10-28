@@ -1,0 +1,24 @@
+name: Resolve legacy amzn.to link
+
+# Follows the legacy short link once and prints where it lands and which Associates tag it carries (a public ID, not a secret).
+# Starts only when the number in .github/run-resolve-amzn.txt changes on this branch. No deployment, no site changes.
+on:
+  push:
+    branches: [claude/gallant-archimedes-ocwf9s]
+    paths: ['.github/run-resolve-amzn.txt']
+
+permissions:
+  contents: read
+
+jobs:
+  resolve:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Follow amzn.to/4tX3ogd
+        run: |
+          final=$(curl -sL -m 30 -A "Mozilla/5.0" -o /dev/null -w '%{url_effective} HTTP %{http_code}' https://amzn.to/4tX3ogd || true)
+          echo "landed: ${final%% HTTP*}" | sed -E 's/(tag=)[^&]*/\1<TAG>/' | cut -c1-200
+          echo "http: ${final##* HTTP }"
+          tag=$(printf '%s' "$final" | grep -oE '[?&]tag=[^&[:space:]]+' | head -1 | cut -d= -f2)
+          echo "tracking tag in final URL: ${tag:-none found (page may have been served a robot check)}"

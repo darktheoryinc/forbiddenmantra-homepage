@@ -91,6 +91,15 @@ const tagFor = (m) => {
   return process.env[`AMAZON_TRACKING_ID_${suffix}`] || (m === 'amazon.com' && process.env.AMAZON_TRACKING_ID) || AFF.marketplaces[m]?.trackingId || null;
 };
 const withTag = (url, m) => { const t = tagFor(m); return t && !/[?&]tag=/.test(url) ? `${url}${url.includes('?') ? '&' : '?'}tag=${encodeURIComponent(t)}` : url; };
+// Source citations that point at Amazon: US links carry our tag (so they cannot divert a sale from the buy buttons) and are marked sponsored;
+// other marketplaces have no configured tracking ID, so they stay untagged and are labelled as such. All open in a new tab (Amazon refuses framing).
+const srcLink = (s) => {
+  const m = (s.url.match(/^https?:\/\/(?:www\.)?(amazon\.[a-z.]+)\//i) ?? [])[1]?.toLowerCase();
+  if (!m) return /^https?:/.test(s.url) ? `<a href="${esc(s.url)}" rel="noopener noreferrer">${esc(s.label)}</a>` : esc(s.label);
+  return tagFor(m)
+    ? `<a href="${esc(withTag(s.url, m))}" rel="sponsored noopener noreferrer" target="_blank">${esc(s.label)}</a> <span class="note-sm" lang="en">(Amazon link, affiliate-tracked)</span>`
+    : `<a href="${esc(s.url)}" rel="noopener noreferrer" target="_blank">${esc(s.label)}</a> <span class="note-sm" lang="en">(${esc(m)}: not affiliate-tracked)</span>`;
+};
 const tagStatus = Object.fromEntries(Object.keys(AFF.marketplaces).map((m) => [m, !!tagFor(m)]));
 
 // ---------- model ----------
@@ -215,6 +224,7 @@ function retailers(work, ed) {
     const clean = r.url.replace(/([?&])tag=[^&]*&?/, '$1').replace(/[?&]$/, '');
     LINKLOG.push({ work: work.id, title: `${ed.title ?? work.title}`, edition: ed.id ?? ed.isbn13 ?? '', label: r.label, market: r.market ?? null, url: clean });
     const lc = LINKCHECK[clean];
+    if (r.market && r.affiliate && !tagFor(r.market)) r.label += ' (no affiliate tracking)';
     if (lc?.verdict === 'dead') continue;
     if (lc?.verdict === 'live') r.status = `Verified live ${lc.checkedOn}`;
     else if (lc?.verdict === 'blocked') r.status += `; automated check on ${lc.checkedOn} was blocked by the retailer`;
@@ -793,7 +803,7 @@ for (const w of cat.works) {
   <p class="note-sm">Editions of the same work are grouped here${multi ? ', by the language each is published in' : ''}. Each has its own identifier and retailer destination.</p>
   ${editionsHtml}
   <p class="note-sm">Prices, availability and ratings are not shown: they appear only through a permitted, maintained source, and none is connected to this preview yet. A cover image appears only where we hold a verified permission for that exact edition.</p>
-  <details class="sources"><summary data-i18n="h_sources">${esc(en.h_sources)}</summary><ul>${w.sources.map((s) => `<li>${/^https?:/.test(s.url) ? `<a href="${esc(s.url)}" rel="noopener noreferrer">${esc(s.label)}</a>` : esc(s.label)}, supports ${esc(s.supports)}; accessed ${s.accessed}.</li>`).join('')}${edSources.flatMap((e) => e.sources.map((s) => `<li>${esc(LANG.get(e.language)?.name ?? e.language)} ${esc(tax.formats[e.format].toLowerCase())} edition: ${/^https?:/.test(s.url) ? `<a href="${esc(s.url)}" rel="noopener noreferrer">${esc(s.label)}</a>` : esc(s.label)}, supports ${esc(s.supports ?? 'edition details')}; accessed ${s.accessed}.</li>`)).join('')}</ul></details>
+  <details class="sources"><summary data-i18n="h_sources">${esc(en.h_sources)}</summary><ul>${w.sources.map((s) => `<li>${srcLink(s)}, supports ${esc(s.supports)}; accessed ${s.accessed}.</li>`).join('')}${edSources.flatMap((e) => e.sources.map((s) => `<li>${esc(LANG.get(e.language)?.name ?? e.language)} ${esc(tax.formats[e.format].toLowerCase())} edition: ${srcLink(s)}, supports ${esc(s.supports ?? 'edition details')}; accessed ${s.accessed}.</li>`)).join('')}</ul></details>
   <p class="disclosure sm" lang="en">${esc(cfg.disclosure)}</p>
   ${[...markets].filter((m) => AFF.marketplaces[m]?.disclosure).map((m) => `<p class="disclosure sm" lang="en">${esc(AFF.marketplaces[m].disclosure)}</p>`).join('')}
   ${related.length ? `<h2 data-i18n="h_related">${esc(en.h_related)}</h2>${grid(related, { filterable: false })}` : ''}
