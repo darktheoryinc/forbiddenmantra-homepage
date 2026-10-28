@@ -1,0 +1,1904 @@
+{
+ "checkedOn": "2026-10-28",
+ "note": "Results of scripts/check-links.mjs. dead = HTTP 404/410 (hidden by the build); blocked = retailer refused or showed a robot check (kept, not proof of anything); mismatch = page exists but its title does not resemble the book.",
+ "results": {
+  "https://www.amazon.com/Apocalypse-Adam-Forbidden-Mantra-Press/dp/B0H8MQN9WK": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=The%20Hidden%20Technology%20of%20Human%20Power%20Forbidden%20Mantra%20Press&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=Forbidden%20Mantra%20Forbidden%20Mantra%20Press&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/Gayatri-Mantra-Light-Divine-Intelligence/dp/B0H8MDVC72": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=Invoke%20the%20Fierce%20Unlocking%20Strength%20and%20Protection%20with%20the%20Durga%20Mantra%20Forbidden%20Mantra%20Press&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=Lakshmi%20Gayatri%20Forbidden%20Mantra%20Press&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://play.google.com/store/books/details/Maa_Kali_Mantras_and_Instructions?id=RlyKEQAAQBAJ&hl=en_US": {
+   "verdict": "live",
+   "pageTitle": "Maa Kali Mantras and Instructions by Forbidden Mantra Press - Books on Google Play",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=Maa%20Kali%20Mantras%20and%20Instructions%20Forbidden%20Mantra%20Press&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=Maha%20Mrityunjaya%20Mantra%20Forbidden%20Mantra%20Press&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=Make%20Yourself%20Irresistibly%20Attractive%20with%20the%20Kleem%20Mantra%2C%20Kamdev%20Mantra%20and%20Kama%20Sutra%20Forbidden%20Mantra%20Press&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=Om%20Namah%20Shivaya%20A%20Sacred%20Practice%20Guide%20Forbidden%20Mantra%20Press&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=Siddhis%20Unlocking%20the%20Divine%20Powers%20Within%20Forbidden%20Mantra%20Press&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=Weapons%20of%20the%20Gods%20An%20Overview%20of%20Astra%20%26%20Shastra%20Forbidden%20Mantra%20Press&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/Energy-Unleashed-Hidden-Superpowers-Buddhist/dp/B0F29FBNF3": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/Mo-Pai-Exposed-Community-Technology/dp/B0GFW4H6T2": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=Mo%20Pai%20Nei%20Kung%20Forbidden%20Mantra%20Press&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/Pai-Destructive-Meditation-Discipline-Technology/dp/B0GFW8DJHW": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/059035342X": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.co.uk/dp/1408855658": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/1408890763": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/1526607077": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/054792822X": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0547928211": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0547722028": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0553383043": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0064471047": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0060853980": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0063081911": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0062225677": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.co.uk/dp/0552166596": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/1582346038": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/1635576725": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0316556343": {
+   "verdict": "live",
+   "pageTitle": "Amazon.com: Circe: 9780316556347: Miller, Madeline: Books",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0316556327": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0756404746": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0765377136": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0553593714": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0441627404": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0060557818": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0063070723": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0143039989": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/014143984X": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0141439475": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/1501167715": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0143108271": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0345337662": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0553382160": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/039360909X": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0393356183": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0199538824": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0812968255": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0140455116": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0140441182": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0807014273": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0140442103": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=The%20Apocalypse%20of%20Adam%20Forbidden%20Mantra%20Press&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=Gayatri%20Mantra%20Light%20of%20Divine%20Intelligence%20Forbidden%20Mantra%20Press&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=Kebra%20Nagast%20Forbidden%20Mantra%20Press&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=The%20Gospel%20of%20Magdalene%20The%20Womb%20and%20the%20Word%20Forbidden%20Mantra%20Press&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.es/irresistiblemente-atractivo-mantra-Forbidden-Mantra-ebook/dp/B0CW19ZHGX": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/1577314808": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/1572245379": {
+   "verdict": "live",
+   "pageTitle": "The Untethered Soul: The Journey Beyond Yourself: Michael A. Singer: 9781572245372: Amazon.com: Books",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/1611803438": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0834821001": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0470923350": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0471219827": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0875420508": {
+   "verdict": "live",
+   "pageTitle": "Buckland&#x27;s Complete Book of Witchcraft (Llewellyn&#x27;s Practical Magick): Buckland, Raymond: 9780875420509: Amazon.com: Books",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0875421180": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0061711233": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/1578636655": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/1578637341": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0679724532": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0943358191": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0345431707": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0876120796": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780876120798&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0712657525": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780712657525&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/Wherever-You-Go-There-Are/dp/0749925485": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0306832011": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780306832017&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/Be-Here-Now-Ram-Dass/dp/0517543052": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/1586380192": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9781586380199&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/Siddhartha-Hermann-Hesse/dp/081120068X": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/1585422509": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9781585422500&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/1564145883": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9781564145888&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/1578636795": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9781578636792&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/1878424319": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9781878424310&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0062315005": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780062315007&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/Kybalion-Tarcher-Cornerstone-Editions/dp/1585426431": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/1586380206": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9781586380205&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0834800799": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780834800793&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0807012394": {
+   "verdict": "live",
+   "pageTitle": "The Miracle of Mindfulness: An Introduction to the Practice of Meditation: Thich Nhat Hanh, Vo-Dihn Mai, Mobi Ho: 9780807012390: Amazon.com:",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780807012390&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0553351397": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780553351392&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0553380990": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780553380996&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0805210318": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780805210316&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0865477361": {
+   "verdict": "live",
+   "pageTitle": "The Yoga Sutras of Patañjali: A New Edition, Translation, and Commentary: Bryant, Edwin F.: 9780865477360: Amazon.com: Books",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780865477360&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0893860468": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780893860462&i=stripbooks": {
+   "verdict": "live",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0893860220": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780893860226&i=stripbooks": {
+   "verdict": "live",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/Tao-Physics-Exploration-Parallels-Mysticism/dp/0394731115": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/1570625190": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9781570625190&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/157863766X": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9781578637669&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0486232956": {
+   "verdict": "live",
+   "pageTitle": "Magick in Theory and Practice: Crowley, Aleister: 9780486232959: Amazon.com: Books",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780486232959&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/Mystical-Qabalah-Dion-Fortune/dp/0877285969": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/Drawing-Down-Moon-Witches-Goddess-Worshippers/dp/0143038192": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0062516329": {
+   "verdict": "live",
+   "pageTitle": "The Spiral Dance: A Rebirth of the Ancient Religion of the Goddess: 20th Anniversary Edition: Starhawk: 9780062516329: Amazon.com: Books",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780062516329&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/1885928122": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9781885928122&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0738715786": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780738715780&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/Modern-Magick-Lessons-Magickal-Llewellyns/dp/0875423248": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/054792819X": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780547928197&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/Return-King-Lord-Rings/dp/0618002243": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0756407125": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780756407124&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0756407915": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780756407919&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0765376679": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780765376671&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0765365278": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780765365279&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/081257995X": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780812579956&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0553579908": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780553579901&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0553381695": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780553381696&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/Left-Hand-Darkness-Science-Fiction/dp/0441007317": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0316229296": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780316229296&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0575077867": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780575077867&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/Storm-Front-Dresden-Files-Butcher/dp/0451457811": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0143106481": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780143106487&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0143039970": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780143039976&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0060883286": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780060883287&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/1501117017": {
+   "verdict": "live",
+   "pageTitle": "Amazon.com: The House of the Spirits: A Novel: 9781501117015: Allende, Isabel: Books",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9781501117015&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/1400079276": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9781400079278&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/1451673310": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9781451673319&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0807083690": {
+   "verdict": "live",
+   "pageTitle": "Amazon.com: Kindred: 9780807083697: Octavia E. Butler: Books",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780807083697&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/Upanishads-2nd-Eknath-Easwaran/dp/1586380214": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0061626007": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780061626005&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/Way-Zen-Alan-W-Watts/dp/0394702980": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/Wisdom-Insecurity-Alan-W-Watts/dp/0394704681": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0140447628": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780140447620&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0062509594": {
+   "verdict": "live",
+   "pageTitle": "The Essential Rumi, New Expanded Edition: Jalal al-Din Rumi, Coleman Barks, John Moyne: 9780062509598: Amazon.com: Books",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780062509598&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0140195815": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780140195811&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/Sefer-Yetzirah-Creation-Aryeh-Kaplan/dp/0877288550": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0143127748": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780143127741&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0446574759": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780446574754&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0140449191": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780140449198&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/Odyssey-Homer/dp/0393356256": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0140445927": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780140445923&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0140275363": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780140275360&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0140447555": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780140447552&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0143039679": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780143039679&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/014044789X": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780140447897&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0140440585": {
+   "verdict": "live",
+   "pageTitle": "Amazon.com: Metamorphoses (Penguin Classics ed.): 9780140440584: Ovid, Innes, Mary M., Innes, Mary M.: Books",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780140440584&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/1911597108": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9781911597100&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/1592408419": {
+   "verdict": "live",
+   "pageTitle": "Daring Greatly: How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead: Brown, Brené: 9781592408412: Amazon.com",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9781592408412&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0452289963": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780452289963&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/Surrender-Experiment-Journey-Lifes-Perfection/dp/080414110X": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/Start-Where-You-Are-Compassionate/dp/0877738807": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/Wisdom-No-Escape-Path-Loving-Kindness/dp/1570628726": {
+   "verdict": "live",
+   "pageTitle": "The Wisdom of No Escape and the Path of Loving-Kindness: Chodron, Pema: 9781570628726: Amazon.com: Books",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0877736324": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780877736325&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/1590300785": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9781590300787&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/1611805953": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9781611805956&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0875421229": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780875421223&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/Living-Wicca-Practitioner-Llewellyns-Practical/dp/0875421849": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0875421210": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780875421216&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0875421261": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780875421261&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0875420486": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780875420486&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0007192932": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780007192939&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/Rachel-Pollacks-Tarot-Wisdom-Spiritual/dp/0738713090": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0943358078": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780943358079&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0375703160": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780375703164&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/Origin-Satan-Christians-Demonized-Heretics/dp/0679731180": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/1578633672": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9781578633678&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/1604070811": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9781604070811&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/160407891X": {
+   "verdict": "live",
+   "pageTitle": "Awakening Shakti: The Transformative Power of the Goddesses of Yoga: Kempton, Sally: 9781604078916: Amazon.com: Books",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9781604078916&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/Wicca-Life-Craft-Birth-Summerland/dp/0806522755": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/087542791X": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780875427911&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0875426638": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780875426631&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0738710717": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780738710716&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0877282684": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780877282686&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0140067477": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780140067477&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0380807343": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780380807345&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0060530944": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780060530945&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0063070715": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780063070714&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/Golden-Compass-Dark-Materials-Book/dp/037582345X": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/Rosemarys-Baby-Ira-Levin/dp/1605981109": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/038549081X": {
+   "verdict": "live",
+   "pageTitle": "The Handmaid&#x27;s Tale: A Novel: Atwood, Margaret: 9780385490818: Amazon.com: Books",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780385490818&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0060850523": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780060850524&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0441007465": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780441007462&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0446675504": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780446675505&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/1538732181": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9781538732182&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0441013597": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780441013593&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/Pet-Sematary-Novel-Stephen-King/dp/1501156705": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0307743675": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780307743671&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/006209436X": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780062094360&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/Turn-Screw-Penguin-Classics/dp/0141441356": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0141439572": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780141439570&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/Piranesi/dp/1526622432": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/055358894X": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780553588941&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0765322889": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780765322883&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/052562080X": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780525620808&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0804172447": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780804172448&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0425190374": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780425190371&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0061054887": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780061054884&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0394404289": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780394404288&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0140455264": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780140455267&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0767903692": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780767903691&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0143121634": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780143121633&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0061142662": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780061142666&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/048621866X": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780486218663&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0199535957": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780199535958&i=stripbooks": {
+   "verdict": "live",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0140443487": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780140443486&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0192806017": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780192806017&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0198745575": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780198745570&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/1578630487": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9781578630486&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/158394835X": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9781583948354&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0979067715": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780979067716&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/069109750X": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780691097503&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/Secret-Golden-Flower-Chinese-Book/dp/0156799804": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0521425433": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780521425438&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0199218781": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780199218783&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0143107542": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780143107545&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0061660183": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780061660184&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0140390340": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780140390346&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/History-God-000-Year-Judaism-Christianity/dp/0345384563": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/014044923X": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780140449235&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0140447806": {
+   "verdict": "live",
+   "pageTitle": "The Consolation of Philosophy (Penguin Classics): Boethius, Ancius, Watts, Victor, Watts, Victor, Watts, Victor: 9780140447804: Amazon.com: ",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780140447804&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0140449469": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780140449464&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/157062304X": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9781570623042&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/What-Buddha-Taught-Expanded-Dhammapada/dp/0802130313": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/1952692768": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9781952692765&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0345536932": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780345536938&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/Think-Grow-Rich-Landmark-Bestseller/dp/1585424331": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0618640150": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780618640157&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0547928203": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780547928203&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/dp/0618126988": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/s?k=9780618126989&i=stripbooks": {
+   "verdict": "mismatch",
+   "pageTitle": "&nbsp;",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  },
+  "https://www.amazon.com/Anansi-Boys-Neil-Gaiman/dp/0061342394": {
+   "verdict": "blocked",
+   "status": 200,
+   "checkedOn": "2026-10-28"
+  }
+ }
+}
