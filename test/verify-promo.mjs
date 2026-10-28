@@ -23,6 +23,14 @@ const pages = allHtml();
 const withFooter = pages.filter((p) => fs.readFileSync(p, 'utf8').includes('class="foot-promo"')).length;
 ok(withFooter === pages.length, `footer reference on all ${pages.length} pages (found ${withFooter})`);
 ok(pages.every((p) => { const h = fs.readFileSync(p, 'utf8'); return !h.includes(MEMBER) || /NVIDIA sponsors or endorses/.test(h); }), 'every page that states the membership also states that it does not imply NVIDIA sponsorship or endorsement');
+{ // layout: the NVIDIA badge, membership line and non-endorsement sit INSIDE the one IOSutra ad card, between two bookshelves
+  const card = home.slice(home.indexOf('<div class="promo-card io-card'), home.indexOf('</section>', home.indexOf('<div class="promo-card io-card')));
+  const at = (re) => home.search(re);
+  ok(/nvidia-inception-program-badge[^"]*\.svg/.test(card) && card.includes('class="io-member"') && /does not imply that NVIDIA sponsors or endorses either/.test(card), 'home: NVIDIA badge, membership line and non-endorsement are inside the IOSutra ad card');
+  ok(!home.replace(card, '').includes('nvidia-inception-program-badge') && !/NVIDIA/.test(home.replace(card, '').replace(/<footer[\s\S]*<\/footer>/, '').replace(/<[^>]+>/g, ' ')), 'home: the badge appears only within the ad card (no separate NVIDIA section)');
+  ok(at(/data-home="fmp"/) > 0 && at(/data-home="fmp"/) < at(/class="band promo-band"/) && at(/class="band promo-band"/) < at(/data-home="featured"/), 'home: bookshelf above the IOSutra ad and another immediately below it');
+  ok(/data-home="fmp"[\s\S]*?class="card-buy"/.test(home.slice(0, at(/class="band promo-band"/))) && /class="card-buy"/.test(home.slice(at(/data-home="featured"/), at(/data-home="featured"/) + 20000)), 'home: both shelves show covers/titles with shopping links');
+}
 ok(home.includes(MEMBER) && tech.includes(MEMBER) && book.includes(MEMBER), 'exact membership statement on home, technology page and footer');
 ok(/does not extend to Forbidden Mantra Press or this bookstore/.test(home), 'home: membership explicitly scoped to IOSutra, not Forbidden Mantra Press');
 
