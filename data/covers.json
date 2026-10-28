@@ -2032,6 +2032,586 @@
           "h": 450
         }
       }
+    },
+    {
+      "work": "the-apocalypse-of-adam",
+      "edition": "ed2",
+      "source": {
+        "type": "owner-supplied",
+        "description": "Owner's Wix Media Manager (forbiddenmantra.com), file TheApocalyseofAdamCover.png"
+      },
+      "rights": {
+        "basis": "Forbidden Mantra Press owner confirmed (2026-10-28) that all original Forbidden Mantra Press artwork is his and authorized for commercial use",
+        "confirmedBy": "Forbidden Mantra Press owner",
+        "confirmedOn": "2026-10-28"
+      },
+      "matchEvidence": "Cover reads 'The Apocalypse of Adam', Emily Patel; used for the English title on the owner's website. Portrait art, so assigned to the paperback edition, not the audiobook; no ISBN/ASIN on record for the paperback",
+      "file": "assets-src/covers/the-apocalypse-of-adam__ed2.png",
+      "original": [
+        328,
+        493
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 361
+        },
+        "480": {
+          "w": 328,
+          "h": 493
+        }
+      }
+    },
+    {
+      "work": "the-apocalypse-of-eve",
+      "edition": "ed1",
+      "source": {
+        "type": "owner-supplied",
+        "description": "Owner's Wix Media Manager (forbiddenmantra.com), file 'The Apocalypse of Eve.png'"
+      },
+      "rights": {
+        "basis": "Forbidden Mantra Press owner confirmed (2026-10-28) that all original Forbidden Mantra Press artwork is his and authorized for commercial use",
+        "confirmedBy": "Forbidden Mantra Press owner",
+        "confirmedOn": "2026-10-28"
+      },
+      "matchEvidence": "Cover reads 'The Apocalypse of Eve', Forbidden Mantra Press, Emily K Patel; matches the website listing 'The Apocalypse of Eve: Forbidden Feminine Wisdom from Ancient Gnostic Texts'",
+      "file": "assets-src/covers/the-apocalypse-of-eve__ed1.png",
+      "original": [
+        1024,
+        1536
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 360
+        },
+        "480": {
+          "w": 480,
+          "h": 720
+        }
+      }
+    },
+    {
+      "work": "the-apocalypse-of-peter",
+      "edition": "ed1",
+      "source": {
+        "type": "owner-supplied",
+        "description": "Owner's Wix Media Manager (forbiddenmantra.com), file 'the apocalypse of peter.jpeg'"
+      },
+      "rights": {
+        "basis": "Forbidden Mantra Press owner confirmed (2026-10-28) that all original Forbidden Mantra Press artwork is his and authorized for commercial use",
+        "confirmedBy": "Forbidden Mantra Press owner",
+        "confirmedOn": "2026-10-28"
+      },
+      "matchEvidence": "Cover reads 'The Apocalypse of Peter', Forbidden Mantra Press, Emily K Patel; matches the website listing",
+      "file": "assets-src/covers/the-apocalypse-of-peter__ed1.jpeg",
+      "original": [
+        800,
+        1200
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 360
+        },
+        "480": {
+          "w": 480,
+          "h": 720
+        }
+      }
+    },
+    {
+      "work": "the-ancient-science-of-kundalini-energy-revealed",
+      "edition": "ed1",
+      "source": {
+        "type": "owner-supplied",
+        "description": "Owner's Wix Media Manager (forbiddenmantra.com), file 'The Ancient.png'"
+      },
+      "rights": {
+        "basis": "Forbidden Mantra Press owner confirmed (2026-10-28) that all original Forbidden Mantra Press artwork is his and authorized for commercial use",
+        "confirmedBy": "Forbidden Mantra Press owner",
+        "confirmedOn": "2026-10-28"
+      },
+      "matchEvidence": "Cover reads 'The Ancient Science of Kundalini Energy Revealed: Mastery of Sexual Energy and Psychic Abilities'; exact title and subtitle of the website listing; no author printed on the cover",
+      "file": "assets-src/covers/the-ancient-science-of-kundalini-energy-revealed__ed1.png",
+      "original": [
+        1696,
+        2528
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 358
+        },
+        "480": {
+          "w": 480,
+          "h": 715
+        }
+      }
+    },
+    {
+      "work": "mo-pai-and-internal-alchemy",
+      "edition": "ed1",
+      "source": {
+        "type": "owner-supplied",
+        "description": "Owner's Wix Media Manager (forbiddenmantra.com), file 'Mo Pai Internal Alchemy.jpeg'"
+      },
+      "rights": {
+        "basis": "Forbidden Mantra Press owner confirmed (2026-10-28) that all original Forbidden Mantra Press artwork is his and authorized for commercial use",
+        "confirmedBy": "Forbidden Mantra Press owner",
+        "confirmedOn": "2026-10-28"
+      },
+      "matchEvidence": "Cover reads 'Mo Pai and Internal Alchemy' with the tagline 'The Hidden Technology of Human Power'; shown for the website listing 'Mo Pai and Internal Alchemy' in the owner's screenshot",
+      "file": "assets-src/covers/mo-pai-and-internal-alchemy__ed1.jpeg",
+      "original": [
+        800,
+        1200
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 360
+        },
+        "480": {
+          "w": 480,
+          "h": 720
+        }
+      }
+    },
+    {
+      "work": "mo-pai-the-destructive-and-healing-force-within",
+      "edition": "ed2",
+      "source": {
+        "type": "owner-supplied",
+        "description": "Owner's Wix Media Manager (forbiddenmantra.com), file 'Mo Pai _ La force destructrice et guérisseuse intérieure .png'"
+      },
+      "rights": {
+        "basis": "Forbidden Mantra Press owner confirmed (2026-10-28) that all original Forbidden Mantra Press artwork is his and authorized for commercial use",
+        "confirmedBy": "Forbidden Mantra Press owner",
+        "confirmedOn": "2026-10-28"
+      },
+      "matchEvidence": "French cover 'La force destructrice et guérisseuse intérieure révélée' (the website shows the title without 'révélée'); shown for the French listing in the owner's screenshot",
+      "file": "assets-src/covers/mo-pai-the-destructive-and-healing-force-within__ed2.png",
+      "original": [
+        473,
+        731
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 371
+        },
+        "480": {
+          "w": 473,
+          "h": 731
+        }
+      }
+    },
+    {
+      "work": "mo-pai-the-destructive-and-healing-force-within",
+      "edition": "ed4",
+      "source": {
+        "type": "owner-supplied",
+        "description": "Owner's Wix Media Manager (forbiddenmantra.com), file 'Mo Pai La fuerza destructiva y sanadora interior_.png'"
+      },
+      "rights": {
+        "basis": "Forbidden Mantra Press owner confirmed (2026-10-28) that all original Forbidden Mantra Press artwork is his and authorized for commercial use",
+        "confirmedBy": "Forbidden Mantra Press owner",
+        "confirmedOn": "2026-10-28"
+      },
+      "matchEvidence": "Spanish cover 'La fuerza destructiva y sanadora interior' matches the website listing; the file carries a small sparkle mark at the lower right (as supplied)",
+      "file": "assets-src/covers/mo-pai-the-destructive-and-healing-force-within__ed4.png",
+      "original": [
+        380,
+        570
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 360
+        },
+        "480": {
+          "w": 380,
+          "h": 570
+        }
+      }
+    },
+    {
+      "work": "gayatri-mantra",
+      "edition": "ed2",
+      "source": {
+        "type": "owner-supplied",
+        "description": "Owner's Wix Media Manager (forbiddenmantra.com), file 'gayatri mantra light of the divine.png'"
+      },
+      "rights": {
+        "basis": "Forbidden Mantra Press owner confirmed (2026-10-28) that all original Forbidden Mantra Press artwork is his and authorized for commercial use",
+        "confirmedBy": "Forbidden Mantra Press owner",
+        "confirmedOn": "2026-10-28"
+      },
+      "matchEvidence": "Cover reads 'Gayatri Mantra: Light of Divine Intelligence', Forbidden Mantra Press; clean 1024x1536 file that replaces the defective 331px file; portrait art assigned to the ebook, not the audiobook",
+      "file": "assets-src/covers/gayatri-mantra__ed2.png",
+      "original": [
+        1024,
+        1536
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 360
+        },
+        "480": {
+          "w": 480,
+          "h": 720
+        }
+      }
+    },
+    {
+      "work": "om-namah-shivaya",
+      "edition": "ed1",
+      "source": {
+        "type": "owner-supplied",
+        "description": "Owner's Wix Media Manager (forbiddenmantra.com), file omnamahshivaya.png"
+      },
+      "rights": {
+        "basis": "Forbidden Mantra Press owner confirmed (2026-10-28) that all original Forbidden Mantra Press artwork is his and authorized for commercial use",
+        "confirmedBy": "Forbidden Mantra Press owner",
+        "confirmedOn": "2026-10-28"
+      },
+      "matchEvidence": "Cover reads 'Om Namah Shivaya: A Sacred Practice Guide'; matches the website listing",
+      "file": "assets-src/covers/om-namah-shivaya__ed1.png",
+      "original": [
+        1024,
+        1536
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 360
+        },
+        "480": {
+          "w": 480,
+          "h": 720
+        }
+      }
+    },
+    {
+      "work": "om-namah-shivaya",
+      "edition": "ed3",
+      "source": {
+        "type": "owner-supplied",
+        "description": "Owner's Wix Media Manager (forbiddenmantra.com), file omnamahshivayaspanish.png"
+      },
+      "rights": {
+        "basis": "Forbidden Mantra Press owner confirmed (2026-10-28) that all original Forbidden Mantra Press artwork is his and authorized for commercial use",
+        "confirmedBy": "Forbidden Mantra Press owner",
+        "confirmedOn": "2026-10-28"
+      },
+      "matchEvidence": "Spanish cover reads 'Una guía sagrada de práctica'; the website listing was read as 'Una guía de práctica sagrada' (word order differs): same book, wording to confirm",
+      "file": "assets-src/covers/om-namah-shivaya__ed3.png",
+      "original": [
+        1024,
+        1536
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 360
+        },
+        "480": {
+          "w": 480,
+          "h": 720
+        }
+      }
+    },
+    {
+      "work": "maha-mrityunjaya-mantra",
+      "edition": "ed1",
+      "source": {
+        "type": "owner-supplied",
+        "description": "Owner's Wix Media Manager (forbiddenmantra.com), file 'maha mrytunjaya mantra.png'"
+      },
+      "rights": {
+        "basis": "Forbidden Mantra Press owner confirmed (2026-10-28) that all original Forbidden Mantra Press artwork is his and authorized for commercial use",
+        "confirmedBy": "Forbidden Mantra Press owner",
+        "confirmedOn": "2026-10-28"
+      },
+      "matchEvidence": "Cover reads 'Maha Mrityunjaya Mantra: A journey through healing, transcendence, and the nectar of immortality', Forbidden Mantra Press",
+      "file": "assets-src/covers/maha-mrityunjaya-mantra__ed1.png",
+      "original": [
+        1024,
+        1536
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 360
+        },
+        "480": {
+          "w": 480,
+          "h": 720
+        }
+      }
+    },
+    {
+      "work": "invoke-the-fierce",
+      "edition": "ed1",
+      "source": {
+        "type": "owner-supplied",
+        "description": "Owner's Google Drive file Durga3.png (1C9PpiNbvL5mmPb0KFtL8CUXaj_2Ev610)"
+      },
+      "rights": {
+        "basis": "Forbidden Mantra Press owner confirmed (2026-10-28) that all original Forbidden Mantra Press artwork is his and authorized for commercial use",
+        "confirmedBy": "Forbidden Mantra Press owner",
+        "confirmedOn": "2026-10-28"
+      },
+      "matchEvidence": "Cover reads 'Durga Mantra: Awaken the Fierce Divine Within'; the owner's website screenshot shows exactly this cover on the listing 'Invoke the Fierce:: Unlocking Strength and Protection with the Durga Mantra' (Forbidden Mantra Press)",
+      "file": "assets-src/covers/invoke-the-fierce__ed1.png",
+      "original": [
+        1024,
+        1536
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 360
+        },
+        "480": {
+          "w": 480,
+          "h": 720
+        }
+      }
+    },
+    {
+      "work": "invoke-the-fierce",
+      "edition": "ed2",
+      "source": {
+        "type": "owner-supplied",
+        "description": "Owner's Wix Media Manager (forbiddenmantra.com), file 'Durga Spanish.png'"
+      },
+      "rights": {
+        "basis": "Forbidden Mantra Press owner confirmed (2026-10-28) that all original Forbidden Mantra Press artwork is his and authorized for commercial use",
+        "confirmedBy": "Forbidden Mantra Press owner",
+        "confirmedOn": "2026-10-28"
+      },
+      "matchEvidence": "Spanish cover 'Durga Mantra: Desbloqueo de fuerza y protección con el Durga Mantra', TSPRavshiva; matches the Spanish listing 'Invocar al Feroz'",
+      "file": "assets-src/covers/invoke-the-fierce__ed2.png",
+      "original": [
+        1024,
+        1536
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 360
+        },
+        "480": {
+          "w": 480,
+          "h": 720
+        }
+      }
+    },
+    {
+      "work": "lakshmi-gayatri",
+      "edition": "ed1",
+      "source": {
+        "type": "owner-supplied",
+        "description": "Owner's Wix Media Manager (forbiddenmantra.com), file LAKSHMIBOOKCOVER.png"
+      },
+      "rights": {
+        "basis": "Forbidden Mantra Press owner confirmed (2026-10-28) that all original Forbidden Mantra Press artwork is his and authorized for commercial use",
+        "confirmedBy": "Forbidden Mantra Press owner",
+        "confirmedOn": "2026-10-28"
+      },
+      "matchEvidence": "Cover reads 'Lakshmi: A modern guide to sacred abundance and mantra power', Forbidden Mantra Press; the owner's website screenshot shows this cover on the listing 'Lakshmi Gayatri: Awakening Sacred Wealth in the Modern Age'",
+      "file": "assets-src/covers/lakshmi-gayatri__ed1.png",
+      "original": [
+        482,
+        722
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 360
+        },
+        "480": {
+          "w": 480,
+          "h": 719
+        }
+      }
+    },
+    {
+      "work": "miracles-of-the-masters-of-yoga",
+      "edition": "ed1",
+      "source": {
+        "type": "owner-supplied",
+        "description": "Owner's Wix Media Manager (forbiddenmantra.com), file miraclesofyogis.jpg"
+      },
+      "rights": {
+        "basis": "Forbidden Mantra Press owner confirmed (2026-10-28) that all original Forbidden Mantra Press artwork is his and authorized for commercial use",
+        "confirmedBy": "Forbidden Mantra Press owner",
+        "confirmedOn": "2026-10-28"
+      },
+      "matchEvidence": "Cover reads 'Miracles of the Masters of Yoga'; shown for the English listing in the owner's screenshot",
+      "file": "assets-src/covers/miracles-of-the-masters-of-yoga__ed1.jpg",
+      "original": [
+        1024,
+        1536
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 360
+        },
+        "480": {
+          "w": 480,
+          "h": 720
+        }
+      }
+    },
+    {
+      "work": "edenic-origins",
+      "edition": "ed1",
+      "source": {
+        "type": "owner-supplied",
+        "description": "Owner's Wix Media Manager (forbiddenmantra.com), file EdenicOrigins.jpg"
+      },
+      "rights": {
+        "basis": "Forbidden Mantra Press owner confirmed (2026-10-28) that all original Forbidden Mantra Press artwork is his and authorized for commercial use",
+        "confirmedBy": "Forbidden Mantra Press owner",
+        "confirmedOn": "2026-10-28"
+      },
+      "matchEvidence": "Cover reads 'Edenic Origins: The Sacred Roots of Veganism'; matches the English listing",
+      "file": "assets-src/covers/edenic-origins__ed1.jpg",
+      "original": [
+        1024,
+        1536
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 360
+        },
+        "480": {
+          "w": 480,
+          "h": 720
+        }
+      }
+    },
+    {
+      "work": "archons-unveiled",
+      "edition": "ed1",
+      "source": {
+        "type": "owner-supplied",
+        "description": "Owner's Wix Media Manager (forbiddenmantra.com), file 'ChatGPT Image Mar 29, 2025, 09_26_20 PM.png'"
+      },
+      "rights": {
+        "basis": "Forbidden Mantra Press owner confirmed (2026-10-28) that all original Forbidden Mantra Press artwork is his and authorized for commercial use",
+        "confirmedBy": "Forbidden Mantra Press owner",
+        "confirmedOn": "2026-10-28"
+      },
+      "matchEvidence": "Cover reads 'Archons Unveiled: The Non-Human Manipulation of Human Consciousness'",
+      "file": "assets-src/covers/archons-unveiled__ed1.png",
+      "original": [
+        1024,
+        1536
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 360
+        },
+        "480": {
+          "w": 480,
+          "h": 720
+        }
+      }
+    },
+    {
+      "work": "archons-unveiled-ii",
+      "edition": "ed1",
+      "source": {
+        "type": "owner-supplied",
+        "description": "Owner's Wix Media Manager (forbiddenmantra.com), file 'ChatGPT Image Apr 7, 2025, 08_17_32 AM.png'"
+      },
+      "rights": {
+        "basis": "Forbidden Mantra Press owner confirmed (2026-10-28) that all original Forbidden Mantra Press artwork is his and authorized for commercial use",
+        "confirmedBy": "Forbidden Mantra Press owner",
+        "confirmedOn": "2026-10-28"
+      },
+      "matchEvidence": "Cover reads 'Archons Unveiled: Multiphasic Precognition of Reality', TSPRavshiva",
+      "file": "assets-src/covers/archons-unveiled-ii__ed1.png",
+      "original": [
+        1024,
+        1536
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 360
+        },
+        "480": {
+          "w": 480,
+          "h": 720
+        }
+      }
+    },
+    {
+      "work": "archons-unveiled-iii",
+      "edition": "ed1",
+      "source": {
+        "type": "owner-supplied",
+        "description": "Owner's Wix Media Manager (forbiddenmantra.com), file 'ChatGPT Image Apr 8, 2025, 12_37_34 AM.png'"
+      },
+      "rights": {
+        "basis": "Forbidden Mantra Press owner confirmed (2026-10-28) that all original Forbidden Mantra Press artwork is his and authorized for commercial use",
+        "confirmedBy": "Forbidden Mantra Press owner",
+        "confirmedOn": "2026-10-28"
+      },
+      "matchEvidence": "Cover reads 'Archons Unveiled 3: The Code of Immortality'",
+      "file": "assets-src/covers/archons-unveiled-iii__ed1.png",
+      "original": [
+        1024,
+        1536
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 360
+        },
+        "480": {
+          "w": 480,
+          "h": 720
+        }
+      }
+    },
+    {
+      "work": "archons-unveiled-part-4",
+      "edition": "ed1",
+      "source": {
+        "type": "owner-supplied",
+        "description": "Owner's Wix Media Manager (forbiddenmantra.com), file TheTransformation.jpg"
+      },
+      "rights": {
+        "basis": "Forbidden Mantra Press owner confirmed (2026-10-28) that all original Forbidden Mantra Press artwork is his and authorized for commercial use",
+        "confirmedBy": "Forbidden Mantra Press owner",
+        "confirmedOn": "2026-10-28"
+      },
+      "matchEvidence": "Cover reads 'Archons Unveiled Part 4: The Transformation', TSPRavshiva",
+      "file": "assets-src/covers/archons-unveiled-part-4__ed1.jpg",
+      "original": [
+        1024,
+        1536
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 360
+        },
+        "480": {
+          "w": 480,
+          "h": 720
+        }
+      }
     }
   ]
 }

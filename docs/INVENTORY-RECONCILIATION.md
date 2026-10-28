@@ -33,10 +33,27 @@ Forbidden Mantra Series (Rav Shiva, new author name in the catalogue): Hanuman, 
 - Different imprint or no fitting department: "Ruqyah's for Wealth" (English and Arabic) and "JINN" (Muslim Prayer Press, Abdur Rehman); the "Enlightened Silly Comics" pair; "Benny the Brave and the Shimmering Night" (children's picture book).
 - Base title not visible or only partly legible: Spanish "La Joya del Loto…", "Los pensamientos son mantras"; Dutch "Schepping en verbinding…"; Spanish/Portuguese "Revelando los misterios de El evangelio de Pedro" / "Revelando os mistérios do O Evangelho de Pedro"; three Hindi and two Chinese titles; and the cut-off last row (The Book of Jubilees, The Book of Vedic Spells, The Catalyst, The Code of Immortality, The Complete Dream & Consciousness…, The Coven and the Yogi).
 
-## Covers
-- Original covers recovered this round: **0**. The artwork exists (Wix media library lists the Apocalypse of Adam in four languages, Mo Pai in English/French/Spanish, Mo Pai Exposed, Energy Unleashed, Om Namah Shivaya in English/Spanish, Durga Spanish, Edenic Origins, and more) but the files cannot be downloaded until `static.wixstatic.com` is allowed. A file list is in `data/drafts/wix-media-cover-candidates.json`.
-- Cropped screenshots of the website are not used as covers.
-- Publisher-authorised Penguin Random House covers added earlier this session: 58 (70 valid covers in total).
+## Covers (updated after `static.wixstatic.com` was allowed)
+Recovered from the owner's Wix Media Manager (and one from Drive) and published to `data/covers.json` with the owner's recorded rights, each matched to its exact edition: **20 original covers**. Total valid covers is now **90**: 12 earlier, 58 Penguin Random House, and these 20.
+
+| Work | Edition | Cover file (what the cover reads) |
+|---|---|---|
+| The Apocalypse of Adam | English paperback (ed2) | TheApocalyseofAdamCover.png ("The Apocalypse of Adam, Emily Patel"); portrait art, so not assigned to the audiobook |
+| The Apocalypse of Eve; The Apocalypse of Peter | English | clean 1024px / 800px files |
+| The Ancient Science of Kundalini Energy Revealed | English | exact title and subtitle |
+| Mo Pai and Internal Alchemy | English | "The Hidden Technology of Human Power" tagline |
+| Mo Pai: The Destructive and Healing Force Within | French, Spanish | French and Spanish covers (the Spanish file carries a small sparkle mark as supplied) |
+| Gayatri Mantra | English ebook | clean 1024x1536 file; replaces the defective 331px one |
+| Om Namah Shivaya | English, Spanish | Spanish cover wording ("una guía sagrada de práctica") differs from the listing wording; flagged |
+| Maha Mrityunjaya Mantra; Lakshmi Gayatri; Miracles of the Masters of Yoga; Edenic Origins (English) | English | matched by cover text and, for Lakshmi, by the owner's screenshot |
+| Invoke the Fierce | English (Durga3.png from Drive) and Spanish | the owner's screenshot shows Durga3 on this listing, which settles the earlier "probable" pairing |
+| Archons Unveiled, II, III, Part 4 | English | four covers matched by subtitle |
+
+Held (staged in `assets-src/covers-pending/`, listed in `data/drafts/covers-pending.json`): Apocalypse of Adam Part II (grid overlay), the German Das Erscheinen Adams (smear), Energy Unleashed (two 300px listing screenshots with a grid), Mo Pai Exposed (cover subtitle differs from the listing and two ASINs exist), the square Maa Kali files, and covers with no listing seen (Hidden Doctrine of Mo Pai, Matrix of Mantra, Atharva Veda, Dream Journal, The Forbidden Light, Genesis of Sophia, The Secret Knowledge of Adam, The Catalyst).
+
+Not recoverable from the files: covers for the German, Dutch, Welsh and most Spanish editions, and for the Hindi and Chinese titles (no file seen).
+
+Still blocked for the inventory: the live site builds its bookstore from `siteassets.parastorage.com`, `static.parastorage.com` and `www-forbiddenmantra-com.filesusr.com`, which the network policy does not allow, so the full listing could not be read directly.
 
 ## Highlights
 `data/highlights.json` drives the new "Featured from Forbidden Mantra Press" shelf (The Apocalypse of Adam and the Mo Pai books first) and the "Mo Pai Collection" shelf. No sales evidence is on file, so every label reads "Featured". Add works to `bestsellerEvidence` only with owner-provided sales evidence; the heading and labels then switch to "Bestseller" for those works.

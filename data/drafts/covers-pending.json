@@ -1,5 +1,5 @@
 {
- "status": "STAGED, NOT PUBLISHED. Files live in assets-src/covers-pending/ (git-ignored). Not in data/covers.json. Publishing needs the owner to confirm commercial rights.",
+ "status": "STAGED, NOT PUBLISHED (files in assets-src/covers-pending/, git-ignored). Updated 2026-10-28 after the Wix Media Manager files became downloadable. 20 clean originals were moved into data/covers.json.",
  "covers": [
   {
    "work": "gayatri-mantra",
@@ -20,5 +20,57 @@
    ]
   }
  ],
- "note": "Kebra Nagast moved to data/covers.json (paperback ed1 and ebook ed2) on 2026-10-28 under the owner's recorded commercial-use authorization. Gayatri Mantra stays staged: its file has a baked-in grid defect and needs a clean replacement. Weapons of the Gods (ebook ed2) published locally 2026-10-28 from Drive file brahmastra.png (exact title and subtitle). Durga3.png and LAKSHMIBOOKCOVER.png do not match catalogue titles (Invoke the Fierce, Lakshmi Gayatri), so they are not integrated."
+ "note": "Kebra Nagast moved to data/covers.json (paperback ed1 and ebook ed2) on 2026-10-28 under the owner's recorded commercial-use authorization. Gayatri Mantra stays staged: its file has a baked-in grid defect and needs a clean replacement. Weapons of the Gods (ebook ed2) published locally 2026-10-28 from Drive file brahmastra.png (exact title and subtitle). Durga3.png and LAKSHMIBOOKCOVER.png do not match catalogue titles (Invoke the Fierce, Lakshmi Gayatri), so they are not integrated.",
+ "wixHeld": [
+  {
+   "file": "wix-apocalypse-adam2.png",
+   "looks": "The Apocalypse of Adam: War of the Archons (Part II), Emily K Patel",
+   "work": "apocalypse-of-adam-part-ii",
+   "held": "325x518 file with a baked-in grid overlay across the title block"
+  },
+  {
+   "file": "wix-adam-german.png",
+   "looks": "Das Erscheinen Adams, Emily K Patel",
+   "work": "the-apocalypse-of-adam (de, ed3)",
+   "held": "325x518 with a visible smear across the title; needs a clean file"
+  },
+  {
+   "file": "wix-energyunleashed.png / wix-energy-unleashed-listing.png",
+   "looks": "Energy Unleashed: The Hidden Superpowers of Mo Pai",
+   "work": "energy-unleashed",
+   "held": "both are 292-312px screenshots of the Amazon listing with a grid overlay"
+  },
+  {
+   "file": "wix-mopai-exposed.png",
+   "looks": "MO PAI EXPOSED: Serious Truths About Internal Power Training",
+   "work": "mo-pai-exposed",
+   "held": "cover subtitle differs from the website title 'What the Internal Power Community Refuses to Admit'; two paperback ASINs exist, so the edition is unresolved"
+  },
+  {
+   "file": "wix-gayatri-small.jpg",
+   "looks": "Gayatri Mantra (331px, grid defect)",
+   "held": "superseded by the clean 1024x1536 file now published"
+  },
+  {
+   "file": "wix-kali-ma-edit.jpg / wix-ma-kali-2400.png",
+   "looks": "Maa Kali Mantras and Instructions (two different designs)",
+   "work": "maa-kali-mantras-and-instructions",
+   "held": "square 2400px files, one letterboxed in black; the website shows portrait covers, so the published portrait versions are needed"
+  },
+  {
+   "file": "wix-mopai-hidden-doctrine.jpeg",
+   "looks": "The Hidden Doctrine of Mo Pai, Emily K Patel",
+   "held": "no catalogue entry; listing not visible in the screenshots"
+  },
+  {
+   "file": "wix-hindi-the-ancient.png",
+   "looks": "Hindi edition of The Ancient Science of Kundalini Energy Revealed",
+   "held": "no Hindi listing seen; not added as an edition"
+  },
+  {
+   "file": "wix-matrix-of-mantra.png, wix-atharvaveda.png, wix-dream-journal.png, wix-forbidden-light.png, wix-genesis-sophia2.png, wix-sophia.jpg, wix-chatgpt-apr2.png, wix-full-length-kdp.jpg",
+   "looks": "The Matrix of Mantra; The Atharva Veda; Dream Journal; The Forbidden Light; The Genesis of Sophia (two files); The Secret Knowledge of Adam; The Catalyst: Awakening the Human Code",
+   "held": "no matching listing seen in the screenshots (The Catalyst is listed on the website but its author is not shown)"
+  }
+ ]
 }
