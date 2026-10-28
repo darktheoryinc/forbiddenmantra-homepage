@@ -38,3 +38,11 @@ Secondary sources only; verify against the current Associates Operating Agreemen
 * One tracker quotes a rule that images may be linked but not stored or cached beyond about 24 hours. If that applies, a static site that bakes images into its files does not comply; images would have to be fetched at view time through a small server-side function, which needs a hosting service.
 * Credentials need an approved Associates account (qualifying-sales conditions apply; threshold not verified).
 Not verified by me: that publicly guessable image URLs may be used. Treat them as not allowed until Amazon's terms say otherwise.
+
+
+## Follow-up 2026-10-28: the Amazon cover URLs in the owner's catalogue table
+The owner's `catalog` table stores one Amazon-hosted `cover_url` per record (images-na.ssl-images-amazon.com/images/P/<ASIN>…), and the existing site also builds `m.media-amazon.com/images/P/<ASIN>` URLs in the browser. I checked whether the new site may use them:
+- Amazon's own Associates pages could not be opened from this session (`affiliate-program.amazon.com` is not on the network allow-list), so I have **no first-hand text** of the current Operating Agreement or Creators API terms.
+- Search results (secondary sources: a policy tracker, WordPress compliance guides) agree on the same points: images are product content that Amazon provides through its API; they may be shown from Amazon's own URLs, not downloaded, stored, cached or re-hosted; and old PA-API credentials are replaced by the Creators API.
+- This site is static and builds covers into its files, and the Creators API is closed to us (eligibility not met, recorded earlier). So downloading these images, or baking their URLs into pages as a substitute for authorised API use, is **not adopted**. The table's `cover_url` values were not fetched or stored.
+- Owner options that would be compliant: send the original artwork files (the owner owns that artwork, and covers from original files are already used where available); or confirm the current Amazon terms from Associates Central and tell me what they allow. If you want the official text read from here, add `affiliate-program.amazon.com` to Allowed domains.

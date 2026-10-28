@@ -44,12 +44,38 @@ Each table record carries its own credit, so the catalogue keeps credits as prin
 - Departments for the 110 new works were assigned from titles and series and are flagged for review. New departments: Children's Books, Comics & Humor, Journals & Coloring Books.
 - Formats, ASINs and publication years come from the table. Prices and the table's Amazon cover URLs were deliberately not stored. Buy links are the table's own Amazon product links with the affiliate tag added (all 631 links audited, 0 errors).
 
-## Covers (95 valid; 31 of the 420 table editions have a cover; 26 of the 131 owner-listed works)
-Added since the last report, now confirmed by the table: The Hidden Doctrine of Mo Pai, The Genesis of Sophia, The Secret Knowledge of Adam, The Catalyst, and the Hindi Kundalini cover. Earlier this session: Apocalypse of Adam/Eve/Peter, Kundalini, Mo Pai and Internal Alchemy, Mo Pai French/Spanish, Gayatri (clean file), Om Namah Shivaya EN/ES, Maha Mrityunjaya, Invoke the Fierce EN/ES, Lakshmi Gayatri, Miracles of the Masters of Yoga, Edenic Origins, Archons I-4, plus the older Kebra Nagast, Weapons of the Gods, Siddhis, Gospel of Magdalene, Kleem, Mo Pai D&H, and 58 Penguin Random House covers. Each cover is tied to one edition (a cover is not extended to the other formats of the same title without confirmation).
+## Cover coverage (98 valid covers, updated)
+| Scope | Works with a cover | Editions with a cover |
+|---|---|---|
+| Whole catalogue | 89 of 311 (29%) | 98 of 632 (16%) |
+| Owner-owned books (owner-listed) | 29 of 131 (22%) | 35 of 425 (8%) |
+| Third-party books | 60 of 180 | 63 of 207 (publisher-authorised Penguin Random House files) |
+| Forbidden Mantra Press titles | 29 of 123 | 35 of 413 |
 
-Still staged (reasons in `data/drafts/covers-pending.json`): Apocalypse of Adam Part II and the German Das Erscheinen Adams (grid or smear defects), Energy Unleashed (screenshots), Mo Pai Exposed (cover subtitle "Serious Truths About Internal Power Training" differs from the listing), the square Maa Kali files, and covers whose titles differ from the table (Matrix of Mantra vs The Matrix of Sound; Atharva Veda vs The Book of Vedic Spells; Dream Journal vs The Complete Dream & Conscious Experience Journal) or have no record (The Forbidden Light). The table's own `cover_url` values are Amazon-hosted images and are not used.
+Owner-owned editions with a cover, by language: English 30 of 318, Spanish 3 of 46, French 1 of 10, Hindi 1 of 14; none yet for German (14), Dutch (9), Welsh (3), Chinese (3), Portuguese (3), Russian (3), Arabic (1), Tamil (1). By format: ebook 32 of 177, paperback 3 of 115, none for hardcover (79) or audiobook (54). A cover is tied to the one edition it was matched to (usually the ebook, whose ASIN is the table's primary ASIN); it is not extended to the other formats without evidence.
 
-## What remains for the owner
-1. Cover files for the roughly 105 owner-listed works that have none (the Amazon images in the table cannot be used); the Wix media library has no further matching files.
-2. Confirm the flagged duplicates above, the imprint of the Muslim Prayer, R. K. Theory, Alex Knight and Spiritual Expressionz titles, and the author-name variants.
-3. Confirm the automatically assigned departments, and the cover-title mismatches listed above.
+New this round, from the owner's Google Drive and matched to exact table records: The Physics of Siddhis (Perception Across Time), Siddhis: The Non-Locality of Consciousness (the cover reads "The Physics of Siddhis: Non-Locality of Consciousness"; wording to confirm), and The Coven and The Yogi: Eclipse of the Heart Chakra (cover says Book Two). The Wix media subfolders hold only social-media images, and Drive has no further matching files (a Drive Spanish Edenic Origins file still reads "Aquí va el subtítulo", so it is a placeholder, not a cover).
+
+The list of owner-listed works that still need a cover file is `data/drafts/covers-needed-from-owner.json` (106 works with their languages, formats and ASINs). The table's Amazon-hosted cover images are not used (see `docs/AMAZON-COVERS.md`).
+
+## Duplicate decisions, from ASINs and publication dates
+No records were merged and no edition was removed: every table ASIN is unique, so every flagged pair is two different Amazon products.
+
+| Flagged group | Evidence | Decision |
+|---|---|---|
+| Beyond Sex (two English records) | different ASINs; published 2023-03/07 vs 2024-12 | two works; probably an original and a re-issue, owner to say |
+| Hindi Apocalypse of Adam (two records) | B0DR69Q4T4 (2024-12) vs B0H1KPFZS6 (2026-05) | two editions kept |
+| The Gospel of Truth (two records) | six different ASINs, 2023-05 and 2024-12 | two works |
+| Infancy Gospel of Thomas & Gospel of Thomas vs The Gospel of Thomas | different ASINs; the combined record has two ebook, two hardcover and two paperback ASINs from 2023 and 2024-12 | kept; the combined record holds two product generations |
+| Brahmastra: Weapon of God vs Weapons of the Gods | different ASINs, authors and dates (2023-03 vs 2025-06) | two works |
+| Maha Mrityunjaya (3 records) and Lakshmi Gayatri (2 records) | each has its own ASINs and dates | separate works |
+| Comics pair; Ruqyah's pair | different ASINs (comics 6 days apart in 2017; Ruqyah's same day) | separate works |
+| Ancient Breathing Techniques vs Unleashing the Inner Fire vs Breathing with Ancient Wisdom | different ASINs, 2023-03 vs 2023-05 | separate works |
+| The Coven and The Yogi (two records) | cover for the second reads "Book Two" | two books |
+| Kleem Mantra (new work) vs the older combined-title work | the Spanish ASIN B0CW19ZHGX is on both works (same product, listed twice); the older work's English edition has no ASIN | not merged and nothing removed: work-level identity is not proven and the older link points to amazon.es; owner to confirm |
+
+## Author-name variants (credits preserved as printed)
+Counts of table records: Emily K Patel 104; Rav Shiva 27; Forbidden Mantra Press 11; TSP Ravshiva 8; Emily Patel 6; Emily K. Patel 4; TSPRavshiva (The Spiritual Philan… / Phila…, truncated in the table) 5; The Spiritual Philanthropist Rav… (truncated) 2; TSPRav Shiva 2; Abdur Rahman 2; R. K. Theory 2; Ravi A. Kissoon 1; Alex Knight 1; Spiritual Expressionz 1. Open identity questions, not guessed: whether "Emily Patel", "Emily K. Patel" and "Emily K Patel" are one credit; whether Rav Shiva, TSP Ravshiva, TSPRav Shiva and TSPRavshiva (The Spiritual Philanthropist) are one pen name; and the older catalogue spelling "Emily K Kissoon" (Mo Pai: The Destructive and Healing Force Within), which the table credits as "Emily Patel".
+
+## Imprints and categories
+The table has no publisher field. Forbidden Mantra Press is recorded as owner-supplied for the 123 press works; the Muslim Prayer Series titles and the Abdur Rahman, R. K. Theory, Alex Knight and Spiritual Expressionz titles stay outside the press count until the owner confirms the imprint. Departments were checked against the table's series: all but four agree with the series; the four are source anomalies that were kept (Energy Unleashed sits in the table's "buddhist mantra series" but is a Mo Pai book; Creation and Connection and Unveiling Hidden Wisdom and The Reason All The Prophets Fasted sit in series that do not match their subject). Two works are assigned by default and flagged: The Code of Immortality: The Fallen Star.

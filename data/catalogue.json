@@ -11793,11 +11793,12 @@
    ],
    "claims": [],
    "subjects": [
-    "personal-growth"
+    "christian-mysticism"
    ],
-   "tradition": [],
+   "tradition": [
+    "christian"
+   ],
    "reviewFlags": [
-    "department assigned from the title; confirm",
     "listed in the owner's own bookstore catalogue; ASINs, formats and dates come from that table (prices and Amazon cover URLs were not stored)"
    ],
    "provenance": {
@@ -12420,8 +12421,8 @@
    ]
   },
   {
-   "id": "siddhis-tsp-ravshiva",
-   "slug": "siddhis-tsp-ravshiva",
+   "id": "siddhis-the-non-locality-of-consciousness",
+   "slug": "siddhis-the-non-locality-of-consciousness",
    "title": "Siddhis",
    "subtitle": "The Non-Locality of Consciousness",
    "authors": [
@@ -12488,7 +12489,7 @@
      ],
      "publisher": "Forbidden Mantra Press",
      "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
-     "id": "ed1",
+     "id": "B0GFXRQLK6",
      "isbn10": null
     },
     {
@@ -32460,7 +32461,7 @@
     "the-gospel-of-magdalene",
     "how-to-stop-overthinking-at-night",
     "how-to-stop-overthinking-right-now",
-    "siddhis-tsp-ravshiva",
+    "siddhis-the-non-locality-of-consciousness",
     "the-book-of-vedic-spells",
     "the-code-of-immortality",
     "the-eternal-quest",

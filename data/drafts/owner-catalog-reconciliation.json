@@ -1,5 +1,5 @@
 {
- "note": "Reconciliation of the owner's public catalog table against the new catalogue (2026-10-28). Every table edition was matched by ASIN.",
+ "note": "Reconciliation of the owner's public catalog table against the new catalogue (2026-10-28, updated). Every table edition was matched by ASIN; has_cover is edition-level.",
  "rows": [
   {
    "catalogue_record": "awakening-the-sacred-serpent-a-journey-into-kundalini-yoga-and-spiritual-realiza",
@@ -8,38 +8,41 @@
    "language_in_table": "en",
    "series": "forbidden tantra series",
    "work_slug": "awakening-the-sacred-serpent",
-   "work_title": "Awakening the Sacred Serpent",
    "editions": [
     {
      "asin": "B0H859PDTK",
      "format": "audiobook",
+     "published": "2026-07-11",
      "language": "en",
      "edition_id": "B0H859PDTK",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C6V1YBK5",
      "format": "ebook",
+     "published": "2023-06-01",
      "language": "en",
      "edition_id": "B0C6V1YBK5",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C6VYCGKL",
      "format": "hardcover",
+     "published": "2023-06-01",
      "language": "en",
      "edition_id": "B0C6VYCGKL",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C6VTZMGK",
      "format": "paperback",
+     "published": "2023-06-02",
      "language": "en",
      "edition_id": "B0C6VTZMGK",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -51,14 +54,14 @@
    "language_in_table": "nl",
    "series": "forbidden tantra series",
    "work_slug": "beyond-sex",
-   "work_title": "Beyond Sex",
    "editions": [
     {
      "asin": "B0CTHRB4QZ",
      "format": "ebook",
+     "published": "2024-02-24",
      "language": "nl",
      "edition_id": "B0CTHRB4QZ",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -70,38 +73,41 @@
    "language_in_table": "en",
    "series": "breath mastery series",
    "work_slug": "breathing-with-ancient-wisdom",
-   "work_title": "Breathing with Ancient Wisdom",
    "editions": [
     {
      "asin": "B0H8M8TQXZ",
      "format": "audiobook",
+     "published": "2026-07-12",
      "language": "en",
      "edition_id": "B0H8M8TQXZ",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C5Z2JQSX",
      "format": "ebook",
+     "published": "2023-05-23",
      "language": "en",
      "edition_id": "B0C5Z2JQSX",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C5YYNZ4B",
      "format": "hardcover",
+     "published": "2023-05-23",
      "language": "en",
      "edition_id": "B0C5YYNZ4B",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C63YPYKR",
      "format": "paperback",
+     "published": "2023-05-25",
      "language": "en",
      "edition_id": "B0C63YPYKR",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -113,22 +119,23 @@
    "language_in_table": "es",
    "series": "nag hammadi series",
    "work_slug": "creation-and-connection",
-   "work_title": "Creation and Connection",
    "editions": [
     {
      "asin": "B0CW23C6LZ",
      "format": "ebook",
+     "published": "2024-02-20",
      "language": "es",
      "edition_id": "B0CW23C6LZ",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0CW32CNX7",
      "format": "paperback",
+     "published": "2024-02-21",
      "language": "es",
      "edition_id": "B0CW32CNX7",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -140,38 +147,41 @@
    "language_in_table": "en",
    "series": "\"cross-cultural myths: unraveling ancient connections\"",
    "work_slug": "creation-and-connection",
-   "work_title": "Creation and Connection",
    "editions": [
     {
      "asin": "B0GS42KHPQ",
      "format": "audiobook",
+     "published": "2026-07-11",
      "language": "en",
      "edition_id": "B0GS42KHPQ",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C5TZHPQY",
      "format": "ebook",
+     "published": "2023-05-20",
      "language": "en",
      "edition_id": "B0C5TZHPQY",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C5P55W6W",
      "format": "hardcover",
+     "published": "2023-05-21",
      "language": "en",
      "edition_id": "B0C5P55W6W",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C5PGF3NT",
      "format": "paperback",
+     "published": "2023-05-21",
      "language": "en",
      "edition_id": "B0C5PGF3NT",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -183,14 +193,14 @@
    "language_in_table": "es",
    "series": "buddhist mantra series",
    "work_slug": "unlocking-enlightenment",
-   "work_title": "Unlocking Enlightenment",
    "editions": [
     {
      "asin": "B0CZHHPZ1M",
      "format": "ebook",
+     "published": "2024-03-30",
      "language": "es",
      "edition_id": "B0CZHHPZ1M",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -202,38 +212,41 @@
    "language_in_table": "en",
    "series": "buddhist mantra series",
    "work_slug": "jewel-of-the-lotus",
-   "work_title": "Jewel of the Lotus",
    "editions": [
     {
      "asin": "B0H85DXXJL",
      "format": "audiobook",
+     "published": "2026-07-11",
      "language": "en",
      "edition_id": "B0H85DXXJL",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0CWH8JXXJ",
      "format": "ebook",
+     "published": "2024-03-08",
      "language": "en",
      "edition_id": "B0CWH8JXXJ",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0DPV3YKSX",
      "format": "hardcover",
+     "published": "2024-12-08",
      "language": "en",
      "edition_id": "B0DPV3YKSX",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0DPV2NL45",
      "format": "paperback",
+     "published": "2024-12-08",
      "language": "en",
      "edition_id": "B0DPV2NL45",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -245,38 +258,41 @@
    "language_in_table": "es",
    "series": "buddhist mantra series",
    "work_slug": "jewel-of-the-lotus",
-   "work_title": "Jewel of the Lotus",
    "editions": [
     {
      "asin": "B0H85K6MJP",
      "format": "audiobook",
+     "published": "2026-07-10",
      "language": "es",
      "edition_id": "B0H85K6MJP",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0CWF8X555",
      "format": "ebook",
+     "published": "2024-03-08",
      "language": "es",
      "edition_id": "B0CWF8X555",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0DPV3QR1T",
      "format": "hardcover",
+     "published": "2024-12-08",
      "language": "es",
      "edition_id": "B0DPV3QR1T",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0DPV1ZC4C",
      "format": "paperback",
+     "published": "2024-12-08",
      "language": "es",
      "edition_id": "B0DPV1ZC4C",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -288,30 +304,32 @@
    "language_in_table": "en",
    "series": "nag hammadi series",
    "work_slug": "lost-wisdom",
-   "work_title": "Lost Wisdom",
    "editions": [
     {
      "asin": "B0C4K2JQCR",
      "format": "ebook",
+     "published": "2023-05-07",
      "language": "en",
      "edition_id": "B0C4K2JQCR",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C481QQTH",
      "format": "hardcover",
+     "published": "2023-05-08",
      "language": "en",
      "edition_id": "B0C481QQTH",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C47WK7FB",
      "format": "paperback",
+     "published": "2023-05-08",
      "language": "en",
      "edition_id": "B0C47WK7FB",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -323,30 +341,32 @@
    "language_in_table": "en",
    "series": "forbidden mantra series",
    "work_slug": "mantra-magic",
-   "work_title": "Mantra Magic",
    "editions": [
     {
      "asin": "B0CY8FCZ4N",
      "format": "audiobook",
+     "published": "2026-07-11",
      "language": "en",
      "edition_id": "B0CY8FCZ4N",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0BZGQKHPD",
      "format": "ebook",
+     "published": "2023-03-24",
      "language": "en",
      "edition_id": "B0BZGQKHPD",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0BZF4Z4SC",
      "format": "paperback",
+     "published": "2023-03-24",
      "language": "en",
      "edition_id": "B0BZF4Z4SC",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -358,30 +378,32 @@
    "language_in_table": "es",
    "series": "forbidden tantra series",
    "work_slug": "beyond-sex",
-   "work_title": "Beyond Sex",
    "editions": [
     {
      "asin": "B0CW6HWK1B",
      "format": "ebook",
+     "published": "2024-02-24",
      "language": "es",
      "edition_id": "B0CW6HWK1B",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0DPZP35BD",
      "format": "hardcover",
+     "published": "2024-12-10",
      "language": "es",
      "edition_id": "B0DPZP35BD",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0DQY7VFXT",
      "format": "paperback",
+     "published": "2024-12-19",
      "language": "es",
      "edition_id": "B0DQY7VFXT",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -393,30 +415,32 @@
    "language_in_table": "en",
    "series": "nag hammadi series",
    "work_slug": "revelations-of-mary",
-   "work_title": "Revelations of Mary",
    "editions": [
     {
      "asin": "B0C4K6G6FN",
      "format": "ebook",
+     "published": "2023-05-07",
      "language": "en",
      "edition_id": "B0C4K6G6FN",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C63M22HG",
      "format": "hardcover",
+     "published": "2023-05-25",
      "language": "en",
      "edition_id": "B0C63M22HG",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C6448LR2",
      "format": "paperback",
+     "published": "2023-05-25",
      "language": "en",
      "edition_id": "B0C6448LR2",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -428,22 +452,23 @@
    "language_in_table": "nl",
    "series": "nag hammadi series",
    "work_slug": "creation-and-connection",
-   "work_title": "Creation and Connection",
    "editions": [
     {
      "asin": "B0CVZVP7WP",
      "format": "ebook",
+     "published": "2024-02-20",
      "language": "nl",
      "edition_id": "B0CVZVP7WP",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0CW1NZVTJ",
      "format": "paperback",
+     "published": "2024-02-20",
      "language": "nl",
      "edition_id": "B0CW1NZVTJ",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -455,38 +480,41 @@
    "language_in_table": "en",
    "series": "forbidden mantra series",
    "work_slug": "the-hanuman-mantra",
-   "work_title": "The Hanuman Mantra",
    "editions": [
     {
      "asin": "B0H8MJ9YWV",
      "format": "audiobook",
+     "published": "2026-07-12",
      "language": "en",
      "edition_id": "B0H8MJ9YWV",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0BZLXMD41",
      "format": "ebook",
+     "published": "2023-03-25",
      "language": "en",
      "edition_id": "B0BZLXMD41",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C63RJ7HW",
      "format": "hardcover",
+     "published": "2023-05-25",
      "language": "en",
      "edition_id": "B0C63RJ7HW",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0BZFRQXGC",
      "format": "paperback",
+     "published": "2023-03-26",
      "language": "en",
      "edition_id": "B0BZFRQXGC",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -498,22 +526,23 @@
    "language_in_table": "en",
    "series": "forbidden mantra series",
    "work_slug": "the-maha-mrityunjaya-mantra",
-   "work_title": "The Maha Mrityunjaya Mantra",
    "editions": [
     {
      "asin": "B0BZQ428XZ",
      "format": "ebook",
+     "published": "2023-03-27",
      "language": "en",
      "edition_id": "B0BZQ428XZ",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0BZF9RGDS",
      "format": "paperback",
+     "published": "2023-03-26",
      "language": "en",
      "edition_id": "B0BZF9RGDS",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -525,30 +554,32 @@
    "language_in_table": "en",
    "series": "forbidden tantra series",
    "work_slug": "the-power-of-sound",
-   "work_title": "The Power of Sound",
    "editions": [
     {
      "asin": "B0BZYNSXN7",
      "format": "ebook",
+     "published": "2023-03-30",
      "language": "en",
      "edition_id": "B0BZYNSXN7",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C63J2XBM",
      "format": "hardcover",
+     "published": "2023-05-25",
      "language": "en",
      "edition_id": "B0C63J2XBM",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0BZFJML7W",
      "format": "paperback",
+     "published": "2023-03-30",
      "language": "en",
      "edition_id": "B0BZFJML7W",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -560,14 +591,14 @@
    "language_in_table": "en",
    "series": "buddhist mantra series",
    "work_slug": "the-ultimate-guide-to-transforming-your-life",
-   "work_title": "The Ultimate Guide to Transforming Your Life",
    "editions": [
     {
      "asin": "B0C2SNX7VK",
      "format": "ebook",
+     "published": "2023-04-17",
      "language": "en",
      "edition_id": "B0C2SNX7VK",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -579,14 +610,14 @@
    "language_in_table": "en",
    "series": "buddhist mantra series",
    "work_slug": "unlocking-enlightenment",
-   "work_title": "Unlocking Enlightenment",
    "editions": [
     {
      "asin": "B0CYC5NLY6",
      "format": "ebook",
+     "published": "2024-03-30",
      "language": "en",
      "edition_id": "B0CYC5NLY6",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -598,22 +629,23 @@
    "language_in_table": "en",
    "series": null,
    "work_slug": "yoga-for-every-woman",
-   "work_title": "Yoga for Every Woman",
    "editions": [
     {
      "asin": "B0C3P6YCTD",
      "format": "ebook",
+     "published": "2023-04-26",
      "language": "en",
      "edition_id": "B0C3P6YCTD",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C2SPYYQX",
      "format": "paperback",
+     "published": "2023-04-27",
      "language": "en",
      "edition_id": "B0C2SPYYQX",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -625,14 +657,14 @@
    "language_in_table": "hi",
    "series": "buddhist mantra series",
    "work_slug": "unlocking-enlightenment",
-   "work_title": "Unlocking Enlightenment",
    "editions": [
     {
      "asin": "B0CZ4SRQW5",
      "format": "ebook",
+     "published": "2024-03-30",
      "language": "hi",
      "edition_id": "B0CZ4SRQW5",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -644,14 +676,14 @@
    "language_in_table": "hi",
    "series": "buddhist mantra series",
    "work_slug": "jewel-of-the-lotus",
-   "work_title": "Jewel of the Lotus",
    "editions": [
     {
      "asin": "B0CXFC7HFY",
      "format": "ebook",
+     "published": "2024-03-08",
      "language": "hi",
      "edition_id": "B0CXFC7HFY",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -663,14 +695,14 @@
    "language_in_table": "hi",
    "series": "nag hammadi series",
    "work_slug": "creation-and-connection",
-   "work_title": "Creation and Connection",
    "editions": [
     {
      "asin": "B0CW1J4DW3",
      "format": "ebook",
+     "published": "2024-02-21",
      "language": "hi",
      "edition_id": "B0CW1J4DW3",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -682,14 +714,14 @@
    "language_in_table": "zh",
    "series": "nag hammadi series",
    "work_slug": "creation-and-connection",
-   "work_title": "Creation and Connection",
    "editions": [
     {
      "asin": "B0CW24RPXP",
      "format": "ebook",
+     "published": "2024-02-20",
      "language": "zh",
      "edition_id": "B0CW24RPXP",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -701,14 +733,14 @@
    "language_in_table": "zh",
    "series": "forbidden tantra series",
    "work_slug": "beyond-sex",
-   "work_title": "Beyond Sex",
    "editions": [
     {
      "asin": "B0CTHQKLFT",
      "format": "ebook",
+     "published": "2024-02-24",
      "language": "zh",
      "edition_id": "B0CTHQKLFT",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -720,30 +752,32 @@
    "language_in_table": "en",
    "series": "buddhist mantra series",
    "work_slug": "a-comprehensive-guide-on-the-avalokitesvara-mantra",
-   "work_title": "A Comprehensive Guide On The Avalokitesvara Mantra",
    "editions": [
     {
      "asin": "B0C2NN8DNK",
      "format": "ebook",
+     "published": "2023-04-16",
      "language": "en",
      "edition_id": "B0C2NN8DNK",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0DPR77SFP",
      "format": "hardcover",
+     "published": "2024-12-06",
      "language": "en",
      "edition_id": "B0DPR77SFP",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C1J7F6SC",
      "format": "paperback",
+     "published": "2023-04-17",
      "language": "en",
      "edition_id": "B0C1J7F6SC",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -755,14 +789,14 @@
    "language_in_table": "en",
    "series": "conversations between a yogi and artificial intelligence",
    "work_slug": "a-conversation-between-a-yogi-and-artificial-intelligence",
-   "work_title": "A Conversation Between A Yogi & Artificial Intelligence",
    "editions": [
     {
      "asin": "B0C3L7W5SC",
      "format": "ebook",
+     "published": "2023-04-26",
      "language": "en",
      "edition_id": "B0C3L7W5SC",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -774,14 +808,14 @@
    "language_in_table": "en",
    "series": "conversations between a yogi and artificial intelligence",
    "work_slug": "a-conversation-between-a-yogi-and-artificial-intelligence-about-god-satan-and-technology",
-   "work_title": "A Conversation between a Yogi and Artificial Intelligence about God, Satan & Technology",
    "editions": [
     {
      "asin": "B0C3KW4PMR",
      "format": "ebook",
+     "published": "2023-04-26",
      "language": "en",
      "edition_id": "B0C3KW4PMR",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -793,14 +827,14 @@
    "language_in_table": "en",
    "series": "forbidden mantra series",
    "work_slug": "an-ancient-mantra-for-getting-the-girl-you-want-to-love-you",
-   "work_title": "An Ancient Mantra for Getting the Girl You Want to Love You",
    "editions": [
     {
      "asin": "B0BXBMP5NC",
      "format": "ebook",
+     "published": "2023-03-02",
      "language": "en",
      "edition_id": "B0BXBMP5NC",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -812,14 +846,14 @@
    "language_in_table": "en",
    "series": "forbidden mantra series",
    "work_slug": "an-ancient-sanskrit-mantra-to-attain-sexual-pleasure-for-men",
-   "work_title": "An Ancient Sanskrit Mantra to Attain Sexual Pleasure for Men",
    "editions": [
     {
      "asin": "B0BXBL84LW",
      "format": "ebook",
+     "published": "2023-03-02",
      "language": "en",
      "edition_id": "B0BXBL84LW",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -831,14 +865,14 @@
    "language_in_table": "en",
    "series": "breath mastery series",
    "work_slug": "ancient-breathing-techniques-that-will-revitalize-you",
-   "work_title": "Ancient Breathing Techniques that will revitalize you",
    "editions": [
     {
      "asin": "B0BXCCWS95",
      "format": "ebook",
+     "published": "2023-03-03",
      "language": "en",
      "edition_id": "B0BXCCWS95",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -850,38 +884,41 @@
    "language_in_table": "en",
    "series": "nag hammadi series",
    "work_slug": "apocalypse-of-adam",
-   "work_title": "Apocalypse of Adam",
    "editions": [
     {
      "asin": "B0H671G2S7",
      "format": "audiobook",
+     "published": "2026-07-11",
      "language": "en",
      "edition_id": "B0H671G2S7",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0GWS9VC82",
      "format": "ebook",
+     "published": "2026-04-11",
      "language": "en",
      "edition_id": "B0GWS9VC82",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0GWWMZDS6",
      "format": "hardcover",
+     "published": "2026-04-12",
      "language": "en",
      "edition_id": "B0GWWMZDS6",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0GWVMZQ8S",
      "format": "paperback",
+     "published": "2026-04-11",
      "language": "en",
      "edition_id": "B0GWVMZQ8S",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -893,22 +930,23 @@
    "language_in_table": "en",
    "series": "the archon series",
    "work_slug": "archons-unveiled-ii",
-   "work_title": "Archons Unveiled II",
    "editions": [
     {
      "asin": "B0F3XRW9MD",
      "format": "ebook",
+     "published": "2025-04-07",
      "language": "en",
      "edition_id": "ed1",
-     "cover": true,
+     "has_cover": true,
      "credit": "TSPRavshiva The Spiritual Philan..."
     },
     {
      "asin": "B0F42VSSK9",
      "format": "paperback",
+     "published": "2025-04-08",
      "language": "en",
      "edition_id": "B0F42VSSK9",
-     "cover": false,
+     "has_cover": false,
      "credit": "TSPRavshiva The Spiritual Philan..."
     }
    ]
@@ -920,22 +958,23 @@
    "language_in_table": "en",
    "series": "the archon series",
    "work_slug": "archons-unveiled-iii",
-   "work_title": "Archons Unveiled III",
    "editions": [
     {
      "asin": "B0F3ZLS922",
      "format": "ebook",
+     "published": "2025-04-08",
      "language": "en",
      "edition_id": "ed1",
-     "cover": true,
+     "has_cover": true,
      "credit": "TSPRavshiva The Spiritual Philan..."
     },
     {
      "asin": "B0F44G66WZ",
      "format": "paperback",
+     "published": "2025-04-08",
      "language": "en",
      "edition_id": "B0F44G66WZ",
-     "cover": false,
+     "has_cover": false,
      "credit": "TSPRavshiva The Spiritual Philan..."
     }
    ]
@@ -947,22 +986,23 @@
    "language_in_table": "en",
    "series": "the archon series",
    "work_slug": "archons-unveiled-part-4",
-   "work_title": "Archons Unveiled: Part 4",
    "editions": [
     {
      "asin": "B0DMTWBMR4",
      "format": "ebook",
+     "published": "2025-04-09",
      "language": "en",
      "edition_id": "ed1",
-     "cover": true,
+     "has_cover": true,
      "credit": "TSPRavshiva The Spiritual Philan..."
     },
     {
      "asin": "B0F4JZL1CM",
      "format": "paperback",
+     "published": "2025-04-11",
      "language": "en",
      "edition_id": "B0F4JZL1CM",
-     "cover": false,
+     "has_cover": false,
      "credit": "TSPRavshiva The Spiritual Philan..."
     }
    ]
@@ -974,14 +1014,14 @@
    "language_in_table": "en",
    "series": "the archon series",
    "work_slug": "archons-unveiled",
-   "work_title": "Archons Unveiled",
    "editions": [
     {
      "asin": "B0F2ZSLW5H",
      "format": "ebook",
+     "published": "2025-03-30",
      "language": "en",
      "edition_id": "ed1",
-     "cover": true,
+     "has_cover": true,
      "credit": "The Spiritual Philanthropist Rav..."
     }
    ]
@@ -993,14 +1033,14 @@
    "language_in_table": "en",
    "series": "benny the brave adventures",
    "work_slug": "benny-the-brave-and-the-shimmering-night",
-   "work_title": "Benny the Brave and the Shimmering Night",
    "editions": [
     {
      "asin": "B0G5BPZX47",
      "format": "ebook",
+     "published": "2025-12-05",
      "language": "en",
      "edition_id": "B0G5BPZX47",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -1012,30 +1052,32 @@
    "language_in_table": "en",
    "series": "forbidden tantra series",
    "work_slug": "beyond-sex",
-   "work_title": "Beyond Sex",
    "editions": [
     {
      "asin": "B0CG4R26KH",
      "format": "ebook",
+     "published": "2023-08-20",
      "language": "nl",
      "edition_id": "B0CG4R26KH",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0DQYRJF34",
      "format": "hardcover",
+     "published": "2024-12-19",
      "language": "nl",
      "edition_id": "B0DQYRJF34",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0CFZC75KS",
      "format": "paperback",
+     "published": "2023-08-20",
      "language": "nl",
      "edition_id": "B0CFZC75KS",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -1047,30 +1089,32 @@
    "language_in_table": "en",
    "series": "forbidden tantra series",
    "work_slug": "beyond-sex",
-   "work_title": "Beyond Sex",
    "editions": [
     {
      "asin": "B0DR9PWDC4",
      "format": "ebook",
+     "published": "2024-12-23",
      "language": "en",
      "edition_id": "B0DR9PWDC4",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0DRGLK449",
      "format": "hardcover",
+     "published": "2024-12-25",
      "language": "en",
      "edition_id": "B0DRGLK449",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0DRD64TNV",
      "format": "paperback",
+     "published": "2024-12-24",
      "language": "en",
      "edition_id": "B0DRD64TNV",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -1082,30 +1126,32 @@
    "language_in_table": "en",
    "series": "forbidden tantra series",
    "work_slug": "beyond-sex-exploring-the-spiritual-dimensions-of-tantra-second-catalogue-record",
-   "work_title": "Beyond Sex: Exploring the Spiritual Dimensions of Tantra (second catalogue record)",
    "editions": [
     {
      "asin": "B0BX75YQX3",
      "format": "ebook",
+     "published": "2023-03-01",
      "language": "en",
      "edition_id": "B0BX75YQX3",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C9SQHH9J",
      "format": "hardcover",
+     "published": "2023-07-03",
      "language": "en",
      "edition_id": "B0C9SQHH9J",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C9RYT7HG",
      "format": "paperback",
+     "published": "2023-07-02",
      "language": "en",
      "edition_id": "B0C9RYT7HG",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -1117,14 +1163,14 @@
    "language_in_table": "en",
    "series": "forbidden mantra series",
    "work_slug": "brahmastra",
-   "work_title": "Brahmastra",
    "editions": [
     {
      "asin": "B0BY3RRH44",
      "format": "ebook",
+     "published": "2023-03-10",
      "language": "en",
      "edition_id": "B0BY3RRH44",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -1136,22 +1182,23 @@
    "language_in_table": "en",
    "series": "forbidden tantra series",
    "work_slug": "chakra-mastery",
-   "work_title": "Chakra Mastery",
    "editions": [
     {
      "asin": "B0CFYNWYWN",
      "format": "ebook",
+     "published": "2023-08-17",
      "language": "en",
      "edition_id": "B0CFYNWYWN",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0CFZGX8QN",
      "format": "paperback",
+     "published": "2023-08-19",
      "language": "en",
      "edition_id": "B0CFZGX8QN",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -1163,14 +1210,14 @@
    "language_in_table": "de",
    "series": "nag hammadi series",
    "work_slug": "the-apocalypse-of-adam",
-   "work_title": "The Apocalypse of Adam",
    "editions": [
     {
      "asin": "B0CVW787KP",
      "format": "ebook",
+     "published": "2024-02-18",
      "language": "de",
      "edition_id": "B0CVW787KP",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -1182,30 +1229,32 @@
    "language_in_table": "de",
    "series": "breath mastery series",
    "work_slug": "unleashing-the-inner-fire",
-   "work_title": "Unleashing the Inner Fire",
    "editions": [
     {
      "asin": "B0CWXW3HXP",
      "format": "ebook",
+     "published": "2024-03-02",
      "language": "de",
      "edition_id": "B0CWXW3HXP",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0DRW4KJWT",
      "format": "hardcover",
+     "published": "2024-12-30",
      "language": "de",
      "edition_id": "B0DRW4KJWT",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0DRW33XN7",
      "format": "paperback",
+     "published": "2024-12-30",
      "language": "de",
      "edition_id": "B0DRW33XN7",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -1217,30 +1266,32 @@
    "language_in_table": "en",
    "series": "nag hammadi series",
    "work_slug": "the-apocalypse-of-adam",
-   "work_title": "The Apocalypse of Adam",
    "editions": [
     {
      "asin": "B0DR7FGXGT",
      "format": "ebook",
+     "published": "2024-12-22",
      "language": "cy",
      "edition_id": "B0DR7FGXGT",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0DRFBYZGN",
      "format": "hardcover",
+     "published": "2024-12-25",
      "language": "cy",
      "edition_id": "B0DRFBYZGN",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0DRFD3VYC",
      "format": "paperback",
+     "published": "2024-12-25",
      "language": "cy",
      "edition_id": "B0DRFD3VYC",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -1252,30 +1303,32 @@
    "language_in_table": "en",
    "series": "nag hammadi series",
    "work_slug": "the-apocalypse-of-adam",
-   "work_title": "The Apocalypse of Adam",
    "editions": [
     {
      "asin": "B0CVW83LGY",
      "format": "ebook",
+     "published": "2024-02-18",
      "language": "nl",
      "edition_id": "B0CVW83LGY",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0DQWL2PNS",
      "format": "hardcover",
+     "published": "2024-12-19",
      "language": "nl",
      "edition_id": "B0DQWL2PNS",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0DR2LSYBL",
      "format": "paperback",
+     "published": "2024-12-20",
      "language": "nl",
      "edition_id": "B0DR2LSYBL",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -1287,38 +1340,41 @@
    "language_in_table": "es",
    "series": "breath mastery series",
    "work_slug": "unleashing-the-inner-fire",
-   "work_title": "Unleashing the Inner Fire",
    "editions": [
     {
      "asin": "B0H8MJS9FD",
      "format": "audiobook",
+     "published": "2026-07-12",
      "language": "es",
      "edition_id": "B0H8MJS9FD",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0CWYTQ5RC",
      "format": "ebook",
+     "published": "2024-03-03",
      "language": "es",
      "edition_id": "B0CWYTQ5RC",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0DPSPJ8PS",
      "format": "hardcover",
+     "published": "2024-12-07",
      "language": "es",
      "edition_id": "B0DPSPJ8PS",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0DPSM53HW",
      "format": "paperback",
+     "published": "2024-12-07",
      "language": "es",
      "edition_id": "B0DPSM53HW",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -1330,22 +1386,23 @@
    "language_in_table": "de",
    "series": "sacred plant based traditions",
    "work_slug": "edenic-origins",
-   "work_title": "Edenic Origins",
    "editions": [
     {
      "asin": "B0F376B2M6",
      "format": "ebook",
+     "published": "2025-04-01",
      "language": "de",
      "edition_id": "B0F376B2M6",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0F3W11JD5",
      "format": "paperback",
+     "published": "2025-04-06",
      "language": "de",
      "edition_id": "B0F3W11JD5",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -1357,22 +1414,23 @@
    "language_in_table": "en",
    "series": "sacred plant based traditions",
    "work_slug": "edenic-origins",
-   "work_title": "Edenic Origins",
    "editions": [
     {
      "asin": "B0F2SM2SH1",
      "format": "ebook",
+     "published": "2025-03-31",
      "language": "en",
      "edition_id": "ed1",
-     "cover": true,
+     "has_cover": true,
      "credit": null
     },
     {
      "asin": "B0F3V6NGG4",
      "format": "paperback",
+     "published": "2025-04-05",
      "language": "en",
      "edition_id": "B0F3V6NGG4",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -1384,22 +1442,23 @@
    "language_in_table": "es",
    "series": "nag hammadi series",
    "work_slug": "the-apocalypse-of-adam",
-   "work_title": "The Apocalypse of Adam",
    "editions": [
     {
      "asin": "B0CVVFSVKT",
      "format": "ebook",
+     "published": "2024-02-17",
      "language": "es",
      "edition_id": "B0CVVFSVKT",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0CVVHH3J2",
      "format": "paperback",
+     "published": "2024-02-18",
      "language": "es",
      "edition_id": "B0CVVHH3J2",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -1411,30 +1470,32 @@
    "language_in_table": "en",
    "series": "buddhist mantra series",
    "work_slug": "energy-unleashed",
-   "work_title": "Energy Unleashed",
    "editions": [
     {
      "asin": "B0F287TGGL",
      "format": "ebook",
+     "published": "2025-03-23",
      "language": "en",
      "edition_id": "B0F287TGGL",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0F2B2CTWH",
      "format": "hardcover",
+     "published": "2025-03-24",
      "language": "en",
      "edition_id": "B0F2B2CTWH",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0F29FBNF3",
      "format": "paperback",
+     "published": "2025-03-24",
      "language": "en",
      "edition_id": "9798315272588",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -1446,14 +1507,14 @@
    "language_in_table": "en",
    "series": null,
    "work_slug": "enlightened-silly-comic-strips",
-   "work_title": "Enlightened Silly Comic Strips",
    "editions": [
     {
      "asin": "B06XNLT8JL",
      "format": "ebook",
+     "published": "2017-03-15",
      "language": "en",
      "edition_id": "B06XNLT8JL",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -1465,14 +1526,14 @@
    "language_in_table": "en",
    "series": null,
    "work_slug": "enlightened-silly-comics",
-   "work_title": "Enlightened Silly Comics",
    "editions": [
     {
      "asin": "B06XHLQZQR",
      "format": "ebook",
+     "published": "2017-03-09",
      "language": "en",
      "edition_id": "B06XHLQZQR",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -1484,14 +1545,14 @@
    "language_in_table": "en",
    "series": "forbidden mantra series",
    "work_slug": "forbidden-fruit",
-   "work_title": "Forbidden Fruit",
    "editions": [
     {
      "asin": "B0BXJSQFKD",
      "format": "ebook",
+     "published": "2023-03-05",
      "language": "en",
      "edition_id": "B0BXJSQFKD",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -1503,14 +1564,14 @@
    "language_in_table": "en",
    "series": "forbidden mantra series",
    "work_slug": "forbidden-practices",
-   "work_title": "Forbidden Practices",
    "editions": [
     {
      "asin": "B0BXHQQS8W",
      "format": "ebook",
+     "published": "2023-03-04",
      "language": "en",
      "edition_id": "B0BXHQQS8W",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -1522,14 +1583,14 @@
    "language_in_table": "en",
    "series": null,
    "work_slug": "from-the-apocrypha-the-book-of-macabees",
-   "work_title": "FROM THE APOCRYPHA - The Book of Macabees",
    "editions": [
     {
      "asin": "B0BZDM2QYX",
      "format": "ebook",
+     "published": "2023-03-23",
      "language": "en",
      "edition_id": "B0BZDM2QYX",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -1541,22 +1602,23 @@
    "language_in_table": "en",
    "series": "forbidden mantra series",
    "work_slug": "gayatri-mantra",
-   "work_title": "Gayatri Mantra",
    "editions": [
     {
      "asin": "B0H8MDVC72",
      "format": "audiobook",
+     "published": "2026-07-13",
      "language": "en",
      "edition_id": "B0H8MDVC72",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0F9PKY776",
      "format": "ebook",
+     "published": "2025-05-23",
      "language": "en",
      "edition_id": "ed2",
-     "cover": true,
+     "has_cover": true,
      "credit": null
     }
    ]
@@ -1568,38 +1630,41 @@
    "language_in_table": "en",
    "series": "nag hammadi series",
    "work_slug": "gnostic-gospels-and-the-hidden-christ",
-   "work_title": "Gnostic Gospels and the Hidden Christ",
    "editions": [
     {
      "asin": "B0H85B87X8",
      "format": "audiobook",
+     "published": "2026-07-10",
      "language": "en",
      "edition_id": "B0H85B87X8",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0H444WGPY",
      "format": "ebook",
+     "published": "2026-06-05",
      "language": "en",
      "edition_id": "B0H444WGPY",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0H4678MRC",
      "format": "hardcover",
+     "published": "2026-06-05",
      "language": "en",
      "edition_id": "B0H4678MRC",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0H465SK2J",
      "format": "paperback",
+     "published": "2026-06-05",
      "language": "en",
      "edition_id": "B0H465SK2J",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -1611,14 +1676,14 @@
    "language_in_table": "en",
    "series": "forbidden mantra series",
    "work_slug": "have-sex-like-a-god",
-   "work_title": "Have Sex Like A God",
    "editions": [
     {
      "asin": "B0BXBN7X5N",
      "format": "ebook",
+     "published": "2023-03-02",
      "language": "en",
      "edition_id": "B0BXBN7X5N",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -1630,14 +1695,14 @@
    "language_in_table": "es",
    "series": "forbidden mantra series",
    "work_slug": "make-yourself-irresistibly-attractive-with-the-kleem-mantra",
-   "work_title": "Make Yourself Irresistibly Attractive with the Kleem Mantra",
    "editions": [
     {
      "asin": "B0CW19ZHGX",
      "format": "ebook",
+     "published": "2024-03-03",
      "language": "es",
      "edition_id": "B0CW19ZHGX",
-     "cover": false,
+     "has_cover": false,
      "credit": "Emily K Patel"
     }
    ]
@@ -1649,14 +1714,14 @@
    "language_in_table": "en",
    "series": "forbidden mantra series",
    "work_slug": "how-to-chant-the-gayatri-mantra",
-   "work_title": "How to Chant the Gayatri Mantra",
    "editions": [
     {
      "asin": "B0BY7PDZXS",
      "format": "ebook",
+     "published": "2023-03-13",
      "language": "en",
      "edition_id": "B0BY7PDZXS",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -1668,22 +1733,23 @@
    "language_in_table": "en",
    "series": null,
    "work_slug": "how-to-stop-overthinking-at-night",
-   "work_title": "How to Stop Overthinking at Night",
    "editions": [
     {
      "asin": "B0H8MKFF22",
      "format": "audiobook",
+     "published": "2026-07-13",
      "language": "en",
      "edition_id": "B0H8MKFF22",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0GBVRTSSR",
      "format": "ebook",
+     "published": "2025-12-22",
      "language": "en",
      "edition_id": "B0GBVRTSSR",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -1695,22 +1761,23 @@
    "language_in_table": "en",
    "series": null,
    "work_slug": "how-to-stop-overthinking-right-now",
-   "work_title": "How to Stop Overthinking Right Now",
    "editions": [
     {
      "asin": "B0H8MGHPF9",
      "format": "audiobook",
+     "published": "2026-07-13",
      "language": "en",
      "edition_id": "B0H8MGHPF9",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0G9C2PXJS",
      "format": "ebook",
+     "published": "2025-12-20",
      "language": "en",
      "edition_id": "B0G9C2PXJS",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -1722,14 +1789,14 @@
    "language_in_table": "es",
    "series": "forbidden mantra series",
    "work_slug": "invoke-the-fierce",
-   "work_title": "Invoke the Fierce",
    "editions": [
     {
      "asin": "B0F9WVXM9T",
      "format": "ebook",
+     "published": "2025-05-26",
      "language": "es",
      "edition_id": "ed2",
-     "cover": true,
+     "has_cover": true,
      "credit": null
     }
    ]
@@ -1741,14 +1808,14 @@
    "language_in_table": "en",
    "series": "forbidden mantra series",
    "work_slug": "invoke-the-fierce",
-   "work_title": "Invoke the Fierce",
    "editions": [
     {
      "asin": "B0F9WQSNVW",
      "format": "ebook",
+     "published": "2025-05-26",
      "language": "en",
      "edition_id": "ed1",
-     "cover": true,
+     "has_cover": true,
      "credit": null
     }
    ]
@@ -1760,14 +1827,14 @@
    "language_in_table": "en",
    "series": "muslim prayer series",
    "work_slug": "jinn-dark-angels-shapeshifters-and-ghouls",
-   "work_title": "JINN - Dark Angels, Shapeshifters, and Ghouls",
    "editions": [
     {
      "asin": "B0BY758969",
      "format": "ebook",
+     "published": "2023-03-12",
      "language": "en",
      "edition_id": "B0BY758969",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -1779,14 +1846,14 @@
    "language_in_table": "en",
    "series": "forbidden mantra series",
    "work_slug": "kama-sutra-sexual-yoga-with-a-partner",
-   "work_title": "Kama Sutra - Sexual Yoga with a Partner",
    "editions": [
     {
      "asin": "B0BXHTD3M9",
      "format": "ebook",
+     "published": "2023-03-04",
      "language": "en",
      "edition_id": "B0BXHTD3M9",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -1798,14 +1865,14 @@
    "language_in_table": "en",
    "series": "forbidden mantra series",
    "work_slug": "kamdev-gayatri-mantra",
-   "work_title": "Kamdev Gayatri Mantra",
    "editions": [
     {
      "asin": "B0BXBTMYBX",
      "format": "ebook",
+     "published": "2023-03-03",
      "language": "en",
      "edition_id": "B0BXBTMYBX",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -1817,30 +1884,32 @@
    "language_in_table": "en",
    "series": "forbidden tantra series",
    "work_slug": "kamdev-mantra-for-making-yourself-attractive",
-   "work_title": "Kamdev Mantra for making yourself attractive",
    "editions": [
     {
      "asin": "B0F93NVQ9J",
      "format": "audiobook",
+     "published": "2026-07-11",
      "language": "en",
      "edition_id": "B0F93NVQ9J",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0BZTKCYRN",
      "format": "ebook",
+     "published": "2023-03-28",
      "language": "en",
      "edition_id": "B0BZTKCYRN",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C63P69BT",
      "format": "paperback",
+     "published": "2023-05-25",
      "language": "en",
      "edition_id": "B0C63P69BT",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -1852,14 +1921,14 @@
    "language_in_table": "en",
    "series": "forbidden mantra series",
    "work_slug": "katyayani-mantra-for-removing-obstacles-and-delayed-marriages",
-   "work_title": "Katyayani Mantra for Removing Obstacles and Delayed Marriages",
    "editions": [
     {
      "asin": "B0BY6ZNY1C",
      "format": "ebook",
+     "published": "2023-03-12",
      "language": "en",
      "edition_id": "B0BY6ZNY1C",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -1871,22 +1940,23 @@
    "language_in_table": "en",
    "series": "ethiopian bible",
    "work_slug": "kebra-nagast",
-   "work_title": "Kebra Nagast",
    "editions": [
     {
      "asin": "B0FD4CFRDF",
      "format": "ebook",
+     "published": "2025-06-13",
      "language": "en",
      "edition_id": "ed2",
-     "cover": true,
+     "has_cover": true,
      "credit": null
     },
     {
      "asin": "B0FD7JXKGB",
      "format": "paperback",
+     "published": "2025-06-14",
      "language": "en",
      "edition_id": "ed1",
-     "cover": true,
+     "has_cover": true,
      "credit": null
     }
    ]
@@ -1898,38 +1968,41 @@
    "language_in_table": "es",
    "series": "the hidden technology of human power series",
    "work_slug": "the-inner-mechanics-of-energy-cultivation",
-   "work_title": "The Inner Mechanics of Energy Cultivation",
    "editions": [
     {
      "asin": "B0H8ML8C5F",
      "format": "audiobook",
+     "published": "2026-07-12",
      "language": "es",
      "edition_id": "B0H8ML8C5F",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0H3NV7ZVS",
      "format": "ebook",
+     "published": "2026-06-02",
      "language": "es",
      "edition_id": "B0H3NV7ZVS",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0H3SQK65J",
      "format": "hardcover",
+     "published": "2026-06-03",
      "language": "es",
      "edition_id": "B0H3SQK65J",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0H3T75J6P",
      "format": "paperback",
+     "published": "2026-06-03",
      "language": "es",
      "edition_id": "B0H3T75J6P",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -1941,22 +2014,23 @@
    "language_in_table": "en",
    "series": "lakshmi mantra series",
    "work_slug": "lakshmi-gayatri-mantra",
-   "work_title": "Lakshmi Gayatri Mantra",
    "editions": [
     {
      "asin": "B0CQRKX83X",
      "format": "ebook",
+     "published": "2023-12-21",
      "language": "en",
      "edition_id": "B0CQRKX83X",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0CQRSQBFC",
      "format": "paperback",
+     "published": "2023-12-21",
      "language": "en",
      "edition_id": "B0CQRSQBFC",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -1968,14 +2042,14 @@
    "language_in_table": "en",
    "series": "forbidden mantra series",
    "work_slug": "lakshmi-gayatri",
-   "work_title": "Lakshmi Gayatri",
    "editions": [
     {
      "asin": "B0FB2YT1JY",
      "format": "ebook",
+     "published": "2025-05-28",
      "language": "en",
      "edition_id": "ed1",
-     "cover": true,
+     "has_cover": true,
      "credit": null
     }
    ]
@@ -1987,14 +2061,14 @@
    "language_in_table": "es",
    "series": null,
    "work_slug": "lakshmi-gayatri",
-   "work_title": "Lakshmi Gayatri",
    "editions": [
     {
      "asin": "B0DBDLXWJW",
      "format": "ebook",
+     "published": "2025-05-28",
      "language": "es",
      "edition_id": "B0DBDLXWJW",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -2006,14 +2080,14 @@
    "language_in_table": "en",
    "series": "forbidden mantra series",
    "work_slug": "lakshmi-mantra-for-the-pleasure-of-wealth-and-abundance",
-   "work_title": "Lakshmi Mantra for the Pleasure of Wealth & Abundance",
    "editions": [
     {
      "asin": "B0BXT8SWYX",
      "format": "ebook",
+     "published": "2023-03-08",
      "language": "en",
      "edition_id": "B0BXT8SWYX",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -2025,30 +2099,32 @@
    "language_in_table": "fr",
    "series": "breath mastery series",
    "work_slug": "unleashing-the-inner-fire",
-   "work_title": "Unleashing the Inner Fire",
    "editions": [
     {
      "asin": "B0CW1B9JYY",
      "format": "ebook",
+     "published": "2024-03-03",
      "language": "fr",
      "edition_id": "B0CW1B9JYY",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0DRW3L4L1",
      "format": "hardcover",
+     "published": "2024-12-30",
      "language": "fr",
      "edition_id": "B0DRW3L4L1",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0DRW2ZW7C",
      "format": "paperback",
+     "published": "2024-12-30",
      "language": "fr",
      "edition_id": "B0DRW2ZW7C",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -2060,30 +2136,32 @@
    "language_in_table": "en",
    "series": "integrative bioenhancement series",
    "work_slug": "los-pensamientos-son-mantras",
-   "work_title": "LOS PENSAMIENTOS SON MANTRAS",
    "editions": [
     {
      "asin": "B0CY88818M",
      "format": "audiobook",
+     "published": "2026-07-11",
      "language": "es",
      "edition_id": "B0CY88818M",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0FFP3C6S1",
      "format": "ebook",
+     "published": "2025-06-26",
      "language": "es",
      "edition_id": "B0FFP3C6S1",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0FFT31L46",
      "format": "paperback",
+     "published": "2025-06-27",
      "language": "es",
      "edition_id": "B0FFT31L46",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -2095,14 +2173,14 @@
    "language_in_table": "en",
    "series": "forbidden mantra series",
    "work_slug": "maa-kali-mantra-for-success",
-   "work_title": "Maa Kali Mantra for Success",
    "editions": [
     {
      "asin": "B0BXTGYV5W",
      "format": "ebook",
+     "published": "2023-03-08",
      "language": "en",
      "edition_id": "B0BXTGYV5W",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -2114,14 +2192,14 @@
    "language_in_table": "en",
    "series": "forbidden mantra series",
    "work_slug": "maa-kali-mantras-and-instructions",
-   "work_title": "Maa Kali Mantras and Instructions",
    "editions": [
     {
      "asin": "B0BXTBM2QT",
      "format": "ebook",
+     "published": "2023-03-08",
      "language": "en",
      "edition_id": "B0BXTBM2QT",
-     "cover": false,
+     "has_cover": false,
      "credit": "Rav Shiva"
     }
    ]
@@ -2133,14 +2211,14 @@
    "language_in_table": "de",
    "series": "forbidden mantra series",
    "work_slug": "maa-kali-mantras-and-instructions",
-   "work_title": "Maa Kali Mantras and Instructions",
    "editions": [
     {
      "asin": "B0F4B7712F",
      "format": "ebook",
+     "published": "2025-04-09",
      "language": "de",
      "edition_id": "B0F4B7712F",
-     "cover": false,
+     "has_cover": false,
      "credit": "Emily K Patel"
     }
    ]
@@ -2152,30 +2230,32 @@
    "language_in_table": "en",
    "series": "forbidden mantra series",
    "work_slug": "make-yourself-irresistibly-attractive-with-the-kleem-mantra",
-   "work_title": "Make Yourself Irresistibly Attractive with the Kleem Mantra",
    "editions": [
     {
      "asin": "B0CWJ782FT",
      "format": "ebook",
+     "published": "2024-03-03",
      "language": "de",
      "edition_id": "B0CWJ782FT",
-     "cover": false,
+     "has_cover": false,
      "credit": "Emily K Patel"
     },
     {
      "asin": "B0DRYZP1HQ",
      "format": "hardcover",
+     "published": "2024-12-31",
      "language": "de",
      "edition_id": "B0DRYZP1HQ",
-     "cover": false,
+     "has_cover": false,
      "credit": "Emily K Patel"
     },
     {
      "asin": "B0DRZSM6X8",
      "format": "paperback",
+     "published": "2025-01-01",
      "language": "de",
      "edition_id": "B0DRZSM6X8",
-     "cover": false,
+     "has_cover": false,
      "credit": "Emily K Patel"
     }
    ]
@@ -2187,14 +2267,14 @@
    "language_in_table": "en",
    "series": "forbidden mantra series",
    "work_slug": "maha-mrityunjaya-mantra",
-   "work_title": "Maha Mrityunjaya Mantra",
    "editions": [
     {
      "asin": "B0F9PZLQCP",
      "format": "ebook",
+     "published": "2025-05-23",
      "language": "en",
      "edition_id": "ed1",
-     "cover": true,
+     "has_cover": true,
      "credit": null
     }
    ]
@@ -2206,38 +2286,41 @@
    "language_in_table": "en",
    "series": "forbidden mantra series",
    "work_slug": "make-yourself-irresistibly-attractive-with-the-kleem-mantra",
-   "work_title": "Make Yourself Irresistibly Attractive with the Kleem Mantra",
    "editions": [
     {
      "asin": "B0H8MQYPPR",
      "format": "audiobook",
+     "published": "2026-07-13",
      "language": "en",
      "edition_id": "B0H8MQYPPR",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0BY67Z5QR",
      "format": "ebook",
+     "published": "2023-03-12",
      "language": "en",
      "edition_id": "B0BY67Z5QR",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0BZF9RHRY",
      "format": "hardcover",
+     "published": "2023-03-29",
      "language": "en",
      "edition_id": "B0BZF9RHRY",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0BZFCW9HT",
      "format": "paperback",
+     "published": "2023-03-29",
      "language": "en",
      "edition_id": "B0BZFCW9HT",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -2249,14 +2332,14 @@
    "language_in_table": "en",
    "series": "forbidden mantra series",
    "work_slug": "make-yourself-irresitible-to-anyone-with-kundalini-energy-and-cultivation",
-   "work_title": "Make Yourself Irresitible to Anyone with Kundalini Energy and Cultivation",
    "editions": [
     {
      "asin": "B0BXF91GRT",
      "format": "ebook",
+     "published": "2023-03-03",
      "language": "en",
      "edition_id": "B0BXF91GRT",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -2268,30 +2351,32 @@
    "language_in_table": "en",
    "series": "buddhist mantra series",
    "work_slug": "mantra-of-vajrayogini",
-   "work_title": "Mantra of Vajrayogini",
    "editions": [
     {
      "asin": "B0DP46F3S4",
      "format": "ebook",
+     "published": "2024-11-27",
      "language": "en",
      "edition_id": "B0DP46F3S4",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0DP5DZCV1",
      "format": "hardcover",
+     "published": "2024-11-27",
      "language": "en",
      "edition_id": "B0DP5DZCV1",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0DP59QBL9",
      "format": "paperback",
+     "published": "2024-11-27",
      "language": "en",
      "edition_id": "B0DP59QBL9",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -2303,30 +2388,32 @@
    "language_in_table": "en",
    "series": "forbidden tantra series",
    "work_slug": "mantra-sound-vibrational-energy",
-   "work_title": "Mantra Sound Vibrational Energy",
    "editions": [
     {
      "asin": "B0BY62FDGQ",
      "format": "ebook",
+     "published": "2023-03-12",
      "language": "en",
      "edition_id": "B0BY62FDGQ",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C6W96ZMZ",
      "format": "hardcover",
+     "published": "2023-06-05",
      "language": "en",
      "edition_id": "B0C6W96ZMZ",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C6VYRBCD",
      "format": "paperback",
+     "published": "2023-06-04",
      "language": "en",
      "edition_id": "B0C6VYRBCD",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -2338,14 +2425,14 @@
    "language_in_table": "en",
    "series": "forbidden mantra series",
    "work_slug": "maa-kali-mantras-and-instructions",
-   "work_title": "Maa Kali Mantras and Instructions",
    "editions": [
     {
      "asin": "B0F4B4W29W",
      "format": "ebook",
+     "published": "2025-04-09",
      "language": "es",
      "edition_id": "B0F4B4W29W",
-     "cover": false,
+     "has_cover": false,
      "credit": "Emily K Patel"
     }
    ]
@@ -2357,30 +2444,32 @@
    "language_in_table": "es",
    "series": "forbidden mantra series",
    "work_slug": "miracles-of-the-masters-of-yoga",
-   "work_title": "Miracles of the Masters of Yoga",
    "editions": [
     {
      "asin": "B0F3G1J1S2",
      "format": "ebook",
+     "published": "2025-04-02",
      "language": "es",
      "edition_id": "B0F3G1J1S2",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0F3JFZSLG",
      "format": "hardcover",
+     "published": "2025-04-03",
      "language": "es",
      "edition_id": "B0F3JFZSLG",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0F3JNPVD1",
      "format": "paperback",
+     "published": "2025-04-03",
      "language": "es",
      "edition_id": "B0F3JNPVD1",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -2392,30 +2481,32 @@
    "language_in_table": "en",
    "series": "forbidden tantra series",
    "work_slug": "miracles-of-the-masters-of-yoga",
-   "work_title": "Miracles of the Masters of Yoga",
    "editions": [
     {
      "asin": "B0F3DF7BTK",
      "format": "ebook",
+     "published": "2025-04-02",
      "language": "en",
      "edition_id": "ed1",
-     "cover": true,
+     "has_cover": true,
      "credit": null
     },
     {
      "asin": "B0F3J35RZF",
      "format": "hardcover",
+     "published": "2025-04-03",
      "language": "en",
      "edition_id": "B0F3J35RZF",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0F3L2T7ML",
      "format": "paperback",
+     "published": "2025-04-03",
      "language": "en",
      "edition_id": "B0F3L2T7ML",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -2427,38 +2518,41 @@
    "language_in_table": "fr",
    "series": "the hidden technology of human power series",
    "work_slug": "mo-pai-the-destructive-and-healing-force-within",
-   "work_title": "Mo Pai: The Destructive and Healing Force Within",
    "editions": [
     {
      "asin": "B0H8MG1JQ4",
      "format": "audiobook",
+     "published": "2026-07-14",
      "language": "fr",
      "edition_id": "B0H8MG1JQ4",
-     "cover": false,
+     "has_cover": false,
      "credit": "Emily K Patel"
     },
     {
      "asin": "B0GZ6ZGCYY",
      "format": "ebook",
+     "published": "2026-05-01",
      "language": "fr",
      "edition_id": "ed2",
-     "cover": true,
+     "has_cover": true,
      "credit": "Emily K Patel"
     },
     {
      "asin": "B0GZ7XWJT6",
      "format": "hardcover",
+     "published": "2026-05-01",
      "language": "fr",
      "edition_id": "B0GZ7XWJT6",
-     "cover": false,
+     "has_cover": false,
      "credit": "Emily K Patel"
     },
     {
      "asin": "B0GZ7Z7NNC",
      "format": "paperback",
+     "published": "2026-05-01",
      "language": "fr",
      "edition_id": "B0GZ7Z7NNC",
-     "cover": false,
+     "has_cover": false,
      "credit": "Emily K Patel"
     }
    ]
@@ -2470,38 +2564,41 @@
    "language_in_table": "en",
    "series": "the hidden technology of human power series",
    "work_slug": "mo-pai-and-internal-alchemy",
-   "work_title": "Mo Pai and Internal Alchemy",
    "editions": [
     {
      "asin": "B0H8JJHYLR",
      "format": "audiobook",
+     "published": "2026-07-11",
      "language": "en",
      "edition_id": "B0H8JJHYLR",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0GCHGT4BX",
      "format": "ebook",
+     "published": "2025-12-25",
      "language": "en",
      "edition_id": "ed1",
-     "cover": true,
+     "has_cover": true,
      "credit": null
     },
     {
      "asin": "B0GCHWL6RP",
      "format": "hardcover",
+     "published": "2025-12-25",
      "language": "en",
      "edition_id": "B0GCHWL6RP",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0GCJSF7H9",
      "format": "paperback",
+     "published": "2025-12-25",
      "language": "en",
      "edition_id": "B0GCJSF7H9",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -2513,38 +2610,41 @@
    "language_in_table": "en",
    "series": "the hidden technology of human power series",
    "work_slug": "mo-pai-exposed",
-   "work_title": "Mo Pai Exposed",
    "editions": [
     {
      "asin": "B0H85C85V8",
      "format": "audiobook",
+     "published": "2026-07-10",
      "language": "en",
      "edition_id": "B0H85C85V8",
-     "cover": false,
+     "has_cover": false,
      "credit": "Emily Patel"
     },
     {
      "asin": "B0GFQ63JSF",
      "format": "ebook",
+     "published": "2026-01-08",
      "language": "en",
      "edition_id": "B0GFQ63JSF",
-     "cover": false,
+     "has_cover": false,
      "credit": "Emily Patel"
     },
     {
      "asin": "B0GFVWMR9B",
      "format": "hardcover",
+     "published": "2026-01-09",
      "language": "en",
      "edition_id": "9798243193894",
-     "cover": false,
+     "has_cover": false,
      "credit": "Emily Patel"
     },
     {
      "asin": "B0GFW4H6T2",
      "format": "paperback",
+     "published": "2026-01-09",
      "language": "en",
      "edition_id": "9798243193078",
-     "cover": false,
+     "has_cover": false,
      "credit": "Emily Patel"
     }
    ]
@@ -2556,30 +2656,32 @@
    "language_in_table": "de",
    "series": "the hidden technology of human power series",
    "work_slug": "mo-pai-the-destructive-and-healing-force-within",
-   "work_title": "Mo Pai: The Destructive and Healing Force Within",
    "editions": [
     {
      "asin": "B0GZ71SMKH",
      "format": "ebook",
+     "published": "2026-05-01",
      "language": "de",
      "edition_id": "B0GZ71SMKH",
-     "cover": false,
+     "has_cover": false,
      "credit": "Emily K Patel"
     },
     {
      "asin": "B0GZ9LSHT9",
      "format": "hardcover",
+     "published": "2026-05-02",
      "language": "de",
      "edition_id": "B0GZ9LSHT9",
-     "cover": false,
+     "has_cover": false,
      "credit": "Emily K Patel"
     },
     {
      "asin": "B0GZ8JS1TT",
      "format": "paperback",
+     "published": "2026-05-01",
      "language": "de",
      "edition_id": "B0GZ8JS1TT",
-     "cover": false,
+     "has_cover": false,
      "credit": "Emily K Patel"
     }
    ]
@@ -2591,38 +2693,41 @@
    "language_in_table": "es",
    "series": "the inner mechanics of energy cultivation",
    "work_slug": "mo-pai-the-destructive-and-healing-force-within",
-   "work_title": "Mo Pai: The Destructive and Healing Force Within",
    "editions": [
     {
      "asin": "B0H8M7Z9XK",
      "format": "audiobook",
+     "published": "2026-07-14",
      "language": "es",
      "edition_id": "B0H8M7Z9XK",
-     "cover": false,
+     "has_cover": false,
      "credit": "Emily K Patel"
     },
     {
      "asin": "B0GYJ7P9QG",
      "format": "ebook",
+     "published": "2026-04-29",
      "language": "es",
      "edition_id": "ed4",
-     "cover": true,
+     "has_cover": true,
      "credit": "Emily K Patel"
     },
     {
      "asin": "B0GZ34X6X7",
      "format": "hardcover",
+     "published": "2026-04-30",
      "language": "es",
      "edition_id": "B0GZ34X6X7",
-     "cover": false,
+     "has_cover": false,
      "credit": "Emily K Patel"
     },
     {
      "asin": "B0GYZLZW9L",
      "format": "paperback",
+     "published": "2026-04-29",
      "language": "es",
      "edition_id": "B0GYZLZW9L",
-     "cover": false,
+     "has_cover": false,
      "credit": "Emily K Patel"
     }
    ]
@@ -2634,38 +2739,41 @@
    "language_in_table": "en",
    "series": "the hidden technology of human power series",
    "work_slug": "mo-pai-the-destructive-and-healing-force-within",
-   "work_title": "Mo Pai: The Destructive and Healing Force Within",
    "editions": [
     {
      "asin": "B0H8MB14CP",
      "format": "audiobook",
+     "published": "2026-07-14",
      "language": "en",
      "edition_id": "B0H8MB14CP",
-     "cover": false,
+     "has_cover": false,
      "credit": "Emily Patel"
     },
     {
      "asin": "B0GFTC2YTM",
      "format": "ebook",
+     "published": "2026-01-09",
      "language": "en",
      "edition_id": "B0GFTC2YTM",
-     "cover": false,
+     "has_cover": false,
      "credit": "Emily Patel"
     },
     {
      "asin": "B0GFWBTZHL",
      "format": "hardcover",
+     "published": "2026-01-09",
      "language": "en",
      "edition_id": "B0GFWBTZHL",
-     "cover": false,
+     "has_cover": false,
      "credit": "Emily Patel"
     },
     {
      "asin": "B0GFW8DJHW",
      "format": "paperback",
+     "published": "2026-01-09",
      "language": "en",
      "edition_id": "9798243200189",
-     "cover": true,
+     "has_cover": true,
      "credit": "Emily Patel"
     }
    ]
@@ -2677,22 +2785,23 @@
    "language_in_table": "en",
    "series": "forbidden mantra series",
    "work_slug": "om-namah-shivaya",
-   "work_title": "Om Namah Shivaya",
    "editions": [
     {
      "asin": "B0H8MJSRVJ",
      "format": "audiobook",
+     "published": "2026-07-16",
      "language": "en",
      "edition_id": "B0H8MJSRVJ",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0F9T23TX4",
      "format": "ebook",
+     "published": "2025-05-24",
      "language": "en",
      "edition_id": "ed1",
-     "cover": true,
+     "has_cover": true,
      "credit": null
     }
    ]
@@ -2704,14 +2813,14 @@
    "language_in_table": "de",
    "series": "forbidden mantra series",
    "work_slug": "om-namah-shivaya",
-   "work_title": "Om Namah Shivaya",
    "editions": [
     {
      "asin": "B0F9TWY17M",
      "format": "ebook",
+     "published": "2025-05-24",
      "language": "de",
      "edition_id": "B0F9TWY17M",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -2723,22 +2832,23 @@
    "language_in_table": "es",
    "series": "forbidden mantra series",
    "work_slug": "om-namah-shivaya",
-   "work_title": "Om Namah Shivaya",
    "editions": [
     {
      "asin": "B0H8MDS8VR",
      "format": "audiobook",
+     "published": "2026-07-13",
      "language": "es",
      "edition_id": "B0H8MDS8VR",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0F9SXV16N",
      "format": "ebook",
+     "published": "2025-05-24",
      "language": "es",
      "edition_id": "ed3",
-     "cover": true,
+     "has_cover": true,
      "credit": null
     }
    ]
@@ -2750,22 +2860,23 @@
    "language_in_table": "es",
    "series": "sacred plant based traditions",
    "work_slug": "edenic-origins",
-   "work_title": "Edenic Origins",
    "editions": [
     {
      "asin": "B0F2ZKR53Z",
      "format": "ebook",
+     "published": "2025-03-31",
      "language": "es",
      "edition_id": "B0F2ZKR53Z",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0F3VX9X9M",
      "format": "paperback",
+     "published": "2025-04-06",
      "language": "es",
      "edition_id": "B0F3VX9X9M",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -2777,22 +2888,23 @@
    "language_in_table": "en",
    "series": null,
    "work_slug": "quotes-of-yeshua-the-christ",
-   "work_title": "Quotes of Yeshua The Christ",
    "editions": [
     {
      "asin": "B0BXN47ST1",
      "format": "hardcover",
+     "published": "2023-03-12",
      "language": "en",
      "edition_id": "B0BXN47ST1",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0BXN6QNPM",
      "format": "paperback",
+     "published": "2023-03-12",
      "language": "en",
      "edition_id": "B0BXN6QNPM",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -2804,38 +2916,41 @@
    "language_in_table": "en",
    "series": "forbidden tantra series",
    "work_slug": "radiate-beauty-from-within",
-   "work_title": "Radiate Beauty from Within",
    "editions": [
     {
      "asin": "B0H8JLG5FJ",
      "format": "audiobook",
+     "published": "2026-07-11",
      "language": "en",
      "edition_id": "B0H8JLG5FJ",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0BZTKVBR6",
      "format": "ebook",
+     "published": "2023-03-28",
      "language": "en",
      "edition_id": "B0BZTKVBR6",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C63MDR4J",
      "format": "hardcover",
+     "published": "2023-05-25",
      "language": "en",
      "edition_id": "B0C63MDR4J",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0BZFNZ15C",
      "format": "paperback",
+     "published": "2023-03-29",
      "language": "en",
      "edition_id": "B0BZFNZ15C",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -2847,30 +2962,32 @@
    "language_in_table": "fr",
    "series": "forbidden mantra series",
    "work_slug": "make-yourself-irresistibly-attractive-with-the-kleem-mantra",
-   "work_title": "Make Yourself Irresistibly Attractive with the Kleem Mantra",
    "editions": [
     {
      "asin": "B0CWKMD1M3",
      "format": "ebook",
+     "published": "2024-03-03",
      "language": "fr",
      "edition_id": "B0CWKMD1M3",
-     "cover": false,
+     "has_cover": false,
      "credit": "Emily K Patel"
     },
     {
      "asin": "B0DPSPB6FZ",
      "format": "hardcover",
+     "published": "2024-12-07",
      "language": "fr",
      "edition_id": "B0DPSPB6FZ",
-     "cover": false,
+     "has_cover": false,
      "credit": "Emily K Patel"
     },
     {
      "asin": "B0DPSJW3PS",
      "format": "paperback",
+     "published": "2024-12-07",
      "language": "fr",
      "edition_id": "B0DPSJW3PS",
-     "cover": false,
+     "has_cover": false,
      "credit": "Emily K Patel"
     }
    ]
@@ -2882,30 +2999,32 @@
    "language_in_table": "es",
    "series": "nag hammadi series",
    "work_slug": "unveiling-the-mysteries-of-the-gospel-of-peter",
-   "work_title": "Unveiling the Mysteries of The Gospel of Peter",
    "editions": [
     {
      "asin": "B0DQXQ3GC7",
      "format": "ebook",
+     "published": "2024-12-19",
      "language": "es",
      "edition_id": "B0DQXQ3GC7",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0DR2MC84P",
      "format": "hardcover",
+     "published": "2024-12-20",
      "language": "es",
      "edition_id": "B0DR2MC84P",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0DR2GF2PD",
      "format": "paperback",
+     "published": "2024-12-20",
      "language": "es",
      "edition_id": "B0DR2GF2PD",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -2917,30 +3036,32 @@
    "language_in_table": "pt",
    "series": "nag hammadi series",
    "work_slug": "unveiling-the-mysteries-of-the-gospel-of-peter",
-   "work_title": "Unveiling the Mysteries of The Gospel of Peter",
    "editions": [
     {
      "asin": "B0DQVXX954",
      "format": "ebook",
+     "published": "2024-12-19",
      "language": "pt",
      "edition_id": "B0DQVXX954",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0DR6ZPPLS",
      "format": "hardcover",
+     "published": "2024-12-22",
      "language": "pt",
      "edition_id": "B0DR6ZPPLS",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0DR6YH3KM",
      "format": "paperback",
+     "published": "2024-12-22",
      "language": "pt",
      "edition_id": "B0DR6YH3KM",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -2952,14 +3073,14 @@
    "language_in_table": "en",
    "series": "muslim prayer series",
    "work_slug": "ruqyahs-for-wealth-in-arabic-language",
-   "work_title": "Ruqyah's for Wealth in Arabic Language",
    "editions": [
     {
      "asin": "B0BY5CCJNV",
      "format": "ebook",
+     "published": "2023-03-11",
      "language": "en",
      "edition_id": "B0BY5CCJNV",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -2971,14 +3092,14 @@
    "language_in_table": "en",
    "series": "muslim prayer series",
    "work_slug": "ruqyahs-for-wealth",
-   "work_title": "Ruqyah’s for Wealth",
    "editions": [
     {
      "asin": "B0BY57NY5C",
      "format": "ebook",
+     "published": "2023-03-11",
      "language": "en",
      "edition_id": "B0BY57NY5C",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -2990,30 +3111,32 @@
    "language_in_table": "en",
    "series": "forbidden tantra series",
    "work_slug": "sacred-union-in-tantra",
-   "work_title": "Sacred Union in Tantra",
    "editions": [
     {
      "asin": "B0CFKHQSNX",
      "format": "ebook",
+     "published": "2023-08-14",
      "language": "en",
      "edition_id": "B0CFKHQSNX",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0CFDB36SZ",
      "format": "hardcover",
+     "published": "2023-08-14",
      "language": "en",
      "edition_id": "B0CFDB36SZ",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0CFCK3F1M",
      "format": "paperback",
+     "published": "2023-08-14",
      "language": "en",
      "edition_id": "B0CFCK3F1M",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -3025,22 +3148,23 @@
    "language_in_table": "en",
    "series": "forbidden mantra series",
    "work_slug": "saraswati-mantra-enhance-intelligence-creativity-and-knowledge",
-   "work_title": "Saraswati Mantra - Enhance Intelligence, Creativity and Knowledge.",
    "editions": [
     {
      "asin": "B0BZFFDG4N",
      "format": "ebook",
+     "published": "2023-03-23",
      "language": "en",
      "edition_id": "B0BZFFDG4N",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0BZF75Q4D",
      "format": "paperback",
+     "published": "2023-03-25",
      "language": "en",
      "edition_id": "B0BZF75Q4D",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -3052,14 +3176,14 @@
    "language_in_table": "en",
    "series": "forbidden mantra series",
    "work_slug": "shiva-mantra-for-purification-of-mind-body-and-soul",
-   "work_title": "Shiva Mantra for Purification of Mind, Body & Soul",
    "editions": [
     {
      "asin": "B0BXT95PPV",
      "format": "ebook",
+     "published": "2023-03-08",
      "language": "en",
      "edition_id": "B0BXT95PPV",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -3070,39 +3194,42 @@
    "author_credit": "TSP Ravshiva",
    "language_in_table": "en",
    "series": "the physics of siddhis",
-   "work_slug": "siddhis-tsp-ravshiva",
-   "work_title": "Siddhis",
+   "work_slug": "siddhis-the-non-locality-of-consciousness",
    "editions": [
     {
      "asin": "B0H8M6XGB3",
      "format": "audiobook",
+     "published": "2026-07-13",
      "language": "en",
      "edition_id": "B0H8M6XGB3",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0GFXRQLK6",
      "format": "ebook",
+     "published": "2026-01-11",
      "language": "en",
-     "edition_id": "ed1",
-     "cover": false,
+     "edition_id": "B0GFXRQLK6",
+     "has_cover": true,
      "credit": null
     },
     {
      "asin": "B0GGGGZSXK",
      "format": "hardcover",
+     "published": "2026-01-13",
      "language": "en",
      "edition_id": "B0GGGGZSXK",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0GG9LT922",
      "format": "paperback",
+     "published": "2026-01-12",
      "language": "en",
      "edition_id": "B0GG9LT922",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -3114,38 +3241,41 @@
    "language_in_table": "en",
    "series": "forbidden tantra series",
    "work_slug": "siddhis",
-   "work_title": "Siddhis",
    "editions": [
     {
      "asin": "B0H85FV76W",
      "format": "audiobook",
+     "published": "2026-07-14",
      "language": "en",
      "edition_id": "B0H85FV76W",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0F3J5KXNK",
      "format": "ebook",
+     "published": "2025-04-03",
      "language": "en",
      "edition_id": "ed1",
-     "cover": true,
+     "has_cover": true,
      "credit": null
     },
     {
      "asin": "B0F3JY2YC8",
      "format": "hardcover",
+     "published": "2025-04-03",
      "language": "en",
      "edition_id": "B0F3JY2YC8",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0F3JYXVBJ",
      "format": "paperback",
+     "published": "2025-04-03",
      "language": "en",
      "edition_id": "B0F3JYXVBJ",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -3157,30 +3287,32 @@
    "language_in_table": "en",
    "series": "nag hammadi series",
    "work_slug": "the-acts-of-peter-and-the-twelve-apostles",
-   "work_title": "The Acts of Peter and the Twelve Apostles",
    "editions": [
     {
      "asin": "B0CB3VJ381",
      "format": "ebook",
+     "published": "2023-07-04",
      "language": "en",
      "edition_id": "B0CB3VJ381",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C9S56XPZ",
      "format": "hardcover",
+     "published": "2023-07-04",
      "language": "en",
      "edition_id": "B0C9S56XPZ",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0CCCVQH1R",
      "format": "paperback",
+     "published": "2023-07-23",
      "language": "en",
      "edition_id": "B0CCCVQH1R",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -3192,38 +3324,41 @@
    "language_in_table": "en",
    "series": "the hidden technology of human power series",
    "work_slug": "the-ancient-science-of-kundalini-energy-revealed",
-   "work_title": "The Ancient Science of Kundalini Energy Revealed",
    "editions": [
     {
      "asin": "B0H8J5VCQW",
      "format": "audiobook",
+     "published": "2026-07-14",
      "language": "en",
      "edition_id": "B0H8J5VCQW",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0GX31LSRG",
      "format": "ebook",
+     "published": "2026-05-06",
      "language": "en",
      "edition_id": "ed1",
-     "cover": true,
+     "has_cover": true,
      "credit": null
     },
     {
      "asin": "B0GZPR2XNS",
      "format": "hardcover",
+     "published": "2026-05-06",
      "language": "en",
      "edition_id": "B0GZPR2XNS",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0GZQNVXB7",
      "format": "paperback",
+     "published": "2026-05-06",
      "language": "en",
      "edition_id": "B0GZQNVXB7",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -3235,38 +3370,41 @@
    "language_in_table": "en",
    "series": "nag hammadi series",
    "work_slug": "the-apocalypse-of-adam",
-   "work_title": "The Apocalypse of Adam",
    "editions": [
     {
      "asin": "B0H8MQN9WK",
      "format": "audiobook",
+     "published": "2026-07-13",
      "language": "en",
      "edition_id": "B0H8MQN9WK",
-     "cover": false,
+     "has_cover": false,
      "credit": "Emily K Patel"
     },
     {
      "asin": "B0C9YXQNPF",
      "format": "ebook",
+     "published": "2023-07-03",
      "language": "en",
      "edition_id": "B0C9YXQNPF",
-     "cover": false,
+     "has_cover": false,
      "credit": "Emily K Patel"
     },
     {
      "asin": "B0DP5YYR9N",
      "format": "hardcover",
+     "published": "2024-11-28",
      "language": "en",
      "edition_id": "B0DP5YYR9N",
-     "cover": false,
+     "has_cover": false,
      "credit": "Emily K Patel"
     },
     {
      "asin": "B0C9S88JPC",
      "format": "paperback",
+     "published": "2023-07-03",
      "language": "en",
      "edition_id": "ed2",
-     "cover": true,
+     "has_cover": true,
      "credit": "Emily K Patel"
     }
    ]
@@ -3278,38 +3416,41 @@
    "language_in_table": "en",
    "series": "nag hammadi series",
    "work_slug": "the-apocalypse-of-eve",
-   "work_title": "The Apocalypse of Eve",
    "editions": [
     {
      "asin": "B0H8MR9NCQ",
      "format": "audiobook",
+     "published": "2026-07-14",
      "language": "en",
      "edition_id": "B0H8MR9NCQ",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0GC3HHLVR",
      "format": "ebook",
+     "published": "2025-12-23",
      "language": "en",
      "edition_id": "ed1",
-     "cover": true,
+     "has_cover": true,
      "credit": null
     },
     {
      "asin": "B0GC5KLNTF",
      "format": "hardcover",
+     "published": "2025-12-23",
      "language": "en",
      "edition_id": "B0GC5KLNTF",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0GC75BPD5",
      "format": "paperback",
+     "published": "2025-12-23",
      "language": "en",
      "edition_id": "B0GC75BPD5",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -3321,38 +3462,41 @@
    "language_in_table": "en",
    "series": "nag hammadi series",
    "work_slug": "the-apocalypse-of-peter",
-   "work_title": "The Apocalypse of Peter",
    "editions": [
     {
      "asin": "B0H8MKC8RX",
      "format": "audiobook",
+     "published": "2026-07-12",
      "language": "en",
      "edition_id": "B0H8MKC8RX",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0GF79PS13",
      "format": "ebook",
+     "published": "2026-01-06",
      "language": "en",
      "edition_id": "ed1",
-     "cover": true,
+     "has_cover": true,
      "credit": null
     },
     {
      "asin": "B0GF86PXVY",
      "format": "hardcover",
+     "published": "2026-01-06",
      "language": "en",
      "edition_id": "B0GF86PXVY",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0GF7YYJ3Q",
      "format": "paperback",
+     "published": "2026-01-06",
      "language": "en",
      "edition_id": "B0GF7YYJ3Q",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -3364,22 +3508,23 @@
    "language_in_table": "en",
    "series": null,
    "work_slug": "the-apochrypha-the-book-of-esdras",
-   "work_title": "THE APOCHRYPHA - The Book of Esdras",
    "editions": [
     {
      "asin": "B0BYYHTQXW",
      "format": "ebook",
+     "published": "2023-03-20",
      "language": "en",
      "edition_id": "B0BYYHTQXW",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0BZ6STXZY",
      "format": "paperback",
+     "published": "2023-03-22",
      "language": "en",
      "edition_id": "B0BZ6STXZY",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -3391,22 +3536,23 @@
    "language_in_table": "en",
    "series": "nag hammadi series",
    "work_slug": "the-apochryphon-of-john",
-   "work_title": "THE APOCHRYPHON OF JOHN",
    "editions": [
     {
      "asin": "B0C6MZVC8N",
      "format": "ebook",
+     "published": "2023-05-30",
      "language": "en",
      "edition_id": "B0C6MZVC8N",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C6P9QW8G",
      "format": "hardcover",
+     "published": "2023-05-31",
      "language": "en",
      "edition_id": "B0C6P9QW8G",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -3418,22 +3564,23 @@
    "language_in_table": "en",
    "series": null,
    "work_slug": "the-apocrypha-additions-to-esther",
-   "work_title": "The Apocrypha - Additions to Esther",
    "editions": [
     {
      "asin": "B0BZ57W6GT",
      "format": "ebook",
+     "published": "2023-03-21",
      "language": "en",
      "edition_id": "B0BZ57W6GT",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0BZF75SFY",
      "format": "paperback",
+     "published": "2023-03-24",
      "language": "en",
      "edition_id": "B0BZF75SFY",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -3445,30 +3592,32 @@
    "language_in_table": "en",
    "series": "ethiopian orthodox christianity",
    "work_slug": "the-book-of-jubilees",
-   "work_title": "The Book of Jubilees",
    "editions": [
     {
      "asin": "B0F31M3RWL",
      "format": "ebook",
+     "published": "2025-03-30",
      "language": "en",
      "edition_id": "B0F31M3RWL",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0F32VS8BC",
      "format": "hardcover",
+     "published": "2025-03-31",
      "language": "en",
      "edition_id": "B0F32VS8BC",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0F32T4P8X",
      "format": "paperback",
+     "published": "2025-03-31",
      "language": "en",
      "edition_id": "B0F32T4P8X",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -3480,30 +3629,32 @@
    "language_in_table": "en",
    "series": "forbidden mantra series",
    "work_slug": "the-book-of-vedic-spells",
-   "work_title": "The Book of Vedic Spells",
    "editions": [
     {
      "asin": "B0D11V38H9",
      "format": "audiobook",
+     "published": "2026-07-11",
      "language": "en",
      "edition_id": "B0D11V38H9",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0F7G31829",
      "format": "ebook",
+     "published": "2025-05-04",
      "language": "en",
      "edition_id": "B0F7G31829",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0F7R7FJD7",
      "format": "paperback",
+     "published": "2025-05-07",
      "language": "en",
      "edition_id": "B0F7R7FJD7",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -3515,22 +3666,23 @@
    "language_in_table": "en",
    "series": "the catalyst chronicles: awakening the human code",
    "work_slug": "the-catalyst",
-   "work_title": "The Catalyst",
    "editions": [
     {
      "asin": "B0F39GJ9F8",
      "format": "ebook",
+     "published": "2025-04-01",
      "language": "en",
      "edition_id": "B0F39GJ9F8",
-     "cover": true,
+     "has_cover": true,
      "credit": "TSPRavshiva The Spiritual Phila..."
     },
     {
      "asin": "B0F3D9HD71",
      "format": "paperback",
+     "published": "2025-04-02",
      "language": "en",
      "edition_id": "B0F3D9HD71",
-     "cover": false,
+     "has_cover": false,
      "credit": "TSPRavshiva The Spiritual Phila..."
     }
    ]
@@ -3542,30 +3694,32 @@
    "language_in_table": "en",
    "series": "the code of immortality",
    "work_slug": "the-code-of-immortality",
-   "work_title": "The Code of Immortality",
    "editions": [
     {
      "asin": "B0C5JWDVV3",
      "format": "ebook",
+     "published": "2023-05-17",
      "language": "en",
      "edition_id": "B0C5JWDVV3",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C5G9L6GJ",
      "format": "hardcover",
+     "published": "2023-05-17",
      "language": "en",
      "edition_id": "B0C5G9L6GJ",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C5GJXTP9",
      "format": "paperback",
+     "published": "2023-05-17",
      "language": "en",
      "edition_id": "B0C5GJXTP9",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -3577,22 +3731,23 @@
    "language_in_table": "en",
    "series": "journals",
    "work_slug": "the-complete-dream-and-conscious-experience-journal-1-year-edition",
-   "work_title": "The Complete Dream & Conscious Experience Journal (1-Year Edition)",
    "editions": [
     {
      "asin": "B0H1259BYN",
      "format": "hardcover",
+     "published": "2026-05-08",
      "language": "en",
      "edition_id": "B0H1259BYN",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0H14D7THD",
      "format": "paperback",
+     "published": "2026-05-09",
      "language": "en",
      "edition_id": "B0H14D7THD",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -3604,30 +3759,32 @@
    "language_in_table": "en",
    "series": "asanas & alchemy",
    "work_slug": "the-coven-and-the-yogi",
-   "work_title": "The Coven and The Yogi",
    "editions": [
     {
      "asin": "B0FFM4TJFS",
      "format": "ebook",
+     "published": "2025-06-27",
      "language": "en",
      "edition_id": "B0FFM4TJFS",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0FG134QHD",
      "format": "hardcover",
+     "published": "2025-06-29",
      "language": "en",
      "edition_id": "B0FG134QHD",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0FFYCS763",
      "format": "paperback",
+     "published": "2025-06-28",
      "language": "en",
      "edition_id": "B0FFYCS763",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -3639,30 +3796,32 @@
    "language_in_table": "en",
    "series": "asanas & alchemy",
    "work_slug": "the-coven-and-the-yogi-eclipse-of-the-heart-chakra",
-   "work_title": "The Coven and The Yogi: Eclipse of the Heart Chakra",
    "editions": [
     {
      "asin": "B0FFLZ4V48",
      "format": "ebook",
+     "published": "2025-06-28",
      "language": "en",
      "edition_id": "B0FFLZ4V48",
-     "cover": false,
+     "has_cover": true,
      "credit": null
     },
     {
      "asin": "B0FFZPG914",
      "format": "hardcover",
+     "published": "2025-06-28",
      "language": "en",
      "edition_id": "B0FFZPG914",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0FG172DPD",
      "format": "paperback",
+     "published": "2025-06-29",
      "language": "en",
      "edition_id": "B0FG172DPD",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -3674,14 +3833,14 @@
    "language_in_table": "en",
    "series": "forbidden mantra series",
    "work_slug": "the-cyber-cupid",
-   "work_title": "The Cyber Cupid",
    "editions": [
     {
      "asin": "B0BX5PRFLX",
      "format": "ebook",
+     "published": "2023-03-01",
      "language": "en",
      "edition_id": "B0BX5PRFLX",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -3693,30 +3852,32 @@
    "language_in_table": "en",
    "series": "sacred verses",
    "work_slug": "the-eternal-quest",
-   "work_title": "The Eternal Quest",
    "editions": [
     {
      "asin": "B0C6C2SD9B",
      "format": "ebook",
+     "published": "2023-05-25",
      "language": "en",
      "edition_id": "B0C6C2SD9B",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C6BWWT86",
      "format": "hardcover",
+     "published": "2023-05-26",
      "language": "en",
      "edition_id": "B0C6BWWT86",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C6BM1337",
      "format": "paperback",
+     "published": "2023-05-26",
      "language": "en",
      "edition_id": "B0C6BM1337",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -3728,38 +3889,41 @@
    "language_in_table": "en",
    "series": "nag hammadi series",
    "work_slug": "the-genesis-of-sophia",
-   "work_title": "The Genesis of Sophia",
    "editions": [
     {
      "asin": "B0H85GTKMH",
      "format": "audiobook",
+     "published": "2026-07-11",
      "language": "en",
      "edition_id": "B0H85GTKMH",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0F2GSPKX7",
      "format": "ebook",
+     "published": "2025-03-25",
      "language": "en",
      "edition_id": "B0F2GSPKX7",
-     "cover": true,
+     "has_cover": true,
      "credit": null
     },
     {
      "asin": "B0F2MNX2Q1",
      "format": "hardcover",
+     "published": "2025-03-27",
      "language": "en",
      "edition_id": "B0F2MNX2Q1",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0F2J8XT9Q",
      "format": "paperback",
+     "published": "2025-03-26",
      "language": "en",
      "edition_id": "B0F2J8XT9Q",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -3771,30 +3935,32 @@
    "language_in_table": "en",
    "series": "nag hammadi series",
    "work_slug": "the-gospel-of-judas",
-   "work_title": "The Gospel of Judas",
    "editions": [
     {
      "asin": "B0F2CLDFPX",
      "format": "ebook",
+     "published": "2025-03-25",
      "language": "en",
      "edition_id": "B0F2CLDFPX",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0F2G395YR",
      "format": "hardcover",
+     "published": "2025-03-25",
      "language": "en",
      "edition_id": "B0F2G395YR",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0F2G9YRK7",
      "format": "paperback",
+     "published": "2025-03-25",
      "language": "en",
      "edition_id": "B0F2G9YRK7",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -3806,38 +3972,41 @@
    "language_in_table": "en",
    "series": "mary magdalene",
    "work_slug": "the-gospel-of-magdalene",
-   "work_title": "The Gospel of Magdalene",
    "editions": [
     {
      "asin": "B0H8M6NYRK",
      "format": "audiobook",
+     "published": "2026-07-16",
      "language": "en",
      "edition_id": "B0H8M6NYRK",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0F2NTNFGG",
      "format": "ebook",
+     "published": "2025-03-27",
      "language": "en",
      "edition_id": "ed1",
-     "cover": true,
+     "has_cover": true,
      "credit": null
     },
     {
      "asin": "B0F2Z9JJ3X",
      "format": "hardcover",
+     "published": "2025-03-29",
      "language": "en",
      "edition_id": "B0F2Z9JJ3X",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0F2YH6ZYM",
      "format": "paperback",
+     "published": "2025-03-29",
      "language": "en",
      "edition_id": "B0F2YH6ZYM",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -3849,38 +4018,41 @@
    "language_in_table": "en",
    "series": "nag hammadi series",
    "work_slug": "the-gospel-of-philip",
-   "work_title": "The Gospel of Philip",
    "editions": [
     {
      "asin": "B0H8MG7YFF",
      "format": "audiobook",
+     "published": "2026-07-12",
      "language": "en",
      "edition_id": "B0H8MG7YFF",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C5TRDBDF",
      "format": "ebook",
+     "published": "2023-05-20",
      "language": "en",
      "edition_id": "B0C5TRDBDF",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C6BT7QH8",
      "format": "hardcover",
+     "published": "2023-05-28",
      "language": "en",
      "edition_id": "B0C6BT7QH8",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C6C6SD92",
      "format": "paperback",
+     "published": "2023-05-29",
      "language": "en",
      "edition_id": "B0C6C6SD92",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -3892,38 +4064,41 @@
    "language_in_table": "en",
    "series": "nag hammadi series",
    "work_slug": "the-gospel-of-thomas",
-   "work_title": "The Gospel of Thomas",
    "editions": [
     {
      "asin": "B0H8M7GP17",
      "format": "audiobook",
+     "published": "2026-07-12",
      "language": "en",
      "edition_id": "B0H8M7GP17",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0GZ8YNRX4",
      "format": "ebook",
+     "published": "2026-05-24",
      "language": "en",
      "edition_id": "B0GZ8YNRX4",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0H2TZGGYQ",
      "format": "hardcover",
+     "published": "2026-05-25",
      "language": "en",
      "edition_id": "B0H2TZGGYQ",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0H2V4H51G",
      "format": "paperback",
+     "published": "2026-05-25",
      "language": "en",
      "edition_id": "B0H2V4H51G",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -3935,30 +4110,32 @@
    "language_in_table": "en",
    "series": "nag hammadi series",
    "work_slug": "the-gospel-of-truth-ancient-wisdom-revealed",
-   "work_title": "The Gospel of Truth Ancient Wisdom Revealed",
    "editions": [
     {
      "asin": "B0C6C4N12B",
      "format": "ebook",
+     "published": "2023-05-25",
      "language": "en",
      "edition_id": "B0C6C4N12B",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C6BK4WYV",
      "format": "hardcover",
+     "published": "2023-05-26",
      "language": "en",
      "edition_id": "B0C6BK4WYV",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C6BQ5D5S",
      "format": "paperback",
+     "published": "2023-05-28",
      "language": "en",
      "edition_id": "B0C6BQ5D5S",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -3970,38 +4147,41 @@
    "language_in_table": "en",
    "series": "nag hammadi series",
    "work_slug": "the-gospel-of-truth",
-   "work_title": "The Gospel of Truth",
    "editions": [
     {
      "asin": "B0H857VB2G",
      "format": "audiobook",
+     "published": "2026-07-14",
      "language": "en",
      "edition_id": "B0H857VB2G",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C5TRHX23",
      "format": "ebook",
+     "published": "2023-05-20",
      "language": "en",
      "edition_id": "B0C5TRHX23",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0DQ17WQXY",
      "format": "hardcover",
+     "published": "2024-12-10",
      "language": "en",
      "edition_id": "B0DQ17WQXY",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C5PGBWXP",
      "format": "paperback",
+     "published": "2023-05-21",
      "language": "en",
      "edition_id": "B0C5PGBWXP",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -4013,38 +4193,41 @@
    "language_in_table": "en",
    "series": "forbidden mantra series",
    "work_slug": "the-hidden-doctrine-of-mo-pai",
-   "work_title": "The Hidden Doctrine of Mo Pai",
    "editions": [
     {
      "asin": "B0H8JDF2Z8",
      "format": "audiobook",
+     "published": "2026-07-14",
      "language": "en",
      "edition_id": "B0H8JDF2Z8",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0GCC4NP56",
      "format": "ebook",
+     "published": "2025-12-23",
      "language": "en",
      "edition_id": "B0GCC4NP56",
-     "cover": true,
+     "has_cover": true,
      "credit": null
     },
     {
      "asin": "B0GCK12H1H",
      "format": "hardcover",
+     "published": "2025-12-25",
      "language": "en",
      "edition_id": "B0GCK12H1H",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0GCCZMCNR",
      "format": "paperback",
+     "published": "2025-12-24",
      "language": "en",
      "edition_id": "B0GCCZMCNR",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -4056,62 +4239,68 @@
    "language_in_table": "en",
    "series": "nag hammadi series",
    "work_slug": "the-infancy-gospel-of-thomas-and-gospel-of-thomas",
-   "work_title": "THE INFANCY GOSPEL OF THOMAS & GOSPEL OF THOMAS",
    "editions": [
     {
      "asin": "B0H8MKSJ6S",
      "format": "audiobook",
+     "published": "2026-07-12",
      "language": "en",
      "edition_id": "B0H8MKSJ6S",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C5TWLYB6",
      "format": "ebook",
+     "published": "2023-05-20",
      "language": "en",
      "edition_id": "B0C5TWLYB6",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0DR62N4HW",
      "format": "ebook",
+     "published": "2024-12-21",
      "language": "en",
      "edition_id": "B0DR62N4HW",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C5P9LYLJ",
      "format": "hardcover",
+     "published": "2023-05-21",
      "language": "en",
      "edition_id": "B0C5P9LYLJ",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0DR888ZB4",
      "format": "hardcover",
+     "published": "2024-12-23",
      "language": "en",
      "edition_id": "B0DR888ZB4",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0DR19RFT6",
      "format": "paperback",
+     "published": "2024-12-20",
      "language": "en",
      "edition_id": "B0DR19RFT6",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C5P36594",
      "format": "paperback",
+     "published": "2023-05-21",
      "language": "en",
      "edition_id": "B0C5P36594",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -4123,46 +4312,50 @@
    "language_in_table": "en",
    "series": "the hidden technology of human power series",
    "work_slug": "the-inner-mechanics-of-energy-cultivation",
-   "work_title": "The Inner Mechanics of Energy Cultivation",
    "editions": [
     {
      "asin": "B0H8MBCDC6",
      "format": "audiobook",
+     "published": "2026-07-12",
      "language": "en",
      "edition_id": "B0H8MBCDC6",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0H3MY3JS3",
      "format": "ebook",
+     "published": "2026-06-02",
      "language": "en",
      "edition_id": "B0H3MY3JS3",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0H44YW832",
      "format": "ebook",
+     "published": "2026-06-05",
      "language": "en",
      "edition_id": "B0H44YW832",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0H3T6CKMZ",
      "format": "hardcover",
+     "published": "2026-06-03",
      "language": "en",
      "edition_id": "B0H3T6CKMZ",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0H3QCG6D6",
      "format": "paperback",
+     "published": "2026-06-02",
      "language": "en",
      "edition_id": "B0H3QCG6D6",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -4174,22 +4367,23 @@
    "language_in_table": "en",
    "series": "lakshmi mantra series",
    "work_slug": "the-kubera-mantra",
-   "work_title": "The Kubera Mantra",
    "editions": [
     {
      "asin": "B0CQRMWPZW",
      "format": "ebook",
+     "published": "2023-12-21",
      "language": "en",
      "edition_id": "B0CQRMWPZW",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0CQVLLMLH",
      "format": "paperback",
+     "published": "2023-12-23",
      "language": "en",
      "edition_id": "B0CQVLLMLH",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -4201,30 +4395,32 @@
    "language_in_table": "en",
    "series": "forbidden mantra series",
    "work_slug": "the-matrix-of-sound",
-   "work_title": "The Matrix of Sound",
    "editions": [
     {
      "asin": "B0H8MKMLT9",
      "format": "audiobook",
+     "published": "2026-07-12",
      "language": "en",
      "edition_id": "B0H8MKMLT9",
-     "cover": false,
+     "has_cover": false,
      "credit": "TSPRavshiva The Spiritual Philan..."
     },
     {
      "asin": "B0F9KWD3B8",
      "format": "ebook",
+     "published": "2025-05-22",
      "language": "en",
      "edition_id": "B0F9KWD3B8",
-     "cover": false,
+     "has_cover": false,
      "credit": "TSPRavshiva The Spiritual Philan..."
     },
     {
      "asin": "B0F9LNXF5H",
      "format": "paperback",
+     "published": "2025-05-22",
      "language": "en",
      "edition_id": "B0F9LNXF5H",
-     "cover": false,
+     "has_cover": false,
      "credit": "TSPRavshiva The Spiritual Philan..."
     }
    ]
@@ -4236,22 +4432,23 @@
    "language_in_table": "en",
    "series": "forbidden mantra series",
    "work_slug": "the-modern-kama-sutra",
-   "work_title": "The Modern Kama Sutra",
    "editions": [
     {
      "asin": "B0BYTSGG3D",
      "format": "ebook",
+     "published": "2023-03-17",
      "language": "en",
      "edition_id": "B0BYTSGG3D",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0BYRM235Z",
      "format": "paperback",
+     "published": "2023-03-20",
      "language": "en",
      "edition_id": "B0BYRM235Z",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -4263,22 +4460,23 @@
    "language_in_table": "en",
    "series": "the archon series",
    "work_slug": "the-origin-and-nature-of-the-archons",
-   "work_title": "The Origin and Nature of the Archons",
    "editions": [
     {
      "asin": "B0CB1V15R3",
      "format": "ebook",
+     "published": "2023-07-03",
      "language": "en",
      "edition_id": "B0CB1V15R3",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C9SF6C36",
      "format": "paperback",
+     "published": "2023-07-04",
      "language": "en",
      "edition_id": "B0C9SF6C36",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -4290,38 +4488,41 @@
    "language_in_table": "en",
    "series": "the physics of siddhis",
    "work_slug": "the-physics-of-siddhis",
-   "work_title": "The Physics of Siddhis",
    "editions": [
     {
      "asin": "B0H84DPBZK",
      "format": "audiobook",
+     "published": "2026-07-10",
      "language": "en",
      "edition_id": "B0H84DPBZK",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0GH6P31CM",
      "format": "ebook",
+     "published": "2026-01-16",
      "language": "en",
      "edition_id": "B0GH6P31CM",
-     "cover": false,
+     "has_cover": true,
      "credit": null
     },
     {
      "asin": "B0GH84W6C9",
      "format": "hardcover",
+     "published": "2026-01-16",
      "language": "en",
      "edition_id": "B0GH84W6C9",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0GH8BVX6S",
      "format": "paperback",
+     "published": "2026-01-16",
      "language": "en",
      "edition_id": "B0GH8BVX6S",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -4333,22 +4534,23 @@
    "language_in_table": "en",
    "series": null,
    "work_slug": "the-pissed-off-hindu",
-   "work_title": "The Pissed Off Hindu",
    "editions": [
     {
      "asin": "B01JVC9I5U",
      "format": "ebook",
+     "published": "2016-08-06",
      "language": "en",
      "edition_id": "B01JVC9I5U",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "1079449361",
      "format": "paperback",
+     "published": "2019-07-10",
      "language": "en",
      "edition_id": "1079449361",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -4360,30 +4562,32 @@
    "language_in_table": "en",
    "series": "muslim prayer series",
    "work_slug": "the-power-of-fasting-and-prayer",
-   "work_title": "The Power of Fasting and Prayer",
    "editions": [
     {
      "asin": "B0H85CCYWV",
      "format": "audiobook",
+     "published": "2026-07-10",
      "language": "en",
      "edition_id": "B0H85CCYWV",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0BZM2V8V7",
      "format": "ebook",
+     "published": "2023-03-26",
      "language": "en",
      "edition_id": "B0BZM2V8V7",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0BZFG4YR9",
      "format": "paperback",
+     "published": "2023-03-27",
      "language": "en",
      "edition_id": "B0BZFG4YR9",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -4395,38 +4599,41 @@
    "language_in_table": "en",
    "series": "the hidden technology of human power series",
    "work_slug": "the-reason-all-the-prophets-fasted",
-   "work_title": "The Reason All The Prophets Fasted",
    "editions": [
     {
      "asin": "B0H8MBM5CT",
      "format": "audiobook",
+     "published": "2026-07-14",
      "language": "en",
      "edition_id": "B0H8MBM5CT",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0GQQJW8QR",
      "format": "ebook",
+     "published": "2026-04-09",
      "language": "en",
      "edition_id": "B0GQQJW8QR",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0GWVSK66G",
      "format": "hardcover",
+     "published": "2026-04-11",
      "language": "en",
      "edition_id": "B0GWVSK66G",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0GWTF724Q",
      "format": "paperback",
+     "published": "2026-04-11",
      "language": "en",
      "edition_id": "B0GWTF724Q",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -4438,38 +4645,41 @@
    "language_in_table": "en",
    "series": "nag hammadi series",
    "work_slug": "the-secret-and-infancy-book-of-james",
-   "work_title": "THE SECRET & INFANCY BOOK OF JAMES",
    "editions": [
     {
      "asin": "B0GTBYSJBP",
      "format": "audiobook",
+     "published": "2026-07-11",
      "language": "en",
      "edition_id": "B0GTBYSJBP",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C5TXY6HH",
      "format": "ebook",
+     "published": "2023-05-20",
      "language": "en",
      "edition_id": "B0C5TXY6HH",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C6P2PXFJ",
      "format": "hardcover",
+     "published": "2023-06-01",
      "language": "en",
      "edition_id": "B0C6P2PXFJ",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C63VZSL9",
      "format": "paperback",
+     "published": "2023-05-25",
      "language": "en",
      "edition_id": "B0C63VZSL9",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -4481,38 +4691,41 @@
    "language_in_table": "en",
    "series": "codex tchacos early christian apocryphal",
    "work_slug": "the-secret-knowledge-of-adam",
-   "work_title": "The Secret Knowledge of Adam",
    "editions": [
     {
      "asin": "B0H85G82T1",
      "format": "audiobook",
+     "published": "2026-07-10",
      "language": "en",
      "edition_id": "B0H85G82T1",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0F3CXG33X",
      "format": "ebook",
+     "published": "2025-04-02",
      "language": "en",
      "edition_id": "B0F3CXG33X",
-     "cover": true,
+     "has_cover": true,
      "credit": null
     },
     {
      "asin": "B0F3JSWLZR",
      "format": "hardcover",
+     "published": "2025-04-03",
      "language": "en",
      "edition_id": "B0F3JSWLZR",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0F3HSLFPW",
      "format": "paperback",
+     "published": "2025-04-03",
      "language": "en",
      "edition_id": "B0F3HSLFPW",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -4524,38 +4737,41 @@
    "language_in_table": "en",
    "series": "nag hammadi series",
    "work_slug": "the-wisdom-of-jesus",
-   "work_title": "THE WISDOM OF JESUS",
    "editions": [
     {
      "asin": "B0FW5X2X7M",
      "format": "audiobook",
+     "published": "2026-07-11",
      "language": "en",
      "edition_id": "B0FW5X2X7M",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C6N2LZQZ",
      "format": "ebook",
+     "published": "2023-05-30",
      "language": "en",
      "edition_id": "B0C6N2LZQZ",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C6NZGJ5Y",
      "format": "hardcover",
+     "published": "2023-05-31",
      "language": "en",
      "edition_id": "B0C6NZGJ5Y",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C6P8D4CZ",
      "format": "paperback",
+     "published": "2023-05-31",
      "language": "en",
      "edition_id": "B0C6P8D4CZ",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -4567,22 +4783,23 @@
    "language_in_table": "en",
    "series": "forbidden mantra series",
    "work_slug": "the-yoga-sutras-of-patanjali",
-   "work_title": "The Yoga Sutras of Patanjali",
    "editions": [
     {
      "asin": "B0BY2XS8PR",
      "format": "ebook",
+     "published": "2023-03-10",
      "language": "en",
      "edition_id": "B0BY2XS8PR",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0DRD8934N",
      "format": "paperback",
+     "published": "2024-12-24",
      "language": "en",
      "edition_id": "B0DRD8934N",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -4594,30 +4811,32 @@
    "language_in_table": "en",
    "series": "the universal principles series",
    "work_slug": "timeless-reciprocity",
-   "work_title": "Timeless Reciprocity",
    "editions": [
     {
      "asin": "B0DN1MLYPK",
      "format": "ebook",
+     "published": "2024-11-14",
      "language": "en",
      "edition_id": "B0DN1MLYPK",
-     "cover": false,
+     "has_cover": false,
      "credit": "The Spiritual Philanthropist Rav..."
     },
     {
      "asin": "B0DNCWQQT1",
      "format": "hardcover",
+     "published": "2024-11-17",
      "language": "en",
      "edition_id": "B0DNCWQQT1",
-     "cover": false,
+     "has_cover": false,
      "credit": "The Spiritual Philanthropist Rav..."
     },
     {
      "asin": "B0DPPTH3D2",
      "format": "paperback",
+     "published": "2024-12-06",
      "language": "en",
      "edition_id": "B0DPPTH3D2",
-     "cover": false,
+     "has_cover": false,
      "credit": "The Spiritual Philanthropist Rav..."
     }
    ]
@@ -4629,22 +4848,23 @@
    "language_in_table": "en",
    "series": null,
    "work_slug": "truth-is-stranger-than-fiction",
-   "work_title": "Truth is Stranger Than Fiction",
    "editions": [
     {
      "asin": "B07TY5WQVH",
      "format": "ebook",
+     "published": "2019-07-06",
      "language": "en",
      "edition_id": "B07TY5WQVH",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "1078483299",
      "format": "paperback",
+     "published": "2019-07-07",
      "language": "en",
      "edition_id": "1078483299",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -4656,38 +4876,41 @@
    "language_in_table": "es",
    "series": "buddhist mantra series",
    "work_slug": "a-comprehensive-guide-on-the-avalokitesvara-mantra",
-   "work_title": "A Comprehensive Guide On The Avalokitesvara Mantra",
    "editions": [
     {
      "asin": "B0H8J8W9HW",
      "format": "audiobook",
+     "published": "2026-07-11",
      "language": "es",
      "edition_id": "B0H8J8W9HW",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0CXMPXWXR",
      "format": "ebook",
+     "published": "2024-12-04",
      "language": "es",
      "edition_id": "B0CXMPXWXR",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0DPQ34N5D",
      "format": "hardcover",
+     "published": "2024-12-06",
      "language": "es",
      "edition_id": "B0DPQ34N5D",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0DPRQYXTS",
      "format": "paperback",
+     "published": "2024-12-07",
      "language": "es",
      "edition_id": "B0DPRQYXTS",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -4699,38 +4922,41 @@
    "language_in_table": "en",
    "series": "nag hammadi series",
    "work_slug": "unknown-gospels",
-   "work_title": "UNKNOWN GOSPELS",
    "editions": [
     {
      "asin": "B0H854TZTT",
      "format": "audiobook",
+     "published": "2026-07-11",
      "language": "en",
      "edition_id": "B0H854TZTT",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C5V44LF7",
      "format": "ebook",
+     "published": "2023-05-21",
      "language": "en",
      "edition_id": "B0C5V44LF7",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C6BX92CW",
      "format": "hardcover",
+     "published": "2023-05-29",
      "language": "en",
      "edition_id": "B0C6BX92CW",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C5PGF3RF",
      "format": "paperback",
+     "published": "2023-05-21",
      "language": "en",
      "edition_id": "B0C5PGF3RF",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -4742,38 +4968,41 @@
    "language_in_table": "en",
    "series": "breath mastery series",
    "work_slug": "unleashing-the-inner-fire",
-   "work_title": "Unleashing the Inner Fire",
    "editions": [
     {
      "asin": "B0FTCH1N1Q",
      "format": "audiobook",
+     "published": "2026-07-11",
      "language": "en",
      "edition_id": "B0FTCH1N1Q",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C5ZZ9GHB",
      "format": "ebook",
+     "published": "2023-05-23",
      "language": "en",
      "edition_id": "B0C5ZZ9GHB",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C5YZVNPY",
      "format": "hardcover",
+     "published": "2023-05-23",
      "language": "en",
      "edition_id": "B0C5YZVNPY",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C5YQ7364",
      "format": "paperback",
+     "published": "2023-05-23",
      "language": "en",
      "edition_id": "B0C5YQ7364",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -4785,22 +5014,23 @@
    "language_in_table": "en",
    "series": "forbidden mantra series",
    "work_slug": "unlock-inner-peace-and-live-a-harmonious-life",
-   "work_title": "Unlock Inner Peace and Live a Harmonious Life",
    "editions": [
     {
      "asin": "B0BZLZS9DT",
      "format": "ebook",
+     "published": "2023-03-25",
      "language": "en",
      "edition_id": "B0BZLZS9DT",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0BZFGDRPK",
      "format": "paperback",
+     "published": "2023-03-28",
      "language": "en",
      "edition_id": "B0BZFGDRPK",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -4812,30 +5042,32 @@
    "language_in_table": "en",
    "series": "forbidden mantra series",
    "work_slug": "unlock-your-inner-beauty",
-   "work_title": "Unlock Your Inner Beauty",
    "editions": [
     {
      "asin": "B0D53ZP8BV",
      "format": "audiobook",
+     "published": "2026-07-11",
      "language": "en",
      "edition_id": "B0D53ZP8BV",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0BZT9RGJK",
      "format": "ebook",
+     "published": "2023-03-28",
      "language": "en",
      "edition_id": "B0BZT9RGJK",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0BZFP1VZT",
      "format": "paperback",
+     "published": "2023-03-29",
      "language": "en",
      "edition_id": "B0BZFP1VZT",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -4847,30 +5079,32 @@
    "language_in_table": "en",
    "series": "buddhist mantra series",
    "work_slug": "unlocking-the-power-of-the-shakyamuni-mantra",
-   "work_title": "Unlocking the Power of the Shakyamuni Mantra",
    "editions": [
     {
      "asin": "B0C2L38W4L",
      "format": "ebook",
+     "published": "2023-04-15",
      "language": "en",
      "edition_id": "B0C2L38W4L",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C1JBHYYX",
      "format": "hardcover",
+     "published": "2023-04-16",
      "language": "en",
      "edition_id": "B0C1JBHYYX",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C1JD322S",
      "format": "paperback",
+     "published": "2023-04-16",
      "language": "en",
      "edition_id": "B0C1JD322S",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -4882,38 +5116,41 @@
    "language_in_table": "en",
    "series": "forbidden tantra series",
    "work_slug": "unveiling-hidden-wisdom",
-   "work_title": "Unveiling Hidden Wisdom",
    "editions": [
     {
      "asin": "B0H84HVYP4",
      "format": "audiobook",
+     "published": "2026-07-10",
      "language": "en",
      "edition_id": "B0H84HVYP4",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C6HDZ56K",
      "format": "ebook",
+     "published": "2023-05-27",
      "language": "en",
      "edition_id": "B0C6HDZ56K",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C6BK224P",
      "format": "hardcover",
+     "published": "2023-05-28",
      "language": "en",
      "edition_id": "B0C6BK224P",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C6BYXT7F",
      "format": "paperback",
+     "published": "2023-05-28",
      "language": "en",
      "edition_id": "B0C6BYXT7F",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -4925,38 +5162,41 @@
    "language_in_table": "en",
    "series": "nag hammadi series",
    "work_slug": "unveiling-the-mysteries-of-the-gospel-of-peter",
-   "work_title": "Unveiling the Mysteries of The Gospel of Peter",
    "editions": [
     {
      "asin": "B0G7MPBL9G",
      "format": "audiobook",
+     "published": "2026-07-11",
      "language": "en",
      "edition_id": "B0G7MPBL9G",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C6JD11ZC",
      "format": "ebook",
+     "published": "2023-05-28",
      "language": "en",
      "edition_id": "B0C6JD11ZC",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C6BXY4Z4",
      "format": "hardcover",
+     "published": "2023-05-29",
      "language": "en",
      "edition_id": "B0C6BXY4Z4",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0C6BX91QW",
      "format": "paperback",
+     "published": "2023-05-29",
      "language": "en",
      "edition_id": "B0C6BX91QW",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -4968,22 +5208,23 @@
    "language_in_table": "en",
    "series": "hindu epic series",
    "work_slug": "weapons-of-the-gods",
-   "work_title": "Weapons of the Gods",
    "editions": [
     {
      "asin": "B0FCDBMM5T",
      "format": "ebook",
+     "published": "2025-06-10",
      "language": "en",
      "edition_id": "ed2",
-     "cover": true,
+     "has_cover": true,
      "credit": null
     },
     {
      "asin": "B0FCS3L34S",
      "format": "paperback",
+     "published": "2025-06-11",
      "language": "en",
      "edition_id": "B0FCS3L34S",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -4995,14 +5236,14 @@
    "language_in_table": "en",
    "series": null,
    "work_slug": "wildflower-coloring-book",
-   "work_title": "wildflower coloring book",
    "editions": [
     {
      "asin": "B0FDFRQ986",
      "format": "paperback",
+     "published": "2025-06-17",
      "language": "en",
      "edition_id": "B0FDFRQ986",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -5014,30 +5255,32 @@
    "language_in_table": "ru",
    "series": "nag hammadi series",
    "work_slug": "unveiling-the-mysteries-of-the-gospel-of-peter",
-   "work_title": "Unveiling the Mysteries of The Gospel of Peter",
    "editions": [
     {
      "asin": "B0CW1LH4KZ",
      "format": "ebook",
+     "published": "2024-12-19",
      "language": "ru",
      "edition_id": "B0CW1LH4KZ",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0DR6VH6J5",
      "format": "hardcover",
+     "published": "2024-12-22",
      "language": "ru",
      "edition_id": "B0DR6VH6J5",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     },
     {
      "asin": "B0DR5YND4R",
      "format": "paperback",
+     "published": "2024-12-21",
      "language": "ru",
      "edition_id": "B0DR5YND4R",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -5049,14 +5292,14 @@
    "language_in_table": "ar",
    "series": "nag hammadi series",
    "work_slug": "the-apocalypse-of-adam",
-   "work_title": "The Apocalypse of Adam",
    "editions": [
     {
      "asin": "B0CVW6HPZ7",
      "format": "ebook",
+     "published": "2024-02-18",
      "language": "ar",
      "edition_id": "B0CVW6HPZ7",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -5068,14 +5311,14 @@
    "language_in_table": "hi",
    "series": "nag hammadi series",
    "work_slug": "the-apocalypse-of-adam",
-   "work_title": "The Apocalypse of Adam",
    "editions": [
     {
      "asin": "B0H1KPFZS6",
      "format": "ebook",
+     "published": "2026-05-13",
      "language": "hi",
      "edition_id": "B0H1KPFZS6",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -5087,14 +5330,14 @@
    "language_in_table": "hi",
    "series": "nag hammadi series",
    "work_slug": "apocalypse-of-adam",
-   "work_title": "Apocalypse of Adam",
    "editions": [
     {
      "asin": "B0GYQ7MYRJ",
      "format": "ebook",
+     "published": "2026-05-13",
      "language": "hi",
      "edition_id": "B0GYQ7MYRJ",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -5106,14 +5349,14 @@
    "language_in_table": "hi",
    "series": "nag hammadi series",
    "work_slug": "the-apocalypse-of-adam",
-   "work_title": "The Apocalypse of Adam",
    "editions": [
     {
      "asin": "B0DR69Q4T4",
      "format": "ebook",
+     "published": "2024-12-21",
      "language": "hi",
      "edition_id": "B0DR69Q4T4",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -5125,14 +5368,14 @@
    "language_in_table": "hi",
    "series": null,
    "work_slug": "the-ancient-science-of-kundalini-energy-revealed",
-   "work_title": "The Ancient Science of Kundalini Energy Revealed",
    "editions": [
     {
      "asin": "B0GZQJ3BS3",
      "format": "ebook",
+     "published": "2026-05-06",
      "language": "hi",
      "edition_id": "B0GZQJ3BS3",
-     "cover": true,
+     "has_cover": true,
      "credit": null
     }
    ]
@@ -5144,14 +5387,14 @@
    "language_in_table": "hi",
    "series": "nag hammadi series",
    "work_slug": "gnostic-gospels-and-the-hidden-christ",
-   "work_title": "Gnostic Gospels and the Hidden Christ",
    "editions": [
     {
      "asin": "B0H44V6V4S",
      "format": "ebook",
+     "published": "2026-06-05",
      "language": "hi",
      "edition_id": "B0H44V6V4S",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -5163,14 +5406,14 @@
    "language_in_table": "hi",
    "series": "the sacred hanuman series",
    "work_slug": "bajrang-baan-hanuman-sadhana-hindi",
-   "work_title": "बजरंग बाण एवं हनुमान साधना",
    "editions": [
     {
      "asin": "B0H9XKBQFB",
      "format": "ebook",
+     "published": "2026-07-22",
      "language": "hi",
      "edition_id": "B0H9XKBQFB",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -5182,14 +5425,14 @@
    "language_in_table": "hi",
    "series": "the hidden technology of human power series",
    "work_slug": "the-hidden-doctrine-of-mo-pai",
-   "work_title": "The Hidden Doctrine of Mo Pai",
    "editions": [
     {
      "asin": "B0H1KQ5F78",
      "format": "ebook",
+     "published": "2026-05-13",
      "language": "hi",
      "edition_id": "B0H1KQ5F78",
-     "cover": false,
+     "has_cover": false,
      "credit": "Emily K Patel"
     }
    ]
@@ -5201,22 +5444,23 @@
    "language_in_table": "hi",
    "series": "the hidden technology of human power series",
    "work_slug": "mo-pai-the-destructive-and-healing-force-within",
-   "work_title": "Mo Pai: The Destructive and Healing Force Within",
    "editions": [
     {
      "asin": "B0H8MHZPR5",
      "format": "audiobook",
+     "published": "2026-07-12",
      "language": "hi",
      "edition_id": "B0H8MHZPR5",
-     "cover": false,
+     "has_cover": false,
      "credit": "Emily K Patel"
     },
     {
      "asin": "B0H1L2FDQH",
      "format": "ebook",
+     "published": "2026-05-13",
      "language": "hi",
      "edition_id": "B0H1L2FDQH",
-     "cover": false,
+     "has_cover": false,
      "credit": "Emily K Patel"
     }
    ]
@@ -5228,14 +5472,14 @@
    "language_in_table": "hi",
    "series": "lakshmi mantra series",
    "work_slug": "shri-kanakadhara-stotram-hindi",
-   "work_title": "श्री कनकधारा स्तोत्रम्",
    "editions": [
     {
      "asin": "B0H9XT6Y2Z",
      "format": "ebook",
+     "published": "2026-07-22",
      "language": "hi",
      "edition_id": "B0H9XT6Y2Z",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -5247,14 +5491,14 @@
    "language_in_table": "hi",
    "series": "lakshmi mantra series",
    "work_slug": "shri-lakshmi-mantraratnavali-hindi",
-   "work_title": "श्री लक्ष्मी मन्त्ररत्नावली",
    "editions": [
     {
      "asin": "B0H78CYMLQ",
      "format": "ebook",
+     "published": "2026-07-01",
      "language": "hi",
      "edition_id": "B0H78CYMLQ",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -5266,14 +5510,14 @@
    "language_in_table": "ta",
    "series": "nag hammadi series",
    "work_slug": "the-apocalypse-of-adam",
-   "work_title": "The Apocalypse of Adam",
    "editions": [
     {
      "asin": "B0DR7FXC4K",
      "format": "ebook",
+     "published": "2024-12-22",
      "language": "ta",
      "edition_id": "B0DR7FXC4K",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]
@@ -5285,14 +5529,14 @@
    "language_in_table": "zh",
    "series": "nag hammadi series",
    "work_slug": "the-apocalypse-of-adam",
-   "work_title": "The Apocalypse of Adam",
    "editions": [
     {
      "asin": "B0DR69B37P",
      "format": "ebook",
+     "published": "2024-12-21",
      "language": "zh",
      "edition_id": "B0DR69B37P",
-     "cover": false,
+     "has_cover": false,
      "credit": null
     }
    ]

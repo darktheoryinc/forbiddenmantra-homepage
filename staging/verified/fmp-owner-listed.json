@@ -9075,11 +9075,12 @@
       ],
       "claims": [],
       "subjects": [
-        "personal-growth"
+        "christian-mysticism"
       ],
-      "tradition": [],
+      "tradition": [
+        "christian"
+      ],
       "reviewFlags": [
-        "department assigned from the title; confirm",
         "listed in the owner's own bookstore catalogue; ASINs, formats and dates come from that table (prices and Amazon cover URLs were not stored)"
       ]
     },
@@ -9687,8 +9688,7 @@
             }
           ],
           "publisher": "Forbidden Mantra Press",
-          "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
-          "id": "ed1"
+          "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line"
         },
         {
           "format": "hardcover",
@@ -9765,7 +9765,8 @@
       ],
       "series": {
         "name": "The Physics of Siddhis"
-      }
+      },
+      "slug": "siddhis-the-non-locality-of-consciousness"
     },
     {
       "title": "The Acts of Peter and the Twelve Apostles",
@@ -10035,7 +10036,8 @@
           "title": "कुंडलिनी ऊर्जा के प्राचीन विज्ञान का रहस्योद्घाटन",
           "subtitle": "यौन ऊर्जा और मानसिक क्षमताओं पर महारत हासिल करना",
           "publisher": "Forbidden Mantra Press",
-          "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line"
+          "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+          "id": "B0GZQJ3BS3"
         }
       ],
       "sources": [
@@ -10891,7 +10893,8 @@
           ],
           "publisher": "Forbidden Mantra Press",
           "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
-          "credit": "TSPRavshiva The Spiritual Phila..."
+          "credit": "TSPRavshiva The Spiritual Phila...",
+          "id": "B0F39GJ9F8"
         },
         {
           "format": "paperback",
@@ -11300,7 +11303,8 @@
             }
           ],
           "publisher": "Forbidden Mantra Press",
-          "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line"
+          "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+          "id": "B0FFLZ4V48"
         },
         {
           "format": "hardcover",
@@ -11627,7 +11631,8 @@
             }
           ],
           "publisher": "Forbidden Mantra Press",
-          "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line"
+          "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+          "id": "B0F2GSPKX7"
         },
         {
           "format": "hardcover",
@@ -12444,7 +12449,8 @@
             }
           ],
           "publisher": "Forbidden Mantra Press",
-          "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line"
+          "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+          "id": "B0GCC4NP56"
         },
         {
           "format": "hardcover",
@@ -13530,7 +13536,8 @@
             }
           ],
           "publisher": "Forbidden Mantra Press",
-          "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line"
+          "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+          "id": "B0GH6P31CM"
         },
         {
           "format": "hardcover",
@@ -14168,7 +14175,8 @@
             }
           ],
           "publisher": "Forbidden Mantra Press",
-          "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line"
+          "publisherBasis": "owner-supplied: the listing evidence does not show a publisher line",
+          "id": "B0F3CXG33X"
         },
         {
           "format": "hardcover",

@@ -2757,6 +2757,93 @@
           "h": 720
         }
       }
+    },
+    {
+      "work": "the-physics-of-siddhis",
+      "edition": "B0GH6P31CM",
+      "source": {
+        "type": "owner-supplied",
+        "description": "Owner's Google Drive file 'The Physics of Siddhis book 2.jpeg'"
+      },
+      "rights": {
+        "basis": "Forbidden Mantra Press owner confirmed (2026-10-28) that all original Forbidden Mantra Press artwork is his and authorized for commercial use",
+        "confirmedBy": "Forbidden Mantra Press owner",
+        "confirmedOn": "2026-10-28"
+      },
+      "matchEvidence": "Cover reads 'The Physics of Siddhis: Perception Across Time', TSPRavshiva; exact match to the owner's catalogue record; assigned to the ebook edition",
+      "file": "assets-src/covers/the-physics-of-siddhis__B0GH6P31CM.jpeg",
+      "original": [
+        800,
+        1200
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 360
+        },
+        "480": {
+          "w": 480,
+          "h": 720
+        }
+      }
+    },
+    {
+      "work": "siddhis-the-non-locality-of-consciousness",
+      "edition": "B0GFXRQLK6",
+      "source": {
+        "type": "owner-supplied",
+        "description": "Owner's Google Drive file 'siddhis book 1.jpeg'"
+      },
+      "rights": {
+        "basis": "Forbidden Mantra Press owner confirmed (2026-10-28) that all original Forbidden Mantra Press artwork is his and authorized for commercial use",
+        "confirmedBy": "Forbidden Mantra Press owner",
+        "confirmedOn": "2026-10-28"
+      },
+      "matchEvidence": "Cover reads 'The Physics of Siddhis: Non-Locality of Consciousness', TSPRavshiva (the catalogue title is 'Siddhis: The Non-Locality of Consciousness'); same series and author, so the cover is for this record; assigned to the ebook edition; title wording to confirm",
+      "file": "assets-src/covers/siddhis-the-non-locality-of-consciousness__B0GFXRQLK6.jpeg",
+      "original": [
+        800,
+        1200
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 360
+        },
+        "480": {
+          "w": 480,
+          "h": 720
+        }
+      }
+    },
+    {
+      "work": "the-coven-and-the-yogi-eclipse-of-the-heart-chakra",
+      "edition": "B0FFLZ4V48",
+      "source": {
+        "type": "owner-supplied",
+        "description": "Owner's Google Drive file book2thecovenandtheyogi.png"
+      },
+      "rights": {
+        "basis": "Forbidden Mantra Press owner confirmed (2026-10-28) that all original Forbidden Mantra Press artwork is his and authorized for commercial use",
+        "confirmedBy": "Forbidden Mantra Press owner",
+        "confirmedOn": "2026-10-28"
+      },
+      "matchEvidence": "Cover reads 'The Coven and The Yogi: Eclipse of the Heart Chakra, Book Two in Asanas & Alchemy Series, Emily K. Patel'; exact match to the owner's catalogue record; assigned to the ebook edition",
+      "file": "assets-src/covers/the-coven-and-the-yogi-eclipse-of-the-heart-chakra__B0FFLZ4V48.png",
+      "original": [
+        1024,
+        1536
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 360
+        },
+        "480": {
+          "w": 480,
+          "h": 720
+        }
+      }
     }
   ]
 }
