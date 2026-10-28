@@ -802,7 +802,7 @@ for (const w of cat.works) {
     title: w.title + (w.subtitle ? `: ${w.subtitle}` : ''), desc: descOf(w).split('. ')[0] + '.', crumbs: [['All books', 'books/'], [w.title]],
     jsonld: { '@context': 'https://schema.org', '@type': 'Book', name: w.title, author: w.authors.map((n) => ({ '@type': 'Person', name: n })), inLanguage: [...new Set(w.editions.map((e) => e.language))], workExample: w.editions.map((e) => jsonLdEd(w, e)) },
     body: () => `<article class="band"><div class="wrap book">
-  <div class="book-cover">${cover(w, true)}</div>
+  <div class="book-cover">${cover(w, true)}${(() => { const ce = coverOfWork.get(w.slug); if (!ce) return ''; const same = w.editions.filter((e) => e.id !== ce.edition.id); return `<p class="cover-note" lang="en">Cover of the ${esc(LANG.get(ce.edition.language)?.name ?? ce.edition.language)} ${esc(ce.edition.format)} edition${same.length ? '; other editions may use different artwork.' : '.'}</p>`; })()}</div>
   <div class="book-main">
     ${w.press ? '<span class="badge badge-fmp">Forbidden Mantra Press</span>' : ''}
     <h1>${esc(w.title)}</h1>${w.subtitle ? `<p class="subtitle">${esc(w.subtitle)}</p>` : ''}

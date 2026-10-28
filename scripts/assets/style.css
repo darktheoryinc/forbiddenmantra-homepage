@@ -478,3 +478,4 @@ a.io-tile-img:hover,a.io-tile-img:focus-visible{outline:3px solid #fff;outline-o
 [data-home="fmp"] .grid .badge-fmp{display:none}
 .grid .badge-tag{font-size:8.5px;letter-spacing:.06em;padding:2px 5px;margin-bottom:3px;align-self:flex-start;white-space:nowrap}
 .grid .badge-tag+.badge-fmp{display:none}
+.cover-note{font-size:13px;color:var(--muted);margin:8px 0 0;line-height:1.4}
