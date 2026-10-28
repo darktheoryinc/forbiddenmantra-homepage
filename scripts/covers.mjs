@@ -43,7 +43,20 @@ export function loadCovers({ allowFixture = !!process.env.FM_COVERS_ALLOW_FIXTUR
     for (const wdt of [240, 480]) { const f = path.join(p.opt, `${key}-${wdt}.webp`); if (wdt === 240 && !fs.existsSync(f)) err(`optimised file ${key}-240.webp is missing`); }
     if (!errors.some((x) => x.startsWith(id + ':'))) entries.push({ ...c, key, work: w, edition: e, has480: fs.existsSync(path.join(p.opt, `${key}-480.webp`)) });
   }
-  return { errors, entries };
+  // display-only reuse of confirmed identical front artwork (data/cover-reuse.json beside the manifest)
+  const reuse = [], rp = path.join(path.dirname(p.manifest), 'cover-reuse.json');
+  if (fs.existsSync(rp)) for (const u of readJSON(rp).reuse ?? []) {
+    const id = `reuse ${u.work}/${u.to}`, err = (x) => errors.push(`${id}: ${x}`);
+    const w = works.get(u.work), to = w?.editions.find((x) => x.id === u.to), from = w?.editions.find((x) => x.id === u.from), src = entries.find((c) => c.work.slug === u.work && c.edition.id === u.from);
+    if (!w || !to || !from) { err('no such work/edition'); continue; }
+    if (!src) { err('the source edition has no published cover'); continue; }
+    if (to.language !== from.language) { err('a translation must not reuse another language\'s cover'); continue; }
+    if (to.format === 'audiobook' || from.format === 'audiobook') { err('audiobook covers (square) never share artwork with other formats'); continue; }
+    if (!u.evidence || !u.confirmedBy || !/^\d{4}-\d{2}-\d{2}$/.test(u.confirmedOn ?? '')) { err('evidence, confirmedBy and confirmedOn are required'); continue; }
+    if (entries.some((c) => c.work.slug === u.work && c.edition.id === u.to)) { err('this edition has its own cover; reuse is not needed'); continue; }
+    reuse.push({ ...u, work: w, edition: to, source: src });
+  }
+  return { errors, entries, reuse };
 }
 
 function editionRows() {
