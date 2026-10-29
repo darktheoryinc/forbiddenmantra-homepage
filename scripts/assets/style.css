@@ -553,3 +553,7 @@ a.io-tile-img:hover,a.io-tile-img:focus-visible{outline:3px solid #fff;outline-o
 .ask-more{margin-top:10px}
 @media(max-width:1000px){.ask-results{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:620px){.ask-bar{padding:10px;gap:10px}.ask-face{width:44px;height:44px}.ask-h{font-size:12.5px}.ask-btn{padding:0 14px;min-width:64px}.ask-results{grid-template-columns:1fr}.ask-input{font-size:16px}}
+
+p[data-grid-note]{margin:10px 0 0;font-size:12.5px;color:var(--muted)}
+.cover-buy:focus-visible{outline:3px solid #D8B46B;outline-offset:2px}
+.book-cover-link{display:block}

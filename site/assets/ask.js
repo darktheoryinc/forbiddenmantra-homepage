@@ -182,7 +182,7 @@
     var a = h('p', { 'class': 'ask-by' }); o.authors.forEach(function (n, i) { if (i) a.appendChild(doc.createTextNode(', ')); a.appendChild(h('a', { href: authorHref(o, i) }, [n])); });
     var fm = Object.keys(o.fmts).map(fmtLabel).join(' · '), lg = Object.keys(o.langs).map(langLabel).join(', ');
     return h('li', { 'class': 'ask-card' }, [
-      h('a', { 'class': 'ask-cv', href: bookHref(o), tabindex: '-1', 'aria-hidden': 'true' }, [coverEl(o)]),
+      (o.cv && o.cv[4] ? h('a', { 'class': 'ask-cv cover-buy', href: o.cv[4], target: '_blank', rel: 'sponsored noopener noreferrer', 'data-track': 'buy', 'data-work': o.slug, 'aria-label': 'Buy ' + o.title + ' on Amazon (affiliate link, opens in a new tab)' }, [coverEl(o)]) : h('a', { 'class': 'ask-cv', href: bookHref(o), tabindex: '-1', 'aria-hidden': 'true' }, [coverEl(o)])),
       h('div', { 'class': 'ask-tx' }, [
         o.press ? h('span', { 'class': 'badge badge-fmp' }, ['Forbidden Mantra Press']) : null,
         h('p', { 'class': 'ask-t' }, [h('a', { href: bookHref(o) }, [o.title])]), a,

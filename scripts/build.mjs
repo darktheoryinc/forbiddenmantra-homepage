@@ -170,7 +170,7 @@ for (const c of COVERS.entries) coverOfEdition.set(`${c.work.slug}/${c.edition.i
 const reuseOfWork = new Map(); // works whose confirmed identical front artwork is also shown for other editions (display only)
 for (const r of COVERS.reuse ?? []) { const a = reuseOfWork.get(r.work.slug) ?? []; a.push(r.edition.format); reuseOfWork.set(r.work.slug, a); }
 for (const w of cat.works) { const c = w.editions.map((e) => coverOfEdition.get(`${w.slug}/${e.id}`)).find(Boolean); if (c) coverOfWork.set(w.slug, c); }
-const coverRec = (c) => (c ? [c.key, c.sizes?.[240]?.w ?? 240, c.sizes?.[240]?.h ?? 360, c.has480 ? 1 : 0] : 0);
+const coverRec = (c, w = null) => { if (!c) return 0; const rec = [c.key, c.sizes?.[240]?.w ?? 240, c.sizes?.[240]?.h ?? 360, c.has480 ? 1 : 0]; const b = w ? coverBuy(w, c) : null; if (b) rec.push(b.url); return rec; }; // 5th element: the tagged Amazon page of the cover's edition
 const NETWORK = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/network.json'), 'utf8')).sites;
 const NICHES = fs.existsSync(path.join(ROOT, DATA, 'niches.json')) ? JSON.parse(fs.readFileSync(path.join(ROOT, DATA, 'niches.json'), 'utf8')).niches : [];
 const nicheById = new Map(NICHES.map((n) => [n.id, n]));
@@ -240,6 +240,19 @@ function retailers(work, ed, { log = true } = {}) {
 
 // ---------- components ----------
 function hashHue(s) { let h = 0; for (const c of s) h = (h * 31 + c.charCodeAt(0)) >>> 0; return h % 360; }
+// A real cover links to the matching Amazon product page with our tracking ID: the cover's own edition first, else another edition of the same work.
+function coverBuy(w, entry) {
+  if (!entry || w.purchasable === false) return null;
+  for (const ed of [w.editions.find((e) => e.id === entry.edition.id), ...w.editions].filter(Boolean)) {
+    const r = retailers(w, ed, { log: false }).find((x) => x.affiliate && x.market === 'amazon.com');
+    if (r) return { url: r.url, asin: ed.asin ?? '', kind: r.kind, own: ed.id === entry.edition.id };
+  }
+  return null;
+}
+const coverAnchor = (w, title, inner, cls) => {
+  const b = coverBuy(w, coverOfWork.get(w.slug));
+  return b ? `<a class="${cls} cover-buy" href="${esc(b.url)}" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="${esc(w.slug)}"${b.asin ? ` data-asin="${esc(b.asin)}"` : ''} aria-label="${esc(`Buy ${title} on Amazon (affiliate link, opens in a new tab)`)}">${inner}</a>` : null;
+};
 function cover(w, big = false, title = w.title, entry = coverOfWork.get(w.slug)) {
   if (entry) {
     const k = entry.key, w240 = entry.sizes?.[240]?.w ?? 240, h240 = entry.sizes?.[240]?.h ?? 360, base = `${ROOT_PREFIX}assets/covers/${k}`;
@@ -276,7 +289,7 @@ function card(w, ctxLang = null, hl = 'h3', slim = false, buy = false, tag = nul
   const dataEd = w.editions.map((e) => ({ l: edLangs(e), f: e.format, t: e.title ?? '' }));
   const link = bookHref(w, ctxLang);
   return `<article class="card"${slim ? '' : ` data-title="${esc(w.title.toLowerCase())}" data-search="${esc(searchBlob(w))}" data-subjects="${w.subjects.join(' ')}" data-hubs="${[...new Set(w.subjects.flatMap((s) => dept.get(s).hubs))].join(' ')}" data-tradition="${(w.tradition ?? []).join(' ')}" data-level="${w.level}" data-press="${w.press ? 'fmp' : 'outside'}" data-author="${w.authors.map((a) => a.toLowerCase()).join(' ')}" data-ed="${esc(JSON.stringify(dataEd))}"${ctxLang ? ` data-ctx="${ctxLang}"` : ''} data-slug="${w.slug}" data-wtitle="${esc(w.title)}"`}>
-  <a class="card-cover" href="${link}" tabindex="-1" aria-hidden="true">${cover(w, false, t)}</a>
+  ${(coverOfWork.has(w.slug) && coverAnchor(w, t, cover(w, false, t), 'card-cover')) || `<a class="card-cover" href="${link}" tabindex="-1" aria-hidden="true">${cover(w, false, t)}</a>`}
   <div class="card-body">
     ${tag ? `<span class="badge badge-tag">${esc(tag)}</span>` : ''}${w.press ? '<span class="badge badge-fmp">Forbidden Mantra Press</span>' : ''}
     <${hl} class="card-title"><a href="${link}" title="${esc(t)}"${t !== w.title ? ` lang="${ctxLang}"` : ''}>${esc(t)}</a></${hl}>
@@ -288,10 +301,11 @@ function card(w, ctxLang = null, hl = 'h3', slim = false, buy = false, tag = nul
 </article>`;
 }
 // paged: this grid shows one static page of a longer list. The filter bar then works from the lazy-loaded chunk index (see app.js), not from these cards.
-const grid = (works, { filterable = true, ctxLang = null, hl = 'h3', paged = null, buy = false, tag = null } = {}) => paged
+const gridNote = (works, buy) => (!buy && works.some((w) => coverOfWork.has(w.slug) && coverBuy(w, coverOfWork.get(w.slug))) ? `<p class="disclosure sm" data-grid-note lang="en">${esc(cfg.disclosure.split('. ')[0])}. Book covers on this page link to Amazon (affiliate links).</p>` : '');
+const grid = (works, { filterable = true, ctxLang = null, hl = 'h3', paged = null, buy = false, tag = null } = {}) => gridNote(works, buy) + (paged
   ? `<div class="grid" data-index-grid data-shards="${paged.shards.join(' ')}" data-scope='${esc(JSON.stringify(paged.scope))}' data-total="${paged.total}" data-per="${BUILD.pageSize}" data-root="${ROOT_PREFIX}"${ctxLang ? ` data-ctx="${ctxLang}"` : ''} data-hl="${hl}">${works.map((w) => card(w, ctxLang, hl, true)).join('')}</div>
 <div class="grid" data-results hidden></div><p class="more" data-more-wrap hidden><button type="button" class="btn btn-ghost" data-more data-i18n="show_more">${esc(en.show_more)}</button></p>`
-  : `<div class="grid" ${filterable ? 'data-filterable' : ''}>${works.map((w) => card(w, ctxLang, hl, false, buy, tag ? tag(w) : null)).join('')}</div>`;
+  : `<div class="grid" ${filterable ? 'data-filterable' : ''}>${works.map((w) => card(w, ctxLang, hl, false, buy, tag ? tag(w) : null)).join('')}</div>`);
 function pager(rel, p, n) {
   if (n < 2) return '';
   const u = (k) => href(k === 1 ? rel : `${rel}page/${k}/`);
@@ -478,7 +492,7 @@ const featuredForHub = (hubId, n = 4, exclude = new Set()) => {
 const LANGBOOKS = Object.fromEntries(stocked.map((l) => {
   const pool = cat.works.filter((w) => w.editions.some((e) => edLangs(e).includes(l.code)));
   const top = pickFeatured(pool, 8, false);
-  return [l.code, { n: nEds(l.code), works: nWorks(l.code), href: `languages/${l.code}/index.html`, books: top.map((w) => { const e = w.editions.find((x) => edLangs(x).includes(l.code)); return { s: w.slug, t: e?.title || w.title, a: w.authors.join(', '), p: w.press ? 1 : 0, h: (isDyn(w) ? `book/index.html?s=${encodeURIComponent(w.slug)}` : `books/${w.slug}/index.html`) + `#lang-${l.code}`, c: w.subjects[0], v: coverRec(coverOfEdition.get(`${w.slug}/${e.id}`)) }; }) }];
+  return [l.code, { n: nEds(l.code), works: nWorks(l.code), href: `languages/${l.code}/index.html`, books: top.map((w) => { const e = w.editions.find((x) => edLangs(x).includes(l.code)); return { s: w.slug, t: e?.title || w.title, a: w.authors.join(', '), p: w.press ? 1 : 0, h: (isDyn(w) ? `book/index.html?s=${encodeURIComponent(w.slug)}` : `books/${w.slug}/index.html`) + `#lang-${l.code}`, c: w.subjects[0], v: coverRec(coverOfEdition.get(`${w.slug}/${e.id}`), w) }; }) }];
 }));
 const fmpWorks = cat.works.filter((w) => w.press === 'fmp');
 const HL = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/highlights.json'), 'utf8'));
@@ -811,7 +825,7 @@ for (const w of cat.works) {
     title: w.title + (w.subtitle ? `: ${w.subtitle}` : ''), desc: descOf(w).split('. ')[0] + '.', crumbs: [['All books', 'books/'], [w.title]],
     jsonld: { '@context': 'https://schema.org', '@type': 'Book', name: w.title, author: w.authors.map((n) => ({ '@type': 'Person', name: n })), inLanguage: [...new Set(w.editions.map((e) => e.language))], workExample: w.editions.map((e) => jsonLdEd(w, e)) },
     body: () => `<article class="band"><div class="wrap book">
-  <div class="book-cover">${cover(w, true)}${(() => { const ce = coverOfWork.get(w.slug); if (!ce) return ''; const same = w.editions.filter((e) => e.id !== ce.edition.id), ru = [...new Set(reuseOfWork.get(w.slug) ?? [])]; return `<p class="cover-note" lang="en">Cover of the ${esc(LANG.get(ce.edition.language)?.name ?? ce.edition.language)} ${esc(ce.edition.format)} edition${ru.length ? `; the owner confirms the same front artwork is used for the ${esc(ru.join(' and '))} edition${ru.length > 1 ? 's' : ''}` : ''}${same.length > ru.length ? '; other editions may use different artwork.' : '.'}</p>`; })()}</div>
+  <div class="book-cover">${(coverOfWork.has(w.slug) && coverAnchor(w, w.title, cover(w, true), 'book-cover-link')) || cover(w, true)}${(() => { const ce = coverOfWork.get(w.slug); if (!ce) return ''; const same = w.editions.filter((e) => e.id !== ce.edition.id), ru = [...new Set(reuseOfWork.get(w.slug) ?? [])]; return `<p class="cover-note" lang="en">Cover of the ${esc(LANG.get(ce.edition.language)?.name ?? ce.edition.language)} ${esc(ce.edition.format)} edition${ru.length ? `; the owner confirms the same front artwork is used for the ${esc(ru.join(' and '))} edition${ru.length > 1 ? 's' : ''}` : ''}${same.length > ru.length ? '; other editions may use different artwork.' : '.'}</p>`; })()}</div>
   <div class="book-main">
     ${w.press ? '<span class="badge badge-fmp">Forbidden Mantra Press</span>' : ''}
     <h1>${esc(w.title)}</h1>${w.placeholder ? `<p class="placeholder-note" role="note" lang="en"><strong>Unverified placeholder.</strong> ${esc(w.placeholderNote ?? 'No publication has been verified for this entry.')}</p>` : ''}${w.subtitle ? `<p class="subtitle">${esc(w.subtitle)}</p>` : ''}
@@ -858,7 +872,7 @@ function dynPayload(w) {
       b: retailers(w, e).map((r) => [r.label, r.url, r.affiliate ? 1 : 0, r.market ?? '', r.status, r.library ? 1 : 0, r.kind]), s: (e.sources ?? []).map((x) => [x.label, x.url, x.accessed, x.supports ?? '']) })) };
 }
 const recOf = (w) => [w.slug, w.title, w.subtitle ?? '', w.authors.join(';'), w.authors.map((n) => (authorPage.has(slugify(n)) ? 1 : 0)).join(''), w.subjects.map((x) => dIx.get(x)), (w.tradition ?? []).map((x) => tIx.get(x)),
-  vIx.get(w.level), w.press ? 1 : 0, w.editions.map((e) => [edLangs(e).map((c) => lIx.get(c)), fIx.get(e.format), e.title ?? '']), qxOf(w), isDyn(w) ? 1 : 0, w.series?.name ? [w.series.name, w.series.number ?? 0] : 0, coverRec(coverOfWork.get(w.slug))];
+  vIx.get(w.level), w.press ? 1 : 0, w.editions.map((e) => [edLangs(e).map((c) => lIx.get(c)), fIx.get(e.format), e.title ?? '']), qxOf(w), isDyn(w) ? 1 : 0, w.series?.name ? [w.series.name, w.series.number ?? 0] : 0, coverRec(coverOfWork.get(w.slug), w)];
 const fnv = (x) => { let h = 0x811c9dc5; for (let i = 0; i < x.length; i++) { h ^= x.charCodeAt(i); h = Math.imul(h, 0x01000193) >>> 0; } return h; };
 const nDyn = cat.works.filter(isDyn).length, DYN_SHARDS = Math.max(1, Math.min(256, Math.ceil(nDyn / BUILD.dynShardTarget)));
 const dynShard = (slug) => (fnv(slug) % DYN_SHARDS).toString(16).padStart(2, '0');

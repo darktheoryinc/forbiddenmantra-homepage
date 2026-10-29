@@ -62,7 +62,7 @@
     wrap.appendChild(head); wrap.appendChild(h('p', { 'class': 'lede-sm' }, [tr('lang_home_note', { lang: name })]));
     var grid = h('div', { 'class': 'grid' }, L.books.map(function (b) {
       return h('article', { 'class': 'card' }, [
-        h('a', { 'class': 'card-cover', href: './' + b.h, tabindex: '-1', 'aria-hidden': 'true' }, [coverEl(b.t, b.a.split(', ')[0], !!b.p, false, b.v || null, './')]),
+        coverLink(b.v || null, b.t, b.s, coverEl(b.t, b.a.split(', ')[0], !!b.p, false, b.v || null, './'), './' + b.h),
         h('div', { 'class': 'card-body' }, [b.p ? h('span', { 'class': 'badge badge-fmp' }, ['Forbidden Mantra Press']) : null,
           h('h3', { 'class': 'card-title' }, [h('a', { href: './' + b.h, lang: ui }, [b.t])]), h('p', { 'class': 'card-author' }, [b.a]), h('p', { 'class': 'card-meta' }, [name])])]);
     }));
@@ -203,6 +203,11 @@
     if (cv) { var base = (root || './') + 'assets/covers/' + cv[0]; return h('div', { 'class': 'cover cover-photo' + (big ? ' cover-lg' : '') + (press ? ' cover-fmp' : '') }, [h('img', { src: base + '-240.webp', srcset: cv[3] ? base + '-240.webp 240w, ' + base + '-480.webp 480w' : null, sizes: cv[3] ? (big ? '300px' : '(max-width:760px) 45vw, 240px') : null, width: cv[1], height: cv[2], alt: 'Cover of ' + title + ' by ' + author, loading: 'lazy', decoding: 'async' })]); }
     return h('div', { 'class': 'cover' + (big ? ' cover-lg' : '') + (press ? ' cover-fmp' : ''), style: '--h:' + (press ? 38 : hue(title)), role: 'img', 'aria-label': 'Placeholder cover for ' + title + '. Official cover art is shown only where a permitted source is connected.' }, [h('span', { 'class': 'cover-title' }, [title]), h('span', { 'class': 'cover-author' }, [author])]);
   }
+  // A real cover links to the Amazon page of its edition (tagged URL travels in cv[4]); anything else keeps the book-page link.
+  function coverLink(cv, title, slug, inner, href, cls) {
+    if (cv && cv[4]) return h('a', { 'class': (cls || 'card-cover') + ' cover-buy', href: cv[4], target: '_blank', rel: 'sponsored noopener noreferrer', 'data-track': 'buy', 'data-work': slug || null, 'aria-label': 'Buy ' + title + ' on Amazon (affiliate link, opens in a new tab)' }, [inner]);
+    return cls ? inner : h('a', { 'class': 'card-cover', href: href, tabindex: '-1', 'aria-hidden': 'true' }, [inner]);
+  }
   var MANIFEST = null;
   function loadManifest(root) { return MANIFEST ? Promise.resolve(MANIFEST) : loadScript(root + 'assets/idx/manifest.js').then(function () { window.FM_IDX = window.FM_IDX || {}; return (MANIFEST = window.FM_MANIFEST); }); }
   function loadChunk(root, c) { return window.FM_IDX && window.FM_IDX[c] ? Promise.resolve() : loadScript(root + 'assets/idx/' + c + '.js'); }
@@ -320,7 +325,7 @@
       var link = (o.dyn ? root + 'book/index.html?s=' + encodeURIComponent(o.slug) : root + 'books/' + o.slug + '/index.html') + (eff ? '#lang-' + eff : '');
       var au = []; o.authors.forEach(function (n, i) { if (i) au.push(', '); au.push(authorLink(M, root, o, i)); });
       return h('article', { 'class': 'card' }, [
-        h('a', { 'class': 'card-cover', href: link, tabindex: '-1', 'aria-hidden': 'true' }, [coverEl(title, o.authors[0], o.press === 'fmp', false, o.cv, root)]),
+        coverLink(o.cv, title, o.slug, coverEl(title, o.authors[0], o.press === 'fmp', false, o.cv, root), link),
         h('div', { 'class': 'card-body' }, [
           o.press === 'fmp' ? h('span', { 'class': 'badge badge-fmp' }, ['Forbidden Mantra Press']) : null,
           h(hl, { 'class': 'card-title' }, [h('a', { href: link, lang: alt ? eff : null }, [title])]),
@@ -411,7 +416,7 @@
       });
       wrap.textContent = '';
       wrap.appendChild(h('div', { 'class': 'book' }, [
-        h('div', { 'class': 'book-cover' }, [coverEl(o.title, o.authors[0], o.press === 'fmp', true, r[13] || null, root)]),
+        h('div', { 'class': 'book-cover' }, [coverLink(r[13] || null, o.title, o.slug, coverEl(o.title, o.authors[0], o.press === 'fmp', true, r[13] || null, root), '', 'book-cover-link')]),
         h('div', { 'class': 'book-main' }, [
           h('h1', {}, [o.title]), o.sub ? h('p', { 'class': 'subtitle' }, [o.sub]) : null, h('p', { 'class': 'byline' }, ['by '].concat(au)),
           o.ser ? h('p', { 'class': 'series' }, [(o.ser[1] ? 'Book ' + o.ser[1] + ' of ' : 'Part of ') + o.ser[0]]) : null,
