@@ -2873,6 +2873,35 @@
           "h": 734
         }
       }
+    },
+    {
+      "work": "unleashing-the-inner-fire",
+      "edition": "B0C5ZZ9GHB",
+      "source": {
+        "type": "owner-supplied",
+        "description": "Owner's Wix Media Manager file 'Screenshot 2025-05-13 ... Unleashing the Inner Fire' (the owner's own Kindle listing cover, 292x466)"
+      },
+      "rights": {
+        "basis": "Forbidden Mantra Press owner confirmed (2026-10-28) that all original Forbidden Mantra Press artwork is his and authorized for commercial use",
+        "confirmedBy": "Forbidden Mantra Press owner",
+        "confirmedOn": "2026-10-29"
+      },
+      "matchEvidence": "Cover reads 'Unleashing the Inner Fire: The Ancient Art of Tummo Breathwork for Radical Transformation', Emily K Patel; Kindle-shaped (1:1.6) front cover, so the English ebook B0C5ZZ9GHB; not applied to print or audiobook editions",
+      "file": "assets-src/covers/unleashing-the-inner-fire__B0C5ZZ9GHB.png",
+      "original": [
+        292,
+        466
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 383
+        },
+        "480": {
+          "w": 292,
+          "h": 466
+        }
+      }
     }
   ]
 }
