@@ -51,3 +51,13 @@ Two tracks. (1) Recover the own-press covers from your design files and KDP (fre
 2. Own covers: where were the originals made (Canva, ChatGPT, other)? Send any folder or export; also try **Bookshelf > "..." > Download author cover file** on one paperback and one ebook and tell me which menu items appear.
 3. Decision: accept or reject Open Library (unlicensed) as a stopgap.
 4. Decision: allow a small serverless function on the existing free Netlify account for the API route (you would store credentials in Netlify's settings yourself).
+
+## Follow-up (2026-10-29): can we hotlink Amazon image URLs without the Creators API?
+**Conclusion: no, not under Amazon's published terms.** Nothing was implemented or deployed.
+Source: Associates Program Policies, "Associates Program IP License and Usage Requirements" (https://affiliate-program.amazon.com/help/operating/policies), read today.
+* The licence grants the right to "copy and display Program Content solely on your Site", and defines Program Content to include "Creators API, PA API, Data Feeds and Product Advertising Content". Product Advertising Content (data, images, text) is obtained by calling the Creators API/PA API, or by an approved data feed ("If we provide express prior written approval, you may also obtain Product Advertising Content through a data feed").
+* Images scraped from product pages or built from guessed URLs are not obtained through any of those channels, so nothing in the licence covers displaying them. The image-restriction clause also applies even with the API: no storing or caching, only a link kept up to 24 hours.
+* The one image-bearing link format Associates once offered (SiteStripe "Image" / "Text+Image") was withdrawn in late 2023 (secondary sources); the official SiteStripe help page could not be re-read from here. Amazon image hosts are also unreachable from this session, so the legacy ASIN image URLs could not be tested, and they are unofficial anyway.
+* Amazon image URLs are not derivable from an ASIN or ISBN (the image id is not the ASIN), so a URL-only approach cannot be built without scraping product pages.
+
+**What can be done without that:** (a) the cover can link to the book's tagged Amazon page whatever image it shows (the book-page and card links already carry `tag=darktheoryinc-20`; making the cover itself the Amazon link is a small change); (b) the licensed image routes remain the Creators API (needs 10 qualifying sales in 30 days) and, for your own titles, your own files.
