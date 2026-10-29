@@ -8,83 +8,74 @@ Covers are the publishers' copyrighted artwork. No source I can reach grants us 
 >
 > We run Forbidden Mantra Press, an independent curated bookstore (forbiddenmantra.com) that recommends books and links each to a retailer. We would like permission to display the front-cover images of the editions listed below on our book pages and homepage shelves, each linking to a retailer page, with the title, author and publisher credited. Please let us know the approved image files or feed, any credit line you require, and the terms. We will not alter the images beyond proportional resizing.
 
-## By publisher (homepage books only)
+## By publisher (the third-party homepage books that still show a text placeholder)
 
-### Shambhala (2)
-* Comfortable with Uncertainty, Pema Chödrön, paperback, ISBN-13 9781590300787 (2003)
-* The Tao of Physics, Fritjof Capra, paperback, ISBN-13 9780394731117
+Regenerated for the current homepage (now six books per category shelf). PRH-owned imprints are already covered under PRH's published bookseller terms and are not listed here. PRH's image server also returns files for several of the publishers below, but PRH's terms permit use "in promoting Penguin Random House titles", so those files are **not** used without the publisher's own permission.
+
+### HarperCollins Publishers (HarperOne, Harper Perennial, William Morrow, HarperCollins Children's) (5)
+* Encyclopedia of 5,000 Spells, Judika Illes, hardcover, ISBN-13 9780061711237 (the catalogue also lists: 9780062047267)
+* Tao Te Ching, Lao Tzu, paperback, ISBN-13 9780061142666
+* American Gods, Neil Gaiman, paperback, ISBN-13 9780063081918
+* Good Omens, Neil Gaiman, Terry Pratchett, paperback, ISBN-13 9780060853983
+* The Lion, the Witch and the Wardrobe, C.S. Lewis, paperback, ISBN-13 9780064471046
+
+### Shambhala Publications (3)
+* When Things Fall Apart, Pema Chödrön, paperback, ISBN-13 9781611803433 (the catalogue also lists: 9780834821002)
+* Comfortable with Uncertainty, Pema Chödrön, paperback, ISBN-13 9781590300787 (the catalogue also lists: 9781611805956)
+* The Tao of Physics, Fritjof Capra, paperback, ISBN-13 9780394731117 (the catalogue also lists: 9781570625190)
+
+### Likely the owner's own pen names, so not a publisher request (3)
+The author names Alex Knight, Rav Shiva and TSPRav Shiva appear in the owner's author/imprint-variant questions. If these are the owner's own titles, the covers can be supplied by the owner (same route as `docs/KDP-COVER-RECOVERY.md`) with no third-party permission. Confirm, then send the files.
+* The Cyber Cupid, Alex Knight, ebook, ASIN B0BX5PRFLX
+* The Power of Fasting and Prayer, Rav Shiva, audiobook B0H85CCYWV, ebook B0BZM2V8V7, paperback B0BZFG4YR9
+* JINN - Dark Angels, Shapeshifters, and Ghouls, TSPRav Shiva, ebook, ASIN B0BY758969
+
+### Llewellyn Worldwide (3)
+* Wicca, Scott Cunningham, paperback, ISBN-13 9780875421186
+* Buckland’s Complete Book of Witchcraft, Raymond Buckland, paperback, ISBN-13 9780875420509
+* Modern Magick, Donald Michael Kraig, paperback, ISBN-13 9780738715780 (the catalogue also lists: 9780875423241)
+
+### Houghton Mifflin Harcourt (HMH Books; Harcourt; Graphia) (3)
+* The Secret of the Golden Flower, Richard Wilhelm, C. G. Jung, paperback, ISBN-13 9780156799805
+* A Wizard of Earthsea, Ursula K. Le Guin, paperback, ISBN-13 9780547722023 (the catalogue also lists: 9780553383041)
+* The Hobbit, J.R.R. Tolkien, paperback, ISBN-13 9780547928227
+
+### Hachette Book Group (Little, Brown; Back Bay; Balance; Piatkus) (2)
+* Wherever You Go, There You Are, Jon Kabat-Zinn, paperback, ISBN-13 9780749925482 (the catalogue also lists: 9780306832017)
+* Circe, Madeline Miller, paperback, ISBN-13 9780316556323 (the catalogue also lists: 9780316556347)
 
 ### Aurora Press (2)
-* Taoist Secrets of Love, Mantak Chia, Michael Winn, paperback, ISBN-13 9780943358192 (1984)
+* Taoist Secrets of Love, Mantak Chia, Michael Winn, paperback, ISBN-13 9780943358192
 * Awaken Healing Energy Through the Tao, Mantak Chia, paperback, ISBN-13 9780943358079
 
-### Penguin Classics (2)
-* Metamorphoses, Ovid, paperback, ISBN-13 9780140447897 (2004)
-* Letters from a Stoic, Seneca, paperback, ISBN-13 9780140442106 (2004)
+### Bloomsbury (2)
+* Harry Potter: A History of Magic, British Library, hardcover, ISBN-13 9781408890769 (the catalogue also lists: 9781526607072)
+* Jonathan Strange & Mr Norrell, Susanna Clarke, paperback, ISBN-13 9781582346038 (the catalogue also lists: 9781635576726)
 
-### Weiser Books (2)
-* Seventy-Eight Degrees of Wisdom, Rachel Pollack, paperback, ISBN-13 9781578636655 (2019)
-* Chakra Mantras, Thomas Ashley-Farrand, paperback, ISBN-13 9781578633678 (2006)
-
-### Shambhala Publications (1)
-* When Things Fall Apart, Pema Chödrön, paperback, ISBN-13 9781611803433 (2016)
+### Red Wheel / Weiser Books (2)
+* Seventy-Eight Degrees of Wisdom, Rachel Pollack, paperback, ISBN-13 9781578636655 (the catalogue also lists: 9781578637348)
+* Chakra Mantras, Thomas Ashley-Farrand, paperback, ISBN-13 9781578633678
 
 ### New World Library (1)
-* The Power of Now, Eckhart Tolle, paperback, ISBN-13 9781577314806 (2004)
-
-### Ballantine Wellspring (1)
-* Healing Mantras, Thomas Ashley-Farrand, paperback, ISBN-13 9780345431707 (1999)
+* The Power of Now, Eckhart Tolle, paperback, ISBN-13 9781577314806
 
 ### Beacon Press (1)
 * Man's Search for Meaning, Viktor E. Frankl, paperback, ISBN-13 9780807014271
 
-### New Harbinger Publications / Noetic Books (1)
-* The Untethered Soul, Michael A. Singer, paperback, ISBN-13 9781572245372 (2007)
+### New Harbinger Publications (1)
+* The Untethered Soul, Michael A. Singer, paperback, ISBN-13 9781572245372
+
+### John Wiley & Sons (1)
+* When the Body Says No, Gabor Maté, paperback, ISBN-13 9780470923351 (the catalogue also lists: 9780471219828)
 
 ### Acorn Press (1)
-* I Am That, Nisargadatta Maharaj, paperback, ISBN-13 9780893860462 (2012)
+* I Am That, Nisargadatta Maharaj, paperback, ISBN-13 9780893860462 (the catalogue also lists: 9780893860226)
 
-### Vintage Books (1)
-* The Gnostic Gospels, Elaine Pagels, paperback, ISBN-13 9780679724537 (1989)
-
-### Oxford University Press (Oxford World's Classics) (1)
-* The Golden Bough, James George Frazer, paperback, ISBN-13 9780199538829 (2009)
-
-### Llewellyn Publications (1)
-* Wicca, Scott Cunningham, paperback, ISBN-13 9780875421186 (2002)
-
-### HarperOne (1)
-* Encyclopedia of 5,000 Spells, Judika Illes, hardcover, ISBN-13 9780061711237 (2009)
-
-### Bloomsbury (1)
-* Harry Potter: A History of Magic, British Library, hardcover, ISBN-13 9781408890769 (2017)
-
-### Harper Perennial Modern Classics (1)
-* Tao Te Ching, Lao Tzu, paperback, ISBN-13 9780061142666 (2006)
-
-### Harcourt Brace Jovanovich (1)
-* The Secret of the Golden Flower, Richard Wilhelm, C. G. Jung, paperback, ISBN-13 9780156799805 (1962)
-
-### Modern Library (1)
-* Meditations, Marcus Aurelius, paperback, ISBN-13 9780812968255 (2003)
-
-### Back Bay Books (1)
-* Circe, Madeline Miller, paperback, ISBN-13 9780316556323 (2020)
-
-### William Morrow Paperbacks (1)
-* American Gods, Neil Gaiman, paperback, ISBN-13 9780063081918 (2021)
-
-### Graphia (Houghton Mifflin Harcourt) (1)
-* A Wizard of Earthsea, Ursula K. Le Guin, paperback, ISBN-13 9780547722023 (2012)
+### Oxford University Press (1)
+* The Golden Bough, James George Frazer, paperback, ISBN-13 9780199538829
 
 ### Scholastic (1)
-* Harry Potter and the Philosopher's Stone, J.K. Rowling, paperback, ISBN-13 9780590353427 (1999)
-
-### Houghton Mifflin Harcourt (Mariner Books) (1)
-* The Hobbit, J.R.R. Tolkien, paperback, ISBN-13 9780547928227 (2012)
-
-### HarperTorch (William Morrow Paperbacks) (1)
-* Good Omens, Neil Gaiman, Terry Pratchett, paperback, ISBN-13 9780060853983 (2006)
+* Harry Potter and the Sorcerer's Stone, J.K. Rowling, paperback, ISBN-13 9780590353427 (the catalogue also lists: 9781408855652)
 
 ## Harry Potter: edition to settle first
 
