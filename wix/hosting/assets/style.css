@@ -455,3 +455,47 @@ a.io-tile-img:hover,a.io-tile-img:focus-visible{outline:3px solid #fff;outline-o
 .niche-shelf .card-buy{margin-top:8px}
 @media(max-width:520px){.btn-buy{max-width:none}}
 @media(max-width:520px){.btn-buy{font-size:12px;letter-spacing:.06em;padding:8px 6px;white-space:nowrap}}
+/* dense bookshelf (owner-approved): seven covers per row on wide screens, compact cards, long titles clamped */
+.grid{grid-template-columns:repeat(7,minmax(0,1fr));gap:22px 14px}
+.grid .card{gap:7px;min-width:0}
+.grid .card-body{display:flex;flex-direction:column;gap:2px;min-width:0}
+.grid .card-title{font-size:13px;line-height:1.3;margin:0;overflow-wrap:anywhere;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;line-clamp:3;overflow:hidden}
+.grid .card-sub{display:none}
+.grid .card-author{font-size:12px;line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.grid .card-meta{font-size:11px;line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.grid .badge-fmp{font-size:9px;padding:2px 6px;align-self:flex-start;max-width:100%}
+.grid .cover{padding:10px 8px}
+.grid .cover-title{font-size:12px;line-height:1.25;margin-top:8%}
+.grid .cover-author{font-size:8px;letter-spacing:.1em}
+.grid .card-buy{margin-top:6px}
+.grid .btn-buy{min-height:40px;font-size:11px;letter-spacing:.04em;padding:6px 8px;max-width:none}
+@media(max-width:1099px){.grid{grid-template-columns:repeat(6,minmax(0,1fr))}}
+@media(max-width:899px){.grid{grid-template-columns:repeat(5,minmax(0,1fr))}}
+@media(max-width:719px){.grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:18px 12px}}
+@media(max-width:559px){.grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px 10px}.grid .card-title{font-size:12px}.grid .card-author{font-size:11px}.grid .btn-buy{font-size:10px;letter-spacing:0;padding:6px 4px}}
+@media(max-width:429px){.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 12px}.grid .card-title{font-size:13px}.grid .card-meta{font-size:11px}}
+.grid .badge-fmp{font-size:8.5px;letter-spacing:.04em;padding:2px 5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+[data-home="fmp"] .grid .badge-fmp{display:none}
+.grid .badge-tag{font-size:8.5px;letter-spacing:.06em;padding:2px 5px;margin-bottom:3px;align-self:flex-start;white-space:nowrap}
+.grid .badge-tag+.badge-fmp{display:none}
+.cover-note{font-size:13px;color:var(--muted);margin:8px 0 0;line-height:1.4}
+.placeholder-note{border:1px solid var(--gold);background:rgba(214,176,98,.14);padding:10px 14px;margin:10px 0;font-size:15px;line-height:1.5;border-radius:3px}
+/* text-only placeholder for books whose original cover art is not yet available: clearly a placeholder, never styled as artwork */
+.cover-ph{justify-content:flex-start;align-items:center;gap:8px;padding:14px 10px 10px;box-shadow:inset 0 0 0 5px rgba(255,255,255,.05),inset 0 0 0 6px rgba(243,222,166,.35),0 8px 20px rgba(24,63,59,.22)}
+.cover-ph .ph-orn{color:#F3DEA6;opacity:.75;font-size:13px;line-height:1}
+.cover-ph .ph-t{flex:1;display:flex;align-items:center;justify-content:center;margin:0;font-size:17px;line-height:1.25;overflow:hidden;overflow-wrap:anywhere}
+.cover-ph .ph-t.ph-m{font-size:14px}.cover-ph .ph-t.ph-s{font-size:12px}
+.cover-ph .cover-author{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cover-ph .ph-cap{font:500 8px 'Cinzel',serif;letter-spacing:.14em;text-transform:uppercase;color:#D9E9DF;opacity:.8;border-top:1px solid rgba(243,222,166,.3);padding-top:6px;width:100%;text-align:center}
+.grid .cover-ph .ph-t{font-size:12px;margin:0}.grid .cover-ph .ph-t.ph-m{font-size:11px}.grid .cover-ph .ph-t.ph-s{font-size:10px}
+.grid .cover-ph{padding:10px 8px 8px}.grid .cover-ph .ph-cap{font-size:7px;letter-spacing:.1em}
+.cover-ph.cover-lg .ph-t{font-size:26px}.cover-ph.cover-lg .ph-t.ph-m{font-size:22px}.cover-ph.cover-lg .ph-t.ph-s{font-size:17px}
+
+/* Longer interface translations (fr, pt, it, de, es) must not push the single-row desktop header past the viewport. English is unchanged. */
+@media(min-width:1280px){
+ html:not([lang=en]) .nav{gap:10px}
+ html:not([lang=en]) .nav ul{gap:12px}
+ html:not([lang=en]) .nav a{letter-spacing:.05em;font-size:10px}
+ html:not([lang=en]) .nav-search input{width:84px}
+ html:not([lang=en]) .header-in{gap:10px}
+}
