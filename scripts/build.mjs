@@ -377,7 +377,7 @@ function langMenu() {
 
 const NAV = [['nav_subjects', 'subjects/'], ['nav_traditions', 'traditions/'], ['nav_authors', 'authors/'], ['nav_paths', 'paths/'], ['nav_collections', 'collections/'], ['nav_press', 'press/'], ['nav_iosutra', 'technology/']];
 const anyUntagged = Object.values(tagStatus).every((v) => !v);
-function layout({ title, rel, desc, body, crumbs = [], jsonld = null, current = '', links = '', noindex = false }) {
+function layout({ title, rel, desc, body, crumbs = [], jsonld = null, current = '', links = '', noindex = false, homeAsk = false }) {
   ROOT_PREFIX = depthPrefix(rel);
   const page = body();
   const bc = crumbs.length ? `<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="${href('')}" data-i18n="home">${esc(en.home)}</a></li>${crumbs.map(([l, u]) => `<li>${u ? `<a href="${href(u)}">${esc(l)}</a>` : `<span aria-current="page">${esc(l)}</span>`}</li>`).join('')}</ol></nav>` : '';
@@ -402,13 +402,13 @@ ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld)}</script
 ${FIXTURE ? '<div class="preview-bar fixture-bar" role="region" aria-label="Test fixture notice">TEST FIXTURE BUILD. Every record on this site is fictional and exists only to test multilingual behaviour. Never publish.</div>' : ''}
 ${PRODUCTION ? '' : `<div class="preview-bar" role="region" aria-label="Preview notice">Preview build, not published. Catalogue as of ${cfg.catalogueAsOf}. ${anyUntagged ? 'Amazon links carry no Associates tracking ID yet.' : ''}</div>`}
 <header class="site-header">
-  <div class="wrap header-in">
+  <div class="wrap header-in${homeAsk ? ' no-search' : ''}">
     <a class="logo" href="${href('')}" aria-label="Forbidden Mantra Press, home"><picture><source media="(max-width:520px)" srcset="${ROOT_PREFIX}assets/brand/logo-header-mobile.png 1x, ${ROOT_PREFIX}assets/brand/logo-header-mobile-2x.png 2x"><img src="${ROOT_PREFIX}assets/brand/logo-header-desktop.png" srcset="${ROOT_PREFIX}assets/brand/logo-header-desktop.png 1x, ${ROOT_PREFIX}assets/brand/logo-header-desktop-2x.png 2x" width="325" height="56" alt="Forbidden Mantra"></picture></a>
+    ${homeAsk ? '' : `<form class="nav-search" action="${href('search/')}" method="get" role="search" aria-label="Site search"><label class="sr" for="q-nav" data-i18n="search_label">${esc(en.search_label)}</label><input id="q-nav" type="search" name="q" ${A('placeholder', 'search_ph')}><button type="submit" data-i18n="search_btn">${esc(en.search_btn)}</button></form>`}
     ${langMenu()}
     <button class="nav-toggle" aria-expanded="false" aria-controls="nav" type="button"><span class="sr" data-i18n="menu">${esc(en.menu)}</span><span aria-hidden="true">☰</span></button>
     <nav id="nav" class="nav" aria-label="Main">
       <ul>${NAV.map(([k, u]) => `<li><a href="${href(u)}"${current === u ? ' aria-current="page"' : ''} data-i18n="${k}">${esc(en[k])}</a></li>`).join('')}</ul>
-      <form class="nav-search" action="${href('search/')}" method="get" role="search" aria-label="Site search"><label class="sr" for="q-nav" data-i18n="search_label">${esc(en.search_label)}</label><input id="q-nav" type="search" name="q" ${A('placeholder', 'search_ph')}><button type="submit" data-i18n="search_btn">${esc(en.search_btn)}</button></form>
     </nav>
   </div>
 </header>
@@ -427,8 +427,8 @@ ${page}
   <div class="wrap">${placed('footer').map((p) => promo.renderFooter(promoView('footer', p.id), promoCtx)).join('')}<p class="disclosure" lang="en">${esc(cfg.disclosure)}</p><p class="copy">© 2025–2026 Forbidden Mantra Press</p></div>
 </footer>
 ${rel === 'index.html' ? `<script>window.FM_LANGBOOKS=${JSON.stringify(LANGBOOKS).replace(/</g, '\\u003c')};</script>\n` : ''}<script src="${ROOT_PREFIX}assets/i18n.js"></script>
-<script src="${ROOT_PREFIX}assets/app.js"></script>${process.env.FM_WIX ? `\n<script src="${ROOT_PREFIX}assets/wix-embed.js" defer></script>` : ''}
-${LIB.enabled ? `<div id="fm-librarian" hidden data-root="${ROOT_PREFIX}" data-config='${esc(JSON.stringify({ art: LIB_ART ? { ...LIB_ART, src: ROOT_PREFIX + 'assets/librarian/' + LIB_ART.file } : null, voice: LIB.voice, ai: { enabled: LIB.ai?.enabled }, startMinimizedBelowPx: LIB.startMinimizedBelowPx }))}'></div><script src="${ROOT_PREFIX}assets/librarian.js" defer></script>` : ''}
+<script src="${ROOT_PREFIX}assets/app.js"></script>${homeAsk ? `\n<script src="${ROOT_PREFIX}assets/ask.js" defer></script>` : ''}${process.env.FM_WIX ? `\n<script src="${ROOT_PREFIX}assets/wix-embed.js" defer></script>` : ''}
+${LIB.enabled && !homeAsk ? `<div id="fm-librarian" hidden data-root="${ROOT_PREFIX}" data-config='${esc(JSON.stringify({ art: LIB_ART ? { ...LIB_ART, src: ROOT_PREFIX + 'assets/librarian/' + LIB_ART.file } : null, voice: LIB.voice, ai: { enabled: LIB.ai?.enabled }, startMinimizedBelowPx: LIB.startMinimizedBelowPx }))}'></div><script src="${ROOT_PREFIX}assets/librarian.js" defer></script>` : ''}
 </body>
 </html>`;
 }
@@ -440,6 +440,7 @@ fs.mkdirSync(path.join(OUT, 'assets'), { recursive: true });
 fs.copyFileSync(path.join(ROOT, 'scripts/assets/style.css'), path.join(OUT, 'assets/style.css'));
 fs.copyFileSync(path.join(ROOT, 'scripts/assets/app.js'), path.join(OUT, 'assets/app.js'));
 fs.copyFileSync(path.join(ROOT, 'scripts/assets/librarian.js'), path.join(OUT, 'assets/librarian.js'));
+fs.copyFileSync(path.join(ROOT, 'scripts/assets/ask.js'), path.join(OUT, 'assets/ask.js'));
 if (COVERS.entries.length) {
   const covDir = process.env.FM_COVERS_OPT ? path.resolve(process.env.FM_COVERS_OPT) : path.join(ROOT, 'assets-src/covers-opt');
   fs.mkdirSync(path.join(OUT, 'assets/covers'), { recursive: true });
@@ -492,22 +493,26 @@ const langSummary = `${fmt(cat.works.length, 'work', 'works')} · ${fmt(totalEdi
 
 // ---------- home ----------
 page('index.html', {
-  title: 'Forbidden Mantra Press', desc: cfg.tagline,
+  title: 'Forbidden Mantra Press', desc: cfg.tagline, homeAsk: true,
   body: () => `
-<section class="hero">
-  <div class="wrap">
-    <p class="eyebrow">Ancient wisdom · Hidden knowledge · Inner power</p>
-    <h1>Forbidden<br>Mantra Press</h1>
-    <p class="lede">A curated bookstore of sacred texts, practice and inner cultivation, from our own press and from established authors in every tradition we shelve.</p>
-    <form class="hero-search" action="${href('search/')}" method="get" role="search" aria-label="Search the bookstore"><label class="sr" for="q-hero" data-i18n="search_label">${esc(en.search_label)}</label><input id="q-hero" type="search" name="q" placeholder="Search by title, author, subject or ISBN"><button class="btn" type="submit" data-i18n="search_btn">${esc(en.search_btn)}</button></form>
-    <p class="hero-links"><a class="btn btn-ghost" href="${href('press/')}">Forbidden Mantra Press books</a> <a class="btn btn-ghost" href="${href('books/')}" data-i18n="foot_all_books">${esc(en.foot_all_books)}</a> <a class="btn btn-ghost" href="${href('paths/')}">Beginner reading paths</a></p>
-    <p class="disclosure hero-disclosure" lang="en">${esc(cfg.disclosure.split('. ')[0])}. <a href="${href('about/affiliate-disclosure/')}">Affiliate disclosure</a></p>
+<h1 class="sr">Forbidden Mantra Press: a curated bookstore of sacred texts, practice and inner cultivation</h1>
+<section class="ask" data-ask data-root="${ROOT_PREFIX}" aria-labelledby="ask-h"><div class="wrap">
+  <div class="ask-bar">
+    ${LIB_ART ? `<span class="ask-face" aria-hidden="true" style="background-image:url(${ROOT_PREFIX}assets/librarian/${LIB_ART.file})"></span>` : '<span class="ask-face ask-face-ph" aria-hidden="true">✦</span>'}
+    <div class="ask-main">
+      <h2 id="ask-h" class="ask-h" data-i18n="ask_title">${esc(en.ask_title)}</h2>
+      <form class="ask-form" data-ask-form action="${href('search/')}" method="get" role="search" aria-label="${esc(en.ask_title)}"><label class="sr" for="ask-q" data-i18n="ask_title">${esc(en.ask_title)}</label><input id="ask-q" class="ask-input" data-ask-input type="text" name="q" autocomplete="off" enterkeyhint="search" spellcheck="false" dir="auto" ${A('placeholder', 'ask_ph')}><button class="btn ask-btn" type="submit" data-i18n="ask_btn">${esc(en.ask_btn)}</button></form>
+      <p class="ask-chips" data-ask-chips lang="en"><span class="ask-try">Try:</span> <button type="button" data-q="Do you have books about meditation?">Meditation</button> <button type="button" data-q="Show me books about witchcraft">Witchcraft</button> <button type="button" data-q="Which books discuss the Nag Hammadi texts?">Nag Hammadi texts</button> <button type="button" data-q="Books about Mo Pai">Mo Pai</button></p>
+    </div>
   </div>
-</section>
+  <p class="sr" role="status" aria-live="polite" data-ask-status></p>
+  <div class="ask-log" data-ask-log role="log" aria-live="polite" aria-relevant="additions" aria-label="Conversation with the digital librarian" tabindex="0" hidden></div>
+  <p class="ask-foot"><span class="disclosure" lang="en">${esc(cfg.disclosure.split('. ')[0])}. <a href="${href('about/affiliate-disclosure/')}">Affiliate disclosure</a></span> <button type="button" class="ask-clear" data-ask-clear hidden>Clear conversation</button></p>
+</div></section>
 <section class="band" data-home="fmp" aria-labelledby="fmp-h"><div class="wrap">
   <div class="split"><h2 id="fmp-h">${hlAllEvidenced ? 'Bestsellers' : 'Featured'} from Forbidden Mantra Press</h2><a href="${href('press/')}">All ${fmpWorks.length} press titles →</a></div>
-  <p class="lede-sm">Books published by us, kept apart from the third-party titles further down.${hlEvidence.size ? '' : ' We call a book a bestseller only when we hold sales evidence for it; until then these are simply featured.'}</p>
   ${grid(hlShelf, { filterable: false, buy: true, tag: hlTag })}
+  <p class="lede-sm shelf-note">Books published by us, kept apart from the third-party titles further down.${hlEvidence.size ? '' : ' We call a book a bestseller only when we hold sales evidence for it; until then these are simply featured.'}</p>
 </div></section>
 ${moPaiWorks.length ? `<section class="band alt" data-home="mopai" aria-labelledby="mopai-h"><div class="wrap">
   <div class="split"><h2 id="mopai-h">Mo Pai Collection</h2><a href="${href(`topics/${HL.moPai.subject}/`)}">All Mo Pai books →</a></div>
@@ -518,7 +523,7 @@ ${placed('home').map((p) => promo.renderHome(promoView('home', p.id), promoCtx))
 <section class="band alt" data-home="featured" aria-labelledby="feat-h"><div class="wrap">
   <div class="split"><h2 id="feat-h">Featured books</h2><a href="${href('books/')}">Browse all ${cat.works.length} books →</a></div>
   <p class="lede-sm">A small selection from each category. This is not a sales ranking: we have no reliable sales data, so nothing here is called a bestseller. The whole catalogue stays searchable.</p>
-  ${(() => { const taken = new Set(); return tax.hubs.map((hb) => { const ws = featuredForHub(hb.id, 4, taken); ws.forEach((w) => taken.add(w.id)); return ws.length ? `<section class="niche-shelf" aria-labelledby="fh-${hb.id}"><div class="split"><h3 id="fh-${hb.id}">${esc(hb.name)}</h3><a href="${href(`subjects/${hb.id}/`)}">All ${worksInHub(hb.id).length} books →</a></div><div class="shelf" role="region" tabindex="0" aria-label="${esc(hb.name)} featured books, scroll sideways">${ws.map((w) => card(w, null, 'h4', true, true)).join('')}</div></section>` : ''; }).join(''); })()}
+  ${(() => { const taken = new Set(); return tax.hubs.map((hb) => { const ws = featuredForHub(hb.id, 6, taken); ws.forEach((w) => taken.add(w.id)); return ws.length ? `<section class="niche-shelf" aria-labelledby="fh-${hb.id}"><div class="split"><h3 id="fh-${hb.id}">${esc(hb.name)}</h3><a href="${href(`subjects/${hb.id}/`)}">All ${worksInHub(hb.id).length} books →</a></div><div class="grid" data-hub-shelf="${hb.id}">${ws.map((w) => card(w, null, 'h4', true, true)).join('')}</div></section>` : ''; }).join(''); })()}
 </div></section>
 <section class="band studio dark" id="imagination" aria-labelledby="studio-h" lang="en" data-home="studio">
   <div class="wrap">
@@ -865,7 +870,7 @@ const dynShard = (slug) => (fnv(slug) % DYN_SHARDS).toString(16).padStart(2, '0'
   const dynBy = new Map();
   for (const w of cat.works) if (isDyn(w)) (dynBy.get(dynShard(w.slug)) ?? dynBy.set(dynShard(w.slug), {}).get(dynShard(w.slug)))[w.slug] = [...recOf(w), dynPayload(w)];
   for (const [k, o] of dynBy) write(`assets/idx/dyn-${k}.js`, `(window.FM_DYN=window.FM_DYN||{})[${JSON.stringify(k)}]=${JSON.stringify(o)};`);
-  write('assets/idx/manifest.js', `window.FM_MANIFEST=${JSON.stringify({ v: 1, total: cat.works.length, chunks: [...byChunk.keys()], depts: IDX.depts, deptNames: tax.departments.map((d) => d.name), hubs: Object.fromEntries(tax.hubs.map((h) => [h.id, tax.departments.map((d, i) => (d.hubs.includes(h.id) ? i : -1)).filter((i) => i >= 0)])), trads: IDX.trads, tradNames: tax.traditions.map((t) => t.name), langs: IDX.langs, fmts: IDX.fmts, levels: IDX.levels, authorPages: cat.works.length <= BUILD.authorPagesAllBelow ? 'all' : 'flags', dynShards: DYN_SHARDS, pageSize: BUILD.pageSize, disclosure: cfg.disclosure })};`);
+  write('assets/idx/manifest.js', `window.FM_MANIFEST=${JSON.stringify({ v: 1, hidden: cat.works.filter((w) => w.purchasable === false).map((w) => w.slug), total: cat.works.length, chunks: [...byChunk.keys()], depts: IDX.depts, deptNames: tax.departments.map((d) => d.name), hubs: Object.fromEntries(tax.hubs.map((h) => [h.id, tax.departments.map((d, i) => (d.hubs.includes(h.id) ? i : -1)).filter((i) => i >= 0)])), trads: IDX.trads, tradNames: tax.traditions.map((t) => t.name), langs: IDX.langs, fmts: IDX.fmts, levels: IDX.levels, authorPages: cat.works.length <= BUILD.authorPagesAllBelow ? 'all' : 'flags', dynShards: DYN_SHARDS, pageSize: BUILD.pageSize, disclosure: cfg.disclosure })};`);
 }
 page('book/index.html', {
   title: 'Book', desc: 'Book details.', crumbs: [['All books', 'books/'], ['Book']], noindex: true,

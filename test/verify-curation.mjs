@@ -22,7 +22,7 @@ ok(fmpTitles.length === Math.min(14, press.length) && fmpTitles.every((t) => byT
 // ---- featured per category ----
 const feat = sect('featured');
 const shelves = [...feat.matchAll(/<section class="niche-shelf"[\s\S]*?<\/section>/g)].map((m) => m[0]);
-ok(shelves.length === tax.hubs.filter((h) => cat.works.some((w) => w.subjects.some((x) => tax.departments.find((d) => d.id === x).hubs.includes(h.id)))).length && shelves.every((s) => { const n = titlesIn(s).length; return n >= 1 && n <= 4; }), `${shelves.length} category shelves, at most 4 featured books each`);
+ok(shelves.length === tax.hubs.filter((h) => cat.works.some((w) => w.subjects.some((x) => tax.departments.find((d) => d.id === x).hubs.includes(h.id)))).length && shelves.every((s) => { const n = titlesIn(s).length; return n >= 1 && n <= 6; }), `${shelves.length} category shelves, at most 6 featured books each (one row of six on desktop)`);
 ok(shelves.every((s) => titlesIn(s).every((t) => byTitle.has(t))) && shelves.filter((s) => titlesIn(s).some((t) => byTitle.get(t).press)).every((s) => titlesIn(s).every((t) => byTitle.get(t).press)), 'featured shelves hold real catalogue books: third-party titles, or our own only in a category where we have no third-party title yet');
 ok(/Featured books/.test(feat) && /not a sales ranking/.test(feat) && !/bestsell(?!er\b)|best-sell|top-sell|top sell/i.test(home.replace(/we have no reliable sales data, so nothing here is called a bestseller/, '')) && !/class="[^"]*bestseller/i.test(home), 'labelled "Featured books", with no bestseller or top-selling claim anywhere on the homepage');
 ok(new Set(shelves.flatMap(titlesIn)).size === shelves.flatMap(titlesIn).length, 'no book is repeated across the category shelves');

@@ -74,7 +74,7 @@ for (const [name, vp] of VIEWPORTS) {
   // ===== website (interface) language =====
   await btn.click(); await pg.click('[data-ui=es]');
   ok((await pg.locator('#nav a').first().textContent()).trim() === 'Temas' && (await pg.evaluate(() => document.documentElement.lang)) === 'es', `${T} interface -> Español: nav reads "Temas", <html lang="es">`);
-  ok((await pg.getAttribute('#q-nav', 'placeholder')).startsWith('Buscar'), `${T} search placeholder translated`);
+  ok((await pg.getAttribute('#ask-q', 'placeholder')).startsWith('Pide'), `${T} search placeholder translated`);
   ok(await pg.locator('.site-footer .disclosure').getAttribute('lang') === 'en' && /As an Amazon Associate/.test(await pg.locator('.site-footer .disclosure').textContent()), `${T} legal affiliate disclosure stays in English`);
   await snap('ui-es');
   await pg.goto(url('books/index.html')); ok((await pg.locator('.filters label span').first().textContent()).trim().startsWith('Buscar'), `${T} choice persists on the next page (localStorage)`);

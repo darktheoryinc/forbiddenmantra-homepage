@@ -491,11 +491,65 @@ a.io-tile-img:hover,a.io-tile-img:focus-visible{outline:3px solid #fff;outline-o
 .grid .cover-ph{padding:10px 8px 8px}.grid .cover-ph .ph-cap{font-size:7px;letter-spacing:.1em}
 .cover-ph.cover-lg .ph-t{font-size:26px}.cover-ph.cover-lg .ph-t.ph-m{font-size:22px}.cover-ph.cover-lg .ph-t.ph-s{font-size:17px}
 
-/* Longer interface translations (fr, pt, it, de, es) must not push the single-row desktop header past the viewport. English is unchanged. */
+/* Compact header: logo | prominent search | language on one row, navigation on a slim second row (desktop).
+   Below 1280px the search sits on its own full-width row and the navigation collapses behind the menu button. */
+.nav-search{display:flex;align-items:stretch;width:100%}
+.nav-search input{flex:1;min-width:0;width:auto;height:42px;font-size:15px;padding:0 14px;border-radius:2px 0 0 2px}
+.nav-search button{height:42px;padding:0 18px;border-radius:0 2px 2px 0;white-space:nowrap}
+@media(max-width:1279px){.nav-search{order:4;flex:1 1 100%;width:100%;margin:0 0 10px}.nav{order:5}}
 @media(min-width:1280px){
- html:not([lang=en]) .nav{gap:10px}
- html:not([lang=en]) .nav ul{gap:12px}
- html:not([lang=en]) .nav a{letter-spacing:.05em;font-size:10px}
- html:not([lang=en]) .nav-search input{width:84px}
- html:not([lang=en]) .header-in{gap:10px}
+ .header-in{display:grid;grid-template-columns:auto minmax(300px,1fr) auto;grid-template-areas:"logo search lang" "nav nav nav";align-items:center;gap:0 28px;min-height:0;padding-top:6px}
+ .logo{grid-area:logo}.logo img{width:190px}
+ .nav-search{grid-area:search;max-width:680px;justify-self:center}
+ .langmenu{grid-area:lang}
+ .nav-toggle{display:none}
+ .nav{grid-area:nav;margin:0;width:100%;justify-content:center;border-top:1px solid rgba(239,215,156,.16)}
+ .nav ul{gap:26px;flex-wrap:nowrap}
+ .nav a{padding:8px 2px}
 }
+[data-home]{padding:30px 0}[data-home="fmp"]{padding-top:10px}
+[data-home] .split h2,[data-home] .split h3{margin:0}[data-home] .grid{margin-top:14px}
+[data-home] .grid .card{height:100%}[data-home] .grid .card-body{flex:1}[data-home] .grid .card-buy{margin-top:auto;padding-top:6px}
+[data-home="fmp"] .split{margin-bottom:0}.shelf-note{margin-top:14px;font-size:13px}
+/* Homepage shelves: six books per row on desktop, with the same card geometry in every section. */
+@media(min-width:1100px){[data-home] .grid{grid-template-columns:repeat(6,minmax(0,1fr));gap:24px 18px}}
+[data-home] .grid .card-cover .cover{width:100%}
+[data-home] .niche-shelf .split{margin-top:6px}
+
+/* Homepage header without a search box (the Digital Librarian below it is the search): one slim row. */
+@media(min-width:1280px){
+ .header-in.no-search{grid-template-columns:auto 1fr auto;grid-template-areas:"logo nav lang";gap:0 24px;padding-top:6px;padding-bottom:6px}
+ .header-in.no-search .nav{border-top:0;justify-content:center}
+}
+/* Ask the Digital Librarian */
+.ask{padding:14px 0 6px}
+.ask-bar{display:flex;gap:16px;align-items:center;background:#fff;border:1px solid rgba(24,63,59,.22);border-radius:6px;padding:12px 16px;box-shadow:0 2px 14px rgba(24,63,59,.08)}
+.ask-face{flex:none;width:64px;height:64px;border-radius:50%;background-size:420% auto;background-position:46% 0;background-repeat:no-repeat;background-color:#EFE9DF;border:2px solid #D8B46B}
+.ask-face-ph{display:flex;align-items:center;justify-content:center;color:#D8B46B;font-size:26px}
+.ask-main{flex:1;min-width:0}
+.ask-h{margin:0 0 6px;font:600 15px 'Cinzel',serif;letter-spacing:.1em;text-transform:uppercase;color:var(--teal,#183F3B)}
+.ask-form{display:flex;gap:0}
+.ask-input{flex:1;min-width:0;height:46px;font-size:16px;padding:0 14px;border:1px solid rgba(24,63,59,.45);border-right:0;border-radius:3px 0 0 3px;background:#FFFDF8;color:#1c1c1c}
+.ask-input:focus{outline:3px solid #D8B46B;outline-offset:0}
+.ask-btn{height:46px;padding:0 24px;border-radius:0 3px 3px 0;min-width:84px}
+.ask-chips{margin:8px 0 0;font-size:13px;display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center}
+.ask-try{color:var(--muted)}
+.ask-chips button{font:inherit;font-size:13px;padding:3px 10px;border-radius:14px;border:1px solid rgba(24,63,59,.3);background:transparent;color:var(--teal,#183F3B);cursor:pointer}
+.ask-chips button:hover,.ask-chips button:focus-visible{background:rgba(216,180,107,.28)}
+.ask-foot{margin:6px 0 0;font-size:12.5px;color:var(--muted);display:flex;gap:14px;flex-wrap:wrap;align-items:baseline;justify-content:space-between}
+.ask-clear{font:inherit;font-size:12.5px;background:none;border:0;color:var(--teal,#183F3B);text-decoration:underline;cursor:pointer;padding:6px 2px}
+.ask-log{margin-top:10px;max-height:min(58vh,520px);overflow:auto;border:1px solid rgba(24,63,59,.18);border-radius:6px;background:#FFFDF8;padding:6px 16px 14px}
+.ask-msg{padding:10px 0;border-bottom:1px dashed rgba(24,63,59,.15)}.ask-msg:last-child{border-bottom:0}
+.ask-who{margin:0 0 2px;font:600 10.5px 'Cinzel',serif;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.ask-you .ask-text{font-style:italic}
+.ask-text{margin:0 0 8px;font-size:16px;line-height:1.5}.ask-note{margin:0 0 8px;font-size:13.5px;color:var(--muted)}
+.ask-results{list-style:none;margin:6px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px 16px}
+.ask-card{display:flex;gap:12px;align-items:flex-start;min-width:0}
+.ask-cv{flex:none;width:72px}.ask-cv .cover{width:72px;aspect-ratio:2/3;padding:6px 5px}.ask-cv .cover img{width:100%;height:100%;object-fit:cover;display:block}
+.ask-cv .cover-ph{display:flex;align-items:center;justify-content:center}.ask-cv .cover-ph .ph-t,.ask-cv .cover-ph .ph-cap,.ask-cv .cover-ph .cover-author{display:none}.ask-cv .cover-ph .ph-orn{display:block;position:static}
+.ask-tx{min-width:0}.ask-tx .badge{font-size:8.5px;padding:2px 5px;margin-bottom:3px;display:inline-block}
+.ask-t{margin:0;font:500 14px/1.3 'Cinzel',serif;letter-spacing:.02em}.ask-t a{text-decoration:none}.ask-t a:hover{text-decoration:underline}
+.ask-by,.ask-meta{margin:2px 0 0;font-size:12.5px;line-height:1.35;overflow:hidden;text-overflow:ellipsis}.ask-meta{color:var(--muted);font-size:11.5px}
+.ask-more{margin-top:10px}
+@media(max-width:1000px){.ask-results{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.ask-bar{padding:10px;gap:10px}.ask-face{width:44px;height:44px}.ask-h{font-size:12.5px}.ask-btn{padding:0 14px;min-width:64px}.ask-results{grid-template-columns:1fr}.ask-input{font-size:16px}}

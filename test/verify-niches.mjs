@@ -30,15 +30,15 @@ ok(/Guides by interest/.test(read('index.html')) && read('index.html').includes(
 // ---- legal pages, footer, disclosures ----
 for (const [rel, h] of [['legal/index.html', 'Terms &amp; Policies'], ['legal/terms-refunds/index.html', 'Terms of Service / Refund Policy'], ['about/privacy/index.html', 'Privacy Policy'], ['about/affiliate-disclosure/index.html', 'Affiliate Disclosure'], ['contact/index.html', 'Contact'], ['network/index.html', 'Our network']]) ok(read(rel).includes(`<h1>${h}</h1>`), `${rel} loads with its heading`);
 const homeH = read('index.html');
-ok(homeH.includes('hero-disclosure') && homeH.includes('As an Amazon Associate I earn from qualifying purchases.'), 'homepage shows "As an Amazon Associate I earn from qualifying purchases." in the hero');
+ok(homeH.includes('ask-foot') && homeH.includes('As an Amazon Associate I earn from qualifying purchases.'), 'homepage shows "As an Amazon Associate I earn from qualifying purchases." under the Digital Librarian');
 for (const href of ['legal/', 'legal/terms-refunds/', 'about/privacy/', 'about/affiliate-disclosure/', 'contact/', 'network/']) ok(homeH.includes(`href="./${href}index.html"`) && fs.existsSync(path.join(SITE, href, 'index.html')), `footer links to ${href} and it exists`);
 ok(['https://iosutra.com', 'https://spiritualexpressionz.com', 'https://dogsrfun.com'].every((u) => homeH.includes(`href="${u}"`)), 'footer links to IOSutra, Spiritual Expressionz and Dogs R Fun');
 ok(/class="aff-note-p[^>]*>As an Amazon Associate/.test(read('books/the-power-of-now/index.html')), 'book page shows the disclosure directly under the buy buttons');
 // ---- homepage order and the "From Imagination to Publication" section ----
 {
-  const iHero = homeH.indexOf('<section class="hero">'), iPromo = homeH.indexOf('promo-band'), iStudio = homeH.indexOf('data-home="studio"'), iNext = homeH.indexOf('<section class="band"', iStudio);
+  const iHero = homeH.indexOf('data-ask'), iPromo = homeH.indexOf('promo-band'), iStudio = homeH.indexOf('data-home="studio"'), iNext = homeH.indexOf('<section class="band"', iStudio);
   const firstBook = Math.min(...['data-home="guides"', 'class="hubs"', 'data-home="discovery"'].map((k) => homeH.indexOf(k)).filter((n) => n > 0));
-  ok(iHero > 0 && iHero < iPromo && iPromo < iStudio && iStudio < firstBook, 'homepage order: hero/search, IOSutra promotion, From Imagination to Publication, then the book collections');
+  ok(iHero > 0 && iHero < iPromo && iPromo < iStudio && iStudio < firstBook, 'homepage order: Digital Librarian search, IOSutra promotion, From Imagination to Publication, then the book collections');
   const studio = homeH.slice(iStudio, homeH.indexOf('</section>', iStudio));
   ok(/From Imagination to Publication/.test(studio) && ['Research', 'Writing', 'Editing', 'Illustration', 'Formatting', 'Publishing preparation'].every((w) => studio.includes(`<h3>${w}</h3>`)), 'studio section names the six workflow stages');
   ok(/Coming soon/.test(studio) && !/<button|<form|<input|type="submit"|class="btn/.test(studio) && (studio.match(/<a /g) || []).length === 1, 'studio section is an honest "Coming soon": no buttons, forms or generate/buy actions (one contact link)');

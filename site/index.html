@@ -19,8 +19,9 @@
 
 <div class="preview-bar" role="region" aria-label="Preview notice">Preview build, not published. Catalogue as of 2026-10-27. </div>
 <header class="site-header">
-  <div class="wrap header-in">
+  <div class="wrap header-in no-search">
     <a class="logo" href="./" aria-label="Forbidden Mantra Press, home"><picture><source media="(max-width:520px)" srcset="./assets/brand/logo-header-mobile.png 1x, ./assets/brand/logo-header-mobile-2x.png 2x"><img src="./assets/brand/logo-header-desktop.png" srcset="./assets/brand/logo-header-desktop.png 1x, ./assets/brand/logo-header-desktop-2x.png 2x" width="325" height="56" alt="Forbidden Mantra"></picture></a>
+    
     <div class="langmenu" data-langmenu>
   <button class="lang-btn" type="button" aria-expanded="false" aria-controls="lang-panel"><svg class="ic" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span class="lang-cur" data-ui-code>EN</span><span class="lang-word" data-i18n="lang_btn">Language</span><svg class="ic chev" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2"/></svg></button>
   <div id="lang-panel" class="lang-panel" hidden>
@@ -43,26 +44,28 @@
     <button class="nav-toggle" aria-expanded="false" aria-controls="nav" type="button"><span class="sr" data-i18n="menu">Menu</span><span aria-hidden="true">☰</span></button>
     <nav id="nav" class="nav" aria-label="Main">
       <ul><li><a href="./subjects/index.html" data-i18n="nav_subjects">Subjects</a></li><li><a href="./traditions/index.html" data-i18n="nav_traditions">Traditions</a></li><li><a href="./authors/index.html" data-i18n="nav_authors">Authors</a></li><li><a href="./paths/index.html" data-i18n="nav_paths">Reading paths</a></li><li><a href="./collections/index.html" data-i18n="nav_collections">Collections</a></li><li><a href="./press/index.html" data-i18n="nav_press">Press</a></li><li><a href="./technology/index.html" data-i18n="nav_iosutra">IOSutra</a></li></ul>
-      <form class="nav-search" action="./search/index.html" method="get" role="search" aria-label="Site search"><label class="sr" for="q-nav" data-i18n="search_label">Search the catalogue</label><input id="q-nav" type="search" name="q" placeholder="Search title, author, ISBN" data-i18n-placeholder="search_ph"><button type="submit" data-i18n="search_btn">Search</button></form>
     </nav>
   </div>
 </header>
 <main id="main" tabindex="-1" lang="en">
 <div class="wrap"></div>
 
-<section class="hero">
-  <div class="wrap">
-    <p class="eyebrow">Ancient wisdom · Hidden knowledge · Inner power</p>
-    <h1>Forbidden<br>Mantra Press</h1>
-    <p class="lede">A curated bookstore of sacred texts, practice and inner cultivation, from our own press and from established authors in every tradition we shelve.</p>
-    <form class="hero-search" action="./search/index.html" method="get" role="search" aria-label="Search the bookstore"><label class="sr" for="q-hero" data-i18n="search_label">Search the catalogue</label><input id="q-hero" type="search" name="q" placeholder="Search by title, author, subject or ISBN"><button class="btn" type="submit" data-i18n="search_btn">Search</button></form>
-    <p class="hero-links"><a class="btn btn-ghost" href="./press/index.html">Forbidden Mantra Press books</a> <a class="btn btn-ghost" href="./books/index.html" data-i18n="foot_all_books">All books</a> <a class="btn btn-ghost" href="./paths/index.html">Beginner reading paths</a></p>
-    <p class="disclosure hero-disclosure" lang="en">As an Amazon Associate I earn from qualifying purchases. <a href="./about/affiliate-disclosure/index.html">Affiliate disclosure</a></p>
+<h1 class="sr">Forbidden Mantra Press: a curated bookstore of sacred texts, practice and inner cultivation</h1>
+<section class="ask" data-ask data-root="./" aria-labelledby="ask-h"><div class="wrap">
+  <div class="ask-bar">
+    <span class="ask-face" aria-hidden="true" style="background-image:url(./assets/librarian/librarian.webp)"></span>
+    <div class="ask-main">
+      <h2 id="ask-h" class="ask-h" data-i18n="ask_title">Ask the Digital Librarian</h2>
+      <form class="ask-form" data-ask-form action="./search/index.html" method="get" role="search" aria-label="Ask the Digital Librarian"><label class="sr" for="ask-q" data-i18n="ask_title">Ask the Digital Librarian</label><input id="ask-q" class="ask-input" data-ask-input type="text" name="q" autocomplete="off" enterkeyhint="search" spellcheck="false" dir="auto" placeholder="Ask for a book, subject or author…" data-i18n-placeholder="ask_ph"><button class="btn ask-btn" type="submit" data-i18n="ask_btn">Ask</button></form>
+      <p class="ask-chips" data-ask-chips lang="en"><span class="ask-try">Try:</span> <button type="button" data-q="Do you have books about meditation?">Meditation</button> <button type="button" data-q="Show me books about witchcraft">Witchcraft</button> <button type="button" data-q="Which books discuss the Nag Hammadi texts?">Nag Hammadi texts</button> <button type="button" data-q="Books about Mo Pai">Mo Pai</button></p>
+    </div>
   </div>
-</section>
+  <p class="sr" role="status" aria-live="polite" data-ask-status></p>
+  <div class="ask-log" data-ask-log role="log" aria-live="polite" aria-relevant="additions" aria-label="Conversation with the digital librarian" tabindex="0" hidden></div>
+  <p class="ask-foot"><span class="disclosure" lang="en">As an Amazon Associate I earn from qualifying purchases. <a href="./about/affiliate-disclosure/index.html">Affiliate disclosure</a></span> <button type="button" class="ask-clear" data-ask-clear hidden>Clear conversation</button></p>
+</div></section>
 <section class="band" data-home="fmp" aria-labelledby="fmp-h"><div class="wrap">
   <div class="split"><h2 id="fmp-h">Featured from Forbidden Mantra Press</h2><a href="./press/index.html">All 123 press titles →</a></div>
-  <p class="lede-sm">Books published by us, kept apart from the third-party titles further down. We call a book a bestseller only when we hold sales evidence for it; until then these are simply featured.</p>
   <div class="grid" ><article class="card" data-title="the apocalypse of adam" data-search="the apocalypse of adam das erscheinen adams datguddiad adda datguddiad adda datguddiad adda de verschijning van adam de verschijning van adam de verschijning van adam el apocalipsis de adan el apocalipsis de adan تلقى آدم الوحي الإلهي أو الرؤى النبوية للأحداث المستقبلية. من خلال هذه الرؤية يمكنك الحصول على نظرة ثاقبة تتكشف الأحداث الكونية والتاريخية. आदम का सर्वनाश एडम का सर्वनाश ஆதாமின் வெளிப்பாடு 亞當的啟示錄 forbidden mantra press gnosticism ancient texts gnostic forbidden mantra press forbidden mantra press forbidden mantra press forbidden mantra press forbidden mantra press forbidden mantra press forbidden mantra press forbidden mantra press forbidden mantra press forbidden mantra press forbidden mantra press forbidden mantra press forbidden mantra press forbidden mantra press forbidden mantra press forbidden mantra press forbidden mantra press forbidden mantra press english english german deutsch welsh cymraeg dutch nederlands spanish espanol arabic العربية hindi हिन्दी tamil தமிழ் chinese 中文 forbidden mantra press b0h8mqn9wk b0c9yxqnpf b0dp5yyr9n b0c9s88jpc b0cvw787kp b0dr7fgxgt b0drfbyzgn b0drfd3vyc b0cvw83lgy b0dqwl2pns b0dr2lsybl b0cvvfsvkt b0cvvhh3j2 b0cvw6hpz7 b0h1kpfzs6 b0dr69q4t4 b0dr7fxc4k b0dr69b37p" data-subjects="gnosticism ancient-texts" data-hubs="religions-sacred-texts occult-magick-paganism consciousness-myth-wisdom" data-tradition="gnostic" data-level="unrated" data-press="fmp" data-author="forbidden mantra press" data-ed="[{&quot;l&quot;:[&quot;en&quot;],&quot;f&quot;:&quot;audiobook&quot;,&quot;t&quot;:&quot;&quot;},{&quot;l&quot;:[&quot;en&quot;],&quot;f&quot;:&quot;ebook&quot;,&quot;t&quot;:&quot;&quot;},{&quot;l&quot;:[&quot;en&quot;],&quot;f&quot;:&quot;hardcover&quot;,&quot;t&quot;:&quot;&quot;},{&quot;l&quot;:[&quot;en&quot;],&quot;f&quot;:&quot;paperback&quot;,&quot;t&quot;:&quot;&quot;},{&quot;l&quot;:[&quot;de&quot;],&quot;f&quot;:&quot;ebook&quot;,&quot;t&quot;:&quot;Das Erscheinen Adams&quot;},{&quot;l&quot;:[&quot;cy&quot;],&quot;f&quot;:&quot;ebook&quot;,&quot;t&quot;:&quot;Datguddiad Adda&quot;},{&quot;l&quot;:[&quot;cy&quot;],&quot;f&quot;:&quot;hardcover&quot;,&quot;t&quot;:&quot;Datguddiad Adda&quot;},{&quot;l&quot;:[&quot;cy&quot;],&quot;f&quot;:&quot;paperback&quot;,&quot;t&quot;:&quot;Datguddiad Adda&quot;},{&quot;l&quot;:[&quot;nl&quot;],&quot;f&quot;:&quot;ebook&quot;,&quot;t&quot;:&quot;De verschijning van Adam&quot;},{&quot;l&quot;:[&quot;nl&quot;],&quot;f&quot;:&quot;hardcover&quot;,&quot;t&quot;:&quot;De verschijning van Adam&quot;},{&quot;l&quot;:[&quot;nl&quot;],&quot;f&quot;:&quot;paperback&quot;,&quot;t&quot;:&quot;De verschijning van Adam&quot;},{&quot;l&quot;:[&quot;es&quot;],&quot;f&quot;:&quot;ebook&quot;,&quot;t&quot;:&quot;EL APOCALIPSIS DE ADÁN&quot;},{&quot;l&quot;:[&quot;es&quot;],&quot;f&quot;:&quot;paperback&quot;,&quot;t&quot;:&quot;EL APOCALIPSIS DE ADÁN&quot;},{&quot;l&quot;:[&quot;ar&quot;],&quot;f&quot;:&quot;ebook&quot;,&quot;t&quot;:&quot;تلقى آدم الوحي الإلهي أو الرؤى النبوية للأحداث المستقبلية. من خلال هذه الرؤية يمكنك الحصول على نظرة ثاقبة تتكشف الأحداث الكونية والتاريخية.&quot;},{&quot;l&quot;:[&quot;hi&quot;],&quot;f&quot;:&quot;ebook&quot;,&quot;t&quot;:&quot;आदम का सर्वनाश&quot;},{&quot;l&quot;:[&quot;hi&quot;],&quot;f&quot;:&quot;ebook&quot;,&quot;t&quot;:&quot;एडम का सर्वनाश&quot;},{&quot;l&quot;:[&quot;ta&quot;],&quot;f&quot;:&quot;ebook&quot;,&quot;t&quot;:&quot;ஆதாமின் வெளிப்பாடு&quot;},{&quot;l&quot;:[&quot;zh&quot;],&quot;f&quot;:&quot;ebook&quot;,&quot;t&quot;:&quot;亞當的啟示錄&quot;}]" data-slug="the-apocalypse-of-adam" data-wtitle="The Apocalypse of Adam">
   <a class="card-cover" href="./books/the-apocalypse-of-adam/index.html" tabindex="-1" aria-hidden="true"><div class="cover cover-photo cover-fmp"><img src="./assets/covers/the-apocalypse-of-adam__ed2-240.webp" srcset="./assets/covers/the-apocalypse-of-adam__ed2-240.webp 240w, ./assets/covers/the-apocalypse-of-adam__ed2-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="361" alt="Cover of The Apocalypse of Adam by Forbidden Mantra Press (paperback edition)" loading="lazy" decoding="async"></div></a>
   <div class="card-body">
@@ -204,6 +207,7 @@
     <p class="card-buy"><a class="btn btn-buy" href="https://www.amazon.com/dp/B0H8M6NYRK?tag=darktheoryinc-20" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="the-gospel-of-magdalene">Buy on Amazon<span class="sr"> (affiliate link, opens in a new tab): The Gospel of Magdalene</span></a></p>
   </div>
 </article></div>
+  <p class="lede-sm shelf-note">Books published by us, kept apart from the third-party titles further down. We call a book a bestseller only when we hold sales evidence for it; until then these are simply featured.</p>
 </div></section>
 <section class="band alt" data-home="mopai" aria-labelledby="mopai-h"><div class="wrap">
   <div class="split"><h2 id="mopai-h">Mo Pai Collection</h2><a href="./topics/mo-pai/index.html">All Mo Pai books →</a></div>
@@ -304,7 +308,7 @@
 <section class="band alt" data-home="featured" aria-labelledby="feat-h"><div class="wrap">
   <div class="split"><h2 id="feat-h">Featured books</h2><a href="./books/index.html">Browse all 311 books →</a></div>
   <p class="lede-sm">A small selection from each category. This is not a sales ranking: we have no reliable sales data, so nothing here is called a bestseller. The whole catalogue stays searchable.</p>
-  <section class="niche-shelf" aria-labelledby="fh-wellbeing-health"><div class="split"><h3 id="fh-wellbeing-health">Wellbeing &amp; Health</h3><a href="./subjects/wellbeing-health/index.html">All 45 books →</a></div><div class="shelf" role="region" tabindex="0" aria-label="Wellbeing &amp; Health featured books, scroll sideways"><article class="card">
+  <section class="niche-shelf" aria-labelledby="fh-wellbeing-health"><div class="split"><h3 id="fh-wellbeing-health">Wellbeing &amp; Health</h3><a href="./subjects/wellbeing-health/index.html">All 45 books →</a></div><div class="grid" data-hub-shelf="wellbeing-health"><article class="card">
   <a class="card-cover" href="./books/when-things-fall-apart/index.html" tabindex="-1" aria-hidden="true"><div class="cover cover-ph" style="--h:124" role="img" aria-label="Text placeholder for the cover of When Things Fall Apart. The original cover art is not available yet."><span class="ph-orn" aria-hidden="true">✦</span><span class="cover-title ph-t">When Things Fall Apart</span><span class="cover-author">Pema Chödrön</span><span class="ph-cap" aria-hidden="true">Cover art coming</span></div></a>
   <div class="card-body">
     
@@ -344,7 +348,7 @@
     <p class="card-meta">Paperback · English · Beginner</p>
     <p class="card-buy"><a class="btn btn-buy" href="https://www.amazon.com/dp/0807014273?tag=darktheoryinc-20" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="mans-search-for-meaning">Buy on Amazon<span class="sr"> (affiliate link, opens in a new tab): Man&#39;s Search for Meaning</span></a></p>
   </div>
-</article></div></section><section class="niche-shelf" aria-labelledby="fh-meditation-yoga-mantra"><div class="split"><h3 id="fh-meditation-yoga-mantra">Meditation, Yoga &amp; Mantra</h3><a href="./subjects/meditation-yoga-mantra/index.html">All 99 books →</a></div><div class="shelf" role="region" tabindex="0" aria-label="Meditation, Yoga &amp; Mantra featured books, scroll sideways"><article class="card">
+</article><article class="card">
   <a class="card-cover" href="./books/the-untethered-soul/index.html" tabindex="-1" aria-hidden="true"><div class="cover cover-ph" style="--h:178" role="img" aria-label="Text placeholder for the cover of The Untethered Soul. The original cover art is not available yet."><span class="ph-orn" aria-hidden="true">✦</span><span class="cover-title ph-t">The Untethered Soul</span><span class="cover-author">Michael A. Singer</span><span class="ph-cap" aria-hidden="true">Cover art coming</span></div></a>
   <div class="card-body">
     
@@ -355,6 +359,16 @@
     <p class="card-buy"><a class="btn btn-buy" href="https://www.amazon.com/dp/1572245379?tag=darktheoryinc-20" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="the-untethered-soul">Buy on Amazon<span class="sr"> (affiliate link, opens in a new tab): The Untethered Soul</span></a></p>
   </div>
 </article><article class="card">
+  <a class="card-cover" href="./books/when-the-body-says-no/index.html" tabindex="-1" aria-hidden="true"><div class="cover cover-ph" style="--h:200" role="img" aria-label="Text placeholder for the cover of When the Body Says No. The original cover art is not available yet."><span class="ph-orn" aria-hidden="true">✦</span><span class="cover-title ph-t">When the Body Says No</span><span class="cover-author">Gabor Maté</span><span class="ph-cap" aria-hidden="true">Cover art coming</span></div></a>
+  <div class="card-body">
+    
+    <h4 class="card-title"><a href="./books/when-the-body-says-no/index.html" title="When the Body Says No">When the Body Says No</a></h4>
+    <p class="card-sub">Exploring the Stress-Disease Connection</p>
+    <p class="card-author"><a href="./authors/gabor-mate/index.html">Gabor Maté</a></p>
+    <p class="card-meta">Paperback · English · Intermediate</p>
+    <p class="card-buy"><a class="btn btn-buy" href="https://www.amazon.com/dp/0470923350?tag=darktheoryinc-20" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="when-the-body-says-no">Buy on Amazon<span class="sr"> (affiliate link, opens in a new tab): When the Body Says No</span></a></p>
+  </div>
+</article></div></section><section class="niche-shelf" aria-labelledby="fh-meditation-yoga-mantra"><div class="split"><h3 id="fh-meditation-yoga-mantra">Meditation, Yoga &amp; Mantra</h3><a href="./subjects/meditation-yoga-mantra/index.html">All 99 books →</a></div><div class="grid" data-hub-shelf="meditation-yoga-mantra"><article class="card">
   <a class="card-cover" href="./books/comfortable-with-uncertainty/index.html" tabindex="-1" aria-hidden="true"><div class="cover cover-ph" style="--h:134" role="img" aria-label="Text placeholder for the cover of Comfortable with Uncertainty. The original cover art is not available yet."><span class="ph-orn" aria-hidden="true">✦</span><span class="cover-title ph-t">Comfortable with Uncertainty</span><span class="cover-author">Pema Chödrön</span><span class="ph-cap" aria-hidden="true">Cover art coming</span></div></a>
   <div class="card-body">
     
@@ -384,7 +398,37 @@
     <p class="card-meta">E-book · English · Level not yet rated</p>
     <p class="card-buy"><a class="btn btn-buy" href="https://www.amazon.com/dp/B0BX5PRFLX?tag=darktheoryinc-20" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="the-cyber-cupid">Buy on Amazon<span class="sr"> (affiliate link, opens in a new tab): The Cyber Cupid</span></a></p>
   </div>
-</article></div></section><section class="niche-shelf" aria-labelledby="fh-religions-sacred-texts"><div class="split"><h3 id="fh-religions-sacred-texts">Religions &amp; Sacred Texts</h3><a href="./subjects/religions-sacred-texts/index.html">All 163 books →</a></div><div class="shelf" role="region" tabindex="0" aria-label="Religions &amp; Sacred Texts featured books, scroll sideways"><article class="card">
+</article><article class="card">
+  <a class="card-cover" href="./books/the-tao-of-physics/index.html" tabindex="-1" aria-hidden="true"><div class="cover cover-ph" style="--h:299" role="img" aria-label="Text placeholder for the cover of The Tao of Physics. The original cover art is not available yet."><span class="ph-orn" aria-hidden="true">✦</span><span class="cover-title ph-t">The Tao of Physics</span><span class="cover-author">Fritjof Capra</span><span class="ph-cap" aria-hidden="true">Cover art coming</span></div></a>
+  <div class="card-body">
+    
+    <h4 class="card-title"><a href="./books/the-tao-of-physics/index.html" title="The Tao of Physics">The Tao of Physics</a></h4>
+    <p class="card-sub">An Exploration of the Parallels Between Modern Physics and Eastern Mysticism</p>
+    <p class="card-author"><a href="./authors/fritjof-capra/index.html">Fritjof Capra</a></p>
+    <p class="card-meta">Paperback · English · Level not yet rated</p>
+    <p class="card-buy"><a class="btn btn-buy" href="https://www.amazon.com/Tao-Physics-Exploration-Parallels-Mysticism/dp/0394731115?tag=darktheoryinc-20" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="the-tao-of-physics">Buy on Amazon<span class="sr"> (affiliate link, opens in a new tab): The Tao of Physics</span></a></p>
+  </div>
+</article><article class="card">
+  <a class="card-cover" href="./books/wherever-you-go-there-you-are/index.html" tabindex="-1" aria-hidden="true"><div class="cover cover-ph" style="--h:6" role="img" aria-label="Text placeholder for the cover of Wherever You Go, There You Are. The original cover art is not available yet."><span class="ph-orn" aria-hidden="true">✦</span><span class="cover-title ph-t">Wherever You Go, There You Are</span><span class="cover-author">Jon Kabat-Zinn</span><span class="ph-cap" aria-hidden="true">Cover art coming</span></div></a>
+  <div class="card-body">
+    
+    <h4 class="card-title"><a href="./books/wherever-you-go-there-you-are/index.html" title="Wherever You Go, There You Are">Wherever You Go, There You Are</a></h4>
+    <p class="card-sub">Mindfulness Meditation in Everyday Life</p>
+    <p class="card-author"><a href="./authors/jon-kabat-zinn/index.html">Jon Kabat-Zinn</a></p>
+    <p class="card-meta">Paperback · English · Level not yet rated</p>
+    <p class="card-buy"><a class="btn btn-buy" href="https://www.amazon.com/Wherever-You-Go-There-Are/dp/0749925485?tag=darktheoryinc-20" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="wherever-you-go-there-you-are">Buy on Amazon<span class="sr"> (affiliate link, opens in a new tab): Wherever You Go, There You Are</span></a></p>
+  </div>
+</article><article class="card">
+  <a class="card-cover" href="./books/a-new-earth/index.html" tabindex="-1" aria-hidden="true"><div class="cover cover-photo"><img src="./assets/covers/a-new-earth__9780452289963-240.webp" srcset="./assets/covers/a-new-earth__9780452289963-240.webp 240w, ./assets/covers/a-new-earth__9780452289963-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="361" alt="Cover of A New Earth by Eckhart Tolle (paperback edition)" loading="lazy" decoding="async"></div></a>
+  <div class="card-body">
+    
+    <h4 class="card-title"><a href="./books/a-new-earth/index.html" title="A New Earth">A New Earth</a></h4>
+    <p class="card-sub">Awakening to Your Life&#39;s Purpose</p>
+    <p class="card-author"><a href="./authors/eckhart-tolle/index.html">Eckhart Tolle</a></p>
+    <p class="card-meta">Paperback · English · Level not yet rated</p>
+    <p class="card-buy"><a class="btn btn-buy" href="https://www.amazon.com/s?k=9780452289963&amp;i=stripbooks&amp;tag=darktheoryinc-20" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="a-new-earth">Buy on Amazon<span class="sr"> (affiliate link, opens in a new tab): A New Earth</span></a></p>
+  </div>
+</article></div></section><section class="niche-shelf" aria-labelledby="fh-religions-sacred-texts"><div class="split"><h3 id="fh-religions-sacred-texts">Religions &amp; Sacred Texts</h3><a href="./subjects/religions-sacred-texts/index.html">All 163 books →</a></div><div class="grid" data-hub-shelf="religions-sacred-texts"><article class="card">
   <a class="card-cover" href="./books/the-gnostic-gospels/index.html" tabindex="-1" aria-hidden="true"><div class="cover cover-photo"><img src="./assets/covers/the-gnostic-gospels__9780679724537-240.webp" srcset="./assets/covers/the-gnostic-gospels__9780679724537-240.webp 240w, ./assets/covers/the-gnostic-gospels__9780679724537-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="375" alt="Cover of The Gnostic Gospels by Elaine Pagels (paperback edition)" loading="lazy" decoding="async"></div></a>
   <div class="card-body">
     
@@ -424,7 +468,27 @@
     <p class="card-meta">Paperback · English · Intermediate</p>
     <p class="card-buy"><a class="btn btn-buy" href="https://www.amazon.com/dp/0943358191?tag=darktheoryinc-20" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="taoist-secrets-of-love">Buy on Amazon<span class="sr"> (affiliate link, opens in a new tab): Taoist Secrets of Love</span></a></p>
   </div>
-</article></div></section><section class="niche-shelf" aria-labelledby="fh-occult-magick-paganism"><div class="split"><h3 id="fh-occult-magick-paganism">Occult, Magick &amp; Paganism</h3><a href="./subjects/occult-magick-paganism/index.html">All 68 books →</a></div><div class="shelf" role="region" tabindex="0" aria-label="Occult, Magick &amp; Paganism featured books, scroll sideways"><article class="card">
+</article><article class="card">
+  <a class="card-cover" href="./books/jinn-dark-angels-shapeshifters-and-ghouls/index.html" tabindex="-1" aria-hidden="true"><div class="cover cover-ph" style="--h:60" role="img" aria-label="Text placeholder for the cover of JINN - Dark Angels, Shapeshifters, and Ghouls. The original cover art is not available yet."><span class="ph-orn" aria-hidden="true">✦</span><span class="cover-title ph-t ph-m">JINN - Dark Angels, Shapeshifters, and Ghouls</span><span class="cover-author">TSPRav Shiva</span><span class="ph-cap" aria-hidden="true">Cover art coming</span></div></a>
+  <div class="card-body">
+    
+    <h4 class="card-title"><a href="./books/jinn-dark-angels-shapeshifters-and-ghouls/index.html" title="JINN - Dark Angels, Shapeshifters, and Ghouls">JINN - Dark Angels, Shapeshifters, and Ghouls</a></h4>
+    
+    <p class="card-author"><a href="./authors/tsprav-shiva/index.html">TSPRav Shiva</a></p>
+    <p class="card-meta">E-book · English · Level not yet rated</p>
+    <p class="card-buy"><a class="btn btn-buy" href="https://www.amazon.com/dp/B0BY758969?tag=darktheoryinc-20" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="jinn-dark-angels-shapeshifters-and-ghouls">Buy on Amazon<span class="sr"> (affiliate link, opens in a new tab): JINN - Dark Angels, Shapeshifters, and Ghouls</span></a></p>
+  </div>
+</article><article class="card">
+  <a class="card-cover" href="./books/metamorphoses/index.html" tabindex="-1" aria-hidden="true"><div class="cover cover-photo"><img src="./assets/covers/metamorphoses__9780140447897-240.webp" srcset="./assets/covers/metamorphoses__9780140447897-240.webp 240w, ./assets/covers/metamorphoses__9780140447897-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="372" alt="Cover of Metamorphoses by Ovid (paperback edition)" loading="lazy" decoding="async"></div></a>
+  <div class="card-body">
+    
+    <h4 class="card-title"><a href="./books/metamorphoses/index.html" title="Metamorphoses">Metamorphoses</a></h4>
+    
+    <p class="card-author"><a href="./authors/ovid/index.html">Ovid</a></p>
+    <p class="card-meta">Paperback · English · Level not yet rated</p>
+    <p class="card-buy"><a class="btn btn-buy" href="https://www.amazon.com/s?k=9780140447897&amp;i=stripbooks&amp;tag=darktheoryinc-20" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="metamorphoses">Buy on Amazon<span class="sr"> (affiliate link, opens in a new tab): Metamorphoses</span></a></p>
+  </div>
+</article></div></section><section class="niche-shelf" aria-labelledby="fh-occult-magick-paganism"><div class="split"><h3 id="fh-occult-magick-paganism">Occult, Magick &amp; Paganism</h3><a href="./subjects/occult-magick-paganism/index.html">All 68 books →</a></div><div class="grid" data-hub-shelf="occult-magick-paganism"><article class="card">
   <a class="card-cover" href="./books/wicca/index.html" tabindex="-1" aria-hidden="true"><div class="cover cover-ph" style="--h:127" role="img" aria-label="Text placeholder for the cover of Wicca. The original cover art is not available yet."><span class="ph-orn" aria-hidden="true">✦</span><span class="cover-title ph-t">Wicca</span><span class="cover-author">Scott Cunningham</span><span class="ph-cap" aria-hidden="true">Cover art coming</span></div></a>
   <div class="card-body">
     
@@ -464,17 +528,27 @@
     <p class="card-meta">Paperback · English · Intermediate</p>
     <p class="card-buy"><a class="btn btn-buy" href="https://www.amazon.com/dp/1578636655?tag=darktheoryinc-20" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="seventy-eight-degrees-of-wisdom">Buy on Amazon<span class="sr"> (affiliate link, opens in a new tab): Seventy-Eight Degrees of Wisdom</span></a></p>
   </div>
-</article></div></section><section class="niche-shelf" aria-labelledby="fh-energy-inner-cultivation"><div class="split"><h3 id="fh-energy-inner-cultivation">Energy &amp; Inner Cultivation</h3><a href="./subjects/energy-inner-cultivation/index.html">All 24 books →</a></div><div class="shelf" role="region" tabindex="0" aria-label="Energy &amp; Inner Cultivation featured books, scroll sideways"><article class="card">
-  <a class="card-cover" href="./books/the-tao-of-physics/index.html" tabindex="-1" aria-hidden="true"><div class="cover cover-ph" style="--h:299" role="img" aria-label="Text placeholder for the cover of The Tao of Physics. The original cover art is not available yet."><span class="ph-orn" aria-hidden="true">✦</span><span class="cover-title ph-t">The Tao of Physics</span><span class="cover-author">Fritjof Capra</span><span class="ph-cap" aria-hidden="true">Cover art coming</span></div></a>
+</article><article class="card">
+  <a class="card-cover" href="./books/bucklands-complete-book-of-witchcraft/index.html" tabindex="-1" aria-hidden="true"><div class="cover cover-ph" style="--h:154" role="img" aria-label="Text placeholder for the cover of Buckland’s Complete Book of Witchcraft. The original cover art is not available yet."><span class="ph-orn" aria-hidden="true">✦</span><span class="cover-title ph-t">Buckland’s Complete Book of Witchcraft</span><span class="cover-author">Raymond Buckland</span><span class="ph-cap" aria-hidden="true">Cover art coming</span></div></a>
   <div class="card-body">
     
-    <h4 class="card-title"><a href="./books/the-tao-of-physics/index.html" title="The Tao of Physics">The Tao of Physics</a></h4>
-    <p class="card-sub">An Exploration of the Parallels Between Modern Physics and Eastern Mysticism</p>
-    <p class="card-author"><a href="./authors/fritjof-capra/index.html">Fritjof Capra</a></p>
-    <p class="card-meta">Paperback · English · Level not yet rated</p>
-    <p class="card-buy"><a class="btn btn-buy" href="https://www.amazon.com/Tao-Physics-Exploration-Parallels-Mysticism/dp/0394731115?tag=darktheoryinc-20" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="the-tao-of-physics">Buy on Amazon<span class="sr"> (affiliate link, opens in a new tab): The Tao of Physics</span></a></p>
+    <h4 class="card-title"><a href="./books/bucklands-complete-book-of-witchcraft/index.html" title="Buckland’s Complete Book of Witchcraft">Buckland’s Complete Book of Witchcraft</a></h4>
+    
+    <p class="card-author"><a href="./authors/raymond-buckland/index.html">Raymond Buckland</a></p>
+    <p class="card-meta">Paperback · English · Beginner</p>
+    <p class="card-buy"><a class="btn btn-buy" href="https://www.amazon.com/dp/0875420508?tag=darktheoryinc-20" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="bucklands-complete-book-of-witchcraft">Buy on Amazon<span class="sr"> (affiliate link, opens in a new tab): Buckland’s Complete Book of Witchcraft</span></a></p>
   </div>
 </article><article class="card">
+  <a class="card-cover" href="./books/modern-magick/index.html" tabindex="-1" aria-hidden="true"><div class="cover cover-ph" style="--h:303" role="img" aria-label="Text placeholder for the cover of Modern Magick. The original cover art is not available yet."><span class="ph-orn" aria-hidden="true">✦</span><span class="cover-title ph-t">Modern Magick</span><span class="cover-author">Donald Michael Kraig</span><span class="ph-cap" aria-hidden="true">Cover art coming</span></div></a>
+  <div class="card-body">
+    
+    <h4 class="card-title"><a href="./books/modern-magick/index.html" title="Modern Magick">Modern Magick</a></h4>
+    <p class="card-sub">Twelve Lessons in the High Magickal Arts</p>
+    <p class="card-author"><a href="./authors/donald-michael-kraig/index.html">Donald Michael Kraig</a></p>
+    <p class="card-meta">Paperback · English · Level not yet rated</p>
+    <p class="card-buy"><a class="btn btn-buy" href="https://www.amazon.com/s?k=9780738715780&amp;i=stripbooks&amp;tag=darktheoryinc-20" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="modern-magick">Buy on Amazon<span class="sr"> (affiliate link, opens in a new tab): Modern Magick</span></a></p>
+  </div>
+</article></div></section><section class="niche-shelf" aria-labelledby="fh-energy-inner-cultivation"><div class="split"><h3 id="fh-energy-inner-cultivation">Energy &amp; Inner Cultivation</h3><a href="./subjects/energy-inner-cultivation/index.html">All 24 books →</a></div><div class="grid" data-hub-shelf="energy-inner-cultivation"><article class="card">
   <a class="card-cover" href="./books/awaken-healing-energy-through-the-tao/index.html" tabindex="-1" aria-hidden="true"><div class="cover cover-ph" style="--h:13" role="img" aria-label="Text placeholder for the cover of Awaken Healing Energy Through the Tao. The original cover art is not available yet."><span class="ph-orn" aria-hidden="true">✦</span><span class="cover-title ph-t">Awaken Healing Energy Through the Tao</span><span class="cover-author">Mantak Chia</span><span class="ph-cap" aria-hidden="true">Cover art coming</span></div></a>
   <div class="card-body">
     
@@ -504,7 +578,27 @@
     <p class="card-meta">Paperback · English · Level not yet rated</p>
     <p class="card-buy"><a class="btn btn-buy" href="https://www.amazon.com/s?k=9780061142666&amp;i=stripbooks&amp;tag=darktheoryinc-20" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="tao-te-ching">Buy on Amazon<span class="sr"> (affiliate link, opens in a new tab): Tao Te Ching</span></a></p>
   </div>
-</article></div></section><section class="niche-shelf" aria-labelledby="fh-consciousness-myth-wisdom"><div class="split"><h3 id="fh-consciousness-myth-wisdom">Consciousness, Myth &amp; Ancient Wisdom</h3><a href="./subjects/consciousness-myth-wisdom/index.html">All 78 books →</a></div><div class="shelf" role="region" tabindex="0" aria-label="Consciousness, Myth &amp; Ancient Wisdom featured books, scroll sideways"><article class="card">
+</article><article class="card">
+  <a class="card-cover" href="./books/the-secret-of-the-golden-flower/index.html" tabindex="-1" aria-hidden="true"><div class="cover cover-ph" style="--h:195" role="img" aria-label="Text placeholder for the cover of The Secret of the Golden Flower. The original cover art is not available yet."><span class="ph-orn" aria-hidden="true">✦</span><span class="cover-title ph-t">The Secret of the Golden Flower</span><span class="cover-author">Richard Wilhelm</span><span class="ph-cap" aria-hidden="true">Cover art coming</span></div></a>
+  <div class="card-body">
+    
+    <h4 class="card-title"><a href="./books/the-secret-of-the-golden-flower/index.html" title="The Secret of the Golden Flower">The Secret of the Golden Flower</a></h4>
+    <p class="card-sub">A Chinese Book of Life</p>
+    <p class="card-author"><a href="./authors/richard-wilhelm/index.html">Richard Wilhelm</a>, <a href="./authors/c-g-jung/index.html">C. G. Jung</a></p>
+    <p class="card-meta">Paperback · English · Level not yet rated</p>
+    <p class="card-buy"><a class="btn btn-buy" href="https://www.amazon.com/Secret-Golden-Flower-Chinese-Book/dp/0156799804?tag=darktheoryinc-20" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="the-secret-of-the-golden-flower">Buy on Amazon<span class="sr"> (affiliate link, opens in a new tab): The Secret of the Golden Flower</span></a></p>
+  </div>
+</article><article class="card">
+  <a class="card-cover" href="./books/the-tao-of-pooh/index.html" tabindex="-1" aria-hidden="true"><div class="cover cover-photo"><img src="./assets/covers/the-tao-of-pooh__9780140067477-240.webp" srcset="./assets/covers/the-tao-of-pooh__9780140067477-240.webp 240w, ./assets/covers/the-tao-of-pooh__9780140067477-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="344" alt="Cover of The Tao of Pooh by Benjamin Hoff (paperback edition)" loading="lazy" decoding="async"></div></a>
+  <div class="card-body">
+    
+    <h4 class="card-title"><a href="./books/the-tao-of-pooh/index.html" title="The Tao of Pooh">The Tao of Pooh</a></h4>
+    
+    <p class="card-author"><a href="./authors/benjamin-hoff/index.html">Benjamin Hoff</a></p>
+    <p class="card-meta">Paperback · English · Level not yet rated</p>
+    <p class="card-buy"><a class="btn btn-buy" href="https://www.amazon.com/s?k=9780140067477&amp;i=stripbooks&amp;tag=darktheoryinc-20" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="the-tao-of-pooh">Buy on Amazon<span class="sr"> (affiliate link, opens in a new tab): The Tao of Pooh</span></a></p>
+  </div>
+</article></div></section><section class="niche-shelf" aria-labelledby="fh-consciousness-myth-wisdom"><div class="split"><h3 id="fh-consciousness-myth-wisdom">Consciousness, Myth &amp; Ancient Wisdom</h3><a href="./subjects/consciousness-myth-wisdom/index.html">All 78 books →</a></div><div class="grid" data-hub-shelf="consciousness-myth-wisdom"><article class="card">
   <a class="card-cover" href="./books/meditations/index.html" tabindex="-1" aria-hidden="true"><div class="cover cover-photo"><img src="./assets/covers/meditations__9780812968255-240.webp" srcset="./assets/covers/meditations__9780812968255-240.webp 240w, ./assets/covers/meditations__9780812968255-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="369" alt="Cover of Meditations by Marcus Aurelius (paperback edition)" loading="lazy" decoding="async"></div></a>
   <div class="card-body">
     
@@ -544,7 +638,27 @@
     <p class="card-meta">Paperback · English · Beginner</p>
     <p class="card-buy"><a class="btn btn-buy" href="https://www.amazon.com/dp/0140442103?tag=darktheoryinc-20" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="letters-from-a-stoic">Buy on Amazon<span class="sr"> (affiliate link, opens in a new tab): Letters from a Stoic</span></a></p>
   </div>
-</article></div></section><section class="niche-shelf" aria-labelledby="fh-fantasy-folklore-fiction"><div class="split"><h3 id="fh-fantasy-folklore-fiction">Fantasy, Folklore &amp; Supernatural Fiction</h3><a href="./subjects/fantasy-folklore-fiction/index.html">All 98 books →</a></div><div class="shelf" role="region" tabindex="0" aria-label="Fantasy, Folklore &amp; Supernatural Fiction featured books, scroll sideways"><article class="card">
+</article><article class="card">
+  <a class="card-cover" href="./books/the-complete-fairy-tales-of-the-brothers-grimm/index.html" tabindex="-1" aria-hidden="true"><div class="cover cover-photo"><img src="./assets/covers/the-complete-fairy-tales-of-the-brothers-grimm__9780553382167-240.webp" srcset="./assets/covers/the-complete-fairy-tales-of-the-brothers-grimm__9780553382167-240.webp 240w, ./assets/covers/the-complete-fairy-tales-of-the-brothers-grimm__9780553382167-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="365" alt="Cover of The Complete Fairy Tales of the Brothers Grimm by Jacob and Wilhelm Grimm (paperback edition)" loading="lazy" decoding="async"></div></a>
+  <div class="card-body">
+    
+    <h4 class="card-title"><a href="./books/the-complete-fairy-tales-of-the-brothers-grimm/index.html" title="The Complete Fairy Tales of the Brothers Grimm">The Complete Fairy Tales of the Brothers Grimm</a></h4>
+    <p class="card-sub">All-New Third Edition</p>
+    <p class="card-author"><a href="./authors/jacob-and-wilhelm-grimm/index.html">Jacob and Wilhelm Grimm</a></p>
+    <p class="card-meta">Paperback · English · Beginner</p>
+    <p class="card-buy"><a class="btn btn-buy" href="https://www.amazon.com/dp/0553382160?tag=darktheoryinc-20" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="the-complete-fairy-tales-of-the-brothers-grimm">Buy on Amazon<span class="sr"> (affiliate link, opens in a new tab): The Complete Fairy Tales of the Brothers Grimm</span></a></p>
+  </div>
+</article><article class="card">
+  <a class="card-cover" href="./books/the-once-and-future-king/index.html" tabindex="-1" aria-hidden="true"><div class="cover cover-photo"><img src="./assets/covers/the-once-and-future-king__9780441627400-240.webp" srcset="./assets/covers/the-once-and-future-king__9780441627400-240.webp 240w, ./assets/covers/the-once-and-future-king__9780441627400-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="387" alt="Cover of The Once and Future King by T.H. White (paperback edition)" loading="lazy" decoding="async"></div></a>
+  <div class="card-body">
+    
+    <h4 class="card-title"><a href="./books/the-once-and-future-king/index.html" title="The Once and Future King">The Once and Future King</a></h4>
+    
+    <p class="card-author"><a href="./authors/t-h-white/index.html">T.H. White</a></p>
+    <p class="card-meta">Paperback · English · Intermediate</p>
+    <p class="card-buy"><a class="btn btn-buy" href="https://www.amazon.com/dp/0441627404?tag=darktheoryinc-20" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="the-once-and-future-king">Buy on Amazon<span class="sr"> (affiliate link, opens in a new tab): The Once and Future King</span></a></p>
+  </div>
+</article></div></section><section class="niche-shelf" aria-labelledby="fh-fantasy-folklore-fiction"><div class="split"><h3 id="fh-fantasy-folklore-fiction">Fantasy, Folklore &amp; Supernatural Fiction</h3><a href="./subjects/fantasy-folklore-fiction/index.html">All 98 books →</a></div><div class="grid" data-hub-shelf="fantasy-folklore-fiction"><article class="card">
   <a class="card-cover" href="./books/a-wizard-of-earthsea/index.html" tabindex="-1" aria-hidden="true"><div class="cover cover-ph" style="--h:264" role="img" aria-label="Text placeholder for the cover of A Wizard of Earthsea. The original cover art is not available yet."><span class="ph-orn" aria-hidden="true">✦</span><span class="cover-title ph-t">A Wizard of Earthsea</span><span class="cover-author">Ursula K. Le Guin</span><span class="ph-cap" aria-hidden="true">Cover art coming</span></div></a>
   <div class="card-body">
     
@@ -583,6 +697,26 @@
     <p class="card-author"><a href="./authors/neil-gaiman/index.html">Neil Gaiman</a>, <a href="./authors/terry-pratchett/index.html">Terry Pratchett</a></p>
     <p class="card-meta">Paperback · English · Beginner</p>
     <p class="card-buy"><a class="btn btn-buy" href="https://www.amazon.com/dp/0060853980?tag=darktheoryinc-20" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="good-omens">Buy on Amazon<span class="sr"> (affiliate link, opens in a new tab): Good Omens</span></a></p>
+  </div>
+</article><article class="card">
+  <a class="card-cover" href="./books/jonathan-strange-and-mr-norrell/index.html" tabindex="-1" aria-hidden="true"><div class="cover cover-ph" style="--h:102" role="img" aria-label="Text placeholder for the cover of Jonathan Strange &amp; Mr Norrell. The original cover art is not available yet."><span class="ph-orn" aria-hidden="true">✦</span><span class="cover-title ph-t">Jonathan Strange &amp; Mr Norrell</span><span class="cover-author">Susanna Clarke</span><span class="ph-cap" aria-hidden="true">Cover art coming</span></div></a>
+  <div class="card-body">
+    
+    <h4 class="card-title"><a href="./books/jonathan-strange-and-mr-norrell/index.html" title="Jonathan Strange &amp; Mr Norrell">Jonathan Strange &amp; Mr Norrell</a></h4>
+    
+    <p class="card-author"><a href="./authors/susanna-clarke/index.html">Susanna Clarke</a></p>
+    <p class="card-meta">Paperback · English · Intermediate</p>
+    <p class="card-buy"><a class="btn btn-buy" href="https://www.amazon.com/dp/1582346038?tag=darktheoryinc-20" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="jonathan-strange-and-mr-norrell">Buy on Amazon<span class="sr"> (affiliate link, opens in a new tab): Jonathan Strange &amp; Mr Norrell</span></a></p>
+  </div>
+</article><article class="card">
+  <a class="card-cover" href="./books/the-lion-the-witch-and-the-wardrobe/index.html" tabindex="-1" aria-hidden="true"><div class="cover cover-ph" style="--h:219" role="img" aria-label="Text placeholder for the cover of The Lion, the Witch and the Wardrobe. The original cover art is not available yet."><span class="ph-orn" aria-hidden="true">✦</span><span class="cover-title ph-t">The Lion, the Witch and the Wardrobe</span><span class="cover-author">C.S. Lewis</span><span class="ph-cap" aria-hidden="true">Cover art coming</span></div></a>
+  <div class="card-body">
+    
+    <h4 class="card-title"><a href="./books/the-lion-the-witch-and-the-wardrobe/index.html" title="The Lion, the Witch and the Wardrobe">The Lion, the Witch and the Wardrobe</a></h4>
+    
+    <p class="card-author"><a href="./authors/c-s-lewis/index.html">C.S. Lewis</a></p>
+    <p class="card-meta">Paperback · English · Beginner</p>
+    <p class="card-buy"><a class="btn btn-buy" href="https://www.amazon.com/dp/0064471047?tag=darktheoryinc-20" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="the-lion-the-witch-and-the-wardrobe">Buy on Amazon<span class="sr"> (affiliate link, opens in a new tab): The Lion, the Witch and the Wardrobe</span></a></p>
   </div>
 </article></div></section>
 </div></section>
@@ -644,6 +778,7 @@
 <script>window.FM_LANGBOOKS={"en":{"n":524,"works":307,"href":"languages/en/index.html","books":[{"s":"a-wizard-of-earthsea","t":"A Wizard of Earthsea","a":"Ursula K. Le Guin","p":0,"h":"books/a-wizard-of-earthsea/index.html#lang-en","c":"fantasy","v":0},{"s":"harry-potter-and-the-philosophers-stone","t":"Harry Potter and the Sorcerer's Stone","a":"J.K. Rowling","p":0,"h":"books/harry-potter-and-the-philosophers-stone/index.html#lang-en","c":"fantasy","v":0},{"s":"when-things-fall-apart","t":"When Things Fall Apart","a":"Pema Chödrön","p":0,"h":"books/when-things-fall-apart/index.html#lang-en","c":"buddhism","v":0},{"s":"meditations","t":"Meditations","a":"Marcus Aurelius","p":0,"h":"books/meditations/index.html#lang-en","c":"philosophy","v":["meditations__9780812968255",240,369,1]},{"s":"the-gnostic-gospels","t":"The Gnostic Gospels","a":"Elaine Pagels","p":0,"h":"books/the-gnostic-gospels/index.html#lang-en","c":"gnosticism","v":["the-gnostic-gospels__9780679724537",240,375,1]},{"s":"the-hobbit","t":"The Hobbit","a":"J.R.R. Tolkien","p":0,"h":"books/the-hobbit/index.html#lang-en","c":"fantasy","v":0},{"s":"the-power-of-now","t":"The Power of Now","a":"Eckhart Tolle","p":0,"h":"books/the-power-of-now/index.html#lang-en","c":"consciousness","v":0},{"s":"wicca","t":"Wicca","a":"Scott Cunningham","p":0,"h":"books/wicca/index.html#lang-en","c":"wicca","v":0}]},"es":{"n":46,"works":19,"href":"languages/es/index.html","books":[{"s":"the-apocalypse-of-adam","t":"EL APOCALIPSIS DE ADÁN","a":"Forbidden Mantra Press","p":1,"h":"books/the-apocalypse-of-adam/index.html#lang-es","c":"gnosticism","v":0},{"s":"maa-kali-mantras-and-instructions","t":"Mantras de Maa Kali e instrucciones","a":"Forbidden Mantra Press","p":1,"h":"books/maa-kali-mantras-and-instructions/index.html#lang-es","c":"sanskrit-mantras","v":0},{"s":"om-namah-shivaya","t":"Om Namah Shivaya","a":"Forbidden Mantra Press","p":1,"h":"books/om-namah-shivaya/index.html#lang-es","c":"sanskrit-mantras","v":0},{"s":"a-comprehensive-guide-on-the-avalokitesvara-mantra","t":"Una guía completa sobre el mantra Avalokitesvara","a":"Emily K Patel","p":1,"h":"books/a-comprehensive-guide-on-the-avalokitesvara-mantra/index.html#lang-es","c":"buddhism","v":0},{"s":"beyond-sex","t":"Más allá del sexo","a":"Emily K Patel","p":1,"h":"books/beyond-sex/index.html#lang-es","c":"tantra","v":0},{"s":"creation-and-connection","t":"Creación y conexión","a":"Emily K Patel","p":1,"h":"books/creation-and-connection/index.html#lang-es","c":"ancient-texts","v":0},{"s":"edenic-origins","t":"Orígenes edénicos","a":"Emily K Patel","p":1,"h":"books/edenic-origins/index.html#lang-es","c":"holistic-traditions","v":0},{"s":"invoke-the-fierce","t":"Invocar al Feroz","a":"Forbidden Mantra Press","p":1,"h":"books/invoke-the-fierce/index.html#lang-es","c":"sanskrit-mantras","v":["invoke-the-fierce__ed2",240,360,1]}]},"hi":{"n":15,"works":13,"href":"languages/hi/index.html","books":[{"s":"the-apocalypse-of-adam","t":"आदम का सर्वनाश","a":"Forbidden Mantra Press","p":1,"h":"books/the-apocalypse-of-adam/index.html#lang-hi","c":"gnosticism","v":0},{"s":"apocalypse-of-adam","t":"आदम का सर्वनाश","a":"Emily K Patel","p":1,"h":"books/apocalypse-of-adam/index.html#lang-hi","c":"gnosticism","v":0},{"s":"creation-and-connection","t":"सृजन और संबंध","a":"Emily K Patel","p":1,"h":"books/creation-and-connection/index.html#lang-hi","c":"ancient-texts","v":0},{"s":"gnostic-gospels-and-the-hidden-christ","t":"ग्नोस्टिक सुसमाचार और छिपा हुआ मसीह","a":"Emily K Patel","p":1,"h":"books/gnostic-gospels-and-the-hidden-christ/index.html#lang-hi","c":"gnosticism","v":0},{"s":"jewel-of-the-lotus","t":"कमल का गहना","a":"Emily K Patel","p":1,"h":"books/jewel-of-the-lotus/index.html#lang-hi","c":"buddhism","v":0},{"s":"mo-pai-the-destructive-and-healing-force-within","t":"मो पाई","a":"Emily K Kissoon","p":1,"h":"books/mo-pai-the-destructive-and-healing-force-within/index.html#lang-hi","c":"mo-pai","v":0},{"s":"the-ancient-science-of-kundalini-energy-revealed","t":"कुंडलिनी ऊर्जा के प्राचीन विज्ञान का रहस्योद्घाटन","a":"Emily K Patel","p":1,"h":"books/the-ancient-science-of-kundalini-energy-revealed/index.html#lang-hi","c":"mo-pai","v":["the-ancient-science-of-kundalini-energy-revealed__B0GZQJ3BS3",240,360,1]},{"s":"the-hidden-doctrine-of-mo-pai","t":"मो पाई का गुप्त सिद्धांत","a":"Emily Patel","p":1,"h":"books/the-hidden-doctrine-of-mo-pai/index.html#lang-hi","c":"mo-pai","v":0}]},"de":{"n":14,"works":7,"href":"languages/de/index.html","books":[{"s":"the-apocalypse-of-adam","t":"Das Erscheinen Adams","a":"Forbidden Mantra Press","p":1,"h":"books/the-apocalypse-of-adam/index.html#lang-de","c":"gnosticism","v":0},{"s":"maa-kali-mantras-and-instructions","t":"Maa Kali Mantras und Anweisungen","a":"Forbidden Mantra Press","p":1,"h":"books/maa-kali-mantras-and-instructions/index.html#lang-de","c":"sanskrit-mantras","v":0},{"s":"om-namah-shivaya","t":"Om Namah Shivaya","a":"Forbidden Mantra Press","p":1,"h":"books/om-namah-shivaya/index.html#lang-de","c":"sanskrit-mantras","v":0},{"s":"edenic-origins","t":"Edenic Origins","a":"Emily K Patel","p":1,"h":"books/edenic-origins/index.html#lang-de","c":"holistic-traditions","v":0},{"s":"make-yourself-irresistibly-attractive-with-the-kleem-mantra","t":"Machen Sie sich mit dem Kleem-Mantra unwiderstehlich attraktiv","a":"TSPRav Shiva","p":1,"h":"books/make-yourself-irresistibly-attractive-with-the-kleem-mantra/index.html#lang-de","c":"tantra","v":0},{"s":"mo-pai-the-destructive-and-healing-force-within","t":"Mo Pai","a":"Emily K Kissoon","p":1,"h":"books/mo-pai-the-destructive-and-healing-force-within/index.html#lang-de","c":"mo-pai","v":0},{"s":"unleashing-the-inner-fire","t":"Das innere Feuer entfesseln","a":"Emily K Patel","p":1,"h":"books/unleashing-the-inner-fire/index.html#lang-de","c":"subtle-body","v":0}]},"fr":{"n":10,"works":3,"href":"languages/fr/index.html","books":[{"s":"make-yourself-irresistibly-attractive-with-the-kleem-mantra","t":"Rendez-vous irrésistiblement attirant avec le mantra de Kleem","a":"TSPRav Shiva","p":1,"h":"books/make-yourself-irresistibly-attractive-with-the-kleem-mantra/index.html#lang-fr","c":"tantra","v":0},{"s":"mo-pai-the-destructive-and-healing-force-within","t":"Mo Pai","a":"Emily K Kissoon","p":1,"h":"books/mo-pai-the-destructive-and-healing-force-within/index.html#lang-fr","c":"mo-pai","v":0},{"s":"unleashing-the-inner-fire","t":"Libérer le feu intérieur","a":"Emily K Patel","p":1,"h":"books/unleashing-the-inner-fire/index.html#lang-fr","c":"subtle-body","v":0}]},"nl":{"n":9,"works":3,"href":"languages/nl/index.html","books":[{"s":"the-apocalypse-of-adam","t":"De verschijning van Adam","a":"Forbidden Mantra Press","p":1,"h":"books/the-apocalypse-of-adam/index.html#lang-nl","c":"gnosticism","v":0},{"s":"beyond-sex","t":"Beyond Sex","a":"Emily K Patel","p":1,"h":"books/beyond-sex/index.html#lang-nl","c":"tantra","v":0},{"s":"creation-and-connection","t":"Schepping en verbinding","a":"Emily K Patel","p":1,"h":"books/creation-and-connection/index.html#lang-nl","c":"ancient-texts","v":0}]},"zh":{"n":3,"works":3,"href":"languages/zh/index.html","books":[{"s":"the-apocalypse-of-adam","t":"亞當的啟示錄","a":"Forbidden Mantra Press","p":1,"h":"books/the-apocalypse-of-adam/index.html#lang-zh","c":"gnosticism","v":0},{"s":"beyond-sex","t":"超越性","a":"Emily K Patel","p":1,"h":"books/beyond-sex/index.html#lang-zh","c":"tantra","v":0},{"s":"creation-and-connection","t":"創造與連結","a":"Emily K Patel","p":1,"h":"books/creation-and-connection/index.html#lang-zh","c":"ancient-texts","v":0}]},"pt":{"n":3,"works":1,"href":"languages/pt/index.html","books":[{"s":"unveiling-the-mysteries-of-the-gospel-of-peter","t":"Revelando os mistérios do O Evangelho de Pedro","a":"Emily K Patel","p":1,"h":"books/unveiling-the-mysteries-of-the-gospel-of-peter/index.html#lang-pt","c":"gnosticism","v":0}]},"cy":{"n":3,"works":1,"href":"languages/cy/index.html","books":[{"s":"the-apocalypse-of-adam","t":"Datguddiad Adda","a":"Forbidden Mantra Press","p":1,"h":"books/the-apocalypse-of-adam/index.html#lang-cy","c":"gnosticism","v":0}]},"ru":{"n":3,"works":1,"href":"languages/ru/index.html","books":[{"s":"unveiling-the-mysteries-of-the-gospel-of-peter","t":"Раскрывая тайны Евангелие от Петра","a":"Emily K Patel","p":1,"h":"books/unveiling-the-mysteries-of-the-gospel-of-peter/index.html#lang-ru","c":"gnosticism","v":0}]},"ar":{"n":1,"works":1,"href":"languages/ar/index.html","books":[{"s":"the-apocalypse-of-adam","t":"تلقى آدم الوحي الإلهي أو الرؤى النبوية للأحداث المستقبلية. من خلال هذه الرؤية يمكنك الحصول على نظرة ثاقبة تتكشف الأحداث الكونية والتاريخية.","a":"Forbidden Mantra Press","p":1,"h":"books/the-apocalypse-of-adam/index.html#lang-ar","c":"gnosticism","v":0}]},"ta":{"n":1,"works":1,"href":"languages/ta/index.html","books":[{"s":"the-apocalypse-of-adam","t":"ஆதாமின் வெளிப்பாடு","a":"Forbidden Mantra Press","p":1,"h":"books/the-apocalypse-of-adam/index.html#lang-ta","c":"gnosticism","v":0}]}};</script>
 <script src="./assets/i18n.js"></script>
 <script src="./assets/app.js"></script>
-<div id="fm-librarian" hidden data-root="./" data-config='{&quot;art&quot;:{&quot;file&quot;:&quot;librarian.webp&quot;,&quot;width&quot;:560,&quot;height&quot;:840,&quot;alt&quot;:&quot;&quot;,&quot;rightsConfirmed&quot;:true,&quot;eyes&quot;:[{&quot;x&quot;:39.9,&quot;y&quot;:8.5,&quot;w&quot;:5.6,&quot;h&quot;:2.4},{&quot;x&quot;:48.5,&quot;y&quot;:10,&quot;w&quot;:6,&quot;h&quot;:2.5}],&quot;head&quot;:{&quot;clipBottom&quot;:16.4,&quot;pivotY&quot;:15.5},&quot;emblem&quot;:{&quot;x&quot;:49.1,&quot;y&quot;:24.2},&quot;hand&quot;:{&quot;x&quot;:85.9,&quot;y&quot;:22.8},&quot;src&quot;:&quot;./assets/librarian/librarian.webp&quot;},&quot;voice&quot;:{&quot;enabled&quot;:false,&quot;note&quot;:&quot;Phase 2: microphone search. Implement by calling FMLibrarian.submitQuery(text, { source: &#39;voice&#39; }) from a recognition handler; see docs/LIBRARIAN.md. No recogniser is loaded and the microphone is never requested.&quot;},&quot;ai&quot;:{&quot;enabled&quot;:false},&quot;startMinimizedBelowPx&quot;:700}'></div><script src="./assets/librarian.js" defer></script>
+<script src="./assets/ask.js" defer></script>
+
 </body>
 </html>

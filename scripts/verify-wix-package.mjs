@@ -76,16 +76,15 @@ if (browser) for (const [name, vp, mobile] of [['desktop', { width: 1366, height
   await pg.route(/^https?:\/\/(?!127\.0\.0\.1)/, (x) => x.abort());
   const T = `[${name}]`, go = async (p) => { await pg.goto(base + p); await pg.waitForTimeout(350); };
   await go(''); ok(/Forbidden\s*Mantra\s*Press/.test((await pg.locator('h1').first().innerText())) && await pg.locator('[data-home=fmp] .card').count() === 14, `${T} homepage over HTTP: hero, 14 own titles, featured shelves`);
-  await pg.waitForFunction(() => { const i = document.querySelector('.lib-img'); return !i || i.closest('.lib-panel').hidden || (i.complete && i.naturalWidth > 0); }, null, { timeout: 4000 }).catch(() => {});
-  const lv = await pg.evaluate(() => { const panel = document.querySelector('.lib-panel'), chip = document.querySelector('.lib-chip'); const el = !panel.hidden ? panel : chip; const r = el.getBoundingClientRect(); return { mode: document.getElementById('fm-librarian').dataset.mode, inside: r.right <= innerWidth + 1 && r.bottom <= innerHeight + 1 && r.width > 30, face: /librarian\.webp/.test(getComputedStyle(document.querySelector('.lib-chip-face')).backgroundImage), art: [...document.querySelectorAll('.lib-img')].every((i) => i.complete && i.naturalWidth > 0) || panel.hidden }; });
-  ok(lv.inside && lv.face && lv.art && lv.mode === (mobile ? 'min' : 'open'), `${T} the digital librarian is on screen at load (${mobile ? 'small button with her face' : 'floating panel with her character'}), art loads under the security headers`);
+  const lv = await pg.evaluate(() => { const r = document.querySelector('[data-ask-input]').getBoundingClientRect(); return { inside: r.right <= innerWidth + 1 && r.top < innerHeight && r.width > 150, face: /librarian\.webp/.test(getComputedStyle(document.querySelector('.ask-face')).backgroundImage), floating: !!document.getElementById('fm-librarian'), ready: document.querySelector('[data-ask]').dataset.ready === '1' }; });
+  ok(lv.inside && lv.face && lv.ready && !lv.floating, `${T} the Digital Librarian search is on screen at load with her face, and no second search box or floating panel competes with it`);
   await pg.locator('.promo-band').scrollIntoViewIfNeeded(); await pg.waitForTimeout(600);
-  const im = await pg.evaluate(() => [...document.images].filter((i) => i.currentSrc && !i.closest('.lib-panel[hidden]')).map((i) => [i.currentSrc.split('/').pop(), i.complete && i.naturalWidth > 0]));
+  const im = await pg.evaluate(() => [...document.images].filter((i) => i.currentSrc && true).map((i) => [i.currentSrc.split('/').pop(), i.complete && i.naturalWidth > 0]));
   ok(['iosutra-wellness-ai.webp', ...(nvOK ? ['iosutra-inception-member.webp', 'nvidia-inception-program-badge-rgb-for-screen.svg'] : [])].every((n) => im.some(([f, g]) => f === n && g)) && im.every(([, g]) => g), `${T} IOSutra artwork${nvOK ? ', IOSutra panel and full-colour NVIDIA badge' : ' (NVIDIA items withheld)'} render; no broken images`);
   ok(await pg.locator('.io-cta').getAttribute('href').then((h) => h.startsWith('https://iosutra.com/')), `${T} Visit IOSutra links to iosutra.com`);
   // search + librarian
-  await go(''); await pg.focus('.hero-search input'); await pg.keyboard.type('tarot', { delay: 30 }); await pg.waitForTimeout(1500);
-  ok((await pg.locator('.lib-list a').count()) > 0 && await pg.locator('.lib-panel').isVisible(), `${T} librarian opens on search and lists real books`);
+  await go(''); await pg.focus('#ask-q'); await pg.keyboard.type('Do you have books about tarot?', { delay: 20 }); await pg.keyboard.press('Enter'); await pg.waitForTimeout(1500);
+  ok((await pg.locator('.ask-t a').count()) > 0 && /tarot/i.test(await pg.locator('.ask-bot .ask-text').first().textContent()), `${T} the Digital Librarian answers a typed question with real catalogue books`);
   await go('search/index.html?q=wicca'); await pg.waitForTimeout(1200); const wicca = await pg.locator('[data-results] .card').count();
   ok(wicca > 0, `${T} search page: ${wicca} results for "wicca"`);
   await go('search/index.html?q=zzqxjkv'); await pg.waitForTimeout(1200); ok(await pg.locator('[data-empty]').isVisible(), `${T} search with no match says so`);

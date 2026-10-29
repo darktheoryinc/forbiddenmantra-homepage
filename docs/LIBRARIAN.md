@@ -33,3 +33,6 @@ Percent coordinates in `data/librarian.json` `art`: `eyes[]` (centre x/y and siz
 * Placement: the figure sits at the bottom right of every page and responds to the search boxes (hero, header, filters, search page). A variant docked directly beside the homepage search field is a possible later layout change.
 * Phase 2 (not started): microphone search via `FMLibrarian.submitQuery(text, { source: 'voice' })`.
 * Phase 3 (not started): AI answers via `FMLibrarian.setAnswerProvider(fn)`; no paid API is configured.
+
+## Homepage: inline Digital Librarian (added after the original phases)
+On the homepage she is no longer the floating panel. `scripts/assets/ask.js` renders a compact "Ask the Digital Librarian" panel above the first shelf and is the page's only search. It parses plain questions with fixed rules, searches the same chunk index, and returns catalogue-grounded results with covers. See `docs/HOMEPAGE-CORRECTIONS.md`; tested by `test/verify-ask.mjs`. The floating librarian and ordinary search box remain on every other page.

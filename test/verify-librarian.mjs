@@ -19,7 +19,7 @@ if (browser) for (const [name, vp, mobile] of [['desktop', { width: 1366, height
   pg.on('request', (r) => { if (!r.url().startsWith('file:') && !/fonts\.(googleapis|gstatic)/.test(r.url())) reqs.push(r.url()); });
   await pg.route(/^https?:\/\/(?!file)/, (x) => x.abort());
   const T = `[${name}]`, u = urlOf(SITE);
-  await pg.goto(u('index.html')); await pg.waitForTimeout(500);
+  await pg.goto(u('books/index.html')); await pg.waitForTimeout(500);
   const mode = await pg.locator('#fm-librarian').getAttribute('data-mode');
   if (mobile) ok(mode === 'min' && await pg.locator('.lib-chip').isVisible() && await pg.evaluate(() => /librarian\.webp/.test(getComputedStyle(document.querySelector('.lib-chip-face')).backgroundImage)), `${T} narrow screen: a small button showing HER face (${mode})`);
   else {
@@ -27,12 +27,13 @@ if (browser) for (const [name, vp, mobile] of [['desktop', { width: 1366, height
     ok(/Hello\. Ask me for a title, author, subject or ISBN\./.test(await pg.locator('.lib-status').textContent()) && await pg.evaluate(() => { const r = document.querySelector('.lib-panel').getBoundingClientRect(); return r.right <= innerWidth && r.bottom <= innerHeight && r.left > innerWidth / 2; }), `${T} original greeting shown; panel sits in the bottom-right corner, fully inside the window`);
     ok(await pg.locator('.lib-btn').isVisible() && await pg.locator('.lib-btn').textContent() === 'Minimize', `${T} Minimize control present`);
   }
-  await pg.locator('.promo-band').scrollIntoViewIfNeeded(); await pg.waitForTimeout(200);
-  const ov = await pg.evaluate(() => { const a = document.querySelector('.io-card').getBoundingClientRect(), b = document.querySelector('.lib-chip').getBoundingClientRect(); const w = Math.max(0, Math.min(a.right, b.right) - Math.max(a.left, b.left)), h = Math.max(0, Math.min(a.bottom, b.bottom) - Math.max(a.top, b.top)); return { w, h, chipW: b.width }; });
-  ok(mobile ? ov.chipW <= 60 : ov.w * ov.h === 0, `${T} the librarian button does not overlap the IOSutra section (${mobile ? 'button is ' + Math.round(ov.chipW) + 'px wide' : 'no intersection'})`);
+  // the homepage carries the inline Digital Librarian instead of the floating one (no second panel, no header search box)
+  await pg.goto(u('index.html')); await pg.waitForTimeout(500);
+  ok(await pg.locator('#fm-librarian').count() === 0 && await pg.locator('.nav-search').count() === 0 && await pg.locator('[data-ask-input]').isVisible(), `${T} homepage: the inline Digital Librarian is the only search (no floating panel, no header search box)`);
+  await pg.goto(u('books/index.html')); await pg.waitForTimeout(500);
   await pg.evaluate(() => window.scrollTo(0, 0)); await pg.waitForTimeout(150);
   // real search
-  await pg.focus('.hero-search input'); await pg.keyboard.type('tarot', { delay: 40 });
+  await pg.focus('#q-nav'); await pg.keyboard.type('tarot', { delay: 40 });
   await pg.waitForTimeout(150);
   ok(await pg.locator('.lib-panel').isVisible(), `${T} typing a search opens her automatically`);
   const st1 = await pg.locator('#fm-librarian').getAttribute('data-state');
@@ -43,10 +44,10 @@ if (browser) for (const [name, vp, mobile] of [['desktop', { width: 1366, height
   ok(titles.length > 0 && titles.every((t) => cat.works.some((w) => w.title === t)) && titles.every((t) => real.includes(t) || true), `${T} results are real catalogue titles: ${titles.join('; ')}`);
   ok(await pg.locator('#fm-librarian').getAttribute('data-state') === 'present', `${T} she presents the results`);
   const hrefs = await pg.$$eval('.lib-list a, .lib-authors a, .lib-more', (as) => as.map((a) => a.getAttribute('href')));
-  ok(hrefs.every((h) => !h.startsWith('http')) && hrefs.filter((h) => h.includes('books/')).every((h) => fs.existsSync(path.join(SITE, h.replace(/^\.\//, '').split('?')[0]))), `${T} every link she offers resolves (${hrefs.length} links)`);
-  const none = await (async () => { await pg.fill('.hero-search input', 'zzqxjkvv'); await pg.waitForTimeout(900); return pg.locator('.lib-status').textContent(); })();
+  ok(hrefs.every((h) => !h.startsWith('http')) && hrefs.filter((h) => h.includes('books/')).every((h) => fs.existsSync(path.join(SITE, 'books', h.split('?')[0]))), `${T} every link she offers resolves (${hrefs.length} links)`);
+  const none = await (async () => { await pg.fill('#q-nav', 'zzqxjkvv'); await pg.waitForTimeout(900); return pg.locator('.lib-status').textContent(); })();
   ok(/could not find/.test(none) && (await pg.locator('.lib-list a').count()) === 0, `${T} nonsense query: honest "could not find", no invented books`);
-  await pg.fill('.hero-search input', 'tarot'); await pg.waitForTimeout(900);
+  await pg.fill('#q-nav', 'tarot'); await pg.waitForTimeout(900);
   await pg.evaluate(() => window.scrollBy(0, 600)); await pg.waitForTimeout(300);
   ok(await pg.locator('#fm-librarian').getAttribute('data-mode') === 'min', `${T} scrolling on tucks an automatically opened librarian away`);
   await pg.evaluate(() => window.scrollTo(0, 0)); await pg.reload(); await pg.waitForTimeout(400);
@@ -79,10 +80,10 @@ if (browser) for (const [name, vp, mobile] of [['desktop', { width: 1366, height
 // reduced motion: no animation, same behaviour
 if (browser) {
   const ctx = await browser.newContext({ viewport: { width: 1366, height: 900 }, reducedMotion: 'reduce' }); const pg = await ctx.newPage();
-  await pg.route(/^https?:\/\/(?!file)/, (x) => x.abort()); await pg.goto(urlOf(SITE)('index.html')); await pg.waitForTimeout(500);
+  await pg.route(/^https?:\/\/(?!file)/, (x) => x.abort()); await pg.goto(urlOf(SITE)('books/index.html')); await pg.waitForTimeout(500);
   const anim = await pg.evaluate(() => ['.lib-figure', '.lib-headlayer', '.lib-emblem', '.lib-aura'].map((s) => getComputedStyle(document.querySelector(s)).animationName));
   ok(anim.every((a) => a === 'none'), `reduced motion: breathing, head sway, glow and aura are all off (${anim.join(',')})`);
-  await pg.focus('.hero-search input'); await pg.keyboard.type('mantra', { delay: 30 }); await pg.waitForTimeout(1200);
+  await pg.focus('#q-nav'); await pg.keyboard.type('mantra', { delay: 30 }); await pg.waitForTimeout(1200);
   ok((await pg.locator('.lib-list a').count()) > 0, 'reduced motion: results still appear');
   await pg.evaluate(() => document.querySelector('.lib-avatar').classList.add('blink')); await pg.waitForTimeout(50);
   await ctx.close();

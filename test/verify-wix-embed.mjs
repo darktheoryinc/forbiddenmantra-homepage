@@ -32,12 +32,12 @@ if (browser) for (const [variant, page] of [['iframe from another origin', 'plai
   const imgs2 = await frame.evaluate(() => [...document.images].map((i) => [i.currentSrc.split('/').pop(), i.complete && i.naturalWidth > 0]));
   ok(['iosutra-wellness-ai.webp', 'iosutra-inception-member.webp', 'nvidia-inception-program-badge-rgb-for-screen.svg'].every((n) => imgs2.some(([f, good]) => f === n && good)), `${T} IOSutra artwork, IOSutra panel and the full-colour NVIDIA badge all load`);
   ok(await frame.evaluate(() => document.documentElement.classList.contains('in-wix-frame')) && (await pg.evaluate(() => window.__m.some((m) => m.type === 'setHeight' && m.height > 500))), `${T} embed helper reports the page height to Wix in the original setHeight format`);
-  const vis = await frame.evaluate(() => { const l = document.getElementById('fm-librarian'); const el = !document.querySelector('.lib-panel').hidden ? document.querySelector('.lib-panel') : document.querySelector('.lib-chip'); const r = el.getBoundingClientRect(); return { shown: !l.hidden && !el.hidden, inside: r.right <= innerWidth + 1 && r.bottom <= innerHeight + 1 && r.width > 30, mode: l.dataset.mode }; });
-  ok(vis.shown && vis.inside, `${T} the librarian is visible inside the frame at load (${vis.mode}: ${mobile ? 'her face button' : 'her panel'}), not clipped`);
+  const vis = await frame.evaluate(() => { const r = document.querySelector('[data-ask-input]').getBoundingClientRect(); return { inside: r.right <= innerWidth + 1 && r.width > 150 }; });
+  ok(vis.inside, `${T} the Digital Librarian search is visible inside the frame at load, not clipped`);
   // search + librarian inside the frame
-  await frame.evaluate(() => window.scrollTo(0, 0)); await fr.locator('.hero-search input').click(); await pg.keyboard.type('tarot', { delay: 40 }); await pg.waitForTimeout(1500);
-  const lib = await frame.evaluate(() => ({ open: !document.querySelector('.lib-panel').hidden, titles: [...document.querySelectorAll('.lib-list a')].map((a) => a.textContent) }));
-  ok(lib.open && lib.titles.length > 0, `${T} typing a search opens the librarian and she finds real books (${lib.titles.slice(0, 2).join('; ')})`);
+  await frame.evaluate(() => window.scrollTo(0, 0)); await fr.locator('#ask-q').click(); await pg.keyboard.type('books about tarot', { delay: 40 }); await pg.keyboard.press('Enter'); await pg.waitForTimeout(1500);
+  const lib = await frame.evaluate(() => ({ titles: [...document.querySelectorAll('.ask-t a')].map((a) => a.textContent) }));
+  ok(lib.titles.length > 0, `${T} asking the Digital Librarian inside the frame finds real books (${lib.titles.slice(0, 2).join('; ')})`);
   // affiliate + external links
   const ext = await frame.evaluate(() => [...document.querySelectorAll('a[href^="http"]')].filter((a) => !a.href.includes('127.0.0.1')).map((a) => [a.target, a.href]));
   ok(ext.length > 0 && ext.every(([t]) => t === '_blank'), `${T} every external link (IOSutra, NVIDIA, partners) opens in a new tab, so Amazon/IOSutra are never framed (${ext.length} links)`);
