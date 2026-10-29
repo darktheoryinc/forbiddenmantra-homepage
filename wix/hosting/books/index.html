@@ -21,6 +21,7 @@
 <header class="site-header">
   <div class="wrap header-in">
     <a class="logo" href="../" aria-label="Forbidden Mantra Press, home"><picture><source media="(max-width:520px)" srcset="../assets/brand/logo-header-mobile.png 1x, ../assets/brand/logo-header-mobile-2x.png 2x"><img src="../assets/brand/logo-header-desktop.png" srcset="../assets/brand/logo-header-desktop.png 1x, ../assets/brand/logo-header-desktop-2x.png 2x" width="325" height="56" alt="Forbidden Mantra"></picture></a>
+    <form class="nav-search" action="../search/index.html" method="get" role="search" aria-label="Site search"><label class="sr" for="q-nav" data-i18n="search_label">Search the catalogue</label><input id="q-nav" type="search" name="q" placeholder="Search title, author, ISBN" data-i18n-placeholder="search_ph"><button type="submit" data-i18n="search_btn">Search</button></form>
     <div class="langmenu" data-langmenu>
   <button class="lang-btn" type="button" aria-expanded="false" aria-controls="lang-panel"><svg class="ic" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span class="lang-cur" data-ui-code>EN</span><span class="lang-word" data-i18n="lang_btn">Language</span><svg class="ic chev" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2"/></svg></button>
   <div id="lang-panel" class="lang-panel" hidden>
@@ -43,7 +44,6 @@
     <button class="nav-toggle" aria-expanded="false" aria-controls="nav" type="button"><span class="sr" data-i18n="menu">Menu</span><span aria-hidden="true">☰</span></button>
     <nav id="nav" class="nav" aria-label="Main">
       <ul><li><a href="../subjects/index.html" data-i18n="nav_subjects">Subjects</a></li><li><a href="../traditions/index.html" data-i18n="nav_traditions">Traditions</a></li><li><a href="../authors/index.html" data-i18n="nav_authors">Authors</a></li><li><a href="../paths/index.html" data-i18n="nav_paths">Reading paths</a></li><li><a href="../collections/index.html" data-i18n="nav_collections">Collections</a></li><li><a href="../press/index.html" data-i18n="nav_press">Press</a></li><li><a href="../technology/index.html" data-i18n="nav_iosutra">IOSutra</a></li></ul>
-      <form class="nav-search" action="../search/index.html" method="get" role="search" aria-label="Site search"><label class="sr" for="q-nav" data-i18n="search_label">Search the catalogue</label><input id="q-nav" type="search" name="q" placeholder="Search title, author, ISBN" data-i18n-placeholder="search_ph"><button type="submit" data-i18n="search_btn">Search</button></form>
     </nav>
   </div>
 </header>
@@ -66,7 +66,7 @@
   <button type="reset" class="btn-link" data-i18n="f_clear">Clear filters</button>
   <p class="f-count" role="status" aria-live="polite" data-count></p>
 </form>
-  <div class="grid" data-index-grid data-shards="c01" data-scope='{&quot;k&quot;:&quot;all&quot;}' data-total="311" data-per="48" data-root="../" data-hl="h2"><article class="card">
+  <p class="disclosure sm" data-grid-note lang="en">As an Amazon Associate I earn from qualifying purchases. Book covers on this page link to Amazon (affiliate links).</p><div class="grid" data-index-grid data-shards="c01" data-scope='{&quot;k&quot;:&quot;all&quot;}' data-total="311" data-per="48" data-root="../" data-hl="h2"><article class="card">
   <a class="card-cover" href="../books/harry-potter-and-the-philosophers-stone/index.html" tabindex="-1" aria-hidden="true"><div class="cover cover-ph" style="--h:188" role="img" aria-label="Text placeholder for the cover of Harry Potter and the Sorcerer&#39;s Stone. The original cover art is not available yet."><span class="ph-orn" aria-hidden="true">✦</span><span class="cover-title ph-t">Harry Potter and the Sorcerer&#39;s Stone</span><span class="cover-author">J.K. Rowling</span><span class="ph-cap" aria-hidden="true">Cover art coming</span></div></a>
   <div class="card-body">
     
@@ -197,7 +197,7 @@
     
   </div>
 </article><article class="card">
-  <a class="card-cover" href="../books/a-game-of-thrones/index.html" tabindex="-1" aria-hidden="true"><div class="cover cover-photo"><img src="../assets/covers/a-game-of-thrones__9780553593716-240.webp" srcset="../assets/covers/a-game-of-thrones__9780553593716-240.webp 240w, ../assets/covers/a-game-of-thrones__9780553593716-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="393" alt="Cover of A Game of Thrones by George R.R. Martin (paperback edition)" loading="lazy" decoding="async"></div></a>
+  <a class="card-cover cover-buy" href="https://www.amazon.com/dp/0553593714?tag=darktheoryinc-20" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="a-game-of-thrones" aria-label="Buy A Game of Thrones on Amazon (affiliate link, opens in a new tab)"><div class="cover cover-photo"><img src="../assets/covers/a-game-of-thrones__9780553593716-240.webp" srcset="../assets/covers/a-game-of-thrones__9780553593716-240.webp 240w, ../assets/covers/a-game-of-thrones__9780553593716-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="393" alt="Cover of A Game of Thrones by George R.R. Martin (paperback edition)" loading="lazy" decoding="async"></div></a>
   <div class="card-body">
     
     <h2 class="card-title"><a href="../books/a-game-of-thrones/index.html" title="A Game of Thrones">A Game of Thrones</a></h2>
@@ -207,7 +207,7 @@
     
   </div>
 </article><article class="card">
-  <a class="card-cover" href="../books/the-once-and-future-king/index.html" tabindex="-1" aria-hidden="true"><div class="cover cover-photo"><img src="../assets/covers/the-once-and-future-king__9780441627400-240.webp" srcset="../assets/covers/the-once-and-future-king__9780441627400-240.webp 240w, ../assets/covers/the-once-and-future-king__9780441627400-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="387" alt="Cover of The Once and Future King by T.H. White (paperback edition)" loading="lazy" decoding="async"></div></a>
+  <a class="card-cover cover-buy" href="https://www.amazon.com/dp/0441627404?tag=darktheoryinc-20" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="the-once-and-future-king" aria-label="Buy The Once and Future King on Amazon (affiliate link, opens in a new tab)"><div class="cover cover-photo"><img src="../assets/covers/the-once-and-future-king__9780441627400-240.webp" srcset="../assets/covers/the-once-and-future-king__9780441627400-240.webp 240w, ../assets/covers/the-once-and-future-king__9780441627400-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="387" alt="Cover of The Once and Future King by T.H. White (paperback edition)" loading="lazy" decoding="async"></div></a>
   <div class="card-body">
     
     <h2 class="card-title"><a href="../books/the-once-and-future-king/index.html" title="The Once and Future King">The Once and Future King</a></h2>
@@ -227,7 +227,7 @@
     
   </div>
 </article><article class="card">
-  <a class="card-cover" href="../books/the-haunting-of-hill-house/index.html" tabindex="-1" aria-hidden="true"><div class="cover cover-photo"><img src="../assets/covers/the-haunting-of-hill-house__9780143039983-240.webp" srcset="../assets/covers/the-haunting-of-hill-house__9780143039983-240.webp 240w, ../assets/covers/the-haunting-of-hill-house__9780143039983-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="367" alt="Cover of The Haunting of Hill House by Shirley Jackson (paperback edition)" loading="lazy" decoding="async"></div></a>
+  <a class="card-cover cover-buy" href="https://www.amazon.com/dp/0143039989?tag=darktheoryinc-20" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="the-haunting-of-hill-house" aria-label="Buy The Haunting of Hill House on Amazon (affiliate link, opens in a new tab)"><div class="cover cover-photo"><img src="../assets/covers/the-haunting-of-hill-house__9780143039983-240.webp" srcset="../assets/covers/the-haunting-of-hill-house__9780143039983-240.webp 240w, ../assets/covers/the-haunting-of-hill-house__9780143039983-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="367" alt="Cover of The Haunting of Hill House by Shirley Jackson (paperback edition)" loading="lazy" decoding="async"></div></a>
   <div class="card-body">
     
     <h2 class="card-title"><a href="../books/the-haunting-of-hill-house/index.html" title="The Haunting of Hill House">The Haunting of Hill House</a></h2>
@@ -237,7 +237,7 @@
     
   </div>
 </article><article class="card">
-  <a class="card-cover" href="../books/dracula/index.html" tabindex="-1" aria-hidden="true"><div class="cover cover-photo"><img src="../assets/covers/dracula__9780141439846-240.webp" srcset="../assets/covers/dracula__9780141439846-240.webp 240w, ../assets/covers/dracula__9780141439846-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="369" alt="Cover of Dracula by Bram Stoker (paperback edition)" loading="lazy" decoding="async"></div></a>
+  <a class="card-cover cover-buy" href="https://www.amazon.com/dp/014143984X?tag=darktheoryinc-20" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="dracula" aria-label="Buy Dracula on Amazon (affiliate link, opens in a new tab)"><div class="cover cover-photo"><img src="../assets/covers/dracula__9780141439846-240.webp" srcset="../assets/covers/dracula__9780141439846-240.webp 240w, ../assets/covers/dracula__9780141439846-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="369" alt="Cover of Dracula by Bram Stoker (paperback edition)" loading="lazy" decoding="async"></div></a>
   <div class="card-body">
     
     <h2 class="card-title"><a href="../books/dracula/index.html" title="Dracula">Dracula</a></h2>
@@ -247,7 +247,7 @@
     
   </div>
 </article><article class="card">
-  <a class="card-cover" href="../books/frankenstein/index.html" tabindex="-1" aria-hidden="true"><div class="cover cover-photo"><img src="../assets/covers/frankenstein__9780141439471-240.webp" srcset="../assets/covers/frankenstein__9780141439471-240.webp 240w, ../assets/covers/frankenstein__9780141439471-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="369" alt="Cover of Frankenstein by Mary Shelley (paperback edition)" loading="lazy" decoding="async"></div></a>
+  <a class="card-cover cover-buy" href="https://www.amazon.com/dp/0141439475?tag=darktheoryinc-20" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="frankenstein" aria-label="Buy Frankenstein on Amazon (affiliate link, opens in a new tab)"><div class="cover cover-photo"><img src="../assets/covers/frankenstein__9780141439471-240.webp" srcset="../assets/covers/frankenstein__9780141439471-240.webp 240w, ../assets/covers/frankenstein__9780141439471-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="369" alt="Cover of Frankenstein by Mary Shelley (paperback edition)" loading="lazy" decoding="async"></div></a>
   <div class="card-body">
     
     <h2 class="card-title"><a href="../books/frankenstein/index.html" title="Frankenstein">Frankenstein</a></h2>
@@ -267,7 +267,7 @@
     
   </div>
 </article><article class="card">
-  <a class="card-cover" href="../books/the-master-and-margarita/index.html" tabindex="-1" aria-hidden="true"><div class="cover cover-photo"><img src="../assets/covers/the-master-and-margarita__9780143108276-240.webp" srcset="../assets/covers/the-master-and-margarita__9780143108276-240.webp 240w, ../assets/covers/the-master-and-margarita__9780143108276-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="360" alt="Cover of The Master and Margarita by Mikhail Bulgakov (paperback edition)" loading="lazy" decoding="async"></div></a>
+  <a class="card-cover cover-buy" href="https://www.amazon.com/dp/0143108271?tag=darktheoryinc-20" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="the-master-and-margarita" aria-label="Buy The Master and Margarita on Amazon (affiliate link, opens in a new tab)"><div class="cover cover-photo"><img src="../assets/covers/the-master-and-margarita__9780143108276-240.webp" srcset="../assets/covers/the-master-and-margarita__9780143108276-240.webp 240w, ../assets/covers/the-master-and-margarita__9780143108276-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="360" alt="Cover of The Master and Margarita by Mikhail Bulgakov (paperback edition)" loading="lazy" decoding="async"></div></a>
   <div class="card-body">
     
     <h2 class="card-title"><a href="../books/the-master-and-margarita/index.html" title="The Master and Margarita">The Master and Margarita</a></h2>
@@ -277,7 +277,7 @@
     
   </div>
 </article><article class="card">
-  <a class="card-cover" href="../books/interview-with-the-vampire/index.html" tabindex="-1" aria-hidden="true"><div class="cover cover-photo"><img src="../assets/covers/interview-with-the-vampire__9780345337665-240.webp" srcset="../assets/covers/interview-with-the-vampire__9780345337665-240.webp 240w, ../assets/covers/interview-with-the-vampire__9780345337665-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="394" alt="Cover of Interview with the Vampire by Anne Rice (paperback edition)" loading="lazy" decoding="async"></div></a>
+  <a class="card-cover cover-buy" href="https://www.amazon.com/dp/0345337662?tag=darktheoryinc-20" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="interview-with-the-vampire" aria-label="Buy Interview with the Vampire on Amazon (affiliate link, opens in a new tab)"><div class="cover cover-photo"><img src="../assets/covers/interview-with-the-vampire__9780345337665-240.webp" srcset="../assets/covers/interview-with-the-vampire__9780345337665-240.webp 240w, ../assets/covers/interview-with-the-vampire__9780345337665-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="394" alt="Cover of Interview with the Vampire by Anne Rice (paperback edition)" loading="lazy" decoding="async"></div></a>
   <div class="card-body">
     
     <h2 class="card-title"><a href="../books/interview-with-the-vampire/index.html" title="Interview with the Vampire">Interview with the Vampire</a></h2>
@@ -287,7 +287,7 @@
     
   </div>
 </article><article class="card">
-  <a class="card-cover" href="../books/the-complete-fairy-tales-of-the-brothers-grimm/index.html" tabindex="-1" aria-hidden="true"><div class="cover cover-photo"><img src="../assets/covers/the-complete-fairy-tales-of-the-brothers-grimm__9780553382167-240.webp" srcset="../assets/covers/the-complete-fairy-tales-of-the-brothers-grimm__9780553382167-240.webp 240w, ../assets/covers/the-complete-fairy-tales-of-the-brothers-grimm__9780553382167-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="365" alt="Cover of The Complete Fairy Tales of the Brothers Grimm by Jacob and Wilhelm Grimm (paperback edition)" loading="lazy" decoding="async"></div></a>
+  <a class="card-cover cover-buy" href="https://www.amazon.com/dp/0553382160?tag=darktheoryinc-20" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="the-complete-fairy-tales-of-the-brothers-grimm" aria-label="Buy The Complete Fairy Tales of the Brothers Grimm on Amazon (affiliate link, opens in a new tab)"><div class="cover cover-photo"><img src="../assets/covers/the-complete-fairy-tales-of-the-brothers-grimm__9780553382167-240.webp" srcset="../assets/covers/the-complete-fairy-tales-of-the-brothers-grimm__9780553382167-240.webp 240w, ../assets/covers/the-complete-fairy-tales-of-the-brothers-grimm__9780553382167-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="365" alt="Cover of The Complete Fairy Tales of the Brothers Grimm by Jacob and Wilhelm Grimm (paperback edition)" loading="lazy" decoding="async"></div></a>
   <div class="card-body">
     
     <h2 class="card-title"><a href="../books/the-complete-fairy-tales-of-the-brothers-grimm/index.html" title="The Complete Fairy Tales of the Brothers Grimm">The Complete Fairy Tales of the Brothers Grimm</a></h2>
@@ -317,7 +317,7 @@
     
   </div>
 </article><article class="card">
-  <a class="card-cover" href="../books/meditations/index.html" tabindex="-1" aria-hidden="true"><div class="cover cover-photo"><img src="../assets/covers/meditations__9780812968255-240.webp" srcset="../assets/covers/meditations__9780812968255-240.webp 240w, ../assets/covers/meditations__9780812968255-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="369" alt="Cover of Meditations by Marcus Aurelius (paperback edition)" loading="lazy" decoding="async"></div></a>
+  <a class="card-cover cover-buy" href="https://www.amazon.com/dp/0812968255?tag=darktheoryinc-20" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="meditations" aria-label="Buy Meditations on Amazon (affiliate link, opens in a new tab)"><div class="cover cover-photo"><img src="../assets/covers/meditations__9780812968255-240.webp" srcset="../assets/covers/meditations__9780812968255-240.webp 240w, ../assets/covers/meditations__9780812968255-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="369" alt="Cover of Meditations by Marcus Aurelius (paperback edition)" loading="lazy" decoding="async"></div></a>
   <div class="card-body">
     
     <h2 class="card-title"><a href="../books/meditations/index.html" title="Meditations">Meditations</a></h2>
@@ -327,7 +327,7 @@
     
   </div>
 </article><article class="card">
-  <a class="card-cover" href="../books/the-republic/index.html" tabindex="-1" aria-hidden="true"><div class="cover cover-photo"><img src="../assets/covers/the-republic__9780140455113-240.webp" srcset="../assets/covers/the-republic__9780140455113-240.webp 240w, ../assets/covers/the-republic__9780140455113-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="369" alt="Cover of The Republic by Plato (paperback edition)" loading="lazy" decoding="async"></div></a>
+  <a class="card-cover cover-buy" href="https://www.amazon.com/dp/0140455116?tag=darktheoryinc-20" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="the-republic" aria-label="Buy The Republic on Amazon (affiliate link, opens in a new tab)"><div class="cover cover-photo"><img src="../assets/covers/the-republic__9780140455113-240.webp" srcset="../assets/covers/the-republic__9780140455113-240.webp 240w, ../assets/covers/the-republic__9780140455113-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="369" alt="Cover of The Republic by Plato (paperback edition)" loading="lazy" decoding="async"></div></a>
   <div class="card-body">
     
     <h2 class="card-title"><a href="../books/the-republic/index.html" title="The Republic">The Republic</a></h2>
@@ -337,7 +337,7 @@
     
   </div>
 </article><article class="card">
-  <a class="card-cover" href="../books/thus-spoke-zarathustra/index.html" tabindex="-1" aria-hidden="true"><div class="cover cover-photo"><img src="../assets/covers/thus-spoke-zarathustra__9780140441185-240.webp" srcset="../assets/covers/thus-spoke-zarathustra__9780140441185-240.webp 240w, ../assets/covers/thus-spoke-zarathustra__9780140441185-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="369" alt="Cover of Thus Spoke Zarathustra by Friedrich Nietzsche (paperback edition)" loading="lazy" decoding="async"></div></a>
+  <a class="card-cover cover-buy" href="https://www.amazon.com/dp/0140441182?tag=darktheoryinc-20" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="thus-spoke-zarathustra" aria-label="Buy Thus Spoke Zarathustra on Amazon (affiliate link, opens in a new tab)"><div class="cover cover-photo"><img src="../assets/covers/thus-spoke-zarathustra__9780140441185-240.webp" srcset="../assets/covers/thus-spoke-zarathustra__9780140441185-240.webp 240w, ../assets/covers/thus-spoke-zarathustra__9780140441185-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="369" alt="Cover of Thus Spoke Zarathustra by Friedrich Nietzsche (paperback edition)" loading="lazy" decoding="async"></div></a>
   <div class="card-body">
     
     <h2 class="card-title"><a href="../books/thus-spoke-zarathustra/index.html" title="Thus Spoke Zarathustra">Thus Spoke Zarathustra</a></h2>
@@ -357,7 +357,7 @@
     
   </div>
 </article><article class="card">
-  <a class="card-cover" href="../books/letters-from-a-stoic/index.html" tabindex="-1" aria-hidden="true"><div class="cover cover-photo"><img src="../assets/covers/letters-from-a-stoic__9780140442106-240.webp" srcset="../assets/covers/letters-from-a-stoic__9780140442106-240.webp 240w, ../assets/covers/letters-from-a-stoic__9780140442106-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="369" alt="Cover of Letters from a Stoic by Seneca (paperback edition)" loading="lazy" decoding="async"></div></a>
+  <a class="card-cover cover-buy" href="https://www.amazon.com/dp/0140442103?tag=darktheoryinc-20" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="letters-from-a-stoic" aria-label="Buy Letters from a Stoic on Amazon (affiliate link, opens in a new tab)"><div class="cover cover-photo"><img src="../assets/covers/letters-from-a-stoic__9780140442106-240.webp" srcset="../assets/covers/letters-from-a-stoic__9780140442106-240.webp 240w, ../assets/covers/letters-from-a-stoic__9780140442106-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="369" alt="Cover of Letters from a Stoic by Seneca (paperback edition)" loading="lazy" decoding="async"></div></a>
   <div class="card-body">
     
     <h2 class="card-title"><a href="../books/letters-from-a-stoic/index.html" title="Letters from a Stoic">Letters from a Stoic</a></h2>
@@ -367,7 +367,7 @@
     
   </div>
 </article><article class="card">
-  <a class="card-cover" href="../books/the-apocalypse-of-adam/index.html" tabindex="-1" aria-hidden="true"><div class="cover cover-photo cover-fmp"><img src="../assets/covers/the-apocalypse-of-adam__ed2-240.webp" srcset="../assets/covers/the-apocalypse-of-adam__ed2-240.webp 240w, ../assets/covers/the-apocalypse-of-adam__ed2-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="361" alt="Cover of The Apocalypse of Adam by Forbidden Mantra Press (paperback edition)" loading="lazy" decoding="async"></div></a>
+  <a class="card-cover cover-buy" href="https://www.amazon.com/dp/B0C9S88JPC?tag=darktheoryinc-20" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="the-apocalypse-of-adam" data-asin="B0C9S88JPC" aria-label="Buy The Apocalypse of Adam on Amazon (affiliate link, opens in a new tab)"><div class="cover cover-photo cover-fmp"><img src="../assets/covers/the-apocalypse-of-adam__ed2-240.webp" srcset="../assets/covers/the-apocalypse-of-adam__ed2-240.webp 240w, ../assets/covers/the-apocalypse-of-adam__ed2-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="361" alt="Cover of The Apocalypse of Adam by Forbidden Mantra Press (paperback edition)" loading="lazy" decoding="async"></div></a>
   <div class="card-body">
     <span class="badge badge-fmp">Forbidden Mantra Press</span>
     <h2 class="card-title"><a href="../books/the-apocalypse-of-adam/index.html" title="The Apocalypse of Adam">The Apocalypse of Adam</a></h2>
@@ -377,7 +377,7 @@
     
   </div>
 </article><article class="card">
-  <a class="card-cover" href="../books/gayatri-mantra/index.html" tabindex="-1" aria-hidden="true"><div class="cover cover-photo cover-fmp"><img src="../assets/covers/gayatri-mantra__ed2-240.webp" srcset="../assets/covers/gayatri-mantra__ed2-240.webp 240w, ../assets/covers/gayatri-mantra__ed2-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="360" alt="Cover of Gayatri Mantra by Forbidden Mantra Press (ebook edition)" loading="lazy" decoding="async"></div></a>
+  <a class="card-cover cover-buy" href="https://www.amazon.com/dp/B0F9PKY776?tag=darktheoryinc-20" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="gayatri-mantra" data-asin="B0F9PKY776" aria-label="Buy Gayatri Mantra on Amazon (affiliate link, opens in a new tab)"><div class="cover cover-photo cover-fmp"><img src="../assets/covers/gayatri-mantra__ed2-240.webp" srcset="../assets/covers/gayatri-mantra__ed2-240.webp 240w, ../assets/covers/gayatri-mantra__ed2-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="360" alt="Cover of Gayatri Mantra by Forbidden Mantra Press (ebook edition)" loading="lazy" decoding="async"></div></a>
   <div class="card-body">
     <span class="badge badge-fmp">Forbidden Mantra Press</span>
     <h2 class="card-title"><a href="../books/gayatri-mantra/index.html" title="Gayatri Mantra">Gayatri Mantra</a></h2>
@@ -387,7 +387,7 @@
     
   </div>
 </article><article class="card">
-  <a class="card-cover" href="../books/kebra-nagast/index.html" tabindex="-1" aria-hidden="true"><div class="cover cover-photo cover-fmp"><img src="../assets/covers/kebra-nagast__ed2-240.webp" srcset="../assets/covers/kebra-nagast__ed2-240.webp 240w, ../assets/covers/kebra-nagast__ed2-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="360" alt="Cover of Kebra Nagast by Forbidden Mantra Press (ebook edition)" loading="lazy" decoding="async"></div></a>
+  <a class="card-cover cover-buy" href="https://www.amazon.com/dp/B0FD4CFRDF?tag=darktheoryinc-20" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="kebra-nagast" data-asin="B0FD4CFRDF" aria-label="Buy Kebra Nagast on Amazon (affiliate link, opens in a new tab)"><div class="cover cover-photo cover-fmp"><img src="../assets/covers/kebra-nagast__ed2-240.webp" srcset="../assets/covers/kebra-nagast__ed2-240.webp 240w, ../assets/covers/kebra-nagast__ed2-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="360" alt="Cover of Kebra Nagast by Forbidden Mantra Press (ebook edition)" loading="lazy" decoding="async"></div></a>
   <div class="card-body">
     <span class="badge badge-fmp">Forbidden Mantra Press</span>
     <h2 class="card-title"><a href="../books/kebra-nagast/index.html" title="Kebra Nagast">Kebra Nagast</a></h2>
@@ -397,7 +397,7 @@
     
   </div>
 </article><article class="card">
-  <a class="card-cover" href="../books/weapons-of-the-gods/index.html" tabindex="-1" aria-hidden="true"><div class="cover cover-photo cover-fmp"><img src="../assets/covers/weapons-of-the-gods__ed2-240.webp" srcset="../assets/covers/weapons-of-the-gods__ed2-240.webp 240w, ../assets/covers/weapons-of-the-gods__ed2-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="320" alt="Cover of Weapons of the Gods by Forbidden Mantra Press (ebook edition)" loading="lazy" decoding="async"></div></a>
+  <a class="card-cover cover-buy" href="https://www.amazon.com/dp/B0FCDBMM5T?tag=darktheoryinc-20" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="weapons-of-the-gods" data-asin="B0FCDBMM5T" aria-label="Buy Weapons of the Gods on Amazon (affiliate link, opens in a new tab)"><div class="cover cover-photo cover-fmp"><img src="../assets/covers/weapons-of-the-gods__ed2-240.webp" srcset="../assets/covers/weapons-of-the-gods__ed2-240.webp 240w, ../assets/covers/weapons-of-the-gods__ed2-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="320" alt="Cover of Weapons of the Gods by Forbidden Mantra Press (ebook edition)" loading="lazy" decoding="async"></div></a>
   <div class="card-body">
     <span class="badge badge-fmp">Forbidden Mantra Press</span>
     <h2 class="card-title"><a href="../books/weapons-of-the-gods/index.html" title="Weapons of the Gods">Weapons of the Gods</a></h2>
@@ -407,7 +407,7 @@
     
   </div>
 </article><article class="card">
-  <a class="card-cover" href="../books/maha-mrityunjaya-mantra/index.html" tabindex="-1" aria-hidden="true"><div class="cover cover-photo cover-fmp"><img src="../assets/covers/maha-mrityunjaya-mantra__ed1-240.webp" srcset="../assets/covers/maha-mrityunjaya-mantra__ed1-240.webp 240w, ../assets/covers/maha-mrityunjaya-mantra__ed1-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="360" alt="Cover of Maha Mrityunjaya Mantra by Forbidden Mantra Press (ebook edition)" loading="lazy" decoding="async"></div></a>
+  <a class="card-cover cover-buy" href="https://www.amazon.com/dp/B0F9PZLQCP?tag=darktheoryinc-20" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="maha-mrityunjaya-mantra" data-asin="B0F9PZLQCP" aria-label="Buy Maha Mrityunjaya Mantra on Amazon (affiliate link, opens in a new tab)"><div class="cover cover-photo cover-fmp"><img src="../assets/covers/maha-mrityunjaya-mantra__ed1-240.webp" srcset="../assets/covers/maha-mrityunjaya-mantra__ed1-240.webp 240w, ../assets/covers/maha-mrityunjaya-mantra__ed1-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="360" alt="Cover of Maha Mrityunjaya Mantra by Forbidden Mantra Press (ebook edition)" loading="lazy" decoding="async"></div></a>
   <div class="card-body">
     <span class="badge badge-fmp">Forbidden Mantra Press</span>
     <h2 class="card-title"><a href="../books/maha-mrityunjaya-mantra/index.html" title="Maha Mrityunjaya Mantra">Maha Mrityunjaya Mantra</a></h2>
@@ -417,7 +417,7 @@
     
   </div>
 </article><article class="card">
-  <a class="card-cover" href="../books/invoke-the-fierce/index.html" tabindex="-1" aria-hidden="true"><div class="cover cover-photo cover-fmp"><img src="../assets/covers/invoke-the-fierce__ed1-240.webp" srcset="../assets/covers/invoke-the-fierce__ed1-240.webp 240w, ../assets/covers/invoke-the-fierce__ed1-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="360" alt="Cover of Invoke the Fierce by Forbidden Mantra Press (ebook edition)" loading="lazy" decoding="async"></div></a>
+  <a class="card-cover cover-buy" href="https://www.amazon.com/dp/B0F9WQSNVW?tag=darktheoryinc-20" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="invoke-the-fierce" data-asin="B0F9WQSNVW" aria-label="Buy Invoke the Fierce on Amazon (affiliate link, opens in a new tab)"><div class="cover cover-photo cover-fmp"><img src="../assets/covers/invoke-the-fierce__ed1-240.webp" srcset="../assets/covers/invoke-the-fierce__ed1-240.webp 240w, ../assets/covers/invoke-the-fierce__ed1-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="360" alt="Cover of Invoke the Fierce by Forbidden Mantra Press (ebook edition)" loading="lazy" decoding="async"></div></a>
   <div class="card-body">
     <span class="badge badge-fmp">Forbidden Mantra Press</span>
     <h2 class="card-title"><a href="../books/invoke-the-fierce/index.html" title="Invoke the Fierce">Invoke the Fierce</a></h2>
@@ -427,7 +427,7 @@
     
   </div>
 </article><article class="card">
-  <a class="card-cover" href="../books/lakshmi-gayatri/index.html" tabindex="-1" aria-hidden="true"><div class="cover cover-photo cover-fmp"><img src="../assets/covers/lakshmi-gayatri__ed1-240.webp" srcset="../assets/covers/lakshmi-gayatri__ed1-240.webp 240w, ../assets/covers/lakshmi-gayatri__ed1-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="360" alt="Cover of Lakshmi Gayatri by Forbidden Mantra Press (ebook edition)" loading="lazy" decoding="async"></div></a>
+  <a class="card-cover cover-buy" href="https://www.amazon.com/dp/B0FB2YT1JY?tag=darktheoryinc-20" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="lakshmi-gayatri" data-asin="B0FB2YT1JY" aria-label="Buy Lakshmi Gayatri on Amazon (affiliate link, opens in a new tab)"><div class="cover cover-photo cover-fmp"><img src="../assets/covers/lakshmi-gayatri__ed1-240.webp" srcset="../assets/covers/lakshmi-gayatri__ed1-240.webp 240w, ../assets/covers/lakshmi-gayatri__ed1-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="360" alt="Cover of Lakshmi Gayatri by Forbidden Mantra Press (ebook edition)" loading="lazy" decoding="async"></div></a>
   <div class="card-body">
     <span class="badge badge-fmp">Forbidden Mantra Press</span>
     <h2 class="card-title"><a href="../books/lakshmi-gayatri/index.html" title="Lakshmi Gayatri">Lakshmi Gayatri</a></h2>
@@ -437,7 +437,7 @@
     
   </div>
 </article><article class="card">
-  <a class="card-cover" href="../books/om-namah-shivaya/index.html" tabindex="-1" aria-hidden="true"><div class="cover cover-photo cover-fmp"><img src="../assets/covers/om-namah-shivaya__ed1-240.webp" srcset="../assets/covers/om-namah-shivaya__ed1-240.webp 240w, ../assets/covers/om-namah-shivaya__ed1-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="360" alt="Cover of Om Namah Shivaya by Forbidden Mantra Press (ebook edition)" loading="lazy" decoding="async"></div></a>
+  <a class="card-cover cover-buy" href="https://www.amazon.com/dp/B0F9T23TX4?tag=darktheoryinc-20" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="om-namah-shivaya" data-asin="B0F9T23TX4" aria-label="Buy Om Namah Shivaya on Amazon (affiliate link, opens in a new tab)"><div class="cover cover-photo cover-fmp"><img src="../assets/covers/om-namah-shivaya__ed1-240.webp" srcset="../assets/covers/om-namah-shivaya__ed1-240.webp 240w, ../assets/covers/om-namah-shivaya__ed1-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="360" alt="Cover of Om Namah Shivaya by Forbidden Mantra Press (ebook edition)" loading="lazy" decoding="async"></div></a>
   <div class="card-body">
     <span class="badge badge-fmp">Forbidden Mantra Press</span>
     <h2 class="card-title"><a href="../books/om-namah-shivaya/index.html" title="Om Namah Shivaya">Om Namah Shivaya</a></h2>
@@ -457,7 +457,7 @@
     
   </div>
 </article><article class="card">
-  <a class="card-cover" href="../books/siddhis/index.html" tabindex="-1" aria-hidden="true"><div class="cover cover-photo cover-fmp"><img src="../assets/covers/siddhis__ed1-240.webp" srcset="../assets/covers/siddhis__ed1-240.webp 240w, ../assets/covers/siddhis__ed1-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="385" alt="Cover of Siddhis by Emily K Patel (ebook edition)" loading="lazy" decoding="async"></div></a>
+  <a class="card-cover cover-buy" href="https://www.amazon.com/dp/B0F3J5KXNK?tag=darktheoryinc-20" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="siddhis" data-asin="B0F3J5KXNK" aria-label="Buy Siddhis on Amazon (affiliate link, opens in a new tab)"><div class="cover cover-photo cover-fmp"><img src="../assets/covers/siddhis__ed1-240.webp" srcset="../assets/covers/siddhis__ed1-240.webp 240w, ../assets/covers/siddhis__ed1-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="385" alt="Cover of Siddhis by Emily K Patel (ebook edition)" loading="lazy" decoding="async"></div></a>
   <div class="card-body">
     <span class="badge badge-fmp">Forbidden Mantra Press</span>
     <h2 class="card-title"><a href="../books/siddhis/index.html" title="Siddhis">Siddhis</a></h2>
@@ -467,7 +467,7 @@
     
   </div>
 </article><article class="card">
-  <a class="card-cover" href="../books/the-gospel-of-magdalene/index.html" tabindex="-1" aria-hidden="true"><div class="cover cover-photo cover-fmp"><img src="../assets/covers/the-gospel-of-magdalene__ed1-240.webp" srcset="../assets/covers/the-gospel-of-magdalene__ed1-240.webp 240w, ../assets/covers/the-gospel-of-magdalene__ed1-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="360" alt="Cover of The Gospel of Magdalene by Emily K Patel, TSP Ravshiva (ebook edition)" loading="lazy" decoding="async"></div></a>
+  <a class="card-cover cover-buy" href="https://www.amazon.com/dp/B0F2NTNFGG?tag=darktheoryinc-20" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="the-gospel-of-magdalene" data-asin="B0F2NTNFGG" aria-label="Buy The Gospel of Magdalene on Amazon (affiliate link, opens in a new tab)"><div class="cover cover-photo cover-fmp"><img src="../assets/covers/the-gospel-of-magdalene__ed1-240.webp" srcset="../assets/covers/the-gospel-of-magdalene__ed1-240.webp 240w, ../assets/covers/the-gospel-of-magdalene__ed1-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="360" alt="Cover of The Gospel of Magdalene by Emily K Patel, TSP Ravshiva (ebook edition)" loading="lazy" decoding="async"></div></a>
   <div class="card-body">
     <span class="badge badge-fmp">Forbidden Mantra Press</span>
     <h2 class="card-title"><a href="../books/the-gospel-of-magdalene/index.html" title="The Gospel of Magdalene">The Gospel of Magdalene</a></h2>
@@ -487,7 +487,7 @@
     
   </div>
 </article><article class="card">
-  <a class="card-cover" href="../books/mo-pai-the-destructive-and-healing-force-within/index.html" tabindex="-1" aria-hidden="true"><div class="cover cover-photo cover-fmp"><img src="../assets/covers/mo-pai-the-destructive-and-healing-force-within__9798243200189-240.webp" srcset="../assets/covers/mo-pai-the-destructive-and-healing-force-within__9798243200189-240.webp 240w, ../assets/covers/mo-pai-the-destructive-and-healing-force-within__9798243200189-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="360" alt="Cover of Mo Pai: The Destructive and Healing Force Within by Emily K Kissoon (paperback edition)" loading="lazy" decoding="async"></div></a>
+  <a class="card-cover cover-buy" href="https://www.amazon.com/Pai-Destructive-Meditation-Discipline-Technology/dp/B0GFW8DJHW?tag=darktheoryinc-20" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="mo-pai-the-destructive-and-healing-force-within" data-asin="B0GFW8DJHW" aria-label="Buy Mo Pai: The Destructive and Healing Force Within on Amazon (affiliate link, opens in a new tab)"><div class="cover cover-photo cover-fmp"><img src="../assets/covers/mo-pai-the-destructive-and-healing-force-within__9798243200189-240.webp" srcset="../assets/covers/mo-pai-the-destructive-and-healing-force-within__9798243200189-240.webp 240w, ../assets/covers/mo-pai-the-destructive-and-healing-force-within__9798243200189-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="360" alt="Cover of Mo Pai: The Destructive and Healing Force Within by Emily K Kissoon (paperback edition)" loading="lazy" decoding="async"></div></a>
   <div class="card-body">
     <span class="badge badge-fmp">Forbidden Mantra Press</span>
     <h2 class="card-title"><a href="../books/mo-pai-the-destructive-and-healing-force-within/index.html" title="Mo Pai: The Destructive and Healing Force Within">Mo Pai: The Destructive and Healing Force Within</a></h2>
@@ -497,7 +497,7 @@
     
   </div>
 </article><article class="card">
-  <a class="card-cover" href="../books/energy-unleashed/index.html" tabindex="-1" aria-hidden="true"><div class="cover cover-photo cover-fmp"><img src="../assets/covers/energy-unleashed__B0F287TGGL-240.webp" srcset="../assets/covers/energy-unleashed__B0F287TGGL-240.webp 240w, ../assets/covers/energy-unleashed__B0F287TGGL-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="367" alt="Cover of Energy Unleashed by Emily K Patel (ebook edition)" loading="lazy" decoding="async"></div></a>
+  <a class="card-cover cover-buy" href="https://www.amazon.com/dp/B0F287TGGL?tag=darktheoryinc-20" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="energy-unleashed" data-asin="B0F287TGGL" aria-label="Buy Energy Unleashed on Amazon (affiliate link, opens in a new tab)"><div class="cover cover-photo cover-fmp"><img src="../assets/covers/energy-unleashed__B0F287TGGL-240.webp" srcset="../assets/covers/energy-unleashed__B0F287TGGL-240.webp 240w, ../assets/covers/energy-unleashed__B0F287TGGL-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="367" alt="Cover of Energy Unleashed by Emily K Patel (ebook edition)" loading="lazy" decoding="async"></div></a>
   <div class="card-body">
     <span class="badge badge-fmp">Forbidden Mantra Press</span>
     <h2 class="card-title"><a href="../books/energy-unleashed/index.html" title="Energy Unleashed">Energy Unleashed</a></h2>
@@ -537,7 +537,7 @@
     
   </div>
 </article><article class="card">
-  <a class="card-cover" href="../books/make-yourself-irresistibly-attractive-with-the-kleem-mantra-kamdev-mantra-and-kama-sutra/index.html" tabindex="-1" aria-hidden="true"><div class="cover cover-photo cover-fmp"><img src="../assets/covers/make-yourself-irresistibly-attractive-with-the-kleem-mantra-kamdev-mantra-and-kama-sutra__ed1-240.webp" srcset="../assets/covers/make-yourself-irresistibly-attractive-with-the-kleem-mantra-kamdev-mantra-and-kama-sutra__ed1-240.webp 240w, ../assets/covers/make-yourself-irresistibly-attractive-with-the-kleem-mantra-kamdev-mantra-and-kama-sutra__ed1-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="358" alt="Cover of Make Yourself Irresistibly Attractive with the Kleem Mantra, Kamdev Mantra and Kama Sutra by TSPRav Shiva (ebook edition)" loading="lazy" decoding="async"></div></a>
+  <a class="card-cover cover-buy" href="https://www.amazon.com/s?k=Make%20Yourself%20Irresistibly%20Attractive%20with%20the%20Kleem%20Mantra%2C%20Kamdev%20Mantra%20and%20Kama%20Sutra%20Forbidden%20Mantra%20Press&amp;i=stripbooks&amp;tag=darktheoryinc-20" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="make-yourself-irresistibly-attractive-with-the-kleem-mantra-kamdev-mantra-and-kama-sutra" aria-label="Buy Make Yourself Irresistibly Attractive with the Kleem Mantra, Kamdev Mantra and Kama Sutra on Amazon (affiliate link, opens in a new tab)"><div class="cover cover-photo cover-fmp"><img src="../assets/covers/make-yourself-irresistibly-attractive-with-the-kleem-mantra-kamdev-mantra-and-kama-sutra__ed1-240.webp" srcset="../assets/covers/make-yourself-irresistibly-attractive-with-the-kleem-mantra-kamdev-mantra-and-kama-sutra__ed1-240.webp 240w, ../assets/covers/make-yourself-irresistibly-attractive-with-the-kleem-mantra-kamdev-mantra-and-kama-sutra__ed1-480.webp 480w" sizes="(max-width:760px) 45vw, 240px" width="240" height="358" alt="Cover of Make Yourself Irresistibly Attractive with the Kleem Mantra, Kamdev Mantra and Kama Sutra by TSPRav Shiva (ebook edition)" loading="lazy" decoding="async"></div></a>
   <div class="card-body">
     <span class="badge badge-fmp">Forbidden Mantra Press</span>
     <h2 class="card-title"><a href="../books/make-yourself-irresistibly-attractive-with-the-kleem-mantra-kamdev-mantra-and-kama-sutra/index.html" title="Make Yourself Irresistibly Attractive with the Kleem Mantra, Kamdev Mantra and Kama Sutra">Make Yourself Irresistibly Attractive with the Kleem Mantra, Kamdev Mantra and Kama Sutra</a></h2>
