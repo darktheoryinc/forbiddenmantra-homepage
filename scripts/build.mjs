@@ -67,6 +67,10 @@ const ANALYTICS = (() => {
 const promoView = (placement, id = 'iosutra-technology') => promo.resolve(PROMOS, id, placement, { root: ROOT });
 const APPROVALS = fs.existsSync(path.join(ROOT, 'config/approvals.json')) ? JSON.parse(fs.readFileSync(path.join(ROOT, 'config/approvals.json'), 'utf8')) : {};
 // FM_PUBLIC=1 (set by the hosting-package script): anything whose owner approval is not recorded in config/approvals.json is withheld from the output.
+// Preview-only feature flag (default OFF): FM_AMAZON_COVERS=preview shows Amazon-hosted cover images (loaded by the visitor's browser from Amazon, never downloaded, cached or rehosted)
+// for Press works that have no verified cover. Not authorised for public use: it is refused for production and public packages, and the security gate fails any package that references such an image.
+const AMAZON_COVERS_PREVIEW = process.env.FM_AMAZON_COVERS === 'preview';
+if (AMAZON_COVERS_PREVIEW && (process.env.FM_PUBLIC || process.env.FM_ENV === 'production')) { console.error('FM_AMAZON_COVERS=preview is refused for public or production builds: Amazon-hosted covers are not authorised for public use (docs/AMAZON-HOSTED-COVERS.md).'); process.exit(1); }
 const PUBLIC_OUT = !!process.env.FM_PUBLIC, NVIDIA_OK = !PUBLIC_OUT || APPROVALS.nvidiaBranding?.approved === true;
 const promoCtx = { root: ROOT, production: PRODUCTION, nvidia: NVIDIA_OK, href: (p) => href(p), asset: (f) => `${ROOT_PREFIX}assets/partner/${f}` };
 const placed = (placement) => PROMOS.promos.filter((p) => p.placements?.[placement]?.enabled);
@@ -253,6 +257,12 @@ const coverAnchor = (w, title, inner, cls) => {
   const b = coverBuy(w, coverOfWork.get(w.slug));
   return b ? `<a class="${cls} cover-buy" href="${esc(b.url)}" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="${esc(w.slug)}"${b.asin ? ` data-asin="${esc(b.asin)}"` : ''} aria-label="${esc(`Buy ${title} on Amazon (affiliate link, opens in a new tab)`)}">${inner}</a>` : null;
 };
+// ASIN whose Amazon-hosted image the preview flag may show: Press works only, sold, no verified cover, ebook first, then paperback, hardcover (never audiobook).
+function amazonPreviewAsin(w) {
+  if (!AMAZON_COVERS_PREVIEW || !w.press || w.purchasable === false || coverOfWork.has(w.slug)) return null;
+  for (const f of ['ebook', 'paperback', 'hardcover']) { const e = w.editions.find((x) => x.format === f && x.asin); if (e) return e.asin; }
+  return null;
+}
 function cover(w, big = false, title = w.title, entry = coverOfWork.get(w.slug)) {
   if (entry) {
     const k = entry.key, w240 = entry.sizes?.[240]?.w ?? 240, h240 = entry.sizes?.[240]?.h ?? 360, base = `${ROOT_PREFIX}assets/covers/${k}`;
@@ -261,7 +271,9 @@ function cover(w, big = false, title = w.title, entry = coverOfWork.get(w.slug))
   }
   const hue = w.press ? 38 : hashHue(w.title);
   const sz = title.length > 70 ? ' ph-s' : title.length > 40 ? ' ph-m' : '';
-  return `<div class="cover cover-ph${big ? ' cover-lg' : ''}${w.press ? ' cover-fmp' : ''}" style="--h:${hue}" role="img" aria-label="Text placeholder for the cover of ${esc(title)}. The original cover art is not available yet."><span class="ph-orn" aria-hidden="true">✦</span><span class="cover-title ph-t${sz}">${esc(title)}</span><span class="cover-author">${esc(w.authors[0])}</span><span class="ph-cap" aria-hidden="true">Cover art coming</span></div>`;
+  const amz = amazonPreviewAsin(w);
+  const amzImg = amz ? `<img class="amz-img" src="https://m.media-amazon.com/images/P/${amz}.01._SCLZZZZZZZ_.jpg" alt="" width="240" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-amz-preview="${amz}" onerror="this.remove()"><span class="amz-tag" aria-hidden="true">Preview: Amazon-hosted</span>` : '';
+  return `<div class="cover cover-ph${big ? ' cover-lg' : ''}${w.press ? ' cover-fmp' : ''}" style="--h:${hue}" role="img" aria-label="Text placeholder for the cover of ${esc(title)}. The original cover art is not available yet."><span class="ph-orn" aria-hidden="true">✦</span><span class="cover-title ph-t${sz}">${esc(title)}</span><span class="cover-author">${esc(w.authors[0])}</span><span class="ph-cap" aria-hidden="true">Cover art coming</span>${amzImg}</div>`;
 }
 const authorHref = (n) => (authorPage.has(slugify(n)) ? href(`authors/${slugify(n)}/`) : `${href('search/')}?q=${encodeURIComponent(n)}`);
 const authorLinks = (w) => w.authors.map((n) => `<a href="${authorHref(n)}">${esc(n)}</a>`).join(', ');

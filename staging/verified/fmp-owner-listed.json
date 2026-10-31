@@ -560,7 +560,10 @@
       ],
       "reviewFlags": [
         "listed in the owner's own bookstore catalogue; ASINs, formats and dates come from that table (prices and Amazon cover URLs were not stored)"
-      ]
+      ],
+      "series": {
+        "name": "Nag Hammadi Series"
+      }
     },
     {
       "title": "Gayatri Mantra",
@@ -647,7 +650,10 @@
       ],
       "reviewFlags": [
         "listed in the owner's own bookstore catalogue; ASINs, formats and dates come from that table (prices and Amazon cover URLs were not stored)"
-      ]
+      ],
+      "series": {
+        "name": "Forbidden Mantra Series"
+      }
     },
     {
       "title": "Kebra Nagast",
@@ -738,7 +744,10 @@
       ],
       "reviewFlags": [
         "listed in the owner's own bookstore catalogue; ASINs, formats and dates come from that table (prices and Amazon cover URLs were not stored)"
-      ]
+      ],
+      "series": {
+        "name": "Ethiopian Bible"
+      }
     },
     {
       "title": "Weapons of the Gods",
@@ -828,7 +837,10 @@
       ],
       "reviewFlags": [
         "listed in the owner's own bookstore catalogue; ASINs, formats and dates come from that table (prices and Amazon cover URLs were not stored)"
-      ]
+      ],
+      "series": {
+        "name": "Hindu Epic Series"
+      }
     },
     {
       "title": "Maha Mrityunjaya Mantra",
@@ -888,7 +900,10 @@
       ],
       "reviewFlags": [
         "listed in the owner's own bookstore catalogue; ASINs, formats and dates come from that table (prices and Amazon cover URLs were not stored)"
-      ]
+      ],
+      "series": {
+        "name": "Forbidden Mantra Series"
+      }
     },
     {
       "title": "Invoke the Fierce",
@@ -979,7 +994,10 @@
       ],
       "reviewFlags": [
         "listed in the owner's own bookstore catalogue; ASINs, formats and dates come from that table (prices and Amazon cover URLs were not stored)"
-      ]
+      ],
+      "series": {
+        "name": "Forbidden Mantra Series"
+      }
     },
     {
       "title": "Lakshmi Gayatri",
@@ -1069,7 +1087,10 @@
       ],
       "reviewFlags": [
         "listed in the owner's own bookstore catalogue; ASINs, formats and dates come from that table (prices and Amazon cover URLs were not stored)"
-      ]
+      ],
+      "series": {
+        "name": "Forbidden Mantra Series"
+      }
     },
     {
       "title": "Om Namah Shivaya",
@@ -1248,7 +1269,10 @@
       ],
       "reviewFlags": [
         "listed in the owner's own bookstore catalogue; ASINs, formats and dates come from that table (prices and Amazon cover URLs were not stored)"
-      ]
+      ],
+      "series": {
+        "name": "Forbidden Mantra Series"
+      }
     },
     {
       "title": "Maa Kali Mantras and Instructions",
@@ -1369,7 +1393,10 @@
       ],
       "reviewFlags": [
         "listed in the owner's own bookstore catalogue; ASINs, formats and dates come from that table (prices and Amazon cover URLs were not stored)"
-      ]
+      ],
+      "series": {
+        "name": "Forbidden Mantra Series"
+      }
     },
     {
       "title": "Siddhis",
@@ -1515,7 +1542,10 @@
         "publisher attribution is owner-supplied",
         "no ASIN/ISBN recovered",
         "listed in the owner's own bookstore catalogue; ASINs, formats and dates come from that table (prices and Amazon cover URLs were not stored)"
-      ]
+      ],
+      "series": {
+        "name": "Forbidden Tantra Series"
+      }
     },
     {
       "title": "The Gospel of Magdalene",
@@ -1663,7 +1693,10 @@
         "publisher attribution is owner-supplied",
         "no ASIN/ISBN recovered",
         "listed in the owner's own bookstore catalogue; ASINs, formats and dates come from that table (prices and Amazon cover URLs were not stored)"
-      ]
+      ],
+      "series": {
+        "name": "Mary Magdalene"
+      }
     },
     {
       "title": "Mo Pai Exposed",
@@ -1816,7 +1849,10 @@
         "publisher attribution is owner-supplied",
         "listed in the owner's own bookstore catalogue; ASINs, formats and dates come from that table (prices and Amazon cover URLs were not stored)",
         "public Amazon listing for the ebook B0GFQ63JSF confirms the title 'Mo Pai Exposed: What the Internal Power Community Refuses to Admit', The Hidden Technology of Human Power Series Book 2, 57 pages, published 2026-01-08; the listing's cover image could not be compared (Amazon images are not fetched)"
-      ]
+      ],
+      "series": {
+        "name": "The Hidden Technology of Human Power Series"
+      }
     },
     {
       "title": "Mo Pai: The Destructive and Healing Force Within",
@@ -2506,7 +2542,10 @@
         "publisher attribution is owner-supplied",
         "publication date not recovered",
         "listed in the owner's own bookstore catalogue; ASINs, formats and dates come from that table (prices and Amazon cover URLs were not stored)"
-      ]
+      ],
+      "series": {
+        "name": "Buddhist Mantra Series"
+      }
     },
     {
       "title": "Mo Pai Nei Kung",
