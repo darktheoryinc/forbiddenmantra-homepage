@@ -25,3 +25,9 @@ Scope: the actual bookstore embedded in the Wix site, its GitHub source and imag
 
 ## Remaining blockers
 Unchanged: the owner's original files (ChatGPT export, KDP print-cover downloads or design files), or written confirmation from Amazon (draft in `docs/OWN-COVER-ROUTES.md`).
+
+## Full public-site crawl (2026-10-31)
+Crawled every URL in forbiddenmantra.com's sitemaps (121 pages: 96 blog posts, 6 blog pages, home and 17 template pages), extracting all image URLs.
+* **Wix-hosted images:** 66 distinct `static.wixstatic.com` media files. 57 are already in the Media Manager listing audited earlier. The other 9 are Wix template background gradients (`baac51_`, `55d98a_` prefixes) on the template pages, not covers.
+* **Other image hosts:** 76 references to Wix's own stock-media host (`wixmp.com`, blog thumbnails) and 13 references (3 distinct files) to `m.media-amazon.com` in blog posts: Amazon-hosted, not ours, not stored.
+* **Result:** no new covers. The live site's book covers are the Amazon-hosted images loaded by the bookstore iframe (see above), and its own Wix-hosted covers are the ones already recovered. 94 works show a verified cover (104 files); 92 Press works remain without original files.
