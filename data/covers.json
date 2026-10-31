@@ -2902,6 +2902,122 @@
           "h": 466
         }
       }
+    },
+    {
+      "work": "the-name-of-the-wind",
+      "edition": "9780756404741",
+      "isbn13": "9780756404741",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780756404741.jpg (DAW, listed on penguinrandomhouse.com)"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. The exact ISBN-13 is listed on penguinrandomhouse.com as a PRH title (imprint shown on the product page). Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms under the owner's standing instruction to use exact-ISBN PRH covers (2026-10-31)",
+        "confirmedOn": "2026-10-31"
+      },
+      "file": "assets-src/covers/the-name-of-the-wind__9780756404741.jpg",
+      "original": [
+        277,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 390
+        },
+        "480": {
+          "w": 277,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "the-wise-mans-fear",
+      "edition": "9780756407124",
+      "isbn13": "9780756407124",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780756407124.jpg (DAW, listed on penguinrandomhouse.com)"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. The exact ISBN-13 is listed on penguinrandomhouse.com as a PRH title (imprint shown on the product page). Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms under the owner's standing instruction to use exact-ISBN PRH covers (2026-10-31)",
+        "confirmedOn": "2026-10-31"
+      },
+      "file": "assets-src/covers/the-wise-mans-fear__9780756407124.jpg",
+      "original": [
+        298,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 362
+        },
+        "480": {
+          "w": 298,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "the-wise-mans-fear",
+      "edition": "9780756407919",
+      "isbn13": "9780756407919",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780756407919.jpg (DAW, listed on penguinrandomhouse.com)"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. The exact ISBN-13 is listed on penguinrandomhouse.com as a PRH title (imprint shown on the product page). Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms under the owner's standing instruction to use exact-ISBN PRH covers (2026-10-31)",
+        "confirmedOn": "2026-10-31"
+      },
+      "file": "assets-src/covers/the-wise-mans-fear__9780756407919.jpg",
+      "original": [
+        279,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 387
+        },
+        "480": {
+          "w": 279,
+          "h": 450
+        }
+      }
+    },
+    {
+      "work": "light-on-yoga",
+      "edition": "9780805210316",
+      "isbn13": "9780805210316",
+      "source": {
+        "type": "publisher-permission",
+        "description": "Penguin Random House supplied file 9780805210316.jpg (Schocken, listed on penguinrandomhouse.com)"
+      },
+      "rights": {
+        "basis": "PRH booksellers digital-files terms (penguinrandomhouse.biz/booksellers/digital and /media/digital, read 2026-10-28): cover images on PRH sites may be copied and used to promote PRH titles to customers; copyright information must accompany; not resold; not altered. The exact ISBN-13 is listed on penguinrandomhouse.com as a PRH title (imprint shown on the product page). Fetched from images.penguinrandomhouse.com by exact ISBN-13. Resized and re-encoded only, no cropping.",
+        "confirmedBy": "Assistant review of PRH published terms under the owner's standing instruction to use exact-ISBN PRH covers (2026-10-31)",
+        "confirmedOn": "2026-10-31"
+      },
+      "file": "assets-src/covers/light-on-yoga__9780805210316.jpg",
+      "original": [
+        292,
+        450
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 370
+        },
+        "480": {
+          "w": 292,
+          "h": 450
+        }
+      }
     }
   ]
 }

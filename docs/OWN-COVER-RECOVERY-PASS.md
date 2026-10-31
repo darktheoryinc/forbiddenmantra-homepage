@@ -23,3 +23,9 @@ The owner's own catalogue table lists Amazon image addresses for his own ASINs, 
 
 ## Decision (follow-up, same day)
 The Amazon-hosted route was evaluated and **not used**: the only licence text read says images may not be stored, and nothing readable authorises retrieval. See `docs/OWN-COVER-ROUTES.md` for the reasoning, the fastest compliant routes, a front-cover cutting tool for KDP print wraps, and a draft message to Amazon.
+
+## Cover completion pass (2026-10-31)
+Audit of all 311 works: 94 show a verified cover (104 files: 37 owner-supplied, 67 Penguin Random House under its published bookseller terms), 217 show the labelled text-only placeholder. Press: 31 covered, 92 not. Third-party: 63 covered, 125 not.
+New this pass (+4 files, +3 works): The Name of the Wind (ISBN 9780756404741), The Wise Man's Fear (9780756407124 and 9780756407919) and Light on Yoga (9780805210316). Each was matched by exact ISBN-13, confirmed as a PRH-listed title on penguinrandomhouse.com (imprints DAW and Schocken), and checked by eye.
+Flag: the catalogue records The Wise Man's Fear 9780756407124 as a paperback, but PRH lists it as 6 x 9, 1,008 pages (a hardcover). The cover is the right artwork for that ISBN; the format label is the catalogue's and was not changed.
+Not used: Tor, HarperCollins, Hachette and other non-PRH imprints (PRH's image server returns files for some, but its terms cover PRH titles only); Open Library; Amazon-hosted images (see OWN-COVER-ROUTES.md).
