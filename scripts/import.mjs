@@ -236,7 +236,14 @@ const finalWorks = [...works.values()].map((w) => {
 });
 // slug uniqueness
 const seen = new Set();
-for (const w of finalWorks) { if (seen.has(w.slug)) { w.slug = w.id = `${w.slug}-${slugify(w.authors[0])}`; } seen.add(w.slug); }
+// Verified (hand/web) works claim their plain slug first so published URLs never move; bulk works take the suffixed form.
+const slugRank = (w) => (w.provenance?.tier === 'open-library-catalogue' || w.provenance?.tier === 'auto-two-source' ? 1 : 0);
+for (const w of [...finalWorks].sort((a, b) => slugRank(a) - slugRank(b))) {
+  let s = w.slug, n = 1;
+  if (seen.has(s)) s = `${w.slug}-${slugify(w.authors[0])}`;
+  while (seen.has(s)) s = `${w.slug}-${slugify(w.authors[0])}-${++n}`;
+  w.slug = w.id = s; seen.add(s);
+}
 
 const authorMap = new Map();
 for (const w of finalWorks) w.authors.forEach((name, i) => {

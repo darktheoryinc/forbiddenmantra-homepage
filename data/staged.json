@@ -177,41 +177,6 @@
    "origin": "staging/outside-candidates.psv:13"
   },
   {
-   "title": "Why We Sleep",
-   "subtitle": "Unlocking the Power of Sleep and Dreams",
-   "authors": [
-    "Matthew Walker"
-   ],
-   "subjects": [
-    "sleep-stress",
-    "dreams"
-   ],
-   "tradition": [
-    "secular"
-   ],
-   "level": "beginner",
-   "editions": [
-    {
-     "format": "paperback",
-     "language": "en",
-     "publisher": "Scribner",
-     "year": 2018,
-     "isbn13": "9781501144318",
-     "isbn10": "1501144316"
-    }
-   ],
-   "sources": [
-    {
-     "label": "Editorial shortlist (candidate; details unverified)",
-     "url": "staging/outside-candidates.psv#row15",
-     "accessed": "2026-10-27",
-     "supports": "candidate only"
-    }
-   ],
-   "status": "staged-needs-verification",
-   "origin": "staging/outside-candidates.psv:15"
-  },
-  {
    "title": "Why Zebras Don't Get Ulcers",
    "subtitle": "",
    "authors": [
@@ -313,40 +278,6 @@
    ],
    "status": "staged-needs-verification",
    "origin": "staging/outside-candidates.psv:28"
-  },
-  {
-   "title": "The Heart of Yoga",
-   "subtitle": "Developing a Personal Practice",
-   "authors": [
-    "T.K.V. Desikachar"
-   ],
-   "subjects": [
-    "yoga"
-   ],
-   "tradition": [
-    "hindu"
-   ],
-   "level": "intermediate",
-   "editions": [
-    {
-     "format": "paperback",
-     "language": "en",
-     "publisher": "Inner Traditions",
-     "year": 1999,
-     "isbn13": "9780892815265",
-     "isbn10": "0892815264"
-    }
-   ],
-   "sources": [
-    {
-     "label": "Editorial shortlist (candidate; details unverified)",
-     "url": "staging/outside-candidates.psv#row32",
-     "accessed": "2026-10-27",
-     "supports": "candidate only"
-    }
-   ],
-   "status": "staged-needs-verification",
-   "origin": "staging/outside-candidates.psv:32"
   },
   {
    "title": "Shakti Mantras",
@@ -909,76 +840,6 @@
    "origin": "staging/outside-candidates.psv:58"
   },
   {
-   "title": "Reading Judas",
-   "subtitle": "The Gospel of Judas and the Shaping of Christianity",
-   "authors": [
-    "Elaine Pagels",
-    "Karen L. King"
-   ],
-   "subjects": [
-    "gnosticism",
-    "ancient-texts"
-   ],
-   "tradition": [
-    "gnostic"
-   ],
-   "level": "intermediate",
-   "editions": [
-    {
-     "format": "paperback",
-     "language": "en",
-     "publisher": "Penguin",
-     "year": 2008,
-     "isbn13": "9780143115359",
-     "isbn10": "0143115359"
-    }
-   ],
-   "sources": [
-    {
-     "label": "Editorial shortlist (candidate; details unverified)",
-     "url": "staging/outside-candidates.psv#row60",
-     "accessed": "2026-10-27",
-     "supports": "candidate only"
-    }
-   ],
-   "status": "staged-needs-verification",
-   "origin": "staging/outside-candidates.psv:60"
-  },
-  {
-   "title": "The Gnostic Religion",
-   "subtitle": "",
-   "authors": [
-    "Hans Jonas"
-   ],
-   "subjects": [
-    "gnosticism"
-   ],
-   "tradition": [
-    "gnostic"
-   ],
-   "level": "advanced",
-   "editions": [
-    {
-     "format": "paperback",
-     "language": "en",
-     "publisher": "Beacon Press",
-     "year": 2001,
-     "isbn13": "9780807058015",
-     "isbn10": "0807058017"
-    }
-   ],
-   "sources": [
-    {
-     "label": "Editorial shortlist (candidate; details unverified)",
-     "url": "staging/outside-candidates.psv#row61",
-     "accessed": "2026-10-27",
-     "supports": "candidate only"
-    }
-   ],
-   "status": "staged-needs-verification",
-   "origin": "staging/outside-candidates.psv:61"
-  },
-  {
    "title": "The Cloud of Unknowing",
    "subtitle": "",
    "authors": [
@@ -1015,40 +876,6 @@
    "origin": "staging/outside-candidates.psv:62"
   },
   {
-   "title": "Revelations of Divine Love",
-   "subtitle": "",
-   "authors": [
-    "Julian of Norwich"
-   ],
-   "subjects": [
-    "christian-mysticism"
-   ],
-   "tradition": [
-    "christian"
-   ],
-   "level": "intermediate",
-   "editions": [
-    {
-     "format": "paperback",
-     "language": "en",
-     "publisher": "Penguin",
-     "year": 1998,
-     "isbn13": "9780140432411",
-     "isbn10": "0140432418"
-    }
-   ],
-   "sources": [
-    {
-     "label": "Editorial shortlist (candidate; details unverified)",
-     "url": "staging/outside-candidates.psv#row63",
-     "accessed": "2026-10-27",
-     "supports": "candidate only"
-    }
-   ],
-   "status": "staged-needs-verification",
-   "origin": "staging/outside-candidates.psv:63"
-  },
-  {
    "title": "Interior Castle",
    "subtitle": "",
    "authors": [
@@ -1081,41 +908,6 @@
    ],
    "status": "staged-needs-verification",
    "origin": "staging/outside-candidates.psv:64"
-  },
-  {
-   "title": "Mysticism",
-   "subtitle": "A Study in the Nature and Development of Spiritual Consciousness",
-   "authors": [
-    "Evelyn Underhill"
-   ],
-   "subjects": [
-    "christian-mysticism",
-    "comparative-religion"
-   ],
-   "tradition": [
-    "christian"
-   ],
-   "level": "advanced",
-   "editions": [
-    {
-     "format": "paperback",
-     "language": "en",
-     "publisher": "Dover",
-     "year": 2002,
-     "isbn13": "9780486474144",
-     "isbn10": "0486474143"
-    }
-   ],
-   "sources": [
-    {
-     "label": "Editorial shortlist (candidate; details unverified)",
-     "url": "staging/outside-candidates.psv#row65",
-     "accessed": "2026-10-27",
-     "supports": "candidate only"
-    }
-   ],
-   "status": "staged-needs-verification",
-   "origin": "staging/outside-candidates.psv:65"
   },
   {
    "title": "Psychology and Alchemy",
@@ -1185,42 +977,6 @@
    ],
    "status": "staged-needs-verification",
    "origin": "staging/outside-candidates.psv:71"
-  },
-  {
-   "title": "The Triumph of the Moon",
-   "subtitle": "A History of Modern Pagan Witchcraft",
-   "authors": [
-    "Ronald Hutton"
-   ],
-   "subjects": [
-    "witchcraft",
-    "wicca",
-    "paganism"
-   ],
-   "tradition": [
-    "wiccan"
-   ],
-   "level": "advanced",
-   "editions": [
-    {
-     "format": "paperback",
-     "language": "en",
-     "publisher": "Oxford University Press",
-     "year": 2001,
-     "isbn13": "9780192854490",
-     "isbn10": "0192854496"
-    }
-   ],
-   "sources": [
-    {
-     "label": "Editorial shortlist (candidate; details unverified)",
-     "url": "staging/outside-candidates.psv#row74",
-     "accessed": "2026-10-27",
-     "supports": "candidate only"
-    }
-   ],
-   "status": "staged-needs-verification",
-   "origin": "staging/outside-candidates.psv:74"
   },
   {
    "title": "Buckland's Book of Gypsy Magic",
@@ -1605,41 +1361,6 @@
    "origin": "staging/outside-candidates.psv:94"
   },
   {
-   "title": "The Hero with a Thousand Faces",
-   "subtitle": "",
-   "authors": [
-    "Joseph Campbell"
-   ],
-   "subjects": [
-    "mythology",
-    "comparative-religion"
-   ],
-   "tradition": [
-    "comparative"
-   ],
-   "level": "intermediate",
-   "editions": [
-    {
-     "format": "paperback",
-     "language": "en",
-     "publisher": "New World Library",
-     "year": 2008,
-     "isbn13": "9781577315933",
-     "isbn10": "1577315936"
-    }
-   ],
-   "sources": [
-    {
-     "label": "Editorial shortlist (candidate; details unverified)",
-     "url": "staging/outside-candidates.psv#row95",
-     "accessed": "2026-10-27",
-     "supports": "candidate only"
-    }
-   ],
-   "status": "staged-needs-verification",
-   "origin": "staging/outside-candidates.psv:95"
-  },
-  {
    "title": "The Power of Myth",
    "subtitle": "",
    "authors": [
@@ -1708,41 +1429,6 @@
    ],
    "status": "staged-needs-verification",
    "origin": "staging/outside-candidates.psv:100"
-  },
-  {
-   "title": "Popol Vuh",
-   "subtitle": "",
-   "authors": [
-    "Dennis Tedlock (translator)"
-   ],
-   "subjects": [
-    "ancient-texts",
-    "mythology"
-   ],
-   "tradition": [
-    "mythic"
-   ],
-   "level": "intermediate",
-   "editions": [
-    {
-     "format": "paperback",
-     "language": "en",
-     "publisher": "Touchstone",
-     "year": 1996,
-     "isbn13": "9780684818450",
-     "isbn10": "0684818450"
-    }
-   ],
-   "sources": [
-    {
-     "label": "Editorial shortlist (candidate; details unverified)",
-     "url": "staging/outside-candidates.psv#row101",
-     "accessed": "2026-10-27",
-     "supports": "candidate only"
-    }
-   ],
-   "status": "staged-needs-verification",
-   "origin": "staging/outside-candidates.psv:101"
   }
  ]
 }

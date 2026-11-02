@@ -287,7 +287,7 @@
       if (!vocab) { var seen = {}; recs.forEach(function (o) { hay(o); o.w.forEach(function (w) { if (w.length > 2) seen[w] = 1; }); }); vocab = Object.keys(seen); }
       vocab.forEach(function (w) { // typos rarely change both of the first two letters, and length must be within the edit budget
         if (Math.abs(w.length - x.length) > m || (w[0] !== x[0] && w[1] !== x[1] && w[0] !== x[1])) return;
-        if (osa(x, w.slice(0, x.length + 1), m) <= m || osa(x, w, m) <= m) out[w] = 1;
+        var d = Math.min(osa(x, w.slice(0, x.length + 1), m), osa(x, w, m)); if (d <= m) out[w] = d || 1; // keep the edit distance so closer words rank first
       });
       return out;
     }
@@ -315,8 +315,8 @@
         fuzzy = !!final && !base.some(function (o) { return terms.every(function (x) { return exact(o, x); }); });
         var sets = fuzzy ? terms.map(closeWords) : null;
         base = base.filter(function (o) {
-          var ok = terms.every(function (x, k) { return exact(o, x) || (fuzzy && o.w.some(function (w) { return sets[k][w]; })); });
-          if (ok) o.sc = fuzzy ? 1 : terms.every(function (x) { return o.t.indexOf(x) > -1; }) ? 3 : 2;
+          var dist = 0, ok = terms.every(function (x, k) { if (exact(o, x)) return true; if (!fuzzy) return false; var best = 9; o.w.forEach(function (w) { if (sets[k][w] && sets[k][w] < best) best = sets[k][w]; }); if (best < 9) dist += best; return best < 9; });
+          if (ok) o.sc = fuzzy ? 1 - dist * 0.1 + (o.press === 'fmp' ? 0.05 : 0) : terms.every(function (x) { return o.t.indexOf(x) > -1; }) ? 3 : 2;
           return ok;
         });
         base.sort(function (a, b) { return (b.sc - a.sc) || (a.i - b.i); });

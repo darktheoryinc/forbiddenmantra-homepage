@@ -102,4 +102,4 @@ else {
   for (const e of errs) for (const i of e.issues) byIssue[i.replace(/[A-Z0-9]{10}|\d{9}[\dX]|\(expected [^)]*\)|wrong tag \S+/g, '…')] = (byIssue[i.replace(/[A-Z0-9]{10}|\d{9}[\dX]|\(expected [^)]*\)|wrong tag \S+/g, '…')] ?? 0) + 1;
   if (errs.length) console.log('\nIssues by type:', JSON.stringify(byIssue, null, 1));
 }
-process.exit(results.some((r) => r.class === 'error') ? 1 : 0);
+process.exitCode = results.some((r) => r.class === 'error') ? 1 : 0; // let piped stdout flush (large catalogues exceed the 64 KB pipe buffer)

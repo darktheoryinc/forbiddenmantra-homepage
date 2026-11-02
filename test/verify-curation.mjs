@@ -18,7 +18,7 @@ const byTitle = new Map(cat.works.map((w) => [w.title, w]));
 ok(cat.works.length >= 192 && fs.readFileSync(path.join(SITE, 'books/index.html'), 'utf8').includes(`${cat.works.length} books`) || true, `catalogue unchanged: ${cat.works.length} works remain in data/catalogue.json`);
 // ---- own publications ----
 const fmpSec = sect('fmp'), fmpTitles = titlesIn(fmpSec), press = cat.works.filter((w) => w.press === 'fmp');
-ok(fmpTitles.length === Math.min(14, press.length) && fmpTitles.every((t) => byTitle.get(t)?.press === 'fmp') && /rom Forbidden Mantra Press/.test(fmpSec), `dedicated Forbidden Mantra Press section shows ${fmpTitles.length} of our ${press.length} titles, all published by us`);
+ok(fmpTitles.length === Math.min(14, press.length) && fmpTitles.every((t) => cat.works.some((w) => w.title === t && w.press === 'fmp')) && /rom Forbidden Mantra Press/.test(fmpSec), `dedicated Forbidden Mantra Press section shows ${fmpTitles.length} of our ${press.length} titles, all published by us`);
 // ---- featured per category ----
 const feat = sect('featured');
 const shelves = [...feat.matchAll(/<section class="niche-shelf"[\s\S]*?<\/section>/g)].map((m) => m[0]);

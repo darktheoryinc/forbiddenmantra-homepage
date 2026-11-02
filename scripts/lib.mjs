@@ -1,1 +1,1 @@
-export const slugify = (s) => s.normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/&/g, ' and ').replace(/[’'`]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+export const slugify = (s) => { const r = s.normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/&/g, ' and ').replace(/[’'`]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, ''); return r || (s.trim() ? 'u-' + [...s.trim()].slice(0, 8).map((c) => c.codePointAt(0).toString(16)).join('-') : ''); }; // non-Latin names get a stable code-point slug instead of an empty one

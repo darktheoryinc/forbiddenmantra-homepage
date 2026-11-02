@@ -171,6 +171,12 @@
   function bookHref(o) { return o.dyn ? root + 'book/index.html?s=' + encodeURIComponent(o.slug) : root + 'books/' + o.slug + '/index.html'; }
   function authorHref(o, i) { return o.ap.charAt(i) === '1' || (M && M.authorPages === 'all') ? root + 'authors/' + slugify(o.authors[i]) + '/index.html' : root + 'search/index.html?q=' + encodeURIComponent(o.authors[i]); }
   function coverEl(o) {
+    if (o.cv && o.cv.a) {
+      var ph = h('div', { 'class': 'cover cover-ph' + (o.press ? ' cover-fmp' : ''), style: '--h:38' }, [h('span', { 'class': 'ph-orn', 'aria-hidden': 'true' }, ['✦']), h('span', { 'class': 'cover-title ph-t' }, [o.title])]);
+      var im = h('img', { 'class': 'amz-img', src: 'https://m.media-amazon.com/images/P/' + o.cv.a + '.01._SCLZZZZZZZ_.jpg', alt: 'Cover of ' + o.title, width: 240, height: 360, loading: 'lazy', decoding: 'async', referrerpolicy: 'no-referrer' });
+      im.onload = function () { if (im.naturalWidth < 2) im.remove(); }; im.onerror = function () { im.remove(); };
+      ph.appendChild(im); return ph;
+    }
     if (o.cv) {
       var k = o.cv[0];
       return h('div', { 'class': 'cover cover-photo' }, [h('img', { src: root + 'assets/covers/' + k + '-240.webp', width: o.cv[1], height: o.cv[2], alt: 'Cover of ' + o.title, loading: 'lazy', decoding: 'async' })]);
