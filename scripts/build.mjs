@@ -406,7 +406,8 @@ function langMenu() {
 </div>`;
 }
 
-const NAV = [['nav_subjects', 'subjects/'], ['nav_traditions', 'traditions/'], ['nav_authors', 'authors/'], ['nav_paths', 'paths/'], ['nav_collections', 'collections/'], ['nav_press', 'press/'], ['nav_iosutra', 'technology/']];
+const MAIN_SITE = 'https://forbiddenmantra.com'; // the owner's existing website (Wix); this bookstore is hosted separately and links back to it
+const NAV = [['nav_subjects', 'subjects/'], ['nav_traditions', 'traditions/'], ['nav_authors', 'authors/'], ['nav_paths', 'paths/'], ['nav_collections', 'collections/'], ['nav_press', 'press/'], ['nav_iosutra', 'technology/'], ['nav_mainsite', MAIN_SITE]];
 const anyUntagged = Object.values(tagStatus).every((v) => !v);
 function layout({ title, rel, desc, body, crumbs = [], jsonld = null, current = '', links = '', noindex = false, homeAsk = false }) {
   ROOT_PREFIX = depthPrefix(rel);
@@ -439,7 +440,7 @@ ${PRODUCTION ? '' : `<div class="preview-bar" role="region" aria-label="Preview 
     ${langMenu()}
     <button class="nav-toggle" aria-expanded="false" aria-controls="nav" type="button"><span class="sr" data-i18n="menu">${esc(en.menu)}</span><span aria-hidden="true">☰</span></button>
     <nav id="nav" class="nav" aria-label="Main">
-      <ul>${NAV.map(([k, u]) => `<li><a href="${href(u)}"${current === u ? ' aria-current="page"' : ''} data-i18n="${k}">${esc(en[k])}</a></li>`).join('')}</ul>
+      <ul>${NAV.map(([k, u]) => /^https:/.test(u) ? `<li><a href="${esc(u)}" rel="noopener" data-track="mainsite" data-i18n="${k}">${esc(en[k])}</a></li>` : `<li><a href="${href(u)}"${current === u ? ' aria-current="page"' : ''} data-i18n="${k}">${esc(en[k])}</a></li>`).join('')}</ul>
     </nav>
   </div>
 </header>

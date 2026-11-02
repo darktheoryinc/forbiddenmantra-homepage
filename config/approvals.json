@@ -35,10 +35,11 @@
     "approvedOn": null
   },
   "productionAddress": {
-    "approved": true,
-    "approvedBy": "site owner (explicit instruction in the working session)",
-    "approvedOn": "2026-11-02",
-    "url": "https://forbiddenmantra.com"
+    "approved": false,
+    "approvedBy": null,
+    "approvedOn": null,
+    "url": null,
+    "note": "2026-11-02: the owner chose to keep the Wix site at forbiddenmantra.com and host this bookstore separately on Netlify. The earlier recorded address (https://forbiddenmantra.com) is superseded. Record the assigned netlify.app URL here when the owner supplies it."
   },
   "amazonHostedCovers": {
     "approved": true,

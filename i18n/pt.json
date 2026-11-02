@@ -73,6 +73,7 @@
   "status": "machine-drafted; needs native-speaker review before leaving beta"
  },
  "nav_iosutra": "IOSutra",
+ "nav_mainsite": "Site principal",
  "did_you_mean": "Você quis dizer {q}?",
  "close_matches": "Mostrando resultados próximos para “{q}”",
  "show_more": "Mostrar mais",

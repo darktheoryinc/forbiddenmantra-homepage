@@ -1,6 +1,6 @@
 # Production launch: what only the owner can approve (2026-11-02)
 
-Domain: `https://forbiddenmantra.com` is recorded (`config/site.json` `siteUrl`, `config/approvals.json` `productionAddress`). Nothing else below has been approved or assumed.
+Hosting (decided 2026-11-02): the Wix site at https://forbiddenmantra.com is untouched; the bookstore goes on its own `netlify.app` address (see `docs/NETLIFY-LAUNCH.md`). **The production address is therefore not recorded yet**: it is the first thing needed, and the earlier recorded `forbiddenmantra.com` entry has been withdrawn. Nothing below has been approved or assumed.
 
 ## The exact gates that stop a production build today
 Command: `FM_ENV=production node scripts/make-wix-package.mjs` (it refuses and lists these together).
@@ -10,9 +10,10 @@ Command: `FM_ENV=production node scripts/make-wix-package.mjs` (it refuses and l
 | 1 | `promo iosutra-technology: not approved by the owner` | `data/promos.json` `promos[0].approved` | Owner approves the existing IOSutra promotion as it stands (no wording or artwork change). |
 | 2 | `claim "nvidia-inception-membership" is owner-asserted` | `data/promos.json` `claims` | Owner records evidence (`evidence`, `verifiedOn`) and sets `status: verified`. Wording is not changed. |
 | 3 | `claim "nvidia-trademark-notice" is needs-confirmation` | `data/promos.json` `claims` | Owner confirms the attribution wording the programme requires (or that none is required) and sets `status: verified`. |
-| 4 | `legal: the Terms, Refund, Privacy and Affiliate pages are drafts` | `config/site.json` `legal.reviewedByOwner` and `legal.effectiveDate` | Owner (or counsel) reviews the five pages below, then confirms. |
+| 4 | `legal: the Terms, Refund, Privacy and Affiliate pages are drafts` | `config/site.json` `legal.reviewedByOwner` and `legal.effectiveDate` | Owner (or counsel) reviews the pages (see `docs/LEGAL-REVIEW-2026-11-02.md`; its decision 1 is now settled: separate site), then confirms. |
+| 5 | `no production siteUrl` / `productionAddress` | `config/approvals.json` `productionAddress.url` | Owner supplies the assigned Netlify address (step 3 in `docs/NETLIFY-LAUNCH.md`). |
 
-The package security gate additionally requires these `config/approvals.json` entries to be `approved: true`, each recorded with `approvedBy` and `approvedOn`: `iosutraPromotion`, `iosutraArtworkRights`, `librarianArtworkRights`, `legalPagesReviewed`. (`nvidiaBranding`, `productionAddress` and `amazonHostedCovers` are already recorded.)
+The package security gate additionally requires these `config/approvals.json` entries to be `approved: true`, each recorded with `approvedBy` and `approvedOn`: `iosutraPromotion`, `iosutraArtworkRights`, `librarianArtworkRights`, `legalPagesReviewed`. (`productionAddress` also needs the Netlify address. `nvidiaBranding` and `amazonHostedCovers` are already recorded.)
 
 Claude has not set, and will not set, any of these. Once the owner confirms them, recording them is a five-minute change and the production ZIP is built with one command.
 

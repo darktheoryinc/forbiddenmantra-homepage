@@ -49,11 +49,19 @@ ok(r.status === 0 && /data-goatcounter="https:\/\/fixture-code\.goatcounter\.com
 r = node('scripts/build.mjs', { FM_OUT: 'test/out-an', FM_CONFIG_OVERRIDE: ov({ analytics: { provider: 'ga4' } }) }); ok(r.status === 1 && /GA4 is not supported until a consent mechanism exists/.test(r.stderr), 'GA4 is refused until a consent mechanism exists');
 r = node('scripts/build.mjs', { FM_OUT: 'test/out-an', FM_CONFIG_OVERRIDE: ov({ analytics: { provider: 'plausible' } }) }); ok(r.status === 1 && /has no id set/.test(r.stderr), 'a provider without its id is refused');
 
+// ===== link back to the owner's main website (hosted separately on Wix) =====
+{
+  const hx = fs.readFileSync(path.join(ROOT, 'site/index.html'), 'utf8'), bx = fs.readFileSync(path.join(ROOT, 'site/books/index.html'), 'utf8');
+  const link = (h) => /<nav id="nav"[\s\S]*?<a href="https:\/\/forbiddenmantra\.com" rel="noopener"[^>]*data-i18n="nav_mainsite"/.test(h);
+  ok(link(hx) && link(bx), 'the header navigation on every page links back to the main website, https://forbiddenmantra.com');
+  const locs = ['en', 'es', 'fr', 'de', 'it', 'pt', 'ar', 'hi'].map((l) => JSON.parse(fs.readFileSync(path.join(ROOT, `i18n/${l}.json`), 'utf8')).nav_mainsite);
+  ok(locs.every((t) => typeof t === 'string' && t.length > 2), 'the main-website menu label is translated in all 8 interface languages');
+}
 // ===== production mode =====
 const ready = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/promos.json'), 'utf8')); ready.brands.iosutra.url = 'https://example.invalid/iosutra'; ready.promos[0].approved = true; ready.claims.forEach((c) => { c.status = 'verified'; });
 const pf = path.join(ROOT, 'test/fixtures/promos-ready.json'); fs.writeFileSync(pf, JSON.stringify(ready));
 r = node('scripts/build.mjs', { FM_ENV: 'production', FM_OUT: 'test/out-prod', FM_PROMOS: 'test/fixtures/promos-ready.json', FM_CONFIG_OVERRIDE: ov({ siteUrl: null }) });
-ok(r.status === 1 && /BLOCKER siteUrl/.test(r.stderr) && r.status === 1, 'production build refuses without a siteUrl (the recorded forbiddenmantra.com is overridden away for this check)');
+ok(r.status === 1 && /BLOCKER siteUrl/.test(r.stderr) && r.status === 1, 'production build refuses without a siteUrl');
 r = node('scripts/build.mjs', { FM_ENV: 'production', FM_OUT: 'test/out-prod', FM_PROMOS: 'test/fixtures/promos-ready.json', FM_SITE_URL: 'https://shop.example.invalid/', FM_CONFIG_OVERRIDE: ov({ legal: { reviewedByOwner: true, effectiveDate: '2026-01-01' } }) });
 const PROD = path.join(ROOT, 'test/out-prod');
 ok(r.status === 0, `production build succeeds once URL, approval and claims are in place (exit ${r.status})`);
@@ -97,7 +105,7 @@ ok(JSON.parse(fs.readFileSync(path.join(ROOT, 'test/fixtures/data/retailer-links
 // ===== launch gate =====
 r = node('scripts/launch-check.mjs', {}, ['--json']); const items = JSON.parse(r.stdout);
 const lv = (re) => items.find((i) => re.test(i.what))?.level;
-ok(r.status === 1 && lv(/tracking ID for amazon\.com/) === 'PASS' && lv(/Retail link validity/) === 'WARN' && lv(/Cross-promotion/) === 'BLOCKER' && lv(/Production URL/) === 'PASS', 'launch-check reports NOT READY with the remaining blocker (IOSutra gate); the production URL (forbiddenmantra.com) now passes; the live link check has run (links are a warning: 20 live, the rest blocked by Amazon or inconclusive); tracking ID passes');
+ok(r.status === 1 && lv(/tracking ID for amazon\.com/) === 'PASS' && lv(/Retail link validity/) === 'WARN' && lv(/Cross-promotion/) === 'BLOCKER' && lv(/Production URL/) === 'DECISION', 'launch-check reports NOT READY with the remaining blocker (IOSutra gate) and the hosting decision (the Netlify address is not assigned yet); the live link check has run (links are a warning: 20 live, the rest blocked by Amazon or inconclusive); tracking ID passes');
 ok(lv(/amazon\.co\.uk/) === 'WARN', 'launch-check does not assume the US ID covers amazon.co.uk (UK editions stay a warning)');
 
 // ===== browser: outbound events =====

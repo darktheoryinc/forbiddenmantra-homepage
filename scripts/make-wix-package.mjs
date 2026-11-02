@@ -12,6 +12,11 @@ import { scanPackage } from './security-gate.mjs';
 import { fileURLToPath } from 'node:url';
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const prod = process.env.FM_ENV === 'production';
+if (prod) { // the address the pages are built for must be the address the owner recorded
+  const rec = (() => { try { return JSON.parse(fs.readFileSync(path.join(ROOT, 'config/approvals.json'), 'utf8')).productionAddress?.url ?? null; } catch { return null; } })();
+  const want = (process.env.FM_SITE_URL ?? rec ?? '').replace(/\/$/, '');
+  if (rec && want !== rec.replace(/\/$/, '')) { console.error(`REFUSED: FM_SITE_URL (${want}) differs from the production address recorded in config/approvals.json (${rec}).`); process.exit(1); }
+}
 const stage = path.join(ROOT, 'test/out-wixpkg');
 fs.rmSync(stage, { recursive: true, force: true });
 execFileSync('node', [path.join(ROOT, 'scripts/build.mjs')], { cwd: ROOT, env: { ...process.env, FM_WIX: '1', FM_PUBLIC: '1', FM_OUT: 'test/out-wixpkg' }, stdio: 'inherit' });
