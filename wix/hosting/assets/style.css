@@ -557,3 +557,6 @@ a.io-tile-img:hover,a.io-tile-img:focus-visible{outline:3px solid #fff;outline-o
 p[data-grid-note]{margin:10px 0 0;font-size:12.5px;color:var(--muted)}
 .cover-buy:focus-visible{outline:3px solid #D8B46B;outline-offset:2px}
 .book-cover-link{display:block}
+
+/* Preview-only Amazon-hosted cover (flag FM_AMAZON_COVERS=preview; never in public packages) */
+.cover{position:relative}.cover .amz-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2}.cover .amz-tag{position:absolute;left:0;right:0;bottom:0;z-index:3;font:600 8px/1.2 'Cinzel',serif;letter-spacing:.06em;text-transform:uppercase;text-align:center;background:rgba(61,10,10,.88);color:#EFD79C;padding:2px 3px}
