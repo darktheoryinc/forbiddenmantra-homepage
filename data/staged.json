@@ -38,41 +38,6 @@
    "origin": "staging/outside-candidates.psv:5"
   },
   {
-   "title": "The Places That Scare You",
-   "subtitle": "A Guide to Fearlessness in Difficult Times",
-   "authors": [
-    "Pema Chödrön"
-   ],
-   "subjects": [
-    "buddhism",
-    "emotional-wellbeing"
-   ],
-   "tradition": [
-    "buddhist"
-   ],
-   "level": "beginner",
-   "editions": [
-    {
-     "format": "paperback",
-     "language": "en",
-     "publisher": "Shambhala",
-     "year": 2002,
-     "isbn13": "9781570628825",
-     "isbn10": "1570628823"
-    }
-   ],
-   "sources": [
-    {
-     "label": "Editorial shortlist (candidate; details unverified)",
-     "url": "staging/outside-candidates.psv#row10",
-     "accessed": "2026-10-27",
-     "supports": "candidate only"
-    }
-   ],
-   "status": "staged-needs-verification",
-   "origin": "staging/outside-candidates.psv:10"
-  },
-  {
    "title": "The Myth of Normal",
    "subtitle": "Trauma, Illness, and Healing in a Toxic Culture",
    "authors": [
@@ -107,40 +72,6 @@
    ],
    "status": "staged-needs-verification",
    "origin": "staging/outside-candidates.psv:11"
-  },
-  {
-   "title": "In the Realm of Hungry Ghosts",
-   "subtitle": "Close Encounters with Addiction",
-   "authors": [
-    "Gabor Maté"
-   ],
-   "subjects": [
-    "emotional-wellbeing"
-   ],
-   "tradition": [
-    "secular"
-   ],
-   "level": "intermediate",
-   "editions": [
-    {
-     "format": "paperback",
-     "language": "en",
-     "publisher": "North Atlantic Books",
-     "year": 2010,
-     "isbn13": "9781556439070",
-     "isbn10": "1556439075"
-    }
-   ],
-   "sources": [
-    {
-     "label": "Editorial shortlist (candidate; details unverified)",
-     "url": "staging/outside-candidates.psv#row12",
-     "accessed": "2026-10-27",
-     "supports": "candidate only"
-    }
-   ],
-   "status": "staged-needs-verification",
-   "origin": "staging/outside-candidates.psv:12"
   },
   {
    "title": "Scattered Minds",
@@ -631,41 +562,6 @@
    "origin": "staging/outside-candidates.psv:53"
   },
   {
-   "title": "The Perennial Philosophy",
-   "subtitle": "",
-   "authors": [
-    "Aldous Huxley"
-   ],
-   "subjects": [
-    "comparative-religion",
-    "consciousness"
-   ],
-   "tradition": [
-    "perennial"
-   ],
-   "level": "intermediate",
-   "editions": [
-    {
-     "format": "paperback",
-     "language": "en",
-     "publisher": "Harper Perennial",
-     "year": 2009,
-     "isbn13": "9780061724947",
-     "isbn10": "0061724947"
-    }
-   ],
-   "sources": [
-    {
-     "label": "Editorial shortlist (candidate; details unverified)",
-     "url": "staging/outside-candidates.psv#row55",
-     "accessed": "2026-10-27",
-     "supports": "candidate only"
-    }
-   ],
-   "status": "staged-needs-verification",
-   "origin": "staging/outside-candidates.psv:55"
-  },
-  {
    "title": "The Cloud of Unknowing",
    "subtitle": "",
    "authors": [
@@ -1082,40 +978,6 @@
    ],
    "status": "staged-needs-verification",
    "origin": "staging/outside-candidates.psv:90"
-  },
-  {
-   "title": "The Doors of Perception",
-   "subtitle": "",
-   "authors": [
-    "Aldous Huxley"
-   ],
-   "subjects": [
-    "consciousness"
-   ],
-   "tradition": [
-    "secular"
-   ],
-   "level": "intermediate",
-   "editions": [
-    {
-     "format": "paperback",
-     "language": "en",
-     "publisher": "Harper Perennial",
-     "year": 2009,
-     "isbn13": "9780061729072",
-     "isbn10": "0061729078"
-    }
-   ],
-   "sources": [
-    {
-     "label": "Editorial shortlist (candidate; details unverified)",
-     "url": "staging/outside-candidates.psv#row92",
-     "accessed": "2026-10-27",
-     "supports": "candidate only"
-    }
-   ],
-   "status": "staged-needs-verification",
-   "origin": "staging/outside-candidates.psv:92"
   },
   {
    "title": "The Egyptian Book of the Dead",

@@ -1,0 +1,141 @@
+{
+ "batch": "olz2-002",
+ "checkedOn": "2026-10-27",
+ "tier": "open-library-catalogue",
+ "works": [
+  {
+   "title": "The Chronicles of Conan (Conan Chronicles)",
+   "subtitle": "",
+   "authors": [
+    "Robert E. Howard",
+    "Roy Thomas",
+    "Barry Windsor-Smith"
+   ],
+   "subjects": [
+    "supernatural-fiction"
+   ],
+   "tradition": [
+    "fiction"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Titan Books Ltd",
+     "year": 2004,
+     "isbn13": "9781840238914",
+     "note": "Language not stated on the edition record; inferred from the English-language Open Library work.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL12562073M/The_Chronicles_of_Conan_(Conan_Chronicles)",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    },
+    {
+     "language": "en",
+     "format": "book",
+     "publisher": "Titan Books Limited",
+     "year": 2006,
+     "isbn13": "9781845762742",
+     "title": "Chronicles of Conan",
+     "note": "Binding not stated by the source record.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL51019894M/Chronicles_of_Conan",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    }
+   ],
+   "provenance": {
+    "tier": "open-library-catalogue",
+    "method": "single Open Library edition record passing the single-source gates",
+    "workKey": "/works/OL15702518W"
+   },
+   "sources": [
+    {
+     "label": "Open Library record",
+     "url": "http://openlibrary.org/books/OL12562073M/The_Chronicles_of_Conan_(Conan_Chronicles)",
+     "accessed": "2026-11-02",
+     "supports": "title, author, ISBN-13"
+    }
+   ]
+  },
+  {
+   "title": "The Cthulhu Stories of Robert E. Howard",
+   "subtitle": "",
+   "authors": [
+    "Robert E. Howard",
+    "M. Scott Lee"
+   ],
+   "subjects": [
+    "supernatural-fiction"
+   ],
+   "tradition": [
+    "fiction"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "book",
+     "publisher": "WordFire Press LLC",
+     "year": 2020,
+     "isbn13": "9781680570960",
+     "note": "Binding not stated by the source record.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL38897118M/The_Cthulhu_Stories_of_Robert_E._Howard",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    },
+    {
+     "language": "en",
+     "format": "hardcover",
+     "publisher": "Wordfire Press",
+     "year": 2020,
+     "isbn13": "9781680570984",
+     "note": "Language not stated on the edition record; inferred from the English-language Open Library work.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL31999316M/The_Cthulhu_Stories_of_Robert_E._Howard",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    }
+   ],
+   "provenance": {
+    "tier": "open-library-catalogue",
+    "method": "single Open Library edition record passing the single-source gates",
+    "workKey": "/works/OL24214213W"
+   },
+   "sources": [
+    {
+     "label": "Open Library record",
+     "url": "http://openlibrary.org/books/OL38897118M/The_Cthulhu_Stories_of_Robert_E._Howard",
+     "accessed": "2026-11-02",
+     "supports": "title, author, ISBN-13"
+    }
+   ]
+  }
+ ]
+}

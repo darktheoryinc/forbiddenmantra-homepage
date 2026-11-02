@@ -251,6 +251,10 @@ const finalWorks = [...works.values()].map((w) => {
   const { _origin, ...rest } = w;
   return { id: slug, slug, ...rest, authorIds: w.authors.map(slugify) };
 });
+// Works already in the published catalogue keep their URLs: when two bulk works collide (same slug, or variant-author duplicates), the one that
+// was already published wins over a newcomer.
+let PREV_ISBNS = new Set(); try { PREV_ISBNS = new Set(JSON.parse(fs.readFileSync(path.join(ROOT, DATA, 'catalogue.json'), 'utf8')).works.flatMap((x) => x.editions.map((e) => e.isbn13 ?? e.asin).filter(Boolean))); } catch { /* first run */ }
+const keepRank = (w) => (w.provenance?.tier !== 'open-library-catalogue' && w.provenance?.tier !== 'auto-two-source' ? 2 : w.editions.some((e) => PREV_ISBNS.has(e.isbn13 ?? e.asin)) ? 1 : 0);
 // A single-source bulk work whose normalised title and at least one author-name word (4+ letters) match another work is the same book
 // listed under a variant author spelling ("Paramahansa Yogananda" / "Yogananda, Paramahansa"): keep the verified/richer record, queue the duplicate.
 {
@@ -260,7 +264,7 @@ const finalWorks = [...works.values()].map((w) => {
   const drop = new Set();
   for (const g of byT.values()) if (g.length > 1) for (const b of g.filter(isBulk)) {
     const bw = nameWords(b);
-    const twin = g.find((o) => o !== b && !drop.has(o) && [...nameWords(o)].some((t) => bw.has(t)) && (!isBulk(o) || o.editions.length > b.editions.length || (o.editions.length === b.editions.length && o.slug < b.slug)));
+    const twin = g.find((o) => o !== b && !drop.has(o) && [...nameWords(o)].some((t) => bw.has(t)) && (keepRank(o) > keepRank(b) || (keepRank(o) === keepRank(b) && (o.editions.length > b.editions.length || (o.editions.length === b.editions.length && o.slug < b.slug)))));
     if (twin) { drop.add(b); queue(b, 'dedup', [`same title and author as "${twin.title}" (${twin.slug}) under a variant author spelling; kept the ${isBulk(twin) ? 'richer' : 'verified'} record`], 'duplicate'); }
   }
   if (drop.size) { for (let i = finalWorks.length - 1; i >= 0; i--) if (drop.has(finalWorks[i])) finalWorks.splice(i, 1); console.log(`dedup: ${drop.size} bulk work(s) dropped as variant-author duplicates`); }
@@ -268,7 +272,7 @@ const finalWorks = [...works.values()].map((w) => {
 // slug uniqueness
 const seen = new Set();
 // Verified (hand/web) works claim their plain slug first so published URLs never move; bulk works take the suffixed form.
-const slugRank = (w) => (w.provenance?.tier === 'open-library-catalogue' || w.provenance?.tier === 'auto-two-source' ? 1 : 0);
+const slugRank = (w) => 2 - keepRank(w); // verified first, then works already published, then newcomers
 for (const w of [...finalWorks].sort((a, b) => slugRank(a) - slugRank(b))) {
   let s = w.slug, n = 1;
   if (seen.has(s)) s = `${w.slug}-${slugify(w.authors[0])}`;
