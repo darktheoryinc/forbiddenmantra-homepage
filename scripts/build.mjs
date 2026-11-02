@@ -745,6 +745,7 @@ for (const t of tax.traditions) {
 const authorList = cat.authors.filter((a) => authorPage.has(a.id));
 const letters = [...new Set(authorList.map((a) => a.sortName[0].toUpperCase()))].sort();
 const authorRow = (a) => `<li><a href="${href(`authors/${a.id}/`)}">${esc(a.sortName)}</a> <span>${fmt(a.workIds.length, 'book', 'books')}</span></li>`;
+const letterKey = (l) => (/^[A-Z0-9]$/.test(l) ? l.toLowerCase() : 'u' + l.codePointAt(0).toString(16)); // ASCII-only URLs: a non-Latin initial would otherwise become a non-ASCII folder name that some unzip tools and hosts mangle
 const LETTER_PAGE = BUILD.authorsPerPage ?? 400;
 if (authorList.length <= LETTER_PAGE) {
   page('authors/index.html', {
@@ -758,15 +759,15 @@ ${letters.map((l) => `<h2 id="l-${l}">${l}</h2><ul class="authors">${authorList.
   page('authors/index.html', {
     title: 'Authors A–Z', crumbs: [['Authors']], current: 'authors/', desc: 'Authors A to Z.',
     body: () => `<section class="band"><div class="wrap"><h1>${S('nav_authors')} A–Z</h1><p class="lede-sm">${fmt(authorList.length, 'author page', 'author pages')}. Choose an initial.</p>
-<nav class="az" aria-label="Choose a letter">${letters.map((l) => `<a href="${href(`authors/letter/${l.toLowerCase()}/`)}">${l}</a>`).join('')}</nav></div></section>`,
+<nav class="az" aria-label="Choose a letter">${letters.map((l) => `<a href="${href(`authors/letter/${letterKey(l)}/`)}">${l}</a>`).join('')}</nav></div></section>`,
   });
   for (const l of letters) {
     const as = authorList.filter((a) => a.sortName[0].toUpperCase() === l), n = Math.ceil(as.length / LETTER_PAGE);
     for (let p = 1; p <= n; p++) {
-      const base = `authors/letter/${l.toLowerCase()}/`;
+      const base = `authors/letter/${letterKey(l)}/`;
       page(p === 1 ? `${base}index.html` : `${base}page/${p}/index.html`, {
         title: `Authors: ${l}${p > 1 ? ' · page ' + p : ''}`, crumbs: [['Authors', 'authors/'], [`${l}${p > 1 ? ' · page ' + p : ''}`]], desc: `Authors whose names begin with ${l}.`,
-        body: () => `<section class="band"><div class="wrap"><h1>${l}</h1><nav class="az" aria-label="Choose a letter">${letters.map((x) => `<a href="${href(`authors/letter/${x.toLowerCase()}/`)}"${x === l ? ' aria-current="page"' : ''}>${x}</a>`).join('')}</nav><ul class="authors">${as.slice((p - 1) * LETTER_PAGE, p * LETTER_PAGE).map(authorRow).join('')}</ul>${pager(base, p, n)}</div></section>`,
+        body: () => `<section class="band"><div class="wrap"><h1>${l}</h1><nav class="az" aria-label="Choose a letter">${letters.map((x) => `<a href="${href(`authors/letter/${letterKey(x)}/`)}"${x === l ? ' aria-current="page"' : ''}>${x}</a>`).join('')}</nav><ul class="authors">${as.slice((p - 1) * LETTER_PAGE, p * LETTER_PAGE).map(authorRow).join('')}</ul>${pager(base, p, n)}</div></section>`,
       });
     }
   }

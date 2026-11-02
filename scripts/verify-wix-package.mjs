@@ -53,8 +53,11 @@ ok(missing.length === 0, `${htmls.length} pages, ${refs} local links/assets/scri
 // ---- catalogue completeness ----
 const bookDirs = A.filter((f) => /^books\/[^/]+\/index\.html$/.test(f));
 const eds = bookDirs.reduce((n, f) => n + (fs.readFileSync(path.join(ROOTDIR, f), 'utf8').match(/<section class="edition"/g) || []).length, 0);
-ok(bookDirs.length === cat.works.length && cat.works.every((w) => A.includes(`books/${w.slug}/index.html`)), `all ${cat.works.length} catalogue books have a page`);
-ok(eds === cat.works.reduce((n, w) => n + w.editions.length, 0), `all ${eds} editions are shown`);
+// Works beyond the static-page cap (config build.maxStaticBookPages) are served by the dynamic book page from hashed shards; count them from the shard files.
+let dynWorks = 0, dynEds = 0; const dynSlugs = new Set();
+for (const f of A.filter((x) => /^assets\/idx\/dyn-[0-9a-f]+\.js$/.test(x))) for (const r of Object.values(JSON.parse(fs.readFileSync(path.join(ROOTDIR, f), 'utf8').replace(/^\(window\.FM_DYN=window\.FM_DYN\|\|\{\}\)\[[^\]]*\]=/, '').replace(/;\s*$/, '')))) { dynWorks++; dynEds += r[14]?.eds?.length ?? 0; dynSlugs.add(r[0]); }
+ok(bookDirs.length + dynWorks === cat.works.length && cat.works.every((w) => A.includes(`books/${w.slug}/index.html`) || dynSlugs.has(w.slug)), `all ${cat.works.length} catalogue books are reachable: ${bookDirs.length} static pages + ${dynWorks} served by the dynamic book page from shards`);
+ok(eds + dynEds === cat.works.reduce((n, w) => n + w.editions.length, 0), `all ${eds + dynEds} editions are shown (${eds} on static pages, ${dynEds} in shards)`);
 const buy = []; for (const f of bookDirs) { const h = fs.readFileSync(path.join(ROOTDIR, f), 'utf8'); for (const m of h.matchAll(/<a class="btn" href="([^"]+)"[^>]*data-track="buy"/g)) buy.push([f, m[1].replace(/&amp;/g, '&')]); }
 const amz = buy.filter(([, u]) => /^https:\/\/www\.amazon\.com\//.test(u)), other = buy.filter(([, u]) => !/^https:\/\/www\.amazon\.com\//.test(u));
 ok(amz.length > 0 && amz.every(([, u]) => new URL(u).searchParams.get('tag') === 'darktheoryinc-20') && other.every(([, u]) => /^https:\/\/www\.amazon\.(co\.uk|es)\//.test(u) && !new URL(u).searchParams.has('tag')), `${amz.length} Amazon.com purchase links on book pages, all tagged darktheoryinc-20 (product pages ${amz.filter(([, u]) => /\/dp\//.test(u)).length}, ISBN searches ${amz.filter(([, u]) => /\/s\?/.test(u)).length}); ${other.length} amazon.co.uk / amazon.es links correctly untagged (no tracking ID is configured for those marketplaces)`);
