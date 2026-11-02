@@ -54,10 +54,11 @@ async function discover() {
     try {
       const docs = openlibrary.parseSearch(await client.getJson(openlibrary.searchUrl({ ...seed, page })));
       if (!docs.length) { cp.mark(unit, { works: 0 }); break; }
-      for (const d of docs) {
-        const isbns = d.isbns.slice(0, perDoc);
-        if (!isbns.length) continue;
-        const recs = openlibrary.parseLookup(await client.getJson(openlibrary.lookupUrl(isbns)), today).map((r) => ({ ...r, workKey: r.workKey ?? d.workKey, seed: { ...seed, department: seed.department, level: seed.level }, olSubjects: d.subjects }));
+      // batch the ISBN lookups of the whole page (20 per request) instead of one request per work
+      const wanted = []; const byIsbn = new Map();
+      for (const d of docs) for (const i of d.isbns.slice(0, perDoc)) { wanted.push(i); byIsbn.set(i, d); }
+      for (let k = 0; k < wanted.length; k += 20) {
+        const recs = openlibrary.parseLookup(await client.getJson(openlibrary.lookupUrl(wanted.slice(k, k + 20))), today).map((r) => { const d = byIsbn.get(r.isbn13) ?? {}; return { ...r, workKey: r.workKey ?? d.workKey, seed: { ...seed, department: seed.department, level: seed.level }, olSubjects: d.subjects ?? [], editionCount: d.editionCount ?? 0, searchTitle: d.title ?? null, searchAuthors: d.authors ?? [], firstYear: d.firstYear ?? null }; });
         appendJsonl(outFile, recs); added += recs.length;
       }
       cp.mark(unit, { works: docs.length });
