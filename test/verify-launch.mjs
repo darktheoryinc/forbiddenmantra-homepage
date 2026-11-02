@@ -52,7 +52,7 @@ r = node('scripts/build.mjs', { FM_OUT: 'test/out-an', FM_CONFIG_OVERRIDE: ov({ 
 // ===== link back to the owner's main website (hosted separately on Wix) =====
 {
   const hx = fs.readFileSync(path.join(ROOT, 'site/index.html'), 'utf8'), bx = fs.readFileSync(path.join(ROOT, 'site/books/index.html'), 'utf8');
-  const link = (h) => /<nav id="nav"[\s\S]*?<a href="https:\/\/forbiddenmantra\.com" rel="noopener"[^>]*data-i18n="nav_mainsite"/.test(h);
+  const link = (h) => /<nav id="nav"[\s\S]*?<a href="https:\/\/forbiddenmantra\.com" target="_blank" rel="noopener noreferrer"[^>]*data-i18n="nav_mainsite"/.test(h);
   ok(link(hx) && link(bx), 'the header navigation on every page links back to the main website, https://forbiddenmantra.com');
   const locs = ['en', 'es', 'fr', 'de', 'it', 'pt', 'ar', 'hi'].map((l) => JSON.parse(fs.readFileSync(path.join(ROOT, `i18n/${l}.json`), 'utf8')).nav_mainsite);
   ok(locs.every((t) => typeof t === 'string' && t.length > 2), 'the main-website menu label is translated in all 8 interface languages');

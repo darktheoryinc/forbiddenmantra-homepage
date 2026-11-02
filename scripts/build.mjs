@@ -440,7 +440,7 @@ ${PRODUCTION ? '' : `<div class="preview-bar" role="region" aria-label="Preview 
     ${langMenu()}
     <button class="nav-toggle" aria-expanded="false" aria-controls="nav" type="button"><span class="sr" data-i18n="menu">${esc(en.menu)}</span><span aria-hidden="true">☰</span></button>
     <nav id="nav" class="nav" aria-label="Main">
-      <ul>${NAV.map(([k, u]) => /^https:/.test(u) ? `<li><a href="${esc(u)}" rel="noopener" data-track="mainsite" data-i18n="${k}">${esc(en[k])}</a></li>` : `<li><a href="${href(u)}"${current === u ? ' aria-current="page"' : ''} data-i18n="${k}">${esc(en[k])}</a></li>`).join('')}</ul>
+      <ul>${NAV.map(([k, u]) => /^https:/.test(u) ? `<li><a href="${esc(u)}" target="_blank" rel="noopener noreferrer" data-track="mainsite" data-i18n="${k}">${esc(en[k])}</a></li>` : `<li><a href="${href(u)}"${current === u ? ' aria-current="page"' : ''} data-i18n="${k}">${esc(en[k])}</a></li>`).join('')}</ul>
     </nav>
   </div>
 </header>
