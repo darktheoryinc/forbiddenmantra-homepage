@@ -28,6 +28,8 @@ bad('.env file', { '.env': 'X=1' }, /sensitive file type/);
 bad('source map', { 'assets/app.js.map': '{}' }, /sensitive file type/);
 bad('markdown/internal doc', { 'docs/NOTES.md': '# plan' }, /sensitive file type/);
 bad('zip inside package', { 'backup.zip': 'PK' }, /sensitive file type/);
+bad('stray xml file', { 'data/feed.xml': '<x/>' }, /allow-list/);
+ok(scanPackage(pkg('root sitemap.xml', { 'sitemap.xml': '<?xml version="1.0"?><urlset/>' }), { approvals: A() }).fail.every((f) => !/sitemap\.xml/.test(f)), 'the production sitemap.xml at the package root is allowed (other .xml files are not)');
 bad('hidden file', { '.git/config': '[core]' }, /sensitive file type/);
 bad('unknown Amazon tag', { 'about/index.html': '<a href="https://www.amazon.com/dp/B000000000?tag=someoneelse-20">b</a>' }, /unknown Amazon tracking tag/);
 bad('external script', { 'about/index.html': '<script src="https://evil.example/x.js"></script>' }, /another website/);
