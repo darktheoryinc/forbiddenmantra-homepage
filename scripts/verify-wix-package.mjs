@@ -64,6 +64,18 @@ ok(amz.length > 0 && amz.every(([, u]) => new URL(u).searchParams.get('tag') ===
 const covers = bookDirs.filter((f) => /<img[^>]*class="[^"]*cover/.test(fs.readFileSync(path.join(ROOTDIR, f), 'utf8'))).length;
 console.log(`INFO  book pages with a real cover image: ${covers} of ${bookDirs.length}; the rest show the typographic title card (no cover source is connected yet)`);
 const preview = fs.readFileSync(path.join(ROOTDIR, 'index.html'), 'utf8').match(/preview build, not published/i);
+// ---- indexing: previews are closed to crawlers, production is open and carries a sitemap on the recorded domain ----
+{
+  const hdr = fs.readFileSync(path.join(ROOTDIR, '_headers'), 'utf8'), rob = fs.readFileSync(path.join(ROOTDIR, 'robots.txt'), 'utf8'), idx = fs.readFileSync(path.join(ROOTDIR, 'index.html'), 'utf8');
+  if (preview) ok(/X-Robots-Tag: noindex/.test(hdr) && /Disallow: \//.test(rob) && /name="robots" content="noindex/.test(idx), 'preview package is closed to crawlers (header, robots.txt and meta)');
+  else {
+    const site = (JSON.parse(fs.readFileSync(path.join(ROOT, 'config/approvals.json'), 'utf8')).productionAddress?.url ?? '').replace(/\/$/, '');
+    const sm = fs.existsSync(path.join(ROOTDIR, 'sitemap.xml')) ? fs.readFileSync(path.join(ROOTDIR, 'sitemap.xml'), 'utf8') : '';
+    ok(!/X-Robots-Tag/.test(hdr) && /Allow: \//.test(rob) && !/Disallow: \//.test(rob) && !/name="robots" content="noindex/.test(idx), 'production package is indexable: no noindex header or meta, robots.txt allows crawling');
+    ok(site.startsWith('https://') && rob.includes(`Sitemap: ${site}/sitemap.xml`) && sm.includes(`<loc>${site}/</loc>`) && (sm.match(/<loc>/g) || []).length >= 1000, `robots.txt names the sitemap and the sitemap lists ${(sm.match(/<loc>/g) || []).length} URLs on ${site}`);
+    ok(idx.includes(`<link rel="canonical" href="${site}/">`) && A.filter((f) => f.endsWith('.html') && f !== 'book/index.html').every((f) => /rel="canonical"/.test(fs.readFileSync(path.join(ROOTDIR, f), 'utf8'))), 'every indexable page has a canonical URL on the production domain');
+  }
+}
 console.log(`INFO  build type: ${preview ? 'PREVIEW (shows the preview notice bar; Netlify _headers adds noindex)' : 'PRODUCTION'}`);
 
 // ---- served over HTTP, in a browser ----
