@@ -48,7 +48,7 @@ for (const [name, vp] of VIEWPORTS) {
   await pg.route(/fonts\.(googleapis|gstatic)/, (r) => r.abort());
   const T = `[${name}]`;
   const hscroll = () => pg.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1);
-  const results = async (q, extra = '') => { await pg.goto(url('search/index.html') + '?q=' + encodeURIComponent(q) + extra); await pg.waitForTimeout(80); await pg.waitForFunction(() => { const c = document.querySelector('[data-count]'); return !c || !/Loading/i.test(c.textContent); }, null, { timeout: 8000 }).catch(() => {}); await pg.waitForTimeout(30); return pg.$$eval('.grid:not([hidden]) > .card:not([hidden]) .card-title', (e) => e.map((x) => x.textContent.trim())); };
+  const results = async (q, extra = '') => { await pg.goto(url('search/index.html') + '?q=' + encodeURIComponent(q) + extra); await pg.waitForTimeout(80); await pg.waitForFunction(() => { const c = document.querySelector('[data-count]'); return !c || !/Loading/i.test(c.textContent); }, null, { timeout: 8000 }).catch(() => {}); { let prev = -1; for (let i = 0; i < 20; i++) { const n = await pg.locator('.grid:not([hidden]) > .card:not([hidden])').count(); const t = await pg.locator('[data-count]').count() ? await pg.locator('[data-count]').first().textContent() : ''; if (n === prev && !/Loading/i.test(t)) break; prev = n; await pg.waitForTimeout(300); } } return pg.$$eval('.grid:not([hidden]) > .card:not([hidden]) .card-title', (e) => e.map((x) => x.textContent.trim())); };
   const snap = async (f, full = false) => shots && pg.screenshot({ path: path.join(SH, `${name}-${f}.png`), fullPage: full });
 
   // typo-tolerant search

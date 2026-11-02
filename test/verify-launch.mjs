@@ -52,8 +52,8 @@ r = node('scripts/build.mjs', { FM_OUT: 'test/out-an', FM_CONFIG_OVERRIDE: ov({ 
 // ===== production mode =====
 const ready = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/promos.json'), 'utf8')); ready.brands.iosutra.url = 'https://example.invalid/iosutra'; ready.promos[0].approved = true; ready.claims.forEach((c) => { c.status = 'verified'; });
 const pf = path.join(ROOT, 'test/fixtures/promos-ready.json'); fs.writeFileSync(pf, JSON.stringify(ready));
-r = node('scripts/build.mjs', { FM_ENV: 'production', FM_OUT: 'test/out-prod', FM_PROMOS: 'test/fixtures/promos-ready.json' });
-ok(r.status === 1 && /BLOCKER siteUrl/.test(r.stderr) && r.status === 1, 'production build refuses without a siteUrl');
+r = node('scripts/build.mjs', { FM_ENV: 'production', FM_OUT: 'test/out-prod', FM_PROMOS: 'test/fixtures/promos-ready.json', FM_CONFIG_OVERRIDE: ov({ siteUrl: null }) });
+ok(r.status === 1 && /BLOCKER siteUrl/.test(r.stderr) && r.status === 1, 'production build refuses without a siteUrl (the recorded forbiddenmantra.com is overridden away for this check)');
 r = node('scripts/build.mjs', { FM_ENV: 'production', FM_OUT: 'test/out-prod', FM_PROMOS: 'test/fixtures/promos-ready.json', FM_SITE_URL: 'https://shop.example.invalid/', FM_CONFIG_OVERRIDE: ov({ legal: { reviewedByOwner: true, effectiveDate: '2026-01-01' } }) });
 const PROD = path.join(ROOT, 'test/out-prod');
 ok(r.status === 0, `production build succeeds once URL, approval and claims are in place (exit ${r.status})`);
@@ -97,7 +97,7 @@ ok(JSON.parse(fs.readFileSync(path.join(ROOT, 'test/fixtures/data/retailer-links
 // ===== launch gate =====
 r = node('scripts/launch-check.mjs', {}, ['--json']); const items = JSON.parse(r.stdout);
 const lv = (re) => items.find((i) => re.test(i.what))?.level;
-ok(r.status === 1 && lv(/tracking ID for amazon\.com/) === 'PASS' && lv(/Retail link validity/) === 'WARN' && lv(/Cross-promotion/) === 'BLOCKER' && lv(/Production URL/) === 'DECISION', 'launch-check reports NOT READY with the remaining blocker (IOSutra gate) and the hosting decision; the live link check has run (links are a warning: 20 live, the rest blocked by Amazon or inconclusive); tracking ID passes');
+ok(r.status === 1 && lv(/tracking ID for amazon\.com/) === 'PASS' && lv(/Retail link validity/) === 'WARN' && lv(/Cross-promotion/) === 'BLOCKER' && lv(/Production URL/) === 'PASS', 'launch-check reports NOT READY with the remaining blocker (IOSutra gate); the production URL (forbiddenmantra.com) now passes; the live link check has run (links are a warning: 20 live, the rest blocked by Amazon or inconclusive); tracking ID passes');
 ok(lv(/amazon\.co\.uk/) === 'WARN', 'launch-check does not assume the US ID covers amazon.co.uk (UK editions stay a warning)');
 
 // ===== browser: outbound events =====

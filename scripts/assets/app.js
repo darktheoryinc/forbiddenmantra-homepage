@@ -282,9 +282,10 @@
       return o.s;
     }
     var exact = function (o, x) { var t = hay(o); return t.indexOf(x) > -1 || t.indexOf(x.replace(/-/g, '')) > -1; };
+    var freq = {};
     function closeWords(x) { // vocabulary words within the allowed edit distance of x (built once)
       var m = maxEdits(x), out = {}; if (!m) return out;
-      if (!vocab) { var seen = {}; recs.forEach(function (o) { hay(o); o.w.forEach(function (w) { if (w.length > 2) seen[w] = 1; }); }); vocab = Object.keys(seen); }
+      if (!vocab) { var seen = {}; recs.forEach(function (o) { hay(o); o.w.forEach(function (w) { if (w.length > 2) seen[w] = (seen[w] || 0) + 1; }); }); vocab = Object.keys(seen); freq = seen; }
       vocab.forEach(function (w) { // typos rarely change both of the first two letters, and length must be within the edit budget
         if (Math.abs(w.length - x.length) > m || (w[0] !== x[0] && w[1] !== x[1] && w[0] !== x[1])) return;
         var d = Math.min(osa(x, w.slice(0, x.length + 1), m), osa(x, w, m)); if (d <= m) out[w] = d || 1; // keep the edit distance so closer words rank first
@@ -293,8 +294,10 @@
     }
     function suggestFor(terms) {
       var changed = false, out = terms.map(function (t) {
-        var m = maxEdits(t); if (!m) return t; closeWords(t); var best = t, bd = m + 1;
-        vocab.forEach(function (w) { var d = osa(t, w, m); if (d < bd || (d === bd && d <= m && w[0] === t[0] && best[0] !== t[0])) { bd = d; best = w; } });
+        var m = maxEdits(t); if (!m) return t; closeWords(t); var best = t, bd = m + 1, ft = freq[t] || 0;
+        // a word that exists in the catalogue is accepted as typed unless it is rare and a near word is clearly more common (a stray misspelling in one record)
+        if (ft > 3) return t;
+        vocab.forEach(function (w) { var d = osa(t, w, m); if (w === t || (ft && freq[w] < ft * 2 + 2)) return; if (d < bd || (d === bd && d <= m && w[0] === t[0] && best[0] !== t[0])) { bd = d; best = w; } });
         if (bd <= m && best !== t) changed = true; return bd <= m ? best : t;
       });
       return changed ? out.join(' ') : '';
@@ -312,7 +315,9 @@
       });
       var fuzzy = false;
       if (terms.length) {
-        fuzzy = !!final && !base.some(function (o) { return terms.every(function (x) { return exact(o, x); }); });
+        var ex = base.filter(function (o) { return terms.every(function (x) { return exact(o, x); }); });
+        // no exact hit, or only a few and none with the words in its title: add close matches below them (a stray exact hit must not hide the right book)
+        fuzzy = !!final && (!ex.length || (ex.length < 3 && !ex.some(function (o) { return terms.every(function (x) { return o.t.indexOf(x) > -1; }); })));
         var sets = fuzzy ? terms.map(closeWords) : null;
         base = base.filter(function (o) {
           var dist = 0, ok = terms.every(function (x, k) { if (exact(o, x)) return true; if (!fuzzy) return false; var best = 9; o.w.forEach(function (w) { if (sets[k][w] && sets[k][w] < best) best = sets[k][w]; }); if (best < 9) dist += best; return best < 9; });
@@ -321,7 +326,7 @@
         });
         base.sort(function (a, b) { return (b.sc - a.sc) || ((b.cv && !b.cv.a ? 1 : 0) - (a.cv && !a.cv.a ? 1 : 0)) || (b.ed.length - a.ed.length) || (a.i - b.i); }); // ties: books with a stored cover first, then more editions
       }
-      matches = base; usedFuzzy = fuzzy && base.length > 0; return terms;
+      matches = base; usedFuzzy = fuzzy && base.some(function (o) { return o.sc < 2; }); return terms;
     }
     function cardEl(o) {
       var L = val('lang'), F = val('format'), eff = L || ctx;

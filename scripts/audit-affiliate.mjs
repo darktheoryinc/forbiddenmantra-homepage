@@ -26,7 +26,7 @@ const dynLinks = new Map();
 const idxDir = path.join(SITE, 'assets/idx');
 if (fs.existsSync(idxDir)) for (const f of fs.readdirSync(idxDir).filter((x) => /^dyn-[0-9a-f]+\.js$/.test(x))) {
   const recs = Object.values(JSON.parse(fs.readFileSync(path.join(idxDir, f), 'utf8').replace(/^\(window\.FM_DYN=window\.FM_DYN\|\|\{\}\)\[[^\]]*\]=/, '').replace(/;\s*$/, '')));
-  for (const r of recs) if (r[13]) dynLinks.set(r[0], r[13].eds.flatMap((e) => e.b.filter((b) => b[2]).map((b) => ({ href: b[1], rel: 'sponsored noopener noreferrer', isbn13: e.i13, edAsin: e.a || '', market: b[3] }))));
+  for (const r of recs) if (r[14]?.eds) dynLinks.set(r[0], r[14].eds.flatMap((e) => e.b.filter((b) => b[2]).map((b) => ({ href: b[1], rel: 'sponsored noopener noreferrer', isbn13: e.i13, edAsin: e.a || '', market: b[3] }))));
 }
 for (const w of cat.works) {
   if (dynLinks.has(w.slug)) { for (const l of dynLinks.get(w.slug)) links.push({ work: w.id, workTitle: w.title, press: !!w.press, ...l }); continue; }

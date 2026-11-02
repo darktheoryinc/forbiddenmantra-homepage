@@ -12,7 +12,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const SITE = path.join(ROOT, 'site'), ID = 'darktheoryinc-20';
 const J = (p) => JSON.parse(fs.readFileSync(path.join(ROOT, p), 'utf8'));
 const cfg = J('config/site.json'), cat = J('data/catalogue.json');
-const run = (script, env = {}, args = []) => spawnSync('node', [path.join(ROOT, script), ...args], { cwd: ROOT, env: { ...process.env, ...env }, encoding: 'utf8' });
+const run = (script, env = {}, args = []) => spawnSync('node', [path.join(ROOT, script), ...args], { cwd: ROOT, env: { ...process.env, ...env }, encoding: 'utf8', maxBuffer: 512 * 1024 * 1024 });
 const htmls = (base) => { const o = []; (function w(d) { for (const e of fs.readdirSync(d, { withFileTypes: true })) e.isDirectory() ? w(path.join(d, e.name)) : e.name.endsWith('.html') && o.push(path.join(d, e.name)); })(base); return o; };
 const dec = (s) => s.replace(/&#(\d+);/g, (_, n) => String.fromCharCode(+n)).replace(/&#x([0-9a-f]+);/gi, (_, n) => String.fromCharCode(parseInt(n, 16))).replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&'); // HTML attribute decoding, as a browser does
 
@@ -68,7 +68,8 @@ ok(aoa.includes(`https://www.amazon.com/Apocalypse-Adam-Forbidden-Mantra-Press/d
 const to10 = (s) => { if (!s.startsWith('978')) return null; const c = s.slice(3, 12); let t = 0; for (let i = 0; i < 9; i++) t += +c[i] * (10 - i); const k = (11 - (t % 11)) % 11; return c + (k === 10 ? 'X' : k); };
 let mism = 0, checked = 0;
 for (const w of cat.works) {
-  const h = fs.readFileSync(path.join(SITE, 'books', w.slug, 'index.html'), 'utf8').replace(/&amp;/g, '&');
+  const pf = path.join(SITE, 'books', w.slug, 'index.html'); if (!fs.existsSync(pf)) continue; // beyond the static-page cap: drawn client-side, audited from its index payload by scripts/audit-affiliate.mjs
+  const h = fs.readFileSync(pf, 'utf8').replace(/&amp;/g, '&');
   for (const m of h.matchAll(/href="https:\/\/www\.amazon\.[a-z.]+\/(?:[^"?]*\/)?dp\/([A-Z0-9]{10})[^"]*" target="_blank" rel="[^"]*" data-track="buy" data-work="[^"]*" data-isbn="([^"]*)"/g)) {
     checked++; const ed = w.editions.find((e) => e.isbn13 === m[2] || (!m[2] && e.asin === m[1]));
     if (!ed || !(ed.asin === m[1] || to10(ed.isbn13 ?? '') === m[1])) mism++;

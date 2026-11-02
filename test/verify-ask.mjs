@@ -39,7 +39,7 @@ if (browser) for (const [name, vp, mobile] of [['desktop', { width: 1366, height
 
   // everything shown is grounded: title, author, link and cover all come from the catalogue
   const cards = await pg.locator('.ask-bot').last().locator('.ask-card').evaluateAll((cs) => cs.map((c) => ({ t: c.querySelector('.ask-t a').textContent, href: c.querySelector('.ask-t a').getAttribute('href'), authors: [...c.querySelectorAll('.ask-by a')].map((a) => a.textContent), img: c.querySelector('img')?.getAttribute('src') ?? null, ph: !!c.querySelector('.cover-ph') })));
-  ok(cards.every((c) => { const w = byTitle.get(c.t); return w && c.authors.join(', ') === w.authors.join(', ') && fs.existsSync(path.join(SITE, c.href)) ; }), `${T} every card shows the catalogue's own authors and links to an existing book page`);
+  ok(cards.every((c) => { const w = cat.works.find((x) => x.title === c.t && x.authors.join(', ') === c.authors.join(', ')); return w && fs.existsSync(path.join(SITE, c.href.split(/[?#]/)[0])) ; }), `${T} every card shows the catalogue's own authors and links to an existing book page`);
   ok(cards.every((c) => (c.img ? fs.existsSync(path.join(SITE, c.img.replace(/^\.\//, ''))) : c.ph)), `${T} covers shown are real published files; books without one get the text-only placeholder`);
   ok((await pg.$$eval('.ask-card img', (is) => is.every((i) => i.complete ? i.naturalWidth > 0 : true))), `${T} no broken cover images in the answer`);
 

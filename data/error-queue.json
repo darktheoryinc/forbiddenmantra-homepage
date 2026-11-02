@@ -1954,6 +1954,4859 @@
    "origin": "staging/batches/olx-004.json"
   },
   {
+   "title": "Kundalini yoga for the west",
+   "authors": [
+    "Radha Swami Sivananda"
+   ],
+   "isbn13": [
+    "9780931454370",
+    "9780394748849"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Kundalini Yoga for the West\""
+   ],
+   "origin": "staging/batches/olz-001.json"
+  },
+  {
+   "title": "Where Are You Going?",
+   "authors": [
+    "Swami Muktananda"
+   ],
+   "isbn13": [
+    "9788174760777"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Where are you going?\""
+   ],
+   "origin": "staging/batches/olz-001.json"
+  },
+  {
+   "title": "Essence of Yoga",
+   "authors": [
+    "Georg Feuerstein",
+    "Jeanine Miller"
+   ],
+   "isbn13": [
+    "9781620550205"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The essence of yoga\""
+   ],
+   "origin": "staging/batches/olz-001.json"
+  },
+  {
+   "title": "Ayurveda",
+   "authors": [
+    "Arthur avalon"
+   ],
+   "isbn13": [
+    "9780140193220"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Ayurveda\""
+   ],
+   "origin": "staging/batches/olz-001.json"
+  },
+  {
+   "title": "Coomaraswamy",
+   "authors": [
+    "Ananda Coomaraswamy"
+   ],
+   "isbn13": [
+    "9780691018690"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Coomaraswamy\""
+   ],
+   "origin": "staging/batches/olz-001.json"
+  },
+  {
+   "title": "Yaksas",
+   "authors": [
+    "Ananda Coomaraswamy"
+   ],
+   "isbn13": [
+    "9788121502306"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Yakṣas\""
+   ],
+   "origin": "staging/batches/olz-001.json"
+  },
+  {
+   "title": "Exploring India's sacred art",
+   "authors": [
+    "Stella Kramrisch"
+   ],
+   "isbn13": [
+    "9780812211344"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Exploring India's Sacred Art\""
+   ],
+   "origin": "staging/batches/olz-001.json"
+  },
+  {
+   "title": "Ayurveda and the Mind",
+   "authors": [
+    "David Frawley"
+   ],
+   "isbn13": [
+    "9780940676565"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Ayurveda and the mind\""
+   ],
+   "origin": "staging/batches/olz-001.json"
+  },
+  {
+   "title": "Complete Book of Ayurvedic Home Remedies",
+   "authors": [
+    "Vasant Lad"
+   ],
+   "isbn13": [
+    "9780749927653"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The complete book of Ayurvedic home remedies\""
+   ],
+   "origin": "staging/batches/olz-001.json"
+  },
+  {
+   "title": "Shambhala",
+   "authors": [
+    "Chögyam Trungpa"
+   ],
+   "isbn13": [
+    "9780553261721"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Shambhala\""
+   ],
+   "origin": "staging/batches/olz-001.json"
+  },
+  {
+   "title": "Shambhala",
+   "authors": [
+    "Chögyam Trungpa",
+    "Esteve Serra Arús"
+   ],
+   "isbn13": [
+    "9788499882475",
+    "9781611802320",
+    "9788072056613"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Shambhala\""
+   ],
+   "origin": "staging/batches/olz-001.json"
+  },
+  {
+   "title": "Universal compassion",
+   "authors": [
+    "Kelsang Gyatso"
+   ],
+   "isbn13": [
+    "9780948006074"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Universal compassion\""
+   ],
+   "origin": "staging/batches/olz-001.json"
+  },
+  {
+   "title": "The Meditation Handbook",
+   "authors": [
+    "Kelsang Gyatso"
+   ],
+   "isbn13": [
+    "9788120816770"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The meditation handbook\""
+   ],
+   "origin": "staging/batches/olz-001.json"
+  },
+  {
+   "title": "Eight steps to happiness",
+   "authors": [
+    "Kelsang Gyatso"
+   ],
+   "isbn13": [
+    "9781616060084",
+    "9780981727776"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Eight Steps to Happiness\""
+   ],
+   "origin": "staging/batches/olz-001.json"
+  },
+  {
+   "title": "Joyful path of good fortune",
+   "authors": [
+    "Kelsang Gyatso"
+   ],
+   "isbn13": [
+    "9780948006050"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Joyful path of good fortune\""
+   ],
+   "origin": "staging/batches/olz-001.json"
+  },
+  {
+   "title": "How to Solve Our Human Problems",
+   "authors": [
+    "Kelsang Gyatso"
+   ],
+   "isbn13": [
+    "9780948006371",
+    "9780978906719"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"How to Solve Our Human Problems\""
+   ],
+   "origin": "staging/batches/olz-001.json"
+  },
+  {
+   "title": "Everyday Blessings",
+   "authors": [
+    "Jon Kabat-Zinn",
+    "Myla Kabat-Zinn"
+   ],
+   "isbn13": [
+    "9780349404790"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Everyday Blessings\""
+   ],
+   "origin": "staging/batches/olz-001.json"
+  },
+  {
+   "title": "Falling Awake",
+   "authors": [
+    "Jon Kabat-Zinn"
+   ],
+   "isbn13": [
+    "9780349421094"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Falling Awake\""
+   ],
+   "origin": "staging/batches/olz-001.json"
+  },
+  {
+   "title": "Moon in a Dewdrop",
+   "authors": [
+    "Dōgen Zenji"
+   ],
+   "isbn13": [
+    "9780374471866"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Moon in a dewdrop\""
+   ],
+   "origin": "staging/batches/olz-001.json"
+  },
+  {
+   "title": "Hardcore Zen",
+   "authors": [
+    "Brad Warner"
+   ],
+   "isbn13": [
+    "9780861713806"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Hardcore Zen\""
+   ],
+   "origin": "staging/batches/olz-001.json"
+  },
+  {
+   "title": "Taboo of Subjectivity",
+   "authors": [
+    "B. Alan Wallace"
+   ],
+   "isbn13": [
+    "9781280472893",
+    "9781281346971",
+    "9780195351095"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The Taboo of Subjectivity\""
+   ],
+   "origin": "staging/batches/olz-001.json"
+  },
+  {
+   "title": "Soka education",
+   "authors": [
+    "Daisaku Ikéda"
+   ],
+   "isbn13": [
+    "9780967469744"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Soka Education\""
+   ],
+   "origin": "staging/batches/olz-001.json"
+  },
+  {
+   "title": "Unlocking the Mysteries of Birth and Death",
+   "authors": [
+    "Daisaku Ikéda"
+   ],
+   "isbn13": [
+    "9781938252105"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Unlocking the Mysteries of Birth & Death\""
+   ],
+   "origin": "staging/batches/olz-001.json"
+  },
+  {
+   "title": "Wisdom for Creating Happiness and Peace",
+   "authors": [
+    "Daisaku Ikéda"
+   ],
+   "isbn13": [
+    "9781938252945"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Wisdom for Creating Happiness and Peace\""
+   ],
+   "origin": "staging/batches/olz-001.json"
+  },
+  {
+   "title": "Buddhist Meditation",
+   "authors": [
+    "Edward Conze"
+   ],
+   "isbn13": [
+    "9781306390828"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Buddhist meditation\""
+   ],
+   "origin": "staging/batches/olz-001.json"
+  },
+  {
+   "title": "Harmony",
+   "authors": [
+    "Hua Ching Ni"
+   ],
+   "isbn13": [
+    "9781887575041"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Harmony\""
+   ],
+   "origin": "staging/batches/olz-002.json"
+  },
+  {
+   "title": "Positive magic",
+   "authors": [
+    "Marion Weinstein"
+   ],
+   "isbn13": [
+    "9781564146373",
+    "9780960412877"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Positive Magic\""
+   ],
+   "origin": "staging/batches/olz-002.json"
+  },
+  {
+   "title": "Fabulous Creatures, Mythical Monsters, and Animal Power Symbols",
+   "authors": [
+    "Cassandra Eason"
+   ],
+   "isbn13": [
+    "9780275994259"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Fabulous Creatures, Mythical Monsters, and Animal Power Symbols\""
+   ],
+   "origin": "staging/batches/olz-002.json"
+  },
+  {
+   "title": "Celtic Myth and Magick",
+   "authors": [
+    "Edain McCoy"
+   ],
+   "isbn13": [
+    "9780738737072"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Celtic myth & magick\""
+   ],
+   "origin": "staging/batches/olz-002.json"
+  },
+  {
+   "title": "Celtic Women's Spirituality",
+   "authors": [
+    "Edain McCoy"
+   ],
+   "isbn13": [
+    "9780738748542",
+    "9780738747231"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Celtic women's spirituality\""
+   ],
+   "origin": "staging/batches/olz-002.json"
+  },
+  {
+   "title": "The Writings of Austin Osman Spare",
+   "authors": [
+    "Austin Osman Spare"
+   ],
+   "isbn13": [
+    "9781599867564",
+    "9781595477682",
+    "9781599866895"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Writings of Austin Osman Spare\""
+   ],
+   "origin": "staging/batches/olz-002.json"
+  },
+  {
+   "title": "Cosmic Trigger",
+   "authors": [
+    "Robert Anton Wilson"
+   ],
+   "isbn13": [
+    "9781561840212",
+    "9781734473568",
+    "9781561840113"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Cosmic Trigger\""
+   ],
+   "origin": "staging/batches/olz-002.json"
+  },
+  {
+   "title": "AFTERLIFE",
+   "authors": [
+    "Colin Wilson"
+   ],
+   "isbn13": [
+    "9780586066287",
+    "9781840672831"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Afterlife\""
+   ],
+   "origin": "staging/batches/olz-002.json"
+  },
+  {
+   "title": "Aleister Crowley",
+   "authors": [
+    "Colin Wilson"
+   ],
+   "isbn13": [
+    "9781904658276"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Aleister Crowley\""
+   ],
+   "origin": "staging/batches/olz-002.json"
+  },
+  {
+   "title": "Pictorial Key to the Tarot Illustrated",
+   "authors": [
+    "Arthur Edward Waite"
+   ],
+   "isbn13": [
+    "9798486422874"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Pictorial Key to the Tarot Illustrated\""
+   ],
+   "origin": "staging/batches/olz-002.json"
+  },
+  {
+   "title": "Pictorial Key to the Tarot Illustrated",
+   "authors": [
+    "Arthur Edward Waite"
+   ],
+   "isbn13": [
+    "9798658804835"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Pictorial Key to the Tarot Illustrated\""
+   ],
+   "origin": "staging/batches/olz-002.json"
+  },
+  {
+   "title": "The Divinatory Tarot",
+   "authors": [
+    "Papus"
+   ],
+   "isbn13": [
+    "9781904658054"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Divinatory Tarot\""
+   ],
+   "origin": "staging/batches/olz-002.json"
+  },
+  {
+   "title": "The Kabbalah Unveiled",
+   "authors": [
+    "S. L. MacGregor Mathers"
+   ],
+   "isbn13": [
+    "9781402182693"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Kabbalah Unveiled\""
+   ],
+   "origin": "staging/batches/olz-002.json"
+  },
+  {
+   "title": "Paracelsus",
+   "authors": [
+    "Paracelsus",
+    "Jolande Jacobi",
+    "Norbert Guterman"
+   ],
+   "isbn13": [
+    "9780691238227"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Paracelsus\""
+   ],
+   "origin": "staging/batches/olz-002.json"
+  },
+  {
+   "title": "The League of Extraordinary Gentlemen",
+   "authors": [
+    "Alan Moore"
+   ],
+   "isbn13": [
+    "9781603094375",
+    "9781401289003",
+    "9781563898587",
+    "9781563896651"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The League of Extraordinary Gentlemen\""
+   ],
+   "origin": "staging/batches/olz-002.json"
+  },
+  {
+   "title": "Ask the Angels",
+   "authors": [
+    "Rosemary ellen Guiley"
+   ],
+   "isbn13": [
+    "9781571745781",
+    "9780007440139"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Ask the Angels\""
+   ],
+   "origin": "staging/batches/olz-002.json"
+  },
+  {
+   "title": "Knowledge of the Higher Worlds and its Attainment",
+   "authors": [
+    "Rudolf Steiner"
+   ],
+   "isbn13": [
+    "9781599869025",
+    "9781599867298"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Knowledge of the Higher Worlds and Its Attainment\""
+   ],
+   "origin": "staging/batches/olz-002.json"
+  },
+  {
+   "title": "Atlantis and Lemuria",
+   "authors": [
+    "Rudolf Steiner"
+   ],
+   "isbn13": [
+    "9781794244900",
+    "9781983016974"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Atlantis and Lemuria\""
+   ],
+   "origin": "staging/batches/olz-002.json"
+  },
+  {
+   "title": "Freemasonry and Catholicism",
+   "authors": [
+    "Max Heindel"
+   ],
+   "isbn13": [
+    "9780911274042"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Freemasonry and Catholicism\""
+   ],
+   "origin": "staging/batches/olz-002.json"
+  },
+  {
+   "title": "Lost Keys of Freemasonry",
+   "authors": [
+    "Manly Palmer Hall"
+   ],
+   "isbn13": [
+    "9781684228836",
+    "9798347635467"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Lost Keys of Freemasonry\""
+   ],
+   "origin": "staging/batches/olz-002.json"
+  },
+  {
+   "title": "Lectures on Ancient Philosophy",
+   "authors": [
+    "Manly Palmer Hall"
+   ],
+   "isbn13": [
+    "9780893145125"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Lectures on ancient philosophy\""
+   ],
+   "origin": "staging/batches/olz-002.json"
+  },
+  {
+   "title": "The Lost Keys of Freemasonry",
+   "authors": [
+    "Manly Palmer Hall"
+   ],
+   "isbn13": [
+    "9780893148386",
+    "9780893145002",
+    "9780880530446"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Lost Keys of Freemasonry\""
+   ],
+   "origin": "staging/batches/olz-002.json"
+  },
+  {
+   "title": "Great Books on Religion and Esoteric Philosophy",
+   "authors": [
+    "Manly Palmer Hall"
+   ],
+   "isbn13": [
+    "9780893143176"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Great books on religion and esoteric philosophy\""
+   ],
+   "origin": "staging/batches/olz-002.json"
+  },
+  {
+   "title": "Gnostic Crucifixion",
+   "authors": [
+    "G. R. S. Mead"
+   ],
+   "isbn13": [
+    "9780368188596",
+    "9781366500144"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Gnostic Crucifixion\""
+   ],
+   "origin": "staging/batches/olz-002.json"
+  },
+  {
+   "title": "THe Gnostic crucifixion",
+   "authors": [
+    "G. R. S. Mead"
+   ],
+   "isbn13": [
+    "9781856521000",
+    "9781558181762"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Gnostic Crucifixion\""
+   ],
+   "origin": "staging/batches/olz-002.json"
+  },
+  {
+   "title": "The Masks of God",
+   "authors": [
+    "Joseph Campbell"
+   ],
+   "isbn13": [
+    "9781439508923"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The masks of God\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "The flight of the wild gander",
+   "authors": [
+    "Joseph Campbell"
+   ],
+   "isbn13": [
+    "9781577312109",
+    "9780060551957"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The Flight of the wild gander\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "The Masks of God",
+   "authors": [
+    "Joseph Campbell"
+   ],
+   "isbn13": [
+    "9780844667072",
+    "9780670460458",
+    "9780285636088"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The masks of God\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "Bulfinch's Mythology",
+   "authors": [
+    "Thomas Bulfinch"
+   ],
+   "isbn13": [
+    "9781522812746",
+    "9781494443450",
+    "9781534982055",
+    "9781721954476",
+    "9781973764892"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Bulfinch's Mythology\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "Bulfinch's Mythology",
+   "authors": [
+    "Thomas Bulfinch"
+   ],
+   "isbn13": [
+    "9783849164546",
+    "9781098971014",
+    "9798667899457"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Bulfinch's Mythology\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "Bulfinch's Mythology",
+   "authors": [
+    "Thomas Bulfinch"
+   ],
+   "isbn13": [
+    "9781980522812",
+    "9798642018460",
+    "9781435144460",
+    "9781411431874"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Bulfinch's Mythology\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "Bulfinch's Mythology",
+   "authors": [
+    "Thomas Bulfinch"
+   ],
+   "isbn13": [
+    "9781545075449",
+    "9781420953046",
+    "9798572047448"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Bulfinch's Mythology\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "Bulfinch's Mythology",
+   "authors": [
+    "Thomas Bulfinch"
+   ],
+   "isbn13": [
+    "9780399169229",
+    "9781626862777",
+    "9781375003087",
+    "9781512300857"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Bulfinch's Mythology\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "Children of Odin",
+   "authors": [
+    "Padraic Colum"
+   ],
+   "isbn13": [
+    "9781977857262"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The Children of Odin\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "Golden Fleece and the Heroes Who Lived Before Achilles",
+   "authors": [
+    "Padraic Colum"
+   ],
+   "isbn13": [
+    "9781444636055"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The Golden Fleece and the heroes who lived before Achilles\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "The Voyagers",
+   "authors": [
+    "Padraic Colum"
+   ],
+   "isbn13": [
+    "9789997488749"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The Voyagers\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "Legends of the Gods",
+   "authors": [
+    "E. A. Wallis Budge"
+   ],
+   "isbn13": [
+    "9781535558846",
+    "9781522751496"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Legends of the Gods\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "Legends Of The Gods",
+   "authors": [
+    "E. A. Wallis Budge"
+   ],
+   "isbn13": [
+    "9781414279909",
+    "9781414279916",
+    "9781421914756"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Legends of the Gods\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "Ka",
+   "authors": [
+    "Roberto Calasso"
+   ],
+   "isbn13": [
+    "9780241399224",
+    "9789750500534"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Ka\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "Short History of Myth",
+   "authors": [
+    "Karen Armstrong"
+   ],
+   "isbn13": [
+    "9780802194206",
+    "9781841957234",
+    "9781841958125"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"A Short History of Myth\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "Great Transformation",
+   "authors": [
+    "Karen Armstrong"
+   ],
+   "isbn13": [
+    "9781843540564",
+    "9781843545071"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The Great Transformation\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "The Adventures of Ulysses",
+   "authors": [
+    "Bernard Evslin"
+   ],
+   "isbn13": [
+    "9780590339483",
+    "9780553124477"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Adventures of Ulysses\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "Heroes, Gods and Monsters of the Greek Myths",
+   "authors": [
+    "Bernard Evslin"
+   ],
+   "isbn13": [
+    "9781453273074"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Heroes, Gods and Monsters of the Greek Myths\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "Adventures of Ulysses",
+   "authors": [
+    "Bernard Evslin"
+   ],
+   "isbn13": [
+    "9781453264430"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Adventures of Ulysses\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "Gods, Demigods and Demons",
+   "authors": [
+    "Bernard Evslin"
+   ],
+   "isbn13": [
+    "9781306614382"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Gods, Demigods and Demons\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "The soul's code",
+   "authors": [
+    "James Hillman"
+   ],
+   "isbn13": [
+    "9780553506341"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The soul's code\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "A blue fire",
+   "authors": [
+    "James Hillman"
+   ],
+   "isbn13": [
+    "9780060921019"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"A blue fire\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "We've had a hundred years of psychotherapy-- and the world's getting worse",
+   "authors": [
+    "James Hillman"
+   ],
+   "isbn13": [
+    "9780062504098"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"We've Had a Hundred Years of Psychotherapy--And the World's Getting Worse\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "Crones Don't Whine",
+   "authors": [
+    "Jean Shinoda Bolen"
+   ],
+   "isbn13": [
+    "9781684814879"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Crones Don't Whine\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "Gods and myths of Northern Europe",
+   "authors": [
+    "Hilda Roderick Ellis Davidson"
+   ],
+   "isbn13": [
+    "9780140136272"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Gods and Myths of Northern Europe\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "Scandinavian mythology",
+   "authors": [
+    "Hilda Roderick Ellis Davidson"
+   ],
+   "isbn13": [
+    "9780600342809"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Scandinavian mythology\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "Myths and symbols in pagan Europe",
+   "authors": [
+    "Hilda Roderick Ellis Davidson"
+   ],
+   "isbn13": [
+    "9780719025792"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Myths and symbols in pagan Europe\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "Fingerprints of the Gods",
+   "authors": [
+    "Graham Hancock"
+   ],
+   "isbn13": [
+    "9780385258289"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Fingerprints of the Gods\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "Magicians of the Gods",
+   "authors": [
+    "Graham Hancock"
+   ],
+   "isbn13": [
+    "9781473625495"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Magicians of the Gods\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "Entangled",
+   "authors": [
+    "Graham Hancock"
+   ],
+   "isbn13": [
+    "9781934708668",
+    "9781409099802"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Entangled\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "Sign and the Seal",
+   "authors": [
+    "Graham Hancock"
+   ],
+   "isbn13": [
+    "9781407078786"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The sign and the seal\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "PSI Spies",
+   "authors": [
+    "Jim Marrs"
+   ],
+   "isbn13": [
+    "9781601639516",
+    "9781427095275"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"PSI Spies\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "The Rise of the Fourth Reich",
+   "authors": [
+    "Jim Marrs"
+   ],
+   "isbn13": [
+    "9780061245589",
+    "9780061692666"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Rise of the Fourth Reich\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "Atlantis",
+   "authors": [
+    "Ignatius Donnelly"
+   ],
+   "isbn13": [
+    "9780517490020",
+    "9780809480845",
+    "9781585092680"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Atlantis\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "Caesar's column",
+   "authors": [
+    "Ignatius Donnelly"
+   ],
+   "isbn13": [
+    "9780819566652",
+    "9781404358744",
+    "9781604242768"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Caesar's Column\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "Atlantis",
+   "authors": [
+    "Ignatius Donnelly"
+   ],
+   "isbn13": [
+    "9781976224249",
+    "9781727570984",
+    "9781906621278"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Atlantis\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "The Sion revelation",
+   "authors": [
+    "Lynn Picknett"
+   ],
+   "isbn13": [
+    "9780316732499",
+    "9780743263030"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Sion Revelation\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "Sion Revelation",
+   "authors": [
+    "Lynn Picknett"
+   ],
+   "isbn13": [
+    "9780316727723"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Sion Revelation\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "Temple and the Lodge",
+   "authors": [
+    "Michael Baigent",
+    "Leigh, Richard",
+    "Mitch Horowitz"
+   ],
+   "isbn13": [
+    "9781951627027",
+    "9781628720280"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The temple and the lodge\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "Temple and the Lodge",
+   "authors": [
+    "Michael Baigent"
+   ],
+   "isbn13": [
+    "9780099257042"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The temple and the lodge\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "The temple and the lodge",
+   "authors": [
+    "Michael Baigent"
+   ],
+   "isbn13": [
+    "9780552135962"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The temple and the lodge\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "Shadow of Solomon",
+   "authors": [
+    "Laurence Gardner"
+   ],
+   "isbn13": [
+    "9780007216604",
+    "9780007207619",
+    "9780007343560"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The Shadow of Solomon\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "Morals and Dogma of the Ancient and Accepted Scottish Rite of Freemasonry",
+   "authors": [
+    "Albert Pike"
+   ],
+   "isbn13": [
+    "9781930097810"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"MORALS and DOGMA of the Ancient and Accepted Scottish Rite of Freemasonry\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "MORALS and DOGMA of the Ancient and Accepted Scottish Rite of Freemasonry",
+   "authors": [
+    "Albert Pike"
+   ],
+   "isbn13": [
+    "9781595470867"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"MORALS and DOGMA of the Ancient and Accepted Scottish Rite of Freemasonry\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "A Hermit in the Himalayas",
+   "authors": [
+    "Paul Brunton"
+   ],
+   "isbn13": [
+    "9788187226185",
+    "9781406735468",
+    "9781844130429"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"A hermit in the Himalayas\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "Spiritual Crisis of Man",
+   "authors": [
+    "Paul Brunton"
+   ],
+   "isbn13": [
+    "9780877285939"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The spiritual crisis of man.\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "The Secret Path",
+   "authors": [
+    "Paul Brunton"
+   ],
+   "isbn13": [
+    "9781844130405"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The secret path\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "Wisdom of the Overself",
+   "authors": [
+    "Paul Brunton"
+   ],
+   "isbn13": [
+    "9780877285915"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The wisdom of the overself\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "Before Civilization",
+   "authors": [
+    "Colin Renfrew"
+   ],
+   "isbn13": [
+    "9780712665933",
+    "9780140136425"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Before civilization\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "Irreducible mind",
+   "authors": [
+    "Edward F. Kelly"
+   ],
+   "isbn13": [
+    "9780742547926"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Irreducible Mind\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "After",
+   "authors": [
+    "Bruce Greyson"
+   ],
+   "isbn13": [
+    "9780552176835"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"After\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "Sense of Being Stared At",
+   "authors": [
+    "Rupert Sheldrake"
+   ],
+   "isbn13": [
+    "9780099441533",
+    "9781448183951",
+    "9781620550977"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The Sense of Being Stared At\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "Presence of the Past",
+   "authors": [
+    "Rupert Sheldrake"
+   ],
+   "isbn13": [
+    "9781848313064",
+    "9781848313132"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The presence of the past\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "You are the placebo",
+   "authors": [
+    "Joe Dispenza"
+   ],
+   "isbn13": [
+    "9781401944582"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"You Are the Placebo\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "Adventures in consciousness",
+   "authors": [
+    "Jane Roberts"
+   ],
+   "isbn13": [
+    "9780966132731",
+    "9781889828008"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Adventures in Consciousness\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "The unknown reality.",
+   "authors": [
+    "Jane Roberts"
+   ],
+   "isbn13": [
+    "9781878424266"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The \"Unknown\" reality.\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "Home with God",
+   "authors": [
+    "Neale Donald Walsch"
+   ],
+   "isbn13": [
+    "9780743267151"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Home with God\""
+   ],
+   "origin": "staging/batches/olz-003.json"
+  },
+  {
+   "title": "Home With God",
+   "authors": [
+    "Neale Donald Walsch"
+   ],
+   "isbn13": [
+    "9780340921081"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Home with God\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "What God Wants",
+   "authors": [
+    "Neale Donald Walsch"
+   ],
+   "isbn13": [
+    "9780340838167"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"What God Wants\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "When Everything Changes, Change Everything",
+   "authors": [
+    "Neale Donald Walsch"
+   ],
+   "isbn13": [
+    "9781848946996",
+    "9780340998793"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"When Everything Changes, Change Everything\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "What God Wants",
+   "authors": [
+    "Neale Donald Walsch"
+   ],
+   "isbn13": [
+    "9780340895047",
+    "9781444718836"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"What God Wants\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Conversations with God for Teens",
+   "authors": [
+    "Neale Donald Walsch"
+   ],
+   "isbn13": [
+    "9781571746757",
+    "9781781800836"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Conversations with God for teens\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Communion with God",
+   "authors": [
+    "Neale Donald Walsch"
+   ],
+   "isbn13": [
+    "9780340767849",
+    "9780425189856"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Communion with God\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Money, and the Law of Attraction",
+   "authors": [
+    "Esther Hicks",
+    "Jerry Hicks"
+   ],
+   "isbn13": [
+    "9781401924614",
+    "9781848500044",
+    "9781401959562"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Money, and the Law of Attraction\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Second Ring of Power",
+   "authors": [
+    "Carlos Castaneda"
+   ],
+   "isbn13": [
+    "9781439121887",
+    "9780140049428"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The second ring of power.\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Fire from Within",
+   "authors": [
+    "Carlos Castaneda"
+   ],
+   "isbn13": [
+    "9781476730974",
+    "9781471153266"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The fire from within\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Separate Reality",
+   "authors": [
+    "Carlos Castaneda"
+   ],
+   "isbn13": [
+    "9781476730981"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"A separate reality\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "My Life As a Seer",
+   "authors": [
+    "Edgar Cayce",
+    "Charles Thomas Cayce",
+    "A. Robert Smith"
+   ],
+   "isbn13": [
+    "9781466882362"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"My Life as a Seer\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "What Happens When We Die",
+   "authors": [
+    "Sam Parnia"
+   ],
+   "isbn13": [
+    "9781401915391",
+    "9781401905569"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"What happens when we die\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Spirits' Book",
+   "authors": [
+    "Allan Kardec",
+    "United States Spiritist Council"
+   ],
+   "isbn13": [
+    "9781948109284"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The spirits' book\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Spirits' Book",
+   "authors": [
+    "Allan Kardec",
+    "Anna Blackwell"
+   ],
+   "isbn13": [
+    "9781955435017",
+    "9780985279318"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The spirits' book\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "The TM technique",
+   "authors": [
+    "Peter Russell"
+   ],
+   "isbn13": [
+    "9780140192292"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The TM Technique\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "From science to God",
+   "authors": [
+    "Peter Russell"
+   ],
+   "isbn13": [
+    "9781577314097"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"From Science to God\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Physics of the Soul",
+   "authors": [
+    "Amit Goswami"
+   ],
+   "isbn13": [
+    "9781612830230",
+    "9781571742506"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Physics of the soul\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Success",
+   "authors": [
+    "Napoleon Hill"
+   ],
+   "isbn13": [
+    "9781407024622",
+    "9781407024615"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Success\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Science of Being Well",
+   "authors": [
+    "Wallace D. Wattles",
+    "The Perfect Library"
+   ],
+   "isbn13": [
+    "9781507659045",
+    "9781537160863",
+    "9781515304678",
+    "9781482509045"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The Science of Being Well\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Science of Being Well",
+   "authors": [
+    "Wallace D. Wattles",
+    "Sandi Maki"
+   ],
+   "isbn13": [
+    "9781495324840",
+    "9781546892366",
+    "9781534673328"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The Science of Being Well\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Your Word Is Your Wand",
+   "authors": [
+    "Florence Scovel Shinn"
+   ],
+   "isbn13": [
+    "9780875162591",
+    "9789562919906",
+    "9780852430705"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Your Word Is Your Wand\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "The Secret Door to Success",
+   "authors": [
+    "Florence Scovel Shinn",
+    "Mitch Horowitz"
+   ],
+   "isbn13": [
+    "9781722500498"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Secret Door to Success\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Secret Door to Success",
+   "authors": [
+    "Florence Scovel Shinn"
+   ],
+   "isbn13": [
+    "9780685707210",
+    "9781599868721",
+    "9780852073353",
+    "9780875162584"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Secret Door to Success\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Complete Works of Florence Scovel Shinn",
+   "authors": [
+    "Florence Scovel Shinn"
+   ],
+   "isbn13": [
+    "9781953450388"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The Complete Works of Florence Scovel Shinn\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "The complete works of Florence Scovel Shinn.",
+   "authors": [
+    "Florence Scovel Shinn"
+   ],
+   "isbn13": [
+    "9780486476988"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The Complete Works of Florence Scovel Shinn\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Secret Door to Success",
+   "authors": [
+    "Florence Scovel Shinn"
+   ],
+   "isbn13": [
+    "9781685720063"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Secret Door to Success\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Your Word Is Your Wand",
+   "authors": [
+    "Florence Scovel Shinn"
+   ],
+   "isbn13": [
+    "9781685720049"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Your Word Is Your Wand\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Power of the Spoken Word",
+   "authors": [
+    "Florence Scovel Shinn"
+   ],
+   "isbn13": [
+    "9780875162607"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Power of the Spoken Word\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "The power of awareness",
+   "authors": [
+    "Neville Goddard"
+   ],
+   "isbn13": [
+    "9781453698785",
+    "9781682995129",
+    "9781722505813"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The Power of Awareness\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Your Faith Is Your Fortune",
+   "authors": [
+    "Neville Goddard",
+    "Press"
+   ],
+   "isbn13": [
+    "9789389157161",
+    "9781617202773",
+    "9781603868594"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Your Faith Is Your Fortune\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "The Power of Awareness",
+   "authors": [
+    "Neville Goddard"
+   ],
+   "isbn13": [
+    "9780486493565",
+    "9781612931258",
+    "9780486836126"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The Power of Awareness\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "The Power of Awareness",
+   "authors": [
+    "Neville Goddard"
+   ],
+   "isbn13": [
+    "9780875166551"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The Power of Awareness\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Your Faith Is Your Fortune",
+   "authors": [
+    "Neville Goddard",
+    "Mitch Horowitz"
+   ],
+   "isbn13": [
+    "9781722505752",
+    "9781469004778"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Your Faith Is Your Fortune\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Amazing Laws of Cosmic Mind Power",
+   "authors": [
+    "Joseph Murphy"
+   ],
+   "isbn13": [
+    "9781567312348"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Amazing Laws of Cosmic Mind Power\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Creative Process in the Individual",
+   "authors": [
+    "Thomas Troward"
+   ],
+   "isbn13": [
+    "9781481180979",
+    "9781482790238"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The Creative Process in the Individual\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Creative Process in the Individual",
+   "authors": [
+    "Thomas Troward",
+    "Henderson Daniel",
+    "Seraphine Daniel"
+   ],
+   "isbn13": [
+    "9781502729149",
+    "9781979404600",
+    "9781534873520"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The Creative Process in the Individual\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Law and the Word",
+   "authors": [
+    "Thomas Troward"
+   ],
+   "isbn13": [
+    "9780875168340"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Law and the Word\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "The creative process in the individual",
+   "authors": [
+    "Thomas Troward"
+   ],
+   "isbn13": [
+    "9780399150104"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The Creative Process in the Individual\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "The Edinburgh lectures on mental science",
+   "authors": [
+    "Thomas Troward"
+   ],
+   "isbn13": [
+    "9780399150098"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Edinburgh Lectures on Mental Science\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "The Dore Lectures on Mental Science",
+   "authors": [
+    "Thomas Troward"
+   ],
+   "isbn13": [
+    "9781425021320"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Dore Lectures on Mental Science\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Collected Works of Thomas Troward",
+   "authors": [
+    "Thomas Troward"
+   ],
+   "isbn13": [
+    "9781774640371"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Collected Works of Thomas Troward\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Collected Essays of Thomas Troward",
+   "authors": [
+    "Thomas Troward"
+   ],
+   "isbn13": [
+    "9781612034256"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Collected essays of Thomas Troward.\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Dore Lectures on Mental Science",
+   "authors": [
+    "Thomas Troward"
+   ],
+   "isbn13": [
+    "9781625587879"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Dore Lectures on Mental Science\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Thoughts Are Things",
+   "authors": [
+    "Prentice Mulford"
+   ],
+   "isbn13": [
+    "9781434400758",
+    "9789562919876",
+    "9781877527081",
+    "9781934451205"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Thoughts are Things\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Your Invisible Power",
+   "authors": [
+    "Genevieve Behrend"
+   ],
+   "isbn13": [
+    "9781420927269",
+    "9789561002517",
+    "9789562912334",
+    "9780875160047",
+    "9789562910842"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Your Invisible Power\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Stake your claim",
+   "authors": [
+    "Emmet Fox"
+   ],
+   "isbn13": [
+    "9780062505378"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Stake Your Claim\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Christian Healing",
+   "authors": [
+    "Charles Fillmore"
+   ],
+   "isbn13": [
+    "9780871590176"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Christian healing.\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Christian Healing",
+   "authors": [
+    "Charles Fillmore"
+   ],
+   "isbn13": [
+    "9781981990931",
+    "9781508784234",
+    "9781539896241"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Christian healing.\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Jesus Christ Heals",
+   "authors": [
+    "Charles Fillmore"
+   ],
+   "isbn13": [
+    "9780871590701"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Jesus Christ Heals\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "The Twelve Powers of Man",
+   "authors": [
+    "Charles Fillmore"
+   ],
+   "isbn13": [
+    "9781618954121",
+    "9781614275411"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Twelve Powers of Man\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Atom-smashing power of mind",
+   "authors": [
+    "Charles Fillmore"
+   ],
+   "isbn13": [
+    "9780871591098"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Atom-Smashing Power of Mind\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "The Revealing Word",
+   "authors": [
+    "Charles Fillmore"
+   ],
+   "isbn13": [
+    "9780871593092",
+    "9780871590060"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The Revealing Word\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "A return to love",
+   "authors": [
+    "Marianne Williamson"
+   ],
+   "isbn13": [
+    "9780061092909"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"A return to love\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Everyday grace",
+   "authors": [
+    "Marianne Williamson"
+   ],
+   "isbn13": [
+    "9780553815450"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Everyday Grace\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Gift of Change",
+   "authors": [
+    "Marianne Williamson"
+   ],
+   "isbn13": [
+    "9780060813895"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The Gift of Change\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "A return to love",
+   "authors": [
+    "Marianne Williamson"
+   ],
+   "isbn13": [
+    "9781855382572"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"A return to love\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Greatest Secret",
+   "authors": [
+    "Rhonda Byrne"
+   ],
+   "isbn13": [
+    "9780008447380",
+    "9780063081888"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Greatest Secret\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Nature",
+   "authors": [
+    "Ralph Waldo Emerson"
+   ],
+   "isbn13": [
+    "9781660068128",
+    "9781499149692",
+    "9781973368151",
+    "9780807015629"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Nature\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Conduct of Life",
+   "authors": [
+    "Ralph Waldo Emerson"
+   ],
+   "isbn13": [
+    "9781671802957"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The conduct of life\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Essays",
+   "authors": [
+    "Ralph Waldo Emerson"
+   ],
+   "isbn13": [
+    "9781537011110"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Essays\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Mystic Christianity",
+   "authors": [
+    "Yogi Ramacharaka"
+   ],
+   "isbn13": [
+    "9788132025238",
+    "9781473375802",
+    "9781447418399",
+    "9781781665657"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Mystic Christianity\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Mystic Christianity",
+   "authors": [
+    "Yogi Ramacharaka"
+   ],
+   "isbn13": [
+    "9781609421908",
+    "9781609421892",
+    "9781912925025",
+    "9781627933346"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Mystic Christianity\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Series of Lessons in Gnani Yoga",
+   "authors": [
+    "Yogi Ramacharaka"
+   ],
+   "isbn13": [
+    "9780368676994"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Series of Lessons in Gnani Yoga\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Hatha Yoga",
+   "authors": [
+    "Yogi Ramacharaka",
+    "The Perfect The Perfect Library"
+   ],
+   "isbn13": [
+    "9781522969778"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Hatha Yoga\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Fourteen Lessons in Yogi Philosophy and Oriental Occultism",
+   "authors": [
+    "Yogi Ramacharaka",
+    "William Walker Atkinson"
+   ],
+   "isbn13": [
+    "9780997414837",
+    "9786257793636"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Fourteen Lessons in Yogi Philosophy and Oriental Occultism\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Hatha Yoga",
+   "authors": [
+    "Yogi Ramacharaka"
+   ],
+   "isbn13": [
+    "9780852430934",
+    "9788129200808"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Hatha Yoga\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Hatha Yoga or The Yogi Philosophy of Physical Well-Being",
+   "authors": [
+    "Yogi Ramacharaka"
+   ],
+   "isbn13": [
+    "9789561002470"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"HATHA YOGA Or, The Yogi Philosophy of Physical Well-Being\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Way of the Peaceful Warrior",
+   "authors": [
+    "Dan Millman"
+   ],
+   "isbn13": [
+    "9780369320674",
+    "9780312909512",
+    "9781932073683",
+    "9781511326889"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Way of the peaceful warrior\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Judy Hall's Complete Crystal Workshop",
+   "authors": [
+    "Judy Hall"
+   ],
+   "isbn13": [
+    "9781841814612",
+    "9781841814971"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Judy Hall's Complete Crystal Workshop\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Crystal Prescriptions",
+   "authors": [
+    "Judy Hall"
+   ],
+   "isbn13": [
+    "9781905047406",
+    "9781785350535"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Crystal Prescriptions\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Illuminating the Afterlife",
+   "authors": [
+    "Cyndi Dale"
+   ],
+   "isbn13": [
+    "9781427099594"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Illuminating the Afterlife\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Advanced Chakra Healing",
+   "authors": [
+    "Cyndi Dale"
+   ],
+   "isbn13": [
+    "9781580911610",
+    "9781580911702"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Advanced Chakra Healing\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "The way of herbs",
+   "authors": [
+    "Michael Tierra"
+   ],
+   "isbn13": [
+    "9780671466862"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The way of herbs\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "The Fragrant Mind",
+   "authors": [
+    "Valerie Ann Worwood"
+   ],
+   "isbn13": [
+    "9780553407990"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The fragrant mind\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "The fragrant heavens",
+   "authors": [
+    "Valerie Ann Worwood"
+   ],
+   "isbn13": [
+    "9781577310693",
+    "9780553505795"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Fragrant Heavens\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Culpeper's Complete Herbal",
+   "authors": [
+    "Nicholas Culpeper",
+    "Jj Purcell"
+   ],
+   "isbn13": [
+    "9781648411168",
+    "9781454932888"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Culpeper's Complete Herbal\""
+   ],
+   "origin": "staging/batches/olz-004.json"
+  },
+  {
+   "title": "Pool of Fire",
+   "authors": [
+    "John Christopher"
+   ],
+   "isbn13": [
+    "9780241015391",
+    "9781481414807"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The Pool of Fire.\""
+   ],
+   "origin": "staging/batches/olz-005.json"
+  },
+  {
+   "title": "The encyclopedia of medicinal plants",
+   "authors": [
+    "Andrew Chevallier"
+   ],
+   "isbn13": [
+    "9780789410672"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Encyclopedia of Medicinal Plants\""
+   ],
+   "origin": "staging/batches/olz-005.json"
+  },
+  {
+   "title": "Encyclopedia of Herbal Medicine",
+   "authors": [
+    "Andrew Chevallier"
+   ],
+   "isbn13": [
+    "9780241229446"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Encyclopedia of herbal medicine\""
+   ],
+   "origin": "staging/batches/olz-005.json"
+  },
+  {
+   "title": "The encyclopedia of essential oils",
+   "authors": [
+    "Julia Lawless"
+   ],
+   "isbn13": [
+    "9781852303112",
+    "9780007145188"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Encyclopedia of Essential Oils\""
+   ],
+   "origin": "staging/batches/olz-005.json"
+  },
+  {
+   "title": "The complete illustrated guide to aromatherapy",
+   "authors": [
+    "Julia Lawless"
+   ],
+   "isbn13": [
+    "9781862046429"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The complete illustrated guide to aromatherapy\""
+   ],
+   "origin": "staging/batches/olz-005.json"
+  },
+  {
+   "title": "Saturn",
+   "authors": [
+    "Liz Greene"
+   ],
+   "isbn13": [
+    "9780140192087"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Saturn\""
+   ],
+   "origin": "staging/batches/olz-005.json"
+  },
+  {
+   "title": "Astrology of Fate",
+   "authors": [
+    "Liz Greene"
+   ],
+   "isbn13": [
+    "9781609253851",
+    "9781633413191"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The astrology of fate\""
+   ],
+   "origin": "staging/batches/olz-005.json"
+  },
+  {
+   "title": "The changing sky",
+   "authors": [
+    "Steven Forrest"
+   ],
+   "isbn13": [
+    "9780979067723"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The Changing Sky\""
+   ],
+   "origin": "staging/batches/olz-005.json"
+  },
+  {
+   "title": "Houses of the Horoscope",
+   "authors": [
+    "Alan Oken"
+   ],
+   "isbn13": [
+    "9780895949325"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Houses of the Horoscope\""
+   ],
+   "origin": "staging/batches/olz-005.json"
+  },
+  {
+   "title": "Astrology",
+   "authors": [
+    "Sepharial"
+   ],
+   "isbn13": [
+    "9781594622953"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Astrology\""
+   ],
+   "origin": "staging/batches/olz-005.json"
+  },
+  {
+   "title": "Cheiro's Language of the Hand",
+   "authors": [
+    "Cheiro"
+   ],
+   "isbn13": [
+    "9788121603713"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Cheiro's language of the hand.\""
+   ],
+   "origin": "staging/batches/olz-005.json"
+  },
+  {
+   "title": "Cheiro's Language of the Hand",
+   "authors": [
+    "Cheiro",
+    "Lex Thompson"
+   ],
+   "isbn13": [
+    "9780985509545"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Cheiro's language of the hand.\""
+   ],
+   "origin": "staging/batches/olz-005.json"
+  },
+  {
+   "title": "Cheiro's Book of Numbers",
+   "authors": [
+    "Cheiro"
+   ],
+   "isbn13": [
+    "9781940849294",
+    "9781957990019"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Cheiro's Book of Numbers\""
+   ],
+   "origin": "staging/batches/olz-005.json"
+  },
+  {
+   "title": "Cheiro's Book of Numbers",
+   "authors": [
+    "Cheiro",
+    "Andras Nagy"
+   ],
+   "isbn13": [
+    "9781940849300"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Cheiro's Book of Numbers\""
+   ],
+   "origin": "staging/batches/olz-005.json"
+  },
+  {
+   "title": "Unquenchable Fire",
+   "authors": [
+    "Rachel Pollack"
+   ],
+   "isbn13": [
+    "9780879515300",
+    "9781857231823",
+    "9780575118546"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Unquenchable fire\""
+   ],
+   "origin": "staging/batches/olz-005.json"
+  },
+  {
+   "title": "The true and invisible Rosicrucian Order",
+   "authors": [
+    "Paul Foster Case"
+   ],
+   "isbn13": [
+    "9780877286080",
+    "9780877287094"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The True and Invisible Rosicrucian Order\""
+   ],
+   "origin": "staging/batches/olz-005.json"
+  },
+  {
+   "title": "Beginner's Guide to Tarot",
+   "authors": [
+    "Juliet Sharman-Burke",
+    "Giovanni Caselli"
+   ],
+   "isbn13": [
+    "9781859064061"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Beginners Guide to Tarot\""
+   ],
+   "origin": "staging/batches/olz-005.json"
+  },
+  {
+   "title": "I Ching",
+   "authors": [
+    "Stephen Karcher"
+   ],
+   "isbn13": [
+    "9780007326419"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"I Ching\""
+   ],
+   "origin": "staging/batches/olz-005.json"
+  },
+  {
+   "title": "I Ching",
+   "authors": [
+    "Richard Wilhelm"
+   ],
+   "isbn13": [
+    "9781840134742"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"I Ching\""
+   ],
+   "origin": "staging/batches/olz-005.json"
+  },
+  {
+   "title": "Complete Idiot's Guide to Palmistry",
+   "authors": [
+    "Robin Gile",
+    "Lisa Lenard"
+   ],
+   "isbn13": [
+    "9780585130200"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The complete idiot's guide to palmistry\""
+   ],
+   "origin": "staging/batches/olz-005.json"
+  },
+  {
+   "title": "Tarot.",
+   "authors": [
+    "Jonathan Dee"
+   ],
+   "isbn13": [
+    "9780752525679",
+    "9781856056854"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Tarot\""
+   ],
+   "origin": "staging/batches/olz-005.json"
+  },
+  {
+   "title": "Super Tarot",
+   "authors": [
+    "Sasha Fenton"
+   ],
+   "isbn13": [
+    "9781855380172",
+    "9781402705731"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Super Tarot\""
+   ],
+   "origin": "staging/batches/olz-005.json"
+  },
+  {
+   "title": "Falling upward",
+   "authors": [
+    "Richard Rohr"
+   ],
+   "isbn13": [
+    "9780470907757"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Falling Upward\""
+   ],
+   "origin": "staging/batches/olz-005.json"
+  },
+  {
+   "title": "Falling Upward",
+   "authors": [
+    "Richard Rohr"
+   ],
+   "isbn13": [
+    "9780369304674"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Falling Upward\""
+   ],
+   "origin": "staging/batches/olz-005.json"
+  },
+  {
+   "title": "Discovering the enneagram",
+   "authors": [
+    "Richard Rohr"
+   ],
+   "isbn13": [
+    "9780824511852"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Discovering the enneagram\""
+   ],
+   "origin": "staging/batches/olz-005.json"
+  },
+  {
+   "title": "Good News According to Luke",
+   "authors": [
+    "Richard Rohr"
+   ],
+   "isbn13": [
+    "9780824519667",
+    "9780824514907"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Good News According to Luke\""
+   ],
+   "origin": "staging/batches/olz-005.json"
+  },
+  {
+   "title": "Job & The Mystery of Suffering",
+   "authors": [
+    "Richard Rohr"
+   ],
+   "isbn13": [
+    "9780824517342",
+    "9780824514747"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Job and the Mystery of Suffering\""
+   ],
+   "origin": "staging/batches/olz-005.json"
+  },
+  {
+   "title": "Simplicity",
+   "authors": [
+    "Richard Rohr"
+   ],
+   "isbn13": [
+    "9780824511333",
+    "9780824512514"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Simplicity\""
+   ],
+   "origin": "staging/batches/olz-005.json"
+  },
+  {
+   "title": "Interior Castle",
+   "authors": [
+    "Teresa of Avila",
+    "Laurel Mathewson"
+   ],
+   "isbn13": [
+    "9798887690926"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Interior Castle\""
+   ],
+   "origin": "staging/batches/olz-005.json"
+  },
+  {
+   "title": "Dark Night of the Soul",
+   "authors": [
+    "John of the Cross",
+    "E. Allison Peers"
+   ],
+   "isbn13": [
+    "9781640322189",
+    "9781640322172"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The Dark Night of the Soul\""
+   ],
+   "origin": "staging/batches/olz-005.json"
+  },
+  {
+   "title": "Enfolded in Love",
+   "authors": [
+    "Julian of Norwich"
+   ],
+   "isbn13": [
+    "9780232521092"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Enfolded in love\""
+   ],
+   "origin": "staging/batches/olz-005.json"
+  },
+  {
+   "title": "Mystery of Christ",
+   "authors": [
+    "Thomas Keating"
+   ],
+   "isbn13": [
+    "9781282710047"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The Mystery of Christ\""
+   ],
+   "origin": "staging/batches/olz-005.json"
+  },
+  {
+   "title": "Daily Reader for Contemplative Living",
+   "authors": [
+    "Thomas Keating",
+    "S. Stephanie Iachetta"
+   ],
+   "isbn13": [
+    "9781408194010"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The daily reader for contemplative living\""
+   ],
+   "origin": "staging/batches/olz-005.json"
+  },
+  {
+   "title": "Heart of the World",
+   "authors": [
+    "Thomas Keating"
+   ],
+   "isbn13": [
+    "9780824502294"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The heart of the world\""
+   ],
+   "origin": "staging/batches/olz-005.json"
+  },
+  {
+   "title": "Practice of the Presence of God and the Spiritual Maxims",
+   "authors": [
+    "Brother Lawrence of the Resurrection"
+   ],
+   "isbn13": [
+    "9781306334761"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The Practice of the Presence of God, and The Spiritual Maxims\""
+   ],
+   "origin": "staging/batches/olz-005.json"
+  },
+  {
+   "title": "The Practice of the Presence of God & the Spiritual Maxims",
+   "authors": [
+    "Brother Lawrence of the Resurrection"
+   ],
+   "isbn13": [
+    "9780989312042",
+    "9781420953664"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The Practice of the Presence of God, and The Spiritual Maxims\""
+   ],
+   "origin": "staging/batches/olz-005.json"
+  },
+  {
+   "title": "On Loving God",
+   "authors": [
+    "Saint Bernard of Clairvaux"
+   ],
+   "isbn13": [
+    "9781631710278",
+    "9781926777122"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"On loving God\""
+   ],
+   "origin": "staging/batches/olz-005.json"
+  },
+  {
+   "title": "The marriage of East and West",
+   "authors": [
+    "Bede Griffiths"
+   ],
+   "isbn13": [
+    "9780006265887"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The marriage of East and West\""
+   ],
+   "origin": "staging/batches/olz-005.json"
+  },
+  {
+   "title": "Vedanta and Christian Faith",
+   "authors": [
+    "Bede Griffiths",
+    "Cyprian Consiglio"
+   ],
+   "isbn13": [
+    "9781958972175"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Vedanta & Christian faith\""
+   ],
+   "origin": "staging/batches/olz-005.json"
+  },
+  {
+   "title": "Vedanta and Christian Faith",
+   "authors": [
+    "Bede Griffiths"
+   ],
+   "isbn13": [
+    "9781958972168"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Vedanta & Christian faith\""
+   ],
+   "origin": "staging/batches/olz-005.json"
+  },
+  {
+   "title": "The Magic Monastery",
+   "authors": [
+    "Idries Shah"
+   ],
+   "isbn13": [
+    "9780525473381",
+    "9780863040580"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The magic monastery\""
+   ],
+   "origin": "staging/batches/olz-006.json"
+  },
+  {
+   "title": "In the company of friends",
+   "authors": [
+    "Llewellyn Vaughan-Lee"
+   ],
+   "isbn13": [
+    "9780963457417"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"In the Company of Friends\""
+   ],
+   "origin": "staging/batches/olz-006.json"
+  },
+  {
+   "title": "Alchemy of Light",
+   "authors": [
+    "Llewellyn Vaughan-lee"
+   ],
+   "isbn13": [
+    "9781890350277"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Alchemy of Light\""
+   ],
+   "origin": "staging/batches/olz-006.json"
+  },
+  {
+   "title": "Spiritual Power",
+   "authors": [
+    "Llewellyn Vaughan-Lee"
+   ],
+   "isbn13": [
+    "9781941394298",
+    "9781890350116"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Spiritual Power\""
+   ],
+   "origin": "staging/batches/olz-006.json"
+  },
+  {
+   "title": "Spiritual ecology",
+   "authors": [
+    "Llewellyn Vaughan-Lee"
+   ],
+   "isbn13": [
+    "9781890350468"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Spiritual Ecology\""
+   ],
+   "origin": "staging/batches/olz-006.json"
+  },
+  {
+   "title": "Rubaiyat of Omar Khayyam",
+   "authors": [
+    "Omar Khayyam"
+   ],
+   "isbn13": [
+    "9781791877293",
+    "9781411428119",
+    "9781673876758"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The Rubaiyat of Omar Khayyam\""
+   ],
+   "origin": "staging/batches/olz-006.json"
+  },
+  {
+   "title": "Rubaiyat of Omar Khayyam",
+   "authors": [
+    "Omar Khayyam",
+    "Edward FitzGerald"
+   ],
+   "isbn13": [
+    "9781548680374",
+    "9781721057535",
+    "9781532720598",
+    "9781453754221"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The Rubaiyat of Omar Khayyam\""
+   ],
+   "origin": "staging/batches/olz-006.json"
+  },
+  {
+   "title": "The rubaiyat of Omar Khayyam",
+   "authors": [
+    "Omar Khayyam"
+   ],
+   "isbn13": [
+    "9780880884815",
+    "9780517072325"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The Rubaiyat of Omar Khayyam\""
+   ],
+   "origin": "staging/batches/olz-006.json"
+  },
+  {
+   "title": "The Rubaiyat of Omar Khayyam",
+   "authors": [
+    "Omar Khayyam",
+    "Fitzgerald, Edward"
+   ],
+   "isbn13": [
+    "9781537770017",
+    "9781689947183"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The Rubaiyat of Omar Khayyam\""
+   ],
+   "origin": "staging/batches/olz-006.json"
+  },
+  {
+   "title": "Rubaiyat of Omar Khayyam",
+   "authors": [
+    "Omar Khayyam"
+   ],
+   "isbn13": [
+    "9780826452184"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The Rubaiyat of Omar Khayyam\""
+   ],
+   "origin": "staging/batches/olz-006.json"
+  },
+  {
+   "title": "Rubáiyát of Omar Khayyám",
+   "authors": [
+    "Omar Khayyam",
+    "Richard Le Gallienne"
+   ],
+   "isbn13": [
+    "9781776773688"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The Rubaiyat of Omar Khayyam\""
+   ],
+   "origin": "staging/batches/olz-006.json"
+  },
+  {
+   "title": "The Rubaiyat of Omar Khayyam",
+   "authors": [
+    "Omar Khayyam"
+   ],
+   "isbn13": [
+    "9781603129305",
+    "9781603121316"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The Rubaiyat of Omar Khayyam\""
+   ],
+   "origin": "staging/batches/olz-006.json"
+  },
+  {
+   "title": "The garden of truth",
+   "authors": [
+    "Seyyed Hossein Nasr"
+   ],
+   "isbn13": [
+    "9780060797225"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The Garden of Truth\""
+   ],
+   "origin": "staging/batches/olz-006.json"
+  },
+  {
+   "title": "Ancient beliefs and modern superstitions.",
+   "authors": [
+    "Martin Lings"
+   ],
+   "isbn13": [
+    "9781870196093"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Ancient Beliefs and Modern Superstitions\""
+   ],
+   "origin": "staging/batches/olz-006.json"
+  },
+  {
+   "title": "Light on the ancient worlds",
+   "authors": [
+    "Frithjof Schuon"
+   ],
+   "isbn13": [
+    "9780941532037"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Light on the ancient worlds\""
+   ],
+   "origin": "staging/batches/olz-006.json"
+  },
+  {
+   "title": "Jesus in the Eyes of the Sufis",
+   "authors": [
+    "Javad Nurbakhsh"
+   ],
+   "isbn13": [
+    "9780614212952",
+    "9780933546875"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Jesus in the eyes of the Sufis.\""
+   ],
+   "origin": "staging/batches/olz-006.json"
+  },
+  {
+   "title": "Absorbing Perfections",
+   "authors": [
+    "Moshe Idel"
+   ],
+   "isbn13": [
+    "9780300135077",
+    "9780300083798"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Absorbing Perfections\""
+   ],
+   "origin": "staging/batches/olz-006.json"
+  },
+  {
+   "title": "Tormented Master",
+   "authors": [
+    "Arthur Green"
+   ],
+   "isbn13": [
+    "9781683364689",
+    "9781580237505"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Tormented master\""
+   ],
+   "origin": "staging/batches/olz-006.json"
+  },
+  {
+   "title": "These Are the Words",
+   "authors": [
+    "Arthur Green"
+   ],
+   "isbn13": [
+    "9781580236157",
+    "9781683364634"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"These Are the Words\""
+   ],
+   "origin": "staging/batches/olz-006.json"
+  },
+  {
+   "title": "Ehyeh",
+   "authors": [
+    "Arthur Green"
+   ],
+   "isbn13": [
+    "9781580235457",
+    "9781683360421"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Ehyeh\""
+   ],
+   "origin": "staging/batches/olz-006.json"
+  },
+  {
+   "title": "God Was in This Place & I, I Did Not Know",
+   "authors": [
+    "Lawrence Kushner"
+   ],
+   "isbn13": [
+    "9780369325013"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"God Was in This Place and I, I Did Not Know\""
+   ],
+   "origin": "staging/batches/olz-006.json"
+  },
+  {
+   "title": "The book of miracles",
+   "authors": [
+    "Lawrence Kushner"
+   ],
+   "isbn13": [
+    "9781879045781",
+    "9780807403235"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Book of Miracles\""
+   ],
+   "origin": "staging/batches/olz-006.json"
+  },
+  {
+   "title": "Eyes remade for wonder",
+   "authors": [
+    "Lawrence Kushner"
+   ],
+   "isbn13": [
+    "9781580230421"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Eyes Remade for Wonder\""
+   ],
+   "origin": "staging/batches/olz-006.json"
+  },
+  {
+   "title": "God was in this place & I, i did not know",
+   "authors": [
+    "Lawrence Kushner"
+   ],
+   "isbn13": [
+    "9781879045057",
+    "9781879045330"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"God Was in This Place and I, I Did Not Know\""
+   ],
+   "origin": "staging/batches/olz-006.json"
+  },
+  {
+   "title": "Reading the Zohar",
+   "authors": [
+    "Pinchas Giller"
+   ],
+   "isbn13": [
+    "9780195118490"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Reading the Zohar\""
+   ],
+   "origin": "staging/batches/olz-006.json"
+  },
+  {
+   "title": "Kabbalistic Universe",
+   "authors": [
+    "Z'ev ben Shimon Halevi"
+   ],
+   "isbn13": [
+    "9781905806027"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"A kabbalistic universe\""
+   ],
+   "origin": "staging/batches/olz-006.json"
+  },
+  {
+   "title": "Power of Kabbalah",
+   "authors": [
+    "Yehuda Berg"
+   ],
+   "isbn13": [
+    "9781459617513",
+    "9781459602281"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The power of Kabbalah\""
+   ],
+   "origin": "staging/batches/olz-006.json"
+  },
+  {
+   "title": "Ranjit Singh",
+   "authors": [
+    "Khushwant Singh"
+   ],
+   "isbn13": [
+    "9780861315789",
+    "9780141006840"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Ranjit Singh\""
+   ],
+   "origin": "staging/batches/olz-006.json"
+  },
+  {
+   "title": "Sane new world",
+   "authors": [
+    "Ruby Wax"
+   ],
+   "isbn13": [
+    "9781471256882"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Sane New World\""
+   ],
+   "origin": "staging/batches/olz-006.json"
+  },
+  {
+   "title": "Waking Up",
+   "authors": [
+    "Sam Harris"
+   ],
+   "isbn13": [
+    "9781451636031"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Waking Up\""
+   ],
+   "origin": "staging/batches/olz-006.json"
+  },
+  {
+   "title": "Making Sense",
+   "authors": [
+    "Sam Harris"
+   ],
+   "isbn13": [
+    "9780062857804"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Making Sense\""
+   ],
+   "origin": "staging/batches/olz-006.json"
+  },
+  {
+   "title": "Making Sense",
+   "authors": [
+    "Sam Harris"
+   ],
+   "isbn13": [
+    "9781787633797"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Making Sense\""
+   ],
+   "origin": "staging/batches/olz-006.json"
+  },
+  {
+   "title": "The Dhammapada",
+   "authors": [
+    "Gil Fronsdal"
+   ],
+   "isbn13": [
+    "9781590303801"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Dhammapada\""
+   ],
+   "origin": "staging/batches/olz-006.json"
+  },
+  {
+   "title": "I need your love-- is that true?",
+   "authors": [
+    "Byron Katie"
+   ],
+   "isbn13": [
+    "9780375434617",
+    "9781400051076"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"I Need Your Love - Is That True?\""
+   ],
+   "origin": "staging/batches/olz-006.json"
+  },
+  {
+   "title": "Devil and Miss Prym",
+   "authors": [
+    "Paulo Coelho"
+   ],
+   "isbn13": [
+    "9780061844867"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The Devil and Miss Prym\""
+   ],
+   "origin": "staging/batches/olz-006.json"
+  },
+  {
+   "title": "The Witch of Portobello",
+   "authors": [
+    "Paulo Coelho"
+   ],
+   "isbn13": [
+    "9780007835409",
+    "9780007251865"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Witch of Portobello\""
+   ],
+   "origin": "staging/batches/olz-006.json"
+  },
+  {
+   "title": "Manuscript Found in Accra",
+   "authors": [
+    "Paulo Coelho",
+    "Margaret Jull Costa"
+   ],
+   "isbn13": [
+    "9781299450653",
+    "9780007528813",
+    "9780007514236"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Manuscript Found in Accra\""
+   ],
+   "origin": "staging/batches/olz-006.json"
+  },
+  {
+   "title": "Seven thousand ways to listen",
+   "authors": [
+    "Mark Nepo"
+   ],
+   "isbn13": [
+    "9781451674682",
+    "9781451674699"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Seven Thousand Ways to Listen\""
+   ],
+   "origin": "staging/batches/olz-006.json"
+  },
+  {
+   "title": "The end of your world",
+   "authors": [
+    "Adyashanti."
+   ],
+   "isbn13": [
+    "9781591799634"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"End of Your World\""
+   ],
+   "origin": "staging/batches/olz-006.json"
+  },
+  {
+   "title": "True Meditation",
+   "authors": [
+    "Adyashanti."
+   ],
+   "isbn13": [
+    "9781591794677"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"True Meditation\""
+   ],
+   "origin": "staging/batches/olz-006.json"
+  },
+  {
+   "title": "Robert Adams",
+   "authors": [
+    "Robert Adams"
+   ],
+   "isbn13": [
+    "9781880146422",
+    "9781564660688"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Robert Adams\""
+   ],
+   "origin": "staging/batches/olz-006.json"
+  },
+  {
+   "title": "Robert Adams",
+   "authors": [
+    "Robert Adams"
+   ],
+   "isbn13": [
+    "9781597111294",
+    "9781881337515"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Robert Adams\""
+   ],
+   "origin": "staging/batches/olz-006.json"
+  },
+  {
+   "title": "The narrative of Robert Adams, a barbary captive",
+   "authors": [
+    "Robert Adams"
+   ],
+   "isbn13": [
+    "9780521603737"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Narrative of Robert Adams, a Barbary Captive\""
+   ],
+   "origin": "staging/batches/olz-006.json"
+  },
+  {
+   "title": "John Dee's Conversations with Angels",
+   "authors": [
+    "Deborah Harkness"
+   ],
+   "isbn13": [
+    "9780521027489",
+    "9780521622288"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"John Dee's Conversations with Angels\""
+   ],
+   "origin": "staging/batches/olz-006.json"
+  },
+  {
+   "title": "Temple and the Stone",
+   "authors": [
+    "Katherine Kurtz",
+    "Deborah T. Harris"
+   ],
+   "isbn13": [
+    "9780759593169",
+    "9780446408080"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The temple and the stone\""
+   ],
+   "origin": "staging/batches/olz-006.json"
+  },
+  {
+   "title": "The temple and the crown",
+   "authors": [
+    "Katherine Kurtz"
+   ],
+   "isbn13": [
+    "9780446608541",
+    "9780759562363"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Temple and the Crown\""
+   ],
+   "origin": "staging/batches/olz-006.json"
+  },
+  {
+   "title": "St. Patrick's Gargoyle",
+   "authors": [
+    "Katherine Kurtz"
+   ],
+   "isbn13": [
+    "9780786581566",
+    "9781504049801"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"St. Patrick's Gargoyle\""
+   ],
+   "origin": "staging/batches/olz-006.json"
+  },
+  {
+   "title": "Temple and the Crown",
+   "authors": [
+    "Katherine Kurtz",
+    "Deborah Turner Harris"
+   ],
+   "isbn13": [
+    "9781504037617",
+    "9781306754996"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Temple and the Crown\""
+   ],
+   "origin": "staging/batches/olz-006.json"
+  },
+  {
+   "title": "The Man Whom the Trees Loved",
+   "authors": [
+    "Algernon Blackwood"
+   ],
+   "isbn13": [
+    "9781587155260",
+    "9781987410464",
+    "9781414295190",
+    "9798544575481"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Man Whom the Trees Loved\""
+   ],
+   "origin": "staging/batches/olz-006.json"
+  },
+  {
+   "title": "Empty House and Other Ghost Stories",
+   "authors": [
+    "Algernon Blackwood"
+   ],
+   "isbn13": [
+    "9781985703605",
+    "9781542547857",
+    "9781540335692"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The Empty House and Other Ghost Stories\""
+   ],
+   "origin": "staging/batches/olz-007.json"
+  },
+  {
+   "title": "Willows",
+   "authors": [
+    "Algernon Blackwood"
+   ],
+   "isbn13": [
+    "9781516851836"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Willows\""
+   ],
+   "origin": "staging/batches/olz-007.json"
+  },
+  {
+   "title": "Empty House and Other Ghost Stories",
+   "authors": [
+    "Algernon Blackwood"
+   ],
+   "isbn13": [
+    "9781537212760",
+    "9781975644741",
+    "9781721088898"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The Empty House and Other Ghost Stories\""
+   ],
+   "origin": "staging/batches/olz-007.json"
+  },
+  {
+   "title": "Empty House and Other Ghost Stories",
+   "authors": [
+    "Algernon Blackwood"
+   ],
+   "isbn13": [
+    "9781981152810",
+    "9781517560119",
+    "9781505271942",
+    "9781987410426"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The Empty House and Other Ghost Stories\""
+   ],
+   "origin": "staging/batches/olz-007.json"
+  },
+  {
+   "title": "Great Return",
+   "authors": [
+    "Arthur Machen",
+    "Clean Bright Clean Bright Classics"
+   ],
+   "isbn13": [
+    "9781973912569"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The Great Return\""
+   ],
+   "origin": "staging/batches/olz-007.json"
+  },
+  {
+   "title": "Book of Wonder",
+   "authors": [
+    "Lord Dunsany"
+   ],
+   "isbn13": [
+    "9781497443730"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Book of Wonder\""
+   ],
+   "origin": "staging/batches/olz-007.json"
+  },
+  {
+   "title": "Swords in the Mist",
+   "authors": [
+    "Fritz Leiber"
+   ],
+   "isbn13": [
+    "9780759278684",
+    "9781585863686"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Swords in the Mist\""
+   ],
+   "origin": "staging/batches/olz-007.json"
+  },
+  {
+   "title": "Knight and Knave of Swords",
+   "authors": [
+    "Fritz Leiber"
+   ],
+   "isbn13": [
+    "9781306586559",
+    "9780759207257",
+    "9780759279643"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The Knight and Knave of Swords\""
+   ],
+   "origin": "staging/batches/olz-007.json"
+  },
+  {
+   "title": "Swords Against Death",
+   "authors": [
+    "Fritz Leiber"
+   ],
+   "isbn13": [
+    "9780759207295",
+    "9781306586504",
+    "9780759278646"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Swords Against Death\""
+   ],
+   "origin": "staging/batches/olz-007.json"
+  },
+  {
+   "title": "Gather Darkness!",
+   "authors": [
+    "Fritz Leiber"
+   ],
+   "isbn13": [
+    "9781585861057",
+    "9781306586672"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Gather, Darkness!\""
+   ],
+   "origin": "staging/batches/olz-007.json"
+  },
+  {
+   "title": "Swords and Ice Magic",
+   "authors": [
+    "Fritz Leiber"
+   ],
+   "isbn13": [
+    "9780759257757",
+    "9780759278677",
+    "9781306586481"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Swords and Ice Magic\""
+   ],
+   "origin": "staging/batches/olz-007.json"
+  },
+  {
+   "title": "Ghosts of the Shadow Market",
+   "authors": [
+    "Cassandra Clare",
+    "Sarah Rees Brennan",
+    "Maureen Johnson - undifferentiated"
+   ],
+   "isbn13": [
+    "9781534433632",
+    "9781534433649"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Ghosts of the Shadow Market\""
+   ],
+   "origin": "staging/batches/olz-007.json"
+  },
+  {
+   "title": "Bane Chronicles",
+   "authors": [
+    "Cassandra Clare",
+    "Sarah Rees Brennan"
+   ],
+   "isbn13": [
+    "9781484472002",
+    "9781406352429"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The Bane Chronicles\""
+   ],
+   "origin": "staging/batches/olz-007.json"
+  },
+  {
+   "title": "City of Lost Souls",
+   "authors": [
+    "Cassandra Clare"
+   ],
+   "isbn13": [
+    "9781484423509",
+    "9781406341188"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"City of Lost Souls\""
+   ],
+   "origin": "staging/batches/olz-007.json"
+  },
+  {
+   "title": "Labyrinth",
+   "authors": [
+    "Kate Mosse"
+   ],
+   "isbn13": [
+    "9781429503068",
+    "9780399153440"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Labyrinth\""
+   ],
+   "origin": "staging/batches/olz-007.json"
+  },
+  {
+   "title": "Labyrinth",
+   "authors": [
+    "Kate Mosse"
+   ],
+   "isbn13": [
+    "9781409136972",
+    "9781409108351"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Labyrinth\""
+   ],
+   "origin": "staging/batches/olz-007.json"
+  },
+  {
+   "title": "The Girl Who Chased the Moon",
+   "authors": [
+    "Sarah Addison Allen"
+   ],
+   "isbn13": [
+    "9780553906547",
+    "9780553807219"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The girl who chased the moon\""
+   ],
+   "origin": "staging/batches/olz-007.json"
+  },
+  {
+   "title": "Dark Is Rising",
+   "authors": [
+    "Susan Cooper"
+   ],
+   "isbn13": [
+    "9781665932882",
+    "9780606006873",
+    "9780784822128",
+    "9781442483309"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Dark Is Rising\""
+   ],
+   "origin": "staging/batches/olz-007.json"
+  },
+  {
+   "title": "Red Pyramid",
+   "authors": [
+    "Rick Riordan",
+    "Orpheus Collar"
+   ],
+   "isbn13": [
+    "9781536436341",
+    "9780784837337",
+    "9781423142508",
+    "9781423174677"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The Red Pyramid\""
+   ],
+   "origin": "staging/batches/olz-007.json"
+  },
+  {
+   "title": "Lost Hero",
+   "authors": [
+    "Rick Riordan"
+   ],
+   "isbn13": [
+    "9798855112979",
+    "9780141359991",
+    "9780606358972"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Lost Hero\""
+   ],
+   "origin": "staging/batches/olz-007.json"
+  },
+  {
+   "title": "Across the nightingale floor.",
+   "authors": [
+    "Lian Hearn"
+   ],
+   "isbn13": [
+    "9780733615627",
+    "9780435120283"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Across the nightingale floor\""
+   ],
+   "origin": "staging/batches/olz-007.json"
+  },
+  {
+   "title": "Across the nightingale floor",
+   "authors": [
+    "Lian Hearn"
+   ],
+   "isbn13": [
+    "9780142404331"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Across the nightingale floor\""
+   ],
+   "origin": "staging/batches/olz-007.json"
+  },
+  {
+   "title": "Hindu Philosophy",
+   "authors": [
+    "Theos Bernard"
+   ],
+   "isbn13": [
+    "9781443730884",
+    "9781406767476"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Hindu Philosophy\""
+   ],
+   "origin": "staging/batches/olz-007.json"
+  },
+  {
+   "title": "The complete idiot's guide to feng shui",
+   "authors": [
+    "Elizabeth Moran"
+   ],
+   "isbn13": [
+    "9780028631059"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The Complete Idiot's Guide to Feng Shui\""
+   ],
+   "origin": "staging/batches/olz-007.json"
+  },
+  {
+   "title": "The secret history of Hermes Trismegistus",
+   "authors": [
+    "Florian Ebeling"
+   ],
+   "isbn13": [
+    "9780801445460"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The Secret History of Hermes Trismegistus\""
+   ],
+   "origin": "staging/batches/olz-008.json"
+  },
+  {
+   "title": "Introducing Jung",
+   "authors": [
+    "Maggie Hyde",
+    "Michael McGuiness",
+    "Oliver Pugh"
+   ],
+   "isbn13": [
+    "9781848318564",
+    "9781840460629"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Introducing Jung\""
+   ],
+   "origin": "staging/batches/olz-008.json"
+  },
+  {
+   "title": "90 minutes in heaven",
+   "authors": [
+    "Don Piper"
+   ],
+   "isbn13": [
+    "9780800759490"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"90 minutes in heaven\""
+   ],
+   "origin": "staging/batches/olz-008.json"
+  },
+  {
+   "title": "The Hummingbird's Daughter",
+   "authors": [
+    "Luis Alberto Urrea"
+   ],
+   "isbn13": [
+    "9780316013819",
+    "9780759567498"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The hummingbird's daughter\""
+   ],
+   "origin": "staging/batches/olz-008.json"
+  },
+  {
+   "title": "Woman, thou art loosed!",
+   "authors": [
+    "T. D Jakes"
+   ],
+   "isbn13": [
+    "9781577780854"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Woman Thou Art Loosed\""
+   ],
+   "origin": "staging/batches/olz-008.json"
+  },
+  {
+   "title": "The purpose of your life",
+   "authors": [
+    "Carol Adrienne"
+   ],
+   "isbn13": [
+    "9780688166250"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Purpose of Your Life\""
+   ],
+   "origin": "staging/batches/olz-008.json"
+  },
+  {
+   "title": "Dancing with the Wheel",
+   "authors": [
+    "Sun Bear",
+    "Wabun Wind",
+    "Crysalis Mulligan"
+   ],
+   "isbn13": [
+    "9781439147542",
+    "9780135728437"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Dancing with the wheel\""
+   ],
+   "origin": "staging/batches/olz-008.json"
+  },
+  {
+   "title": "King in Yellow",
+   "authors": [
+    "Robert W. Chambers"
+   ],
+   "isbn13": [
+    "9781548998592",
+    "9781724463869"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"King in Yellow\""
+   ],
+   "origin": "staging/batches/olz-008.json"
+  },
+  {
+   "title": "Kundalini Yoga",
+   "authors": [
+    "M.P. Pandit"
+   ],
+   "isbn13": [
+    "9788178220765",
+    "9780941524506"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Kundalini Yoga\""
+   ],
+   "origin": "staging/batches/olz-008.json"
+  },
+  {
+   "title": "The raiment of light",
+   "authors": [
+    "David Tansley"
+   ],
+   "isbn13": [
+    "9780140190526"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The Raiment of Light\""
+   ],
+   "origin": "staging/batches/olz-008.json"
+  },
+  {
    "title": "Siddhartha",
    "authors": [
     "Hermann Hesse"
@@ -1982,6 +6835,21 @@
     "edition 9780394404264 needs 2 independent source hosts of its own; found 1"
    ],
    "origin": "staging/batches/web-2026-10-27-a.vpsv"
+  },
+  {
+   "title": "Liber Null & Psychonaut",
+   "authors": [
+    "Peter J. Carroll"
+   ],
+   "isbn13": [
+    "9781578637669"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Liber Null and Psychonaut\""
+   ],
+   "origin": "staging/batches/web-2026-10-27-b.vpsv"
   },
   {
    "title": "The Power of Now",
@@ -2430,6 +7298,21 @@
    "origin": "staging/outside-candidates.psv:41"
   },
   {
+   "title": "Anatomy of the Spirit",
+   "authors": [
+    "Caroline Myss"
+   ],
+   "isbn13": [
+    "9780609800126"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "possible additional edition of published \"Anatomy of the spirit\" (ISBN 9780609800126 not in its edition list)"
+   ],
+   "origin": "staging/outside-candidates.psv:43"
+  },
+  {
    "title": "Tao Te Ching",
    "authors": [
     "Stephen Mitchell (translator)"
@@ -2618,6 +7501,21 @@
     "possible additional edition of published \"Revelations of divine love\" (ISBN 9780140432411 not in its edition list)"
    ],
    "origin": "staging/outside-candidates.psv:63"
+  },
+  {
+   "title": "Interior Castle",
+   "authors": [
+    "Teresa of Avila"
+   ],
+   "isbn13": [
+    "9780385036436"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "possible additional edition of published \"Interior Castle\" (ISBN 9780385036436 not in its edition list)"
+   ],
+   "origin": "staging/outside-candidates.psv:64"
   },
   {
    "title": "Mysticism",
@@ -2875,6 +7773,21 @@
    "origin": "staging/outside-candidates.psv:93"
   },
   {
+   "title": "Waking Up",
+   "authors": [
+    "Sam Harris"
+   ],
+   "isbn13": [
+    "9781451636017"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "possible additional edition of published \"Waking Up\" (ISBN 9781451636017 not in its edition list)"
+   ],
+   "origin": "staging/outside-candidates.psv:94"
+  },
+  {
    "title": "The Hero with a Thousand Faces",
    "authors": [
     "Joseph Campbell"
@@ -2888,6 +7801,22 @@
     "possible additional edition of published \"The Hero With a Thousand Faces\" (ISBN 9781577315933 not in its edition list)"
    ],
    "origin": "staging/outside-candidates.psv:95"
+  },
+  {
+   "title": "The Power of Myth",
+   "authors": [
+    "Joseph Campbell",
+    "Bill Moyers"
+   ],
+   "isbn13": [
+    "9780385418867"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "already published as \"The power of myth\""
+   ],
+   "origin": "staging/outside-candidates.psv:96"
   },
   {
    "title": "Mythology",
@@ -3219,6 +8148,290 @@
    "severity": "duplicate",
    "reasons": [
     "same title and author as \"Love, Medicine and Miracles\" (love-medicine-and-miracles) under a variant author spelling; kept the richer record"
+   ]
+  },
+  {
+   "title": "Play of consciousness =",
+   "authors": [
+    "Muktananda"
+   ],
+   "isbn13": [
+    "9780911307818"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "same title and author as \"Play of Consciousness\" (play-of-consciousness) under a variant author spelling; kept the richer record"
+   ]
+  },
+  {
+   "title": "Awakening to the sacred",
+   "authors": [
+    "Surya Das"
+   ],
+   "isbn13": [
+    "9780767902748"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "same title and author as \"Awakening to the Sacred\" (awakening-to-the-sacred) under a variant author spelling; kept the richer record"
+   ]
+  },
+  {
+   "title": "The bliss of inner fire",
+   "authors": [
+    "Thubten Yeshe"
+   ],
+   "isbn13": [
+    "9780861711369"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "same title and author as \"Bliss of Inner Fire\" (bliss-of-inner-fire) under a variant author spelling; kept the richer record"
+   ]
+  },
+  {
+   "title": "New Meditation Handbook",
+   "authors": [
+    "Geshe Kelsang Gyatso"
+   ],
+   "isbn13": [
+    "9781616060268"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "same title and author as \"The New Meditation Handbook\" (the-new-meditation-handbook) under a variant author spelling; kept the richer record"
+   ]
+  },
+  {
+   "title": "The history of my going for refuge",
+   "authors": [
+    "Bhikshu Sangharakshita"
+   ],
+   "isbn13": [
+    "9780904766332"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "same title and author as \"History of My Going for Refuge\" (history-of-my-going-for-refuge) under a variant author spelling; kept the richer record"
+   ]
+  },
+  {
+   "title": "Initiation into Hermetics",
+   "authors": [
+    "Gherhard Hanswille",
+    "Franz Bardon"
+   ],
+   "isbn13": [
+    "9781885928207"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "same title and author as \"Initiation into Hermetics\" (initiation-into-hermetics) under a variant author spelling; kept the verified record"
+   ]
+  },
+  {
+   "title": "Kybalion",
+   "authors": [
+    "Three Initiates Staff"
+   ],
+   "isbn13": [
+    "9780143131687"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "same title and author as \"The Kybalion\" (the-kybalion) under a variant author spelling; kept the verified record"
+   ]
+  },
+  {
+   "title": "Robert Graves",
+   "authors": [
+    "Richard Perceval Graves"
+   ],
+   "isbn13": [
+    "9780297796725"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "same title and author as \"Robert Graves\" (robert-graves) under a variant author spelling; kept the richer record"
+   ]
+  },
+  {
+   "title": "The law of attraction",
+   "authors": [
+    "Abraham (Spirit)"
+   ],
+   "isbn13": [
+    "9781401912277"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "same title and author as \"Law of Attraction\" (law-of-attraction) under a variant author spelling; kept the richer record"
+   ]
+  },
+  {
+   "title": "Law of Attraction",
+   "authors": [
+    "Esther Hicks",
+    "Jerry Hicks",
+    "Abraham"
+   ],
+   "isbn13": [
+    "9781401915322"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "same title and author as \"The Law of Attraction\" (the-law-of-attraction) under a variant author spelling; kept the richer record"
+   ]
+  },
+  {
+   "title": "This Thing Called You",
+   "authors": [
+    "Ernest Holmes"
+   ],
+   "isbn13": [
+    "9780917849688"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "same title and author as \"This Thing Called You\" (this-thing-called-you) under a variant author spelling; kept the richer record"
+   ]
+  },
+  {
+   "title": "Care of the Soul",
+   "authors": [
+    "Thomas Moore"
+   ],
+   "isbn13": [
+    "9780061835346"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "same title and author as \"Care of the soul\" (care-of-the-soul) under a variant author spelling; kept the richer record"
+   ]
+  },
+  {
+   "title": "Spiritual economics",
+   "authors": [
+    "Butterworth, Eric."
+   ],
+   "isbn13": [
+    "9780871591968"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "same title and author as \"Spiritual Economics\" (spiritual-economics) under a variant author spelling; kept the richer record"
+   ]
+  },
+  {
+   "title": "Reiki",
+   "authors": [
+    "William L. Rand"
+   ],
+   "isbn13": [
+    "9780963156709"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "same title and author as \"Reiki\" (reiki) under a variant author spelling; kept the richer record"
+   ]
+  },
+  {
+   "title": "The Kuan Yin oracle",
+   "authors": [
+    "Stephen L. Karcher"
+   ],
+   "isbn13": [
+    "9780751535310"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "same title and author as \"Kuan Yin Oracle\" (kuan-yin-oracle) under a variant author spelling; kept the richer record"
+   ]
+  },
+  {
+   "title": "Bowl of Saki",
+   "authors": [
+    "Hazrat Inayat Khan"
+   ],
+   "isbn13": [
+    "9781939681737"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "same title and author as \"The bowl of saki\" (the-bowl-of-saki) under a variant author spelling; kept the richer record"
+   ]
+  },
+  {
+   "title": "The power of Kabbalah",
+   "authors": [
+    "Yehudah Berg"
+   ],
+   "isbn13": [
+    "9781588720085"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "same title and author as \"The power of Kabbalah\" (the-power-of-kabbalah) under a variant author spelling; kept the richer record"
+   ]
+  },
+  {
+   "title": "The essentials of Indian philosophy",
+   "authors": [
+    "Mysore Hiriyanna"
+   ],
+   "isbn13": [
+    "9780041810288"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "same title and author as \"The Essentials of Indian Philosophy\" (the-essentials-of-indian-philosophy) under a variant author spelling; kept the richer record"
+   ]
+  },
+  {
+   "title": "One hundred unorthodox strategies",
+   "authors": [
+    "Ralph D. Sawyer"
+   ],
+   "isbn13": [
+    "9780813328607"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "same title and author as \"One hundred unorthodox strategies\" (one-hundred-unorthodox-strategies) under a variant author spelling; kept the richer record"
+   ]
+  },
+  {
+   "title": "Psychology of Kundalini Yoga",
+   "authors": [
+    "Sonu Shamdasani",
+    "Carl Gustav Jung"
+   ],
+   "isbn13": [
+    "9781400821914"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "same title and author as \"The psychology of Kundalini yoga\" (the-psychology-of-kundalini-yoga) under a variant author spelling; kept the richer record"
    ]
   }
  ]

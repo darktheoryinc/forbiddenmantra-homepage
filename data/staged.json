@@ -419,41 +419,6 @@
    "origin": "staging/outside-candidates.psv:42"
   },
   {
-   "title": "Anatomy of the Spirit",
-   "subtitle": "The Seven Stages of Power and Healing",
-   "authors": [
-    "Caroline Myss"
-   ],
-   "subjects": [
-    "subtle-body",
-    "holistic-traditions"
-   ],
-   "tradition": [
-    "western-esoteric"
-   ],
-   "level": "beginner",
-   "editions": [
-    {
-     "format": "paperback",
-     "language": "en",
-     "publisher": "Harmony",
-     "year": 1997,
-     "isbn13": "9780609800126",
-     "isbn10": "0609800124"
-    }
-   ],
-   "sources": [
-    {
-     "label": "Editorial shortlist (candidate; details unverified)",
-     "url": "staging/outside-candidates.psv#row43",
-     "accessed": "2026-10-27",
-     "supports": "candidate only"
-    }
-   ],
-   "status": "staged-needs-verification",
-   "origin": "staging/outside-candidates.psv:43"
-  },
-  {
    "title": "Tao Te Ching",
    "subtitle": "A Book About the Way and the Power of the Way",
    "authors": [
@@ -735,40 +700,6 @@
    ],
    "status": "staged-needs-verification",
    "origin": "staging/outside-candidates.psv:62"
-  },
-  {
-   "title": "Interior Castle",
-   "subtitle": "",
-   "authors": [
-    "Teresa of Avila"
-   ],
-   "subjects": [
-    "christian-mysticism"
-   ],
-   "tradition": [
-    "christian"
-   ],
-   "level": "intermediate",
-   "editions": [
-    {
-     "format": "paperback",
-     "language": "en",
-     "publisher": "Image",
-     "year": 1989,
-     "isbn13": "9780385036436",
-     "isbn10": "0385036434"
-    }
-   ],
-   "sources": [
-    {
-     "label": "Editorial shortlist (candidate; details unverified)",
-     "url": "staging/outside-candidates.psv#row64",
-     "accessed": "2026-10-27",
-     "supports": "candidate only"
-    }
-   ],
-   "status": "staged-needs-verification",
-   "origin": "staging/outside-candidates.psv:64"
   },
   {
    "title": "Psychology and Alchemy",
@@ -1185,76 +1116,6 @@
    ],
    "status": "staged-needs-verification",
    "origin": "staging/outside-candidates.psv:92"
-  },
-  {
-   "title": "Waking Up",
-   "subtitle": "A Guide to Spirituality Without Religion",
-   "authors": [
-    "Sam Harris"
-   ],
-   "subjects": [
-    "consciousness",
-    "mindfulness"
-   ],
-   "tradition": [
-    "secular"
-   ],
-   "level": "intermediate",
-   "editions": [
-    {
-     "format": "paperback",
-     "language": "en",
-     "publisher": "Simon & Schuster",
-     "year": 2015,
-     "isbn13": "9781451636017",
-     "isbn10": "1451636016"
-    }
-   ],
-   "sources": [
-    {
-     "label": "Editorial shortlist (candidate; details unverified)",
-     "url": "staging/outside-candidates.psv#row94",
-     "accessed": "2026-10-27",
-     "supports": "candidate only"
-    }
-   ],
-   "status": "staged-needs-verification",
-   "origin": "staging/outside-candidates.psv:94"
-  },
-  {
-   "title": "The Power of Myth",
-   "subtitle": "",
-   "authors": [
-    "Joseph Campbell",
-    "Bill Moyers"
-   ],
-   "subjects": [
-    "mythology"
-   ],
-   "tradition": [
-    "comparative"
-   ],
-   "level": "beginner",
-   "editions": [
-    {
-     "format": "paperback",
-     "language": "en",
-     "publisher": "Anchor",
-     "year": 1991,
-     "isbn13": "9780385418867",
-     "isbn10": "0385418868"
-    }
-   ],
-   "sources": [
-    {
-     "label": "Editorial shortlist (candidate; details unverified)",
-     "url": "staging/outside-candidates.psv#row96",
-     "accessed": "2026-10-27",
-     "supports": "candidate only"
-    }
-   ],
-   "status": "staged-needs-verification",
-   "origin": "staging/outside-candidates.psv:96"
   },
   {
    "title": "The Egyptian Book of the Dead",
