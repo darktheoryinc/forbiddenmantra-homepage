@@ -20706,99 +20706,6 @@
    ]
   },
   {
-   "id": "autobiography-of-a-yogi-yogananda-paramahansa",
-   "slug": "autobiography-of-a-yogi-yogananda-paramahansa",
-   "title": "Autobiography of a Yogi",
-   "subtitle": "",
-   "authors": [
-    "Yogananda Paramahansa"
-   ],
-   "subjects": [
-    "yoga"
-   ],
-   "tradition": [
-    "hindu"
-   ],
-   "level": "unrated",
-   "description": null,
-   "status": "verified",
-   "press": null,
-   "claims": [],
-   "editions": [
-    {
-     "language": "en",
-     "format": "paperback",
-     "publisher": "Prakash Book Depot",
-     "year": 2014,
-     "isbn13": "9788172345365",
-     "sources": [
-      {
-       "label": "Open Library record",
-       "url": "http://openlibrary.org/books/OL32465958M/Autobiography_of_a_Yogi",
-       "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
-      }
-     ],
-     "id": "9788172345365",
-     "isbn10": "8172345364"
-    },
-    {
-     "language": "en",
-     "format": "book",
-     "publisher": "Independently Published",
-     "year": 2018,
-     "isbn13": "9781717755636",
-     "title": "Autobiography of a Yogi (1946, by Paramahansa Yogananda)",
-     "note": "Binding not stated by the source record.",
-     "sources": [
-      {
-       "label": "Open Library record",
-       "url": "http://openlibrary.org/books/OL41452613M/Autobiography_of_a_Yogi_(1946_by_Paramahansa_Yogananda)",
-       "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
-      }
-     ],
-     "id": "9781717755636",
-     "isbn10": "1717755631"
-    },
-    {
-     "language": "en",
-     "format": "book",
-     "publisher": "Independently Published",
-     "year": 2021,
-     "isbn13": "9798537211358",
-     "title": "Autobiography of a Yogi Illustrated",
-     "note": "Binding not stated by the source record.",
-     "sources": [
-      {
-       "label": "Open Library record",
-       "url": "http://openlibrary.org/books/OL38444783M/Autobiography_of_a_Yogi_Illustrated",
-       "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
-      }
-     ],
-     "id": "9798537211358",
-     "isbn10": null
-    }
-   ],
-   "provenance": {
-    "tier": "open-library-catalogue",
-    "method": "single Open Library edition record passing the single-source gates",
-    "workKey": "/works/OL528094W"
-   },
-   "sources": [
-    {
-     "label": "Open Library record",
-     "url": "http://openlibrary.org/books/OL32465958M/Autobiography_of_a_Yogi",
-     "accessed": "2026-11-02",
-     "supports": "title, author, ISBN-13"
-    }
-   ],
-   "authorIds": [
-    "yogananda-paramahansa"
-   ]
-  },
-  {
    "id": "razors-edge",
    "slug": "razors-edge",
    "title": "Razor's Edge",
@@ -51257,62 +51164,6 @@
    ]
   },
   {
-   "id": "hinduism-and-buddhism-charles-eliot",
-   "slug": "hinduism-and-buddhism-charles-eliot",
-   "title": "Hinduism and Buddhism",
-   "subtitle": "an Historical Sketch. Volume 2",
-   "authors": [
-    "Charles Eliot"
-   ],
-   "subjects": [
-    "hinduism"
-   ],
-   "tradition": [
-    "hindu"
-   ],
-   "level": "unrated",
-   "description": null,
-   "status": "verified",
-   "press": null,
-   "claims": [],
-   "editions": [
-    {
-     "language": "en",
-     "format": "book",
-     "publisher": "Nova Science Publishers, Incorporated",
-     "year": 2020,
-     "isbn13": "9781536177435",
-     "note": "Binding not stated by the source record.",
-     "sources": [
-      {
-       "label": "Open Library record",
-       "url": "http://openlibrary.org/books/OL28102020M/Hinduism_and_Buddhism",
-       "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
-      }
-     ],
-     "id": "9781536177435",
-     "isbn10": "1536177431"
-    }
-   ],
-   "provenance": {
-    "tier": "open-library-catalogue",
-    "method": "single Open Library edition record passing the single-source gates",
-    "workKey": "/works/OL20753714W"
-   },
-   "sources": [
-    {
-     "label": "Open Library record",
-     "url": "http://openlibrary.org/books/OL28102020M/Hinduism_and_Buddhism",
-     "accessed": "2026-11-02",
-     "supports": "title, author, ISBN-13"
-    }
-   ],
-   "authorIds": [
-    "charles-eliot"
-   ]
-  },
-  {
    "id": "vedantasarah",
    "slug": "vedantasarah",
    "title": "Vedāntasāraḥ",
@@ -51628,62 +51479,6 @@
   {
    "id": "sayings-of-sri-ramakrishna",
    "slug": "sayings-of-sri-ramakrishna",
-   "title": "Sayings of Sri Ramakrishna",
-   "subtitle": "an exhaustive collection.",
-   "authors": [
-    "Ramakrishna"
-   ],
-   "subjects": [
-    "hinduism"
-   ],
-   "tradition": [
-    "hindu"
-   ],
-   "level": "unrated",
-   "description": null,
-   "status": "verified",
-   "press": null,
-   "claims": [],
-   "editions": [
-    {
-     "language": "en",
-     "format": "book",
-     "publisher": "Sri Ramakrishna Math",
-     "year": 2001,
-     "isbn13": "9788171203772",
-     "note": "Binding not stated by the source record.",
-     "sources": [
-      {
-       "label": "Open Library record",
-       "url": "http://openlibrary.org/books/OL22982681M/Sayings_of_Sri_Ramakrishna",
-       "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
-      }
-     ],
-     "id": "9788171203772",
-     "isbn10": "8171203779"
-    }
-   ],
-   "provenance": {
-    "tier": "open-library-catalogue",
-    "method": "single Open Library edition record passing the single-source gates",
-    "workKey": "/works/OL294258W"
-   },
-   "sources": [
-    {
-     "label": "Open Library record",
-     "url": "http://openlibrary.org/books/OL22982681M/Sayings_of_Sri_Ramakrishna",
-     "accessed": "2026-11-02",
-     "supports": "title, author, ISBN-13"
-    }
-   ],
-   "authorIds": [
-    "ramakrishna"
-   ]
-  },
-  {
-   "id": "sayings-of-sri-ramakrishna-sri-ramakrishna",
-   "slug": "sayings-of-sri-ramakrishna-sri-ramakrishna",
    "title": "Sayings of Sri Ramakrishna",
    "subtitle": "",
    "authors": [
@@ -65323,62 +65118,6 @@
    ]
   },
   {
-   "id": "visions-of-awakening-space-and-time-taigen-daniel-leighton",
-   "slug": "visions-of-awakening-space-and-time-taigen-daniel-leighton",
-   "title": "Visions of awakening space and time",
-   "subtitle": "Dōgen and the Lotus sutra",
-   "authors": [
-    "Taigen Daniel Leighton"
-   ],
-   "subjects": [
-    "buddhism"
-   ],
-   "tradition": [
-    "buddhist"
-   ],
-   "level": "unrated",
-   "description": null,
-   "status": "verified",
-   "press": null,
-   "claims": [],
-   "editions": [
-    {
-     "language": "en",
-     "format": "book",
-     "publisher": "Oxford University Press",
-     "year": 2007,
-     "isbn13": "9780195320930",
-     "note": "Binding not stated by the source record.",
-     "sources": [
-      {
-       "label": "Open Library record",
-       "url": "http://openlibrary.org/books/OL17234028M/Visions_of_awakening_space_and_time",
-       "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
-      }
-     ],
-     "id": "9780195320930",
-     "isbn10": "019532093X"
-    }
-   ],
-   "provenance": {
-    "tier": "open-library-catalogue",
-    "method": "single Open Library edition record passing the single-source gates",
-    "workKey": "/works/OL2685502W"
-   },
-   "sources": [
-    {
-     "label": "Open Library record",
-     "url": "http://openlibrary.org/books/OL17234028M/Visions_of_awakening_space_and_time",
-     "accessed": "2026-11-02",
-     "supports": "title, author, ISBN-13"
-    }
-   ],
-   "authorIds": [
-    "taigen-daniel-leighton"
-   ]
-  },
-  {
    "id": "abhidhamma-studies",
    "slug": "abhidhamma-studies",
    "title": "Abhidhamma studies",
@@ -67148,61 +66887,6 @@
    ],
    "authorIds": [
     "frances-hawker"
-   ]
-  },
-  {
-   "id": "the-sikhs-khushwant-singh",
-   "slug": "the-sikhs-khushwant-singh",
-   "title": "The Sikhs",
-   "subtitle": "",
-   "authors": [
-    "Khushwant Singh"
-   ],
-   "subjects": [
-    "sikhism"
-   ],
-   "tradition": [
-    "sikh"
-   ],
-   "level": "unrated",
-   "description": null,
-   "status": "verified",
-   "press": null,
-   "claims": [],
-   "editions": [
-    {
-     "language": "en",
-     "format": "hardcover",
-     "publisher": "Roli Books",
-     "year": 2004,
-     "isbn13": "9788174361325",
-     "sources": [
-      {
-       "label": "Open Library record",
-       "url": "http://openlibrary.org/books/OL9081338M/The_Sikhs",
-       "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
-      }
-     ],
-     "id": "9788174361325",
-     "isbn10": "8174361324"
-    }
-   ],
-   "provenance": {
-    "tier": "open-library-catalogue",
-    "method": "single Open Library edition record passing the single-source gates",
-    "workKey": "/works/OL318474W"
-   },
-   "sources": [
-    {
-     "label": "Open Library record",
-     "url": "http://openlibrary.org/books/OL9081338M/The_Sikhs",
-     "accessed": "2026-11-02",
-     "supports": "title, author, ISBN-13"
-    }
-   ],
-   "authorIds": [
-    "khushwant-singh"
    ]
   },
   {
@@ -71179,62 +70863,6 @@
    ],
    "authorIds": [
     "titus-burckhardt"
-   ]
-  },
-  {
-   "id": "the-essential-rumi-rumi-jalal-ad-din-muhammad-balkhi",
-   "slug": "the-essential-rumi-rumi-jalal-ad-din-muhammad-balkhi",
-   "title": "The essential Rumi",
-   "subtitle": "",
-   "authors": [
-    "Rumi (Jalāl ad-Dīn Muḥammad Balkhī)"
-   ],
-   "subjects": [
-    "islam-sufism"
-   ],
-   "tradition": [
-    "islamic"
-   ],
-   "level": "unrated",
-   "description": null,
-   "status": "verified",
-   "press": null,
-   "claims": [],
-   "editions": [
-    {
-     "language": "en",
-     "format": "book",
-     "publisher": "Castle Books",
-     "year": 1997,
-     "isbn13": "9780785808718",
-     "note": "Binding not stated by the source record.",
-     "sources": [
-      {
-       "label": "Open Library record",
-       "url": "http://openlibrary.org/books/OL18330318M/The_essential_Rumi",
-       "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
-      }
-     ],
-     "id": "9780785808718",
-     "isbn10": "078580871X"
-    }
-   ],
-   "provenance": {
-    "tier": "open-library-catalogue",
-    "method": "single Open Library edition record passing the single-source gates",
-    "workKey": "/works/OL18987W"
-   },
-   "sources": [
-    {
-     "label": "Open Library record",
-     "url": "http://openlibrary.org/books/OL18330318M/The_essential_Rumi",
-     "accessed": "2026-11-02",
-     "supports": "title, author, ISBN-13"
-    }
-   ],
-   "authorIds": [
-    "rumi-jalal-ad-din-muhammad-balkhi"
    ]
   },
   {
@@ -93099,62 +92727,6 @@
    ]
   },
   {
-   "id": "the-gnostic-discoveries-marvin-w-meyer",
-   "slug": "the-gnostic-discoveries-marvin-w-meyer",
-   "title": "The Gnostic discoveries",
-   "subtitle": "the impact of the Nag Hammadi library",
-   "authors": [
-    "Marvin W Meyer"
-   ],
-   "subjects": [
-    "gnosticism"
-   ],
-   "tradition": [
-    "gnostic"
-   ],
-   "level": "unrated",
-   "description": null,
-   "status": "verified",
-   "press": null,
-   "claims": [],
-   "editions": [
-    {
-     "language": "en",
-     "format": "book",
-     "publisher": "HarperSanFrancisco",
-     "year": 2005,
-     "isbn13": "9780060821081",
-     "note": "Binding not stated by the source record.",
-     "sources": [
-      {
-       "label": "Open Library record",
-       "url": "http://openlibrary.org/books/OL17188889M/The_Gnostic_discoveries",
-       "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
-      }
-     ],
-     "id": "9780060821081",
-     "isbn10": "0060821086"
-    }
-   ],
-   "provenance": {
-    "tier": "open-library-catalogue",
-    "method": "single Open Library edition record passing the single-source gates",
-    "workKey": "/works/OL12078977W"
-   },
-   "sources": [
-    {
-     "label": "Open Library record",
-     "url": "http://openlibrary.org/books/OL17188889M/The_Gnostic_discoveries",
-     "accessed": "2026-11-02",
-     "supports": "title, author, ISBN-13"
-    }
-   ],
-   "authorIds": [
-    "marvin-w-meyer"
-   ]
-  },
-  {
    "id": "coming-to-our-senses",
    "slug": "coming-to-our-senses",
    "title": "Coming to Our Senses",
@@ -93487,61 +93059,6 @@
   {
    "id": "the-secrets-of-judas",
    "slug": "the-secrets-of-judas",
-   "title": "The Secrets of Judas",
-   "subtitle": "",
-   "authors": [
-    "James M. Robinson"
-   ],
-   "subjects": [
-    "gnosticism"
-   ],
-   "tradition": [
-    "gnostic"
-   ],
-   "level": "unrated",
-   "description": null,
-   "status": "verified",
-   "press": null,
-   "claims": [],
-   "editions": [
-    {
-     "language": "en",
-     "format": "ebook",
-     "publisher": "HarperCollins",
-     "year": 2006,
-     "isbn13": "9780061205453",
-     "sources": [
-      {
-       "label": "Open Library record",
-       "url": "http://openlibrary.org/books/OL24274757M/The_Secrets_of_Judas",
-       "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
-      }
-     ],
-     "id": "9780061205453",
-     "isbn10": "0061205451"
-    }
-   ],
-   "provenance": {
-    "tier": "open-library-catalogue",
-    "method": "single Open Library edition record passing the single-source gates",
-    "workKey": "/works/OL274409W"
-   },
-   "sources": [
-    {
-     "label": "Open Library record",
-     "url": "http://openlibrary.org/books/OL24274757M/The_Secrets_of_Judas",
-     "accessed": "2026-11-02",
-     "supports": "title, author, ISBN-13"
-    }
-   ],
-   "authorIds": [
-    "james-m-robinson"
-   ]
-  },
-  {
-   "id": "the-secrets-of-judas-james-mcconkey-robinson",
-   "slug": "the-secrets-of-judas-james-mcconkey-robinson",
    "title": "The secrets of Judas",
    "subtitle": "the story of the misunderstood disciple and his lost gospel",
    "authors": [
@@ -103922,96 +103439,6 @@
     "gerald-b-gardner",
     "margaret-murray",
     "raymond-buckland"
-   ]
-  },
-  {
-   "id": "aradia",
-   "slug": "aradia",
-   "title": "Aradia",
-   "subtitle": "Gospel of the Witches",
-   "authors": [
-    "Charles Godfrey Leland"
-   ],
-   "subjects": [
-    "witchcraft"
-   ],
-   "tradition": [
-    "western-esoteric"
-   ],
-   "level": "unrated",
-   "description": null,
-   "status": "verified",
-   "press": null,
-   "claims": [],
-   "editions": [
-    {
-     "language": "en",
-     "format": "paperback",
-     "publisher": "Phoenix Publisher",
-     "year": 1990,
-     "isbn13": "9781595479785",
-     "sources": [
-      {
-       "label": "Open Library record",
-       "url": "http://openlibrary.org/books/OL8882375M/Aradia",
-       "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
-      }
-     ],
-     "id": "9781595479785",
-     "isbn10": "1595479783"
-    },
-    {
-     "language": "en",
-     "format": "paperback",
-     "publisher": "Cosimo Classics",
-     "year": 2007,
-     "isbn13": "9781602063020",
-     "title": "ARADIA",
-     "sources": [
-      {
-       "label": "Open Library record",
-       "url": "http://openlibrary.org/books/OL8905068M/ARADIA",
-       "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
-      }
-     ],
-     "id": "9781602063020",
-     "isbn10": "1602063028"
-    },
-    {
-     "language": "en",
-     "format": "paperback",
-     "publisher": "Phoenix Publishing (WA)",
-     "year": 1999,
-     "isbn13": "9780919345348",
-     "sources": [
-      {
-       "label": "Open Library record",
-       "url": "http://openlibrary.org/books/OL8342571M/Aradia",
-       "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
-      }
-     ],
-     "id": "9780919345348",
-     "isbn10": "0919345344"
-    }
-   ],
-   "provenance": {
-    "tier": "open-library-catalogue",
-    "method": "single Open Library edition record passing the single-source gates",
-    "workKey": "/works/OL8686272W"
-   },
-   "sources": [
-    {
-     "label": "Open Library record",
-     "url": "http://openlibrary.org/books/OL8882375M/Aradia",
-     "accessed": "2026-11-02",
-     "supports": "title, author, ISBN-13"
-    }
-   ],
-   "authorIds": [
-    "charles-godfrey-leland"
    ]
   },
   {
@@ -118141,61 +117568,6 @@
    ]
   },
   {
-   "id": "the-oriental-religions-in-roman-paganism",
-   "slug": "the-oriental-religions-in-roman-paganism",
-   "title": "The Oriental Religions in Roman Paganism.",
-   "subtitle": "",
-   "authors": [
-    "Franz Valery Marie Cumont"
-   ],
-   "subjects": [
-    "paganism"
-   ],
-   "tradition": [
-    "pagan"
-   ],
-   "level": "unrated",
-   "description": null,
-   "status": "verified",
-   "press": null,
-   "claims": [],
-   "editions": [
-    {
-     "language": "en",
-     "format": "paperback",
-     "publisher": "Dover Pubns",
-     "year": 1980,
-     "isbn13": "9780486203218",
-     "sources": [
-      {
-       "label": "Open Library record",
-       "url": "http://openlibrary.org/books/OL7634807M/The_Oriental_Religions_in_Roman_Paganism.",
-       "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
-      }
-     ],
-     "id": "9780486203218",
-     "isbn10": "0486203212"
-    }
-   ],
-   "provenance": {
-    "tier": "open-library-catalogue",
-    "method": "single Open Library edition record passing the single-source gates",
-    "workKey": "/works/OL5276098W"
-   },
-   "sources": [
-    {
-     "label": "Open Library record",
-     "url": "http://openlibrary.org/books/OL7634807M/The_Oriental_Religions_in_Roman_Paganism.",
-     "accessed": "2026-11-02",
-     "supports": "title, author, ISBN-13"
-    }
-   ],
-   "authorIds": [
-    "franz-valery-marie-cumont"
-   ]
-  },
-  {
    "id": "sexual-personae",
    "slug": "sexual-personae",
    "title": "Sexual Personae",
@@ -118309,65 +117681,6 @@
   {
    "id": "after-life-in-roman-paganism",
    "slug": "after-life-in-roman-paganism",
-   "title": "After life in Roman paganism",
-   "subtitle": "lectures delivered at Yale University on the Silliman Foundation",
-   "authors": [
-    "Franz Valery Marie Cumont"
-   ],
-   "subjects": [
-    "paganism"
-   ],
-   "tradition": [
-    "pagan"
-   ],
-   "level": "unrated",
-   "series": {
-    "name": "Mrs. Hepsa Ely Silliman memorial lectures / Yale University"
-   },
-   "description": null,
-   "status": "verified",
-   "press": null,
-   "claims": [],
-   "editions": [
-    {
-     "language": "en",
-     "format": "book",
-     "publisher": "Gorgias Press",
-     "year": 2002,
-     "isbn13": "9781931956376",
-     "note": "Binding not stated by the source record.",
-     "sources": [
-      {
-       "label": "Open Library record",
-       "url": "http://openlibrary.org/books/OL19138648M/After_life_in_Roman_paganism",
-       "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
-      }
-     ],
-     "id": "9781931956376",
-     "isbn10": "1931956375"
-    }
-   ],
-   "provenance": {
-    "tier": "open-library-catalogue",
-    "method": "single Open Library edition record passing the single-source gates",
-    "workKey": "/works/OL5276096W"
-   },
-   "sources": [
-    {
-     "label": "Open Library record",
-     "url": "http://openlibrary.org/books/OL19138648M/After_life_in_Roman_paganism",
-     "accessed": "2026-11-02",
-     "supports": "title, author, ISBN-13"
-    }
-   ],
-   "authorIds": [
-    "franz-valery-marie-cumont"
-   ]
-  },
-  {
-   "id": "after-life-in-roman-paganism-franz-cumont",
-   "slug": "after-life-in-roman-paganism-franz-cumont",
    "title": "After Life in Roman Paganism",
    "subtitle": "",
    "authors": [
@@ -154956,8 +154269,8 @@
    ]
   },
   {
-   "id": "aradia-charles-leland",
-   "slug": "aradia-charles-leland",
+   "id": "aradia",
+   "slug": "aradia",
    "title": "Aradia",
    "subtitle": "Gospel of the Witches",
    "authors": [
@@ -212410,62 +211723,6 @@
   {
    "id": "jesus-the-man",
    "slug": "jesus-the-man",
-   "title": "Jesus the man",
-   "subtitle": "",
-   "authors": [
-    "B. E. Thiering"
-   ],
-   "subjects": [
-    "ancient-texts"
-   ],
-   "tradition": [
-    "comparative"
-   ],
-   "level": "unrated",
-   "description": null,
-   "status": "verified",
-   "press": null,
-   "claims": [],
-   "editions": [
-    {
-     "language": "en",
-     "format": "book",
-     "publisher": "Corgi",
-     "year": 2005,
-     "isbn13": "9780552139502",
-     "note": "Binding not stated by the source record.",
-     "sources": [
-      {
-       "label": "Open Library record",
-       "url": "http://openlibrary.org/books/OL24396273M/Jesus_the_man",
-       "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
-      }
-     ],
-     "id": "9780552139502",
-     "isbn10": "0552139505"
-    }
-   ],
-   "provenance": {
-    "tier": "open-library-catalogue",
-    "method": "single Open Library edition record passing the single-source gates",
-    "workKey": "/works/OL15427627W"
-   },
-   "sources": [
-    {
-     "label": "Open Library record",
-     "url": "http://openlibrary.org/books/OL24396273M/Jesus_the_man",
-     "accessed": "2026-11-02",
-     "supports": "title, author, ISBN-13"
-    }
-   ],
-   "authorIds": [
-    "b-e-thiering"
-   ]
-  },
-  {
-   "id": "jesus-the-man-barbara-thiering",
-   "slug": "jesus-the-man-barbara-thiering",
    "title": "Jesus the Man",
    "subtitle": "",
    "authors": [
@@ -230762,16 +230019,6 @@
    "workIds": [
     "mysteries-of-mithra",
     "oriental-religions-in-roman-paganism",
-    "after-life-in-roman-paganism-franz-cumont"
-   ]
-  },
-  {
-   "id": "franz-valery-marie-cumont",
-   "name": "Franz Valery Marie Cumont",
-   "sortName": "Cumont, Franz Valery Marie",
-   "bio": null,
-   "workIds": [
-    "the-oriental-religions-in-roman-paganism",
     "after-life-in-roman-paganism"
    ]
   },
@@ -231984,15 +231231,6 @@
    "bio": null,
    "workIds": [
     "invitation-to-holistic-health"
-   ]
-  },
-  {
-   "id": "charles-eliot",
-   "name": "Charles Eliot",
-   "sortName": "Eliot, Charles",
-   "bio": null,
-   "workIds": [
-    "hinduism-and-buddhism-charles-eliot"
    ]
   },
   {
@@ -238521,21 +237759,12 @@
    ]
   },
   {
-   "id": "taigen-daniel-leighton",
-   "name": "Taigen Daniel Leighton",
-   "sortName": "Leighton, Taigen Daniel",
-   "bio": null,
-   "workIds": [
-    "visions-of-awakening-space-and-time-taigen-daniel-leighton"
-   ]
-  },
-  {
    "id": "charles-leland",
    "name": "Charles Leland",
    "sortName": "Leland, Charles",
    "bio": null,
    "workIds": [
-    "aradia-charles-leland"
+    "aradia"
    ]
   },
   {
@@ -238545,7 +237774,6 @@
    "bio": null,
    "workIds": [
     "gypsy-sorcery-and-fortune-telling",
-    "aradia",
     "aradia-or-the-gospel-of-the-witches"
    ]
   },
@@ -240530,11 +239758,10 @@
   },
   {
    "id": "marvin-w-meyer",
-   "name": "Marvin W Meyer",
-   "sortName": "Meyer, Marvin W",
+   "name": "Marvin W. Meyer",
+   "sortName": "Meyer, Marvin W.",
    "bio": null,
    "workIds": [
-    "the-gnostic-discoveries-marvin-w-meyer",
     "the-nag-hammadi-scriptures"
    ]
   },
@@ -242396,7 +241623,6 @@
    "sortName": "Paramahansa, Yogananda",
    "bio": null,
    "workIds": [
-    "autobiography-of-a-yogi-yogananda-paramahansa",
     "whispers-from-eternity",
     "the-bhagavad-gita-god-talks-with-arjuna",
     "journey-to-self-realization",
@@ -243666,21 +242892,12 @@
    ]
   },
   {
-   "id": "ramakrishna",
-   "name": "Ramakrishna",
-   "sortName": "Ramakrishna",
-   "bio": null,
-   "workIds": [
-    "sayings-of-sri-ramakrishna"
-   ]
-  },
-  {
    "id": "sri-ramakrishna",
    "name": "Sri Ramakrishna",
    "sortName": "Ramakrishna, Sri",
    "bio": null,
    "workIds": [
-    "sayings-of-sri-ramakrishna-sri-ramakrishna"
+    "sayings-of-sri-ramakrishna"
    ]
   },
   {
@@ -244217,7 +243434,6 @@
    "sortName": "Robinson, James M.",
    "bio": null,
    "workIds": [
-    "the-secrets-of-judas",
     "the-nag-hammadi-scriptures"
    ]
   },
@@ -244227,7 +243443,7 @@
    "sortName": "Robinson, James McConkey",
    "bio": null,
    "workIds": [
-    "the-secrets-of-judas-james-mcconkey-robinson"
+    "the-secrets-of-judas"
    ]
   },
   {
@@ -244552,7 +243768,6 @@
    "bio": null,
    "workIds": [
     "rumi-bridge-to-the-soul",
-    "the-essential-rumi-rumi-jalal-ad-din-muhammad-balkhi",
     "the-soul-of-rumi",
     "rumis-divan-of-shems-of-tabriz"
    ]
@@ -245922,8 +245137,7 @@
    "sortName": "Singh, Khushwant",
    "bio": null,
    "workIds": [
-    "a-history-of-the-sikhs",
-    "the-sikhs-khushwant-singh"
+    "a-history-of-the-sikhs"
    ]
   },
   {
@@ -247361,21 +246575,12 @@
    ]
   },
   {
-   "id": "b-e-thiering",
-   "name": "B. E. Thiering",
-   "sortName": "Thiering, B. E.",
-   "bio": null,
-   "workIds": [
-    "jesus-the-man"
-   ]
-  },
-  {
    "id": "barbara-thiering",
    "name": "Barbara Thiering",
    "sortName": "Thiering, Barbara",
    "bio": null,
    "workIds": [
-    "jesus-the-man-barbara-thiering"
+    "jesus-the-man"
    ]
   },
   {

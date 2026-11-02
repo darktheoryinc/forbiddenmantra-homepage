@@ -234,6 +234,20 @@ const finalWorks = [...works.values()].map((w) => {
   const { _origin, ...rest } = w;
   return { id: slug, slug, ...rest, authorIds: w.authors.map(slugify) };
 });
+// A single-source bulk work whose normalised title and at least one author-name word (4+ letters) match another work is the same book
+// listed under a variant author spelling ("Paramahansa Yogananda" / "Yogananda, Paramahansa"): keep the verified/richer record, queue the duplicate.
+{
+  const isBulk = (w) => w.provenance?.tier === 'open-library-catalogue';
+  const nameWords = (w) => new Set(w.authors.flatMap((a) => slugify(a).split('-')).filter((t) => t.length > 3));
+  const byT = new Map(); for (const w of finalWorks) { const k = normTitle(w.title); (byT.get(k) ?? byT.set(k, []).get(k)).push(w); }
+  const drop = new Set();
+  for (const g of byT.values()) if (g.length > 1) for (const b of g.filter(isBulk)) {
+    const bw = nameWords(b);
+    const twin = g.find((o) => o !== b && !drop.has(o) && [...nameWords(o)].some((t) => bw.has(t)) && (!isBulk(o) || o.editions.length > b.editions.length || (o.editions.length === b.editions.length && o.slug < b.slug)));
+    if (twin) { drop.add(b); queue(b, 'dedup', [`same title and author as "${twin.title}" (${twin.slug}) under a variant author spelling; kept the ${isBulk(twin) ? 'richer' : 'verified'} record`], 'duplicate'); }
+  }
+  if (drop.size) { for (let i = finalWorks.length - 1; i >= 0; i--) if (drop.has(finalWorks[i])) finalWorks.splice(i, 1); console.log(`dedup: ${drop.size} bulk work(s) dropped as variant-author duplicates`); }
+}
 // slug uniqueness
 const seen = new Set();
 // Verified (hand/web) works claim their plain slug first so published URLs never move; bulk works take the suffixed form.

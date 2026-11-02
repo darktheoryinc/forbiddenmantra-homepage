@@ -1,28 +1,28 @@
 {
  "summary": {
-  "works": 2962,
-  "purchaseLinks": 5779,
+  "works": 2950,
+  "purchaseLinks": 5763,
   "tagsExpected": {
    "amazon.com": "darktheoryinc-20"
   },
   "linkClasses": {
    "derived": 49,
    "verified": 469,
-   "search": 5261
+   "search": 5245
   },
   "linkErrors": 0,
   "worksWithValidTaggedProductLink": 214,
   "ofWhichSourceVerified": 176,
   "ofWhichIdentityVerifiedOffline": 38,
-  "worksWithSearchLinkOnly": 2746,
+  "worksWithSearchLinkOnly": 2734,
   "worksWithNoPurchaseLink": 2,
   "worksWithLinkErrors": 0,
-  "recordsNeedingManualReview": 2758,
+  "recordsNeedingManualReview": 2746,
   "manualReviewByReason": {
    "an edition identifier comes from a single source": 9,
-   "only a search link: needs the edition's ASIN or ISBN": 2748,
+   "only a search link: needs the edition's ASIN or ISBN": 2736,
    "owner-listed record: edition details unconfirmed": 4,
-   "e-book/audiobook edition has no verified Amazon link": 136
+   "e-book/audiobook edition has no verified Amazon link": 135
   },
   "liveCheckPending": 38
  },
@@ -121,13 +121,6 @@
    "title": "Seventy-Eight Degrees of Wisdom",
    "reasons": [
     "an edition identifier comes from a single source"
-   ]
-  },
-  {
-   "work": "autobiography-of-a-yogi-yogananda-paramahansa",
-   "title": "Autobiography of a Yogi",
-   "reasons": [
-    "only a search link: needs the edition's ASIN or ISBN"
    ]
   },
   {
@@ -3018,13 +3011,6 @@
    ]
   },
   {
-   "work": "hinduism-and-buddhism-charles-eliot",
-   "title": "Hinduism and Buddhism",
-   "reasons": [
-    "only a search link: needs the edition's ASIN or ISBN"
-   ]
-  },
-  {
    "work": "vedantasarah",
    "title": "Vedāntasāraḥ",
    "reasons": [
@@ -3061,13 +3047,6 @@
   },
   {
    "work": "sayings-of-sri-ramakrishna",
-   "title": "Sayings of Sri Ramakrishna",
-   "reasons": [
-    "only a search link: needs the edition's ASIN or ISBN"
-   ]
-  },
-  {
-   "work": "sayings-of-sri-ramakrishna-sri-ramakrishna",
    "title": "Sayings of Sri Ramakrishna",
    "reasons": [
     "only a search link: needs the edition's ASIN or ISBN"
@@ -4420,13 +4399,6 @@
    ]
   },
   {
-   "work": "visions-of-awakening-space-and-time-taigen-daniel-leighton",
-   "title": "Visions of awakening space and time",
-   "reasons": [
-    "only a search link: needs the edition's ASIN or ISBN"
-   ]
-  },
-  {
    "work": "abhidhamma-studies",
    "title": "Abhidhamma studies",
    "reasons": [
@@ -4597,13 +4569,6 @@
   {
    "work": "sikhism-in-india",
    "title": "Sikhism in India",
-   "reasons": [
-    "only a search link: needs the edition's ASIN or ISBN"
-   ]
-  },
-  {
-   "work": "the-sikhs-khushwant-singh",
-   "title": "The Sikhs",
    "reasons": [
     "only a search link: needs the edition's ASIN or ISBN"
    ]
@@ -4985,13 +4950,6 @@
   {
    "work": "an-introduction-to-sufism",
    "title": "An Introduction to Sufism",
-   "reasons": [
-    "only a search link: needs the edition's ASIN or ISBN"
-   ]
-  },
-  {
-   "work": "the-essential-rumi-rumi-jalal-ad-din-muhammad-balkhi",
-   "title": "The essential Rumi",
    "reasons": [
     "only a search link: needs the edition's ASIN or ISBN"
    ]
@@ -7122,13 +7080,6 @@
    ]
   },
   {
-   "work": "the-gnostic-discoveries-marvin-w-meyer",
-   "title": "The Gnostic discoveries",
-   "reasons": [
-    "only a search link: needs the edition's ASIN or ISBN"
-   ]
-  },
-  {
    "work": "coming-to-our-senses",
    "title": "Coming to Our Senses",
    "reasons": [
@@ -7160,14 +7111,6 @@
   },
   {
    "work": "the-secrets-of-judas",
-   "title": "The Secrets of Judas",
-   "reasons": [
-    "only a search link: needs the edition's ASIN or ISBN",
-    "e-book/audiobook edition has no verified Amazon link"
-   ]
-  },
-  {
-   "work": "the-secrets-of-judas-james-mcconkey-robinson",
    "title": "The secrets of Judas",
    "reasons": [
     "only a search link: needs the edition's ASIN or ISBN"
@@ -8176,13 +8119,6 @@
   {
    "work": "witchcraft-today",
    "title": "Witchcraft Today",
-   "reasons": [
-    "only a search link: needs the edition's ASIN or ISBN"
-   ]
-  },
-  {
-   "work": "aradia",
-   "title": "Aradia",
    "reasons": [
     "only a search link: needs the edition's ASIN or ISBN"
    ]
@@ -9551,13 +9487,6 @@
    ]
   },
   {
-   "work": "the-oriental-religions-in-roman-paganism",
-   "title": "The Oriental Religions in Roman Paganism.",
-   "reasons": [
-    "only a search link: needs the edition's ASIN or ISBN"
-   ]
-  },
-  {
    "work": "sexual-personae",
    "title": "Sexual Personae",
    "reasons": [
@@ -9573,13 +9502,6 @@
   },
   {
    "work": "after-life-in-roman-paganism",
-   "title": "After life in Roman paganism",
-   "reasons": [
-    "only a search link: needs the edition's ASIN or ISBN"
-   ]
-  },
-  {
-   "work": "after-life-in-roman-paganism-franz-cumont",
    "title": "After Life in Roman Paganism",
    "reasons": [
     "only a search link: needs the edition's ASIN or ISBN"
@@ -13160,7 +13082,7 @@
    ]
   },
   {
-   "work": "aradia-charles-leland",
+   "work": "aradia",
    "title": "Aradia",
    "reasons": [
     "only a search link: needs the edition's ASIN or ISBN"
@@ -18575,13 +18497,6 @@
   },
   {
    "work": "jesus-the-man",
-   "title": "Jesus the man",
-   "reasons": [
-    "only a search link: needs the edition's ASIN or ISBN"
-   ]
-  },
-  {
-   "work": "jesus-the-man-barbara-thiering",
    "title": "Jesus the Man",
    "reasons": [
     "only a search link: needs the edition's ASIN or ISBN"
@@ -20851,14 +20766,6 @@
    "errors": false
   },
   {
-   "work": "autobiography-of-a-yogi-yogananda-paramahansa",
-   "title": "Autobiography of a Yogi",
-   "press": false,
-   "links": 3,
-   "best": "search-only",
-   "errors": false
-  },
-  {
    "work": "razors-edge",
    "title": "Razor's Edge",
    "press": false,
@@ -24139,14 +24046,6 @@
    "errors": false
   },
   {
-   "work": "hinduism-and-buddhism-charles-eliot",
-   "title": "Hinduism and Buddhism",
-   "press": false,
-   "links": 1,
-   "best": "search-only",
-   "errors": false
-  },
-  {
    "work": "vedantasarah",
    "title": "Vedāntasāraḥ",
    "press": false,
@@ -24188,14 +24087,6 @@
   },
   {
    "work": "sayings-of-sri-ramakrishna",
-   "title": "Sayings of Sri Ramakrishna",
-   "press": false,
-   "links": 1,
-   "best": "search-only",
-   "errors": false
-  },
-  {
-   "work": "sayings-of-sri-ramakrishna-sri-ramakrishna",
    "title": "Sayings of Sri Ramakrishna",
    "press": false,
    "links": 2,
@@ -25723,14 +25614,6 @@
    "errors": false
   },
   {
-   "work": "visions-of-awakening-space-and-time-taigen-daniel-leighton",
-   "title": "Visions of awakening space and time",
-   "press": false,
-   "links": 1,
-   "best": "search-only",
-   "errors": false
-  },
-  {
    "work": "abhidhamma-studies",
    "title": "Abhidhamma studies",
    "press": false,
@@ -25927,14 +25810,6 @@
    "title": "Sikhism in India",
    "press": false,
    "links": 3,
-   "best": "search-only",
-   "errors": false
-  },
-  {
-   "work": "the-sikhs-khushwant-singh",
-   "title": "The Sikhs",
-   "press": false,
-   "links": 1,
    "best": "search-only",
    "errors": false
   },
@@ -26367,14 +26242,6 @@
    "title": "An Introduction to Sufism",
    "press": false,
    "links": 3,
-   "best": "search-only",
-   "errors": false
-  },
-  {
-   "work": "the-essential-rumi-rumi-jalal-ad-din-muhammad-balkhi",
-   "title": "The essential Rumi",
-   "press": false,
-   "links": 1,
    "best": "search-only",
    "errors": false
   },
@@ -28795,14 +28662,6 @@
    "errors": false
   },
   {
-   "work": "the-gnostic-discoveries-marvin-w-meyer",
-   "title": "The Gnostic discoveries",
-   "press": false,
-   "links": 1,
-   "best": "search-only",
-   "errors": false
-  },
-  {
    "work": "coming-to-our-senses",
    "title": "Coming to Our Senses",
    "press": false,
@@ -28836,14 +28695,6 @@
   },
   {
    "work": "the-secrets-of-judas",
-   "title": "The Secrets of Judas",
-   "press": false,
-   "links": 1,
-   "best": "search-only",
-   "errors": false
-  },
-  {
-   "work": "the-secrets-of-judas-james-mcconkey-robinson",
    "title": "The secrets of Judas",
    "press": false,
    "links": 2,
@@ -29983,14 +29834,6 @@
    "title": "Witchcraft Today",
    "press": false,
    "links": 1,
-   "best": "search-only",
-   "errors": false
-  },
-  {
-   "work": "aradia",
-   "title": "Aradia",
-   "press": false,
-   "links": 3,
    "best": "search-only",
    "errors": false
   },
@@ -31523,14 +31366,6 @@
    "errors": false
   },
   {
-   "work": "the-oriental-religions-in-roman-paganism",
-   "title": "The Oriental Religions in Roman Paganism.",
-   "press": false,
-   "links": 1,
-   "best": "search-only",
-   "errors": false
-  },
-  {
    "work": "sexual-personae",
    "title": "Sexual Personae",
    "press": false,
@@ -31548,14 +31383,6 @@
   },
   {
    "work": "after-life-in-roman-paganism",
-   "title": "After life in Roman paganism",
-   "press": false,
-   "links": 1,
-   "best": "search-only",
-   "errors": false
-  },
-  {
-   "work": "after-life-in-roman-paganism-franz-cumont",
    "title": "After Life in Roman Paganism",
    "press": false,
    "links": 2,
@@ -35627,7 +35454,7 @@
    "errors": false
   },
   {
-   "work": "aradia-charles-leland",
+   "work": "aradia",
    "title": "Aradia",
    "press": false,
    "links": 4,
@@ -41788,14 +41615,6 @@
   },
   {
    "work": "jesus-the-man",
-   "title": "Jesus the man",
-   "press": false,
-   "links": 1,
-   "best": "search-only",
-   "errors": false
-  },
-  {
-   "work": "jesus-the-man-barbara-thiering",
    "title": "Jesus the Man",
    "press": false,
    "links": 2,
@@ -50292,45 +50111,6 @@
    "issues": [],
    "verdict": "blocked",
    "url": "https://www.amazon.com/dp/0345431707?tag=…"
-  },
-  {
-   "work": "autobiography-of-a-yogi-yogananda-paramahansa",
-   "workTitle": "Autobiography of a Yogi",
-   "press": false,
-   "isbn13": "9788172345365",
-   "edAsin": "",
-   "market": "amazon.com",
-   "edition": "paperback en 9788172345365",
-   "class": "search",
-   "issues": [],
-   "verdict": null,
-   "url": "https://www.amazon.com/s?k=9788172345365&i=stripbooks&tag=…"
-  },
-  {
-   "work": "autobiography-of-a-yogi-yogananda-paramahansa",
-   "workTitle": "Autobiography of a Yogi",
-   "press": false,
-   "isbn13": "9781717755636",
-   "edAsin": "",
-   "market": "amazon.com",
-   "edition": "book en 9781717755636",
-   "class": "search",
-   "issues": [],
-   "verdict": null,
-   "url": "https://www.amazon.com/s?k=9781717755636&i=stripbooks&tag=…"
-  },
-  {
-   "work": "autobiography-of-a-yogi-yogananda-paramahansa",
-   "workTitle": "Autobiography of a Yogi",
-   "press": false,
-   "isbn13": "9798537211358",
-   "edAsin": "",
-   "market": "amazon.com",
-   "edition": "book en 9798537211358",
-   "class": "search",
-   "issues": [],
-   "verdict": null,
-   "url": "https://www.amazon.com/s?k=9798537211358&i=stripbooks&tag=…"
   },
   {
    "work": "razors-edge",
@@ -61019,19 +60799,6 @@
    "url": "https://www.amazon.com/s?k=9781935965534&i=stripbooks&tag=…"
   },
   {
-   "work": "hinduism-and-buddhism-charles-eliot",
-   "workTitle": "Hinduism and Buddhism",
-   "press": false,
-   "isbn13": "9781536177435",
-   "edAsin": "",
-   "market": "amazon.com",
-   "edition": "book en 9781536177435",
-   "class": "search",
-   "issues": [],
-   "verdict": null,
-   "url": "https://www.amazon.com/s?k=9781536177435&i=stripbooks&tag=…"
-  },
-  {
    "work": "vedantasarah",
    "workTitle": "Vedāntasāraḥ",
    "press": false,
@@ -61126,19 +60893,6 @@
    "work": "sayings-of-sri-ramakrishna",
    "workTitle": "Sayings of Sri Ramakrishna",
    "press": false,
-   "isbn13": "9788171203772",
-   "edAsin": "",
-   "market": "amazon.com",
-   "edition": "book en 9788171203772",
-   "class": "search",
-   "issues": [],
-   "verdict": null,
-   "url": "https://www.amazon.com/s?k=9788171203772&i=stripbooks&tag=…"
-  },
-  {
-   "work": "sayings-of-sri-ramakrishna-sri-ramakrishna",
-   "workTitle": "Sayings of Sri Ramakrishna",
-   "press": false,
    "isbn13": "9788178231464",
    "edAsin": "",
    "market": "amazon.com",
@@ -61149,7 +60903,7 @@
    "url": "https://www.amazon.com/s?k=9788178231464&i=stripbooks&tag=…"
   },
   {
-   "work": "sayings-of-sri-ramakrishna-sri-ramakrishna",
+   "work": "sayings-of-sri-ramakrishna",
    "workTitle": "Sayings of Sri Ramakrishna",
    "press": false,
    "isbn13": "9780874814316",
@@ -65738,19 +65492,6 @@
    "url": "https://www.amazon.com/s?k=9780195383379&i=stripbooks&tag=…"
   },
   {
-   "work": "visions-of-awakening-space-and-time-taigen-daniel-leighton",
-   "workTitle": "Visions of awakening space and time",
-   "press": false,
-   "isbn13": "9780195320930",
-   "edAsin": "",
-   "market": "amazon.com",
-   "edition": "book en 9780195320930",
-   "class": "search",
-   "issues": [],
-   "verdict": null,
-   "url": "https://www.amazon.com/s?k=9780195320930&i=stripbooks&tag=…"
-  },
-  {
    "work": "abhidhamma-studies",
    "workTitle": "Abhidhamma studies",
    "press": false,
@@ -66334,19 +66075,6 @@
    "issues": [],
    "verdict": null,
    "url": "https://www.amazon.com/s?k=9780778750284&i=stripbooks&tag=…"
-  },
-  {
-   "work": "the-sikhs-khushwant-singh",
-   "workTitle": "The Sikhs",
-   "press": false,
-   "isbn13": "9788174361325",
-   "edAsin": "",
-   "market": "amazon.com",
-   "edition": "hardcover en 9788174361325",
-   "class": "search",
-   "issues": [],
-   "verdict": null,
-   "url": "https://www.amazon.com/s?k=9788174361325&i=stripbooks&tag=…"
   },
   {
    "work": "buddhists-hindus-and-sikhs-in-america",
@@ -67725,19 +67453,6 @@
    "issues": [],
    "verdict": null,
    "url": "https://www.amazon.com/s?k=9781852740702&i=stripbooks&tag=…"
-  },
-  {
-   "work": "the-essential-rumi-rumi-jalal-ad-din-muhammad-balkhi",
-   "workTitle": "The essential Rumi",
-   "press": false,
-   "isbn13": "9780785808718",
-   "edAsin": "",
-   "market": "amazon.com",
-   "edition": "book en 9780785808718",
-   "class": "search",
-   "issues": [],
-   "verdict": null,
-   "url": "https://www.amazon.com/s?k=9780785808718&i=stripbooks&tag=…"
   },
   {
    "work": "rumi",
@@ -75163,19 +74878,6 @@
    "url": "https://www.amazon.com/s?k=9780060858322&i=stripbooks&tag=…"
   },
   {
-   "work": "the-gnostic-discoveries-marvin-w-meyer",
-   "workTitle": "The Gnostic discoveries",
-   "press": false,
-   "isbn13": "9780060821081",
-   "edAsin": "",
-   "market": "amazon.com",
-   "edition": "book en 9780060821081",
-   "class": "search",
-   "issues": [],
-   "verdict": null,
-   "url": "https://www.amazon.com/s?k=9780060821081&i=stripbooks&tag=…"
-  },
-  {
    "work": "coming-to-our-senses",
    "workTitle": "Coming to Our Senses",
    "press": false,
@@ -75307,19 +75009,6 @@
   },
   {
    "work": "the-secrets-of-judas",
-   "workTitle": "The Secrets of Judas",
-   "press": false,
-   "isbn13": "9780061205453",
-   "edAsin": "",
-   "market": "amazon.com",
-   "edition": "ebook en 9780061205453",
-   "class": "search",
-   "issues": [],
-   "verdict": null,
-   "url": "https://www.amazon.com/s?k=9780061205453&i=stripbooks&tag=…"
-  },
-  {
-   "work": "the-secrets-of-judas-james-mcconkey-robinson",
    "workTitle": "The secrets of Judas",
    "press": false,
    "isbn13": "9780061170638",
@@ -75332,7 +75021,7 @@
    "url": "https://www.amazon.com/s?k=9780061170638&i=stripbooks&tag=…"
   },
   {
-   "work": "the-secrets-of-judas-james-mcconkey-robinson",
+   "work": "the-secrets-of-judas",
    "workTitle": "The secrets of Judas",
    "press": false,
    "isbn13": "9780061170645",
@@ -78866,45 +78555,6 @@
    "issues": [],
    "verdict": null,
    "url": "https://www.amazon.com/s?k=9781585094325&i=stripbooks&tag=…"
-  },
-  {
-   "work": "aradia",
-   "workTitle": "Aradia",
-   "press": false,
-   "isbn13": "9781595479785",
-   "edAsin": "",
-   "market": "amazon.com",
-   "edition": "paperback en 9781595479785",
-   "class": "search",
-   "issues": [],
-   "verdict": null,
-   "url": "https://www.amazon.com/s?k=9781595479785&i=stripbooks&tag=…"
-  },
-  {
-   "work": "aradia",
-   "workTitle": "Aradia",
-   "press": false,
-   "isbn13": "9781602063020",
-   "edAsin": "",
-   "market": "amazon.com",
-   "edition": "paperback en 9781602063020",
-   "class": "search",
-   "issues": [],
-   "verdict": null,
-   "url": "https://www.amazon.com/s?k=9781602063020&i=stripbooks&tag=…"
-  },
-  {
-   "work": "aradia",
-   "workTitle": "Aradia",
-   "press": false,
-   "isbn13": "9780919345348",
-   "edAsin": "",
-   "market": "amazon.com",
-   "edition": "paperback en 9780919345348",
-   "class": "search",
-   "issues": [],
-   "verdict": null,
-   "url": "https://www.amazon.com/s?k=9780919345348&i=stripbooks&tag=…"
   },
   {
    "work": "witch-baby",
@@ -83782,19 +83432,6 @@
    "url": "https://www.amazon.com/s?k=9780760712108&i=stripbooks&tag=…"
   },
   {
-   "work": "the-oriental-religions-in-roman-paganism",
-   "workTitle": "The Oriental Religions in Roman Paganism.",
-   "press": false,
-   "isbn13": "9780486203218",
-   "edAsin": "",
-   "market": "amazon.com",
-   "edition": "paperback en 9780486203218",
-   "class": "search",
-   "issues": [],
-   "verdict": null,
-   "url": "https://www.amazon.com/s?k=9780486203218&i=stripbooks&tag=…"
-  },
-  {
    "work": "sexual-personae",
    "workTitle": "Sexual Personae",
    "press": false,
@@ -83822,19 +83459,6 @@
   },
   {
    "work": "after-life-in-roman-paganism",
-   "workTitle": "After life in Roman paganism",
-   "press": false,
-   "isbn13": "9781931956376",
-   "edAsin": "",
-   "market": "amazon.com",
-   "edition": "book en 9781931956376",
-   "class": "search",
-   "issues": [],
-   "verdict": null,
-   "url": "https://www.amazon.com/s?k=9781931956376&i=stripbooks&tag=…"
-  },
-  {
-   "work": "after-life-in-roman-paganism-franz-cumont",
    "workTitle": "After Life in Roman Paganism",
    "press": false,
    "isbn13": "9781596051720",
@@ -83847,7 +83471,7 @@
    "url": "https://www.amazon.com/s?k=9781596051720&i=stripbooks&tag=…"
   },
   {
-   "work": "after-life-in-roman-paganism-franz-cumont",
+   "work": "after-life-in-roman-paganism",
    "workTitle": "After Life in Roman Paganism",
    "press": false,
    "isbn13": "9781597524537",
@@ -96249,7 +95873,7 @@
    "url": "https://www.amazon.com/s?k=9781283070621&i=stripbooks&tag=…"
   },
   {
-   "work": "aradia-charles-leland",
+   "work": "aradia",
    "workTitle": "Aradia",
    "press": false,
    "isbn13": "9781542912969",
@@ -96262,7 +95886,7 @@
    "url": "https://www.amazon.com/s?k=9781542912969&i=stripbooks&tag=…"
   },
   {
-   "work": "aradia-charles-leland",
+   "work": "aradia",
    "workTitle": "Aradia",
    "press": false,
    "isbn13": "9781952900464",
@@ -96275,7 +95899,7 @@
    "url": "https://www.amazon.com/s?k=9781952900464&i=stripbooks&tag=…"
   },
   {
-   "work": "aradia-charles-leland",
+   "work": "aradia",
    "workTitle": "Aradia",
    "press": false,
    "isbn13": "9781438242330",
@@ -96288,7 +95912,7 @@
    "url": "https://www.amazon.com/s?k=9781438242330&i=stripbooks&tag=…"
   },
   {
-   "work": "aradia-charles-leland",
+   "work": "aradia",
    "workTitle": "Aradia",
    "press": false,
    "isbn13": "9781500228729",
@@ -116322,19 +115946,6 @@
   },
   {
    "work": "jesus-the-man",
-   "workTitle": "Jesus the man",
-   "press": false,
-   "isbn13": "9780552139502",
-   "edAsin": "",
-   "market": "amazon.com",
-   "edition": "book en 9780552139502",
-   "class": "search",
-   "issues": [],
-   "verdict": null,
-   "url": "https://www.amazon.com/s?k=9780552139502&i=stripbooks&tag=…"
-  },
-  {
-   "work": "jesus-the-man-barbara-thiering",
    "workTitle": "Jesus the Man",
    "press": false,
    "isbn13": "9780552163941",
@@ -116347,7 +115958,7 @@
    "url": "https://www.amazon.com/s?k=9780552163941&i=stripbooks&tag=…"
   },
   {
-   "work": "jesus-the-man-barbara-thiering",
+   "work": "jesus-the-man",
    "workTitle": "Jesus the Man",
    "press": false,
    "isbn13": "9781409001423",

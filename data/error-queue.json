@@ -2062,6 +2062,178 @@
     "already published as \"Popol Vuh\""
    ],
    "origin": "staging/outside-candidates.psv:101"
+  },
+  {
+   "title": "Autobiography of a Yogi",
+   "authors": [
+    "Yogananda Paramahansa"
+   ],
+   "isbn13": [
+    "9788172345365",
+    "9781717755636",
+    "9798537211358"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "same title and author as \"Autobiography of a Yogi\" (autobiography-of-a-yogi) under a variant author spelling; kept the verified record"
+   ]
+  },
+  {
+   "title": "Hinduism and Buddhism",
+   "authors": [
+    "Charles Eliot"
+   ],
+   "isbn13": [
+    "9781536177435"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "same title and author as \"Hinduism And Buddhism\" (hinduism-and-buddhism) under a variant author spelling; kept the richer record"
+   ]
+  },
+  {
+   "title": "Sayings of Sri Ramakrishna",
+   "authors": [
+    "Ramakrishna"
+   ],
+   "isbn13": [
+    "9788171203772"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "same title and author as \"Sayings of Sri Ramakrishna\" (sayings-of-sri-ramakrishna) under a variant author spelling; kept the richer record"
+   ]
+  },
+  {
+   "title": "Visions of awakening space and time",
+   "authors": [
+    "Taigen Daniel Leighton"
+   ],
+   "isbn13": [
+    "9780195320930"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "same title and author as \"Visions of Awakening Space and Time\" (visions-of-awakening-space-and-time) under a variant author spelling; kept the richer record"
+   ]
+  },
+  {
+   "title": "The Sikhs",
+   "authors": [
+    "Khushwant Singh"
+   ],
+   "isbn13": [
+    "9788174361325"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "same title and author as \"The Sikhs\" (the-sikhs) under a variant author spelling; kept the richer record"
+   ]
+  },
+  {
+   "title": "The essential Rumi",
+   "authors": [
+    "Rumi (Jalāl ad-Dīn Muḥammad Balkhī)"
+   ],
+   "isbn13": [
+    "9780785808718"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "same title and author as \"The Essential Rumi\" (the-essential-rumi) under a variant author spelling; kept the verified record"
+   ]
+  },
+  {
+   "title": "The Gnostic discoveries",
+   "authors": [
+    "Marvin W Meyer"
+   ],
+   "isbn13": [
+    "9780060821081"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "same title and author as \"The Gnostic Discoveries\" (the-gnostic-discoveries) under a variant author spelling; kept the richer record"
+   ]
+  },
+  {
+   "title": "The Secrets of Judas",
+   "authors": [
+    "James M. Robinson"
+   ],
+   "isbn13": [
+    "9780061205453"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "same title and author as \"The secrets of Judas\" (the-secrets-of-judas) under a variant author spelling; kept the richer record"
+   ]
+  },
+  {
+   "title": "Aradia",
+   "authors": [
+    "Charles Godfrey Leland"
+   ],
+   "isbn13": [
+    "9781595479785",
+    "9781602063020",
+    "9780919345348"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "same title and author as \"Aradia\" (aradia) under a variant author spelling; kept the richer record"
+   ]
+  },
+  {
+   "title": "The Oriental Religions in Roman Paganism.",
+   "authors": [
+    "Franz Valery Marie Cumont"
+   ],
+   "isbn13": [
+    "9780486203218"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "same title and author as \"Oriental Religions in Roman Paganism\" (oriental-religions-in-roman-paganism) under a variant author spelling; kept the richer record"
+   ]
+  },
+  {
+   "title": "After life in Roman paganism",
+   "authors": [
+    "Franz Valery Marie Cumont"
+   ],
+   "isbn13": [
+    "9781931956376"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "same title and author as \"After Life in Roman Paganism\" (after-life-in-roman-paganism) under a variant author spelling; kept the richer record"
+   ]
+  },
+  {
+   "title": "Jesus the man",
+   "authors": [
+    "B. E. Thiering"
+   ],
+   "isbn13": [
+    "9780552139502"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "same title and author as \"Jesus the Man\" (jesus-the-man) under a variant author spelling; kept the richer record"
+   ]
   }
  ]
 }
