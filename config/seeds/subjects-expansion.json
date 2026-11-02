@@ -241,13 +241,6 @@
   },
   {
    "kind": "subject",
-   "value": "affirmations",
-   "department": "metaphysics",
-   "tradition": "western-esoteric",
-   "level": "unrated"
-  },
-  {
-   "kind": "subject",
    "value": "ancient astronauts",
    "department": "alternative-history",
    "tradition": "mythic",
@@ -298,13 +291,6 @@
   {
    "kind": "subject",
    "value": "ancient mysteries",
-   "department": "alternative-history",
-   "tradition": "mythic",
-   "level": "unrated"
-  },
-  {
-   "kind": "subject",
-   "value": "sumerian",
    "department": "alternative-history",
    "tradition": "mythic",
    "level": "unrated"
@@ -801,20 +787,6 @@
   },
   {
    "kind": "subject",
-   "value": "om",
-   "department": "sanskrit-mantras",
-   "tradition": "hindu",
-   "level": "unrated"
-  },
-  {
-   "kind": "subject",
-   "value": "sanskrit",
-   "department": "sanskrit-mantras",
-   "tradition": "hindu",
-   "level": "unrated"
-  },
-  {
-   "kind": "subject",
    "value": "sanskrit chanting",
    "department": "sanskrit-mantras",
    "tradition": "hindu",
@@ -886,13 +858,6 @@
   {
    "kind": "subject",
    "value": "pseudepigrapha",
-   "department": "ancient-texts",
-   "tradition": "comparative",
-   "level": "unrated"
-  },
-  {
-   "kind": "subject",
-   "value": "coptic",
    "department": "ancient-texts",
    "tradition": "comparative",
    "level": "unrated"
@@ -1410,20 +1375,6 @@
   },
   {
    "kind": "subject",
-   "value": "habits",
-   "department": "personal-growth",
-   "tradition": "secular",
-   "level": "unrated"
-  },
-  {
-   "kind": "subject",
-   "value": "motivation",
-   "department": "personal-growth",
-   "tradition": "secular",
-   "level": "unrated"
-  },
-  {
-   "kind": "subject",
    "value": "personal transformation",
    "department": "personal-growth",
    "tradition": "secular",
@@ -1453,13 +1404,6 @@
   {
    "kind": "subject",
    "value": "intuition",
-   "department": "personal-growth",
-   "tradition": "secular",
-   "level": "unrated"
-  },
-  {
-   "kind": "subject",
-   "value": "purpose",
    "department": "personal-growth",
    "tradition": "secular",
    "level": "unrated"
@@ -1530,13 +1474,6 @@
   {
    "kind": "subject",
    "value": "insomnia",
-   "department": "sleep-stress",
-   "tradition": "secular",
-   "level": "unrated"
-  },
-  {
-   "kind": "subject",
-   "value": "sleep",
    "department": "sleep-stress",
    "tradition": "secular",
    "level": "unrated"
@@ -1642,13 +1579,6 @@
   {
    "kind": "subject",
    "value": "self-inquiry",
-   "department": "consciousness",
-   "tradition": "nondual",
-   "level": "unrated"
-  },
-  {
-   "kind": "subject",
-   "value": "awareness",
    "department": "consciousness",
    "tradition": "nondual",
    "level": "unrated"

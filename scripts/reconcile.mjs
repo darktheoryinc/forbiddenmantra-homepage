@@ -19,6 +19,7 @@ const DATA = path.resolve(ROOT, process.env.FM_DATA ?? 'data');
 const rd = (p) => JSON.parse(fs.readFileSync(path.join(ROOT, p), 'utf8'));
 const rules = rd('config/import-rules.json'), submap = rd('config/subject-map.json').rules.map(([re, d, t]) => [new RegExp(re, 'i'), d, t]);
 const tax = rd('data/taxonomy.json'), deptIds = new Set(tax.departments.map((d) => d.id));
+const blockP = (rules.blockPublisherPatterns ?? []).map((p) => new RegExp(p, 'i'));
 const blockT = rules.blockTitlePatterns.map((p) => new RegExp(p, 'i')), blockS = rules.blockSubjectPatterns.map((p) => new RegExp(p, 'i'));
 const argv = process.argv.slice(2);
 const arg = (n, d) => { const i = argv.indexOf('--' + n); return i < 0 ? d : argv[i + 1]; };
@@ -57,6 +58,8 @@ for (let o of ol) {
   if (haveIsbn.has(o.isbn13)) { hold(o, 'already published (ISBN)'); continue; }
   const bad = blockT.find((re) => re.test(o.title)) ?? (o.subjects ?? []).map((s) => blockS.find((re) => re.test(s))).find(Boolean);
   if (bad) { hold(o, `quality rule: ${bad}`); continue; }
+  const badPub = o.publisher && blockP.find((re) => re.test(o.publisher));
+  if (badPub) { hold(o, `quality rule: publisher ${badPub}`); continue; }
   if (!g && !SINGLE) { hold(o, 'single source only (no Google Books match yet)'); continue; }
   if (!g) { // single-source gates: every field stated by Open Library, internally consistent, and popular enough to be a real, circulating book
     const why = !o.language || o.language !== 'en' ? 'language not stated as English'
