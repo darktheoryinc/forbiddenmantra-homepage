@@ -1,0 +1,1706 @@
+{
+ "_doc": "Expansion seeds added 2026-11-02 (Ayurveda, energy healing, metaphysics, alternative history and deeper coverage of the core spiritual subjects).",
+ "seeds": [
+  {
+   "kind": "subject",
+   "value": "ayurveda",
+   "department": "ayurveda",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "ayurvedic medicine",
+   "department": "ayurveda",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "ayurvedic cooking",
+   "department": "ayurveda",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "herbal medicine",
+   "department": "ayurveda",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "herbalism",
+   "department": "ayurveda",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "medicinal plants",
+   "department": "ayurveda",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "aromatherapy",
+   "department": "ayurveda",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "essential oils",
+   "department": "ayurveda",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "reiki",
+   "department": "energy-healing",
+   "tradition": "comparative",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "chakras",
+   "department": "energy-healing",
+   "tradition": "comparative",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "energy healing",
+   "department": "energy-healing",
+   "tradition": "comparative",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "crystals",
+   "department": "energy-healing",
+   "tradition": "comparative",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "crystal healing",
+   "department": "energy-healing",
+   "tradition": "comparative",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "pranic healing",
+   "department": "energy-healing",
+   "tradition": "comparative",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "acupressure",
+   "department": "energy-healing",
+   "tradition": "comparative",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "acupuncture",
+   "department": "energy-healing",
+   "tradition": "comparative",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "auras",
+   "department": "energy-healing",
+   "tradition": "comparative",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "metaphysics",
+   "department": "metaphysics",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "new thought",
+   "department": "metaphysics",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "law of attraction",
+   "department": "metaphysics",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "spirituality",
+   "department": "metaphysics",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "self-realization",
+   "department": "metaphysics",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "reincarnation",
+   "department": "metaphysics",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "near-death experiences",
+   "department": "metaphysics",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "afterlife",
+   "department": "metaphysics",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "psychic ability",
+   "department": "metaphysics",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "extrasensory perception",
+   "department": "metaphysics",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "astral projection",
+   "department": "metaphysics",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "out-of-body experience",
+   "department": "metaphysics",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "theosophy",
+   "department": "metaphysics",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "spiritualism",
+   "department": "metaphysics",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "mediumship",
+   "department": "metaphysics",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "parapsychology",
+   "department": "metaphysics",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "manifestation",
+   "department": "metaphysics",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "affirmations",
+   "department": "metaphysics",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "ancient astronauts",
+   "department": "alternative-history",
+   "tradition": "mythic",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "lost civilizations",
+   "department": "alternative-history",
+   "tradition": "mythic",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "atlantis",
+   "department": "alternative-history",
+   "tradition": "mythic",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "pyramids",
+   "department": "alternative-history",
+   "tradition": "mythic",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "sacred geometry",
+   "department": "alternative-history",
+   "tradition": "mythic",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "megalithic monuments",
+   "department": "alternative-history",
+   "tradition": "mythic",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "forbidden archaeology",
+   "department": "alternative-history",
+   "tradition": "mythic",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "ancient mysteries",
+   "department": "alternative-history",
+   "tradition": "mythic",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "sumerian",
+   "department": "alternative-history",
+   "tradition": "mythic",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "anunnaki",
+   "department": "alternative-history",
+   "tradition": "mythic",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "hidden history",
+   "department": "alternative-history",
+   "tradition": "mythic",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "secret societies",
+   "department": "alternative-history",
+   "tradition": "mythic",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "freemasonry",
+   "department": "alternative-history",
+   "tradition": "mythic",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "rosicrucians",
+   "department": "alternative-history",
+   "tradition": "mythic",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "ancient egypt",
+   "department": "alternative-history",
+   "tradition": "mythic",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "archaeoastronomy",
+   "department": "alternative-history",
+   "tradition": "mythic",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "lemuria",
+   "department": "alternative-history",
+   "tradition": "mythic",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "pranayama",
+   "department": "yoga",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "breathwork",
+   "department": "yoga",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "yoga asanas",
+   "department": "yoga",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "chakra meditation",
+   "department": "yoga",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "yoga therapy",
+   "department": "yoga",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "restorative yoga",
+   "department": "yoga",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "yin yoga",
+   "department": "yoga",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "ashtanga yoga",
+   "department": "yoga",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "iyengar yoga",
+   "department": "yoga",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "bhakti yoga",
+   "department": "yoga",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "karma yoga",
+   "department": "yoga",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "jnana yoga",
+   "department": "yoga",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "raja yoga",
+   "department": "yoga",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "vedas",
+   "department": "hinduism",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "puranas",
+   "department": "hinduism",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "ramayana",
+   "department": "hinduism",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "mahabharata",
+   "department": "hinduism",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "krishna",
+   "department": "hinduism",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "shiva",
+   "department": "hinduism",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "hanuman",
+   "department": "hinduism",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "ganesha",
+   "department": "hinduism",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "devi",
+   "department": "hinduism",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "shaktism",
+   "department": "hinduism",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "shaivism",
+   "department": "hinduism",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "kashmir shaivism",
+   "department": "hinduism",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "bhakti",
+   "department": "hinduism",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "hindu mythology",
+   "department": "hinduism",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "hindu temples",
+   "department": "hinduism",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "tantric yoga",
+   "department": "hinduism",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "vedic astrology",
+   "department": "hinduism",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "jyotish",
+   "department": "hinduism",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "dharma",
+   "department": "hinduism",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "dzogchen",
+   "department": "buddhism",
+   "tradition": "buddhist",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "mahamudra",
+   "department": "buddhism",
+   "tradition": "buddhist",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "pure land buddhism",
+   "department": "buddhism",
+   "tradition": "buddhist",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "nichiren buddhism",
+   "department": "buddhism",
+   "tradition": "buddhist",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "zen koans",
+   "department": "buddhism",
+   "tradition": "buddhist",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "zen stories",
+   "department": "buddhism",
+   "tradition": "buddhist",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "buddhist meditation",
+   "department": "buddhism",
+   "tradition": "buddhist",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "metta",
+   "department": "buddhism",
+   "tradition": "buddhist",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "loving-kindness",
+   "department": "buddhism",
+   "tradition": "buddhist",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "buddhist ethics",
+   "department": "buddhism",
+   "tradition": "buddhist",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "tibetan book of the dead",
+   "department": "buddhism",
+   "tradition": "buddhist",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "bodhisattva",
+   "department": "buddhism",
+   "tradition": "buddhist",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "lotus sutra",
+   "department": "buddhism",
+   "tradition": "buddhist",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "heart sutra",
+   "department": "buddhism",
+   "tradition": "buddhist",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "diamond sutra",
+   "department": "buddhism",
+   "tradition": "buddhist",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "vajrayana",
+   "department": "buddhism",
+   "tradition": "buddhist",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "mindfulness meditation",
+   "department": "mindfulness",
+   "tradition": "secular",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "mindful eating",
+   "department": "mindfulness",
+   "tradition": "secular",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "self-compassion",
+   "department": "mindfulness",
+   "tradition": "secular",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "compassion",
+   "department": "mindfulness",
+   "tradition": "secular",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "gratitude",
+   "department": "mindfulness",
+   "tradition": "secular",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "stress reduction",
+   "department": "mindfulness",
+   "tradition": "secular",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "mbsr",
+   "department": "mindfulness",
+   "tradition": "secular",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "insight meditation",
+   "department": "mindfulness",
+   "tradition": "secular",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "transcendental meditation",
+   "department": "mindfulness",
+   "tradition": "secular",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "guided meditation",
+   "department": "mindfulness",
+   "tradition": "secular",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "loving awareness",
+   "department": "mindfulness",
+   "tradition": "secular",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "mantra meditation",
+   "department": "sanskrit-mantras",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "kirtan",
+   "department": "sanskrit-mantras",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "gayatri mantra",
+   "department": "sanskrit-mantras",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "om",
+   "department": "sanskrit-mantras",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "sanskrit",
+   "department": "sanskrit-mantras",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "sanskrit chanting",
+   "department": "sanskrit-mantras",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "japa meditation",
+   "department": "sanskrit-mantras",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "sound healing",
+   "department": "sanskrit-mantras",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "singing bowls",
+   "department": "sanskrit-mantras",
+   "tradition": "hindu",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "apocrypha",
+   "department": "ancient-texts",
+   "tradition": "comparative",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "dead sea scrolls",
+   "department": "ancient-texts",
+   "tradition": "comparative",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "book of enoch",
+   "department": "ancient-texts",
+   "tradition": "comparative",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "essenes",
+   "department": "ancient-texts",
+   "tradition": "comparative",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "gnostic gospels",
+   "department": "ancient-texts",
+   "tradition": "comparative",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "sacred texts",
+   "department": "ancient-texts",
+   "tradition": "comparative",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "pseudepigrapha",
+   "department": "ancient-texts",
+   "tradition": "comparative",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "coptic",
+   "department": "ancient-texts",
+   "tradition": "comparative",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "manichaeism",
+   "department": "ancient-texts",
+   "tradition": "comparative",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "esoteric christianity",
+   "department": "christian-mysticism",
+   "tradition": "christian",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "christian meditation",
+   "department": "christian-mysticism",
+   "tradition": "christian",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "desert fathers",
+   "department": "christian-mysticism",
+   "tradition": "christian",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "medieval mystics",
+   "department": "christian-mysticism",
+   "tradition": "christian",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "mystical theology",
+   "department": "christian-mysticism",
+   "tradition": "christian",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "mary magdalene",
+   "department": "christian-mysticism",
+   "tradition": "christian",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "shamanism",
+   "department": "paganism",
+   "tradition": "pagan",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "druidry",
+   "department": "paganism",
+   "tradition": "pagan",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "runes",
+   "department": "paganism",
+   "tradition": "pagan",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "norse mythology",
+   "department": "paganism",
+   "tradition": "pagan",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "celtic mythology",
+   "department": "paganism",
+   "tradition": "pagan",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "heathenry",
+   "department": "paganism",
+   "tradition": "pagan",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "animism",
+   "department": "paganism",
+   "tradition": "pagan",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "nature spirituality",
+   "department": "paganism",
+   "tradition": "pagan",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "wheel of the year",
+   "department": "paganism",
+   "tradition": "pagan",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "goddess spirituality",
+   "department": "paganism",
+   "tradition": "pagan",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "egyptian mythology",
+   "department": "mythology",
+   "tradition": "mythic",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "greek mythology",
+   "department": "mythology",
+   "tradition": "mythic",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "roman mythology",
+   "department": "mythology",
+   "tradition": "mythic",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "indian mythology",
+   "department": "mythology",
+   "tradition": "mythic",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "mesopotamian mythology",
+   "department": "mythology",
+   "tradition": "mythic",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "mythology comparative",
+   "department": "mythology",
+   "tradition": "mythic",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "hero myths",
+   "department": "mythology",
+   "tradition": "mythic",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "creation myths",
+   "department": "mythology",
+   "tradition": "mythic",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "sumerian mythology",
+   "department": "mythology",
+   "tradition": "mythic",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "goetia",
+   "department": "ceremonial-magic",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "enochian magic",
+   "department": "ceremonial-magic",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "chaos magic",
+   "department": "ceremonial-magic",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "thelema",
+   "department": "ceremonial-magic",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "golden dawn",
+   "department": "ceremonial-magic",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "grimoires",
+   "department": "ceremonial-magic",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "angel magic",
+   "department": "ceremonial-magic",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "demonology",
+   "department": "ceremonial-magic",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "sigils",
+   "department": "ceremonial-magic",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "magical correspondences",
+   "department": "ceremonial-magic",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "invocation",
+   "department": "ceremonial-magic",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "qabalah",
+   "department": "ceremonial-magic",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "tree of life",
+   "department": "ceremonial-magic",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "hoodoo",
+   "department": "witchcraft",
+   "tradition": "wiccan",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "voodoo",
+   "department": "witchcraft",
+   "tradition": "wiccan",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "folk healing",
+   "department": "witchcraft",
+   "tradition": "wiccan",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "kitchen witchcraft",
+   "department": "witchcraft",
+   "tradition": "wiccan",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "green witchcraft",
+   "department": "witchcraft",
+   "tradition": "wiccan",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "moon magic",
+   "department": "witchcraft",
+   "tradition": "wiccan",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "herb magic",
+   "department": "witchcraft",
+   "tradition": "wiccan",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "candle magic",
+   "department": "witchcraft",
+   "tradition": "wiccan",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "hedgewitch",
+   "department": "witchcraft",
+   "tradition": "wiccan",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "traditional witchcraft",
+   "department": "witchcraft",
+   "tradition": "wiccan",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "runes divination",
+   "department": "divination",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "pendulum",
+   "department": "divination",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "scrying",
+   "department": "divination",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "numerology",
+   "department": "divination",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "palmistry",
+   "department": "divination",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "i ching",
+   "department": "divination",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "oracle cards",
+   "department": "divination",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "dowsing",
+   "department": "divination",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "geomancy",
+   "department": "divination",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "natal astrology",
+   "department": "astrology",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "vedic astrology",
+   "department": "astrology",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "horary astrology",
+   "department": "astrology",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "astrological signs",
+   "department": "astrology",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "planets astrology",
+   "department": "astrology",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "houses astrology",
+   "department": "astrology",
+   "tradition": "western-esoteric",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "qi gong",
+   "department": "qigong",
+   "tradition": "taoist",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "tai chi chuan",
+   "department": "qigong",
+   "tradition": "taoist",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "taoist yoga",
+   "department": "qigong",
+   "tradition": "taoist",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "neidan",
+   "department": "qigong",
+   "tradition": "taoist",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "inner alchemy",
+   "department": "qigong",
+   "tradition": "taoist",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "chinese medicine",
+   "department": "qigong",
+   "tradition": "taoist",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "meridians",
+   "department": "qigong",
+   "tradition": "taoist",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "five elements",
+   "department": "qigong",
+   "tradition": "taoist",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "self-help",
+   "department": "personal-growth",
+   "tradition": "secular",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "habits",
+   "department": "personal-growth",
+   "tradition": "secular",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "motivation",
+   "department": "personal-growth",
+   "tradition": "secular",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "personal transformation",
+   "department": "personal-growth",
+   "tradition": "secular",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "shadow work",
+   "department": "personal-growth",
+   "tradition": "secular",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "inner child",
+   "department": "personal-growth",
+   "tradition": "secular",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "journaling",
+   "department": "personal-growth",
+   "tradition": "secular",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "intuition",
+   "department": "personal-growth",
+   "tradition": "secular",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "purpose",
+   "department": "personal-growth",
+   "tradition": "secular",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "spiritual growth",
+   "department": "personal-growth",
+   "tradition": "secular",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "awakening",
+   "department": "personal-growth",
+   "tradition": "secular",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "enlightenment",
+   "department": "personal-growth",
+   "tradition": "secular",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "anxiety",
+   "department": "emotional-wellbeing",
+   "tradition": "secular",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "depression recovery",
+   "department": "emotional-wellbeing",
+   "tradition": "secular",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "grief",
+   "department": "emotional-wellbeing",
+   "tradition": "secular",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "trauma recovery",
+   "department": "emotional-wellbeing",
+   "tradition": "secular",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "resilience",
+   "department": "emotional-wellbeing",
+   "tradition": "secular",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "emotional intelligence",
+   "department": "emotional-wellbeing",
+   "tradition": "secular",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "insomnia",
+   "department": "sleep-stress",
+   "tradition": "secular",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "sleep",
+   "department": "sleep-stress",
+   "tradition": "secular",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "relaxation",
+   "department": "sleep-stress",
+   "tradition": "secular",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "stress management",
+   "department": "sleep-stress",
+   "tradition": "secular",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "lucid dreaming",
+   "department": "sleep-stress",
+   "tradition": "secular",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "mind-body connection",
+   "department": "mind-body",
+   "tradition": "secular",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "somatic",
+   "department": "mind-body",
+   "tradition": "secular",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "holistic health",
+   "department": "mind-body",
+   "tradition": "secular",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "integrative medicine",
+   "department": "mind-body",
+   "tradition": "secular",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "nutrition spiritual",
+   "department": "mind-body",
+   "tradition": "secular",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "fasting",
+   "department": "mind-body",
+   "tradition": "secular",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "detox",
+   "department": "mind-body",
+   "tradition": "secular",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "plant-based diet",
+   "department": "mind-body",
+   "tradition": "secular",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "vegetarianism",
+   "department": "mind-body",
+   "tradition": "secular",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "consciousness studies",
+   "department": "consciousness",
+   "tradition": "nondual",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "nonduality",
+   "department": "consciousness",
+   "tradition": "nondual",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "self-inquiry",
+   "department": "consciousness",
+   "tradition": "nondual",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "awareness",
+   "department": "consciousness",
+   "tradition": "nondual",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "mystical experience",
+   "department": "consciousness",
+   "tradition": "nondual",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "psychedelics spirituality",
+   "department": "consciousness",
+   "tradition": "nondual",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "altered states",
+   "department": "consciousness",
+   "tradition": "nondual",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "transpersonal psychology",
+   "department": "consciousness",
+   "tradition": "nondual",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "jungian psychology",
+   "department": "consciousness",
+   "tradition": "nondual",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "archetypes",
+   "department": "consciousness",
+   "tradition": "nondual",
+   "level": "unrated"
+  },
+  {
+   "kind": "subject",
+   "value": "collective unconscious",
+   "department": "consciousness",
+   "tradition": "nondual",
+   "level": "unrated"
+  }
+ ]
+}

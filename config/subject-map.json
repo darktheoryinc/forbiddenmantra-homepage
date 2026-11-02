@@ -1,33 +1,165 @@
 {
-  "_doc": "Fallback mapping from source subject strings to site departments, used only for records that arrive without an editorial seed (e.g. goodbooks nominations). First match wins. Anything unmatched goes to review as 'no department'.",
-  "rules": [
-    ["\\bkabbalah|jewish mysticism", "judaism-kabbalah", "jewish"],
-    ["\\bsufi", "islam-sufism", "islamic"],
-    ["\\bjain", "jainism", "jain"],
-    ["\\bsikh", "sikhism", "sikh"],
-    ["\\btantr", "tantra", "tantric"],
-    ["\\byoga", "yoga", "hindu"],
-    ["\\bbuddhis|\\bzen\\b", "buddhism", "buddhist"],
-    ["\\bhindu|vedanta|upanishad|bhagavad", "hinduism", "hindu"],
-    ["\\btao|daoism|qigong|tai chi", "taoism", "taoist"],
-    ["\\bgnostic", "gnosticism", "gnostic"],
-    ["\\balchem", "alchemy", "hermetic"],
-    ["\\btarot", "tarot", "western-esoteric"],
-    ["\\bastrolog|horoscope", "astrology", "western-esoteric"],
-    ["\\bwitch|\\bwicca|neopagan", "witchcraft", "western-esoteric"],
-    ["\\bmagic \\(occult|ceremonial magic|occult", "ceremonial-magic", "western-esoteric"],
-    ["\\bdivination|i ching|runes", "divination", "western-esoteric"],
-    ["\\bmythology|\\bmyths\\b", "mythology", "mythic"],
-    ["\\bfolklore|fairy tales|folk ?tales|legends", "folklore-fairy-tales", "fiction"],
-    ["\\bmagic realism|magical realism", "magical-realism", "fiction"],
-    ["\\bhorror|ghost stor|gothic", "horror", "fiction"],
-    ["\\burban fantasy", "urban-fantasy", "fiction"],
-    ["\\bepic fantasy|high fantasy", "epic-fantasy", "fiction"],
-    ["\\bfantasy", "fantasy", "fiction"],
-    ["\\bscience fiction|dystopi|speculative", "speculative-fiction", "fiction"],
-    ["\\bmindful|meditat", "mindfulness", "buddhist"],
-    ["\\bstoic|existential|philosoph", "philosophy", "western-philosophy"],
-    ["\\bself-help|personal development|self-actualization", "personal-growth", "comparative"],
-    ["\\bconsciousness|nondual|spiritual", "consciousness", "comparative"]
+ "_doc": "Fallback mapping from source subject strings to site departments, used only for records that arrive without an editorial seed (e.g. goodbooks nominations). First match wins. Anything unmatched goes to review as 'no department'.",
+ "rules": [
+  [
+   "\\bayurved|herbal medicine|herbalism|medicinal plant|aromatherap",
+   "ayurveda",
+   "hindu"
+  ],
+  [
+   "\\breiki|chakra|crystal healing|energy healing|pranic|acupressure|acupuncture",
+   "energy-healing",
+   "comparative"
+  ],
+  [
+   "\\bmetaphysic|new thought|law of attraction|reincarnation|near-death|afterlife|psychic|extrasensory|astral|mediumship|spiritualism|theosoph|parapsycholog",
+   "metaphysics",
+   "western-esoteric"
+  ],
+  [
+   "ancient astronaut|lost civili|atlantis|pyramid|sacred geometry|megalith|forbidden archaeolog|hidden history|secret societ|freemason|rosicrucian|anunnaki|sumerian",
+   "alternative-history",
+   "mythic"
+  ],
+  [
+   "\\bkabbalah|jewish mysticism",
+   "judaism-kabbalah",
+   "jewish"
+  ],
+  [
+   "\\bsufi",
+   "islam-sufism",
+   "islamic"
+  ],
+  [
+   "\\bjain",
+   "jainism",
+   "jain"
+  ],
+  [
+   "\\bsikh",
+   "sikhism",
+   "sikh"
+  ],
+  [
+   "\\btantr",
+   "tantra",
+   "tantric"
+  ],
+  [
+   "\\byoga",
+   "yoga",
+   "hindu"
+  ],
+  [
+   "\\bbuddhis|\\bzen\\b",
+   "buddhism",
+   "buddhist"
+  ],
+  [
+   "\\bhindu|vedanta|upanishad|bhagavad",
+   "hinduism",
+   "hindu"
+  ],
+  [
+   "\\btao|daoism|qigong|tai chi",
+   "taoism",
+   "taoist"
+  ],
+  [
+   "\\bgnostic",
+   "gnosticism",
+   "gnostic"
+  ],
+  [
+   "\\balchem",
+   "alchemy",
+   "hermetic"
+  ],
+  [
+   "\\btarot",
+   "tarot",
+   "western-esoteric"
+  ],
+  [
+   "\\bastrolog|horoscope",
+   "astrology",
+   "western-esoteric"
+  ],
+  [
+   "\\bwitch|\\bwicca|neopagan",
+   "witchcraft",
+   "western-esoteric"
+  ],
+  [
+   "\\bmagic \\(occult|ceremonial magic|occult",
+   "ceremonial-magic",
+   "western-esoteric"
+  ],
+  [
+   "\\bdivination|i ching|runes",
+   "divination",
+   "western-esoteric"
+  ],
+  [
+   "\\bmythology|\\bmyths\\b",
+   "mythology",
+   "mythic"
+  ],
+  [
+   "\\bfolklore|fairy tales|folk ?tales|legends",
+   "folklore-fairy-tales",
+   "fiction"
+  ],
+  [
+   "\\bmagic realism|magical realism",
+   "magical-realism",
+   "fiction"
+  ],
+  [
+   "\\bhorror|ghost stor|gothic",
+   "horror",
+   "fiction"
+  ],
+  [
+   "\\burban fantasy",
+   "urban-fantasy",
+   "fiction"
+  ],
+  [
+   "\\bepic fantasy|high fantasy",
+   "epic-fantasy",
+   "fiction"
+  ],
+  [
+   "\\bfantasy",
+   "fantasy",
+   "fiction"
+  ],
+  [
+   "\\bscience fiction|dystopi|speculative",
+   "speculative-fiction",
+   "fiction"
+  ],
+  [
+   "\\bmindful|meditat",
+   "mindfulness",
+   "buddhist"
+  ],
+  [
+   "\\bstoic|existential|philosoph",
+   "philosophy",
+   "western-philosophy"
+  ],
+  [
+   "\\bself-help|personal development|self-actualization",
+   "personal-growth",
+   "comparative"
+  ],
+  [
+   "\\bconsciousness|nondual|spiritual",
+   "consciousness",
+   "comparative"
   ]
+ ]
 }

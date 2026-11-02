@@ -487,6 +487,39 @@
         "wellbeing-health"
       ],
       "intro": "Dream journals, coloring books and other guided or creative pages."
+    },
+    {
+      "id": "ayurveda",
+      "name": "Ayurveda & Herbal Healing",
+      "hubs": [
+        "wellbeing-health"
+      ],
+      "intro": "The Indian system of medicine and its cousins in herbalism and plant-based care: constitutions, diet, daily routine and remedies. Books here range from classical teachings to modern practical guides; each listing names its tradition so you can tell traditional from contemporary."
+    },
+    {
+      "id": "energy-healing",
+      "name": "Energy Healing, Reiki & Chakras",
+      "hubs": [
+        "wellbeing-health",
+        "energy-inner-cultivation"
+      ],
+      "intro": "Hands-on and subtle-energy approaches to wellbeing: Reiki, the chakra system, crystals, pranic and acupressure traditions. These books present healing practices and beliefs, not medical treatment; each says which tradition it speaks from."
+    },
+    {
+      "id": "metaphysics",
+      "name": "Metaphysics & New Thought",
+      "hubs": [
+        "consciousness-myth-wisdom"
+      ],
+      "intro": "Questions about mind, reality and the afterlife: New Thought, the law of attraction, reincarnation, near-death experience, psychic and mediumistic traditions, and theosophy. Titles are listed for readers exploring these ideas; they are books about beliefs and experiences, not proof of them."
+    },
+    {
+      "id": "alternative-history",
+      "name": "Alternative History & Ancient Mysteries",
+      "hubs": [
+        "consciousness-myth-wisdom"
+      ],
+      "intro": "Lost civilisations, ancient monuments, sacred geometry, hidden histories and secret societies. This shelf mixes scholarship, popular speculation and fringe theories; each listing is a book about the idea, and inclusion is not endorsement."
     }
   ],
   "traditions": [
