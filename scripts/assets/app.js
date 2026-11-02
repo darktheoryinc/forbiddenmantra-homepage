@@ -319,7 +319,7 @@
           if (ok) o.sc = fuzzy ? 1 - dist * 0.1 + (o.press === 'fmp' ? 0.05 : 0) : terms.every(function (x) { return o.t.indexOf(x) > -1; }) ? 3 : 2;
           return ok;
         });
-        base.sort(function (a, b) { return (b.sc - a.sc) || (a.i - b.i); });
+        base.sort(function (a, b) { return (b.sc - a.sc) || ((b.cv && !b.cv.a ? 1 : 0) - (a.cv && !a.cv.a ? 1 : 0)) || (b.ed.length - a.ed.length) || (a.i - b.i); }); // ties: books with a stored cover first, then more editions
       }
       matches = base; usedFuzzy = fuzzy && base.length > 0; return terms;
     }

@@ -2,20 +2,20 @@
   "generated": "2026-10-27",
   "input": {
     "verifiedRecords": 172,
-    "batchRecords": 2858,
+    "batchRecords": 4906,
     "candidateRows": 100
   },
   "publishedByProvenance": {
     "hand-verified": 172,
-    "open-library-catalogue": 2651,
+    "open-library-catalogue": 4644,
     "web-corroborated": 139
   },
   "published": {
-    "works": 2950,
-    "editions": 5766,
-    "outsideWorks": 2827,
+    "works": 4936,
+    "editions": 8826,
+    "outsideWorks": 4813,
     "fmpWorks": 123,
-    "authors": 2603
+    "authors": 4213
   },
   "publishedByLanguage": {
     "ar": {
@@ -31,8 +31,8 @@
       "editions": 14
     },
     "en": {
-      "works": 2946,
-      "editions": 5658
+      "works": 4932,
+      "editions": 8718
     },
     "es": {
       "works": 19,
@@ -79,20 +79,20 @@
     "note": "reported but unverified; not published, not counted as stocked"
   },
   "staged": {
-    "works": 41,
-    "withIsbn": 38,
-    "missingIsbn": 3
+    "works": 37,
+    "withIsbn": 35,
+    "missingIsbn": 2
   },
   "errorQueue": {
-    "total": 147,
+    "total": 212,
     "byStage": {
-      "identifiers": 7,
-      "dedup": 137,
+      "identifiers": 6,
+      "dedup": 203,
       "validate": 3
     },
     "bySeverity": {
-      "warning": 8,
-      "duplicate": 137,
+      "warning": 7,
+      "duplicate": 203,
       "error": 2
     }
   }

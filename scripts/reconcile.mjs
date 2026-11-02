@@ -26,7 +26,7 @@ const arg = (n, d) => { const i = argv.indexOf('--' + n); return i < 0 ? d : arg
 const today = process.env.FM_TODAY ?? rd('config/site.json').catalogueAsOf;
 const prefix = arg('prefix', `auto-${today}`), batchSize = +arg('batch-size', 250);
 // --single-source: when Google Books is unavailable, publish Open Library-only editions in the 'open-library-catalogue' tier if they pass every gate below.
-const SINGLE = argv.includes('--single-source'), minEditions = +arg('min-editions', 4), minYearUnstated = +arg('min-year-unstated', 1995), thisYear = new Date().getFullYear();
+const SINGLE = argv.includes('--single-source'), minEditions = +arg('min-editions', 4), minYearUnstated = +arg('min-year-unstated', 1995), INFER_LANG = argv.includes('--infer-language'), thisYear = new Date().getFullYear();
 const IND = /^(independently published|createspace.*|amazon digital services.*|lulu.*|kdp)$/i, JUNK_AUTHOR = /\b(unknown|anonymous)\b/i;
 
 const fold = (s) => String(s ?? '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
@@ -62,7 +62,17 @@ for (let o of ol) {
   if (badPub) { hold(o, `quality rule: publisher ${badPub}`); continue; }
   if (!g && !SINGLE) { hold(o, 'single source only (no Google Books match yet)'); continue; }
   if (!g) { // single-source gates: every field stated by Open Library, internally consistent, and popular enough to be a real, circulating book
-    const why = !o.language || o.language !== 'en' ? 'language not stated as English'
+    // --infer-language: the harvest searched Open Library for English-language works; an edition record that states no language at all
+    // (not a different one) and whose title agrees with that work is accepted, and marked as inferred. A stated non-English language is still held.
+    const langInferred = INFER_LANG && !o.language && o.searchTitle && titleSim(o.title, o.searchTitle) >= rules.titleSimilarityMin && /^[\x00-\u024f\u2018-\u201d\u2013\u2014 ]+$/.test(o.title);
+    if (langInferred) o = { ...o, language: 'en', languageNote: 'Language not stated on the edition record; inferred from the English-language Open Library work.' };
+    // Relevance guard (relaxed tier): the title or the source's own subject headings must carry a signal for the topic the record was found under.
+    const relText = fold([o.title, o.subtitle, ...(o.olSubjects ?? [])].join(' | ')), seedWords = fold(o.seed?.value ?? '').split(/[^a-z]+/).filter((w) => w.length > 3);
+    const relevant = submap.some(([re]) => re.test(relText)) || seedWords.some((w) => relText.includes(w));
+    const foreign = langInferred && /\b(der|die|das|und|ein|eine|el|los|las|una|les|des|une|il|della|degli|di|het|een|och|og)\b/i.test(o.title);
+    const why = foreign ? 'title looks non-English; language only inferred'
+      : INFER_LANG && !relevant ? 'no topic signal in the title or subject headings'
+      : !o.language || o.language !== 'en' ? 'language not stated as English'
       : o.format === 'audiobook' ? 'audiobook records are not imported'
       : !o.format && (!o.year || o.year < minYearUnstated) ? `binding not stated and published before ${minYearUnstated} (likely out of print)`
       : !o.authors.length || JUNK_AUTHOR.test(o.authors[0]) ? 'no named author'
@@ -107,7 +117,7 @@ for (const [key, es] of groups) {
     eds.push({
       language: e.o.language, format: e.o.format, publisher: e.o.publisher || null,
       year: e.g ? (e.o.year && e.g.year && e.o.year === e.g.year ? e.o.year : null) : e.o.year, // two-source: year only when both agree; single-source: Open Library's stated year
-      isbn13: e.o.isbn13, title: e.o.title !== first.o.title ? e.o.title : undefined, note: e.o.formatNote,
+      isbn13: e.o.isbn13, title: e.o.title !== first.o.title ? e.o.title : undefined, note: [e.o.formatNote, e.o.languageNote].filter(Boolean).join(" ") || undefined,
       sources: [{ label: 'Open Library record', url: e.o.url, accessed: e.o.fetchedAt, supports: 'ISBN-13, title, author, publisher, year, format, language' }, ...(e.g ? [{ label: 'Google Books record', url: e.g.url, accessed: e.g.fetchedAt, supports: 'ISBN-13, title, author, language' }] : [])],
     });
   }

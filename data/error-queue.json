@@ -1112,6 +1112,848 @@
    "origin": "staging/batches/ol-006.json"
   },
   {
+   "title": "Autobiography of a Yogi",
+   "authors": [
+    "Yogananda Paramahansa"
+   ],
+   "isbn13": [
+    "9788172345365",
+    "9781717755636",
+    "9798537211358"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Autobiography of a Yogi\""
+   ],
+   "origin": "staging/batches/olx-001.json"
+  },
+  {
+   "title": "Yoga",
+   "authors": [
+    "James Hewitt"
+   ],
+   "isbn13": [
+    "9780340428726"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Yoga\""
+   ],
+   "origin": "staging/batches/olx-001.json"
+  },
+  {
+   "title": "Beth Shaw's Yogafit®",
+   "authors": [
+    "Beth Shaw"
+   ],
+   "isbn13": [
+    "9780736075367",
+    "9781492579885"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Beth Shaw's YogaFit\""
+   ],
+   "origin": "staging/batches/olx-001.json"
+  },
+  {
+   "title": "Mantras",
+   "authors": [
+    "Radha Swami Sivananda"
+   ],
+   "isbn13": [
+    "9780931454660",
+    "9780931454059"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Mantras\""
+   ],
+   "origin": "staging/batches/olx-001.json"
+  },
+  {
+   "title": "Clear light of bliss",
+   "authors": [
+    "Kelsang Gyatso"
+   ],
+   "isbn13": [
+    "9780948006210"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Clear light of bliss\""
+   ],
+   "origin": "staging/batches/olx-001.json"
+  },
+  {
+   "title": "Jazz chant fairy tales",
+   "authors": [
+    "Carolyn Graham"
+   ],
+   "isbn13": [
+    "9780194342988"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Jazz chant fairy tales\""
+   ],
+   "origin": "staging/batches/olx-001.json"
+  },
+  {
+   "title": "Tantra, the supreme understanding",
+   "authors": [
+    "Bhagwan Rajneesh"
+   ],
+   "isbn13": [
+    "9780880506434"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Tantra: The Supreme Understanding\""
+   ],
+   "origin": "staging/batches/olx-001.json"
+  },
+  {
+   "title": "Tantra",
+   "authors": [
+    "Andre Van Lysebeth"
+   ],
+   "isbn13": [
+    "9780877288459",
+    "9788120817593"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Tantra\""
+   ],
+   "origin": "staging/batches/olx-001.json"
+  },
+  {
+   "title": "Hinduism and Buddhism",
+   "authors": [
+    "Charles Eliot"
+   ],
+   "isbn13": [
+    "9781536177435"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Hinduism and Buddhism\""
+   ],
+   "origin": "staging/batches/olx-001.json"
+  },
+  {
+   "title": "Be as you are",
+   "authors": [
+    "Ramana Maharshi.",
+    "Maharshi Ramana"
+   ],
+   "isbn13": [
+    "9780140190625"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Be as you are\""
+   ],
+   "origin": "staging/batches/olx-001.json"
+  },
+  {
+   "title": "Advaita Vedānta and Zen Buddhism",
+   "authors": [
+    "Leesa S. Davis"
+   ],
+   "isbn13": [
+    "9780826420688"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Advaita Vedanta and Zen Buddhism\""
+   ],
+   "origin": "staging/batches/olx-001.json"
+  },
+  {
+   "title": "Nine-headed dragon river",
+   "authors": [
+    "Peter Matthiessen"
+   ],
+   "isbn13": [
+    "9780002715096"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Nine-headed dragon river\""
+   ],
+   "origin": "staging/batches/olx-001.json"
+  },
+  {
+   "title": "Myanmar's Buddhist-Muslim Crisis",
+   "authors": [
+    "John Clifford Holt"
+   ],
+   "isbn13": [
+    "9780824881887"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Myanmar's Buddhist-Muslim Crisis\""
+   ],
+   "origin": "staging/batches/olx-001.json"
+  },
+  {
+   "title": "A pictorial biography of the Venerable Master Hsü Yün",
+   "authors": [
+    "Hsuan Hua"
+   ],
+   "isbn13": [
+    "9780881394863"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"A Pictorial Biography of the Venerable Master Hsu Yun\""
+   ],
+   "origin": "staging/batches/olx-001.json"
+  },
+  {
+   "title": "Vegetarianism",
+   "authors": [
+    "Bodhipaksa"
+   ],
+   "isbn13": [
+    "9781899579150"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Vegetarianism\""
+   ],
+   "origin": "staging/batches/olx-001.json"
+  },
+  {
+   "title": "The madman's middle way",
+   "authors": [
+    "Donald S. Lopez"
+   ],
+   "isbn13": [
+    "9780226493169"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The Madman's Middle Way\""
+   ],
+   "origin": "staging/batches/olx-001.json"
+  },
+  {
+   "title": "Nagarjuna in Context",
+   "authors": [
+    "Joseph Walser"
+   ],
+   "isbn13": [
+    "9780231506236"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Nāgārjuna in context\""
+   ],
+   "origin": "staging/batches/olx-001.json"
+  },
+  {
+   "title": "Text As Father",
+   "authors": [
+    "Cole, Alan"
+   ],
+   "isbn13": [
+    "9780520931404"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Text as father\""
+   ],
+   "origin": "staging/batches/olx-002.json"
+  },
+  {
+   "title": "Perception",
+   "authors": [
+    "Bimal Krishna Matilal"
+   ],
+   "isbn13": [
+    "9780198246251"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Perception\""
+   ],
+   "origin": "staging/batches/olx-002.json"
+  },
+  {
+   "title": "There is nothing wrong with you",
+   "authors": [
+    "Cheri Huber"
+   ],
+   "isbn13": [
+    "9780971030909"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"There is nothing wrong with you\""
+   ],
+   "origin": "staging/batches/olx-002.json"
+  },
+  {
+   "title": "Train to Pakistan",
+   "authors": [
+    "Khushwant Singh"
+   ],
+   "isbn13": [
+    "9780195779851"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Train to Pakistan\""
+   ],
+   "origin": "staging/batches/olx-002.json"
+  },
+  {
+   "title": "The Sufis",
+   "authors": [
+    "Idries Shah"
+   ],
+   "isbn13": [
+    "9780352396044",
+    "9780863040740"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The Sufis\""
+   ],
+   "origin": "staging/batches/olx-002.json"
+  },
+  {
+   "title": "The essential Rumi",
+   "authors": [
+    "Rumi (Jalāl ad-Dīn Muḥammad Balkhī)"
+   ],
+   "isbn13": [
+    "9780785808718",
+    "9780140449532"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The essential Rumi\""
+   ],
+   "origin": "staging/batches/olx-002.json"
+  },
+  {
+   "title": "Feeling the shoulder of the lion",
+   "authors": [
+    "Rumi (Jalāl ad-Dīn Muḥammad Balkhī)"
+   ],
+   "isbn13": [
+    "9780939660384"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Feeling the Shoulder of the Lion\""
+   ],
+   "origin": "staging/batches/olx-002.json"
+  },
+  {
+   "title": "God Was in This Place & I, I Did Not Know",
+   "authors": [
+    "Lawrence Kushner"
+   ],
+   "isbn13": [
+    "9780369325013"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"God Was in This Place and I, I Did Not Know\""
+   ],
+   "origin": "staging/batches/olx-002.json"
+  },
+  {
+   "title": "The Tao of relationships",
+   "authors": [
+    "Ray Grigg"
+   ],
+   "isbn13": [
+    "9780553280432"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The Tao of relationships\""
+   ],
+   "origin": "staging/batches/olx-002.json"
+  },
+  {
+   "title": "The Tao of peace",
+   "authors": [
+    "Diane Elizabeth Dreher"
+   ],
+   "isbn13": [
+    "9781852741013"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The Tao of peace\""
+   ],
+   "origin": "staging/batches/olx-002.json"
+  },
+  {
+   "title": "Eastern Body, Western Mind",
+   "authors": [
+    "Anodea Judith"
+   ],
+   "isbn13": [
+    "9781587612251"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Eastern body, Western mind\""
+   ],
+   "origin": "staging/batches/olx-002.json"
+  },
+  {
+   "title": "T'ai Chi Ch'uan and Meditation",
+   "authors": [
+    "Da Liu"
+   ],
+   "isbn13": [
+    "9780805209938",
+    "9780140192179"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"T'ai chi ch'uan and meditation\""
+   ],
+   "origin": "staging/batches/olx-002.json"
+  },
+  {
+   "title": "Wonders of the natural mind",
+   "authors": [
+    "Tenzin Wangyal"
+   ],
+   "isbn13": [
+    "9780882681177"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Wonders of the natural mind\""
+   ],
+   "origin": "staging/batches/olx-002.json"
+  },
+  {
+   "title": "Christianity in Latin America",
+   "authors": [
+    "Justo L. González",
+    "Ondina Ester González"
+   ],
+   "isbn13": [
+    "9780521863292"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Christianity in Latin America\""
+   ],
+   "origin": "staging/batches/olx-003.json"
+  },
+  {
+   "title": "A serious call to a devout & holy life",
+   "authors": [
+    "William Law"
+   ],
+   "isbn13": [
+    "9780882704531"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"A serious call to a devout and holy life\""
+   ],
+   "origin": "staging/batches/olx-003.json"
+  },
+  {
+   "title": "Scivias",
+   "authors": [
+    "Hildegard Saint"
+   ],
+   "isbn13": [
+    "9780809131303",
+    "9780939680221"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Scivias\""
+   ],
+   "origin": "staging/batches/olx-003.json"
+  },
+  {
+   "title": "Monsieur",
+   "authors": [
+    "Lawrence Durrell"
+   ],
+   "isbn13": [
+    "9780571109654"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Monsieur\""
+   ],
+   "origin": "staging/batches/olx-003.json"
+  },
+  {
+   "title": "The Adam & Eve Story",
+   "authors": [
+    "Chan Thomas"
+   ],
+   "isbn13": [
+    "9781884600029"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Adam and Eve Story\""
+   ],
+   "origin": "staging/batches/olx-003.json"
+  },
+  {
+   "title": "The Jesus Mysteries",
+   "authors": [
+    "Timothy Freke"
+   ],
+   "isbn13": [
+    "9780609605813",
+    "9780722536766"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Jesus Mysteries\""
+   ],
+   "origin": "staging/batches/olx-003.json"
+  },
+  {
+   "title": "Word and glory",
+   "authors": [
+    "Craig A. Evans"
+   ],
+   "isbn13": [
+    "9781850754480"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Word and Glory\""
+   ],
+   "origin": "staging/batches/olx-003.json"
+  },
+  {
+   "title": "Circles of Power",
+   "authors": [
+    "John Michael Greer"
+   ],
+   "isbn13": [
+    "9781904658870"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Circles of power\""
+   ],
+   "origin": "staging/batches/olx-003.json"
+  },
+  {
+   "title": "The tarot",
+   "authors": [
+    "Sylvie Simon"
+   ],
+   "isbn13": [
+    "9780892812165"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The Tarot\""
+   ],
+   "origin": "staging/batches/olx-003.json"
+  },
+  {
+   "title": "The Power of Birthdays, Stars and Numbers",
+   "authors": [
+    "Saffi Crawford",
+    "Geraldine Sullivan"
+   ],
+   "isbn13": [
+    "9780965064255"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The Power of Birthdays, Stars, & Numbers\""
+   ],
+   "origin": "staging/batches/olx-003.json"
+  },
+  {
+   "title": "Predictive astrology",
+   "authors": [
+    "Frances Sakoian"
+   ],
+   "isbn13": [
+    "9780060915483"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Predictive astrology\""
+   ],
+   "origin": "staging/batches/olx-003.json"
+  },
+  {
+   "title": "Nostradamus and Other Prophets and Seers",
+   "authors": [
+    "Jo Durden-Smith"
+   ],
+   "isbn13": [
+    "9781784289713",
+    "9781848370210"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Nostradamus & other prophets and seers\""
+   ],
+   "origin": "staging/batches/olx-004.json"
+  },
+  {
+   "title": "Rune might",
+   "authors": [
+    "Edred Thorsson"
+   ],
+   "isbn13": [
+    "9780875427782"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Rune Might\""
+   ],
+   "origin": "staging/batches/olx-004.json"
+  },
+  {
+   "title": "Peace, love & healing",
+   "authors": [
+    "Bernie S. Siegel"
+   ],
+   "isbn13": [
+    "9780712636056",
+    "9780060160777",
+    "9780712670517"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Peace, Love and Healing\""
+   ],
+   "origin": "staging/batches/olx-004.json"
+  },
+  {
+   "title": "Peace, love & healing",
+   "authors": [
+    "Bernie S Siegel"
+   ],
+   "isbn13": [
+    "9780060917050"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Peace, Love and Healing\""
+   ],
+   "origin": "staging/batches/olx-004.json"
+  },
+  {
+   "title": "Health & Wellness",
+   "authors": [
+    "Gordon Edlin",
+    "Eric Golanty"
+   ],
+   "isbn13": [
+    "9781284144130"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Health and wellness\""
+   ],
+   "origin": "staging/batches/olx-004.json"
+  },
+  {
+   "title": "Health building",
+   "authors": [
+    "Randolph Stone"
+   ],
+   "isbn13": [
+    "9780916360238"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Health building\""
+   ],
+   "origin": "staging/batches/olx-004.json"
+  },
+  {
+   "title": "Love, medicine, & miracles",
+   "authors": [
+    "Bernie S. Siegel"
+   ],
+   "isbn13": [
+    "9780060914066"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Love, Medicine and Miracles\""
+   ],
+   "origin": "staging/batches/olx-004.json"
+  },
+  {
+   "title": "There's a boy in the girl's bathroom",
+   "authors": [
+    "Louis Sachar"
+   ],
+   "isbn13": [
+    "9781557361745"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"There's a Boy in the Girls' Bathroom\""
+   ],
+   "origin": "staging/batches/olx-004.json"
+  },
+  {
+   "title": "Alexander & the Terrible, Horrible, No Good, Very Bad Day",
+   "authors": [
+    "Judith Viorst"
+   ],
+   "isbn13": [
+    "9780881227321"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Alexander and the Terrible, Horrible, No Good, Very Bad Day\""
+   ],
+   "origin": "staging/batches/olx-004.json"
+  },
+  {
+   "title": "Broken Places & Outer Spaces",
+   "authors": [
+    "Nnedi Okorafor"
+   ],
+   "isbn13": [
+    "9781471185359"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Broken Places and Outer Spaces\""
+   ],
+   "origin": "staging/batches/olx-004.json"
+  },
+  {
+   "title": "Stress management",
+   "authors": [
+    "Edward A. Charlesworth"
+   ],
+   "isbn13": [
+    "9780345327345"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Stress management\""
+   ],
+   "origin": "staging/batches/olx-004.json"
+  },
+  {
+   "title": "The relaxation & stress reduction workbook",
+   "authors": [
+    "Davis, Martha"
+   ],
+   "isbn13": [
+    "9780934986045"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"The relaxation & stress reduction workbook\""
+   ],
+   "origin": "staging/batches/olx-004.json"
+  },
+  {
+   "title": "Geraldine's blanket",
+   "authors": [
+    "Holly Keller"
+   ],
+   "isbn13": [
+    "9780688025403"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"Geraldine's blanket\""
+   ],
+   "origin": "staging/batches/olx-004.json"
+  },
+  {
+   "title": "Masterpieces of Ancient Egypt",
+   "authors": [
+    "Nigel Strudwick"
+   ],
+   "isbn13": [
+    "9780292716629"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "duplicate of published work \"MASTERPIECES OF ANCIENT EGYPT.\""
+   ],
+   "origin": "staging/batches/olx-004.json"
+  },
+  {
    "title": "Siddhartha",
    "authors": [
     "Hermann Hesse"
@@ -1573,6 +2415,21 @@
    "origin": "staging/outside-candidates.psv:39"
   },
   {
+   "title": "Eastern Body, Western Mind",
+   "authors": [
+    "Anodea Judith"
+   ],
+   "isbn13": [
+    "9781587613678"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "possible additional edition of published \"Eastern body, Western mind\" (ISBN 9781587613678 not in its edition list)"
+   ],
+   "origin": "staging/outside-candidates.psv:41"
+  },
+  {
    "title": "Tao Te Ching",
    "authors": [
     "Stephen Mitchell (translator)"
@@ -1606,12 +2463,27 @@
     "Mantak Chia"
    ],
    "isbn13": [],
-   "stage": "identifiers",
-   "severity": "warning",
+   "stage": "dedup",
+   "severity": "duplicate",
    "reasons": [
-    "no ISBN-13 supplied; cannot be published until an ISBN/ASIN is confirmed from a source"
+    "possible additional edition of published \"Healing love through the Tao\" (ISBN null not in its edition list)"
    ],
    "origin": "staging/outside-candidates.psv:50"
+  },
+  {
+   "title": "The Way of Qigong",
+   "authors": [
+    "Kenneth S. Cohen"
+   ],
+   "isbn13": [
+    "9780345421098"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "already published as \"The way of qigong = [Ch'i kung chi tao]\""
+   ],
+   "origin": "staging/outside-candidates.psv:51"
   },
   {
    "title": "Beginning Mo Pai Nei Kung",
@@ -1670,6 +2542,21 @@
     "already published as \"The Nag Hammadi Scriptures\""
    ],
    "origin": "staging/outside-candidates.psv:57"
+  },
+  {
+   "title": "The Nag Hammadi Library in English",
+   "authors": [
+    "James M. Robinson (editor)"
+   ],
+   "isbn13": [
+    "9780060669355"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "already published as \"The Nag Hammadi Library in English\""
+   ],
+   "origin": "staging/outside-candidates.psv:58"
   },
   {
    "title": "Beyond Belief",
@@ -2080,6 +2967,20 @@
    ]
   },
   {
+   "title": "I Ching",
+   "authors": [
+    "Richard Wilhelm"
+   ],
+   "isbn13": [
+    "9781840134742"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "same title and author as \"The I Ching\" (the-i-ching) under a variant author spelling; kept the richer record"
+   ]
+  },
+  {
    "title": "Hinduism and Buddhism",
    "authors": [
     "Charles Eliot"
@@ -2150,6 +3051,21 @@
    ]
   },
   {
+   "title": "Tai chi",
+   "authors": [
+    "Paul Brecher"
+   ],
+   "isbn13": [
+    "9780954242503",
+    "9780007103393"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "same title and author as \"Tai chi\" (tai-chi) under a variant author spelling; kept the richer record"
+   ]
+  },
+  {
    "title": "The Gnostic discoveries",
    "authors": [
     "Marvin W Meyer"
@@ -2175,6 +3091,20 @@
    "severity": "duplicate",
    "reasons": [
     "same title and author as \"The secrets of Judas\" (the-secrets-of-judas) under a variant author spelling; kept the richer record"
+   ]
+  },
+  {
+   "title": "Witchcraft",
+   "authors": [
+    "Charles Williams"
+   ],
+   "isbn13": [
+    "9780976402572"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "same title and author as \"Witchcraft\" (witchcraft) under a variant author spelling; kept the richer record"
    ]
   },
   {
@@ -2222,6 +3152,20 @@
    ]
   },
   {
+   "title": "The relaxation & stress reduction workbook",
+   "authors": [
+    "Davis, Martha"
+   ],
+   "isbn13": [
+    "9780934986014"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "same title and author as \"The Relaxation and Stress Reduction Workbook\" (the-relaxation-and-stress-reduction-workbook) under a variant author spelling; kept the richer record"
+   ]
+  },
+  {
    "title": "Jesus the man",
    "authors": [
     "B. E. Thiering"
@@ -2233,6 +3177,48 @@
    "severity": "duplicate",
    "reasons": [
     "same title and author as \"Jesus the Man\" (jesus-the-man) under a variant author spelling; kept the richer record"
+   ]
+  },
+  {
+   "title": "Outlines of Jainism",
+   "authors": [
+    "Jagomandar Lal Jaini"
+   ],
+   "isbn13": [
+    "9780883558010"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "same title and author as \"Outlines of Jainism\" (outlines-of-jainism) under a variant author spelling; kept the richer record"
+   ]
+  },
+  {
+   "title": "Sikh gurus",
+   "authors": [
+    "Kartar Singh Duggal"
+   ],
+   "isbn13": [
+    "9780893891060"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "same title and author as \"The Sikh gurus\" (the-sikh-gurus) under a variant author spelling; kept the richer record"
+   ]
+  },
+  {
+   "title": "LOVE MEDICINE AND MIRACLES",
+   "authors": [
+    "M.D. Bernie S. Siegel"
+   ],
+   "isbn13": [
+    "9780712612647"
+   ],
+   "stage": "dedup",
+   "severity": "duplicate",
+   "reasons": [
+    "same title and author as \"Love, Medicine and Miracles\" (love-medicine-and-miracles) under a variant author spelling; kept the richer record"
    ]
   }
  ]

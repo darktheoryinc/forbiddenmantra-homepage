@@ -135,7 +135,7 @@ for (const [name, vp] of VIEWPORTS) {
   const hrefs = await pg.$$eval('.edition a.btn:not(.btn-ghost)', (a) => a.map((x) => x.href)); ok(hrefs.length === 2 && new Set(hrefs).size === 2 && hrefs.every((h) => h.includes('amazon.com/dp/')), `${T} each edition has its own Amazon destination: ${hrefs.map((h) => h.split('/dp/')[1]).join(', ')}`);
   ok(await pg.isVisible('text=As an Amazon Associate'), `${T} affiliate disclosure visible`); await snap('book', true);
   await pg.click('.byline a'); ok(pg.url().includes('authors/rachel-pollack'), `${T} book -> author link`); await snap('author');
-  await pg.goto(url('authors/index.html')); ok((await pg.$('#l-T')) !== null, `${T} authors A–Z renders`);
+  await pg.goto(url('authors/index.html')); ok((await pg.$('#l-T')) !== null || ((await pg.$$('.az a')).length >= 15 && (await pg.locator('.az a').first().getAttribute('href')).includes('authors/letter/')), `${T} authors A–Z renders (one page, or a letter index that links to per-letter pages once the list is large)`); if (await pg.$('#l-T') === null) { await pg.goto(url('authors/letter/t/index.html')); ok((await pg.locator('ul.authors li a').count()) > 0, `${T} the per-letter author page for T lists authors`); }
   await pg.goto(url('press/index.html')); await snap('press', true);
   await pg.goto(url('books/the-apocalypse-of-adam/index.html')); ok((await pg.$$eval('.edition a.btn:not(.btn-ghost)', (a) => a.map((x) => x.href))).some((h) => h.includes('B0H8MQN9WK')), `${T} FMP audiobook links to its own ASIN`);
   ok(!(await hscroll()), `${T} book page: no horizontal scroll`);

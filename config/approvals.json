@@ -35,10 +35,10 @@
     "approvedOn": null
   },
   "productionAddress": {
-    "approved": false,
-    "approvedBy": null,
-    "approvedOn": null,
-    "url": null
+    "approved": true,
+    "approvedBy": "site owner (explicit instruction in the working session)",
+    "approvedOn": "2026-11-02",
+    "url": "https://forbiddenmantra.com"
   },
   "amazonHostedCovers": {
     "approved": true,

@@ -1,0 +1,2578 @@
+{
+ "batch": "olx-005",
+ "checkedOn": "2026-10-27",
+ "tier": "open-library-catalogue",
+ "works": [
+  {
+   "title": "The criminal law of ancient Rome",
+   "subtitle": "",
+   "authors": [
+    "O. F. Robinson"
+   ],
+   "subjects": [
+    "ancient-civilizations"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "book",
+     "publisher": "Duckworth",
+     "year": 1995,
+     "isbn13": "9780715626634",
+     "note": "Binding not stated by the source record.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL21675698M/The_criminal_law_of_ancient_Rome",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    },
+    {
+     "language": "en",
+     "format": "book",
+     "publisher": "Johns Hopkins University Press",
+     "year": 1995,
+     "isbn13": "9780801853180",
+     "note": "Binding not stated by the source record.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL792290M/The_criminal_law_of_ancient_Rome",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    }
+   ],
+   "provenance": {
+    "tier": "open-library-catalogue",
+    "method": "single Open Library edition record passing the single-source gates",
+    "workKey": "/works/OL2366498W"
+   },
+   "sources": [
+    {
+     "label": "Open Library record",
+     "url": "http://openlibrary.org/books/OL21675698M/The_criminal_law_of_ancient_Rome",
+     "accessed": "2026-11-02",
+     "supports": "title, author, ISBN-13"
+    }
+   ]
+  },
+  {
+   "title": "Plautus",
+   "subtitle": "Curculio",
+   "authors": [
+    "T. H. M. Gellar-Goad"
+   ],
+   "subjects": [
+    "ancient-civilizations"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "book",
+     "publisher": "Bloomsbury Publishing Plc",
+     "year": 2021,
+     "isbn13": "9781350079748",
+     "note": "Binding not stated by the source record.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL35880003M/Plautus",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    },
+    {
+     "language": "en",
+     "format": "book",
+     "publisher": "Bloomsbury Publishing Plc",
+     "year": 2025,
+     "isbn13": "9781350416260",
+     "note": "Binding not stated by the source record.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL62315892M/Plautus",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    }
+   ],
+   "provenance": {
+    "tier": "open-library-catalogue",
+    "method": "single Open Library edition record passing the single-source gates",
+    "workKey": "/works/OL26523345W"
+   },
+   "sources": [
+    {
+     "label": "Open Library record",
+     "url": "http://openlibrary.org/books/OL35880003M/Plautus",
+     "accessed": "2026-11-02",
+     "supports": "title, author, ISBN-13"
+    }
+   ]
+  },
+  {
+   "title": "The fragmentary classicising historians of the later Roman Empire",
+   "subtitle": "Eunapius, Olympiodorus, Priscus and Malchus / by",
+   "authors": [
+    "R. C. Blockley"
+   ],
+   "subjects": [
+    "ancient-civilizations"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "unrated",
+   "series": {
+    "name": "ARCA, classical and medieval texts, papers, and monographs -- 6-10"
+   },
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "book",
+     "publisher": "F. Cairns",
+     "year": 1981,
+     "isbn13": "9780905205076",
+     "note": "Binding not stated by the source record.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL16484913M/The_fragmentary_classicising_historians_of_the_later_Roman_Empire",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    }
+   ],
+   "provenance": {
+    "tier": "open-library-catalogue",
+    "method": "single Open Library edition record passing the single-source gates",
+    "workKey": "/works/OL5541929W"
+   },
+   "sources": [
+    {
+     "label": "Open Library record",
+     "url": "http://openlibrary.org/books/OL16484913M/The_fragmentary_classicising_historians_of_the_later_Roman_Empire",
+     "accessed": "2026-11-02",
+     "supports": "title, author, ISBN-13"
+    }
+   ]
+  },
+  {
+   "title": "Indiana Jones Explores Ancient Rome (Indiana Jones Explores)",
+   "subtitle": "",
+   "authors": [
+    "John Malam"
+   ],
+   "subjects": [
+    "ancient-civilizations"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Evans Brothers Ltd",
+     "year": 1996,
+     "isbn13": "9780237513948",
+     "note": "Language not stated on the edition record; inferred from the English-language Open Library work.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL10199601M/Indiana_Jones_Explores_Ancient_Rome_(Indiana_Jones_Explores)",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    },
+    {
+     "language": "en",
+     "format": "hardcover",
+     "publisher": "Trafalgar Square",
+     "year": 1996,
+     "isbn13": "9780237512231",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL10199532M/Indiana_Jones_Explores_Ancient_Rome_(Indiana_Jones_Explores)",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    }
+   ],
+   "provenance": {
+    "tier": "open-library-catalogue",
+    "method": "single Open Library edition record passing the single-source gates",
+    "workKey": "/works/OL457012W"
+   },
+   "sources": [
+    {
+     "label": "Open Library record",
+     "url": "http://openlibrary.org/books/OL10199601M/Indiana_Jones_Explores_Ancient_Rome_(Indiana_Jones_Explores)",
+     "accessed": "2026-11-02",
+     "supports": "title, author, ISBN-13"
+    }
+   ]
+  },
+  {
+   "title": "The excavations of San Giovanni di Ruoti",
+   "subtitle": "",
+   "authors": [
+    "Alastair Small"
+   ],
+   "subjects": [
+    "ancient-civilizations"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "unrated",
+   "series": {
+    "name": "Phoenix. Supplementary volume ; 33 = Phoenix. Tome supplémentaire -- 33, 34, 40"
+   },
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "book",
+     "publisher": "University of Toronto Press",
+     "year": 1994,
+     "isbn13": "9780802059482",
+     "note": "Binding not stated by the source record.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL16824215M/The_excavations_of_San_Giovanni_di_Ruoti",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    }
+   ],
+   "provenance": {
+    "tier": "open-library-catalogue",
+    "method": "single Open Library edition record passing the single-source gates",
+    "workKey": "/works/OL8905951W"
+   },
+   "sources": [
+    {
+     "label": "Open Library record",
+     "url": "http://openlibrary.org/books/OL16824215M/The_excavations_of_San_Giovanni_di_Ruoti",
+     "accessed": "2026-11-02",
+     "supports": "title, author, ISBN-13"
+    }
+   ]
+  },
+  {
+   "title": "Rebuilding the Past",
+   "subtitle": "",
+   "authors": [
+    "Dai Morgan Evans",
+    "Roger James",
+    "Christine Shaw"
+   ],
+   "subjects": [
+    "ancient-civilizations"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Methuen Publishing Ltd",
+     "year": 2003,
+     "isbn13": "9780413773968",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL10185810M/Rebuilding_the_Past",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    }
+   ],
+   "provenance": {
+    "tier": "open-library-catalogue",
+    "method": "single Open Library edition record passing the single-source gates",
+    "workKey": "/works/OL9346121W"
+   },
+   "sources": [
+    {
+     "label": "Open Library record",
+     "url": "http://openlibrary.org/books/OL10185810M/Rebuilding_the_Past",
+     "accessed": "2026-11-02",
+     "supports": "title, author, ISBN-13"
+    }
+   ]
+  },
+  {
+   "title": "Historical sources for York archaeology after AD 1100",
+   "subtitle": "the history of Clementhorpe Nunnery",
+   "authors": [
+    "R. B. Dobson"
+   ],
+   "subjects": [
+    "ancient-civilizations"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "unrated",
+   "series": {
+    "name": "Archaeology of York -- v. 2, fasc. 1"
+   },
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "book",
+     "publisher": "Published for the York Archaeological Trust by the Council for British Archaeology",
+     "year": 1984,
+     "isbn13": "9780906780404",
+     "note": "Binding not stated by the source record.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL22150932M/Historical_sources_for_York_archaeology_after_AD_1100",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    }
+   ],
+   "provenance": {
+    "tier": "open-library-catalogue",
+    "method": "single Open Library edition record passing the single-source gates",
+    "workKey": "/works/OL2981108W"
+   },
+   "sources": [
+    {
+     "label": "Open Library record",
+     "url": "http://openlibrary.org/books/OL22150932M/Historical_sources_for_York_archaeology_after_AD_1100",
+     "accessed": "2026-11-02",
+     "supports": "title, author, ISBN-13"
+    }
+   ]
+  },
+  {
+   "title": "The Roman record",
+   "subtitle": "",
+   "authors": [
+    "Theresa Dowswell"
+   ],
+   "subjects": [
+    "ancient-civilizations"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "unrated",
+   "series": {
+    "name": "Newspaper histories"
+   },
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "book",
+     "publisher": "Usborne",
+     "year": 1997,
+     "isbn13": "9780746027547",
+     "note": "Binding not stated by the source record.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL22709246M/The_Roman_record",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    }
+   ],
+   "provenance": {
+    "tier": "open-library-catalogue",
+    "method": "single Open Library edition record passing the single-source gates",
+    "workKey": "/works/OL5822760W"
+   },
+   "sources": [
+    {
+     "label": "Open Library record",
+     "url": "http://openlibrary.org/books/OL22709246M/The_Roman_record",
+     "accessed": "2026-11-02",
+     "supports": "title, author, ISBN-13"
+    }
+   ]
+  },
+  {
+   "title": "Caesar's legions",
+   "subtitle": "the Roman soldier 753 BC to 117 AD",
+   "authors": [
+    "Nick Sekunda"
+   ],
+   "subjects": [
+    "ancient-civilizations"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "book",
+     "publisher": "Osprey History",
+     "year": 2000,
+     "isbn13": "9781841760445",
+     "note": "Binding not stated by the source record.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL22459562M/Caesar's_legions",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    }
+   ],
+   "provenance": {
+    "tier": "open-library-catalogue",
+    "method": "single Open Library edition record passing the single-source gates",
+    "workKey": "/works/OL4910796W"
+   },
+   "sources": [
+    {
+     "label": "Open Library record",
+     "url": "http://openlibrary.org/books/OL22459562M/Caesar's_legions",
+     "accessed": "2026-11-02",
+     "supports": "title, author, ISBN-13"
+    }
+   ]
+  },
+  {
+   "title": "Domus",
+   "subtitle": "wall painting in the Roman house",
+   "authors": [
+    "Donatella Mazzoleni"
+   ],
+   "subjects": [
+    "ancient-civilizations"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "book",
+     "publisher": "J. Paul Getty Museum",
+     "year": 2004,
+     "isbn13": "9780892367665",
+     "note": "Binding not stated by the source record.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL3289593M/Domus",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    }
+   ],
+   "provenance": {
+    "tier": "open-library-catalogue",
+    "method": "single Open Library edition record passing the single-source gates",
+    "workKey": "/works/OL543770W"
+   },
+   "sources": [
+    {
+     "label": "Open Library record",
+     "url": "http://openlibrary.org/books/OL3289593M/Domus",
+     "accessed": "2026-11-02",
+     "supports": "title, author, ISBN-13"
+    }
+   ]
+  },
+  {
+   "title": "Libya",
+   "subtitle": "the lost cities of the Roman Empire",
+   "authors": [
+    "Antonino Di Vita"
+   ],
+   "subjects": [
+    "ancient-civilizations"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "book",
+     "publisher": "Könemann",
+     "year": 1999,
+     "isbn13": "9783895088445",
+     "note": "Binding not stated by the source record.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL4004902M/Libya",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    }
+   ],
+   "provenance": {
+    "tier": "open-library-catalogue",
+    "method": "single Open Library edition record passing the single-source gates",
+    "workKey": "/works/OL2446571W"
+   },
+   "sources": [
+    {
+     "label": "Open Library record",
+     "url": "http://openlibrary.org/books/OL4004902M/Libya",
+     "accessed": "2026-11-02",
+     "supports": "title, author, ISBN-13"
+    }
+   ]
+  },
+  {
+   "title": "Tacitus, Annals, 15.20-23, 33-45",
+   "subtitle": "Latin Text, Study Aids with Vocabulary, and Commentary",
+   "authors": [
+    "Mathew Owen"
+   ],
+   "subjects": [
+    "ancient-civilizations"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "book",
+     "publisher": "Open Book Publishers",
+     "year": 2015,
+     "isbn13": "9782821854116",
+     "note": "Binding not stated by the source record.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL52247287M/Tacitus_Annals_15.20-23_33-45",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    }
+   ],
+   "provenance": {
+    "tier": "open-library-catalogue",
+    "method": "single Open Library edition record passing the single-source gates",
+    "workKey": "/works/OL23500969W"
+   },
+   "sources": [
+    {
+     "label": "Open Library record",
+     "url": "http://openlibrary.org/books/OL52247287M/Tacitus_Annals_15.20-23_33-45",
+     "accessed": "2026-11-02",
+     "supports": "title, author, ISBN-13"
+    }
+   ]
+  },
+  {
+   "title": "Rome and Italy",
+   "subtitle": "books VI-X of The History of Rome from its foundation",
+   "authors": [
+    "Titus Livius"
+   ],
+   "subjects": [
+    "ancient-civilizations"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "unrated",
+   "series": {
+    "name": "Penguin classics"
+   },
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "book",
+     "publisher": "Penguin",
+     "year": 1982,
+     "isbn13": "9780140443882",
+     "note": "Binding not stated by the source record.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL3095264M/Rome_and_Italy",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    }
+   ],
+   "provenance": {
+    "tier": "open-library-catalogue",
+    "method": "single Open Library edition record passing the single-source gates",
+    "workKey": "/works/OL1261079W"
+   },
+   "sources": [
+    {
+     "label": "Open Library record",
+     "url": "http://openlibrary.org/books/OL3095264M/Rome_and_Italy",
+     "accessed": "2026-11-02",
+     "supports": "title, author, ISBN-13"
+    }
+   ]
+  },
+  {
+   "title": "Suetonius",
+   "subtitle": "The Flavian Emperors (BCP Classical Studies) (BCP Classical Studies)",
+   "authors": [
+    "Brian W. Jones",
+    "Robert D. Milns"
+   ],
+   "subjects": [
+    "ancient-civilizations"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Duckworth Publishing",
+     "year": 2002,
+     "isbn13": "9781853996139",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL11967857M/Suetonius",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    }
+   ],
+   "provenance": {
+    "tier": "open-library-catalogue",
+    "method": "single Open Library edition record passing the single-source gates",
+    "workKey": "/works/OL12332394W"
+   },
+   "sources": [
+    {
+     "label": "Open Library record",
+     "url": "http://openlibrary.org/books/OL11967857M/Suetonius",
+     "accessed": "2026-11-02",
+     "supports": "title, author, ISBN-13"
+    }
+   ]
+  },
+  {
+   "title": "New Perspectives on the Roman Civil Wars of 49-30 BCE",
+   "subtitle": "",
+   "authors": [
+    "Hannah Cornwell",
+    "Richard Westall"
+   ],
+   "subjects": [
+    "ancient-civilizations"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "book",
+     "publisher": "Bloomsbury Publishing Plc",
+     "year": 2024,
+     "isbn13": "9781350272477",
+     "note": "Binding not stated by the source record.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL50628857M/New_Perspectives_on_the_Roman_Civil_Wars_of_49-30_BCE",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    }
+   ],
+   "provenance": {
+    "tier": "open-library-catalogue",
+    "method": "single Open Library edition record passing the single-source gates",
+    "workKey": "/works/OL37570873W"
+   },
+   "sources": [
+    {
+     "label": "Open Library record",
+     "url": "http://openlibrary.org/books/OL50628857M/New_Perspectives_on_the_Roman_Civil_Wars_of_49-30_BCE",
+     "accessed": "2026-11-02",
+     "supports": "title, author, ISBN-13"
+    }
+   ]
+  },
+  {
+   "title": "The Roman-Jewish wars and Hebrew cultural nationalism",
+   "subtitle": "",
+   "authors": [
+    "Moses Aberbach"
+   ],
+   "subjects": [
+    "ancient-civilizations"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "book",
+     "publisher": "St. Martin's Press",
+     "year": 2000,
+     "isbn13": "9780312231910",
+     "note": "Binding not stated by the source record.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL16981940M/The_Roman-Jewish_wars_and_Hebrew_cultural_nationalism",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    }
+   ],
+   "provenance": {
+    "tier": "open-library-catalogue",
+    "method": "single Open Library edition record passing the single-source gates",
+    "workKey": "/works/OL3672363W"
+   },
+   "sources": [
+    {
+     "label": "Open Library record",
+     "url": "http://openlibrary.org/books/OL16981940M/The_Roman-Jewish_wars_and_Hebrew_cultural_nationalism",
+     "accessed": "2026-11-02",
+     "supports": "title, author, ISBN-13"
+    }
+   ]
+  },
+  {
+   "title": "ROMAN POTTERY PRODUCTION IN THE WALBROOK VALLEY: EXCAVATIONS AT 20-28 MOORGATE, CITY OF LONDON, 1998-2000.",
+   "subtitle": "",
+   "authors": [
+    "FIONA SEELEY"
+   ],
+   "subjects": [
+    "ancient-civilizations"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "unrated",
+   "series": {
+    "name": "MOLAS MONOGRAPH; 25"
+   },
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "book",
+     "publisher": "MUS OF LOND ARCHAEOLOGY S",
+     "year": 2005,
+     "isbn13": "9781901992557",
+     "note": "Binding not stated by the source record. Language not stated on the edition record; inferred from the English-language Open Library work.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL22722131M/ROMAN_POTTERY_PRODUCTION_IN_THE_WALBROOK_VALLEY_EXCAVATIONS_AT_20-28_MOORGATE_CITY_OF_LONDON_1998-20",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    }
+   ],
+   "provenance": {
+    "tier": "open-library-catalogue",
+    "method": "single Open Library edition record passing the single-source gates",
+    "workKey": "/works/OL13662661W"
+   },
+   "sources": [
+    {
+     "label": "Open Library record",
+     "url": "http://openlibrary.org/books/OL22722131M/ROMAN_POTTERY_PRODUCTION_IN_THE_WALBROOK_VALLEY_EXCAVATIONS_AT_20-28_MOORGATE_CITY_OF_LONDON_1998-20",
+     "accessed": "2026-11-02",
+     "supports": "title, author, ISBN-13"
+    }
+   ]
+  },
+  {
+   "title": "The Roman legionary",
+   "subtitle": "",
+   "authors": [
+    "Martin Windrow"
+   ],
+   "subjects": [
+    "ancient-civilizations"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "unrated",
+   "series": {
+    "name": "The Soldier through the ages"
+   },
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "book",
+     "publisher": "F. Watts",
+     "year": 1984,
+     "isbn13": "9780531037812",
+     "note": "Binding not stated by the source record.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL2869769M/The_Roman_legionary",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    }
+   ],
+   "provenance": {
+    "tier": "open-library-catalogue",
+    "method": "single Open Library edition record passing the single-source gates",
+    "workKey": "/works/OL4044947W"
+   },
+   "sources": [
+    {
+     "label": "Open Library record",
+     "url": "http://openlibrary.org/books/OL2869769M/The_Roman_legionary",
+     "accessed": "2026-11-02",
+     "supports": "title, author, ISBN-13"
+    }
+   ]
+  },
+  {
+   "title": "24 Hours in Ancient Rome",
+   "subtitle": "A Day in the Life of the People Who Lived There",
+   "authors": [
+    "Philip Matyszak"
+   ],
+   "subjects": [
+    "ancient-civilizations"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "book",
+     "publisher": "O'Mara Books, Limited, Michael",
+     "year": 2019,
+     "isbn13": "9781789291278",
+     "note": "Binding not stated by the source record.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL28711917M/24_Hours_in_Ancient_Rome",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    },
+    {
+     "language": "en",
+     "format": "book",
+     "publisher": "O'Mara Books, Limited, Michael",
+     "year": 2018,
+     "isbn13": "9781782438564",
+     "note": "Binding not stated by the source record.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL28641100M/24_Hours_in_Ancient_Rome",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    }
+   ],
+   "provenance": {
+    "tier": "open-library-catalogue",
+    "method": "single Open Library edition record passing the single-source gates",
+    "workKey": "/works/OL21156415W"
+   },
+   "sources": [
+    {
+     "label": "Open Library record",
+     "url": "http://openlibrary.org/books/OL28711917M/24_Hours_in_Ancient_Rome",
+     "accessed": "2026-11-02",
+     "supports": "title, author, ISBN-13"
+    }
+   ]
+  },
+  {
+   "title": "ROMANO-BYZANTINE INFANTRY EQUIPMENT.",
+   "subtitle": "",
+   "authors": [
+    "I.P. (IAN P.) STEPHENSON"
+   ],
+   "subjects": [
+    "ancient-civilizations"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "book",
+     "publisher": "TEMPUS",
+     "year": 2006,
+     "isbn13": "9780752428864",
+     "note": "Binding not stated by the source record. Language not stated on the edition record; inferred from the English-language Open Library work.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL22750546M/ROMANO-BYZANTINE_INFANTRY_EQUIPMENT.",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    }
+   ],
+   "provenance": {
+    "tier": "open-library-catalogue",
+    "method": "single Open Library edition record passing the single-source gates",
+    "workKey": "/works/OL13671783W"
+   },
+   "sources": [
+    {
+     "label": "Open Library record",
+     "url": "http://openlibrary.org/books/OL22750546M/ROMANO-BYZANTINE_INFANTRY_EQUIPMENT.",
+     "accessed": "2026-11-02",
+     "supports": "title, author, ISBN-13"
+    }
+   ]
+  },
+  {
+   "title": "Villa to village",
+   "subtitle": "the transformation of the Roman countryside in Italy, c. 400-1000",
+   "authors": [
+    "Riccardo Francovich"
+   ],
+   "subjects": [
+    "ancient-civilizations"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "unrated",
+   "series": {
+    "name": "Duckworth debates in archaeology"
+   },
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "book",
+     "publisher": "Duckworth",
+     "year": 2003,
+     "isbn13": "9780715631928",
+     "note": "Binding not stated by the source record.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL17101307M/Villa_to_village",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    }
+   ],
+   "provenance": {
+    "tier": "open-library-catalogue",
+    "method": "single Open Library edition record passing the single-source gates",
+    "workKey": "/works/OL4549517W"
+   },
+   "sources": [
+    {
+     "label": "Open Library record",
+     "url": "http://openlibrary.org/books/OL17101307M/Villa_to_village",
+     "accessed": "2026-11-02",
+     "supports": "title, author, ISBN-13"
+    }
+   ]
+  },
+  {
+   "title": "Caligula",
+   "subtitle": "divine carnage : atrocities of the Roman Emperors",
+   "authors": [
+    "Stephen Barber"
+   ],
+   "subjects": [
+    "ancient-civilizations"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "book",
+     "publisher": "Creation Books",
+     "year": 2001,
+     "isbn13": "9781840680492",
+     "note": "Binding not stated by the source record.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL19060275M/Caligula",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    }
+   ],
+   "provenance": {
+    "tier": "open-library-catalogue",
+    "method": "single Open Library edition record passing the single-source gates",
+    "workKey": "/works/OL1935260W"
+   },
+   "sources": [
+    {
+     "label": "Open Library record",
+     "url": "http://openlibrary.org/books/OL19060275M/Caligula",
+     "accessed": "2026-11-02",
+     "supports": "title, author, ISBN-13"
+    }
+   ]
+  },
+  {
+   "title": "The Romans",
+   "subtitle": "their life and customs",
+   "authors": [
+    "Guhl, E."
+   ],
+   "subjects": [
+    "ancient-civilizations"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "book",
+     "publisher": "Senate",
+     "year": 1994,
+     "isbn13": "9781859580554",
+     "note": "Binding not stated by the source record.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL21717388M/The_Romans",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    }
+   ],
+   "provenance": {
+    "tier": "open-library-catalogue",
+    "method": "single Open Library edition record passing the single-source gates",
+    "workKey": "/works/OL19315234W"
+   },
+   "sources": [
+    {
+     "label": "Open Library record",
+     "url": "http://openlibrary.org/books/OL21717388M/The_Romans",
+     "accessed": "2026-11-02",
+     "supports": "title, author, ISBN-13"
+    }
+   ]
+  },
+  {
+   "title": "Roman military equipment",
+   "subtitle": "from the Punic Wars to the fall of Rome",
+   "authors": [
+    "M. C. Bishop"
+   ],
+   "subjects": [
+    "ancient-civilizations"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "book",
+     "publisher": "Batsford",
+     "year": 1993,
+     "isbn13": "9780713476279",
+     "note": "Binding not stated by the source record.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL21668757M/Roman_military_equipment",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    }
+   ],
+   "provenance": {
+    "tier": "open-library-catalogue",
+    "method": "single Open Library edition record passing the single-source gates",
+    "workKey": "/works/OL4373387W"
+   },
+   "sources": [
+    {
+     "label": "Open Library record",
+     "url": "http://openlibrary.org/books/OL21668757M/Roman_military_equipment",
+     "accessed": "2026-11-02",
+     "supports": "title, author, ISBN-13"
+    }
+   ]
+  },
+  {
+   "title": "COMPLETE CHRONICLE OF THE EMPERORS OF ROME.",
+   "subtitle": "",
+   "authors": [
+    "ROGER MICHAEL KEAN"
+   ],
+   "subjects": [
+    "ancient-civilizations"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "book",
+     "publisher": "THALAMUS",
+     "year": 2005,
+     "isbn13": "9781902886053",
+     "note": "Binding not stated by the source record. Language not stated on the edition record; inferred from the English-language Open Library work.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL22713983M/COMPLETE_CHRONICLE_OF_THE_EMPERORS_OF_ROME.",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    }
+   ],
+   "provenance": {
+    "tier": "open-library-catalogue",
+    "method": "single Open Library edition record passing the single-source gates",
+    "workKey": "/works/OL13660244W"
+   },
+   "sources": [
+    {
+     "label": "Open Library record",
+     "url": "http://openlibrary.org/books/OL22713983M/COMPLETE_CHRONICLE_OF_THE_EMPERORS_OF_ROME.",
+     "accessed": "2026-11-02",
+     "supports": "title, author, ISBN-13"
+    }
+   ]
+  },
+  {
+   "title": "Narrative of a residence at the court of Meer Ali Moorad",
+   "subtitle": "",
+   "authors": [
+    "Edward Archer Langley"
+   ],
+   "subjects": [
+    "ancient-civilizations"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "unrated",
+   "series": {
+    "name": "Karachi under the Raj, 1843-1947"
+   },
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "book",
+     "publisher": "Pakistan Herald Publications",
+     "year": 2005,
+     "isbn13": "9789698837143",
+     "note": "Binding not stated by the source record.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL20735722M/Narrative_of_a_residence_at_the_court_of_Meer_Ali_Moorad",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    }
+   ],
+   "provenance": {
+    "tier": "open-library-catalogue",
+    "method": "single Open Library edition record passing the single-source gates",
+    "workKey": "/works/OL7589441W"
+   },
+   "sources": [
+    {
+     "label": "Open Library record",
+     "url": "http://openlibrary.org/books/OL20735722M/Narrative_of_a_residence_at_the_court_of_Meer_Ali_Moorad",
+     "accessed": "2026-11-02",
+     "supports": "title, author, ISBN-13"
+    }
+   ]
+  },
+  {
+   "title": "The Celestine Insights",
+   "subtitle": "The Celestine Prophecy and The Tenth Insight",
+   "authors": [
+    "James Redfield"
+   ],
+   "subjects": [
+    "ancient-civilizations"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "hardcover",
+     "publisher": "Warner Books",
+     "year": 1997,
+     "isbn13": "9780446523943",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL24957256M/The_Celestine_Insights",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    }
+   ],
+   "provenance": {
+    "tier": "open-library-catalogue",
+    "method": "single Open Library edition record passing the single-source gates",
+    "workKey": "/works/OL16058012W"
+   },
+   "sources": [
+    {
+     "label": "Open Library record",
+     "url": "http://openlibrary.org/books/OL24957256M/The_Celestine_Insights",
+     "accessed": "2026-11-02",
+     "supports": "title, author, ISBN-13"
+    }
+   ]
+  },
+  {
+   "title": "La Bible, le Coran et la science",
+   "subtitle": "Les écritures saintes examinées à la lumière des connaissances modernes",
+   "authors": [
+    "Maurice Bucaille"
+   ],
+   "subjects": [
+    "ancient-texts"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Pocket",
+     "year": 2003,
+     "isbn13": "9782266131032",
+     "note": "Language not stated on the edition record; inferred from the English-language Open Library work.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL12510759M/La_Bible_le_Coran_et_la_science",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    }
+   ],
+   "provenance": {
+    "tier": "open-library-catalogue",
+    "method": "single Open Library edition record passing the single-source gates",
+    "workKey": "/works/OL2501584W"
+   },
+   "sources": [
+    {
+     "label": "Open Library record",
+     "url": "http://openlibrary.org/books/OL12510759M/La_Bible_le_Coran_et_la_science",
+     "accessed": "2026-11-02",
+     "supports": "title, author, ISBN-13"
+    }
+   ]
+  },
+  {
+   "title": "The Tibetan Book of the Dead",
+   "subtitle": "",
+   "authors": [
+    "W. Y. Evans-Wentz"
+   ],
+   "subjects": [
+    "ancient-texts"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "New Age Books,India",
+     "year": 2004,
+     "isbn13": "9788178222516",
+     "note": "Language not stated on the edition record; inferred from the English-language Open Library work.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL9082287M/The_Tibetan_Book_of_the_Dead",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    },
+    {
+     "language": "en",
+     "format": "hardcover",
+     "publisher": "Galahad Books",
+     "year": 2000,
+     "isbn13": "9780883560167",
+     "title": "Tibetan Book of the Dead",
+     "note": "Language not stated on the edition record; inferred from the English-language Open Library work.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL8180815M/Tibetan_Book_of_the_Dead",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    }
+   ],
+   "provenance": {
+    "tier": "open-library-catalogue",
+    "method": "single Open Library edition record passing the single-source gates",
+    "workKey": "/works/OL8007925W"
+   },
+   "sources": [
+    {
+     "label": "Open Library record",
+     "url": "http://openlibrary.org/books/OL9082287M/The_Tibetan_Book_of_the_Dead",
+     "accessed": "2026-11-02",
+     "supports": "title, author, ISBN-13"
+    }
+   ]
+  },
+  {
+   "title": "Nyingma Edition of the SDe-Dge BKa'-'gyur/BsTan-'gyur",
+   "subtitle": "Research Catalogue and Bibliography",
+   "authors": [
+    "Tarthang Tulku"
+   ],
+   "subjects": [
+    "ancient-texts"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "book",
+     "publisher": "Dharma Publishing",
+     "year": 1982,
+     "isbn13": "9780898001204",
+     "note": "Binding not stated by the source record.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL38043319M/Nyingma_Edition_of_the_SDe-Dge_BKa'-'gyur_BsTan-'gyur",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    }
+   ],
+   "provenance": {
+    "tier": "open-library-catalogue",
+    "method": "single Open Library edition record passing the single-source gates",
+    "workKey": "/works/OL27833971W"
+   },
+   "sources": [
+    {
+     "label": "Open Library record",
+     "url": "http://openlibrary.org/books/OL38043319M/Nyingma_Edition_of_the_SDe-Dge_BKa'-'gyur_BsTan-'gyur",
+     "accessed": "2026-11-02",
+     "supports": "title, author, ISBN-13"
+    }
+   ]
+  },
+  {
+   "title": "Buddhist scriptures",
+   "subtitle": "a bibliography",
+   "authors": [
+    "Edward Conze"
+   ],
+   "subjects": [
+    "ancient-texts"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "unrated",
+   "series": {
+    "name": "Garland reference library of the humanities ;"
+   },
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "book",
+     "publisher": "Garland Pub.",
+     "year": 1982,
+     "isbn13": "9780824098483",
+     "note": "Binding not stated by the source record.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL4567092M/Buddhist_scriptures",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    },
+    {
+     "language": "en",
+     "format": "book",
+     "publisher": "Penguin",
+     "year": 1981,
+     "isbn13": "9780140440881",
+     "note": "Binding not stated by the source record.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL22346443M/Buddhist_scriptures",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    }
+   ],
+   "provenance": {
+    "tier": "open-library-catalogue",
+    "method": "single Open Library edition record passing the single-source gates",
+    "workKey": "/works/OL1363253W"
+   },
+   "sources": [
+    {
+     "label": "Open Library record",
+     "url": "http://openlibrary.org/books/OL4567092M/Buddhist_scriptures",
+     "accessed": "2026-11-02",
+     "supports": "title, author, ISBN-13"
+    }
+   ]
+  },
+  {
+   "title": "Chips From a German Workshop - Volume I",
+   "subtitle": "Volume 1",
+   "authors": [
+    "F. Max Müller"
+   ],
+   "subjects": [
+    "ancient-texts"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Outlook Verlag",
+     "year": 2020,
+     "isbn13": "9783752411829",
+     "note": "Language not stated on the edition record; inferred from the English-language Open Library work.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL35299537M/Chips_From_a_German_Workshop_-_Volume_I",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    }
+   ],
+   "provenance": {
+    "tier": "open-library-catalogue",
+    "method": "single Open Library edition record passing the single-source gates",
+    "workKey": "/works/OL8080523W"
+   },
+   "sources": [
+    {
+     "label": "Open Library record",
+     "url": "http://openlibrary.org/books/OL35299537M/Chips_From_a_German_Workshop_-_Volume_I",
+     "accessed": "2026-11-02",
+     "supports": "title, author, ISBN-13"
+    }
+   ]
+  },
+  {
+   "title": "Stories fromworld religions.",
+   "subtitle": "",
+   "authors": [
+    "Norman J. Bull"
+   ],
+   "subjects": [
+    "ancient-texts"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "unrated",
+   "series": {
+    "name": "Wide range"
+   },
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "book",
+     "publisher": "Oliver & Boyd",
+     "year": 1983,
+     "isbn13": "9780050033722",
+     "note": "Binding not stated by the source record.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL20944097M/Stories_fromworld_religions.",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    },
+    {
+     "language": "en",
+     "format": "book",
+     "publisher": "Oliver & Boyd",
+     "year": 1984,
+     "isbn13": "9780050034477",
+     "note": "Binding not stated by the source record.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL14886814M/Stories_fromworld_religions.",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    }
+   ],
+   "provenance": {
+    "tier": "open-library-catalogue",
+    "method": "single Open Library edition record passing the single-source gates",
+    "workKey": "/works/OL6415539W"
+   },
+   "sources": [
+    {
+     "label": "Open Library record",
+     "url": "http://openlibrary.org/books/OL20944097M/Stories_fromworld_religions.",
+     "accessed": "2026-11-02",
+     "supports": "title, author, ISBN-13"
+    }
+   ]
+  },
+  {
+   "title": "Religion of the Hindus",
+   "subtitle": "",
+   "authors": [
+    "Kenneth W. Morgan"
+   ],
+   "subjects": [
+    "ancient-texts"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Motilal Banarsidass,India",
+     "year": 1996,
+     "isbn13": "9788120813830",
+     "note": "Language not stated on the edition record; inferred from the English-language Open Library work.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL9377980M/Religion_of_the_Hindus",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    }
+   ],
+   "provenance": {
+    "tier": "open-library-catalogue",
+    "method": "single Open Library edition record passing the single-source gates",
+    "workKey": "/works/OL2320465W"
+   },
+   "sources": [
+    {
+     "label": "Open Library record",
+     "url": "http://openlibrary.org/books/OL9377980M/Religion_of_the_Hindus",
+     "accessed": "2026-11-02",
+     "supports": "title, author, ISBN-13"
+    }
+   ]
+  },
+  {
+   "title": "The Tipika and Buddhism (Sacred Texts)",
+   "subtitle": "",
+   "authors": [
+    "Anita Ganeri"
+   ],
+   "subjects": [
+    "ancient-texts"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "hardcover",
+     "publisher": "Evans Brothers Ltd",
+     "year": 2003,
+     "isbn13": "9780237523510",
+     "note": "Language not stated on the edition record; inferred from the English-language Open Library work.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL10200156M/The_Tipika_and_Buddhism_(Sacred_Texts)",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    }
+   ],
+   "provenance": {
+    "tier": "open-library-catalogue",
+    "method": "single Open Library edition record passing the single-source gates",
+    "workKey": "/works/OL443059W"
+   },
+   "sources": [
+    {
+     "label": "Open Library record",
+     "url": "http://openlibrary.org/books/OL10200156M/The_Tipika_and_Buddhism_(Sacred_Texts)",
+     "accessed": "2026-11-02",
+     "supports": "title, author, ISBN-13"
+    }
+   ]
+  },
+  {
+   "title": "Return to the garden",
+   "subtitle": "a journey of discovery.",
+   "authors": [
+    "Shakti Gawain"
+   ],
+   "subjects": [
+    "ancient-texts"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "book",
+     "publisher": "Nataraj Publishing",
+     "year": 1989,
+     "isbn13": "9781882591046",
+     "note": "Binding not stated by the source record.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL22257683M/Return_to_the_garden",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    },
+    {
+     "language": "en",
+     "format": "book",
+     "publisher": "New World Library",
+     "year": 1992,
+     "isbn13": "9780931432668",
+     "note": "Binding not stated by the source record.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL1562348M/Return_to_the_garden",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    },
+    {
+     "language": "en",
+     "format": "book",
+     "publisher": "New World Library",
+     "year": 1989,
+     "isbn13": "9780931432880",
+     "note": "Binding not stated by the source record.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL1909877M/Return_to_the_garden",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    }
+   ],
+   "provenance": {
+    "tier": "open-library-catalogue",
+    "method": "single Open Library edition record passing the single-source gates",
+    "workKey": "/works/OL487326W"
+   },
+   "sources": [
+    {
+     "label": "Open Library record",
+     "url": "http://openlibrary.org/books/OL22257683M/Return_to_the_garden",
+     "accessed": "2026-11-02",
+     "supports": "title, author, ISBN-13"
+    }
+   ]
+  },
+  {
+   "title": "The Essene odyssey",
+   "subtitle": "the mystery of the True Teacher and the Essene impact on the shaping of human destiny",
+   "authors": [
+    "Hugh Joseph Schonfield"
+   ],
+   "subjects": [
+    "ancient-texts"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "book",
+     "publisher": "Element Books",
+     "year": 1984,
+     "isbn13": "9780906540633",
+     "note": "Binding not stated by the source record.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL2433420M/The_Essene_odyssey",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    }
+   ],
+   "provenance": {
+    "tier": "open-library-catalogue",
+    "method": "single Open Library edition record passing the single-source gates",
+    "workKey": "/works/OL757142W"
+   },
+   "sources": [
+    {
+     "label": "Open Library record",
+     "url": "http://openlibrary.org/books/OL2433420M/The_Essene_odyssey",
+     "accessed": "2026-11-02",
+     "supports": "title, author, ISBN-13"
+    }
+   ]
+  },
+  {
+   "title": "Vocalised Talmud manuscripts in the Cambridge Genizah collections.",
+   "subtitle": "",
+   "authors": [
+    "Cambridge University Library."
+   ],
+   "subjects": [
+    "ancient-texts"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "unrated",
+   "series": {
+    "name": "Genizah series / Cambridge University Library ;"
+   },
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "book",
+     "publisher": "Published for Cambridge University Library by Cambridge University Press",
+     "year": 1988,
+     "isbn13": "9780521268639",
+     "note": "Binding not stated by the source record.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL2528893M/Vocalised_Talmud_manuscripts_in_the_Cambridge_Genizah_collections.",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    }
+   ],
+   "provenance": {
+    "tier": "open-library-catalogue",
+    "method": "single Open Library edition record passing the single-source gates",
+    "workKey": "/works/OL1938486W"
+   },
+   "sources": [
+    {
+     "label": "Open Library record",
+     "url": "http://openlibrary.org/books/OL2528893M/Vocalised_Talmud_manuscripts_in_the_Cambridge_Genizah_collections.",
+     "accessed": "2026-11-02",
+     "supports": "title, author, ISBN-13"
+    }
+   ]
+  },
+  {
+   "title": "The ethics of the sages",
+   "subtitle": "an interfaith commentary on Pirkei Avot",
+   "authors": [
+    "Ronald W. Pies"
+   ],
+   "subjects": [
+    "ancient-texts"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "book",
+     "publisher": "J. Aronson",
+     "year": 2000,
+     "isbn13": "9780765761033",
+     "note": "Binding not stated by the source record.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL38118M/The_ethics_of_the_sages",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    }
+   ],
+   "provenance": {
+    "tier": "open-library-catalogue",
+    "method": "single Open Library edition record passing the single-source gates",
+    "workKey": "/works/OL17760806W"
+   },
+   "sources": [
+    {
+     "label": "Open Library record",
+     "url": "http://openlibrary.org/books/OL38118M/The_ethics_of_the_sages",
+     "accessed": "2026-11-02",
+     "supports": "title, author, ISBN-13"
+    }
+   ]
+  },
+  {
+   "title": "A hand-list of rabbinic manuscripts in the Cambridge Genizah collections",
+   "subtitle": "",
+   "authors": [
+    "Cambridge University Library."
+   ],
+   "subjects": [
+    "ancient-texts"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "unrated",
+   "series": {
+    "name": "Genizah series ;"
+   },
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "book",
+     "publisher": "Cambridge University Press",
+     "year": 1998,
+     "isbn13": "9780521584005",
+     "note": "Binding not stated by the source record.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL372276M/A_hand-list_of_rabbinic_manuscripts_in_the_Cambridge_Genizah_collections",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    }
+   ],
+   "provenance": {
+    "tier": "open-library-catalogue",
+    "method": "single Open Library edition record passing the single-source gates",
+    "workKey": "/works/OL1938459W"
+   },
+   "sources": [
+    {
+     "label": "Open Library record",
+     "url": "http://openlibrary.org/books/OL372276M/A_hand-list_of_rabbinic_manuscripts_in_the_Cambridge_Genizah_collections",
+     "accessed": "2026-11-02",
+     "supports": "title, author, ISBN-13"
+    }
+   ]
+  },
+  {
+   "title": "The Dead Sea Scriptures",
+   "subtitle": "",
+   "authors": [
+    "Theodor Herzl Gaster"
+   ],
+   "subjects": [
+    "ancient-texts"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "hardcover",
+     "publisher": "Peter Smith Pub Inc",
+     "year": 1976,
+     "isbn13": "9780844667027",
+     "note": "Language not stated on the edition record; inferred from the English-language Open Library work.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL8244800M/The_Dead_Sea_Scriptures",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    }
+   ],
+   "provenance": {
+    "tier": "open-library-catalogue",
+    "method": "single Open Library edition record passing the single-source gates",
+    "workKey": "/works/OL1344622W"
+   },
+   "sources": [
+    {
+     "label": "Open Library record",
+     "url": "http://openlibrary.org/books/OL8244800M/The_Dead_Sea_Scriptures",
+     "accessed": "2026-11-02",
+     "supports": "title, author, ISBN-13"
+    }
+   ]
+  },
+  {
+   "title": "The Dead Sea Scrolls, 1947-1969",
+   "subtitle": "",
+   "authors": [
+    "Edmund Wilson"
+   ],
+   "subjects": [
+    "ancient-texts"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "hardcover",
+     "publisher": "Oxford University Press",
+     "year": 1969,
+     "isbn13": "9780195006650",
+     "note": "Language not stated on the edition record; inferred from the English-language Open Library work.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL38220761M/The_Dead_Sea_Scrolls_1947-1969",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    }
+   ],
+   "provenance": {
+    "tier": "open-library-catalogue",
+    "method": "single Open Library edition record passing the single-source gates",
+    "workKey": "/works/OL1904315W"
+   },
+   "sources": [
+    {
+     "label": "Open Library record",
+     "url": "http://openlibrary.org/books/OL38220761M/The_Dead_Sea_Scrolls_1947-1969",
+     "accessed": "2026-11-02",
+     "supports": "title, author, ISBN-13"
+    }
+   ]
+  },
+  {
+   "title": "The Meaning of the Dead Sea Scrolls",
+   "subtitle": "",
+   "authors": [
+    "A. Powell Davies"
+   ],
+   "subjects": [
+    "ancient-texts"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Berkley",
+     "year": 1956,
+     "isbn13": "9780451627049",
+     "note": "Language not stated on the edition record; inferred from the English-language Open Library work.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL40287624M/The_Meaning_of_the_Dead_Sea_Scrolls",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    }
+   ],
+   "provenance": {
+    "tier": "open-library-catalogue",
+    "method": "single Open Library edition record passing the single-source gates",
+    "workKey": "/works/OL1841027W"
+   },
+   "sources": [
+    {
+     "label": "Open Library record",
+     "url": "http://openlibrary.org/books/OL40287624M/The_Meaning_of_the_Dead_Sea_Scrolls",
+     "accessed": "2026-11-02",
+     "supports": "title, author, ISBN-13"
+    }
+   ]
+  },
+  {
+   "title": "The Dead Sea scrolls",
+   "subtitle": "",
+   "authors": [
+    "Millar Burrows"
+   ],
+   "subjects": [
+    "ancient-texts"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "book",
+     "publisher": "Gramercy Pub. Co.",
+     "year": 1986,
+     "isbn13": "9780517625354",
+     "note": "Binding not stated by the source record.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL2725578M/The_Dead_Sea_scrolls",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    },
+    {
+     "language": "en",
+     "format": "hardcover",
+     "publisher": "New York, Viking Press",
+     "year": 1955,
+     "isbn13": "9781111009564",
+     "title": "The Dead Sea scrolls.",
+     "note": "Language not stated on the edition record; inferred from the English-language Open Library work.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL8594015M/The_Dead_Sea_scrolls.",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    },
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Penguin (Non-Classics)",
+     "year": 1968,
+     "isbn13": "9780670002351",
+     "title": "The Dead Sea Scrolls",
+     "note": "Language not stated on the edition record; inferred from the English-language Open Library work.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL7640953M/The_Dead_Sea_Scrolls",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    }
+   ],
+   "provenance": {
+    "tier": "open-library-catalogue",
+    "method": "single Open Library edition record passing the single-source gates",
+    "workKey": "/works/OL5269049W"
+   },
+   "sources": [
+    {
+     "label": "Open Library record",
+     "url": "http://openlibrary.org/books/OL2725578M/The_Dead_Sea_scrolls",
+     "accessed": "2026-11-02",
+     "supports": "title, author, ISBN-13"
+    }
+   ]
+  },
+  {
+   "title": "The Dead Sea scrolls",
+   "subtitle": "a reappraisal",
+   "authors": [
+    "John Marco Allegro"
+   ],
+   "subjects": [
+    "ancient-texts"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "book",
+     "publisher": "Penguin Books",
+     "year": 1990,
+     "isbn13": "9780140134575",
+     "note": "Binding not stated by the source record.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL20295693M/The_Dead_Sea_scrolls",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    }
+   ],
+   "provenance": {
+    "tier": "open-library-catalogue",
+    "method": "single Open Library edition record passing the single-source gates",
+    "workKey": "/works/OL1371853W"
+   },
+   "sources": [
+    {
+     "label": "Open Library record",
+     "url": "http://openlibrary.org/books/OL20295693M/The_Dead_Sea_scrolls",
+     "accessed": "2026-11-02",
+     "supports": "title, author, ISBN-13"
+    }
+   ]
+  },
+  {
+   "title": "The Dead Sea Scrolls After Fifty Years, Volume 2",
+   "subtitle": "",
+   "authors": [
+    "Peter Flint",
+    "James C. VanderKam"
+   ],
+   "subjects": [
+    "ancient-texts"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "paperback",
+     "publisher": "Wipf & Stock Publishers",
+     "year": 2019,
+     "isbn13": "9781532680694",
+     "note": "Language not stated on the edition record; inferred from the English-language Open Library work.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL32707463M/The_Dead_Sea_Scrolls_After_Fifty_Years_Volume_2",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    }
+   ],
+   "provenance": {
+    "tier": "open-library-catalogue",
+    "method": "single Open Library edition record passing the single-source gates",
+    "workKey": "/works/OL17804888W"
+   },
+   "sources": [
+    {
+     "label": "Open Library record",
+     "url": "http://openlibrary.org/books/OL32707463M/The_Dead_Sea_Scrolls_After_Fifty_Years_Volume_2",
+     "accessed": "2026-11-02",
+     "supports": "title, author, ISBN-13"
+    }
+   ]
+  },
+  {
+   "title": "The ancient library of Qumran and modern Biblical studies",
+   "subtitle": "",
+   "authors": [
+    "Frank Moore Cross"
+   ],
+   "subjects": [
+    "ancient-texts"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "book",
+     "publisher": "Baker Book House",
+     "year": 1980,
+     "isbn13": "9780801024474",
+     "note": "Binding not stated by the source record.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL19640907M/The_ancient_library_of_Qumran_and_modern_Biblical_studies",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    }
+   ],
+   "provenance": {
+    "tier": "open-library-catalogue",
+    "method": "single Open Library edition record passing the single-source gates",
+    "workKey": "/works/OL1825998W"
+   },
+   "sources": [
+    {
+     "label": "Open Library record",
+     "url": "http://openlibrary.org/books/OL19640907M/The_ancient_library_of_Qumran_and_modern_Biblical_studies",
+     "accessed": "2026-11-02",
+     "supports": "title, author, ISBN-13"
+    }
+   ]
+  },
+  {
+   "title": "The Dead Sea scrolls",
+   "subtitle": "a textbook and study guide",
+   "authors": [
+    "Menahem Mansoor"
+   ],
+   "subjects": [
+    "ancient-texts"
+   ],
+   "tradition": [
+    "comparative"
+   ],
+   "level": "unrated",
+   "description": null,
+   "status": "verified",
+   "press": null,
+   "claims": [],
+   "editions": [
+    {
+     "language": "en",
+     "format": "book",
+     "publisher": "Baker Book House",
+     "year": 1983,
+     "isbn13": "9780801061523",
+     "note": "Binding not stated by the source record.",
+     "sources": [
+      {
+       "label": "Open Library record",
+       "url": "http://openlibrary.org/books/OL2798285M/The_Dead_Sea_scrolls",
+       "accessed": "2026-11-02",
+       "supports": "ISBN-13, title, author, publisher, year, format, language"
+      }
+     ]
+    }
+   ],
+   "provenance": {
+    "tier": "open-library-catalogue",
+    "method": "single Open Library edition record passing the single-source gates",
+    "workKey": "/works/OL4111734W"
+   },
+   "sources": [
+    {
+     "label": "Open Library record",
+     "url": "http://openlibrary.org/books/OL2798285M/The_Dead_Sea_scrolls",
+     "accessed": "2026-11-02",
+     "supports": "title, author, ISBN-13"
+    }
+   ]
+  }
+ ]
+}

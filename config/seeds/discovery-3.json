@@ -1,0 +1,5080 @@
+{
+"_doc": "Third discovery batch (2026-11-02): niche and specialist authors and further subjects across the owner's priority areas. Seeds are search queries only; every record still passes reconcile gates and import dedup. Existing seed values are excluded.",
+"seeds": [
+{
+"kind": "author",
+"value": "B.K.S. Iyengar",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Swami Satchidananda",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Swami Sivananda",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Swami Rama",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Swami Satyananda Saraswati",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Swami Muktananda",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Georg Feuerstein",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Swami Kriyananda",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Anodea Judith",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Harish Johari",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Swami Vishnudevananda",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "T. K. V. Desikachar",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "K. Pattabhi Jois",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Judith Hanson Lasater",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Richard Rosen",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Rod Stryker",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Sally Kempton",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Yogi Bhajan",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Dharma Singh Khalsa",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Mark Singleton",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Gopi Krishna",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Paul Muller-Ortega",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Christopher Wallis",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Swami Lakshmanjoo",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Swami Prabhavananda",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Swami Chinmayananda",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Nisargadatta Maharaj",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Sri Aurobindo",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Osho",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "John Woodroffe",
+"department": "hinduism",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Arthur Avalon",
+"department": "hinduism",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Wendy Doniger",
+"department": "hinduism",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Devdutt Pattanaik",
+"department": "hinduism",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Heinrich Zimmer",
+"department": "hinduism",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Ananda Coomaraswamy",
+"department": "hinduism",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Mircea Eliade",
+"department": "hinduism",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Swami Tapasyananda",
+"department": "hinduism",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "A. C. Bhaktivedanta Swami Prabhupada",
+"department": "hinduism",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "R. K. Narayan",
+"department": "hinduism",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "C. Rajagopalachari",
+"department": "hinduism",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Ravi Shankar Prasad",
+"department": "hinduism",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Alain Daniélou",
+"department": "hinduism",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Stella Kramrisch",
+"department": "hinduism",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "David Frawley",
+"department": "hinduism",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Subhash Kak",
+"department": "hinduism",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Rajiv Malhotra",
+"department": "hinduism",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Swami Parthasarathy",
+"department": "hinduism",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Vasant Lad",
+"department": "ayurveda",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Robert Svoboda",
+"department": "ayurveda",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "John Douillard",
+"department": "ayurveda",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Claudia Welch",
+"department": "ayurveda",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Sebastian Pole",
+"department": "ayurveda",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Maya Tiwari",
+"department": "ayurveda",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Light Miller",
+"department": "ayurveda",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Atreya",
+"department": "ayurveda",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Scott Gerson",
+"department": "ayurveda",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Dennis Chaudhary",
+"department": "ayurveda",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Hari Sharma",
+"department": "ayurveda",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Subhash Ranade",
+"department": "ayurveda",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Pratima Raichur",
+"department": "ayurveda",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "D. T. Suzuki",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Shunryu Suzuki",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Chögyam Trungpa",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Dalai Lama",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Bhikkhu Bodhi",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Walpola Rahula",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Ajahn Chah",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Ajahn Sumedho",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Lama Surya Das",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Sogyal Rinpoche",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Stephen Batchelor",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Thanissaro Bhikkhu",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Bhante Gunaratana",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Lama Yeshe",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Kelsang Gyatso",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Dilgo Khyentse",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Thubten Chodron",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Robert Thurman",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Donald Lopez",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Jon Kabat-Zinn",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Yongey Mingyur Rinpoche",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Sakyong Mipham",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Nagarjuna",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Shantideva",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Dōgen",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Taisen Deshimaru",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Philip Kapleau",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Brad Warner",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Noah Levine",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Joan Halifax",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Alan Wallace",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Traleg Kyabgon",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Jetsunma Tenzin Palmo",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Ajahn Brahm",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Buddhaghosa",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Sangharakshita",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Daisaku Ikeda",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Reginald Ray",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Judith Simmer-Brown",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Pema Khandro",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Norman Fischer",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Edward Conze",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Lama Anagarika Govinda",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Walter Evans-Wentz",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Lao Tzu",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Chuang Tzu",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Ni Hua-Ching",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Eva Wong",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Livia Kohn",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Deng Ming-Dao",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Lu K'uan Yu",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Chungliang Al Huang",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Gia-fu Feng",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Burton Watson",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Alan Watts Tao",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Benjamin Hoff",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Thomas Cleary",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Hua Ching Ni",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Solala Towler",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Derek Lin",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Stephen Mitchell Tao",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Mantak Chia",
+"department": "qigong",
+"tradition": "chinese-internal-arts",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Bruce Frantzis",
+"department": "qigong",
+"tradition": "chinese-internal-arts",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Kenneth Cohen",
+"department": "qigong",
+"tradition": "chinese-internal-arts",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Stuart Alve Olson",
+"department": "qigong",
+"tradition": "chinese-internal-arts",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Yang Jwing-Ming",
+"department": "qigong",
+"tradition": "chinese-internal-arts",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Cheng Man-ch'ing",
+"department": "qigong",
+"tradition": "chinese-internal-arts",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Daniel Reid",
+"department": "qigong",
+"tradition": "chinese-internal-arts",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Michael Winn",
+"department": "qigong",
+"tradition": "chinese-internal-arts",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Ted Kaptchuk",
+"department": "qigong",
+"tradition": "chinese-internal-arts",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Harriet Beinfield",
+"department": "qigong",
+"tradition": "chinese-internal-arts",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Lam Kam Chuen",
+"department": "qigong",
+"tradition": "chinese-internal-arts",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Robert Peng",
+"department": "qigong",
+"tradition": "chinese-internal-arts",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Roger Jahnke",
+"department": "qigong",
+"tradition": "chinese-internal-arts",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Master Lam",
+"department": "qigong",
+"tradition": "chinese-internal-arts",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Gunther Weil",
+"department": "qigong",
+"tradition": "chinese-internal-arts",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Wong Kiew Kit",
+"department": "qigong",
+"tradition": "chinese-internal-arts",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Paul Dong",
+"department": "qigong",
+"tradition": "chinese-internal-arts",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Liu Hongchi",
+"department": "qigong",
+"tradition": "chinese-internal-arts",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Gerald Gardner",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Margaret Murray",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Charles Leland",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Janet Farrar",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Stewart Farrar",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Raven Grimassi",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Ronald Hutton",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Margot Adler",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Paul Huson",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Christopher Penczak",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Judika Illes",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Ann Moura",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Dorothy Morrison",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Marion Weinstein",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Selena Fox",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Zsuzsanna Budapest",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Laurie Cabot",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Gavin Frost",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Amber K",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Cassandra Eason",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Arin Murphy-Hiscock",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Pam Grossman",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Sandra Kynes",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Ellen Dugan",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Edain McCoy",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Patricia Telesco",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Deborah Lipp",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Lisa Chamberlain",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Marian Green",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Gede Parma",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Thorn Coyle",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Orion Foxwood",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Kerri Connor",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Diana Rajchel",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Barbara Walker",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Tess Whitehurst",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Lady Sybil Leek",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Kenneth Grant",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Austin Osman Spare",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Peter J. Carroll",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Phil Hine",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Stephen Skinner",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Joseph Peterson",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Lon Milo DuQuette",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Jason Miller",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Robert Anton Wilson",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Colin Wilson",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Arthur Edward Waite",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Papus",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "S. L. MacGregor Mathers",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Franz Bardon",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Heinrich Cornelius Agrippa",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Paracelsus",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "John Dee",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Gerald Suster",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Francis King",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Alan Moore",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Jake Stratton-Kent",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Aaron Leitch",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Nick Farrell",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Gareth Knight",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "William G. Gray",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Pete Carroll",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Ramsey Dukes",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Julian Vayne",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Donald Tyson",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Rosemary Ellen Guiley",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Helena Blavatsky",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Annie Besant",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "C. W. Leadbeater",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Rudolf Steiner",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "G. I. Gurdjieff",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "P. D. Ouspensky",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Alice Bailey",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Max Heindel",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Samael Aun Weor",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Hermes Trismegistus",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Three Initiates",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Antoine Faivre",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Wouter Hanegraaff",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Tobias Churton",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Mark Stavish",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Robert Bartlett",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Joscelyn Godwin",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Manly Palmer Hall",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Fulcanelli",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Lyndy Abraham",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Titus Burckhardt",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Isaac Newton alchemy",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Carl Gustav Jung alchemy",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Jean Dubuis",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Peter Kingsley",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Kingsley Hermetic",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Elaine Pagels",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Bart Ehrman",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Hans Jonas",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Kurt Rudolph",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Marvin Meyer",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Stephan Hoeller",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Willis Barnstone",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "G. R. S. Mead",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Gilles Quispel",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "David Fideler",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Jean Doresse",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Karen King",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "April DeConick",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Birger Pearson",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Bentley Layton",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "James M. Robinson",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Timothy Freke",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Peter Gandy",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Lance Owens",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Jeff Rhodes",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Richard Smith Nag Hammadi",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Marguerite Porete",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Joseph Campbell",
+"department": "mythology",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Edith Hamilton",
+"department": "mythology",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Robert Graves",
+"department": "mythology",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Thomas Bulfinch",
+"department": "mythology",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Padraic Colum",
+"department": "mythology",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Snorri Sturluson",
+"department": "mythology",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "E. A. Wallis Budge",
+"department": "mythology",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Riane Eisler",
+"department": "mythology",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Marija Gimbutas",
+"department": "mythology",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Carol P. Christ",
+"department": "mythology",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Anne Baring",
+"department": "mythology",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Jules Cashford",
+"department": "mythology",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Roberto Calasso",
+"department": "mythology",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Karen Armstrong",
+"department": "mythology",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Neil Philip",
+"department": "mythology",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Bernard Evslin",
+"department": "mythology",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Robert Bly",
+"department": "mythology",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Clarissa Pinkola Estés",
+"department": "mythology",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Marie-Louise von Franz",
+"department": "mythology",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Robert A. Johnson",
+"department": "mythology",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "James Hillman",
+"department": "mythology",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Jean Shinoda Bolen",
+"department": "mythology",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Carl Jung",
+"department": "mythology",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Heinrich Zimmer myths",
+"department": "mythology",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Ellis Davidson",
+"department": "mythology",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Gregory Nagy",
+"department": "mythology",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Mary Lefkowitz",
+"department": "mythology",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Jean-Pierre Vernant",
+"department": "mythology",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Daniel Ogden",
+"department": "mythology",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Jeffrey Burton Russell",
+"department": "mythology",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Kevin Crossley-Holland",
+"department": "mythology",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Lady Gregory",
+"department": "mythology",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "W. B. Yeats",
+"department": "mythology",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Evans-Wentz",
+"department": "mythology",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Graham Hancock",
+"department": "alternative-history",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Robert Bauval",
+"department": "alternative-history",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Zecharia Sitchin",
+"department": "alternative-history",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Erich von Däniken",
+"department": "alternative-history",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "John Anthony West",
+"department": "alternative-history",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Robert Schoch",
+"department": "alternative-history",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Michael Cremo",
+"department": "alternative-history",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Immanuel Velikovsky",
+"department": "alternative-history",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Charles Hapgood",
+"department": "alternative-history",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "David Hatcher Childress",
+"department": "alternative-history",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Laird Scranton",
+"department": "alternative-history",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Andrew Collins",
+"department": "alternative-history",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Jim Marrs",
+"department": "alternative-history",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Ignatius Donnelly",
+"department": "alternative-history",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Lynn Picknett",
+"department": "alternative-history",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Clive Prince",
+"department": "alternative-history",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Michael Baigent",
+"department": "alternative-history",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Richard Leigh",
+"department": "alternative-history",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Henry Lincoln",
+"department": "alternative-history",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Laurence Gardner",
+"department": "alternative-history",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Peter Tompkins",
+"department": "alternative-history",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "R. A. Schwaller de Lubicz",
+"department": "alternative-history",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Jeremy Naydler",
+"department": "alternative-history",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Gerald Massey",
+"department": "alternative-history",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Albert Pike",
+"department": "alternative-history",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Giorgio de Santillana",
+"department": "alternative-history",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Hertha von Dechend",
+"department": "alternative-history",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Christopher Dunn",
+"department": "alternative-history",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Paul Brunton",
+"department": "alternative-history",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Colin Renfrew",
+"department": "alternative-history",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Brien Foerster",
+"department": "alternative-history",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Jason Colavito",
+"department": "alternative-history",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Hugh Newman",
+"department": "alternative-history",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Randall Carlson",
+"department": "alternative-history",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Frank Joseph",
+"department": "alternative-history",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Philip Coppens",
+"department": "alternative-history",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Alan Alford",
+"department": "alternative-history",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Mauro Biglino",
+"department": "alternative-history",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Scott Wolter",
+"department": "alternative-history",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Barry Fell",
+"department": "alternative-history",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Raymond Moody",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Elisabeth Kübler-Ross",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Eben Alexander",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Anita Moorjani",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Pim van Lommel",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Bruce Greyson",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Brian Weiss",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Michael Newton",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Dolores Cannon",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Ian Stevenson",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Jim Tucker",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Rupert Sheldrake",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Dean Radin",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Lynne McTaggart",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Gregg Braden",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Bruce Lipton",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Joe Dispenza",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Stanislav Grof",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Ken Wilber",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Jane Roberts",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Neale Donald Walsch",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Esther Hicks",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Carlos Castaneda",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Michael Harner",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Robert Monroe",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "William Buhlman",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Edgar Cayce",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Penny Sartori",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Mary Neal",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Sam Parnia",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Peter Fenwick",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Raymond Moody Jr",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Allan Kardec",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Emanuel Swedenborg",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Peter Russell",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Donald Hoffman",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Bernardo Kastrup",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Amit Goswami",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Federico Faggin",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Deepak Chopra consciousness",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Larry Dossey",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Diane Hennacy Powell",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Napoleon Hill",
+"department": "metaphysics",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Wallace D. Wattles",
+"department": "metaphysics",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Florence Scovel Shinn",
+"department": "metaphysics",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Neville Goddard",
+"department": "metaphysics",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Ernest Holmes",
+"department": "metaphysics",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Joseph Murphy",
+"department": "metaphysics",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Thomas Troward",
+"department": "metaphysics",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Charles F. Haanel",
+"department": "metaphysics",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Prentice Mulford",
+"department": "metaphysics",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Ralph Waldo Trine",
+"department": "metaphysics",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "James Allen",
+"department": "metaphysics",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Genevieve Behrend",
+"department": "metaphysics",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Emmet Fox",
+"department": "metaphysics",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Catherine Ponder",
+"department": "metaphysics",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Charles Fillmore",
+"department": "metaphysics",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Orison Swett Marden",
+"department": "metaphysics",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Abraham Hicks",
+"department": "metaphysics",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Louise Hay",
+"department": "metaphysics",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Shakti Gawain",
+"department": "metaphysics",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Wayne Dyer",
+"department": "metaphysics",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Marianne Williamson",
+"department": "metaphysics",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Rhonda Byrne",
+"department": "metaphysics",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Bob Proctor",
+"department": "metaphysics",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Thomas Moore",
+"department": "metaphysics",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Ralph Waldo Emerson",
+"department": "metaphysics",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "William Walker Atkinson",
+"department": "metaphysics",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Yogi Ramacharaka",
+"department": "metaphysics",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Annie Rix Militz",
+"department": "metaphysics",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Eric Butterworth",
+"department": "metaphysics",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Dan Millman",
+"department": "metaphysics",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Richard Bach",
+"department": "metaphysics",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Frank Arjava Petter",
+"department": "energy-healing",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Diane Stein",
+"department": "energy-healing",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Pamela Miles",
+"department": "energy-healing",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "William Lee Rand",
+"department": "energy-healing",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Richard Gerber",
+"department": "energy-healing",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Rosalyn Bruyere",
+"department": "energy-healing",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Judy Hall",
+"department": "energy-healing",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Melody",
+"department": "energy-healing",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Barbara Brennan",
+"department": "energy-healing",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Donna Eden",
+"department": "energy-healing",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Caroline Myss",
+"department": "energy-healing",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Judith Orloff",
+"department": "energy-healing",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Cyndi Dale",
+"department": "energy-healing",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Brandon Bays",
+"department": "energy-healing",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Eric Pearl",
+"department": "energy-healing",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Mikao Usui",
+"department": "energy-healing",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Hiroshi Doi",
+"department": "energy-healing",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Anne Maximillian",
+"department": "energy-healing",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Rosemary Gladstar",
+"department": "energy-healing",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Susun Weed",
+"department": "energy-healing",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Matthew Wood",
+"department": "energy-healing",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "David Hoffmann",
+"department": "energy-healing",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Stephen Harrod Buhner",
+"department": "energy-healing",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Michael Tierra",
+"department": "energy-healing",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Robert Tisserand",
+"department": "energy-healing",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Valerie Ann Worwood",
+"department": "energy-healing",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Nicholas Culpeper",
+"department": "energy-healing",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Hildegard of Bingen",
+"department": "energy-healing",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Maud Grieve",
+"department": "energy-healing",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "John Christopher",
+"department": "energy-healing",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Paul Bergner",
+"department": "energy-healing",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Andrew Chevallier",
+"department": "energy-healing",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Kerry Bone",
+"department": "energy-healing",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Penelope Ody",
+"department": "energy-healing",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Jean Valnet",
+"department": "energy-healing",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Gabriel Mojay",
+"department": "energy-healing",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Julia Lawless",
+"department": "energy-healing",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Liz Greene",
+"department": "astrology",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Stephen Arroyo",
+"department": "astrology",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Robert Hand",
+"department": "astrology",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Dane Rudhyar",
+"department": "astrology",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Linda Goodman",
+"department": "astrology",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Steven Forrest",
+"department": "astrology",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Jeffrey Wolf Green",
+"department": "astrology",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Debra Silverman",
+"department": "astrology",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Rob Brezsny",
+"department": "astrology",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Susan Miller",
+"department": "astrology",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Alan Oken",
+"department": "astrology",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Joanna Martine Woolfolk",
+"department": "astrology",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "William Lilly",
+"department": "astrology",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Marc Edmund Jones",
+"department": "astrology",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Evangeline Adams",
+"department": "astrology",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Isabel Hickey",
+"department": "astrology",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Demetra George",
+"department": "astrology",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Chris Brennan",
+"department": "astrology",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Kevin Burk",
+"department": "astrology",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Maurice Fernandez",
+"department": "astrology",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Sepharial",
+"department": "astrology",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Cheiro",
+"department": "astrology",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Noel Tyl",
+"department": "astrology",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Joni Patry",
+"department": "astrology",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Komilla Sutton",
+"department": "astrology",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "James Braha",
+"department": "astrology",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Parashara",
+"department": "astrology",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Bepin Behari",
+"department": "astrology",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "K. N. Rao",
+"department": "astrology",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "B. V. Raman",
+"department": "astrology",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Rachel Pollack",
+"department": "tarot",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Mary K. Greer",
+"department": "tarot",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Joan Bunning",
+"department": "tarot",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Paul Foster Case",
+"department": "tarot",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Eden Gray",
+"department": "tarot",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Pamela Colman Smith",
+"department": "tarot",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Brigit Esselmont",
+"department": "tarot",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Robert Place",
+"department": "tarot",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Juliet Sharman-Burke",
+"department": "tarot",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Sasha Graham",
+"department": "tarot",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Kim Huggens",
+"department": "tarot",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Alexandra Eldridge",
+"department": "tarot",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Dusty White",
+"department": "tarot",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Lisa Chamberlain tarot",
+"department": "tarot",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Jessica Dore",
+"department": "tarot",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Benebell Wen",
+"department": "tarot",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Amy Zerner",
+"department": "tarot",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Monte Farber",
+"department": "tarot",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Wald Amberstone",
+"department": "tarot",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Ruth Ann Amberstone",
+"department": "tarot",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Corrine Kenner",
+"department": "tarot",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Barbara Moore",
+"department": "tarot",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "A. E. Waite tarot",
+"department": "tarot",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Hajo Banzhaf",
+"department": "tarot",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Christine Payne-Towler",
+"department": "tarot",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Kooch Daniels",
+"department": "tarot",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Ralph Blum",
+"department": "divination",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Edred Thorsson",
+"department": "divination",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Diana Paxson",
+"department": "divination",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Kveldulf Gundarsson",
+"department": "divination",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Freya Aswynn",
+"department": "divination",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Nigel Pennick",
+"department": "divination",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Stephen Karcher",
+"department": "divination",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Richard Wilhelm",
+"department": "divination",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "John Blofeld",
+"department": "divination",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Alfred Huang",
+"department": "divination",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Carol Anthony",
+"department": "divination",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Hans Decoz",
+"department": "divination",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Florence Campbell",
+"department": "divination",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Juno Jordan",
+"department": "divination",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Lloyd Strayhorn",
+"department": "divination",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Michelle Buchanan",
+"department": "divination",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Sandra Kynes divination",
+"department": "divination",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Cassandra Eason divination",
+"department": "divination",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Ted Andrews",
+"department": "divination",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Raymond Buckland divination",
+"department": "divination",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Scott Cunningham divination",
+"department": "divination",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Lisa Lenard",
+"department": "divination",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Jonathan Dee",
+"department": "divination",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Skye Alexander",
+"department": "divination",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Sasha Fenton",
+"department": "divination",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "David Phillips numerology",
+"department": "divination",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Dan Millman numerology",
+"department": "divination",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Richard Rohr",
+"department": "christian-mysticism",
+"tradition": "christian",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Thomas Merton",
+"department": "christian-mysticism",
+"tradition": "christian",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Evelyn Underhill",
+"department": "christian-mysticism",
+"tradition": "christian",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Meister Eckhart",
+"department": "christian-mysticism",
+"tradition": "christian",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Teresa of Avila",
+"department": "christian-mysticism",
+"tradition": "christian",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "John of the Cross",
+"department": "christian-mysticism",
+"tradition": "christian",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Julian of Norwich",
+"department": "christian-mysticism",
+"tradition": "christian",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Thomas Keating",
+"department": "christian-mysticism",
+"tradition": "christian",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Cynthia Bourgeault",
+"department": "christian-mysticism",
+"tradition": "christian",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Bernard McGinn",
+"department": "christian-mysticism",
+"tradition": "christian",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Henri Nouwen",
+"department": "christian-mysticism",
+"tradition": "christian",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Brother Lawrence",
+"department": "christian-mysticism",
+"tradition": "christian",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Thomas à Kempis",
+"department": "christian-mysticism",
+"tradition": "christian",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Jacob Boehme",
+"department": "christian-mysticism",
+"tradition": "christian",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Dionysius the Areopagite",
+"department": "christian-mysticism",
+"tradition": "christian",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Pseudo-Dionysius",
+"department": "christian-mysticism",
+"tradition": "christian",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Bernard of Clairvaux",
+"department": "christian-mysticism",
+"tradition": "christian",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Hildegard of Bingen visions",
+"department": "christian-mysticism",
+"tradition": "christian",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Madame Guyon",
+"department": "christian-mysticism",
+"tradition": "christian",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Simone Weil",
+"department": "christian-mysticism",
+"tradition": "christian",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Francis of Assisi",
+"department": "christian-mysticism",
+"tradition": "christian",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Anthony de Mello",
+"department": "christian-mysticism",
+"tradition": "christian",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Bede Griffiths",
+"department": "christian-mysticism",
+"tradition": "christian",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Matthew Fox",
+"department": "christian-mysticism",
+"tradition": "christian",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Ilia Delio",
+"department": "christian-mysticism",
+"tradition": "christian",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Ruth Burrows",
+"department": "christian-mysticism",
+"tradition": "christian",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Hafiz",
+"department": "islam-sufism",
+"tradition": "islamic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Idries Shah",
+"department": "islam-sufism",
+"tradition": "islamic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Inayat Khan",
+"department": "islam-sufism",
+"tradition": "islamic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Llewellyn Vaughan-Lee",
+"department": "islam-sufism",
+"tradition": "islamic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Ibn Arabi",
+"department": "islam-sufism",
+"tradition": "islamic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "William Chittick",
+"department": "islam-sufism",
+"tradition": "islamic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Annemarie Schimmel",
+"department": "islam-sufism",
+"tradition": "islamic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Kabir Helminski",
+"department": "islam-sufism",
+"tradition": "islamic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Al-Ghazali",
+"department": "islam-sufism",
+"tradition": "islamic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Coleman Barks",
+"department": "islam-sufism",
+"tradition": "islamic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Omar Khayyam",
+"department": "islam-sufism",
+"tradition": "islamic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Attar of Nishapur",
+"department": "islam-sufism",
+"tradition": "islamic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Ibn Ata Allah",
+"department": "islam-sufism",
+"tradition": "islamic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Seyyed Hossein Nasr",
+"department": "islam-sufism",
+"tradition": "islamic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Martin Lings",
+"department": "islam-sufism",
+"tradition": "islamic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Frithjof Schuon",
+"department": "islam-sufism",
+"tradition": "islamic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Reynold Nicholson",
+"department": "islam-sufism",
+"tradition": "islamic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Fatima Mernissi",
+"department": "islam-sufism",
+"tradition": "islamic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Sadia Dehlvi",
+"department": "islam-sufism",
+"tradition": "islamic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Javad Nurbakhsh",
+"department": "islam-sufism",
+"tradition": "islamic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Sheikh Muzaffer Ozak",
+"department": "islam-sufism",
+"tradition": "islamic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Camille Helminski",
+"department": "islam-sufism",
+"tradition": "islamic",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Daniel Matt",
+"department": "judaism-kabbalah",
+"tradition": "jewish",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Gershom Scholem",
+"department": "judaism-kabbalah",
+"tradition": "jewish",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Aryeh Kaplan",
+"department": "judaism-kabbalah",
+"tradition": "jewish",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Moshe Idel",
+"department": "judaism-kabbalah",
+"tradition": "jewish",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Philip Berg",
+"department": "judaism-kabbalah",
+"tradition": "jewish",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Michael Laitman",
+"department": "judaism-kabbalah",
+"tradition": "jewish",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Rabbi Nilton Bonder",
+"department": "judaism-kabbalah",
+"tradition": "jewish",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Adin Steinsaltz",
+"department": "judaism-kabbalah",
+"tradition": "jewish",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Zalman Schachter-Shalomi",
+"department": "judaism-kabbalah",
+"tradition": "jewish",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Arthur Green",
+"department": "judaism-kabbalah",
+"tradition": "jewish",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Lawrence Kushner",
+"department": "judaism-kabbalah",
+"tradition": "jewish",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Pinchas Giller",
+"department": "judaism-kabbalah",
+"tradition": "jewish",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Joseph Dan",
+"department": "judaism-kabbalah",
+"tradition": "jewish",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Eliphas Levi kabbalah",
+"department": "judaism-kabbalah",
+"tradition": "jewish",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Dion Fortune kabbalah",
+"department": "judaism-kabbalah",
+"tradition": "jewish",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Warren Kenton",
+"department": "judaism-kabbalah",
+"tradition": "jewish",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Z'ev ben Shimon Halevi",
+"department": "judaism-kabbalah",
+"tradition": "jewish",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Gila Zucker",
+"department": "judaism-kabbalah",
+"tradition": "jewish",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Elie Wiesel mysticism",
+"department": "judaism-kabbalah",
+"tradition": "jewish",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Rabbi David Cooper",
+"department": "judaism-kabbalah",
+"tradition": "jewish",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Yehuda Berg",
+"department": "judaism-kabbalah",
+"tradition": "jewish",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Avraham Greenbaum",
+"department": "judaism-kabbalah",
+"tradition": "jewish",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Rabbi Nachman",
+"department": "judaism-kabbalah",
+"tradition": "jewish",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Abraham Abulafia",
+"department": "judaism-kabbalah",
+"tradition": "jewish",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Khushwant Singh",
+"department": "sikhism",
+"tradition": "sikh",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Harbans Singh",
+"department": "sikhism",
+"tradition": "sikh",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "W. H. McLeod",
+"department": "sikhism",
+"tradition": "sikh",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Pashaura Singh",
+"department": "sikhism",
+"tradition": "sikh",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Nikky-Guninder Kaur Singh",
+"department": "sikhism",
+"tradition": "sikh",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Gurinder Singh Mann",
+"department": "sikhism",
+"tradition": "sikh",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Max Arthur Macauliffe",
+"department": "sikhism",
+"tradition": "sikh",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Kapur Singh",
+"department": "sikhism",
+"tradition": "sikh",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Patwant Singh",
+"department": "sikhism",
+"tradition": "sikh",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Joginder Singh",
+"department": "sikhism",
+"tradition": "sikh",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Padmanabh S. Jaini",
+"department": "jainism",
+"tradition": "jain",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Paul Dundas",
+"department": "jainism",
+"tradition": "jain",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Jeffery Long",
+"department": "jainism",
+"tradition": "jain",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Kristi Wiley",
+"department": "jainism",
+"tradition": "jain",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Champat Rai Jain",
+"department": "jainism",
+"tradition": "jain",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Acharya Mahapragya",
+"department": "jainism",
+"tradition": "jain",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Muni Nathmal",
+"department": "jainism",
+"tradition": "jain",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "John Cort",
+"department": "jainism",
+"tradition": "jain",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Sagarmal Jain",
+"department": "jainism",
+"tradition": "jain",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Lawrence Babb",
+"department": "jainism",
+"tradition": "jain",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Daniel Goleman",
+"department": "mindfulness",
+"tradition": "secular",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Mark Williams",
+"department": "mindfulness",
+"tradition": "secular",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Danny Penman",
+"department": "mindfulness",
+"tradition": "secular",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Ruby Wax",
+"department": "mindfulness",
+"tradition": "secular",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Dan Harris",
+"department": "mindfulness",
+"tradition": "secular",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Sam Harris",
+"department": "mindfulness",
+"tradition": "secular",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Andy Puddicombe",
+"department": "mindfulness",
+"tradition": "secular",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Ellen Langer",
+"department": "mindfulness",
+"tradition": "secular",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Kristin Neff",
+"department": "mindfulness",
+"tradition": "secular",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Christopher Germer",
+"department": "mindfulness",
+"tradition": "secular",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Susan Kaiser Greenland",
+"department": "mindfulness",
+"tradition": "secular",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Eline Snel",
+"department": "mindfulness",
+"tradition": "secular",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Jan Chozen Bays",
+"department": "mindfulness",
+"tradition": "secular",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Rick Hanson",
+"department": "mindfulness",
+"tradition": "secular",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Shauna Shapiro",
+"department": "mindfulness",
+"tradition": "secular",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Dan Siegel",
+"department": "mindfulness",
+"tradition": "secular",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Matthieu Ricard",
+"department": "mindfulness",
+"tradition": "secular",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Richard Davidson",
+"department": "mindfulness",
+"tradition": "secular",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Elisha Goldstein",
+"department": "mindfulness",
+"tradition": "secular",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Jean Smith",
+"department": "mindfulness",
+"tradition": "secular",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Larry Rosenberg",
+"department": "mindfulness",
+"tradition": "secular",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Gil Fronsdal",
+"department": "mindfulness",
+"tradition": "secular",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Don Miguel Ruiz",
+"department": "personal-growth",
+"tradition": "secular",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Byron Katie",
+"department": "personal-growth",
+"tradition": "secular",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Paulo Coelho",
+"department": "personal-growth",
+"tradition": "secular",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Eckhart Tolle spirituality",
+"department": "personal-growth",
+"tradition": "secular",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Michael A. Singer",
+"department": "personal-growth",
+"tradition": "secular",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Sadhguru Jaggi Vasudev",
+"department": "personal-growth",
+"tradition": "secular",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Mark Nepo",
+"department": "personal-growth",
+"tradition": "secular",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Parker Palmer",
+"department": "personal-growth",
+"tradition": "secular",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Joanna Macy",
+"department": "personal-growth",
+"tradition": "secular",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Sri Sri Ravi Shankar",
+"department": "personal-growth",
+"tradition": "secular",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Gangaji",
+"department": "personal-growth",
+"tradition": "secular",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Adyashanti",
+"department": "personal-growth",
+"tradition": "secular",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Mooji",
+"department": "personal-growth",
+"tradition": "secular",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Jed McKenna",
+"department": "personal-growth",
+"tradition": "secular",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Robert Adams",
+"department": "personal-growth",
+"tradition": "secular",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Wei Wu Wei",
+"department": "personal-growth",
+"tradition": "secular",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Jean Klein",
+"department": "personal-growth",
+"tradition": "secular",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Papaji",
+"department": "personal-growth",
+"tradition": "secular",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Swami Kripalu",
+"department": "personal-growth",
+"tradition": "secular",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Ramesh Balsekar",
+"department": "personal-growth",
+"tradition": "secular",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Tony Parsons",
+"department": "personal-growth",
+"tradition": "secular",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Leo Hartong",
+"department": "personal-growth",
+"tradition": "secular",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Sri Ramakrishna",
+"department": "personal-growth",
+"tradition": "secular",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Mother Meera",
+"department": "personal-growth",
+"tradition": "secular",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Anandamayi Ma",
+"department": "personal-growth",
+"tradition": "secular",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Amma",
+"department": "personal-growth",
+"tradition": "secular",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Dan Brown",
+"department": "supernatural-fiction",
+"tradition": "fiction",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Diana Gabaldon",
+"department": "supernatural-fiction",
+"tradition": "fiction",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Deborah Harkness",
+"department": "supernatural-fiction",
+"tradition": "fiction",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Alice Hoffman",
+"department": "supernatural-fiction",
+"tradition": "fiction",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Marion Zimmer Bradley",
+"department": "supernatural-fiction",
+"tradition": "fiction",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Katherine Kurtz",
+"department": "supernatural-fiction",
+"tradition": "fiction",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Algernon Blackwood",
+"department": "supernatural-fiction",
+"tradition": "fiction",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Arthur Machen",
+"department": "supernatural-fiction",
+"tradition": "fiction",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "M. R. James",
+"department": "supernatural-fiction",
+"tradition": "fiction",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Dennis Wheatley",
+"department": "supernatural-fiction",
+"tradition": "fiction",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Lord Dunsany",
+"department": "supernatural-fiction",
+"tradition": "fiction",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Robert E. Howard",
+"department": "supernatural-fiction",
+"tradition": "fiction",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Clark Ashton Smith",
+"department": "supernatural-fiction",
+"tradition": "fiction",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Fritz Leiber",
+"department": "supernatural-fiction",
+"tradition": "fiction",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Michael Moorcock",
+"department": "supernatural-fiction",
+"tradition": "fiction",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Gene Wolfe",
+"department": "supernatural-fiction",
+"tradition": "fiction",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Charles de Lint",
+"department": "supernatural-fiction",
+"tradition": "fiction",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Tanith Lee",
+"department": "supernatural-fiction",
+"tradition": "fiction",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Holly Black",
+"department": "supernatural-fiction",
+"tradition": "fiction",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Cassandra Clare",
+"department": "supernatural-fiction",
+"tradition": "fiction",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Erin Morgenstern",
+"department": "supernatural-fiction",
+"tradition": "fiction",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Kate Mosse",
+"department": "supernatural-fiction",
+"tradition": "fiction",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Sarah Addison Allen",
+"department": "supernatural-fiction",
+"tradition": "fiction",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Mary Stewart",
+"department": "supernatural-fiction",
+"tradition": "fiction",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Susan Cooper",
+"department": "supernatural-fiction",
+"tradition": "fiction",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Ursula Vernon",
+"department": "supernatural-fiction",
+"tradition": "fiction",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Neil Gaiman Sandman",
+"department": "supernatural-fiction",
+"tradition": "fiction",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Rick Riordan",
+"department": "supernatural-fiction",
+"tradition": "fiction",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Jim Dale",
+"department": "supernatural-fiction",
+"tradition": "fiction",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Lian Hearn",
+"department": "supernatural-fiction",
+"tradition": "fiction",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Hermann Hesse",
+"department": "supernatural-fiction",
+"tradition": "fiction",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Paulo Coelho alchemist",
+"department": "supernatural-fiction",
+"tradition": "fiction",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Richard Bach Illusions",
+"department": "supernatural-fiction",
+"tradition": "fiction",
+"level": "unrated"
+},
+{
+"kind": "author",
+"value": "Herman Hesse Siddhartha",
+"department": "supernatural-fiction",
+"tradition": "fiction",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "yoga nidra",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "yoga for beginners",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "yoga sutras of patanjali",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "advaita vedanta",
+"department": "hinduism",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "hindu philosophy",
+"department": "hinduism",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "sanskrit",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "om meditation",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "tantric sex",
+"department": "tantra",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "theravada buddhism",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "pali canon",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "feng shui",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "traditional chinese medicine",
+"department": "energy-healing",
+"tradition": "chinese-internal-arts",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "healing crystals",
+"department": "energy-healing",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "magic",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "occultism",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "druids",
+"department": "paganism",
+"tradition": "pagan",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "hermetism",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "dream interpretation",
+"department": "dreams",
+"tradition": "secular",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "near-death experience",
+"department": "consciousness",
+"tradition": "secular",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "past life regression",
+"department": "metaphysics",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "spiritual healing",
+"department": "energy-healing",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "mind body spirit",
+"department": "mind-body",
+"tradition": "secular",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "ancient egypt religion",
+"department": "ancient-civilizations",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "ufos ancient astronauts",
+"department": "alternative-history",
+"tradition": "mythic",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "paranormal",
+"department": "supernatural-fiction",
+"tradition": "fiction",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "urban fantasy witches",
+"department": "urban-fantasy",
+"tradition": "fiction",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "mythological fiction",
+"department": "fantasy",
+"tradition": "fiction",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "sacred sexuality",
+"department": "tantra",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "kundalini",
+"department": "subtle-body",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "aura",
+"department": "subtle-body",
+"tradition": "comparative",
+"level": "unrated"
+}
+]
+}

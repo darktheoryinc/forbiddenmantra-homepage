@@ -62,7 +62,16 @@
   "scholar'?s choice",
   "general books",
   "bibliobazaar",
-  "createspace.*reprint"
+  "createspace.*reprint",
+  "john benjamins",
+  "steiner verlag",
+  "\\boxbow\\b",
+  "bristol phoenix",
+  "perfection learning",
+  "\\blang gmbh",
+  "dk children",
+  "gale ecco",
+  "princeton architectural"
  ],
  "_blockPublisherPatterns_doc": "Academic monograph publishers and print-on-demand reprint mills are held for review in the single-source tier: they are real books but not the consumer spirituality shelf this store sells."
 }

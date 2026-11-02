@@ -385,40 +385,6 @@
    "origin": "staging/outside-candidates.psv:40"
   },
   {
-   "title": "Eastern Body, Western Mind",
-   "subtitle": "Psychology and the Chakra System as a Path to the Self",
-   "authors": [
-    "Anodea Judith"
-   ],
-   "subjects": [
-    "subtle-body"
-   ],
-   "tradition": [
-    "hindu"
-   ],
-   "level": "intermediate",
-   "editions": [
-    {
-     "format": "paperback",
-     "language": "en",
-     "publisher": "Celestial Arts",
-     "year": 2004,
-     "isbn13": "9781587613678",
-     "isbn10": "1587613670"
-    }
-   ],
-   "sources": [
-    {
-     "label": "Editorial shortlist (candidate; details unverified)",
-     "url": "staging/outside-candidates.psv#row41",
-     "accessed": "2026-10-27",
-     "supports": "candidate only"
-    }
-   ],
-   "status": "staged-needs-verification",
-   "origin": "staging/outside-candidates.psv:41"
-  },
-  {
    "title": "Wheels of Life",
    "subtitle": "The Classic Guide to the Chakra System",
    "authors": [
@@ -630,76 +596,6 @@
    "origin": "staging/outside-candidates.psv:48"
   },
   {
-   "title": "Healing Love Through the Tao",
-   "subtitle": "Cultivating Female Sexual Energy",
-   "authors": [
-    "Mantak Chia"
-   ],
-   "subjects": [
-    "qigong",
-    "taoism"
-   ],
-   "tradition": [
-    "taoist"
-   ],
-   "level": "intermediate",
-   "editions": [
-    {
-     "format": "paperback",
-     "language": "en",
-     "publisher": "Destiny Books",
-     "year": 2005,
-     "isbn13": null,
-     "isbn10": null
-    }
-   ],
-   "sources": [
-    {
-     "label": "Editorial shortlist (candidate; details unverified)",
-     "url": "staging/outside-candidates.psv#row50",
-     "accessed": "2026-10-27",
-     "supports": "candidate only"
-    }
-   ],
-   "status": "staged-missing-isbn",
-   "origin": "staging/outside-candidates.psv:50"
-  },
-  {
-   "title": "The Way of Qigong",
-   "subtitle": "The Art and Science of Chinese Energy Healing",
-   "authors": [
-    "Kenneth S. Cohen"
-   ],
-   "subjects": [
-    "qigong",
-    "holistic-traditions"
-   ],
-   "tradition": [
-    "chinese-internal-arts"
-   ],
-   "level": "beginner",
-   "editions": [
-    {
-     "format": "paperback",
-     "language": "en",
-     "publisher": "Ballantine",
-     "year": 1999,
-     "isbn13": "9780345421098",
-     "isbn10": "0345421094"
-    }
-   ],
-   "sources": [
-    {
-     "label": "Editorial shortlist (candidate; details unverified)",
-     "url": "staging/outside-candidates.psv#row51",
-     "accessed": "2026-10-27",
-     "supports": "candidate only"
-    }
-   ],
-   "status": "staged-needs-verification",
-   "origin": "staging/outside-candidates.psv:51"
-  },
-  {
    "title": "The Root of Chinese Qigong",
    "subtitle": "Secrets of Qigong Training",
    "authors": [
@@ -803,41 +699,6 @@
    ],
    "status": "staged-needs-verification",
    "origin": "staging/outside-candidates.psv:55"
-  },
-  {
-   "title": "The Nag Hammadi Library in English",
-   "subtitle": "",
-   "authors": [
-    "James M. Robinson (editor)"
-   ],
-   "subjects": [
-    "gnosticism",
-    "ancient-texts"
-   ],
-   "tradition": [
-    "gnostic"
-   ],
-   "level": "advanced",
-   "editions": [
-    {
-     "format": "paperback",
-     "language": "en",
-     "publisher": "HarperOne",
-     "year": 1990,
-     "isbn13": "9780060669355",
-     "isbn10": "0060669357"
-    }
-   ],
-   "sources": [
-    {
-     "label": "Editorial shortlist (candidate; details unverified)",
-     "url": "staging/outside-candidates.psv#row58",
-     "accessed": "2026-10-27",
-     "supports": "candidate only"
-    }
-   ],
-   "status": "staged-needs-verification",
-   "origin": "staging/outside-candidates.psv:58"
   },
   {
    "title": "The Cloud of Unknowing",
