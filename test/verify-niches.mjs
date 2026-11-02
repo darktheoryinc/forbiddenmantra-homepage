@@ -34,17 +34,15 @@ ok(homeH.includes('ask-foot') && homeH.includes('As an Amazon Associate I earn f
 for (const href of ['legal/', 'legal/terms-refunds/', 'about/privacy/', 'about/affiliate-disclosure/', 'contact/', 'network/']) ok(homeH.includes(`href="./${href}index.html"`) && fs.existsSync(path.join(SITE, href, 'index.html')), `footer links to ${href} and it exists`);
 ok(['https://iosutra.com', 'https://spiritualexpressionz.com', 'https://dogsrfun.com'].every((u) => homeH.includes(`href="${u}"`)), 'footer links to IOSutra, Spiritual Expressionz and Dogs R Fun');
 ok(/class="aff-note-p[^>]*>As an Amazon Associate/.test(read('books/the-power-of-now/index.html')), 'book page shows the disclosure directly under the buy buttons');
-// ---- homepage order and the "From Imagination to Publication" section ----
+// ---- homepage order; the "From Imagination to Publication" section has been removed (the site sells books) ----
 {
-  const iHero = homeH.indexOf('data-ask'), iPromo = homeH.indexOf('promo-band'), iStudio = homeH.indexOf('data-home="studio"'), iNext = homeH.indexOf('<section class="band"', iStudio);
+  const iHero = homeH.indexOf('data-ask'), iPromo = homeH.indexOf('promo-band'), iEnd = homeH.indexOf('data-home="featured"', iPromo);
   const firstBook = Math.min(...['data-home="guides"', 'class="hubs"', 'data-home="discovery"'].map((k) => homeH.indexOf(k)).filter((n) => n > 0));
-  ok(iHero > 0 && iHero < iPromo && iPromo < iStudio && iStudio < firstBook, 'homepage order: Digital Librarian search, IOSutra promotion, From Imagination to Publication, then the book collections');
-  const studio = homeH.slice(iStudio, homeH.indexOf('</section>', iStudio));
-  ok(/From Imagination to Publication/.test(studio) && ['Research', 'Writing', 'Editing', 'Illustration', 'Formatting', 'Publishing preparation'].every((w) => studio.includes(`<h3>${w}</h3>`)), 'studio section names the six workflow stages');
-  ok(/Coming soon/.test(studio) && !/<button|<form|<input|type="submit"|class="btn/.test(studio) && (studio.match(/<a /g) || []).length === 1, 'studio section is an honest "Coming soon": no buttons, forms or generate/buy actions (one contact link)');
-  ok(!/\b(generate your|create your book now|order now|buy now|try it)\b/i.test(studio) && (studio.match(/Planned/g) || []).length === 6, 'every stage is labelled Planned and nothing is offered as available');
-  ok(/iosutra\.com/.test(homeH.slice(iPromo, iStudio)) && homeH.slice(iPromo, iStudio).includes('Wellness and AI Technology') && homeH.slice(iPromo, iStudio).includes('does not imply that NVIDIA sponsors or endorses'), 'IOSutra promotion keeps its artwork heading, link and NVIDIA disclaimer');
-  ok(/<img src="[^"]*iosutra-inception-member\.webp" width="288" height="99" alt="IOSutra, Inception Member"/.test(homeH) && !/io-nv-text|io-wordmark/.test(homeH.slice(iPromo, iStudio)), 'IOSutra panel is the original image at native proportions (not rebuilt in HTML text); no text-drawn NVIDIA or IOSutra logos');
+  ok(iHero > 0 && iHero < iPromo && iPromo < iEnd && iEnd < firstBook, 'homepage order: Digital Librarian search, IOSutra promotion, then the book collections');
+  ok(!/From Imagination to Publication|data-home="studio"|studio-steps|Book creation tools|soon-chip/.test(homeH), 'the "From Imagination to Publication" coming-soon section and its six roadmap cards are gone from the homepage');
+  const promoH = homeH.slice(iPromo, iEnd);
+  ok(/iosutra\.com/.test(promoH) && promoH.includes('Wellness and AI Technology') && promoH.includes('does not imply that NVIDIA sponsors or endorses'), 'IOSutra promotion keeps its artwork heading, link and NVIDIA disclaimer');
+  ok(/<img src="[^"]*iosutra-inception-member\.webp" width="288" height="99" alt="IOSutra, Inception Member"/.test(homeH) && !/io-nv-text|io-wordmark/.test(promoH), 'IOSutra panel is the original image at native proportions (not rebuilt in HTML text); no text-drawn NVIDIA or IOSutra logos');
   ok(/<div class="io-tile io-tile-nv"><img src="[^"]*nvidia-inception-program-badge-rgb-for-screen\.svg" alt="NVIDIA Inception Program badge" height="99"/.test(homeH) && !/official NVIDIA Inception badge is not installed/.test(homeH) && homeH.indexOf('iosutra-inception-member') < homeH.indexOf('nvidia-inception-program-badge'), 'official NVIDIA badge sits to the right of the IOSutra panel, no taller than it, and the preview placeholder note is gone');
   ok(['Space+Grotesk', 'Sora', 'Inter'].every((f) => homeH.includes(f)), 'Space Grotesk, Sora and Inter are loaded');
 }
