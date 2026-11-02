@@ -199,7 +199,14 @@
   function h(tag, attrs, kids) { var e = document.createElement(tag); for (var k in (attrs || {})) if (attrs[k] != null && attrs[k] !== false) e.setAttribute(k, attrs[k]); (kids || []).forEach(function (c) { if (c != null) e.appendChild(typeof c === 'string' ? document.createTextNode(c) : c); }); return e; }
   function slugify(x) { return x.normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/&/g, ' and ').replace(/[’'`]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, ''); }
   function hue(x) { var v = 0; for (var i = 0; i < x.length; i++) v = (v * 31 + x.charCodeAt(i)) >>> 0; return v % 360; }
+  // Amazon-hosted cover (approved by the owner): the browser loads it from Amazon over the normal placeholder; a 1-pixel reply or an error removes it.
+  function amzOver(ph, title, author, id) {
+    var im = h('img', { 'class': 'amz-img', src: 'https://m.media-amazon.com/images/P/' + id + '.01._SCLZZZZZZZ_.jpg', alt: 'Cover of ' + title + ' by ' + author, width: 240, height: 360, loading: 'lazy', decoding: 'async', referrerpolicy: 'no-referrer' });
+    im.onload = function () { if (im.naturalWidth < 2) im.remove(); }; im.onerror = function () { im.remove(); };
+    ph.removeAttribute('role'); ph.removeAttribute('aria-label'); ph.appendChild(im); return ph;
+  }
   function coverEl(title, author, press, big, cv, root) {
+    if (cv && cv.a) return amzOver(h('div', { 'class': 'cover' + (big ? ' cover-lg' : '') + (press ? ' cover-fmp' : ''), style: '--h:' + (press ? 38 : hue(title)) }, [h('span', { 'class': 'cover-title' }, [title]), h('span', { 'class': 'cover-author' }, [author])]), title, author, cv.a);
     if (cv) { var base = (root || './') + 'assets/covers/' + cv[0]; return h('div', { 'class': 'cover cover-photo' + (big ? ' cover-lg' : '') + (press ? ' cover-fmp' : '') }, [h('img', { src: base + '-240.webp', srcset: cv[3] ? base + '-240.webp 240w, ' + base + '-480.webp 480w' : null, sizes: cv[3] ? (big ? '300px' : '(max-width:760px) 45vw, 240px') : null, width: cv[1], height: cv[2], alt: 'Cover of ' + title + ' by ' + author, loading: 'lazy', decoding: 'async' })]); }
     return h('div', { 'class': 'cover' + (big ? ' cover-lg' : '') + (press ? ' cover-fmp' : ''), style: '--h:' + (press ? 38 : hue(title)), role: 'img', 'aria-label': 'Placeholder cover for ' + title + '. Official cover art is shown only where a permitted source is connected.' }, [h('span', { 'class': 'cover-title' }, [title]), h('span', { 'class': 'cover-author' }, [author])]);
   }

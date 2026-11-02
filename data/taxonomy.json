@@ -600,7 +600,8 @@
     "paperback": "Paperback",
     "hardcover": "Hardcover",
     "ebook": "E-book",
-    "audiobook": "Audiobook"
+    "audiobook": "Audiobook",
+    "book": "Book (binding not stated)"
   },
   "levels": {
     "beginner": "Beginner",

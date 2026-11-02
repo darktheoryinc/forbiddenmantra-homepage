@@ -50,6 +50,7 @@
  "fmt_hardcover": "Relié",
  "fmt_ebook": "Livre numérique",
  "fmt_audiobook": "Livre audio",
+ "fmt_book": "Livre (reliure non précisée)",
  "lvl_beginner": "Débutant",
  "lvl_intermediate": "Intermédiaire",
  "lvl_advanced": "Avancé / érudit",

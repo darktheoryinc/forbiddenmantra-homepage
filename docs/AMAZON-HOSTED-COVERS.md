@@ -1,10 +1,12 @@
-# Amazon-hosted cover preview flag (OFF by default)
+# Amazon-hosted covers (ON by the owner's instruction, 2026-11-02)
 
-Purpose: let the owner see how 89 Press works without a verified cover would look using the Amazon image the live bookstore already loads. **Not authorised for public use**: the Associates licence (read 2026-10-29) lets us use Amazon images only as obtained through its API or approved feeds and forbids storing them; nothing readable authorises this address pattern. Nothing is downloaded, cached or rehosted.
+**What it does.** For every sold work without a verified stored cover and with an ebook, paperback, hardcover or generic-book edition (never audiobook), the page shows the image at `https://m.media-amazon.com/images/P/<ASIN or ISBN-10>.01._SCLZZZZZZZ_.jpg` over the normal text placeholder. The visitor's browser loads it from Amazon with no referrer; **nothing is downloaded, cached or rehosted**. A 1-pixel "no image" reply or a load error removes it, leaving the placeholder. Verified stored covers (owner originals and Penguin Random House) always win. Works on static pages, search results, the dynamic book page and the Digital Librarian.
 
-* Enable (local dev build only): `FM_AMAZON_COVERS=preview FM_OUT=test/out-amz node scripts/build.mjs`, then open `test/out-amz/`.
-* Default build and the hosting ZIP are unchanged: no page references Amazon image hosts.
-* Refused for `FM_PUBLIC=1` (the package script) and `FM_ENV=production`; the security gate also fails any package that references `m.media-amazon.com/images/` or `ssl-images-amazon.com/images/`.
-* What it shows: for Press works that are sold, have no verified cover and have an ebook, paperback or hardcover ASIN (never audiobook, ebook first), an `<img>` at `https://m.media-amazon.com/images/P/<ASIN>.01._SCLZZZZZZZ_.jpg` is layered over the normal text placeholder and removed if it fails. Each is labelled "Preview: Amazon-hosted". Verified covers and Mo Pai Nei Kung, The Hidden Technology of Human Power and Forbidden Mantra (no ASIN or not sold) are untouched.
+**The authorisation and its limits.** The owner instructed that all Amazon covers be used because the site runs on his Amazon Associates account (recorded in `config/approvals.json` `amazonHostedCovers`, basis `owner-instruction`). The Associates IP License as read on 2026-10-29 permits image content obtained through its API or approved feeds and forbids storing it; it does not clearly grant this use, and the Creators API is not available to the account. The owner has accepted that risk. If Amazon objects, the images can be removed everywhere in one step.
+
+**Controls.**
+* Switch off: set `approved` to `false` in `config/approvals.json`, or build with `FM_AMAZON_COVERS=off` (all Amazon image references disappear; placeholders remain).
+* Security gate: a public package may reference Amazon images only when the approval is recorded and only the exact pattern above; any other Amazon image URL fails the package. The package `_headers` allow `https://m.media-amazon.com` in `img-src` only when approved.
+* `FM_AMAZON_COVERS=preview` (Press works only) is refused for public builds without the approval.
+* Counts: "verified stored covers" (94 works, 104 files) and "Amazon-hosted covers displayed" are reported separately.
 * Test: `node test/verify-amz-flag.mjs`.
-* To make it public, the owner must first obtain Amazon's written confirmation (draft in `docs/OWN-COVER-ROUTES.md`) or qualify for the Creators API; the gate and flag guard would then be changed deliberately.

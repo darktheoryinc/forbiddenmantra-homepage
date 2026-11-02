@@ -50,6 +50,7 @@
  "fmt_hardcover": "Copertina rigida",
  "fmt_ebook": "E-book",
  "fmt_audiobook": "Audiolibro",
+ "fmt_book": "Libro (rilegatura non indicata)",
  "lvl_beginner": "Principiante",
  "lvl_intermediate": "Intermedio",
  "lvl_advanced": "Avanzato / accademico",

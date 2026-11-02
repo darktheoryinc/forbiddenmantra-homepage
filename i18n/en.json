@@ -50,6 +50,7 @@
  "fmt_hardcover": "Hardcover",
  "fmt_ebook": "E-book",
  "fmt_audiobook": "Audiobook",
+ "fmt_book": "Book (binding not stated)",
  "lvl_beginner": "Beginner",
  "lvl_intermediate": "Intermediate",
  "lvl_advanced": "Advanced / scholarly",

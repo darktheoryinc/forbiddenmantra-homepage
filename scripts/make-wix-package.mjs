@@ -18,7 +18,8 @@ execFileSync('node', [path.join(ROOT, 'scripts/build.mjs')], { cwd: ROOT, env: {
 // Netlify reads _headers: a preview must not be indexed by search engines. (A production package leaves indexing to the owner's decision.)
 fs.writeFileSync(path.join(stage, 'robots.txt'), prod ? 'User-agent: *\nAllow: /\n' : 'User-agent: *\nDisallow: /\n');
 // Security headers for hosts that read _headers (Netlify, Cloudflare Pages). No frame-ancestors on purpose: it would block the Wix embed if a Wix preview domain were missed.
-const SEC = `  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()\n  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; base-uri 'self'; form-action 'self'; object-src 'none'\n`;
+const AMZ_IMG = (() => { try { return JSON.parse(fs.readFileSync(path.join(ROOT, 'config/approvals.json'), 'utf8')).amazonHostedCovers?.approved === true && process.env.FM_AMAZON_COVERS !== 'off'; } catch { return false; } })();
+const SEC = `  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()\n  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:${AMZ_IMG ? ' https://m.media-amazon.com' : ''}; connect-src 'self'; base-uri 'self'; form-action 'self'; object-src 'none'\n`;
 fs.writeFileSync(path.join(stage, '_headers'), `/*\n${SEC}${prod ? '' : '  X-Robots-Tag: noindex, nofollow\n'}`);
 // SAFETY GATE: nothing is zipped or copied into wix/ unless the package passes.
 const gate = scanPackage(stage, { production: prod });

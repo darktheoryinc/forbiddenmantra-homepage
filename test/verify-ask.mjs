@@ -20,7 +20,7 @@ const browser = await launch();
 if (browser) for (const [name, vp, mobile] of [['desktop', { width: 1366, height: 768 }, false], ['mobile', { width: 390, height: 844 }, true]]) {
   const ctx = await browser.newContext({ viewport: vp, isMobile: mobile }); const pg = await ctx.newPage();
   const errs = [], reqs = []; pg.on('pageerror', (e) => errs.push(String(e)));
-  pg.on('request', (r) => { if (!r.url().startsWith('file:') && !/fonts\.(googleapis|gstatic)/.test(r.url())) reqs.push(r.url()); });
+  pg.on('request', (r) => { if (!r.url().startsWith('file:') && !/fonts\.(googleapis|gstatic)/.test(r.url()) && !/^https:\/\/m\.media-amazon\.com\/images\/P\/[A-Z0-9]{10}\.01\._SCLZZZZZZZ_\.jpg$/.test(r.url())) reqs.push(r.url()); });
   await pg.route(/^https?:\/\/(?!file)/, (x) => x.abort());
   const T = `[${name}]`, u = urlOf(SITE);
   await pg.goto(u('index.html')); await pg.waitForTimeout(500);

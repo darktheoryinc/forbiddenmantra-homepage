@@ -2,6 +2,8 @@
   "_doc": "Source registry and compliance policy for catalogue imports. Nothing here is fetched unless a harvest command is run by a person on a networked machine. `termsReviewed` is false until the site owner has read the source's current terms; harvest refuses a source whose terms are unreviewed unless --accept-terms is passed.",
   "policy": {
     "minDistinctHostsForBatchPublish": 2,
+    "tierMinHosts": { "open-library-catalogue": 1 },
+    "tierMinHostsNote": "open-library-catalogue is the single-source tier: one Open Library edition record (title, author, publisher, year, language, format all stated) that passes the reconcile.mjs --single-source gates. It is labelled as such on the book page and never called verified by two sources.",
     "storeFromSources": [
       "title",
       "authors",

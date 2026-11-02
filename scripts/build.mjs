@@ -67,10 +67,13 @@ const ANALYTICS = (() => {
 const promoView = (placement, id = 'iosutra-technology') => promo.resolve(PROMOS, id, placement, { root: ROOT });
 const APPROVALS = fs.existsSync(path.join(ROOT, 'config/approvals.json')) ? JSON.parse(fs.readFileSync(path.join(ROOT, 'config/approvals.json'), 'utf8')) : {};
 // FM_PUBLIC=1 (set by the hosting-package script): anything whose owner approval is not recorded in config/approvals.json is withheld from the output.
-// Preview-only feature flag (default OFF): FM_AMAZON_COVERS=preview shows Amazon-hosted cover images (loaded by the visitor's browser from Amazon, never downloaded, cached or rehosted)
-// for Press works that have no verified cover. Not authorised for public use: it is refused for production and public packages, and the security gate fails any package that references such an image.
-const AMAZON_COVERS_PREVIEW = process.env.FM_AMAZON_COVERS === 'preview';
-if (AMAZON_COVERS_PREVIEW && (process.env.FM_PUBLIC || process.env.FM_ENV === 'production')) { console.error('FM_AMAZON_COVERS=preview is refused for public or production builds: Amazon-hosted covers are not authorised for public use (docs/AMAZON-HOSTED-COVERS.md).'); process.exit(1); }
+// Amazon-hosted covers (loaded by the visitor's browser from Amazon's image server; never downloaded, cached or rehosted).
+// ON when config/approvals.json amazonHostedCovers.approved is true (the owner's recorded instruction; set false or build with FM_AMAZON_COVERS=off to disable).
+// FM_AMAZON_COVERS=preview is the older Press-only local preview and is refused for public or production builds unless that approval is recorded.
+const AMZ_APPROVED = APPROVALS.amazonHostedCovers?.approved === true && process.env.FM_AMAZON_COVERS !== 'off';
+const AMAZON_COVERS_PREVIEW = process.env.FM_AMAZON_COVERS === 'preview' && !AMZ_APPROVED;
+if (AMAZON_COVERS_PREVIEW && (process.env.FM_PUBLIC || process.env.FM_ENV === 'production')) { console.error('FM_AMAZON_COVERS=preview is refused for public or production builds unless config/approvals.json amazonHostedCovers is approved (docs/AMAZON-HOSTED-COVERS.md).'); process.exit(1); }
+const AMAZON_COVERS = AMZ_APPROVED || AMAZON_COVERS_PREVIEW;
 const PUBLIC_OUT = !!process.env.FM_PUBLIC, NVIDIA_OK = !PUBLIC_OUT || APPROVALS.nvidiaBranding?.approved === true;
 const promoCtx = { root: ROOT, production: PRODUCTION, nvidia: NVIDIA_OK, href: (p) => href(p), asset: (f) => `${ROOT_PREFIX}assets/partner/${f}` };
 const placed = (placement) => PROMOS.promos.filter((p) => p.placements?.[placement]?.enabled);
@@ -116,11 +119,11 @@ const workById = new Map(cat.works.map((w) => [w.id, w]));
 const edLangs = (e) => [e.language, ...(e.alsoLanguages ?? [])];
 const _wl = new WeakMap();
 const wLangs = (w) => { let v = _wl.get(w); if (!v) _wl.set(w, (v = [...new Set(w.editions.flatMap(edLangs))])); return v; };
-const FORMAT_ORDER = ['hardcover', 'paperback', 'ebook', 'audiobook'];
+const FORMAT_ORDER = ['hardcover', 'paperback', 'ebook', 'audiobook', 'book'];
 
 // ---------- scale model: static/dynamic tiers, index chunks, series, author pages ----------
 const sortTitle = (w) => w.title.toLowerCase().replace(/^(the|a|an)\s+/, '');
-const rankTier = (w) => (w.press ? 0 : ({ 'hand-verified': 1, 'web-corroborated': 2, 'auto-two-source': 3 }[w.provenance?.tier] ?? 1));
+const rankTier = (w) => (w.press ? 0 : ({ 'hand-verified': 1, 'web-corroborated': 2, 'auto-two-source': 3, 'open-library-catalogue': 4 }[w.provenance?.tier] ?? 1));
 const staticSet = new Set([...cat.works].sort((a, b) => rankTier(a) - rankTier(b)).slice(0, BUILD.maxStaticBookPages).map((w) => w.id));
 const isDyn = (w) => !staticSet.has(w.id);
 const hubIx = new Map(tax.hubs.map((h, i) => [h.id, i]));
@@ -174,7 +177,7 @@ for (const c of COVERS.entries) coverOfEdition.set(`${c.work.slug}/${c.edition.i
 const reuseOfWork = new Map(); // works whose confirmed identical front artwork is also shown for other editions (display only)
 for (const r of COVERS.reuse ?? []) { const a = reuseOfWork.get(r.work.slug) ?? []; a.push(r.edition.format); reuseOfWork.set(r.work.slug, a); }
 for (const w of cat.works) { const c = w.editions.map((e) => coverOfEdition.get(`${w.slug}/${e.id}`)).find(Boolean); if (c) coverOfWork.set(w.slug, c); }
-const coverRec = (c, w = null) => { if (!c) return 0; const rec = [c.key, c.sizes?.[240]?.w ?? 240, c.sizes?.[240]?.h ?? 360, c.has480 ? 1 : 0]; const b = w ? coverBuy(w, c) : null; if (b) rec.push(b.url); return rec; }; // 5th element: the tagged Amazon page of the cover's edition
+const coverRec = (c, w = null) => { if (!c) { const a = w ? amazonCoverId(w) : null; return a ? { a } : 0; } const rec = [c.key, c.sizes?.[240]?.w ?? 240, c.sizes?.[240]?.h ?? 360, c.has480 ? 1 : 0]; const b = w ? coverBuy(w, c) : null; if (b) rec.push(b.url); return rec; }; // 5th element: the tagged Amazon page of the cover's edition
 const NETWORK = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/network.json'), 'utf8')).sites;
 const NICHES = fs.existsSync(path.join(ROOT, DATA, 'niches.json')) ? JSON.parse(fs.readFileSync(path.join(ROOT, DATA, 'niches.json'), 'utf8')).niches : [];
 const nicheById = new Map(NICHES.map((n) => [n.id, n]));
@@ -257,10 +260,11 @@ const coverAnchor = (w, title, inner, cls) => {
   const b = coverBuy(w, coverOfWork.get(w.slug));
   return b ? `<a class="${cls} cover-buy" href="${esc(b.url)}" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="${esc(w.slug)}"${b.asin ? ` data-asin="${esc(b.asin)}"` : ''} aria-label="${esc(`Buy ${title} on Amazon (affiliate link, opens in a new tab)`)}">${inner}</a>` : null;
 };
-// ASIN whose Amazon-hosted image the preview flag may show: Press works only, sold, no verified cover, ebook first, then paperback, hardcover (never audiobook).
-function amazonPreviewAsin(w) {
-  if (!AMAZON_COVERS_PREVIEW || !w.press || w.purchasable === false || coverOfWork.has(w.slug)) return null;
-  for (const f of ['ebook', 'paperback', 'hardcover']) { const e = w.editions.find((x) => x.format === f && x.asin); if (e) return e.asin; }
+// Image id for an Amazon-hosted cover: the ASIN of an ebook, paperback, hardcover or generic-book edition, else that edition's ISBN-10 (the ASIN of a print book). Never audiobook.
+// Only for sold works without a verified stored cover; preview-only mode is limited to Press works.
+function amazonCoverId(w) {
+  if (!AMAZON_COVERS || w.purchasable === false || coverOfWork.has(w.slug) || (AMAZON_COVERS_PREVIEW && !w.press)) return null;
+  for (const f of ['ebook', 'paperback', 'hardcover', 'book']) for (const e of w.editions) if (e.format === f) { if (e.asin) return e.asin; if (e.isbn10) return e.isbn10; }
   return null;
 }
 function cover(w, big = false, title = w.title, entry = coverOfWork.get(w.slug)) {
@@ -271,9 +275,9 @@ function cover(w, big = false, title = w.title, entry = coverOfWork.get(w.slug))
   }
   const hue = w.press ? 38 : hashHue(w.title);
   const sz = title.length > 70 ? ' ph-s' : title.length > 40 ? ' ph-m' : '';
-  const amz = amazonPreviewAsin(w);
-  const amzImg = amz ? `<img class="amz-img" src="https://m.media-amazon.com/images/P/${amz}.01._SCLZZZZZZZ_.jpg" alt="" width="240" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-amz-preview="${amz}" onerror="this.remove()"><span class="amz-tag" aria-hidden="true">Preview: Amazon-hosted</span>` : '';
-  return `<div class="cover cover-ph${big ? ' cover-lg' : ''}${w.press ? ' cover-fmp' : ''}" style="--h:${hue}" role="img" aria-label="Text placeholder for the cover of ${esc(title)}. The original cover art is not available yet."><span class="ph-orn" aria-hidden="true">✦</span><span class="cover-title ph-t${sz}">${esc(title)}</span><span class="cover-author">${esc(w.authors[0])}</span><span class="ph-cap" aria-hidden="true">Cover art coming</span>${amzImg}</div>`;
+  const amz = amazonCoverId(w);
+  const amzImg = amz ? `<img class="amz-img" src="https://m.media-amazon.com/images/P/${amz}.01._SCLZZZZZZZ_.jpg" alt="${esc(`Cover of ${title} by ${w.authors.join(', ')}`)}" width="240" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-amz-cover="${amz}" onload="if(this.naturalWidth<2)this.remove()" onerror="this.remove()">${AMAZON_COVERS_PREVIEW ? '<span class="amz-tag" aria-hidden="true">Preview: Amazon-hosted</span>' : ''}` : '';
+  return `<div class="cover cover-ph${big ? ' cover-lg' : ''}${w.press ? ' cover-fmp' : ''}" style="--h:${hue}" ${amz ? '' : ` role="img" aria-label="Text placeholder for the cover of ${esc(title)}. The original cover art is not available yet."`}><span class="ph-orn" aria-hidden="true">✦</span><span class="cover-title ph-t${sz}">${esc(title)}</span><span class="cover-author">${esc(w.authors[0])}</span><span class="ph-cap" aria-hidden="true">Cover art coming</span>${amzImg}</div>`;
 }
 const authorHref = (n) => (authorPage.has(slugify(n)) ? href(`authors/${slugify(n)}/`) : `${href('search/')}?q=${encodeURIComponent(n)}`);
 const authorLinks = (w) => w.authors.map((n) => `<a href="${authorHref(n)}">${esc(n)}</a>`).join(', ');

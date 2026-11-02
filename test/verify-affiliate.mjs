@@ -100,7 +100,8 @@ ok(/tracking IDs are specific to each marketplace/i.test(fs.readFileSync(path.jo
 
 // ===== licensing: no Amazon images, prices, ratings; no credentials =====
 const blob = all.map((f) => fs.readFileSync(f, 'utf8')).join('\n');
-ok(!/media-amazon\.com|images-na\.ssl-images-amazon|ssl-images-amazon|m\.media-amazon|fls-na\.amazon/.test(blob), 'no Amazon-hosted image, tracking pixel or widget is loaded');
+const amzUrls = [...blob.matchAll(/https?:\/\/[^\s"'<>]*(?:media-amazon|ssl-images-amazon|fls-na\.amazon)[^\s"'<>]*/g)].map((m) => m[0]);
+ok(amzUrls.every((u) => /^https:\/\/m\.media-amazon\.com\/images\/P\/[A-Z0-9]{10}\.01\._SCLZZZZZZZ_\.jpg$/.test(u)) && !/fls-na\.amazon|ssl-images-amazon/.test(blob), `no Amazon tracking pixel or widget; the only Amazon-hosted images are the owner-approved cover URLs (${amzUrls.length} references, exact ASIN/ISBN-10 pattern, never stored)`);
 ok(!/\$\s?\d{1,3}\.\d{2}|price:\s*\$|★|stars? rating|customer reviews/i.test(blob.replace(/<script[\s\S]*?<\/script>/g, '')), 'no price, availability, star rating or review text is displayed');
 const repoText = ['config/site.json', 'data/promos.json', 'scripts/build.mjs', 'scripts/import.mjs'].map((f) => fs.readFileSync(path.join(ROOT, f), 'utf8')).join('\n');
 ok(!/AKIA[0-9A-Z]{12,}|secretKey|credentialSecret|client_secret|password\s*[:=]/i.test(repoText) && !fs.existsSync(path.join(ROOT, '.env')), 'no API credentials, secrets or .env file in the repository');

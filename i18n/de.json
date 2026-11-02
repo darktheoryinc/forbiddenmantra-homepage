@@ -50,6 +50,7 @@
  "fmt_hardcover": "Gebundene Ausgabe",
  "fmt_ebook": "E-Book",
  "fmt_audiobook": "Hörbuch",
+ "fmt_book": "Buch (Einband nicht angegeben)",
  "lvl_beginner": "Einsteiger",
  "lvl_intermediate": "Fortgeschritten",
  "lvl_advanced": "Anspruchsvoll / wissenschaftlich",

@@ -24,6 +24,9 @@ const argv = process.argv.slice(2);
 const arg = (n, d) => { const i = argv.indexOf('--' + n); return i < 0 ? d : argv[i + 1]; };
 const today = process.env.FM_TODAY ?? rd('config/site.json').catalogueAsOf;
 const prefix = arg('prefix', `auto-${today}`), batchSize = +arg('batch-size', 250);
+// --single-source: when Google Books is unavailable, publish Open Library-only editions in the 'open-library-catalogue' tier if they pass every gate below.
+const SINGLE = argv.includes('--single-source'), minEditions = +arg('min-editions', 4), minYearUnstated = +arg('min-year-unstated', 1995), thisYear = new Date().getFullYear();
+const IND = /^(independently published|createspace.*|amazon digital services.*|lulu.*|kdp)$/i, JUNK_AUTHOR = /\b(unknown|anonymous)\b/i;
 
 const fold = (s) => String(s ?? '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
 export const normTitle = (t) => fold(t).split(/[:(]/)[0].replace(/^(the|a|an)\s+/, '').replace(/[^a-z0-9]+/g, ' ').trim();
@@ -48,17 +51,33 @@ const gbBy = new Map(gb.map((r) => [r.isbn13, r]));
 const seenIsbn = new Set();
 const eligible = [];
 
-for (const o of ol) {
+for (let o of ol) {
   if (seenIsbn.has(o.isbn13)) continue; seenIsbn.add(o.isbn13);
   const g = gbBy.get(o.isbn13);
   if (haveIsbn.has(o.isbn13)) { hold(o, 'already published (ISBN)'); continue; }
   const bad = blockT.find((re) => re.test(o.title)) ?? (o.subjects ?? []).map((s) => blockS.find((re) => re.test(s))).find(Boolean);
   if (bad) { hold(o, `quality rule: ${bad}`); continue; }
-  if (!g) { hold(o, 'single source only (no Google Books match yet)'); continue; }
+  if (!g && !SINGLE) { hold(o, 'single source only (no Google Books match yet)'); continue; }
+  if (!g) { // single-source gates: every field stated by Open Library, internally consistent, and popular enough to be a real, circulating book
+    const why = !o.language || o.language !== 'en' ? 'language not stated as English'
+      : o.format === 'audiobook' ? 'audiobook records are not imported'
+      : !o.format && (!o.year || o.year < minYearUnstated) ? `binding not stated and published before ${minYearUnstated} (likely out of print)`
+      : !o.authors.length || JUNK_AUTHOR.test(o.authors[0]) ? 'no named author'
+      : !o.publisher ? 'no publisher stated'
+      : !o.year || o.year < 1450 || o.year > thisYear ? 'publication year missing or implausible'
+      : (o.editionCount ?? 0) < minEditions ? `fewer than ${minEditions} editions on Open Library`
+      : IND.test(o.publisher) && (o.editionCount ?? 0) < 8 ? 'self-published imprint with few editions'
+      : o.searchTitle && titleSim(o.title, o.searchTitle) < rules.titleSimilarityMin ? `edition title disagrees with its work: "${o.title}" vs "${o.searchTitle}"`
+      : o.searchAuthors?.[0] && lastName(o.authors[0]) !== lastName(o.searchAuthors[0]) ? 'edition author disagrees with its work'
+      : null;
+    if (why) { hold(o, `single-source gate: ${why}`); continue; }
+    if (!o.format) o = { ...o, format: 'book', formatNote: 'Binding not stated by the source record.' };
+  } else {
   if (titleSim(o.title, g.title) < rules.titleSimilarityMin) { hold(o, `title disagrees across sources: "${o.title}" vs "${g.title}"`); continue; }
   if (o.authors[0] && g.authors[0] && lastName(o.authors[0]) !== lastName(g.authors[0])) { hold(o, `first author disagrees: "${o.authors[0]}" vs "${g.authors[0]}"`); continue; }
   if (!o.authors.length) { hold(o, 'no author'); continue; }
   if (rules.requireLanguage && (!o.language || !g.language || o.language !== g.language)) { hold(o, `language unconfirmed or disagrees (${o.language ?? '?'} / ${g.language ?? '?'})`); continue; }
+  }
   if (rules.requireFormat && !o.format) { hold(o, 'format not stated by source; not guessed'); continue; }
   let dept = o.seed?.department, trad = o.seed?.tradition, level = o.seed?.level ?? 'unrated';
   if (!dept) { const hit = submap.find(([re]) => re.test((o.olSubjects ?? o.subjects ?? []).join(' | '))); dept = hit?.[1]; trad = hit?.[2]; }
@@ -84,9 +103,9 @@ for (const [key, es] of groups) {
     seenEd.add(dupKey);
     eds.push({
       language: e.o.language, format: e.o.format, publisher: e.o.publisher || null,
-      year: e.o.year && e.g.year && e.o.year === e.g.year ? e.o.year : null, // year published only when both sources agree
-      isbn13: e.o.isbn13, title: e.o.title !== first.o.title ? e.o.title : undefined,
-      sources: [{ label: 'Open Library record', url: e.o.url, accessed: e.o.fetchedAt, supports: 'ISBN-13, title, author, format, language' }, { label: 'Google Books record', url: e.g.url, accessed: e.g.fetchedAt, supports: 'ISBN-13, title, author, language' }],
+      year: e.g ? (e.o.year && e.g.year && e.o.year === e.g.year ? e.o.year : null) : e.o.year, // two-source: year only when both agree; single-source: Open Library's stated year
+      isbn13: e.o.isbn13, title: e.o.title !== first.o.title ? e.o.title : undefined, note: e.o.formatNote,
+      sources: [{ label: 'Open Library record', url: e.o.url, accessed: e.o.fetchedAt, supports: 'ISBN-13, title, author, publisher, year, format, language' }, ...(e.g ? [{ label: 'Google Books record', url: e.g.url, accessed: e.g.fetchedAt, supports: 'ISBN-13, title, author, language' }] : [])],
     });
   }
   if (!eds.length) continue;
@@ -94,7 +113,7 @@ for (const [key, es] of groups) {
     title: first.o.title, subtitle: first.o.subtitle || '', authors: first.o.authors.slice(0, rules.maxAuthorsPerWork), subjects: [first.dept],
     tradition: first.trad ? [first.trad] : [], level: first.level, series: first.o.series ? { name: first.o.series } : undefined, description: null,
     status: 'verified', press: null, claims: [], editions: eds,
-    provenance: { tier: 'auto-two-source', method: 'openlibrary+googlebooks agreement', workKey: key.startsWith('t:') ? null : key },
+    provenance: es.every((x) => x.g) ? { tier: 'auto-two-source', method: 'openlibrary+googlebooks agreement', workKey: key.startsWith('t:') ? null : key } : { tier: 'open-library-catalogue', method: 'single Open Library edition record passing the single-source gates', workKey: key.startsWith('t:') ? null : key },
     sources: eds[0].sources.map((s) => ({ ...s, supports: 'title, author, ISBN-13' })),
   });
 }
@@ -105,7 +124,7 @@ for (const f of fs.readdirSync(path.join(STAGING, 'batches'))) if (f.startsWith(
 let n = 0;
 for (let i = 0; i < works.length; i += batchSize) {
   const id = `${prefix}-${String(++n).padStart(3, '0')}`;
-  fs.writeFileSync(path.join(STAGING, 'batches', id + '.json'), JSON.stringify({ batch: id, checkedOn: today, tier: 'auto-two-source', works: works.slice(i, i + batchSize) }, null, 1));
+  fs.writeFileSync(path.join(STAGING, 'batches', id + '.json'), JSON.stringify({ batch: id, checkedOn: today, tier: SINGLE ? 'open-library-catalogue' : 'auto-two-source', works: works.slice(i, i + batchSize) }, null, 1));
 }
 const reasons = review.reduce((a, r) => ((a[r.reason.replace(/".*"|\(.*\)/g, '').trim()] = (a[r.reason.replace(/".*"|\(.*\)/g, '').trim()] ?? 0) + 1), a), {});
 fs.writeFileSync(path.join(STAGING, 'review', prefix + '.json'), JSON.stringify({ generated: today, summary: reasons, items: review }, null, 1));

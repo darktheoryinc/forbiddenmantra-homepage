@@ -50,6 +50,7 @@
  "fmt_hardcover": "हार्डकवर",
  "fmt_ebook": "ई-पुस्तक",
  "fmt_audiobook": "ऑडियोबुक",
+ "fmt_book": "पुस्तक (जिल्द का प्रकार उल्लिखित नहीं)",
  "lvl_beginner": "शुरुआती",
  "lvl_intermediate": "मध्यम",
  "lvl_advanced": "उन्नत / शैक्षणिक",

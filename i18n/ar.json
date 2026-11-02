@@ -50,6 +50,7 @@
  "fmt_hardcover": "غلاف مقوّى",
  "fmt_ebook": "كتاب إلكتروني",
  "fmt_audiobook": "كتاب صوتي",
+ "fmt_book": "كتاب (التجليد غير مذكور)",
  "lvl_beginner": "مبتدئ",
  "lvl_intermediate": "متوسط",
  "lvl_advanced": "متقدم / أكاديمي",

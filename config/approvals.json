@@ -39,5 +39,15 @@
     "approvedBy": null,
     "approvedOn": null,
     "url": null
+  },
+  "amazonHostedCovers": {
+    "approved": true,
+    "approvedBy": "site owner (explicit instruction in the working session)",
+    "approvedOn": "2026-11-02",
+    "basis": "owner-instruction",
+    "covers": "Amazon-hosted cover images shown for books without a verified stored cover, loaded from Amazon's image server in the visitor's browser (never downloaded, cached or rehosted), for books sold through the owner's Amazon Associates account (tag darktheoryinc-20).",
+    "notDocumented": [
+      "Amazon's written terms do not clearly grant this: the Associates IP License (read 2026-10-29) permits image content obtained through its API or approved feeds. The owner accepts this risk and can switch it off by setting approved to false or building with FM_AMAZON_COVERS=off."
+    ]
   }
 }

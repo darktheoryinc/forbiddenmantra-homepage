@@ -50,6 +50,7 @@
  "fmt_hardcover": "Tapa dura",
  "fmt_ebook": "Libro electrónico",
  "fmt_audiobook": "Audiolibro",
+ "fmt_book": "Libro (encuadernación no indicada)",
  "lvl_beginner": "Principiante",
  "lvl_intermediate": "Intermedio",
  "lvl_advanced": "Avanzado / académico",

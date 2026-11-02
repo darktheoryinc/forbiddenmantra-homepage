@@ -57,7 +57,7 @@ export function scanPackage(dir, { production = false, approvals = null, publicO
     if (ext === '.html') {
       for (const m of t.matchAll(/<script[^>]+src=["'](https?:)?\/\/[^"']+/gi)) add(fail, 'HIGH', r, 'loads a script from another website');
       if (/<iframe|<object|<embed/i.test(t)) add(fail, 'HIGH', r, 'contains an iframe/object/embed');
-      if (/(m\.media-amazon\.com|ssl-images-amazon\.com)\/images\//i.test(t)) add(fail, 'HIGH', r, 'references an Amazon-hosted image: not authorised for public packages (docs/AMAZON-HOSTED-COVERS.md)');
+      if (/(m\.media-amazon\.com|ssl-images-amazon\.com)\/images\//i.test(t)) { const amzOk = ok('amazonHostedCovers') && !/ssl-images-amazon\.com/i.test(t) && [...t.matchAll(/https?:\/\/[^\s"'<>]*media-amazon\.com[^\s"'<>]*/g)].every((m) => /^https:\/\/m\.media-amazon\.com\/images\/P\/[A-Z0-9]{10}\.01\._SCLZZZZZZZ_\.jpg$/.test(m[0])); if (!amzOk) add(fail, 'HIGH', r, 'references an Amazon-hosted image outside the owner-approved pattern (config/approvals.json amazonHostedCovers; docs/AMAZON-HOSTED-COVERS.md)'); }
       for (const m of t.matchAll(/<form[^>]+action=["']https?:\/\/[^"']+/gi)) add(fail, 'HIGH', r, 'form posts to another website');
       for (const m of t.matchAll(/<link[^>]+rel=["']stylesheet["'][^>]+href=["'](https?:\/\/[^"']+)/gi)) if (!/^https:\/\/fonts\.googleapis\.com\//.test(m[1])) add(fail, 'HIGH', r, 'stylesheet from an unapproved host');
       for (const m of t.matchAll(/\btag=([A-Za-z0-9_-]+)/g)) tags.add(m[1]);
