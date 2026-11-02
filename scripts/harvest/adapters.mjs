@@ -14,7 +14,7 @@ export const openlibrary = {
   base: 'https://openlibrary.org',
   // Discovery: one page of works for a seed. Returns docs with ISBN lists; edition detail comes from `lookup`.
   searchUrl: ({ kind, value, page = 1, limit = 50 }) => {
-    const q = kind === 'subject' ? `subject:"${value}"` : kind === 'author' ? `author:"${value}"` : kind === 'series' ? `series:"${value}"` : `title:"${value}"`;
+    const q = kind === 'subject' ? `subject:"${value}"` : kind === 'author' ? `author:"${value}"` : kind === 'series' ? `series:"${value}"` : kind === 'publisher' ? `publisher:"${value}"` : kind === 'keyword' ? value : `title:"${value}"`;
     const fields = 'key,title,author_name,first_publish_year,isbn,language,subject,edition_count';
     return `${openlibrary.base}/search.json?q=${encodeURIComponent(q + (process.env.FM_OL_LANG === 'any' ? '' : ' language:' + (process.env.FM_OL_LANG ?? 'eng')))}&fields=${fields}&limit=${limit}&page=${page}&sort=editions`;
   },

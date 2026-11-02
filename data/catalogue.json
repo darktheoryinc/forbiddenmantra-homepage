@@ -21900,11 +21900,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL29844566M/Breath",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780735213616",
-     "isbn10": "0735213615"
+     "isbn10": "0735213615",
+     "asin": "0735213615"
     },
     {
      "language": "en",
@@ -38033,11 +38034,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27657632M/Pensees",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781849024785",
-     "isbn10": "1849024782"
+     "isbn10": "1849024782",
+     "asin": "1849024782"
     }
    ],
    "provenance": {
@@ -39105,11 +39107,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL4555302M/George_MacDonald",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780025705302",
-     "isbn10": "002570530X"
+     "isbn10": "002570530X",
+     "asin": "002570530X"
     },
     {
      "language": "en",
@@ -60810,11 +60813,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27398296M/Women_and_Buddhist_Philosophy",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780824858780",
-     "isbn10": "0824858786"
+     "isbn10": "0824858786",
+     "asin": "0824858786"
     },
     {
      "language": "en",
@@ -76688,11 +76692,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27697399M/Turning_Toward_Technology",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781412863148",
-     "isbn10": "1412863147"
+     "isbn10": "1412863147",
+     "asin": "1412863147"
     }
    ],
    "provenance": {
@@ -96817,11 +96822,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL33345612M/A_Master_of_Djinn",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780356516882",
-     "isbn10": "0356516881"
+     "isbn10": "0356516881",
+     "asin": "0356516881"
     },
     {
      "language": "en",
@@ -98862,11 +98868,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27444213M/The_Crucible",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780143129479",
-     "isbn10": "0143129473"
+     "isbn10": "0143129473",
+     "asin": "0143129473"
     }
    ],
    "provenance": {
@@ -104196,11 +104203,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL3706286M/The_Portable_Arthur_Miller",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780142437551",
-     "isbn10": "0142437557"
+     "isbn10": "0142437557",
+     "asin": "0142437557"
     },
     {
      "language": "en",
@@ -119555,11 +119563,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27566130M/Last_Call",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780062233271",
-     "isbn10": "0062233270"
+     "isbn10": "0062233270",
+     "asin": "0062233270"
     },
     {
      "language": "en",
@@ -128674,11 +128683,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27630030M/The_Long_Dark_Tea-Time_of_the_Soul",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781447221104",
-     "isbn10": "1447221109"
+     "isbn10": "1447221109",
+     "asin": "1447221109"
     },
     {
      "language": "en",
@@ -134305,11 +134315,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL24759823M/Sherlock_Holmes_and_the_Rune_Stone_Mystery",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780670888214",
-     "isbn10": "0670888214"
+     "isbn10": "0670888214",
+     "asin": "0670888214"
     },
     {
      "language": "en",
@@ -134341,11 +134352,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL7352661M/Sherlock_Holmes_and_the_Rune_Stone_Mystery",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780140296457",
-     "isbn10": "014029645X"
+     "isbn10": "014029645X",
+     "asin": "014029645X"
     }
    ],
    "provenance": {
@@ -140566,11 +140578,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL29273439M/The_Raven_King",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781407136646",
-     "isbn10": "140713664X"
+     "isbn10": "140713664X",
+     "asin": "140713664X"
     }
    ],
    "provenance": {
@@ -142297,11 +142310,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL1857983M/American_Psycho",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780679735779",
-     "isbn10": "0679735771"
+     "isbn10": "0679735771",
+     "asin": "0679735771"
     }
    ],
    "provenance": {
@@ -142849,11 +142863,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27600544M/The_Revolution_of_Everyday_Life",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781604866780",
-     "isbn10": "1604866780"
+     "isbn10": "1604866780",
+     "asin": "1604866780"
     }
    ],
    "provenance": {
@@ -145924,11 +145939,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27703396M/The_Idiot_Brain",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781443450065",
-     "isbn10": "1443450065"
+     "isbn10": "1443450065",
+     "asin": "1443450065"
     },
     {
      "language": "en",
@@ -157610,11 +157626,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL37845898M/The_Richest_Man_in_Babylon",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9789387669369",
-     "isbn10": "938766936X"
+     "isbn10": "938766936X",
+     "asin": "938766936X"
     },
     {
      "language": "en",
@@ -162928,11 +162945,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27557146M/DSM-IV-TR_in_Action",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781118784778",
-     "isbn10": "1118784774"
+     "isbn10": "1118784774",
+     "asin": "1118784774"
     },
     {
      "language": "en",
@@ -173735,11 +173753,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27362922M/Yayoi_Kusama",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781941701812",
-     "isbn10": "1941701817"
+     "isbn10": "1941701817",
+     "asin": "1941701817"
     },
     {
      "language": "en",
@@ -180759,11 +180778,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL29009557M/Hannibal_Rising",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781847820037",
-     "isbn10": "1847820034"
+     "isbn10": "1847820034",
+     "asin": "1847820034"
     }
    ],
    "provenance": {
@@ -181164,11 +181184,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL34013735M/Trauma_and_Recovery",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780465098736",
-     "isbn10": "0465098738"
+     "isbn10": "0465098738",
+     "asin": "B06XC5D4VT"
     }
    ],
    "provenance": {
@@ -181798,11 +181819,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL38065466M/Side_Affects",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781452967288",
-     "isbn10": "1452967288"
+     "isbn10": "1452967288",
+     "asin": "1452967288"
     },
     {
      "language": "en",
@@ -181815,11 +181837,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL36267902M/Side_Affects",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781517912086",
-     "isbn10": "1517912083"
+     "isbn10": "1517912083",
+     "asin": "1517912083"
     }
    ],
    "provenance": {
@@ -182224,11 +182247,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL47680960M/Archer's_Voice",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781495390906",
-     "isbn10": "149539090X"
+     "isbn10": "149539090X",
+     "asin": "149539090X"
     },
     {
      "language": "en",
@@ -184944,11 +184968,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27388612M/Unfuck_Your_Brain",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781621063049",
-     "isbn10": "1621063046"
+     "isbn10": "1621063046",
+     "asin": "1621063046"
     }
    ],
    "provenance": {
@@ -197461,11 +197486,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL3494757M/The_Claiming_of_Sleeping_Beauty",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780525480549",
-     "isbn10": "0525480544"
+     "isbn10": "0525480544",
+     "asin": "0525480544"
     }
    ],
    "provenance": {
@@ -199873,11 +199899,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27381248M/Fluency_with_Information_Technology",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780134448725",
-     "isbn10": "0134448723"
+     "isbn10": "0134448723",
+     "asin": "0134448723"
     },
     {
      "language": "en",
@@ -203090,11 +203117,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27759312M/The_Neuroscience_of_Sleep_and_Dreams",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781107171107",
-     "isbn10": "1107171105"
+     "isbn10": "1107171105",
+     "asin": "1107171105"
     },
     {
      "language": "en",
@@ -217653,11 +217681,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27632964M/The_Science_of_Getting_Rich",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781612039022",
-     "isbn10": "1612039022"
+     "isbn10": "1612039022",
+     "asin": "1612039022"
     }
    ],
    "provenance": {
@@ -217859,11 +217888,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27784173M/What_Is_Man_And_Other_Essays",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781983574474",
-     "isbn10": "1983574473"
+     "isbn10": "1983574473",
+     "asin": "1983574473"
     }
    ],
    "provenance": {
@@ -219665,11 +219695,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27569285M/A_Guide_to_Zen",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781608681716",
-     "isbn10": "1608681718"
+     "isbn10": "1608681718",
+     "asin": "1608681718"
     }
    ],
    "provenance": {
@@ -221133,11 +221164,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27341408M/A_Little_Bit_of_Mantras",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781454933731",
-     "isbn10": "1454933739"
+     "isbn10": "1454933739",
+     "asin": "1454933739"
     }
    ],
    "provenance": {
@@ -222216,11 +222248,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27337049M/Mantras_in_Motion",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781401955274",
-     "isbn10": "1401955274"
+     "isbn10": "1401955274",
+     "asin": "1401955274"
     }
    ],
    "provenance": {
@@ -222272,11 +222305,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27440184M/Music_and_Mantras",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781501112201",
-     "isbn10": "1501112201"
+     "isbn10": "1501112201",
+     "asin": "1501112201"
     },
     {
      "language": "en",
@@ -225472,11 +225506,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27418660M/The_Hindu_Tantric_World",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780226423937",
-     "isbn10": "022642393X"
+     "isbn10": "022642393X",
+     "asin": "022642393X"
     },
     {
      "language": "en",
@@ -225490,11 +225525,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27418697M/The_Hindu_Tantric_World",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780226424095",
-     "isbn10": "022642409X"
+     "isbn10": "022642409X",
+     "asin": "022642409X"
     },
     {
      "language": "en",
@@ -229710,11 +229746,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27360993M/The_Hindus",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9789385288661",
-     "isbn10": "9385288660"
+     "isbn10": "9385288660",
+     "asin": "9385288660"
     },
     {
      "language": "en",
@@ -240938,11 +240975,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27398539M/Theravada_Traditions",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780824867805",
-     "isbn10": "0824867807"
+     "isbn10": "0824867807",
+     "asin": "0824867807"
     },
     {
      "language": "en",
@@ -247169,11 +247207,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27699818M/Wisdom",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781419719721",
-     "isbn10": "1419719726"
+     "isbn10": "1419719726",
+     "asin": "1419719726"
     }
    ],
    "provenance": {
@@ -248493,11 +248532,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27821065M/The_Foundation_of_Buddhist_Practice",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781614295204",
-     "isbn10": "1614295204"
+     "isbn10": "1614295204",
+     "asin": "1614295204"
     }
    ],
    "provenance": {
@@ -256872,11 +256912,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27587184M/A_Thousand_Splendid_Suns",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9789992194065",
-     "isbn10": "9992194065"
+     "isbn10": "9992194065",
+     "asin": "9992194065"
     },
     {
      "language": "en",
@@ -261181,11 +261222,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27437075M/Hasidism_and_Politics",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781906764944",
-     "isbn10": "1906764948"
+     "isbn10": "1906764948",
+     "asin": "1906764948"
     }
    ],
    "provenance": {
@@ -261719,11 +261761,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27665913M/Around_Sarah's_Table",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781451636529",
-     "isbn10": "1451636520"
+     "isbn10": "1451636520",
+     "asin": "1451636520"
     }
    ],
    "provenance": {
@@ -264140,11 +264183,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27753035M/The_Hasidic_Moses",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781532651359",
-     "isbn10": "153265135X"
+     "isbn10": "153265135X",
+     "asin": "153265135X"
     }
    ],
    "provenance": {
@@ -265231,11 +265275,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27587949M/The_Secret_of_the_Golden_Flower",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781936690930",
-     "isbn10": "1936690934"
+     "isbn10": "1936690934",
+     "asin": "1936690934"
     },
     {
      "language": "en",
@@ -265249,11 +265294,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27578996M/The_Secret_of_the_Golden_Flower",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781936690954",
-     "isbn10": "1936690950"
+     "isbn10": "1936690950",
+     "asin": "1936690950"
     }
    ],
    "provenance": {
@@ -269141,11 +269187,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27746439M/The_Healing_Art_of_Tai_Chi",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9789813271883",
-     "isbn10": "9813271884"
+     "isbn10": "9813271884",
+     "asin": "9813271884"
     }
    ],
    "provenance": {
@@ -273629,11 +273676,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27641123M/The_Theory_and_Practice_of_Taiji_Qigong",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781905367320",
-     "isbn10": "1905367325"
+     "isbn10": "1905367325",
+     "asin": "1905367325"
     },
     {
      "language": "en",
@@ -277321,11 +277369,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL17032264M/All_in_a_Thought",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781932293319",
-     "isbn10": "1932293310"
+     "isbn10": "1932293310",
+     "asin": "1932293310"
     }
    ],
    "provenance": {
@@ -279146,11 +279195,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27511676M/Women's_Divination_in_Biblical_Literature",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780300178913",
-     "isbn10": "0300178913"
+     "isbn10": "0300178913",
+     "asin": "0300178913"
     }
    ],
    "provenance": {
@@ -281352,11 +281402,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27431818M/Kahlil_Gibran",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781566560931",
-     "isbn10": "1566560934"
+     "isbn10": "1566560934",
+     "asin": "1566560934"
     },
     {
      "language": "en",
@@ -286545,11 +286596,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27627741M/The_Gnostics",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780674066038",
-     "isbn10": "0674066030"
+     "isbn10": "0674066030",
+     "asin": "0674066030"
     },
     {
      "language": "en",
@@ -287068,11 +287120,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27762452M/No_Spiritual_Investment_in_the_World",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781501730993",
-     "isbn10": "1501730991"
+     "isbn10": "1501730991",
+     "asin": "1501730991"
     }
    ],
    "provenance": {
@@ -287144,11 +287197,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27833494M/Political_Demonology",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781498201292",
-     "isbn10": "1498201296"
+     "isbn10": "1498201296",
+     "asin": "1498201296"
     },
     {
      "language": "en",
@@ -287162,11 +287216,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27833529M/Political_Demonology",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781498285872",
-     "isbn10": "1498285872"
+     "isbn10": "1498285872",
+     "asin": "1498285872"
     }
    ],
    "provenance": {
@@ -287684,11 +287739,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27546202M/Apocalypse_of_the_Alien_God",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780812245790",
-     "isbn10": "0812245792"
+     "isbn10": "0812245792",
+     "asin": "0812245792"
     }
    ],
    "provenance": {
@@ -289217,11 +289273,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27293810M/A_Discovery_of_Witches_(Movie_Tie-In)_A_Novel_(All_Souls_Trilogy)",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780525506300",
-     "isbn10": "0525506306"
+     "isbn10": "0525506306",
+     "asin": "0525506306"
     }
    ],
    "provenance": {
@@ -290139,11 +290196,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27693210M/Harry_Potter_and_the_Order_of_the_Phoenix",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781408812822",
-     "isbn10": "1408812827"
+     "isbn10": "1408812827",
+     "asin": "1408812827"
     }
    ],
    "provenance": {
@@ -292082,11 +292140,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27537041M/Shadow_Spell",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781480511286",
-     "isbn10": "1480511285"
+     "isbn10": "1480511285",
+     "asin": "1480511285"
     }
    ],
    "provenance": {
@@ -293253,11 +293312,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27506177M/Simply_Wicca",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781903065075",
-     "isbn10": "1903065070"
+     "isbn10": "1903065070",
+     "asin": "1903065070"
     }
    ],
    "provenance": {
@@ -293937,11 +293997,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27437084M/Witches_of_America",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780374536435",
-     "isbn10": "0374536430"
+     "isbn10": "0374536430",
+     "asin": "0374536430"
     },
     {
      "language": "en",
@@ -294105,11 +294166,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27658735M/The_Kitchen_Witch",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781849340700",
-     "isbn10": "1849340706"
+     "isbn10": "1849340706",
+     "asin": "1849340706"
     },
     {
      "language": "en",
@@ -294289,11 +294351,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL8851389M/Lilith's_Love",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781591094142",
-     "isbn10": "1591094143"
+     "isbn10": "1591094143",
+     "asin": "1591094143"
     }
    ],
    "provenance": {
@@ -297487,11 +297550,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27328665M/Wicca",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781580059152",
-     "isbn10": "1580059155"
+     "isbn10": "1580059155",
+     "asin": "1580059155"
     }
    ],
    "provenance": {
@@ -297751,11 +297815,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27359497M/Wicca_Candle_Magick",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780806539782",
-     "isbn10": "080653978X"
+     "isbn10": "080653978X",
+     "asin": "080653978X"
     }
    ],
    "provenance": {
@@ -297901,11 +297966,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27353560M/The_Holy_Wild",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781608685271",
-     "isbn10": "1608685276"
+     "isbn10": "1608685276",
+     "asin": "1608685276"
     }
    ],
    "provenance": {
@@ -297976,11 +298042,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27377204M/Traditional_Wicca",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780738753591",
-     "isbn10": "0738753599"
+     "isbn10": "0738753599",
+     "asin": "0738753599"
     }
    ],
    "provenance": {
@@ -298034,11 +298101,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27512339M/Llewellyn's_2016_Sabbats_Almanac",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780738733982",
-     "isbn10": "0738733989"
+     "isbn10": "0738733989",
+     "asin": "0738733989"
     }
    ],
    "provenance": {
@@ -298341,11 +298409,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27702129M/Llewellyn's_2017_Witches'_Companion",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780738737669",
-     "isbn10": "0738737666"
+     "isbn10": "0738737666",
+     "asin": "0738737666"
     },
     {
      "language": "en",
@@ -298418,11 +298487,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27353059M/Besom_Stang_Sword",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781578636372",
-     "isbn10": "157863637X"
+     "isbn10": "157863637X",
+     "asin": "157863637X"
     },
     {
      "language": "en",
@@ -298867,11 +298937,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL3657304M/Being_a_pagan",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780892819041",
-     "isbn10": "0892819049"
+     "isbn10": "0892819049",
+     "asin": "0892819049"
     },
     {
      "language": "en",
@@ -299780,11 +299851,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27643020M/Solstice_at_Stonewylde",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780575100428",
-     "isbn10": "0575100427"
+     "isbn10": "0575100427",
+     "asin": "0575100427"
     },
     {
      "language": "en",
@@ -300112,11 +300184,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27506724M/The_Pagan_Writes_Back",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780813937687",
-     "isbn10": "081393768X"
+     "isbn10": "081393768X",
+     "asin": "081393768X"
     },
     {
      "language": "en",
@@ -300130,11 +300203,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27506743M/The_Pagan_Writes_Back",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780813937670",
-     "isbn10": "0813937671"
+     "isbn10": "0813937671",
+     "asin": "0813937671"
     }
    ],
    "provenance": {
@@ -307621,11 +307695,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27714761M/Dark_Oracle",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781501169427",
-     "isbn10": "1501169424"
+     "isbn10": "1501169424",
+     "asin": "1501169424"
     },
     {
      "language": "en",
@@ -307752,11 +307827,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27499473M/Wilde_Card",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781943768073",
-     "isbn10": "1943768072"
+     "isbn10": "1943768072",
+     "asin": "1943768072"
     },
     {
      "language": "en",
@@ -308311,11 +308387,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27388308M/WTF_is_Tarot",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781624144523",
-     "isbn10": "1624144527"
+     "isbn10": "1624144527",
+     "asin": "1624144527"
     },
     {
      "language": "en",
@@ -308744,11 +308821,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27433312M/The_Secret_Language_of_Birthdays",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781101948309",
-     "isbn10": "1101948302"
+     "isbn10": "1101948302",
+     "asin": "1101948302"
     }
    ],
    "provenance": {
@@ -309124,11 +309202,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27824645M/You",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781515436348",
-     "isbn10": "1515436349"
+     "isbn10": "1515436349",
+     "asin": "1515436349"
     },
     {
      "language": "en",
@@ -309142,11 +309221,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27599767M/You",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781612038506",
-     "isbn10": "1612038506"
+     "isbn10": "1612038506",
+     "asin": "1612038506"
     },
     {
      "language": "en",
@@ -309479,11 +309559,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27586771M/The_Secret_Language_of_Relationships",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780525426875",
-     "isbn10": "0525426876"
+     "isbn10": "0525426876",
+     "asin": "0525426876"
     }
    ],
    "provenance": {
@@ -312723,11 +312804,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27541363M/Momstrology",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780062250469",
-     "isbn10": "0062250469"
+     "isbn10": "0062250469",
+     "asin": "0062250469"
     }
    ],
    "provenance": {
@@ -313608,11 +313690,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27648123M/Aquarius",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780425239452",
-     "isbn10": "0425239454"
+     "isbn10": "0425239454",
+     "asin": "0425239454"
     },
     {
      "language": "en",
@@ -313703,11 +313786,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27648121M/Cancer",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780425239384",
-     "isbn10": "0425239381"
+     "isbn10": "0425239381",
+     "asin": "0425239381"
     }
    ],
    "provenance": {
@@ -313759,11 +313843,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27648117M/Capricorn",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780425239445",
-     "isbn10": "0425239446"
+     "isbn10": "0425239446",
+     "asin": "0425239446"
     },
     {
      "language": "en",
@@ -315256,11 +315341,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27597792M/The_Conquest_of_Fear",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781612035017",
-     "isbn10": "1612035019"
+     "isbn10": "1612035019",
+     "asin": "1612035019"
     }
    ],
    "provenance": {
@@ -315757,11 +315843,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27632940M/Gene_Keys",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780578038551",
-     "isbn10": "0578038552"
+     "isbn10": "0578038552",
+     "asin": "0578038552"
     },
     {
      "language": "en",
@@ -322342,11 +322429,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27456845M/The_brushwood_boy_by_Rudyard_Kipling",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781530957811",
-     "isbn10": "1530957818"
+     "isbn10": "1530957818",
+     "asin": "1530957818"
     }
    ],
    "provenance": {
@@ -322827,11 +322915,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27360791M/Wishfulfillment_and_Symbolism_in_Fairy_Tales",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781528704786",
-     "isbn10": "1528704789"
+     "isbn10": "1528704789",
+     "asin": "1528704789"
     }
    ],
    "provenance": {
@@ -324248,11 +324337,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27404602M/The_River_of_Consciousness",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781447263661",
-     "isbn10": "1447263669"
+     "isbn10": "1447263669",
+     "asin": "1447263669"
     }
    ],
    "provenance": {
@@ -324664,11 +324754,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27571033M/The_Joyous_Cosmology",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781608682041",
-     "isbn10": "1608682048"
+     "isbn10": "1608682048",
+     "asin": "1608682048"
     }
    ],
    "provenance": {
@@ -325078,11 +325169,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27655578M/The_Everlasting_Man",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781849025621",
-     "isbn10": "1849025622"
+     "isbn10": "1849025622",
+     "asin": "1849025622"
     },
     {
      "language": "en",
@@ -325230,11 +325322,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27456322M/The_Vital_Message_by_Arthur_Conan_Doyle",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781530943111",
-     "isbn10": "1530943116"
+     "isbn10": "1530943116",
+     "asin": "1530943116"
     },
     {
      "language": "en",
@@ -325363,11 +325456,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27781095M/The_Great_Stone_Face",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781981171279",
-     "isbn10": "1981171274"
+     "isbn10": "1981171274",
+     "asin": "1981171274"
     },
     {
      "language": "en",
@@ -329437,11 +329531,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27651108M/Alternative_and_Bio-Medicine_in_Israel",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781936235865",
-     "isbn10": "1936235862"
+     "isbn10": "1936235862",
+     "asin": "1936235862"
     },
     {
      "language": "en",
@@ -331492,11 +331587,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27280600M/Musicophilia_Tales_of_Music_and_the_Brain",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780330444361",
-     "isbn10": "0330444360"
+     "isbn10": "0330444360",
+     "asin": "0330444360"
     }
    ],
    "provenance": {
@@ -333652,11 +333748,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27407806M/The_Hate_U_Give",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781470828486",
-     "isbn10": "1470828480"
+     "isbn10": "1470828480",
+     "asin": "1470828480"
     }
    ],
    "provenance": {
@@ -333990,11 +334087,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27686309M/The_Age_of_Empathy",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780285638907",
-     "isbn10": "0285638904"
+     "isbn10": "0285638904",
+     "asin": "0285638904"
     },
     {
      "language": "en",
@@ -334741,11 +334839,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27697320M/Defying_Dystopia",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781412862707",
-     "isbn10": "1412862701"
+     "isbn10": "1412862701",
+     "asin": "1412862701"
     }
    ],
    "provenance": {
@@ -335590,11 +335689,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27496751M/Mindful_Parenting",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780393709926",
-     "isbn10": "0393709922"
+     "isbn10": "0393709922",
+     "asin": "0393709922"
     }
    ],
    "provenance": {
@@ -335965,11 +336065,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27808225M/The_Sleeping_Beauty",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781721963850",
-     "isbn10": "1721963855"
+     "isbn10": "1721963855",
+     "asin": "1721963855"
     }
    ],
    "provenance": {
@@ -336646,11 +336747,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27285042M/Little_Donkey_Close_Your_Eyes",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781445467382",
-     "isbn10": "1445467380"
+     "isbn10": "1445467380",
+     "asin": "1445467380"
     }
    ],
    "provenance": {
@@ -341210,11 +341312,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27340288M/The_Iliad",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780763696634",
-     "isbn10": "0763696633"
+     "isbn10": "0763696633",
+     "asin": "0763696633"
     },
     {
      "language": "en",
@@ -341227,11 +341330,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27340282M/The_Iliad",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780763681135",
-     "isbn10": "076368113X"
+     "isbn10": "076368113X",
+     "asin": "076368113X"
     }
    ],
    "provenance": {
@@ -343016,11 +343120,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27544756M/The_Day_Commodus_Killed_a_Rhino",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781421415864",
-     "isbn10": "1421415860"
+     "isbn10": "1421415860",
+     "asin": "1421415860"
     }
    ],
    "provenance": {
@@ -344631,11 +344736,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL24957256M/The_Celestine_Insights",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780446523943",
-     "isbn10": "0446523941"
+     "isbn10": "0446523941",
+     "asin": "0446523941"
     }
    ],
    "provenance": {
@@ -346273,11 +346379,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27381135M/The_Yoga_Way",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780932040015",
-     "isbn10": "0932040012"
+     "isbn10": "0932040012",
+     "asin": "0932040012"
     }
    ],
    "provenance": {
@@ -349269,11 +349376,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27650287M/Health_Healing_and_Beyond",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780865477520",
-     "isbn10": "0865477523"
+     "isbn10": "0865477523",
+     "asin": "0865477523"
     },
     {
      "language": "en",
@@ -350915,11 +351023,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27502408M/The_Manual_for_Self_Realization",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780981622828",
-     "isbn10": "0981622828"
+     "isbn10": "0981622828",
+     "asin": "0981622828"
     }
    ],
    "provenance": {
@@ -352190,11 +352299,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27659703M/Tantra",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781447210894",
-     "isbn10": "1447210891"
+     "isbn10": "1447210891",
+     "asin": "1447210891"
     }
    ],
    "provenance": {
@@ -357072,11 +357182,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27815920M/Yoga",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781683833796",
-     "isbn10": "1683833791"
+     "isbn10": "1683833791",
+     "asin": "1683833791"
     }
    ],
    "provenance": {
@@ -362167,11 +362278,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27667621M/My_Spiritual_Journey",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780062002525",
-     "isbn10": "006200252X"
+     "isbn10": "006200252X",
+     "asin": "006200252X"
     },
     {
      "language": "en",
@@ -362242,11 +362354,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27651623M/Toward_a_True_Kinship_of_Faiths",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780385525060",
-     "isbn10": "0385525060"
+     "isbn10": "0385525060",
+     "asin": "0385525060"
     }
    ],
    "provenance": {
@@ -363639,11 +363752,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27847727M/Secular_Buddhism",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780300234251",
-     "isbn10": "0300234252"
+     "isbn10": "0300234252",
+     "asin": "0300234252"
     },
     {
      "language": "en",
@@ -364788,11 +364902,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27821063M/Mahamudra",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781614293958",
-     "isbn10": "1614293953"
+     "isbn10": "1614293953",
+     "asin": "1614293953"
     }
    ],
    "provenance": {
@@ -366064,11 +366179,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27573857M/What_is_Meditation",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781616060244",
-     "isbn10": "1616060247"
+     "isbn10": "1616060247",
+     "asin": "1616060247"
     }
    ],
    "provenance": {
@@ -366120,11 +366236,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27574640M/The_Story_of_Angulimala",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781616060213",
-     "isbn10": "1616060212"
+     "isbn10": "1616060212",
+     "asin": "1616060212"
     }
    ],
    "provenance": {
@@ -366175,11 +366292,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27574329M/The_Story_of_Buddha",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781616060220",
-     "isbn10": "1616060220"
+     "isbn10": "1616060220",
+     "asin": "1616060220"
     },
     {
      "language": "en",
@@ -366248,11 +366366,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27574689M/What_is_Buddhism",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781616060237",
-     "isbn10": "1616060239"
+     "isbn10": "1616060239",
+     "asin": "1616060239"
     },
     {
      "language": "en",
@@ -372158,11 +372277,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27559321M/Mind_in_the_Balance",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780231147316",
-     "isbn10": "0231147317"
+     "isbn10": "0231147317",
+     "asin": "0231147317"
     }
    ],
    "provenance": {
@@ -373232,11 +373352,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27806287M/Facing_Mount_Kanchenjunga",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781911407164",
-     "isbn10": "1911407163"
+     "isbn10": "1911407163",
+     "asin": "1911407163"
     },
     {
      "language": "en",
@@ -376601,11 +376722,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27444518M/365_Tao",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780062473547",
-     "isbn10": "0062473549"
+     "isbn10": "0062473549",
+     "asin": "0062473549"
     }
    ],
    "provenance": {
@@ -377364,11 +377486,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27405860M/Soul_of_the_Samurai",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780804848954",
-     "isbn10": "0804848955"
+     "isbn10": "0804848955",
+     "asin": "0804848955"
     }
    ],
    "provenance": {
@@ -379730,11 +379853,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27821371M/The_Tao_of_Immortality",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781620556702",
-     "isbn10": "1620556707"
+     "isbn10": "1620556707",
+     "asin": "1620556707"
     },
     {
      "language": "en",
@@ -388522,11 +388646,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27377015M/365_Days_of_Crystal_Magic",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780738754178",
-     "isbn10": "073875417X"
+     "isbn10": "073875417X",
+     "asin": "073875417X"
     },
     {
      "language": "en",
@@ -388613,11 +388738,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27702174M/Bird_Magic",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780738748641",
-     "isbn10": "0738748641"
+     "isbn10": "0738748641",
+     "asin": "0738748641"
     }
    ],
    "provenance": {
@@ -389827,11 +389953,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27512343M/Tarot_Interactions",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780738745206",
-     "isbn10": "0738745200"
+     "isbn10": "0738745200",
+     "asin": "0738745200"
     }
    ],
    "provenance": {
@@ -389885,11 +390012,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27593870M/Llewellyn's_2014_Witches'_Companion",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780738721576",
-     "isbn10": "0738721573"
+     "isbn10": "0738721573",
+     "asin": "0738721573"
     },
     {
      "language": "en",
@@ -389981,11 +390109,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27543579M/Llewellyn's_2015_Witches'_Companion",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780738726908",
-     "isbn10": "0738726907"
+     "isbn10": "0738726907",
+     "asin": "0738726907"
     }
    ],
    "provenance": {
@@ -391198,11 +391327,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27377125M/Elements_of_Magic",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780738757148",
-     "isbn10": "0738757144"
+     "isbn10": "0738757144",
+     "asin": "0738757144"
     }
    ],
    "provenance": {
@@ -391257,11 +391387,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27701714M/Magic_of_the_Iron_Pentacle",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780738746746",
-     "isbn10": "0738746746"
+     "isbn10": "0738746746",
+     "asin": "0738746746"
     },
     {
      "language": "en",
@@ -392539,11 +392670,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27512326M/Mabon",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780738741802",
-     "isbn10": "0738741809"
+     "isbn10": "0738741809",
+     "asin": "0738741809"
     }
    ],
    "provenance": {
@@ -392616,11 +392748,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27702131M/Llewellyn's_2017_Herbal_Almanac",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780738737614",
-     "isbn10": "0738737615"
+     "isbn10": "0738737615",
+     "asin": "0738737615"
     }
    ],
    "provenance": {
@@ -393323,11 +393456,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27672859M/Prime_Chaos",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781935150671",
-     "isbn10": "1935150677"
+     "isbn10": "1935150677",
+     "asin": "1935150677"
     },
     {
      "language": "en",
@@ -394207,11 +394341,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27380819M/The_Tree_of_Life_A_Study_in_Magic",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781561845101",
-     "isbn10": "1561845108"
+     "isbn10": "1561845108",
+     "asin": "1561845108"
     }
    ],
    "provenance": {
@@ -394266,11 +394401,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27350278M/The_Wisdom_of_Israel_Regardie",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781561845477",
-     "isbn10": "1561845477"
+     "isbn10": "1561845477",
+     "asin": "1561845477"
     },
     {
      "language": "en",
@@ -395167,11 +395303,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27699511M/Prometheus_Rising",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780692710609",
-     "isbn10": "0692710604"
+     "isbn10": "0692710604",
+     "asin": "0692710604"
     }
    ],
    "provenance": {
@@ -395498,11 +395635,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27836995M/Nature's_God",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780998713458",
-     "isbn10": "0998713457"
+     "isbn10": "0998713457",
+     "asin": "0998713457"
     },
     {
      "language": "en",
@@ -395626,11 +395764,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27836993M/Coincidance",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780998713427",
-     "isbn10": "0998713422"
+     "isbn10": "0998713422",
+     "asin": "0998713422"
     },
     {
      "language": "en",
@@ -395792,11 +395931,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27699460M/Quantum_Psychology",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780692767047",
-     "isbn10": "0692767045"
+     "isbn10": "0692767045",
+     "asin": "0692767045"
     },
     {
      "language": "en",
@@ -397452,11 +397592,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27539086M/Brandy_of_the_Damned",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781905792542",
-     "isbn10": "1905792549"
+     "isbn10": "1905792549",
+     "asin": "1905792549"
     }
    ],
    "provenance": {
@@ -398840,11 +398981,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27377608M/Elementary_Treatise_of_Occult_Science",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780738754970",
-     "isbn10": "0738754978"
+     "isbn10": "0738754978",
+     "asin": "0738754978"
     }
    ],
    "provenance": {
@@ -401592,11 +401734,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27570015M/Unearthing",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781603091503",
-     "isbn10": "1603091505"
+     "isbn10": "1603091505",
+     "asin": "1603091505"
     }
    ],
    "provenance": {
@@ -403352,11 +403495,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27377167M/Tarot_Magic",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780738757230",
-     "isbn10": "0738757233"
+     "isbn10": "0738757233",
+     "asin": "0738757233"
     },
     {
      "language": "en",
@@ -403427,11 +403571,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27702436M/Spiritual_Alchemy",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780738749761",
-     "isbn10": "0738749761"
+     "isbn10": "0738749761",
+     "asin": "0738749761"
     },
     {
      "language": "en",
@@ -404559,11 +404704,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27390790M/Atlantis_and_Lemuria",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781609423407",
-     "isbn10": "1609423402"
+     "isbn10": "1609423402",
+     "asin": "1609423402"
     },
     {
      "language": "en",
@@ -413810,11 +413956,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27328817M/The_Golden_Fleece",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781609807672",
-     "isbn10": "1609807677"
+     "isbn10": "1609807677",
+     "asin": "1609807677"
     },
     {
      "language": "en",
@@ -415009,11 +415156,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27804788M/Classical_Mythology_Myths_and_Legends_of_the_Ancient_World",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781788883245",
-     "isbn10": "1788883241"
+     "isbn10": "1788883241",
+     "asin": "1788883241"
     }
    ],
    "provenance": {
@@ -415105,11 +415253,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27454189M/The_King_of_Ireland's_Son",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781530219261",
-     "isbn10": "1530219264"
+     "isbn10": "1530219264",
+     "asin": "1530219264"
     }
    ],
    "provenance": {
@@ -426850,11 +426999,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27419776M/Magicians_of_the_Gods",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781250118400",
-     "isbn10": "1250118409"
+     "isbn10": "1250118409",
+     "asin": "1250118409"
     },
     {
      "language": "en",
@@ -427052,11 +427202,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27337906M/America_Before",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781250153739",
-     "isbn10": "1250153735"
+     "isbn10": "1250153735",
+     "asin": "1250153735"
     }
    ],
    "provenance": {
@@ -430040,11 +430191,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27354517M/The_Cygnus_Key",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781591432999",
-     "isbn10": "1591432995"
+     "isbn10": "1591432995",
+     "asin": "1591432995"
     }
    ],
    "provenance": {
@@ -436453,11 +436605,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL1454951M/Shock_Rock",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780671701505",
-     "isbn10": "0671701509"
+     "isbn10": "0671701509",
+     "asin": "0671701509"
     }
    ],
    "provenance": {
@@ -436509,11 +436662,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27732294M/Journey_of_Souls",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780738754567",
-     "isbn10": "0738754560"
+     "isbn10": "0738754560",
+     "asin": "0738754560"
     }
    ],
    "provenance": {
@@ -439004,11 +439158,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27351518M/The_Power_of_Eight",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781501115554",
-     "isbn10": "1501115553"
+     "isbn10": "1501115553",
+     "asin": "1501115553"
     },
     {
      "language": "en",
@@ -439450,11 +439605,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27337093M/The_Science_of_Self-Empowerment",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781401949327",
-     "isbn10": "1401949320"
+     "isbn10": "1401949320",
+     "asin": "1401949320"
     }
    ],
    "provenance": {
@@ -439696,11 +439852,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27268601M/Breaking_The_Habit_of_Being_Yourself_How_to_Lose_Your_Mind_and_Create_a_New_One",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781401938093",
-     "isbn10": "1401938094"
+     "isbn10": "1401938094",
+     "asin": "1401938094"
     },
     {
      "language": "en",
@@ -439714,11 +439871,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27621878M/Breaking_the_Habit_of_Being_Yourself",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781848508569",
-     "isbn10": "1848508565"
+     "isbn10": "1848508565",
+     "asin": "1848508565"
     }
    ],
    "provenance": {
@@ -439787,11 +439945,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27337663M/Becoming_Supernatural",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781401953119",
-     "isbn10": "1401953115"
+     "isbn10": "1401953115",
+     "asin": "1401953115"
     }
    ],
    "provenance": {
@@ -441911,11 +442070,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27820960M/The_Integral_Vision",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781611806427",
-     "isbn10": "1611806429"
+     "isbn10": "1611806429",
+     "asin": "1611806429"
     }
    ],
    "provenance": {
@@ -443552,11 +443712,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27624659M/The_Storm_Before_the_Calm",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781469207759",
-     "isbn10": "1469207753"
+     "isbn10": "1469207753",
+     "asin": "1469207753"
     }
    ],
    "provenance": {
@@ -450263,11 +450424,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27663268M/Outwitting_the_Devil",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781402790058",
-     "isbn10": "1402790058"
+     "isbn10": "1402790058",
+     "asin": "1402790058"
     },
     {
      "language": "en",
@@ -454761,11 +454923,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27639442M/Prayer_Is_the_Answer",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781891396601",
-     "isbn10": "1891396609"
+     "isbn10": "1891396609",
+     "asin": "1891396609"
     },
     {
      "language": "en",
@@ -454835,11 +454998,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27336951M/Pray_Your_Way_Through_It",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781722501358",
-     "isbn10": "1722501359"
+     "isbn10": "1722501359",
+     "asin": "1722501359"
     },
     {
      "language": "en",
@@ -455280,11 +455444,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27336957M/Living_Without_Strain",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781722501303",
-     "isbn10": "1722501308"
+     "isbn10": "1722501308",
+     "asin": "1722501308"
     }
    ],
    "provenance": {
@@ -455907,11 +456072,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27597988M/Collected_Works_of_Thomas_Troward",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781612034270",
-     "isbn10": "1612034276"
+     "isbn10": "1612034276",
+     "asin": "1612034276"
     }
    ],
    "provenance": {
@@ -457064,11 +457230,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27465695M/What_All_The_World's_A-Seeking",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781612033976",
-     "isbn10": "1612033970"
+     "isbn10": "1612033970",
+     "asin": "1612033970"
     }
    ],
    "provenance": {
@@ -459830,11 +459997,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27372155M/Trust_Life",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781401956028",
-     "isbn10": "1401956025"
+     "isbn10": "1401956025",
+     "asin": "1401956025"
     }
    ],
    "provenance": {
@@ -462246,11 +462414,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27498862M/Thoughts_Are_Things",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780399174971",
-     "isbn10": "0399174974"
+     "isbn10": "0399174974",
+     "asin": "0399174974"
     },
     {
      "language": "en",
@@ -463750,11 +463919,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27649365M/Self-Reliance",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781936719068",
-     "isbn10": "1936719061"
+     "isbn10": "1936719061",
+     "asin": "1936719061"
     },
     {
      "language": "en",
@@ -466287,11 +466457,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27350490M/The_Hidden_School",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781501169687",
-     "isbn10": "1501169688"
+     "isbn10": "1501169688",
+     "asin": "1501169688"
     },
     {
      "language": "en",
@@ -468927,11 +469098,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27427813M/Crystal_Skulls",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781578635948",
-     "isbn10": "1578635942"
+     "isbn10": "1578635942",
+     "asin": "1578635942"
     }
    ],
    "provenance": {
@@ -468983,11 +469155,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27363086M/Crystal_Companion",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781440353888",
-     "isbn10": "1440353883"
+     "isbn10": "1440353883",
+     "asin": "1440353883"
     },
     {
      "language": "en",
@@ -469242,11 +469415,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27382984M/This_Is_Where_You_Belong",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780143129660",
-     "isbn10": "014312966X"
+     "isbn10": "014312966X",
+     "asin": "014312966X"
     },
     {
      "language": "en",
@@ -479203,11 +479377,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27498558M/William_Lilly's_History_of_his_Life_and_Times",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781943710041",
-     "isbn10": "194371004X"
+     "isbn10": "194371004X",
+     "asin": "194371004X"
     }
    ],
    "provenance": {
@@ -481298,11 +481473,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27512280M/The_Missing_Moon",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780738747187",
-     "isbn10": "0738747181"
+     "isbn10": "0738747181",
+     "asin": "0738747181"
     }
    ],
    "provenance": {
@@ -482175,11 +482351,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27380519M/The_Beatrix_Gates",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781629635781",
-     "isbn10": "1629635782"
+     "isbn10": "1629635782",
+     "asin": "1629635782"
     }
    ],
    "provenance": {
@@ -483082,11 +483259,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27605508M/The_True_and_Invisible_Rosicrucian_Order",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780984675333",
-     "isbn10": "0984675337"
+     "isbn10": "0984675337",
+     "asin": "0984675337"
     },
     {
      "language": "en",
@@ -483119,11 +483297,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27605383M/The_True_and_Invisible_Rosicrucian_Order",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780984675326",
-     "isbn10": "0984675329"
+     "isbn10": "0984675329",
+     "asin": "0984675329"
     }
    ],
    "provenance": {
@@ -483590,11 +483769,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27378015M/Everyday_Tarot",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780762492800",
-     "isbn10": "0762492805"
+     "isbn10": "0762492805",
+     "asin": "0762492805"
     },
     {
      "language": "en",
@@ -484041,11 +484221,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27701929M/365_Tarot_Spells",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780738746241",
-     "isbn10": "073874624X"
+     "isbn10": "073874624X",
+     "asin": "073874624X"
     },
     {
      "language": "en",
@@ -484115,11 +484296,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27594265M/Complete_Guide_to_Tarot_Illuminati",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780738738765",
-     "isbn10": "073873876X"
+     "isbn10": "073873876X",
+     "asin": "073873876X"
     },
     {
      "language": "en",
@@ -484736,11 +484918,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27341276M/Astrology_for_Wellness",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781454932468",
-     "isbn10": "1454932465"
+     "isbn10": "1454932465",
+     "asin": "1454932465"
     },
     {
      "language": "en",
@@ -484830,11 +485013,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27386880M/Instant_Tarot",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781578636174",
-     "isbn10": "1578636175"
+     "isbn10": "1578636175",
+     "asin": "1578636175"
     }
    ],
    "provenance": {
@@ -485339,11 +485523,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27340187M/Silver_Witchcraft_Tarot_Kit",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780738762647",
-     "isbn10": "0738762644"
+     "isbn10": "0738762644",
+     "asin": "0738762644"
     }
    ],
    "provenance": {
@@ -485644,11 +485829,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27790877M/Heathen_Garb_and_Gear",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781941136218",
-     "isbn10": "1941136214"
+     "isbn10": "1941136214",
+     "asin": "1941136214"
     },
     {
      "language": "en",
@@ -489534,11 +489720,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27334843M/Magickal_Astrology",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781578636587",
-     "isbn10": "1578636582"
+     "isbn10": "1578636582",
+     "asin": "1578636582"
     }
    ],
    "provenance": {
@@ -489663,11 +489850,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27334879M/10-Minute_Crystal_Ball",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781592338818",
-     "isbn10": "159233881X"
+     "isbn10": "159233881X",
+     "asin": "159233881X"
     }
    ],
    "provenance": {
@@ -490414,11 +490602,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27513273M/Unicorns",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781440590535",
-     "isbn10": "1440590532"
+     "isbn10": "1440590532",
+     "asin": "1440590532"
     },
     {
      "language": "en",
@@ -494200,11 +494389,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27368001M/The_Climate_of_Monastic_Prayer",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780814663578",
-     "isbn10": "0814663575"
+     "isbn10": "0814663575",
+     "asin": "0814663575"
     }
    ],
    "provenance": {
@@ -504084,11 +504274,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27363411M/Naming_the_Unnameable",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781947003941",
-     "isbn10": "1947003941"
+     "isbn10": "1947003941",
+     "asin": "1947003941"
     },
     {
      "language": "en",
@@ -505345,11 +505536,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27803012M/The_Exploits_of_the_Incomparable_Mulla_Nasrudin",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781784799984",
-     "isbn10": "178479998X"
+     "isbn10": "178479998X",
+     "asin": "178479998X"
     },
     {
      "language": "en",
@@ -505364,11 +505556,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27803013M/The_Exploits_of_the_Incomparable_Mulla_Nasrudin",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781784799991",
-     "isbn10": "1784799998"
+     "isbn10": "1784799998",
+     "asin": "1784799998"
     }
    ],
    "provenance": {
@@ -507437,11 +507630,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27362536M/For_Love_of_the_Real",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781941394250",
-     "isbn10": "1941394256"
+     "isbn10": "1941394256",
+     "asin": "1941394256"
     },
     {
      "language": "en",
@@ -507847,11 +508041,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27345057M/Including_the_Earth_in_Our_Prayers",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781941394304",
-     "isbn10": "1941394302"
+     "isbn10": "1941394302",
+     "asin": "1941394302"
     },
     {
      "language": "en",
@@ -511668,11 +511863,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27505324M/Jewish_Gnosticism_Merkabah_Mysticism_and_Talmudic_Tradition",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780873341783",
-     "isbn10": "0873341783"
+     "isbn10": "0873341783",
+     "asin": "0873341783"
     },
     {
      "language": "en",
@@ -512413,11 +512609,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27511735M/Kabbalah",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780300152364",
-     "isbn10": "0300152361"
+     "isbn10": "0300152361",
+     "asin": "0300152361"
     },
     {
      "language": "en",
@@ -517128,11 +517325,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27365586M/Altered_Traits",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780399184390",
-     "isbn10": "0399184392"
+     "isbn10": "0399184392",
+     "asin": "0399184392"
     }
    ],
    "provenance": {
@@ -517909,11 +518107,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27547670M/Waking_Up",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781476777726",
-     "isbn10": "1476777721"
+     "isbn10": "1476777721",
+     "asin": "1476777721"
     },
     {
      "language": "en",
@@ -519524,11 +519723,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27372283M/Beyond_the_Self",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780262536141",
-     "isbn10": "0262536145"
+     "isbn10": "0262536145",
+     "asin": "0262536145"
     },
     {
      "language": "en",
@@ -520672,11 +520872,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27382454M/The_Toltec_Art_of_Life_and_Death",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780062390936",
-     "isbn10": "0062390937"
+     "isbn10": "0062390937",
+     "asin": "0062390937"
     },
     {
      "language": "en",
@@ -520728,11 +520929,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27489946M/The_Toltec_Art_of_Life_and_Death",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780062430861",
-     "isbn10": "0062430866"
+     "isbn10": "0062430866",
+     "asin": "0062430866"
     }
    ],
    "provenance": {
@@ -521088,11 +521290,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27351270M/A_Mind_at_Home_with_Itself",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780062651594",
-     "isbn10": "0062651595"
+     "isbn10": "0062651595",
+     "asin": "0062651595"
     },
     {
      "language": "en",
@@ -524162,11 +524365,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27619673M/Hidden_Treasure",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780399160530",
-     "isbn10": "0399160531"
+     "isbn10": "0399160531",
+     "asin": "0399160531"
     }
    ],
    "provenance": {
@@ -525305,11 +525509,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27533610M/Play",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780989175951",
-     "isbn10": "0989175952"
+     "isbn10": "0989175952",
+     "asin": "0989175952"
     }
    ],
    "provenance": {
@@ -529211,11 +529416,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27548430M/Written_in_My_Own_Hearts_Blood",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780812999273",
-     "isbn10": "0812999274"
+     "isbn10": "0812999274",
+     "asin": "0812999274"
     }
    ],
    "provenance": {
@@ -530594,11 +530800,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27310620M/Echoes_The_Saga_Anthology_of_Ghost_Stories",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781534413467",
-     "isbn10": "1534413464"
+     "isbn10": "1534413464",
+     "asin": "1534413464"
     },
     {
      "language": "en",
@@ -530876,11 +531083,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27583851M/The_Colors_of_Space",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781469260273",
-     "isbn10": "1469260271"
+     "isbn10": "1469260271",
+     "asin": "1469260271"
     }
    ],
    "provenance": {
@@ -530932,11 +531140,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27360292M/The_Door_Through_Space",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781528703307",
-     "isbn10": "1528703308"
+     "isbn10": "1528703308",
+     "asin": "1528703308"
     },
     {
      "language": "en",
@@ -534013,11 +534222,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27842893M/Lythande",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780859979849",
-     "isbn10": "0859979849"
+     "isbn10": "0859979849",
+     "asin": "0859979849"
     },
     {
      "language": "en",
@@ -536371,11 +536581,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27303881M/The_Deryni_Archives",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780345326782",
-     "isbn10": "0345326784"
+     "isbn10": "0345326784",
+     "asin": "0345326784"
     }
    ],
    "provenance": {
@@ -539207,11 +539418,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27845323M/Ancient_Sorceries_and_Other_Weird_Stories",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781387948918",
-     "isbn10": "1387948911"
+     "isbn10": "1387948911",
+     "asin": "1387948911"
     },
     {
      "language": "en",
@@ -539449,11 +539661,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27769943M/The_Promise_of_Air",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781987411393",
-     "isbn10": "1987411390"
+     "isbn10": "1987411390",
+     "asin": "1987411390"
     },
     {
      "language": "en",
@@ -541201,11 +541414,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27663773M/The_Angels_of_Mons",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781770831353",
-     "isbn10": "1770831355"
+     "isbn10": "1770831355",
+     "asin": "1770831355"
     }
    ],
    "provenance": {
@@ -541447,11 +541661,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27360746M/The_Children_of_the_Pool",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781528704137",
-     "isbn10": "1528704134"
+     "isbn10": "1528704134",
+     "asin": "1528704134"
     },
     {
      "language": "en",
@@ -541539,11 +541754,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27360772M/The_Great_Return",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781528704250",
-     "isbn10": "1528704258"
+     "isbn10": "1528704258",
+     "asin": "1528704258"
     }
    ],
    "provenance": {
@@ -546321,11 +546537,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27688658M/Conan_the_Barbarian",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781853756993",
-     "isbn10": "1853756997"
+     "isbn10": "1853756997",
+     "asin": "1853756997"
     },
     {
      "language": "en",
@@ -548510,11 +548727,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27390952M/The_Night_of_the_Long_Knives",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781609441128",
-     "isbn10": "1609441125"
+     "isbn10": "1609441125",
+     "asin": "1609441125"
     },
     {
      "language": "en",
@@ -549232,11 +549450,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27617923M/Our_Lady_of_Darkness",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781933618869",
-     "isbn10": "1933618868"
+     "isbn10": "1933618868",
+     "asin": "1933618868"
     }
    ],
    "provenance": {
@@ -549920,11 +550139,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27633542M/Smoke_Ghost_Other_Apparitions",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781617561078",
-     "isbn10": "161756107X"
+     "isbn10": "161756107X",
+     "asin": "161756107X"
     },
     {
      "language": "en",
@@ -549939,11 +550159,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27281938M/Smoke_Ghost",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780970734976",
-     "isbn10": "0970734972"
+     "isbn10": "0970734972",
+     "asin": "0970734972"
     }
    ],
    "provenance": {
@@ -550142,11 +550363,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27299838M/Tomorrow's_Children_-_18_Tales_of_Fantasy_and_Science_Fiction",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780859550345",
-     "isbn10": "0859550346"
+     "isbn10": "0859550346",
+     "asin": "0859550346"
     }
    ],
    "provenance": {
@@ -551591,11 +551813,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27289641M/City_of_the_Beast",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780450019371",
-     "isbn10": "0450019373"
+     "isbn10": "0450019373",
+     "asin": "0450019373"
     }
    ],
    "provenance": {
@@ -552619,11 +552842,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27290292M/COUNT_BRASS",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781857980509",
-     "isbn10": "1857980506"
+     "isbn10": "1857980506",
+     "asin": "1857980506"
     },
     {
      "language": "en",
@@ -554503,11 +554727,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27289046M/The_Claw_of_the_Conciliator_by_Gene_Wolfe_(1982-02-01)",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780671416164",
-     "isbn10": "0671416162"
+     "isbn10": "0671416162",
+     "asin": "0671416162"
     },
     {
      "language": "en",
@@ -557512,11 +557737,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27666691M/The_Sorcerer's_House",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780765324597",
-     "isbn10": "0765324598"
+     "isbn10": "0765324598",
+     "asin": "0765324598"
     }
    ],
    "provenance": {
@@ -561766,11 +561992,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27340976M/Electric_Forest",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780756411169",
-     "isbn10": "0756411165"
+     "isbn10": "0756411165",
+     "asin": "0756411165"
     },
     {
      "language": "en",
@@ -561932,11 +562159,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27669402M/Sabella",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781604599220",
-     "isbn10": "1604599227"
+     "isbn10": "1604599227",
+     "asin": "1604599227"
     }
    ],
    "provenance": {
@@ -562343,11 +562571,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27294880M/Snow_White_Blood_Red",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780380718757",
-     "isbn10": "0380718758"
+     "isbn10": "0380718758",
+     "asin": "0380718758"
     }
    ],
    "provenance": {
@@ -562585,11 +562814,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27311420M/The_Birthgrave",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781607620808",
-     "isbn10": "1607620804"
+     "isbn10": "1607620804",
+     "asin": "1607620804"
     }
    ],
    "provenance": {
@@ -562660,11 +562890,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27264464M/The_Storm_Lord_(Wars_of_Vis)",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780756411176",
-     "isbn10": "0756411173"
+     "isbn10": "0756411173",
+     "asin": "0756411173"
     }
    ],
    "provenance": {
@@ -562921,11 +563152,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27292499M/Delusion's_Master_(Flat_Earth)",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780756410940",
-     "isbn10": "0756410940"
+     "isbn10": "0756410940",
+     "asin": "0756410940"
     },
     {
      "language": "en",
@@ -565840,11 +566072,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27612965M/Black_Heart",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780575096806",
-     "isbn10": "0575096802"
+     "isbn10": "0575096802",
+     "asin": "0575096802"
     },
     {
      "language": "en",
@@ -565875,11 +566108,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27612957M/Black_Heart",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780575096790",
-     "isbn10": "0575096799"
+     "isbn10": "0575096799",
+     "asin": "0575096799"
     }
    ],
    "provenance": {
@@ -566082,11 +566316,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27594552M/City_of_Bones",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781442362956",
-     "isbn10": "1442362952"
+     "isbn10": "1442362952",
+     "asin": "1442362952"
     }
    ],
    "provenance": {
@@ -566138,11 +566373,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27289562M/City_of_Fallen_Angels_(The_Mortal_Instruments)",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781481455992",
-     "isbn10": "1481455990"
+     "isbn10": "1481455990",
+     "asin": "1481455990"
     },
     {
      "language": "en",
@@ -566612,11 +566848,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27520855M/The_Bane_Chronicles",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781406360585",
-     "isbn10": "1406360589"
+     "isbn10": "1406360589",
+     "asin": "1406360589"
     },
     {
      "language": "en",
@@ -566630,11 +566867,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27513514M/The_Bane_Chronicles",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781442496002",
-     "isbn10": "1442496002"
+     "isbn10": "1442496002",
+     "asin": "1442496002"
     }
    ],
    "provenance": {
@@ -568435,11 +568673,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27291833M/The_Crystal_Cave",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780449205631",
-     "isbn10": "0449205630"
+     "isbn10": "0449205630",
+     "asin": "0449205630"
     },
     {
      "language": "en",
@@ -569579,11 +569818,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27585742M/Wild_Girls",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781469257037",
-     "isbn10": "1469257033"
+     "isbn10": "1469257033",
+     "asin": "1469257033"
     },
     {
      "language": "en",
@@ -570198,11 +570438,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27301582M/King_of_Shadows",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780439237239",
-     "isbn10": "0439237238"
+     "isbn10": "0439237238",
+     "asin": "0439237238"
     },
     {
      "language": "en",
@@ -570309,11 +570550,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27367846M/The_Boggart",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781534420113",
-     "isbn10": "1534420118"
+     "isbn10": "1534420118",
+     "asin": "1534420118"
     },
     {
      "language": "en",
@@ -571463,11 +571705,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL49510455M/The_Lightning_Thief",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780241672037",
-     "isbn10": "0241672031"
+     "isbn10": "0241672031",
+     "asin": "0241672031"
     }
    ],
    "provenance": {
@@ -572252,11 +572495,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL51470129M/The_Hammer_of_Thor",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781368000321",
-     "isbn10": "1368000320"
+     "isbn10": "1368000320",
+     "asin": "1368000320"
     }
    ],
    "provenance": {
@@ -572308,11 +572552,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27302766M/Percy_Jackson's_Greek_Gods_(Turtleback_School_Library_Binding_Edition)",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780606374002",
-     "isbn10": "0606374000"
+     "isbn10": "0606374000",
+     "asin": "0606374000"
     },
     {
      "language": "en",
@@ -572383,11 +572628,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27290471M/The_Ship_of_the_Dead_(Magnus_Chase_and_the_Gods_of_Asgard)",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781432841898",
-     "isbn10": "1432841890"
+     "isbn10": "1432841890",
+     "asin": "1432841890"
     }
    ],
    "provenance": {
@@ -572499,11 +572745,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL28125366M/The_Tower_of_Nero",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781484746455",
-     "isbn10": "1484746457"
+     "isbn10": "1484746457",
+     "asin": "1484746457"
     },
     {
      "language": "en",
@@ -572648,11 +572895,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL28635359M/Camp_Half-Blood_Confidential",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780141377698",
-     "isbn10": "0141377690"
+     "isbn10": "0141377690",
+     "asin": "0141377690"
     },
     {
      "language": "en",
@@ -572725,11 +572973,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL61423798M/The_Chalice_of_the_Gods",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781368104104",
-     "isbn10": "136810410X"
+     "isbn10": "136810410X",
+     "asin": "136810410X"
     },
     {
      "language": "en",
@@ -572742,11 +572991,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL46065218M/The_Chalice_of_the_Gods",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780241647547",
-     "isbn10": "0241647541"
+     "isbn10": "0241647541",
+     "asin": "0241647541"
     }
    ],
    "provenance": {
@@ -572801,11 +573051,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL50620344M/The_Sun_and_the_Star",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780241627709",
-     "isbn10": "0241627702"
+     "isbn10": "0241627702",
+     "asin": "0241627702"
     },
     {
      "language": "en",
@@ -572818,11 +573069,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL39960389M/The_Sun_and_the_Star",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780241627686",
-     "isbn10": "0241627680"
+     "isbn10": "0241627680",
+     "asin": "0241627680"
     },
     {
      "language": "en",
@@ -573006,11 +573258,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27213240M/For_Magnus_Chase_Hotel_Valhalla_guide_to_the_Norse_worlds",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781484785546",
-     "isbn10": "1484785541"
+     "isbn10": "1484785541",
+     "asin": "1484785541"
     }
    ],
    "provenance": {
@@ -579413,11 +579666,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27371745M/The_Very_Simple_Law_of_Attraction",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781722500207",
-     "isbn10": "1722500204"
+     "isbn10": "1722500204",
+     "asin": "1722500204"
     }
    ],
    "provenance": {
@@ -581097,11 +581351,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27824505M/The_Magic_City",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781515431893",
-     "isbn10": "1515431894"
+     "isbn10": "1515431894",
+     "asin": "1515431894"
     },
     {
      "language": "en",
@@ -581879,11 +582134,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27364514M/James_and_the_Giant_Peach",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780451480798",
-     "isbn10": "0451480791"
+     "isbn10": "0451480791",
+     "asin": "0451480791"
     }
    ],
    "provenance": {
@@ -582195,11 +582451,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27571240M/The_House_of_Seven_Gables",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781613824085",
-     "isbn10": "1613824084"
+     "isbn10": "1613824084",
+     "asin": "1613824084"
     }
    ],
    "provenance": {
@@ -583511,11 +583768,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL24955173M/The_Regulators",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780451191014",
-     "isbn10": "0451191013"
+     "isbn10": "0451191013",
+     "asin": "0451191013"
     },
     {
      "language": "en",
@@ -586487,11 +586745,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27361489M/Scourged_-_Signed_Autographed_Copy",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780525486459",
-     "isbn10": "0525486453"
+     "isbn10": "0525486453",
+     "asin": "0525486453"
     },
     {
      "language": "en",
@@ -586846,11 +587105,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27658279M/The_Secret_History_of_Hermes_Trismegistus",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780801477492",
-     "isbn10": "0801477492"
+     "isbn10": "0801477492",
+     "asin": "0801477492"
     },
     {
      "language": "en",
@@ -592015,11 +592275,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27673819M/The_Red_Truck",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780982211540",
-     "isbn10": "0982211546"
+     "isbn10": "0982211546",
+     "asin": "0982211546"
     },
     {
      "language": "en",
@@ -595011,11 +595272,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27655528M/The_Angel_Therapy_Handbook",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781848501492",
-     "isbn10": "1848501498"
+     "isbn10": "1848501498",
+     "asin": "1848501498"
     }
    ],
    "provenance": {
@@ -598883,11 +599145,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27684053M/Hercules",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9780785135463",
-     "isbn10": "0785135464"
+     "isbn10": "0785135464",
+     "asin": "0785135464"
     },
     {
      "language": "en",
@@ -601384,11 +601647,12 @@
        "label": "Open Library record",
        "url": "http://openlibrary.org/books/OL27424057M/Change_Your_Aura_Change_Your_Life",
        "accessed": "2026-11-02",
-       "supports": "ISBN-13, title, author, publisher, year, format, language"
+       "supports": "ISBN-13, title, author, publisher, year, format, language, Amazon identifier"
       }
      ],
      "id": "9781101983065",
-     "isbn10": "110198306X"
+     "isbn10": "110198306X",
+     "asin": "110198306X"
     }
    ],
    "provenance": {

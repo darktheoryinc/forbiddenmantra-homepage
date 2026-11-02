@@ -229,6 +229,23 @@ for (const f of fs.readdirSync(path.join(ROOT, STAGING)).filter((x) => x.endsWit
 }
 
 // ---------- finalise ----------
+// Amazon identifiers listed on Open Library edition records (data/asin-hints.json, from scripts/asin-hints.mjs). Applied only to single-source
+// bulk editions, and only when consistent with the edition: a 10-digit id must be the ISBN-10 of the edition's own ISBN-13; a B-prefixed ASIN
+// only on an ebook. The Open Library record (already a cited source) is marked as the origin; nothing is verified against Amazon.
+let ASIN_HINTS = {}; try { ASIN_HINTS = JSON.parse(fs.readFileSync(path.join(ROOT, DATA, 'asin-hints.json'), 'utf8')).hints ?? {}; } catch { /* hints are optional */ }
+const to10 = (i13) => { if (!i13 || !i13.startsWith('978')) return null; const c = i13.slice(3, 12); let t = 0; for (let i = 0; i < 9; i++) t += +c[i] * (10 - i); const k = (11 - (t % 11)) % 11; return c + (k === 10 ? 'X' : k); };
+let hinted = 0;
+for (const w of works.values()) {
+  if (w.provenance?.tier !== 'open-library-catalogue') continue;
+  for (const e of w.editions) {
+    const h = ASIN_HINTS[e.isbn13]; if (!h || e.asin) continue;
+    const ok = /^B/.test(h.asin) ? e.format === 'ebook' : to10(e.isbn13) === h.asin;
+    if (!ok) continue;
+    e.asin = h.asin; hinted++;
+    const src = (e.sources ?? []).find((x) => /openlibrary\.org/.test(x.url ?? '')); if (src && !/Amazon identifier/.test(src.supports ?? '')) src.supports = `${src.supports}, Amazon identifier`;
+  }
+}
+if (hinted) console.log(`asin: ${hinted} bulk edition(s) carry an Amazon identifier listed by Open Library`);
 const finalWorks = [...works.values()].map((w) => {
   const slug = w.slug ?? slugify(w.title); // an explicit slug keeps an existing URL stable when a title is corrected
   const { _origin, ...rest } = w;

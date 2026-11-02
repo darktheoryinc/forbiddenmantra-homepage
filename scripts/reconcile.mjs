@@ -67,7 +67,7 @@ for (let o of ol) {
     const langInferred = INFER_LANG && !o.language && o.searchTitle && titleSim(o.title, o.searchTitle) >= rules.titleSimilarityMin && /^[\x00-\u024f\u2018-\u201d\u2013\u2014 ]+$/.test(o.title);
     if (langInferred) o = { ...o, language: 'en', languageNote: 'Language not stated on the edition record; inferred from the English-language Open Library work.' };
     // Relevance guard (relaxed tier): the title or the source's own subject headings must carry a signal for the topic the record was found under.
-    const relText = fold([o.title, o.subtitle, ...(o.olSubjects ?? [])].join(' | ')), seedWords = fold(o.seed?.value ?? '').split(/[^a-z]+/).filter((w) => w.length > 3);
+    const relText = fold([o.title, o.subtitle, ...(o.olSubjects ?? [])].join(' | ')), seedWords = o.seed?.kind === 'publisher' ? [] : fold(o.seed?.value ?? '').split(/[^a-z]+/).filter((w) => w.length > 3); // a publisher name says nothing about topic
     const relevant = submap.some(([re]) => re.test(relText)) || seedWords.some((w) => relText.includes(w));
     const foreign = langInferred && /\b(der|die|das|und|ein|eine|el|los|las|una|les|des|une|il|della|degli|di|het|een|och|og)\b/i.test(o.title);
     const why = foreign ? 'title looks non-English; language only inferred'
