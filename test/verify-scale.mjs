@@ -63,7 +63,10 @@ await pg.goto(url('books/index.html'));
 ok((await pg.locator('.grid:not([hidden]) > .card').count()) === 20 && /Showing 20 of \d+ books/.test(await pg.locator('[data-count]').textContent()), `books/: ${await pg.locator('[data-count]').textContent()}`);
 await pg.fill('.filters input[name=q]', 'gaiman'); await settle();
 const gaiman = cat.works.filter((w) => w.authors.some((a) => /Gaiman/.test(a))).length;
-ok((await shown()).length === gaiman && !(await pg.isVisible('[data-pager]')), `search "gaiman" over the whole index finds all ${gaiman} (not just the current page); pager hides while results show`);
+// The catalogue now holds more than one page (20) of Gaiman works, so the premise "all fit on one page" no longer holds: the whole index must still be searched
+// (the count label names every match) and the first page must be full; later pages come from "Show more" (tested below).
+const gLabel = await pg.locator('[data-count]').textContent();
+ok((await shown()).length === Math.min(gaiman, 20) && new RegExp(`of ${gaiman}\\b`).test(gLabel), `search "gaiman" over the whole index finds all ${gaiman} (first page ${Math.min(gaiman, 20)} shown, label "${gLabel.trim()}")`);
 await pg.fill('.filters input[name=q]', ''); await pg.waitForTimeout(250);
 ok((await pg.locator('.grid:not([hidden]) > .card').count()) === 20 && (await pg.isVisible('[data-pager]')), 'clearing the search restores the static page and its pager');
 await pg.selectOption('.filters select[name=subject]', 'fantasy'); await settle();

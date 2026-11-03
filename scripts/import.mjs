@@ -249,6 +249,7 @@ if (hinted) console.log(`asin: ${hinted} bulk edition(s) carry an Amazon identif
 const finalWorks = [...works.values()].map((w) => {
   const slug = w.slug ?? slugify(w.title); // an explicit slug keeps an existing URL stable when a title is corrected
   const { _origin, ...rest } = w;
+  if (rest.series?.name) rest.series = { ...rest.series, name: rest.series.name.replace(/\s*\[\s*\$\s?\d[\d.,]*\s*\]\s*$/, '').trim() }; // a cover price in a series label is not a displayed price
   return { id: slug, slug, ...rest, authorIds: w.authors.map(slugify) };
 });
 // Works already in the published catalogue keep their URLs: when two bulk works collide (same slug, or variant-author duplicates), the one that

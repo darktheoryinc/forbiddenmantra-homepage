@@ -2,20 +2,20 @@
   "generated": "2026-10-27",
   "input": {
     "verifiedRecords": 172,
-    "batchRecords": 12649,
+    "batchRecords": 17768,
     "candidateRows": 100
   },
   "publishedByProvenance": {
     "hand-verified": 172,
-    "open-library-catalogue": 11775,
+    "open-library-catalogue": 16646,
     "web-corroborated": 138
   },
   "published": {
-    "works": 12022,
-    "editions": 22643,
-    "outsideWorks": 11899,
+    "works": 16864,
+    "editions": 31413,
+    "outsideWorks": 16741,
     "fmpWorks": 123,
-    "authors": 6996
+    "authors": 11127
   },
   "publishedByLanguage": {
     "ar": {
@@ -31,8 +31,8 @@
       "editions": 14
     },
     "en": {
-      "works": 12018,
-      "editions": 22535
+      "works": 16860,
+      "editions": 31305
     },
     "es": {
       "works": 19,
@@ -84,15 +84,15 @@
     "missingIsbn": 2
   },
   "errorQueue": {
-    "total": 877,
+    "total": 1154,
     "byStage": {
       "identifiers": 6,
-      "dedup": 868,
+      "dedup": 1145,
       "validate": 3
     },
     "bySeverity": {
       "warning": 7,
-      "duplicate": 868,
+      "duplicate": 1145,
       "error": 2
     }
   }
