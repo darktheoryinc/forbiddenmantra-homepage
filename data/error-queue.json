@@ -18011,6 +18011,2380 @@
    "reasons": [
     "same title and author as \"Our dreaming mind\" (our-dreaming-mind) under a variant author spelling; kept the richer record"
    ]
+  },
+  {
+   "title": "Reports from the Deep End",
+   "authors": [
+    "Maxim Jakubowski",
+    "Rick McGrath",
+    "Will Self"
+   ],
+   "isbn13": [
+    "9781803363172",
+    "9781803363196"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Big Wander",
+   "authors": [
+    "Will Hobbs"
+   ],
+   "isbn13": [
+    "9781417740369",
+    "9780606326865",
+    "9780689317675",
+    "9780785727538"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Navajo Canyon",
+   "authors": [
+    "Tom W. Blackburn"
+   ],
+   "isbn13": [
+    "9780745145921",
+    "9780440166474",
+    "9780754069515"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Eagle Feather",
+   "authors": [
+    "Clyde Robert Bulla"
+   ],
+   "isbn13": [
+    "9780606063432"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Little Black, A Pony",
+   "authors": [
+    "Walter Farley"
+   ],
+   "isbn13": [
+    "9780001718487"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Navajo Code Talkers",
+   "authors": [
+    "Nathan Aaseng"
+   ],
+   "isbn13": [
+    "9780802721426",
+    "9780802775894",
+    "9780786246489",
+    "9780802781826"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Mystery of the Lost Village",
+   "authors": [
+    "Gertrude Chandler Warner",
+    "Charles Tang"
+   ],
+   "isbn13": [
+    "9781453212851"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Night way",
+   "authors": [
+    "Janet Dailey"
+   ],
+   "isbn13": [
+    "9780816136322",
+    "9780356086422",
+    "9780751507348",
+    "9780708821343"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "The First Eagle",
+   "authors": [
+    "Tony Hillerman"
+   ],
+   "isbn13": [
+    "9780060769918",
+    "9780061967801",
+    "9780063049536"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "The Sinister Pig.",
+   "authors": [
+    "Tony Hillerman"
+   ],
+   "isbn13": [
+    "9780061098789",
+    "9780006392118",
+    "9780060558581",
+    "9780060545437"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "The Wailing Wind",
+   "authors": [
+    "Tony Hillerman"
+   ],
+   "isbn13": [
+    "9780061795411",
+    "9780061098796"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Coyote Waits",
+   "authors": [
+    "Tony Hillerman"
+   ],
+   "isbn13": [
+    "9780061801204",
+    "9780747408871"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Dancing Cloud",
+   "authors": [
+    "Mary Buff",
+    "Conrad Buff"
+   ],
+   "isbn13": [
+    "9780670255047"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "The fallen man",
+   "authors": [
+    "Tony Hillerman"
+   ],
+   "isbn13": [
+    "9780061092886",
+    "9780060177737",
+    "9781580600507",
+    "9780060547967"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Hunting Badger",
+   "authors": [
+    "Tony Hillerman"
+   ],
+   "isbn13": [
+    "9780061745720",
+    "9780006485339",
+    "9780061967825"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Skeleton man",
+   "authors": [
+    "Tony Hillerman"
+   ],
+   "isbn13": [
+    "9780060563462",
+    "9780060796938",
+    "9780061967795"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "People of Darkness",
+   "authors": [
+    "Tony Hillerman"
+   ],
+   "isbn13": [
+    "9780060769413",
+    "9780061099151",
+    "9780061808395",
+    "9780060809508"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "The Dark Wind",
+   "authors": [
+    "Tony Hillerman"
+   ],
+   "isbn13": [
+    "9780062895547",
+    "9780061797613",
+    "9780061000034"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Brian Wildsmith's Animal Colors (Navajo edition)",
+   "authors": [
+    "Brian Wildsmith"
+   ],
+   "isbn13": [
+    "9781932065343"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Laughing Boy",
+   "authors": [
+    "Oliver La Farge"
+   ],
+   "isbn13": [
+    "9780606219464",
+    "9781585478330"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Sing down the moon",
+   "authors": [
+    "Scott O’Dell"
+   ],
+   "isbn13": [
+    "9781557361424",
+    "9780784835968"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Pizarro",
+   "authors": [
+    "Stuart Stirling"
+   ],
+   "isbn13": [
+    "9780750973243",
+    "9780750936828",
+    "9780750936835"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "The Martian Inca",
+   "authors": [
+    "Ian Watson"
+   ],
+   "isbn13": [
+    "9780575055582"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Scooby-Doo! and the Ruins of Machu Picchu",
+   "authors": [
+    "Mark Weakland",
+    "Dario Brizuela"
+   ],
+   "isbn13": [
+    "9781543539523"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Civilizations [ Grand Prix du Roman de l'Academie Francaise ]",
+   "authors": [
+    "Laurent Binet"
+   ],
+   "isbn13": [
+    "9781547909445",
+    "9780374600815"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Temple",
+   "authors": [
+    "Matthew Reilly"
+   ],
+   "isbn13": [
+    "9780312266592",
+    "9780330362146",
+    "9780732909710"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Aztec, Inca & Maya",
+   "authors": [
+    "Elizabeth Baquedano"
+   ],
+   "isbn13": [
+    "9781465405906",
+    "9780756613839"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Conquistadors",
+   "authors": [
+    "Hammond Innes"
+   ],
+   "isbn13": [
+    "9780141391229",
+    "9780002175319",
+    "9781448211395"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Secret of the Andes",
+   "authors": [
+    "Ann Clark"
+   ],
+   "isbn13": [
+    "9780785772453",
+    "9781435206229"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Gold of the Gods",
+   "authors": [
+    "Arthur B. Reeve"
+   ],
+   "isbn13": [
+    "9783842427921",
+    "9781512392593",
+    "9781976191275"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Inca gold.",
+   "authors": [
+    "Clive Cussler"
+   ],
+   "isbn13": [
+    "9780002244756",
+    "9781416525721"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Under the Andes",
+   "authors": [
+    "Rex Stout"
+   ],
+   "isbn13": [
+    "9781374883772",
+    "9781404337046",
+    "9781492944478",
+    "9781463722302"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "History and activities of the Aztecs",
+   "authors": [
+    "Lisa Klobuchar"
+   ],
+   "isbn13": [
+    "9780431080833"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "The Crafts and Culture of the Ancient Aztecs (Crafts of the Ancient World)",
+   "authors": [
+    "Joann Jovinelly",
+    "Jason Netelkos"
+   ],
+   "isbn13": [
+    "9780823935123",
+    "9781615120642"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Roanoke",
+   "authors": [
+    "Lee Miller"
+   ],
+   "isbn13": [
+    "9781611459517",
+    "9781611453317",
+    "9780142002285"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Fall of Giants",
+   "authors": [
+    "Ken Follett",
+    "BookSource Staff"
+   ],
+   "isbn13": [
+    "9780606266451",
+    "9780451232854"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Beetle Bailey",
+   "authors": [
+    "Mort Walker"
+   ],
+   "isbn13": [
+    "9780812561111",
+    "9780812508710",
+    "9780523490083",
+    "9780523413402",
+    "9780812560985"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Geodes Level 1",
+   "authors": [
+    "Great Minds"
+   ],
+   "isbn13": [
+    "9781640541931"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Steve Birnbaum brings you the best of Walt Disney World",
+   "authors": [
+    "Stephen Birnbaum"
+   ],
+   "isbn13": [
+    "9780395365281"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Brown Bear, Brown Bear, What Do You See? 50th Anniversary Edition with Audio CD",
+   "authors": [
+    "Bill Martin Jr.",
+    "Eric Carle"
+   ],
+   "isbn13": [
+    "9781627797214"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "The Very Hungry Caterpillar",
+   "authors": [
+    "Eric Carle"
+   ],
+   "isbn13": [
+    "9780399251825"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "The killings on Jubilee Terrace",
+   "authors": [
+    "Robert Barnard"
+   ],
+   "isbn13": [
+    "9781410417596",
+    "9780749079499",
+    "9781416559436",
+    "9781416559429",
+    "9780750531108"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Raffles",
+   "authors": [
+    "Ernest William Hornung",
+    "Samuel Goldwyn"
+   ],
+   "isbn13": [
+    "9781434433640",
+    "9781406943252",
+    "9781589638051"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Jalna",
+   "authors": [
+    "Mazo de la Roche"
+   ],
+   "isbn13": [
+    "9781459723016"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Book Thief",
+   "authors": [
+    "Markus Zusak"
+   ],
+   "isbn13": [
+    "9781500182625",
+    "9781407036908"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "The compleat angler, or, The contemplative man's recreation",
+   "authors": [
+    "Izaak Walton"
+   ],
+   "isbn13": [
+    "9780880014069",
+    "9780710812582"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "The nursing home murder",
+   "authors": [
+    "Ngaio Marsh"
+   ],
+   "isbn13": [
+    "9781934609873",
+    "9780515059670",
+    "9780006161646"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Triplanetary",
+   "authors": [
+    "Edward E. Smith"
+   ],
+   "isbn13": [
+    "9781480477445",
+    "9781374935525",
+    "9781435301498",
+    "9781499305319"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Lady Susan (Dodo Press)",
+   "authors": [
+    "Jane Austen"
+   ],
+   "isbn13": [
+    "9781406578294",
+    "9798717207874",
+    "9781549731914",
+    "9781675458563"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "O Pioneers!",
+   "authors": [
+    "Willa Cather"
+   ],
+   "isbn13": [
+    "9781692503376",
+    "9781983709166",
+    "9798522629878"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "The decoding of Edwin Drood",
+   "authors": [
+    "Charles Forsyte"
+   ],
+   "isbn13": [
+    "9780575027893",
+    "9780684166544"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Isaac Newton",
+   "authors": [
+    "Kathleen Krull",
+    "Boris Kulikov"
+   ],
+   "isbn13": [
+    "9780142408209",
+    "9786051869254",
+    "9780670059218"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "North of Infinity II",
+   "authors": [
+    "Mark Leslie"
+   ],
+   "isbn13": [
+    "9780889628649"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "A Golden Treasury of Nursery Verse",
+   "authors": [
+    "Mark Daniel"
+   ],
+   "isbn13": [
+    "9781856271165"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "A Second Golden Treasury of Children's Verse (Premier Picturemac)",
+   "authors": [
+    "Mark Daniel"
+   ],
+   "isbn13": [
+    "9780333510377"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "The Golden Gate",
+   "authors": [
+    "Vikram Seth"
+   ],
+   "isbn13": [
+    "9780394750637",
+    "9780670058600",
+    "9780571212651",
+    "9780394549743"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "The Number of Things",
+   "authors": [
+    "Evans G. Valens"
+   ],
+   "isbn13": [
+    "9780525361558"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "What's Your Angle, Pythagoras?",
+   "authors": [
+    "Julie Ellis"
+   ],
+   "isbn13": [
+    "9780606302319",
+    "9781417644735"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Beneath a sky of porphyry",
+   "authors": [
+    "Aïcha Lemsine"
+   ],
+   "isbn13": [
+    "9780704301610"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Looking at philosophy",
+   "authors": [
+    "Donald Palmer"
+   ],
+   "isbn13": [
+    "9780874848397",
+    "9780072828955",
+    "9781559342308",
+    "9780767405966",
+    "9780073407487"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "City in Arabic Literature",
+   "authors": [
+    "Nizar F. Hermes",
+    "Gretchen Head"
+   ],
+   "isbn13": [
+    "9781474406529",
+    "9781474455824"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "A Murder of Quality",
+   "authors": [
+    "John le Carré"
+   ],
+   "isbn13": [
+    "9780786187058",
+    "9780340527306"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Laddie",
+   "authors": [
+    "Gene Stratton-Porter"
+   ],
+   "isbn13": [
+    "9781582872964",
+    "9780742612457"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "The Secret Sharer (Webster's Korean Thesaurus Edition)",
+   "authors": [
+    "Joseph Conrad"
+   ],
+   "isbn13": [
+    "9780497925338",
+    "9781406951332",
+    "9781599869001",
+    "9781423778721"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Doctor's Wife, a Novel by the Author of Lady Audley's Secret . by : Mary Elizabeth Braddon",
+   "authors": [
+    "Mary Elizabeth Braddon"
+   ],
+   "isbn13": [
+    "9781548525941"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Secret Battle",
+   "authors": [
+    "Alan Patrick Herbert"
+   ],
+   "isbn13": [
+    "9781546540496"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Mission Song The",
+   "authors": [
+    "John le Carré"
+   ],
+   "isbn13": [
+    "9780739483923",
+    "9780316017725"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "On Her Majesty's Secret Service",
+   "authors": [
+    "Ian Fleming"
+   ],
+   "isbn13": [
+    "9781906772260"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Jane Eyre Illustrated",
+   "authors": [
+    "Charlotte Brontë"
+   ],
+   "isbn13": [
+    "9798740522197",
+    "9781405876636",
+    "9788853007766",
+    "9798642745717"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Roomful of Roses",
+   "authors": [
+    "Diana Palmer"
+   ],
+   "isbn13": [
+    "9781460340028",
+    "9781551666419"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Rules of Civility",
+   "authors": [
+    "Amor Towles"
+   ],
+   "isbn13": [
+    "9781444708875",
+    "9781444708868",
+    "9780143121169"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Sword and Scalpel",
+   "authors": [
+    "Frank G. Slaughter"
+   ],
+   "isbn13": [
+    "9780708903865"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Two Years Before the Mast",
+   "authors": [
+    "Richard Henry Dana"
+   ],
+   "isbn13": [
+    "9781466200210",
+    "9781727699234",
+    "9798743462421",
+    "9788087830444"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Sister Carrie",
+   "authors": [
+    "Theodore Dreiser"
+   ],
+   "isbn13": [
+    "9781722334628",
+    "9781513135397",
+    "9798622412165",
+    "9783968652474"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Silas Marner - The Weaver of Raveloe",
+   "authors": [
+    "George Eliot"
+   ],
+   "isbn13": [
+    "9781595478573",
+    "9781408631140",
+    "9789758509447",
+    "9781423777984",
+    "9798717010238"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Self-Care for Adult Children of Emotionally Immature Parents",
+   "authors": [
+    "Lindsay C. Gibson"
+   ],
+   "isbn13": [
+    "9781684039845",
+    "9781684039821"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Hearing Voices",
+   "authors": [
+    "Alan Barzman"
+   ],
+   "isbn13": [
+    "9781891689833"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Rethinking classroom participation",
+   "authors": [
+    "Katherine Schultz"
+   ],
+   "isbn13": [
+    "9780807750186"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Of Silenced and Unheard Voices from the South",
+   "authors": [
+    "Ana Duffy"
+   ],
+   "isbn13": [
+    "9781789972559"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Reason I Jump",
+   "authors": [
+    "Naoki Higashida",
+    "David Mitchell - undifferentiated",
+    "K. A. Yoshida"
+   ],
+   "isbn13": [
+    "9781299778771",
+    "9781529375701",
+    "9780812985153",
+    "9781490602905"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "The Writer on her work",
+   "authors": [
+    "Janet Sternburg"
+   ],
+   "isbn13": [
+    "9780393013610"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Life Amongst the Modocs",
+   "authors": [
+    "Joaquin Miller"
+   ],
+   "isbn13": [
+    "9780930588793",
+    "9780913522103",
+    "9780913522127",
+    "9780829015652"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Autobiography of a Face",
+   "authors": [
+    "Lucy Grealy"
+   ],
+   "isbn13": [
+    "9780613124720",
+    "9780613648394",
+    "9780395657805"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "The Martians",
+   "authors": [
+    "Kim Stanley Robinson"
+   ],
+   "isbn13": [
+    "9780553574012",
+    "9780606192804"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Anthem",
+   "authors": [
+    "Ayn Rand"
+   ],
+   "isbn13": [
+    "9798689619866",
+    "9781613825136",
+    "9781534942547",
+    "9781538020661",
+    "9798708599124"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "The scientist in the crib",
+   "authors": [
+    "Alison Gopnik"
+   ],
+   "isbn13": [
+    "9780688177881",
+    "9780061576447"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "The conspiracy of ignorance",
+   "authors": [
+    "Martin L. Gross"
+   ],
+   "isbn13": [
+    "9780060932602",
+    "9780060194581"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "How to Be Idle",
+   "authors": [
+    "Tom Hodgkinson"
+   ],
+   "isbn13": [
+    "9780141015064",
+    "9780060779689",
+    "9780060779696"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Shakespeare's Philosophy",
+   "authors": [
+    "Colin Mcginn"
+   ],
+   "isbn13": [
+    "9780061551673",
+    "9780061654121"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Lanterns",
+   "authors": [
+    "Marian Wright Edelman"
+   ],
+   "isbn13": [
+    "9780060958596",
+    "9781299922235",
+    "9780613314039",
+    "9780807072141"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "La Fete de L'Insignifiance [The Celebration of Insignificance] (Korean Edition)",
+   "authors": [
+    "Milan Kundera"
+   ],
+   "isbn13": [
+    "9788937489327"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "The elegance of the hedgehog",
+   "authors": [
+    "Muriel Barbery"
+   ],
+   "isbn13": [
+    "9780753186138",
+    "9781908313126",
+    "9781933372600"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "The Revenge of Seven",
+   "authors": [
+    "Pittacus Lore"
+   ],
+   "isbn13": [
+    "9780062347053"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Six",
+   "authors": [
+    "M. M. Vaughan"
+   ],
+   "isbn13": [
+    "9781481420716",
+    "9781481420709",
+    "9781846883958"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Up",
+   "authors": [
+    "Jim LaMarche"
+   ],
+   "isbn13": [
+    "9780811844451",
+    "9781452134642"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "The witling.",
+   "authors": [
+    "Vernor Vinge"
+   ],
+   "isbn13": [
+    "9780330307093",
+    "9780671656348"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Physics of the impossible",
+   "authors": [
+    "Michio Kaku"
+   ],
+   "isbn13": [
+    "9780713999921"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "The secret of childhood",
+   "authors": [
+    "Maria Montessori"
+   ],
+   "isbn13": [
+    "9788125014546",
+    "9780861313754",
+    "9780345275714",
+    "9788125004974"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Human body",
+   "authors": [
+    "Camilla De la Bédoyère"
+   ],
+   "isbn13": [
+    "9781893951846",
+    "9781893951464",
+    "9780099568179"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "From Here to Eternity",
+   "authors": [
+    "James Jones"
+   ],
+   "isbn13": [
+    "9780141393230",
+    "9780747538004",
+    "9781453215135"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Bluest Eye",
+   "authors": [
+    "Toni Morrison"
+   ],
+   "isbn13": [
+    "9780131109513",
+    "9780795327377"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Vuelo Entre Fantasmas",
+   "authors": [
+    "Rafael Maya-Yescas"
+   ],
+   "isbn13": [
+    "9781410797681"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "No one will ever know =",
+   "authors": [
+    "Carl Sommer"
+   ],
+   "isbn13": [
+    "9781575371634"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Nadie nada nunca",
+   "authors": [
+    "Juan José Saer",
+    "Miguel Navia"
+   ],
+   "isbn13": [
+    "9788415539728"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "A Short History of Stupid",
+   "authors": [
+    "Helen Razer",
+    "Bernard Keane"
+   ],
+   "isbn13": [
+    "9781760294151"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Gross Science of Bad Breath and Cavities",
+   "authors": [
+    "Jessica Shaw"
+   ],
+   "isbn13": [
+    "9781508181637"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "The Best of A. E. van Vogt",
+   "authors": [
+    "A. E. van Vogt"
+   ],
+   "isbn13": [
+    "9780671805463",
+    "9780722187746"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Volcanoes",
+   "authors": [
+    "Judith Bloom Fradin"
+   ],
+   "isbn13": [
+    "9780792253778"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Boy Who Played with Fusion",
+   "authors": [
+    "Tom Clynes"
+   ],
+   "isbn13": [
+    "9780544084742",
+    "9780571298143",
+    "9780544705029"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Science of Game of Thrones",
+   "authors": [
+    "Helen Keen"
+   ],
+   "isbn13": [
+    "9781473632318",
+    "9781473632349",
+    "9780316315845"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Grimmy",
+   "authors": [
+    "Mike Peters"
+   ],
+   "isbn13": [
+    "9780812515275",
+    "9780312873271"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Under the Apple-Trees",
+   "authors": [
+    "John Burroughs"
+   ],
+   "isbn13": [
+    "9781679593598"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Houghton Mifflin Science Leveled Readers",
+   "authors": [
+    "Houghton Mifflin Company Staff"
+   ],
+   "isbn13": [
+    "9780618613793"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Moon Girl and Devil Dinosaur",
+   "authors": [
+    "Brandon Montclare",
+    "Gustavo Duarte",
+    "Natacha Bustos"
+   ],
+   "isbn13": [
+    "9781302945008",
+    "9781302905347",
+    "9781302929848"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Star Wars: Fatal Alliance",
+   "authors": [
+    "Sean Williams"
+   ],
+   "isbn13": [
+    "9780345511331",
+    "9783833220364",
+    "9781848568495"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Star Wars: Republic Commando",
+   "authors": [
+    "Karen Traviss"
+   ],
+   "isbn13": [
+    "9780345498007"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Star Wars : Rebel Force Firefight",
+   "authors": [
+    "Alex Wheeler",
+    "Inc. Staff Insight Direct",
+    "Sue Fliess"
+   ],
+   "isbn13": [
+    "9781484720240"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "X-Men",
+   "authors": [
+    "Ed Bisson",
+    "Pepe Larraz"
+   ],
+   "isbn13": [
+    "9781846539657"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Nation under Our Feet",
+   "authors": [
+    "Ta-Nehisi Coates",
+    "Chris Sprouse",
+    "Karl Story"
+   ],
+   "isbn13": [
+    "9781532143557",
+    "9781532147784"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Marvel Platinum",
+   "authors": [
+    "Stan Lee",
+    "Kurt Busiek",
+    "Brian Michael Bendis"
+   ],
+   "isbn13": [
+    "9781846536434",
+    "9781846538919",
+    "9781846537264",
+    "9781846539718"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Star Wars The Old Republic Revan",
+   "authors": [
+    "Drew Karpyshyn",
+    "Diego de los Santos"
+   ],
+   "isbn13": [
+    "9788491739074",
+    "9780345511348",
+    "9781781162040",
+    "9788448005207"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Mass Effect",
+   "authors": [
+    "Drew Karpyshyn"
+   ],
+   "isbn13": [
+    "9780345507754",
+    "9780345498526"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Star Wars Battlefront II - Inferno Squad. Special Edition Exclusive Content. First Edition, First Printing",
+   "authors": [
+    "Christie Golden"
+   ],
+   "isbn13": [
+    "9781524797348",
+    "9781473535817"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Star Wars: Kenobi",
+   "authors": [
+    "John Jackson Miller"
+   ],
+   "isbn13": [
+    "9780345546845",
+    "9783734160097"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "X-Men",
+   "authors": [
+    "Scott Lobdell",
+    "Fabian Nicieza",
+    "Joe Madureira"
+   ],
+   "isbn13": [
+    "9782809495034",
+    "9781302930028"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Arkham Asylum",
+   "authors": [
+    "Grant Morrison"
+   ],
+   "isbn13": [
+    "9781852862800",
+    "9781401204259",
+    "9780930289560"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Pakistan",
+   "authors": [
+    "Marian Rengel"
+   ],
+   "isbn13": [
+    "9781608519286",
+    "9780823940011"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "BattleTech",
+   "authors": [
+    "InMediaRes Productions"
+   ],
+   "isbn13": [
+    "9781638611554",
+    "9781638612650",
+    "9781638612315"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "The covenant",
+   "authors": [
+    "James A. Michener"
+   ],
+   "isbn13": [
+    "9780449244746"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Covenant With Death",
+   "authors": [
+    "Stephen Becker"
+   ],
+   "isbn13": [
+    "9789997407214",
+    "9781504026895"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Covenant of the Crown (Star Trek)",
+   "authors": [
+    "Howard Weinstein"
+   ],
+   "isbn13": [
+    "9781852861315",
+    "9780839828860",
+    "9780671833077"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Holcroft Covenant R\\P",
+   "authors": [
+    "R. Ludlum"
+   ],
+   "isbn13": [
+    "9780246110480"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "The Holcroft Covenant",
+   "authors": [
+    "Robert Ludlum"
+   ],
+   "isbn13": [
+    "9780752858579",
+    "9780862201692"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Crewel Yule",
+   "authors": [
+    "Monica Ferris"
+   ],
+   "isbn13": [
+    "9780425198278",
+    "9781587248542"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Yule Log Murder",
+   "authors": [
+    "Leslie Meier",
+    "Lee Hollis",
+    "Barbara Ross"
+   ],
+   "isbn13": [
+    "9781432853730",
+    "9781496717054"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "My Fair Captain",
+   "authors": [
+    "J. L. Langley"
+   ],
+   "isbn13": [
+    "9781640806870"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Warrior Women",
+   "authors": [
+    "Elizabeth Bear",
+    "Nancy Kress",
+    "Seanan McGuire"
+   ],
+   "isbn13": [
+    "9781607014683"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Break Up, Don't Break Down",
+   "authors": [
+    "D. Ivan Young"
+   ],
+   "isbn13": [
+    "9780966513219"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Breaking the Curse",
+   "authors": [
+    "Ally Campanozzi"
+   ],
+   "isbn13": [
+    "9781612548005"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "One Child",
+   "authors": [
+    "Christopher Cheng",
+    "Steven Woolman"
+   ],
+   "isbn13": [
+    "9781863744775",
+    "9781566563307",
+    "9781863745086",
+    "9781863743211"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Old Enough to Save the Planet",
+   "authors": [
+    "Loll Kirby",
+    "Adelina Lirius"
+   ],
+   "isbn13": [
+    "9781419749148",
+    "9781647000837",
+    "9781647002381"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "My Little Pony",
+   "authors": [
+    "Hasbro"
+   ],
+   "isbn13": [
+    "9780316361378"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "The moon",
+   "authors": [
+    "Ian Graham"
+   ],
+   "isbn13": [
+    "9780749675462"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Our nig",
+   "authors": [
+    "H. E. Wilson"
+   ],
+   "isbn13": [
+    "9780394715582"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Deathlands",
+   "authors": [
+    "James Axler"
+   ],
+   "isbn13": [
+    "9780373625130",
+    "9780373625154"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Don Segundo Sombra",
+   "authors": [
+    "Ricardo Güiraldes"
+   ],
+   "isbn13": [
+    "9780822955245"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "An Outcast of the Islands",
+   "authors": [
+    "Joseph Conrad"
+   ],
+   "isbn13": [
+    "9781775414803",
+    "9789997497994",
+    "9781560005339",
+    "9781576466902"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "The Red House Mystery",
+   "authors": [
+    "A. A. Milne"
+   ],
+   "isbn13": [
+    "9781406947007",
+    "9781905432905",
+    "9781449595142"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Thunderball : James Bond",
+   "authors": [
+    "Ian Fleming"
+   ],
+   "isbn13": [
+    "9798525764033",
+    "9780670910465",
+    "9781915797308",
+    "9780099576952"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Darkwater",
+   "authors": [
+    "W. E. B. Du Bois"
+   ],
+   "isbn13": [
+    "9781978238626",
+    "9798473087765",
+    "9781725816510"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "The shadow-line",
+   "authors": [
+    "Joseph Conrad"
+   ],
+   "isbn13": [
+    "9780140180978",
+    "9798831361681",
+    "9781974030576"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Bat",
+   "authors": [
+    "Mary Roberts Rinehart"
+   ],
+   "isbn13": [
+    "9781480436749",
+    "9798523274442",
+    "9781798169315",
+    "9798401321152"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
+  },
+  {
+   "title": "Shadows on the Rock",
+   "authors": [
+    "Willa Cather"
+   ],
+   "isbn13": [
+    "9781075593567",
+    "9798808444652",
+    "9798633636932"
+   ],
+   "stage": "relevance",
+   "severity": "duplicate",
+   "reasons": [
+    "excluded by owner-approved relevance review (config/relevance-exclusions.json)"
+   ]
   }
  ]
 }

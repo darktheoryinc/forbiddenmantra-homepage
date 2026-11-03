@@ -270,6 +270,23 @@ const keepRank = (w) => (w.provenance?.tier !== 'open-library-catalogue' && w.pr
   }
   if (drop.size) { for (let i = finalWorks.length - 1; i >= 0; i--) if (drop.has(finalWorks[i])) finalWorks.splice(i, 1); console.log(`dedup: ${drop.size} bulk work(s) dropped as variant-author duplicates`); }
 }
+// Owner-approved relevance exclusions (config/relevance-exclusions.json): newcomer bulk works only; a previously published work is never dropped.
+{
+  const exFile = path.join(ROOT, 'config', 'relevance-exclusions.json');
+  if (fs.existsSync(exFile)) {
+    const keys = new Set(JSON.parse(fs.readFileSync(exFile, 'utf8')).exclude.map((x) => x.workKey)); let n = 0;
+    const protFile = path.join(ROOT, 'config', 'protected-original-isbns.json');
+    const PROTECTED = new Set(fs.existsSync(protFile) ? JSON.parse(fs.readFileSync(protFile, 'utf8')).isbns : []);
+    for (let i = finalWorks.length - 1; i >= 0; i--) {
+      const w = finalWorks[i];
+      if (!keys.has(w.provenance?.workKey)) continue;
+      if (w.provenance?.tier !== 'open-library-catalogue' || w.editions.some((e) => PROTECTED.has(e.isbn13 ?? e.asin))) { console.error(`relevance exclusion skipped: "${w.title}" is verified or already published`); continue; }
+      queue(w, 'relevance', ['excluded by owner-approved relevance review (config/relevance-exclusions.json)'], 'duplicate');
+      finalWorks.splice(i, 1); n++;
+    }
+    console.log(`relevance: ${n} newcomer work(s) excluded`);
+  }
+}
 // slug uniqueness
 const seen = new Set();
 // Verified (hand/web) works claim their plain slug first so published URLs never move; bulk works take the suffixed form.

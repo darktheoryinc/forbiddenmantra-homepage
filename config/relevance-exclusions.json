@@ -1,0 +1,1050 @@
+{
+ "note": "Works added by the 2026-11-03 expansion that were reviewed title by title and confirmed unrelated to the library (children's, commercial and general fiction, plus juvenile or general non-fiction with no esoteric, religious, folklore or Eastern-philosophy relevance). Owner instruction 2026-11-03: remove only confirmed unrelated titles and leave the uncertain works. The importer applies this list only to newcomer bulk works and refuses to drop any work from the previously published catalogue.",
+ "reviewedFrom": "staging/review/relevance-audit.json @ a86745e",
+ "retainedAfterFinalReview": [
+  {
+   "slug": "aftermarket-prana",
+   "title": "Aftermarket Prana"
+  },
+  {
+   "slug": "behind-mogos-mask",
+   "title": "Behind Mogo's Mask"
+  },
+  {
+   "slug": "beyond-belief-roy-johansen",
+   "title": "Beyond belief"
+  },
+  {
+   "slug": "breathing-exercises-for-asthma",
+   "title": "Breathing exercises for asthma"
+  },
+  {
+   "slug": "breathing-free",
+   "title": "Breathing Free"
+  },
+  {
+   "slug": "classical-chinese",
+   "title": "Classical Chinese"
+  },
+  {
+   "slug": "cyropaedia",
+   "title": "Cyropaedia"
+  },
+  {
+   "slug": "dance-hall-of-the-dead",
+   "title": "Dance Hall of the Dead"
+  },
+  {
+   "slug": "dear-gandhi",
+   "title": "Dear Gandhi"
+  },
+  {
+   "slug": "harmony-mathieu-reynes",
+   "title": "Harmony"
+  },
+  {
+   "slug": "hasheesh-eater",
+   "title": "Hasheesh Eater"
+  },
+  {
+   "slug": "i-take-a-deeep-breath",
+   "title": "I take a deeep breath!"
+  },
+  {
+   "slug": "journey-of-the-heart",
+   "title": "Journey of the heart"
+  },
+  {
+   "slug": "listening-woman",
+   "title": "Listening woman"
+  },
+  {
+   "slug": "lost-book-of-the-grail",
+   "title": "Lost Book of the Grail"
+  },
+  {
+   "slug": "lost-city-of-the-incas",
+   "title": "Lost City of the Incas"
+  },
+  {
+   "slug": "mithras-court",
+   "title": "Mithras Court"
+  },
+  {
+   "slug": "rawblood",
+   "title": "Rawblood"
+  },
+  {
+   "slug": "readings-in-modernity-in-africa",
+   "title": "Readings in Modernity in Africa"
+  },
+  {
+   "slug": "skinwalkers",
+   "title": "Skinwalkers"
+  },
+  {
+   "slug": "talking-god",
+   "title": "Talking God."
+  },
+  {
+   "slug": "the-blessing-way",
+   "title": "The Blessing Way"
+  },
+  {
+   "slug": "the-girl-with-the-silver-eyes",
+   "title": "The girl with the silver eyes"
+  },
+  {
+   "slug": "the-long-midnight",
+   "title": "The Long Midnight"
+  },
+  {
+   "slug": "the-pancatantra",
+   "title": "The Pancatantra"
+  },
+  {
+   "slug": "the-private-memoirs-and-confessions-of-a-justified-sinner",
+   "title": "The Private Memoirs and Confessions of a Justified Sinner"
+  },
+  {
+   "slug": "the-shape-shifter",
+   "title": "The Shape Shifter"
+  },
+  {
+   "slug": "then-is-the-power",
+   "title": "Then Is the Power"
+  },
+  {
+   "slug": "voltage",
+   "title": "Voltage."
+  },
+  {
+   "slug": "watching-the-tree",
+   "title": "Watching the Tree"
+  },
+  {
+   "slug": "yellow-monkey-emperors-classic-of-chinese-medicine",
+   "title": "Yellow Monkey Emperor's Classic of Chinese Medicine"
+  }
+ ],
+ "exclude": [
+  {
+   "workKey": "/works/OL25103537W",
+   "slug": "a-golden-treasury-of-nursery-verse",
+   "title": "A Golden Treasury of Nursery Verse",
+   "authors": "Mark Daniel"
+  },
+  {
+   "workKey": "/works/OL181812W",
+   "slug": "a-murder-of-quality",
+   "title": "A Murder of Quality",
+   "authors": "John le Carré"
+  },
+  {
+   "workKey": "/works/OL2909375W",
+   "slug": "a-second-golden-treasury-of-childrens-verse-premier-picturemac",
+   "title": "A Second Golden Treasury of Children's Verse (Premier Picturemac)",
+   "authors": "Mark Daniel"
+  },
+  {
+   "workKey": "/works/OL21558585W",
+   "slug": "a-short-history-of-stupid",
+   "title": "A Short History of Stupid",
+   "authors": "Helen Razer; Bernard Keane"
+  },
+  {
+   "workKey": "/works/OL38634W",
+   "slug": "an-outcast-of-the-islands",
+   "title": "An Outcast of the Islands",
+   "authors": "Joseph Conrad"
+  },
+  {
+   "workKey": "/works/OL731737W",
+   "slug": "anthem",
+   "title": "Anthem",
+   "authors": "Ayn Rand"
+  },
+  {
+   "workKey": "/works/OL646611W",
+   "slug": "arkham-asylum",
+   "title": "Arkham Asylum",
+   "authors": "Grant Morrison"
+  },
+  {
+   "workKey": "/works/OL3477605W",
+   "slug": "autobiography-of-a-face",
+   "title": "Autobiography of a Face",
+   "authors": "Lucy Grealy"
+  },
+  {
+   "workKey": "/works/OL3915966W",
+   "slug": "aztec-inca-and-maya",
+   "title": "Aztec, Inca & Maya",
+   "authors": "Elizabeth Baquedano"
+  },
+  {
+   "workKey": "/works/OL137388W",
+   "slug": "bat",
+   "title": "Bat",
+   "authors": "Mary Roberts Rinehart"
+  },
+  {
+   "workKey": "/works/OL37883891W",
+   "slug": "battletech",
+   "title": "BattleTech",
+   "authors": "InMediaRes Productions"
+  },
+  {
+   "workKey": "/works/OL3065268W",
+   "slug": "beetle-bailey",
+   "title": "Beetle Bailey",
+   "authors": "Mort Walker"
+  },
+  {
+   "workKey": "/works/OL3990534W",
+   "slug": "beneath-a-sky-of-porphyry",
+   "title": "Beneath a sky of porphyry",
+   "authors": "Aïcha Lemsine"
+  },
+  {
+   "workKey": "/works/OL74013W",
+   "slug": "big-wander",
+   "title": "Big Wander",
+   "authors": "Will Hobbs"
+  },
+  {
+   "workKey": "/works/OL50565W",
+   "slug": "bluest-eye",
+   "title": "Bluest Eye",
+   "authors": "Toni Morrison"
+  },
+  {
+   "workKey": "/works/OL5819456W",
+   "slug": "book-thief",
+   "title": "Book Thief",
+   "authors": "Markus Zusak"
+  },
+  {
+   "workKey": "/works/OL20005460W",
+   "slug": "boy-who-played-with-fusion",
+   "title": "Boy Who Played with Fusion",
+   "authors": "Tom Clynes"
+  },
+  {
+   "workKey": "/works/OL15376495W",
+   "slug": "break-up-dont-break-down",
+   "title": "Break Up, Don't Break Down",
+   "authors": "D. Ivan Young"
+  },
+  {
+   "workKey": "/works/OL21768632W",
+   "slug": "breaking-the-curse",
+   "title": "Breaking the Curse",
+   "authors": "Ally Campanozzi"
+  },
+  {
+   "workKey": "/works/OL1703839W",
+   "slug": "brian-wildsmiths-animal-colors-navajo-edition",
+   "title": "Brian Wildsmith's Animal Colors (Navajo edition)",
+   "authors": "Brian Wildsmith"
+  },
+  {
+   "workKey": "/works/OL59133W",
+   "slug": "brown-bear-brown-bear-what-do-you-see-50th-anniversary-edition-with-audio-cd",
+   "title": "Brown Bear, Brown Bear, What Do You See? 50th Anniversary Edition with Audio CD",
+   "authors": "Bill Martin Jr.; Eric Carle"
+  },
+  {
+   "workKey": "/works/OL21322620W",
+   "slug": "city-in-arabic-literature",
+   "title": "City in Arabic Literature",
+   "authors": "Nizar F. Hermes; Gretchen Head"
+  },
+  {
+   "workKey": "/works/OL24340699W",
+   "slug": "civilizations-grand-prix-du-roman-de-lacademie-francaise",
+   "title": "Civilizations [ Grand Prix du Roman de l'Academie Francaise ]",
+   "authors": "Laurent Binet"
+  },
+  {
+   "workKey": "/works/OL1821981W",
+   "slug": "conquistadors",
+   "title": "Conquistadors",
+   "authors": "Hammond Innes"
+  },
+  {
+   "workKey": "/works/OL3092104W",
+   "slug": "covenant-of-the-crown-star-trek",
+   "title": "Covenant of the Crown (Star Trek)",
+   "authors": "Howard Weinstein"
+  },
+  {
+   "workKey": "/works/OL4973130W",
+   "slug": "covenant-with-death",
+   "title": "Covenant With Death",
+   "authors": "Stephen Becker"
+  },
+  {
+   "workKey": "/works/OL55949W",
+   "slug": "coyote-waits",
+   "title": "Coyote Waits",
+   "authors": "Tony Hillerman"
+  },
+  {
+   "workKey": "/works/OL5684248W",
+   "slug": "crewel-yule",
+   "title": "Crewel Yule",
+   "authors": "Monica Ferris"
+  },
+  {
+   "workKey": "/works/OL6219406W",
+   "slug": "dancing-cloud",
+   "title": "Dancing Cloud",
+   "authors": "Mary Buff; Conrad Buff"
+  },
+  {
+   "workKey": "/works/OL28571W",
+   "slug": "darkwater",
+   "title": "Darkwater",
+   "authors": "W. E. B. Du Bois"
+  },
+  {
+   "workKey": "/works/OL5690515W",
+   "slug": "deathlands",
+   "title": "Deathlands",
+   "authors": "James Axler"
+  },
+  {
+   "workKey": "/works/OL1490113W",
+   "slug": "doctors-wife-a-novel-by-the-author-of-lady-audleys-secret-by-mary-elizabeth-braddon",
+   "title": "Doctor's Wife, a Novel by the Author of Lady Audley's Secret . by : Mary Elizabeth Braddon",
+   "authors": "Mary Elizabeth Braddon"
+  },
+  {
+   "workKey": "/works/OL2100605W",
+   "slug": "don-segundo-sombra",
+   "title": "Don Segundo Sombra",
+   "authors": "Ricardo Güiraldes"
+  },
+  {
+   "workKey": "/works/OL12636W",
+   "slug": "eagle-feather",
+   "title": "Eagle Feather",
+   "authors": "Clyde Robert Bulla"
+  },
+  {
+   "workKey": "/works/OL15382656W",
+   "slug": "fall-of-giants",
+   "title": "Fall of Giants",
+   "authors": "Ken Follett; BookSource Staff"
+  },
+  {
+   "workKey": "/works/OL3000715W",
+   "slug": "from-here-to-eternity",
+   "title": "From Here to Eternity",
+   "authors": "James Jones"
+  },
+  {
+   "workKey": "/works/OL29175601W",
+   "slug": "geodes-level-1",
+   "title": "Geodes Level 1",
+   "authors": "Great Minds"
+  },
+  {
+   "workKey": "/works/OL8608163W",
+   "slug": "gold-of-the-gods",
+   "title": "Gold of the Gods",
+   "authors": "Arthur B. Reeve"
+  },
+  {
+   "workKey": "/works/OL2942250W",
+   "slug": "grimmy",
+   "title": "Grimmy",
+   "authors": "Mike Peters"
+  },
+  {
+   "workKey": "/works/OL28388182W",
+   "slug": "gross-science-of-bad-breath-and-cavities",
+   "title": "Gross Science of Bad Breath and Cavities",
+   "authors": "Jessica Shaw"
+  },
+  {
+   "workKey": "/works/OL5964935W",
+   "slug": "hearing-voices",
+   "title": "Hearing Voices",
+   "authors": "Alan Barzman"
+  },
+  {
+   "workKey": "/works/OL5705238W",
+   "slug": "history-and-activities-of-the-aztecs",
+   "title": "History and activities of the Aztecs",
+   "authors": "Lisa Klobuchar"
+  },
+  {
+   "workKey": "/works/OL9289328W",
+   "slug": "holcroft-covenant-r-p",
+   "title": "Holcroft Covenant R\\P",
+   "authors": "R. Ludlum"
+  },
+  {
+   "workKey": "/works/OL27467443W",
+   "slug": "houghton-mifflin-science-leveled-readers",
+   "title": "Houghton Mifflin Science Leveled Readers",
+   "authors": "Houghton Mifflin Company Staff"
+  },
+  {
+   "workKey": "/works/OL15837084W",
+   "slug": "how-to-be-idle",
+   "title": "How to Be Idle",
+   "authors": "Tom Hodgkinson"
+  },
+  {
+   "workKey": "/works/OL12826490W",
+   "slug": "human-body",
+   "title": "Human body",
+   "authors": "Camilla De la Bédoyère"
+  },
+  {
+   "workKey": "/works/OL55916W",
+   "slug": "hunting-badger",
+   "title": "Hunting Badger",
+   "authors": "Tony Hillerman"
+  },
+  {
+   "workKey": "/works/OL84898W",
+   "slug": "inca-gold",
+   "title": "Inca gold.",
+   "authors": "Clive Cussler"
+  },
+  {
+   "workKey": "/works/OL97656W",
+   "slug": "isaac-newton-kathleen-krull",
+   "title": "Isaac Newton",
+   "authors": "Kathleen Krull; Boris Kulikov"
+  },
+  {
+   "workKey": "/works/OL4608107W",
+   "slug": "jalna",
+   "title": "Jalna",
+   "authors": "Mazo de la Roche"
+  },
+  {
+   "workKey": "/works/OL1095427W",
+   "slug": "jane-eyre-illustrated",
+   "title": "Jane Eyre Illustrated",
+   "authors": "Charlotte Brontë"
+  },
+  {
+   "workKey": "/works/OL17052522W",
+   "slug": "la-fete-de-linsignifiance-the-celebration-of-insignificance-korean-edition",
+   "title": "La Fete de L'Insignifiance [The Celebration of Insignificance] (Korean Edition)",
+   "authors": "Milan Kundera"
+  },
+  {
+   "workKey": "/works/OL42380W",
+   "slug": "laddie",
+   "title": "Laddie",
+   "authors": "Gene Stratton-Porter"
+  },
+  {
+   "workKey": "/works/OL66614W",
+   "slug": "lady-susan-dodo-press",
+   "title": "Lady Susan (Dodo Press)",
+   "authors": "Jane Austen"
+  },
+  {
+   "workKey": "/works/OL483133W",
+   "slug": "lanterns",
+   "title": "Lanterns",
+   "authors": "Marian Wright Edelman"
+  },
+  {
+   "workKey": "/works/OL3538188W",
+   "slug": "laughing-boy",
+   "title": "Laughing Boy",
+   "authors": "Oliver La Farge"
+  },
+  {
+   "workKey": "/works/OL1109163W",
+   "slug": "life-amongst-the-modocs",
+   "title": "Life Amongst the Modocs",
+   "authors": "Joaquin Miller"
+  },
+  {
+   "workKey": "/works/OL869918W",
+   "slug": "little-black-a-pony",
+   "title": "Little Black, A Pony",
+   "authors": "Walter Farley"
+  },
+  {
+   "workKey": "/works/OL3162159W",
+   "slug": "looking-at-philosophy",
+   "title": "Looking at philosophy",
+   "authors": "Donald Palmer"
+  },
+  {
+   "workKey": "/works/OL21529770W",
+   "slug": "marvel-platinum",
+   "title": "Marvel Platinum",
+   "authors": "Stan Lee; Kurt Busiek; Brian Michael Bendis"
+  },
+  {
+   "workKey": "/works/OL5684854W",
+   "slug": "mass-effect",
+   "title": "Mass Effect",
+   "authors": "Drew Karpyshyn"
+  },
+  {
+   "workKey": "/works/OL8257437W",
+   "slug": "mission-song-the",
+   "title": "Mission Song The",
+   "authors": "John le Carré"
+  },
+  {
+   "workKey": "/works/OL20060172W",
+   "slug": "moon-girl-and-devil-dinosaur",
+   "title": "Moon Girl and Devil Dinosaur",
+   "authors": "Brandon Montclare; Gustavo Duarte; Natacha Bustos"
+  },
+  {
+   "workKey": "/works/OL8994681W",
+   "slug": "my-fair-captain",
+   "title": "My Fair Captain",
+   "authors": "J. L. Langley"
+  },
+  {
+   "workKey": "/works/OL37615931W",
+   "slug": "my-little-pony-hasbro",
+   "title": "My Little Pony",
+   "authors": "Hasbro"
+  },
+  {
+   "workKey": "/works/OL15061254W",
+   "slug": "mystery-of-the-lost-village",
+   "title": "Mystery of the Lost Village",
+   "authors": "Gertrude Chandler Warner; Charles Tang"
+  },
+  {
+   "workKey": "/works/OL1678661W",
+   "slug": "nadie-nada-nunca",
+   "title": "Nadie nada nunca",
+   "authors": "Juan José Saer; Miguel Navia"
+  },
+  {
+   "workKey": "/works/OL21594709W",
+   "slug": "nation-under-our-feet",
+   "title": "Nation under Our Feet",
+   "authors": "Ta-Nehisi Coates; Chris Sprouse; Karl Story"
+  },
+  {
+   "workKey": "/works/OL8123310W",
+   "slug": "navajo-canyon",
+   "title": "Navajo Canyon",
+   "authors": "Tom W. Blackburn"
+  },
+  {
+   "workKey": "/works/OL80308W",
+   "slug": "navajo-code-talkers",
+   "title": "Navajo Code Talkers",
+   "authors": "Nathan Aaseng"
+  },
+  {
+   "workKey": "/works/OL14862494W",
+   "slug": "night-way",
+   "title": "Night way",
+   "authors": "Janet Dailey"
+  },
+  {
+   "workKey": "/works/OL38050W",
+   "slug": "no-one-will-ever-know",
+   "title": "No one will ever know =",
+   "authors": "Carl Sommer"
+  },
+  {
+   "workKey": "/works/OL8838485W",
+   "slug": "north-of-infinity-ii",
+   "title": "North of Infinity II",
+   "authors": "Mark Leslie"
+  },
+  {
+   "workKey": "/works/OL12795W",
+   "slug": "o-pioneers",
+   "title": "O Pioneers!",
+   "authors": "Willa Cather"
+  },
+  {
+   "workKey": "/works/OL21695241W",
+   "slug": "of-silenced-and-unheard-voices-from-the-south",
+   "title": "Of Silenced and Unheard Voices from the South",
+   "authors": "Ana Duffy"
+  },
+  {
+   "workKey": "/works/OL20903004W",
+   "slug": "old-enough-to-save-the-planet",
+   "title": "Old Enough to Save the Planet",
+   "authors": "Loll Kirby; Adelina Lirius"
+  },
+  {
+   "workKey": "/works/OL85744W",
+   "slug": "on-her-majestys-secret-service",
+   "title": "On Her Majesty's Secret Service",
+   "authors": "Ian Fleming"
+  },
+  {
+   "workKey": "/works/OL66774W",
+   "slug": "one-child",
+   "title": "One Child",
+   "authors": "Christopher Cheng; Steven Woolman"
+  },
+  {
+   "workKey": "/works/OL4863512W",
+   "slug": "our-nig",
+   "title": "Our nig",
+   "authors": "H. E. Wilson"
+  },
+  {
+   "workKey": "/works/OL5952744W",
+   "slug": "pakistan",
+   "title": "Pakistan",
+   "authors": "Marian Rengel"
+  },
+  {
+   "workKey": "/works/OL55928W",
+   "slug": "people-of-darkness",
+   "title": "People of Darkness",
+   "authors": "Tony Hillerman"
+  },
+  {
+   "workKey": "/works/OL14861736W",
+   "slug": "physics-of-the-impossible",
+   "title": "Physics of the impossible",
+   "authors": "Michio Kaku"
+  },
+  {
+   "workKey": "/works/OL10142338W",
+   "slug": "pizarro",
+   "title": "Pizarro",
+   "authors": "Stuart Stirling"
+  },
+  {
+   "workKey": "/works/OL1798843W",
+   "slug": "raffles",
+   "title": "Raffles",
+   "authors": "Ernest William Hornung; Samuel Goldwyn"
+  },
+  {
+   "workKey": "/works/OL17513079W",
+   "slug": "reason-i-jump",
+   "title": "Reason I Jump",
+   "authors": "Naoki Higashida; David Mitchell - undifferentiated; K. A. Yoshida"
+  },
+  {
+   "workKey": "/works/OL36718729W",
+   "slug": "reports-from-the-deep-end",
+   "title": "Reports from the Deep End",
+   "authors": "Maxim Jakubowski; Rick McGrath; Will Self"
+  },
+  {
+   "workKey": "/works/OL18646224W",
+   "slug": "rethinking-classroom-participation",
+   "title": "Rethinking classroom participation",
+   "authors": "Katherine Schultz"
+  },
+  {
+   "workKey": "/works/OL5849785W",
+   "slug": "roanoke",
+   "title": "Roanoke",
+   "authors": "Lee Miller"
+  },
+  {
+   "workKey": "/works/OL1902381W",
+   "slug": "roomful-of-roses",
+   "title": "Roomful of Roses",
+   "authors": "Diana Palmer"
+  },
+  {
+   "workKey": "/works/OL16190495W",
+   "slug": "rules-of-civility",
+   "title": "Rules of Civility",
+   "authors": "Amor Towles"
+  },
+  {
+   "workKey": "/works/OL20044879W",
+   "slug": "science-of-game-of-thrones",
+   "title": "Science of Game of Thrones",
+   "authors": "Helen Keen"
+  },
+  {
+   "workKey": "/works/OL25553602W",
+   "slug": "scooby-doo-and-the-ruins-of-machu-picchu",
+   "title": "Scooby-Doo! and the Ruins of Machu Picchu",
+   "authors": "Mark Weakland; Dario Brizuela"
+  },
+  {
+   "workKey": "/works/OL3863781W",
+   "slug": "secret-battle",
+   "title": "Secret Battle",
+   "authors": "Alan Patrick Herbert"
+  },
+  {
+   "workKey": "/works/OL79653W",
+   "slug": "secret-of-the-andes",
+   "title": "Secret of the Andes",
+   "authors": "Ann Clark"
+  },
+  {
+   "workKey": "/works/OL24320612W",
+   "slug": "self-care-for-adult-children-of-emotionally-immature-parents",
+   "title": "Self-Care for Adult Children of Emotionally Immature Parents",
+   "authors": "Lindsay C. Gibson"
+  },
+  {
+   "workKey": "/works/OL12827W",
+   "slug": "shadows-on-the-rock",
+   "title": "Shadows on the Rock",
+   "authors": "Willa Cather"
+  },
+  {
+   "workKey": "/works/OL276635W",
+   "slug": "shakespeares-philosophy",
+   "title": "Shakespeare's Philosophy",
+   "authors": "Colin Mcginn"
+  },
+  {
+   "workKey": "/works/OL20874W",
+   "slug": "silas-marner-the-weaver-of-raveloe",
+   "title": "Silas Marner - The Weaver of Raveloe",
+   "authors": "George Eliot"
+  },
+  {
+   "workKey": "/works/OL4466844W",
+   "slug": "sing-down-the-moon",
+   "title": "Sing down the moon",
+   "authors": "Scott O’Dell"
+  },
+  {
+   "workKey": "/works/OL100203W",
+   "slug": "sister-carrie",
+   "title": "Sister Carrie",
+   "authors": "Theodore Dreiser"
+  },
+  {
+   "workKey": "/works/OL20000123W",
+   "slug": "six",
+   "title": "Six",
+   "authors": "M. M. Vaughan"
+  },
+  {
+   "workKey": "/works/OL55937W",
+   "slug": "skeleton-man",
+   "title": "Skeleton man",
+   "authors": "Tony Hillerman"
+  },
+  {
+   "workKey": "/works/OL15990243W",
+   "slug": "star-wars-rebel-force-firefight",
+   "title": "Star Wars : Rebel Force Firefight",
+   "authors": "Alex Wheeler; Inc. Staff Insight Direct; Sue Fliess"
+  },
+  {
+   "workKey": "/works/OL17870127W",
+   "slug": "star-wars-battlefront-ii-inferno-squad-special-edition-exclusive-content-first-edition-first-printing",
+   "title": "Star Wars Battlefront II - Inferno Squad. Special Edition Exclusive Content. First Edition, First Printing",
+   "authors": "Christie Golden"
+  },
+  {
+   "workKey": "/works/OL16529286W",
+   "slug": "star-wars-the-old-republic-revan",
+   "title": "Star Wars The Old Republic Revan",
+   "authors": "Drew Karpyshyn; Diego de los Santos"
+  },
+  {
+   "workKey": "/works/OL15244161W",
+   "slug": "star-wars-fatal-alliance",
+   "title": "Star Wars: Fatal Alliance",
+   "authors": "Sean Williams"
+  },
+  {
+   "workKey": "/works/OL19090047W",
+   "slug": "star-wars-kenobi",
+   "title": "Star Wars: Kenobi",
+   "authors": "John Jackson Miller"
+  },
+  {
+   "workKey": "/works/OL5813989W",
+   "slug": "star-wars-republic-commando",
+   "title": "Star Wars: Republic Commando",
+   "authors": "Karen Traviss"
+  },
+  {
+   "workKey": "/works/OL5288794W",
+   "slug": "steve-birnbaum-brings-you-the-best-of-walt-disney-world",
+   "title": "Steve Birnbaum brings you the best of Walt Disney World",
+   "authors": "Stephen Birnbaum"
+  },
+  {
+   "workKey": "/works/OL99269W",
+   "slug": "sword-and-scalpel",
+   "title": "Sword and Scalpel",
+   "authors": "Frank G. Slaughter"
+  },
+  {
+   "workKey": "/works/OL82310W",
+   "slug": "temple",
+   "title": "Temple",
+   "authors": "Matthew Reilly"
+  },
+  {
+   "workKey": "/works/OL21802W",
+   "slug": "the-best-of-a-e-van-vogt",
+   "title": "The Best of A. E. van Vogt",
+   "authors": "A. E. van Vogt"
+  },
+  {
+   "workKey": "/works/OL639908W",
+   "slug": "the-compleat-angler-or-the-contemplative-mans-recreation",
+   "title": "The compleat angler, or, The contemplative man's recreation",
+   "authors": "Izaak Walton"
+  },
+  {
+   "workKey": "/works/OL41868W",
+   "slug": "the-conspiracy-of-ignorance",
+   "title": "The conspiracy of ignorance",
+   "authors": "Martin L. Gross"
+  },
+  {
+   "workKey": "/works/OL2385299W",
+   "slug": "the-covenant",
+   "title": "The covenant",
+   "authors": "James A. Michener"
+  },
+  {
+   "workKey": "/works/OL5836991W",
+   "slug": "the-crafts-and-culture-of-the-ancient-aztecs-crafts-of-the-ancient-world",
+   "title": "The Crafts and Culture of the Ancient Aztecs (Crafts of the Ancient World)",
+   "authors": "Joann Jovinelly; Jason Netelkos"
+  },
+  {
+   "workKey": "/works/OL55904W",
+   "slug": "the-dark-wind",
+   "title": "The Dark Wind",
+   "authors": "Tony Hillerman"
+  },
+  {
+   "workKey": "/works/OL6340425W",
+   "slug": "the-decoding-of-edwin-drood",
+   "title": "The decoding of Edwin Drood",
+   "authors": "Charles Forsyte"
+  },
+  {
+   "workKey": "/works/OL13351631W",
+   "slug": "the-elegance-of-the-hedgehog",
+   "title": "The elegance of the hedgehog",
+   "authors": "Muriel Barbery"
+  },
+  {
+   "workKey": "/works/OL55908W",
+   "slug": "the-fallen-man",
+   "title": "The fallen man",
+   "authors": "Tony Hillerman"
+  },
+  {
+   "workKey": "/works/OL55910W",
+   "slug": "the-first-eagle",
+   "title": "The First Eagle",
+   "authors": "Tony Hillerman"
+  },
+  {
+   "workKey": "/works/OL11927W",
+   "slug": "the-golden-gate",
+   "title": "The Golden Gate",
+   "authors": "Vikram Seth"
+  },
+  {
+   "workKey": "/works/OL2664917W",
+   "slug": "the-holcroft-covenant",
+   "title": "The Holcroft Covenant",
+   "authors": "Robert Ludlum"
+  },
+  {
+   "workKey": "/works/OL27940W",
+   "slug": "the-killings-on-jubilee-terrace",
+   "title": "The killings on Jubilee Terrace",
+   "authors": "Robert Barnard"
+  },
+  {
+   "workKey": "/works/OL3055285W",
+   "slug": "the-martian-inca",
+   "title": "The Martian Inca",
+   "authors": "Ian Watson"
+  },
+  {
+   "workKey": "/works/OL81669W",
+   "slug": "the-martians",
+   "title": "The Martians",
+   "authors": "Kim Stanley Robinson"
+  },
+  {
+   "workKey": "/works/OL1818069W",
+   "slug": "the-moon",
+   "title": "The moon",
+   "authors": "Ian Graham"
+  },
+  {
+   "workKey": "/works/OL4651513W",
+   "slug": "the-number-of-things",
+   "title": "The Number of Things",
+   "authors": "Evans G. Valens"
+  },
+  {
+   "workKey": "/works/OL460804W",
+   "slug": "the-nursing-home-murder",
+   "title": "The nursing home murder",
+   "authors": "Ngaio Marsh"
+  },
+  {
+   "workKey": "/works/OL476846W",
+   "slug": "the-red-house-mystery",
+   "title": "The Red House Mystery",
+   "authors": "A. A. Milne"
+  },
+  {
+   "workKey": "/works/OL19982655W",
+   "slug": "the-revenge-of-seven",
+   "title": "The Revenge of Seven",
+   "authors": "Pittacus Lore"
+  },
+  {
+   "workKey": "/works/OL3256837W",
+   "slug": "the-scientist-in-the-crib",
+   "title": "The scientist in the crib",
+   "authors": "Alison Gopnik"
+  },
+  {
+   "workKey": "/works/OL1542660W",
+   "slug": "the-secret-of-childhood",
+   "title": "The secret of childhood",
+   "authors": "Maria Montessori"
+  },
+  {
+   "workKey": "/works/OL39039W",
+   "slug": "the-secret-sharer-websters-korean-thesaurus-edition",
+   "title": "The Secret Sharer (Webster's Korean Thesaurus Edition)",
+   "authors": "Joseph Conrad"
+  },
+  {
+   "workKey": "/works/OL38827W",
+   "slug": "the-shadow-line",
+   "title": "The shadow-line",
+   "authors": "Joseph Conrad"
+  },
+  {
+   "workKey": "/works/OL55935W",
+   "slug": "the-sinister-pig",
+   "title": "The Sinister Pig.",
+   "authors": "Tony Hillerman"
+  },
+  {
+   "workKey": "/works/OL52987W",
+   "slug": "the-very-hungry-caterpillar",
+   "title": "The Very Hungry Caterpillar",
+   "authors": "Eric Carle"
+  },
+  {
+   "workKey": "/works/OL55946W",
+   "slug": "the-wailing-wind",
+   "title": "The Wailing Wind",
+   "authors": "Tony Hillerman"
+  },
+  {
+   "workKey": "/works/OL1975719W",
+   "slug": "the-witling",
+   "title": "The witling.",
+   "authors": "Vernor Vinge"
+  },
+  {
+   "workKey": "/works/OL8060645W",
+   "slug": "the-writer-on-her-work",
+   "title": "The Writer on her work",
+   "authors": "Janet Sternburg"
+  },
+  {
+   "workKey": "/works/OL85745W",
+   "slug": "thunderball-james-bond",
+   "title": "Thunderball : James Bond",
+   "authors": "Ian Fleming"
+  },
+  {
+   "workKey": "/works/OL2685469W",
+   "slug": "triplanetary",
+   "title": "Triplanetary",
+   "authors": "Edward E. Smith"
+  },
+  {
+   "workKey": "/works/OL1815550W",
+   "slug": "two-years-before-the-mast",
+   "title": "Two Years Before the Mast",
+   "authors": "Richard Henry Dana"
+  },
+  {
+   "workKey": "/works/OL137507W",
+   "slug": "under-the-andes",
+   "title": "Under the Andes",
+   "authors": "Rex Stout"
+  },
+  {
+   "workKey": "/works/OL254990W",
+   "slug": "under-the-apple-trees",
+   "title": "Under the Apple-Trees",
+   "authors": "John Burroughs"
+  },
+  {
+   "workKey": "/works/OL15047268W",
+   "slug": "up",
+   "title": "Up",
+   "authors": "Jim LaMarche"
+  },
+  {
+   "workKey": "/works/OL3900146W",
+   "slug": "volcanoes",
+   "title": "Volcanoes",
+   "authors": "Judith Bloom Fradin"
+  },
+  {
+   "workKey": "/works/OL9497558W",
+   "slug": "vuelo-entre-fantasmas",
+   "title": "Vuelo Entre Fantasmas",
+   "authors": "Rafael Maya-Yescas"
+  },
+  {
+   "workKey": "/works/OL19622575W",
+   "slug": "warrior-women",
+   "title": "Warrior Women",
+   "authors": "Elizabeth Bear; Nancy Kress; Seanan McGuire"
+  },
+  {
+   "workKey": "/works/OL83758W",
+   "slug": "whats-your-angle-pythagoras",
+   "title": "What's Your Angle, Pythagoras?",
+   "authors": "Julie Ellis"
+  },
+  {
+   "workKey": "/works/OL22442352W",
+   "slug": "x-men",
+   "title": "X-Men",
+   "authors": "Scott Lobdell; Fabian Nicieza; Joe Madureira"
+  },
+  {
+   "workKey": "/works/OL21639344W",
+   "slug": "x-men-ed-bisson",
+   "title": "X-Men",
+   "authors": "Ed Bisson; Pepe Larraz"
+  },
+  {
+   "workKey": "/works/OL19761135W",
+   "slug": "yule-log-murder",
+   "title": "Yule Log Murder",
+   "authors": "Leslie Meier; Lee Hollis; Barbara Ross"
+  }
+ ]
+}

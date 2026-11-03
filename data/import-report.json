@@ -11,11 +11,11 @@
     "web-corroborated": 138
   },
   "published": {
-    "works": 16864,
-    "editions": 31413,
-    "outsideWorks": 16741,
+    "works": 16711,
+    "editions": 31061,
+    "outsideWorks": 16588,
     "fmpWorks": 123,
-    "authors": 11127
+    "authors": 10967
   },
   "publishedByLanguage": {
     "ar": {
@@ -31,8 +31,8 @@
       "editions": 14
     },
     "en": {
-      "works": 16860,
-      "editions": 31305
+      "works": 16707,
+      "editions": 30953
     },
     "es": {
       "works": 19,
@@ -84,15 +84,16 @@
     "missingIsbn": 2
   },
   "errorQueue": {
-    "total": 1154,
+    "total": 1307,
     "byStage": {
       "identifiers": 6,
       "dedup": 1145,
-      "validate": 3
+      "validate": 3,
+      "relevance": 153
     },
     "bySeverity": {
       "warning": 7,
-      "duplicate": 1145,
+      "duplicate": 1298,
       "error": 2
     }
   }
