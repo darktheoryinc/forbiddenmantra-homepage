@@ -56,10 +56,10 @@
       "brand": "iosutra",
       "text": "IOSutra is a member of the NVIDIA Inception program.",
       "short": "IOSutra is a member of the NVIDIA Inception program.",
-      "status": "owner-asserted",
-      "assertedBy": "site owner, instruction of 2026-10-26",
-      "evidence": null,
-      "verifiedOn": null,
+      "status": "verified",
+      "assertedBy": "site owner",
+      "evidence": "Owner statement of 2026-11-03: \"IOSutra's NVIDIA Inception membership is verified.\" Recorded as stated by the owner; Claude cannot access the NVIDIA Inception portal and has not checked it independently.",
+      "verifiedOn": "2026-11-03",
       "beforeLaunch": [
         "Confirm in the NVIDIA Inception member portal that IOSutra's membership is current.",
         "Read the program terms or trademark licence you accepted and confirm this wording and any required attribution are permitted.",
@@ -96,7 +96,9 @@
       "verifiedOn": null,
       "beforeLaunch": [
         "Confirm the exact attribution wording the Inception terms require (if any) and update this text."
-      ]
+      ],
+      "attribution": true,
+      "note": "A plain trademark acknowledgement, not a claim about membership or endorsement, so it is shown with the badge. The exact wording has not been checked against NVIDIA's Inception brand guidelines (still needs-confirmation): replace the text here if NVIDIA requires different wording."
     }
   ],
   "externalLinks": {

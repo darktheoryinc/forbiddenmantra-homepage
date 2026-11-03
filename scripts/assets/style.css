@@ -553,3 +553,9 @@ p[data-grid-note]{margin:10px 0 0;font-size:12.5px;color:var(--muted)}
 .voice-tip{position:absolute;left:0;right:0;top:calc(100% + 4px);z-index:30;background:var(--panel2);color:var(--text);border:1px solid var(--accent-line);border-radius:2px;padding:7px 10px;font-size:13px;line-height:1.4;box-shadow:0 4px 14px rgba(24,63,59,.18)}
 .voice-tip[hidden]{display:none}
 @media(prefers-reduced-motion:reduce){.voice-btn.is-listening{animation:none}}
+
+/* Digital Librarian face beside every search bar (a crop of assets/librarian/librarian.webp, same crop as the homepage Ask box) */
+.fm-face{flex:none;width:40px;height:40px;border-radius:50%;background:#EFE9DF url(librarian/librarian.webp) no-repeat 46% 0/420% auto;border:2px solid #D8B46B;align-self:center}
+.nav-search .fm-face{width:42px;height:42px;margin-inline-end:10px}
+.f-q-row{display:flex;align-items:center;gap:10px}.f-q-row .voice-wrap{flex:1 1 auto;min-width:0}.f-q-row>input{flex:1 1 auto;min-width:0;width:auto}
+@media(max-width:620px){.fm-face{width:34px;height:34px}.nav-search .fm-face{width:36px;height:36px;margin-inline-end:8px}}

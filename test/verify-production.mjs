@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Production-mode verification in a THROWAWAY copy (test/out-prod, test/out-prodcfg; both gitignored). The repository's approvals and config are not changed.
 // Reads the REAL config/approvals.json and config/site.json (the legal details the owner supplied on 2026-11-03 are recorded there). It proves what a
-// production package contains: SEO, address, legal pages, self-hosted fonts, NVIDIA/artwork withholding, IOSutra, affiliate, voice search.
+// production package contains: SEO, address, legal pages, self-hosted fonts, IOSutra branding, NVIDIA badge, Digital Librarian face, affiliate, voice search.
 //   node test/verify-production.mjs
 import fs from 'node:fs';
 import path from 'node:path';
@@ -27,9 +27,11 @@ ok(r.status !== 0 && /legal: the Terms, Refund, Privacy and Affiliate pages are 
 const promo = await import('../scripts/promo.mjs');
 const reg = J('data/promos.json');
 const strict = promo.validate(reg, { root: ROOT, production: true, withholdUnverified: false });
-ok(strict.blockers.some((b) => /nvidia-inception-membership/.test(b)) && strict.blockers.some((b) => /nvidia-trademark-notice/.test(b)), 'without the owner launch policy, unverified NVIDIA claims still BLOCK a production build');
-const lenient = promo.validate(reg, { root: ROOT, production: true, withholdUnverified: true });
-ok(lenient.blockers.length === 0 && lenient.warnings.some((w) => /WITHHELD/.test(w)), 'with the owner launch policy, unverified claims are withheld (warning) and nothing else blocks');
+ok(strict.blockers.length === 0 && strict.warnings.some((w) => /nvidia-trademark-notice/.test(w) && /attribution/.test(w)), 'production validation: the NVIDIA membership claim is verified (owner statement 2026-11-03), so nothing blocks; the trademark line is an attribution warning only');
+const unverified = JSON.parse(JSON.stringify(reg)); unverified.claims.find((c) => c.id === 'nvidia-inception-membership').status = 'owner-asserted';
+ok(promo.validate(unverified, { root: ROOT, production: true, withholdUnverified: false }).blockers.some((b) => /nvidia-inception-membership/.test(b)), 'an unverified membership claim still BLOCKS a production build without the launch policy');
+const lenient = promo.validate(unverified, { root: ROOT, production: true, withholdUnverified: true });
+ok(lenient.blockers.length === 0 && lenient.warnings.some((w) => /WITHHELD/.test(w)), 'with the launch policy an unverified membership claim is withheld, not published, and nothing else blocks');
 
 r = run({});
 ok(r.status === 0, `production build (real config and approvals) succeeds${r.status === 0 ? '' : ': ' + (r.stderr || r.stdout).slice(-400)}`);
@@ -61,19 +63,25 @@ if (r.status === 0) {
   ok(locs.length > 5000 && locs.every((u) => u.startsWith(ADDR + '/')) && !locs.some((u) => /\/book\/$/.test(u)) && new Set(locs).size === locs.length, `sitemap.xml: ${locs.length} unique URLs, all on ${ADDR}, none for the noindex book shell`);
   const home = fs.readFileSync(path.join(out, 'index.html'), 'utf8');
 
-  // ---- owner launch policy: NVIDIA claims and unapproved artwork withheld; IOSutra promotion kept ----
-  let nvHits = [], other = '';
-  for (const f of files) { if (/\.(html|js|css|json|svg|txt)$/.test(f)) { if (/nvidia/i.test(fs.readFileSync(f, 'utf8'))) nvHits.push(rel(f)); } else if (/nvidia|inception/i.test(rel(f))) nvHits.push(rel(f)); }
-  ok(nvHits.length === 0, `no NVIDIA badge, membership, endorsement or trademark text anywhere in the production package (${nvHits.length} files: ${nvHits.slice(0, 3).join(', ')})`);
-  ok(!files.some((f) => rel(f).startsWith('assets/librarian/')) && /ask-face-ph/.test(home), 'Digital Librarian character artwork is left out (rights not approved); the Ask box keeps working with its plain emblem');
-  ok(!files.some((f) => /assets\/partner\//.test(rel(f))), 'no IOSutra picture or partner artwork is shipped (rights not approved)');
+  // ---- IOSutra branding, NVIDIA Inception badge, Digital Librarian face (owner instructions of 2026-11-03) ----
   const tech = fs.readFileSync(path.join(out, 'technology/index.html'), 'utf8');
-  ok(/data-promo="iosutra-technology"/.test(home) && /Wellness and AI Technology/.test(home) && /href="https:\/\/iosutra\.com\/\?utm_source=/.test(home), 'the IOSutra promotion is still on the homepage with its headline and link');
-  ok(/data-promo="iosutra-technology"/.test(tech) && /IOSutra is a separate product from Forbidden Mantra Press\./.test(tech) && /foot-promo/.test(home), 'the IOSutra page and footer line remain, with the separate-product statement');
-  ok(!/<img[^>]+(iosutra-wellness|partner)/.test(home + tech), 'the IOSutra section renders without any picture (text and link only)');
+  const has = (f) => fs.existsSync(path.join(out, f));
+  ok(has('assets/partner/iosutra-wellness-ai.webp') && has('assets/partner/iosutra-inception-member.webp') && has('assets/partner/nvidia-inception-program-badge-rgb-for-screen.svg') && has('assets/librarian/librarian.webp'), 'the IOSutra picture, IOSutra logo panel, official NVIDIA badge and the Digital Librarian image are in the package');
+  ok(/<img src="[^"]*iosutra-wellness-ai\.webp"/.test(home) && !/io-art|io-mark|io-wordmark/.test(home + tech), 'the IOSutra card shows the original picture, with no drawn placeholder mark');
+  ok(/<img src="[^"]*iosutra-inception-member\.webp" width="288" height="99" alt="IOSutra, Inception Member"/.test(home) && /<img src="[^"]*nvidia-inception-program-badge-rgb-for-screen\.svg" alt="NVIDIA Inception Program badge" height="99"/.test(home), 'the original IOSutra logo panel (288x99) and the unmodified official NVIDIA badge (99 px) are shown on the homepage');
+  ok(/IOSutra is a member of the NVIDIA Inception program\./.test(home) && /does not imply that NVIDIA sponsors or endorses/.test(home) && /NVIDIA and NVIDIA Inception are trademarks of NVIDIA Corporation\./.test(home), 'the membership statement, the no-endorsement statement and the trademark line are all shown');
+  const nvText = home + tech + fs.readFileSync(path.join(out, 'about/privacy/index.html'), 'utf8');
+  ok(!/powered by NVIDIA|NVIDIA partner|NVIDIA-certified|NVIDIA-backed|in partnership with NVIDIA|NVIDIA-approved|endorsed by NVIDIA/i.test(nvText.replace(/does not imply that NVIDIA sponsors or endorses/gi, '')), 'no prohibited NVIDIA wording (powered by, partner, certified, backed, approved, endorsed by) appears');
+  ok(/class="ask-face" aria-hidden="true" style="background-image:url\([^)]*assets\/librarian\/librarian\.webp\)"/.test(home) && !/ask-face-ph/.test(home), 'the homepage Ask box shows the Digital Librarian face (no sparkle placeholder)');
+  // the face beside every search bar: header search on every page, filter-bar search wherever one exists
+  let navPages = 0, navFace = 0, fqPages = 0, fqFace = 0;
+  for (const f of html) { const t = fs.readFileSync(f, 'utf8'); if (/class="nav-search"/.test(t)) { navPages++; if (/aria-label="Site search"><span class="fm-face" aria-hidden="true"><\/span>/.test(t)) navFace++; } if (/class="f-q"/.test(t)) { fqPages++; if (/f-q-row"><span class="fm-face" aria-hidden="true"><\/span>/.test(t)) fqFace++; } }
+  ok(navPages > 10000 && navFace === navPages && fqPages > 100 && fqFace === fqPages, `the Digital Librarian face sits beside every search bar: header search ${navFace}/${navPages} pages, filter-bar search ${fqFace}/${fqPages} pages, plus the homepage Ask box`);
+  ok(/\.fm-face\{[^}]*url\(librarian\/librarian\.webp\)/.test(fs.readFileSync(path.join(out, 'assets/style.css'), 'utf8')), 'the face uses the original asset (assets/librarian/librarian.webp), not a new or generic image');
+  ok(/data-promo="iosutra-technology"/.test(home) && /Wellness and AI Technology/.test(home) && /href="https:\/\/iosutra\.com\/\?utm_source=forbidden-mantra-press&amp;utm_medium=cross-promo&amp;utm_campaign=iosutra-technology/.test(home) && /data-promo="iosutra-technology"/.test(tech) && /foot-promo/.test(home), 'the IOSutra promotion keeps its headline, link, campaign tags, page and footer line');
   ok(/Forbidden Mantra Press is a curated library and publisher\./.test(tech) && !/is a bookstore and publisher/i.test(tech), 'the IOSutra page opens with "Forbidden Mantra Press is a curated library and publisher."');
   let bs = 0; for (const f of html) if (/separate product from this bookstore/i.test(fs.readFileSync(f, 'utf8'))) bs++;
-  ok(bs === 0 && /separate product from this library/.test(tech) && /IOSutra is a separate product from Forbidden Mantra Press\./.test(home) && /iosutra\.com\/\?utm_source=forbidden-mantra-press&amp;utm_medium=cross-promo&amp;utm_campaign=iosutra-technology/.test(home), 'the IOSutra page says "a separate product from this library", the homepage card says "a separate product from Forbidden Mantra Press", no "bookstore" wording is left, and the link keeps its campaign tags');
+  ok(bs === 0 && /separate product from this library/.test(tech) && /iosutra\.com\/\?utm_source=forbidden-mantra-press&amp;utm_medium=cross-promo&amp;utm_campaign=iosutra-technology/.test(home), 'the IOSutra page says "a separate product from this library" and no "bookstore" wording is left; the link keeps its campaign tags');
 
   // ---- wording consistency with the affiliate-referral model (owner-approved 2026-11-03) ----
   let cb = 0, st = 0; for (const f of html) { const t = fs.readFileSync(f, 'utf8'); if (/curated bookstore/i.test(t)) cb++; if (/<p class="foot-h"[^>]*>Store<\/p>/.test(t)) st++; }

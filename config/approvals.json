@@ -21,16 +21,22 @@
     "quote": "Owner instruction of 2026-11-03: 'Preserve the IOSutra promotion as currently implemented, unless a specific legal or technical issue prevents release.'"
   },
   "iosutraArtworkRights": {
-    "approved": false,
-    "approvedBy": null,
-    "approvedOn": null,
-    "covers": "The meditating man and robot picture: commercial-use and likeness permissions."
+    "approved": true,
+    "approvedBy": "site owner (explicit instruction in the working session)",
+    "approvedOn": "2026-11-03",
+    "basis": "owner-instruction",
+    "covers": "The meditating man and robot picture and the IOSutra logo panel, as supplied by the owner (assets-src/partner/).",
+    "quote": "Owner instruction of 2026-11-03: 'Restore the original IOSutra branding and official NVIDIA Inception badge using the supplied assets ... Also investigate and restore the original Digital Librarian face beside every search bar.'",
+    "limits": "Recorded from the owner's instruction to restore the supplied assets. Claude has not independently verified licence or likeness permissions; the owner is responsible for them."
   },
   "librarianArtworkRights": {
-    "approved": false,
-    "approvedBy": null,
-    "approvedOn": null,
-    "covers": "The digital librarian character artwork."
+    "approved": true,
+    "approvedBy": "site owner (explicit instruction in the working session)",
+    "approvedOn": "2026-11-03",
+    "basis": "owner-instruction",
+    "covers": "The Digital Librarian character artwork (assets-src/librarian/librarian.webp), shown whole in the floating guide and as a face beside every search bar.",
+    "quote": "Owner instruction of 2026-11-03: 'Restore the original IOSutra branding and official NVIDIA Inception badge using the supplied assets ... Also investigate and restore the original Digital Librarian face beside every search bar.'",
+    "limits": "Recorded from the owner's instruction to restore the supplied asset. Claude has not independently verified licence or provenance; the owner is responsible for them."
   },
   "legalPagesReviewed": {
     "approved": true,
@@ -64,7 +70,8 @@
     "approvedBy": "site owner (explicit instruction in the working session)",
     "approvedOn": "2026-11-03",
     "quote": "Owner instruction of 2026-11-03: 'Do not publish unverified NVIDIA membership or endorsement claims. If their approval cannot be established, omit or neutralize only the unverified claim rather than blocking the entire launch.'",
-    "effect": "A production build leaves out the NVIDIA Inception badge, the 'Inception Member' tile, the membership statement, the non-endorsement/trademark lines and the NVIDIA link while data/promos.json claims are not verified; the IOSutra promotion stays, with the line 'IOSutra is a separate product from Forbidden Mantra Press.' Artwork (IOSutra picture, Digital Librarian character) is left out of a production build while iosutraArtworkRights / librarianArtworkRights are not approved; the surrounding sections and the Digital Librarian keep working. To publish them later, record the evidence/approval and rebuild."
+    "effect": "A production build leaves out the NVIDIA Inception badge, the 'Inception Member' tile, the membership statement, the non-endorsement/trademark lines and the NVIDIA link while data/promos.json claims are not verified; the IOSutra promotion stays, with the line 'IOSutra is a separate product from Forbidden Mantra Press.' Artwork (IOSutra picture, Digital Librarian character) is left out of a production build while iosutraArtworkRights / librarianArtworkRights are not approved; the surrounding sections and the Digital Librarian keep working. To publish them later, record the evidence/approval and rebuild.",
+    "note": "2026-11-03: the owner stated that IOSutra's NVIDIA Inception membership is verified, so the membership claim is no longer withheld. The policy still withholds any other unverified NVIDIA membership or endorsement claim."
   },
   "publicContact": {
     "approved": true,

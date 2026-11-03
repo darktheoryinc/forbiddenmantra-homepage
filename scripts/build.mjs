@@ -76,7 +76,7 @@ const AMZ_APPROVED = APPROVALS.amazonHostedCovers?.approved === true && process.
 const AMAZON_COVERS_PREVIEW = process.env.FM_AMAZON_COVERS === 'preview' && !AMZ_APPROVED;
 if (AMAZON_COVERS_PREVIEW && (process.env.FM_PUBLIC || process.env.FM_ENV === 'production')) { console.error('FM_AMAZON_COVERS=preview is refused for public or production builds unless config/approvals.json amazonHostedCovers is approved (docs/AMAZON-HOSTED-COVERS.md).'); process.exit(1); }
 const AMAZON_COVERS = AMZ_APPROVED || AMAZON_COVERS_PREVIEW;
-const CLAIMS_VERIFIED = ['nvidia-inception-membership', 'no-endorsement', 'nvidia-trademark-notice'].every((id) => PROMOS.claims.find((c) => c.id === id)?.status === 'verified');
+const CLAIMS_VERIFIED = ['nvidia-inception-membership', 'no-endorsement'].every((id) => PROMOS.claims.find((c) => c.id === id)?.status === 'verified');
 const PUBLIC_OUT = !!process.env.FM_PUBLIC, NVIDIA_OK = (!PUBLIC_OUT || APPROVALS.nvidiaBranding?.approved === true) && (!PRODUCTION || CLAIMS_VERIFIED);
 const IO_ART_OK = !PRODUCTION || APPROVALS.iosutraArtworkRights?.approved === true, LIB_ART_OK = !PRODUCTION || APPROVALS.librarianArtworkRights?.approved === true;
 const promoCtx = { root: ROOT, production: PRODUCTION, nvidia: NVIDIA_OK, art: IO_ART_OK, href: (p) => href(p), asset: (f) => `${ROOT_PREFIX}assets/partner/${f}` };
@@ -173,6 +173,9 @@ const worksIn = (deptId) => cat.works.filter((w) => w.subjects.includes(deptId))
 const worksInHub = (hubId) => cat.works.filter((w) => w.subjects.some((s) => dept.get(s).hubs.includes(hubId)));
 const LIB = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/librarian.json'), 'utf8'));
 const LIB_ART = LIB_ART_OK && LIB.art?.file && LIB.art.rightsConfirmed && fs.existsSync(path.join(ROOT, 'assets-src/librarian', LIB.art.file)) ? LIB.art : null;
+
+// The Digital Librarian's face (a crop of the same owner-supplied image used by the Ask box and the floating guide), shown beside every search bar. Nothing is drawn when the art is not shipped.
+const libFace = () => (LIB_ART ? '<span class="fm-face" aria-hidden="true"></span>' : ''); // the image is set in style.css (assets/librarian/librarian.webp, relative to the stylesheet), so cached markup works at any page depth
 // ---------- verified covers (data/covers.json; empty until covers are supplied or licensed; see docs/COVERS.md) ----------
 const COVERS = loadCovers();
 if (COVERS.errors.length) { console.error('COVER MANIFEST ERRORS:\n  ' + COVERS.errors.join('\n  ')); process.exit(1); }
@@ -369,7 +372,7 @@ function filterBarRaw(ctx, { subjects = true, traditions = true, press = true, q
   const fopts = Object.entries(tax.formats).map(([k, v]) => `<option value="${k}" data-i18n="fmt_${k}">${esc(en['fmt_' + k] ?? v)}</option>`).join('');
   const lopts = Object.entries(tax.levels).map(([k, v]) => `<option value="${k}" data-i18n="lvl_${k}">${esc(en['lvl_' + k] ?? v)}</option>`).join('');
   return `<form class="filters" role="search" aria-label="Filter books" data-filterbar onsubmit="return false">
-  ${q ? `<label class="f-q">${S('f_q')}<input type="search" name="q" autocomplete="off" ${A('placeholder', 'f_q_ph')}></label>` : ''}
+  ${q ? `<label class="f-q">${S('f_q')}<span class="f-q-row">${libFace()}<input type="search" name="q" autocomplete="off" ${A('placeholder', 'f_q_ph')}></span></label>` : ''}
   ${subjects ? `<label>${S('f_subject')}<select name="subject"><option value="" data-i18n="f_all_subjects">${esc(en.f_all_subjects)}</option>${tax.departments.map((d) => `<option value="${d.id}">${esc(d.name)}</option>`).join('')}</select></label>` : ''}
   ${traditions ? `<label>${S('f_tradition')}<select name="tradition"><option value="" data-i18n="f_all_traditions">${esc(en.f_all_traditions)}</option>${tax.traditions.map((t) => `<option value="${t.id}">${esc(t.name)}</option>`).join('')}</select></label>` : ''}
   ${lang ? `<label>${S('f_language')}<select name="lang">${langOptions(ctx)}</select></label>` : ''}
@@ -442,7 +445,7 @@ ${PRODUCTION ? '' : `<div class="preview-bar" role="region" aria-label="Preview 
 <header class="site-header">
   <div class="wrap header-in${homeAsk ? ' no-search' : ''}">
     <a class="logo" href="${href('')}" aria-label="Forbidden Mantra Press, home"><picture><source media="(max-width:520px)" srcset="${ROOT_PREFIX}assets/brand/logo-header-mobile.png 1x, ${ROOT_PREFIX}assets/brand/logo-header-mobile-2x.png 2x"><img src="${ROOT_PREFIX}assets/brand/logo-header-desktop.png" srcset="${ROOT_PREFIX}assets/brand/logo-header-desktop.png 1x, ${ROOT_PREFIX}assets/brand/logo-header-desktop-2x.png 2x" width="325" height="56" alt="Forbidden Mantra"></picture></a>
-    ${homeAsk ? '' : `<form class="nav-search" action="${href('search/')}" method="get" role="search" aria-label="Site search"><label class="sr" for="q-nav" data-i18n="search_label">${esc(en.search_label)}</label><input id="q-nav" type="search" name="q" ${A('placeholder', 'search_ph')}><button type="submit" data-i18n="search_btn">${esc(en.search_btn)}</button></form>`}
+    ${homeAsk ? '' : `<form class="nav-search" action="${href('search/')}" method="get" role="search" aria-label="Site search">${libFace()}<label class="sr" for="q-nav" data-i18n="search_label">${esc(en.search_label)}</label><input id="q-nav" type="search" name="q" ${A('placeholder', 'search_ph')}><button type="submit" data-i18n="search_btn">${esc(en.search_btn)}</button></form>`}
     ${langMenu()}
     <button class="nav-toggle" aria-expanded="false" aria-controls="nav" type="button"><span class="sr" data-i18n="menu">${esc(en.menu)}</span><span aria-hidden="true">☰</span></button>
     <nav id="nav" class="nav" aria-label="Main">

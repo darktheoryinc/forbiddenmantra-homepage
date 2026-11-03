@@ -44,7 +44,8 @@ export function validate(reg, { root, production = false, withholdUnverified = f
       const c = claimById.get(id);
       if (!c) { errors.push(`promo ${p.id}: unknown claim "${id}"`); continue; }
       if (c.brand !== p.brand) errors.push(`claim ${id} belongs to ${c.brand}, not ${p.brand}`);
-      if (c.status !== 'verified' && production && withholdUnverified) warnings.push(`claim "${id}" is ${c.status}; WITHHELD from the production site by the owner's launch policy (config/approvals.json launchPolicy), so it is not published`);
+      if (c.status !== 'verified' && !c.attribution && production && withholdUnverified) warnings.push(`claim "${id}" is ${c.status}; WITHHELD from the production site by the owner's launch policy (config/approvals.json launchPolicy), so it is not published`);
+      else if (c.status !== 'verified' && c.attribution) warnings.push(`claim "${id}" is an attribution line and is ${c.status}: ${c.note ?? 'confirm its wording'}`);
       else if (c.status !== 'verified') (production ? blockers : warnings).push(`claim "${id}" is ${c.status}; verify before launch${c.beforeLaunch ? ': ' + c.beforeLaunch.join(' ') : ''}`);
     }
     // an NVIDIA membership claim must always travel with the separation statement
