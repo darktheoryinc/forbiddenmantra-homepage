@@ -11,10 +11,10 @@
     "iosutra": {
       "name": "IOSutra",
       "descriptor": "AI-powered business software platform",
-      "relationship": "Owned by the same team as Forbidden Mantra Press, and a separate product from this bookstore.",
+      "relationship": "Owned by the same team as Forbidden Mantra Press, and a separate product from this library.",
       "url": "https://iosutra.com",
       "urlNote": "Supplied by the site owner on 2026-10-27 (task message). The unrelated company Sutra.AI must never be used.",
-      "blurb": "IOSutra is our AI-powered business software platform for wellness and abundance. It is a separate product from this bookstore.",
+      "blurb": "IOSutra is our AI-powered business software platform for wellness and abundance. It is a separate product from this library.",
       "badges": {
         "nvidiaInception": {
           "enabled": true,

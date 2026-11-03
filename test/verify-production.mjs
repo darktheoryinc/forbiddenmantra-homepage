@@ -71,6 +71,8 @@ if (r.status === 0) {
   ok(/data-promo="iosutra-technology"/.test(home) && /Wellness and AI Technology/.test(home) && /href="https:\/\/iosutra\.com\/\?utm_source=/.test(home), 'the IOSutra promotion is still on the homepage with its headline and link');
   ok(/data-promo="iosutra-technology"/.test(tech) && /IOSutra is a separate product from Forbidden Mantra Press\./.test(tech) && /foot-promo/.test(home), 'the IOSutra page and footer line remain, with the separate-product statement');
   ok(!/<img[^>]+(iosutra-wellness|partner)/.test(home + tech), 'the IOSutra section renders without any picture (text and link only)');
+  let bs = 0; for (const f of html) if (/separate product from this bookstore/i.test(fs.readFileSync(f, 'utf8'))) bs++;
+  ok(bs === 0 && /separate product from this library/.test(home) && /separate product from this library/.test(tech) && /iosutra\.com\/\?utm_source=forbidden-mantra-press&amp;utm_medium=cross-promo&amp;utm_campaign=iosutra-technology/.test(home), 'the IOSutra card says "a separate product from this library" (no "bookstore" left) and keeps its link with the campaign tags');
 
   // ---- wording consistency with the affiliate-referral model (owner-approved 2026-11-03) ----
   let cb = 0, st = 0; for (const f of html) { const t = fs.readFileSync(f, 'utf8'); if (/curated bookstore/i.test(t)) cb++; if (/<p class="foot-h"[^>]*>Store<\/p>/.test(t)) st++; }
