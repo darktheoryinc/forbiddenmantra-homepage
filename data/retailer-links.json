@@ -125043,110 +125043,6 @@
    "url": "https://www.amazon.com/s?k=9780618767465&i=stripbooks"
   },
   {
-   "work": "shadows-on-the-rock",
-   "title": "Shadows on the Rock",
-   "edition": "9781075593567",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781075593567&i=stripbooks"
-  },
-  {
-   "work": "shadows-on-the-rock",
-   "title": "Shadows on the Rock Annotated",
-   "edition": "9798808444652",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9798808444652&i=stripbooks"
-  },
-  {
-   "work": "shadows-on-the-rock",
-   "title": "Shadows on the Rock",
-   "edition": "9798633636932",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9798633636932&i=stripbooks"
-  },
-  {
-   "work": "bat",
-   "title": "Bat",
-   "edition": "9781480436749",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781480436749&i=stripbooks"
-  },
-  {
-   "work": "bat",
-   "title": "Bat Illustrated",
-   "edition": "9798523274442",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9798523274442&i=stripbooks"
-  },
-  {
-   "work": "bat",
-   "title": "Bat (Annotated)",
-   "edition": "9781798169315",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781798169315&i=stripbooks"
-  },
-  {
-   "work": "bat",
-   "title": "Bat Illustrated",
-   "edition": "9798401321152",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9798401321152&i=stripbooks"
-  },
-  {
-   "work": "the-shadow-line",
-   "title": "The shadow-line",
-   "edition": "9780140180978",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780140180978&i=stripbooks"
-  },
-  {
-   "work": "the-shadow-line",
-   "title": "Shadow-Line",
-   "edition": "9798831361681",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9798831361681&i=stripbooks"
-  },
-  {
-   "work": "the-shadow-line",
-   "title": "Shadow-Line",
-   "edition": "9781974030576",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781974030576&i=stripbooks"
-  },
-  {
-   "work": "darkwater",
-   "title": "Darkwater",
-   "edition": "9781978238626",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781978238626&i=stripbooks"
-  },
-  {
-   "work": "darkwater",
-   "title": "Darkwater",
-   "edition": "9798473087765",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9798473087765&i=stripbooks"
-  },
-  {
-   "work": "darkwater",
-   "title": "Darkwater",
-   "edition": "9781725816510",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781725816510&i=stripbooks"
-  },
-  {
    "work": "a-childs-garden-of-verses",
    "title": "A child's garden of verses",
    "edition": "9781595720573",
@@ -125256,47 +125152,6 @@
    "url": "https://www.amazon.com/s?k=9788466357302&i=stripbooks"
   },
   {
-   "work": "thunderball-james-bond",
-   "title": "Thunderball : James Bond",
-   "edition": "9798525764033",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9798525764033&i=stripbooks"
-  },
-  {
-   "work": "thunderball-james-bond",
-   "title": "Thunderball (James Bond 007)",
-   "edition": "9780670910465",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0670910465",
-   "candidate": true
-  },
-  {
-   "work": "thunderball-james-bond",
-   "title": "Thunderball (James Bond 007)",
-   "edition": "9780670910465",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780670910465&i=stripbooks"
-  },
-  {
-   "work": "thunderball-james-bond",
-   "title": "Thunderball",
-   "edition": "9781915797308",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781915797308&i=stripbooks"
-  },
-  {
-   "work": "thunderball-james-bond",
-   "title": "Thunderball",
-   "edition": "9780099576952",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780099576952&i=stripbooks"
-  },
-  {
    "work": "eragon",
    "title": "Eragon",
    "edition": "9780966621334",
@@ -125345,48 +125200,6 @@
    "url": "https://www.amazon.com/s?k=9798537106654&i=stripbooks"
   },
   {
-   "work": "the-red-house-mystery",
-   "title": "The Red House Mystery",
-   "edition": "9781406947007",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/1406947008",
-   "candidate": true
-  },
-  {
-   "work": "the-red-house-mystery",
-   "title": "The Red House Mystery",
-   "edition": "9781406947007",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781406947007&i=stripbooks"
-  },
-  {
-   "work": "the-red-house-mystery",
-   "title": "The Red House Mystery",
-   "edition": "9781905432905",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/1905432909",
-   "candidate": true
-  },
-  {
-   "work": "the-red-house-mystery",
-   "title": "The Red House Mystery",
-   "edition": "9781905432905",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781905432905&i=stripbooks"
-  },
-  {
-   "work": "the-red-house-mystery",
-   "title": "The red house mystery",
-   "edition": "9781449595142",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781449595142&i=stripbooks"
-  },
-  {
    "work": "science-bug",
    "title": "Science Bug",
    "edition": "9780435197032",
@@ -125403,56 +125216,6 @@
    "url": "https://www.amazon.com/s?k=9781797533445&i=stripbooks"
   },
   {
-   "work": "an-outcast-of-the-islands",
-   "title": "An Outcast of the Islands",
-   "edition": "9781775414803",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781775414803&i=stripbooks"
-  },
-  {
-   "work": "an-outcast-of-the-islands",
-   "title": "An Outcast of the Islands",
-   "edition": "9789997497994",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/9997497996",
-   "candidate": true
-  },
-  {
-   "work": "an-outcast-of-the-islands",
-   "title": "An Outcast of the Islands",
-   "edition": "9789997497994",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9789997497994&i=stripbooks"
-  },
-  {
-   "work": "an-outcast-of-the-islands",
-   "title": "An outcast of the islands",
-   "edition": "9781560005339",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781560005339&i=stripbooks"
-  },
-  {
-   "work": "an-outcast-of-the-islands",
-   "title": "An Outcast of the Islands",
-   "edition": "9781576466902",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/1576466906",
-   "candidate": true
-  },
-  {
-   "work": "an-outcast-of-the-islands",
-   "title": "An Outcast of the Islands",
-   "edition": "9781576466902",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781576466902&i=stripbooks"
-  },
-  {
    "work": "golden-apples-of-the-sun",
    "title": "Golden Apples of the Sun",
    "edition": "9780435123604",
@@ -125467,38 +125230,6 @@
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9780547013725&i=stripbooks"
-  },
-  {
-   "work": "don-segundo-sombra",
-   "title": "Don Segundo Sombra",
-   "edition": "9780822955245",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780822955245&i=stripbooks"
-  },
-  {
-   "work": "deathlands",
-   "title": "Deathlands",
-   "edition": "9780373625130",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780373625130&i=stripbooks"
-  },
-  {
-   "work": "deathlands",
-   "title": "Deathlands",
-   "edition": "9780373625154",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780373625154&i=stripbooks"
-  },
-  {
-   "work": "our-nig",
-   "title": "Our nig",
-   "edition": "9780394715582",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780394715582&i=stripbooks"
   },
   {
    "work": "dragon-reborn",
@@ -130230,14 +129961,6 @@
    "url": "https://www.amazon.com/s?k=9780394838007&i=stripbooks"
   },
   {
-   "work": "the-moon",
-   "title": "The moon",
-   "edition": "9780749675462",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780749675462&i=stripbooks"
-  },
-  {
    "work": "the-moon-book",
    "title": "The Moon Book",
    "edition": "9781250206183",
@@ -131177,14 +130900,6 @@
    "url": "https://www.amazon.com/s?k=9798991011426&i=stripbooks"
   },
   {
-   "work": "my-little-pony-hasbro",
-   "title": "My Little Pony",
-   "edition": "9780316361378",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780316361378&i=stripbooks"
-  },
-  {
    "work": "the-mystic-test-book-of-the-hindu-occult-chambers",
    "title": "The Mystic Test Book of The Hindu Occult Chambers",
    "edition": "9781594620942",
@@ -131965,39 +131680,6 @@
    "url": "https://www.amazon.com/dp/0606358331"
   },
   {
-   "work": "old-enough-to-save-the-planet",
-   "title": "Old Enough to Save the Planet",
-   "edition": "9781419749148",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/1419749145",
-   "candidate": true
-  },
-  {
-   "work": "old-enough-to-save-the-planet",
-   "title": "Old Enough to Save the Planet",
-   "edition": "9781419749148",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781419749148&i=stripbooks"
-  },
-  {
-   "work": "old-enough-to-save-the-planet",
-   "title": "Old Enough to Save the Planet",
-   "edition": "9781647000837",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781647000837&i=stripbooks"
-  },
-  {
-   "work": "old-enough-to-save-the-planet",
-   "title": "Old Enough to Save the Planet",
-   "edition": "9781647002381",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781647002381&i=stripbooks"
-  },
-  {
    "work": "willows-challenge",
    "title": "Willow's Challenge",
    "edition": "9781479565450",
@@ -132053,47 +131735,6 @@
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9780147515728&i=stripbooks"
-  },
-  {
-   "work": "one-child",
-   "title": "One Child",
-   "edition": "9781863744775",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781863744775&i=stripbooks"
-  },
-  {
-   "work": "one-child",
-   "title": "One child",
-   "edition": "9781566563307",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781566563307&i=stripbooks"
-  },
-  {
-   "work": "one-child",
-   "title": "One Child",
-   "edition": "9781863745086",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/1863745084",
-   "candidate": true
-  },
-  {
-   "work": "one-child",
-   "title": "One Child",
-   "edition": "9781863745086",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781863745086&i=stripbooks"
-  },
-  {
-   "work": "one-child",
-   "title": "One Child",
-   "edition": "9781863743211",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781863743211&i=stripbooks"
   },
   {
    "work": "spellcraft",
@@ -132869,14 +132510,6 @@
    "url": "https://www.amazon.com/s?k=9781459743144&i=stripbooks"
   },
   {
-   "work": "breaking-the-curse",
-   "title": "Breaking the Curse",
-   "edition": "9781612548005",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781612548005&i=stripbooks"
-  },
-  {
    "work": "breaking-curses",
    "title": "Breaking Curses",
    "edition": "9781403385819",
@@ -133180,23 +132813,6 @@
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9781644213858&i=stripbooks"
-  },
-  {
-   "work": "break-up-dont-break-down",
-   "title": "Break Up, Don't Break Down",
-   "edition": "9780966513219",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0966513215",
-   "candidate": true
-  },
-  {
-   "work": "break-up-dont-break-down",
-   "title": "Break Up, Don't Break Down",
-   "edition": "9780966513219",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780966513219&i=stripbooks"
   },
   {
    "work": "breaking-the-chains",
@@ -133933,14 +133549,6 @@
    "url": "https://www.amazon.com/s?k=9780066210155&i=stripbooks"
   },
   {
-   "work": "warrior-women",
-   "title": "Warrior Women",
-   "edition": "9781607014683",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781607014683&i=stripbooks"
-  },
-  {
    "work": "magical-circle-school-newsletter",
    "title": "Magical Circle School Newsletter",
    "edition": "9780557133703",
@@ -134102,14 +133710,6 @@
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9780812516524&i=stripbooks"
-  },
-  {
-   "work": "my-fair-captain",
-   "title": "My Fair Captain",
-   "edition": "9781640806870",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781640806870&i=stripbooks"
   },
   {
    "work": "compromising-positions",
@@ -134703,22 +134303,6 @@
    "url": "https://www.amazon.com/s?k=9780470361559&i=stripbooks"
   },
   {
-   "work": "yule-log-murder",
-   "title": "Yule Log Murder",
-   "edition": "9781432853730",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781432853730&i=stripbooks"
-  },
-  {
-   "work": "yule-log-murder",
-   "title": "Yule Log Murder",
-   "edition": "9781496717054",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781496717054&i=stripbooks"
-  },
-  {
    "work": "krampus",
    "title": "Krampus",
    "edition": "9780062095664",
@@ -134733,22 +134317,6 @@
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9780062095657&i=stripbooks"
-  },
-  {
-   "work": "crewel-yule",
-   "title": "Crewel Yule",
-   "edition": "9780425198278",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780425198278&i=stripbooks"
-  },
-  {
-   "work": "crewel-yule",
-   "title": "Crewel yule",
-   "edition": "9781587248542",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781587248542&i=stripbooks"
   },
   {
    "work": "cool-yule",
@@ -134988,48 +134556,6 @@
    "url": "https://www.amazon.com/s?k=9780102546910&i=stripbooks"
   },
   {
-   "work": "the-holcroft-covenant",
-   "title": "The Holcroft Covenant",
-   "edition": "9780752858579",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0752858572",
-   "candidate": true
-  },
-  {
-   "work": "the-holcroft-covenant",
-   "title": "The Holcroft Covenant",
-   "edition": "9780752858579",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780752858579&i=stripbooks"
-  },
-  {
-   "work": "the-holcroft-covenant",
-   "title": "The Holcroft covenant",
-   "edition": "9780862201692",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780862201692&i=stripbooks"
-  },
-  {
-   "work": "holcroft-covenant-r-p",
-   "title": "Holcroft Covenant R\\P",
-   "edition": "9780246110480",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0246110481",
-   "candidate": true
-  },
-  {
-   "work": "holcroft-covenant-r-p",
-   "title": "Holcroft Covenant R\\P",
-   "edition": "9780246110480",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780246110480&i=stripbooks"
-  },
-  {
    "work": "arms-and-the-covenant",
    "title": "Arms and the Covenant",
    "edition": "9780795330377",
@@ -135060,39 +134586,6 @@
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9780904002478&i=stripbooks"
-  },
-  {
-   "work": "covenant-of-the-crown-star-trek",
-   "title": "Covenant of the Crown (Star Trek)",
-   "edition": "9781852861315",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781852861315&i=stripbooks"
-  },
-  {
-   "work": "covenant-of-the-crown-star-trek",
-   "title": "The covenant of the crown",
-   "edition": "9780839828860",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780839828860&i=stripbooks"
-  },
-  {
-   "work": "covenant-of-the-crown-star-trek",
-   "title": "The Covenant of the Crown",
-   "edition": "9780671833077",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0671833073",
-   "candidate": true
-  },
-  {
-   "work": "covenant-of-the-crown-star-trek",
-   "title": "The Covenant of the Crown",
-   "edition": "9780671833077",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780671833077&i=stripbooks"
   },
   {
    "work": "dragon-school",
@@ -135296,39 +134789,6 @@
    "url": "https://www.amazon.com/s?k=9780934894302&i=stripbooks"
   },
   {
-   "work": "covenant-with-death",
-   "title": "Covenant With Death",
-   "edition": "9789997407214",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/9997407210",
-   "candidate": true
-  },
-  {
-   "work": "covenant-with-death",
-   "title": "Covenant With Death",
-   "edition": "9789997407214",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9789997407214&i=stripbooks"
-  },
-  {
-   "work": "covenant-with-death",
-   "title": "Covenant with Death",
-   "edition": "9781504026895",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781504026895&i=stripbooks"
-  },
-  {
-   "work": "the-covenant",
-   "title": "The covenant",
-   "edition": "9780449244746",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780449244746&i=stripbooks"
-  },
-  {
    "work": "dragon-on-a-pedestal",
    "title": "Dragon on a Pedestal",
    "edition": "9780345335531",
@@ -135369,30 +134829,6 @@
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9780708881200&i=stripbooks"
-  },
-  {
-   "work": "battletech",
-   "title": "BattleTech",
-   "edition": "9781638611554",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781638611554&i=stripbooks"
-  },
-  {
-   "work": "battletech",
-   "title": "BattleTech",
-   "edition": "9781638612650",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781638612650&i=stripbooks"
-  },
-  {
-   "work": "battletech",
-   "title": "BattleTech",
-   "edition": "9781638612315",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781638612315&i=stripbooks"
   },
   {
    "work": "knowing-god-intimately",
@@ -137330,22 +136766,6 @@
    "url": "https://www.amazon.com/s?k=9780791471784&i=stripbooks"
   },
   {
-   "work": "pakistan",
-   "title": "Pakistan",
-   "edition": "9781608519286",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781608519286&i=stripbooks"
-  },
-  {
-   "work": "pakistan",
-   "title": "Pakistan",
-   "edition": "9780823940011",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780823940011&i=stripbooks"
-  },
-  {
    "work": "the-raven-and-the-totem",
    "title": "The raven & the totem",
    "edition": "9780963400000",
@@ -137734,30 +137154,6 @@
    "url": "https://www.amazon.com/s?k=9789354356698&i=stripbooks"
   },
   {
-   "work": "arkham-asylum",
-   "title": "Arkham Asylum",
-   "edition": "9781852862800",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781852862800&i=stripbooks"
-  },
-  {
-   "work": "arkham-asylum",
-   "title": "Arkham Asylum",
-   "edition": "9781401204259",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781401204259&i=stripbooks"
-  },
-  {
-   "work": "arkham-asylum",
-   "title": "Arkham Asylum",
-   "edition": "9780930289560",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780930289560&i=stripbooks"
-  },
-  {
    "work": "one-piece-volume-4",
    "title": "One Piece Volume 4",
    "edition": "9781591163374",
@@ -138112,72 +137508,6 @@
    "url": "https://www.amazon.com/s?k=9788483574034&i=stripbooks"
   },
   {
-   "work": "x-men",
-   "title": "X-Men",
-   "edition": "9782809495034",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/2809495033",
-   "candidate": true
-  },
-  {
-   "work": "x-men",
-   "title": "X-Men",
-   "edition": "9782809495034",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9782809495034&i=stripbooks"
-  },
-  {
-   "work": "x-men",
-   "title": "X-Men",
-   "edition": "9781302930028",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781302930028&i=stripbooks"
-  },
-  {
-   "work": "star-wars-kenobi",
-   "title": "Star Wars: Kenobi",
-   "edition": "9780345546845",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780345546845&i=stripbooks"
-  },
-  {
-   "work": "star-wars-kenobi",
-   "title": "Star Wars: Kenobi",
-   "edition": "9783734160097",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/373416009X",
-   "candidate": true
-  },
-  {
-   "work": "star-wars-kenobi",
-   "title": "Star Wars: Kenobi",
-   "edition": "9783734160097",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9783734160097&i=stripbooks"
-  },
-  {
-   "work": "star-wars-battlefront-ii-inferno-squad-special-edition-exclusive-content-first-edition-first-printing",
-   "title": "Star Wars Battlefront II - Inferno Squad. Special Edition Exclusive Content. First Edition, First Printing",
-   "edition": "9781524797348",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/1524797340"
-  },
-  {
-   "work": "star-wars-battlefront-ii-inferno-squad-special-edition-exclusive-content-first-edition-first-printing",
-   "title": "Star Wars : Battlefront II",
-   "edition": "9781473535817",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781473535817&i=stripbooks"
-  },
-  {
    "work": "bleach-4",
    "title": "Bleach 4",
    "edition": "9788483574010",
@@ -138193,138 +137523,6 @@
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9788483574010&i=stripbooks"
-  },
-  {
-   "work": "mass-effect",
-   "title": "Mass Effect",
-   "edition": "9780345507754",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780345507754&i=stripbooks"
-  },
-  {
-   "work": "mass-effect",
-   "title": "Mass Effect",
-   "edition": "9780345498526",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0345498526",
-   "candidate": true
-  },
-  {
-   "work": "mass-effect",
-   "title": "Mass Effect",
-   "edition": "9780345498526",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780345498526&i=stripbooks"
-  },
-  {
-   "work": "star-wars-the-old-republic-revan",
-   "title": "Star Wars The Old Republic Revan",
-   "edition": "9788491739074",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/8491739076",
-   "candidate": true
-  },
-  {
-   "work": "star-wars-the-old-republic-revan",
-   "title": "Star Wars The Old Republic Revan",
-   "edition": "9788491739074",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9788491739074&i=stripbooks"
-  },
-  {
-   "work": "star-wars-the-old-republic-revan",
-   "title": "Star Wars: Revan",
-   "edition": "9780345511348",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780345511348&i=stripbooks"
-  },
-  {
-   "work": "star-wars-the-old-republic-revan",
-   "title": "Star Wars",
-   "edition": "9781781162040",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/1781162042",
-   "candidate": true
-  },
-  {
-   "work": "star-wars-the-old-republic-revan",
-   "title": "Star Wars",
-   "edition": "9781781162040",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781781162040&i=stripbooks"
-  },
-  {
-   "work": "star-wars-the-old-republic-revan",
-   "title": "STAR WARS : The Old Republic : Revan",
-   "edition": "9788448005207",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/8448005201",
-   "candidate": true
-  },
-  {
-   "work": "star-wars-the-old-republic-revan",
-   "title": "STAR WARS : The Old Republic : Revan",
-   "edition": "9788448005207",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9788448005207&i=stripbooks"
-  },
-  {
-   "work": "marvel-platinum",
-   "title": "Marvel Platinum",
-   "edition": "9781846536434",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781846536434&i=stripbooks"
-  },
-  {
-   "work": "marvel-platinum",
-   "title": "Marvel Platinum",
-   "edition": "9781846538919",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781846538919&i=stripbooks"
-  },
-  {
-   "work": "marvel-platinum",
-   "title": "Marvel Platinum",
-   "edition": "9781846537264",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781846537264&i=stripbooks"
-  },
-  {
-   "work": "marvel-platinum",
-   "title": "Marvel Platinum",
-   "edition": "9781846539718",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781846539718&i=stripbooks"
-  },
-  {
-   "work": "nation-under-our-feet",
-   "title": "Nation under Our Feet",
-   "edition": "9781532143557",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781532143557&i=stripbooks"
-  },
-  {
-   "work": "nation-under-our-feet",
-   "title": "A Nation Under Our Feet",
-   "edition": "9781532147784",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781532147784&i=stripbooks"
   },
   {
    "work": "spider-man-kaare-andrews",
@@ -138434,14 +137632,6 @@
    "url": "https://www.amazon.com/s?k=9780345506184&i=stripbooks"
   },
   {
-   "work": "x-men-ed-bisson",
-   "title": "X-Men",
-   "edition": "9781846539657",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781846539657&i=stripbooks"
-  },
-  {
    "work": "one-piece-17",
    "title": "One Piece 17",
    "edition": "9781417817689",
@@ -138473,14 +137663,6 @@
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9781905239030&i=stripbooks"
-  },
-  {
-   "work": "star-wars-rebel-force-firefight",
-   "title": "Star Wars : Rebel Force Firefight",
-   "edition": "9781484720240",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781484720240&i=stripbooks"
   },
   {
    "work": "star-wars",
@@ -138547,14 +137729,6 @@
    "url": "https://www.amazon.com/dp/1302913123"
   },
   {
-   "work": "star-wars-republic-commando",
-   "title": "Star Wars: Republic Commando",
-   "edition": "9780345498007",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780345498007&i=stripbooks"
-  },
-  {
    "work": "star-wars-triple-zero",
    "title": "Star Wars: Triple Zero",
    "edition": "9780345490094",
@@ -138570,54 +137744,6 @@
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9780345490094&i=stripbooks"
-  },
-  {
-   "work": "star-wars-fatal-alliance",
-   "title": "Star Wars: Fatal Alliance",
-   "edition": "9780345511331",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780345511331&i=stripbooks"
-  },
-  {
-   "work": "star-wars-fatal-alliance",
-   "title": "Star Wars: The Old Republic",
-   "edition": "9783833220364",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9783833220364&i=stripbooks"
-  },
-  {
-   "work": "star-wars-fatal-alliance",
-   "title": "Star Wars",
-   "edition": "9781848568495",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/1848568495"
-  },
-  {
-   "work": "moon-girl-and-devil-dinosaur",
-   "title": "Moon Girl and Devil Dinosaur",
-   "edition": "9781302945008",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781302945008&i=stripbooks"
-  },
-  {
-   "work": "moon-girl-and-devil-dinosaur",
-   "title": "Moon Girl and Devil Dinosaur",
-   "edition": "9781302905347",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781302905347&i=stripbooks"
-  },
-  {
-   "work": "moon-girl-and-devil-dinosaur",
-   "title": "Moon Girl and Devil Dinosaur",
-   "edition": "9781302929848",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781302929848&i=stripbooks"
   },
   {
    "work": "the-positive-background-of-hindu-sociology",
@@ -141067,14 +140193,6 @@
    "url": "https://www.amazon.com/s?k=9780937194539&i=stripbooks"
   },
   {
-   "work": "houghton-mifflin-science-leveled-readers",
-   "title": "Houghton Mifflin Science Leveled Readers",
-   "edition": "9780618613793",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780618613793&i=stripbooks"
-  },
-  {
    "work": "dune-ebook-collection",
    "title": "Dune Ebook Collection",
    "edition": "9780575122796",
@@ -141108,36 +140226,12 @@
    "url": "https://www.amazon.com/s?k=9781399611176&i=stripbooks"
   },
   {
-   "work": "under-the-apple-trees",
-   "title": "Under the Apple-Trees",
-   "edition": "9781679593598",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781679593598&i=stripbooks"
-  },
-  {
    "work": "count-zero",
    "title": "Count Zero",
    "edition": "9780877957690",
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9780877957690&i=stripbooks"
-  },
-  {
-   "work": "grimmy",
-   "title": "Grimmy",
-   "edition": "9780812515275",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780812515275&i=stripbooks"
-  },
-  {
-   "work": "grimmy",
-   "title": "Grimmy",
-   "edition": "9780312873271",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780312873271&i=stripbooks"
   },
   {
    "work": "our-kind",
@@ -141493,30 +140587,6 @@
    "url": "https://www.amazon.com/s?k=9780465079674&i=stripbooks"
   },
   {
-   "work": "science-of-game-of-thrones",
-   "title": "Science of Game of Thrones",
-   "edition": "9781473632318",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781473632318&i=stripbooks"
-  },
-  {
-   "work": "science-of-game-of-thrones",
-   "title": "The Science of Game of Thrones: A myth-busting, mind-blowing, jaw-dropping and fun-filled expedition through the world of Game of Thrones",
-   "edition": "9781473632349",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/147363234X"
-  },
-  {
-   "work": "science-of-game-of-thrones",
-   "title": "Science of Game of Thrones",
-   "edition": "9780316315845",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780316315845&i=stripbooks"
-  },
-  {
    "work": "anatomy-and-physiology-2e",
    "title": "Anatomy and Physiology 2e",
    "edition": "9781951693718",
@@ -141612,30 +140682,6 @@
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9781118000557&i=stripbooks"
-  },
-  {
-   "work": "boy-who-played-with-fusion",
-   "title": "Boy Who Played with Fusion",
-   "edition": "9780544084742",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780544084742&i=stripbooks"
-  },
-  {
-   "work": "boy-who-played-with-fusion",
-   "title": "Boy Who Played with Fusion",
-   "edition": "9780571298143",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780571298143&i=stripbooks"
-  },
-  {
-   "work": "boy-who-played-with-fusion",
-   "title": "Boy Who Played with Fusion",
-   "edition": "9780544705029",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780544705029&i=stripbooks"
   },
   {
    "work": "speech-and-voice-science",
@@ -141851,48 +140897,6 @@
    "url": "https://www.amazon.com/s?k=9780738213248&i=stripbooks"
   },
   {
-   "work": "volcanoes",
-   "title": "Volcanoes",
-   "edition": "9780792253778",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780792253778&i=stripbooks"
-  },
-  {
-   "work": "the-best-of-a-e-van-vogt",
-   "title": "The Best of A. E. van Vogt",
-   "edition": "9780671805463",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0671805460",
-   "candidate": true
-  },
-  {
-   "work": "the-best-of-a-e-van-vogt",
-   "title": "The Best of A. E. van Vogt",
-   "edition": "9780671805463",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780671805463&i=stripbooks"
-  },
-  {
-   "work": "the-best-of-a-e-van-vogt",
-   "title": "The Best of A. E. van Vogt.",
-   "edition": "9780722187746",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0722187742",
-   "candidate": true
-  },
-  {
-   "work": "the-best-of-a-e-van-vogt",
-   "title": "The Best of A. E. van Vogt.",
-   "edition": "9780722187746",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780722187746&i=stripbooks"
-  },
-  {
    "work": "the-short-fiction-of-edgar-allan-poe",
    "title": "The Short Fiction of Edgar Allan Poe",
    "edition": "9780252061257",
@@ -141908,14 +140912,6 @@
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9780252061257&i=stripbooks"
-  },
-  {
-   "work": "gross-science-of-bad-breath-and-cavities",
-   "title": "Gross Science of Bad Breath and Cavities",
-   "edition": "9781508181637",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781508181637&i=stripbooks"
   },
   {
    "work": "breathing-fire",
@@ -142903,23 +141899,6 @@
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9781934364130&i=stripbooks"
-  },
-  {
-   "work": "a-short-history-of-stupid",
-   "title": "A Short History of Stupid",
-   "edition": "9781760294151",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/1760294152",
-   "candidate": true
-  },
-  {
-   "work": "a-short-history-of-stupid",
-   "title": "A Short History of Stupid",
-   "edition": "9781760294151",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781760294151&i=stripbooks"
   },
   {
    "work": "the-yogasutra-of-patanjali",
@@ -148092,23 +147071,6 @@
    "url": "https://www.amazon.com/s?k=9781299885646&i=stripbooks"
   },
   {
-   "work": "nadie-nada-nunca",
-   "title": "Nadie nada nunca",
-   "edition": "9788415539728",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/841553972X",
-   "candidate": true
-  },
-  {
-   "work": "nadie-nada-nunca",
-   "title": "Nadie nada nunca",
-   "edition": "9788415539728",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9788415539728&i=stripbooks"
-  },
-  {
    "work": "invasion-of-the-no-ones",
    "title": "Invasion of the no-ones",
    "edition": "9780671002633",
@@ -148131,31 +147093,6 @@
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9788483467138&i=stripbooks"
-  },
-  {
-   "work": "no-one-will-ever-know",
-   "title": "No one will ever know =",
-   "edition": "9781575371634",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781575371634&i=stripbooks"
-  },
-  {
-   "work": "vuelo-entre-fantasmas",
-   "title": "Vuelo Entre Fantasmas",
-   "edition": "9781410797681",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/1410797686",
-   "candidate": true
-  },
-  {
-   "work": "vuelo-entre-fantasmas",
-   "title": "Vuelo Entre Fantasmas",
-   "edition": "9781410797681",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781410797681&i=stripbooks"
   },
   {
    "work": "st-nadie-in-winter",
@@ -148303,22 +147240,6 @@
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9782840667278&i=stripbooks"
-  },
-  {
-   "work": "bluest-eye",
-   "title": "Bluest Eye",
-   "edition": "9780131109513",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780131109513&i=stripbooks"
-  },
-  {
-   "work": "bluest-eye",
-   "title": "The Bluest Eye",
-   "edition": "9780795327377",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780795327377&i=stripbooks"
   },
   {
    "work": "cartesian-meditations",
@@ -148482,30 +147403,6 @@
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9780316349369&i=stripbooks"
-  },
-  {
-   "work": "from-here-to-eternity",
-   "title": "From Here to Eternity",
-   "edition": "9780141393230",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780141393230&i=stripbooks"
-  },
-  {
-   "work": "from-here-to-eternity",
-   "title": "From Here to Eternity",
-   "edition": "9780747538004",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780747538004&i=stripbooks"
-  },
-  {
-   "work": "from-here-to-eternity",
-   "title": "From Here to Eternity",
-   "edition": "9781453215135",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781453215135&i=stripbooks"
   },
   {
    "work": "aura-energy-workbook",
@@ -150212,30 +149109,6 @@
    "url": "https://www.amazon.com/s?k=9780071433341&i=stripbooks"
   },
   {
-   "work": "human-body",
-   "title": "Human body",
-   "edition": "9781893951846",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781893951846&i=stripbooks"
-  },
-  {
-   "work": "human-body",
-   "title": "Human body",
-   "edition": "9781893951464",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781893951464&i=stripbooks"
-  },
-  {
-   "work": "human-body",
-   "title": "Human body",
-   "edition": "9780099568179",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780099568179&i=stripbooks"
-  },
-  {
    "work": "sex-sleep-eat-drink-dream",
    "title": "Sex sleep eat drink dream",
    "edition": "9780618187584",
@@ -150611,56 +149484,6 @@
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9781647481940&i=stripbooks"
-  },
-  {
-   "work": "the-secret-of-childhood",
-   "title": "The secret of childhood",
-   "edition": "9788125014546",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9788125014546&i=stripbooks"
-  },
-  {
-   "work": "the-secret-of-childhood",
-   "title": "The secret of childhood",
-   "edition": "9780861313754",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780861313754&i=stripbooks"
-  },
-  {
-   "work": "the-secret-of-childhood",
-   "title": "Secret of Childhood",
-   "edition": "9780345275714",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0345275713",
-   "candidate": true
-  },
-  {
-   "work": "the-secret-of-childhood",
-   "title": "Secret of Childhood",
-   "edition": "9780345275714",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780345275714&i=stripbooks"
-  },
-  {
-   "work": "the-secret-of-childhood",
-   "title": "The Secret of Childhood",
-   "edition": "9788125004974",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/8125004971",
-   "candidate": true
-  },
-  {
-   "work": "the-secret-of-childhood",
-   "title": "The Secret of Childhood",
-   "edition": "9788125004974",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9788125004974&i=stripbooks"
   },
   {
    "work": "cleft-tongue",
@@ -152788,14 +151611,6 @@
    "url": "https://www.amazon.com/s?k=9781538723739&i=stripbooks"
   },
   {
-   "work": "physics-of-the-impossible",
-   "title": "Physics of the impossible",
-   "edition": "9780713999921",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780713999921&i=stripbooks"
-  },
-  {
    "work": "unbelievable-stacy-horn",
    "title": "Unbelievable",
    "edition": "9780061778131",
@@ -153497,31 +152312,6 @@
    "url": "https://www.amazon.com/s?k=9780844671888&i=stripbooks"
   },
   {
-   "work": "the-witling",
-   "title": "The witling.",
-   "edition": "9780330307093",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780330307093&i=stripbooks"
-  },
-  {
-   "work": "the-witling",
-   "title": "Witling",
-   "edition": "9780671656348",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0671656341",
-   "candidate": true
-  },
-  {
-   "work": "the-witling",
-   "title": "Witling",
-   "edition": "9780671656348",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780671656348&i=stripbooks"
-  },
-  {
    "work": "out-of-the-darkness",
    "title": "Out of the Darkness",
    "edition": "9780061690365",
@@ -153654,22 +152444,6 @@
    "url": "https://www.amazon.com/s?k=9780689307867&i=stripbooks"
   },
   {
-   "work": "up",
-   "title": "Up",
-   "edition": "9780811844451",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780811844451&i=stripbooks"
-  },
-  {
-   "work": "up",
-   "title": "Up",
-   "edition": "9781452134642",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781452134642&i=stripbooks"
-  },
-  {
    "work": "archon-lana-krumwiede",
    "title": "Archon",
    "edition": "9780763676599",
@@ -153748,30 +152522,6 @@
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9781408885772&i=stripbooks"
-  },
-  {
-   "work": "six",
-   "title": "Six",
-   "edition": "9781481420716",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781481420716&i=stripbooks"
-  },
-  {
-   "work": "six",
-   "title": "Six",
-   "edition": "9781481420709",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781481420709&i=stripbooks"
-  },
-  {
-   "work": "six",
-   "title": "Six",
-   "edition": "9781846883958",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781846883958&i=stripbooks"
   },
   {
    "work": "daughters-of-the-moon",
@@ -154179,14 +152929,6 @@
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9780810814912&i=stripbooks"
-  },
-  {
-   "work": "the-revenge-of-seven",
-   "title": "The Revenge of Seven",
-   "edition": "9780062347053",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0062347055"
   },
   {
    "work": "dark-prince",
@@ -155183,39 +153925,6 @@
    "url": "https://www.amazon.com/s?k=9781577349686&i=stripbooks"
   },
   {
-   "work": "the-elegance-of-the-hedgehog",
-   "title": "The elegance of the hedgehog",
-   "edition": "9780753186138",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780753186138&i=stripbooks"
-  },
-  {
-   "work": "the-elegance-of-the-hedgehog",
-   "title": "Elegance of the Hedgehog",
-   "edition": "9781908313126",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/1908313129",
-   "candidate": true
-  },
-  {
-   "work": "the-elegance-of-the-hedgehog",
-   "title": "Elegance of the Hedgehog",
-   "edition": "9781908313126",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781908313126&i=stripbooks"
-  },
-  {
-   "work": "the-elegance-of-the-hedgehog",
-   "title": "The Elegance of the Hedgehog",
-   "edition": "9781933372600",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781933372600&i=stripbooks"
-  },
-  {
    "work": "the-brothers-lot",
    "title": "The brothers' lot",
    "edition": "9781936070916",
@@ -156179,14 +154888,6 @@
    "url": "https://www.amazon.com/s?k=9780060972813&i=stripbooks"
   },
   {
-   "work": "la-fete-de-linsignifiance-the-celebration-of-insignificance-korean-edition",
-   "title": "La Fete de L'Insignifiance [The Celebration of Insignificance] (Korean Edition)",
-   "edition": "9788937489327",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/8937489325"
-  },
-  {
    "work": "the-music-of-the-primes",
    "title": "The music of the primes",
    "edition": "9780066210704",
@@ -156516,54 +155217,6 @@
    "url": "https://www.amazon.com/s?k=9780061227974&i=stripbooks"
   },
   {
-   "work": "lanterns",
-   "title": "Lanterns",
-   "edition": "9780060958596",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780060958596&i=stripbooks"
-  },
-  {
-   "work": "lanterns",
-   "title": "Lanterns",
-   "edition": "9781299922235",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781299922235&i=stripbooks"
-  },
-  {
-   "work": "lanterns",
-   "title": "Lanterns",
-   "edition": "9780613314039",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780613314039&i=stripbooks"
-  },
-  {
-   "work": "lanterns",
-   "title": "Lanterns",
-   "edition": "9780807072141",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780807072141&i=stripbooks"
-  },
-  {
-   "work": "shakespeares-philosophy",
-   "title": "Shakespeare's Philosophy",
-   "edition": "9780061551673",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780061551673&i=stripbooks"
-  },
-  {
-   "work": "shakespeares-philosophy",
-   "title": "Shakespeare's Philosophy",
-   "edition": "9780061654121",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780061654121&i=stripbooks"
-  },
-  {
    "work": "hare-brain-tortoise-mind",
    "title": "Hare brain, tortoise mind",
    "edition": "9781857024517",
@@ -156669,46 +155322,6 @@
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9781139186025&i=stripbooks"
-  },
-  {
-   "work": "how-to-be-idle",
-   "title": "How to Be Idle",
-   "edition": "9780141015064",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780141015064&i=stripbooks"
-  },
-  {
-   "work": "how-to-be-idle",
-   "title": "How to Be Idle",
-   "edition": "9780060779689",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780060779689&i=stripbooks"
-  },
-  {
-   "work": "how-to-be-idle",
-   "title": "How to Be Idle",
-   "edition": "9780060779696",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780060779696&i=stripbooks"
-  },
-  {
-   "work": "the-conspiracy-of-ignorance",
-   "title": "The conspiracy of ignorance",
-   "edition": "9780060932602",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780060932602&i=stripbooks"
-  },
-  {
-   "work": "the-conspiracy-of-ignorance",
-   "title": "The conspiracy of ignorance",
-   "edition": "9780060194581",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780060194581&i=stripbooks"
   },
   {
    "work": "enlightenment",
@@ -157079,22 +155692,6 @@
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9780061828515&i=stripbooks"
-  },
-  {
-   "work": "the-scientist-in-the-crib",
-   "title": "The scientist in the crib",
-   "edition": "9780688177881",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780688177881&i=stripbooks"
-  },
-  {
-   "work": "the-scientist-in-the-crib",
-   "title": "Scientist in the Crib",
-   "edition": "9780061576447",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780061576447&i=stripbooks"
   },
   {
    "work": "the-kingfishers-wing",
@@ -158479,55 +157076,6 @@
    "url": "https://www.amazon.com/s?k=9798547169472&i=stripbooks"
   },
   {
-   "work": "anthem",
-   "title": "Anthem",
-   "edition": "9798689619866",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9798689619866&i=stripbooks"
-  },
-  {
-   "work": "anthem",
-   "title": "Anthem",
-   "edition": "9781613825136",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/1613825137"
-  },
-  {
-   "work": "anthem",
-   "title": "Anthem",
-   "edition": "9781534942547",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781534942547&i=stripbooks"
-  },
-  {
-   "work": "anthem",
-   "title": "Anthem",
-   "edition": "9781538020661",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/1538020661",
-   "candidate": true
-  },
-  {
-   "work": "anthem",
-   "title": "Anthem",
-   "edition": "9781538020661",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781538020661&i=stripbooks"
-  },
-  {
-   "work": "anthem",
-   "title": "Anthem Another Edition",
-   "edition": "9798708599124",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9798708599124&i=stripbooks"
-  },
-  {
    "work": "the-people-of-the-mist",
    "title": "The People of the Mist",
    "edition": "9781600963476",
@@ -158748,31 +157296,6 @@
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9780593058251&i=stripbooks"
-  },
-  {
-   "work": "the-martians",
-   "title": "The Martians",
-   "edition": "9780553574012",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0553574019",
-   "candidate": true
-  },
-  {
-   "work": "the-martians",
-   "title": "The Martians",
-   "edition": "9780553574012",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780553574012&i=stripbooks"
-  },
-  {
-   "work": "the-martians",
-   "title": "The Martians",
-   "edition": "9780606192804",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780606192804&i=stripbooks"
   },
   {
    "work": "last-man",
@@ -160106,30 +158629,6 @@
    "url": "https://www.amazon.com/s?k=9780075569756&i=stripbooks"
   },
   {
-   "work": "autobiography-of-a-face",
-   "title": "Autobiography of a Face",
-   "edition": "9780613124720",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780613124720&i=stripbooks"
-  },
-  {
-   "work": "autobiography-of-a-face",
-   "title": "Autobiography of a Face",
-   "edition": "9780613648394",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780613648394&i=stripbooks"
-  },
-  {
-   "work": "autobiography-of-a-face",
-   "title": "Autobiography of a face",
-   "edition": "9780395657805",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780395657805&i=stripbooks"
-  },
-  {
    "work": "the-experience-of-nothingness-michael-novak",
    "title": "The experience of nothingness",
    "edition": "9781560009887",
@@ -161192,56 +159691,6 @@
    "url": "https://www.amazon.com/s?k=9781879514102&i=stripbooks"
   },
   {
-   "work": "life-amongst-the-modocs",
-   "title": "Life Amongst the Modocs",
-   "edition": "9780930588793",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0930588797",
-   "candidate": true
-  },
-  {
-   "work": "life-amongst-the-modocs",
-   "title": "Life Amongst the Modocs",
-   "edition": "9780930588793",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780930588793&i=stripbooks"
-  },
-  {
-   "work": "life-amongst-the-modocs",
-   "title": "Life amongst the Modocs",
-   "edition": "9780913522103",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780913522103&i=stripbooks"
-  },
-  {
-   "work": "life-amongst-the-modocs",
-   "title": "Life amongst the Modocs",
-   "edition": "9780913522127",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780913522127&i=stripbooks"
-  },
-  {
-   "work": "life-amongst-the-modocs",
-   "title": "Life Amongst the Modocs",
-   "edition": "9780829015652",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0829015655",
-   "candidate": true
-  },
-  {
-   "work": "life-amongst-the-modocs",
-   "title": "Life Amongst the Modocs",
-   "edition": "9780829015652",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780829015652&i=stripbooks"
-  },
-  {
    "work": "the-pinnacled-glory-of-the-west",
    "title": "The pinnacled glory of the West",
    "edition": "9781578647095",
@@ -161264,14 +159713,6 @@
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9780141983479&i=stripbooks"
-  },
-  {
-   "work": "the-writer-on-her-work",
-   "title": "The Writer on her work",
-   "edition": "9780393013610",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780393013610&i=stripbooks"
   },
   {
    "work": "deleuze-and-ricoeur",
@@ -161707,47 +160148,6 @@
    "url": "https://www.amazon.com/s?k=9781943897018&i=stripbooks"
   },
   {
-   "work": "reason-i-jump",
-   "title": "Reason I Jump",
-   "edition": "9781299778771",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781299778771&i=stripbooks"
-  },
-  {
-   "work": "reason-i-jump",
-   "title": "Reason I Jump",
-   "edition": "9781529375701",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781529375701&i=stripbooks"
-  },
-  {
-   "work": "reason-i-jump",
-   "title": "The Reason I Jump",
-   "edition": "9780812985153",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/081298515X",
-   "candidate": true
-  },
-  {
-   "work": "reason-i-jump",
-   "title": "The Reason I Jump",
-   "edition": "9780812985153",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780812985153&i=stripbooks"
-  },
-  {
-   "work": "reason-i-jump",
-   "title": "The reason I jump",
-   "edition": "9781490602905",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781490602905&i=stripbooks"
-  },
-  {
    "work": "voice-of-shame",
    "title": "Voice of Shame",
    "edition": "9781135061722",
@@ -162100,28 +160500,12 @@
    "url": "https://www.amazon.com/s?k=9780520214125&i=stripbooks"
   },
   {
-   "work": "of-silenced-and-unheard-voices-from-the-south",
-   "title": "Of Silenced and Unheard Voices from the South",
-   "edition": "9781789972559",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781789972559&i=stripbooks"
-  },
-  {
    "work": "indigenous-knowledges-in-global-contexts",
    "title": "Indigenous Knowledges in Global Contexts",
    "edition": "9781442676152",
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9781442676152&i=stripbooks"
-  },
-  {
-   "work": "rethinking-classroom-participation",
-   "title": "Rethinking classroom participation",
-   "edition": "9780807750186",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780807750186&i=stripbooks"
   },
   {
    "work": "tumult-and-silence-at-second-creek",
@@ -162188,23 +160572,6 @@
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9780299312138&i=stripbooks"
-  },
-  {
-   "work": "hearing-voices",
-   "title": "Hearing Voices",
-   "edition": "9781891689833",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/1891689835",
-   "candidate": true
-  },
-  {
-   "work": "hearing-voices",
-   "title": "Hearing Voices",
-   "edition": "9781891689833",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781891689833&i=stripbooks"
   },
   {
    "work": "from-letter-to-spirit",
@@ -165723,31 +164090,6 @@
    "url": "https://www.amazon.com/s?k=9780986290121&i=stripbooks"
   },
   {
-   "work": "self-care-for-adult-children-of-emotionally-immature-parents",
-   "title": "Self-Care for Adult Children of Emotionally Immature Parents",
-   "edition": "9781684039845",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781684039845&i=stripbooks"
-  },
-  {
-   "work": "self-care-for-adult-children-of-emotionally-immature-parents",
-   "title": "Self-Care for Adult Children of Emotionally Immature Parents",
-   "edition": "9781684039821",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/1684039827",
-   "candidate": true
-  },
-  {
-   "work": "self-care-for-adult-children-of-emotionally-immature-parents",
-   "title": "Self-Care for Adult Children of Emotionally Immature Parents",
-   "edition": "9781684039821",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781684039821&i=stripbooks"
-  },
-  {
    "work": "cultivating-the-spirit",
    "title": "Cultivating the Spirit",
    "edition": "9780470875698",
@@ -167085,64 +165427,6 @@
    "url": "https://www.amazon.com/s?k=9781306333993&i=stripbooks"
   },
   {
-   "work": "silas-marner-the-weaver-of-raveloe",
-   "title": "Silas Marner - The Weaver of Raveloe",
-   "edition": "9781595478573",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/1595478574",
-   "candidate": true
-  },
-  {
-   "work": "silas-marner-the-weaver-of-raveloe",
-   "title": "Silas Marner - The Weaver of Raveloe",
-   "edition": "9781595478573",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781595478573&i=stripbooks"
-  },
-  {
-   "work": "silas-marner-the-weaver-of-raveloe",
-   "title": "Silas Marner",
-   "edition": "9781408631140",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781408631140&i=stripbooks"
-  },
-  {
-   "work": "silas-marner-the-weaver-of-raveloe",
-   "title": "Silas Marner",
-   "edition": "9789758509447",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/9758509446",
-   "candidate": true
-  },
-  {
-   "work": "silas-marner-the-weaver-of-raveloe",
-   "title": "Silas Marner",
-   "edition": "9789758509447",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9789758509447&i=stripbooks"
-  },
-  {
-   "work": "silas-marner-the-weaver-of-raveloe",
-   "title": "Silas Marner",
-   "edition": "9781423777984",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781423777984&i=stripbooks"
-  },
-  {
-   "work": "silas-marner-the-weaver-of-raveloe",
-   "title": "Silas Marner Illustrated",
-   "edition": "9798717010238",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9798717010238&i=stripbooks"
-  },
-  {
    "work": "on-liberty-illustrated",
    "title": "On Liberty Illustrated",
    "edition": "9798530995934",
@@ -167165,38 +165449,6 @@
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9781790277261&i=stripbooks"
-  },
-  {
-   "work": "sister-carrie",
-   "title": "Sister Carrie",
-   "edition": "9781722334628",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781722334628&i=stripbooks"
-  },
-  {
-   "work": "sister-carrie",
-   "title": "Sister Carrie",
-   "edition": "9781513135397",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781513135397&i=stripbooks"
-  },
-  {
-   "work": "sister-carrie",
-   "title": "Sister Carrie",
-   "edition": "9798622412165",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9798622412165&i=stripbooks"
-  },
-  {
-   "work": "sister-carrie",
-   "title": "Sister Carrie",
-   "edition": "9783968652474",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9783968652474&i=stripbooks"
   },
   {
    "work": "up-from-slavery-an-autobiography",
@@ -167246,38 +165498,6 @@
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9781774762646&i=stripbooks"
-  },
-  {
-   "work": "two-years-before-the-mast",
-   "title": "Two Years Before the Mast",
-   "edition": "9781466200210",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781466200210&i=stripbooks"
-  },
-  {
-   "work": "two-years-before-the-mast",
-   "title": "Two Years Before the Mast",
-   "edition": "9781727699234",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781727699234&i=stripbooks"
-  },
-  {
-   "work": "two-years-before-the-mast",
-   "title": "Two Years Before the Mast : (Annotated Edition)",
-   "edition": "9798743462421",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9798743462421&i=stripbooks"
-  },
-  {
-   "work": "two-years-before-the-mast",
-   "title": "Two Years Before the Mast (Complete and Annotated)",
-   "edition": "9788087830444",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9788087830444&i=stripbooks"
   },
   {
    "work": "the-sea-wolf",
@@ -168205,23 +166425,6 @@
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9787805354095&i=stripbooks"
-  },
-  {
-   "work": "sword-and-scalpel",
-   "title": "Sword and Scalpel",
-   "edition": "9780708903865",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/070890386X",
-   "candidate": true
-  },
-  {
-   "work": "sword-and-scalpel",
-   "title": "Sword and Scalpel",
-   "edition": "9780708903865",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780708903865&i=stripbooks"
   },
   {
    "work": "shang-han-lun",
@@ -170317,30 +168520,6 @@
    "url": "https://www.amazon.com/s?k=9788806162870&i=stripbooks"
   },
   {
-   "work": "rules-of-civility",
-   "title": "Rules of Civility",
-   "edition": "9781444708875",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781444708875&i=stripbooks"
-  },
-  {
-   "work": "rules-of-civility",
-   "title": "Rules of Civility",
-   "edition": "9781444708868",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781444708868&i=stripbooks"
-  },
-  {
-   "work": "rules-of-civility",
-   "title": "Rules of civility",
-   "edition": "9780143121169",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780143121169&i=stripbooks"
-  },
-  {
    "work": "robert-gober",
    "title": "Robert Gober",
    "edition": "9780944521250",
@@ -170363,22 +168542,6 @@
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9781854371157&i=stripbooks"
-  },
-  {
-   "work": "roomful-of-roses",
-   "title": "Roomful of Roses",
-   "edition": "9781460340028",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781460340028&i=stripbooks"
-  },
-  {
-   "work": "roomful-of-roses",
-   "title": "Roomful of Roses",
-   "edition": "9781551666419",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781551666419&i=stripbooks"
   },
   {
    "work": "the-warlock-of-firetop-mountain",
@@ -170446,47 +168609,6 @@
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9781681376097&i=stripbooks"
-  },
-  {
-   "work": "jane-eyre-illustrated",
-   "title": "Jane Eyre Illustrated",
-   "edition": "9798740522197",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9798740522197&i=stripbooks"
-  },
-  {
-   "work": "jane-eyre-illustrated",
-   "title": "Jane Eyre",
-   "edition": "9781405876636",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781405876636&i=stripbooks"
-  },
-  {
-   "work": "jane-eyre-illustrated",
-   "title": "Jane Eyre",
-   "edition": "9788853007766",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/8853007761",
-   "candidate": true
-  },
-  {
-   "work": "jane-eyre-illustrated",
-   "title": "Jane Eyre",
-   "edition": "9788853007766",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9788853007766&i=stripbooks"
-  },
-  {
-   "work": "jane-eyre-illustrated",
-   "title": "Jane Eyre",
-   "edition": "9798642745717",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9798642745717&i=stripbooks"
   },
   {
    "work": "greenmantle-john-buchan",
@@ -170775,14 +168897,6 @@
    "url": "https://www.amazon.com/s?k=9780809594108&i=stripbooks"
   },
   {
-   "work": "on-her-majestys-secret-service",
-   "title": "On Her Majesty's Secret Service",
-   "edition": "9781906772260",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781906772260&i=stripbooks"
-  },
-  {
    "work": "devil-doctor",
    "title": "Devil Doctor",
    "edition": "9798714145704",
@@ -171022,30 +169136,6 @@
    "url": "https://www.amazon.com/s?k=9780825437632&i=stripbooks"
   },
   {
-   "work": "mission-song-the",
-   "title": "Mission Song The",
-   "edition": "9780739483923",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780739483923&i=stripbooks"
-  },
-  {
-   "work": "mission-song-the",
-   "title": "The mission song",
-   "edition": "9780316017725",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780316017725&i=stripbooks"
-  },
-  {
-   "work": "secret-battle",
-   "title": "Secret Battle",
-   "edition": "9781546540496",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781546540496&i=stripbooks"
-  },
-  {
    "work": "xenocide",
    "title": "Xenocide",
    "edition": "9781250773074",
@@ -171079,73 +169169,6 @@
    "url": "https://www.amazon.com/s?k=9781429963961&i=stripbooks"
   },
   {
-   "work": "doctors-wife-a-novel-by-the-author-of-lady-audleys-secret-by-mary-elizabeth-braddon",
-   "title": "Doctor's Wife, a Novel by the Author of Lady Audley's Secret . by : Mary Elizabeth Braddon",
-   "edition": "9781548525941",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781548525941&i=stripbooks"
-  },
-  {
-   "work": "the-secret-sharer-websters-korean-thesaurus-edition",
-   "title": "The Secret Sharer (Webster's Korean Thesaurus Edition)",
-   "edition": "9780497925338",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0497925338",
-   "candidate": true
-  },
-  {
-   "work": "the-secret-sharer-websters-korean-thesaurus-edition",
-   "title": "The Secret Sharer (Webster's Korean Thesaurus Edition)",
-   "edition": "9780497925338",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780497925338&i=stripbooks"
-  },
-  {
-   "work": "the-secret-sharer-websters-korean-thesaurus-edition",
-   "title": "The Secret Sharer",
-   "edition": "9781406951332",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/1406951331",
-   "candidate": true
-  },
-  {
-   "work": "the-secret-sharer-websters-korean-thesaurus-edition",
-   "title": "The Secret Sharer",
-   "edition": "9781406951332",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781406951332&i=stripbooks"
-  },
-  {
-   "work": "the-secret-sharer-websters-korean-thesaurus-edition",
-   "title": "The Secret Sharer",
-   "edition": "9781599869001",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/1599869004",
-   "candidate": true
-  },
-  {
-   "work": "the-secret-sharer-websters-korean-thesaurus-edition",
-   "title": "The Secret Sharer",
-   "edition": "9781599869001",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781599869001&i=stripbooks"
-  },
-  {
-   "work": "the-secret-sharer-websters-korean-thesaurus-edition",
-   "title": "The secret sharer",
-   "edition": "9781423778721",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781423778721&i=stripbooks"
-  },
-  {
    "work": "wild-cards",
    "title": "Wild Cards",
    "edition": "9780575134119",
@@ -171169,47 +169192,6 @@
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9781429926454&i=stripbooks"
-  },
-  {
-   "work": "laddie",
-   "title": "Laddie",
-   "edition": "9781582872964",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/1582872961",
-   "candidate": true
-  },
-  {
-   "work": "laddie",
-   "title": "Laddie",
-   "edition": "9781582872964",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781582872964&i=stripbooks"
-  },
-  {
-   "work": "laddie",
-   "title": "Laddie",
-   "edition": "9780742612457",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780742612457&i=stripbooks"
-  },
-  {
-   "work": "a-murder-of-quality",
-   "title": "A Murder of Quality",
-   "edition": "9780786187058",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780786187058&i=stripbooks"
-  },
-  {
-   "work": "a-murder-of-quality",
-   "title": "A murder of quality",
-   "edition": "9780340527306",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780340527306&i=stripbooks"
   },
   {
    "work": "wastelands-2",
@@ -173569,22 +171551,6 @@
    "url": "https://www.amazon.com/s?k=9781570626302&i=stripbooks"
   },
   {
-   "work": "city-in-arabic-literature",
-   "title": "City in Arabic Literature",
-   "edition": "9781474406529",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781474406529&i=stripbooks"
-  },
-  {
-   "work": "city-in-arabic-literature",
-   "title": "City in Arabic Literature",
-   "edition": "9781474455824",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781474455824&i=stripbooks"
-  },
-  {
    "work": "historia-de-la-filosofia",
    "title": "Historia de la filosofía",
    "edition": "9788491044307",
@@ -173758,55 +171724,6 @@
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9780313223747&i=stripbooks"
-  },
-  {
-   "work": "looking-at-philosophy",
-   "title": "Looking at philosophy",
-   "edition": "9780874848397",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780874848397&i=stripbooks"
-  },
-  {
-   "work": "looking-at-philosophy",
-   "title": "Looking At Philosophy",
-   "edition": "9780072828955",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780072828955&i=stripbooks"
-  },
-  {
-   "work": "looking-at-philosophy",
-   "title": "Looking at philosophy",
-   "edition": "9781559342308",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781559342308&i=stripbooks"
-  },
-  {
-   "work": "looking-at-philosophy",
-   "title": "Looking At Philosophy",
-   "edition": "9780767405966",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/076740596X",
-   "candidate": true
-  },
-  {
-   "work": "looking-at-philosophy",
-   "title": "Looking At Philosophy",
-   "edition": "9780767405966",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780767405966&i=stripbooks"
-  },
-  {
-   "work": "looking-at-philosophy",
-   "title": "Looking at philosophy",
-   "edition": "9780073407487",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780073407487&i=stripbooks"
   },
   {
    "work": "neoplatonism-pauliina-remes",
@@ -174841,14 +172758,6 @@
    "url": "https://www.amazon.com/s?k=9780191532634&i=stripbooks"
   },
   {
-   "work": "beneath-a-sky-of-porphyry",
-   "title": "Beneath a sky of porphyry",
-   "edition": "9780704301610",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780704301610&i=stripbooks"
-  },
-  {
    "work": "selected-works-of-porphyry-great-works-of-philosophy-ser-vol-6",
    "title": "Selected Works of Porphyry (Great Works of Philosophy Ser. : Vol 6)",
    "edition": "9780933601109",
@@ -175266,22 +173175,6 @@
    "url": "https://www.amazon.com/s?k=9781621386230&i=stripbooks"
   },
   {
-   "work": "whats-your-angle-pythagoras",
-   "title": "What's Your Angle, Pythagoras?",
-   "edition": "9780606302319",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780606302319&i=stripbooks"
-  },
-  {
-   "work": "whats-your-angle-pythagoras",
-   "title": "What's Your Angle, Pythagoras?",
-   "edition": "9781417644735",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781417644735&i=stripbooks"
-  },
-  {
    "work": "galileos-mistake",
    "title": "Galileo's Mistake",
    "edition": "9781628722420",
@@ -175437,14 +173330,6 @@
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9781893163492&i=stripbooks"
-  },
-  {
-   "work": "the-number-of-things",
-   "title": "The Number of Things",
-   "edition": "9780525361558",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780525361558&i=stripbooks"
   },
   {
    "work": "beautiful-geometry",
@@ -175872,56 +173757,6 @@
    "url": "https://www.amazon.com/s?k=9798459068481&i=stripbooks"
   },
   {
-   "work": "the-golden-gate",
-   "title": "The Golden Gate",
-   "edition": "9780394750637",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780394750637&i=stripbooks"
-  },
-  {
-   "work": "the-golden-gate",
-   "title": "The Golden Gate",
-   "edition": "9780670058600",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0670058602",
-   "candidate": true
-  },
-  {
-   "work": "the-golden-gate",
-   "title": "The Golden Gate",
-   "edition": "9780670058600",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780670058600&i=stripbooks"
-  },
-  {
-   "work": "the-golden-gate",
-   "title": "The Golden Gate",
-   "edition": "9780571212651",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0571212654",
-   "candidate": true
-  },
-  {
-   "work": "the-golden-gate",
-   "title": "The Golden Gate",
-   "edition": "9780571212651",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780571212651&i=stripbooks"
-  },
-  {
-   "work": "the-golden-gate",
-   "title": "The Golden Gate",
-   "edition": "9780394549743",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780394549743&i=stripbooks"
-  },
-  {
    "work": "365-bible-stories-and-verses-in-color",
    "title": "365 Bible Stories and Verses in Color",
    "edition": "9780831786014",
@@ -176056,37 +173891,12 @@
    "url": "https://www.amazon.com/s?k=9780823305100&i=stripbooks"
   },
   {
-   "work": "a-second-golden-treasury-of-childrens-verse-premier-picturemac",
-   "title": "A Second Golden Treasury of Children's Verse (Premier Picturemac)",
-   "edition": "9780333510377",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0333510372",
-   "candidate": true
-  },
-  {
-   "work": "a-second-golden-treasury-of-childrens-verse-premier-picturemac",
-   "title": "A Second Golden Treasury of Children's Verse (Premier Picturemac)",
-   "edition": "9780333510377",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780333510377&i=stripbooks"
-  },
-  {
    "work": "golden-treasury-of-scottish-verse",
    "title": "Golden Treasury of Scottish Verse",
    "edition": "9781838852610",
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9781838852610&i=stripbooks"
-  },
-  {
-   "work": "a-golden-treasury-of-nursery-verse",
-   "title": "A Golden Treasury of Nursery Verse",
-   "edition": "9781856271165",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781856271165&i=stripbooks"
   },
   {
    "work": "the-zohar-by-rav-shimon-bar-yochai-from-the-book-of-avraham",
@@ -176220,23 +174030,6 @@
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9780814331811&i=stripbooks"
-  },
-  {
-   "work": "north-of-infinity-ii",
-   "title": "North of Infinity II",
-   "edition": "9780889628649",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0889628645",
-   "candidate": true
-  },
-  {
-   "work": "north-of-infinity-ii",
-   "title": "North of Infinity II",
-   "edition": "9780889628649",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780889628649&i=stripbooks"
   },
   {
    "work": "from-metaphysics-to-midrash",
@@ -177927,39 +175720,6 @@
    "url": "https://www.amazon.com/s?k=9781408414682&i=stripbooks"
   },
   {
-   "work": "isaac-newton-kathleen-krull",
-   "title": "Isaac Newton",
-   "edition": "9780142408209",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780142408209&i=stripbooks"
-  },
-  {
-   "work": "isaac-newton-kathleen-krull",
-   "title": "Isaac Newton - Bilimin Devleri",
-   "edition": "9786051869254",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/6051869255",
-   "candidate": true
-  },
-  {
-   "work": "isaac-newton-kathleen-krull",
-   "title": "Isaac Newton - Bilimin Devleri",
-   "edition": "9786051869254",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9786051869254&i=stripbooks"
-  },
-  {
-   "work": "isaac-newton-kathleen-krull",
-   "title": "Isaac Newton",
-   "edition": "9780670059218",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780670059218&i=stripbooks"
-  },
-  {
    "work": "metropolitan-art-and-literature-1810-1840",
    "title": "Metropolitan Art and Literature, 1810-1840",
    "edition": "9781283522205",
@@ -178431,22 +176191,6 @@
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9781594770203&i=stripbooks"
-  },
-  {
-   "work": "the-decoding-of-edwin-drood",
-   "title": "The decoding of Edwin Drood",
-   "edition": "9780575027893",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780575027893&i=stripbooks"
-  },
-  {
-   "work": "the-decoding-of-edwin-drood",
-   "title": "The decoding of Edwin Drood",
-   "edition": "9780684166544",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780684166544&i=stripbooks"
   },
   {
    "work": "the-story-and-its-writer",
@@ -179052,145 +176796,6 @@
    "url": "https://www.amazon.com/s?k=9781098734190&i=stripbooks"
   },
   {
-   "work": "o-pioneers",
-   "title": "O Pioneers!",
-   "edition": "9781692503376",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781692503376&i=stripbooks"
-  },
-  {
-   "work": "o-pioneers",
-   "title": "O Pioneers!",
-   "edition": "9781983709166",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781983709166&i=stripbooks"
-  },
-  {
-   "work": "o-pioneers",
-   "title": "O Pioneers Illustrated",
-   "edition": "9798522629878",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9798522629878&i=stripbooks"
-  },
-  {
-   "work": "lady-susan-dodo-press",
-   "title": "Lady Susan (Dodo Press)",
-   "edition": "9781406578294",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/1406578290",
-   "candidate": true
-  },
-  {
-   "work": "lady-susan-dodo-press",
-   "title": "Lady Susan (Dodo Press)",
-   "edition": "9781406578294",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781406578294&i=stripbooks"
-  },
-  {
-   "work": "lady-susan-dodo-press",
-   "title": "Lady Susan",
-   "edition": "9798717207874",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9798717207874&i=stripbooks"
-  },
-  {
-   "work": "lady-susan-dodo-press",
-   "title": "Lady Susan : (Annotated)",
-   "edition": "9781549731914",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781549731914&i=stripbooks"
-  },
-  {
-   "work": "lady-susan-dodo-press",
-   "title": "Lady Susan",
-   "edition": "9781675458563",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781675458563&i=stripbooks"
-  },
-  {
-   "work": "triplanetary",
-   "title": "Triplanetary",
-   "edition": "9781480477445",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781480477445&i=stripbooks"
-  },
-  {
-   "work": "triplanetary",
-   "title": "Triplanetary",
-   "edition": "9781374935525",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/1374935522",
-   "candidate": true
-  },
-  {
-   "work": "triplanetary",
-   "title": "Triplanetary",
-   "edition": "9781374935525",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781374935525&i=stripbooks"
-  },
-  {
-   "work": "triplanetary",
-   "title": "Triplanetary",
-   "edition": "9781435301498",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/1435301498",
-   "candidate": true
-  },
-  {
-   "work": "triplanetary",
-   "title": "Triplanetary",
-   "edition": "9781435301498",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781435301498&i=stripbooks"
-  },
-  {
-   "work": "triplanetary",
-   "title": "Triplanetary",
-   "edition": "9781499305319",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781499305319&i=stripbooks"
-  },
-  {
-   "work": "the-nursing-home-murder",
-   "title": "The nursing home murder",
-   "edition": "9781934609873",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781934609873&i=stripbooks"
-  },
-  {
-   "work": "the-nursing-home-murder",
-   "title": "The nursing home murder",
-   "edition": "9780515059670",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780515059670&i=stripbooks"
-  },
-  {
-   "work": "the-nursing-home-murder",
-   "title": "The nursing home murder",
-   "edition": "9780006161646",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780006161646&i=stripbooks"
-  },
-  {
    "work": "excavations-at-saqqara",
    "title": "Excavations at Saqqara",
    "edition": "9781578986897",
@@ -179460,47 +177065,6 @@
    "url": "https://www.amazon.com/s?k=9781731171023&i=stripbooks"
   },
   {
-   "work": "the-compleat-angler-or-the-contemplative-mans-recreation",
-   "title": "The compleat angler, or, The contemplative man's recreation",
-   "edition": "9780880014069",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780880014069&i=stripbooks"
-  },
-  {
-   "work": "the-compleat-angler-or-the-contemplative-mans-recreation",
-   "title": "Compleat Angler",
-   "edition": "9780710812582",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0710812582",
-   "candidate": true
-  },
-  {
-   "work": "the-compleat-angler-or-the-contemplative-mans-recreation",
-   "title": "Compleat Angler",
-   "edition": "9780710812582",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780710812582&i=stripbooks"
-  },
-  {
-   "work": "book-thief",
-   "title": "Book Thief",
-   "edition": "9781500182625",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781500182625&i=stripbooks"
-  },
-  {
-   "work": "book-thief",
-   "title": "Book Thief",
-   "edition": "9781407036908",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781407036908&i=stripbooks"
-  },
-  {
    "work": "time-traders",
    "title": "Time Traders",
    "edition": "9781721589777",
@@ -179581,14 +177145,6 @@
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9781854597564&i=stripbooks"
-  },
-  {
-   "work": "jalna",
-   "title": "Jalna",
-   "edition": "9781459723016",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781459723016&i=stripbooks"
   },
   {
    "work": "life-the-universe-and-everything",
@@ -179939,48 +177495,6 @@
    "url": "https://www.amazon.com/s?k=9780961475017&i=stripbooks"
   },
   {
-   "work": "raffles",
-   "title": "Raffles",
-   "edition": "9781434433640",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781434433640&i=stripbooks"
-  },
-  {
-   "work": "raffles",
-   "title": "Raffles, Further Adventures",
-   "edition": "9781406943252",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/1406943258",
-   "candidate": true
-  },
-  {
-   "work": "raffles",
-   "title": "Raffles, Further Adventures",
-   "edition": "9781406943252",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781406943252&i=stripbooks"
-  },
-  {
-   "work": "raffles",
-   "title": "Raffles",
-   "edition": "9781589638051",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/1589638050",
-   "candidate": true
-  },
-  {
-   "work": "raffles",
-   "title": "Raffles",
-   "edition": "9781589638051",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781589638051&i=stripbooks"
-  },
-  {
    "work": "the-book-of-jubilees-james-c-vanderkam",
    "title": "The Book of Jubilees",
    "edition": "9781850757672",
@@ -180076,46 +177590,6 @@
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9780385524797&i=stripbooks"
-  },
-  {
-   "work": "the-killings-on-jubilee-terrace",
-   "title": "The killings on Jubilee Terrace",
-   "edition": "9781410417596",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781410417596&i=stripbooks"
-  },
-  {
-   "work": "the-killings-on-jubilee-terrace",
-   "title": "Killings on Jubilee Terrace",
-   "edition": "9780749079499",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780749079499&i=stripbooks"
-  },
-  {
-   "work": "the-killings-on-jubilee-terrace",
-   "title": "Killings on Jubilee Terrace",
-   "edition": "9781416559436",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781416559436&i=stripbooks"
-  },
-  {
-   "work": "the-killings-on-jubilee-terrace",
-   "title": "The killings on Jubilee Terrace",
-   "edition": "9781416559429",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781416559429&i=stripbooks"
-  },
-  {
-   "work": "the-killings-on-jubilee-terrace",
-   "title": "The killings on Jubilee Terrace",
-   "edition": "9780750531108",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780750531108&i=stripbooks"
   },
   {
    "work": "book-of-jubilees",
@@ -180362,23 +177836,6 @@
    "url": "https://www.amazon.com/s?k=9798655782044&i=stripbooks"
   },
   {
-   "work": "the-very-hungry-caterpillar",
-   "title": "The Very Hungry Caterpillar",
-   "edition": "9780399251825",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0399251820",
-   "candidate": true
-  },
-  {
-   "work": "the-very-hungry-caterpillar",
-   "title": "The Very Hungry Caterpillar",
-   "edition": "9780399251825",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780399251825&i=stripbooks"
-  },
-  {
    "work": "the-canterville-ghost",
    "title": "The Canterville Ghost",
    "edition": "9798736882441",
@@ -180434,14 +177891,6 @@
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9781077423923&i=stripbooks"
-  },
-  {
-   "work": "brown-bear-brown-bear-what-do-you-see-50th-anniversary-edition-with-audio-cd",
-   "title": "Brown Bear, Brown Bear, What Do You See? 50th Anniversary Edition with Audio CD",
-   "edition": "9781627797214",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781627797214&i=stripbooks"
   },
   {
    "work": "a-house-of-pomegranates",
@@ -180559,132 +178008,6 @@
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9780571267262&i=stripbooks"
-  },
-  {
-   "work": "steve-birnbaum-brings-you-the-best-of-walt-disney-world",
-   "title": "Steve Birnbaum brings you the best of Walt Disney World",
-   "edition": "9780395365281",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0395365287",
-   "candidate": true
-  },
-  {
-   "work": "steve-birnbaum-brings-you-the-best-of-walt-disney-world",
-   "title": "Steve Birnbaum brings you the best of Walt Disney World",
-   "edition": "9780395365281",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780395365281&i=stripbooks"
-  },
-  {
-   "work": "geodes-level-1",
-   "title": "Geodes Level 1",
-   "edition": "9781640541931",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781640541931&i=stripbooks"
-  },
-  {
-   "work": "beetle-bailey",
-   "title": "Beetle Bailey",
-   "edition": "9780812561111",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0812561112",
-   "candidate": true
-  },
-  {
-   "work": "beetle-bailey",
-   "title": "Beetle Bailey",
-   "edition": "9780812561111",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780812561111&i=stripbooks"
-  },
-  {
-   "work": "beetle-bailey",
-   "title": "Beetle Bailey",
-   "edition": "9780812508710",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0812508718",
-   "candidate": true
-  },
-  {
-   "work": "beetle-bailey",
-   "title": "Beetle Bailey",
-   "edition": "9780812508710",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780812508710&i=stripbooks"
-  },
-  {
-   "work": "beetle-bailey",
-   "title": "Beetle Bailey",
-   "edition": "9780523490083",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0523490089",
-   "candidate": true
-  },
-  {
-   "work": "beetle-bailey",
-   "title": "Beetle Bailey",
-   "edition": "9780523490083",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780523490083&i=stripbooks"
-  },
-  {
-   "work": "beetle-bailey",
-   "title": "Beetle Bailey",
-   "edition": "9780523413402",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0523413408",
-   "candidate": true
-  },
-  {
-   "work": "beetle-bailey",
-   "title": "Beetle Bailey",
-   "edition": "9780523413402",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780523413402&i=stripbooks"
-  },
-  {
-   "work": "beetle-bailey",
-   "title": "Beetle Bailey",
-   "edition": "9780812560985",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0812560981",
-   "candidate": true
-  },
-  {
-   "work": "beetle-bailey",
-   "title": "Beetle Bailey",
-   "edition": "9780812560985",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780812560985&i=stripbooks"
-  },
-  {
-   "work": "fall-of-giants",
-   "title": "Fall of Giants",
-   "edition": "9780606266451",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780606266451&i=stripbooks"
-  },
-  {
-   "work": "fall-of-giants",
-   "title": "Fall of Giants",
-   "edition": "9780451232854",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780451232854&i=stripbooks"
   },
   {
    "work": "testamenta-xii-patriarcharum",
@@ -181849,39 +179172,6 @@
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9781471911811&i=stripbooks"
-  },
-  {
-   "work": "roanoke",
-   "title": "Roanoke",
-   "edition": "9781611459517",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781611459517&i=stripbooks"
-  },
-  {
-   "work": "roanoke",
-   "title": "Roanoke",
-   "edition": "9781611453317",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/1611453313",
-   "candidate": true
-  },
-  {
-   "work": "roanoke",
-   "title": "Roanoke",
-   "edition": "9781611453317",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781611453317&i=stripbooks"
-  },
-  {
-   "work": "roanoke",
-   "title": "Roanoke",
-   "edition": "9780142002285",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780142002285&i=stripbooks"
   },
   {
    "work": "soul-of-the-indian",
@@ -185241,22 +182531,6 @@
    "url": "https://www.amazon.com/s?k=9780874801859&i=stripbooks"
   },
   {
-   "work": "the-crafts-and-culture-of-the-ancient-aztecs-crafts-of-the-ancient-world",
-   "title": "The Crafts and Culture of the Ancient Aztecs (Crafts of the Ancient World)",
-   "edition": "9780823935123",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780823935123&i=stripbooks"
-  },
-  {
-   "work": "the-crafts-and-culture-of-the-ancient-aztecs-crafts-of-the-ancient-world",
-   "title": "Crafts and Culture of the Aztecs",
-   "edition": "9781615120642",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781615120642&i=stripbooks"
-  },
-  {
    "work": "history-and-mythology-of-the-aztecs",
    "title": "History and Mythology of the Aztecs",
    "edition": "9780816543625",
@@ -185320,14 +182594,6 @@
    "label": "Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/dp/1477316078"
-  },
-  {
-   "work": "history-and-activities-of-the-aztecs",
-   "title": "History and activities of the Aztecs",
-   "edition": "9780431080833",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780431080833&i=stripbooks"
   },
   {
    "work": "codex-mexicanus",
@@ -185471,81 +182737,6 @@
    "url": "https://www.amazon.com/s?k=9780760761373&i=stripbooks"
   },
   {
-   "work": "under-the-andes",
-   "title": "Under the Andes",
-   "edition": "9781374883772",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/1374883778",
-   "candidate": true
-  },
-  {
-   "work": "under-the-andes",
-   "title": "Under the Andes",
-   "edition": "9781374883772",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781374883772&i=stripbooks"
-  },
-  {
-   "work": "under-the-andes",
-   "title": "Under the Andes",
-   "edition": "9781404337046",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/1404337040",
-   "candidate": true
-  },
-  {
-   "work": "under-the-andes",
-   "title": "Under the Andes",
-   "edition": "9781404337046",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781404337046&i=stripbooks"
-  },
-  {
-   "work": "under-the-andes",
-   "title": "Under the Andes",
-   "edition": "9781492944478",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781492944478&i=stripbooks"
-  },
-  {
-   "work": "under-the-andes",
-   "title": "Under the Andes",
-   "edition": "9781463722302",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781463722302&i=stripbooks"
-  },
-  {
-   "work": "inca-gold",
-   "title": "Inca gold.",
-   "edition": "9780002244756",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780002244756&i=stripbooks"
-  },
-  {
-   "work": "inca-gold",
-   "title": "Inca Gold",
-   "edition": "9781416525721",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/1416525726",
-   "candidate": true
-  },
-  {
-   "work": "inca-gold",
-   "title": "Inca Gold",
-   "edition": "9781416525721",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781416525721&i=stripbooks"
-  },
-  {
    "work": "inca-land",
    "title": "Inca Land",
    "edition": "9781366508263",
@@ -185621,46 +182812,6 @@
    "url": "https://www.amazon.com/s?k=9798637818426&i=stripbooks"
   },
   {
-   "work": "gold-of-the-gods",
-   "title": "Gold of the Gods",
-   "edition": "9783842427921",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9783842427921&i=stripbooks"
-  },
-  {
-   "work": "gold-of-the-gods",
-   "title": "Gold of the Gods",
-   "edition": "9781512392593",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781512392593&i=stripbooks"
-  },
-  {
-   "work": "gold-of-the-gods",
-   "title": "Gold of the Gods",
-   "edition": "9781976191275",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781976191275&i=stripbooks"
-  },
-  {
-   "work": "secret-of-the-andes",
-   "title": "Secret of the Andes",
-   "edition": "9780785772453",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780785772453&i=stripbooks"
-  },
-  {
-   "work": "secret-of-the-andes",
-   "title": "Secret of the Andes",
-   "edition": "9781435206229",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781435206229&i=stripbooks"
-  },
-  {
    "work": "evil-star",
    "title": "Evil star",
    "edition": "9780786285693",
@@ -185692,39 +182843,6 @@
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9781406338867&i=stripbooks"
-  },
-  {
-   "work": "conquistadors",
-   "title": "Conquistadors",
-   "edition": "9780141391229",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0141391227",
-   "candidate": true
-  },
-  {
-   "work": "conquistadors",
-   "title": "Conquistadors",
-   "edition": "9780141391229",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780141391229&i=stripbooks"
-  },
-  {
-   "work": "conquistadors",
-   "title": "The Conquistadors",
-   "edition": "9780002175319",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780002175319&i=stripbooks"
-  },
-  {
-   "work": "conquistadors",
-   "title": "Conquistadors",
-   "edition": "9781448211395",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781448211395&i=stripbooks"
   },
   {
    "work": "the-royal-hunt-of-the-sun",
@@ -185765,22 +182883,6 @@
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9781306705080&i=stripbooks"
-  },
-  {
-   "work": "aztec-inca-and-maya",
-   "title": "Aztec, Inca & Maya",
-   "edition": "9781465405906",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781465405906&i=stripbooks"
-  },
-  {
-   "work": "aztec-inca-and-maya",
-   "title": "Aztec, Inca & Maya",
-   "edition": "9780756613839",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780756613839&i=stripbooks"
   },
   {
    "work": "the-florida-of-the-inca",
@@ -185962,73 +183064,6 @@
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9780665591969&i=stripbooks"
-  },
-  {
-   "work": "temple",
-   "title": "Temple",
-   "edition": "9780312266592",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780312266592&i=stripbooks"
-  },
-  {
-   "work": "temple",
-   "title": "Temple",
-   "edition": "9780330362146",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0330362143",
-   "candidate": true
-  },
-  {
-   "work": "temple",
-   "title": "Temple",
-   "edition": "9780330362146",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780330362146&i=stripbooks"
-  },
-  {
-   "work": "temple",
-   "title": "Temple",
-   "edition": "9780732909710",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780732909710&i=stripbooks"
-  },
-  {
-   "work": "civilizations-grand-prix-du-roman-de-lacademie-francaise",
-   "title": "Civilizations [ Grand Prix du Roman de l'Academie Francaise ]",
-   "edition": "9781547909445",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/1547909447",
-   "candidate": true
-  },
-  {
-   "work": "civilizations-grand-prix-du-roman-de-lacademie-francaise",
-   "title": "Civilizations [ Grand Prix du Roman de l'Academie Francaise ]",
-   "edition": "9781547909445",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781547909445&i=stripbooks"
-  },
-  {
-   "work": "civilizations-grand-prix-du-roman-de-lacademie-francaise",
-   "title": "Civilizations",
-   "edition": "9780374600815",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0374600813",
-   "candidate": true
-  },
-  {
-   "work": "civilizations-grand-prix-du-roman-de-lacademie-francaise",
-   "title": "Civilizations",
-   "edition": "9780374600815",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780374600815&i=stripbooks"
   },
   {
    "work": "fall-of-the-inca-empire-and-the-spanish-rule-in-peru",
@@ -186268,22 +183303,6 @@
    "url": "https://www.amazon.com/s?k=9780708926307&i=stripbooks"
   },
   {
-   "work": "scooby-doo-and-the-ruins-of-machu-picchu",
-   "title": "Scooby-Doo! and the Ruins of Machu Picchu",
-   "edition": "9781543539523",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781543539523&i=stripbooks"
-  },
-  {
-   "work": "the-martian-inca",
-   "title": "The Martian Inca",
-   "edition": "9780575055582",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780575055582&i=stripbooks"
-  },
-  {
    "work": "the-eye-of-the-forest",
    "title": "The Eye of the Forest",
    "edition": "9780439932158",
@@ -186299,30 +183318,6 @@
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9780439932158&i=stripbooks"
-  },
-  {
-   "work": "pizarro",
-   "title": "Pizarro",
-   "edition": "9780750973243",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780750973243&i=stripbooks"
-  },
-  {
-   "work": "pizarro",
-   "title": "Pizarro",
-   "edition": "9780750936828",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780750936828&i=stripbooks"
-  },
-  {
-   "work": "pizarro",
-   "title": "Pizarro",
-   "edition": "9780750936835",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780750936835&i=stripbooks"
   },
   {
    "work": "peru",
@@ -186648,22 +183643,6 @@
    "url": "https://www.amazon.com/s?k=9798552138968&i=stripbooks"
   },
   {
-   "work": "sing-down-the-moon",
-   "title": "Sing down the moon",
-   "edition": "9781557361424",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781557361424&i=stripbooks"
-  },
-  {
-   "work": "sing-down-the-moon",
-   "title": "Sing down the Moon",
-   "edition": "9780784835968",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780784835968&i=stripbooks"
-  },
-  {
    "work": "dance-hall-of-the-dead",
    "title": "Dance Hall of the Dead",
    "edition": "9780061186486",
@@ -186696,48 +183675,6 @@
    "url": "https://www.amazon.com/s?k=9780708923320&i=stripbooks"
   },
   {
-   "work": "laughing-boy",
-   "title": "Laughing Boy",
-   "edition": "9780606219464",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0606219463",
-   "candidate": true
-  },
-  {
-   "work": "laughing-boy",
-   "title": "Laughing Boy",
-   "edition": "9780606219464",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780606219464&i=stripbooks"
-  },
-  {
-   "work": "laughing-boy",
-   "title": "Laughing Boy",
-   "edition": "9781585478330",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/1585478334",
-   "candidate": true
-  },
-  {
-   "work": "laughing-boy",
-   "title": "Laughing Boy",
-   "edition": "9781585478330",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781585478330&i=stripbooks"
-  },
-  {
-   "work": "brian-wildsmiths-animal-colors-navajo-edition",
-   "title": "Brian Wildsmith's Animal Colors (Navajo edition)",
-   "edition": "9781932065343",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781932065343&i=stripbooks"
-  },
-  {
    "work": "a-thief-of-time",
    "title": "A thief of time.",
    "edition": "9780718131128",
@@ -186768,30 +183705,6 @@
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9780816146994&i=stripbooks"
-  },
-  {
-   "work": "the-dark-wind",
-   "title": "The Dark Wind",
-   "edition": "9780062895547",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0062895540"
-  },
-  {
-   "work": "the-dark-wind",
-   "title": "The Dark Wind",
-   "edition": "9780061797613",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780061797613&i=stripbooks"
-  },
-  {
-   "work": "the-dark-wind",
-   "title": "The dark wind",
-   "edition": "9780061000034",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780061000034&i=stripbooks"
   },
   {
    "work": "the-blessing-way",
@@ -186873,47 +183786,6 @@
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9780373071449&i=stripbooks"
-  },
-  {
-   "work": "people-of-darkness",
-   "title": "People of Darkness",
-   "edition": "9780060769413",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780060769413&i=stripbooks"
-  },
-  {
-   "work": "people-of-darkness",
-   "title": "People of darkness",
-   "edition": "9780061099151",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780061099151&i=stripbooks"
-  },
-  {
-   "work": "people-of-darkness",
-   "title": "People of Darkness",
-   "edition": "9780061808395",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0061808393",
-   "candidate": true
-  },
-  {
-   "work": "people-of-darkness",
-   "title": "People of Darkness",
-   "edition": "9780061808395",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780061808395&i=stripbooks"
-  },
-  {
-   "work": "people-of-darkness",
-   "title": "People of darkness",
-   "edition": "9780060809508",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780060809508&i=stripbooks"
   },
   {
    "work": "left-handed",
@@ -187005,72 +183877,6 @@
    "url": "https://www.amazon.com/s?k=9780060815066&i=stripbooks"
   },
   {
-   "work": "skeleton-man",
-   "title": "Skeleton man",
-   "edition": "9780060563462",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780060563462&i=stripbooks"
-  },
-  {
-   "work": "skeleton-man",
-   "title": "Skeleton Man",
-   "edition": "9780060796938",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780060796938&i=stripbooks"
-  },
-  {
-   "work": "skeleton-man",
-   "title": "Skeleton Man",
-   "edition": "9780061967795",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0061967793",
-   "candidate": true
-  },
-  {
-   "work": "skeleton-man",
-   "title": "Skeleton Man",
-   "edition": "9780061967795",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780061967795&i=stripbooks"
-  },
-  {
-   "work": "hunting-badger",
-   "title": "Hunting Badger",
-   "edition": "9780061745720",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780061745720&i=stripbooks"
-  },
-  {
-   "work": "hunting-badger",
-   "title": "Hunting badger",
-   "edition": "9780006485339",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780006485339&i=stripbooks"
-  },
-  {
-   "work": "hunting-badger",
-   "title": "Hunting Badger",
-   "edition": "9780061967825",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0061967823",
-   "candidate": true
-  },
-  {
-   "work": "hunting-badger",
-   "title": "Hunting Badger",
-   "edition": "9780061967825",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780061967825&i=stripbooks"
-  },
-  {
    "work": "el-gringo",
    "title": "El Gringo",
    "edition": "9780803265585",
@@ -187109,89 +183915,6 @@
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9781903240427&i=stripbooks"
-  },
-  {
-   "work": "the-fallen-man",
-   "title": "The fallen man",
-   "edition": "9780061092886",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780061092886&i=stripbooks"
-  },
-  {
-   "work": "the-fallen-man",
-   "title": "The fallen man",
-   "edition": "9780060177737",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/006017773X",
-   "candidate": true
-  },
-  {
-   "work": "the-fallen-man",
-   "title": "The fallen man",
-   "edition": "9780060177737",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780060177737&i=stripbooks"
-  },
-  {
-   "work": "the-fallen-man",
-   "title": "The Fallen Man",
-   "edition": "9781580600507",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/1580600506",
-   "candidate": true
-  },
-  {
-   "work": "the-fallen-man",
-   "title": "The Fallen Man",
-   "edition": "9781580600507",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781580600507&i=stripbooks"
-  },
-  {
-   "work": "the-fallen-man",
-   "title": "The Fallen Man",
-   "edition": "9780060547967",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780060547967&i=stripbooks"
-  },
-  {
-   "work": "dancing-cloud",
-   "title": "Dancing Cloud",
-   "edition": "9780670255047",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0670255041",
-   "candidate": true
-  },
-  {
-   "work": "dancing-cloud",
-   "title": "Dancing Cloud",
-   "edition": "9780670255047",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780670255047&i=stripbooks"
-  },
-  {
-   "work": "coyote-waits",
-   "title": "Coyote Waits",
-   "edition": "9780061801204",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780061801204&i=stripbooks"
-  },
-  {
-   "work": "coyote-waits",
-   "title": "Coyote Waits",
-   "edition": "9780747408871",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780747408871&i=stripbooks"
   },
   {
    "work": "through-our-unknown-southwest",
@@ -187248,54 +183971,6 @@
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9780749080518&i=stripbooks"
-  },
-  {
-   "work": "the-wailing-wind",
-   "title": "The Wailing Wind",
-   "edition": "9780061795411",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780061795411&i=stripbooks"
-  },
-  {
-   "work": "the-wailing-wind",
-   "title": "The wailing wind.",
-   "edition": "9780061098796",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780061098796&i=stripbooks"
-  },
-  {
-   "work": "the-sinister-pig",
-   "title": "The Sinister Pig.",
-   "edition": "9780061098789",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780061098789&i=stripbooks"
-  },
-  {
-   "work": "the-sinister-pig",
-   "title": "The Sinister Pig",
-   "edition": "9780006392118",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780006392118&i=stripbooks"
-  },
-  {
-   "work": "the-sinister-pig",
-   "title": "The Sinister Pig",
-   "edition": "9780060558581",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780060558581&i=stripbooks"
-  },
-  {
-   "work": "the-sinister-pig",
-   "title": "The sinister pig",
-   "edition": "9780060545437",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780060545437&i=stripbooks"
   },
   {
    "work": "flying-with-the-eagle-racing-the-great-bear",
@@ -187379,62 +184054,6 @@
    "url": "https://www.amazon.com/s?k=9781400031108&i=stripbooks"
   },
   {
-   "work": "the-first-eagle",
-   "title": "The First Eagle",
-   "edition": "9780060769918",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780060769918&i=stripbooks"
-  },
-  {
-   "work": "the-first-eagle",
-   "title": "First Eagle",
-   "edition": "9780061967801",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780061967801&i=stripbooks"
-  },
-  {
-   "work": "the-first-eagle",
-   "title": "First Eagle",
-   "edition": "9780063049536",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780063049536&i=stripbooks"
-  },
-  {
-   "work": "night-way",
-   "title": "Night way",
-   "edition": "9780816136322",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780816136322&i=stripbooks"
-  },
-  {
-   "work": "night-way",
-   "title": "Night way",
-   "edition": "9780356086422",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780356086422&i=stripbooks"
-  },
-  {
-   "work": "night-way",
-   "title": "Night way",
-   "edition": "9780751507348",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780751507348&i=stripbooks"
-  },
-  {
-   "work": "night-way",
-   "title": "Night way",
-   "edition": "9780708821343",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780708821343&i=stripbooks"
-  },
-  {
    "work": "eye-of-cat",
    "title": "Eye of Cat",
    "edition": "9781596879652",
@@ -187492,72 +184111,6 @@
    "url": "https://www.amazon.com/s?k=9780061795572&i=stripbooks"
   },
   {
-   "work": "mystery-of-the-lost-village",
-   "title": "Mystery of the Lost Village",
-   "edition": "9781453212851",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781453212851&i=stripbooks"
-  },
-  {
-   "work": "navajo-code-talkers",
-   "title": "Navajo Code Talkers",
-   "edition": "9780802721426",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780802721426&i=stripbooks"
-  },
-  {
-   "work": "navajo-code-talkers",
-   "title": "Navajo Code Talkers",
-   "edition": "9780802775894",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780802775894&i=stripbooks"
-  },
-  {
-   "work": "navajo-code-talkers",
-   "title": "Navajo Code Talkers",
-   "edition": "9780786246489",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0786246480",
-   "candidate": true
-  },
-  {
-   "work": "navajo-code-talkers",
-   "title": "Navajo Code Talkers",
-   "edition": "9780786246489",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780786246489&i=stripbooks"
-  },
-  {
-   "work": "navajo-code-talkers",
-   "title": "Navajo code talkers",
-   "edition": "9780802781826",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780802781826&i=stripbooks"
-  },
-  {
-   "work": "little-black-a-pony",
-   "title": "Little Black, A Pony",
-   "edition": "9780001718487",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0001718487",
-   "candidate": true
-  },
-  {
-   "work": "little-black-a-pony",
-   "title": "Little Black, A Pony",
-   "edition": "9780001718487",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780001718487&i=stripbooks"
-  },
-  {
    "work": "the-turquoise",
    "title": "The Turquoise",
    "edition": "9781568496528",
@@ -187609,14 +184162,6 @@
    "url": "https://www.amazon.com/s?k=9780380002658&i=stripbooks"
   },
   {
-   "work": "eagle-feather",
-   "title": "Eagle Feather",
-   "edition": "9780606063432",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780606063432&i=stripbooks"
-  },
-  {
    "work": "creative-process",
    "title": "Creative Process",
    "edition": "9780451615008",
@@ -187632,48 +184177,6 @@
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9780451615008&i=stripbooks"
-  },
-  {
-   "work": "navajo-canyon",
-   "title": "Navajo Canyon",
-   "edition": "9780745145921",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0745145922",
-   "candidate": true
-  },
-  {
-   "work": "navajo-canyon",
-   "title": "Navajo Canyon",
-   "edition": "9780745145921",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780745145921&i=stripbooks"
-  },
-  {
-   "work": "navajo-canyon",
-   "title": "Navajo Canyon",
-   "edition": "9780440166474",
-   "label": "candidate product page (ISBN-10)",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/0440166470",
-   "candidate": true
-  },
-  {
-   "work": "navajo-canyon",
-   "title": "Navajo Canyon",
-   "edition": "9780440166474",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780440166474&i=stripbooks"
-  },
-  {
-   "work": "navajo-canyon",
-   "title": "Navajo Canyon",
-   "edition": "9780754069515",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780754069515&i=stripbooks"
   },
   {
    "work": "navaho-religion",
@@ -187864,38 +184367,6 @@
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9781375012980&i=stripbooks"
-  },
-  {
-   "work": "big-wander",
-   "title": "Big Wander",
-   "edition": "9781417740369",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781417740369&i=stripbooks"
-  },
-  {
-   "work": "big-wander",
-   "title": "Big Wander",
-   "edition": "9780606326865",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780606326865&i=stripbooks"
-  },
-  {
-   "work": "big-wander",
-   "title": "The Big Wander",
-   "edition": "9780689317675",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780689317675&i=stripbooks"
-  },
-  {
-   "work": "big-wander",
-   "title": "The Big Wander",
-   "edition": "9780785727538",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9780785727538&i=stripbooks"
   },
   {
    "work": "the-invention-of-prophecy",
@@ -310277,22 +306748,6 @@
    "label": "Search on Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/s?k=9780425089040&i=stripbooks"
-  },
-  {
-   "work": "reports-from-the-deep-end",
-   "title": "Reports from the Deep End",
-   "edition": "9781803363172",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781803363172&i=stripbooks"
-  },
-  {
-   "work": "reports-from-the-deep-end",
-   "title": "Reports from the Deep End",
-   "edition": "9781803363196",
-   "label": "Search on Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/s?k=9781803363196&i=stripbooks"
   },
   {
    "work": "the-best-of-michael-moorcock",

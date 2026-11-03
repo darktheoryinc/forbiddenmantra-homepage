@@ -75,8 +75,9 @@ if (browser) for (const [name, vp] of VIEWPORTS) {
     const sw = await pg.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1);
     ok(sw, `[${name}] ${n.id}: no horizontal page scroll`);
     const total = await pg.locator('[data-count]').first().textContent().catch(() => '');
-    await pg.fill('.filters input[name=q]', 'zzzznomatch'); await pg.waitForTimeout(500);
-    const empty = await pg.locator('[data-empty]').first().isVisible().catch(() => false);
+    await pg.fill('.filters input[name=q]', 'zzzznomatch');
+    // The scoped index of a large niche now takes about a second to search, so wait for the empty state (up to 6 s) instead of a fixed 500 ms; the assertion is unchanged.
+    const empty = await pg.locator('[data-empty]').first().waitFor({ state: 'visible', timeout: 6000 }).then(() => true).catch(() => false);
     ok(empty, `[${name}] ${n.id}: search with no match shows the empty state`);
     await pg.fill('.filters input[name=q]', ''); await pg.waitForTimeout(400);
   }
