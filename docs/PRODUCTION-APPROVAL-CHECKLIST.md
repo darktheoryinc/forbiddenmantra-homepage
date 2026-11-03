@@ -5,6 +5,65 @@ Nothing in this document is an approval. `config/approvals.json` and `data/promo
 
 Checked on 2026-11-03 (read-only): the Wix site "Forbidden Mantra Press" is published, on a Premium plan, with a custom domain, edited in Wix Studio, with Velo enabled (Wix site context). Not checkable from here: the Netlify project, and whether forbiddenmantra.com uses Wix name servers or "pointing" (see Part 2).
 
+## Verification log (owner-reported; Claude cannot see Netlify or Wix settings)
+
+| Date | Item | Result | Source |
+|---|---|---|---|
+| 2026-11-03 | Netlify project `unrivaled-liger-1baec4` exists and is **published** | Confirmed | Owner report |
+| 2026-11-03 | The project accepts **manual ZIP deploys through Netlify Drop** (so it is not locked to a Git repository) | Confirmed | Owner report |
+| 2026-11-03 | Wix site is published, Premium plan, custom domain, Wix Studio, Velo enabled | Confirmed | Wix site context read by Claude |
+| Open | What the currently published deploy contains (preview 12,022-work build, or other) | Not yet reported | Owner to note before the production upload replaces it |
+| Open | No other custom domain or Netlify feature (Forms, Functions, Identity, redirects) relied on in this project | Not yet reported | Owner |
+| Open | Whether forbiddenmantra.com DNS is hosted by Wix (name servers) or at a registrar (pointing) | Not yet reported | Owner (Part 2) |
+
+## Approval status (nothing below is approved; this table changes only when the owner sends the exact confirmation)
+
+| # | Approval | Gate / field | Status |
+|---|---|---|---|
+| 1 | Production address `https://library.forbiddenmantra.com` | `productionAddress`, `siteUrl` | NOT APPROVED (preferred address stated; confirmation sentence not yet given) |
+| 2 | IOSutra promotion as it stands | gate 1, `iosutraPromotion` | NOT APPROVED |
+| 3 | NVIDIA membership claim and evidence | gate 2 | NOT APPROVED (owner must check the NVIDIA portal) |
+| 4 | NVIDIA trademark attribution wording | gate 3 | NOT APPROVED |
+| 5 | IOSutra picture rights | `iosutraArtworkRights` | NOT APPROVED |
+| 6 | Digital Librarian artwork rights | `librarianArtworkRights` | NOT APPROVED |
+| 7 | Legal pages (Terms, Refund, Privacy incl. voice sentence, Affiliate) | gate 4, `legalPagesReviewed` | NOT APPROVED |
+| 8 | Analytics choice | decision, not a gate | OPEN |
+
+The production ZIP will not be generated, and nothing will be deployed, until items 1 to 7 are each confirmed.
+
+## Reply template for owner review (copy, fill the brackets, delete anything you are not ready to confirm)
+
+```
+1. I approve https://library.forbiddenmantra.com as the production address of the Forbidden Library.
+
+2. I approve the IOSutra promotion exactly as it currently appears (homepage, footer and /technology/) for production.
+
+3. I checked the NVIDIA Inception member portal on [DATE]. IOSutra's membership is current, and the wording
+   "IOSutra is a member of the NVIDIA Inception program." is permitted. Evidence: [WHAT YOU SAW].
+
+4. The NVIDIA trademark attribution wording "NVIDIA and NVIDIA Inception are trademarks of NVIDIA Corporation."
+   is approved as it stands.   [OR: Replace it with: "[REQUIRED WORDING]".]
+
+5. I confirm that I own, or have licensed for commercial web use, the IOSutra meditating man and robot picture,
+   including any likeness rights.
+
+6. I confirm that I own, or have licensed for commercial web use, the Digital Librarian character artwork.
+
+7. I have reviewed the Terms, Refund, Privacy and Affiliate Disclosure pages as they will be published
+   (including the voice-search sentence). I approve them for production, effective [DATE], with these decisions:
+   - Printify/apparel refund language: [KEEP / DELETE]
+   - Amazon returns URL (amazon.com/returns): [CONFIRMED / CHANGE TO ...]
+   - Governing-law, dispute, age and children's-data clauses: [NONE FOR NOW / COUNSEL TO ADD]
+   - Associates disclosure wording and placement: [CONFIRMED / CHANGE TO ...]
+   - Tagged Amazon search links are intended: [YES / NO]
+
+8. Analytics: [NONE / GOATCOUNTER, after the privacy page is updated].
+
+9. The Netlify project currently publishes: [DESCRIBE]. I am happy for the production ZIP to replace it.
+```
+
+Items 3 and 4 depend on facts only the owner can check; if either is not confirmed, Claude will not mark it verified and the production build will stay blocked. The owner may instead instruct Claude in writing to change the page (for example remove a statement); Claude will not change NVIDIA, IOSutra or artwork content without that instruction.
+
 ---
 
 ## Part 1. Owner approvals (reply with the quoted sentence for each item you accept)
