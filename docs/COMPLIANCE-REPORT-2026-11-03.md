@@ -107,5 +107,21 @@ Affiliate disclosure is near the links and in the footer; IOSutra's relationship
 6. Will you send the 92 missing press cover files, and do you want to request written permission from Penguin Random House for specific titles?
 7. Do you qualify for the Creators API (10 qualifying sales in 30 days; Tools > Creators API)? That is the compliant route to third-party covers.
 
-## 6. Test evidence
-See the results table appended below once the targeted run completes.
+## 6. Test evidence (branch `claude/compliance-remediation`)
+| Check | Result |
+|---|---|
+| Core site (`scripts/verify.mjs`) | 143 of 143 pass |
+| Compliance (`test/verify-compliance.mjs`): no Amazon image address in any built file, no off-site `<img>`, no Amazon request in a real browser on 7 page types (desktop and phone), check-links never requests Amazon, cover rights, catalogue and affiliate preserved | 31 of 31 pass |
+| Affiliate (33), security gate (37), promo (73), launch (51), covers (31), cover links (24), cover bulk (15), Ask (49), Librarian (49), scale (41), discovery (84), curation (26), niches (49), voice (76), Wix embed (45), production (45), accessibility | all pass |
+| Package checks over HTTP in a real browser: preview ZIP 57, production ZIP 59 | all pass |
+| Production ZIP scan: 10,977 files, 0 name an Amazon image host; `index.html` at the root; 37 cover files (owner artwork only); `robots.txt` allows crawling and names the sitemap | pass |
+| Affiliate audit | 0 link errors, 31,058 purchase links, tag `darktheoryinc-20` only |
+| Launch check | 0 blockers, 0 open decisions, 8 non-blocking warnings |
+
+Test changes made to match the new policy (each documented in its commit): the removed Amazon-cover test was replaced by `verify-compliance`; the affiliate test now expects zero Amazon image addresses; the Ask and Librarian tests no longer allow any Amazon request; the cover-link test counts only published covers and uses "kebra nagast" (an owner-artwork title) instead of "meditations" (a Penguin Random House title whose cover is now withheld); the security-gate test expects Amazon covers withdrawn.
+
+## 7. Cover coverage after remediation
+* Works in the catalogue: 16,711.
+* Works with a real cover: **31 (0.2%)**, all Forbidden Mantra Press titles (owner artwork, rights confirmed in writing). Press titles still showing a title-and-author card: **92 of 123**.
+* Third-party works with a real cover: **0**. Every other work shows a title-and-author card (typographic, in the site's design).
+* Previously: about 16,300 Amazon-hosted covers (removed) and 63 Penguin Random House covers (withheld).

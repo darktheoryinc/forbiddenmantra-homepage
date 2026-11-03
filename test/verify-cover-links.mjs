@@ -8,7 +8,8 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const SITE = path.join(ROOT, 'site');
 const cat = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/catalogue.json'), 'utf8')), man = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/covers.json'), 'utf8')).covers;
 const htmls = (d) => fs.readdirSync(d, { withFileTypes: true }).flatMap((f) => (f.isDirectory() ? htmls(path.join(d, f.name)) : f.name.endsWith('.html') ? [path.join(d, f.name)] : []));
-const coverWorks = [...new Set(man.map((c) => c.work))];
+// 2026-11-03: only covers whose rights cover this site are published (owner-supplied artwork, or an entry with a site-specific permission); the Penguin Random House files are withheld, so those books show title cards
+const coverWorks = [...new Set(man.filter((c) => c.source.type === 'owner-supplied' || c.rights?.specificPermission === true).map((c) => c.work))];
 
 let anchors = 0, bad = [], placeholderLinked = 0, photoUnlinked = 0;
 for (const f of htmls(SITE)) {
@@ -48,9 +49,9 @@ if (browser) for (const [name, vp, mobile] of [['desktop', { width: 1366, height
   await pg.goto(u('search/index.html') + '?q=tarot'); await pg.waitForSelector('[data-results] .card', { timeout: 8000 }).catch(() => {});
   const sc = await pg.locator('[data-results] .card a.card-cover.cover-buy').count(); const photos = await pg.locator('[data-results] .card .cover-photo').count();
   ok(photos === 0 || sc === photos, `${T} search results: ${sc} of ${photos} real covers link to Amazon`);
-  await pg.goto(u('search/index.html') + '?q=meditations'); await pg.waitForSelector('[data-results] .card', { timeout: 8000 }).catch(() => {});
+  await pg.goto(u('search/index.html') + '?q=kebra+nagast'); await pg.waitForSelector('[data-results] .card', { timeout: 8000 }).catch(() => {});
   const sc2 = await pg.locator('[data-results] .card a.card-cover.cover-buy').count(), ph2 = await pg.locator('[data-results] .card .cover-photo').count();
-  ok(ph2 > 0 && sc2 === ph2 && (await pg.locator('[data-results] a.cover-buy').first().getAttribute('href')).includes('tag=darktheoryinc-20'), `${T} search for "meditations": ${sc2} of ${ph2} real covers link to the tagged Amazon page`);
+  ok(ph2 > 0 && sc2 === ph2 && (await pg.locator('[data-results] a.cover-buy').first().getAttribute('href')).includes('tag=darktheoryinc-20'), `${T} search for "kebra nagast": ${sc2} of ${ph2} real covers link to the tagged Amazon page`);
   // Digital Librarian results
   await pg.goto(u('index.html')); await pg.fill('#ask-q', 'books about Gayatri'); await pg.press('#ask-q', 'Enter'); await pg.waitForSelector('.ask-card', { timeout: 8000 });
   const lc = await pg.locator('.ask-card a.ask-cv.cover-buy').count(), lp = await pg.locator('.ask-card .cover-photo').count();
