@@ -459,7 +459,7 @@ ${page}
   <div class="wrap">${placed('footer').map((p) => promo.renderFooter(promoView('footer', p.id), promoCtx)).join('')}<p class="disclosure" lang="en">${esc(cfg.disclosure)}</p><p class="copy">© 2025–2026 Forbidden Mantra Press</p></div>
 </footer>
 ${rel === 'index.html' ? `<script>window.FM_LANGBOOKS=${JSON.stringify(LANGBOOKS).replace(/</g, '\\u003c')};</script>\n` : ''}<script src="${ROOT_PREFIX}assets/i18n.js"></script>
-<script src="${ROOT_PREFIX}assets/app.js"></script>${homeAsk ? `\n<script src="${ROOT_PREFIX}assets/ask.js" defer></script>` : ''}${process.env.FM_WIX ? `\n<script src="${ROOT_PREFIX}assets/wix-embed.js" defer></script>` : ''}
+<script src="${ROOT_PREFIX}assets/app.js"></script>${homeAsk ? `\n<script src="${ROOT_PREFIX}assets/ask.js" defer></script>` : `\n<script src="${ROOT_PREFIX}assets/voice.js" defer data-lang="${esc(cfg.voice?.lang ?? 'en-US')}"></script>`}${process.env.FM_WIX ? `\n<script src="${ROOT_PREFIX}assets/wix-embed.js" defer></script>` : ''}
 ${LIB.enabled && !homeAsk ? `<div id="fm-librarian" hidden data-root="${ROOT_PREFIX}" data-config='${esc(JSON.stringify({ art: LIB_ART ? { ...LIB_ART, src: ROOT_PREFIX + 'assets/librarian/' + LIB_ART.file } : null, voice: LIB.voice, ai: { enabled: LIB.ai?.enabled }, startMinimizedBelowPx: LIB.startMinimizedBelowPx }))}'></div><script src="${ROOT_PREFIX}assets/librarian.js" defer></script>` : ''}
 </body>
 </html>`;
@@ -473,6 +473,7 @@ fs.copyFileSync(path.join(ROOT, 'scripts/assets/style.css'), path.join(OUT, 'ass
 fs.copyFileSync(path.join(ROOT, 'scripts/assets/app.js'), path.join(OUT, 'assets/app.js'));
 fs.copyFileSync(path.join(ROOT, 'scripts/assets/librarian.js'), path.join(OUT, 'assets/librarian.js'));
 fs.copyFileSync(path.join(ROOT, 'scripts/assets/ask.js'), path.join(OUT, 'assets/ask.js'));
+fs.copyFileSync(path.join(ROOT, 'scripts/assets/voice.js'), path.join(OUT, 'assets/voice.js'));
 if (COVERS.entries.length) {
   const covDir = process.env.FM_COVERS_OPT ? path.resolve(process.env.FM_COVERS_OPT) : path.join(ROOT, 'assets-src/covers-opt');
   fs.mkdirSync(path.join(OUT, 'assets/covers'), { recursive: true });
@@ -992,6 +993,7 @@ page('about/privacy/index.html', {
 <ul>
 <li><strong>Your choices stay in your browser.</strong> If you pick a website language, the site remembers it in your browser’s local storage on your own device. It is never sent to us. The same goes for whether you have minimized or hidden the digital librarian.</li>
 <li><strong>Digital librarian:</strong> the animated guide searches the book index that your browser downloads from this site. What you type into it or into the search boxes is not sent anywhere, and it uses no cookies, microphone or outside service.</li>
+<li><strong>Voice search (optional):</strong> the microphone button in the search box listens only after you press it. Your browser\'s built-in speech recognition turns what you say into text, and depending on your browser (for example Chrome, Edge or Safari) the audio may be processed by the browser provider\'s speech service, under that provider\'s own privacy terms. This site does not record, receive or store your audio or the words you speak; it only uses the resulting text to search this site\'s catalogue, and it never speaks back. Typed search works as before.</li>
 <li><strong>Analytics:</strong> ${ANALYTICS.provider ? `the site uses ${esc(ANALYTICS.provider)}, a cookie-free analytics service, to count visits and outbound clicks (which book, category and type of link). It does not record who you are.` : 'none is running at the moment. If this changes, this page will say which service is used and what it records.'} The site does not run analytics when your browser sends Do Not Track.</li>
 <li><strong>Fonts:</strong> the site loads its typefaces from Google Fonts, so your browser contacts Google when a page loads and Google receives your IP address and browser details under its own privacy policy.</li>${AMAZON_COVERS ? '\n<li><strong>Book covers:</strong> many book covers are loaded directly from Amazon\'s image servers (m.media-amazon.com), so your browser contacts Amazon when those pictures appear and Amazon receives your IP address and browser details under its own privacy policy. We send no referrer and store none of these images.</li>' : ''}
 <li><strong>Retailer and partner links:</strong> buttons for Amazon and other retailers, the Forbidden Mantra blog, our sister sites and IOSutra lead away from this site. Those sites have their own privacy practices. When you follow an Amazon affiliate link, Amazon can tell that the visit came from us and may set its own cookies; see the <a href="${href('about/affiliate-disclosure/')}">Affiliate Disclosure</a>. Links to IOSutra carry campaign tags (the name of this site and the page) in the address.</li>

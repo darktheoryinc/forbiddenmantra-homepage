@@ -84,5 +84,15 @@
  "lang_home_none": "No {lang} editions are verified yet. We add a book to a language only when that specific edition has been verified, so an English book is never assumed to exist in {lang}.",
  "lang_home_all": "All {lang} books ({n})",
  "lang_status_have": "{lang}: {n} verified editions",
- "lang_status_none": "No verified {lang} editions yet"
+ "lang_status_none": "No verified {lang} editions yet",
+ "voice_start": "Search by voice",
+ "voice_stop": "Stop listening",
+ "voice_listening": "Listening… say a title, author or subject. Press the microphone or Esc to cancel.",
+ "voice_heard": "Searching for {q}",
+ "voice_nospeech": "I didn't hear anything. Press the microphone and try again, or type your search.",
+ "voice_denied": "Microphone access is blocked. Allow it in your browser settings to use voice search, or type your search.",
+ "voice_blocked_framed": "The microphone is blocked in this embedded view. Open the library in its own browser tab to use voice search, or type your search.",
+ "voice_nomic": "No microphone was found. Type your search instead.",
+ "voice_network": "Voice search needs an internet connection. Type your search instead.",
+ "voice_error": "Voice search did not work this time. Type your search instead."
 }

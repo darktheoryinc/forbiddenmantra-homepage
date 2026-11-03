@@ -23,6 +23,7 @@ node test/verify-pipeline.mjs  # pipeline integrity on a mock of both APIs
 node test/verify-scale.mjs     # pagination, chunk index, dynamic book tier, retailer-link rule
 node test/verify-niches.mjs      # niche guides, legal pages, footer, affiliate build guard
 node test/verify-librarian.mjs   # digital librarian: real search, states, minimize/hide, reduced motion
+node test/verify-voice.mjs       # voice search: fake recogniser; listens, transcribes, searches; never speaks; errors, cancel, keyboard
 node scripts/synth-catalogue.mjs --n 25000 && FM_DATA=test/fixtures/perf/data FM_OUT=test/out-perf node scripts/build.mjs && node test/perf.mjs test/out-perf   # SYNTHETIC 25k load test
 ```
 Open `site/index.html` in a browser (links are relative; no server needed).
