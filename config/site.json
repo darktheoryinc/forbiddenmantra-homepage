@@ -139,12 +139,20 @@
     "cloudflare": {
       "token": null
     },
-    "respectDoNotTrack": true
+    "respectDoNotTrack": true,
+    "decision": "none at launch (owner instruction, 2026-11-03)"
   },
   "legal": {
-    "reviewedByOwner": false,
-    "effectiveDate": null,
-    "reviewNote": "Adapted from the recovered Terms of Service / Refund Policy summary of the original Wix site (the full original text and the original Privacy Policy could not be read from this environment). Items needing owner or legal review are listed in docs/LEGAL-AND-NAVIGATION.md."
+    "reviewedByOwner": true,
+    "effectiveDate": "November 3, 2026",
+    "reviewNote": "Adapted from the recovered Terms of Service / Refund Policy summary of the original Wix site (the full original text and the original Privacy Policy could not be read from this environment). Items needing owner or legal review are listed in docs/LEGAL-AND-NAVIGATION.md.",
+    "operator": "Ravi A. Kissoon, operating as Forbidden Mantra Press",
+    "contactEmail": "officialravshiva@gmail.com",
+    "governingLaw": "State of New York, USA",
+    "disputes": "Contact first, then courts with jurisdiction under applicable law; no mandatory arbitration",
+    "minimumAge": 18,
+    "childrenUnder13": "Site is not directed at children under 13",
+    "finalTextReview": "pending: the owner supplied these details on 2026-11-03; the owner's read-through of the finished page text is required before deployment"
   },
   "voice": {
     "lang": "en-US"

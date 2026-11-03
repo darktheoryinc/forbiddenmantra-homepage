@@ -38,7 +38,7 @@ ok(read('topics/gnosticism/index.html').includes('From the blog') && read('topic
 
 // ===== privacy =====
 const priv = read('about/privacy/index.html');
-ok(/sets no cookies/.test(priv) && /Google Fonts/.test(priv) && /local storage/.test(priv) && /none is running at the moment/.test(priv), 'privacy page states what the site actually does today (no cookies, local-storage language choice, Google Fonts, no analytics)');
+ok(/sets no cookies/.test(priv) && /typefaces are served from this site itself/.test(priv) && /local storage/.test(priv) && /none is running at the moment/.test(priv), 'privacy page states what the site actually does today (no cookies, local-storage language choice, self-hosted fonts, no analytics)');
 ok(fs.readdirSync(SITE).length > 0 && (function all(d) { let n = 0, m = 0; for (const e of fs.readdirSync(d, { withFileTypes: true })) { const p = path.join(d, e.name); if (e.isDirectory()) { const r = all(p); n += r[0]; m += r[1]; } else if (e.name.endsWith('.html')) { n++; if (/about\/privacy\/index\.html/.test(fs.readFileSync(p, 'utf8'))) m++; } } return [n, m]; })(SITE).every((v, i, a) => a[0] === a[1]), 'privacy link appears in the footer of every page');
 
 // ===== analytics config =====
@@ -105,7 +105,8 @@ ok(JSON.parse(fs.readFileSync(path.join(ROOT, 'test/fixtures/data/retailer-links
 // ===== launch gate =====
 r = node('scripts/launch-check.mjs', {}, ['--json']); const items = JSON.parse(r.stdout);
 const lv = (re) => items.find((i) => re.test(i.what))?.level;
-ok(r.status === 1 && lv(/tracking ID for amazon\.com/) === 'PASS' && lv(/Retail link validity/) === 'WARN' && lv(/Cross-promotion/) === 'PASS' && lv(/Owner review of the Terms/) === 'BLOCKER' && lv(/Production URL/) === 'PASS', 'launch-check reports NOT READY with exactly one blocker, the owner\'s legal-page review (2026-11-03: the IOSutra gate and the production address are now recorded from the owner\'s instructions); the live link check has run (links are a warning); tracking ID passes');
+// 2026-11-03: legal details supplied by the owner and recorded, analytics decided as none: launch-check has no blocker or open decision left
+ok(r.status === 0 && lv(/tracking ID for amazon\.com/) === 'PASS' && lv(/Retail link validity/) === 'WARN' && lv(/Cross-promotion/) === 'PASS' && lv(/Owner review of the Terms/) === 'PASS' && lv(/Production URL/) === 'PASS' && lv(/Analytics provider/) === 'PASS' && !items.some((i) => i.level === 'BLOCKER' || i.level === 'DECISION'), 'launch-check reports no blocker and no open owner decision (IOSutra gate, production address, legal review and analytics are recorded); the live link check has run (links are a warning); tracking ID passes');
 ok(lv(/amazon\.co\.uk/) === 'WARN', 'launch-check does not assume the US ID covers amazon.co.uk (UK editions stay a warning)');
 
 // ===== browser: outbound events =====

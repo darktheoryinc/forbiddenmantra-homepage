@@ -432,7 +432,7 @@ ${noindex ? '<meta name="robots" content="noindex, follow">' : PRODUCTION ? `<li
 <link rel="stylesheet" href="${ROOT_PREFIX}assets/style.css">
 ${typeof links === 'function' ? links() : links}
 ${ANALYTICS.snippet}
-<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;500;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Cormorant+Garamond:wght@500;600&family=Montserrat:wght@500;600;700&family=Space+Grotesk:wght@500;600;700&family=Sora:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="${ROOT_PREFIX}assets/fonts.css">
 ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld)}</script>` : ''}
 </head>
 <body>
@@ -476,6 +476,8 @@ const page = (rel, opts) => write(rel, layout({ ...opts, rel }));
 fs.rmSync(OUT, { recursive: true, force: true });
 fs.mkdirSync(path.join(OUT, 'assets'), { recursive: true });
 fs.copyFileSync(path.join(ROOT, 'scripts/assets/style.css'), path.join(OUT, 'assets/style.css'));
+fs.copyFileSync(path.join(ROOT, 'scripts/assets/fonts.css'), path.join(OUT, 'assets/fonts.css'));
+fs.cpSync(path.join(ROOT, 'assets-src/fonts'), path.join(OUT, 'assets/fonts'), { recursive: true });
 fs.copyFileSync(path.join(ROOT, 'scripts/assets/app.js'), path.join(OUT, 'assets/app.js'));
 fs.copyFileSync(path.join(ROOT, 'scripts/assets/librarian.js'), path.join(OUT, 'assets/librarian.js'));
 fs.copyFileSync(path.join(ROOT, 'scripts/assets/ask.js'), path.join(OUT, 'assets/ask.js'));
@@ -966,28 +968,33 @@ const LEGAL = cfg.legal ?? {};
 const reviewBar = () => (PRODUCTION ? '' : '<p class="note legal-review" role="note" lang="en"><strong>Draft for owner and legal review.</strong> ' + esc(LEGAL.reviewNote ?? '') + ' This notice appears in preview builds only.</p>');
 const legalHead = (t) => '<section class="band"><div class="wrap narrow prose" lang="en"><h1>' + t + '</h1>' + reviewBar();
 const ORIG = 'https://www.forbiddenmantra.com/';
+const OPERATOR = LEGAL.operator ?? 'Forbidden Mantra Press', MAIL = LEGAL.contactEmail ?? null;
+const mailLink = MAIL ? `<a href="mailto:${esc(MAIL)}">${esc(MAIL)}</a>` : '';
+const effLine = `<p class="note-sm">Effective date: ${esc(LEGAL.effectiveDate ?? 'to be set when the owner approves this page')}.</p>`;
 page('legal/index.html', {
   title: 'Terms & Policies', crumbs: [['Terms & Policies']], desc: 'Terms of service, refund policy, privacy policy and affiliate disclosure.',
-  body: () => legalHead('Terms &amp; Policies') + '<p>These pages explain how this library works and what we promise. Forbidden Mantra Press’s library is a browsing and affiliate referral service: it does not sell books itself, take payments or keep accounts.</p><ul class="legal-list"><li><a href="' + href('legal/terms-refunds/') + '"><strong>Terms of Service / Refund Policy</strong></a>: using the site, who sells and fulfils orders, returns and refunds.</li><li><a href="' + href('about/privacy/') + '"><strong>Privacy Policy</strong></a>: what the site does and does not do with your data.</li><li><a href="' + href('about/affiliate-disclosure/') + '"><strong>Affiliate Disclosure</strong></a>: how Amazon Associates links work.</li><li><a href="' + href('contact/') + '"><strong>Contact</strong></a>: how to reach us.</li></ul><p class="disclosure" lang="en">' + esc(cfg.disclosure) + '</p></div></section>',
+  body: () => legalHead('Terms &amp; Policies') + '<p>These pages explain how this library works and what we promise. Forbidden Mantra Press’s library is a browsing and affiliate referral service: it does not sell books itself, take payments or keep accounts. The site is operated by ' + esc(OPERATOR) + '.</p><ul class="legal-list"><li><a href="' + href('legal/terms-refunds/') + '"><strong>Terms of Service / Refund Policy</strong></a>: using the site, who sells and fulfils orders, returns and refunds.</li><li><a href="' + href('about/privacy/') + '"><strong>Privacy Policy</strong></a>: what the site does and does not do with your data.</li><li><a href="' + href('about/affiliate-disclosure/') + '"><strong>Affiliate Disclosure</strong></a>: how Amazon Associates links work.</li><li><a href="' + href('contact/') + '"><strong>Contact</strong></a>: how to reach us.</li></ul><p class="disclosure" lang="en">' + esc(cfg.disclosure) + '</p></div></section>',
 });
 page('legal/terms-refunds/index.html', {
   title: 'Terms of Service / Refund Policy', crumbs: [['Terms & Policies', 'legal/'], ['Terms of Service / Refund Policy']], desc: 'Terms of use, who fulfils orders, and returns and refunds.',
-  body: () => legalHead('Terms of Service / Refund Policy') + `<p>Welcome to the Forbidden Mantra Press library. By using this site you agree to these terms.</p>
+  body: () => legalHead('Terms of Service / Refund Policy') + `<p>Welcome to the Forbidden Mantra Press library. By using this site you agree to these terms. The site is operated by ${esc(OPERATOR)}${MAIL ? ` (contact: ${mailLink})` : ''}.</p>
+<h2>Who may use this site</h2><p>You must be at least 18 years old to use this site on your own. If you are under 18, please use it together with a parent or guardian.</p>
 <h2>Using this website</h2><p>You agree to use the site only for lawful purposes and in accordance with these terms. Misuse of the site may result in loss of access.</p>
 <h2>What this site is</h2><p>This site is a browsing and affiliate referral service: a curated catalogue where you can search for and read about books, including our own publications and books from other publishers, and follow links to retailers, mainly Amazon, where any purchase takes place. It is not a store. It has no shopping cart, checkout or customer accounts, and it does not sell books.</p>
 <h2>Orders, payment and fulfilment</h2><p>Forbidden Mantra Press is not the seller of the books listed here, including books published by other companies, and is not a party to your purchase. Books are bought, paid for and fulfilled by the retailer you choose, and the retailer’s own terms govern that transaction. This applies to our own publications too when you buy them through a retailer. This site does not process or store payment information for those orders.</p>
-<h2>Returns and refunds</h2><p>Books ordered through Amazon are covered by <a href="https://www.amazon.com/returns" rel="noopener noreferrer">Amazon’s returns and refund policy</a>; contact the retailer’s customer service for any order problem, because only the retailer can change or refund an order. This site itself sells nothing, so there is nothing to return or refund here.</p>
+<h2>Returns and refunds</h2><p>Books ordered through Amazon are covered by Amazon’s returns and refund policy, which you can find in the help pages on amazon.com; contact the retailer’s customer service for any order problem, because only the retailer can change or refund an order. This site itself sells nothing, so there is nothing to return or refund here.</p>
 <h2>Catalogue information</h2><p>We check book details against published sources and say where a detail is unverified. We do not show prices, availability or ratings. Check the retailer’s page for the current edition, price and format before you buy.</p>
 <h2>Affiliate links</h2><p>Some links to Amazon are affiliate links. See the <a href="${href('about/affiliate-disclosure/')}">Affiliate Disclosure</a>.</p>
 <h2>Ownership and reuse</h2><p>Content on this site that we wrote is owned by Forbidden Mantra Press, and no part may be reused or reproduced without our express written consent. Book titles, author names, cover images and trademarks belong to their owners; their appearance here does not imply endorsement.</p>
 <h2>Third-party sites</h2><p>Links to other sites, including retailers and our <a href="${href('network/')}">sister sites</a>, are provided for convenience. We are not responsible for their content or practices.</p>
 <h2>Limitation of liability</h2><p>Forbidden Mantra Press is not responsible for delays, damages or losses resulting from third-party vendors, shipping errors or platform issues beyond our control.</p>
+<h2>Governing law and disputes</h2><p>These terms are governed by the laws of the State of New York, USA, without regard to its conflict-of-law rules. If you have a problem with this site, please contact us first${MAIL ? ` at ${mailLink}` : ''} so that we can try to resolve it informally. If we cannot, either of us may bring the matter in the courts that have jurisdiction under applicable law. These terms do not require arbitration.</p>
 <h2>Changes</h2><p>We may update these terms. Updates are posted on this page with a new effective date.</p>
-<p class="note-sm">Effective date: ${esc(LEGAL.effectiveDate ?? 'to be set when the owner approves this page')}.</p></div></section>`,
+${effLine}</div></section>`,
 });
 page('contact/index.html', {
   title: 'Contact', crumbs: [['Contact']], desc: 'How to contact Forbidden Mantra Press.',
-  body: () => `<section class="band"><div class="wrap narrow prose" lang="en"><h1>Contact</h1>${reviewBar()}<p>For questions about Forbidden Mantra Press, our books or this site, use the contact options on our main website: <a href="${ORIG}" rel="noopener noreferrer" target="_blank">forbiddenmantra.com<span class="sr"> (opens in a new tab)</span></a>.</p><p>For problems with an order, contact the retailer you bought from. We cannot see or change orders placed with Amazon or other retailers.</p><p>Questions about IOSutra go to <a href="${esc(PROMOS.brands.iosutra.url)}" rel="noopener noreferrer" target="_blank">iosutra.com<span class="sr"> (opens in a new tab)</span></a>.</p></div></section>`,
+  body: () => `<section class="band"><div class="wrap narrow prose" lang="en"><h1>Contact</h1>${reviewBar()}<p>This site is operated by ${esc(OPERATOR)}.${MAIL ? ` Email: ${mailLink}.` : ''}</p><p>You can also use the contact options on our main website: <a href="${ORIG}" rel="noopener noreferrer" target="_blank">forbiddenmantra.com<span class="sr"> (opens in a new tab)</span></a>.</p><p>For problems with an order, contact the retailer you bought from. We cannot see or change orders placed with Amazon or other retailers.</p><p>Questions about IOSutra go to <a href="${esc(PROMOS.brands.iosutra.url)}" rel="noopener noreferrer" target="_blank">iosutra.com<span class="sr"> (opens in a new tab)</span></a>.</p></div></section>`,
 });
 page('network/index.html', {
   title: 'Our network', crumbs: [['Our network']], desc: 'Other websites from the Forbidden Mantra team.',
@@ -995,19 +1002,22 @@ page('network/index.html', {
 });
 page('about/privacy/index.html', {
   title: 'Privacy Policy', crumbs: [['Terms & Policies', 'legal/'], ['Privacy Policy']], desc: 'What this site does and does not do with your data.',
-  body: () => legalHead('Privacy Policy') + `<p>This page describes how this site works today. The site has no accounts, checkout, forms or comments, does not ask for personal information, and sets no cookies of its own.</p>
+  body: () => legalHead('Privacy Policy') + `<p>This page describes how this site works today. The site is operated by ${esc(OPERATOR)}${MAIL ? ` (contact: ${mailLink})` : ''}. It has no accounts, checkout, forms or comments, does not ask for personal information, and sets no cookies of its own.</p>
 <ul>
 <li><strong>Your choices stay in your browser.</strong> If you pick a website language, the site remembers it in your browser’s local storage on your own device. It is never sent to us. The same goes for whether you have minimized or hidden the digital librarian.</li>
 <li><strong>Digital librarian:</strong> the animated guide searches the book index that your browser downloads from this site. What you type into it or into the search boxes is not sent anywhere by this site, and the guide itself uses no cookies, microphone or outside service (the optional voice search is described next).</li>
 <li><strong>Voice search (optional):</strong> the microphone button in the search box listens only after you press it. Your browser\'s built-in speech recognition turns what you say into text, and depending on your browser (for example Chrome, Edge or Safari) the audio may be processed by the browser provider\'s speech service, under that provider\'s own privacy terms. This site does not record, receive or store your audio or the words you speak; it only uses the resulting text to search this site\'s catalogue, and it never speaks back. Typed search works as before.</li>
 <li><strong>Analytics:</strong> ${ANALYTICS.provider ? `the site uses ${esc(ANALYTICS.provider)}, a cookie-free analytics service, to count visits and outbound clicks (which book, category and type of link). It does not record who you are.` : 'none is running at the moment. If this changes, this page will say which service is used and what it records.'} The site does not run analytics when your browser sends Do Not Track.</li>
-<li><strong>Hosting and server logs:</strong> this site is hosted by Netlify, Inc. Whenever your browser loads a page, image or script, Netlify’s servers receive your IP address, browser and device details and the address of what you requested, and may keep server logs of these requests for security, operation and abuse prevention, under <a href="https://www.netlify.com/privacy/" rel="noopener noreferrer">Netlify’s own privacy policy</a>. Pages may be delivered from servers in different countries. This site itself does not set tracking cookies or ask you for personal information.</li>
-<li><strong>Fonts:</strong> the site loads its typefaces from Google Fonts, so your browser contacts Google when a page loads and Google receives your IP address and browser details under its own privacy policy.</li>${AMAZON_COVERS ? '\n<li><strong>Book covers:</strong> many book covers are loaded directly from Amazon\'s image servers (m.media-amazon.com), so your browser contacts Amazon when those pictures appear and Amazon receives your IP address and browser details under its own privacy policy. We send no referrer and store none of these images.</li>' : ''}
+<li><strong>Hosting and server logs:</strong> this site is hosted by Netlify, Inc. Whenever your browser loads a page, image or script, Netlify’s servers receive your IP address, browser and device details and the address of what you requested, and may keep server logs of these requests for security, operation and abuse prevention, under Netlify’s own privacy policy (see netlify.com). Pages may be delivered from servers in different countries. This site itself does not set tracking cookies or ask you for personal information.</li>
+<li><strong>Fonts:</strong> the site’s typefaces are served from this site itself, so your browser does not contact Google Fonts or any other font service.</li>${AMAZON_COVERS ? '\n<li><strong>Book covers:</strong> many book covers are loaded directly from Amazon\'s image servers (m.media-amazon.com), so your browser contacts Amazon when those pictures appear and Amazon receives your IP address and browser details under its own privacy policy. We send no referrer and store none of these images.</li>' : ''}
 <li><strong>Retailer and partner links:</strong> buttons for Amazon and other retailers, the Forbidden Mantra blog, our sister sites and IOSutra lead away from this site. Those sites have their own privacy practices. When you follow an Amazon affiliate link, Amazon can tell that the visit came from us and may set its own cookies; see the <a href="${href('about/affiliate-disclosure/')}">Affiliate Disclosure</a>. Links to IOSutra carry campaign tags (the name of this site and the page) in the address.</li>
 <li><strong>Library links</strong> go to WorldCat’s public search and carry only a book’s ISBN.</li>
+<li><strong>Children:</strong> this site is not directed at children under 13, and we do not knowingly collect personal information from children under 13. The site does not ask visitors for personal information.</li>
+<li><strong>If you email us:</strong> we receive your email address and your message, and use them only to reply to you.</li>
 <li><strong>Our main website.</strong> <a href="https://www.forbiddenmantra.com/" rel="noopener noreferrer">forbiddenmantra.com</a> is a separate site with its own features and its own privacy practices.</li>
 </ul>
-<p>Questions about this page: see <a href="${href('contact/')}">Contact</a>.</p></div></section>`,
+<p>Questions about this page: see <a href="${href('contact/')}">Contact</a>${MAIL ? ` or write to ${mailLink}` : ''}.</p>
+${effLine}</div></section>`,
 });
 page('about/affiliate-disclosure/index.html', {
   title: 'Affiliate Disclosure', crumbs: [['Terms & Policies', 'legal/'], ['Affiliate Disclosure']], desc: 'How we use Amazon Associates affiliate links.',
@@ -1020,7 +1030,8 @@ page('about/affiliate-disclosure/index.html', {
 <li><strong>Independence.</strong> Books are chosen for the catalogue by subject and quality of sources, not by commission. We do not show prices, availability or ratings.</li>
 <li><strong>Library and other links.</strong> Library lookups, article links and links to our other sites are not affiliate links.</li>
 </ul>
-<p>The statement above appears on every page. See also the <a href="${href('legal/terms-refunds/')}">Terms of Service / Refund Policy</a> and <a href="${href('about/privacy/')}">Privacy Policy</a>.</p></div></section>`,
+<p>The statement above appears on every page. See also the <a href="${href('legal/terms-refunds/')}">Terms of Service / Refund Policy</a> and <a href="${href('about/privacy/')}">Privacy Policy</a>.</p>
+${effLine}</div></section>`,
 });
 page('about/catalogue-standards/index.html', {
   title: 'How we verify books', crumbs: [['How we verify books']], desc: 'Catalogue standards.',

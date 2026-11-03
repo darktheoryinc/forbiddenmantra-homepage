@@ -59,8 +59,8 @@ const L = checkLinks(SITE); ok(L.broken.length === 0, `site links resolve (${L.p
 const LEGALOV = path.join(ROOT, 'test/fixtures/legal-ok.json'); fs.mkdirSync(path.dirname(LEGALOV), { recursive: true }); fs.writeFileSync(LEGALOV, JSON.stringify({ legal: { reviewedByOwner: true, effectiveDate: '2026-01-01' } }));
 const run = (env) => spawnSync('node', [path.join(ROOT, 'scripts/build.mjs')], { cwd: ROOT, env: { ...process.env, ...(env.FM_ENV === 'production' && env.FM_PROMOS ? { FM_CONFIG_OVERRIDE: LEGALOV } : {}), ...(env.FM_PROMOS ? { FM_SITE_URL: 'https://shop.example.invalid' } : {}), ...env }, encoding: 'utf8' });
 let r = run({ FM_ENV: 'production', FM_OUT: 'test/out-promo-prod' });
-// 2026-11-03: the owner approved the IOSutra promotion and set the launch policy (unverified NVIDIA claims and unapproved artwork are withheld, not blocking), so the only blockers left on the real config are the legal-page review and a missing siteUrl
-ok(r.status === 1 && /BLOCKER legal: the Terms, Refund, Privacy and Affiliate pages are drafts/.test(r.stderr) && /BLOCKER siteUrl/.test(r.stderr) && !/BLOCKER promo/.test(r.stderr) && !/BLOCKER claim/.test(r.stderr), 'production build REFUSES to run until the owner records the legal-page review and a site address; the IOSutra approval and the NVIDIA-claim withholding policy are recorded, so they no longer block');
+// 2026-11-03: IOSutra approved, launch policy set, legal details recorded: the only blocker left on the real config without FM_SITE_URL is the missing siteUrl
+ok(r.status === 1 && /BLOCKER siteUrl/.test(r.stderr) && !/BLOCKER legal/.test(r.stderr) && !/BLOCKER promo/.test(r.stderr) && !/BLOCKER claim/.test(r.stderr), 'production build without a site address is REFUSED with only the siteUrl blocker; the IOSutra approval, NVIDIA-claim withholding policy and recorded legal details no longer block');
 ok(!fs.existsSync(path.join(ROOT, 'test/out-promo-prod')), 'refused production build wrote no output');
 r = run({ FM_OUT: 'test/out-promo-prev' });
 ok(r.status === 0 && /promo warning/.test(r.stderr), 'preview build succeeds and prints the same items as warnings');

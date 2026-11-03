@@ -29,12 +29,12 @@ const A = walk(tmpA).map((f) => path.relative(tmpA, f)).sort(), B = jarOk ? walk
 ok(A.length > 500 && A.includes('index.html') && !A.some((f) => f.startsWith('site' + path.sep) || f.startsWith('wix' + path.sep)), `index.html is at the archive root; ${A.length} files extracted (no wrapper folder)`);
 ok(JSON.stringify(A) === JSON.stringify(B) && A.every((f) => !jarOk || crypto.createHash('md5').update(fs.readFileSync(path.join(tmpA, f))).digest('hex') === crypto.createHash('md5').update(fs.readFileSync(path.join(tmpB, f))).digest('hex')), 'two independent extractors (Info-ZIP unzip, Java jar) produce identical files');
 ok(A.every((f) => fs.statSync(path.join(tmpA, f)).size > 0 || /^_headers$/.test(f)), 'no empty files');
-const hostDir = path.join(ROOT, 'wix/hosting');
+const hostDir = path.join(ROOT, /production/.test(path.basename(zipPath)) ? 'wix/hosting-production' : 'wix/hosting');
 ok(!fs.existsSync(hostDir) || JSON.stringify(walk(hostDir).map((f) => path.relative(hostDir, f)).sort()) === JSON.stringify(A), 'the unzipped folder wix/hosting/ has exactly the same file list as the archive');
 const ROOTDIR = tmpA;
 const approvals = J('config/approvals.json'); const nvOK = approvals.nvidiaBranding?.approved === true;
 // ---- safety gate on the extracted archive ----
-const gate = scanPackage(ROOTDIR, { production: false });
+const gate = scanPackage(ROOTDIR, { production: !/preview build, not published/i.test(fs.readFileSync(path.join(ROOTDIR, 'index.html'), 'utf8')) });
 ok(gate.ok, `security gate passes on the extracted archive (${gate.info.files} files; tags ${JSON.stringify(gate.info.affiliateTags)})${gate.ok ? '' : ': ' + gate.fail.slice(0, 3).join(' | ')}`);
 ok(nvOK || (gate.info.nvidiaFiles === 0 && !A.some((f) => /nvidia|inception/i.test(f))), nvOK ? 'NVIDIA branding approved by the owner: included' : 'NVIDIA branding is NOT approved, so no NVIDIA badge, panel, name or claim is in the package');
 // ---- every local reference resolves ----

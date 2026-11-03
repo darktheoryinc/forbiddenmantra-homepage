@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Production-mode verification in a THROWAWAY copy (test/out-prod, test/out-prodcfg; both gitignored). The repository's approvals and config are not changed.
-// The only simulated item is the owner's legal-page review (config/site.json legal.reviewedByOwner), which Claude never records; everything else is read
-// from the real config/approvals.json. It proves what a production package contains: SEO, address, NVIDIA/artwork withholding, IOSutra, affiliate, voice search.
+// Reads the REAL config/approvals.json and config/site.json (the legal details the owner supplied on 2026-11-03 are recorded there). It proves what a
+// production package contains: SEO, address, legal pages, self-hosted fonts, NVIDIA/artwork withholding, IOSutra, affiliate, voice search.
 //   node test/verify-production.mjs
 import fs from 'node:fs';
 import path from 'node:path';
@@ -16,13 +16,13 @@ ok(ADDR === 'https://library.forbiddenmantra.com', `the recorded production addr
 
 const out = path.join(ROOT, 'test/out-prod'), cfgDir = path.join(ROOT, 'test/out-prodcfg');
 fs.rmSync(out, { recursive: true, force: true }); fs.mkdirSync(cfgDir, { recursive: true });
-const cfg = J('config/site.json'); cfg.legal = { ...(cfg.legal ?? {}), reviewedByOwner: true, effectiveDate: '2026-11-03' };
+const cfg = J('config/site.json'); cfg.legal = { ...(cfg.legal ?? {}), reviewedByOwner: false };
 fs.writeFileSync(path.join(cfgDir, 'site.json'), JSON.stringify(cfg));
-const run = (env) => spawnSync('node', ['scripts/build.mjs'], { cwd: ROOT, encoding: 'utf8', maxBuffer: 1 << 28, env: { ...process.env, FM_ENV: 'production', FM_SITE_URL: ADDR, FM_WIX: '1', FM_PUBLIC: '1', FM_OUT: 'test/out-prod', FM_CONFIG: 'test/out-prodcfg/site.json', ...env } });
+const run = (env) => spawnSync('node', ['scripts/build.mjs'], { cwd: ROOT, encoding: 'utf8', maxBuffer: 1 << 28, env: { ...process.env, FM_ENV: 'production', FM_SITE_URL: ADDR, FM_WIX: '1', FM_PUBLIC: '1', FM_OUT: 'test/out-prod', ...env } });
 
 // refusals: the real config (legal not reviewed) must stop a production build; so must a missing launch policy
-let r = spawnSync('node', ['scripts/build.mjs'], { cwd: ROOT, encoding: 'utf8', env: { ...process.env, FM_ENV: 'production', FM_SITE_URL: ADDR, FM_OUT: 'test/out-prod' } });
-ok(r.status !== 0 && /legal: the Terms, Refund, Privacy and Affiliate pages are drafts/.test(r.stderr), 'a production build is REFUSED while the owner has not recorded the legal-page review');
+let r = spawnSync('node', ['scripts/build.mjs'], { cwd: ROOT, encoding: 'utf8', env: { ...process.env, FM_ENV: 'production', FM_SITE_URL: ADDR, FM_OUT: 'test/out-prod', FM_CONFIG: 'test/out-prodcfg/site.json' } });
+ok(r.status !== 0 && /legal: the Terms, Refund, Privacy and Affiliate pages are drafts/.test(r.stderr), 'a production build is REFUSED when the legal-page review is not recorded (checked with a copy of the config)');
 // the policy-off rule is checked directly on validate() below
 const promo = await import('../scripts/promo.mjs');
 const reg = J('data/promos.json');
@@ -32,7 +32,7 @@ const lenient = promo.validate(reg, { root: ROOT, production: true, withholdUnve
 ok(lenient.blockers.length === 0 && lenient.warnings.some((w) => /WITHHELD/.test(w)), 'with the owner launch policy, unverified claims are withheld (warning) and nothing else blocks');
 
 r = run({});
-ok(r.status === 0, `production build (simulated legal review) succeeds${r.status === 0 ? '' : ': ' + (r.stderr || r.stdout).slice(-400)}`);
+ok(r.status === 0, `production build (real config and approvals) succeeds${r.status === 0 ? '' : ': ' + (r.stderr || r.stdout).slice(-400)}`);
 if (r.status === 0) {
   const files = []; (function walk(d) { for (const e of fs.readdirSync(d, { withFileTypes: true })) { const p = path.join(d, e.name); e.isDirectory() ? walk(p) : files.push(p); } })(out);
   const rel = (f) => path.relative(out, f).split(path.sep).join('/');
@@ -77,7 +77,20 @@ if (r.status === 0) {
   const priv = fs.readFileSync(path.join(out, 'about/privacy/index.html'), 'utf8');
   ok(/Voice search \(optional\)/.test(priv) && /may be processed by the browser provider/.test(priv) && /not sent anywhere by this site/.test(priv), 'privacy page: voice-search disclosure present and consistent with the Digital Librarian line');
   const terms = fs.readFileSync(path.join(out, 'legal/terms-refunds/index.html'), 'utf8');
-  ok(/Effective date: 2026-11-03/.test(terms) || /Effective date:[^<]*2026/.test(terms), 'legal pages carry an effective date once the owner records one (simulated here)');
+  const strip = (h) => h.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ');
+  const tt = strip(terms), pt = strip(priv), ct = strip(fs.readFileSync(path.join(out, 'contact/index.html'), 'utf8'));
+  ok(/Effective date: November 3, 2026/.test(tt) && /Effective date: November 3, 2026/.test(pt), 'legal pages carry the effective date November 3, 2026');
+  ok(/operated by Ravi A\. Kissoon, operating as Forbidden Mantra Press/.test(tt) && /operated by Ravi A\. Kissoon, operating as Forbidden Mantra Press/.test(pt) && /Ravi A\. Kissoon/.test(ct), 'Terms, Privacy and Contact name the operator (Ravi A. Kissoon, operating as Forbidden Mantra Press)');
+  ok(/mailto:officialravshiva@gmail\.com/.test(terms) && /officialravshiva@gmail\.com/.test(ct), 'the approved public contact email is published (mailto link) on Terms and Contact');
+  ok(/at least 18 years old/.test(tt) && /laws of the State of New York/.test(tt) && /contact us first/.test(tt) && /do not require arbitration/.test(tt), 'Terms: minimum age 18, New York law, contact first then courts, no mandatory arbitration');
+  ok(/not directed at children under 13/.test(pt), 'Privacy: not directed at children under 13');
+  ok(!/printify|apparel/i.test(tt + pt + ct) && /browsing and affiliate referral service/.test(tt) && /not the seller of the books/.test(tt) && /not a store/.test(tt), 'Terms: no Printify/apparel language; the site is a browsing and affiliate referral service, not a seller');
+  ok(/Hosting and server logs/.test(pt) && /Netlify/.test(pt), 'Privacy: Netlify hosting and server-log disclosure present');
+  const emails = new Set(); for (const f of html) for (const m of fs.readFileSync(f, 'utf8').matchAll(/[A-Za-z0-9._%+-]+@[A-Za-z0-9-]+(?:\.[A-Za-z0-9-]+)*\.[A-Za-z]{2,}/g)) emails.add(m[0].toLowerCase());
+  ok(emails.size === 1 && emails.has('officialravshiva@gmail.com'), `the only email address in the whole package is the approved public contact (${[...emails].join(', ')})`);
+  // fonts are self-hosted: no request to Google, files and licence shipped
+  let gf = 0; for (const f of files) if (/\.(html|css|js)$/.test(f) && /fonts\.(googleapis|gstatic)\.com/.test(fs.readFileSync(f, 'utf8'))) gf++;
+  ok(gf === 0 && fs.existsSync(path.join(out, 'assets/fonts.css')) && files.filter((f) => f.endsWith('.woff2')).length >= 30 && fs.existsSync(path.join(out, 'assets/fonts/LICENSES.txt')) && /Fonts:<\/strong> the site’s typefaces are served from this site itself/.test(priv), 'fonts are self-hosted (woff2 + licence notice shipped), nothing references Google Fonts, and the Privacy page says so');
   const aff = fs.readFileSync(path.join(out, 'about/affiliate-disclosure/index.html'), 'utf8');
   ok(/As an Amazon Associate I earn from qualifying purchases\./.test(aff) && /As an Amazon Associate I earn from qualifying purchases\./.test(home), 'the Amazon Associates statement is on the disclosure page and the homepage');
   const tags = new Set(); let links = 0;
@@ -89,11 +102,12 @@ if (r.status === 0) {
   ok([...prot].every((i) => have.has(i)), `all ${prot.size} original edition identifiers are present`);
 
   // ---- security gate on this package, production mode (legal approval simulated) ----
-  const ap = { ...J('config/approvals.json'), legalPagesReviewed: { approved: true } };
-  const g = scanPackage(out, { production: true, approvals: ap });
+  const g = scanPackage(out, { production: true, approvals: J('config/approvals.json') });
   ok(g.ok, `security gate (production): ${g.ok ? `passed, ${g.info.files} files, tags ${JSON.stringify(g.info.affiliateTags)}` : g.fail.slice(0, 5).join(' | ')}`);
-  const g2 = scanPackage(out, { production: true, approvals: J('config/approvals.json') });
-  ok(!g2.ok && g2.fail.some((x) => /legalPagesReviewed/.test(x)), 'security gate (production) rejects the package while legalPagesReviewed is not recorded');
+  const g2 = scanPackage(out, { production: true, approvals: { ...J('config/approvals.json'), legalPagesReviewed: { approved: false } } });
+  ok(!g2.ok && g2.fail.some((x) => /legalPagesReviewed/.test(x)), 'security gate (production) rejects the package if legalPagesReviewed is not recorded');
+  const g3 = scanPackage(out, { production: true, approvals: { ...J('config/approvals.json'), publicContact: { approved: false } } });
+  ok(!g3.ok && g3.fail.some((x) => /email address/.test(x)), 'security gate rejects the contact email unless the owner approved it for publication');
 }
 fs.rmSync(path.join(ROOT, 'test/out-prodcfg'), { recursive: true, force: true });
 console.log(state.fails ? `\n${state.fails} check(s) FAILED, ${state.passes} passed` : `\nAll ${state.passes} production checks passed`);

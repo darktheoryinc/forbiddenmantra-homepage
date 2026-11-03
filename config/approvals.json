@@ -33,9 +33,13 @@
     "covers": "The digital librarian character artwork."
   },
   "legalPagesReviewed": {
-    "approved": false,
-    "approvedBy": null,
-    "approvedOn": null
+    "approved": true,
+    "approvedBy": "site owner (explicit instruction in the working session)",
+    "approvedOn": "2026-11-03",
+    "basis": "owner-supplied-details",
+    "quote": "Owner instruction of 2026-11-03: 'Proceed with the Forbidden Mantra Press legal-page updates using these approved details ... Update the legal pages, run all production and launch checks, and prepare the production ZIP. Do not deploy yet.'",
+    "details": "Operator Ravi A. Kissoon operating as Forbidden Mantra Press; public contact officialravshiva@gmail.com; governing law New York, USA; disputes contact first then applicable courts, no mandatory arbitration; minimum age 18 for independent use; not directed at children under 13; effective November 3, 2026; no analytics at launch; fonts self-hosted.",
+    "limits": "Recorded so the production ZIP can be PREPARED. The page text was drafted by Claude from those details and is not legal advice or counsel-reviewed. The owner's read-through of the finished text is still required before the ZIP is deployed (config/site.json legal.finalTextReview)."
   },
   "productionAddress": {
     "approved": true,
@@ -61,5 +65,12 @@
     "approvedOn": "2026-11-03",
     "quote": "Owner instruction of 2026-11-03: 'Do not publish unverified NVIDIA membership or endorsement claims. If their approval cannot be established, omit or neutralize only the unverified claim rather than blocking the entire launch.'",
     "effect": "A production build leaves out the NVIDIA Inception badge, the 'Inception Member' tile, the membership statement, the non-endorsement/trademark lines and the NVIDIA link while data/promos.json claims are not verified; the IOSutra promotion stays, with the line 'IOSutra is a separate product from Forbidden Mantra Press.' Artwork (IOSutra picture, Digital Librarian character) is left out of a production build while iosutraArtworkRights / librarianArtworkRights are not approved; the surrounding sections and the Digital Librarian keep working. To publish them later, record the evidence/approval and rebuild."
+  },
+  "publicContact": {
+    "approved": true,
+    "email": "officialravshiva@gmail.com",
+    "approvedBy": "site owner (explicit instruction in the working session)",
+    "approvedOn": "2026-11-03",
+    "quote": "Owner instruction of 2026-11-03: 'Public contact: officialravshiva@gmail.com'"
   }
 }

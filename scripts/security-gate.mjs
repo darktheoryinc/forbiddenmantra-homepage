@@ -9,7 +9,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import { loadCovers } from './covers.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-export const ALLOWED_EXT = new Set(['.html', '.js', '.css', '.json', '.webp', '.svg', '.txt']);
+export const ALLOWED_EXT = new Set(['.html', '.js', '.css', '.json', '.webp', '.svg', '.txt', '.woff2']);
 export const ALLOWED_AFFILIATE_TAGS = new Set(['darktheoryinc-20']);
 const ALLOWED_DOT = new Set(['_headers']);
 const MAX_FILE = 5 * 1024 * 1024;
@@ -38,6 +38,7 @@ export function scanPackage(dir, { production = false, approvals = null, publicO
   const rel = (f) => path.relative(dir, f).split(path.sep).join('/');
   const ap = approvals ?? (fs.existsSync(path.join(ROOT, 'config/approvals.json')) ? JSON.parse(fs.readFileSync(path.join(ROOT, 'config/approvals.json'), 'utf8')) : {});
   const ok = (k) => ap[k]?.approved === true;
+  const PUBLIC_EMAILS = new Set(ap.publicContact?.approved === true && ap.publicContact.email ? [ap.publicContact.email.toLowerCase()] : []); // the one contact address the owner approved for publication
   const verifiedKeys = coverKeys ?? new Set(loadCovers({ allowFixture: false }).entries.map((c) => c.key));
   const tags = new Set(); const hosts = new Set(); let nvidiaHits = 0, previewHits = 0;
   if (!files.some((f) => rel(f) === 'index.html')) add(fail, 'HIGH', 'index.html', 'missing at the package root');
@@ -52,14 +53,14 @@ export function scanPackage(dir, { production = false, approvals = null, publicO
     if (!['.html', '.js', '.css', '.json', '.svg', '.txt'].includes(ext) && !ALLOWED_DOT.has(base)) continue;
     const t = fs.readFileSync(f, 'utf8');
     for (const [n, re] of SECRET_RES) if (re.test(t)) add(fail, 'CRITICAL', r, `possible ${n} (value not shown)`);
-    for (const [n, re] of PRIVATE_RES) if (re.test(t)) add(fail, 'HIGH', r, `contains a ${n}`);
+    for (const [n, re] of PRIVATE_RES) { if (n === 'email address') { const bad = [...t.matchAll(new RegExp(re.source, 'g'))].map((m) => m[0].toLowerCase()).filter((e) => !PUBLIC_EMAILS.has(e)); if (bad.length) add(fail, 'HIGH', r, `contains a ${n}`); } else if (re.test(t)) add(fail, 'HIGH', r, `contains a ${n}`); }
     if (ext === '.js') for (const [n, re] of DANGEROUS_JS) if (re.test(t)) add(fail, 'MEDIUM', r, `uses ${n}`);
     if (ext === '.html') {
       for (const m of t.matchAll(/<script[^>]+src=["'](https?:)?\/\/[^"']+/gi)) add(fail, 'HIGH', r, 'loads a script from another website');
       if (/<iframe|<object|<embed/i.test(t)) add(fail, 'HIGH', r, 'contains an iframe/object/embed');
       if (/(m\.media-amazon\.com|ssl-images-amazon\.com)\/images\//i.test(t)) { const amzOk = ok('amazonHostedCovers') && !/ssl-images-amazon\.com/i.test(t) && [...t.matchAll(/https?:\/\/[^\s"'<>]*media-amazon\.com[^\s"'<>]*/g)].every((m) => /^https:\/\/m\.media-amazon\.com\/images\/P\/[A-Z0-9]{10}\.01\._SCLZZZZZZZ_\.jpg$/.test(m[0])); if (!amzOk) add(fail, 'HIGH', r, 'references an Amazon-hosted image outside the owner-approved pattern (config/approvals.json amazonHostedCovers; docs/AMAZON-HOSTED-COVERS.md)'); }
       for (const m of t.matchAll(/<form[^>]+action=["']https?:\/\/[^"']+/gi)) add(fail, 'HIGH', r, 'form posts to another website');
-      for (const m of t.matchAll(/<link[^>]+rel=["']stylesheet["'][^>]+href=["'](https?:\/\/[^"']+)/gi)) if (!/^https:\/\/fonts\.googleapis\.com\//.test(m[1])) add(fail, 'HIGH', r, 'stylesheet from an unapproved host');
+      for (const m of t.matchAll(/<link[^>]+rel=["']stylesheet["'][^>]+href=["'](https?:\/\/[^"']+)/gi)) add(fail, 'HIGH', r, 'stylesheet from another website (fonts are self-hosted)');
       for (const m of t.matchAll(/\btag=([A-Za-z0-9_-]+)/g)) tags.add(m[1]);
       for (const m of t.matchAll(/https?:\/\/([A-Za-z0-9.-]+)/g)) hosts.add(m[1]);
       for (const m of t.matchAll(/\shttp:\/\/(?!www\.w3\.org|schema\.org)[A-Za-z0-9.-]+/g)) add(warn, 'LOW', r, `non-HTTPS link ${m[0].trim()}`);
