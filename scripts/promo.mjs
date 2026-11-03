@@ -137,7 +137,7 @@ export function renderFooter(v, ctx) {
 export function renderPage(v, ctx) {
   return `<section class="band promo-band" data-promo="${esc(v.promo.id)}" lang="en"><div class="wrap">
     <h1>IOSutra: technology &amp; innovation</h1>
-    <p class="lede-sm">Forbidden Mantra Press is a bookstore and publisher. ${esc(v.brand.name)} is a separate product from the same team.</p>
+    <p class="lede-sm">Forbidden Mantra Press is a curated library and publisher. ${esc(v.brand.name)} is a separate product from the same team.</p>
     ${card(v, { asset: ctx.asset, root: ctxRoot(ctx), big: true, production: ctx.production, nvidia: ctx.nvidia !== false, art: ctx.art !== false })}
     <div class="prose promo-prose">
       <h2>About IOSutra</h2>

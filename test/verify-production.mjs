@@ -71,6 +71,7 @@ if (r.status === 0) {
   ok(/data-promo="iosutra-technology"/.test(home) && /Wellness and AI Technology/.test(home) && /href="https:\/\/iosutra\.com\/\?utm_source=/.test(home), 'the IOSutra promotion is still on the homepage with its headline and link');
   ok(/data-promo="iosutra-technology"/.test(tech) && /IOSutra is a separate product from Forbidden Mantra Press\./.test(tech) && /foot-promo/.test(home), 'the IOSutra page and footer line remain, with the separate-product statement');
   ok(!/<img[^>]+(iosutra-wellness|partner)/.test(home + tech), 'the IOSutra section renders without any picture (text and link only)');
+  ok(/Forbidden Mantra Press is a curated library and publisher\./.test(tech) && !/is a bookstore and publisher/i.test(tech), 'the IOSutra page opens with "Forbidden Mantra Press is a curated library and publisher."');
   let bs = 0; for (const f of html) if (/separate product from this bookstore/i.test(fs.readFileSync(f, 'utf8'))) bs++;
   ok(bs === 0 && /separate product from this library/.test(tech) && /IOSutra is a separate product from Forbidden Mantra Press\./.test(home) && /iosutra\.com\/\?utm_source=forbidden-mantra-press&amp;utm_medium=cross-promo&amp;utm_campaign=iosutra-technology/.test(home), 'the IOSutra page says "a separate product from this library", the homepage card says "a separate product from Forbidden Mantra Press", no "bookstore" wording is left, and the link keeps its campaign tags');
 
