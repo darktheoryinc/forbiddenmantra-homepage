@@ -111,8 +111,10 @@
   function attach(input) {
     if (input.dataset.voice) return;
     input.dataset.voice = '1';
+    var hadFocus = document.activeElement === input, caret = hadFocus ? input.selectionStart : null;
     var wrap = document.createElement('span'); wrap.className = 'voice-wrap';
     input.parentNode.insertBefore(wrap, input); wrap.appendChild(input);
+    if (hadFocus) { input.focus(); try { input.setSelectionRange(caret, caret); } catch (e) {} } // moving a node drops focus; keep the cursor where the page put it
     var btn = document.createElement('button'); btn.type = 'button'; btn.className = 'voice-btn';
     btn.setAttribute('aria-pressed', 'false'); btn.setAttribute('aria-label', tr('voice_start')); btn.title = tr('voice_start');
     btn.innerHTML = MIC;

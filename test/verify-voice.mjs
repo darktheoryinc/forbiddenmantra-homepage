@@ -59,6 +59,9 @@ if (browser) for (const [name, vp] of VIEWPORTS) {
   const nBtn = await pg.locator('.voice-btn').count();
   ok(nBtn === 2, `[${name}] a microphone sits inside the header search and the filter-bar search (${nBtn})`);
   ok((await pg.evaluate(() => window.__v.starts)) === 0, `[${name}] nothing listens until the visitor presses the microphone`);
+  await pg.goto(url('search/index.html')); await pg.waitForTimeout(500);
+  ok(await pg.evaluate(() => document.activeElement && document.activeElement.name === 'q' && !!document.activeElement.closest('.filters') && !!document.querySelector('.voice-btn')), `[${name}] the search page still puts the cursor in the search box with the microphone present`);
+  await pg.goto(url('books/index.html')); await settle(pg);
   const aria = await pg.locator('.voice-btn').first().getAttribute('aria-label');
   ok(/voice/i.test(aria) && (await pg.locator('.voice-btn').first().getAttribute('aria-pressed')) === 'false', `[${name}] the button has a screen-reader label ("${aria}") and aria-pressed=false`);
   ok((await pg.evaluate(() => document.querySelectorAll('.voice-wrap input[name=q]').length)) === 2 && (await pg.locator('.filters input[name=q]').count()) === 1, `[${name}] the existing search fields are kept (same inputs, now wrapped)`);
