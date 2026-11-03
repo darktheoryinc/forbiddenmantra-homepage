@@ -1,0 +1,6 @@
+Self-hosted fonts used by the Forbidden Library
+
+Cinzel, Cinzel Decorative, EB Garamond, Cormorant Garamond, Montserrat, Space Grotesk and Inter are licensed under the SIL Open Font License, Version 1.1
+(https://openfontlicense.org). They are distributed here unmodified as the npm "@fontsource/*" packages' woff2 files (latin and latin-ext subsets).
+Each font remains the property of its respective authors; the OFL permits use, embedding and redistribution with the fonts bundled in a website, provided the
+fonts are not sold on their own and this notice is kept. Original sources: https://github.com/google/fonts and the fonts' own repositories.

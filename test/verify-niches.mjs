@@ -44,7 +44,10 @@ ok(/class="aff-note-p[^>]*>As an Amazon Associate/.test(read('books/the-power-of
   ok(/iosutra\.com/.test(promoH) && promoH.includes('Wellness and AI Technology') && promoH.includes('does not imply that NVIDIA sponsors or endorses'), 'IOSutra promotion keeps its artwork heading, link and NVIDIA disclaimer');
   ok(/<img src="[^"]*iosutra-inception-member\.webp" width="288" height="99" alt="IOSutra, Inception Member"/.test(homeH) && !/io-nv-text|io-wordmark/.test(promoH), 'IOSutra panel is the original image at native proportions (not rebuilt in HTML text); no text-drawn NVIDIA or IOSutra logos');
   ok(/<div class="io-tile io-tile-nv"><img src="[^"]*nvidia-inception-program-badge-rgb-for-screen\.svg" alt="NVIDIA Inception Program badge" height="99"/.test(homeH) && !/official NVIDIA Inception badge is not installed/.test(homeH) && homeH.indexOf('iosutra-inception-member') < homeH.indexOf('nvidia-inception-program-badge'), 'official NVIDIA badge sits to the right of the IOSutra panel, no taller than it, and the preview placeholder note is gone');
-  ok(['Space+Grotesk', 'Sora', 'Inter'].every((f) => homeH.includes(f)), 'Space Grotesk, Sora and Inter are loaded');
+  // 2026-11-03: fonts are self-hosted (assets/fonts.css) instead of loaded from Google Fonts. Sora was requested before but nothing in the CSS uses it, so it is no longer shipped.
+  const fontsCss = fs.readFileSync(path.join(SITE, 'assets/fonts.css'), 'utf8'), styleCss = fs.readFileSync(path.join(SITE, 'assets/style.css'), 'utf8');
+  const used = [...new Set([...styleCss.matchAll(/'(Cinzel Decorative|Cinzel|EB Garamond|Cormorant Garamond|Montserrat|Space Grotesk|Inter)'/g)].map((m) => m[1]))];
+  ok(homeH.includes('assets/fonts.css') && !/fonts\.googleapis|fonts\.gstatic/.test(homeH) && used.length >= 6 && used.every((f) => fontsCss.includes(`font-family:'${f}'`)) && ['Space Grotesk', 'Inter'].every((f) => used.includes(f)), `self-hosted fonts.css is linked and defines every web font the stylesheet uses (${used.join(', ')}); no Google Fonts request`);
 }
 // ---- build-time guard: a broken tag must fail the build ----
 const run = (cfgEdit, env = {}) => {
