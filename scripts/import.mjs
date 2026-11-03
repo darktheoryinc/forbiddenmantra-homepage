@@ -253,7 +253,7 @@ const finalWorks = [...works.values()].map((w) => {
 });
 // Works already in the published catalogue keep their URLs: when two bulk works collide (same slug, or variant-author duplicates), the one that
 // was already published wins over a newcomer.
-let PREV_ISBNS = new Set(); try { PREV_ISBNS = new Set(JSON.parse(fs.readFileSync(path.join(ROOT, DATA, 'catalogue.json'), 'utf8')).works.flatMap((x) => x.editions.map((e) => e.isbn13 ?? e.asin).filter(Boolean))); } catch { /* first run */ }
+let PREV_ISBNS = new Set(); const PREV_SLUG = new Map(); try { const prev = JSON.parse(fs.readFileSync(path.join(ROOT, DATA, 'catalogue.json'), 'utf8')).works; PREV_ISBNS = new Set(prev.flatMap((x) => x.editions.map((e) => e.isbn13 ?? e.asin).filter(Boolean))); for (const x of prev) for (const e of x.editions) { const k = e.isbn13 ?? e.asin; if (k && !PREV_SLUG.has(k)) PREV_SLUG.set(k, x.slug); } } catch { /* first run */ }
 const keepRank = (w) => (w.provenance?.tier !== 'open-library-catalogue' && w.provenance?.tier !== 'auto-two-source' ? 2 : w.editions.some((e) => PREV_ISBNS.has(e.isbn13 ?? e.asin)) ? 1 : 0);
 // A single-source bulk work whose normalised title and at least one author-name word (4+ letters) match another work is the same book
 // listed under a variant author spelling ("Paramahansa Yogananda" / "Yogananda, Paramahansa"): keep the verified/richer record, queue the duplicate.
@@ -273,7 +273,13 @@ const keepRank = (w) => (w.provenance?.tier !== 'open-library-catalogue' && w.pr
 const seen = new Set();
 // Verified (hand/web) works claim their plain slug first so published URLs never move; bulk works take the suffixed form.
 const slugRank = (w) => 2 - keepRank(w); // verified first, then works already published, then newcomers
-for (const w of [...finalWorks].sort((a, b) => slugRank(a) - slugRank(b))) {
+// A work that was already published keeps its exact previous slug (matched through its editions), so no published URL ever moves or swaps.
+const pinned = (w) => { if (w.provenance?.tier !== 'open-library-catalogue' && w.provenance?.tier !== 'auto-two-source') return null; for (const e of w.editions) { const p = PREV_SLUG.get(e.isbn13 ?? e.asin); if (p) return p; } return null; };
+const claimed = new Set();
+for (const w of finalWorks) { const p = pinned(w); if (p && !claimed.has(p)) { claimed.add(p); w._pin = p; } }
+for (const w of [...finalWorks].sort((a, b) => (slugRank(a) - slugRank(b)) || ((b._pin ? 1 : 0) - (a._pin ? 1 : 0)))) {
+  if (w._pin && !seen.has(w._pin)) { w.slug = w.id = w._pin; seen.add(w._pin); delete w._pin; continue; }
+  delete w._pin;
   let s = w.slug, n = 1;
   if (seen.has(s)) s = `${w.slug}-${slugify(w.authors[0])}`;
   while (seen.has(s)) s = `${w.slug}-${slugify(w.authors[0])}-${++n}`;
