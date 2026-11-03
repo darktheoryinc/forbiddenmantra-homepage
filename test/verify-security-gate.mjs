@@ -56,7 +56,9 @@ const nv = approvals.nvidiaBranding;
 ok(nv.approved === true && /owner/.test(nv.approvedBy) && nv.approvedOn === '2026-10-28' && nv.basis === 'owner-approved' && Array.isArray(nv.notDocumented) && nv.notDocumented.length >= 3, 'nvidiaBranding: recorded as the owner\'s explicit approval, with verification/guidelines/legal review listed as not documented');
 const promos = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/promos.json'), 'utf8'));
 const st = Object.fromEntries(promos.claims.map((c) => [c.id, c.status]));
-ok(st['nvidia-inception-membership'] === 'owner-asserted' && st['nvidia-trademark-notice'] === 'needs-confirmation', 'claims were not upgraded to verified by the branding approval');
+const memb = promos.claims.find((c) => c.id === 'nvidia-inception-membership'), tm = promos.claims.find((c) => c.id === 'nvidia-trademark-notice');
+// 2026-11-03: the owner stated the membership is verified; that statement and its date are recorded as the evidence. The trademark wording is still unconfirmed and stays flagged (shown as an attribution line only).
+ok(memb.status === 'verified' && memb.verifiedOn === '2026-11-03' && /Owner statement/.test(memb.evidence) && tm.status === 'needs-confirmation' && tm.attribution === true, 'membership is verified only by the owner\'s recorded statement (with its date); the trademark wording is still flagged needs-confirmation');
 fs.rmSync(tmp, { recursive: true, force: true });
 console.log(state.fails ? `\n${state.fails} check(s) FAILED, ${state.passes} passed` : `\nAll ${state.passes} security-gate checks passed`);
 process.exit(state.fails ? 1 : 0);
