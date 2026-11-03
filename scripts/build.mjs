@@ -69,13 +69,9 @@ const WITHHOLD_UNVERIFIED = PRODUCTION && APPROVALS.launchPolicy?.withholdUnveri
 }
 const promoView = (placement, id = 'iosutra-technology') => promo.resolve(PROMOS, id, placement, { root: ROOT });
 // FM_PUBLIC=1 (set by the hosting-package script): anything whose owner approval is not recorded in config/approvals.json is withheld from the output.
-// Amazon-hosted covers (loaded by the visitor's browser from Amazon's image server; never downloaded, cached or rehosted).
-// ON when config/approvals.json amazonHostedCovers.approved is true (the owner's recorded instruction; set false or build with FM_AMAZON_COVERS=off to disable).
-// FM_AMAZON_COVERS=preview is the older Press-only local preview and is refused for public or production builds unless that approval is recorded.
-const AMZ_APPROVED = APPROVALS.amazonHostedCovers?.approved === true && process.env.FM_AMAZON_COVERS !== 'off';
-const AMAZON_COVERS_PREVIEW = process.env.FM_AMAZON_COVERS === 'preview' && !AMZ_APPROVED;
-if (AMAZON_COVERS_PREVIEW && (process.env.FM_PUBLIC || process.env.FM_ENV === 'production')) { console.error('FM_AMAZON_COVERS=preview is refused for public or production builds unless config/approvals.json amazonHostedCovers is approved (docs/AMAZON-HOSTED-COVERS.md).'); process.exit(1); }
-const AMAZON_COVERS = AMZ_APPROVED || AMAZON_COVERS_PREVIEW;
+// 2026-11-03 compliance remediation: Amazon-hosted cover images were REMOVED. This build never creates or requests an Amazon image address (no Amazon image host, no ASIN/ISBN-10 image pattern).
+// Covers are shown only from owner-supplied artwork with documented rights, or from an entry that records a permission specific to this site; every other book shows a title-and-author card.
+if (process.env.FM_AMAZON_COVERS && process.env.FM_AMAZON_COVERS !== 'off') { console.error('FM_AMAZON_COVERS is no longer supported: Amazon-hosted cover images were removed (docs/COMPLIANCE-REPORT-2026-11-03.md).'); process.exit(1); }
 const CLAIMS_VERIFIED = ['nvidia-inception-membership', 'no-endorsement'].every((id) => PROMOS.claims.find((c) => c.id === id)?.status === 'verified');
 const PUBLIC_OUT = !!process.env.FM_PUBLIC, NVIDIA_OK = (!PUBLIC_OUT || APPROVALS.nvidiaBranding?.approved === true) && (!PRODUCTION || CLAIMS_VERIFIED);
 const IO_ART_OK = !PRODUCTION || APPROVALS.iosutraArtworkRights?.approved === true, LIB_ART_OK = !PRODUCTION || APPROVALS.librarianArtworkRights?.approved === true;
@@ -180,11 +176,18 @@ const libFace = () => (LIB_ART ? '<span class="fm-face" aria-hidden="true"></spa
 const COVERS = loadCovers();
 if (COVERS.errors.length) { console.error('COVER MANIFEST ERRORS:\n  ' + COVERS.errors.join('\n  ')); process.exit(1); }
 const coverOfWork = new Map(), coverOfEdition = new Map();
+// Publish a stored cover only when the rights cover OUR use: owner-supplied artwork (the owner confirmed in writing that original Forbidden Mantra Press artwork is his), or an entry whose rights record a permission specific to this site (rights.specificPermission).
+// General publisher "bookseller" terms are not treated as permission for this site, so those files stay in the repository, unpublished.
+const publishableCover = (c) => c.source.type === 'owner-supplied' || c.rights?.specificPermission === true;
+const WITHHELD_COVERS = COVERS.entries.filter((c) => !publishableCover(c));
+COVERS.entries = COVERS.entries.filter(publishableCover);
+COVERS.reuse = (COVERS.reuse ?? []).filter((r) => publishableCover(r.source));
+if (WITHHELD_COVERS.length) console.log(`covers: ${WITHHELD_COVERS.length} stored cover(s) withheld (no permission specific to this site); title-and-author cards are shown instead`);
 for (const c of COVERS.entries) coverOfEdition.set(`${c.work.slug}/${c.edition.id}`, c);
 const reuseOfWork = new Map(); // works whose confirmed identical front artwork is also shown for other editions (display only)
 for (const r of COVERS.reuse ?? []) { const a = reuseOfWork.get(r.work.slug) ?? []; a.push(r.edition.format); reuseOfWork.set(r.work.slug, a); }
 for (const w of cat.works) { const c = w.editions.map((e) => coverOfEdition.get(`${w.slug}/${e.id}`)).find(Boolean); if (c) coverOfWork.set(w.slug, c); }
-const coverRec = (c, w = null) => { if (!c) { const a = w ? amazonCoverId(w) : null; return a ? { a } : 0; } const rec = [c.key, c.sizes?.[240]?.w ?? 240, c.sizes?.[240]?.h ?? 360, c.has480 ? 1 : 0]; const b = w ? coverBuy(w, c) : null; if (b) rec.push(b.url); return rec; }; // 5th element: the tagged Amazon page of the cover's edition
+const coverRec = (c, w = null) => { if (!c) return 0; const rec = [c.key, c.sizes?.[240]?.w ?? 240, c.sizes?.[240]?.h ?? 360, c.has480 ? 1 : 0]; const b = w ? coverBuy(w, c) : null; if (b) rec.push(b.url); return rec; }; // 5th element: the tagged Amazon page of the cover's edition
 const NETWORK = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/network.json'), 'utf8')).sites;
 const NICHES = fs.existsSync(path.join(ROOT, DATA, 'niches.json')) ? JSON.parse(fs.readFileSync(path.join(ROOT, DATA, 'niches.json'), 'utf8')).niches : [];
 const nicheById = new Map(NICHES.map((n) => [n.id, n]));
@@ -268,13 +271,6 @@ const coverAnchor = (w, title, inner, cls) => {
   const b = coverBuy(w, coverOfWork.get(w.slug));
   return b ? `<a class="${cls} cover-buy" href="${esc(b.url)}" target="_blank" rel="sponsored noopener noreferrer" data-track="buy" data-work="${esc(w.slug)}"${b.asin ? ` data-asin="${esc(b.asin)}"` : ''} aria-label="${esc(`Buy ${title} on Amazon (affiliate link, opens in a new tab)`)}">${inner}</a>` : null;
 };
-// Image id for an Amazon-hosted cover: the ASIN of an ebook, paperback, hardcover or generic-book edition, else that edition's ISBN-10 (the ASIN of a print book). Never audiobook.
-// Only for sold works without a verified stored cover; preview-only mode is limited to Press works.
-function amazonCoverId(w) {
-  if (!AMAZON_COVERS || w.purchasable === false || coverOfWork.has(w.slug) || (AMAZON_COVERS_PREVIEW && !w.press)) return null;
-  for (const f of ['ebook', 'paperback', 'hardcover', 'book']) for (const e of w.editions) if (e.format === f) { if (e.asin) return e.asin; if (e.isbn10) return e.isbn10; }
-  return null;
-}
 function cover(w, big = false, title = w.title, entry = coverOfWork.get(w.slug)) {
   if (entry) {
     const k = entry.key, w240 = entry.sizes?.[240]?.w ?? 240, h240 = entry.sizes?.[240]?.h ?? 360, base = `${ROOT_PREFIX}assets/covers/${k}`;
@@ -283,9 +279,7 @@ function cover(w, big = false, title = w.title, entry = coverOfWork.get(w.slug))
   }
   const hue = w.press ? 38 : hashHue(w.title);
   const sz = title.length > 70 ? ' ph-s' : title.length > 40 ? ' ph-m' : '';
-  const amz = amazonCoverId(w);
-  const amzImg = amz ? `<img class="amz-img" src="https://m.media-amazon.com/images/P/${amz}.01._SCLZZZZZZZ_.jpg" alt="${esc(`Cover of ${title} by ${w.authors.join(', ')}`)}" width="240" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-amz-cover="${amz}" onload="if(this.naturalWidth<2)this.remove()" onerror="this.remove()">${AMAZON_COVERS_PREVIEW ? '<span class="amz-tag" aria-hidden="true">Preview: Amazon-hosted</span>' : ''}` : '';
-  return `<div class="cover cover-ph${big ? ' cover-lg' : ''}${w.press ? ' cover-fmp' : ''}" style="--h:${hue}" ${amz ? '' : ` role="img" aria-label="Text placeholder for the cover of ${esc(title)}. The original cover art is not available yet."`}><span class="ph-orn" aria-hidden="true">✦</span><span class="cover-title ph-t${sz}">${esc(title)}</span><span class="cover-author">${esc(w.authors[0])}</span><span class="ph-cap" aria-hidden="true">Cover art coming</span>${amzImg}</div>`;
+  return `<div class="cover cover-ph${big ? ' cover-lg' : ''}${w.press ? ' cover-fmp' : ''}" style="--h:${hue}" role="img" aria-label="Text placeholder for the cover of ${esc(title)}. The original cover art is not available yet."><span class="ph-orn" aria-hidden="true">✦</span><span class="cover-title ph-t${sz}">${esc(title)}</span><span class="cover-author">${esc(w.authors[0])}</span><span class="ph-cap" aria-hidden="true">Cover art coming</span></div>`;
 }
 const authorHref = (n) => (authorPage.has(slugify(n)) ? href(`authors/${slugify(n)}/`) : `${href('search/')}?q=${encodeURIComponent(n)}`);
 const authorLinks = (w) => w.authors.map((n) => `<a href="${authorHref(n)}">${esc(n)}</a>`).join(', ');
@@ -1012,7 +1006,7 @@ page('about/privacy/index.html', {
 <li><strong>Voice search (optional):</strong> the microphone button in the search box listens only after you press it. Your browser\'s built-in speech recognition turns what you say into text, and depending on your browser (for example Chrome, Edge or Safari) the audio may be processed by the browser provider\'s speech service, under that provider\'s own privacy terms. This site does not record, receive or store your audio or the words you speak; it only uses the resulting text to search this site\'s catalogue, and it never speaks back. Typed search works as before.</li>
 <li><strong>Analytics:</strong> ${ANALYTICS.provider ? `the site uses ${esc(ANALYTICS.provider)}, a cookie-free analytics service, to count visits and outbound clicks (which book, category and type of link). It does not record who you are.` : 'none is running at the moment. If this changes, this page will say which service is used and what it records.'} The site does not run analytics when your browser sends Do Not Track.</li>
 <li><strong>Hosting and server logs:</strong> this site is hosted by Netlify, Inc. Whenever your browser loads a page, image or script, Netlify’s servers receive your IP address, browser and device details and the address of what you requested, and may keep server logs of these requests for security, operation and abuse prevention, under Netlify’s own privacy policy (see netlify.com). Pages may be delivered from servers in different countries. This site itself does not set tracking cookies or ask you for personal information.</li>
-<li><strong>Fonts:</strong> the site’s typefaces are served from this site itself, so your browser does not contact Google Fonts or any other font service.</li>${AMAZON_COVERS ? '\n<li><strong>Book covers:</strong> many book covers are loaded directly from Amazon\'s image servers (m.media-amazon.com), so your browser contacts Amazon when those pictures appear and Amazon receives your IP address and browser details under its own privacy policy. We send no referrer and store none of these images.</li>' : ''}
+<li><strong>Fonts:</strong> the site’s typefaces are served from this site itself, so your browser does not contact Google Fonts or any other font service.</li>
 <li><strong>Retailer and partner links:</strong> buttons for Amazon and other retailers, the Forbidden Mantra blog, our sister sites and IOSutra lead away from this site. Those sites have their own privacy practices. When you follow an Amazon affiliate link, Amazon can tell that the visit came from us and may set its own cookies; see the <a href="${href('about/affiliate-disclosure/')}">Affiliate Disclosure</a>. Links to IOSutra carry campaign tags (the name of this site and the page) in the address.</li>
 <li><strong>Library links</strong> go to WorldCat’s public search and carry only a book’s ISBN.</li>
 <li><strong>Children:</strong> this site is not directed at children under 13, and we do not knowingly collect personal information from children under 13. The site does not ask visitors for personal information.</li>

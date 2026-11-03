@@ -54,11 +54,11 @@ export function scanPackage(dir, { production = false, approvals = null, publicO
     const t = fs.readFileSync(f, 'utf8');
     for (const [n, re] of SECRET_RES) if (re.test(t)) add(fail, 'CRITICAL', r, `possible ${n} (value not shown)`);
     for (const [n, re] of PRIVATE_RES) { if (n === 'email address') { const bad = [...t.matchAll(new RegExp(re.source, 'g'))].map((m) => m[0].toLowerCase()).filter((e) => !PUBLIC_EMAILS.has(e)); if (bad.length) add(fail, 'HIGH', r, `contains a ${n}`); } else if (re.test(t)) add(fail, 'HIGH', r, `contains a ${n}`); }
+    if (/(m\.media-amazon|ssl-images-amazon|images-na\.|images-eu\.|images-fe\.|images-amazon)\.?[a-z.]*\.com|media-amazon\.com/i.test(t)) add(fail, 'CRITICAL', r, 'references an Amazon image host (Amazon-hosted cover images are not permitted)');
     if (ext === '.js') for (const [n, re] of DANGEROUS_JS) if (re.test(t)) add(fail, 'MEDIUM', r, `uses ${n}`);
     if (ext === '.html') {
       for (const m of t.matchAll(/<script[^>]+src=["'](https?:)?\/\/[^"']+/gi)) add(fail, 'HIGH', r, 'loads a script from another website');
       if (/<iframe|<object|<embed/i.test(t)) add(fail, 'HIGH', r, 'contains an iframe/object/embed');
-      if (/(m\.media-amazon\.com|ssl-images-amazon\.com)\/images\//i.test(t)) { const amzOk = ok('amazonHostedCovers') && !/ssl-images-amazon\.com/i.test(t) && [...t.matchAll(/https?:\/\/[^\s"'<>]*media-amazon\.com[^\s"'<>]*/g)].every((m) => /^https:\/\/m\.media-amazon\.com\/images\/P\/[A-Z0-9]{10}\.01\._SCLZZZZZZZ_\.jpg$/.test(m[0])); if (!amzOk) add(fail, 'HIGH', r, 'references an Amazon-hosted image outside the owner-approved pattern (config/approvals.json amazonHostedCovers; docs/AMAZON-HOSTED-COVERS.md)'); }
       for (const m of t.matchAll(/<form[^>]+action=["']https?:\/\/[^"']+/gi)) add(fail, 'HIGH', r, 'form posts to another website');
       for (const m of t.matchAll(/<link[^>]+rel=["']stylesheet["'][^>]+href=["'](https?:\/\/[^"']+)/gi)) add(fail, 'HIGH', r, 'stylesheet from another website (fonts are self-hosted)');
       for (const m of t.matchAll(/\btag=([A-Za-z0-9_-]+)/g)) tags.add(m[1]);

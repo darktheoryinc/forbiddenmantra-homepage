@@ -56,14 +56,10 @@
     "note": "Owner instruction of 2026-11-03: 'Target bookstore address: https://library.forbiddenmantra.com', hosted on the existing Netlify project unrivaled-liger-1baec4. The Wix site forbiddenmantra.com is unchanged."
   },
   "amazonHostedCovers": {
-    "approved": true,
-    "approvedBy": "site owner (explicit instruction in the working session)",
-    "approvedOn": "2026-11-02",
-    "basis": "owner-instruction",
-    "covers": "Amazon-hosted cover images shown for books without a verified stored cover, loaded from Amazon's image server in the visitor's browser (never downloaded, cached or rehosted), for books sold through the owner's Amazon Associates account (tag darktheoryinc-20).",
-    "notDocumented": [
-      "Amazon's written terms do not clearly grant this: the Associates IP License (read 2026-10-29) permits image content obtained through its API or approved feeds. The owner accepts this risk and can switch it off by setting approved to false or building with FM_AMAZON_COVERS=off."
-    ]
+    "approved": false,
+    "withdrawnOn": "2026-11-03",
+    "withdrawnBy": "site owner (explicit instruction: protect the Associates and Influencer accounts; no uncertain licensing risk)",
+    "note": "Amazon-hosted cover images (constructed m.media-amazon.com URLs) were removed from the code. This entry is kept only as a record; nothing reads it as a switch."
   },
   "launchPolicy": {
     "withholdUnverifiedNvidiaClaims": true,

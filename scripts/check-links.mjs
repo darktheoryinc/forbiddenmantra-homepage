@@ -1,5 +1,7 @@
 #!/usr/bin/env node
-// Live retailer-link checker. Run on a machine with normal internet access (the build sandbox blocks retailers):
+// Live retailer-link checker for NON-AMAZON retailers only. As of 2026-11-03 it never sends a request to any Amazon address (amazon.*, amzn.*, a.co, media-amazon.com): automated
+// requests to Amazon pages are not made by this project (compliance remediation; see docs/COMPLIANCE-REPORT-2026-11-03.md). Amazon links are verified by hand or through Amazon's own API.
+// Run on a machine with normal internet access (the build sandbox blocks retailers):
 //   node scripts/build.mjs && node scripts/check-links.mjs [--limit N] [--delay 1500] [--links file] [--origin-override http://127.0.0.1:PORT]
 // Reads data/retailer-links.json (written by the build), requests each URL, and writes data/link-check.json.
 // The next build then hides dead links and labels verified ones. Be polite: it is sequential with a delay, and retailers may block
@@ -16,6 +18,8 @@ const OUTFILE = path.join(ROOT, DATA, 'link-check.json');
 const DELAY = +arg('delay', 1500), LIMIT = +arg('limit', 100000), OVERRIDE = arg('origin-override', null), TIMEOUT = +arg('timeout', 20000);
 const today = process.env.FM_TODAY ?? new Date().toISOString().slice(0, 10);
 
+// Amazon is never requested. Exported so the test can prove the guard.
+export const isAmazon = (url) => { try { return /(^|\.)(amazon\.[a-z.]+|amzn\.[a-z]+|a\.co|media-amazon\.com|ssl-images-amazon\.com)$/i.test(new URL(url).hostname); } catch { return true; } };
 const BLOCK = /Robot Check|Enter the characters you see below|Sorry, we just need to make sure you're not a robot|api-services-support@amazon\.com|captcha/i;
 const words = (s) => (s ?? '').toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '').split(/[^a-z0-9]+/).filter((w) => w.length > 3 && !['this', 'that', 'with', 'from', 'book', 'books', 'amazon', 'edition'].includes(w));
 
@@ -35,12 +39,13 @@ export function judge({ status, body, title: expectTitle }) {
 }
 
 async function main() {
-  const all = JSON.parse(fs.readFileSync(path.isAbsolute(LINKS) ? LINKS : path.join(ROOT, LINKS), 'utf8')).links.slice(0, LIMIT);
+  const all = JSON.parse(fs.readFileSync(path.isAbsolute(LINKS) ? LINKS : path.join(ROOT, LINKS), 'utf8')).links.filter((l) => OVERRIDE || !isAmazon(l.url)).slice(0, LIMIT); // Amazon links are skipped (unless a local mirror is used for testing)
   const prev = fs.existsSync(OUTFILE) ? JSON.parse(fs.readFileSync(OUTFILE, 'utf8')).results ?? {} : {};
   const results = { ...prev }; const tally = {};
   for (const [i, l] of all.entries()) {
     let target = l.url;
     if (OVERRIDE) { const u = new URL(l.url); target = OVERRIDE + u.pathname + u.search; }
+    if (isAmazon(target)) { console.log(`skipped (Amazon is never requested) ${l.url}`); continue; }
     let r;
     try {
       const res = await fetch(target, { redirect: 'follow', signal: AbortSignal.timeout(TIMEOUT), headers: { 'User-Agent': 'Mozilla/5.0 (compatible; ForbiddenMantraLinkCheck/1.0)', 'Accept-Language': 'en' } });

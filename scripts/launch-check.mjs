@@ -31,7 +31,7 @@ else add('WARN', 'Revenue', 'Affiliate link audit', 'Run scripts/audit-affiliate
 // link validity
 const total = links.length, st = { live: 0, dead: 0, blocked: 0, mismatch: 0, inconclusive: 0, unchecked: 0 };
 for (const l of links) st[lc[l.url]?.verdict ?? 'unchecked']++;
-add(total && st.live === total ? 'PASS' : st.live + st.blocked === 0 ? 'BLOCKER' : 'WARN', 'Links', `Retail link validity (${total} URLs)`, `live ${st.live}, dead ${st.dead} (hidden), blocked ${st.blocked}, mismatch ${st.mismatch}, inconclusive ${st.inconclusive}, never checked ${st.unchecked}. Run scripts/check-links.mjs on a networked machine.`);
+add(total && st.live === total ? 'PASS' : st.live + st.blocked === 0 ? 'BLOCKER' : 'WARN', 'Links', `Retail link validity (${total} URLs)`, `live ${st.live}, dead ${st.dead} (hidden), blocked ${st.blocked}, mismatch ${st.mismatch}, inconclusive ${st.inconclusive}, never checked ${st.unchecked}. Amazon links are never checked automatically (compliance policy, 2026-11-03); non-Amazon retailers can be checked with scripts/check-links.mjs.`);
 const noId = cat.works.filter((w) => w.press).flatMap((w) => w.editions).filter((e) => !e.isbn13 && !e.asin).length;
 add(noId === 0 ? 'PASS' : 'WARN', 'Catalogue', 'Forbidden Mantra Press editions have identifiers', `${noId} editions have no ASIN/ISBN yet and use search links. Needs a KDP / Author Central export.`);
 const nPress = cat.works.filter((w) => w.press).length, flagged = cat.works.filter((w) => w.reviewFlags?.length).map((w) => w.title);
