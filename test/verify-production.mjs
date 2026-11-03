@@ -72,6 +72,13 @@ if (r.status === 0) {
   ok(/data-promo="iosutra-technology"/.test(tech) && /IOSutra is a separate product from Forbidden Mantra Press\./.test(tech) && /foot-promo/.test(home), 'the IOSutra page and footer line remain, with the separate-product statement');
   ok(!/<img[^>]+(iosutra-wellness|partner)/.test(home + tech), 'the IOSutra section renders without any picture (text and link only)');
 
+  // ---- wording consistency with the affiliate-referral model (owner-approved 2026-11-03) ----
+  let cb = 0, st = 0; for (const f of html) { const t = fs.readFileSync(f, 'utf8'); if (/curated bookstore/i.test(t)) cb++; if (/<p class="foot-h"[^>]*>Store<\/p>/.test(t)) st++; }
+  ok(cb === 0 && /A curated library of sacred texts, practice and inner cultivation/.test(home) && /<meta name="description" content="A curated library of sacred texts/.test(home), `the tagline says "curated library" on every page (pages still saying "curated bookstore": ${cb})`);
+  ok(st === 0 && /<p class="foot-h"[^>]*data-i18n="foot_store">Library<\/p>/.test(home), `the footer heading is "Library", not "Store" (pages with the old heading: ${st})`);
+  const i18n = fs.readFileSync(path.join(out, 'assets/i18n.js'), 'utf8');
+  ok(['Library', 'المكتبة', 'Bibliothek', 'Biblioteca', 'Bibliothèque', 'पुस्तकालय'].every((w) => i18n.includes(`"foot_store":"${w}"`)) && !/"foot_store":"(Store|Shop|Tienda|Boutique|Negozio|Loja|المتجر|स्टोर)"/.test(i18n), 'the footer heading is translated to Library in all 8 interface languages');
+
   // ---- preserved features ----
   ok(fs.existsSync(path.join(out, 'assets/voice.js')) && /assets\/voice\.js/.test(fs.readFileSync(path.join(out, 'books/index.html'), 'utf8')), 'voice search script is in the package and loaded on catalogue pages');
   const priv = fs.readFileSync(path.join(out, 'about/privacy/index.html'), 'utf8');

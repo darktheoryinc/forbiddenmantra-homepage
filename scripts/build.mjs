@@ -456,7 +456,7 @@ ${page}
 </main>
 <footer class="site-footer">
   <div class="wrap foot-grid">
-    <div><p class="foot-brand"><img src="${ROOT_PREFIX}assets/brand/logo-full-stacked-480h.png" width="391" height="150" alt="Forbidden Mantra Press" loading="lazy"></p><p>A curated bookstore of sacred texts, practice and inner cultivation.</p></div>
+    <div><p class="foot-brand"><img src="${ROOT_PREFIX}assets/brand/logo-full-stacked-480h.png" width="391" height="150" alt="Forbidden Mantra Press" loading="lazy"></p><p>A curated library of sacred texts, practice and inner cultivation.</p></div>
     <div><p class="foot-h" data-i18n="foot_browse">${esc(en.foot_browse)}</p><ul>${tax.hubs.map((h) => `<li><a href="${href(`subjects/${h.id}/`)}">${esc(h.name)}</a></li>`).join('')}</ul></div>
     <div><p class="foot-h" data-i18n="foot_store">${esc(en.foot_store)}</p><ul><li><a href="${href('books/')}" data-i18n="foot_all_books">${esc(en.foot_all_books)}</a></li><li><a href="${href('languages/')}" data-i18n="foot_languages">${esc(en.foot_languages)}</a></li>${ART.length ? `<li><a href="${href('articles/')}">Articles</a></li>` : ''}<li><a href="${href('press/')}">Forbidden Mantra Press</a></li><li><a href="${href('about/catalogue-standards/')}" data-i18n="foot_verify">${esc(en.foot_verify)}</a></li><li><a href="${href('about/affiliate-disclosure/')}" data-i18n="foot_affiliate">${esc(en.foot_affiliate)}</a></li>${LIB.enabled ? '<li><button type="button" class="btn-link" data-librarian-toggle lang="en">Hide digital librarian</button></li>' : ''}</ul></div>
     <div><p class="foot-h">Terms &amp; policies</p><ul><li><a href="${href('legal/')}">Terms &amp; Policies</a></li><li><a href="${href('legal/terms-refunds/')}">Terms of Service / Refund Policy</a></li><li><a href="${href('about/privacy/')}">Privacy Policy</a></li><li><a href="${href('about/affiliate-disclosure/')}">Affiliate Disclosure</a></li><li><a href="${href('contact/')}">Contact</a></li></ul></div>
@@ -536,7 +536,7 @@ const langSummary = `${fmt(cat.works.length, 'work', 'works')} · ${fmt(totalEdi
 page('index.html', {
   title: 'Forbidden Mantra Press', desc: cfg.tagline, homeAsk: true,
   body: () => `
-<h1 class="sr">Forbidden Mantra Press: a curated bookstore of sacred texts, practice and inner cultivation</h1>
+<h1 class="sr">Forbidden Mantra Press: a curated library of sacred texts, practice and inner cultivation</h1>
 <section class="ask" data-ask data-root="${ROOT_PREFIX}" aria-labelledby="ask-h"><div class="wrap">
   <div class="ask-bar">
     ${LIB_ART ? `<span class="ask-face" aria-hidden="true" style="background-image:url(${ROOT_PREFIX}assets/librarian/${LIB_ART.file})"></span>` : '<span class="ask-face ask-face-ph" aria-hidden="true">✦</span>'}
