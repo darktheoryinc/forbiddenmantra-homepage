@@ -1,0 +1,4219 @@
+{
+"_doc": "Fifth discovery batch (2026-11-02): titles and topics for grimoires, Vedic and Sanskrit texts, yoga and tantra classics, siddhis and energy cultivation, Buddhist/Taoist/Gnostic/Hermetic canon, plus heading-style subjects. Keyword seeds are plain Open Library searches; every record still passes reconcile gates and import dedup. Existing seed values excluded.",
+"seeds": [
+{
+"kind": "keyword",
+"value": "Key of Solomon",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Lesser Key of Solomon Goetia",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Grimorium Verum",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Sworn Book of Honorius",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Picatrix",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Heptameron Peter de Abano",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Arbatel of Magic",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Book of Abramelin",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Sixth and Seventh Books of Moses",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Black Pullet",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Grand Grimoire",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Enochian Dee Kelley",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Three Books of Occult Philosophy",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "De Occulta Philosophia",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Munich Manual of Demonic Magic",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Clavicula Salomonis",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Testament of Solomon",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Book of Raziel",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Ars Notoria",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Liber Juratus",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Necronomicon",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Book of Shadows",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Magical Papyri Greek",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "PGM Greek Magical Papyri",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Goetic evocation",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "planetary magic",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "talismanic magic",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "sigil magic",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Liber AL vel Legis",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Golden Dawn rituals",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Order of the Golden Dawn",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Hermetic Order",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Rosicrucian manifestos",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Fama Fraternitatis",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Kybalion",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Book of the Law Crowley",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Magick in Theory and Practice",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Liber Null Psychonaut",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Initiation Into Hermetics Bardon",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Practice of Magical Evocation",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Tree of Life Regardie",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Tarot of the Magicians",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Sepher Yetzirah",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "High Magic Ritual",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Magic Rituals",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Operative Witchcraft",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Magical Calendar",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Voodoo Hoodoo",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Hoodoo conjure",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Santeria",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Quimbanda",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Rootwork",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Malleus Maleficarum",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Discoverie of Witchcraft",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Daemonologie",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Aradia Gospel of the Witches",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Witch Cult in Western Europe",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "God of the Witches",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Witchcraft Today",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Spiral Dance",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Grimoire for the Green Witch",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Cunningham's Encyclopedia of Magical Herbs",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Witchcraft folk magic",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "cunning folk",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "kitchen witchery",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "sea witchcraft",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "witch's familiar",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "lunar magic",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "herbal magic",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "crystal magic",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "knot magic",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "protection magic",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "banishing",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "curse breaking",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "spellcraft",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "book of shadows witch",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Sabbats and Esbats",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Samhain",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Beltane",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Yule",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "solitary witch",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "coven",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Gardnerian",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Alexandrian Wicca",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Dianic",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Stregheria",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Strega Italian witchcraft",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Appalachian folk magic",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Pennsylvania German Braucherei",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Pow-Wows Long Lost Friend",
+"department": "witchcraft",
+"tradition": "wiccan",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Rigveda",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Atharvaveda",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Yajurveda",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Samaveda",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Vedic hymns",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Vedic ritual",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Brahmanas",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Aranyakas",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Upanishads translation",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Brihadaranyaka Upanishad",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Chandogya Upanishad",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Isha Upanishad",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Kena Upanishad",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Katha Upanishad",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Mandukya Upanishad",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Taittiriya Upanishad",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Svetasvatara Upanishad",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Mahamrityunjaya mantra",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Om Namah Shivaya",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "mantra science",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "mantra yoga",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "bija mantras",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Sri Suktam",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Purusha Sukta",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Vishnu Sahasranama",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Lalita Sahasranama",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Devi Mahatmya",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Durga Saptashati",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Hanuman Chalisa",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Sri Yantra",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "yantra",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Sanskrit grammar",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "learn Sanskrit",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Sanskrit literature",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Sanskrit poetry",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Panini",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Kalidasa Shakuntala",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Meghaduta",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Bhartrihari",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Panchatantra",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Hitopadesha",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Ramayana translation",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Mahabharata translation",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Bhagavad Gita commentary",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Yoga Vasistha",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Vivekachudamani",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Ashtavakra Gita",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Avadhuta Gita",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Brahma Sutras",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Vedanta Sutras",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Samkhya Karika",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Nyaya Sutras",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Vaisheshika",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Mimamsa",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Bhagavata Purana",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Vishnu Purana",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Shiva Purana",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Markandeya Purana",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Garuda Purana",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Agni Purana",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Narada Bhakti Sutras",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Shandilya Bhakti Sutras",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Naradiya",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Dharmashastra",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Manusmriti",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Arthashastra",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Kamasutra",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Natyashastra",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Ayurveda Samhita",
+"department": "sanskrit-mantras",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Hatha Yoga Pradipika",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Gheranda Samhita",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Shiva Samhita",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Yoga Sutras Patanjali commentary",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Yoga Yajnavalkya",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Goraksha Shataka",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Siddha Siddhanta Paddhati",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Hatha Ratnavali",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Yoga Upanishads",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Yoga Taravali",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Yoga Kundalini Upanishad",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "pranayama breath",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "nadi shodhana",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "kapalabhati",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "bandhas mudras",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "mudras yoga",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "kriya yoga",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Kriya Yoga Lahiri",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "nada yoga",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "laya yoga",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "raja yoga Vivekananda",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Patanjali",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Light on Pranayama",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Science of Breath",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Hatha Yoga Manual",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Asana Pranayama Mudra Bandha",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Yoga Mala",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Yoga Anatomy",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "siddhis",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "yogic powers",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Vibhuti Pada",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Siddha yoga",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Siddhars",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Tirumandiram",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Nath Sampradaya",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Matsyendranath",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Gorakhnath",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Babaji Kriya",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Autobiography of a Yogi",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "yoga history",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "history of yoga",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "yoga body",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Tantra of Yoga",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Yoga of Meditation",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Dhyana",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Dharana",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "samadhi",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Samadhi Pada",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "yogic diet",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Vijnana Bhairava Tantra",
+"department": "tantra",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Kularnava Tantra",
+"department": "tantra",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Mahanirvana Tantra",
+"department": "tantra",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Tantraloka",
+"department": "tantra",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Shiva Sutras",
+"department": "tantra",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Spanda Karikas",
+"department": "tantra",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Pratyabhijnahridayam",
+"department": "tantra",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Kubjika",
+"department": "tantra",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Kaula",
+"department": "tantra",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Kaula Tantra",
+"department": "tantra",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Srividya",
+"department": "tantra",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Sri Vidya",
+"department": "tantra",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Tripura Rahasya",
+"department": "tantra",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Saundarya Lahari",
+"department": "tantra",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Devi Gita",
+"department": "tantra",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Tantric Buddhism",
+"department": "tantra",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Tantric Hinduism",
+"department": "tantra",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Left-handed tantra",
+"department": "tantra",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Shakta tantra",
+"department": "tantra",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Mahavidyas",
+"department": "tantra",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Dasa Mahavidya",
+"department": "tantra",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Kali worship",
+"department": "tantra",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Kali Tantra",
+"department": "tantra",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Bhairava",
+"department": "tantra",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Chinnamasta",
+"department": "tantra",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Tara Tantra",
+"department": "tantra",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Tantra Illuminated",
+"department": "tantra",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Tantric meditation",
+"department": "tantra",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Tantra Spirituality",
+"department": "tantra",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Tantric Quest",
+"department": "tantra",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Tantra: The Supreme Understanding",
+"department": "tantra",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Tantra The Path of Ecstasy",
+"department": "tantra",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Tantra Unveiled",
+"department": "tantra",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Vama Marga",
+"department": "tantra",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Tantric texts translated",
+"department": "tantra",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Shaiva Siddhanta",
+"department": "tantra",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Pashupata",
+"department": "tantra",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "kundalini awakening",
+"department": "subtle-body",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "kundalini rising",
+"department": "subtle-body",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "kundalini energy",
+"department": "subtle-body",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "kundalini syndrome",
+"department": "subtle-body",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Serpent Power",
+"department": "subtle-body",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "The Serpent Power Woodroffe",
+"department": "subtle-body",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Kundalini Tantra",
+"department": "subtle-body",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Kundalini Yoga Sivananda",
+"department": "subtle-body",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "chakras wheels of life",
+"department": "subtle-body",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Chakra healing",
+"department": "subtle-body",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "chakra balancing",
+"department": "subtle-body",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Seven Chakras",
+"department": "subtle-body",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Subtle body",
+"department": "subtle-body",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "subtle energy",
+"department": "subtle-body",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Prana",
+"department": "subtle-body",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Prana pranayama",
+"department": "subtle-body",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "prana healing",
+"department": "subtle-body",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "nadi",
+"department": "subtle-body",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Sushumna",
+"department": "subtle-body",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Ida Pingala",
+"department": "subtle-body",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Hridaya",
+"department": "subtle-body",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Third eye",
+"department": "subtle-body",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Ajna chakra",
+"department": "subtle-body",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Anahata",
+"department": "subtle-body",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Muladhara",
+"department": "subtle-body",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Sahasrara",
+"department": "subtle-body",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "aura reading",
+"department": "subtle-body",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "energy body",
+"department": "subtle-body",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "etheric body",
+"department": "subtle-body",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "astral body",
+"department": "subtle-body",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "astral travel",
+"department": "subtle-body",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "out of body",
+"department": "subtle-body",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "lucid dreaming astral",
+"department": "subtle-body",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "siddhi powers",
+"department": "subtle-body",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "psychic powers development",
+"department": "subtle-body",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "clairvoyance development",
+"department": "subtle-body",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "psychic development",
+"department": "subtle-body",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "remote viewing",
+"department": "subtle-body",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "telepathy",
+"department": "subtle-body",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "psychokinesis",
+"department": "subtle-body",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "levitation",
+"department": "subtle-body",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "miracles saints",
+"department": "subtle-body",
+"tradition": "tantric",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Consciousness mysticism",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Perennial Philosophy",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "cosmic consciousness",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Cosmic Consciousness Bucke",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "enlightenment experience",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Direct Path",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "I Am That",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Be As You Are",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Power of Now",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Spiritual Emergency",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Varieties of Religious Experience",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Mysticism Underhill",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "states of consciousness",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "meditation neuroscience",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "jhana",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "samadhi states",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Kundalini research",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "consciousness research",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Gurdjieff Fourth Way",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Ouspensky In Search of the Miraculous",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Meetings with Remarkable Men",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Beelzebub's Tales",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Work on oneself",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Secret Doctrine",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Isis Unveiled",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Voice of the Silence",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Key to Theosophy",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Mahatma Letters",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Anthroposophy",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Rudolf Steiner knowledge of higher worlds",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Esoteric Christianity Steiner",
+"department": "consciousness",
+"tradition": "nondual",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Dhammapada",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Sutta Nipata",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Majjhima Nikaya",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Digha Nikaya",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Samyutta Nikaya",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Anguttara Nikaya",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Visuddhimagga",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Milindapanha",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Lotus Sutra translation",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Lankavatara Sutra",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Vimalakirti Sutra",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Platform Sutra Hui-neng",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Diamond Sutra commentary",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Heart Sutra commentary",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Surangama Sutra",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Avatamsaka Sutra",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Flower Garland Sutra",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Pure Land sutras",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Bardo Thodol",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Tibetan Book of Living and Dying",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Words of My Perfect Teacher",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Jewel Ornament of Liberation",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Way of the Bodhisattva",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Bodhicaryavatara",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Lam Rim",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Great Treatise on the Stages of the Path",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Mulamadhyamakakarika",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Abhidhamma",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Vasubandhu",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Nagarjuna Fundamental Wisdom",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Prajnaparamita",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Zen mind beginner's mind",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Gateless Gate",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Blue Cliff Record",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Book of Equanimity",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Shobogenzo",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Record of Linji",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Three Pillars of Zen",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Zen flesh Zen bones",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Zen in the Art of Archery",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Satipatthana",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Anapanasati",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Mahasi",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "jhana meditation",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Buddhist tantra",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Dzogchen teachings",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Kalachakra",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Tara practice",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Chod",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Tummo",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "six yogas of Naropa",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Milarepa",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Life of Milarepa",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Marpa",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Padmasambhava",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Terma treasure",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Tibetan yoga",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Buddhist cosmology",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Tao Te Ching translation",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Zhuangzi translation",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Chuang Tzu Inner Chapters",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Huainanzi",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Secret of the Golden Flower",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Cantong qi",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Baopuzi",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Inner Cultivation",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Neiye",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Daodejing commentary",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Taoist alchemy",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "waidan",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Taoist meditation",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Taoist sexual yoga",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Taoist healing",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Taoist immortals",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Eight Immortals",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Taoist talismans",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Fu talisman",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Taoist ritual",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Zhengyi",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Quanzhen",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Complete Perfection",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Shangqing",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Lingbao",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Taoist canon",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Yi Jing",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Book of Changes",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "I Ching oracle",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "feng shui classic",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Chinese astrology",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Chinese medicine classics",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Huangdi Neijing",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Yellow Emperor's Classic",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "qigong classics",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Baduanjin",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Yijin Jing",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Taiji classics",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Tao of Physics",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Healing Tao",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Fusion of the Five Elements",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Iron Shirt Chi Kung",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Microcosmic Orbit",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Nag Hammadi Library",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Nag Hammadi scriptures",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Gospel of Thomas",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Gospel of Philip",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Gospel of Mary Magdalene",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Gospel of Judas",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Gospel of Truth",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Apocryphon of John",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Pistis Sophia",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Books of Jeu",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Hymn of the Pearl",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Thunder Perfect Mind",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Trimorphic Protennoia",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Secret Book of John",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Apocalypse of Adam",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Hypostasis of the Archons",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "On the Origin of the World",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Valentinus",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Valentinian Gnosticism",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Basilides",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Marcion",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Mandaeans",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Ginza",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Cathars",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Bogomils",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Gnostic Bible",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Gnosis",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Gnostic religion Jonas",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Gnosticism Rudolph",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Refutation of All Heresies",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Against Heresies Irenaeus",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Corpus Hermeticum",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Asclepius",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Emerald Tablet",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Hermetica Copenhaver",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Hermetica Clement Salaman",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Poimandres",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Hermetic tradition",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Hermetic Qabalah",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Hermetic magic",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Hermetic alchemy",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Hermetic Corpus",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Greek Hermetica",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Arabic Hermes",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Theosophical Dionysius",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Neoplatonism",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Plotinus Enneads",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Iamblichus Theurgy",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Proclus",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Porphyry",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Theurgy",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Chaldean Oracles",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Orphic hymns",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Orphism",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Pythagorean",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Golden Verses",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Zohar",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Bahir",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Tree of Life Kabbalah",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Mystical Qabalah",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Practical Kabbalah",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Christian Kabbalah",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Lurianic Kabbalah",
+"department": "hermeticism",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Splendor Solis",
+"department": "alchemy",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Rosarium Philosophorum",
+"department": "alchemy",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Atalanta Fugiens",
+"department": "alchemy",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Aurora Consurgens",
+"department": "alchemy",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Theatrum Chemicum",
+"department": "alchemy",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Chymical Wedding of Christian Rosenkreutz",
+"department": "alchemy",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Turba Philosophorum",
+"department": "alchemy",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Book of the Secrets of Alchemy",
+"department": "alchemy",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Geber Summa",
+"department": "alchemy",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Paracelsus selected writings",
+"department": "alchemy",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Basil Valentine Twelve Keys",
+"department": "alchemy",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Mutus Liber",
+"department": "alchemy",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Alchemy Jung",
+"department": "alchemy",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Psychology and Alchemy",
+"department": "alchemy",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Mysterium Coniunctionis",
+"department": "alchemy",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Alchemical studies",
+"department": "alchemy",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Alchemy history",
+"department": "alchemy",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Alchemy Burckhardt",
+"department": "alchemy",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Alchemy Fulcanelli",
+"department": "alchemy",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Mystery of the Cathedrals",
+"department": "alchemy",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Dwellings of the Philosophers",
+"department": "alchemy",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "spagyrics",
+"department": "alchemy",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "spagyric herbalism",
+"department": "alchemy",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Indian alchemy Rasayana",
+"department": "alchemy",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Tibetan alchemy",
+"department": "alchemy",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Newton alchemy",
+"department": "alchemy",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Philosophers Stone",
+"department": "alchemy",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Magnum Opus",
+"department": "alchemy",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Great Work",
+"department": "alchemy",
+"tradition": "hermetic",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Pyramid Texts",
+"department": "ancient-texts",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Coffin Texts",
+"department": "ancient-texts",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Book of Gates",
+"department": "ancient-texts",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Amduat",
+"department": "ancient-texts",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Papyrus of Ani",
+"department": "ancient-texts",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Descent of Inanna",
+"department": "ancient-texts",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Hymns of Enheduanna",
+"department": "ancient-texts",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Avesta",
+"department": "ancient-texts",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Zoroastrian Gathas",
+"department": "ancient-texts",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Zend Avesta",
+"department": "ancient-texts",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Bundahishn",
+"department": "ancient-texts",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Yasna",
+"department": "ancient-texts",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Book of Jubilees",
+"department": "ancient-texts",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Book of Giants",
+"department": "ancient-texts",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Testaments of the Twelve Patriarchs",
+"department": "ancient-texts",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Odes of Solomon",
+"department": "ancient-texts",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Dead Sea Scrolls translated",
+"department": "ancient-texts",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Thomas Taylor Neoplatonist",
+"department": "ancient-texts",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Orphic Hymns Taylor",
+"department": "ancient-texts",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Eleusinian mysteries",
+"department": "ancient-texts",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Mithraic mysteries",
+"department": "ancient-texts",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Mithras",
+"department": "ancient-texts",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Dionysian mysteries",
+"department": "ancient-texts",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Greek mystery religions",
+"department": "ancient-texts",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Mystery religions",
+"department": "ancient-texts",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Sumerian texts",
+"department": "ancient-texts",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Babylonian magic",
+"department": "ancient-texts",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Assyrian",
+"department": "ancient-texts",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Akkadian",
+"department": "ancient-texts",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Hittite",
+"department": "ancient-texts",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Ugaritic",
+"department": "ancient-texts",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Mesoamerican",
+"department": "ancient-texts",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Chilam Balam",
+"department": "ancient-texts",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Aztec codex",
+"department": "ancient-texts",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Inca",
+"department": "ancient-texts",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Maya cosmology",
+"department": "ancient-texts",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Navajo",
+"department": "ancient-texts",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "keyword",
+"value": "Hopi prophecy",
+"department": "ancient-texts",
+"tradition": "comparative",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Magic, Medieval",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Magic -- History",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Occultism -- History",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Angels",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Exorcism",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Spirits",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Talismans",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Amulets",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Evocation",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Conjuring",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Necromancy",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Thaumaturgy",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Esotericism",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Freemasonry symbolism",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Hermetic Order of the Golden Dawn",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Magic -- Handbooks, manuals",
+"department": "ceremonial-magic",
+"tradition": "western-esoteric",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Hindu scriptures",
+"department": "hinduism",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Hindu rituals",
+"department": "hinduism",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Hindu deities",
+"department": "hinduism",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Hinduism -- Sacred books",
+"department": "hinduism",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Vedic literature",
+"department": "hinduism",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Sanskrit literature -- Translations into English",
+"department": "hinduism",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Hindu saints",
+"department": "hinduism",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Vaishnavism",
+"department": "hinduism",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Epics, Sanskrit",
+"department": "hinduism",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Yoga -- Philosophy",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Yoga -- Health aspects",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Yoga -- Religious aspects",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Tantras",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Breathing exercises",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Mudras (Hinduism)",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Yoga -- History",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Yoga, Tantric",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Yoga, Kundalini",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Yoga, Nada",
+"department": "yoga",
+"tradition": "hindu",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Buddhism -- Doctrines",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Buddhism -- Sacred books",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Buddhist meditations",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Mahayana Buddhism",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Buddhist saints",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Buddhist literature, Pali",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Buddhist literature, Sanskrit",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Buddhism -- Rituals",
+"department": "buddhism",
+"tradition": "buddhist",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Taoist philosophy",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Taoist sacred books",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Alchemy, Chinese",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Chinese philosophy",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Chinese mythology",
+"department": "taoism",
+"tradition": "taoist",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Gnostic literature",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Apocryphal books",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Nag Hammadi codices",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Mysticism -- History",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+},
+{
+"kind": "subject",
+"value": "Mysticism -- Comparative studies",
+"department": "gnosticism",
+"tradition": "gnostic",
+"level": "unrated"
+}
+]
+}
