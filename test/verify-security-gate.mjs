@@ -45,7 +45,13 @@ const okAll = Object.fromEntries(['nvidiaBranding', 'iosutraPromotion', 'iosutra
 ok(scanPackage(pkg('prod-ok', {}), { approvals: okAll, production: true }).ok, 'production passes only when every approval is recorded and no preview marker remains');
 // the real repository state
 const approvals = JSON.parse(fs.readFileSync(path.join(ROOT, 'config/approvals.json'), 'utf8'));
-ok(Object.entries(approvals).filter(([k]) => !k.startsWith('_') && k !== 'nvidiaBranding' && k !== 'amazonHostedCovers').every(([, v]) => v.approved === false) && approvals.amazonHostedCovers?.basis === 'owner-instruction', 'config/approvals.json: the five other gates are still not granted (nothing was assumed, including the production address, which waits for the Netlify URL); amazonHostedCovers is recorded as the owner\'s own instruction');
+// 2026-11-03: recorded from the owner's written instructions: iosutraPromotion, productionAddress (library.forbiddenmantra.com), launchPolicy. Still NOT granted: both artwork-rights approvals and the legal review.
+ok(['iosutraArtworkRights', 'librarianArtworkRights', 'legalPagesReviewed'].every((k) => approvals[k]?.approved === false) && ['iosutraPromotion', 'productionAddress'].every((k) => approvals[k]?.approved === true && approvals[k].basis === 'owner-instruction' && (approvals[k].quote || approvals[k].note)) && approvals.launchPolicy?.withholdUnverifiedNvidiaClaims === true && approvals.amazonHostedCovers?.basis === 'owner-instruction', 'config/approvals.json: artwork rights and legal review are still not granted; the IOSutra promotion, production address and launch policy are recorded with the owner\'s own words');
+// artwork needs its rights approval only when it is in the package
+const noArt = { ...okAll, iosutraArtworkRights: { approved: false }, librarianArtworkRights: { approved: false } };
+ok(scanPackage(pkg('prod-noart', {}), { approvals: noArt, production: true }).ok, 'production passes without artwork rights when no artwork is in the package');
+ok(!scanPackage(pkg('prod-libart', { 'assets/librarian/librarian.webp': 'x' }), { approvals: noArt, production: true }).ok, 'production fails if Digital Librarian artwork is shipped without its rights approval');
+ok(!scanPackage(pkg('prod-ioart', { 'assets/partner/iosutra-wellness-ai.webp': 'x' }), { approvals: noArt, production: true }).ok, 'production fails if IOSutra artwork is shipped without its rights approval');
 const nv = approvals.nvidiaBranding;
 ok(nv.approved === true && /owner/.test(nv.approvedBy) && nv.approvedOn === '2026-10-28' && nv.basis === 'owner-approved' && Array.isArray(nv.notDocumented) && nv.notDocumented.length >= 3, 'nvidiaBranding: recorded as the owner\'s explicit approval, with verification/guidelines/legal review listed as not documented');
 const promos = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/promos.json'), 'utf8'));

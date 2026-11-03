@@ -74,7 +74,13 @@ export function scanPackage(dir, { production = false, approvals = null, publicO
   if (!ok('nvidiaBranding') && nvidiaHits) add(fail, 'HIGH', '(package)', `${nvidiaHits} file(s) carry NVIDIA branding, the Inception badge or the membership claim, but config/approvals.json has no nvidiaBranding approval`);
   // production gate
   if (production) {
-    for (const k of ['nvidiaBranding', 'iosutraPromotion', 'iosutraArtworkRights', 'librarianArtworkRights', 'legalPagesReviewed', 'productionAddress']) if (!ok(k)) add(fail, 'BLOCKER', '(production)', `approval "${k}" is not recorded in config/approvals.json`);
+    for (const k of ['nvidiaBranding', 'iosutraPromotion', 'legalPagesReviewed', 'productionAddress']) if (!ok(k)) add(fail, 'BLOCKER', '(production)', `approval "${k}" is not recorded in config/approvals.json`);
+    // artwork needs its rights approval only when the artwork is actually in the package (the build leaves it out otherwise)
+    const rels = files.map(rel);
+    if (rels.some((r) => r.startsWith('assets/librarian/')) && !ok('librarianArtworkRights')) add(fail, 'BLOCKER', '(production)', 'Digital Librarian artwork is in the package but "librarianArtworkRights" is not approved');
+    if (rels.some((r) => r.startsWith('assets/partner/') && !/nvidia|inception/i.test(r)) && !ok('iosutraArtworkRights')) add(fail, 'BLOCKER', '(production)', 'IOSutra artwork is in the package but "iosutraArtworkRights" is not approved');
+    // NVIDIA content may be published only when every NVIDIA claim is verified
+    if (nvidiaHits) { try { const pr = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/promos.json'), 'utf8')); const bad = pr.claims.filter((c) => /nvidia/i.test(c.id + c.text) && c.status !== 'verified').map((c) => c.id); if (bad.length) add(fail, 'BLOCKER', '(production)', `NVIDIA content is in the package but these claims are not verified: ${bad.join(', ')}`); } catch { add(fail, 'BLOCKER', '(production)', 'data/promos.json unreadable; cannot confirm NVIDIA claims are verified'); } }
     if (previewHits) add(fail, 'BLOCKER', '(production)', `${previewHits} file(s) still carry preview/draft markers`);
     if (!ap.productionAddress?.url) add(fail, 'BLOCKER', '(production)', 'no production address recorded');
   } else if (previewHits) add(warn, 'INFO', '(package)', `${previewHits} file(s) carry preview/draft markers (fine for a preview, blocked for production)`);

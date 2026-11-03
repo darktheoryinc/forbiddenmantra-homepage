@@ -110,8 +110,8 @@
     {
       "id": "iosutra-technology",
       "brand": "iosutra",
-      "approved": false,
-      "approvalNote": "Preview only. Owner approval needed before production.",
+      "approved": true,
+      "approvalNote": "Approved for production by the owner's instruction of 2026-11-03 (see config/approvals.json iosutraPromotion). Unverified NVIDIA claims and artwork without approved rights are withheld from production builds by launchPolicy.",
       "claims": [
         "nvidia-inception-membership",
         "no-endorsement",

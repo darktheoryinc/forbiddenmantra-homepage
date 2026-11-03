@@ -32,7 +32,7 @@ export function badgeState(badge, root) {
   return { ok: reasons.length === 0, enabled: true, reasons };
 }
 
-export function validate(reg, { root, production = false } = {}) {
+export function validate(reg, { root, production = false, withholdUnverified = false } = {}) {
   const errors = [], blockers = [], warnings = [];
   const claimById = new Map(reg.claims.map((c) => [c.id, c]));
   for (const p of reg.promos) {
@@ -44,7 +44,8 @@ export function validate(reg, { root, production = false } = {}) {
       const c = claimById.get(id);
       if (!c) { errors.push(`promo ${p.id}: unknown claim "${id}"`); continue; }
       if (c.brand !== p.brand) errors.push(`claim ${id} belongs to ${c.brand}, not ${p.brand}`);
-      if (c.status !== 'verified') (production ? blockers : warnings).push(`claim "${id}" is ${c.status}; verify before launch${c.beforeLaunch ? ': ' + c.beforeLaunch.join(' ') : ''}`);
+      if (c.status !== 'verified' && production && withholdUnverified) warnings.push(`claim "${id}" is ${c.status}; WITHHELD from the production site by the owner's launch policy (config/approvals.json launchPolicy), so it is not published`);
+      else if (c.status !== 'verified') (production ? blockers : warnings).push(`claim "${id}" is ${c.status}; verify before launch${c.beforeLaunch ? ': ' + c.beforeLaunch.join(' ') : ''}`);
     }
     // an NVIDIA membership claim must always travel with the separation statement
     if ((p.claims ?? []).includes('nvidia-inception-membership') && !(p.claims ?? []).includes('no-endorsement')) errors.push(`promo ${p.id}: the membership claim must be accompanied by the "no-endorsement" claim`);
@@ -90,10 +91,10 @@ const lnk = (v, placement, inner, cls, label) => v.url
   : `<div class="${cls}">${inner}</div>`;
 
 // IOSutra identity: dark-green panel with gold type, used by the home section and the technology page
-function card(v, { asset, root, big, production, nvidia = true }) {
+function card(v, { asset, root, big, production, nvidia = true, art = true }) {
   const logo = assetState(v.brand.logo, root).ok;
   const ctx = { production };
-  const hero = v.brand.hero, hs = assetState(hero, root), badge = v.badge, member = v.claim('nvidia-inception-membership'), sep = v.claim('no-endorsement'), tm = v.claim('nvidia-trademark-notice');
+  const hero = v.brand.hero, hs = art ? assetState(hero, root) : { ok: false, enabled: false }, badge = v.badge, member = v.claim('nvidia-inception-membership'), sep = v.claim('no-endorsement'), tm = v.claim('nvidia-trademark-notice');
   const link = v.external?.nvidiaInception;
   const wordmark = '<span class="io-wordmark" aria-hidden="true"><span class="io-mark"></span>IOSutra</span>';
   const media = hs.ok
@@ -122,7 +123,7 @@ export function renderHome(v, ctx) {
   return `<section class="band promo-band" aria-labelledby="promo-${esc(v.promo.id)}-h" data-promo="${esc(v.promo.id)}" lang="en">
   <div class="wrap">
     <p class="eyebrow">Technology &amp; innovation · from our team</p>
-    ${card(v, { asset: ctx.asset, root: ctxRoot(ctx), production: ctx.production, nvidia: ctx.nvidia !== false })}
+    ${card(v, { asset: ctx.asset, root: ctxRoot(ctx), production: ctx.production, nvidia: ctx.nvidia !== false, art: ctx.art !== false })}
     <p class="io-more"><a href="${ctx.href(v.promo.placements.page.path)}">About this section →</a></p>
   </div>
 </section>`;
@@ -137,7 +138,7 @@ export function renderPage(v, ctx) {
   return `<section class="band promo-band" data-promo="${esc(v.promo.id)}" lang="en"><div class="wrap">
     <h1>IOSutra: technology &amp; innovation</h1>
     <p class="lede-sm">Forbidden Mantra Press is a bookstore and publisher. ${esc(v.brand.name)} is a separate product from the same team.</p>
-    ${card(v, { asset: ctx.asset, root: ctxRoot(ctx), big: true, production: ctx.production, nvidia: ctx.nvidia !== false })}
+    ${card(v, { asset: ctx.asset, root: ctxRoot(ctx), big: true, production: ctx.production, nvidia: ctx.nvidia !== false, art: ctx.art !== false })}
     <div class="prose promo-prose">
       <h2>About IOSutra</h2>
       <p>${esc(v.brand.descriptor)}. ${esc(v.brand.relationship)}</p>

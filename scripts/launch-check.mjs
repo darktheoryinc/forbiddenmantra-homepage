@@ -15,7 +15,8 @@ const arts = J('data/articles-report.json'), reg = J('data/promos.json');
 const items = []; const add = (level, area, what, detail = '') => items.push({ level, area, what, detail });
 
 // hosting & URL
-add(cfg.siteUrl || process.env.FM_SITE_URL ? 'PASS' : 'DECISION', 'Hosting', 'Production URL and host', cfg.siteUrl ? cfg.siteUrl : 'No siteUrl set and no deploy configuration exists. Choose a host (a free static host is enough) and set config/site.json "siteUrl".');
+const recAddr = J('config/approvals.json', {}).productionAddress;
+add(cfg.siteUrl || process.env.FM_SITE_URL || recAddr?.approved === true ? 'PASS' : 'DECISION', 'Hosting', 'Production URL and host', cfg.siteUrl ? cfg.siteUrl : recAddr?.approved === true ? `${recAddr.url} (recorded ${recAddr.approvedOn}; build with FM_SITE_URL set to it)` : 'No siteUrl set and no deploy configuration exists. Choose a host (a free static host is enough) and set config/site.json "siteUrl".');
 // affiliate
 const tag = (m) => process.env[`AMAZON_TRACKING_ID_${m.replace(/^amazon\./, '').toUpperCase().replace(/\./g, '_')}`] || (m === 'amazon.com' && process.env.AMAZON_TRACKING_ID) || cfg.affiliate.marketplaces[m]?.trackingId;
 add(tag('amazon.com') ? 'PASS' : 'BLOCKER', 'Revenue', 'Amazon Associates tracking ID for amazon.com', tag('amazon.com') ? 'set' : 'Not recovered. Without it no sale is attributed to you. See docs/AFFILIATE-AND-DEPLOYMENT.md.');
@@ -46,6 +47,7 @@ const nvDoc = (m) => appr.nvidiaBranding?.approved === true && /claim "nvidia-/.
 const gateMsgs = v.errors.concat(v.blockers);
 const gateReal = gateMsgs.filter((m) => !nvDoc(m)), gateDoc = gateMsgs.filter(nvDoc);
 add(gateReal.length === 0 ? 'PASS' : 'BLOCKER', 'IOSutra', 'Cross-promotion gate (production build)', gateReal.join(' | ') || 'clear');
+add(cfg.legal?.reviewedByOwner === true ? 'PASS' : 'BLOCKER', 'Legal', 'Owner review of the Terms, Refund, Privacy and Affiliate pages', cfg.legal?.reviewedByOwner === true ? `recorded, effective ${cfg.legal.effectiveDate}` : 'Not recorded. Set config/site.json legal.reviewedByOwner and legal.effectiveDate only after the owner states the pages are approved for publication.');
 if (gateDoc.length) add('WARN', 'IOSutra', 'NVIDIA branding: approval recorded; evidence notes not filled in', `config/approvals.json nvidiaBranding.approved=true (${appr.nvidiaBranding.approvedBy}, ${appr.nvidiaBranding.approvedOn}). Administrative only: the claim entries in data/promos.json still read owner-asserted / needs-confirmation until the owner supplies evidence. No branding change is needed and nothing is invented.`);
 // legal / privacy / analytics
 add(fs.existsSync(path.join(ROOT, 'site/about/privacy/index.html')) ? 'WARN' : 'BLOCKER', 'Legal', 'Privacy page exists but needs owner/legal review', 'Describes current behaviour (no cookies, no analytics, Google Fonts). Add a real contact method, and update it before enabling analytics.');

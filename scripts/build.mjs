@@ -53,8 +53,11 @@ const ANALYTICS = (() => {
   if (!snippet) { console.error(`ERROR analytics: unknown provider "${p}".`); process.exit(1); }
   return { snippet, provider: p };
 })();
+const APPROVALS = fs.existsSync(path.join(ROOT, 'config/approvals.json')) ? JSON.parse(fs.readFileSync(path.join(ROOT, 'config/approvals.json'), 'utf8')) : {};
+// Owner launch policy (config/approvals.json launchPolicy): publish only what is verified/cleared; unverified NVIDIA claims and artwork without a recorded rights approval are left out of a production build instead of blocking it.
+const WITHHOLD_UNVERIFIED = PRODUCTION && APPROVALS.launchPolicy?.withholdUnverifiedNvidiaClaims === true;
 {
-  const v = promo.validate(PROMOS, { root: ROOT, production: PRODUCTION });
+  const v = promo.validate(PROMOS, { root: ROOT, production: PRODUCTION, withholdUnverified: WITHHOLD_UNVERIFIED });
   v.warnings.forEach((w) => console.warn(`promo warning: ${w}`));
   if (PRODUCTION && cfg.legal && !cfg.legal.reviewedByOwner) v.blockers.push('legal: the Terms, Refund, Privacy and Affiliate pages are drafts. Owner/legal review is required; then set config/site.json legal.reviewedByOwner true and legal.effectiveDate.');
   if (PRODUCTION && !/^https:\/\/[^/]+/.test(SITE_URL)) v.blockers.push('siteUrl: set config/site.json "siteUrl" (or FM_SITE_URL) to the https address the site will be served from; canonical links and the sitemap need it.');
@@ -65,7 +68,6 @@ const ANALYTICS = (() => {
   }
 }
 const promoView = (placement, id = 'iosutra-technology') => promo.resolve(PROMOS, id, placement, { root: ROOT });
-const APPROVALS = fs.existsSync(path.join(ROOT, 'config/approvals.json')) ? JSON.parse(fs.readFileSync(path.join(ROOT, 'config/approvals.json'), 'utf8')) : {};
 // FM_PUBLIC=1 (set by the hosting-package script): anything whose owner approval is not recorded in config/approvals.json is withheld from the output.
 // Amazon-hosted covers (loaded by the visitor's browser from Amazon's image server; never downloaded, cached or rehosted).
 // ON when config/approvals.json amazonHostedCovers.approved is true (the owner's recorded instruction; set false or build with FM_AMAZON_COVERS=off to disable).
@@ -74,8 +76,10 @@ const AMZ_APPROVED = APPROVALS.amazonHostedCovers?.approved === true && process.
 const AMAZON_COVERS_PREVIEW = process.env.FM_AMAZON_COVERS === 'preview' && !AMZ_APPROVED;
 if (AMAZON_COVERS_PREVIEW && (process.env.FM_PUBLIC || process.env.FM_ENV === 'production')) { console.error('FM_AMAZON_COVERS=preview is refused for public or production builds unless config/approvals.json amazonHostedCovers is approved (docs/AMAZON-HOSTED-COVERS.md).'); process.exit(1); }
 const AMAZON_COVERS = AMZ_APPROVED || AMAZON_COVERS_PREVIEW;
-const PUBLIC_OUT = !!process.env.FM_PUBLIC, NVIDIA_OK = !PUBLIC_OUT || APPROVALS.nvidiaBranding?.approved === true;
-const promoCtx = { root: ROOT, production: PRODUCTION, nvidia: NVIDIA_OK, href: (p) => href(p), asset: (f) => `${ROOT_PREFIX}assets/partner/${f}` };
+const CLAIMS_VERIFIED = ['nvidia-inception-membership', 'no-endorsement', 'nvidia-trademark-notice'].every((id) => PROMOS.claims.find((c) => c.id === id)?.status === 'verified');
+const PUBLIC_OUT = !!process.env.FM_PUBLIC, NVIDIA_OK = (!PUBLIC_OUT || APPROVALS.nvidiaBranding?.approved === true) && (!PRODUCTION || CLAIMS_VERIFIED);
+const IO_ART_OK = !PRODUCTION || APPROVALS.iosutraArtworkRights?.approved === true, LIB_ART_OK = !PRODUCTION || APPROVALS.librarianArtworkRights?.approved === true;
+const promoCtx = { root: ROOT, production: PRODUCTION, nvidia: NVIDIA_OK, art: IO_ART_OK, href: (p) => href(p), asset: (f) => `${ROOT_PREFIX}assets/partner/${f}` };
 const placed = (placement) => PROMOS.promos.filter((p) => p.placements?.[placement]?.enabled);
 
 // ---------- languages & interface locales ----------
@@ -168,7 +172,7 @@ const depthPrefix = (rel) => '../'.repeat(rel.split('/').length - 1) || './';
 const worksIn = (deptId) => cat.works.filter((w) => w.subjects.includes(deptId));
 const worksInHub = (hubId) => cat.works.filter((w) => w.subjects.some((s) => dept.get(s).hubs.includes(hubId)));
 const LIB = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/librarian.json'), 'utf8'));
-const LIB_ART = LIB.art?.file && LIB.art.rightsConfirmed && fs.existsSync(path.join(ROOT, 'assets-src/librarian', LIB.art.file)) ? LIB.art : null;
+const LIB_ART = LIB_ART_OK && LIB.art?.file && LIB.art.rightsConfirmed && fs.existsSync(path.join(ROOT, 'assets-src/librarian', LIB.art.file)) ? LIB.art : null;
 // ---------- verified covers (data/covers.json; empty until covers are supplied or licensed; see docs/COVERS.md) ----------
 const COVERS = loadCovers();
 if (COVERS.errors.length) { console.error('COVER MANIFEST ERRORS:\n  ' + COVERS.errors.join('\n  ')); process.exit(1); }
@@ -318,6 +322,8 @@ function card(w, ctxLang = null, hl = 'h3', slim = false, buy = false, tag = nul
 </article>`;
 }
 // paged: this grid shows one static page of a longer list. The filter bar then works from the lazy-loaded chunk index (see app.js), not from these cards.
+// meta description: whole words, at most ~155 characters (a sentence split on the first full stop broke on initials such as "M. Basil Pennington")
+const clipDesc = (t, n = 155) => { const x = String(t ?? '').replace(/\s+/g, ' ').trim(); return x.length <= n ? x : x.slice(0, x.lastIndexOf(' ', n)).replace(/[,;:\-–—(]+$/, '') + '…'; };
 const gridNote = (works, buy) => (!buy && works.some((w) => coverOfWork.has(w.slug) && coverBuy(w, coverOfWork.get(w.slug))) ? `<p class="disclosure sm" data-grid-note lang="en">${esc(cfg.disclosure.split('. ')[0])}. Book covers on this page link to Amazon (affiliate links).</p>` : '');
 const grid = (works, { filterable = true, ctxLang = null, hl = 'h3', paged = null, buy = false, tag = null } = {}) => gridNote(works, buy) + (paged
   ? `<div class="grid" data-index-grid data-shards="${paged.shards.join(' ')}" data-scope='${esc(JSON.stringify(paged.scope))}' data-total="${paged.total}" data-per="${BUILD.pageSize}" data-root="${ROOT_PREFIX}"${ctxLang ? ` data-ctx="${ctxLang}"` : ''} data-hl="${hl}">${works.map((w) => card(w, ctxLang, hl, true)).join('')}</div>
@@ -638,7 +644,7 @@ for (const l of langReg.languages) {
   const byDept = tax.departments.map((d) => [d, ws.filter((w) => w.subjects.includes(d.id)).length]).filter(([, n]) => n > 0);
   const stat = langStats.get(l.code);
   listing({ rel: `languages/${l.code}/`, works: ws, ctxLang: l.code, scope: { k: 'lang', v: l.code }, page: {
-    title: `Books in ${l.name}`, desc: ws.length ? `${ws.length} works in ${l.name}.` : `No verified ${l.name} editions yet.`, crumbs: [['Languages', 'languages/'], [l.name]],
+    title: `Books in ${l.name}`, desc: ws.length ? `${ws.length === 1 ? '1 book' : ws.length + ' books'} with a verified ${l.name} edition in the Forbidden Library.` : `No verified ${l.name} editions yet.`, crumbs: [['Languages', 'languages/'], [l.name]],
     body: ({ grid: G, nav }) => `<section class="band"><div class="wrap">
 <p class="eyebrow">${esc(langReg.groups[l.group])}</p>
 <h1><span lang="${l.code}" dir="${l.dir}">${esc(l.endonym)}</span>${l.endonym !== l.name ? ` <small class="h1-sub">${esc(l.name)}</small>` : ''}</h1>
@@ -778,7 +784,7 @@ ${letters.map((l) => `<h2 id="l-${l}">${l}</h2><ul class="authors">${authorList.
 for (const a of authorList) {
   const ws = a.workIds.map((id) => workById.get(id));
   listing({ rel: `authors/${a.id}/`, works: ws, scope: { k: 'author', v: a.name }, page: {
-    title: a.name, desc: a.bio ?? `Books by ${a.name}`, crumbs: [['Authors', 'authors/'], [a.name]],
+    title: a.name, desc: a.bio ? clipDesc(a.bio) : `Books by ${a.name} in the Forbidden Library: titles, editions and where to find them on Amazon.`, crumbs: [['Authors', 'authors/'], [a.name]],
     body: ({ grid: G, nav }) => `<section class="band"><div class="wrap"><h1>${esc(a.name)}</h1>${a.bio ? `<p class="lede-sm">${esc(a.bio)}</p>` : a.workIds.some((id) => workById.get(id).press) ? '<p class="note">Author profile pending. The author credit on Forbidden Mantra Press titles is being confirmed with the publisher.</p>' : ''}<h2>Books</h2>${langChips(ws)}${filterBar(ws, { subjects: false, traditions: false, press: false, q: false })}${G}${nav}${emptyMsg()}</div></section>`,
   }});
 }
@@ -826,7 +832,7 @@ for (const w of cat.works) {
     : `<div class="lang-group" id="lang-${groups[0][0]}">${aliasAnchors(groups[0][1])}<div class="editions">${groups[0][1].map(edHtml).join('')}</div></div>`;
   const edSources = w.editions.filter((e) => e.sources?.length);
   page(`books/${w.slug}/index.html`, {
-    title: w.title + (w.subtitle ? `: ${w.subtitle}` : ''), desc: descOf(w).split('. ')[0] + '.', crumbs: [['All books', 'books/'], [w.title]],
+    title: w.title + (w.subtitle ? `: ${w.subtitle}` : ''), desc: clipDesc(descOf(w)), crumbs: [['All books', 'books/'], [w.title]],
     jsonld: { '@context': 'https://schema.org', '@type': 'Book', name: w.title, author: w.authors.map((n) => ({ '@type': 'Person', name: n })), inLanguage: [...new Set(w.editions.map((e) => e.language))], workExample: w.editions.map((e) => jsonLdEd(w, e)) },
     body: () => `<article class="band"><div class="wrap book">
   <div class="book-cover">${(coverOfWork.has(w.slug) && coverAnchor(w, w.title, cover(w, true), 'book-cover-link')) || cover(w, true)}${(() => { const ce = coverOfWork.get(w.slug); if (!ce) return ''; const same = w.editions.filter((e) => e.id !== ce.edition.id), ru = [...new Set(reuseOfWork.get(w.slug) ?? [])]; return `<p class="cover-note" lang="en">Cover of the ${esc(LANG.get(ce.edition.language)?.name ?? ce.edition.language)} ${esc(ce.edition.format)} edition${ru.length ? `; the owner confirms the same front artwork is used for the ${esc(ru.join(' and '))} edition${ru.length > 1 ? 's' : ''}` : ''}${same.length > ru.length ? '; other editions may use different artwork.' : '.'}</p>`; })()}</div>
@@ -948,7 +954,7 @@ for (const p of placed('page')) page(`${p.placements.page.path}index.html`, {
 });
 // authorised partner badge assets are copied only when the gate in scripts/promo.mjs allows them
 for (const b of Object.values(PROMOS.brands)) for (const bd of [b.hero, b.logo].filter(Boolean)) {
-  if (promo.assetState(bd, ROOT).ok && !(bd === b.logo && !NVIDIA_OK)) { fs.mkdirSync(path.join(OUT, 'assets/partner'), { recursive: true }); fs.copyFileSync(path.join(ROOT, 'assets-src/partner', bd.asset), path.join(OUT, 'assets/partner', bd.asset)); }
+  if (promo.assetState(bd, ROOT).ok && !(bd === b.logo && !NVIDIA_OK) && !(bd === b.hero && !IO_ART_OK)) { fs.mkdirSync(path.join(OUT, 'assets/partner'), { recursive: true }); fs.copyFileSync(path.join(ROOT, 'assets-src/partner', bd.asset), path.join(OUT, 'assets/partner', bd.asset)); }
 }
 for (const b of Object.values(PROMOS.brands)) for (const bd of Object.values(b.badges ?? {})) {
   if (NVIDIA_OK && promo.badgeState(bd, ROOT).ok) { fs.mkdirSync(path.join(OUT, 'assets/partner'), { recursive: true }); fs.copyFileSync(path.join(ROOT, 'assets-src/partner', bd.asset), path.join(OUT, 'assets/partner', bd.asset)); }
@@ -992,7 +998,7 @@ page('about/privacy/index.html', {
   body: () => legalHead('Privacy Policy') + `<p>This page describes how this bookstore works today. The bookstore has no accounts, checkout, forms or comments, does not ask for personal information, and sets no cookies of its own.</p>
 <ul>
 <li><strong>Your choices stay in your browser.</strong> If you pick a website language, the site remembers it in your browser’s local storage on your own device. It is never sent to us. The same goes for whether you have minimized or hidden the digital librarian.</li>
-<li><strong>Digital librarian:</strong> the animated guide searches the book index that your browser downloads from this site. What you type into it or into the search boxes is not sent anywhere, and it uses no cookies, microphone or outside service.</li>
+<li><strong>Digital librarian:</strong> the animated guide searches the book index that your browser downloads from this site. What you type into it or into the search boxes is not sent anywhere by this site, and the guide itself uses no cookies, microphone or outside service (the optional voice search is described next).</li>
 <li><strong>Voice search (optional):</strong> the microphone button in the search box listens only after you press it. Your browser\'s built-in speech recognition turns what you say into text, and depending on your browser (for example Chrome, Edge or Safari) the audio may be processed by the browser provider\'s speech service, under that provider\'s own privacy terms. This site does not record, receive or store your audio or the words you speak; it only uses the resulting text to search this site\'s catalogue, and it never speaks back. Typed search works as before.</li>
 <li><strong>Analytics:</strong> ${ANALYTICS.provider ? `the site uses ${esc(ANALYTICS.provider)}, a cookie-free analytics service, to count visits and outbound clicks (which book, category and type of link). It does not record who you are.` : 'none is running at the moment. If this changes, this page will say which service is used and what it records.'} The site does not run analytics when your browser sends Do Not Track.</li>
 <li><strong>Fonts:</strong> the site loads its typefaces from Google Fonts, so your browser contacts Google when a page loads and Google receives your IP address and browser details under its own privacy policy.</li>${AMAZON_COVERS ? '\n<li><strong>Book covers:</strong> many book covers are loaded directly from Amazon\'s image servers (m.media-amazon.com), so your browser contacts Amazon when those pictures appear and Amazon receives your IP address and browser details under its own privacy policy. We send no referrer and store none of these images.</li>' : ''}
