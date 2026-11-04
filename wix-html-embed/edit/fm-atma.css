@@ -1,0 +1,19 @@
+/* Atma Library Browser + two-logo row (additions only; colours come from the theme variables so light and dark both work) */
+.fm-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.fm-atma-wrap{display:flex;gap:16px;align-items:center;flex-wrap:wrap;padding-top:6px;padding-bottom:18px}
+.fm-atma{flex:1 1 420px;min-width:0;display:flex;align-items:center;gap:14px;background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-md);padding:12px 16px;box-shadow:var(--shadow-sm)}
+.fm-atma-face{flex:none;width:56px;height:56px;border-radius:50%;object-fit:cover;border:2px solid var(--color-border);background:#efe9df}
+.fm-atma-main{flex:1;min-width:0}
+.fm-atma-title{font-family:var(--font-display);font-size:1.15rem;font-weight:700;line-height:1.2;color:var(--color-text);margin-bottom:8px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.fm-atma-soon{font-family:var(--font-body);font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--color-primary);border:1px solid var(--color-primary);border-radius:999px;padding:3px 9px}
+.fm-atma-form{display:flex;gap:0;min-width:0}
+.fm-atma-form input{flex:1;min-width:0;height:42px;border:1px solid var(--color-border);border-right:0;border-radius:999px 0 0 999px;background:var(--color-surface-2);color:var(--color-text);padding:0 16px;outline-offset:2px}
+.fm-atma-form input::placeholder{color:var(--color-text-muted);opacity:1}
+.fm-atma-form button{height:42px;padding:0 20px;border:1px solid var(--color-primary);border-radius:0 999px 999px 0;background:var(--color-primary);color:#fff;font-weight:600;cursor:pointer}
+.fm-atma-form input:disabled,.fm-atma-form button:disabled{cursor:not-allowed;opacity:.6}
+.fm-brands{flex:0 0 auto;display:flex;align-items:center;gap:12px}
+.fm-brand-tile{display:flex;align-items:center;justify-content:center;background:#fff;border:1px solid var(--color-border);border-radius:var(--radius-sm);padding:4px 8px;min-height:60px;box-shadow:var(--shadow-sm)}
+.fm-brand-tile img{display:block;height:52px;width:auto;max-width:100%}
+a.fm-brand-tile:focus-visible,.fm-atma-form button:focus-visible{outline:3px solid var(--color-primary);outline-offset:2px}
+[data-theme="dark"] .btn-primary,[data-theme="dark"] .filter-btn.active,[data-theme="dark"] .fm-atma-form button{color:#0f2c29}
+@media (max-width:760px){.fm-atma-wrap{flex-direction:column;align-items:stretch}.fm-atma{flex-basis:auto;padding:10px 12px}.fm-atma-face{width:46px;height:46px}.fm-brands{justify-content:space-between}.fm-brand-tile{flex:1;min-height:52px}.fm-brand-tile img{height:42px}}
