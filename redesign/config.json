@@ -1,0 +1,5 @@
+{
+  "_doc": "The only two values that connect the new header features. Leave both empty until the destinations are verified. libraryBaseUrl: the PUBLIC address of the compliant Forbidden Mantra Library, https only, no trailing path (for example https://library.forbiddenmantra.com). iosutraPaygUrl: the verified IOSutra Pay As You Go page, https only. Nothing is invented: while a value is empty the feature shows a clear 'Soon' or notice state and links nowhere.",
+  "libraryBaseUrl": "",
+  "iosutraPaygUrl": ""
+}

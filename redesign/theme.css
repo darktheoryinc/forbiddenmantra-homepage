@@ -1,0 +1,111 @@
+/* Forbidden Mantra Press: emerald, cream and gold theme.
+   Appended AFTER the original <style> block, so it only changes appearance. Delete this block (id="fm-redesign") to return to the original look.
+   Tokens come from the compliant Forbidden Mantra Library (commit be88058): emerald #183F3B, deep emerald #0F2C29, ivory #F7F1E4, gold #D8B46B. */
+:root{
+--em-950:#0B2220;--em-900:#0F2C29;--em-800:#183F3B;--em-700:#0E6A63;
+--sage:#D9E9DF;--panel:#E9F1E8;--cream:#F7F1E4;--cream-2:#FFFDF8;
+--gold:#D8B46B;--gold-light:#EFD79C;--gold-dark:#7A5B12;
+--ink:#22403C;--ink-soft:#4A6761;--on-dark:#F1E9D6;--on-dark-soft:#CFE2DC;--focus:#FFF3C4;
+--text:#22403C;--muted:#4A6761;--deep:#F7F1E4;--crimson:#183F3B;
+}
+html,body{background:var(--cream)}
+body{color:var(--ink);font-family:'EB Garamond',Georgia,serif}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+
+/* announcement strip */
+.announce-bar{background:var(--em-950);color:var(--gold-light);border-bottom:1px solid rgba(239,215,156,.28)}
+.announce-bar a{color:var(--gold-light)}
+.announce-bar a:hover{color:#fff}
+
+/* navigation */
+nav{position:relative;top:auto;height:auto;min-height:70px;background:var(--em-800);backdrop-filter:none;border-bottom:1px solid rgba(239,215,156,.28);box-shadow:0 2px 14px rgba(10,30,28,.35);flex-wrap:wrap;gap:12px 24px;padding:12px 40px}
+.nav-logo{color:var(--gold-light);font-weight:600}
+.nav-links a{color:var(--on-dark)}
+.nav-links a:hover{color:var(--gold-light)}
+.nav-cta{background:var(--gold);color:#120d05;border-radius:2px}
+.nav-cta:hover{background:var(--gold-light)}
+.fm-payg{display:inline-flex;align-items:center;gap:8px}
+.fm-payg .fm-soon{font:600 8px/1 'Cinzel',serif;letter-spacing:.14em;text-transform:uppercase;background:rgba(239,215,156,.16);color:var(--gold-light);border:1px solid rgba(239,215,156,.5);padding:3px 6px;border-radius:2px}
+.nav-links .fm-payg{color:var(--gold-light);border-bottom:2px solid var(--gold);padding-bottom:3px}
+.nav-links .fm-payg[aria-disabled="true"]{cursor:default;opacity:.92}
+
+/* search band: Atma + partner badges */
+.fm-band{background:var(--em-900);border-bottom:1px solid rgba(239,215,156,.28)}
+.fm-band-in>*{min-width:0}
+.fm-band-in{max-width:1200px;margin:0 auto;padding:18px 40px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px 32px;align-items:center}
+.fm-search{display:flex;align-items:center;gap:16px;background:var(--cream-2);border:1px solid var(--gold);border-radius:4px;padding:12px 16px;box-shadow:0 2px 12px rgba(10,30,28,.25)}
+.fm-face{flex:none;width:64px;height:64px;border-radius:50%;border:2px solid var(--gold);background:#EFE9DF;object-fit:cover;display:block}
+.fm-search-main{flex:1;min-width:0}
+.fm-search-label{display:block;font:600 12px/1.3 'Cinzel',serif;letter-spacing:.16em;text-transform:uppercase;color:var(--em-800);margin-bottom:8px}
+.fm-search-sub{font:italic 500 14px/1.3 'EB Garamond',serif;color:var(--ink-soft);margin:-4px 0 8px}
+.fm-search-row{display:flex;gap:0}
+.fm-search-row input{flex:1;min-width:0;height:46px;font:400 17px 'EB Garamond',serif;color:#1c3532;background:#fff;border:1px solid rgba(24,63,59,.45);border-right:0;border-radius:2px 0 0 2px;padding:0 14px}
+.fm-search-row input::placeholder{color:#5C746F;opacity:1}
+.fm-search-row button{height:46px;padding:0 24px;border:0;border-radius:0 2px 2px 0;background:var(--gold);color:#120d05;font:600 11px 'Cinzel',serif;letter-spacing:.16em;text-transform:uppercase;cursor:pointer}
+.fm-search-row button:hover{background:var(--gold-light)}
+.fm-search-note{margin:8px 0 0;font:500 14px/1.4 'EB Garamond',serif;color:var(--em-800)}
+.fm-search-note[hidden]{display:none}
+.fm-partners{display:flex;align-items:center;gap:14px;min-width:0}
+.fm-tile{display:flex;align-items:center;justify-content:center;background:#fff;border:1px solid rgba(239,215,156,.7);border-radius:4px;padding:4px 8px;min-height:60px}
+.fm-tile img{display:block;height:52px;width:auto;max-width:100%}
+a.fm-tile{text-decoration:none}
+.fm-payg-cta{display:inline-flex;align-items:center;gap:8px;background:var(--gold);color:#120d05;font:600 11px 'Cinzel',serif;letter-spacing:.14em;text-transform:uppercase;padding:0 16px;min-height:60px;border-radius:2px;text-decoration:none}
+.fm-payg-cta[aria-disabled="true"]{background:transparent;color:var(--gold-light);border:1px dashed rgba(239,215,156,.6);cursor:default}
+.fm-payg-cta .fm-soon{font:600 8px/1 'Cinzel',serif;letter-spacing:.14em;border:1px solid currentColor;padding:3px 6px;border-radius:2px}
+.fm-payg-cta:not([aria-disabled="true"]):hover{background:var(--gold-light)}
+
+/* hero */
+.hero{min-height:0;padding:70px 40px 64px;background:radial-gradient(circle at 50% 20%,rgba(216,180,107,.18),transparent 58%),linear-gradient(to bottom,var(--em-800),var(--em-900))}
+.hero .section-eyebrow{color:var(--gold-light)}
+.hero-title{color:var(--gold-light)}
+.hero-subtitle{color:var(--gold)}
+.hero-desc{color:var(--on-dark)}
+.btn-primary{background:var(--gold);color:#120d05;border-radius:2px}
+.btn-primary:hover{background:var(--gold-light)}
+.btn-secondary{border:1px solid rgba(239,215,156,.65);color:var(--gold-light);border-radius:2px}
+.btn-secondary:hover{background:rgba(239,215,156,.12)}
+
+/* content sections on cream */
+section{background:var(--cream)}
+section.hero{background:radial-gradient(circle at 50% 20%,rgba(216,180,107,.18),transparent 58%),linear-gradient(to bottom,var(--em-800),var(--em-900))}
+.section-eyebrow{color:var(--gold-dark)}
+.section-title{color:var(--em-800)}
+.book-card{display:block;background:var(--cream-2);border:1px solid rgba(24,63,59,.2);border-radius:4px;padding:14px;box-shadow:0 2px 10px rgba(24,63,59,.08);transition:box-shadow .2s,transform .2s}
+.book-card:hover{box-shadow:0 8px 22px rgba(24,63,59,.2);transform:translateY(-2px)}
+.book-cover-placeholder{background:linear-gradient(160deg,var(--em-800),var(--em-900));border:1px solid var(--gold);border-radius:2px;box-shadow:inset 0 0 0 4px rgba(239,215,156,.12)}
+.book-cover-title{color:var(--gold-light)}
+.book-info-title{color:var(--em-800);font-weight:600}
+.book-info-meta{color:var(--ink-soft)}
+
+/* footer */
+footer{background:var(--em-900);color:var(--on-dark);border-top:3px solid var(--gold)}
+.footer-brand-name{color:var(--gold-light)}
+.footer-links a{color:var(--on-dark)}
+.footer-links a:hover{color:var(--gold-light)}
+.footer-copy{color:var(--on-dark-soft)}
+footer p{color:var(--on-dark)}
+.fm-legal{max-width:1200px;margin:28px auto 0;padding-top:22px;border-top:1px solid rgba(239,215,156,.28);display:flex;gap:18px;align-items:flex-start}
+.fm-legal img{flex:none;height:52px;width:auto;background:#fff;border-radius:3px;padding:5px 8px}
+.fm-legal p{margin:0;font-size:14px;line-height:1.55;text-align:left!important;opacity:1!important;color:var(--on-dark-soft)}
+.fm-legal a{color:var(--gold-light);text-decoration:underline}
+
+/* responsive */
+@media(max-width:980px){
+nav{padding:16px 18px;gap:12px}
+.fm-band-in{grid-template-columns:1fr;padding:16px 18px}
+.fm-partners{flex-wrap:wrap}
+.hero{padding:56px 28px 60px}
+}
+@media(max-width:640px){
+.fm-search{padding:10px 12px;gap:12px}
+.fm-face{width:48px;height:48px}
+.fm-search-label{font-size:11px;letter-spacing:.12em}
+.fm-search-row button{padding:0 16px}
+.fm-partners{display:grid;grid-template-columns:1fr 1fr;gap:10px;width:100%}
+.fm-tile img{height:40px;max-width:100%;width:auto}.fm-tile{min-height:52px;padding:4px 6px}
+.fm-payg-cta{grid-column:1/-1;order:3;width:100%;justify-content:center;box-sizing:border-box;min-height:48px}
+.hero{padding:40px 18px 56px}
+.fm-legal{flex-direction:column}
+}
+@media(prefers-reduced-motion:reduce){.book-card{transition:none}.book-card:hover{transform:none}}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
