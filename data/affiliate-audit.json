@@ -6,27 +6,25 @@
    "amazon.com": "darktheoryinc-20"
   },
   "linkClasses": {
-   "derived": 710,
+   "derived": 711,
    "verified": 469,
-   "search": 29878,
-   "error": 1
+   "search": 29878
   },
-  "linkErrors": 1,
-  "worksWithValidTaggedProductLink": 832,
+  "linkErrors": 0,
+  "worksWithValidTaggedProductLink": 833,
   "ofWhichSourceVerified": 176,
-  "ofWhichIdentityVerifiedOffline": 656,
+  "ofWhichIdentityVerifiedOffline": 657,
   "worksWithSearchLinkOnly": 15876,
-  "worksWithNoPurchaseLink": 3,
-  "worksWithLinkErrors": 1,
-  "recordsNeedingManualReview": 15895,
+  "worksWithNoPurchaseLink": 2,
+  "worksWithLinkErrors": 0,
+  "recordsNeedingManualReview": 15894,
   "manualReviewByReason": {
    "an edition identifier comes from a single source": 9,
-   "only a search link: needs the edition's ASIN or ISBN": 15879,
+   "only a search link: needs the edition's ASIN or ISBN": 15878,
    "owner-listed record: edition details unconfirmed": 4,
-   "e-book/audiobook edition has no verified Amazon link": 458,
-   "link audit error": 1
+   "e-book/audiobook edition has no verified Amazon link": 458
   },
-  "liveCheckPending": 656
+  "liveCheckPending": 657
  },
  "manualReview": [
   {
@@ -94,14 +92,6 @@
    "reasons": [
     "owner-listed record: edition details unconfirmed",
     "e-book/audiobook edition has no verified Amazon link"
-   ]
-  },
-  {
-   "work": "the-power-of-now",
-   "title": "The Power of Now",
-   "reasons": [
-    "only a search link: needs the edition's ASIN or ISBN",
-    "link audit error"
    ]
   },
   {
@@ -113045,8 +113035,8 @@
    "title": "The Power of Now",
    "press": false,
    "links": 1,
-   "best": "none",
-   "errors": true
+   "best": "derived",
+   "errors": false
   },
   {
    "work": "the-untethered-soul",
@@ -252363,13 +252353,10 @@
    "asin": "1577314808",
    "basis": "ISBN-10 of the edition",
    "edition": "paperback en 9781577314806",
-   "class": "error",
-   "issues": [
-    "link host amazon.de differs from the edition's marketplace amazon.com",
-    "tag darktheoryinc-20 on amazon.de, which has no configured ID"
-   ],
-   "verdict": null,
-   "url": "https://www.amazon.de/dp/1577314808?tag=…"
+   "class": "derived",
+   "issues": [],
+   "verdict": "blocked",
+   "url": "https://www.amazon.com/dp/1577314808?tag=…"
   },
   {
    "work": "the-untethered-soul",
