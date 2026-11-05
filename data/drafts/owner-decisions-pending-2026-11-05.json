@@ -1,0 +1,62 @@
+{
+  "status": "PROPOSALS ONLY. Not read by the build. Each needs the owner's approval.",
+  "proposals": [
+    {
+      "id": "mopai-exposed",
+      "action": "assign cover",
+      "file": "wix mopai-exposed.png",
+      "work": "mo-pai-exposed",
+      "editions": [
+        "B0GFQ63JSF",
+        "B0GFW4H6T2",
+        "B0GFVWMR9B"
+      ],
+      "question": "Which editions? Cover subtitle differs from the listing."
+    },
+    {
+      "id": "atharva",
+      "action": "assign cover",
+      "file": "wix atharvaveda.png",
+      "work": "the-book-of-vedic-spells",
+      "editions": [
+        "B0F7G31829",
+        "B0F7R7FJD7"
+      ],
+      "question": "Is 'The Atharva Veda' an earlier title of this book?"
+    },
+    {
+      "id": "matrix-of-mantra",
+      "action": "assign cover",
+      "file": "wix matrix-of-mantra.png",
+      "work": "the-matrix-of-sound",
+      "editions": [
+        "B0F9KWD3B8",
+        "B0F9LNXF5H"
+      ],
+      "question": "Is 'The Matrix of Mantra' an earlier title of The Matrix of Sound?"
+    },
+    {
+      "id": "dream-journal",
+      "action": "assign cover",
+      "file": "wix dream-journal.png",
+      "work": "the-complete-dream-and-conscious-experience-journal-1-year-edition",
+      "editions": [
+        "B0H1259BYN",
+        "B0H14D7THD"
+      ],
+      "question": "Confirm this is the cover of the 1-Year Edition."
+    },
+    {
+      "id": "forbidden-light",
+      "action": "none",
+      "question": "Needs an ASIN or confirmation that the book is published."
+    },
+    {
+      "id": "kleem-merge",
+      "action": "merge",
+      "from": "make-yourself-irresistibly-attractive-with-the-kleem-mantra-kamdev-mantra-and-kama-sutra",
+      "into": "make-yourself-irresistibly-attractive-with-the-kleem-mantra",
+      "question": "Approve folding the long entry into the short one (same author, series, artwork)."
+    }
+  ]
+}
