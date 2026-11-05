@@ -4516,6 +4516,8 @@
    "purchasable": false,
    "placeholder": true,
    "placeholderNote": "Unverified placeholder. No publication or ASIN has been verified for a book called 'Mo Pai Nei Kung' by this press; the name is kept as a category label for the Mo Pai books. It is not offered for sale here.",
+   "listing": "withheld",
+   "listingNote": "Category label, not a verified book. Kept out of the press shelf and the verified count.",
    "provenance": {
     "tier": "hand-verified"
    },
@@ -4569,6 +4571,8 @@
    "purchasable": false,
    "placeholder": true,
    "placeholderNote": "Series name, not a book. 'The Hidden Technology of Human Power' is the series that Mo Pai and other titles belong to; no single book of this name has been verified. It is not offered for sale here.",
+   "listing": "withheld",
+   "listingNote": "Series name, not a verified book. Kept out of the press shelf and the verified count.",
    "provenance": {
     "tier": "hand-verified"
    },
@@ -4618,6 +4622,8 @@
    "reviewFlags": [
     "not found in the owner's catalogue table (2026-10-28); kept from the earlier owner listing, owner to confirm"
    ],
+   "listing": "withheld",
+   "listingNote": "Imprint-name entry with no confirmed ASIN or format; not in the owner catalogue table. Kept out of the press shelf and the verified count until the owner confirms it.",
    "provenance": {
     "tier": "hand-verified"
    },
@@ -4711,6 +4717,8 @@
     "author on the English cover is \"TSPRav Shiva\" but the Spanish listing shows \"Patel, Emily K\"",
     "POSSIBLE DUPLICATE of 'Make Yourself Irresistibly Attractive with the Kleem Mantra' (owner's catalogue record, same author and series); not merged. Its English edition is probably that record's edition."
    ],
+   "listing": "withheld",
+   "listingNote": "Probable duplicate of 'Make Yourself Irresistibly Attractive with the Kleem Mantra' (shares its Spanish ASIN B0CW19ZHGX); English edition unconfirmed. Kept out of the press shelf and the verified count; not merged.",
    "provenance": {
     "tier": "hand-verified"
    },

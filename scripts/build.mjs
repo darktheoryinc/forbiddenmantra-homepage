@@ -518,12 +518,13 @@ const LANGBOOKS = Object.fromEntries(stocked.map((l) => {
   const top = pickFeatured(pool, 8, false);
   return [l.code, { n: nEds(l.code), works: nWorks(l.code), href: `languages/${l.code}/index.html`, books: top.map((w) => { const e = w.editions.find((x) => edLangs(x).includes(l.code)); return { s: w.slug, t: e?.title || w.title, a: w.authors.join(', '), p: w.press ? 1 : 0, h: (isDyn(w) ? `book/index.html?s=${encodeURIComponent(w.slug)}` : `books/${w.slug}/index.html`) + `#lang-${l.code}`, c: w.subjects[0], v: coverRec(coverOfEdition.get(`${w.slug}/${e.id}`), w) }; }) }];
 }));
-const fmpWorks = cat.works.filter((w) => w.press === 'fmp');
+const fmpWorks = cat.works.filter((w) => w.press === 'fmp' && w.listing !== 'withheld'); // withheld = placeholder, series label or probable duplicate: keeps its own page, is never counted or shelved as a verified press title
 const HL = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/highlights.json'), 'utf8'));
 const hlEvidence = new Set(HL.bestsellerEvidence ?? []); // owner-supplied sales evidence only; nothing else may be called a bestseller
 const hlTag = (w) => (hlEvidence.has(w.slug) ? 'Bestseller' : 'Featured');
 const hlOrder = new Map((HL.featured ?? []).map((sl, ix) => [sl, ix]));
-const hlShelf = [...fmpWorks.filter((w) => w.purchasable !== false)].sort((a, b) => (hlOrder.has(a.slug) ? hlOrder.get(a.slug) : 99) - (hlOrder.has(b.slug) ? hlOrder.get(b.slug) : 99) || (coverOfWork.has(b.slug) ? 1 : 0) - (coverOfWork.has(a.slug) ? 1 : 0)).slice(0, 14);
+const hlShelf = [...fmpWorks.filter((w) => w.purchasable !== false)].sort((a, b) => (hlOrder.has(a.slug) ? hlOrder.get(a.slug) : 99) - (hlOrder.has(b.slug) ? hlOrder.get(b.slug) : 99) || (coverOfWork.has(b.slug) ? 1 : 0) - (coverOfWork.has(a.slug) ? 1 : 0) || a.title.localeCompare(b.title));
+const HOME_PRESS_FIRST = 28; // first screenful; the rest is revealed on request (covers are lazy-loaded)
 const hlAllEvidenced = hlShelf.length > 0 && hlShelf.every((w) => hlEvidence.has(w.slug));
 const moPaiWorks = [...new Map([...(HL.moPai.order ?? []).map((sl) => cat.works.find((w) => w.slug === sl)).filter(Boolean), ...cat.works.filter((w) => w.subjects.includes(HL.moPai.subject))].filter((w) => w.purchasable !== false).map((w) => [w.slug, w])).values()];
 const outside = cat.works.filter((w) => !w.press);
@@ -549,7 +550,10 @@ page('index.html', {
 </div></section>
 <section class="band" data-home="fmp" aria-labelledby="fmp-h"><div class="wrap">
   <div class="split"><h2 id="fmp-h">${hlAllEvidenced ? 'Bestsellers' : 'Featured'} from Forbidden Mantra Press</h2><a href="${href('press/')}">All ${fmpWorks.length} press titles →</a></div>
-  ${grid(hlShelf, { filterable: false, buy: true, tag: hlTag })}
+  ${grid(hlShelf.slice(0, HOME_PRESS_FIRST), { filterable: false, buy: true, tag: hlTag })}
+  ${hlShelf.length > HOME_PRESS_FIRST ? `<div class="grid fm-rest" data-fm-rest data-step="${HOME_PRESS_FIRST}" hidden>${hlShelf.slice(HOME_PRESS_FIRST).map((w) => card(w, null, 'h3', false, true, hlTag(w))).join('')}</div>
+  <p class="more" data-fm-more-wrap hidden><button type="button" class="btn btn-ghost" data-fm-more data-i18n="show_more">${esc(en.show_more)}</button> <span class="status" lang="en" role="status" aria-live="polite" data-fm-count>Showing ${HOME_PRESS_FIRST} of ${hlShelf.length} press titles</span></p>
+  <noscript><style>.fm-rest[hidden]{display:grid!important}</style></noscript>` : ''}
   <p class="lede-sm shelf-note">Books published by us, kept apart from the third-party titles further down.${hlEvidence.size ? '' : ' We call a book a bestseller only when we hold sales evidence for it; until then these are simply featured.'}</p>
 </div></section>
 ${moPaiWorks.length ? `<section class="band alt" data-home="mopai" aria-labelledby="mopai-h"><div class="wrap">

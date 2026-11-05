@@ -438,6 +438,19 @@
     }
   })();
 
+  // home: reveal the rest of the press catalogue in steps (all cards are already in the page; covers are lazy-loaded)
+  (function () {
+    var rest = document.querySelector('[data-fm-rest]'), wrap = document.querySelector('[data-fm-more-wrap]'), btn = document.querySelector('[data-fm-more]');
+    if (!rest || !wrap || !btn) return;
+    var shelf = rest.parentNode.querySelector('.grid:not([data-fm-rest])'), cnt = wrap.querySelector('[data-fm-count]');
+    var step = parseInt(rest.getAttribute('data-step'), 10) || 28, total = rest.children.length + shelf.children.length;
+    rest.hidden = false; rest.style.display = 'none'; wrap.hidden = false;
+    btn.addEventListener('click', function () {
+      for (var i = 0; i < step && rest.firstElementChild; i++) shelf.appendChild(rest.firstElementChild);
+      if (cnt) cnt.textContent = 'Showing ' + shelf.children.length + ' of ' + total + ' press titles';
+      if (!rest.firstElementChild) btn.hidden = true;
+    });
+  })();
   applyUI();
   // the search page puts the cursor in the search box
   if (bar && /\/search\/(index\.html)?$/.test(location.pathname) && bar.elements.q && !bar.elements.q.value) bar.elements.q.focus();

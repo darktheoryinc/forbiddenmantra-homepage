@@ -17,8 +17,8 @@ const byTitle = new Map(cat.works.map((w) => [w.title, w]));
 // ---- data is intact ----
 ok(cat.works.length >= 192 && fs.readFileSync(path.join(SITE, 'books/index.html'), 'utf8').includes(`${cat.works.length} books`) || true, `catalogue unchanged: ${cat.works.length} works remain in data/catalogue.json`);
 // ---- own publications ----
-const fmpSec = sect('fmp'), fmpTitles = titlesIn(fmpSec), press = cat.works.filter((w) => w.press === 'fmp');
-ok(fmpTitles.length === Math.min(14, press.length) && fmpTitles.every((t) => cat.works.some((w) => w.title === t && w.press === 'fmp')) && /rom Forbidden Mantra Press/.test(fmpSec), `dedicated Forbidden Mantra Press section shows ${fmpTitles.length} of our ${press.length} titles, all published by us`);
+const fmpSec = sect('fmp'), fmpTitles = titlesIn(fmpSec), press = cat.works.filter((w) => w.press === 'fmp' && w.listing !== 'withheld' && w.purchasable !== false);
+ok(fmpTitles.length === press.length && new Set(fmpTitles).size === fmpTitles.length - 1 /* two different books share the title "Siddhis" */ && fmpTitles.every((t) => cat.works.some((w) => w.title === t && w.press === 'fmp' && w.listing !== 'withheld')) && /rom Forbidden Mantra Press/.test(fmpSec) && (fmpSec.match(/data-fm-rest data-step="28"/g) || []).length === 1, `dedicated Forbidden Mantra Press section lists all ${fmpTitles.length} verified press titles (first 28 shown, the rest revealed on request), none withheld, none duplicated, all published by us`);
 // ---- featured per category ----
 const feat = sect('featured');
 const shelves = [...feat.matchAll(/<section class="niche-shelf"[\s\S]*?<\/section>/g)].map((m) => m[0]);
