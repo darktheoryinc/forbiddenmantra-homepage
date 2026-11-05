@@ -3018,6 +3018,122 @@
           "h": 450
         }
       }
+    },
+    {
+      "work": "apocalypse-of-adam",
+      "edition": "B0GWVMZQ8S",
+      "source": {
+        "type": "owner-supplied",
+        "description": "Owner's Wix Media Manager (forbiddenmantra.com), file apocalypse-adam2.png, read 2026-11-05 (325x518, low resolution)"
+      },
+      "rights": {
+        "basis": "Forbidden Mantra Press owner confirmed (2026-10-28) that all original Forbidden Mantra Press artwork is his and authorized for commercial use",
+        "confirmedBy": "Forbidden Mantra Press owner",
+        "confirmedOn": "2026-10-28"
+      },
+      "matchEvidence": "Cover reads 'The Apocalypse of Adam', 'War of the Archons Part II', Emily K Patel: matches the title, Part II subtitle and author of this work. Assigned to the paperback; no ISBN on the cover.",
+      "file": "assets-src/covers/apocalypse-of-adam__B0GWVMZQ8S.png",
+      "original": [
+        325,
+        518
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 383
+        },
+        "480": {
+          "w": 325,
+          "h": 518
+        }
+      }
+    },
+    {
+      "work": "maa-kali-mantras-and-instructions",
+      "edition": "B0BXTBM2QT",
+      "source": {
+        "type": "owner-supplied",
+        "description": "Owner's Wix Media Manager (forbiddenmantra.com), file ma-kali-2400.png, read 2026-11-05; black side bars cropped off, nothing else altered"
+      },
+      "rights": {
+        "basis": "Forbidden Mantra Press owner confirmed (2026-10-28) that all original Forbidden Mantra Press artwork is his and authorized for commercial use",
+        "confirmedBy": "Forbidden Mantra Press owner",
+        "confirmedOn": "2026-10-28"
+      },
+      "matchEvidence": "Cover reads 'Maa Kali Mantras and Instructions', Rav Shiva, Forbidden Mantra Series: exact title match; assigned to the English ebook.",
+      "file": "assets-src/covers/maa-kali-mantras-and-instructions__B0BXTBM2QT.png",
+      "original": [
+        1487,
+        2398
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 387
+        },
+        "480": {
+          "w": 480,
+          "h": 774
+        }
+      }
+    },
+    {
+      "work": "the-apocalypse-of-adam",
+      "edition": "B0CVW787KP",
+      "source": {
+        "type": "owner-supplied",
+        "description": "Owner's Wix Media Manager (forbiddenmantra.com), file adam-german.png, read 2026-11-05 (325x518, low resolution)"
+      },
+      "rights": {
+        "basis": "Forbidden Mantra Press owner confirmed (2026-10-28) that all original Forbidden Mantra Press artwork is his and authorized for commercial use",
+        "confirmedBy": "Forbidden Mantra Press owner",
+        "confirmedOn": "2026-10-28"
+      },
+      "matchEvidence": "Cover reads 'Das Erscheinen Adams', Forbidden Mantra Press, Emily K Patel: matches the German ebook edition title 'Das Erscheinen Adams'.",
+      "file": "assets-src/covers/the-apocalypse-of-adam__B0CVW787KP.png",
+      "original": [
+        325,
+        518
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 383
+        },
+        "480": {
+          "w": 325,
+          "h": 518
+        }
+      }
+    },
+    {
+      "work": "make-yourself-irresistibly-attractive-with-the-kleem-mantra",
+      "edition": "B0BY67Z5QR",
+      "source": {
+        "type": "owner-supplied",
+        "description": "Owner's Wix Media Manager (forbiddenmantra.com), file kleem-listing-shot.png, read 2026-11-05 (316x504, listing screenshot, low resolution)"
+      },
+      "rights": {
+        "basis": "Forbidden Mantra Press owner confirmed (2026-10-28) that all original Forbidden Mantra Press artwork is his and authorized for commercial use",
+        "confirmedBy": "Forbidden Mantra Press owner",
+        "confirmedOn": "2026-10-28"
+      },
+      "matchEvidence": "Cover reads 'Make Yourself Irresistibly Attractive with the Kleem Mantra', TSPRav Shiva, Forbidden Mantra Series: exact title match; same artwork as the long-title entry's cover; assigned to the English ebook (Kindle listing screenshot).",
+      "file": "assets-src/covers/make-yourself-irresistibly-attractive-with-the-kleem-mantra__B0BY67Z5QR.png",
+      "original": [
+        316,
+        504
+      ],
+      "sizes": {
+        "240": {
+          "w": 240,
+          "h": 383
+        },
+        "480": {
+          "w": 316,
+          "h": 504
+        }
+      }
     }
   ]
 }

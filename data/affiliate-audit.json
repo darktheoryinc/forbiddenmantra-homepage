@@ -6,25 +6,27 @@
    "amazon.com": "darktheoryinc-20"
   },
   "linkClasses": {
-   "derived": 711,
+   "derived": 710,
    "verified": 469,
-   "search": 29878
+   "search": 29878,
+   "error": 1
   },
-  "linkErrors": 0,
-  "worksWithValidTaggedProductLink": 833,
+  "linkErrors": 1,
+  "worksWithValidTaggedProductLink": 832,
   "ofWhichSourceVerified": 176,
-  "ofWhichIdentityVerifiedOffline": 657,
+  "ofWhichIdentityVerifiedOffline": 656,
   "worksWithSearchLinkOnly": 15876,
-  "worksWithNoPurchaseLink": 2,
-  "worksWithLinkErrors": 0,
-  "recordsNeedingManualReview": 15894,
+  "worksWithNoPurchaseLink": 3,
+  "worksWithLinkErrors": 1,
+  "recordsNeedingManualReview": 15895,
   "manualReviewByReason": {
    "an edition identifier comes from a single source": 9,
-   "only a search link: needs the edition's ASIN or ISBN": 15878,
+   "only a search link: needs the edition's ASIN or ISBN": 15879,
    "owner-listed record: edition details unconfirmed": 4,
-   "e-book/audiobook edition has no verified Amazon link": 458
+   "e-book/audiobook edition has no verified Amazon link": 458,
+   "link audit error": 1
   },
-  "liveCheckPending": 657
+  "liveCheckPending": 656
  },
  "manualReview": [
   {
@@ -92,6 +94,14 @@
    "reasons": [
     "owner-listed record: edition details unconfirmed",
     "e-book/audiobook edition has no verified Amazon link"
+   ]
+  },
+  {
+   "work": "the-power-of-now",
+   "title": "The Power of Now",
+   "reasons": [
+    "only a search link: needs the edition's ASIN or ISBN",
+    "link audit error"
    ]
   },
   {
@@ -112449,7 +112459,7 @@
   {
    "work": "jinn-dark-angels-shapeshifters-and-ghouls",
    "title": "JINN - Dark Angels, Shapeshifters, and Ghouls",
-   "press": false,
+   "press": true,
    "links": 1,
    "best": "verified",
    "errors": false
@@ -112585,7 +112595,7 @@
   {
    "work": "ruqyahs-for-wealth-in-arabic-language",
    "title": "Ruqyah's for Wealth in Arabic Language",
-   "press": false,
+   "press": true,
    "links": 1,
    "best": "verified",
    "errors": false
@@ -112593,7 +112603,7 @@
   {
    "work": "ruqyahs-for-wealth",
    "title": "Ruqyah’s for Wealth",
-   "press": false,
+   "press": true,
    "links": 1,
    "best": "verified",
    "errors": false
@@ -112745,7 +112755,7 @@
   {
    "work": "the-cyber-cupid",
    "title": "The Cyber Cupid",
-   "press": false,
+   "press": true,
    "links": 1,
    "best": "verified",
    "errors": false
@@ -112873,7 +112883,7 @@
   {
    "work": "the-pissed-off-hindu",
    "title": "The Pissed Off Hindu",
-   "press": false,
+   "press": true,
    "links": 2,
    "best": "verified",
    "errors": false
@@ -112881,7 +112891,7 @@
   {
    "work": "the-power-of-fasting-and-prayer",
    "title": "The Power of Fasting and Prayer",
-   "press": false,
+   "press": true,
    "links": 3,
    "best": "verified",
    "errors": false
@@ -112937,7 +112947,7 @@
   {
    "work": "truth-is-stranger-than-fiction",
    "title": "Truth is Stranger Than Fiction",
-   "press": false,
+   "press": true,
    "links": 2,
    "best": "verified",
    "errors": false
@@ -113001,7 +113011,7 @@
   {
    "work": "wildflower-coloring-book",
    "title": "wildflower coloring book",
-   "press": false,
+   "press": true,
    "links": 1,
    "best": "verified",
    "errors": false
@@ -113035,8 +113045,8 @@
    "title": "The Power of Now",
    "press": false,
    "links": 1,
-   "best": "derived",
-   "errors": false
+   "best": "none",
+   "errors": true
   },
   {
    "work": "the-untethered-soul",
@@ -248806,7 +248816,7 @@
   {
    "work": "jinn-dark-angels-shapeshifters-and-ghouls",
    "workTitle": "JINN - Dark Angels, Shapeshifters, and Ghouls",
-   "press": false,
+   "press": true,
    "isbn13": "",
    "edAsin": "B0BY758969",
    "market": "amazon.com",
@@ -249526,7 +249536,7 @@
   {
    "work": "ruqyahs-for-wealth-in-arabic-language",
    "workTitle": "Ruqyah's for Wealth in Arabic Language",
-   "press": false,
+   "press": true,
    "isbn13": "",
    "edAsin": "B0BY5CCJNV",
    "market": "amazon.com",
@@ -249541,7 +249551,7 @@
   {
    "work": "ruqyahs-for-wealth",
    "workTitle": "Ruqyah’s for Wealth",
-   "press": false,
+   "press": true,
    "isbn13": "",
    "edAsin": "B0BY57NY5C",
    "market": "amazon.com",
@@ -250321,7 +250331,7 @@
   {
    "work": "the-cyber-cupid",
    "workTitle": "The Cyber Cupid",
-   "press": false,
+   "press": true,
    "isbn13": "",
    "edAsin": "B0BX5PRFLX",
    "market": "amazon.com",
@@ -251221,7 +251231,7 @@
   {
    "work": "the-pissed-off-hindu",
    "workTitle": "The Pissed Off Hindu",
-   "press": false,
+   "press": true,
    "isbn13": "",
    "edAsin": "1079449361",
    "market": "amazon.com",
@@ -251236,7 +251246,7 @@
   {
    "work": "the-pissed-off-hindu",
    "workTitle": "The Pissed Off Hindu",
-   "press": false,
+   "press": true,
    "isbn13": "",
    "edAsin": "B01JVC9I5U",
    "market": "amazon.com",
@@ -251251,7 +251261,7 @@
   {
    "work": "the-power-of-fasting-and-prayer",
    "workTitle": "The Power of Fasting and Prayer",
-   "press": false,
+   "press": true,
    "isbn13": "",
    "edAsin": "B0BZFG4YR9",
    "market": "amazon.com",
@@ -251266,7 +251276,7 @@
   {
    "work": "the-power-of-fasting-and-prayer",
    "workTitle": "The Power of Fasting and Prayer",
-   "press": false,
+   "press": true,
    "isbn13": "",
    "edAsin": "B0BZM2V8V7",
    "market": "amazon.com",
@@ -251281,7 +251291,7 @@
   {
    "work": "the-power-of-fasting-and-prayer",
    "workTitle": "The Power of Fasting and Prayer",
-   "press": false,
+   "press": true,
    "isbn13": "",
    "edAsin": "B0H85CCYWV",
    "market": "amazon.com",
@@ -251611,7 +251621,7 @@
   {
    "work": "truth-is-stranger-than-fiction",
    "workTitle": "Truth is Stranger Than Fiction",
-   "press": false,
+   "press": true,
    "isbn13": "",
    "edAsin": "1078483299",
    "market": "amazon.com",
@@ -251626,7 +251636,7 @@
   {
    "work": "truth-is-stranger-than-fiction",
    "workTitle": "Truth is Stranger Than Fiction",
-   "press": false,
+   "press": true,
    "isbn13": "",
    "edAsin": "B07TY5WQVH",
    "market": "amazon.com",
@@ -252286,7 +252296,7 @@
   {
    "work": "wildflower-coloring-book",
    "workTitle": "wildflower coloring book",
-   "press": false,
+   "press": true,
    "isbn13": "",
    "edAsin": "B0FDFRQ986",
    "market": "amazon.com",
@@ -252353,10 +252363,13 @@
    "asin": "1577314808",
    "basis": "ISBN-10 of the edition",
    "edition": "paperback en 9781577314806",
-   "class": "derived",
-   "issues": [],
-   "verdict": "blocked",
-   "url": "https://www.amazon.com/dp/1577314808?tag=…"
+   "class": "error",
+   "issues": [
+    "link host amazon.de differs from the edition's marketplace amazon.com",
+    "tag darktheoryinc-20 on amazon.de, which has no configured ID"
+   ],
+   "verdict": null,
+   "url": "https://www.amazon.de/dp/1577314808?tag=…"
   },
   {
    "work": "the-untethered-soul",

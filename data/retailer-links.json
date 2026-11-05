@@ -67,6 +67,14 @@
    "url": "https://www.amazon.com/dp/B0BY3RRH44"
   },
   {
+   "work": "the-cyber-cupid",
+   "title": "The Cyber Cupid",
+   "edition": "B0BX5PRFLX",
+   "label": "Amazon",
+   "market": "amazon.com",
+   "url": "https://www.amazon.com/dp/B0BX5PRFLX"
+  },
+  {
    "work": "forbidden-mantra",
    "title": "Forbidden Mantra",
    "edition": "ed1",
@@ -2729,14 +2737,6 @@
    "label": "Amazon",
    "market": "amazon.com",
    "url": "https://www.amazon.com/dp/B0FG172DPD"
-  },
-  {
-   "work": "the-cyber-cupid",
-   "title": "The Cyber Cupid",
-   "edition": "B0BX5PRFLX",
-   "label": "Amazon",
-   "market": "amazon.com",
-   "url": "https://www.amazon.com/dp/B0BX5PRFLX"
   },
   {
    "work": "the-eternal-quest",
