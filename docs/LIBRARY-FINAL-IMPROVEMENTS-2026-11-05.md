@@ -15,4 +15,4 @@ Branch `library/final-improvements`, built on `claude/compliance-remediation` (b
 All 420 editions in the owner's catalogue table (176 rows, 127 works) are already in the library by ASIN. 119 of those works are press titles. The other 8 are by other authors (R. K. Theory, Abdur Rahman, Alex Knight, Spiritual Expressionz, and two by Rav Shiva) and are not labelled Forbidden Mantra Press here: the owner must say whether to show them as press titles.
 
 ## Not fixable from here
-* 31 of the 119 press titles have a cover; 88 show title-and-author cards until the owner supplies the cover files (the importer `scripts/covers-bulk.mjs` is ready). Covers cannot be fetched from Amazon or from the Wix catalogue in this environment.
+* 30 of the 119 press titles have a cover; 89 show title-and-author cards until the owner supplies the cover files (the importer `scripts/covers-bulk.mjs` is ready). Covers cannot be fetched from Amazon or from the Wix catalogue in this environment.
