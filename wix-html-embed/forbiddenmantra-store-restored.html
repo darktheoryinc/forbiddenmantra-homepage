@@ -159,19 +159,18 @@
     @media (max-width: 760px){.nav{align-items:flex-start;flex-direction:column}.nav-links{gap:12px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-shell{padding:24px}.catalog-panel{padding:18px}.hero-copy h1{font-size:2.7rem}}
 
   /* ===== FM emerald restore (appended; original rules untouched above) ===== */
-  html[data-theme],html[data-theme="light"],html[data-theme="dark"]{
+  .fm-emerald,.topbar{
     --color-bg:#0b2a24;--color-surface:#103a31;--color-surface-2:#14463b;--color-border:rgba(216,180,107,.30);
     --color-text:#f3ead2;--color-text-muted:#c9bf9f;--color-primary:#d8b46b;--color-primary-dark:#e8c887;--color-primary-soft:#1b4a3d;
     --shadow-sm:0 2px 10px rgba(0,0,0,.28);--shadow-md:0 12px 34px rgba(0,0,0,.45)}
-  html[data-theme] body{background:radial-gradient(1200px 500px at 50% -80px,#14574a,#0b2a24 60%) fixed,#0b2a24}
-  html[data-theme] .topbar{background:rgba(9,34,29,.94);border-bottom:1px solid rgba(216,180,107,.4)}
-  html[data-theme] .btn-primary{background:linear-gradient(180deg,#e6c47c,#c9a04f);color:#10261f}
-  html[data-theme] .btn-secondary{border-color:rgba(216,180,107,.55);color:#f3ead2}
-  html[data-theme] .filter-btn.active{color:#10261f}
-  html[data-theme] .hero-shell,html[data-theme] .hero-feature{background:rgba(255,255,255,.035)}
-  html[data-theme] .hero-shell{grid-template-columns:1fr;padding:22px 28px}
-  html[data-theme] .hero-shell .hero-copy,html[data-theme] .hero-shell .hero-book{display:none}
-  html[data-theme] .hero.container{padding-top:6px}
+  html[data-theme] .topbar{background:rgba(9,34,29,.96);border-bottom:1px solid rgba(216,180,107,.4);color:#f3ead2}
+  .fm-band{background:radial-gradient(1200px 500px at 50% -80px,#14574a,#0b2a24 65%),#0b2a24;color:var(--color-text);padding-bottom:26px;margin-bottom:8px;border-bottom:2px solid #d8b46b}
+  .fm-band .btn-primary{background:linear-gradient(180deg,#e6c47c,#c9a04f);color:#10261f}
+  .fm-band .btn-secondary{border-color:rgba(216,180,107,.55);color:#f3ead2}
+  .fm-band .hero-shell,.fm-band .hero-feature{background:rgba(255,255,255,.035)}
+  .fm-band .hero-shell{grid-template-columns:1fr;padding:22px 28px}
+  .fm-band .hero-shell .hero-copy,.fm-band .hero-shell .hero-book{display:none}
+  .fm-band .hero.container{padding-top:6px;padding-bottom:0}
   .fm-banner{background:#0a2420;color:#e8c887;text-align:center;padding:9px 20px;font-size:14px;font-family:Inter,sans-serif;border-bottom:1px solid rgba(216,180,107,.35)}
   .fm-banner a{color:#f3d68f;font-weight:700;text-decoration:underline}
   .fm-hero{max-width:var(--content);margin:0 auto;padding:30px var(--space-5) 8px;text-align:center}
@@ -244,6 +243,7 @@
 </div>
 </header>
 <main>
+<div class="fm-band fm-emerald">
 <section class="fm-hero" data-fm-new aria-label="Forbidden Mantra Press">
 <h1>FORBIDDEN MANTRA PRESS</h1>
 <p class="fm-sub">Sacred Texts for the Awakened Mind</p>
@@ -290,6 +290,7 @@
 </div>
 </div>
 </section>
+</div>
 <section class="search-strip container" id="topics">
 <div class="search-row">
 <label aria-label="Search books" class="search-box">
