@@ -8,12 +8,13 @@ import { Page, Empty, useToast, fmtDate } from '../components/ui'
 export default function Capture() {
   const nav = useNavigate()
   const toast = useToast()
-  const recs = useLiveQuery(() => db.recordings.where('kind').equals('ramble').reverse().sortBy('createdAt'), [])
+  const recs = useLiveQuery(() => db.recordings.where('kind').anyOf('ramble', 'performance').reverse().sortBy('createdAt'), [])
   const [paste, setPaste] = useState('')
   const [quick, setQuick] = useState('')
+  const [mode, setMode] = useState<'ramble' | 'performance'>('ramble')
   const rec = useRecorder(async ({ blob, durationSec, mimeType }) => {
     try {
-      const r = await createRecording({ blob, durationSec, mimeType })
+      const r = await createRecording({ blob, durationSec, mimeType, kind: mode, title: mode === 'performance' ? `Live set · ${new Date().toLocaleString()}` : undefined })
       toast('Saved. Audio is stored on this device.')
       nav(`/recording/${r.id}`)
     } catch { toast('Could not save the recording (storage may be full).', 'err') }
@@ -37,6 +38,10 @@ export default function Capture() {
   return (
     <Page title="MyMindSet" actions={<Link to="/settings" className="btn ghost sm">Settings</Link>}>
       <section className="card amber rec-wrap" aria-label="Record">
+        {!live && <div className="chips" role="group" aria-label="Recording type">
+          <button className={`chip${mode === 'ramble' ? ' on' : ''}`} onClick={() => setMode('ramble')}>Ramble</button>
+          <button className={`chip${mode === 'performance' ? ' on' : ''}`} onClick={() => setMode('performance')}>Live set (laugh markers)</button>
+        </div>}
         <button className={`rec-btn${live ? ' live' : ''}`} onClick={live ? rec.stop : rec.start} disabled={rec.state === 'starting'} aria-label={live ? 'Stop recording' : 'Start recording'}>
           {live ? <>■<span>Stop</span></> : <>●<span>{rec.state === 'starting' ? '…' : 'Record'}</span></>}
         </button>
@@ -64,7 +69,7 @@ export default function Capture() {
           <Empty title="Nothing yet">Hit record and talk about your day. The jokes are in there.</Empty>
         ) : recs.map((r) => (
           <Link key={r.id} to={`/recording/${r.id}`} className="card card-link">
-            <div className="row spread"><h3>{r.title}</h3><span className="muted small">{fmtDate(r.createdAt)}</span></div>
+            <div className="row spread"><h3>{r.title}</h3>{r.kind === 'performance' && <span className="chip">live set</span>}<span className="muted small">{fmtDate(r.createdAt)}</span></div>
             <div className="muted small">
               {r.hasAudio ? `Audio ${formatDuration(r.durationSec)}` : 'Text only'} · {r.transcript ? `${r.transcript.split(/\s+/).length} words` : 'no transcript yet'}
             </div>

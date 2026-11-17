@@ -1,7 +1,7 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { useLiveQuery } from 'dexie-react-hooks'
-import { db, deleteJoke, updateJoke } from '../lib/db'
+import { db, deleteJoke, updateJoke, jokeStats, uid } from '../lib/db'
 import { JOKE_STATUSES, type JokeStatus } from '../lib/types'
 import { estimateJokeSeconds } from '../lib/duration'
 import { getSettings, saveSettings } from '../lib/db'
@@ -16,6 +16,11 @@ export default function JokeDetail() {
   const revisions = useLiveQuery(() => db.revisions.where('jokeId').equals(id).reverse().sortBy('savedAt'), [id])
   const source = useLiveQuery(async () => { const j = await db.jokes.get(id); return j?.sourceRecordingId ? db.recordings.get(j.sourceRecordingId) : undefined }, [id])
   const cats = useCategories()
+  const perfs = useLiveQuery(() => db.performances.toArray(), [])
+  const images = useLiveQuery(() => db.images.where('jokeId').equals(id).toArray(), [id])
+  const cfg = useLiveQuery(() => getSettings(), [])
+  const urls = useMemo(() => (images ?? []).map((im) => ({ im, url: URL.createObjectURL(im.blob) })), [images])
+  useEffect(() => () => urls.forEach((u) => URL.revokeObjectURL(u.url)), [urls])
   const [f, setF] = useState({ title: '', text: '', setup: '', punchline: '', notes: '', tags: '', category: '', status: 'idea' as JokeStatus, dur: '' })
   const [newCat, setNewCat] = useState('')
 
@@ -54,6 +59,14 @@ export default function JokeDetail() {
   return (
     <Page title="Joke" actions={<button className="btn ghost sm danger" onClick={remove}>Delete</button>}>
       <div className="row wrap"><OriginBadge origin={joke.origin} /><span className="muted small">Created {fmtDate(joke.createdAt)} · est. {estimateJokeSeconds({ text: f.text, durationSec: f.dur ? Number(f.dur) : undefined })}s on stage</span></div>
+      {(() => {
+        const st = jokeStats(id, perfs ?? [])
+        const est = estimateJokeSeconds({ text: f.text, durationSec: f.dur ? Number(f.dur) : undefined }, cfg?.wordsPerMinute, cfg?.laughBreakSec)
+        return (<>
+          {st.total > 0 && <div className="callout small">On stage {st.total}×: 🔥 {st.hit} hit · 👍 {st.ok} OK · 🦗 {st.miss} miss</div>}
+          {cfg && est > cfg.maxBitSec && <div className="callout warn small">This bit runs about {est}s — over your {cfg.maxBitSec}s cap. Consider tightening it or splitting it into two bits.</div>}
+        </>)
+      })()}
       <section className="card stack">
         <div className="field"><label htmlFor="jt">Title</label><input id="jt" value={f.title} onChange={(e) => setF({ ...f, title: e.target.value })} /></div>
         <div className="field"><label htmlFor="jx">The bit</label><textarea id="jx" value={f.text} onChange={(e) => setF({ ...f, text: e.target.value })} style={{ minHeight: 160 }} /></div>
@@ -70,6 +83,23 @@ export default function JokeDetail() {
         <div className="field"><label htmlFor="jd">Time override (seconds, optional)</label><input id="jd" inputMode="numeric" value={f.dur} onChange={(e) => setF({ ...f, dur: e.target.value.replace(/\D/g, '') })} placeholder="auto from word count" /></div>
         <div className="field"><label htmlFor="jn">Notes</label><textarea id="jn" value={f.notes} onChange={(e) => setF({ ...f, notes: e.target.value })} style={{ minHeight: 80 }} placeholder="Tag ideas, audience reactions, alt punchlines…" /></div>
         <button className="btn primary" onClick={save} disabled={!dirty}>Save{dirty ? '' : 'd'}</button>
+      </section>
+
+      <section className="card stack">
+        <h3>Notebook photos</h3>
+        <p className="muted small" style={{ margin: 0 }}>Attach a photo of a notebook page or napkin. Text isn't read from images automatically; type the bit above and keep the photo as the source.</p>
+        {urls.map(({ im, url }) => (
+          <div key={im.id} className="stack"><img src={url} alt={im.name} style={{ width: '100%', borderRadius: 12 }} />
+            <button className="btn sm danger" onClick={() => db.images.delete(im.id)}>Remove photo</button></div>))}
+        <label className="btn" style={{ cursor: 'pointer' }}>Add photo
+          <input type="file" accept="image/*" capture="environment" hidden onChange={async (e) => {
+            const file = e.target.files?.[0]; e.target.value = ''
+            if (!file) return
+            if (!file.type.startsWith('image/')) return toast('Please choose an image.', 'err')
+            if (file.size > 15 * 1024 * 1024) return toast('Image too large (15 MB max).', 'err')
+            await db.images.add({ id: uid(), jokeId: id, blob: file, name: file.name || 'photo', createdAt: Date.now() })
+          }} />
+        </label>
       </section>
 
       {(source || joke.sourceExcerpt) && (

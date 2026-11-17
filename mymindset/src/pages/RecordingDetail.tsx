@@ -8,7 +8,8 @@ import { db, deleteRecording, formatDuration, uid } from '../lib/db'
 import { analyzeRecording, acceptSuggestion, activeProvider, providers } from '../ai/service'
 import { getServerStatus, transcribeOnServer } from '../lib/api'
 import type { ServerStatus } from '../ai/types'
-import { BUILTIN_CATEGORIES, type Suggestion, type RoutineSuggestion } from '../lib/types'
+import { BUILTIN_CATEGORIES, type Suggestion, type RoutineSuggestion, type MarkerKind } from '../lib/types'
+import { useRef } from 'react'
 import { suggestTransition } from '../ai/heuristic'
 import { Page, Badge, OriginBadge, Empty, useToast, download } from '../components/ui'
 
@@ -27,6 +28,8 @@ export default function RecordingDetail() {
   const [busy, setBusy] = useState<'' | 'transcribe' | 'analyze'>('')
   const [status, setStatus] = useState<ServerStatus | null>(null)
   const [tab, setTab] = useState<'bits' | 'routines'>('bits')
+  const audioEl = useRef<HTMLAudioElement>(null)
+  const jokesAll = useLiveQuery(() => db.jokes.toArray(), [])
 
   useEffect(() => { if (rec) { setTitle(rec.title); setText(rec.transcript) } }, [rec?.id]) // eslint-disable-line react-hooks/exhaustive-deps
   useEffect(() => { getServerStatus().then(setStatus) }, [])
@@ -92,9 +95,34 @@ export default function RecordingDetail() {
           {new Date(rec.createdAt).toLocaleString()} · {rec.hasAudio ? `audio ${formatDuration(rec.durationSec)}` : 'text only'}
           {rec.kind === 'rehearsal' && ' · rehearsal'}
         </div>
-        {url ? <audio className="audio" controls src={url} preload="metadata" /> : rec.hasAudio ? <span className="muted small">Loading audio…</span> : null}
+        {url ? <audio ref={audioEl} className="audio" controls src={url} preload="metadata" /> : rec.hasAudio ? <span className="muted small">Loading audio…</span> : null}
         {rec.hasAudio && url && <button className="btn sm" onClick={() => download(`${rec.title.replace(/[^\w-]+/g, '_')}.${rec.mimeType.includes('mp4') ? 'm4a' : 'webm'}`, audioRow!.blob, rec.mimeType)}>Download original audio</button>}
       </section>
+
+      {rec.hasAudio && (
+        <section className="card stack">
+          <div className="row spread"><h3>Laugh markers</h3><span className="muted small">{(rec.markers ?? []).length} marked</span></div>
+          <div className="row wrap" role="group" aria-label="Add marker at current playback time">
+            {(['laugh', 'big-laugh', 'groan', 'miss'] as MarkerKind[]).map((k) => (
+              <button key={k} className="btn sm" onClick={async () => {
+                const t = Math.round(audioEl.current?.currentTime ?? 0)
+                await db.recordings.update(id, { markers: [...(rec.markers ?? []), { id: uid(), t, kind: k }].sort((a, b) => a.t - b.t) })
+              }}>+ {MARKER_LABEL[k]}</button>))}
+          </div>
+          {(rec.markers ?? []).length === 0 ? <p className="muted small" style={{ margin: 0 }}>Play the recording and tap to mark where the room laughed, groaned or went quiet. During a live set or rehearsal you can tap in Stage mode instead.</p> : (
+            <div className="stack">{(rec.markers ?? []).map((m) => {
+              const j = jokesAll?.find((x) => x.id === m.jokeId)
+              return (
+                <div key={m.id} className="row spread">
+                  <button className="btn sm ghost" onClick={() => { if (audioEl.current) { audioEl.current.currentTime = m.t; audioEl.current.play().catch(() => {}) } }}>▶ {formatDuration(m.t)} {MARKER_LABEL[m.kind]}</button>
+                  <span className="muted small grow" style={{ textAlign: 'right' }}>{j?.title}</span>
+                  <button className="btn sm ghost" aria-label="Delete marker" onClick={() => db.recordings.update(id, { markers: (rec.markers ?? []).filter((x) => x.id !== m.id) })}>✕</button>
+                </div>)
+            })}</div>
+          )}
+          {(rec.markers ?? []).length > 0 && <MarkerSummary rec={rec} jokes={jokesAll ?? []} />}
+        </section>
+      )}
 
       {rec.kind === 'rehearsal' && (
         <section className="card stack">
@@ -330,6 +358,25 @@ function Routines({ routines, byId }: { routines: RoutineSuggestion[]; byId: Map
           )}
         </div>
       ))}
+    </div>
+  )
+}
+
+export const MARKER_LABEL: Record<MarkerKind, string> = { laugh: '😂 Laugh', 'big-laugh': '🔥 Big laugh', groan: '😬 Groan', miss: '🦗 Silence', note: '📝 Note' }
+
+function MarkerSummary({ rec, jokes }: { rec: { markers?: { kind: MarkerKind; jokeId?: string }[] }; jokes: { id: string; title: string }[] }) {
+  const per = new Map<string, { laughs: number; misses: number }>()
+  for (const m of rec.markers ?? []) {
+    if (!m.jokeId) continue
+    const e = per.get(m.jokeId) ?? { laughs: 0, misses: 0 }
+    if (m.kind === 'laugh' || m.kind === 'big-laugh') e.laughs += m.kind === 'big-laugh' ? 2 : 1
+    else if (m.kind === 'miss' || m.kind === 'groan') e.misses++
+    per.set(m.jokeId, e)
+  }
+  if (!per.size) return null
+  return (
+    <div className="callout small"><b>Per bit</b>
+      {[...per].map(([jid, e]) => <div key={jid}>{jokes.find((j) => j.id === jid)?.title ?? 'Deleted joke'}: laugh score {e.laughs}, {e.misses} dead spot{e.misses === 1 ? '' : 's'}</div>)}
     </div>
   )
 }

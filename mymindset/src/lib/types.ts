@@ -20,10 +20,14 @@ export interface Recording {
   transcriptSource: 'none' | 'pasted' | 'server' | 'typed'
   /** User-editable working copy. */
   transcript: string
-  kind: 'ramble' | 'rehearsal'
+  kind: 'ramble' | 'rehearsal' | 'performance'
   setId?: string
   notes?: string
+  markers?: Marker[]
 }
+
+export type MarkerKind = 'laugh' | 'big-laugh' | 'groan' | 'miss' | 'note'
+export interface Marker { id: string; t: number; kind: MarkerKind; jokeId?: string; note?: string }
 
 export interface AudioBlobRow { id: string; blob: Blob }
 
@@ -133,8 +137,12 @@ export interface Performance {
   audienceNotes: string
   revisions: string
   rating?: number
+  bitResults?: BitResult[]
   createdAt: number
 }
+
+export type BitVerdict = 'hit' | 'ok' | 'miss'
+export interface BitResult { jokeId: string; verdict: BitVerdict; note?: string }
 
 export interface Topic {
   id: string
@@ -147,6 +155,8 @@ export interface Topic {
   jokeId?: string
 }
 
+export interface JokeImage { id: string; jokeId: string; blob: Blob; name: string; createdAt: number }
+
 export interface TrendInterest { id: string; query: string }
 export interface Settings {
   id: 'main'
@@ -157,6 +167,7 @@ export interface Settings {
   geo: string // ISO country code
   apiToken: string
   analysisProvider: 'local' | 'server'
+  maxBitSec: number
 }
 
 export const DEFAULT_SETTINGS: Settings = {
@@ -168,4 +179,5 @@ export const DEFAULT_SETTINGS: Settings = {
   geo: 'US',
   apiToken: '',
   analysisProvider: 'local',
+  maxBitSec: 90,
 }

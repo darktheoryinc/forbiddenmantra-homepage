@@ -27,6 +27,9 @@ Vite + React 19 + TypeScript, Dexie (IndexedDB) for jokes/sets/recordings/audio,
 | Joke discovery: local pattern finder | Works offline. Rule-based, **not AI**; excerpts are verbatim, suggested structure/transitions are labeled. |
 | Joke discovery: LLM | **Needs** `LLM_API_URL` + `LLM_MODEL` (any OpenAI-compatible chat endpoint, incl. Ollama). Keys stay on the server. |
 | Vault, Set Builder, versions, Stage/Rehearsal, Performance history | Works |
+| Laugh markers (live in Stage, or tapped during playback), per-bit hit/OK/miss after each show, long-bit warnings | Works |
+| Import notes (.txt/.md/.csv or paste), JSON backup + restore, notebook photos attached to jokes | Works. Photos are **not** OCR'd. |
+| Cloud sync | Not built (needs a hosted backend) |
 | Trend Radar | Works with live Google News RSS (no key); shows source + date; errors rather than fabricating |
 | Auth | Optional shared `APP_ACCESS_TOKEN` gate on the API. No per-user accounts/cloud sync yet. |
 

@@ -129,7 +129,7 @@ export default function SetBuilder() {
             <div className="stack">
               {set.items.map((it, idx) => (
                 <Row key={it.id} item={it} n={set.items.slice(0, idx).filter((i) => i.kind === 'joke').length + 1}
-                  joke={it.jokeId ? jokes.get(it.jokeId) : undefined} sec={estimateItemSeconds(it, jokes, wpm, laugh)}
+                  joke={it.jokeId ? jokes.get(it.jokeId) : undefined} sec={estimateItemSeconds(it, jokes, wpm, laugh)} over={estimateItemSeconds(it, jokes, wpm, laugh) > (settings?.maxBitSec ?? 90)}
                   onRemove={() => remove(it.id)} onEdit={(t) => edit(it.id, t)} onRegen={() => regen(it.id)} />
               ))}
             </div>
@@ -171,7 +171,7 @@ export default function SetBuilder() {
   )
 }
 
-function Row({ item, n, joke, sec, onRemove, onEdit, onRegen }: { item: SetItem; n: number; joke?: Joke; sec: number; onRemove: () => void; onEdit: (t: string) => void; onRegen: () => void }) {
+function Row({ item, n, joke, sec, over, onRemove, onEdit, onRegen }: { over?: boolean; item: SetItem; n: number; joke?: Joke; sec: number; onRemove: () => void; onEdit: (t: string) => void; onRegen: () => void }) {
   const { attributes, listeners, setNodeRef, transform, transition, isDragging } = useSortable({ id: item.id })
   const style = { transform: CSS.Transform.toString(transform), transition }
   return (
@@ -182,7 +182,7 @@ function Row({ item, n, joke, sec, onRemove, onEdit, onRegen }: { item: SetItem;
           <div className="grow">
             {item.kind === 'joke' ? (
               joke ? (<>
-                <div className="row spread"><Link to={`/joke/${joke.id}`}><b>{n}. {joke.title}</b></Link><span className="muted small">≈{sec}s</span></div>
+                <div className="row spread"><Link to={`/joke/${joke.id}`}><b>{n}. {joke.title}</b></Link><span className={`small ${over ? 'err' : 'muted'}`}>≈{sec}s{over ? ' · long' : ''}</span></div>
                 <div className="muted small">{joke.text.slice(0, 140)}{joke.text.length > 140 ? '…' : ''}</div>
                 {item.origin === 'suggested' && <Badge kind="heur">Suggested</Badge>}
               </>) : <span className="muted">Deleted joke</span>

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useLiveQuery } from 'dexie-react-hooks'
 import { Link } from 'react-router-dom'
-import { exportBackup, getSettings, saveSettings } from '../lib/db'
+import { exportBackup, getSettings, saveSettings, importBackup } from '../lib/db'
 import { getServerStatus } from '../lib/api'
 import { providers } from '../ai/service'
 import type { ServerStatus } from '../ai/types'
@@ -55,6 +55,7 @@ export default function Settings() {
           <div className="field grow"><label htmlFor="wpm">Pace (words / min)</label><input id="wpm" type="number" min={60} max={260} value={s.wordsPerMinute} onChange={(e) => saveSettings({ wordsPerMinute: Math.max(60, Math.min(260, Number(e.target.value) || 140)) })} /></div>
           <div className="field grow"><label htmlFor="lb">Laugh break (sec / bit)</label><input id="lb" type="number" min={0} max={20} value={s.laughBreakSec} onChange={(e) => saveSettings({ laughBreakSec: Math.max(0, Math.min(20, Number(e.target.value) || 0)) })} /></div>
         </div>
+        <div className="field"><label htmlFor="cap">Warn when one bit runs longer than (seconds)</label><input id="cap" type="number" min={15} max={600} value={s.maxBitSec} onChange={(e) => saveSettings({ maxBitSec: Math.max(15, Math.min(600, Number(e.target.value) || 90)) })} /></div>
         <p className="muted small" style={{ margin: 0 }}>Tip: record yourself doing a bit, note the real time, and tune the pace until estimates match.</p>
       </section>
 
@@ -62,6 +63,17 @@ export default function Settings() {
         <h3>Your data</h3>
         <p className="muted small" style={{ margin: 0 }}>Everything is stored privately on this device (IndexedDB). There are no accounts and no cloud sync yet, so export a backup now and then.</p>
         <button className="btn" onClick={async () => { download(`mymindset-backup-${new Date().toISOString().slice(0, 10)}.json`, JSON.stringify(await exportBackup(), null, 2)); toast('Backup downloaded (audio files not included).') }}>Download JSON backup</button>
+        <label className="btn" style={{ cursor: 'pointer' }}>Restore from JSON backup
+          <input type="file" accept="application/json,.json" hidden onChange={async (e) => {
+            const f = e.target.files?.[0]; e.target.value = ''
+            if (!f) return
+            try {
+              if (f.size > 50 * 1024 * 1024) throw new Error('That file is too large to be a MyMindSet backup.')
+              const counts = await importBackup(JSON.parse(await f.text()))
+              toast(`Restored ${Object.values(counts).reduce((a, b) => a + b, 0)} items (merged by id; nothing deleted).`)
+            } catch (err) { toast(err instanceof SyntaxError ? 'That file is not valid JSON.' : (err as Error).message, 'err') }
+          }} />
+        </label>
         <button className="btn ghost" onClick={async () => { await navigator.storage?.persist?.().then((ok) => toast(ok ? 'Storage marked persistent.' : 'Browser declined persistent storage.')) }}>Ask browser to keep my data</button>
       </section>
     </Page>

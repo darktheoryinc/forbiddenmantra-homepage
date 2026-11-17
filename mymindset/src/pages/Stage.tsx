@@ -5,6 +5,8 @@ import { db, createRecording, formatDuration, getSettings } from '../lib/db'
 import { estimateItemSeconds } from '../lib/duration'
 import { useRecorder } from '../lib/recorder'
 import { useToast } from '../components/ui'
+import { uid } from '../lib/db'
+import type { Marker, MarkerKind } from '../lib/types'
 
 export default function Stage() {
   const { id = '' } = useParams()
@@ -22,13 +24,13 @@ export default function Stage() {
   const notesRef = useRef('')
   notesRef.current = notes
   const touchX = useRef<number | null>(null)
+  const markers = useRef<Marker[]>([])
+  const [markCount, setMarkCount] = useState(0)
 
   const rec = useRecorder(async ({ blob, durationSec, mimeType }) => {
-    await createRecording({ blob, durationSec, mimeType, kind: 'rehearsal', setId: id, title: `Rehearsal · ${set?.title ?? 'set'} · ${new Date().toLocaleString()}` })
-    if (notesRef.current.trim()) {
-      const r = await db.recordings.where('kind').equals('rehearsal').filter((x) => x.setId === id).reverse().sortBy('createdAt')
-      if (r[0]) await db.recordings.update(r[0].id, { notes: notesRef.current })
-    }
+    const made = await createRecording({ blob, durationSec, mimeType, kind: 'rehearsal', setId: id, title: `Rehearsal · ${set?.title ?? 'set'} · ${new Date().toLocaleString()}` })
+    await db.recordings.update(made.id, { notes: notesRef.current.trim() || undefined, markers: markers.current.length ? markers.current : undefined })
+    markers.current = []; setMarkCount(0)
     toast('Rehearsal recording saved.')
   })
 
@@ -75,6 +77,13 @@ export default function Stage() {
   const next = cards[i + 1]
   const nextLabel = next ? (next.kind === 'joke' ? jokes.get(next.jokeId ?? '')?.title : next.text) : null
   const bump = (d: number) => { const v = Math.max(-1, Math.min(2, size + d)); setSize(v); try { localStorage.setItem('stage-size', String(v)) } catch { /* ignore */ } }
+
+  function mark(kind: MarkerKind) {
+    if (rec.state !== 'recording') return
+    markers.current.push({ id: uid(), t: rec.elapsed, kind, jokeId: card?.jokeId })
+    setMarkCount(markers.current.length)
+    navigator.vibrate?.(15)
+  }
 
   async function saveNotesOnly() {
     if (!notes.trim()) return
@@ -126,6 +135,15 @@ export default function Stage() {
         </div>
       )}
       {rec.error && <p className="err" style={{ padding: '0 14px', margin: 0 }} role="alert">{rec.error}</p>}
+      {rec.state === 'recording' && (
+        <div className="row" style={{ padding: '0 14px 6px', justifyContent: 'center' }} role="group" aria-label="Mark the room">
+          <button className="btn sm" onClick={() => mark('laugh')}>😂 Laugh</button>
+          <button className="btn sm" onClick={() => mark('big-laugh')}>🔥 Big laugh</button>
+          <button className="btn sm" onClick={() => mark('groan')}>😬 Groan</button>
+          <button className="btn sm" onClick={() => mark('miss')}>🦗 Silence</button>
+          <span className="muted small">{markCount}</span>
+        </div>
+      )}
       <div className="row wrap" style={{ padding: '0 14px 6px', justifyContent: 'center' }}>
         <button className={`btn sm${rec.state === 'recording' ? ' danger' : ''}`} onClick={rec.state === 'recording' ? rec.stop : rec.start}>{rec.state === 'recording' ? `■ Stop recording ${formatDuration(rec.elapsed)}` : '● Record rehearsal'}</button>
         <button className="btn sm" onClick={() => setNotesOpen(!notesOpen)}>Notes</button>

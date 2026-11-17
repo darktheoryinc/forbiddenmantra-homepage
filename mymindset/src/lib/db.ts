@@ -1,7 +1,7 @@
 import Dexie, { type Table } from 'dexie'
 import {
   DEFAULT_SETTINGS, type AnalysisRun, type AudioBlobRow, type ComedySet, type Joke, type JokeRevision,
-  type Performance, type Recording, type RoutineSuggestion, type Settings, type SetVersion, type Suggestion, type Topic,
+  type JokeImage, type Performance, type Recording, type RoutineSuggestion, type Settings, type SetVersion, type Suggestion, type Topic,
 } from './types'
 
 export class MindSetDB extends Dexie {
@@ -17,6 +17,7 @@ export class MindSetDB extends Dexie {
   performances!: Table<Performance, string>
   topics!: Table<Topic, string>
   settings!: Table<Settings, string>
+  images!: Table<JokeImage, string>
 
   constructor(name = 'mymindset') {
     super(name)
@@ -34,6 +35,7 @@ export class MindSetDB extends Dexie {
       topics: 'id, savedAt',
       settings: 'id',
     })
+    this.version(2).stores({ images: 'id, jokeId' })
   }
 }
 
@@ -146,8 +148,9 @@ export async function updateJoke(id: string, patch: Partial<Joke>, d: MindSetDB 
 }
 
 export async function deleteJoke(id: string, d: MindSetDB = db) {
-  await d.transaction('rw', [d.jokes, d.revisions, d.sets], async () => {
+  await d.transaction('rw', [d.jokes, d.revisions, d.sets, d.images], async () => {
     await d.jokes.delete(id)
+    await d.images.where('jokeId').equals(id).delete()
     await d.revisions.where('jokeId').equals(id).delete()
     // Strip from live sets; saved set versions keep the reference (shown as "deleted joke").
     for (const s of await d.sets.toArray()) {
@@ -208,4 +211,53 @@ export async function exportBackup(d: MindSetDB = db) {
     sets: await d.sets.toArray(), setVersions: await d.setVersions.toArray(), performances: await d.performances.toArray(),
     topics: await d.topics.toArray(),
   }
+}
+
+// ---------- Backup restore ----------
+const BACKUP_TABLES = ['recordings', 'jokes', 'revisions', 'suggestions', 'routines', 'runs', 'sets', 'setVersions', 'performances', 'topics'] as const
+
+/** Merges a JSON backup into the database by id. Existing rows with the same id are overwritten; nothing is deleted. */
+export async function importBackup(raw: unknown, d: MindSetDB = db): Promise<Record<string, number>> {
+  if (!raw || typeof raw !== 'object' || (raw as { app?: string }).app !== 'MyMindSet') throw new Error('This is not a MyMindSet backup file.')
+  const data = raw as Record<string, unknown>
+  const counts: Record<string, number> = {}
+  await d.transaction('rw', [...BACKUP_TABLES.map((t) => d[t]), d.audio], async () => {
+    for (const name of BACKUP_TABLES) {
+      const rows = data[name]
+      if (!Array.isArray(rows)) continue
+      const valid = rows.filter((r): r is { id: string } => !!r && typeof r === 'object' && typeof (r as { id?: unknown }).id === 'string')
+      if (name === 'recordings') {
+        // Audio is not part of the JSON backup; imported recordings keep their text but lose the audio flag unless the audio is already here.
+        const have = new Set(await d.audio.toCollection().primaryKeys())
+        await d.recordings.bulkPut(valid.map((r) => ({ ...(r as object), hasAudio: have.has(r.id) })) as never[])
+      } else {
+        await (d[name] as Table<{ id: string }, string>).bulkPut(valid)
+      }
+      counts[name] = valid.length
+    }
+  })
+  return counts
+}
+
+// ---------- Show results ----------
+export interface JokeStats { hit: number; ok: number; miss: number; total: number }
+export function jokeStats(jokeId: string, performances: { bitResults?: { jokeId: string; verdict: 'hit' | 'ok' | 'miss' }[] }[]): JokeStats {
+  const s: JokeStats = { hit: 0, ok: 0, miss: 0, total: 0 }
+  for (const p of performances) for (const r of p.bitResults ?? []) if (r.jokeId === jokeId) { s[r.verdict]++; s.total++ }
+  return s
+}
+
+// ---------- Text import ----------
+/** Splits pasted/imported notes into candidate jokes: blank-line separated blocks, or one per line for bullet/numbered lists. */
+export function splitNotes(text: string): string[] {
+  const norm = text.replace(/\r\n?/g, '\n').trim()
+  if (!norm) return []
+  const blocks = norm.split(/\n\s*\n+/).map((b) => b.trim()).filter(Boolean)
+  const isList = (b: string) => b.split('\n').every((l) => /^\s*([-*•]|\d+[.)])\s+/.test(l))
+  const out: string[] = []
+  for (const b of blocks) {
+    if (isList(b) && b.includes('\n')) out.push(...b.split('\n').map((l) => l.replace(/^\s*([-*•]|\d+[.)])\s+/, '').trim()).filter(Boolean))
+    else out.push(b.replace(/^\s*([-*•]|\d+[.)])\s+/, ''))
+  }
+  return out.filter((b) => b.length >= 3).slice(0, 500)
 }

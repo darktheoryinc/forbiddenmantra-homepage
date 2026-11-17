@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useLiveQuery } from 'dexie-react-hooks'
 import { db, getSettings, snapshotSet, uid } from '../lib/db'
 import { estimateSetSeconds } from '../lib/duration'
-import type { Performance } from '../lib/types'
+import type { Performance, BitVerdict } from '../lib/types'
 import { Page, Empty, Modal, useToast, fmtDate } from '../components/ui'
 
 const today = () => new Date().toISOString().slice(0, 10)
@@ -58,7 +58,7 @@ export default function Shows() {
           return (
             <button key={p.id} className="card" style={{ textAlign: 'left', color: 'inherit', font: 'inherit', cursor: 'pointer' }} onClick={() => open(p)}>
               <div className="row spread"><h3>{p.venue}</h3><span className="muted small">{fmtDate(p.date)}</span></div>
-              <div className="muted small">{set ? `${set.title}${p.setVersion ? ` (v${p.setVersion})` : ''}` : 'No set linked'} · planned {fmt(p.plannedSec || undefined)} · actual {fmt(p.actualSec)}{p.rating ? ` · ${'★'.repeat(p.rating)}` : ''}</div>
+              <div className="muted small">{set ? `${set.title}${p.setVersion ? ` (v${p.setVersion})` : ''}` : 'No set linked'} · planned {fmt(p.plannedSec || undefined)} · actual {fmt(p.actualSec)}{p.rating ? ` · ${'★'.repeat(p.rating)}` : ''}{p.bitResults?.length ? ` · ${p.bitResults.filter((r) => r.verdict === 'hit').length}🔥 ${p.bitResults.filter((r) => r.verdict === 'miss').length}🦗` : ''}</div>
               {p.audienceNotes && <p style={{ margin: '6px 0 0' }} className="small">{p.audienceNotes.slice(0, 140)}</p>}
             </button>)
         })}</div>
@@ -77,6 +77,30 @@ export default function Shows() {
           {editing.setId && !perfs?.some((p) => p.id === editing.id) && (
             <label style={{ textTransform: 'none', display: 'flex', gap: 8, alignItems: 'center' }}><input type="checkbox" style={{ width: 20, minHeight: 20 }} checked={snap} onChange={(e) => setSnap(e.target.checked)} /> Save the set as it was performed (new version)</label>
           )}
+          {editing.setId && (() => {
+            const set = sets?.find((s) => s.id === editing.setId)
+            const ids = [...new Set((set?.items ?? []).filter((i) => i.kind === 'joke' && i.jokeId).map((i) => i.jokeId!))]
+            if (!ids.length) return null
+            const verdict = (jid: string) => editing.bitResults?.find((r) => r.jokeId === jid)?.verdict
+            const setV = (jid: string, v: BitVerdict) => {
+              const rest = (editing.bitResults ?? []).filter((r) => r.jokeId !== jid)
+              setEditing({ ...editing, bitResults: verdict(jid) === v ? rest : [...rest, { jokeId: jid, verdict: v }] })
+            }
+            return (
+              <div className="stack"><label>How did each bit land?</label>
+                {ids.map((jid) => {
+                  const j = jokes?.find((x) => x.id === jid)
+                  return (
+                    <div key={jid} className="row spread wrap">
+                      <span className="small grow">{j?.title ?? 'Deleted joke'}</span>
+                      <div className="chips" role="group" aria-label={`Result for ${j?.title}`}>
+                        {([['hit', '🔥 Hit'], ['ok', '👍 OK'], ['miss', '🦗 Miss']] as [BitVerdict, string][]).map(([v, l]) => (
+                          <button key={v} className={`chip${verdict(jid) === v ? ' on' : ''}`} onClick={() => setV(jid, v)} aria-pressed={verdict(jid) === v}>{l}</button>))}
+                      </div>
+                    </div>)
+                })}
+              </div>)
+          })()}
           <div className="field"><label htmlFor="pn">Audience response</label><textarea id="pn" value={editing.audienceNotes} onChange={(e) => setEditing({ ...editing, audienceNotes: e.target.value })} placeholder="What killed, what died, where the room turned…" /></div>
           <div className="field"><label htmlFor="pr">Revisions to make</label><textarea id="pr" value={editing.revisions} onChange={(e) => setEditing({ ...editing, revisions: e.target.value })} placeholder="Cut the second tag. Move the airport bit earlier." style={{ minHeight: 80 }} /></div>
           <div><label>Rating</label><div className="chips">{[1, 2, 3, 4, 5].map((n) => <button key={n} className={`chip${editing.rating === n ? ' on' : ''}`} onClick={() => setEditing({ ...editing, rating: editing.rating === n ? undefined : n })} aria-label={`${n} stars`}>{'★'.repeat(n)}</button>)}</div></div>
