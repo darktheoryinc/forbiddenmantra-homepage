@@ -67,7 +67,7 @@ export interface Suggestion {
   setup?: string
   punchline?: string
   themes: string[]
-  confidence: number // 0..1 heuristic score — not a probability
+  confidence?: number // 0..1 heuristic score (local finder only) — not a probability
   rationale: string
   origin: Origin
   status: 'pending' | 'accepted' | 'rejected'
@@ -84,6 +84,8 @@ export interface RoutineSuggestion {
   theme: string
   suggestionIds: string[]
   transitions: string[] // transitions[i] connects suggestionIds[i] -> [i+1]
+  closerSuggestionId?: string
+  closerWhy?: string
   origin: Origin
   status: 'pending' | 'accepted' | 'rejected'
 }
@@ -95,6 +97,13 @@ export interface AnalysisRun {
   createdAt: number
   themes: string[]
   callbacks: { phrase: string; suggestionIds: string[] }[]
+  connections?: { a: string; b: string; why: string; aQuote?: string; bQuote?: string }[]
+  model?: string
+  warnings?: string[]
+  /** Set when the AI provider failed and the offline finder produced this run instead. */
+  fallbackFrom?: string
+  fallbackReason?: string
+  ms?: number
 }
 
 export interface SetItem {

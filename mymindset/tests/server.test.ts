@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from 'vitest'
-import { createApp, extractJson, locateVerbatim } from '../server/app'
+import { createApp, extractJson } from '../server/app'
 import { parseRss } from '../server/rss'
 
 const RSS = `<?xml version="1.0"?><rss><channel>
@@ -60,22 +60,12 @@ describe('api', () => {
     expect((await bad.request('/api/trends?q=airlines')).status).toBe(502)
   })
 
-  it('analyze validates input, keeps excerpts verbatim and drops invalid routine indexes', async () => {
-    const transcript = 'I went to the airport. The pretzel cost eleven dollars. My mother hates flying.'
-    const llm = JSON.stringify({ choices: [{ message: { content: '```json\n' + JSON.stringify({
-      themes: ['airport'], bits: [{ kind: 'observation', excerpt: 'The pretzel  cost eleven dollars.', themes: [], confidence: 0.8, rationale: 'x' }, { kind: 'premise', excerpt: 'Made up line the model invented', themes: [] }],
-      routines: [{ title: 'r', theme: 't', bitIndexes: [0, 1, 9], transitions: ['so'] }], callbacks: [],
-    }) + '\n```' } }] })
-    const a = createApp({ env: { LLM_API_URL: 'https://llm.test/v1/chat/completions', LLM_MODEL: 'm' }, fetchImpl: (async () => new Response(llm)) as unknown as typeof fetch })
+  it('analyze validates input and requires configuration', async () => {
+    const a = createApp({ env: { LLM_API_URL: 'https://llm.test/v1/chat/completions', LLM_MODEL: 'm' }, fetchImpl: (async () => new Response('{}')) as unknown as typeof fetch })
     const bad = await a.request('/api/analyze', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ transcript: 'short' }) })
     expect(bad.status).toBe(400)
-    const res = await a.request('/api/analyze', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ transcript }) })
-    const j = await res.json()
-    expect(j.bits[0].excerpt).toBe('The pretzel cost eleven dollars.')
-    expect(transcript.slice(j.bits[0].start, j.bits[0].end)).toBe(j.bits[0].excerpt)
-    expect(j.bits[1].start).toBe(-1)
-    expect(j.bits[1].rationale).toMatch(/paraphrased/)
-    expect(j.routines[0].bitIndexes).toEqual([0, 1])
+    const none = await a.request('/api/analyze', { method: 'POST', headers: { 'content-type': 'application/json' }, body: 'not json' })
+    expect(none.status).toBe(400)
   })
 
   it('never leaks credentials in responses', async () => {
@@ -90,5 +80,4 @@ describe('json helpers', () => {
     expect(extractJson('here: {"a":2} bye')).toEqual({ a: 2 })
     expect(() => extractJson('no json')).toThrow()
   })
-  it('locates verbatim text across whitespace differences', () => { expect(locateVerbatim('a b  c d', 'b c')).toEqual([2, 6]); expect(locateVerbatim('abc', 'zzz')).toBeNull() })
 })

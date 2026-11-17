@@ -4,7 +4,7 @@ import { useLiveQuery } from 'dexie-react-hooks'
 import { DndContext, closestCenter, PointerSensor, TouchSensor, KeyboardSensor, useSensor, useSensors, type DragEndEvent } from '@dnd-kit/core'
 import { SortableContext, arrayMove, useSortable, verticalListSortingStrategy, sortableKeyboardCoordinates } from '@dnd-kit/sortable'
 import { CSS } from '@dnd-kit/utilities'
-import { db, deleteRecording, formatDuration, uid } from '../lib/db'
+import { db, deleteRecording, formatDuration, uid, getSettings } from '../lib/db'
 import { analyzeRecording, acceptSuggestion, activeProvider, providers } from '../ai/service'
 import { getServerStatus, transcribeOnServer } from '../lib/api'
 import type { ServerStatus } from '../ai/types'
@@ -30,6 +30,7 @@ export default function RecordingDetail() {
   const [tab, setTab] = useState<'bits' | 'routines'>('bits')
   const audioEl = useRef<HTMLAudioElement>(null)
   const jokesAll = useLiveQuery(() => db.jokes.toArray(), [])
+  const cfg = useLiveQuery(() => getSettings(), [])
 
   useEffect(() => { if (rec) { setTitle(rec.title); setText(rec.transcript) } }, [rec?.id]) // eslint-disable-line react-hooks/exhaustive-deps
   useEffect(() => { getServerStatus().then(setStatus) }, [])
@@ -67,8 +68,9 @@ export default function RecordingDetail() {
     if (dirty) await save()
     setBusy('analyze')
     try {
-      const { count, provider } = await analyzeRecording(id)
-      toast(count ? `Found ${count} candidate${count === 1 ? '' : 's'} (${provider.label}).` : 'No joke candidates found. Try a longer ramble.', count ? 'ok' : 'err')
+      const { count, provider, fallbackReason } = await analyzeRecording(id)
+      if (fallbackReason) toast(`AI analysis unavailable (${fallbackReason}). Used the offline pattern finder instead.`, 'err')
+      else toast(count ? `Found ${count} candidate${count === 1 ? '' : 's'} (${provider.label}).` : 'No joke candidates found. Try a longer ramble.', count ? 'ok' : 'err')
     } catch (e) { toast((e as Error).message, 'err') } finally { setBusy('') }
   }
   async function remove() {
@@ -149,6 +151,9 @@ export default function RecordingDetail() {
           )}
           <button className="btn primary" onClick={analyze} disabled={busy !== '' || text.trim().length < 10}>{busy === 'analyze' ? 'Searching…' : 'Find the jokes'}</button>
         </div>
+        {busy === 'analyze' && cfg?.analysisProvider === 'server' && (
+          <p className="callout small" style={{ margin: 0 }} role="status">Analyzing with your AI model. A local model on a laptop-class CPU can take a minute or two for a long ramble. If it fails, the offline finder takes over.</p>
+        )}
         {rec.hasAudio && status && !status.transcription.configured && (
           <p className="callout warn small" style={{ margin: 0 }}>Transcription isn't set up on this server (see <code>.env.example</code>), so audio can't be auto-transcribed. Your audio is safe; type or paste the transcript to continue.</p>
         )}
@@ -167,6 +172,7 @@ export default function RecordingDetail() {
             </div>
           </div>
           <p className="muted small" style={{ margin: 0 }}>Excerpts are your exact words. Suggested structure and transitions are labeled. Nothing changes your transcript or audio.</p>
+          {runs?.length ? <RunInfo run={runs[runs.length - 1]} byId={byId} /> : null}
           {runs?.length ? <div className="chips">{runs[runs.length - 1].themes.map((t) => <span key={t} className="chip">#{t}</span>)}{runs[runs.length - 1].callbacks.map((c) => <span key={c.phrase} className="chip on" title="Appears in multiple bits — callback potential">↺ {c.phrase}</span>)}</div> : null}
           <div className="tabs">
             <button className={`chip${tab === 'bits' ? ' on' : ''}`} onClick={() => setTab('bits')}>Bits ({visible.length})</button>
@@ -238,7 +244,7 @@ function BitCard({ s }: { s: Suggestion }) {
             <Badge>{s.kind.replace('-', ' / ')}</Badge>
             <OriginBadge origin="original" />
             {s.origin !== 'original' && <Badge kind={s.origin === 'ai-suggested' ? 'ai' : 'heur'}>{s.origin === 'ai-suggested' ? 'AI-suggested structure' : 'Suggested structure'}</Badge>}
-            <span className="muted small">score {Math.round(s.confidence * 100)}</span>
+            {s.confidence !== undefined && <span className="muted small">score {Math.round(s.confidence * 100)}</span>}
             {accepted && <Badge kind="original">In Vault</Badge>}
           </div>
           {editing ? (
@@ -332,7 +338,9 @@ function Routines({ routines, byId }: { routines: RoutineSuggestion[]; byId: Map
               <div key={sid} className="stack">
                 <div className="card" style={{ background: 'var(--bg2)' }}>
                   <div className="row spread" style={{ alignItems: 'flex-start' }}>
-                    <div className="grow small">{i + 1}. {(s?.userText ?? s?.excerpt ?? '(removed)').slice(0, 220)}</div>
+                    <div className="grow small">{i + 1}. {(s?.userText ?? s?.excerpt ?? '(removed)').slice(0, 220)}
+                      {sid === r.closerSuggestionId && <div style={{ marginTop: 4 }}><Badge kind="ai">Suggested closer</Badge>{r.closerWhy && <span className="muted"> {r.closerWhy}</span>}</div>}
+                    </div>
                     <div className="row">
                       <button className="btn sm ghost" onClick={() => move(r, i, -1)} disabled={i === 0} aria-label="Move up">↑</button>
                       <button className="btn sm ghost" onClick={() => move(r, i, 1)} disabled={i === r.suggestionIds.length - 1} aria-label="Move down">↓</button>
@@ -346,7 +354,7 @@ function Routines({ routines, byId }: { routines: RoutineSuggestion[]; byId: Map
                       <textarea style={{ minHeight: 44, background: 'transparent', border: 'none', color: 'inherit', fontStyle: 'italic' }} value={r.transitions[i] ?? ''} onChange={(e) => editTransition(r, i, e.target.value)} aria-label="Transition" rows={2} />
                       <button className="btn sm ghost" onClick={() => regenTransition(r, i)} aria-label="Regenerate transition">↻</button>
                     </div>
-                    <span className="small muted">↳ suggested transition (template)</span>
+                    <span className="small muted">↳ {r.origin === 'ai-suggested' ? 'AI-written transition (not your words)' : 'suggested transition (template)'}</span>
                   </div>
                 )}
               </div>
@@ -377,6 +385,26 @@ function MarkerSummary({ rec, jokes }: { rec: { markers?: { kind: MarkerKind; jo
   return (
     <div className="callout small"><b>Per bit</b>
       {[...per].map(([jid, e]) => <div key={jid}>{jokes.find((j) => j.id === jid)?.title ?? 'Deleted joke'}: laugh score {e.laughs}, {e.misses} dead spot{e.misses === 1 ? '' : 's'}</div>)}
+    </div>
+  )
+}
+
+function RunInfo({ run, byId }: { run: import('../lib/types').AnalysisRun; byId: Map<string, Suggestion> }) {
+  const short = (id: string) => { const t = byId.get(id); return t ? (t.userText ?? t.excerpt).slice(0, 60) + ((t.userText ?? t.excerpt).length > 60 ? '…' : '') : '(removed)' }
+  return (
+    <div className="stack">
+      {run.fallbackFrom && <div className="callout warn small">AI analysis was unavailable ({run.fallbackReason}), so the offline pattern finder produced these results.</div>}
+      {!run.fallbackFrom && run.model && <div className="muted small">Analyzed by <b>{run.model}</b>{run.ms ? ` in ${Math.round(run.ms / 1000)}s` : ''}. Excerpts are cut from your transcript by position; notes and transitions marked AI are the model's.</div>}
+      {(run.warnings ?? []).map((w) => <div key={w} className="callout warn small">{w}</div>)}
+      {(run.connections ?? []).length > 0 && (
+        <div className="callout small"><b>Possible connections</b> <Badge kind="ai">AI</Badge>
+          {run.connections!.map((c, i) => <div key={i} style={{ marginTop: 8 }}>
+            <div className="excerpt small">“{c.aQuote ?? short(c.a)}”</div>
+            <div className="small muted" style={{ textAlign: 'center' }}>↕</div>
+            <div className="excerpt small">“{c.bQuote ?? short(c.b)}”</div>
+            <span className="muted">{c.why}</span></div>)}
+        </div>
+      )}
     </div>
   )
 }

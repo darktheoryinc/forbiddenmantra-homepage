@@ -2,17 +2,22 @@ import { apiFetch } from '../lib/api'
 import type { AnalysisProvider, AnalysisResult } from './types'
 import { alternateSplit, suggestTransition } from './heuristic'
 
-/** Calls the MyMindSet server, which holds the LLM credentials. Only usable when the server reports it configured. */
+/** Calls the MyMindSet server, which holds the LLM endpoint/credentials (e.g. a local Ollama model). Only usable when the server reports it configured. */
 export const serverProvider: AnalysisProvider = {
   id: 'server-llm',
-  label: 'AI analysis (server)',
+  label: 'AI analysis (server model)',
   origin: 'ai-suggested',
-  description: 'Sends the transcript to the AI provider configured on your MyMindSet server. Suggestions are labeled AI-generated.',
+  description: 'Sends the transcript to the model configured on your MyMindSet server (for example a local Ollama model). The model only points at your words; it never writes jokes. Its transitions and notes are labeled AI. If it fails, the offline finder runs instead.',
   analyze: ({ transcript }) =>
     apiFetch<AnalysisResult>('/api/analyze', {
       method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ transcript }),
     }),
-  // Per-item regeneration reuses the local structural tools; the whole-recording run is what calls the model.
+  // Setup/punchline re-splits stay local and deterministic (the split is always your own words).
   regenerate: async ({ excerpt, variant }) => alternateSplit(excerpt, variant),
-  suggestTransition: async ({ from, to, variant }) => suggestTransition(from, to, variant),
+  // New transitions come from the model; fall back to a template if it is unavailable.
+  suggestTransition: async ({ from, to, variant }) => {
+    try {
+      return (await apiFetch<{ text: string }>('/api/transition', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ from, to, variant }) })).text
+    } catch { return suggestTransition(from, to, variant) }
+  },
 }

@@ -10,11 +10,14 @@ export interface RawBit {
   setup?: string
   punchline?: string
   themes: string[]
-  confidence: number
+  /** Heuristic score (0..1). Absent for AI bits: models don't give a trustworthy probability, so none is shown. */
+  confidence?: number
   rationale: string
 }
 
-export interface RawRoutine { title: string; theme: string; bitIndexes: number[]; transitions: string[] }
+export interface RawRoutine { title: string; theme: string; bitIndexes: number[]; transitions: string[]; closerIndex?: number; closerWhy?: string }
+export interface RawConnection { a: number; b: number; why: string; aQuote?: string; bQuote?: string }
+export interface AnalysisMeta { model: string; chunks: number; chunksFailed: number; dropped: number; warnings: string[]; ms: number }
 export interface RawCallback { phrase: string; bitIndexes: number[] }
 
 export interface AnalysisResult {
@@ -22,6 +25,8 @@ export interface AnalysisResult {
   bits: RawBit[]
   routines: RawRoutine[]
   callbacks: RawCallback[]
+  connections?: RawConnection[]
+  meta?: AnalysisMeta
 }
 
 export interface AnalysisProvider {
