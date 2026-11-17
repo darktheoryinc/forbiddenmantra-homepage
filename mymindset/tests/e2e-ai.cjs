@@ -58,7 +58,7 @@ async function chooseAi(p, base) {
   await p.getByText('Original excerpt:').first().waitFor()
   await p.getByRole('button', { name: 'Regenerate' }).nth(1).click()
   await p.getByRole('button', { name: 'Accept', exact: true }).first().click(); await p.waitForSelector('text=In Vault')
-  await p.getByRole('button', { name: 'Delete', exact: true }).first().click()
+  await p.locator('.card').getByRole('button', { name: 'Delete', exact: true }).first().click()
   await p.getByText(/dismissed/).waitFor()
 
   step('routines: closer badge, AI-written transitions, regenerate, reorder')
